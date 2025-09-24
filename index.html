@@ -63,44 +63,67 @@
     .gradient-orb {
       position: absolute;
       border-radius: 50%;
-      filter: blur(80px);
-      opacity: 0.5;
-      animation: float 20s ease-in-out infinite;
+      filter: blur(120px);
+      opacity: 0.25;
+      animation: float 12s ease-in-out infinite;
+      pointer-events: none;
     }
 
     .orb-1 {
-      width: 600px;
-      height: 600px;
+      width: 450px;
+      height: 450px;
       background: var(--cc-gradient);
-      top: -200px;
-      right: -200px;
+      top: -350px;
+      right: -100px;
       animation-delay: 0s;
+      animation-name: floatRight;
     }
 
     .orb-2 {
-      width: 400px;
-      height: 400px;
+      width: 350px;
+      height: 350px;
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      bottom: -100px;
-      left: -100px;
-      animation-delay: 5s;
+      bottom: -250px;
+      left: -150px;
+      animation-delay: 4s;
+      animation-name: floatLeft;
     }
 
     .orb-3 {
-      width: 500px;
-      height: 500px;
+      width: 400px;
+      height: 400px;
       background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      animation-delay: 10s;
+      top: 70%;
+      right: 5%;
+      animation-delay: 2s;
+      animation-name: floatBottom;
+      opacity: 0.15;
     }
 
     @keyframes float {
       0%, 100% { transform: translate(0, 0) scale(1); }
-      25% { transform: translate(50px, -50px) scale(1.1); }
-      50% { transform: translate(-50px, 50px) scale(0.9); }
-      75% { transform: translate(30px, 30px) scale(1.05); }
+      25% { transform: translate(30px, -30px) scale(1.05); }
+      50% { transform: translate(-20px, 20px) scale(0.95); }
+      75% { transform: translate(20px, 10px) scale(1.02); }
+    }
+
+    @keyframes floatRight {
+      0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+      33% { transform: translate(-40px, 30px) scale(1.05) rotate(60deg); }
+      66% { transform: translate(-20px, -20px) scale(0.98) rotate(120deg); }
+    }
+
+    @keyframes floatLeft {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(30px, -30px) scale(0.95); }
+      66% { transform: translate(50px, 10px) scale(1.03); }
+    }
+
+    @keyframes floatBottom {
+      0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+      25% { transform: translate(-60px, -20px) scale(1.02) rotate(45deg); }
+      50% { transform: translate(-80px, 10px) scale(0.97) rotate(90deg); }
+      75% { transform: translate(-30px, -10px) scale(1.01) rotate(180deg); }
     }
 
     /* Main Content */
@@ -163,9 +186,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: 800;
-      font-size: 20px;
-      color: var(--cc-light);
+      padding: 10px;
       box-shadow: 0 10px 30px rgba(255,107,53,0.3);
       animation: pulse 2s ease infinite;
     }
@@ -1232,7 +1253,9 @@
           <span>←</span>
           <span>Back to Main Site</span>
         </a>
-        <div class="cc-nav-logo">CC</div>
+        <div class="cc-nav-logo">
+          <img src="images/cc-logo.svg" alt="Contribute Club" style="width: 100%; height: 100%; object-fit: contain; filter: brightness(0) invert(1);">
+        </div>
       </div>
     </nav>
 
