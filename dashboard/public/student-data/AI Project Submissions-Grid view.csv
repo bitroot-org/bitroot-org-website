@@ -1,0 +1,524 @@
+﻿Full Name,Email,University / College,Phone Number,Year of Study / Graduation Year,Project Title,Chosen Use-case,Short Description,GitHub Repo URL,Deployed Demo Link,Demo Video or GIF Link,Models or APIs Used,Database & Tech Stack Summary,README Confirmation,Additional Notes / Comments,Submission Date,Project Summary (AI Generated),Project Category (AI),Project Stack Keywords,Has Demo,Created By,Mark as Read,Testing account,Reviewed
+Aditya Bhingardive ,adityab.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+917972905955,Graduate,3D website tshirt Customiser,Other,"A modern 3D tshirt customisation web application built with Three.js, React, and Tailwind CSS ,Node js. USER can interact with a 3d tshirt, change its colour and upload custom logos or textures to personalize the design in real time ",https://github.com/Adi22ai/3d-website.git,black22.netlify.app,,Open API,"React 
+Node.js
+Three.js",checked,,9/25/2025 9:22am,,,"react 
+node.js
+three.js",Yes,Anonymous,Not Read,,Not reviewed
+Poonam Narendra Patil,patilpoonam2003@gmail.com,MET - BKC - Adgaon,+917756061063,2nd year,AI Content Analyzer,Distribution Pipeline,"AI Content Analyzer is a smart sentiment analysis tool that automatically detects emotions in text, classifying content as positive, negative, or neutral. It helps users quickly understand audience opinions, feedback, and overall sentiment, making it useful for businesses, researchers, and content creators.",https://github.com/Poonampatil3/sentimenttask,https://sentimenttask.vercel.app/,-,-,-,checked,-,9/25/2025 10:24am,,,-,Yes,Anonymous,Not Read,,Not reviewed
+Prashant Sanjay Patil,prashantp.mca_iom@bkc.met.edu ,MET - BKC - Adgaon,+918668868253,2nd year,Ai Powered content distribution with engagement forecasting,Distribution Pipeline,"Content Distribution Pipeline is a simple AI-powered app that helps you turn one idea into ready-to-use posts for different platforms. Whether it’s a Twitter thread , a LinkedIn update, or a newsletter , it formats the content for you with live previews and a clean design so you can focus on sharing, not formatting.",https://github.com/patilprashant48/v0-content-distribution-pipeline.git,https://v0-content-distribution-pipeline.vercel.app/,,Next.js built-in API handle,"Next.js + React + TypeScript frontend, Tailwind & Shadcn/UI styling, Next.js API backend (DB-ready). Features AI content processing, multi-platform adaptation, analytics & social sharing.",checked,,9/25/2025 10:25am,,,"next.js + react + typescript frontend, tailwind & shadcn/ui styling, next.js api backend (db-ready). features ai content processing, multi-platform adaptation, analytics & social sharing.",Yes,Anonymous,Not Read,,Reviewed Manually
+Anjali Hiraman Pekhale,anjalip.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+919637173459,2nd year,content_pipeline,Distribution Pipeline,"Content Repurposer – AI Multi-Platform
+A web application that automatically transforms a single piece of content into multiple formats optimized for different platforms. Users can input text, and the app generates content for Twitter threads, LinkedIn posts, and newsletters, along with sentiment analysis. Built with Streamlit and integrated with AI APIs, it helps creators save time and maintain consistency across platforms.",https://github.com/Anjalipekhale/content_pipeline.git,https://content-pipeline-piup.onrender.com/,https://drive.google.com/file/d/1iCngaS17neady0cdAY4dUm_ueAkjhznq/view?usp=sharing,Gemini API Key,"Frontend: Html, css. Backend: Python, Generative AI, Deployment : Render, Other tools: Git, Github",checked,,9/25/2025 10:33am,,,"frontend: html, css. backend: python, generative ai, deployment : render, other tools: git, github",Yes,Anonymous,Not Read,,Reviewed Manually
+Mayur Gulabrao Shinde,mayurs.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+919545285123,2nd year,AI-BRAINSTORMING-ASSISTANCE,Brainstorming App,"This project is a real-time brainstorming assistant for creative teams, built as a chat application with AI-powered ideation tools. It supports multiple users, instant messaging, and AI-generated suggestions for mind-mapping and idea scoring.",https://github.com/mayurshinde03/AI-BRAINSTORMING-ASSISTANT,https://ai-brainstorming-assistant.onrender.com/,,"Google Gemini API 
+Socket.io 
+Sonnet Claude
+Perplexity
+ ","Current Implementation (In-Memory)
+let activeUsers = {};        // Stores socket.id -> username mapping
+let messageHistory = [];     // Stores all chat messages",checked,,9/25/2025 10:37am,,,"current implementation (in-memory)
+let activeusers = {};        // stores socket.id -> username mapping
+let messagehistory = [];     // stores all chat messages",Yes,Anonymous,Not Read,,Reviewed Manually
+Kalyani Dilip Rewale,kalyanir.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+918329633434,2nd year,Student Monitoring System ,Other,"Smart Focus Hub is a comprehensive student activity tracking and AI-assisted learning platform designed to enhance educational outcomes. The system combines real-time activity monitoring, AI-powered chatbot assistance, and analytics to help educators track student engagement while providing personalized support. Built with React, TypeScript, and Node.js, it features a modern tech stack including Supabase for data management, OpenAI integration for intelligent responses, and Python scripts for activity tracking. The platform offers role-based access for administrators, teachers, and students, with features like live dashboards, inactivity alerts, and detailed analytics to foster a more focused and productive learning environment.",https://github.com/Kalyani1403/Smart-students-tracker,"There were some issues during the project deployment,",,"Smart Focus Hub leverages several powerful APIs and models to deliver its functionality. At its core, the application uses OpenAI's GPT-3.5 Turbo model for the AI chatbot assistant, providing intelligent responses and educational support. The backend infrastructure is built on Supabase's API for real-time database operations and authentication services. For activity tracking, the system utilizes Python's psutil API to monitor system processes and pygetwindow API for window activity tracking. The frontend interfaces with these services through RESTful APIs built with Express.js, while real-time updates are handled via Supabase's Realtime API. Data visualization is powered by modern charting libraries like Chart.js or D3.js for analytics dashboards, ensuring a comprehensive and responsive monitoring system","Frontend Stack
+Framework: React 18 with TypeScript
+Build Tool: Vite
+Styling: Tailwind CSS + Shadcn/UI
+State Management: React Hooks + Context API
+Charts: Chart.js for analytics visualization
+Backend Stack
+Runtime: Node.js
+Framework: Express.js
+AI Integration: OpenAI GPT-3.5 Turbo
+Authentication: Supabase Auth         
+
+Database :supabase
+-- Users Table
+create table users (
+  id uuid references auth.users primary key,
+  role varchar check (role in ('admin', 'teacher', 'student')),
+  created_at timestamp with time zone default timezone('utc'::text, now())
+);
+
+-- Activity Tracking Table
+create table activity_logs (
+  id uuid default uuid_generate_v4() primary key,
+  user_id uuid references users(id),
+  application varchar,
+  window_title text,
+  duration integer,
+  timestamp timestamp with time zone default timezone('utc'::text, now())
+);
+
+-- Student Progress Table
+create table student_progress (
+  id uuid default uuid_generate_v4() primary key,
+  student_id uuid references users(id),
+  subject varchar,
+  focus_score decimal,
+  updated_at timestamp with time zone default timezone('utc'::text, now())
+);",checked,"There were some issues during the project deployment,",9/25/2025 10:37am,,,"frontend stack
+framework: react 18 with typescript
+build tool: vite
+styling: tailwind css + shadcn/ui
+state management: react hooks + context api
+charts: chart.js for analytics visualization
+backend stack
+runtime: node.js
+framework: express.js
+ai integration: openai gpt-3.5 turbo
+authentication: supabase auth         
+
+database :supabase
+-- users table
+create table users (
+  id uuid references auth.users primary key,
+  role varchar check (role in ('admin', 'teacher', 'student')),
+  created_at timestamp with time zone default timezone('utc'::text, now())
+);
+
+-- activity tracking table
+create table activity_logs (
+  id uuid default uuid_generate_v4() primary key,
+  user_id uuid references users(id),
+  application varchar,
+  window_title text,
+  duration integer,
+  timestamp timestamp with time zone default timezone('utc'::text, now())
+);
+
+-- student progress table
+create table student_progress (
+  id uuid default uuid_generate_v4() primary key,
+  student_id uuid references users(id),
+  subject varchar,
+  focus_score decimal,
+  updated_at timestamp with time zone default timezone('utc'::text, now())
+);",Yes,Anonymous,Not Read,,Reviewed Manually
+Siddharth Arun Chavanke,siddharthc.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+919172041620,2nd year,Editorial Jump Extractor,Other,"Editorial Jump Extractor: A professional tool that automatically extracts jump keywords, headlines, and paragraph starters from your stories to streamline editorial workflow and page layout design.",https://github.com/SiddharthChavanke09/Editorial-Jump-Extractor,https://glowing-taffy-812456.netlify.app/,,Gemini API,In memory,checked,,9/25/2025 10:38am,,,in memory,Yes,Anonymous,Not Read,,Reviewed Manually
+sayali sanjay chavhan,sayalichavhan20022@gmail.com,MET - BKC - Adgaon,+917219830010,2nd year,Virtual Try on ,Virtual Try-on,"Virtual Try-On is a technology that lets customers digitally preview how products — like clothes, accessories, eyewear, or makeup — will look on them without physically trying them on. It uses augmented reality (AR), artificial intelligence (AI), and 3D modeling to overlay products onto a live image or photo of the user, creating an interactive and personalized shopping experience.",https://github.com/sayalichavhan1311/-Bitroot2025.git,bitroot2025-7hmzrvwkq-sayalichavhan1311s-projects.vercel.app,,Openai,i will use the mongodb with connection node.js,checked,,9/25/2025 10:40am,,,i will use the mongodb with connection node.js,Yes,Anonymous,Not Read,,Reviewed Manually
+Khaire Shubham Bhausaheb,shubhamk.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+919022871608,2nd year,ai-code-reviewer,Other,AI Code Reviewer – An app that uses AI to review code,https://github.com/shubhkhaire/ai-code-reviewer,.,,OpenAI API,"Backend: Python FastAPI
+Frontend: React + Vite
+Deployment: Render
+Others: GitHub for version control, Environment variables for secrets",checked,,9/25/2025 10:42am,,,"backend: python fastapi
+frontend: react + vite
+deployment: render
+others: github for version control, environment variables for secrets",Yes,Anonymous,Not Read,,Not reviewed
+Manish Dipak Gavali,manishg.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+917447848243,Final year,AI Code  Reviewer,Other,AI Code  Reviewer - AI that can Review a code,https://github.com/manishgavali/ai-code-reviewer-mongo-react.git,https://ai-code-reviewer-mongo-react-frontend-4.onrender.com,.,API built with FastAPI,"Database :MongoDB
+Frontend: React
+Backend: python API built with FastAPI",checked,NA,9/25/2025 10:55am,,,"database :mongodb
+frontend: react
+backend: python api built with fastapi",Yes,Anonymous,Not Read,,Not reviewed
+Aniket Sunil Hire,hire.aniket22@gmail.com,MET - BKC - Adgaon,+918080256639,2nd year,Ai code reviewer,Other,Smart AI Code  Review,https://github.com/anikethire/ai-code-reviewer.git,NA,,open ai api,NA,checked,,9/25/2025 10:56am,,,na,Yes,Anonymous,Not Read,,Not reviewed
+pawar sarthak dnyandeo,pawarsarthak8858@gmail.com,MET - BKC - Adgaon,+917028239806,2nd year,AllReach,Distribution Pipeline,"A content distribution pipeline is a systematic flow that manages content from creation to delivery across multiple platforms. It begins with ingestion of raw material, followed by processing and enrichment to clean and optimize it. The content is then transformed/adapted for specific channels like social media, blogs, or newsletters. Next, it goes through scheduling and automated distribution to reach the right audience at the right time. Finally, monitoring and analytics track performance, and feedback is used for continuous optimization, ensuring maximum reach and engagement.",https://github.com/Sarthak8858/bitroot-project,https://vercel.com/pawarsarthak8858-5798s-projects/bitroot-project/HKkkhMuvyQmJG6R4q4ZBr3UnViQ1,,-----,sqlite,checked,,9/25/2025 11:09am,,,sqlite,Yes,Anonymous,Not Read,,Not reviewed
+ABHIJIT SHARAD BORSE,abhijitb.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+917020639781,2nd year,ai-code-reviewer,Other,"AI Code Reviewer is a web application that uses AI to automatically review code. It features a FastAPI backend with database support, a modern Next.js + Tailwind frontend, and is deployed on Railway (backend + DB) and Vercel (frontend).",https://github.com/Abhijit03/ai_code.git,https://ai-code-git-main-abhijit03s-projects.vercel.app,,Openai,"Database: Supabase (Postgres + Auth)
+Frontend:Next.js 14 + Tailwind CSS 
+Backend:FastAPI (Python)",checked,,9/25/2025 11:15am,,,"database: supabase (postgres + auth)
+frontend:next.js 14 + tailwind css 
+backend:fastapi (python)",Yes,Anonymous,Not Read,,Not reviewed
+Anush Anil Jadhav,anushj.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+91 8080433168,2nd year,Ai Code Reviewer,Other,AI Code Reviewer is a web application that uses AI to automatically review code . It features a FastAPI backend with database,https://github.com/anushaniljadhav/ai_code,.,,gemini AI,"mongodb 
+frontend react
+backend python (FAST API)
+",checked,,9/25/2025 11:16am,,,"mongodb 
+frontend react
+backend python (fast api)
+",Yes,Anonymous,Not Read,,Not reviewed
+Amol Madhavrao Chinchole,amolc.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+919766913954,2nd year,AI Code Reviewer,Other,AI Code Reviewer,https://github.com/AmolChinchole/AI_Coach_Reviewer.git,.,,The primary API used in this project is the Gemini 2.5 Flash API.,"Frontend: React, Tailwind CSS, JavaScript (ES6+), Fetch API.
+
+Backend: None (Serverless architecture).
+
+Database: None.
+
+API: Gemini 2.5 Flash API.",checked,N/A,9/25/2025 11:26am,,,"frontend: react, tailwind css, javascript (es6+), fetch api.
+
+backend: none (serverless architecture).
+
+database: none.
+
+api: gemini 2.5 flash api.",Yes,Anonymous,Not Read,,Reviewed Manually
+Aishwarya Deepak Sangle,aishwaryas.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+919322874566,Graduate,EcoMate : AI-Powered Sustainable Living Assistant,Other,EcoMate that helps users track and reduce their environmental footprint through AI-powered recommendations.,https://github.com/sangleaishwarya44-ux/EcoMate-_AI-Powered-Sustainable-Living-Assistant.git,There are Database connectivity issue in this project,,"Flask - Web framework for building REST API
+SQLite3 - Database operations
+OpenAI - AI model integration (GPT-3.5-turbo/GPT-4)","Database - SQLite
+
+Tech Stack
+Frontend Layer : HTML5+CSS3+JavaScript
+
+Backend Layer : Python 3.8+ with Flask Microframework
+
+AI/ML Layer : OpenAI GPT Models
+                      Primary: GPT-3.5-turbo
+                      Alternative: GPT-4
+
+",checked,,9/25/2025 11:34am,,,"database - sqlite
+
+tech stack
+frontend layer : html5+css3+javascript
+
+backend layer : python 3.8+ with flask microframework
+
+ai/ml layer : openai gpt models
+                      primary: gpt-3.5-turbo
+                      alternative: gpt-4
+
+",Yes,Anonymous,Not Read,,Not reviewed
+Siddhesh Chandrashekhar Ambekar  ,siddhesha.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+919890914525,Graduate,IdeaCanvas: AI-Powered Creative Problem Solving Platform,Other,"IdeaCanvas is an AI-powered platform that transforms vague concepts into structured, actionable creative briefs using multi-modal AI. It combines text analysis, image generation, and semantic mapping to help users explore creative directions they might not have considered.",https://github.com/SiddheshA2002/AI-Ideacanvas.git,There are Database connectivity issue in this project,,"OpenAI GPT-4
+
+Stability AI Stable Diffusion XL","Database : PostgreSQL 
+
+Tech Stack  
+Frontend Layer : HTML5 + CSS3 + JavaScript
+
+Backend Layer : Node.js 
+
+AI/ML Layer : GPT-4 / GPT-4 Turbo 
+                      Stable Diffusion XL 1.0
+
+",checked,,9/25/2025 11:34am,,,"database : postgresql 
+
+tech stack  
+frontend layer : html5 + css3 + javascript
+
+backend layer : node.js 
+
+ai/ml layer : gpt-4 / gpt-4 turbo 
+                      stable diffusion xl 1.0
+
+",Yes,Anonymous,Not Read,,Not reviewed
+Manish Uttam Bhavar,manishb.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+918459059460,2nd year,Fix It Now,Other,FixItNow Connects Neighbor services with user ,https://github.com/bmanish55/FixiTNow.git,Project Not Deployed,,No API Used Right Now but we'll integrate in future,"
+Database & Tech Stack Summary
+
+Frontend
+React.js – component-based UI framework  
+React Router: for routing and navigation  
+CSS / Material UI: styling and responsive design  
+
+Backend
+Node.js:  JavaScript runtime  
+
+Database
+MySQL",checked,,9/25/2025 11:36am,,,"
+database & tech stack summary
+
+frontend
+react.js – component-based ui framework  
+react router: for routing and navigation  
+css / material ui: styling and responsive design  
+
+backend
+node.js:  javascript runtime  
+
+database
+mysql",Yes,Anonymous,Not Read,,Not reviewed
+Siddhesh Appasaheb Shinde,siddheshs.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+917758847690,2nd year,Hackproof AI ,Other,"**HackProof AI** is an AI-powered tool that scans and analyzes smart contracts to detect vulnerabilities before deployment. It provides developers with clear, plain-language security insights, making blockchain projects safer and more reliable.
+",https://github.com/Siddesh3185/hackproofai.git,dployement Error ,,"Models
+Large Language Model (LLM) – for natural language analysis of Solidity code and explaining vulnerabilities in plain English.
+API
+Scan API (/api/scan) – takes Solidity code input and returns vulnerability report.","PostgreSQL – stores user data, scan results, and vulnerability reports.
+
+Tech Stack
+Frontend: Next.js + Tailwind CSS (modern, responsive UI)
+Backend: Node.js + Express / Next.js API Routes
+AI/ML: Python (PyTorch / Hugging Face LLMs for code analysis)
+Database: PostgreSQL (SQL schema for persistence)
+Deployment: Docker + Vercel/Render/AWS
+Version Control: Git + GitHub",checked,,9/25/2025 11:44am,,,"postgresql – stores user data, scan results, and vulnerability reports.
+
+tech stack
+frontend: next.js + tailwind css (modern, responsive ui)
+backend: node.js + express / next.js api routes
+ai/ml: python (pytorch / hugging face llms for code analysis)
+database: postgresql (sql schema for persistence)
+deployment: docker + vercel/render/aws
+version control: git + github",Yes,Anonymous,Not Read,,Not reviewed
+Gajanan Baban Raut,gajananraut428@gmail.com,MET - BKC - Adgaon,+917972848504,Final year,Ai code reviewer,Other,"AI-powered code reviewer that automatically analyzes pull requests, detects bugs, checks security vulnerabilities, and suggests best practices and refactoring improvements to help developers maintain high-quality code.”",https://github.com/gajananraut428/gajananraut428.git,https://kaleidoscopic-khapse-1b2998.netlify.app/,,open apl,mongodb,checked,,9/25/2025 11:50am,,,mongodb,Yes,Anonymous,Not Read,,Not reviewed
+Tanvi Anil Dogmane,tanvid.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+919579243703,2nd year,Expense Tracker,Other,"Expense Tracker is a React-based web application that helps users manage their income and expenses with voice input support. It features real-time transaction tracking, data and an intuitive interface.",https://github.com/Tanvi-D12/ExpenseTracker.git,Project Not Deployed,,Speechly API,"Tech Stack:
+Frontend Framework: React.js
+UI Library: Material-UI (MUI)
+State Management: React Context API with useReducer
+Voice Integration: Speechly API
+Version Control: Git & GitHub
+Runtime Environment: Node.js (with Webpack & Babel)
+Styling: CSS3 and Material-UI custom theming",checked,,9/25/2025 12:10pm,,,"tech stack:
+frontend framework: react.js
+ui library: material-ui (mui)
+state management: react context api with usereducer
+voice integration: speechly api
+version control: git & github
+runtime environment: node.js (with webpack & babel)
+styling: css3 and material-ui custom theming",Yes,Anonymous,Not Read,,Not reviewed
+Borse Jayesh Mohanlal,jayeshb.mca_iom@bkc.met.edu,MET - BKC - Adgaon,9699593776,2nd year,Virtual Try on System-using capturing photo,Virtual Try-on,here i a developed system where we can capture photo and apply different effect using the stability AI API,"https://github.com/Jayborse78/backend.git ,  https://github.com/Jayborse78/frontend.git",NA,NA,Yes Stability AI API used for image processing ,"React, Node , Express",checked,"here i provided two github link because upload two file separated (Frontend) - here all the code regard the React , (backend)- Node and express implementation",9/25/2025 2:05pm,,,"react, node , express",Yes,Anonymous,Not Read,,Not reviewed
+Sakshi Anil Patil,"sakship.mca_iom@bkc.met.edu
+",MET - BKC - Adgaon,+919699985735,2nd year,wardrobe wizard,Virtual Try-on,"Project Description: Wardrobe Wizard
+""Wardrobe Wizard"" is an intelligent, web-based wardrobe management application. It's designed to help users organize their clothing, create outfits, and receive personalized recommendations. The project leverages a combination of front-end technologies like HTML, CSS, and JavaScript and a back-end powered by Python and the Flask framework, along with AI for smart recommendations, to provide a seamless and interactive user experience.",https://github.com/sakshiweb3/Wardrobe-Wizard-flaskapp-backend.git,-,https://github.com/sakshiweb3/Wardrobe-Wizard-flaskapp-backend/blob/main/README.md,"Google AI Studio
+GMM (Geometric Matching Module)
+ TOM (Try-On Module)
+Face Detection Model
+
+
+",Database Type: SQLite3,checked,"""Wardrobe Wizard"" is an intelligent, web-based wardrobe management application. It's designed to help users organize their clothing, create outfits, and receive personalized recommendations. The project leverages a combination of front-end technologies like HTML, CSS, and JavaScript and a back-end powered by Python and the Flask framework, along with AI for smart recommendations, to provide a seamless and interactive user experience",9/25/2025 2:24pm,,,database type: sqlite3,Yes,Anonymous,Not Read,,Not reviewed
+Atish Janardan Bodke,atishb.mca_iom@bkc>met.edu,MET - BKC - Adgaon,+91 7709038073,2nd year,Ai code Reviewer,Other,"AI Code Reviewer is an intelligent tool that automatically analyzes your code, detects bugs, suggests improvements, and ensures best practices for cleaner, more efficient, and maintainable code.",https://github.com/atishbodke127-collab/bitroot/tree/master,https://github.com/atishbodke127-collab/bitroot/tree/master,,"Open Ai chatgpt model
+OpenAI API","Frontend: React.js, HTML, CSS.
+Backend: Node.js , Python 
+AI Layer: GPT ,  OpenAI ApI",checked,,9/25/2025 2:37pm,,,"frontend: react.js, html, css.
+backend: node.js , python 
+ai layer: gpt ,  openai api",Yes,Anonymous,Not Read,,Not reviewed
+Komal Ashok Kubade,Komalk.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+91 7276808278,2nd year,Deep market research,Deep Research,"The core of this project is to perform comprehensive market research using Perplexity's API as the primary data and analysis engine. The strategy will involve three key stages: identifying market gaps, analyzing competitors, and generating reports with actionable insights.",git@github.com:komal-kubade/Deep_Market_Research.git,.,," Perplexity API and modules are use django.contrib.admin for the admin site,Contrib.auth for authentication,contenttypes for content types,django.contrib.sessions for sessions,django.contrib.messages for messaging
+django.contrib.staticfiles for static files"," The core technology is Python, with the web framework Django. SQlite3 databse",checked,i complete my frontend backend and database i.e sqlite3 with perplexity API key ,9/25/2025 2:43pm,"This project aims to conduct comprehensive market research by leveraging Perplexity's API for data collection and analysis. It addresses the challenge of efficiently identifying market gaps and analyzing competitors, culminating in the generation of actionable reports. The innovative aspect lies in automating and streamlining the research process through advanced AI-driven tools.",," the core technology is python, with the web framework django. sqlite3 databse",Yes,Anonymous,Not Read,,Not reviewed
+Shrawani kishor Tormad,Shrawanit.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+91 7666878078,2nd year,Ai code reviewer,Other,"An intelligent tool that analyzes code, detects bugs, and suggests improvements for cleaner, efficient, and maintainable programming.",https://storied-selkie-4ecb65.netlify.app/,https://storied-selkie-4ecb65.netlify.app/,https://youtu.be/69Hh3f0v0Bs?si=tloduc4FkKaTnvxt,"open AI model
+OPEN APIs","Frontend: React.js, HTML, CSS.
+Backend: Node.js , Python 
+AI Layer: GPT ,  OpenAI ApI",checked,,9/25/2025 2:45pm,,,"frontend: react.js, html, css.
+backend: node.js , python 
+ai layer: gpt ,  openai api",Yes,Anonymous,Not Read,,Not reviewed
+Komal Ashok kubade,komalk.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+917276808278,2nd year,Deep market research,Deep Research,"Deep Market Research
+The core of this project is to perform comprehensive market research using Perplexity's API as the primary data and analysis engine. The strategy will involve three key stages: identifying market gaps, analyzing competitors, and generating reports with actionable insights.",git@github.com:komal-kubade/Deep_Market_Research.git,https://68d556d289872524d1aadd05--shiny-yeot-a47c3d.netlify.app/,,"perplexity API and modules django.contrib.admin for the admin site,.auth for authentication
+django.contrib.contenttypes for content types
+django.contrib.sessions for sessions
+django.contrib.messages for messaging
+django.contrib.staticfiles for static files","The core technology is Python, with the web framework Django. sqlite3 database",checked,i complete my frontend and backend sqlite3 database with perplexity api key,9/25/2025 3:00pm,,,"the core technology is python, with the web framework django. sqlite3 database",Yes,Anonymous,Not Read,,Not reviewed
+Khushi Pardeshi ,khuship.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+917249887286,2nd year,AI Brainstroming App,Brainstorming App,"It's designed to help users generate and organize ideas. Key features include:
+
+AI Personas: Users can select different AI personalities (like ""The Visionary"" or ""The Skeptic"") to get ideas from various perspectives.
+
+Interactive Mind Map: Generated ideas are displayed visually in a mind map that users can pan and zoom through.",https://github.com/khushiraghuvanshi/Ai-App,-,-,-,-,checked,-,9/25/2025 3:21pm,,,-,Yes,Anonymous,Not Read,,Not reviewed
+Vaishnavi Sunil Pawar,vaishnavipawar28504@gmail.com,MET - BKC - Adgaon,+917744022870,2nd year,AI Poem Generator,Virtual Try-on,It is Ai Poem generator website,https://github.com/vaishnavipawar2854/AI_Poem_Generator_Frontend.git      https://github.com/vaishnavipawar2854/AI_Poem_Generator_Backend.git,N/A,,AI-powered Poem Generator using OpenAI GPT models with React frontend and FastAPI backend,"Not used. Since the application generates poems on the fly using AI, there is no need to store user data or outputs.
+Frontend: React.js 
+Backend: FastAPI
+AI Integration: OpenAI GPT-3/4 API",checked,,9/25/2025 3:46pm,,,"not used. since the application generates poems on the fly using ai, there is no need to store user data or outputs.
+frontend: react.js 
+backend: fastapi
+ai integration: openai gpt-3/4 api",Yes,Anonymous,Not Read,,Not reviewed
+Prathmesh Nitin Suryawanshi,prathmeshs.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+919359519620,2nd year,ai-based-movie-recommendation-engine,Other,"Project summary — AI Movie Recommendation Engine
+A full-stack web app that gives personalized movie recommendations based on user text input. The frontend is a React (Create React App) UI where users type a preference (genre, mood, title) and get a list of recommended movies with posters. The backend is a Python FastAPI service that returns dynamic recommendations by trying TMDB first, then OpenAI as a fallback, and finally an internal mock list when APIs are unavailable.
+
+Key points
+Frontend: React, Axios, responsive movie cards, build output served from build. Uses REACT_APP_API_URL (build-time) to point to the backend.
+Backend: FastAPI + uvicorn exposing:
+POST /recommend — accepts {""query"":""...""} and returns {""source"":""tmdb|openai|mock"",""recommendations"":[...]}
+GET /movies — placeholder endpoint (returns an empty list)
+Data sources: The app prefers The Movie Database (TMDB) for real movie data and poster images; uses OpenAI for creative recommendations if configured; mock data used as a safe fallback.
+Environment variables (backend & frontend):
+Backend: OPENAI_API_KEY, TMDB_API_KEY, (optional) TMDB_IMAGE_BASE
+Frontend (build): REACT_APP_API_URL (must be set at build time)
+Deployment: Repo includes Render manifest(s) to deploy both frontend (static site) and backend (web service). Frontend must be rebuilt on Render after setting REACT_APP_API_URL so the bundle points at the deployed backend.
+Short usage (local)
+
+Start backend: cd backend && python -m uvicorn main:app --reload
+Start frontend (dev): cd frontend && npm start
+Or build frontend for production: cd frontend && REACT_APP_API_URL=https://your-backend npm run build
+If you want, I can produce a one-paragraph README for the repo, a short demo checklist, or a single-command startup script to run both services locally. Which would you prefer?",https://github.com/PrathmeshNS/ai-based-movie-recommendation-frontend.git,https://ai-based-movie-recommendation-frontend.onrender.com/,,"github-copilet, open-ai,tmdb api","Frontend: React.
+Backend: FastAPI + uvicorn.",checked,,9/25/2025 3:59pm,,,"frontend: react.
+backend: fastapi + uvicorn.",Yes,Anonymous,Not Read,,Not reviewed
+Sahil Chand Shaikh,sahils.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+919960856229,2nd year,Virtual Try-on,Virtual Try-on,"This project is a sophisticated web application that allows users to virtually ""try on"" clothing and accessories. Using AI-powered image generation, the application takes an image of a person and an image of a clothing item and merges them to create a new, photorealistic image of the person wearing that item.
+
+The application is built with a modern tech stack, featuring a React frontend for a dynamic user experience and a robust Node.js backend to handle the complex image generation tasks securely.",https://github.com/sahil-shaikh1/virual-image-gen,...,...,"stability.ai ,Gemini ai","Frontend:
+
+React: A declarative JavaScript library for building dynamic and interactive user interfaces.
+
+Tailwind CSS: A utility-first CSS framework for rapid and responsive UI development.
+
+Backend:
+
+Node.js: A JavaScript runtime environment for building fast and scalable server-side applications.
+
+Express.js: A minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.",checked,,9/25/2025 4:04pm,,,"frontend:
+
+react: a declarative javascript library for building dynamic and interactive user interfaces.
+
+tailwind css: a utility-first css framework for rapid and responsive ui development.
+
+backend:
+
+node.js: a javascript runtime environment for building fast and scalable server-side applications.
+
+express.js: a minimal and flexible node.js web application framework that provides a robust set of features for web and mobile applications.",Yes,Anonymous,Not Read,,Not reviewed
+krishna mahavirprasad bhandari ,krishnab.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+919850676602,2nd year,content-distribution-pipeline,Distribution Pipeline,fully functional webpage with the desired content delivery ,https://github.com/krishna-met/content-distribution-pipeline,https://content-distribution-pipeline.onrender.com,https://youtu.be/8XzMmyWB3gE,"model used : perplexity sonar
+Api : perplexity Ai with openai","tech stack used : react.js,tailwind css,typescript, node.js,mongodb atlas for future enhancement , ai used : perplexity ai , openai",checked,,9/25/2025 4:29pm,,,"tech stack used : react.js,tailwind css,typescript, node.js,mongodb atlas for future enhancement , ai used : perplexity ai , openai",Yes,Anonymous,Not Read,,Not reviewed
+Siddhi Ramdas Gaikwad,siddhig.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+919552505674,Final year,Content Distribution Pipeline,Distribution Pipeline,"AI Content Distribution Pipeline - An automated system that adapts any content for Twitter, LinkedIn, and newsletters with platform-specific formatting and sentiment analysis.
+
+",https://github.com/siddhi157369/Content-Distribution-Pipeline,https://peppy-entremet-99526f.netlify.app/,,perplexity api,python streamlit and javascript,checked,,9/25/2025 4:57pm,,,python streamlit and javascript,Yes,Anonymous,Not Read,,Not reviewed
+Amruta Anil Wagh,amrutaw.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+919021945004,2nd year,AI Content Distribution Pipeline,Distribution Pipeline,"A tool that automatically reformats any text content for different platforms (Twitter threads, LinkedIn posts, newsletters) and analyzes sentiment using AI. Saves time by adapting one piece of content for multiple channels instantly.",https://github.com/amrutawagh39/Content_Distribution_Pipeline,https://tiny-kangaroo-ab56e6.netlify.app/,,openai API key  - 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,"Backend: Python + Streamlit + OpenAI API
+Frontend: Streamlit UI (auto-generated)
+AI: GPT-3.5 Turbo + TextBlob fallback",checked,,9/25/2025 4:57pm,,,"backend: python + streamlit + openai api
+frontend: streamlit ui (auto-generated)
+ai: gpt-3.5 turbo + textblob fallback",Yes,Anonymous,Not Read,,Not reviewed
+Akanksha vaibhav Borhade ,akankshaborhade95@gmail.com,MET - BKC - Adgaon,+917843074082,Final year,Deep Market Research ,Deep Research,"An AI-powered market research tool built with HTML, CSS, and JavaScript for the frontend, using Python and APIs to analyze market trends and customer data for actionable insights.",https://github.com/akankshaborhade95-ux/Market_Reserch,https://github.com/akankshaborhade95-ux/Market_Reserch,,Open Ai ,Uses a database SQL,checked,,9/25/2025 5:00pm,,,uses a database sql,Yes,Anonymous,Not Read,,Not reviewed
+Renuka machhindra sonawane,renukas.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+918999549280,2nd year,Deep Market Research,Deep Research,"A web app that uses AI to analyze markets, find gaps, study competitors, and identify opportunities. Generates instant reports with citations and actionable insights.
+
+Frontend: HTML, CSS, JavaScript
+Backend: Python (Flask)
+API: Perplexity AI",https://github.com/R947487/HTMLFILEPYTHONFILE.git,file:///C:/deepmarketreaserch/index.html,no video on this project,"AI Model
+Llama 3 Sonar Large 32k Online via Perplexity API
+
+Real-time web search capability
+
+32K token context window
+
+ APIs Used
+Perplexity AI API - For market intelligence
+
+Custom Flask API - Backend processing
+
+RESTful endpoints - Frontend-backend communication
+
+⚡ Key Specs
+Max tokens: 4,000
+
+Temperature: 0.7
+
+JSON response format
+
+Source citation support
+
+Simple integration → Market insights → Actionable reports
+
+
+","Frontend:
+HTML5 - Structure
+
+CSS3 - Styling (Grid/Flexbox)
+
+JavaScript - Client-side logic
+
+Responsive Design - Mobile-friendly
+
+Backend:
+Python 3 - Main language
+
+Flask - Web framework
+
+RESTful API - Communication
+
+CORS handling - Cross-origin requests
+
+External APIs:
+Perplexity AI API - Market intelligence
+
+Llama 3 Sonar Large - AI model
+
+Development:
+Requests - HTTP calls
+
+JSON - Data format
+
+Environment variables - Configuration
+
+",checked,"Database: None (mini project)
+Frontend: HTML, CSS, JavaScript
+Backend: Python + Flask
+AI: Llama 3 via Perplexity API
+Key Feature: Instant market reports with citations
+Scope: No dashboard, no database - simple & focused
+
+",9/25/2025 5:10pm,,,"frontend:
+html5 - structure
+
+css3 - styling (grid/flexbox)
+
+javascript - client-side logic
+
+responsive design - mobile-friendly
+
+backend:
+python 3 - main language
+
+flask - web framework
+
+restful api - communication
+
+cors handling - cross-origin requests
+
+external apis:
+perplexity ai api - market intelligence
+
+llama 3 sonar large - ai model
+
+development:
+requests - http calls
+
+json - data format
+
+environment variables - configuration
+
+",Yes,Anonymous,Not Read,,Not reviewed
+Sneha Rajendra Shahane,snehas.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+918956391800,2nd year,Deep Research,Deep Research,"Leverage Perplexity's API to identify market gaps, analyze competitors, and find opportunities. Generate reports with citations and actionable insights.",https://github.com/snehashahane092/deep_market_research,..,..,..,Perplexity AI,checked,..,9/25/2025 5:10pm,,,perplexity ai,Yes,Anonymous,Not Read,,Not reviewed
+Manas Dnyaneshwar Suryawanshi,manass.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+919404724101,2nd year,AI Brainstorming App,Brainstorming App,"This Python script is the backend server for the AI Ideation Hub application. It's built using the FastAPI framework and is designed to act as an API for a frontend.
+Its main role is to receive a brainstorming topic and an ""AI persona"" (e.g., 'marketer', 'futurist'). It then returns a list of creative ideas tailored to that persona. Currently, it uses pre-written, mock data to simulate the AI's response, but it's structured to be easily connected to a real AI model in the future.",https://github.com/akamanas-xvi/AI-Brainstorming-WebApp,-,,"mock data to simulate AI responses,",-,checked,,9/25/2025 6:19pm,,,-,Yes,Anonymous,Not Read,,Not reviewed
+Darshan Sudhakar Jadhav,darshanj.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+919511220540,2nd year,FitTrack,Other,"AI-driven fitness web app with Spring Boot (JWT auth, MongoDB, AI plan generation) backend and React + Vite frontend providing user registration, login, and generation of personalized workout, diet, yoga, and running plans.","https://github.com/Darshan3311/backend_ai_fitness_app.git , https://github.com/Darshan3311/frontend_ai_fitness_app.git",https://frontend-ai-fitness-app.onrender.com/login,,"Backend models (MongoDB documents):
+User
+WorkoutPlan, WorkoutExercise
+DietPlan, DietMeal
+Endpoints: POST /api/auth/register, POST /api/auth/login
+AI generation (Gemini API):
+POST /api/workout/generate
+POST /api/diet/generate
+POST /api/yoga/generate
+POST /api/running/generate (Uses Google Gemini via custom AIService; fallback logic if API fails)
+Other endpoints:
+GET /health (health check)
+OpenAPI/Swagger: /api-docs, /v3/api-docs, /swagger-ui.html
+Springdoc OpenAPI
+
+Google Gemini Generative Language API
+Frontend integration:
+Base URL: VITE_API_BASE_URL + /api
+Auth token in Authorization: Bearer <jwt></jwt>
+","MongoDB Atlas (cloud-hosted NoSQL, used for storing users, workout plans, diet plans, etc.)",checked,,9/25/2025 6:19pm,,,"mongodb atlas (cloud-hosted nosql, used for storing users, workout plans, diet plans, etc.)",Yes,Anonymous,Not Read,,Reviewed Manually
+riddhi ramdas gaikwad,riddhig.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+919552505674,Final year,Content Distribution Pipeline,Distribution Pipeline,"AI Content Multi-Tool
+A smart app that automatically rewrites your content for Twitter, LinkedIn, and newsletters with one click.",https://github.com/riddhi157369/content-distribution-pipeline/tree/main,https://merry-manatee-1121ff.netlify.app/,,perplexity api,python streamlit and javascript,checked,,9/25/2025 6:35pm,"This project presents an AI-powered content distribution pipeline that streamlines the process of adapting content for multiple platforms, including Twitter, LinkedIn, and newsletters. The main objective is to automate content rewriting for different formats with a single click, addressing the challenge of efficient multi-platform content management. The innovation lies in its ability to intelligently tailor content to diverse channels, saving users time and effort.",,python streamlit and javascript,Yes,Anonymous,Not Read,,Not reviewed
+Saurabh Ratansing Girase,saurabhg.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+919284853256,2nd year,ai-chatbot-project,Other,"AI-powered Customer Support Chatbot
+
+This is a full-stack AI-powered customer support chatbot built to provide instant assistance to users. The project features a user-friendly frontend interface built with HTML, a robust backend API developed with Python and FastAPI, and an integration with the Google Gemini API for intelligent, real-time responses.",https://github.com/saurabhgirase674-creator/ai-chatbot-project,-,,"Google Gemini API
+Description: This API was used to integrate a machine learning model as an AI assistant that provides real-time responses to user queries.
+
+Functionality: It leverages natural language processing to understand user questions and provide relevant, AI-generated answers.
+
+Key Feature: The API's capabilities are enhanced through prompt engineering, which enables it to generate responses based on specific context (e.g., shoe information from the database).","Database & Tech Stack Summary
+
+Database
+SQLite: A lightweight, file-based database used for storing product information. It's a great choice for this project as it's easy to set up and manage without a separate database server.
+
+Backend
+Python: The primary programming language used for the backend logic and API.
+
+FastAPI: A modern, high-performance web framework for building the REST API.
+
+SQLAlchemy: An SQL toolkit and Object-Relational Mapper (ORM) used to interact with the database.
+
+Frontend
+HTML/CSS/JavaScript: Standard web technologies used to create the chat interface and handle user interactions.",checked,,9/25/2025 7:39pm,,,"database & tech stack summary
+
+database
+sqlite: a lightweight, file-based database used for storing product information. it's a great choice for this project as it's easy to set up and manage without a separate database server.
+
+backend
+python: the primary programming language used for the backend logic and api.
+
+fastapi: a modern, high-performance web framework for building the rest api.
+
+sqlalchemy: an sql toolkit and object-relational mapper (orm) used to interact with the database.
+
+frontend
+html/css/javascript: standard web technologies used to create the chat interface and handle user interactions.",Yes,Anonymous,Not Read,,Not reviewed
+Vishal Mohan Taskar,vishalt.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+918975591487,2nd year,ai code reviewer,Other,"AI Code Reviewer is a smart tool that acts like an automatic code review assistant.
+ It uses artificial intelligence to:
+ Check your code for bugs, security issues, and quality problems
+ Suggest improvements to make your code cleaner and faster
+ Explain issues in simple terms so you can learn as you code
+ Connect to GitHub to review pull requests automatically",https://github.com/vishaltaskar16/ai-code-reviewer-python.git,not yet deployed,,"OpenAI GPT-3.5-turbo - Main code analysis model
+GitHub REST API - PR data and code fetching
+Flask Framework,SQLAlchemy ,Bootstrap 5,","Primary Database: PostgreSQL (production) / SQLite (development)
+ORM: SQLAlchemy
+Framework: Flask (Python)
+UI Framework: Bootstrap 5
+Styling: Custom CSS + Bootstrap
+JavaScript: Vanilla JS + Bootstrap components",checked,,9/25/2025 8:00pm,"This project presents an AI-powered code review assistant designed to automatically analyze code for bugs, security vulnerabilities, and quality issues. It offers actionable suggestions for code improvement, provides clear explanations to facilitate learning, and integrates with GitHub to streamline the review of pull requests. The innovation lies in its ability to deliver real-time, accessible feedback and automate the code review process.",,"primary database: postgresql (production) / sqlite (development)
+orm: sqlalchemy
+framework: flask (python)
+ui framework: bootstrap 5
+styling: custom css + bootstrap
+javascript: vanilla js + bootstrap components",Yes,Anonymous,Not Read,,Reviewed Manually
+Vaibhav Premsing Patil,vaibhavp.mca_iom@bkc.met.edu,MET - BKC - Adgaon,+918390380535,,ai-brainstorm-app,Brainstorming App," AI-Powered Idea Generation - Google Gemini AI integration with creative personas
+Six Creative Personas - Innovation Strategist, Creative Director, Tech Innovator, Market Researcher, Sustainability Expert, and UX Guru
+Interactive Mind Mapping - React Flow-powered visual brainstorming
+Local-First Storage - SQLite in browser with offline capabilities
+Beautiful UI - Glass morphism design with gradient backgrounds
+Responsive Design - Works seamlessly on desktop and mobile
+No Authentication - Start brainstorming immediately",https://github.com/VaibhavPatil04-cloud/bitroot.git,https://github.com/VaibhavPatil04-cloud/bitroot.git,,Gemini API,"React , JS , sqlite, Gemini API",checked,,9/25/2025 8:06pm,,,"react , js , sqlite, gemini api",Yes,Anonymous,Not Read,,Not reviewed

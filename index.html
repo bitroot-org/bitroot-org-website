@@ -1387,29 +1387,17 @@
           Build cutting-edge AI solutions. Pick a use-case, create an end-to-end product, and showcase your innovation.
         </p>
         <div class="countdown-container">
-          <div class="countdown-title">Submission Deadline In</div>
-          <div class="countdown-timer">
-            <div class="countdown-item">
-              <span class="countdown-number" id="days">00</span>
-              <span class="countdown-label">Days</span>
-            </div>
-            <div class="countdown-separator">:</div>
-            <div class="countdown-item">
-              <span class="countdown-number" id="hours">00</span>
-              <span class="countdown-label">Hours</span>
-            </div>
-            <div class="countdown-separator">:</div>
-            <div class="countdown-item">
-              <span class="countdown-number" id="minutes">00</span>
-              <span class="countdown-label">Minutes</span>
-            </div>
-            <div class="countdown-separator">:</div>
-            <div class="countdown-item">
-              <span class="countdown-number" id="seconds">00</span>
-              <span class="countdown-label">Seconds</span>
-            </div>
+          <div class="countdown-title">Submissions now open for MET BKC Students</div>
+          <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+            <button onclick="openRound1Form()" class="cta-button" style="border: none; cursor: pointer; background: var(--cc-light); color: var(--cc-dark);">
+              <span>Round 1 Extension</span>
+              <span>→</span>
+            </button>
+            <button onclick="openRound2Form()" class="cta-button" style="border: none; cursor: pointer; background: var(--cc-light); color: var(--cc-dark);">
+              <span>Round 2 Submission</span>
+              <span>→</span>
+            </button>
           </div>
-          <div class="countdown-deadline">Friday, 26th September 2025 - 9:00 AM</div>
         </div>
       </div>
     </section>
@@ -2050,10 +2038,16 @@
       <div class="cta-content">
         <h2 class="cta-title">Ready to Build Something Amazing?</h2>
         <p class="cta-subtitle">Submit your AI project and join the next generation of builders</p>
-        <button onclick="openSubmissionForm()" class="cta-button" style="border: none; cursor: pointer;">
-          <span>Submit Your Project</span>
-          <span>→</span>
-        </button>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+          <button onclick="openRound1Form()" class="cta-button" style="border: none; cursor: pointer;">
+            <span>Round 1 Extension</span>
+            <span>→</span>
+          </button>
+          <button onclick="openRound2Form()" class="cta-button" style="border: none; cursor: pointer;">
+            <span>Round 2 Submission</span>
+            <span>→</span>
+          </button>
+        </div>
       </div>
     </section>
 
@@ -2063,15 +2057,28 @@
     </footer>
   </div>
 
-  <!-- Airtable Submission Modal -->
-  <div id="submissionModal" class="modal-overlay" onclick="closeModalOnOverlay(event)">
+  <!-- Round 1 Extension Submission Modal -->
+  <div id="round1Modal" class="modal-overlay" onclick="closeModalOnOverlay(event, 'round1Modal')">
     <div class="modal-content" onclick="event.stopPropagation()">
       <div class="modal-header">
-        <h3 class="modal-title">Submit Your AI Project</h3>
-        <button class="modal-close" onclick="closeSubmissionForm()">&times;</button>
+        <h3 class="modal-title">Round 1 Extension Submission</h3>
+        <button class="modal-close" onclick="closeModal('round1Modal')">&times;</button>
       </div>
       <div class="modal-body">
-        <iframe class="airtable-embed" src="https://airtable.com/embed/appMxJrwLbuXJ04lF/pagPvkzdLWYjswv4s/form" frameborder="0" onmousewheel="" width="100%" height="100%" style="background: transparent;"></iframe>
+        <iframe class="airtable-embed" src="https://airtable.com/embed/appMxJrwLbuXJ04lF/pagKPhyAAJTPfAJFX/form" frameborder="0" onmousewheel="" width="100%" height="100%" style="background: transparent;"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Round 2 Submission Modal -->
+  <div id="round2Modal" class="modal-overlay" onclick="closeModalOnOverlay(event, 'round2Modal')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <h3 class="modal-title">Round 2 Submission</h3>
+        <button class="modal-close" onclick="closeModal('round2Modal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <iframe class="airtable-embed" src="https://airtable.com/embed/appMxJrwLbuXJ04lF/pag1DP3q5dvGfset8/form" frameborder="0" onmousewheel="" width="100%" height="100%" style="background: transparent;"></iframe>
       </div>
     </div>
   </div>
@@ -2151,26 +2158,33 @@
     }
 
     // Modal functions
-    function openSubmissionForm() {
-      document.getElementById('submissionModal').classList.add('active');
+    function openRound1Form() {
+      document.getElementById('round1Modal').classList.add('active');
       document.body.style.overflow = 'hidden';
     }
 
-    function closeSubmissionForm() {
-      document.getElementById('submissionModal').classList.remove('active');
+    function openRound2Form() {
+      document.getElementById('round2Modal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(modalId) {
+      document.getElementById(modalId).classList.remove('active');
       document.body.style.overflow = 'auto';
     }
 
-    function closeModalOnOverlay(event) {
+    function closeModalOnOverlay(event, modalId) {
       if (event.target === event.currentTarget) {
-        closeSubmissionForm();
+        closeModal(modalId);
       }
     }
 
     // Close modal on ESC key
     document.addEventListener('keydown', function(event) {
       if (event.key === 'Escape') {
-        closeSubmissionForm();
+        // Close whichever modal is open
+        closeModal('round1Modal');
+        closeModal('round2Modal');
       }
     });
   </script>
