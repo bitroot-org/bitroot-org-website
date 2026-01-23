@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Froots - What Bitroot Makes, The World Gets</title>
+  <meta name="description" content="Discover bots, products, and open-source kits crafted by Bitroot. The froots of our labor, free for the world.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/froots.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="/froots/" class="nav-logo">
+        <span class="logo-bracket">[</span>
+        <span class="logo-text">bitroot</span>
+        <span class="logo-dot">.</span>
+        <span class="logo-froots">froots</span>
+        <span class="logo-bracket">]</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#froots" class="nav-link">froots</a>
+        <a href="#about" class="nav-link">about</a>
+        <a href="#submit" class="nav-link">submit</a>
+      </div>
+
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="#froots" class="mobile-link">froots</a>
+    <a href="#about" class="mobile-link">about</a>
+    <a href="#submit" class="mobile-link">submit</a>
+  </div>
+
+  <!-- Hero Section with ASCII Effect -->
+  <section class="hero" id="hero">
+    <!-- Three.js ASCII Canvas (hero only) -->
+    <canvas id="ascii-canvas"></canvas>
+
+    <!-- Bottom fade overlay -->
+    <div class="hero-fade"></div>
+
+    <!-- Content positioned at bottom -->
+    <div class="hero-bottom">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="title-line">What we make,</span>
+            <span class="title-line title-accent">the world gets_</span>
+          </h1>
+          <p class="hero-subtitle">
+            Bots, products, and open-source kits crafted by Bitroot.<br>
+            The froots of our labor. Always free.
+          </p>
+        </div>
+        <div class="hero-actions">
+          <div class="hero-ctas">
+            <a href="#froots" class="btn btn-primary">
+              <span class="btn-text">Explore Froots</span>
+              <span class="btn-arrow">-></span>
+            </a>
+            <a href="#submit" class="btn btn-ghost">Submit Yours</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-value">6</span>
+              <span class="stat-label">froots</span>
+            </div>
+            <div class="stat-divider">/</div>
+            <div class="stat">
+              <span class="stat-value">4</span>
+              <span class="stat-label">creators</span>
+            </div>
+            <div class="stat-divider">/</div>
+            <div class="stat">
+              <span class="stat-value">100%</span>
+              <span class="stat-label">open</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Froots Section -->
+  <section class="projects" id="froots">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">// froots</h2>
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-filter="all">all</button>
+          <button class="filter-tab" data-filter="app">apps</button>
+          <button class="filter-tab" data-filter="bot">bots</button>
+          <button class="filter-tab" data-filter="tool">kits</button>
+        </div>
+      </div>
+
+      <div class="project-grid">
+        <!-- Project 1 -->
+        <article class="project-card" data-category="app">
+          <div class="card-header">
+            <div class="card-icon">
+              <span>CH</span>
+            </div>
+            <div class="card-meta">
+              <span class="card-tag">app</span>
+              <span class="card-tag">ai</span>
+            </div>
+          </div>
+          <h3 class="card-title">Chronicle</h3>
+          <p class="card-desc">AI-powered journaling that transforms thoughts into actionable insights.</p>
+          <div class="card-footer">
+            <span class="card-author">@maya</span>
+            <a href="#" class="card-link">launch -></a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" data-category="bot">
+          <div class="card-header">
+            <div class="card-icon icon-accent">
+              <span>PB</span>
+            </div>
+            <div class="card-meta">
+              <span class="card-tag">bot</span>
+              <span class="card-tag">discord</span>
+            </div>
+          </div>
+          <h3 class="card-title">Pulse Bot</h3>
+          <p class="card-desc">Discord bot for real-time team standups and async check-ins.</p>
+          <div class="card-footer">
+            <span class="card-author">@devraj</span>
+            <a href="#" class="card-link">add -></a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card" data-category="app">
+          <div class="card-header">
+            <div class="card-icon">
+              <span>SC</span>
+            </div>
+            <div class="card-meta">
+              <span class="card-tag">app</span>
+              <span class="card-tag">productivity</span>
+            </div>
+          </div>
+          <h3 class="card-title">Scribe</h3>
+          <p class="card-desc">Voice-to-text notes with automatic summarization and tagging.</p>
+          <div class="card-footer">
+            <span class="card-author">@alex</span>
+            <a href="#" class="card-link">launch -></a>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card" data-category="tool">
+          <div class="card-header">
+            <div class="card-icon icon-green">
+              <span>DP</span>
+            </div>
+            <div class="card-meta">
+              <span class="card-tag">kit</span>
+              <span class="card-tag">devops</span>
+            </div>
+          </div>
+          <h3 class="card-title">Deployer</h3>
+          <p class="card-desc">One-click deployment for static sites and serverless functions.</p>
+          <div class="card-footer">
+            <span class="card-author">@chen</span>
+            <a href="#" class="card-link">try -></a>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card" data-category="bot">
+          <div class="card-header">
+            <div class="card-icon icon-purple">
+              <span>MB</span>
+            </div>
+            <div class="card-meta">
+              <span class="card-tag">bot</span>
+              <span class="card-tag">slack</span>
+            </div>
+          </div>
+          <h3 class="card-title">Moodbot</h3>
+          <p class="card-desc">Slack bot that tracks team mood and suggests wellness activities.</p>
+          <div class="card-footer">
+            <span class="card-author">@sam</span>
+            <a href="#" class="card-link">add -></a>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card" data-category="tool">
+          <div class="card-header">
+            <div class="card-icon icon-orange">
+              <span>AT</span>
+            </div>
+            <div class="card-meta">
+              <span class="card-tag">kit</span>
+              <span class="card-tag">dev</span>
+            </div>
+          </div>
+          <h3 class="card-title">API Tester</h3>
+          <p class="card-desc">Lightweight API testing with collections and environment variables.</p>
+          <div class="card-footer">
+            <span class="card-author">@kai</span>
+            <a href="#" class="card-link">open -></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <h2 class="section-title">// about</h2>
+          <p class="about-text">
+            <span class="text-highlight">Froots</span> are what grow when Bitroot plants ideas.
+          </p>
+          <p class="about-text">
+            Every bot, every product, every open-source kit we build is a froot we share with the world. We believe in building things that matter and giving them away freely.
+          </p>
+          <p class="about-text text-muted">
+            From Discord bots to developer tools to full-fledged products — these are the froots of our labor, ripe for the picking.
+          </p>
+        </div>
+        <div class="about-ascii">
+          <pre class="ascii-art">
+    ______                __
+   / ____/________  ____  / /______
+  / /_  / ___/ __ \/ __ \/ __/ ___/
+ / __/ / /  / /_/ / /_/ / /_(__  )
+/_/   /_/   \____/\____/\__/____/
+
+  [ by bitroot ]
+          </pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Submit Section -->
+  <section class="submit" id="submit">
+    <div class="container">
+      <div class="submit-card">
+        <div class="submit-content">
+          <span class="submit-tag">$ submit --froot</span>
+          <h2 class="submit-title">Grown something worth sharing?</h2>
+          <p class="submit-text">We'd love to see what you've built. Submissions are reviewed within 48 hours.</p>
+          <a href="mailto:froots@bitroot.org?subject=Froot%20Submission" class="btn btn-primary btn-lg">
+            <span class="btn-text">Submit Your Froot</span>
+            <span class="btn-arrow">-></span>
+          </a>
+        </div>
+        <div class="submit-decoration">
+          <div class="decoration-line"></div>
+          <div class="decoration-line"></div>
+          <div class="decoration-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-logo">[bitroot]</span>
+          <span class="footer-copy">2025 - All rights reserved</span>
+        </div>
+        <div class="footer-links">
+          <a href="/">home</a>
+          <a href="https://github.com/bitroot-org" target="_blank">github</a>
+          <a href="https://twitter.com/bitrootorg" target="_blank">twitter</a>
+          <a href="/legal/privacy-policy.html">privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Three.js and Postprocessing -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://esm.sh/three@0.160.0",
+      "three/addons/": "https://esm.sh/three@0.160.0/examples/jsm/",
+      "postprocessing": "https://esm.sh/postprocessing@6.34.1?external=three"
+    }
+  }
+  </script>
+  <script type="module" src="js/ascii-effect.js"></script>
+  <script src="js/froots.js"></script>
+</body>
+</html>

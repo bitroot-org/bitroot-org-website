@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Claude Code
+.claude/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build outputs (if any)
+dist/
+build/
+.cache/
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+.temp/
