@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "count": 7,
+  "count": 8,
   "posts": [
     "why-we-open-source-our-tools.md",
     "typography-in-technical-writing.md",
@@ -8,7 +8,8 @@
     "getting-started-with-static-site-generators.md",
     "deploying-to-the-edge.md",
     "cicd-pipelines-that-actually-work.md",
-    "building-scalable-systems.md"
+    "building-scalable-systems.md",
+    "2026-02-05-navigating-the-intersection-of-technology-and-priv.md"
   ],
   "metadata": [
     {
@@ -94,6 +95,18 @@
         "Scalability"
       ],
       "excerpt": "An exploration of how we approach system design at Bitroot, focusing on scalability, maintainability, and developer experience."
+    },
+    {
+      "filename": "2026-02-05-navigating-the-intersection-of-technology-and-priv.md",
+      "slug": "2026-02-05-navigating-the-intersection-of-technology-and-priv",
+      "title": "Navigating the Intersection of Technology and Privacy: Lessons for Startups",
+      "date": "2026-02-05",
+      "tags": [
+        "startup foundation",
+        "technology",
+        "privacy"
+      ],
+      "excerpt": "As startups build their foundation, they must navigate the complex landscape of technology and privacy, balancing innovation with user protection. This post explores key considerations and practical takeaways for startups to ensure a strong, privacy-centric foundation."
     }
   ]
 }
