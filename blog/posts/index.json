@@ -1,10 +1,24 @@
 {
   "generated": true,
-  "count": 1,
+  "count": 2,
   "posts": [
+    "2026-02-05-unlocking-the-power-of-agent-skills-a-deep-dive-in.md",
     "2026-02-05-raspberry-pi-price-hikes-understanding-the-impact.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-02-05-unlocking-the-power-of-agent-skills-a-deep-dive-in.md",
+      "slug": "2026-02-05-unlocking-the-power-of-agent-skills-a-deep-dive-in",
+      "title": "Unlocking the Power of Agent Skills: A Deep Dive into Building and Utilizing Context-Driven Folders",
+      "date": "2026-02-05",
+      "tags": [
+        "Agent Skills",
+        "Context-Driven Folders",
+        "Artificial Intelligence"
+      ],
+      "excerpt": "I spent the last few weeks building elevenlabs/skills, which got 500+ installs in the first 24 hours. Here's everything I've learned about how to use and build Agent Skills: Agent Skills are folders containing context (mostly Markdown files) on a spe",
+      "image": "https://source.unsplash.com/800x500/?Agent,Skills,Context-Driven,Folders"
+    },
     {
       "filename": "2026-02-05-raspberry-pi-price-hikes-understanding-the-impact.md",
       "slug": "2026-02-05-raspberry-pi-price-hikes-understanding-the-impact",
