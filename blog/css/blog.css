@@ -472,6 +472,126 @@ img {
     color: var(--bitroot-primary-blue);
 }
 
+/* Empty State */
+.empty-state {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-3xl) var(--spacing-xl);
+    text-align: center;
+}
+
+.terminal {
+    background: #1a1a2e;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+}
+
+.terminal-header {
+    background: #16213e;
+    padding: var(--spacing-sm) var(--spacing-md);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.terminal-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.terminal-dot.red { background: #ff5f56; }
+.terminal-dot.yellow { background: #ffbd2e; }
+.terminal-dot.green { background: #27ca40; }
+
+.terminal-title {
+    margin-left: var(--spacing-md);
+    color: #8892b0;
+    font-size: 0.75rem;
+}
+
+.terminal-body {
+    padding: var(--spacing-lg);
+    color: #a0f0a0;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    min-height: 280px;
+}
+
+.ascii-art {
+    color: var(--bitroot-primary-blue);
+    font-size: 0.65rem;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-lg);
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.terminal-line {
+    margin: var(--spacing-xs) 0;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.terminal-line:nth-child(2) { animation-delay: 0.5s; }
+.terminal-line:nth-child(3) { animation-delay: 1.2s; }
+.terminal-line:nth-child(4) { animation-delay: 1.8s; }
+.terminal-line:nth-child(5) { animation-delay: 2.5s; }
+.terminal-line:nth-child(6) { animation-delay: 3s; }
+
+.prompt {
+    color: #50fa7b;
+    margin-right: var(--spacing-sm);
+}
+
+.command {
+    color: #f8f8f2;
+}
+
+.output {
+    color: #8892b0;
+    padding-left: 1.2rem;
+}
+
+.error {
+    color: #ff5f56;
+}
+
+.cursor {
+    color: #50fa7b;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.empty-message {
+    margin-top: var(--spacing-xl);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.empty-submessage {
+    margin-top: var(--spacing-sm);
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+
 /* Responsive */
 @media (max-width: 1000px) {
     .showcase-grid {

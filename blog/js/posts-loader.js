@@ -139,6 +139,58 @@ const PostsLoader = {
     },
 
     /**
+     * Render empty state when no posts exist
+     */
+    renderEmptyState() {
+        const ascii = `
+    ┌──────────────────────────────────────┐
+    │                                      │
+    │      ╔══╗ ╔══╗ ╔══╗ ╔══╗ ╔══╗       │
+    │      ║  ║ ║  ║ ║  ║ ║  ║ ║  ║       │
+    │      ║  ║ ║  ║ ║  ║ ║  ║ ║  ║       │
+    │      ╚══╝ ╚══╝ ╚══╝ ╚══╝ ╚══╝       │
+    │         [  LOADING BLOG  ]          │
+    │                                      │
+    └──────────────────────────────────────┘`;
+
+        return `
+            <div class="empty-state">
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                        <span class="terminal-title">bitroot@blog ~ </span>
+                    </div>
+                    <div class="terminal-body">
+                        <pre class="ascii-art">${ascii}</pre>
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command typing">cat posts.md</span>
+                        </div>
+                        <div class="terminal-line output">
+                            <span class="error">Error: No posts found</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command typing delay-1">echo "Stay tuned..."</span>
+                        </div>
+                        <div class="terminal-line output delay-2">
+                            Stay tuned...
+                        </div>
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="cursor">_</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="empty-message">Our writers are brewing something good.</p>
+                <p class="empty-submessage">First post coming soon!</p>
+            </div>
+        `;
+    },
+
+    /**
      * Initialize the posts loader and render posts
      */
     async init() {
@@ -146,7 +198,11 @@ const PostsLoader = {
         const posts = await this.fetchAllPosts();
 
         if (posts.length === 0) {
-            console.log('No dynamic posts found, keeping static content');
+            console.log('No posts found, showing empty state');
+            const container = document.querySelector('.showcase-grid');
+            if (container) {
+                container.innerHTML = this.renderEmptyState();
+            }
             return;
         }
 
