@@ -245,12 +245,79 @@ def fetch_twitter_content_oembed(url):
         return {"url": url, "content": f"Failed to fetch tweet: {str(e)}", "image": None, "video": None, "media": [], "description": None, "success": False}
 
 
+def fetch_threads_content(url):
+    """Fetch Threads post content from og:tags (Threads renders content server-side in meta tags)."""
+    try:
+        logger.info(f"Fetching Threads post: {url}")
+
+        headers = {
+            "User-Agent": "Mozilla/5.0 (compatible; BitrootBlogAgent/1.0)",
+            "Accept": "text/html,application/xhtml+xml",
+        }
+        resp = requests.get(url, headers=headers, timeout=30)
+        resp.raise_for_status()
+
+        soup = BeautifulSoup(resp.text, "html.parser")
+
+        # Extract og:tags which Threads populates server-side
+        og_title = soup.find("meta", property="og:title")
+        og_desc = soup.find("meta", property="og:description")
+        og_image = soup.find("meta", property="og:image")
+
+        title = og_title["content"] if og_title else ""
+        description = og_desc["content"] if og_desc else ""
+        image_url = og_image["content"] if og_image else None
+
+        # Clean up HTML entities
+        if description:
+            description = description.replace("&#xfa;", "ú").replace("&#xc1;", "Á").replace("&#064;", "@")
+
+        # Extract username from title (format: "Username (@handle) on Threads")
+        author_match = re.search(r"(.+?)\s*\(@(\w+)\)", title) if title else None
+        author_name = author_match.group(1) if author_match else ""
+        author_handle = author_match.group(2) if author_match else ""
+
+        # Build content
+        content = f"Threads post by {author_name} (@{author_handle}):\n\n{description}" if author_name else description
+
+        logger.info("=" * 60)
+        logger.info(f"EXTRACTED THREADS DATA FROM: {url}")
+        logger.info("=" * 60)
+        logger.info(f"Author: {author_name} (@{author_handle})")
+        logger.info(f"Description: {description[:200]}...")
+        logger.info(f"Image URL: {image_url}")
+        logger.info("=" * 60)
+
+        # Warn if content is too short (likely not good source material)
+        if len(description) < 100:
+            logger.warning(f"Threads post has very short content ({len(description)} chars) - may not be suitable for blog generation")
+
+        return {
+            "url": url,
+            "content": content,
+            "image": image_url,
+            "video": None,  # Threads doesn't expose video in og:tags
+            "media": [],
+            "description": description,
+            "success": True
+        }
+
+    except Exception as e:
+        logger.error(f"Failed to fetch Threads content: {str(e)}")
+        return {"url": url, "content": f"Failed to fetch: {str(e)}", "image": None, "video": None, "media": [], "description": None, "success": False}
+
+
 def fetch_url_content(url):
     """Fetch and extract text content, image, and description from a URL."""
     # Handle Twitter/X URLs specially
     if 'twitter.com' in url or 'x.com' in url:
-        logger.info(f"Detected Twitter/X URL, using oEmbed API")
+        logger.info(f"Detected Twitter/X URL, using fxtwitter API")
         return fetch_twitter_content(url)
+
+    # Handle Threads URLs
+    if 'threads.net' in url or 'threads.com' in url:
+        logger.info(f"Detected Threads URL, extracting og:tags")
+        return fetch_threads_content(url)
 
     try:
         headers = {
