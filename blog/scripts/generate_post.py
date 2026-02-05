@@ -469,41 +469,34 @@ def generate_post(client, issue_data, fetched_contents):
     logger.info(f"Source text preview (first 1000 chars):\n{sources_text[:1000]}")
     logger.info("=" * 60)
 
-    prompt = f"""You are a skilled technical writer for Bitroot, a technology company.
+    prompt = f"""You are a community news contributor for Bitroot, sharing exciting tech updates and discoveries from around the internet.
 
-Write an original, insightful blog post based on the following source materials. Your post should:
-- Be 600-1200 words
-- Have a clear, engaging title that reflects the ACTUAL topic of the source material
-- Synthesize ideas from the sources into your own original analysis
-- Add your own insights and perspective
-- Be written in a professional but accessible tone
-- Include practical takeaways for readers
+Write a blog post announcing/sharing this news with our community. Your writing style should be:
+- Like a passionate tech enthusiast sharing a cool discovery with friends
+- "We spotted this...", "Here's what caught our attention...", "The community is buzzing about..."
+- Excited but informative - share WHY this matters to developers/tech enthusiasts
+- Feel like a curator bringing interesting finds to the community
+
+Your post should:
+- Be 400-800 words (concise and punchy)
+- Have a clear, specific title about the actual news/update
+- Explain what the update/news is and why it's interesting
+- Add context about why this matters to developers or the tech community
+- Include your take on the implications or potential use cases
 - NOT copy text directly from sources
-- NOT include phrases like "according to" or "the article says"
-- NOT use generic titles like "Building a Strong Foundation" - be specific to the topic
+- NOT be dry or corporate - be genuinely enthusiastic
 
 CRITICAL FORMATTING REQUIREMENTS:
-- Structure the content with clear sections using ## headings
-- Break content into SHORT paragraphs (2-4 sentences each)
-- Use bullet points or numbered lists where appropriate
-- Include at least 3-4 section headings throughout the post
-- Add line breaks between paragraphs (double newline)
-- Example structure:
-  ## Introduction paragraph
+- Structure with clear ## headings
+- SHORT paragraphs (2-3 sentences max)
+- Use bullet points for features/benefits
+- Include at least 3 section headings
+- Double newlines between paragraphs
 
-  ## The Problem/Context
-  Short paragraph here.
-
-  Another short paragraph.
-
-  ## Key Insights
-  - Point one
-  - Point two
-
-  ## Practical Applications
-  Content here.
-
-  ## Conclusion
+Example tone:
+"We just spotted an exciting update from [Company] that's worth sharing with the community..."
+"Here's why this matters for developers..."
+"What caught our attention about this..."
 
 Topic/Title hint: {issue_data['title']}
 {f"Angle/Focus: {issue_data['angle']}" if issue_data.get('angle') else ""}
@@ -516,8 +509,8 @@ Return ONLY a JSON object with these fields (no markdown code blocks, no extra t
 {{
   "title": "Your Post Title",
   "tags": ["tag1", "tag2"],
-  "excerpt": "A 1-2 sentence summary for preview",
-  "content": "The full markdown content with ## headings, short paragraphs separated by blank lines, and bullet points where appropriate"
+  "excerpt": "A 1-2 sentence summary for preview cards",
+  "content": "The full markdown content with ## headings and short paragraphs"
 }}"""
 
     response = client.chat.completions.create(
@@ -525,7 +518,7 @@ Return ONLY a JSON object with these fields (no markdown code blocks, no extra t
         messages=[
             {
                 "role": "system",
-                "content": "You are a technical blog writer. Always respond with valid JSON only, no markdown code blocks."
+                "content": "You are a community tech news contributor, sharing exciting discoveries with fellow developers. Write with enthusiasm like sharing cool finds with friends. Always respond with valid JSON only, no markdown code blocks."
             },
             {
                 "role": "user",

@@ -244,21 +244,21 @@
                             <span class="post-read-time">${readTime} min read</span>
                         </div>
                         <h1 class="post-title">${metadata.title || 'Untitled'}</h1>
-                        ${metadata.excerpt ? `<p class="post-excerpt">${metadata.excerpt}</p>` : ''}
                     </header>
                     <div class="post-body">
                         ${html}
                     </div>
-                    ${metadata.sources && metadata.sources.length > 0 ? `
-                        <footer class="post-sources">
-                            <h3>Sources</h3>
-                            <ul>
-                                ${metadata.sources.map(url => `<li><a href="${url}" target="_blank" rel="noopener">${url}</a></li>`).join('')}
-                            </ul>
-                        </footer>
-                    ` : ''}
                     <nav class="post-nav">
                         <a href="/blog" class="back-link">&larr; Back to blog</a>
+                        ${metadata.sources && metadata.sources.length > 0 ? `
+                            <a href="${metadata.sources[0]}" target="_blank" rel="noopener" class="source-link" title="View original source">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        ` : ''}
                     </nav>
                 `;
 
