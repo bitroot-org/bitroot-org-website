@@ -180,10 +180,29 @@
                     heroImage = getTagImage(metadata.tags);
                 }
 
+                // Check if we have a video (local or remote)
+                const hasVideo = metadata.video && !metadata.video.includes('twimg.com');
+                const isGif = metadata.video && (metadata.video.includes('.gif') || metadata.video.includes('gif'));
+
                 document.getElementById('post-content').innerHTML = `
-                    <div class="post-hero-image">
-                        <img src="${heroImage}" alt="${metadata.title || 'Post image'}" onerror="this.src='${getTagImage(metadata.tags)}'">
-                    </div>
+                    ${hasVideo ? `
+                        <div class="post-hero-video">
+                            <video
+                                src="${metadata.video}"
+                                controls
+                                playsinline
+                                ${isGif ? 'autoplay loop muted' : ''}
+                                poster="${heroImage}"
+                                onerror="this.parentElement.innerHTML='<div class=\\'post-hero-image\\'><img src=\\'${heroImage}\\' alt=\\'${metadata.title || 'Post image'}\\'></div>'"
+                            >
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    ` : `
+                        <div class="post-hero-image">
+                            <img src="${heroImage}" alt="${metadata.title || 'Post image'}" onerror="this.src='${getTagImage(metadata.tags)}'">
+                        </div>
+                    `}
                     <header class="post-header">
                         <div class="post-meta">
                             <span class="post-tag">${tag}</span>

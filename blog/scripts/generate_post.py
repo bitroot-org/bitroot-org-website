@@ -33,7 +33,9 @@ ISSUE_NUMBER = os.environ.get("ISSUE_NUMBER")
 EVENT_NAME = os.environ.get("EVENT_NAME", "workflow_dispatch")
 
 POSTS_DIR = "blog/posts"
+MEDIA_DIR = "blog/media"
 MAX_CONTENT_LENGTH = 15000  # Max chars per URL to avoid token limits
+MAX_VIDEO_SIZE = 50 * 1024 * 1024  # 50MB max video size
 
 
 def setup_groq():
@@ -376,6 +378,75 @@ def get_fallback_image(query):
     return None
 
 
+def download_media(url, slug, media_type="video"):
+    """Download video/GIF and save locally.
+
+    Args:
+        url: The media URL to download
+        slug: Post slug for naming the file
+        media_type: 'video' or 'gif'
+
+    Returns:
+        Local path relative to blog root, or None if download fails
+    """
+    try:
+        logger.info(f"Downloading {media_type} from: {url}")
+
+        # Determine file extension
+        if '.mp4' in url or media_type == 'video':
+            ext = 'mp4'
+        elif '.gif' in url or media_type == 'gif':
+            ext = 'gif'
+        elif '.webm' in url:
+            ext = 'webm'
+        else:
+            ext = 'mp4'  # Default to mp4
+
+        # Create media directory
+        os.makedirs(MEDIA_DIR, exist_ok=True)
+
+        # Generate filename
+        filename = f"{slug}.{ext}"
+        filepath = os.path.join(MEDIA_DIR, filename)
+
+        # Download the file
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            "Referer": "https://twitter.com/",
+        }
+
+        # Stream download to handle large files
+        with requests.get(url, headers=headers, stream=True, timeout=60) as resp:
+            resp.raise_for_status()
+
+            # Check content length
+            content_length = resp.headers.get('content-length')
+            if content_length and int(content_length) > MAX_VIDEO_SIZE:
+                logger.warning(f"Video too large ({content_length} bytes), skipping download")
+                return None
+
+            # Download in chunks
+            total_size = 0
+            with open(filepath, 'wb') as f:
+                for chunk in resp.iter_content(chunk_size=8192):
+                    if chunk:
+                        f.write(chunk)
+                        total_size += len(chunk)
+                        if total_size > MAX_VIDEO_SIZE:
+                            logger.warning(f"Video exceeded max size during download, aborting")
+                            os.remove(filepath)
+                            return None
+
+        logger.info(f"Downloaded {media_type} to: {filepath} ({total_size} bytes)")
+
+        # Return path relative to blog root (for use in HTML)
+        return f"media/{filename}"
+
+    except Exception as e:
+        logger.error(f"Failed to download {media_type}: {str(e)}")
+        return None
+
+
 def generate_post(client, issue_data, fetched_contents):
     """Use Groq to synthesize a blog post from the fetched content."""
     # Build context from fetched content
@@ -548,6 +619,13 @@ def create_post_file(post_data, source_urls, image_url=None, source_excerpt=None
     # Use source excerpt if available, fallback to AI-generated excerpt
     excerpt = source_excerpt if source_excerpt else post_data.get("excerpt", "")
 
+    # Download video/GIF if available (to avoid hotlink blocking)
+    local_video = None
+    if video_url:
+        # Determine if it's a GIF based on URL or media list
+        is_gif = '.gif' in video_url or (media_list and any(m.get('type') == 'gif' for m in media_list))
+        local_video = download_media(video_url, f"{today}-{slug}", "gif" if is_gif else "video")
+
     # Create post with frontmatter
     post = frontmatter.Post(post_data["content"])
     post.metadata = {
@@ -559,9 +637,14 @@ def create_post_file(post_data, source_urls, image_url=None, source_excerpt=None
         "sources": source_urls,
     }
 
-    # Add video if available
-    if video_url:
+    # Add local video path if download succeeded
+    if local_video:
+        post.metadata["video"] = local_video
+        logger.info(f"Video saved locally: {local_video}")
+    elif video_url:
+        # Keep original URL as fallback (might work for non-Twitter sources)
         post.metadata["video"] = video_url
+        logger.warning(f"Using original video URL (download failed): {video_url}")
 
     # Add media gallery if multiple media items
     if media_list and len(media_list) > 1:
