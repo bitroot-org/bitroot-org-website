@@ -42,18 +42,25 @@ def build_index():
         return
 
     posts = []
-    post_files = []
 
     # Find all markdown files
-    for filepath in sorted(POSTS_DIR.glob("*.md"), reverse=True):
+    for filepath in POSTS_DIR.glob("*.md"):
         if filepath.name == ".gitkeep":
             continue
 
         metadata = get_post_metadata(filepath)
         if metadata:
             posts.append(metadata)
-            post_files.append(filepath.name)
             print(f"  Found: {filepath.name} - {metadata['title']}")
+
+    # Sort posts by date descending (newest first)
+    # Handle empty/missing dates by treating them as oldest
+    posts.sort(key=lambda p: p.get("date", "") or "0000-00-00", reverse=True)
+
+    # Extract sorted post files list
+    post_files = [p["filename"] for p in posts]
+
+    print(f"\n  Sorted {len(posts)} posts by date (newest first)")
 
     # Write index file
     index_data = {

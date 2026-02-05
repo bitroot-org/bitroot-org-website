@@ -89,7 +89,7 @@ def parse_issue(issue):
 
 
 def fetch_url_content(url):
-    """Fetch and extract text content and image from a URL."""
+    """Fetch and extract text content, image, and description from a URL."""
     try:
         headers = {
             "User-Agent": "Mozilla/5.0 (compatible; BitrootBlogAgent/1.0)"
@@ -130,6 +130,26 @@ def fetch_url_content(url):
                 image_url = src
                 break
 
+        # Extract description/excerpt from source
+        description = None
+
+        # Try og:description first (most reliable for social sharing)
+        og_desc = soup.find("meta", property="og:description")
+        if og_desc and og_desc.get("content"):
+            description = og_desc["content"].strip()
+
+        # Try meta description
+        if not description:
+            meta_desc = soup.find("meta", {"name": "description"})
+            if meta_desc and meta_desc.get("content"):
+                description = meta_desc["content"].strip()
+
+        # Try twitter:description
+        if not description:
+            twitter_desc = soup.find("meta", {"name": "twitter:description"})
+            if twitter_desc and twitter_desc.get("content"):
+                description = twitter_desc["content"].strip()
+
         # Remove script, style, nav, footer elements
         for tag in soup(["script", "style", "nav", "footer", "header", "aside"]):
             tag.decompose()
@@ -147,14 +167,30 @@ def fetch_url_content(url):
         else:
             text = soup.get_text(separator="\n", strip=True)
 
+        # Fallback: extract first 2-3 sentences from content if no description found
+        if not description and text:
+            # Split into sentences and take first 2-3
+            sentences = re.split(r'(?<=[.!?])\s+', text[:1000])
+            if sentences:
+                # Take up to 3 sentences, max ~250 chars
+                excerpt_sentences = []
+                char_count = 0
+                for sent in sentences[:3]:
+                    if char_count + len(sent) > 250:
+                        break
+                    excerpt_sentences.append(sent)
+                    char_count += len(sent)
+                if excerpt_sentences:
+                    description = " ".join(excerpt_sentences)
+
         # Clean up whitespace
         text = re.sub(r"\n{3,}", "\n\n", text)
         text = text[:MAX_CONTENT_LENGTH]
 
-        return {"url": url, "content": text, "image": image_url, "success": True}
+        return {"url": url, "content": text, "image": image_url, "description": description, "success": True}
 
     except Exception as e:
-        return {"url": url, "content": f"Failed to fetch: {str(e)}", "image": None, "success": False}
+        return {"url": url, "content": f"Failed to fetch: {str(e)}", "image": None, "description": None, "success": False}
 
 
 def get_unsplash_image(query):
@@ -240,7 +276,7 @@ Return ONLY a JSON object with these fields (no markdown code blocks, no extra t
         raise ValueError(f"Could not parse JSON from response: {response_text[:500]}")
 
 
-def create_post_file(post_data, source_urls, image_url=None):
+def create_post_file(post_data, source_urls, image_url=None, source_excerpt=None):
     """Create a markdown file with frontmatter."""
     today = datetime.now().strftime("%Y-%m-%d")
 
@@ -258,13 +294,16 @@ def create_post_file(post_data, source_urls, image_url=None):
         query = " ".join(tags[:2]) if tags else post_data["title"][:30]
         image_url = get_unsplash_image(query)
 
+    # Use source excerpt if available, fallback to AI-generated excerpt
+    excerpt = source_excerpt if source_excerpt else post_data.get("excerpt", "")
+
     # Create post with frontmatter
     post = frontmatter.Post(post_data["content"])
     post.metadata = {
         "title": post_data["title"],
         "date": today,
         "tags": post_data.get("tags", []),
-        "excerpt": post_data.get("excerpt", ""),
+        "excerpt": excerpt,
         "image": image_url,
         "sources": source_urls,
     }
@@ -357,15 +396,20 @@ def main():
                 )
                 continue
 
-            # Get image from sources (use first found)
+            # Get image and description from sources (use first found)
             source_image = None
+            source_excerpt = None
             for item in fetched_contents:
-                if item.get("image"):
+                if item.get("image") and not source_image:
                     source_image = item["image"]
+                if item.get("description") and not source_excerpt:
+                    source_excerpt = item["description"]
+                # Stop if we have both
+                if source_image and source_excerpt:
                     break
 
             # Create file
-            filepath = create_post_file(post_data, issue_data["urls"], source_image)
+            filepath = create_post_file(post_data, issue_data["urls"], source_image, source_excerpt)
             print(f"  Created: {filepath}")
 
             # Comment on issue

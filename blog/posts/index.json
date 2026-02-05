@@ -2,42 +2,68 @@
   "generated": true,
   "count": 10,
   "posts": [
-    "why-we-open-source-our-tools.md",
-    "typography-in-technical-writing.md",
-    "the-art-of-minimal-interfaces.md",
-    "getting-started-with-static-site-generators.md",
-    "deploying-to-the-edge.md",
-    "cicd-pipelines-that-actually-work.md",
-    "building-scalable-systems.md",
+    "2026-02-05-building-a-strong-foundation-navigating-technical.md",
     "2026-02-05-navigating-the-intersection-of-technology-and-priv.md",
     "2026-02-05-building-a-strong-foundation-overcoming-technical.md",
-    "2026-02-05-building-a-strong-foundation-navigating-technical.md"
+    "building-scalable-systems.md",
+    "the-art-of-minimal-interfaces.md",
+    "getting-started-with-static-site-generators.md",
+    "cicd-pipelines-that-actually-work.md",
+    "why-we-open-source-our-tools.md",
+    "typography-in-technical-writing.md",
+    "deploying-to-the-edge.md"
   ],
   "metadata": [
     {
-      "filename": "why-we-open-source-our-tools.md",
-      "slug": "why-we-open-source-our-tools",
-      "title": "Why We Open Source Our Tools",
-      "date": "2025-12-20",
+      "filename": "2026-02-05-building-a-strong-foundation-navigating-technical.md",
+      "slug": "2026-02-05-building-a-strong-foundation-navigating-technical",
+      "title": "Building a Strong Foundation: Navigating Technical Challenges in Startup Development",
+      "date": "2026-02-05",
       "tags": [
-        "Thoughts",
-        "Open Source",
-        "Culture"
+        "startup development",
+        "technical challenges",
+        "foundation building"
       ],
-      "excerpt": "Open source is at the heart of what we do. Here's why we believe in giving back to the community and how it has shaped our company culture.",
+      "excerpt": "Startups face numerous technical challenges when building their foundation, and navigating these hurdles is crucial for success. By understanding common pitfalls and implementing strategic solutions, startups can set themselves up for long-term growth and stability.",
+      "image": "https://abs-0.twimg.com/emoji/v2/svg/26a0.svg"
+    },
+    {
+      "filename": "2026-02-05-navigating-the-intersection-of-technology-and-priv.md",
+      "slug": "2026-02-05-navigating-the-intersection-of-technology-and-priv",
+      "title": "Navigating the Intersection of Technology and Privacy: Lessons for Startups",
+      "date": "2026-02-05",
+      "tags": [
+        "startup foundation",
+        "technology",
+        "privacy"
+      ],
+      "excerpt": "As startups build their foundation, they must navigate the complex landscape of technology and privacy, balancing innovation with user protection. This post explores key considerations and practical takeaways for startups to ensure a strong, privacy-centric foundation.",
       "image": ""
     },
     {
-      "filename": "typography-in-technical-writing.md",
-      "slug": "typography-in-technical-writing",
-      "title": "Typography in Technical Writing",
-      "date": "2025-12-15",
+      "filename": "2026-02-05-building-a-strong-foundation-overcoming-technical.md",
+      "slug": "2026-02-05-building-a-strong-foundation-overcoming-technical",
+      "title": "Building a Strong Foundation: Overcoming Technical Hurdles in Startup Development",
+      "date": "2026-02-05",
       "tags": [
-        "Design",
-        "Typography",
-        "Documentation"
+        "startup development",
+        "technical challenges",
+        "foundation building"
       ],
-      "excerpt": "Good typography makes technical content accessible. We explore font choices, hierarchy, and spacing that make documentation a pleasure to read.",
+      "excerpt": "Startups often face significant technical hurdles when building their foundation, but with the right strategies and mindset, these challenges can be overcome, setting the stage for long-term success. By understanding common technical pitfalls and implementing practical solutions, entrepreneurs can ensure their startup is well-equipped to thrive in a competitive market.",
+      "image": ""
+    },
+    {
+      "filename": "building-scalable-systems.md",
+      "slug": "building-scalable-systems",
+      "title": "Building Scalable Systems with Modern Architecture",
+      "date": "2026-01-15",
+      "tags": [
+        "Engineering",
+        "Architecture",
+        "Scalability"
+      ],
+      "excerpt": "An exploration of how we approach system design at Bitroot, focusing on scalability, maintainability, and developer experience.",
       "image": ""
     },
     {
@@ -67,19 +93,6 @@
       "image": ""
     },
     {
-      "filename": "deploying-to-the-edge.md",
-      "slug": "deploying-to-the-edge",
-      "title": "Deploying to the Edge",
-      "date": "2025-12-08",
-      "tags": [
-        "Tutorial",
-        "Edge Computing",
-        "Performance"
-      ],
-      "excerpt": "Edge computing brings your code closer to users. Learn how to deploy serverless functions to edge networks for lightning-fast response times globally.",
-      "image": ""
-    },
-    {
       "filename": "cicd-pipelines-that-actually-work.md",
       "slug": "cicd-pipelines-that-actually-work",
       "title": "CI/CD Pipelines That Actually Work",
@@ -93,56 +106,43 @@
       "image": ""
     },
     {
-      "filename": "building-scalable-systems.md",
-      "slug": "building-scalable-systems",
-      "title": "Building Scalable Systems with Modern Architecture",
-      "date": "2026-01-15",
+      "filename": "why-we-open-source-our-tools.md",
+      "slug": "why-we-open-source-our-tools",
+      "title": "Why We Open Source Our Tools",
+      "date": "2025-12-20",
       "tags": [
-        "Engineering",
-        "Architecture",
-        "Scalability"
+        "Thoughts",
+        "Open Source",
+        "Culture"
       ],
-      "excerpt": "An exploration of how we approach system design at Bitroot, focusing on scalability, maintainability, and developer experience.",
+      "excerpt": "Open source is at the heart of what we do. Here's why we believe in giving back to the community and how it has shaped our company culture.",
       "image": ""
     },
     {
-      "filename": "2026-02-05-navigating-the-intersection-of-technology-and-priv.md",
-      "slug": "2026-02-05-navigating-the-intersection-of-technology-and-priv",
-      "title": "Navigating the Intersection of Technology and Privacy: Lessons for Startups",
-      "date": "2026-02-05",
+      "filename": "typography-in-technical-writing.md",
+      "slug": "typography-in-technical-writing",
+      "title": "Typography in Technical Writing",
+      "date": "2025-12-15",
       "tags": [
-        "startup foundation",
-        "technology",
-        "privacy"
+        "Design",
+        "Typography",
+        "Documentation"
       ],
-      "excerpt": "As startups build their foundation, they must navigate the complex landscape of technology and privacy, balancing innovation with user protection. This post explores key considerations and practical takeaways for startups to ensure a strong, privacy-centric foundation.",
+      "excerpt": "Good typography makes technical content accessible. We explore font choices, hierarchy, and spacing that make documentation a pleasure to read.",
       "image": ""
     },
     {
-      "filename": "2026-02-05-building-a-strong-foundation-overcoming-technical.md",
-      "slug": "2026-02-05-building-a-strong-foundation-overcoming-technical",
-      "title": "Building a Strong Foundation: Overcoming Technical Hurdles in Startup Development",
-      "date": "2026-02-05",
+      "filename": "deploying-to-the-edge.md",
+      "slug": "deploying-to-the-edge",
+      "title": "Deploying to the Edge",
+      "date": "2025-12-08",
       "tags": [
-        "startup development",
-        "technical challenges",
-        "foundation building"
+        "Tutorial",
+        "Edge Computing",
+        "Performance"
       ],
-      "excerpt": "Startups often face significant technical hurdles when building their foundation, but with the right strategies and mindset, these challenges can be overcome, setting the stage for long-term success. By understanding common technical pitfalls and implementing practical solutions, entrepreneurs can ensure their startup is well-equipped to thrive in a competitive market.",
+      "excerpt": "Edge computing brings your code closer to users. Learn how to deploy serverless functions to edge networks for lightning-fast response times globally.",
       "image": ""
-    },
-    {
-      "filename": "2026-02-05-building-a-strong-foundation-navigating-technical.md",
-      "slug": "2026-02-05-building-a-strong-foundation-navigating-technical",
-      "title": "Building a Strong Foundation: Navigating Technical Challenges in Startup Development",
-      "date": "2026-02-05",
-      "tags": [
-        "startup development",
-        "technical challenges",
-        "foundation building"
-      ],
-      "excerpt": "Startups face numerous technical challenges when building their foundation, and navigating these hurdles is crucial for success. By understanding common pitfalls and implementing strategic solutions, startups can set themselves up for long-term growth and stability.",
-      "image": "https://abs-0.twimg.com/emoji/v2/svg/26a0.svg"
     }
   ]
 }
