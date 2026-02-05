@@ -1,1 +1,24 @@
-{"generated":true,"count":0,"posts":[],"metadata":[]}
+{
+  "generated": true,
+  "count": 1,
+  "posts": [
+    "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md"
+  ],
+  "metadata": [
+    {
+      "filename": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
+      "slug": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co",
+      "title": "Revolutionizing Coding Insights: Twitter's Claude Code Update",
+      "date": "2026-02-05",
+      "published_at": "2026-02-05T15:13:55.694372",
+      "tags": [
+        "Twitter",
+        "Claude Code",
+        "Coding Insights"
+      ],
+      "excerpt": "We've added a new command to Claude Code called /insights \n\nWhen you run it, Claude Code will read your message history from the past month. It'll summarize your projects, how you use Claude Code, and give suggestions on how to improve your workflow.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2019173388062007297/img/jHnsIhpNNPkjIRvy.jpg",
+      "video": "media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.mp4"
+    }
+  ]
+}
