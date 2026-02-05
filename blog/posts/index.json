@@ -1,10 +1,25 @@
 {
   "generated": true,
-  "count": 1,
+  "count": 2,
   "posts": [
+    "2026-02-05-raspberry-pi-price-hikes-understanding-the-impact.md",
     "2026-02-05-navigating-browser-compatibility-ensuring-seamless.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-02-05-raspberry-pi-price-hikes-understanding-the-impact.md",
+      "slug": "2026-02-05-raspberry-pi-price-hikes-understanding-the-impact",
+      "title": "Raspberry Pi Price Hikes: Understanding the Impact and Future Prospects",
+      "date": "2026-02-05",
+      "tags": [
+        "Raspberry Pi",
+        "Price Increase",
+        "AI Data Centers",
+        "Memory Costs"
+      ],
+      "excerpt": "Though, it's not all bad news",
+      "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2025/10/raspberry-pi.jpg?w=1600&h=900&fit=crop"
+    },
     {
       "filename": "2026-02-05-navigating-browser-compatibility-ensuring-seamless.md",
       "slug": "2026-02-05-navigating-browser-compatibility-ensuring-seamless",
