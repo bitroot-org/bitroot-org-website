@@ -9,14 +9,12 @@ and uses Google Gemini to synthesize original blog posts.
 import os
 import re
 import json
-import subprocess
 from datetime import datetime
-from urllib.parse import urlparse
 
 import requests
 from bs4 import BeautifulSoup
 import frontmatter
-import google.generativeai as genai
+from google import genai
 
 # Configuration
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
@@ -33,8 +31,7 @@ def setup_genai():
     """Initialize Google Generative AI client."""
     if not GOOGLE_AI_API_KEY:
         raise ValueError("GOOGLE_AI_API_KEY environment variable not set")
-    genai.configure(api_key=GOOGLE_AI_API_KEY)
-    return genai.GenerativeModel("gemini-1.5-flash")
+    return genai.Client(api_key=GOOGLE_AI_API_KEY)
 
 
 def get_github_issues():
@@ -42,23 +39,21 @@ def get_github_issues():
     if not GITHUB_TOKEN or not REPO_NAME:
         raise ValueError("GITHUB_TOKEN and REPO_NAME must be set")
 
+    headers = {
+        "Authorization": f"Bearer {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+
     # If triggered by specific issue, only process that one
     if EVENT_NAME == "issues" and ISSUE_NUMBER:
         url = f"https://api.github.com/repos/{REPO_NAME}/issues/{ISSUE_NUMBER}"
-        headers = {
-            "Authorization": f"token {GITHUB_TOKEN}",
-            "Accept": "application/vnd.github.v3+json",
-        }
         resp = requests.get(url, headers=headers)
         resp.raise_for_status()
         return [resp.json()]
 
     # Otherwise, get all open issues with blog-link label
     url = f"https://api.github.com/repos/{REPO_NAME}/issues"
-    headers = {
-        "Authorization": f"token {GITHUB_TOKEN}",
-        "Accept": "application/vnd.github.v3+json",
-    }
     params = {"labels": "blog-link", "state": "open"}
     resp = requests.get(url, headers=headers, params=params)
     resp.raise_for_status()
@@ -131,7 +126,7 @@ def fetch_url_content(url):
         return {"url": url, "content": f"Failed to fetch: {str(e)}", "success": False}
 
 
-def generate_post(model, issue_data, fetched_contents):
+def generate_post(client, issue_data, fetched_contents):
     """Use Gemini to synthesize a blog post from the fetched content."""
     # Build context from fetched content
     sources_text = ""
@@ -169,7 +164,10 @@ Return ONLY a JSON object with these fields (no markdown code blocks):
   "content": "The full markdown content of the post (use proper markdown formatting with ## for headings)"
 }}"""
 
-    response = model.generate_content(prompt)
+    response = client.models.generate_content(
+        model="gemini-2.0-flash",
+        contents=prompt
+    )
     response_text = response.text.strip()
 
     # Try to parse JSON from response
@@ -224,8 +222,9 @@ def comment_on_issue(issue_number, message):
 
     url = f"https://api.github.com/repos/{REPO_NAME}/issues/{issue_number}/comments"
     headers = {
-        "Authorization": f"token {GITHUB_TOKEN}",
-        "Accept": "application/vnd.github.v3+json",
+        "Authorization": f"Bearer {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
     }
     data = {"body": message}
     requests.post(url, headers=headers, json=data)
@@ -238,8 +237,9 @@ def close_issue(issue_number):
 
     url = f"https://api.github.com/repos/{REPO_NAME}/issues/{issue_number}"
     headers = {
-        "Authorization": f"token {GITHUB_TOKEN}",
-        "Accept": "application/vnd.github.v3+json",
+        "Authorization": f"Bearer {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
     }
     data = {"state": "closed"}
     requests.patch(url, headers=headers, json=data)
@@ -249,7 +249,7 @@ def main():
     print("Starting blog post generator...")
 
     # Setup
-    model = setup_genai()
+    client = setup_genai()
     issues = get_github_issues()
 
     if not issues:
@@ -288,7 +288,7 @@ def main():
         # Generate post
         print("  Generating post with Gemini...")
         try:
-            post_data = generate_post(model, issue_data, fetched_contents)
+            post_data = generate_post(client, issue_data, fetched_contents)
             if not post_data:
                 print("  Failed to generate post - no content")
                 comment_on_issue(
