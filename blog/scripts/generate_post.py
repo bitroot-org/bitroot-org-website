@@ -100,8 +100,16 @@ def parse_issue(issue):
 def fetch_twitter_content(url):
     """Fetch tweet content using Twitter's oEmbed API."""
     try:
+        # Normalize Twitter/X URLs
+        # Convert x.com to twitter.com (oEmbed works better with twitter.com)
+        # Remove /i/ from URL path (e.g., x.com/i/status/123 -> twitter.com/status/123)
+        normalized_url = url.replace('x.com', 'twitter.com')
+        normalized_url = re.sub(r'/i/status/', '/anyuser/status/', normalized_url)
+
         # Use Twitter's oEmbed API - free, no auth required
-        oembed_url = f"https://publish.twitter.com/oembed?url={url}&omit_script=true"
+        oembed_url = f"https://publish.twitter.com/oembed?url={normalized_url}&omit_script=true"
+        logger.info(f"Original URL: {url}")
+        logger.info(f"Normalized URL: {normalized_url}")
         logger.info(f"Fetching Twitter oEmbed: {oembed_url}")
 
         resp = requests.get(oembed_url, timeout=30)
@@ -357,15 +365,60 @@ Return ONLY a JSON object with these fields (no markdown code blocks, no extra t
         response_text = re.sub(r"^```\w*\n?", "", response_text)
         response_text = re.sub(r"\n?```$", "", response_text)
 
+    # Clean control characters that break JSON parsing
+    # Replace actual newlines in string values with \n escape sequences
+    def clean_json_string(s):
+        # First, try to parse as-is
+        try:
+            return json.loads(s)
+        except json.JSONDecodeError:
+            pass
+
+        # Extract JSON object
+        json_match = re.search(r"\{[\s\S]*\}", s)
+        if not json_match:
+            raise ValueError(f"No JSON object found in response: {s[:500]}")
+
+        json_str = json_match.group()
+
+        # Fix common issues: control characters in string values
+        # This is a simplified fix - replace literal newlines inside strings
+        # by finding quoted strings and escaping newlines within them
+        fixed = []
+        in_string = False
+        escape_next = False
+        for char in json_str:
+            if escape_next:
+                fixed.append(char)
+                escape_next = False
+                continue
+            if char == '\\':
+                fixed.append(char)
+                escape_next = True
+                continue
+            if char == '"':
+                in_string = not in_string
+                fixed.append(char)
+                continue
+            if in_string and char == '\n':
+                fixed.append('\\n')
+                continue
+            if in_string and char == '\r':
+                fixed.append('\\r')
+                continue
+            if in_string and char == '\t':
+                fixed.append('\\t')
+                continue
+            fixed.append(char)
+
+        return json.loads(''.join(fixed))
+
     try:
-        parsed = json.loads(response_text)
-    except json.JSONDecodeError:
-        # Try to extract JSON from response
-        json_match = re.search(r"\{[\s\S]*\}", response_text)
-        if json_match:
-            parsed = json.loads(json_match.group())
-        else:
-            raise ValueError(f"Could not parse JSON from response: {response_text[:500]}")
+        parsed = clean_json_string(response_text)
+    except (json.JSONDecodeError, ValueError) as e:
+        logger.error(f"JSON parsing failed: {e}")
+        logger.error(f"Response text: {response_text[:1000]}")
+        raise ValueError(f"Could not parse JSON from response: {str(e)}")
 
     # Log parsed/generated post data
     logger.info("=" * 60)
