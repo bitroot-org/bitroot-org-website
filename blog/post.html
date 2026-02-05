@@ -209,15 +209,28 @@
                     ${hasVideo ? `
                         <div class="post-hero-video">
                             <video
+                                id="hero-video"
                                 src="${metadata.video}"
-                                controls
                                 playsinline
-                                ${isGif ? 'autoplay loop muted' : ''}
+                                loop
+                                muted
+                                autoplay
                                 poster="${heroImage}"
                                 onerror="this.parentElement.innerHTML='<div class=\\'post-hero-image\\'><img src=\\'${heroImage}\\' alt=\\'${metadata.title || 'Post image'}\\'></div>'"
                             >
                                 Your browser does not support the video tag.
                             </video>
+                            <button class="video-mute-btn" id="mute-btn" aria-label="Toggle sound">
+                                <svg class="muted-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                    <line x1="23" y1="9" x2="17" y2="15"></line>
+                                    <line x1="17" y1="9" x2="23" y2="15"></line>
+                                </svg>
+                                <svg class="unmuted-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+                                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                                </svg>
+                            </button>
                         </div>
                     ` : `
                         <div class="post-hero-image">
@@ -248,6 +261,24 @@
                         <a href="/blog" class="back-link">&larr; Back to blog</a>
                     </nav>
                 `;
+
+                // Setup video mute toggle if video exists
+                const video = document.getElementById('hero-video');
+                const muteBtn = document.getElementById('mute-btn');
+                if (video && muteBtn) {
+                    muteBtn.addEventListener('click', () => {
+                        video.muted = !video.muted;
+                        const mutedIcon = muteBtn.querySelector('.muted-icon');
+                        const unmutedIcon = muteBtn.querySelector('.unmuted-icon');
+                        if (video.muted) {
+                            mutedIcon.style.display = 'block';
+                            unmutedIcon.style.display = 'none';
+                        } else {
+                            mutedIcon.style.display = 'none';
+                            unmutedIcon.style.display = 'block';
+                        }
+                    });
+                }
 
             } catch (e) {
                 document.getElementById('post-content').innerHTML = `
