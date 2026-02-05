@@ -2,7 +2,7 @@
 
 .post-page {
     flex: 1;
-    max-width: 760px;
+    max-width: 850px;
     margin: 0 auto;
     padding: var(--spacing-3xl) var(--spacing-xl);
     width: 100%;

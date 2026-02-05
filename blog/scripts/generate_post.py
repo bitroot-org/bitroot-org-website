@@ -482,6 +482,29 @@ Write an original, insightful blog post based on the following source materials.
 - NOT include phrases like "according to" or "the article says"
 - NOT use generic titles like "Building a Strong Foundation" - be specific to the topic
 
+CRITICAL FORMATTING REQUIREMENTS:
+- Structure the content with clear sections using ## headings
+- Break content into SHORT paragraphs (2-4 sentences each)
+- Use bullet points or numbered lists where appropriate
+- Include at least 3-4 section headings throughout the post
+- Add line breaks between paragraphs (double newline)
+- Example structure:
+  ## Introduction paragraph
+
+  ## The Problem/Context
+  Short paragraph here.
+
+  Another short paragraph.
+
+  ## Key Insights
+  - Point one
+  - Point two
+
+  ## Practical Applications
+  Content here.
+
+  ## Conclusion
+
 Topic/Title hint: {issue_data['title']}
 {f"Angle/Focus: {issue_data['angle']}" if issue_data.get('angle') else ""}
 
@@ -494,7 +517,7 @@ Return ONLY a JSON object with these fields (no markdown code blocks, no extra t
   "title": "Your Post Title",
   "tags": ["tag1", "tag2"],
   "excerpt": "A 1-2 sentence summary for preview",
-  "content": "The full markdown content of the post (use proper markdown formatting with ## for headings)"
+  "content": "The full markdown content with ## headings, short paragraphs separated by blank lines, and bullet points where appropriate"
 }}"""
 
     response = client.chat.completions.create(
