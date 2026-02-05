@@ -23,16 +23,32 @@ def get_post_metadata(filepath):
         post = frontmatter.load(filepath)
         # Get file modification time for secondary sorting
         mtime = filepath.stat().st_mtime
-        return {
+
+        # Get image, skip deprecated unsplash source URLs
+        image = post.metadata.get("image", "")
+        if image and "source.unsplash.com" in image:
+            image = ""  # Let frontend use tag-based fallback
+
+        metadata = {
             "filename": filepath.name,
             "slug": filepath.stem,
             "title": post.metadata.get("title", "Untitled"),
             "date": str(post.metadata.get("date", "")),
             "tags": post.metadata.get("tags", []),
             "excerpt": post.metadata.get("excerpt", ""),
-            "image": post.metadata.get("image", ""),
+            "image": image,
             "_mtime": mtime,  # Internal field for sorting, not exported
         }
+
+        # Add video if present
+        if post.metadata.get("video"):
+            metadata["video"] = post.metadata.get("video")
+
+        # Add media gallery if present
+        if post.metadata.get("media"):
+            metadata["media"] = post.metadata.get("media")
+
+        return metadata
     except Exception as e:
         print(f"Error reading {filepath}: {e}")
         return None

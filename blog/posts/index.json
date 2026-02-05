@@ -18,7 +18,8 @@
         "Gamma"
       ],
       "excerpt": "AI Animations are live on Gamma!\n\nGenerate AI animations directly in our generator or prompt animations right into any card. These can help with:\n\n\u2705 Cinematic visuals for big idea pitches\n\u2705 Catching attention in marketing proposals\n\u2705 Adding motion ma",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2019104987994075136/img/o6VROGTJfpGz_wbX.jpg"
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2019104987994075136/img/o6VROGTJfpGz_wbX.jpg",
+      "video": "https://video.twimg.com/amplify_video/2019104987994075136/vid/avc1/1920x1080/2rYinOMWtNnDUZDN.mp4?tag=21"
     },
     {
       "filename": "2026-02-05-unlocking-the-power-of-agent-skills-a-deep-dive-in.md",
@@ -31,7 +32,7 @@
         "Artificial Intelligence"
       ],
       "excerpt": "I spent the last few weeks building elevenlabs/skills, which got 500+ installs in the first 24 hours. Here's everything I've learned about how to use and build Agent Skills: Agent Skills are folders containing context (mostly Markdown files) on a spe",
-      "image": "https://source.unsplash.com/800x500/?Agent,Skills,Context-Driven,Folders"
+      "image": ""
     },
     {
       "filename": "2026-02-05-raspberry-pi-price-hikes-understanding-the-impact.md",
