@@ -145,7 +145,13 @@
                 const html = marked.parse(content);
 
                 document.getElementById('post-content').innerHTML = `
-                    ${metadata.image ? `
+                    ${metadata.video ? `
+                        <div class="post-hero-video">
+                            <video src="${metadata.video}" controls playsinline ${metadata.video.includes('.gif') || metadata.video.includes('gif') ? 'autoplay loop muted' : ''}>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    ` : metadata.image ? `
                         <div class="post-hero-image">
                             <img src="${metadata.image}" alt="${metadata.title || 'Post image'}">
                         </div>

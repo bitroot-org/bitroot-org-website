@@ -98,75 +98,149 @@ def parse_issue(issue):
 
 
 def fetch_twitter_content(url):
-    """Fetch tweet content using Twitter's oEmbed API."""
+    """Fetch tweet content using fxtwitter API (better media support)."""
     try:
-        # Normalize Twitter/X URLs
-        # Convert x.com to twitter.com (oEmbed works better with twitter.com)
-        # Remove /i/ from URL path (e.g., x.com/i/status/123 -> twitter.com/status/123)
-        normalized_url = url.replace('x.com', 'twitter.com')
-        normalized_url = re.sub(r'/i/status/', '/anyuser/status/', normalized_url)
+        # Extract tweet ID from URL
+        # Handles: twitter.com/user/status/123, x.com/user/status/123, x.com/i/status/123
+        tweet_id_match = re.search(r'/status/(\d+)', url)
+        if not tweet_id_match:
+            raise ValueError(f"Could not extract tweet ID from URL: {url}")
 
-        # Use Twitter's oEmbed API - free, no auth required
-        oembed_url = f"https://publish.twitter.com/oembed?url={normalized_url}&omit_script=true"
+        tweet_id = tweet_id_match.group(1)
         logger.info(f"Original URL: {url}")
-        logger.info(f"Normalized URL: {normalized_url}")
-        logger.info(f"Fetching Twitter oEmbed: {oembed_url}")
+        logger.info(f"Tweet ID: {tweet_id}")
 
-        resp = requests.get(oembed_url, timeout=30)
+        # Use fxtwitter API - provides direct media URLs
+        api_url = f"https://api.fxtwitter.com/status/{tweet_id}"
+        logger.info(f"Fetching from fxtwitter API: {api_url}")
+
+        resp = requests.get(api_url, timeout=30)
         resp.raise_for_status()
         data = resp.json()
 
-        # Extract text from HTML response
-        html_content = data.get("html", "")
-        soup = BeautifulSoup(html_content, "html.parser")
-        tweet_text = soup.get_text(separator=" ", strip=True)
+        tweet = data.get("tweet", {})
 
-        # Clean up the text (remove "— Author (@handle) Date" suffix pattern)
-        tweet_text = re.sub(r'\s*—\s*[^(]+\(@\w+\)\s*\w+\s*\d+,\s*\d+\s*$', '', tweet_text)
-
-        author_name = data.get("author_name", "")
-        author_handle = data.get("author_url", "").split("/")[-1] if data.get("author_url") else ""
+        # Extract tweet text
+        tweet_text = tweet.get("text", "")
+        author_name = tweet.get("author", {}).get("name", "")
+        author_handle = tweet.get("author", {}).get("screen_name", "")
 
         # Build content with context
         content = f"Tweet by {author_name} (@{author_handle}):\n\n{tweet_text}"
         description = tweet_text[:250] if len(tweet_text) > 250 else tweet_text
 
-        # Try to get image from tweet page directly (og:image)
+        # Extract media (images, GIFs, videos)
         image_url = None
-        try:
-            headers = {"User-Agent": "Mozilla/5.0 (compatible; BitrootBlogAgent/1.0)"}
-            page_resp = requests.get(url, headers=headers, timeout=10)
-            if page_resp.ok:
-                page_soup = BeautifulSoup(page_resp.text, "html.parser")
-                og_image = page_soup.find("meta", property="og:image")
-                if og_image and og_image.get("content"):
-                    img = og_image["content"]
-                    # Skip default Twitter profile images
-                    if "profile_images" not in img and "default_profile" not in img:
-                        image_url = img
-                        logger.info(f"Found og:image from Twitter page: {image_url}")
-        except Exception as img_err:
-            logger.warning(f"Could not fetch Twitter page for image: {img_err}")
+        video_url = None
+        media_list = []
+
+        media = tweet.get("media", {})
+
+        # Handle images
+        if media.get("photos"):
+            for photo in media["photos"]:
+                img_url = photo.get("url")
+                if img_url:
+                    media_list.append({"type": "image", "url": img_url})
+                    if not image_url:
+                        image_url = img_url
+
+        # Handle videos
+        if media.get("videos"):
+            for video in media["videos"]:
+                vid_url = video.get("url")
+                thumb_url = video.get("thumbnail_url")
+                if vid_url:
+                    media_list.append({"type": "video", "url": vid_url, "thumbnail": thumb_url})
+                    if not video_url:
+                        video_url = vid_url
+                    if not image_url and thumb_url:
+                        image_url = thumb_url
+
+        # Handle GIFs (Twitter treats them as videos)
+        if media.get("gifs"):
+            for gif in media["gifs"]:
+                gif_url = gif.get("url")
+                thumb_url = gif.get("thumbnail_url")
+                if gif_url:
+                    media_list.append({"type": "gif", "url": gif_url, "thumbnail": thumb_url})
+                    if not video_url:
+                        video_url = gif_url
+                    if not image_url and thumb_url:
+                        image_url = thumb_url
+
+        # Fallback to mosaic or external media
+        if not image_url:
+            mosaic = media.get("mosaic", {})
+            if mosaic.get("formats", {}).get("jpeg"):
+                image_url = mosaic["formats"]["jpeg"]
+
+        if not image_url and media.get("external", {}).get("thumbnail_url"):
+            image_url = media["external"]["thumbnail_url"]
 
         logger.info("=" * 60)
         logger.info(f"EXTRACTED TWITTER DATA FROM: {url}")
         logger.info("=" * 60)
         logger.info(f"Author: {author_name} (@{author_handle})")
-        logger.info(f"Tweet text: {tweet_text}")
+        logger.info(f"Tweet text: {tweet_text[:200]}...")
         logger.info(f"Image URL: {image_url}")
+        logger.info(f"Video URL: {video_url}")
+        logger.info(f"Media count: {len(media_list)}")
         logger.info("=" * 60)
 
         return {
             "url": url,
             "content": content,
             "image": image_url,
+            "video": video_url,
+            "media": media_list,
             "description": description,
             "success": True
         }
 
     except Exception as e:
-        logger.error(f"Failed to fetch Twitter content: {str(e)}")
-        return {"url": url, "content": f"Failed to fetch tweet: {str(e)}", "image": None, "description": None, "success": False}
+        logger.error(f"Failed to fetch Twitter content via fxtwitter: {str(e)}")
+        # Fallback to oEmbed
+        return fetch_twitter_content_oembed(url)
+
+
+def fetch_twitter_content_oembed(url):
+    """Fallback: Fetch tweet content using Twitter's oEmbed API."""
+    try:
+        normalized_url = url.replace('x.com', 'twitter.com')
+        normalized_url = re.sub(r'/i/status/', '/anyuser/status/', normalized_url)
+
+        oembed_url = f"https://publish.twitter.com/oembed?url={normalized_url}&omit_script=true"
+        logger.info(f"Fallback to oEmbed: {oembed_url}")
+
+        resp = requests.get(oembed_url, timeout=30)
+        resp.raise_for_status()
+        data = resp.json()
+
+        html_content = data.get("html", "")
+        soup = BeautifulSoup(html_content, "html.parser")
+        tweet_text = soup.get_text(separator=" ", strip=True)
+        tweet_text = re.sub(r'\s*—\s*[^(]+\(@\w+\)\s*\w+\s*\d+,\s*\d+\s*$', '', tweet_text)
+
+        author_name = data.get("author_name", "")
+        author_handle = data.get("author_url", "").split("/")[-1] if data.get("author_url") else ""
+
+        content = f"Tweet by {author_name} (@{author_handle}):\n\n{tweet_text}"
+        description = tweet_text[:250] if len(tweet_text) > 250 else tweet_text
+
+        return {
+            "url": url,
+            "content": content,
+            "image": None,
+            "video": None,
+            "media": [],
+            "description": description,
+            "success": True
+        }
+
+    except Exception as e:
+        logger.error(f"oEmbed fallback also failed: {str(e)}")
+        return {"url": url, "content": f"Failed to fetch tweet: {str(e)}", "image": None, "video": None, "media": [], "description": None, "success": False}
 
 
 def fetch_url_content(url):
@@ -453,7 +527,7 @@ Return ONLY a JSON object with these fields (no markdown code blocks, no extra t
     return parsed
 
 
-def create_post_file(post_data, source_urls, image_url=None, source_excerpt=None):
+def create_post_file(post_data, source_urls, image_url=None, source_excerpt=None, video_url=None, media_list=None):
     """Create a markdown file with frontmatter."""
     today = datetime.now().strftime("%Y-%m-%d")
 
@@ -484,6 +558,14 @@ def create_post_file(post_data, source_urls, image_url=None, source_excerpt=None
         "image": image_url,
         "sources": source_urls,
     }
+
+    # Add video if available
+    if video_url:
+        post.metadata["video"] = video_url
+
+    # Add media gallery if multiple media items
+    if media_list and len(media_list) > 1:
+        post.metadata["media"] = media_list
 
     os.makedirs(POSTS_DIR, exist_ok=True)
     with open(filepath, "w", encoding="utf-8") as f:
@@ -573,20 +655,30 @@ def main():
                 )
                 continue
 
-            # Get image and description from sources (use first found)
+            # Get image, video, media and description from sources (use first found)
             source_image = None
+            source_video = None
+            source_media = []
             source_excerpt = None
             for item in fetched_contents:
                 if item.get("image") and not source_image:
                     source_image = item["image"]
+                if item.get("video") and not source_video:
+                    source_video = item["video"]
+                if item.get("media"):
+                    source_media.extend(item["media"])
                 if item.get("description") and not source_excerpt:
                     source_excerpt = item["description"]
-                # Stop if we have both
-                if source_image and source_excerpt:
-                    break
 
             # Create file
-            filepath = create_post_file(post_data, issue_data["urls"], source_image, source_excerpt)
+            filepath = create_post_file(
+                post_data,
+                issue_data["urls"],
+                source_image,
+                source_excerpt,
+                source_video,
+                source_media if source_media else None
+            )
             print(f"  Created: {filepath}")
 
             # Comment on issue

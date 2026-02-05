@@ -44,6 +44,22 @@
     object-fit: cover;
 }
 
+/* Hero Video */
+.post-hero-video {
+    margin: calc(-1 * var(--spacing-2xl));
+    margin-bottom: var(--spacing-xl);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    overflow: hidden;
+    background: #000;
+}
+
+.post-hero-video video {
+    width: 100%;
+    max-height: 500px;
+    display: block;
+    object-fit: contain;
+}
+
 .post-loading,
 .post-error {
     text-align: center;
@@ -362,6 +378,15 @@
         margin: calc(-1 * var(--spacing-lg));
         margin-bottom: var(--spacing-lg);
         max-height: 250px;
+    }
+
+    .post-hero-video {
+        margin: calc(-1 * var(--spacing-lg));
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .post-hero-video video {
+        max-height: 300px;
     }
 
     .post-header .post-title {
