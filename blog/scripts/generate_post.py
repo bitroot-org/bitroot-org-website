@@ -3,7 +3,7 @@
 Blog Post Generator Agent
 
 Processes GitHub issues labeled 'blog-link', fetches content from URLs,
-and uses Google Gemini to synthesize original blog posts.
+and uses Groq to synthesize original blog posts.
 """
 
 import os
@@ -14,11 +14,11 @@ from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
 import frontmatter
-from google import genai
+from groq import Groq
 
 # Configuration
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
-GOOGLE_AI_API_KEY = os.environ.get("GOOGLE_AI_API_KEY")
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 REPO_NAME = os.environ.get("REPO_NAME", "")
 ISSUE_NUMBER = os.environ.get("ISSUE_NUMBER")
 EVENT_NAME = os.environ.get("EVENT_NAME", "workflow_dispatch")
@@ -27,11 +27,11 @@ POSTS_DIR = "blog/posts"
 MAX_CONTENT_LENGTH = 15000  # Max chars per URL to avoid token limits
 
 
-def setup_genai():
-    """Initialize Google Generative AI client."""
-    if not GOOGLE_AI_API_KEY:
-        raise ValueError("GOOGLE_AI_API_KEY environment variable not set")
-    return genai.Client(api_key=GOOGLE_AI_API_KEY)
+def setup_groq():
+    """Initialize Groq client."""
+    if not GROQ_API_KEY:
+        raise ValueError("GROQ_API_KEY environment variable not set")
+    return Groq(api_key=GROQ_API_KEY)
 
 
 def get_github_issues():
@@ -127,7 +127,7 @@ def fetch_url_content(url):
 
 
 def generate_post(client, issue_data, fetched_contents):
-    """Use Gemini to synthesize a blog post from the fetched content."""
+    """Use Groq to synthesize a blog post from the fetched content."""
     # Build context from fetched content
     sources_text = ""
     for item in fetched_contents:
@@ -156,7 +156,7 @@ Source materials:
 {sources_text}
 
 Output format:
-Return ONLY a JSON object with these fields (no markdown code blocks):
+Return ONLY a JSON object with these fields (no markdown code blocks, no extra text):
 {{
   "title": "Your Post Title",
   "tags": ["tag1", "tag2"],
@@ -164,11 +164,23 @@ Return ONLY a JSON object with these fields (no markdown code blocks):
   "content": "The full markdown content of the post (use proper markdown formatting with ## for headings)"
 }}"""
 
-    response = client.models.generate_content(
-        model="gemini-2.0-flash",
-        contents=prompt
+    response = client.chat.completions.create(
+        model="llama-3.3-70b-versatile",
+        messages=[
+            {
+                "role": "system",
+                "content": "You are a technical blog writer. Always respond with valid JSON only, no markdown code blocks."
+            },
+            {
+                "role": "user",
+                "content": prompt
+            }
+        ],
+        temperature=0.7,
+        max_tokens=4096,
     )
-    response_text = response.text.strip()
+
+    response_text = response.choices[0].message.content.strip()
 
     # Try to parse JSON from response
     # Remove markdown code blocks if present
@@ -249,7 +261,7 @@ def main():
     print("Starting blog post generator...")
 
     # Setup
-    client = setup_genai()
+    client = setup_groq()
     issues = get_github_issues()
 
     if not issues:
@@ -286,7 +298,7 @@ def main():
                 print(f"    Failed: {content['content']}")
 
         # Generate post
-        print("  Generating post with Gemini...")
+        print("  Generating post with Groq (Llama 3.3 70B)...")
         try:
             post_data = generate_post(client, issue_data, fetched_contents)
             if not post_data:
