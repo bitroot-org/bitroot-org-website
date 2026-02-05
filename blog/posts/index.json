@@ -1,11 +1,26 @@
 {
   "generated": true,
-  "count": 2,
+  "count": 3,
   "posts": [
+    "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
     "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
+      "slug": "2026-02-05-revolutionizing-ai-powered-development-with-vercel",
+      "title": "Revolutionizing AI-Powered Development with Vercel's Skills.sh",
+      "date": "2026-02-05",
+      "published_at": "2026-02-05T18:31:47.044082",
+      "tags": [
+        "Vercel",
+        "Skills.sh",
+        "AI-powered development"
+      ],
+      "excerpt": "Vercel's skills.sh is a game-changer for developers, offering a platform to build, train, and deploy AI models with ease. This update is a must-know for tech enthusiasts looking to leverage AI in their projects.",
+      "image": "https://cloud.inference.sh/web/assets/og-image.png"
+    },
     {
       "filename": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
       "slug": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co",
