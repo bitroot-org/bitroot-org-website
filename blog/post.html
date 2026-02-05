@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post | Bitroot Blog</title>
+    <meta name="description" content="Read this article on the Bitroot blog.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/post.css">
+
+    <!-- Markdown parser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <!-- Minimal Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="/" class="logo">bitroot</a>
+            <div class="nav-links">
+                <a href="/blog" class="nav-link">blog</a>
+                <a href="/" class="nav-link">home</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Post Content -->
+    <main class="post-page">
+        <article class="post-article" id="post-content">
+            <div class="post-loading">Loading...</div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <span class="footer-text">&copy; 2026 Bitroot</span>
+            <div class="footer-links">
+                <a href="https://github.com/bitroot-org" class="footer-link">GitHub</a>
+                <a href="https://twitter.com/bitrootorg" class="footer-link">Twitter</a>
+                <a href="/rss.xml" class="footer-link">RSS</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        /**
+         * Parse YAML frontmatter from markdown content
+         */
+        function parseFrontmatter(content) {
+            const match = content.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
+            if (!match) {
+                return { metadata: {}, content };
+            }
+
+            const yamlStr = match[1];
+            const markdownContent = match[2];
+
+            const metadata = {};
+            const lines = yamlStr.split('\n');
+            let currentKey = null;
+            let currentArray = null;
+
+            for (const line of lines) {
+                if (line.match(/^\s+-\s+/)) {
+                    const value = line.replace(/^\s+-\s+/, '').trim();
+                    if (currentArray && currentKey) {
+                        metadata[currentKey].push(value.replace(/^["']|["']$/g, ''));
+                    }
+                    continue;
+                }
+
+                const kvMatch = line.match(/^(\w+):\s*(.*)$/);
+                if (kvMatch) {
+                    const [, key, value] = kvMatch;
+                    currentKey = key;
+
+                    if (value === '' || value === '[]') {
+                        metadata[key] = [];
+                        currentArray = true;
+                    } else if (value.startsWith('[') && value.endsWith(']')) {
+                        metadata[key] = value
+                            .slice(1, -1)
+                            .split(',')
+                            .map(s => s.trim().replace(/^["']|["']$/g, ''));
+                        currentArray = false;
+                    } else {
+                        metadata[key] = value.replace(/^["']|["']$/g, '');
+                        currentArray = false;
+                    }
+                }
+            }
+
+            return { metadata, content: markdownContent };
+        }
+
+        /**
+         * Format date for display
+         */
+        function formatDate(dateStr) {
+            const date = new Date(dateStr);
+            return date.toLocaleDateString('en-US', {
+                month: 'long',
+                day: 'numeric',
+                year: 'numeric'
+            });
+        }
+
+        /**
+         * Load and render the post
+         */
+        async function loadPost() {
+            const params = new URLSearchParams(window.location.search);
+            const slug = params.get('slug');
+
+            if (!slug) {
+                document.getElementById('post-content').innerHTML = `
+                    <div class="post-error">
+                        <h1>Post Not Found</h1>
+                        <p>No post specified. <a href="/blog">Return to blog</a></p>
+                    </div>
+                `;
+                return;
+            }
+
+            try {
+                const response = await fetch(`posts/${slug}.md`);
+                if (!response.ok) throw new Error('Post not found');
+
+                const text = await response.text();
+                const { metadata, content } = parseFrontmatter(text);
+
+                // Update page title
+                document.title = `${metadata.title || 'Post'} | Bitroot Blog`;
+
+                // Calculate read time
+                const readTime = Math.ceil(content.split(/\s+/).length / 200);
+
+                // Render post
+                const tag = (metadata.tags && metadata.tags[0]) || 'General';
+                const html = marked.parse(content);
+
+                document.getElementById('post-content').innerHTML = `
+                    <header class="post-header">
+                        <div class="post-meta">
+                            <span class="post-tag">${tag}</span>
+                            <span class="post-date">${formatDate(metadata.date)}</span>
+                            <span class="post-read-time">${readTime} min read</span>
+                        </div>
+                        <h1 class="post-title">${metadata.title || 'Untitled'}</h1>
+                        ${metadata.excerpt ? `<p class="post-excerpt">${metadata.excerpt}</p>` : ''}
+                    </header>
+                    <div class="post-body">
+                        ${html}
+                    </div>
+                    ${metadata.sources && metadata.sources.length > 0 ? `
+                        <footer class="post-sources">
+                            <h3>Sources</h3>
+                            <ul>
+                                ${metadata.sources.map(url => `<li><a href="${url}" target="_blank" rel="noopener">${url}</a></li>`).join('')}
+                            </ul>
+                        </footer>
+                    ` : ''}
+                    <nav class="post-nav">
+                        <a href="/blog" class="back-link">&larr; Back to blog</a>
+                    </nav>
+                `;
+
+            } catch (e) {
+                document.getElementById('post-content').innerHTML = `
+                    <div class="post-error">
+                        <h1>Post Not Found</h1>
+                        <p>The requested post could not be found. <a href="/blog">Return to blog</a></p>
+                    </div>
+                `;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', loadPost);
+    </script>
+</body>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitspace - Your 8-bit Virtual Office for AI Agents</title>
+  <meta name="description" content="Hire AI agents in your virtual office. Works with Claude Code, Gemini, Ollama, and more. Build your dream team of AI workers.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/bitspace.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="/bitspace/" class="nav-logo">
+        <span class="logo-bracket">[</span>
+        <span class="logo-text">bit</span>
+        <span class="logo-dot">.</span>
+        <span class="logo-space">space</span>
+        <span class="logo-bracket">]</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#agents" class="nav-link">agents</a>
+        <a href="#integrations" class="nav-link">integrations</a>
+        <a href="#pricing" class="nav-link">pricing</a>
+      </div>
+
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="#agents" class="mobile-link">agents</a>
+    <a href="#integrations" class="mobile-link">integrations</a>
+    <a href="#pricing" class="mobile-link">pricing</a>
+  </div>
+
+  <!-- Hero Section with Earth Globe -->
+  <section class="hero" id="hero">
+    <!-- Three.js ASCII Canvas -->
+    <canvas id="ascii-canvas"></canvas>
+
+    <!-- Bottom fade overlay -->
+    <div class="hero-fade"></div>
+
+    <!-- Content positioned at bottom -->
+    <div class="hero-bottom">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="title-line">Your virtual office.</span>
+            <span class="title-line title-accent">Your AI team_</span>
+          </h1>
+          <p class="hero-subtitle">
+            An 8-bit world where founders hire AI agents.<br>
+            Build, delegate, and scale with your digital workforce.
+          </p>
+        </div>
+        <div class="hero-actions">
+          <div class="hero-ctas">
+            <a href="#pricing" class="btn btn-primary">
+              <span class="btn-text">Rent Your Office</span>
+              <span class="btn-arrow">-></span>
+            </a>
+            <a href="#agents" class="btn btn-ghost">Meet the Agents</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-value">$15</span>
+              <span class="stat-label">/mo office</span>
+            </div>
+            <div class="stat-divider">/</div>
+            <div class="stat">
+              <span class="stat-value">6+</span>
+              <span class="stat-label">agent roles</span>
+            </div>
+            <div class="stat-divider">/</div>
+            <div class="stat">
+              <span class="stat-value">5+</span>
+              <span class="stat-label">integrations</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agents Section -->
+  <section class="agents" id="agents">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">// hire your team</h2>
+        <p class="section-desc">Each agent specializes in a role. Hire who you need, when you need them.</p>
+      </div>
+
+      <div class="agents-grid">
+        <!-- Agent 1 -->
+        <article class="agent-card">
+          <div class="agent-header">
+            <div class="agent-avatar">
+              <span>DE</span>
+            </div>
+            <div class="agent-price">$12/mo</div>
+          </div>
+          <h3 class="agent-name">Developer</h3>
+          <p class="agent-desc">Writes code, debugs issues, reviews PRs. Your full-stack engineering partner.</p>
+          <div class="agent-tags">
+            <span class="agent-tag">code</span>
+            <span class="agent-tag">debug</span>
+            <span class="agent-tag">review</span>
+          </div>
+        </article>
+
+        <!-- Agent 2 -->
+        <article class="agent-card">
+          <div class="agent-header">
+            <div class="agent-avatar avatar-purple">
+              <span>RE</span>
+            </div>
+            <div class="agent-price">$10/mo</div>
+          </div>
+          <h3 class="agent-name">Researcher</h3>
+          <p class="agent-desc">Deep dives into topics, compiles reports, finds insights you'd miss.</p>
+          <div class="agent-tags">
+            <span class="agent-tag">research</span>
+            <span class="agent-tag">analysis</span>
+            <span class="agent-tag">reports</span>
+          </div>
+        </article>
+
+        <!-- Agent 3 -->
+        <article class="agent-card">
+          <div class="agent-header">
+            <div class="agent-avatar avatar-green">
+              <span>WR</span>
+            </div>
+            <div class="agent-price">$8/mo</div>
+          </div>
+          <h3 class="agent-name">Writer</h3>
+          <p class="agent-desc">Crafts copy, blogs, docs, and emails. Your voice, amplified.</p>
+          <div class="agent-tags">
+            <span class="agent-tag">content</span>
+            <span class="agent-tag">copy</span>
+            <span class="agent-tag">docs</span>
+          </div>
+        </article>
+
+        <!-- Agent 4 -->
+        <article class="agent-card">
+          <div class="agent-header">
+            <div class="agent-avatar avatar-orange">
+              <span>DS</span>
+            </div>
+            <div class="agent-price">$15/mo</div>
+          </div>
+          <h3 class="agent-name">Designer</h3>
+          <p class="agent-desc">Creates mockups, UI components, and design systems. Pixel perfect.</p>
+          <div class="agent-tags">
+            <span class="agent-tag">ui/ux</span>
+            <span class="agent-tag">mockups</span>
+            <span class="agent-tag">assets</span>
+          </div>
+        </article>
+
+        <!-- Agent 5 -->
+        <article class="agent-card">
+          <div class="agent-header">
+            <div class="agent-avatar avatar-cyan">
+              <span>PM</span>
+            </div>
+            <div class="agent-price">$18/mo</div>
+          </div>
+          <h3 class="agent-name">Project Manager</h3>
+          <p class="agent-desc">Coordinates tasks, tracks progress, keeps your team aligned.</p>
+          <div class="agent-tags">
+            <span class="agent-tag">planning</span>
+            <span class="agent-tag">tracking</span>
+            <span class="agent-tag">reports</span>
+          </div>
+        </article>
+
+        <!-- Agent 6 -->
+        <article class="agent-card">
+          <div class="agent-header">
+            <div class="agent-avatar avatar-pink">
+              <span>DA</span>
+            </div>
+            <div class="agent-price">$20/mo</div>
+          </div>
+          <h3 class="agent-name">Data Analyst</h3>
+          <p class="agent-desc">Crunches numbers, builds dashboards, finds patterns in your data.</p>
+          <div class="agent-tags">
+            <span class="agent-tag">analytics</span>
+            <span class="agent-tag">sql</span>
+            <span class="agent-tag">viz</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Integrations Section -->
+  <section class="integrations" id="integrations">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">// bring your own brain</h2>
+        <p class="section-desc">Connect your agents to the AI provider you trust. Mix and match as needed.</p>
+      </div>
+
+      <div class="integrations-grid">
+        <div class="integration-card recommended">
+          <div class="integration-badge">recommended</div>
+          <div class="integration-icon">CC</div>
+          <h3 class="integration-name">Claude Code</h3>
+          <p class="integration-desc">Best-in-class reasoning. Our tests show it delivers the most reliable agent performance.</p>
+        </div>
+
+        <div class="integration-card">
+          <div class="integration-icon">G3</div>
+          <h3 class="integration-name">Gemini 3</h3>
+          <p class="integration-desc">Google's latest multimodal model. Great for tasks involving images and documents.</p>
+        </div>
+
+        <div class="integration-card">
+          <div class="integration-icon">OL</div>
+          <h3 class="integration-name">Ollama</h3>
+          <p class="integration-desc">Run models locally. Full privacy, zero API costs. Perfect for sensitive work.</p>
+        </div>
+
+        <div class="integration-card">
+          <div class="integration-icon">OC</div>
+          <h3 class="integration-name">Open Code</h3>
+          <p class="integration-desc">Open-source alternative. Community-driven and constantly improving.</p>
+        </div>
+
+        <div class="integration-card">
+          <div class="integration-icon">GP</div>
+          <h3 class="integration-name">GPT-4</h3>
+          <p class="integration-desc">OpenAI's flagship. Widely used and well-documented.</p>
+        </div>
+
+        <div class="integration-card">
+          <div class="integration-icon">+</div>
+          <h3 class="integration-name">More Coming</h3>
+          <p class="integration-desc">We're adding new integrations regularly. Request yours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">// simple pricing</h2>
+        <p class="section-desc">Rent your office, hire your agents. Scale up or down anytime.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Office Plan -->
+        <div class="pricing-card office-card">
+          <div class="pricing-header">
+            <span class="pricing-tag">$ rent --office</span>
+            <h3 class="pricing-name">Virtual Office</h3>
+            <div class="pricing-amount">
+              <span class="price">$15</span>
+              <span class="period">/month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li><span class="check">+</span> Your 8-bit office space</li>
+            <li><span class="check">+</span> Unlimited AI integrations</li>
+            <li><span class="check">+</span> Task management dashboard</li>
+            <li><span class="check">+</span> Agent collaboration tools</li>
+            <li><span class="check">+</span> Chat history & memory</li>
+            <li><span class="check">+</span> Priority support</li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-block">
+            <span class="btn-text">Get Started</span>
+            <span class="btn-arrow">-></span>
+          </a>
+        </div>
+
+        <!-- Agent Pricing -->
+        <div class="pricing-card agents-card">
+          <div class="pricing-header">
+            <span class="pricing-tag">$ hire --agent</span>
+            <h3 class="pricing-name">AI Agents</h3>
+            <div class="pricing-amount">
+              <span class="price">$8-20</span>
+              <span class="period">/month each</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li><span class="role">Writer</span> <span class="role-price">$8/mo</span></li>
+            <li><span class="role">Researcher</span> <span class="role-price">$10/mo</span></li>
+            <li><span class="role">Developer</span> <span class="role-price">$12/mo</span></li>
+            <li><span class="role">Designer</span> <span class="role-price">$15/mo</span></li>
+            <li><span class="role">Project Manager</span> <span class="role-price">$18/mo</span></li>
+            <li><span class="role">Data Analyst</span> <span class="role-price">$20/mo</span></li>
+          </ul>
+          <a href="#agents" class="btn btn-ghost btn-block">
+            <span class="btn-text">View All Agents</span>
+          </a>
+        </div>
+      </div>
+
+      <p class="pricing-note">* Requires Virtual Office subscription. AI provider API keys not included.</p>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <div class="cta-card">
+        <div class="cta-content">
+          <span class="cta-tag">$ init --bitspace</span>
+          <h2 class="cta-title">Ready to build your AI team?</h2>
+          <p class="cta-text">Start with your virtual office. Hire agents as you grow. Cancel anytime.</p>
+          <a href="#" class="btn btn-primary btn-lg">
+            <span class="btn-text">Start Free Trial</span>
+            <span class="btn-arrow">-></span>
+          </a>
+        </div>
+        <div class="cta-decoration">
+          <div class="decoration-line"></div>
+          <div class="decoration-line"></div>
+          <div class="decoration-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-logo">[bitspace]</span>
+          <span class="footer-copy">2025 - All rights reserved</span>
+        </div>
+        <div class="footer-links">
+          <a href="/">bitroot</a>
+          <a href="/froots/">froots</a>
+          <a href="https://github.com/bitroot-org" target="_blank">github</a>
+          <a href="/legal/privacy-policy.html">privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Three.js and Postprocessing -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://esm.sh/three@0.160.0",
+      "three/addons/": "https://esm.sh/three@0.160.0/examples/jsm/",
+      "postprocessing": "https://esm.sh/postprocessing@6.34.1?external=three"
+    }
+  }
+  </script>
+  <script type="module" src="js/ascii-effect.js"></script>
+  <script src="js/bitspace.js"></script>
+</body>
+</html>

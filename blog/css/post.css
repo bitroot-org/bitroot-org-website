@@ -1,0 +1,286 @@
+/* Post Page Styles */
+
+.post-page {
+    flex: 1;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: var(--spacing-3xl) var(--spacing-xl);
+    width: 100%;
+}
+
+.post-article {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-2xl);
+    position: relative;
+}
+
+/* Blue accent bar at top */
+.post-article::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--bitroot-primary-blue), var(--bitroot-pink));
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.post-loading,
+.post-error {
+    text-align: center;
+    padding: var(--spacing-3xl);
+    color: var(--text-secondary);
+}
+
+.post-error h1 {
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-primary);
+}
+
+.post-error a {
+    color: var(--bitroot-primary-blue);
+    text-decoration: underline;
+}
+
+/* Post Header */
+.post-header {
+    margin-bottom: var(--spacing-2xl);
+    padding-bottom: var(--spacing-xl);
+    border-bottom: 1px solid var(--border);
+}
+
+.post-header .post-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+.post-header .post-tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+}
+
+.post-header .post-date,
+.post-header .post-read-time {
+    font-size: 0.9375rem;
+    color: var(--text-muted);
+}
+
+.post-header .post-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-md);
+}
+
+.post-header .post-excerpt {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Post Body - Markdown Content */
+.post-body {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+}
+
+.post-body h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-top: var(--spacing-2xl);
+    margin-bottom: var(--spacing-md);
+    color: var(--text-primary);
+}
+
+.post-body h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-sm);
+}
+
+.post-body p {
+    margin-bottom: var(--spacing-lg);
+}
+
+.post-body a {
+    color: var(--bitroot-primary-blue);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.post-body a:hover {
+    opacity: 0.7;
+}
+
+.post-body strong {
+    font-weight: 600;
+}
+
+.post-body ul,
+.post-body ol {
+    margin-bottom: var(--spacing-lg);
+    padding-left: var(--spacing-xl);
+}
+
+.post-body li {
+    margin-bottom: var(--spacing-sm);
+}
+
+.post-body li::marker {
+    color: var(--bitroot-primary-blue);
+}
+
+.post-body blockquote {
+    border-left: 4px solid var(--bitroot-primary-blue);
+    padding-left: var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+    color: var(--text-secondary);
+    font-style: italic;
+    background: var(--bitroot-light-blue);
+    padding: var(--spacing-lg);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.post-body code {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.9em;
+    background: var(--tag-bg);
+    color: var(--bitroot-primary-blue);
+    padding: 0.125em 0.4em;
+    border-radius: var(--radius-sm);
+}
+
+.post-body pre {
+    background: var(--bitroot-dark-blue);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-lg);
+    overflow-x: auto;
+    margin-bottom: var(--spacing-lg);
+}
+
+.post-body pre code {
+    background: none;
+    color: #e5e5e5;
+    padding: 0;
+}
+
+.post-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    margin: var(--spacing-lg) 0;
+    border: 1px solid var(--border);
+}
+
+.post-body hr {
+    border: none;
+    border-top: 2px solid var(--bitroot-light-blue);
+    margin: var(--spacing-2xl) 0;
+}
+
+/* Post Sources */
+.post-sources {
+    margin-top: var(--spacing-2xl);
+    padding-top: var(--spacing-xl);
+    border-top: 1px solid var(--border);
+    background: var(--bitroot-light-blue);
+    margin-left: calc(-1 * var(--spacing-2xl));
+    margin-right: calc(-1 * var(--spacing-2xl));
+    margin-bottom: calc(-1 * var(--spacing-2xl));
+    padding: var(--spacing-xl) var(--spacing-2xl);
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+.post-sources h3 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--bitroot-primary-blue);
+    margin-bottom: var(--spacing-md);
+}
+
+.post-sources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.post-sources li {
+    margin-bottom: var(--spacing-sm);
+}
+
+.post-sources a {
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    word-break: break-all;
+}
+
+.post-sources a:hover {
+    color: var(--bitroot-primary-blue);
+}
+
+/* Post Navigation */
+.post-nav {
+    margin-top: var(--spacing-2xl);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--border);
+}
+
+.back-link {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--bitroot-primary-blue);
+    transition: opacity 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.back-link:hover {
+    opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .post-page {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+
+    .post-article {
+        padding: var(--spacing-lg);
+    }
+
+    .post-header .post-title {
+        font-size: 1.75rem;
+    }
+
+    .post-body {
+        font-size: 1rem;
+    }
+
+    .post-sources {
+        margin-left: calc(-1 * var(--spacing-lg));
+        margin-right: calc(-1 * var(--spacing-lg));
+        margin-bottom: calc(-1 * var(--spacing-lg));
+        padding: var(--spacing-lg);
+    }
+}
