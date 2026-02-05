@@ -267,6 +267,77 @@ img {
     position: relative;
 }
 
+/* Video container */
+.featured-post .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+.featured-post .video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Video play button */
+.video-play-btn {
+    position: absolute;
+    bottom: var(--spacing-md);
+    right: var(--spacing-md);
+    width: 48px;
+    height: 48px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    z-index: 10;
+    backdrop-filter: blur(4px);
+}
+
+.video-play-btn:hover {
+    background: var(--bitroot-primary-blue);
+    border-color: var(--bitroot-primary-blue);
+    transform: scale(1.1);
+}
+
+.video-play-btn svg {
+    margin-left: 3px;
+}
+
+/* Video mute button */
+.video-mute-btn {
+    position: absolute;
+    bottom: var(--spacing-md);
+    right: var(--spacing-md);
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    z-index: 10;
+    backdrop-filter: blur(4px);
+}
+
+.video-mute-btn:hover {
+    background: rgba(0, 0, 0, 0.9);
+    border-color: white;
+}
+
 .featured-post .post-image::after {
     content: '';
     position: absolute;

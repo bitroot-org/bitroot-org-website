@@ -98,17 +98,46 @@ const PostsLoader = {
     },
 
     /**
+     * Check if post has a valid video
+     */
+    hasVideo(post) {
+        return post.video && !post.video.includes('twimg.com');
+    },
+
+    /**
      * Render a post as featured (large) card
      */
     renderFeaturedPost(post) {
         const tag = (post.tags && post.tags[0]) || 'General';
         const image = this.getPostImage(post);
         const displayDate = post.published_at ? this.formatDateTime(post.published_at) : this.formatDate(post.date);
+        const hasVideo = this.hasVideo(post);
 
         return `
-            <article class="featured-post" data-post-slug="${post.slug}">
+            <article class="featured-post" data-post-slug="${post.slug}" ${hasVideo ? `data-video="${post.video}"` : ''}>
                 <div class="post-image">
                     <img src="${image}" alt="${post.title}">
+                    ${hasVideo ? `
+                        <div class="video-container" style="display: none;">
+                            <video src="${post.video}" playsinline loop></video>
+                        </div>
+                        <button class="video-play-btn" aria-label="Play video">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </button>
+                        <button class="video-mute-btn" style="display: none;" aria-label="Toggle sound">
+                            <svg class="muted-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                <line x1="23" y1="9" x2="17" y2="15"></line>
+                                <line x1="17" y1="9" x2="23" y2="15"></line>
+                            </svg>
+                            <svg class="unmuted-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                            </svg>
+                        </button>
+                    ` : ''}
                 </div>
                 <div class="post-content">
                     <div class="post-meta">
@@ -347,12 +376,58 @@ const PostsLoader = {
     },
 
     /**
+     * Initialize video player controls
+     */
+    initVideoControls(featured) {
+        const playBtn = featured.querySelector('.video-play-btn');
+        const muteBtn = featured.querySelector('.video-mute-btn');
+        const videoContainer = featured.querySelector('.video-container');
+        const video = featured.querySelector('video');
+        const postImage = featured.querySelector('.post-image img');
+
+        if (!playBtn || !video) return;
+
+        playBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+
+            // Hide image, show video
+            postImage.style.display = 'none';
+            videoContainer.style.display = 'block';
+            playBtn.style.display = 'none';
+            muteBtn.style.display = 'flex';
+
+            // Play muted
+            video.muted = true;
+            video.play();
+        });
+
+        muteBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+
+            video.muted = !video.muted;
+            const mutedIcon = muteBtn.querySelector('.muted-icon');
+            const unmutedIcon = muteBtn.querySelector('.unmuted-icon');
+
+            if (video.muted) {
+                mutedIcon.style.display = 'block';
+                unmutedIcon.style.display = 'none';
+            } else {
+                mutedIcon.style.display = 'none';
+                unmutedIcon.style.display = 'block';
+            }
+        });
+    },
+
+    /**
      * Initialize click handlers for post selection
      */
     initClickHandlers(posts) {
         const featured = document.querySelector('.featured-post');
         if (featured) {
             featured.style.transition = 'opacity 0.2s ease';
+
+            // Initialize video controls if present
+            this.initVideoControls(featured);
         }
 
         document.querySelectorAll('.list-item').forEach(item => {
@@ -368,10 +443,14 @@ const PostsLoader = {
         // Featured post click navigates to post page
         if (featured) {
             featured.addEventListener('click', (e) => {
-                if (!e.target.closest('.read-more')) {
-                    const slug = featured.dataset.postSlug;
-                    window.location.href = `post.html?slug=${slug}`;
+                // Don't navigate if clicking video controls
+                if (e.target.closest('.video-play-btn') ||
+                    e.target.closest('.video-mute-btn') ||
+                    e.target.closest('.read-more')) {
+                    return;
                 }
+                const slug = featured.dataset.postSlug;
+                window.location.href = `post.html?slug=${slug}`;
             });
         }
     },
@@ -382,6 +461,12 @@ const PostsLoader = {
     updateFeaturedPost(post, allPosts) {
         const featured = document.querySelector('.featured-post');
         if (!featured || featured.dataset.postSlug === post.slug) return;
+
+        // Pause any playing video
+        const oldVideo = featured.querySelector('video');
+        if (oldVideo) {
+            oldVideo.pause();
+        }
 
         // Fade out
         featured.style.opacity = '0';
@@ -395,10 +480,17 @@ const PostsLoader = {
             newFeatured.style.transition = 'opacity 0.2s ease';
             newFeatured.style.opacity = '1';
 
+            // Initialize video controls if present
+            this.initVideoControls(newFeatured);
+
             newFeatured.addEventListener('click', (e) => {
-                if (!e.target.closest('.read-more')) {
-                    window.location.href = `post.html?slug=${post.slug}`;
+                // Don't navigate if clicking video controls
+                if (e.target.closest('.video-play-btn') ||
+                    e.target.closest('.video-mute-btn') ||
+                    e.target.closest('.read-more')) {
+                    return;
                 }
+                window.location.href = `post.html?slug=${post.slug}`;
             });
 
             // Update list items active state
