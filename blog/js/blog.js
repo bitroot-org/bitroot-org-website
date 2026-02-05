@@ -1,7 +1,8 @@
-// Blog data
+// Blog data with slugs for navigation
 const posts = [
     {
         id: 1,
+        slug: 'building-scalable-systems',
         tag: 'Engineering',
         date: 'Jan 15, 2026',
         shortDate: 'Jan 15',
@@ -12,6 +13,7 @@ const posts = [
     },
     {
         id: 2,
+        slug: 'the-art-of-minimal-interfaces',
         tag: 'Design',
         date: 'Jan 10, 2026',
         shortDate: 'Jan 10',
@@ -22,6 +24,7 @@ const posts = [
     },
     {
         id: 3,
+        slug: 'getting-started-with-static-site-generators',
         tag: 'Tutorial',
         date: 'Jan 05, 2026',
         shortDate: 'Jan 05',
@@ -32,6 +35,7 @@ const posts = [
     },
     {
         id: 4,
+        slug: 'cicd-pipelines-that-actually-work',
         tag: 'Engineering',
         date: 'Dec 28, 2025',
         shortDate: 'Dec 28',
@@ -42,6 +46,7 @@ const posts = [
     },
     {
         id: 5,
+        slug: 'why-we-open-source-our-tools',
         tag: 'Thoughts',
         date: 'Dec 20, 2025',
         shortDate: 'Dec 20',
@@ -52,6 +57,7 @@ const posts = [
     },
     {
         id: 6,
+        slug: 'typography-in-technical-writing',
         tag: 'Design',
         date: 'Dec 15, 2025',
         shortDate: 'Dec 15',
@@ -62,6 +68,7 @@ const posts = [
     },
     {
         id: 7,
+        slug: 'deploying-to-the-edge',
         tag: 'Tutorial',
         date: 'Dec 08, 2025',
         shortDate: 'Dec 08',
@@ -103,6 +110,9 @@ function updateFeaturedPost(postId) {
         document.querySelectorAll('.list-item').forEach(item => {
             item.classList.toggle('active', parseInt(item.dataset.postId) === postId);
         });
+
+        // Update read-more link
+        updateReadMoreLinks();
     }, 200);
 }
 
@@ -120,10 +130,27 @@ function init() {
     });
 
     // Featured post click handler (navigate to post)
-    featured.addEventListener('click', () => {
-        // In a real implementation, this would navigate to the post
-        console.log('Navigate to post:', currentFeaturedId);
+    featured.addEventListener('click', (e) => {
+        // Don't navigate if clicking the "Read more" link (it handles itself)
+        if (e.target.closest('.read-more')) return;
+
+        const post = posts.find(p => p.id === currentFeaturedId);
+        if (post) {
+            window.location.href = `post.html?slug=${post.slug}`;
+        }
     });
+
+    // Update read-more links with correct URLs
+    updateReadMoreLinks();
+}
+
+function updateReadMoreLinks() {
+    const featured = document.querySelector('.featured-post');
+    const readMore = featured.querySelector('.read-more');
+    const post = posts.find(p => p.id === currentFeaturedId);
+    if (readMore && post) {
+        readMore.href = `post.html?slug=${post.slug}`;
+    }
 }
 
 document.addEventListener('DOMContentLoaded', init);
