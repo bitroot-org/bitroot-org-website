@@ -4,6 +4,9 @@
 
 const PostsLoader = {
     postsIndexUrl: 'posts/index.json',
+    postsPerPage: 7,
+    currentPage: 1,
+    allPosts: [],
 
     /**
      * Fetch all posts from index.json
@@ -34,17 +37,37 @@ const PostsLoader = {
     },
 
     /**
-     * Format date for display
+     * Format date for display (uses browser locale)
      */
     formatDate(dateStr, short = false) {
         const date = new Date(dateStr);
+        const locale = navigator.language || 'en-US';
+
         if (short) {
-            return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+            return date.toLocaleDateString(locale, { month: 'short', day: 'numeric' });
         }
-        return date.toLocaleDateString('en-US', {
+        return date.toLocaleDateString(locale, {
             month: 'short',
             day: 'numeric',
             year: 'numeric'
+        });
+    },
+
+    /**
+     * Format date with time for display (uses browser locale)
+     */
+    formatDateTime(dateStr) {
+        if (!dateStr) return '';
+        const date = new Date(dateStr);
+        const locale = navigator.language || 'en-US';
+
+        return date.toLocaleString(locale, {
+            month: 'long',
+            day: 'numeric',
+            year: 'numeric',
+            hour: 'numeric',
+            minute: '2-digit',
+            hour12: true
         });
     },
 
@@ -80,6 +103,7 @@ const PostsLoader = {
     renderFeaturedPost(post) {
         const tag = (post.tags && post.tags[0]) || 'General';
         const image = this.getPostImage(post);
+        const displayDate = post.published_at ? this.formatDateTime(post.published_at) : this.formatDate(post.date);
 
         return `
             <article class="featured-post" data-post-slug="${post.slug}">
@@ -89,7 +113,7 @@ const PostsLoader = {
                 <div class="post-content">
                     <div class="post-meta">
                         <span class="post-tag">${tag}</span>
-                        <span class="post-date">${this.formatDate(post.date)}</span>
+                        <span class="post-date">${displayDate}</span>
                     </div>
                     <h2 class="post-title">${post.title}</h2>
                     <p class="post-excerpt">${post.excerpt || ''}</p>
@@ -191,6 +215,107 @@ const PostsLoader = {
     },
 
     /**
+     * Get total pages
+     */
+    getTotalPages() {
+        return Math.ceil(this.allPosts.length / this.postsPerPage);
+    },
+
+    /**
+     * Get posts for current page
+     */
+    getPagePosts() {
+        const start = (this.currentPage - 1) * this.postsPerPage;
+        const end = start + this.postsPerPage;
+        return this.allPosts.slice(start, end);
+    },
+
+    /**
+     * Render pagination controls
+     */
+    renderPagination() {
+        const totalPages = this.getTotalPages();
+        if (totalPages <= 1) return '';
+
+        return `
+            <nav class="pagination" aria-label="Blog pagination">
+                <button class="pagination-btn prev" ${this.currentPage === 1 ? 'disabled' : ''} aria-label="Previous page">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                    <span>Prev</span>
+                </button>
+                <span class="pagination-info">
+                    Page <strong>${this.currentPage}</strong> of <strong>${totalPages}</strong>
+                </span>
+                <button class="pagination-btn next" ${this.currentPage === totalPages ? 'disabled' : ''} aria-label="Next page">
+                    <span>Next</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </nav>
+        `;
+    },
+
+    /**
+     * Go to a specific page
+     */
+    goToPage(page) {
+        const totalPages = this.getTotalPages();
+        if (page < 1 || page > totalPages) return;
+
+        this.currentPage = page;
+        this.renderPage();
+    },
+
+    /**
+     * Render current page of posts
+     */
+    renderPage() {
+        const featuredContainer = document.querySelector('.showcase-grid');
+        if (!featuredContainer) return;
+
+        const pagePosts = this.getPagePosts();
+        if (pagePosts.length === 0) return;
+
+        const featured = pagePosts[0];
+
+        featuredContainer.innerHTML = `
+            ${this.renderFeaturedPost(featured)}
+            <aside class="post-list">
+                <h3 class="list-header">Recent</h3>
+                ${pagePosts.map(p => this.renderListItemWithState(p, p.slug === featured.slug)).join('')}
+            </aside>
+        `;
+
+        // Render pagination
+        const paginationContainer = document.querySelector('.pagination-container');
+        if (paginationContainer) {
+            paginationContainer.innerHTML = this.renderPagination();
+            this.initPaginationHandlers();
+        }
+
+        // Add click handlers
+        this.initClickHandlers(this.allPosts);
+    },
+
+    /**
+     * Initialize pagination button handlers
+     */
+    initPaginationHandlers() {
+        const prevBtn = document.querySelector('.pagination-btn.prev');
+        const nextBtn = document.querySelector('.pagination-btn.next');
+
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => this.goToPage(this.currentPage - 1));
+        }
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => this.goToPage(this.currentPage + 1));
+        }
+    },
+
+    /**
      * Initialize the posts loader and render posts
      */
     async init() {
@@ -207,24 +332,18 @@ const PostsLoader = {
         }
 
         console.log('Rendering', posts.length, 'posts');
+        this.allPosts = posts;
 
-        // Render featured post (most recent)
-        const featuredContainer = document.querySelector('.showcase-grid');
-        if (featuredContainer && posts.length > 0) {
-            const featured = posts[0];
-            const listPosts = posts.slice(0, 7); // Show first 7 posts in list
-
-            featuredContainer.innerHTML = `
-                ${this.renderFeaturedPost(featured)}
-                <aside class="post-list">
-                    <h3 class="list-header">Recent</h3>
-                    ${listPosts.map(p => this.renderListItemWithState(p, p.slug === featured.slug)).join('')}
-                </aside>
-            `;
-
-            // Add click handlers
-            this.initClickHandlers(posts);
+        // Add pagination container if it doesn't exist
+        const showcase = document.querySelector('.showcase');
+        if (showcase && !document.querySelector('.pagination-container')) {
+            const paginationDiv = document.createElement('div');
+            paginationDiv.className = 'pagination-container';
+            showcase.appendChild(paginationDiv);
         }
+
+        // Render first page
+        this.renderPage();
     },
 
     /**

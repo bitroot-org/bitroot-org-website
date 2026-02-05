@@ -99,14 +99,32 @@
         }
 
         /**
-         * Format date for display
+         * Format date for display (uses browser locale)
          */
         function formatDate(dateStr) {
             const date = new Date(dateStr);
-            return date.toLocaleDateString('en-US', {
+            const locale = navigator.language || 'en-US';
+            return date.toLocaleDateString(locale, {
                 month: 'long',
                 day: 'numeric',
                 year: 'numeric'
+            });
+        }
+
+        /**
+         * Format date with time for display (uses browser locale)
+         */
+        function formatDateTime(dateStr) {
+            if (!dateStr) return '';
+            const date = new Date(dateStr);
+            const locale = navigator.language || 'en-US';
+            return date.toLocaleString(locale, {
+                month: 'long',
+                day: 'numeric',
+                year: 'numeric',
+                hour: 'numeric',
+                minute: '2-digit',
+                hour12: true
             });
         }
 
@@ -184,6 +202,9 @@
                 const hasVideo = metadata.video && !metadata.video.includes('twimg.com');
                 const isGif = metadata.video && (metadata.video.includes('.gif') || metadata.video.includes('gif'));
 
+                // Format date - use published_at if available, otherwise fallback to date
+                const displayDate = metadata.published_at ? formatDateTime(metadata.published_at) : formatDate(metadata.date);
+
                 document.getElementById('post-content').innerHTML = `
                     ${hasVideo ? `
                         <div class="post-hero-video">
@@ -206,7 +227,7 @@
                     <header class="post-header">
                         <div class="post-meta">
                             <span class="post-tag">${tag}</span>
-                            <span class="post-date">${formatDate(metadata.date)}</span>
+                            <span class="post-date">${displayDate}</span>
                             <span class="post-read-time">${readTime} min read</span>
                         </div>
                         <h1 class="post-title">${metadata.title || 'Untitled'}</h1>

@@ -34,6 +34,7 @@ def get_post_metadata(filepath):
             "slug": filepath.stem,
             "title": post.metadata.get("title", "Untitled"),
             "date": str(post.metadata.get("date", "")),
+            "published_at": post.metadata.get("published_at", ""),
             "tags": post.metadata.get("tags", []),
             "excerpt": post.metadata.get("excerpt", ""),
             "image": image,
