@@ -9,12 +9,21 @@ and uses Groq to synthesize original blog posts.
 import os
 import re
 import json
+import logging
 from datetime import datetime
 
 import requests
 from bs4 import BeautifulSoup
 import frontmatter
 from groq import Groq
+
+# Configure logging
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(asctime)s [%(levelname)s] %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S'
+)
+logger = logging.getLogger(__name__)
 
 # Configuration
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
@@ -187,9 +196,20 @@ def fetch_url_content(url):
         text = re.sub(r"\n{3,}", "\n\n", text)
         text = text[:MAX_CONTENT_LENGTH]
 
+        # Log extracted data
+        logger.info("=" * 60)
+        logger.info(f"EXTRACTED DATA FROM: {url}")
+        logger.info("=" * 60)
+        logger.info(f"Image URL: {image_url}")
+        logger.info(f"Description: {description}")
+        logger.info(f"Content length: {len(text)} chars")
+        logger.info(f"Content preview (first 500 chars):\n{text[:500]}")
+        logger.info("=" * 60)
+
         return {"url": url, "content": text, "image": image_url, "description": description, "success": True}
 
     except Exception as e:
+        logger.error(f"Failed to fetch {url}: {str(e)}")
         return {"url": url, "content": f"Failed to fetch: {str(e)}", "image": None, "description": None, "success": False}
 
 
@@ -213,7 +233,18 @@ def generate_post(client, issue_data, fetched_contents):
             sources_text += f"\n\n--- Source: {item['url']} ---\n{item['content']}"
 
     if not sources_text.strip():
+        logger.error("No source content available to generate post")
         return None
+
+    # Log source content being sent to AI
+    logger.info("=" * 60)
+    logger.info("SOURCE CONTENT BEING SENT TO AI")
+    logger.info("=" * 60)
+    logger.info(f"Issue title: {issue_data['title']}")
+    logger.info(f"Issue angle: {issue_data.get('angle')}")
+    logger.info(f"Total source text length: {len(sources_text)} chars")
+    logger.info(f"Source text preview (first 1000 chars):\n{sources_text[:1000]}")
+    logger.info("=" * 60)
 
     prompt = f"""You are a skilled technical writer for Bitroot, a technology company.
 
@@ -261,6 +292,14 @@ Return ONLY a JSON object with these fields (no markdown code blocks, no extra t
 
     response_text = response.choices[0].message.content.strip()
 
+    # Log raw AI response
+    logger.info("=" * 60)
+    logger.info("RAW AI RESPONSE")
+    logger.info("=" * 60)
+    logger.info(f"Response length: {len(response_text)} chars")
+    logger.debug(f"Full response:\n{response_text}")
+    logger.info("=" * 60)
+
     # Try to parse JSON from response
     # Remove markdown code blocks if present
     if response_text.startswith("```"):
@@ -268,13 +307,27 @@ Return ONLY a JSON object with these fields (no markdown code blocks, no extra t
         response_text = re.sub(r"\n?```$", "", response_text)
 
     try:
-        return json.loads(response_text)
+        parsed = json.loads(response_text)
     except json.JSONDecodeError:
         # Try to extract JSON from response
         json_match = re.search(r"\{[\s\S]*\}", response_text)
         if json_match:
-            return json.loads(json_match.group())
-        raise ValueError(f"Could not parse JSON from response: {response_text[:500]}")
+            parsed = json.loads(json_match.group())
+        else:
+            raise ValueError(f"Could not parse JSON from response: {response_text[:500]}")
+
+    # Log parsed/generated post data
+    logger.info("=" * 60)
+    logger.info("GENERATED POST DATA")
+    logger.info("=" * 60)
+    logger.info(f"Title: {parsed.get('title')}")
+    logger.info(f"Tags: {parsed.get('tags')}")
+    logger.info(f"Excerpt: {parsed.get('excerpt')}")
+    logger.info(f"Content length: {len(parsed.get('content', ''))} chars")
+    logger.info(f"Content preview (first 500 chars):\n{parsed.get('content', '')[:500]}")
+    logger.info("=" * 60)
+
+    return parsed
 
 
 def create_post_file(post_data, source_urls, image_url=None, source_excerpt=None):
