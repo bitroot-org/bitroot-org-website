@@ -1,11 +1,12 @@
 {
   "generated": true,
-  "count": 12,
+  "count": 13,
   "posts": [
     "2026-02-05-building-a-strong-foundation-navigating-technical.md",
     "2026-02-05-building-a-strong-foundation-for-startups-navigati.md",
     "2026-02-05-building-a-strong-foundation-overcoming-technical.md",
     "2026-02-05-navigating-the-intersection-of-technology-and-priv.md",
+    "2026-02-05-unlocking-the-potential-of-ai-a-deep-dive-into-the.md",
     "2026-02-05-unlocking-the-power-of-dokia-ai-revolutionizing-in.md",
     "building-scalable-systems.md",
     "the-art-of-minimal-interfaces.md",
@@ -67,6 +68,19 @@
       ],
       "excerpt": "As startups build their foundation, they must navigate the complex landscape of technology and privacy, balancing innovation with user protection. This post explores key considerations and practical takeaways for startups to ensure a strong, privacy-centric foundation.",
       "image": ""
+    },
+    {
+      "filename": "2026-02-05-unlocking-the-potential-of-ai-a-deep-dive-into-the.md",
+      "slug": "2026-02-05-unlocking-the-potential-of-ai-a-deep-dive-into-the",
+      "title": "Unlocking the Potential of AI: A Deep Dive into the Claude Update",
+      "date": "2026-02-05",
+      "tags": [
+        "AI",
+        "Claude Update",
+        "Technology"
+      ],
+      "excerpt": "JavaScript is not available. We\u2019ve detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported browser to continue using x.com.",
+      "image": "https://abs-0.twimg.com/emoji/v2/svg/26a0.svg"
     },
     {
       "filename": "2026-02-05-unlocking-the-power-of-dokia-ai-revolutionizing-in.md",
