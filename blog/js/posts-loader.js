@@ -1,114 +1,36 @@
 /**
- * Posts Loader - Loads and renders markdown posts from the posts/ directory
+ * Posts Loader - Loads and renders posts from the posts/index.json
  */
 
 const PostsLoader = {
-    postsDir: 'posts/',
     postsIndexUrl: 'posts/index.json',
 
     /**
-     * Parse YAML frontmatter from markdown content
-     */
-    parseFrontmatter(content) {
-        const match = content.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
-        if (!match) {
-            return { metadata: {}, content };
-        }
-
-        const yamlStr = match[1];
-        const markdownContent = match[2];
-
-        // Simple YAML parser for frontmatter
-        const metadata = {};
-        const lines = yamlStr.split('\n');
-        let currentKey = null;
-        let currentArray = null;
-
-        for (const line of lines) {
-            // Array item
-            if (line.match(/^\s+-\s+/)) {
-                const value = line.replace(/^\s+-\s+/, '').trim();
-                if (currentArray && currentKey) {
-                    metadata[currentKey].push(value.replace(/^["']|["']$/g, ''));
-                }
-                continue;
-            }
-
-            // Key-value pair
-            const kvMatch = line.match(/^(\w+):\s*(.*)$/);
-            if (kvMatch) {
-                const [, key, value] = kvMatch;
-                currentKey = key;
-
-                if (value === '' || value === '[]') {
-                    // Empty array
-                    metadata[key] = [];
-                    currentArray = true;
-                } else if (value.startsWith('[') && value.endsWith(']')) {
-                    // Inline array
-                    metadata[key] = value
-                        .slice(1, -1)
-                        .split(',')
-                        .map(s => s.trim().replace(/^["']|["']$/g, ''));
-                    currentArray = false;
-                } else {
-                    // Simple value
-                    metadata[key] = value.replace(/^["']|["']$/g, '');
-                    currentArray = false;
-                }
-            }
-        }
-
-        return { metadata, content: markdownContent };
-    },
-
-    /**
-     * Fetch a single post by filename
-     */
-    async fetchPost(filename) {
-        try {
-            const response = await fetch(`${this.postsDir}${filename}`);
-            if (!response.ok) return null;
-
-            const text = await response.text();
-            const { metadata, content } = this.parseFrontmatter(text);
-
-            return {
-                filename,
-                slug: filename.replace(/\.md$/, ''),
-                ...metadata,
-                content,
-                // Calculate read time (approx 200 words per minute)
-                readTime: Math.ceil(content.split(/\s+/).length / 200) + ' min'
-            };
-        } catch (e) {
-            console.error(`Failed to fetch post ${filename}:`, e);
-            return null;
-        }
-    },
-
-    /**
-     * Fetch all posts from index or by scanning directory
+     * Fetch all posts from index.json
      */
     async fetchAllPosts() {
         try {
-            // Try to fetch posts index
             const response = await fetch(this.postsIndexUrl);
-            if (response.ok) {
-                const index = await response.json();
-                const posts = await Promise.all(
-                    index.posts.map(filename => this.fetchPost(filename))
-                );
-                return posts.filter(Boolean).sort((a, b) =>
-                    new Date(b.date) - new Date(a.date)
-                );
+            if (!response.ok) {
+                console.error('Failed to fetch posts index:', response.status);
+                return [];
             }
-        } catch (e) {
-            console.log('No posts index found, using static posts');
-        }
 
-        // Fallback: return empty array (static posts will be used)
-        return [];
+            const index = await response.json();
+            console.log('Loaded posts index:', index.count, 'posts');
+
+            // Use metadata directly, add readTime calculation
+            const posts = index.metadata.map(post => ({
+                ...post,
+                readTime: '5 min' // Default read time
+            }));
+
+            // Sort by date descending (newest first)
+            return posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+        } catch (e) {
+            console.error('Error loading posts:', e);
+            return [];
+        }
     },
 
     /**
@@ -130,12 +52,14 @@ const PostsLoader = {
      * Render a post as featured (large) card
      */
     renderFeaturedPost(post) {
-        // Get a relevant image based on tags
         const tagImages = {
             'ai': 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=500&fit=crop',
             'engineering': 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=500&fit=crop',
             'design': 'https://images.unsplash.com/photo-1545235617-9465d2a55698?w=800&h=500&fit=crop',
             'tutorial': 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=500&fit=crop',
+            'startup': 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=500&fit=crop',
+            'privacy': 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=500&fit=crop',
+            'technology': 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=500&fit=crop',
             'default': 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=500&fit=crop'
         };
 
@@ -185,13 +109,15 @@ const PostsLoader = {
      * Initialize the posts loader and render posts
      */
     async init() {
+        console.log('PostsLoader initializing...');
         const posts = await this.fetchAllPosts();
 
         if (posts.length === 0) {
-            // No dynamic posts, keep static content
-            console.log('No dynamic posts found, using static content');
+            console.log('No dynamic posts found, keeping static content');
             return;
         }
+
+        console.log('Rendering', posts.length, 'posts');
 
         // Render featured post (most recent)
         const featuredContainer = document.querySelector('.showcase-grid');
@@ -254,13 +180,18 @@ const PostsLoader = {
 
         setTimeout(() => {
             // Update content
-            featured.dataset.postSlug = post.slug;
-            featured.innerHTML = this.renderFeaturedPost(post)
-                .replace(/<article[^>]*>/, '')
-                .replace(/<\/article>$/, '');
+            featured.outerHTML = this.renderFeaturedPost(post);
 
-            // Fade in
-            featured.style.opacity = '1';
+            // Re-init click handler for new featured element
+            const newFeatured = document.querySelector('.featured-post');
+            newFeatured.style.transition = 'opacity 0.2s ease';
+            newFeatured.style.opacity = '1';
+
+            newFeatured.addEventListener('click', (e) => {
+                if (!e.target.closest('.read-more')) {
+                    window.location.href = `post.html?slug=${post.slug}`;
+                }
+            });
 
             // Update list items active state
             document.querySelectorAll('.list-item').forEach(item => {
