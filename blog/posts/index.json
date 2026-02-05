@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "count": 8,
+  "count": 9,
   "posts": [
     "why-we-open-source-our-tools.md",
     "typography-in-technical-writing.md",
@@ -9,7 +9,8 @@
     "deploying-to-the-edge.md",
     "cicd-pipelines-that-actually-work.md",
     "building-scalable-systems.md",
-    "2026-02-05-navigating-the-intersection-of-technology-and-priv.md"
+    "2026-02-05-navigating-the-intersection-of-technology-and-priv.md",
+    "2026-02-05-building-a-strong-foundation-overcoming-technical.md"
   ],
   "metadata": [
     {
@@ -107,6 +108,18 @@
         "privacy"
       ],
       "excerpt": "As startups build their foundation, they must navigate the complex landscape of technology and privacy, balancing innovation with user protection. This post explores key considerations and practical takeaways for startups to ensure a strong, privacy-centric foundation."
+    },
+    {
+      "filename": "2026-02-05-building-a-strong-foundation-overcoming-technical.md",
+      "slug": "2026-02-05-building-a-strong-foundation-overcoming-technical",
+      "title": "Building a Strong Foundation: Overcoming Technical Hurdles in Startup Development",
+      "date": "2026-02-05",
+      "tags": [
+        "startup development",
+        "technical challenges",
+        "foundation building"
+      ],
+      "excerpt": "Startups often face significant technical hurdles when building their foundation, but with the right strategies and mindset, these challenges can be overcome, setting the stage for long-term success. By understanding common technical pitfalls and implementing practical solutions, entrepreneurs can ensure their startup is well-equipped to thrive in a competitive market."
     }
   ]
 }
