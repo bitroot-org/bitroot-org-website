@@ -215,17 +215,18 @@ def generate_post(client, issue_data, fetched_contents):
     if not sources_text.strip():
         return None
 
-    prompt = f"""You are a skilled technical writer for Bitroot, a technology company that helps startups build their foundation.
+    prompt = f"""You are a skilled technical writer for Bitroot, a technology company.
 
 Write an original, insightful blog post based on the following source materials. Your post should:
 - Be 600-1200 words
-- Have a clear, engaging title
+- Have a clear, engaging title that reflects the ACTUAL topic of the source material
 - Synthesize ideas from the sources into your own original analysis
 - Add your own insights and perspective
 - Be written in a professional but accessible tone
 - Include practical takeaways for readers
 - NOT copy text directly from sources
 - NOT include phrases like "according to" or "the article says"
+- NOT use generic titles like "Building a Strong Foundation" - be specific to the topic
 
 Topic/Title hint: {issue_data['title']}
 {f"Angle/Focus: {issue_data['angle']}" if issue_data.get('angle') else ""}
