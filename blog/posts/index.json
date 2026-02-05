@@ -1,6 +1,23 @@
 {
   "generated": true,
-  "count": 0,
-  "posts": [],
-  "metadata": []
+  "count": 1,
+  "posts": [
+    "2026-02-05-navigating-browser-compatibility-ensuring-seamless.md"
+  ],
+  "metadata": [
+    {
+      "filename": "2026-02-05-navigating-browser-compatibility-ensuring-seamless.md",
+      "slug": "2026-02-05-navigating-browser-compatibility-ensuring-seamless",
+      "title": "Navigating Browser Compatibility: Ensuring Seamless User Experiences",
+      "date": "2026-02-05",
+      "tags": [
+        "browser compatibility",
+        "JavaScript",
+        "user experience",
+        "web development"
+      ],
+      "excerpt": "JavaScript is not available. We\u2019ve detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported browser to continue using x.com.",
+      "image": "https://abs-0.twimg.com/emoji/v2/svg/26a0.svg"
+    }
+  ]
 }
