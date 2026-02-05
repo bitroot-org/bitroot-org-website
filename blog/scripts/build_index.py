@@ -21,6 +21,8 @@ def get_post_metadata(filepath):
     """Extract metadata from a post file."""
     try:
         post = frontmatter.load(filepath)
+        # Get file modification time for secondary sorting
+        mtime = filepath.stat().st_mtime
         return {
             "filename": filepath.name,
             "slug": filepath.stem,
@@ -29,6 +31,7 @@ def get_post_metadata(filepath):
             "tags": post.metadata.get("tags", []),
             "excerpt": post.metadata.get("excerpt", ""),
             "image": post.metadata.get("image", ""),
+            "_mtime": mtime,  # Internal field for sorting, not exported
         }
     except Exception as e:
         print(f"Error reading {filepath}: {e}")
@@ -54,11 +57,16 @@ def build_index():
             print(f"  Found: {filepath.name} - {metadata['title']}")
 
     # Sort posts by date descending (newest first)
+    # Use file modification time as secondary sort for same-date posts
     # Handle empty/missing dates by treating them as oldest
-    posts.sort(key=lambda p: p.get("date", "") or "0000-00-00", reverse=True)
+    posts.sort(key=lambda p: (p.get("date", "") or "0000-00-00", p.get("_mtime", 0)), reverse=True)
 
     # Extract sorted post files list
     post_files = [p["filename"] for p in posts]
+
+    # Remove internal _mtime field before exporting
+    for p in posts:
+        p.pop("_mtime", None)
 
     print(f"\n  Sorted {len(posts)} posts by date (newest first)")
 
