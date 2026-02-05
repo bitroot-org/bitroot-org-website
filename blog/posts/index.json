@@ -1,25 +1,27 @@
 {
   "generated": true,
-  "count": 3,
+  "count": 4,
   "posts": [
-    "2026-02-05-revolutionizing-visual-storytelling-the-power-of-a.md",
+    "2026-02-05-revolutionizing-code-development-githubs-integrati.md",
     "2026-02-05-unlocking-the-power-of-agent-skills-a-deep-dive-in.md",
-    "2026-02-05-raspberry-pi-price-hikes-understanding-the-impact.md"
+    "2026-02-05-raspberry-pi-price-hikes-understanding-the-impact.md",
+    "2026-02-05-revolutionizing-visual-storytelling-the-power-of-a.md"
   ],
   "metadata": [
     {
-      "filename": "2026-02-05-revolutionizing-visual-storytelling-the-power-of-a.md",
-      "slug": "2026-02-05-revolutionizing-visual-storytelling-the-power-of-a",
-      "title": "Revolutionizing Visual Storytelling: The Power of AI Animations",
+      "filename": "2026-02-05-revolutionizing-code-development-githubs-integrati.md",
+      "slug": "2026-02-05-revolutionizing-code-development-githubs-integrati",
+      "title": "Revolutionizing Code Development: GitHub's Integration of Claude and Codex AI Agents",
       "date": "2026-02-05",
       "tags": [
-        "AI Animations",
-        "Visual Storytelling",
-        "Gamma"
+        "AI",
+        "GitHub",
+        "Code Development",
+        "Claude",
+        "Codex"
       ],
-      "excerpt": "AI Animations are live on Gamma!\n\nGenerate AI animations directly in our generator or prompt animations right into any card. These can help with:\n\n\u2705 Cinematic visuals for big idea pitches\n\u2705 Catching attention in marketing proposals\n\u2705 Adding motion ma",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2019104987994075136/img/o6VROGTJfpGz_wbX.jpg",
-      "video": "https://video.twimg.com/amplify_video/2019104987994075136/vid/avc1/1920x1080/2rYinOMWtNnDUZDN.mp4?tag=21"
+      "excerpt": "GitHub continues to embrace rival AI agents",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/githubclaudehero.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
     },
     {
       "filename": "2026-02-05-unlocking-the-power-of-agent-skills-a-deep-dive-in.md",
@@ -47,6 +49,20 @@
       ],
       "excerpt": "Though, it's not all bad news",
       "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2025/10/raspberry-pi.jpg?w=1600&h=900&fit=crop"
+    },
+    {
+      "filename": "2026-02-05-revolutionizing-visual-storytelling-the-power-of-a.md",
+      "slug": "2026-02-05-revolutionizing-visual-storytelling-the-power-of-a",
+      "title": "Revolutionizing Visual Storytelling: The Power of AI Animations",
+      "date": "2026-02-05",
+      "tags": [
+        "AI Animations",
+        "Visual Storytelling",
+        "Gamma"
+      ],
+      "excerpt": "AI Animations are live on Gamma!\n\nGenerate AI animations directly in our generator or prompt animations right into any card. These can help with:\n\n\u2705 Cinematic visuals for big idea pitches\n\u2705 Catching attention in marketing proposals\n\u2705 Adding motion ma",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2019104987994075136/img/o6VROGTJfpGz_wbX.jpg",
+      "video": "https://video.twimg.com/amplify_video/2019104987994075136/vid/avc1/1920x1080/2rYinOMWtNnDUZDN.mp4?tag=21"
     }
   ]
 }
