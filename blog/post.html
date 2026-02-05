@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post | Bitroot Blog</title>
-    <meta name="description" content="Read this article on the Bitroot blog.">
+    <title>Post | Bitroot Newslogger</title>
+    <meta name="description" content="Read this article on the Bitroot newslogger.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/post.css">
@@ -95,7 +95,7 @@
         <nav class="nav">
             <a href="/" class="logo">bitroot</a>
             <div class="nav-links">
-                <a href="/blog" class="nav-link">blog</a>
+                <a href="/blog" class="nav-link">newslogger</a>
                 <a href="/" class="nav-link">home</a>
             </div>
         </nav>
@@ -241,7 +241,7 @@
                 document.getElementById('post-content').innerHTML = `
                     <div class="post-error">
                         <h1>Post Not Found</h1>
-                        <p>No post specified. <a href="/blog">Return to blog</a></p>
+                        <p>No post specified. <a href="/blog">Return to newslogger</a></p>
                     </div>
                 `;
                 return;
@@ -255,7 +255,7 @@
                 const { metadata, content } = parseFrontmatter(text);
 
                 // Update page title
-                document.title = `${metadata.title || 'Post'} | Bitroot Blog`;
+                document.title = `${metadata.title || 'Post'} | Bitroot Newslogger`;
 
                 // Calculate read time
                 const readTime = Math.ceil(content.split(/\s+/).length / 200);
@@ -322,7 +322,7 @@
                         ${html}
                     </div>
                     <nav class="post-nav">
-                        <a href="/blog" class="back-link">&larr; Back to blog</a>
+                        <a href="/blog" class="back-link">&larr; Back to newslogger</a>
                         ${metadata.sources && metadata.sources.length > 0 ? `
                             <a href="${metadata.sources[0]}" target="_blank" rel="noopener" class="source-link" title="View original source">
                                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -357,7 +357,7 @@
                 document.getElementById('post-content').innerHTML = `
                     <div class="post-error">
                         <h1>Post Not Found</h1>
-                        <p>The requested post could not be found. <a href="/blog">Return to blog</a></p>
+                        <p>The requested post could not be found. <a href="/blog">Return to newslogger</a></p>
                     </div>
                 `;
             }

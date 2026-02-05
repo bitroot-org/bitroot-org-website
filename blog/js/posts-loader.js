@@ -202,7 +202,7 @@ const PostsLoader = {
     │      ║  ║ ║  ║ ║  ║ ║  ║ ║  ║       │
     │      ║  ║ ║  ║ ║  ║ ║  ║ ║  ║       │
     │      ╚══╝ ╚══╝ ╚══╝ ╚══╝ ╚══╝       │
-    │         [  LOADING BLOG  ]          │
+    │       [  LOADING NEWSLOGGER  ]      │
     │                                      │
     └──────────────────────────────────────┘`;
 
@@ -213,7 +213,7 @@ const PostsLoader = {
                         <span class="terminal-dot red"></span>
                         <span class="terminal-dot yellow"></span>
                         <span class="terminal-dot green"></span>
-                        <span class="terminal-title">bitroot@blog ~ </span>
+                        <span class="terminal-title">bitroot@newslogger ~ </span>
                     </div>
                     <div class="terminal-body">
                         <pre class="ascii-art">${ascii}</pre>
@@ -267,7 +267,7 @@ const PostsLoader = {
         if (totalPages <= 1) return '';
 
         return `
-            <nav class="pagination" aria-label="Blog pagination">
+            <nav class="pagination" aria-label="Newslogger pagination">
                 <button class="pagination-btn prev" ${this.currentPage === 1 ? 'disabled' : ''} aria-label="Previous page">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <polyline points="15 18 9 12 15 6"></polyline>
