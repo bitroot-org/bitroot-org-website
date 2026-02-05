@@ -97,8 +97,59 @@ def parse_issue(issue):
     }
 
 
+def fetch_twitter_content(url):
+    """Fetch tweet content using Twitter's oEmbed API."""
+    try:
+        # Use Twitter's oEmbed API - free, no auth required
+        oembed_url = f"https://publish.twitter.com/oembed?url={url}&omit_script=true"
+        logger.info(f"Fetching Twitter oEmbed: {oembed_url}")
+
+        resp = requests.get(oembed_url, timeout=30)
+        resp.raise_for_status()
+        data = resp.json()
+
+        # Extract text from HTML response
+        html_content = data.get("html", "")
+        soup = BeautifulSoup(html_content, "html.parser")
+        tweet_text = soup.get_text(separator=" ", strip=True)
+
+        # Clean up the text (remove "— Author (@handle) Date" suffix pattern)
+        tweet_text = re.sub(r'\s*—\s*[^(]+\(@\w+\)\s*\w+\s*\d+,\s*\d+\s*$', '', tweet_text)
+
+        author_name = data.get("author_name", "")
+        author_handle = data.get("author_url", "").split("/")[-1] if data.get("author_url") else ""
+
+        # Build content with context
+        content = f"Tweet by {author_name} (@{author_handle}):\n\n{tweet_text}"
+        description = tweet_text[:250] if len(tweet_text) > 250 else tweet_text
+
+        logger.info("=" * 60)
+        logger.info(f"EXTRACTED TWITTER DATA FROM: {url}")
+        logger.info("=" * 60)
+        logger.info(f"Author: {author_name} (@{author_handle})")
+        logger.info(f"Tweet text: {tweet_text}")
+        logger.info("=" * 60)
+
+        return {
+            "url": url,
+            "content": content,
+            "image": None,  # oEmbed doesn't provide images
+            "description": description,
+            "success": True
+        }
+
+    except Exception as e:
+        logger.error(f"Failed to fetch Twitter content: {str(e)}")
+        return {"url": url, "content": f"Failed to fetch tweet: {str(e)}", "image": None, "description": None, "success": False}
+
+
 def fetch_url_content(url):
     """Fetch and extract text content, image, and description from a URL."""
+    # Handle Twitter/X URLs specially
+    if 'twitter.com' in url or 'x.com' in url:
+        logger.info(f"Detected Twitter/X URL, using oEmbed API")
+        return fetch_twitter_content(url)
+
     try:
         headers = {
             "User-Agent": "Mozilla/5.0 (compatible; BitrootBlogAgent/1.0)"
