@@ -17,6 +17,11 @@ Thumbs.db
 # Claude Code
 .claude/
 
+# AI coding tools
+.agent/
+.agents/
+.zencoder/
+
 # Logs
 *.log
 npm-debug.log*
@@ -36,3 +41,6 @@ build/
 *.temp
 .tmp/
 .temp/
+
+# Test media
+man-flying-car-clouds.mp4
