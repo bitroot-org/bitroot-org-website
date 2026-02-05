@@ -106,6 +106,24 @@ const PostsLoader = {
     },
 
     /**
+     * Render a list item with optional active state
+     */
+    renderListItemWithState(post, isActive) {
+        const tag = (post.tags && post.tags[0]) || 'General';
+
+        return `
+            <article class="list-item${isActive ? ' active' : ''}" data-post-slug="${post.slug}">
+                <span class="list-date">${this.formatDate(post.date, true)}</span>
+                <div class="list-content">
+                    <span class="list-tag">${tag}</span>
+                    <h4 class="list-title">${post.title}</h4>
+                    <span class="list-read-time">${post.readTime}</span>
+                </div>
+            </article>
+        `;
+    },
+
+    /**
      * Initialize the posts loader and render posts
      */
     async init() {
@@ -123,13 +141,13 @@ const PostsLoader = {
         const featuredContainer = document.querySelector('.showcase-grid');
         if (featuredContainer && posts.length > 0) {
             const featured = posts[0];
-            const listPosts = posts.slice(1, 7); // Next 6 posts for list
+            const listPosts = posts.slice(0, 7); // Show first 7 posts in list
 
             featuredContainer.innerHTML = `
                 ${this.renderFeaturedPost(featured)}
                 <aside class="post-list">
                     <h3 class="list-header">Recent</h3>
-                    ${listPosts.map(p => this.renderListItem(p)).join('')}
+                    ${listPosts.map(p => this.renderListItemWithState(p, p.slug === featured.slug)).join('')}
                 </aside>
             `;
 
