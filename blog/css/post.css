@@ -16,8 +16,8 @@
     position: relative;
 }
 
-/* Blue accent bar at top */
-.post-article::before {
+/* Blue accent bar at top (only when no hero image) */
+.post-article:not(:has(.post-hero-image))::before {
     content: '';
     position: absolute;
     top: 0;
@@ -26,6 +26,22 @@
     height: 4px;
     background: linear-gradient(90deg, var(--bitroot-primary-blue), var(--bitroot-pink));
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+/* Hero Image */
+.post-hero-image {
+    margin: calc(-1 * var(--spacing-2xl));
+    margin-bottom: var(--spacing-xl);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    max-height: 400px;
+}
+
+.post-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .post-loading,
@@ -116,8 +132,31 @@
     margin-bottom: var(--spacing-sm);
 }
 
+.post-body h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-primary);
+}
+
+.post-body h5, .post-body h6 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-secondary);
+}
+
 .post-body p {
     margin-bottom: var(--spacing-lg);
+}
+
+/* First paragraph emphasis */
+.post-body > p:first-of-type {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
 }
 
 .post-body a {
@@ -197,6 +236,56 @@
     margin: var(--spacing-2xl) 0;
 }
 
+/* Tables */
+.post-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--spacing-lg) 0;
+    font-size: 0.9375rem;
+}
+
+.post-body th,
+.post-body td {
+    padding: var(--spacing-sm) var(--spacing-md);
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+.post-body th {
+    font-weight: 600;
+    background: var(--bitroot-light-blue);
+    color: var(--bitroot-primary-blue);
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.post-body tr:hover {
+    background: rgba(31, 118, 249, 0.03);
+}
+
+/* Emphasis styles */
+.post-body em {
+    font-style: italic;
+}
+
+.post-body mark {
+    background: var(--bitroot-pink);
+    padding: 0.1em 0.3em;
+    border-radius: 2px;
+}
+
+/* Drop cap for first letter (optional nice touch) */
+.post-body > p:first-of-type::first-letter {
+    font-size: 3.5rem;
+    font-weight: 700;
+    float: left;
+    line-height: 1;
+    margin-right: var(--spacing-sm);
+    margin-top: 0.1em;
+    color: var(--bitroot-primary-blue);
+}
+
 /* Post Sources */
 .post-sources {
     margin-top: var(--spacing-2xl);
@@ -269,12 +358,31 @@
         padding: var(--spacing-lg);
     }
 
+    .post-hero-image {
+        margin: calc(-1 * var(--spacing-lg));
+        margin-bottom: var(--spacing-lg);
+        max-height: 250px;
+    }
+
     .post-header .post-title {
         font-size: 1.75rem;
     }
 
     .post-body {
         font-size: 1rem;
+    }
+
+    .post-body > p:first-of-type::first-letter {
+        font-size: 2.5rem;
+    }
+
+    .post-body table {
+        font-size: 0.875rem;
+    }
+
+    .post-body th,
+    .post-body td {
+        padding: var(--spacing-xs) var(--spacing-sm);
     }
 
     .post-sources {

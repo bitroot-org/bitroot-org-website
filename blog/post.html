@@ -145,6 +145,11 @@
                 const html = marked.parse(content);
 
                 document.getElementById('post-content').innerHTML = `
+                    ${metadata.image ? `
+                        <div class="post-hero-image">
+                            <img src="${metadata.image}" alt="${metadata.title || 'Post image'}">
+                        </div>
+                    ` : ''}
                     <header class="post-header">
                         <div class="post-meta">
                             <span class="post-tag">${tag}</span>

@@ -1,9 +1,8 @@
 {
   "generated": true,
-  "count": 2,
+  "count": 1,
   "posts": [
-    "2026-02-05-raspberry-pi-price-hikes-understanding-the-impact.md",
-    "2026-02-05-navigating-browser-compatibility-ensuring-seamless.md"
+    "2026-02-05-raspberry-pi-price-hikes-understanding-the-impact.md"
   ],
   "metadata": [
     {
@@ -19,20 +18,6 @@
       ],
       "excerpt": "Though, it's not all bad news",
       "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2025/10/raspberry-pi.jpg?w=1600&h=900&fit=crop"
-    },
-    {
-      "filename": "2026-02-05-navigating-browser-compatibility-ensuring-seamless.md",
-      "slug": "2026-02-05-navigating-browser-compatibility-ensuring-seamless",
-      "title": "Navigating Browser Compatibility: Ensuring Seamless User Experiences",
-      "date": "2026-02-05",
-      "tags": [
-        "browser compatibility",
-        "JavaScript",
-        "user experience",
-        "web development"
-      ],
-      "excerpt": "JavaScript is not available. We\u2019ve detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported browser to continue using x.com.",
-      "image": "https://abs-0.twimg.com/emoji/v2/svg/26a0.svg"
     }
   ]
 }
