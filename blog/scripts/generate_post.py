@@ -89,7 +89,7 @@ def parse_issue(issue):
 
 
 def fetch_url_content(url):
-    """Fetch and extract text content from a URL."""
+    """Fetch and extract text content and image from a URL."""
     try:
         headers = {
             "User-Agent": "Mozilla/5.0 (compatible; BitrootBlogAgent/1.0)"
@@ -98,6 +98,37 @@ def fetch_url_content(url):
         resp.raise_for_status()
 
         soup = BeautifulSoup(resp.text, "html.parser")
+
+        # Try to extract image (og:image, twitter:image, or first large image)
+        image_url = None
+
+        # Try og:image first
+        og_image = soup.find("meta", property="og:image")
+        if og_image and og_image.get("content"):
+            image_url = og_image["content"]
+
+        # Try twitter:image
+        if not image_url:
+            twitter_image = soup.find("meta", {"name": "twitter:image"})
+            if twitter_image and twitter_image.get("content"):
+                image_url = twitter_image["content"]
+
+        # Try first significant image in content
+        if not image_url:
+            for img in soup.find_all("img", src=True):
+                src = img["src"]
+                # Skip small images, icons, logos
+                if any(skip in src.lower() for skip in ["icon", "logo", "avatar", "badge", "button"]):
+                    continue
+                # Check for width/height attributes suggesting larger image
+                width = img.get("width", "")
+                height = img.get("height", "")
+                if width and int(width) < 200:
+                    continue
+                if height and int(height) < 150:
+                    continue
+                image_url = src
+                break
 
         # Remove script, style, nav, footer elements
         for tag in soup(["script", "style", "nav", "footer", "header", "aside"]):
@@ -120,10 +151,21 @@ def fetch_url_content(url):
         text = re.sub(r"\n{3,}", "\n\n", text)
         text = text[:MAX_CONTENT_LENGTH]
 
-        return {"url": url, "content": text, "success": True}
+        return {"url": url, "content": text, "image": image_url, "success": True}
 
     except Exception as e:
-        return {"url": url, "content": f"Failed to fetch: {str(e)}", "success": False}
+        return {"url": url, "content": f"Failed to fetch: {str(e)}", "image": None, "success": False}
+
+
+def get_unsplash_image(query):
+    """Get a relevant image from Unsplash based on query."""
+    try:
+        # Use Unsplash Source for random relevant image (no API key needed)
+        # This redirects to an actual image URL
+        search_query = query.replace(" ", ",")[:50]
+        return f"https://source.unsplash.com/800x500/?{search_query}"
+    except:
+        return None
 
 
 def generate_post(client, issue_data, fetched_contents):
@@ -198,7 +240,7 @@ Return ONLY a JSON object with these fields (no markdown code blocks, no extra t
         raise ValueError(f"Could not parse JSON from response: {response_text[:500]}")
 
 
-def create_post_file(post_data, source_urls):
+def create_post_file(post_data, source_urls, image_url=None):
     """Create a markdown file with frontmatter."""
     today = datetime.now().strftime("%Y-%m-%d")
 
@@ -210,6 +252,12 @@ def create_post_file(post_data, source_urls):
     filename = f"{today}-{slug}.md"
     filepath = os.path.join(POSTS_DIR, filename)
 
+    # If no image from sources, get one from Unsplash based on tags/title
+    if not image_url:
+        tags = post_data.get("tags", [])
+        query = " ".join(tags[:2]) if tags else post_data["title"][:30]
+        image_url = get_unsplash_image(query)
+
     # Create post with frontmatter
     post = frontmatter.Post(post_data["content"])
     post.metadata = {
@@ -217,6 +265,7 @@ def create_post_file(post_data, source_urls):
         "date": today,
         "tags": post_data.get("tags", []),
         "excerpt": post_data.get("excerpt", ""),
+        "image": image_url,
         "sources": source_urls,
     }
 
@@ -308,8 +357,15 @@ def main():
                 )
                 continue
 
+            # Get image from sources (use first found)
+            source_image = None
+            for item in fetched_contents:
+                if item.get("image"):
+                    source_image = item["image"]
+                    break
+
             # Create file
-            filepath = create_post_file(post_data, issue_data["urls"])
+            filepath = create_post_file(post_data, issue_data["urls"], source_image)
             print(f"  Created: {filepath}")
 
             # Comment on issue

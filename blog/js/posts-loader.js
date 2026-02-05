@@ -49,9 +49,15 @@ const PostsLoader = {
     },
 
     /**
-     * Render a post as featured (large) card
+     * Get image URL for a post (from metadata or fallback)
      */
-    renderFeaturedPost(post) {
+    getPostImage(post) {
+        // Use image from post metadata if available
+        if (post.image) {
+            return post.image;
+        }
+
+        // Fallback to tag-based images
         const tagImages = {
             'ai': 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=500&fit=crop',
             'engineering': 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=500&fit=crop',
@@ -60,11 +66,20 @@ const PostsLoader = {
             'startup': 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=500&fit=crop',
             'privacy': 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=500&fit=crop',
             'technology': 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=500&fit=crop',
+            'thoughts': 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&h=500&fit=crop',
             'default': 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=500&fit=crop'
         };
 
         const tag = (post.tags && post.tags[0]) || 'General';
-        const image = tagImages[tag.toLowerCase()] || tagImages.default;
+        return tagImages[tag.toLowerCase()] || tagImages.default;
+    },
+
+    /**
+     * Render a post as featured (large) card
+     */
+    renderFeaturedPost(post) {
+        const tag = (post.tags && post.tags[0]) || 'General';
+        const image = this.getPostImage(post);
 
         return `
             <article class="featured-post" data-post-slug="${post.slug}">

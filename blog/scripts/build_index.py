@@ -28,6 +28,7 @@ def get_post_metadata(filepath):
             "date": str(post.metadata.get("date", "")),
             "tags": post.metadata.get("tags", []),
             "excerpt": post.metadata.get("excerpt", ""),
+            "image": post.metadata.get("image", ""),
         }
     except Exception as e:
         print(f"Error reading {filepath}: {e}")
