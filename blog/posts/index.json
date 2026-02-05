@@ -1,10 +1,25 @@
 {
   "generated": true,
-  "count": 1,
+  "count": 2,
   "posts": [
+    "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
     "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
+      "slug": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s",
+      "title": "Introducing Voxtral Transcribe 2: Revolutionizing Speech-to-Text Models",
+      "date": "2026-02-05",
+      "published_at": "2026-02-05T15:38:43.566527",
+      "tags": [
+        "Voxtral Transcribe 2",
+        "Speech-to-Text",
+        "AI"
+      ],
+      "excerpt": "Precision diarization, real-time transcription, and a new audio playground.",
+      "image": "https://mistral.ai/img/mistral-cover.png"
+    },
     {
       "filename": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
       "slug": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co",
