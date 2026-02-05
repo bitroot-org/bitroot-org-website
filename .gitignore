@@ -42,5 +42,6 @@ build/
 .tmp/
 .temp/
 
-# Test media
+# Test media & reports
 man-flying-car-clouds.mp4
+inference-sh-report.pdf
