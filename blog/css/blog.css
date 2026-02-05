@@ -267,7 +267,7 @@ img {
     position: relative;
 }
 
-/* Video container */
+/* Video container - shown by default for posts with video */
 .featured-post .video-container {
     position: absolute;
     top: 0;
@@ -283,45 +283,20 @@ img {
     object-fit: cover;
 }
 
-/* Video play button */
-.video-play-btn {
-    position: absolute;
-    bottom: var(--spacing-md);
-    right: var(--spacing-md);
-    width: 48px;
-    height: 48px;
-    background: rgba(0, 0, 0, 0.7);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 50%;
-    color: white;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s ease;
-    z-index: 10;
-    backdrop-filter: blur(4px);
+/* Hide image when video is present */
+.featured-post:has(.video-container) .post-image > img {
+    display: none;
 }
 
-.video-play-btn:hover {
-    background: var(--bitroot-primary-blue);
-    border-color: var(--bitroot-primary-blue);
-    transform: scale(1.1);
-}
-
-.video-play-btn svg {
-    margin-left: 3px;
-}
-
-/* Video mute button */
+/* Video mute/unmute button */
 .video-mute-btn {
     position: absolute;
     bottom: var(--spacing-md);
     right: var(--spacing-md);
-    width: 40px;
-    height: 40px;
-    background: rgba(0, 0, 0, 0.7);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 44px;
+    height: 44px;
+    background: rgba(0, 0, 0, 0.75);
+    border: 2px solid rgba(255, 255, 255, 0.4);
     border-radius: 50%;
     color: white;
     cursor: pointer;
@@ -334,8 +309,9 @@ img {
 }
 
 .video-mute-btn:hover {
-    background: rgba(0, 0, 0, 0.9);
-    border-color: white;
+    background: var(--bitroot-primary-blue);
+    border-color: var(--bitroot-primary-blue);
+    transform: scale(1.1);
 }
 
 .featured-post .post-image::after {
