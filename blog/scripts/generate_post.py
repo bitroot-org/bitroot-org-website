@@ -131,17 +131,35 @@ def fetch_twitter_content(url):
         content = f"Tweet by {author_name} (@{author_handle}):\n\n{tweet_text}"
         description = tweet_text[:250] if len(tweet_text) > 250 else tweet_text
 
+        # Try to get image from tweet page directly (og:image)
+        image_url = None
+        try:
+            headers = {"User-Agent": "Mozilla/5.0 (compatible; BitrootBlogAgent/1.0)"}
+            page_resp = requests.get(url, headers=headers, timeout=10)
+            if page_resp.ok:
+                page_soup = BeautifulSoup(page_resp.text, "html.parser")
+                og_image = page_soup.find("meta", property="og:image")
+                if og_image and og_image.get("content"):
+                    img = og_image["content"]
+                    # Skip default Twitter profile images
+                    if "profile_images" not in img and "default_profile" not in img:
+                        image_url = img
+                        logger.info(f"Found og:image from Twitter page: {image_url}")
+        except Exception as img_err:
+            logger.warning(f"Could not fetch Twitter page for image: {img_err}")
+
         logger.info("=" * 60)
         logger.info(f"EXTRACTED TWITTER DATA FROM: {url}")
         logger.info("=" * 60)
         logger.info(f"Author: {author_name} (@{author_handle})")
         logger.info(f"Tweet text: {tweet_text}")
+        logger.info(f"Image URL: {image_url}")
         logger.info("=" * 60)
 
         return {
             "url": url,
             "content": content,
-            "image": None,  # oEmbed doesn't provide images
+            "image": image_url,
             "description": description,
             "success": True
         }
@@ -272,15 +290,16 @@ def fetch_url_content(url):
         return {"url": url, "content": f"Failed to fetch: {str(e)}", "image": None, "description": None, "success": False}
 
 
-def get_unsplash_image(query):
-    """Get a relevant image from Unsplash based on query."""
-    try:
-        # Use Unsplash Source for random relevant image (no API key needed)
-        # This redirects to an actual image URL
-        search_query = query.replace(" ", ",")[:50]
-        return f"https://source.unsplash.com/800x500/?{search_query}"
-    except:
-        return None
+def get_fallback_image(query):
+    """Get a fallback image when no source image is available.
+
+    Note: source.unsplash.com is deprecated. We now return None and let
+    the frontend handle fallback images based on tags.
+    """
+    # No longer using Unsplash Source as it's deprecated
+    # Frontend will use tag-based fallback images from posts-loader.js
+    logger.info(f"No source image available, frontend will use tag-based fallback")
+    return None
 
 
 def generate_post(client, issue_data, fetched_contents):
@@ -446,11 +465,11 @@ def create_post_file(post_data, source_urls, image_url=None, source_excerpt=None
     filename = f"{today}-{slug}.md"
     filepath = os.path.join(POSTS_DIR, filename)
 
-    # If no image from sources, get one from Unsplash based on tags/title
+    # If no image from sources, use fallback (frontend will handle tag-based images)
     if not image_url:
         tags = post_data.get("tags", [])
         query = " ".join(tags[:2]) if tags else post_data["title"][:30]
-        image_url = get_unsplash_image(query)
+        image_url = get_fallback_image(query)
 
     # Use source excerpt if available, fallback to AI-generated excerpt
     excerpt = source_excerpt if source_excerpt else post_data.get("excerpt", "")
