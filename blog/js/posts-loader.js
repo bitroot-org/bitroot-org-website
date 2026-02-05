@@ -118,10 +118,15 @@ const PostsLoader = {
                 <div class="post-image">
                     <img src="${image}" alt="${post.title}">
                     ${hasVideo ? `
-                        <div class="video-container">
-                            <video src="${post.video}" playsinline loop muted></video>
+                        <div class="video-container" style="display: none;">
+                            <video src="${post.video}" playsinline loop></video>
                         </div>
-                        <button class="video-mute-btn" aria-label="Toggle sound">
+                        <button class="video-play-btn" aria-label="Play video">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </button>
+                        <button class="video-mute-btn" style="display: none;" aria-label="Toggle sound">
                             <svg class="muted-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
                                 <line x1="23" y1="9" x2="17" y2="15"></line>
@@ -371,50 +376,46 @@ const PostsLoader = {
     },
 
     /**
-     * Initialize video player controls and autoplay
+     * Initialize video player controls
      */
-    initVideoControls(featured, autoplay = false) {
+    initVideoControls(featured) {
+        const playBtn = featured.querySelector('.video-play-btn');
         const muteBtn = featured.querySelector('.video-mute-btn');
         const videoContainer = featured.querySelector('.video-container');
         const video = featured.querySelector('video');
         const postImage = featured.querySelector('.post-image img');
 
-        if (!video) return;
+        if (!playBtn || !video) return;
 
-        // Setup mute button handler
-        if (muteBtn) {
-            muteBtn.addEventListener('click', (e) => {
-                e.stopPropagation();
+        playBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
 
-                video.muted = !video.muted;
-                const mutedIcon = muteBtn.querySelector('.muted-icon');
-                const unmutedIcon = muteBtn.querySelector('.unmuted-icon');
-
-                if (video.muted) {
-                    mutedIcon.style.display = 'block';
-                    unmutedIcon.style.display = 'none';
-                } else {
-                    mutedIcon.style.display = 'none';
-                    unmutedIcon.style.display = 'block';
-                }
-            });
-        }
-
-        // Auto-play video muted
-        if (autoplay || videoContainer) {
+            // Hide image, show video
             postImage.style.display = 'none';
             videoContainer.style.display = 'block';
-            if (muteBtn) muteBtn.style.display = 'flex';
+            playBtn.style.display = 'none';
+            muteBtn.style.display = 'flex';
 
+            // Play muted
             video.muted = true;
-            video.play().catch(err => {
-                // Autoplay blocked, show image instead
-                console.log('Autoplay blocked:', err);
-                postImage.style.display = 'block';
-                videoContainer.style.display = 'none';
-                if (muteBtn) muteBtn.style.display = 'none';
-            });
-        }
+            video.play();
+        });
+
+        muteBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+
+            video.muted = !video.muted;
+            const mutedIcon = muteBtn.querySelector('.muted-icon');
+            const unmutedIcon = muteBtn.querySelector('.unmuted-icon');
+
+            if (video.muted) {
+                mutedIcon.style.display = 'block';
+                unmutedIcon.style.display = 'none';
+            } else {
+                mutedIcon.style.display = 'none';
+                unmutedIcon.style.display = 'block';
+            }
+        });
     },
 
     /**
@@ -443,7 +444,8 @@ const PostsLoader = {
         if (featured) {
             featured.addEventListener('click', (e) => {
                 // Don't navigate if clicking video controls
-                if (e.target.closest('.video-mute-btn') ||
+                if (e.target.closest('.video-play-btn') ||
+                    e.target.closest('.video-mute-btn') ||
                     e.target.closest('.read-more')) {
                     return;
                 }
@@ -483,7 +485,8 @@ const PostsLoader = {
 
             newFeatured.addEventListener('click', (e) => {
                 // Don't navigate if clicking video controls
-                if (e.target.closest('.video-mute-btn') ||
+                if (e.target.closest('.video-play-btn') ||
+                    e.target.closest('.video-mute-btn') ||
                     e.target.closest('.read-more')) {
                     return;
                 }
