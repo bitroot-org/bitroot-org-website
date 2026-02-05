@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "count": 9,
+  "count": 10,
   "posts": [
     "why-we-open-source-our-tools.md",
     "typography-in-technical-writing.md",
@@ -10,7 +10,8 @@
     "cicd-pipelines-that-actually-work.md",
     "building-scalable-systems.md",
     "2026-02-05-navigating-the-intersection-of-technology-and-priv.md",
-    "2026-02-05-building-a-strong-foundation-overcoming-technical.md"
+    "2026-02-05-building-a-strong-foundation-overcoming-technical.md",
+    "2026-02-05-building-a-strong-foundation-navigating-technical.md"
   ],
   "metadata": [
     {
@@ -23,7 +24,8 @@
         "Open Source",
         "Culture"
       ],
-      "excerpt": "Open source is at the heart of what we do. Here's why we believe in giving back to the community and how it has shaped our company culture."
+      "excerpt": "Open source is at the heart of what we do. Here's why we believe in giving back to the community and how it has shaped our company culture.",
+      "image": ""
     },
     {
       "filename": "typography-in-technical-writing.md",
@@ -35,7 +37,8 @@
         "Typography",
         "Documentation"
       ],
-      "excerpt": "Good typography makes technical content accessible. We explore font choices, hierarchy, and spacing that make documentation a pleasure to read."
+      "excerpt": "Good typography makes technical content accessible. We explore font choices, hierarchy, and spacing that make documentation a pleasure to read.",
+      "image": ""
     },
     {
       "filename": "the-art-of-minimal-interfaces.md",
@@ -47,7 +50,8 @@
         "UI/UX",
         "Minimalism"
       ],
-      "excerpt": "Less is more. We explore the principles behind minimal interface design and how constraints can lead to more elegant, usable products."
+      "excerpt": "Less is more. We explore the principles behind minimal interface design and how constraints can lead to more elegant, usable products.",
+      "image": ""
     },
     {
       "filename": "getting-started-with-static-site-generators.md",
@@ -59,7 +63,8 @@
         "Web Development",
         "Static Sites"
       ],
-      "excerpt": "Static sites are making a comeback. Learn how to leverage modern static site generators to build fast, secure, and maintainable websites."
+      "excerpt": "Static sites are making a comeback. Learn how to leverage modern static site generators to build fast, secure, and maintainable websites.",
+      "image": ""
     },
     {
       "filename": "deploying-to-the-edge.md",
@@ -71,7 +76,8 @@
         "Edge Computing",
         "Performance"
       ],
-      "excerpt": "Edge computing brings your code closer to users. Learn how to deploy serverless functions to edge networks for lightning-fast response times globally."
+      "excerpt": "Edge computing brings your code closer to users. Learn how to deploy serverless functions to edge networks for lightning-fast response times globally.",
+      "image": ""
     },
     {
       "filename": "cicd-pipelines-that-actually-work.md",
@@ -83,7 +89,8 @@
         "DevOps",
         "CI/CD"
       ],
-      "excerpt": "Continuous integration and deployment can be complex. We share our battle-tested pipeline configurations and the lessons learned from years of iteration."
+      "excerpt": "Continuous integration and deployment can be complex. We share our battle-tested pipeline configurations and the lessons learned from years of iteration.",
+      "image": ""
     },
     {
       "filename": "building-scalable-systems.md",
@@ -95,7 +102,8 @@
         "Architecture",
         "Scalability"
       ],
-      "excerpt": "An exploration of how we approach system design at Bitroot, focusing on scalability, maintainability, and developer experience."
+      "excerpt": "An exploration of how we approach system design at Bitroot, focusing on scalability, maintainability, and developer experience.",
+      "image": ""
     },
     {
       "filename": "2026-02-05-navigating-the-intersection-of-technology-and-priv.md",
@@ -107,7 +115,8 @@
         "technology",
         "privacy"
       ],
-      "excerpt": "As startups build their foundation, they must navigate the complex landscape of technology and privacy, balancing innovation with user protection. This post explores key considerations and practical takeaways for startups to ensure a strong, privacy-centric foundation."
+      "excerpt": "As startups build their foundation, they must navigate the complex landscape of technology and privacy, balancing innovation with user protection. This post explores key considerations and practical takeaways for startups to ensure a strong, privacy-centric foundation.",
+      "image": ""
     },
     {
       "filename": "2026-02-05-building-a-strong-foundation-overcoming-technical.md",
@@ -119,7 +128,21 @@
         "technical challenges",
         "foundation building"
       ],
-      "excerpt": "Startups often face significant technical hurdles when building their foundation, but with the right strategies and mindset, these challenges can be overcome, setting the stage for long-term success. By understanding common technical pitfalls and implementing practical solutions, entrepreneurs can ensure their startup is well-equipped to thrive in a competitive market."
+      "excerpt": "Startups often face significant technical hurdles when building their foundation, but with the right strategies and mindset, these challenges can be overcome, setting the stage for long-term success. By understanding common technical pitfalls and implementing practical solutions, entrepreneurs can ensure their startup is well-equipped to thrive in a competitive market.",
+      "image": ""
+    },
+    {
+      "filename": "2026-02-05-building-a-strong-foundation-navigating-technical.md",
+      "slug": "2026-02-05-building-a-strong-foundation-navigating-technical",
+      "title": "Building a Strong Foundation: Navigating Technical Challenges in Startup Development",
+      "date": "2026-02-05",
+      "tags": [
+        "startup development",
+        "technical challenges",
+        "foundation building"
+      ],
+      "excerpt": "Startups face numerous technical challenges when building their foundation, and navigating these hurdles is crucial for success. By understanding common pitfalls and implementing strategic solutions, startups can set themselves up for long-term growth and stability.",
+      "image": "https://abs-0.twimg.com/emoji/v2/svg/26a0.svg"
     }
   ]
 }
