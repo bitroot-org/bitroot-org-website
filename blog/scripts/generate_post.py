@@ -1,0 +1,321 @@
+#!/usr/bin/env python3
+"""
+Blog Post Generator Agent
+
+Processes GitHub issues labeled 'blog-link', fetches content from URLs,
+and uses Google Gemini to synthesize original blog posts.
+"""
+
+import os
+import re
+import json
+import subprocess
+from datetime import datetime
+from urllib.parse import urlparse
+
+import requests
+from bs4 import BeautifulSoup
+import frontmatter
+import google.generativeai as genai
+
+# Configuration
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
+GOOGLE_AI_API_KEY = os.environ.get("GOOGLE_AI_API_KEY")
+REPO_NAME = os.environ.get("REPO_NAME", "")
+ISSUE_NUMBER = os.environ.get("ISSUE_NUMBER")
+EVENT_NAME = os.environ.get("EVENT_NAME", "workflow_dispatch")
+
+POSTS_DIR = "blog/posts"
+MAX_CONTENT_LENGTH = 15000  # Max chars per URL to avoid token limits
+
+
+def setup_genai():
+    """Initialize Google Generative AI client."""
+    if not GOOGLE_AI_API_KEY:
+        raise ValueError("GOOGLE_AI_API_KEY environment variable not set")
+    genai.configure(api_key=GOOGLE_AI_API_KEY)
+    return genai.GenerativeModel("gemini-1.5-flash")
+
+
+def get_github_issues():
+    """Fetch open issues with 'blog-link' label."""
+    if not GITHUB_TOKEN or not REPO_NAME:
+        raise ValueError("GITHUB_TOKEN and REPO_NAME must be set")
+
+    # If triggered by specific issue, only process that one
+    if EVENT_NAME == "issues" and ISSUE_NUMBER:
+        url = f"https://api.github.com/repos/{REPO_NAME}/issues/{ISSUE_NUMBER}"
+        headers = {
+            "Authorization": f"token {GITHUB_TOKEN}",
+            "Accept": "application/vnd.github.v3+json",
+        }
+        resp = requests.get(url, headers=headers)
+        resp.raise_for_status()
+        return [resp.json()]
+
+    # Otherwise, get all open issues with blog-link label
+    url = f"https://api.github.com/repos/{REPO_NAME}/issues"
+    headers = {
+        "Authorization": f"token {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github.v3+json",
+    }
+    params = {"labels": "blog-link", "state": "open"}
+    resp = requests.get(url, headers=headers, params=params)
+    resp.raise_for_status()
+    return resp.json()
+
+
+def parse_issue(issue):
+    """Extract URLs and optional angle from issue body."""
+    body = issue.get("body", "") or ""
+    title = issue.get("title", "Blog Post")
+
+    # Extract URLs
+    url_pattern = r"https?://[^\s<>\"\']+"
+    urls = re.findall(url_pattern, body)
+
+    # Extract angle (text after URLs or labeled with "Angle:")
+    angle_match = re.search(r"(?:angle|topic|focus)[:\s]*(.+)", body, re.IGNORECASE)
+    angle = angle_match.group(1).strip() if angle_match else None
+
+    # If no explicit angle, use remaining text after URLs
+    if not angle:
+        remaining = re.sub(url_pattern, "", body).strip()
+        remaining = re.sub(r"\s+", " ", remaining)
+        if len(remaining) > 10:
+            angle = remaining
+
+    return {
+        "title": title,
+        "urls": urls,
+        "angle": angle,
+        "issue_number": issue.get("number"),
+    }
+
+
+def fetch_url_content(url):
+    """Fetch and extract text content from a URL."""
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (compatible; BitrootBlogAgent/1.0)"
+        }
+        resp = requests.get(url, headers=headers, timeout=30)
+        resp.raise_for_status()
+
+        soup = BeautifulSoup(resp.text, "html.parser")
+
+        # Remove script, style, nav, footer elements
+        for tag in soup(["script", "style", "nav", "footer", "header", "aside"]):
+            tag.decompose()
+
+        # Try to find main content
+        main_content = (
+            soup.find("article")
+            or soup.find("main")
+            or soup.find(class_=re.compile(r"content|article|post", re.I))
+            or soup.find("body")
+        )
+
+        if main_content:
+            text = main_content.get_text(separator="\n", strip=True)
+        else:
+            text = soup.get_text(separator="\n", strip=True)
+
+        # Clean up whitespace
+        text = re.sub(r"\n{3,}", "\n\n", text)
+        text = text[:MAX_CONTENT_LENGTH]
+
+        return {"url": url, "content": text, "success": True}
+
+    except Exception as e:
+        return {"url": url, "content": f"Failed to fetch: {str(e)}", "success": False}
+
+
+def generate_post(model, issue_data, fetched_contents):
+    """Use Gemini to synthesize a blog post from the fetched content."""
+    # Build context from fetched content
+    sources_text = ""
+    for item in fetched_contents:
+        if item["success"]:
+            sources_text += f"\n\n--- Source: {item['url']} ---\n{item['content']}"
+
+    if not sources_text.strip():
+        return None
+
+    prompt = f"""You are a skilled technical writer for Bitroot, a technology company that helps startups build their foundation.
+
+Write an original, insightful blog post based on the following source materials. Your post should:
+- Be 600-1200 words
+- Have a clear, engaging title
+- Synthesize ideas from the sources into your own original analysis
+- Add your own insights and perspective
+- Be written in a professional but accessible tone
+- Include practical takeaways for readers
+- NOT copy text directly from sources
+- NOT include phrases like "according to" or "the article says"
+
+Topic/Title hint: {issue_data['title']}
+{f"Angle/Focus: {issue_data['angle']}" if issue_data.get('angle') else ""}
+
+Source materials:
+{sources_text}
+
+Output format:
+Return ONLY a JSON object with these fields (no markdown code blocks):
+{{
+  "title": "Your Post Title",
+  "tags": ["tag1", "tag2"],
+  "excerpt": "A 1-2 sentence summary for preview",
+  "content": "The full markdown content of the post (use proper markdown formatting with ## for headings)"
+}}"""
+
+    response = model.generate_content(prompt)
+    response_text = response.text.strip()
+
+    # Try to parse JSON from response
+    # Remove markdown code blocks if present
+    if response_text.startswith("```"):
+        response_text = re.sub(r"^```\w*\n?", "", response_text)
+        response_text = re.sub(r"\n?```$", "", response_text)
+
+    try:
+        return json.loads(response_text)
+    except json.JSONDecodeError:
+        # Try to extract JSON from response
+        json_match = re.search(r"\{[\s\S]*\}", response_text)
+        if json_match:
+            return json.loads(json_match.group())
+        raise ValueError(f"Could not parse JSON from response: {response_text[:500]}")
+
+
+def create_post_file(post_data, source_urls):
+    """Create a markdown file with frontmatter."""
+    today = datetime.now().strftime("%Y-%m-%d")
+
+    # Generate slug from title
+    slug = re.sub(r"[^\w\s-]", "", post_data["title"].lower())
+    slug = re.sub(r"[\s_]+", "-", slug)
+    slug = slug[:50].strip("-")
+
+    filename = f"{today}-{slug}.md"
+    filepath = os.path.join(POSTS_DIR, filename)
+
+    # Create post with frontmatter
+    post = frontmatter.Post(post_data["content"])
+    post.metadata = {
+        "title": post_data["title"],
+        "date": today,
+        "tags": post_data.get("tags", []),
+        "excerpt": post_data.get("excerpt", ""),
+        "sources": source_urls,
+    }
+
+    os.makedirs(POSTS_DIR, exist_ok=True)
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(frontmatter.dumps(post))
+
+    return filepath
+
+
+def comment_on_issue(issue_number, message):
+    """Add a comment to the GitHub issue."""
+    if not GITHUB_TOKEN or not REPO_NAME:
+        return
+
+    url = f"https://api.github.com/repos/{REPO_NAME}/issues/{issue_number}/comments"
+    headers = {
+        "Authorization": f"token {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github.v3+json",
+    }
+    data = {"body": message}
+    requests.post(url, headers=headers, json=data)
+
+
+def close_issue(issue_number):
+    """Close the GitHub issue after processing."""
+    if not GITHUB_TOKEN or not REPO_NAME:
+        return
+
+    url = f"https://api.github.com/repos/{REPO_NAME}/issues/{issue_number}"
+    headers = {
+        "Authorization": f"token {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github.v3+json",
+    }
+    data = {"state": "closed"}
+    requests.patch(url, headers=headers, json=data)
+
+
+def main():
+    print("Starting blog post generator...")
+
+    # Setup
+    model = setup_genai()
+    issues = get_github_issues()
+
+    if not issues:
+        print("No issues with 'blog-link' label found.")
+        return
+
+    print(f"Found {len(issues)} issue(s) to process")
+
+    for issue in issues:
+        issue_data = parse_issue(issue)
+        issue_num = issue_data["issue_number"]
+
+        print(f"\nProcessing issue #{issue_num}: {issue_data['title']}")
+
+        if not issue_data["urls"]:
+            print(f"  No URLs found in issue #{issue_num}")
+            comment_on_issue(
+                issue_num,
+                "No URLs found in this issue. Please add URLs to generate a post.",
+            )
+            continue
+
+        print(f"  Found {len(issue_data['urls'])} URL(s)")
+
+        # Fetch content from each URL
+        fetched_contents = []
+        for url in issue_data["urls"]:
+            print(f"  Fetching: {url}")
+            content = fetch_url_content(url)
+            fetched_contents.append(content)
+            if content["success"]:
+                print(f"    Fetched {len(content['content'])} chars")
+            else:
+                print(f"    Failed: {content['content']}")
+
+        # Generate post
+        print("  Generating post with Gemini...")
+        try:
+            post_data = generate_post(model, issue_data, fetched_contents)
+            if not post_data:
+                print("  Failed to generate post - no content")
+                comment_on_issue(
+                    issue_num, "Failed to generate post - could not fetch any content from the provided URLs."
+                )
+                continue
+
+            # Create file
+            filepath = create_post_file(post_data, issue_data["urls"])
+            print(f"  Created: {filepath}")
+
+            # Comment on issue
+            comment_on_issue(
+                issue_num,
+                f"Blog post generated. A PR will be created with the new post.\n\n**Title:** {post_data['title']}\n\n**File:** `{filepath}`",
+            )
+
+            # Close the issue
+            close_issue(issue_num)
+            print(f"  Closed issue #{issue_num}")
+
+        except Exception as e:
+            print(f"  Error generating post: {e}")
+            comment_on_issue(issue_num, f"Error generating post: {str(e)}")
+
+    print("\nDone!")
+
+
+if __name__ == "__main__":
+    main()

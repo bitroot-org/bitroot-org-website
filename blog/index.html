@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Bitroot</title>
+    <meta name="description" content="Thoughts, tutorials, and insights from the Bitroot team.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/blog.css">
+
+    <!-- Markdown parser for dynamic posts -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+</head>
+<body>
+    <!-- Minimal Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="/" class="logo">bitroot</a>
+            <div class="nav-links">
+                <a href="/blog" class="nav-link active">blog</a>
+                <a href="/" class="nav-link">home</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Blog</h1>
+            <p>Thoughts, tutorials, and insights.</p>
+        </div>
+    </section>
+
+    <!-- Blog Showcase Section -->
+    <main class="showcase">
+        <div class="showcase-grid">
+            <!-- Featured Post (70%) -->
+            <article class="featured-post" data-post-id="1">
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=500&fit=crop" alt="Code on screen">
+                </div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-tag">Engineering</span>
+                        <span class="post-date">Jan 15, 2026</span>
+                    </div>
+                    <h2 class="post-title">Building Scalable Systems with Modern Architecture</h2>
+                    <p class="post-excerpt">An exploration of how we approach system design at Bitroot, focusing on scalability, maintainability, and developer experience. We dive into the patterns and practices that help us build robust foundations.</p>
+                    <div class="post-footer">
+                        <span class="read-time">8 min read</span>
+                        <a href="#" class="read-more">Read more &rarr;</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Post List (30%) -->
+            <aside class="post-list">
+                <h3 class="list-header">Recent</h3>
+
+                <article class="list-item" data-post-id="2">
+                    <span class="list-date">Jan 10</span>
+                    <div class="list-content">
+                        <span class="list-tag">Design</span>
+                        <h4 class="list-title">The Art of Minimal Interfaces</h4>
+                        <span class="list-read-time">5 min</span>
+                    </div>
+                </article>
+
+                <article class="list-item" data-post-id="3">
+                    <span class="list-date">Jan 05</span>
+                    <div class="list-content">
+                        <span class="list-tag">Tutorial</span>
+                        <h4 class="list-title">Getting Started with Static Site Generators</h4>
+                        <span class="list-read-time">12 min</span>
+                    </div>
+                </article>
+
+                <article class="list-item" data-post-id="4">
+                    <span class="list-date">Dec 28</span>
+                    <div class="list-content">
+                        <span class="list-tag">Engineering</span>
+                        <h4 class="list-title">CI/CD Pipelines That Actually Work</h4>
+                        <span class="list-read-time">7 min</span>
+                    </div>
+                </article>
+
+                <article class="list-item" data-post-id="5">
+                    <span class="list-date">Dec 20</span>
+                    <div class="list-content">
+                        <span class="list-tag">Thoughts</span>
+                        <h4 class="list-title">Why We Open Source Our Tools</h4>
+                        <span class="list-read-time">4 min</span>
+                    </div>
+                </article>
+
+                <article class="list-item" data-post-id="6">
+                    <span class="list-date">Dec 15</span>
+                    <div class="list-content">
+                        <span class="list-tag">Design</span>
+                        <h4 class="list-title">Typography in Technical Writing</h4>
+                        <span class="list-read-time">6 min</span>
+                    </div>
+                </article>
+
+                <article class="list-item" data-post-id="7">
+                    <span class="list-date">Dec 08</span>
+                    <div class="list-content">
+                        <span class="list-tag">Tutorial</span>
+                        <h4 class="list-title">Deploying to the Edge</h4>
+                        <span class="list-read-time">9 min</span>
+                    </div>
+                </article>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <span class="footer-text">&copy; 2026 Bitroot</span>
+            <div class="footer-links">
+                <a href="https://github.com/bitroot-org" class="footer-link">GitHub</a>
+                <a href="https://twitter.com/bitrootorg" class="footer-link">Twitter</a>
+                <a href="/rss.xml" class="footer-link">RSS</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/blog.js"></script>
+    <script src="js/posts-loader.js"></script>
+</body>
+</html>
