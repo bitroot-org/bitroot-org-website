@@ -245,65 +245,113 @@ def fetch_twitter_content_oembed(url):
         return {"url": url, "content": f"Failed to fetch tweet: {str(e)}", "image": None, "video": None, "media": [], "description": None, "success": False}
 
 
-def fetch_threads_content(url):
-    """Fetch Threads post content from og:tags (Threads renders content server-side in meta tags)."""
+def fetch_social_media_content(url):
+    """Fetch content from Threads or Instagram posts via og:tags.
+
+    Both platforms render og:tags server-side. This handler extracts:
+    - og:title, og:description for text content
+    - og:video / og:video:url for video URLs (preferred over thumbnail images)
+    - og:image as fallback (but filtered to avoid play-button thumbnails)
+    """
     try:
-        logger.info(f"Fetching Threads post: {url}")
+        platform = "Instagram" if "instagram.com" in url else "Threads"
+        logger.info(f"Fetching {platform} post: {url}")
 
         headers = {
-            "User-Agent": "Mozilla/5.0 (compatible; BitrootBlogAgent/1.0)",
-            "Accept": "text/html,application/xhtml+xml",
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.9",
         }
         resp = requests.get(url, headers=headers, timeout=30)
         resp.raise_for_status()
 
         soup = BeautifulSoup(resp.text, "html.parser")
 
-        # Extract og:tags which Threads populates server-side
+        # Extract all og:tags
         og_title = soup.find("meta", property="og:title")
         og_desc = soup.find("meta", property="og:description")
         og_image = soup.find("meta", property="og:image")
+        og_type = soup.find("meta", property="og:type")
+
+        # Extract video tags (Instagram/Threads serve these for video posts)
+        og_video = soup.find("meta", property="og:video")
+        og_video_url = soup.find("meta", property="og:video:url")
+        og_video_secure = soup.find("meta", property="og:video:secure_url")
+        og_video_type = soup.find("meta", property="og:video:type")
 
         title = og_title["content"] if og_title else ""
         description = og_desc["content"] if og_desc else ""
+        content_type = og_type["content"] if og_type else ""
+
+        # Determine video URL (prefer secure_url > video:url > video)
+        video_url = None
+        for v_tag in [og_video_secure, og_video_url, og_video]:
+            if v_tag and v_tag.get("content"):
+                video_url = v_tag["content"]
+                break
+
+        # Determine image URL
         image_url = og_image["content"] if og_image else None
+
+        # If this is a video post, the og:image is just a thumbnail with play button
+        # Try to find a cleaner image or flag it
+        is_video_post = bool(video_url) or content_type == "video" or (
+            "video" in (og_video_type["content"] if og_video_type else "").lower()
+        )
+
+        if is_video_post and image_url:
+            logger.info(f"Video post detected - og:image is likely a thumbnail with play button overlay")
+            # For video posts, we'll use the video and let the frontend show
+            # a poster frame from the video itself rather than the bad thumbnail
 
         # Clean up HTML entities
         if description:
-            description = description.replace("&#xfa;", "ú").replace("&#xc1;", "Á").replace("&#064;", "@")
+            description = (description
+                .replace("&#xfa;", "ú")
+                .replace("&#xc1;", "Á")
+                .replace("&#064;", "@")
+                .replace("&amp;", "&")
+                .replace("&#x27;", "'")
+                .replace("&quot;", '"'))
 
-        # Extract username from title (format: "Username (@handle) on Threads")
+        # Extract username from title (format: "Username (@handle) on Threads/Instagram")
         author_match = re.search(r"(.+?)\s*\(@(\w+)\)", title) if title else None
         author_name = author_match.group(1) if author_match else ""
         author_handle = author_match.group(2) if author_match else ""
 
         # Build content
-        content = f"Threads post by {author_name} (@{author_handle}):\n\n{description}" if author_name else description
+        if author_name:
+            content = f"{platform} post by {author_name} (@{author_handle}):\n\n{description}"
+        else:
+            content = description
 
         logger.info("=" * 60)
-        logger.info(f"EXTRACTED THREADS DATA FROM: {url}")
+        logger.info(f"EXTRACTED {platform.upper()} DATA FROM: {url}")
         logger.info("=" * 60)
         logger.info(f"Author: {author_name} (@{author_handle})")
+        logger.info(f"Content type: {content_type}")
         logger.info(f"Description: {description[:200]}...")
         logger.info(f"Image URL: {image_url}")
+        logger.info(f"Video URL: {video_url}")
+        logger.info(f"Is video post: {is_video_post}")
         logger.info("=" * 60)
 
-        # Warn if content is too short (likely not good source material)
+        # Warn if content is too short
         if len(description) < 100:
-            logger.warning(f"Threads post has very short content ({len(description)} chars) - may not be suitable for blog generation")
+            logger.warning(f"{platform} post has very short content ({len(description)} chars) - may not be suitable for blog generation")
 
         return {
             "url": url,
             "content": content,
-            "image": image_url,
-            "video": None,  # Threads doesn't expose video in og:tags
+            "image": image_url if not is_video_post else None,  # Skip thumbnail for video posts
+            "video": video_url,
             "media": [],
             "description": description,
             "success": True
         }
 
     except Exception as e:
-        logger.error(f"Failed to fetch Threads content: {str(e)}")
+        logger.error(f"Failed to fetch {platform} content: {str(e)}")
         return {"url": url, "content": f"Failed to fetch: {str(e)}", "image": None, "video": None, "media": [], "description": None, "success": False}
 
 
@@ -314,10 +362,14 @@ def fetch_url_content(url):
         logger.info(f"Detected Twitter/X URL, using fxtwitter API")
         return fetch_twitter_content(url)
 
-    # Handle Threads URLs
+    # Handle Threads/Instagram URLs
     if 'threads.net' in url or 'threads.com' in url:
         logger.info(f"Detected Threads URL, extracting og:tags")
-        return fetch_threads_content(url)
+        return fetch_social_media_content(url)
+
+    if 'instagram.com' in url:
+        logger.info(f"Detected Instagram URL, extracting og:tags")
+        return fetch_social_media_content(url)
 
     try:
         headers = {
@@ -837,7 +889,13 @@ def main():
                 if item.get("media"):
                     source_media.extend(item["media"])
                 if item.get("description") and not source_excerpt:
-                    source_excerpt = item["description"]
+                    desc = item["description"]
+                    # Only use source excerpt if it's a proper short summary (< 200 chars)
+                    # Social media og:descriptions are often the full post text - skip those
+                    if len(desc) <= 200:
+                        source_excerpt = desc
+                    else:
+                        logger.info(f"Source description too long ({len(desc)} chars), using AI-generated excerpt instead")
 
             # Create file
             filepath = create_post_file(

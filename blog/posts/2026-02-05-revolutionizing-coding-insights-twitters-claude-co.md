@@ -1,9 +1,6 @@
 ---
 date: '2026-02-05'
-excerpt: "We've added a new command to Claude Code called /insights \n\nWhen you run
-  it, Claude Code will read your message history from the past month. It'll summarize
-  your projects, how you use Claude Code, and give suggestions on how to improve your
-  workflow."
+excerpt: "Claude Code introduces /insights, a command that analyzes your past month of usage to summarize projects and suggest workflow improvements."
 image: https://pbs.twimg.com/amplify_video_thumb/2019173388062007297/img/jHnsIhpNNPkjIRvy.jpg
 published_at: '2026-02-05T15:13:55.694372'
 sources:

@@ -16,20 +16,11 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
 </head>
 <body>
-    <!-- SVG grain filter for gradient texture -->
-    <svg style="position:absolute;width:0;height:0;" aria-hidden="true">
-        <filter id="grain">
-            <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
-            <feColorMatrix type="saturate" values="0"/>
-            <feBlend in="SourceGraphic" mode="multiply"/>
-        </filter>
-    </svg>
-
     <!-- Pixelated floating clouds -->
     <div class="cloud-ticker" aria-hidden="true">
         <div class="cloud-ticker-track">
             <!-- Strip 1 -->
-            <svg width="2400" height="320" viewBox="0 0 2400 320" fill="#444" shape-rendering="crispEdges">
+            <svg width="2400" height="320" viewBox="0 0 2400 320" fill="#1f76f9" shape-rendering="crispEdges">
                 <!-- Cloud 1: large -->
                 <rect x="80" y="60" width="16" height="16"/><rect x="96" y="60" width="16" height="16"/><rect x="112" y="60" width="16" height="16"/>
                 <rect x="64" y="76" width="16" height="16"/><rect x="80" y="76" width="16" height="16"/><rect x="96" y="76" width="16" height="16"/><rect x="112" y="76" width="16" height="16"/><rect x="128" y="76" width="16" height="16"/>
@@ -69,7 +60,7 @@
                 <rect x="2238" y="252" width="12" height="12"/><rect x="2250" y="252" width="12" height="12"/><rect x="2262" y="252" width="12" height="12"/><rect x="2274" y="252" width="12" height="12"/>
             </svg>
             <!-- Strip 2: duplicate for seamless loop -->
-            <svg width="2400" height="320" viewBox="0 0 2400 320" fill="#444" shape-rendering="crispEdges">
+            <svg width="2400" height="320" viewBox="0 0 2400 320" fill="#1f76f9" shape-rendering="crispEdges">
                 <rect x="80" y="60" width="16" height="16"/><rect x="96" y="60" width="16" height="16"/><rect x="112" y="60" width="16" height="16"/>
                 <rect x="64" y="76" width="16" height="16"/><rect x="80" y="76" width="16" height="16"/><rect x="96" y="76" width="16" height="16"/><rect x="112" y="76" width="16" height="16"/><rect x="128" y="76" width="16" height="16"/>
                 <rect x="48" y="92" width="16" height="16"/><rect x="64" y="92" width="16" height="16"/><rect x="80" y="92" width="16" height="16"/><rect x="96" y="92" width="16" height="16"/><rect x="112" y="92" width="16" height="16"/><rect x="128" y="92" width="16" height="16"/><rect x="144" y="92" width="16" height="16"/>
