@@ -4,7 +4,7 @@ excerpt: We’re upgrading our smartest model. Across agentic coding, computer u
   tool use, search, and finance, Opus 4.6 is an industry-leading model, often by wide
   margin.
 image: https://cdn.sanity.io/images/4zrzovbb/website/01d06528567e4bd22c3ddedc87f609ee5716a009-2400x1260.png
-published_at: '2026-02-06T03:07:33.660264'
+published_at: '2026-02-06T03:07:33.660264+00:00'
 sources:
 - https://share.google/uISHcJ3WNR4H6uMhP
 tags:

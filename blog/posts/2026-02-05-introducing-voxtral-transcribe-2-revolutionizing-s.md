@@ -2,7 +2,7 @@
 date: '2026-02-05'
 excerpt: Precision diarization, real-time transcription, and a new audio playground.
 image: https://mistral.ai/img/mistral-cover.png
-published_at: '2026-02-05T15:38:43.566527'
+published_at: '2026-02-05T15:38:43.566527+00:00'
 sources:
 - https://mistral.ai/news/voxtral-transcribe-2
 tags:

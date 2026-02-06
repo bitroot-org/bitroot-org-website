@@ -735,9 +735,10 @@ Return ONLY a JSON object with these fields (no markdown code blocks, no extra t
 
 def create_post_file(post_data, source_urls, image_url=None, source_excerpt=None, video_url=None, media_list=None):
     """Create a markdown file with frontmatter."""
-    now = datetime.now()
+    from datetime import timezone
+    now = datetime.now(timezone.utc)
     today = now.strftime("%Y-%m-%d")
-    published_at = now.isoformat()  # Full ISO timestamp for display
+    published_at = now.isoformat()  # Full ISO timestamp with UTC offset for display
 
     # Generate slug from title
     slug = re.sub(r"[^\w\s-]", "", post_data["title"].lower())

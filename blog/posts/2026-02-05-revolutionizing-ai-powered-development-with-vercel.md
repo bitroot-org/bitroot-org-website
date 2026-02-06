@@ -4,7 +4,7 @@ excerpt: Vercel's skills.sh is a game-changer for developers, offering a platfor
   to build, train, and deploy AI models with ease. This update is a must-know for
   tech enthusiasts looking to leverage AI in their projects.
 image: https://cloud.inference.sh/web/assets/og-image.png
-published_at: '2026-02-05T18:31:47.044082'
+published_at: '2026-02-05T18:31:47.044082+00:00'
 sources:
 - https://app.inference.sh/blog/skills/agent-skills-overview
 tags:

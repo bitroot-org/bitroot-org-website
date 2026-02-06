@@ -2,7 +2,7 @@
 date: '2026-02-06'
 excerpt: 'Moody is an AI-powered notch teleprompter for Mac that keeps your script right next to your camera, maintaining natural eye contact during recordings and presentations.'
 image: ''
-published_at: '2026-02-06T03:38:17.592163'
+published_at: '2026-02-06T03:38:17.592163+00:00'
 sources:
 - https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3
 tags:

@@ -7,7 +7,7 @@ excerpt: "OpenAI has launched GPT-5.3-Codex, its most advanced agentic coding mo
   intelligence capabilities. \U0001F4F2 OpenAI GPT-5.3-Codex Launched: New AI Agentic
   Model Can Autonomously Build, Debug and Manage Software."
 image: https://st1.latestly.com/wp-content/uploads/2026/02/GPT-5.3-Codex-784x441.jpg
-published_at: '2026-02-06T03:13:48.870246'
+published_at: '2026-02-06T03:13:48.870246+00:00'
 sources:
 - https://share.google/tM36P3WSwQLtg0J7h
 tags:
