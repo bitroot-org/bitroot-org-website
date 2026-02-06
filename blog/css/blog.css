@@ -49,20 +49,18 @@
     --grid-size: 40px;
 }
 
-/* Dark theme */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg: #0a0a0a;
-        --bg-secondary: #141414;
-        --text-primary: #e5e5e5;
-        --text-secondary: #a0a0a0;
-        --text-muted: #666666;
-        --border: #2a2a2a;
-        --accent: #4a9aff;
-        --tag-bg: rgba(31, 118, 249, 0.15);
-        --tag-text: #6aafff;
-        --grid-color: rgba(31, 118, 249, 0.03);
-    }
+/* Dark theme — toggled via data-theme or system preference */
+[data-theme="dark"] {
+    --bg: #0a0a0a;
+    --bg-secondary: #141414;
+    --text-primary: #e5e5e5;
+    --text-secondary: #a0a0a0;
+    --text-muted: #666666;
+    --border: #2a2a2a;
+    --accent: #4a9aff;
+    --tag-bg: rgba(31, 118, 249, 0.15);
+    --tag-text: #6aafff;
+    --grid-color: rgba(31, 118, 249, 0.03);
 }
 
 html {
@@ -150,10 +148,8 @@ img {
     background-color: rgba(245, 243, 242, 0.9);
 }
 
-@media (prefers-color-scheme: dark) {
-    .header {
-        background-color: rgba(10, 10, 10, 0.9);
-    }
+[data-theme="dark"] .header {
+    background-color: rgba(10, 10, 10, 0.9);
 }
 
 .nav {
@@ -196,6 +192,40 @@ img {
 .nav-link.active {
     color: var(--bitroot-primary-blue);
 }
+
+/* Theme toggle */
+.theme-toggle {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    padding: 5px 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    transition: color 0.2s, border-color 0.2s;
+    font-family: inherit;
+    line-height: 1;
+}
+
+.theme-toggle:hover {
+    color: var(--bitroot-primary-blue);
+    border-color: var(--bitroot-primary-blue);
+}
+
+.theme-toggle .icon-sun,
+.theme-toggle .icon-moon {
+    width: 16px;
+    height: 16px;
+}
+
+/* Show moon in light mode, sun in dark mode */
+.theme-toggle .icon-sun { display: none; }
+.theme-toggle .icon-moon { display: block; }
+
+[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 
 /* Hero */
 .hero {
@@ -493,7 +523,7 @@ img {
 }
 
 .list-item:hover {
-    background: var(--bitroot-light-blue);
+    background: var(--tag-bg);
 }
 
 .list-item:last-child {
@@ -501,7 +531,7 @@ img {
 }
 
 .list-item.active {
-    background: var(--bitroot-light-blue);
+    background: var(--tag-bg);
 }
 
 .list-date {
@@ -1005,10 +1035,8 @@ html.intro-reveal .footer {
 }
 
 /* Dark-mode glow tweak */
-@media (prefers-color-scheme: dark) {
-    .sunrise-glow {
-        background: radial-gradient(circle, rgba(74, 154, 255, 0.12) 0%, rgba(74, 154, 255, 0.03) 45%, transparent 70%);
-    }
+[data-theme="dark"] .sunrise-glow {
+    background: radial-gradient(circle, rgba(74, 154, 255, 0.12) 0%, rgba(74, 154, 255, 0.03) 45%, transparent 70%);
 }
 
 /* Responsive */
@@ -1019,7 +1047,7 @@ html.intro-reveal .footer {
     }
 
     .post-list {
-        order: -1;
+        order: 1;
     }
 }
 
