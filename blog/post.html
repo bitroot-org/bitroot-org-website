@@ -6,6 +6,22 @@
     <title>Post | Bitroot Newslogger</title>
     <meta name="description" content="Read this article on the Bitroot newslogger.">
 
+    <!-- Open Graph (defaults, updated dynamically per post) -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Newslogger | Bitroot">
+    <meta property="og:description" content="Read this article on the Bitroot newslogger.">
+    <meta property="og:url" content="https://bitroot.org/blog">
+    <meta property="og:image" content="https://bitroot.org/images/newslogger-og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Bitroot Newslogger">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Newslogger | Bitroot">
+    <meta name="twitter:description" content="Read this article on the Bitroot newslogger.">
+    <meta name="twitter:image" content="https://bitroot.org/images/newslogger-og.jpg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -250,8 +266,21 @@
                 const text = await response.text();
                 const { metadata, content } = parseFrontmatter(text);
 
-                // Update page title
+                // Update page title and OG meta tags
                 document.title = `${metadata.title || 'Post'} | Bitroot Newslogger`;
+
+                const postUrl = window.location.href;
+                const postImage = metadata.image || 'https://bitroot.org/images/newslogger-og.jpg';
+                const postExcerpt = metadata.excerpt || 'Read this article on the Bitroot newslogger.';
+
+                document.querySelector('meta[property="og:title"]').setAttribute('content', metadata.title || 'Post');
+                document.querySelector('meta[property="og:description"]').setAttribute('content', postExcerpt);
+                document.querySelector('meta[property="og:url"]').setAttribute('content', postUrl);
+                document.querySelector('meta[property="og:image"]').setAttribute('content', postImage);
+                document.querySelector('meta[name="twitter:title"]').setAttribute('content', metadata.title || 'Post');
+                document.querySelector('meta[name="twitter:description"]').setAttribute('content', postExcerpt);
+                document.querySelector('meta[name="twitter:image"]').setAttribute('content', postImage);
+                document.querySelector('meta[name="description"]').setAttribute('content', postExcerpt);
 
                 // Calculate read time
                 const readTime = Math.ceil(content.split(/\s+/).length / 200);
@@ -318,15 +347,26 @@
                     </div>
                     <nav class="post-nav">
                         <a href="/blog" class="back-link">&larr; Back to newslogger</a>
-                        ${metadata.sources && metadata.sources.length > 0 ? `
-                            <a href="${metadata.sources[0]}" target="_blank" rel="noopener" class="source-link" title="View original source">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                        <div class="post-nav-actions">
+                            <button class="share-btn" id="share-btn" aria-label="Share this post" title="Share">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="18" cy="5" r="3"></circle>
+                                    <circle cx="6" cy="12" r="3"></circle>
+                                    <circle cx="18" cy="19" r="3"></circle>
+                                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
                                 </svg>
-                            </a>
-                        ` : ''}
+                            </button>
+                            ${metadata.sources && metadata.sources.length > 0 ? `
+                                <a href="${metadata.sources[0]}" target="_blank" rel="noopener" class="source-link" title="View original source">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            ` : ''}
+                        </div>
                     </nav>
                 `;
 
@@ -344,6 +384,40 @@
                         } else {
                             mutedIcon.style.display = 'none';
                             unmutedIcon.style.display = 'block';
+                        }
+                    });
+                }
+
+                // Share button
+                const shareBtn = document.getElementById('share-btn');
+                if (shareBtn) {
+                    shareBtn.addEventListener('click', async () => {
+                        const shareData = {
+                            title: metadata.title || 'Newslogger | Bitroot',
+                            text: postExcerpt,
+                            url: postUrl
+                        };
+
+                        if (navigator.share) {
+                            try {
+                                await navigator.share(shareData);
+                            } catch (err) {
+                                // User cancelled or share failed — ignore
+                            }
+                        } else {
+                            // Fallback: copy link to clipboard
+                            try {
+                                await navigator.clipboard.writeText(postUrl);
+                                shareBtn.classList.add('copied');
+                                shareBtn.title = 'Link copied!';
+                                setTimeout(() => {
+                                    shareBtn.classList.remove('copied');
+                                    shareBtn.title = 'Share';
+                                }, 2000);
+                            } catch (err) {
+                                // Last resort: open Twitter share
+                                window.open(`https://x.com/intent/tweet?text=${encodeURIComponent(metadata.title)}&url=${encodeURIComponent(postUrl)}`, '_blank');
+                            }
                         }
                     });
                 }

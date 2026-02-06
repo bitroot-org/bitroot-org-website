@@ -353,6 +353,39 @@
     opacity: 0.7;
 }
 
+/* Post nav actions */
+.post-nav-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+/* Share button */
+.share-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: var(--bitroot-light-blue);
+    border: none;
+    border-radius: 50%;
+    color: var(--bitroot-primary-blue);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.share-btn:hover {
+    background: var(--bitroot-primary-blue);
+    color: white;
+    transform: scale(1.1);
+}
+
+.share-btn.copied {
+    background: #22c55e;
+    color: white;
+}
+
 /* Source link icon */
 .source-link {
     display: flex;
