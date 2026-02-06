@@ -192,6 +192,7 @@ def fetch_twitter_content(url):
 
         return {
             "url": url,
+            "title": f"{author_name} on X" if author_name else None,
             "content": content,
             "image": image_url,
             "video": video_url,
@@ -232,6 +233,7 @@ def fetch_twitter_content_oembed(url):
 
         return {
             "url": url,
+            "title": f"{author_name} on X" if author_name else None,
             "content": content,
             "image": None,
             "video": None,
@@ -342,6 +344,7 @@ def fetch_social_media_content(url):
 
         return {
             "url": url,
+            "title": title,
             "content": content,
             "image": image_url if not is_video_post else None,  # Skip thumbnail for video posts
             "video": video_url,
@@ -379,6 +382,16 @@ def fetch_url_content(url):
         resp.raise_for_status()
 
         soup = BeautifulSoup(resp.text, "html.parser")
+
+        # Extract page title from og:title or <title> tag
+        page_title = None
+        og_title = soup.find("meta", property="og:title")
+        if og_title and og_title.get("content"):
+            page_title = og_title["content"].strip()
+        if not page_title:
+            title_tag = soup.find("title")
+            if title_tag and title_tag.string:
+                page_title = title_tag.string.strip()
 
         # Try to extract image (og:image, twitter:image, or first large image)
         image_url = None
@@ -472,13 +485,14 @@ def fetch_url_content(url):
         logger.info("=" * 60)
         logger.info(f"EXTRACTED DATA FROM: {url}")
         logger.info("=" * 60)
+        logger.info(f"Page title: {page_title}")
         logger.info(f"Image URL: {image_url}")
         logger.info(f"Description: {description}")
         logger.info(f"Content length: {len(text)} chars")
         logger.info(f"Content preview (first 500 chars):\n{text[:500]}")
         logger.info("=" * 60)
 
-        return {"url": url, "content": text, "image": image_url, "description": description, "success": True}
+        return {"url": url, "title": page_title, "content": text, "image": image_url, "description": description, "success": True}
 
     except Exception as e:
         logger.error(f"Failed to fetch {url}: {str(e)}")
@@ -570,19 +584,27 @@ def generate_post(client, issue_data, fetched_contents):
     """Use Groq to synthesize a blog post from the fetched content."""
     # Build context from fetched content
     sources_text = ""
+    source_titles = []
     for item in fetched_contents:
         if item["success"]:
             sources_text += f"\n\n--- Source: {item['url']} ---\n{item['content']}"
+            if item.get("title"):
+                source_titles.append(item["title"])
 
     if not sources_text.strip():
         logger.error("No source content available to generate post")
         return None
+
+    # Use source page title if available, otherwise fall back to issue title
+    title_hint = source_titles[0] if source_titles else issue_data["title"]
 
     # Log source content being sent to AI
     logger.info("=" * 60)
     logger.info("SOURCE CONTENT BEING SENT TO AI")
     logger.info("=" * 60)
     logger.info(f"Issue title: {issue_data['title']}")
+    logger.info(f"Source page title(s): {source_titles}")
+    logger.info(f"Title hint used: {title_hint}")
     logger.info(f"Issue angle: {issue_data.get('angle')}")
     logger.info(f"Total source text length: {len(sources_text)} chars")
     logger.info(f"Source text preview (first 1000 chars):\n{sources_text[:1000]}")
@@ -599,6 +621,7 @@ Write a blog post announcing/sharing this news with our community. Your writing 
 Your post should:
 - Be 400-800 words (concise and punchy)
 - Have a clear, specific title about the actual news/update
+- IMPORTANT: Create your OWN unique title by reading the source content. Do NOT just copy the source page title below. Paraphrase it into a catchy, newsworthy headline.
 - Explain what the update/news is and why it's interesting
 - Add context about why this matters to developers or the tech community
 - Include your take on the implications or potential use cases
@@ -617,7 +640,7 @@ Example tone:
 "Here's why this matters for developers..."
 "What caught our attention about this..."
 
-Topic/Title hint: {issue_data['title']}
+Source page title: {title_hint}
 {f"Angle/Focus: {issue_data['angle']}" if issue_data.get('angle') else ""}
 
 Source materials:
@@ -626,7 +649,7 @@ Source materials:
 Output format:
 Return ONLY a JSON object with these fields (no markdown code blocks, no extra text):
 {{
-  "title": "Your Post Title",
+  "title": "Your Own Paraphrased Title (DO NOT copy the source title verbatim)",
   "tags": ["tag1", "tag2"],
   "excerpt": "A 1-2 sentence summary for preview cards",
   "content": "The full markdown content with ## headings and short paragraphs"
