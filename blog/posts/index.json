@@ -6,8 +6,8 @@
     "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
     "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
     "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
-    "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
-    "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
+    "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
+    "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md"
   ],
   "metadata": [
     {
@@ -22,7 +22,10 @@
         "content creation"
       ],
       "excerpt": "Moody is an AI-powered notch teleprompter for Mac that keeps your script right next to your camera, maintaining natural eye contact during recordings and presentations.",
-      "image": ""
+      "image": "",
+      "sources": [
+        "https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3"
+      ]
     },
     {
       "filename": "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
@@ -37,7 +40,10 @@
         "Software Development"
       ],
       "excerpt": "OpenAI has launched GPT-5.3-Codex, its most advanced agentic coding model to date. Featuring a 25% speed increase over its predecessor, the model can autonomously manage the entire software lifecycle, from research to deployment. It notably assisted in its own development, marking a significant milestone in self-improving artificial intelligence capabilities. \ud83d\udcf2 OpenAI GPT-5.3-Codex Launched: New AI Agentic Model Can Autonomously Build, Debug and Manage Software.",
-      "image": "https://st1.latestly.com/wp-content/uploads/2026/02/GPT-5.3-Codex-784x441.jpg"
+      "image": "https://st1.latestly.com/wp-content/uploads/2026/02/GPT-5.3-Codex-784x441.jpg",
+      "sources": [
+        "https://share.google/tM36P3WSwQLtg0J7h"
+      ]
     },
     {
       "filename": "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
@@ -51,7 +57,10 @@
         "AI Updates"
       ],
       "excerpt": "We\u2019re upgrading our smartest model. Across agentic coding, computer use, tool use, search, and finance, Opus 4.6 is an industry-leading model, often by wide margin.",
-      "image": "https://cdn.sanity.io/images/4zrzovbb/website/01d06528567e4bd22c3ddedc87f609ee5716a009-2400x1260.png"
+      "image": "https://cdn.sanity.io/images/4zrzovbb/website/01d06528567e4bd22c3ddedc87f609ee5716a009-2400x1260.png",
+      "sources": [
+        "https://share.google/uISHcJ3WNR4H6uMhP"
+      ]
     },
     {
       "filename": "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
@@ -65,7 +74,27 @@
         "AI-powered development"
       ],
       "excerpt": "Vercel's skills.sh is a game-changer for developers, offering a platform to build, train, and deploy AI models with ease. This update is a must-know for tech enthusiasts looking to leverage AI in their projects.",
-      "image": "https://cloud.inference.sh/web/assets/og-image.png"
+      "image": "https://cloud.inference.sh/web/assets/og-image.png",
+      "sources": [
+        "https://app.inference.sh/blog/skills/agent-skills-overview"
+      ]
+    },
+    {
+      "filename": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
+      "slug": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s",
+      "title": "Introducing Voxtral Transcribe 2: Revolutionizing Speech-to-Text Models",
+      "date": "2026-02-05",
+      "published_at": "2026-02-05T15:38:43.566527+00:00",
+      "tags": [
+        "Voxtral Transcribe 2",
+        "Speech-to-Text",
+        "AI"
+      ],
+      "excerpt": "Precision diarization, real-time transcription, and a new audio playground.",
+      "image": "https://mistral.ai/img/mistral-cover.png",
+      "sources": [
+        "https://mistral.ai/news/voxtral-transcribe-2"
+      ]
     },
     {
       "filename": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
@@ -80,21 +109,10 @@
       ],
       "excerpt": "Claude Code introduces /insights, a command that analyzes your past month of usage to summarize projects and suggest workflow improvements.",
       "image": "https://pbs.twimg.com/amplify_video_thumb/2019173388062007297/img/jHnsIhpNNPkjIRvy.jpg",
-      "video": "media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.mp4"
-    },
-    {
-      "filename": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
-      "slug": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s",
-      "title": "Introducing Voxtral Transcribe 2: Revolutionizing Speech-to-Text Models",
-      "date": "2026-02-05",
-      "published_at": "2026-02-05T15:38:43.566527+00:00",
-      "tags": [
-        "Voxtral Transcribe 2",
-        "Speech-to-Text",
-        "AI"
+      "sources": [
+        "https://x.com/i/status/2019173731042750509"
       ],
-      "excerpt": "Precision diarization, real-time transcription, and a new audio playground.",
-      "image": "https://mistral.ai/img/mistral-cover.png"
+      "video": "media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.mp4"
     }
   ]
 }
