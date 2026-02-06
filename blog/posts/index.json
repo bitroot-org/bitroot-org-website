@@ -1,13 +1,29 @@
 {
   "generated": true,
-  "count": 4,
+  "count": 5,
   "posts": [
+    "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
     "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
     "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
     "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
+      "slug": "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa",
+      "title": "OpenAI Unveils GPT-5.3-Codex: Revolutionizing Software Development with Autonomous AI",
+      "date": "2026-02-06",
+      "published_at": "2026-02-06T03:13:48.870246",
+      "tags": [
+        "OpenAI",
+        "GPT-5.3-Codex",
+        "AI",
+        "Software Development"
+      ],
+      "excerpt": "OpenAI has launched GPT-5.3-Codex, its most advanced agentic coding model to date. Featuring a 25% speed increase over its predecessor, the model can autonomously manage the entire software lifecycle, from research to deployment. It notably assisted in its own development, marking a significant milestone in self-improving artificial intelligence capabilities. \ud83d\udcf2 OpenAI GPT-5.3-Codex Launched: New AI Agentic Model Can Autonomously Build, Debug and Manage Software.",
+      "image": "https://st1.latestly.com/wp-content/uploads/2026/02/GPT-5.3-Codex-784x441.jpg"
+    },
     {
       "filename": "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
       "slug": "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in",
