@@ -1,33 +1,33 @@
 {
   "generated": true,
-  "count": 7,
+  "count": 8,
   "posts": [
-    "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
+    "2026-02-06-unlocking-collaborative-coding-introducing-claude.md",
     "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
     "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
     "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
+    "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
+    "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
     "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
-    "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
-    "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md"
+    "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
     {
-      "filename": "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
-      "slug": "2026-02-06-revolutionizing-coding-twitters-claude-code-update",
-      "title": "Revolutionizing Coding: Twitter's Claude Code Update",
+      "filename": "2026-02-06-unlocking-collaborative-coding-introducing-claude.md",
+      "slug": "2026-02-06-unlocking-collaborative-coding-introducing-claude",
+      "title": "Unlocking Collaborative Coding: Introducing Claude Code's Agent Teams",
       "date": "2026-02-06",
-      "published_at": "2026-02-06T11:06:27.201899+00:00",
+      "published_at": "2026-02-06T20:00:36.186585+00:00",
       "tags": [
         "Claude Code",
-        "AI",
-        "Coding"
+        "Agent Teams",
+        "Collaborative Coding"
       ],
-      "excerpt": "Twitter's Claude Code now supports agent teams, enabling parallel work and coordination, and we're excited to explore its potential. This update is a game-changer for developers, allowing for faster and more efficient coding.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2019467383505924096/img/y8PJFj92TQdi95xR.jpg",
+      "excerpt": "Coordinate multiple Claude Code instances working together as a team, with shared tasks, inter-agent messaging, and centralized management.",
+      "image": "https://claude-code.mintlify.app/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DBuild%2Bwith%2BClaude%2BCode%26appearance%3Dsystem%26title%3DOrchestrate%2Bteams%2Bof%2BClaude%2BCode%2Bsessions%26description%3DCoordinate%2Bmultiple%2BClaude%2BCode%2Binstances%2Bworking%2Btogether%2Bas%2Ba%2Bteam%252C%2Bwith%2Bshared%2Btasks%252C%2Binter-agent%2Bmessaging%252C%2Band%2Bcentralized%2Bmanagement.%26logoLight%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaude-code%252Fo69F7a6qoW9vboof%252Flogo%252Flight.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253Do69F7a6qoW9vboof%2526q%253D85%2526s%253D536eade682636e84231afce2577f9509%26logoDark%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaude-code%252Fo69F7a6qoW9vboof%252Flogo%252Fdark.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253Do69F7a6qoW9vboof%2526q%253D85%2526s%253D0766b3221061e80143e9f300733e640b%26primaryColor%3D%25230E0E0E%26lightColor%3D%2523D4A27F%26darkColor%3D%25230E0E0E%26backgroundLight%3D%2523FDFDF7%26backgroundDark%3D%252309090B&w=1200&q=100",
       "sources": [
-        "https://x.com/lydiahallie/status/2019469032844587505?s=20"
+        "https://code.claude.com/docs/en/agent-teams#compare-with-subagents"
       ],
-      "video": "media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.mp4",
       "shortId": 1
     },
     {
@@ -86,40 +86,23 @@
       "shortId": 4
     },
     {
-      "filename": "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
-      "slug": "2026-02-05-revolutionizing-ai-powered-development-with-vercel",
-      "title": "Revolutionizing AI-Powered Development with Vercel's Skills.sh",
-      "date": "2026-02-05",
-      "published_at": "2026-02-05T18:31:47.044082+00:00",
+      "filename": "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
+      "slug": "2026-02-06-revolutionizing-coding-twitters-claude-code-update",
+      "title": "Revolutionizing Coding: Twitter's Claude Code Update",
+      "date": "2026-02-06",
+      "published_at": "2026-02-06T11:06:27.201899+00:00",
       "tags": [
-        "Vercel",
-        "Skills.sh",
-        "AI-powered development"
+        "Claude Code",
+        "AI",
+        "Coding"
       ],
-      "excerpt": "Vercel's skills.sh is a game-changer for developers, offering a platform to build, train, and deploy AI models with ease. This update is a must-know for tech enthusiasts looking to leverage AI in their projects.",
-      "image": "https://cloud.inference.sh/web/assets/og-image.png",
+      "excerpt": "Twitter's Claude Code now supports agent teams, enabling parallel work and coordination, and we're excited to explore its potential. This update is a game-changer for developers, allowing for faster and more efficient coding.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2019467383505924096/img/y8PJFj92TQdi95xR.jpg",
       "sources": [
-        "https://app.inference.sh/blog/skills/agent-skills-overview"
+        "https://x.com/lydiahallie/status/2019469032844587505?s=20"
       ],
+      "video": "media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.mp4",
       "shortId": 5
-    },
-    {
-      "filename": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
-      "slug": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s",
-      "title": "Introducing Voxtral Transcribe 2: Revolutionizing Speech-to-Text Models",
-      "date": "2026-02-05",
-      "published_at": "2026-02-05T15:38:43.566527+00:00",
-      "tags": [
-        "Voxtral Transcribe 2",
-        "Speech-to-Text",
-        "AI"
-      ],
-      "excerpt": "Precision diarization, real-time transcription, and a new audio playground.",
-      "image": "https://mistral.ai/img/mistral-cover.png",
-      "sources": [
-        "https://mistral.ai/news/voxtral-transcribe-2"
-      ],
-      "shortId": 6
     },
     {
       "filename": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
@@ -138,7 +121,43 @@
         "https://x.com/i/status/2019173731042750509"
       ],
       "video": "media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.mp4",
+      "shortId": 6
+    },
+    {
+      "filename": "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
+      "slug": "2026-02-05-revolutionizing-ai-powered-development-with-vercel",
+      "title": "Revolutionizing AI-Powered Development with Vercel's Skills.sh",
+      "date": "2026-02-05",
+      "published_at": "2026-02-05T18:31:47.044082+00:00",
+      "tags": [
+        "Vercel",
+        "Skills.sh",
+        "AI-powered development"
+      ],
+      "excerpt": "Vercel's skills.sh is a game-changer for developers, offering a platform to build, train, and deploy AI models with ease. This update is a must-know for tech enthusiasts looking to leverage AI in their projects.",
+      "image": "https://cloud.inference.sh/web/assets/og-image.png",
+      "sources": [
+        "https://app.inference.sh/blog/skills/agent-skills-overview"
+      ],
       "shortId": 7
+    },
+    {
+      "filename": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
+      "slug": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s",
+      "title": "Introducing Voxtral Transcribe 2: Revolutionizing Speech-to-Text Models",
+      "date": "2026-02-05",
+      "published_at": "2026-02-05T15:38:43.566527+00:00",
+      "tags": [
+        "Voxtral Transcribe 2",
+        "Speech-to-Text",
+        "AI"
+      ],
+      "excerpt": "Precision diarization, real-time transcription, and a new audio playground.",
+      "image": "https://mistral.ai/img/mistral-cover.png",
+      "sources": [
+        "https://mistral.ai/news/voxtral-transcribe-2"
+      ],
+      "shortId": 8
     }
   ]
 }
