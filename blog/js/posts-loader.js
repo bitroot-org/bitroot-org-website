@@ -74,27 +74,13 @@ const PostsLoader = {
     /**
      * Get image URL for a post (from metadata or fallback)
      */
+    placeholderImage: 'https://placehold.net/4-800x600.png',
+
     getPostImage(post) {
-        // Use image from post metadata if available
         if (post.image) {
             return post.image;
         }
-
-        // Fallback to tag-based images
-        const tagImages = {
-            'ai': 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=500&fit=crop',
-            'engineering': 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=500&fit=crop',
-            'design': 'https://images.unsplash.com/photo-1545235617-9465d2a55698?w=800&h=500&fit=crop',
-            'tutorial': 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=500&fit=crop',
-            'startup': 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=500&fit=crop',
-            'privacy': 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=500&fit=crop',
-            'technology': 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=500&fit=crop',
-            'thoughts': 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&h=500&fit=crop',
-            'default': 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=500&fit=crop'
-        };
-
-        const tag = (post.tags && post.tags[0]) || 'General';
-        return tagImages[tag.toLowerCase()] || tagImages.default;
+        return this.placeholderImage;
     },
 
     /**
