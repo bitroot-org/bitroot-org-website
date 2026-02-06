@@ -1,15 +1,34 @@
 {
   "generated": true,
-  "count": 6,
+  "count": 7,
   "posts": [
+    "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
     "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
     "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
     "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
     "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
-    "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
-    "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md"
+    "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
+    "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
+      "slug": "2026-02-06-revolutionizing-coding-twitters-claude-code-update",
+      "title": "Revolutionizing Coding: Twitter's Claude Code Update",
+      "date": "2026-02-06",
+      "published_at": "2026-02-06T11:06:27.201899+00:00",
+      "tags": [
+        "Claude Code",
+        "AI",
+        "Coding"
+      ],
+      "excerpt": "Twitter's Claude Code now supports agent teams, enabling parallel work and coordination, and we're excited to explore its potential. This update is a game-changer for developers, allowing for faster and more efficient coding.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2019467383505924096/img/y8PJFj92TQdi95xR.jpg",
+      "sources": [
+        "https://x.com/lydiahallie/status/2019469032844587505?s=20"
+      ],
+      "video": "media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.mp4"
+    },
     {
       "filename": "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
       "slug": "2026-02-06-revolutionizing-video-creation-the-notch-prompter",
@@ -80,23 +99,6 @@
       ]
     },
     {
-      "filename": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
-      "slug": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s",
-      "title": "Introducing Voxtral Transcribe 2: Revolutionizing Speech-to-Text Models",
-      "date": "2026-02-05",
-      "published_at": "2026-02-05T15:38:43.566527+00:00",
-      "tags": [
-        "Voxtral Transcribe 2",
-        "Speech-to-Text",
-        "AI"
-      ],
-      "excerpt": "Precision diarization, real-time transcription, and a new audio playground.",
-      "image": "https://mistral.ai/img/mistral-cover.png",
-      "sources": [
-        "https://mistral.ai/news/voxtral-transcribe-2"
-      ]
-    },
-    {
       "filename": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
       "slug": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co",
       "title": "Revolutionizing Coding Insights: Twitter's Claude Code Update",
@@ -113,6 +115,23 @@
         "https://x.com/i/status/2019173731042750509"
       ],
       "video": "media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.mp4"
+    },
+    {
+      "filename": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
+      "slug": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s",
+      "title": "Introducing Voxtral Transcribe 2: Revolutionizing Speech-to-Text Models",
+      "date": "2026-02-05",
+      "published_at": "2026-02-05T15:38:43.566527+00:00",
+      "tags": [
+        "Voxtral Transcribe 2",
+        "Speech-to-Text",
+        "AI"
+      ],
+      "excerpt": "Precision diarization, real-time transcription, and a new audio playground.",
+      "image": "https://mistral.ai/img/mistral-cover.png",
+      "sources": [
+        "https://mistral.ai/news/voxtral-transcribe-2"
+      ]
     }
   ]
 }
