@@ -767,6 +767,250 @@ img {
     color: var(--text-muted);
 }
 
+/* ============================================
+   Sunrise Intro Overlay
+   ============================================ */
+
+/* Overlay: fullscreen, centered */
+.sunrise-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    opacity: 1;
+    transition: opacity 0.7s ease;
+}
+
+/* Hidden by default; shown only when intro-active */
+html:not(.intro-active) .sunrise-overlay {
+    display: none;
+}
+
+/* Fade out when done */
+.sunrise-overlay.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Scene layout */
+.sunrise-scene {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* Radial glow behind sun */
+.sunrise-glow {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(31, 118, 249, 0.18) 0%, rgba(31, 118, 249, 0.05) 45%, transparent 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: glowExpand 1.8s ease-out 0.1s forwards;
+    pointer-events: none;
+}
+
+@keyframes glowExpand {
+    0%   { transform: translate(-50%, -50%) scale(0.1); opacity: 0; }
+    50%  { opacity: 1; }
+    100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+}
+
+/* Sun + rays container */
+.sunrise-sun-wrapper {
+    position: relative;
+    width: min(300px, 65vw);
+    height: min(300px, 65vw);
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(50px) scale(0.92);
+    animation: sunRise 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.1s forwards;
+}
+
+@keyframes sunRise {
+    0%   { opacity: 0; transform: translateY(50px) scale(0.92); }
+    30%  { opacity: 1; }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Both SVGs fill the wrapper */
+.sunrise-sun-svg,
+.sunrise-rays-svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Sun circle */
+.sunrise-sun-svg {
+    z-index: 2;
+}
+
+/* Rays: burst outward from center */
+.sunrise-rays-svg {
+    z-index: 1;
+    fill: #1f76f9;
+    opacity: 0;
+    transform: scale(0.45);
+    transform-origin: center center;
+    animation: raysBurst 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.5s forwards;
+}
+
+@keyframes raysBurst {
+    0%   { opacity: 0; transform: scale(0.45); }
+    40%  { opacity: 0.7; }
+    100% { opacity: 0.55; transform: scale(1); }
+}
+
+/* Gentle pulse on the whole sun after rise */
+.sunrise-sun-svg {
+    animation: sunGlow 1.6s ease-in-out infinite alternate 1.3s;
+}
+
+@keyframes sunGlow {
+    0%   { filter: drop-shadow(0 0 0px rgba(31, 118, 249, 0)); }
+    100% { filter: drop-shadow(0 0 24px rgba(31, 118, 249, 0.35)); }
+}
+
+/* Sun spins away when overlay fades */
+.sunrise-sun-wrapper.spin-away {
+    animation: spinAway 0.7s cubic-bezier(0.55, 0, 1, 0.45) forwards !important;
+}
+
+.sunrise-sun-wrapper.spin-away .sunrise-rays-svg {
+    animation: raysDissolve 0.5s ease-out forwards !important;
+}
+
+@keyframes spinAway {
+    0%   { transform: rotate(0deg) scale(1); opacity: 1; }
+    100% { transform: rotate(200deg) scale(0.2); opacity: 0; }
+}
+
+@keyframes raysDissolve {
+    0%   { opacity: 0.55; transform: scale(1); }
+    100% { opacity: 0; transform: scale(1.5); }
+}
+
+/* Greeting text */
+.sunrise-greeting {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: greetReveal 0.6s ease forwards 1s;
+    z-index: 2;
+    margin-top: 24px;
+}
+
+@keyframes greetReveal {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.sunrise-greeting-text {
+    font-family: 'Geist Mono', monospace;
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    font-weight: 500;
+    color: var(--text-primary);
+    display: block;
+}
+
+.sunrise-greeting-sub {
+    display: block;
+    font-family: 'Geist Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 8px;
+    letter-spacing: 0.08em;
+}
+
+/* ============================================
+   Content Reveal (after intro)
+   ============================================ */
+
+/* While intro is active, page content is invisible */
+html.intro-active .header,
+html.intro-active .hero,
+html.intro-active .showcase,
+html.intro-active .cloud-ticker,
+html.intro-active .footer {
+    opacity: 0;
+}
+
+/* Staggered slide-in after overlay fades */
+html.intro-reveal .cloud-ticker {
+    animation: cloudsReveal 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+html.intro-reveal .header {
+    animation: revealUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes cloudsReveal {
+    from { opacity: 0; }
+    to   { opacity: 0.12; }
+}
+
+html.intro-reveal .hero {
+    animation: revealUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.06s forwards;
+}
+
+html.intro-reveal .showcase {
+    opacity: 1 !important;
+}
+
+html.intro-reveal .showcase .featured-post {
+    opacity: 0;
+    animation: cardSlideIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.12s forwards;
+}
+
+html.intro-reveal .showcase .post-list {
+    opacity: 0;
+    animation: cardSlideIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.22s forwards;
+}
+
+html.intro-reveal .showcase .pagination-container {
+    opacity: 0;
+    animation: revealUp 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.32s forwards;
+}
+
+html.intro-reveal .footer {
+    animation: revealUp 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.35s forwards;
+}
+
+@keyframes revealUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes cardSlideIn {
+    from { opacity: 0; transform: translateY(32px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Accessibility: skip animations */
+@media (prefers-reduced-motion: reduce) {
+    .sunrise-overlay { display: none !important; }
+    html.intro-active .header,
+    html.intro-active .hero,
+    html.intro-active .showcase,
+    html.intro-active .cloud-ticker,
+    html.intro-active .footer { opacity: 1; }
+}
+
+/* Dark-mode glow tweak */
+@media (prefers-color-scheme: dark) {
+    .sunrise-glow {
+        background: radial-gradient(circle, rgba(74, 154, 255, 0.12) 0%, rgba(74, 154, 255, 0.03) 45%, transparent 70%);
+    }
+}
+
 /* Responsive */
 @media (max-width: 1000px) {
     .showcase-grid {

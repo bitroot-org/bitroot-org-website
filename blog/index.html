@@ -14,8 +14,53 @@
 
     <!-- Markdown parser for dynamic posts -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+
+    <!-- Intro: set class before first paint -->
+    <script>
+        (function() {
+            var skip = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            document.documentElement.classList.add(skip ? 'intro-done' : 'intro-active');
+        })();
+    </script>
 </head>
 <body>
+    <!-- Sunrise Intro Overlay -->
+    <div id="sunrise-overlay" class="sunrise-overlay" aria-hidden="true">
+        <div class="sunrise-scene">
+            <div class="sunrise-glow"></div>
+            <div class="sunrise-sun-wrapper">
+                <!-- Pixel rays (expand outward from sun) -->
+                <svg class="sunrise-rays-svg" viewBox="0 0 400 400" shape-rendering="crispEdges">
+                    <!-- N --><rect x="194" y="96" width="12" height="12"/><rect x="194" y="74" width="12" height="12"/><rect x="194" y="52" width="12" height="12"/><rect x="194" y="30" width="12" height="12"/>
+                    <!-- NE --><rect x="274" y="104" width="12" height="12"/><rect x="292" y="82" width="12" height="12"/><rect x="310" y="60" width="12" height="12"/>
+                    <!-- E --><rect x="296" y="194" width="12" height="12"/><rect x="318" y="194" width="12" height="12"/><rect x="340" y="194" width="12" height="12"/><rect x="362" y="194" width="12" height="12"/>
+                    <!-- SE --><rect x="274" y="284" width="12" height="12"/><rect x="292" y="306" width="12" height="12"/><rect x="310" y="328" width="12" height="12"/>
+                    <!-- S --><rect x="194" y="296" width="12" height="12"/><rect x="194" y="318" width="12" height="12"/><rect x="194" y="340" width="12" height="12"/><rect x="194" y="362" width="12" height="12"/>
+                    <!-- SW --><rect x="114" y="284" width="12" height="12"/><rect x="96" y="306" width="12" height="12"/><rect x="78" y="328" width="12" height="12"/>
+                    <!-- W --><rect x="92" y="194" width="12" height="12"/><rect x="70" y="194" width="12" height="12"/><rect x="48" y="194" width="12" height="12"/><rect x="26" y="194" width="12" height="12"/>
+                    <!-- NW --><rect x="114" y="104" width="12" height="12"/><rect x="96" y="82" width="12" height="12"/><rect x="78" y="60" width="12" height="12"/>
+                </svg>
+                <!-- Pixel sun circle -->
+                <svg class="sunrise-sun-svg" viewBox="0 0 400 400" fill="#1f76f9" shape-rendering="crispEdges">
+                    <rect x="168" y="120" width="16" height="16"/><rect x="184" y="120" width="16" height="16"/><rect x="200" y="120" width="16" height="16"/><rect x="216" y="120" width="16" height="16"/>
+                    <rect x="152" y="136" width="16" height="16"/><rect x="168" y="136" width="16" height="16"/><rect x="184" y="136" width="16" height="16"/><rect x="200" y="136" width="16" height="16"/><rect x="216" y="136" width="16" height="16"/><rect x="232" y="136" width="16" height="16"/>
+                    <rect x="136" y="152" width="16" height="16"/><rect x="152" y="152" width="16" height="16"/><rect x="168" y="152" width="16" height="16"/><rect x="184" y="152" width="16" height="16"/><rect x="200" y="152" width="16" height="16"/><rect x="216" y="152" width="16" height="16"/><rect x="232" y="152" width="16" height="16"/><rect x="248" y="152" width="16" height="16"/>
+                    <rect x="136" y="168" width="16" height="16"/><rect x="152" y="168" width="16" height="16"/><rect x="168" y="168" width="16" height="16"/><rect x="184" y="168" width="16" height="16"/><rect x="200" y="168" width="16" height="16"/><rect x="216" y="168" width="16" height="16"/><rect x="232" y="168" width="16" height="16"/><rect x="248" y="168" width="16" height="16"/>
+                    <rect x="120" y="184" width="16" height="16"/><rect x="136" y="184" width="16" height="16"/><rect x="152" y="184" width="16" height="16"/><rect x="168" y="184" width="16" height="16"/><rect x="184" y="184" width="16" height="16"/><rect x="200" y="184" width="16" height="16"/><rect x="216" y="184" width="16" height="16"/><rect x="232" y="184" width="16" height="16"/><rect x="248" y="184" width="16" height="16"/><rect x="264" y="184" width="16" height="16"/>
+                    <rect x="120" y="200" width="16" height="16"/><rect x="136" y="200" width="16" height="16"/><rect x="152" y="200" width="16" height="16"/><rect x="168" y="200" width="16" height="16"/><rect x="184" y="200" width="16" height="16"/><rect x="200" y="200" width="16" height="16"/><rect x="216" y="200" width="16" height="16"/><rect x="232" y="200" width="16" height="16"/><rect x="248" y="200" width="16" height="16"/><rect x="264" y="200" width="16" height="16"/>
+                    <rect x="136" y="216" width="16" height="16"/><rect x="152" y="216" width="16" height="16"/><rect x="168" y="216" width="16" height="16"/><rect x="184" y="216" width="16" height="16"/><rect x="200" y="216" width="16" height="16"/><rect x="216" y="216" width="16" height="16"/><rect x="232" y="216" width="16" height="16"/><rect x="248" y="216" width="16" height="16"/>
+                    <rect x="136" y="232" width="16" height="16"/><rect x="152" y="232" width="16" height="16"/><rect x="168" y="232" width="16" height="16"/><rect x="184" y="232" width="16" height="16"/><rect x="200" y="232" width="16" height="16"/><rect x="216" y="232" width="16" height="16"/><rect x="232" y="232" width="16" height="16"/><rect x="248" y="232" width="16" height="16"/>
+                    <rect x="152" y="248" width="16" height="16"/><rect x="168" y="248" width="16" height="16"/><rect x="184" y="248" width="16" height="16"/><rect x="200" y="248" width="16" height="16"/><rect x="216" y="248" width="16" height="16"/><rect x="232" y="248" width="16" height="16"/>
+                    <rect x="168" y="264" width="16" height="16"/><rect x="184" y="264" width="16" height="16"/><rect x="200" y="264" width="16" height="16"/><rect x="216" y="264" width="16" height="16"/>
+                </svg>
+            </div>
+            <div class="sunrise-greeting">
+                <span class="sunrise-greeting-text" id="sunrise-greeting-text"></span>
+                <span class="sunrise-greeting-sub">// newslogger</span>
+            </div>
+        </div>
+    </div>
+
     <!-- Pixelated floating clouds -->
     <div class="cloud-ticker" aria-hidden="true">
         <div class="cloud-ticker-track">
@@ -207,5 +252,52 @@
     </footer>
 
     <script src="js/posts-loader.js"></script>
+
+    <!-- Sunrise intro logic -->
+    <script>
+    (function() {
+        if (document.documentElement.classList.contains('intro-done')) return;
+
+        var hour = new Date().getHours();
+        var greeting;
+        if (hour >= 5 && hour < 12) greeting = 'New day. New ideas. Let\u2019s go.';
+        else if (hour >= 12 && hour < 17) greeting = 'The best breakthroughs happen after lunch.';
+        else if (hour >= 17 && hour < 21) greeting = 'Great ideas don\u2019t clock out.';
+        else greeting = 'Night builds hit different.';
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var el = document.getElementById('sunrise-greeting-text');
+            if (el) el.textContent = greeting;
+
+            // After sun + greeting have played, spin sun away & reveal content
+            setTimeout(function() {
+                var overlay = document.getElementById('sunrise-overlay');
+                if (!overlay) return;
+
+                // Spin the sun away
+                var sunWrapper = overlay.querySelector('.sunrise-sun-wrapper');
+                if (sunWrapper) sunWrapper.classList.add('spin-away');
+
+                // Fade greeting
+                var greet = overlay.querySelector('.sunrise-greeting');
+                if (greet) { greet.style.transition = 'opacity 0.4s'; greet.style.opacity = '0'; }
+
+                // Fade glow
+                var glow = overlay.querySelector('.sunrise-glow');
+                if (glow) { glow.style.transition = 'opacity 0.5s'; glow.style.opacity = '0'; }
+
+                // After sun spins, fade overlay & reveal content
+                setTimeout(function() {
+                    overlay.classList.add('fade-out');
+                    document.documentElement.classList.add('intro-reveal');
+
+                    overlay.addEventListener('transitionend', function() {
+                        overlay.remove();
+                    });
+                }, 500);
+            }, 2000);
+        });
+    })();
+    </script>
 </body>
 </html>

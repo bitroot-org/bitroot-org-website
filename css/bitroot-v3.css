@@ -1906,10 +1906,72 @@ a {
   overflow: hidden;
 }
 
+.card__front.card__front--blog {
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__blog-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card__blog-tag {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #1f76f9;
+  background: rgba(31, 118, 249, 0.12);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.card__blog-title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: -0.3px;
+}
+
+.card__blog-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card__blog-line {
+  height: 4px;
+  background: #222;
+  border-radius: 2px;
+}
+
+.card__blog-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card__blog-cta {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+}
+
+.card:hover .card__blog-cta {
+  color: #1f76f9;
+}
+
 .card {
   perspective: 1000px;
-  width: 280px;
-  height: 180px;
+  width: 320px;
+  height: 200px;
   display: block;
   position: relative;
 }
@@ -1948,8 +2010,8 @@ a {
   filter: blur(12px);
   background-image: linear-gradient(29deg, #0000 37%, #2a63ffed), linear-gradient(135deg, #28eeac, #f3f177 41%, #fd6d38 71%, #a48eb6);
   border-radius: 24px;
-  width: 280px;
-  height: 180px;
+  width: 320px;
+  height: 200px;
   position: absolute;
   inset: 0%;
 }
@@ -1974,8 +2036,8 @@ a {
 .card__bg {
   background-image: linear-gradient(29deg, #0000 37%, #2a63ffed), linear-gradient(135deg, #28eeac, #f3f177 41%, #fd6d38 71%, #a48eb6);
   border-radius: 24px;
-  width: 280px;
-  height: 180px;
+  width: 320px;
+  height: 200px;
   display: block;
 }
 
