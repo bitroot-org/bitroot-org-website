@@ -1,12 +1,27 @@
 {
   "generated": true,
-  "count": 3,
+  "count": 4,
   "posts": [
+    "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
     "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
     "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
+      "slug": "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in",
+      "title": "Introducing Claude Opus 4.6: A Revolutionary Leap in AI Capabilities",
+      "date": "2026-02-06",
+      "published_at": "2026-02-06T03:07:33.660264",
+      "tags": [
+        "Claude Opus 4.6",
+        "Anthropic",
+        "AI Updates"
+      ],
+      "excerpt": "We\u2019re upgrading our smartest model. Across agentic coding, computer use, tool use, search, and finance, Opus 4.6 is an industry-leading model, often by wide margin.",
+      "image": "https://cdn.sanity.io/images/4zrzovbb/website/01d06528567e4bd22c3ddedc87f609ee5716a009-2400x1260.png"
+    },
     {
       "filename": "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
       "slug": "2026-02-05-revolutionizing-ai-powered-development-with-vercel",
