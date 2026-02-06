@@ -7,8 +7,8 @@
     "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
     "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
     "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
-    "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
-    "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
+    "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
+    "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md"
   ],
   "metadata": [
     {
@@ -27,7 +27,8 @@
       "sources": [
         "https://x.com/lydiahallie/status/2019469032844587505?s=20"
       ],
-      "video": "media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.mp4"
+      "video": "media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.mp4",
+      "shortId": 1
     },
     {
       "filename": "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
@@ -44,7 +45,8 @@
       "image": "",
       "sources": [
         "https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3"
-      ]
+      ],
+      "shortId": 2
     },
     {
       "filename": "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
@@ -62,7 +64,8 @@
       "image": "https://st1.latestly.com/wp-content/uploads/2026/02/GPT-5.3-Codex-784x441.jpg",
       "sources": [
         "https://share.google/tM36P3WSwQLtg0J7h"
-      ]
+      ],
+      "shortId": 3
     },
     {
       "filename": "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
@@ -79,7 +82,8 @@
       "image": "https://cdn.sanity.io/images/4zrzovbb/website/01d06528567e4bd22c3ddedc87f609ee5716a009-2400x1260.png",
       "sources": [
         "https://share.google/uISHcJ3WNR4H6uMhP"
-      ]
+      ],
+      "shortId": 4
     },
     {
       "filename": "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
@@ -96,7 +100,26 @@
       "image": "https://cloud.inference.sh/web/assets/og-image.png",
       "sources": [
         "https://app.inference.sh/blog/skills/agent-skills-overview"
-      ]
+      ],
+      "shortId": 5
+    },
+    {
+      "filename": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
+      "slug": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s",
+      "title": "Introducing Voxtral Transcribe 2: Revolutionizing Speech-to-Text Models",
+      "date": "2026-02-05",
+      "published_at": "2026-02-05T15:38:43.566527+00:00",
+      "tags": [
+        "Voxtral Transcribe 2",
+        "Speech-to-Text",
+        "AI"
+      ],
+      "excerpt": "Precision diarization, real-time transcription, and a new audio playground.",
+      "image": "https://mistral.ai/img/mistral-cover.png",
+      "sources": [
+        "https://mistral.ai/news/voxtral-transcribe-2"
+      ],
+      "shortId": 6
     },
     {
       "filename": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
@@ -114,24 +137,8 @@
       "sources": [
         "https://x.com/i/status/2019173731042750509"
       ],
-      "video": "media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.mp4"
-    },
-    {
-      "filename": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
-      "slug": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s",
-      "title": "Introducing Voxtral Transcribe 2: Revolutionizing Speech-to-Text Models",
-      "date": "2026-02-05",
-      "published_at": "2026-02-05T15:38:43.566527+00:00",
-      "tags": [
-        "Voxtral Transcribe 2",
-        "Speech-to-Text",
-        "AI"
-      ],
-      "excerpt": "Precision diarization, real-time transcription, and a new audio playground.",
-      "image": "https://mistral.ai/img/mistral-cover.png",
-      "sources": [
-        "https://mistral.ai/news/voxtral-transcribe-2"
-      ]
+      "video": "media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.mp4",
+      "shortId": 7
     }
   ]
 }

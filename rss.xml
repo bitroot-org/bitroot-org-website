@@ -5,12 +5,12 @@
     <link>https://bitroot.org/blog</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 06 Feb 2026 11:06:29 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Feb 2026 11:49:41 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Revolutionizing Coding: Twitter's Claude Code Update</title>
-      <link>https://bitroot.org/blog/post.html?slug=2026-02-06-revolutionizing-coding-twitters-claude-code-update</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/post.html?slug=2026-02-06-revolutionizing-coding-twitters-claude-code-update</guid>
+      <link>https://bitroot.org/blog/p/1</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/1</guid>
       <description>Twitter's Claude Code now supports agent teams, enabling parallel work and coordination, and we're excited to explore its potential. This update is a game-changer for developers, allowing for faster and more efficient coding.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/lydiahallie/status/2019469032844587505?s=20"&gt;https://x.com/lydiahallie/status/2019469032844587505?s=20&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -23,8 +23,8 @@
     </item>
     <item>
       <title>Revolutionizing Video Creation: The Notch Prompter</title>
-      <link>https://bitroot.org/blog/post.html?slug=2026-02-06-revolutionizing-video-creation-the-notch-prompter</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/post.html?slug=2026-02-06-revolutionizing-video-creation-the-notch-prompter</guid>
+      <link>https://bitroot.org/blog/p/2</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/2</guid>
       <description>Moody is an AI-powered notch teleprompter for Mac that keeps your script right next to your camera, maintaining natural eye contact during recordings and presentations.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3"&gt;https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -36,8 +36,8 @@
     </item>
     <item>
       <title>OpenAI Unveils GPT-5.3-Codex: Revolutionizing Software Development with Autonomous AI</title>
-      <link>https://bitroot.org/blog/post.html?slug=2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/post.html?slug=2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa</guid>
+      <link>https://bitroot.org/blog/p/3</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/3</guid>
       <description>OpenAI has launched GPT-5.3-Codex, its most advanced agentic coding model to date. Featuring a 25% speed increase over its predecessor, the model can autonomously manage the entire software lifecycle, from research to deployment. It notably assisted in its own development, marking a significant milestone in self-improving artificial intelligence capabilities. 📲 OpenAI GPT-5.3-Codex Launched: New AI Agentic Model Can Autonomously Build, Debug and Manage Software.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://share.google/tM36P3WSwQLtg0J7h"&gt;https://share.google/tM36P3WSwQLtg0J7h&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -51,8 +51,8 @@
     </item>
     <item>
       <title>Introducing Claude Opus 4.6: A Revolutionary Leap in AI Capabilities</title>
-      <link>https://bitroot.org/blog/post.html?slug=2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/post.html?slug=2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in</guid>
+      <link>https://bitroot.org/blog/p/4</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/4</guid>
       <description>We’re upgrading our smartest model. Across agentic coding, computer use, tool use, search, and finance, Opus 4.6 is an industry-leading model, often by wide margin.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://share.google/uISHcJ3WNR4H6uMhP"&gt;https://share.google/uISHcJ3WNR4H6uMhP&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -65,8 +65,8 @@
     </item>
     <item>
       <title>Revolutionizing AI-Powered Development with Vercel's Skills.sh</title>
-      <link>https://bitroot.org/blog/post.html?slug=2026-02-05-revolutionizing-ai-powered-development-with-vercel</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/post.html?slug=2026-02-05-revolutionizing-ai-powered-development-with-vercel</guid>
+      <link>https://bitroot.org/blog/p/5</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/5</guid>
       <description>Vercel's skills.sh is a game-changer for developers, offering a platform to build, train, and deploy AI models with ease. This update is a must-know for tech enthusiasts looking to leverage AI in their projects.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://app.inference.sh/blog/skills/agent-skills-overview"&gt;https://app.inference.sh/blog/skills/agent-skills-overview&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -78,23 +78,9 @@
       <source url="https://app.inference.sh/blog/skills/agent-skills-overview">Original Source</source>
     </item>
     <item>
-      <title>Revolutionizing Coding Insights: Twitter's Claude Code Update</title>
-      <link>https://bitroot.org/blog/post.html?slug=2026-02-05-revolutionizing-coding-insights-twitters-claude-co</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/post.html?slug=2026-02-05-revolutionizing-coding-insights-twitters-claude-co</guid>
-      <description>Claude Code introduces /insights, a command that analyzes your past month of usage to summarize projects and suggest workflow improvements.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2019173731042750509"&gt;https://x.com/i/status/2019173731042750509&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Thu, 05 Feb 2026 15:13:55 +0000</pubDate>
-      <category>Twitter</category>
-      <category>Claude Code</category>
-      <category>Coding Insights</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2019173388062007297/img/jHnsIhpNNPkjIRvy.jpg" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2019173731042750509">Original Source</source>
-    </item>
-    <item>
       <title>Introducing Voxtral Transcribe 2: Revolutionizing Speech-to-Text Models</title>
-      <link>https://bitroot.org/blog/post.html?slug=2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/post.html?slug=2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s</guid>
+      <link>https://bitroot.org/blog/p/6</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/6</guid>
       <description>Precision diarization, real-time transcription, and a new audio playground.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://mistral.ai/news/voxtral-transcribe-2"&gt;https://mistral.ai/news/voxtral-transcribe-2&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -104,6 +90,20 @@
       <category>AI</category>
       <enclosure url="https://mistral.ai/img/mistral-cover.png" type="image/jpeg" length="0" />
       <source url="https://mistral.ai/news/voxtral-transcribe-2">Original Source</source>
+    </item>
+    <item>
+      <title>Revolutionizing Coding Insights: Twitter's Claude Code Update</title>
+      <link>https://bitroot.org/blog/p/7</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/7</guid>
+      <description>Claude Code introduces /insights, a command that analyzes your past month of usage to summarize projects and suggest workflow improvements.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2019173731042750509"&gt;https://x.com/i/status/2019173731042750509&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 05 Feb 2026 15:13:55 +0000</pubDate>
+      <category>Twitter</category>
+      <category>Claude Code</category>
+      <category>Coding Insights</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2019173388062007297/img/jHnsIhpNNPkjIRvy.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2019173731042750509">Original Source</source>
     </item>
   </channel>
 </rss>

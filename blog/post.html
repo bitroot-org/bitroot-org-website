@@ -388,6 +388,19 @@
                     });
                 }
 
+                // Build short share URL from index.json
+                let shareUrl = postUrl;
+                try {
+                    const idxRes = await fetch('posts/index.json');
+                    if (idxRes.ok) {
+                        const idx = await idxRes.json();
+                        const entry = (idx.metadata || []).find(m => m.slug === slug);
+                        if (entry && entry.shortId) {
+                            shareUrl = `https://bitroot.org/blog/p/${entry.shortId}`;
+                        }
+                    }
+                } catch (_) { /* use full URL as fallback */ }
+
                 // Share button
                 const shareBtn = document.getElementById('share-btn');
                 if (shareBtn) {
@@ -395,7 +408,7 @@
                         const shareData = {
                             title: metadata.title || 'Newslogger | Bitroot',
                             text: postExcerpt,
-                            url: postUrl
+                            url: shareUrl
                         };
 
                         if (navigator.share) {
@@ -407,7 +420,7 @@
                         } else {
                             // Fallback: copy link to clipboard
                             try {
-                                await navigator.clipboard.writeText(postUrl);
+                                await navigator.clipboard.writeText(shareUrl);
                                 shareBtn.classList.add('copied');
                                 shareBtn.title = 'Link copied!';
                                 setTimeout(() => {
@@ -416,7 +429,7 @@
                                 }, 2000);
                             } catch (err) {
                                 // Last resort: open Twitter share
-                                window.open(`https://x.com/intent/tweet?text=${encodeURIComponent(metadata.title)}&url=${encodeURIComponent(postUrl)}`, '_blank');
+                                window.open(`https://x.com/intent/tweet?text=${encodeURIComponent(metadata.title)}&url=${encodeURIComponent(shareUrl)}`, '_blank');
                             }
                         }
                     });

@@ -14,11 +14,14 @@ from email.utils import format_datetime
 from pathlib import Path
 from xml.etree.ElementTree import Element, SubElement, ElementTree, indent
 
+import shutil
+
 import frontmatter
 
 POSTS_DIR = Path("blog/posts")
 INDEX_FILE = POSTS_DIR / "index.json"
 RSS_FILE = Path("rss.xml")
+SHORT_LINKS_DIR = Path("blog/p")
 
 SITE_URL = "https://bitroot.org"
 BLOG_URL = f"{SITE_URL}/blog"
@@ -64,6 +67,59 @@ def get_post_metadata(filepath):
         return None
 
 
+def build_short_links(posts):
+    """Generate static redirect HTML files at blog/p/<n>.html with OG meta tags.
+
+    Posts are numbered sequentially (1 = newest). Each file provides
+    proper OG/Twitter Card meta tags for social media crawlers plus
+    a meta-refresh redirect to the full post URL.
+    """
+    # Clear and recreate directory
+    if SHORT_LINKS_DIR.exists():
+        shutil.rmtree(SHORT_LINKS_DIR)
+    SHORT_LINKS_DIR.mkdir(parents=True)
+
+    for i, post in enumerate(posts, start=1):
+        post["shortId"] = i
+        slug = post["slug"]
+        title = post.get("title", "Untitled")
+        excerpt = post.get("excerpt", "Read this article on the Bitroot newslogger.")
+        image = post.get("image") or f"{SITE_URL}/images/newslogger-og.jpg"
+        canonical = f"{BLOG_URL}/post.html?slug={slug}"
+
+        # Escape HTML entities in text content
+        safe_title = title.replace("&", "&amp;").replace('"', "&quot;").replace("<", "&lt;")
+        safe_excerpt = excerpt.replace("&", "&amp;").replace('"', "&quot;").replace("<", "&lt;")
+
+        html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="0; url=/blog/post.html?slug={slug}">
+<link rel="canonical" href="{canonical}">
+<title>{safe_title} | Bitroot Newslogger</title>
+<meta property="og:type" content="article">
+<meta property="og:title" content="{safe_title}">
+<meta property="og:description" content="{safe_excerpt}">
+<meta property="og:image" content="{image}">
+<meta property="og:url" content="{canonical}">
+<meta property="og:site_name" content="Bitroot Newslogger">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{safe_title}">
+<meta name="twitter:description" content="{safe_excerpt}">
+<meta name="twitter:image" content="{image}">
+</head>
+<body>
+<p>Redirecting&hellip; <a href="{canonical}">Click here</a> if not redirected.</p>
+</body>
+</html>
+"""
+        filepath = SHORT_LINKS_DIR / f"{i}.html"
+        filepath.write_text(html, encoding="utf-8")
+
+    print(f"Generated {len(posts)} short link pages in {SHORT_LINKS_DIR}/")
+
+
 def build_index():
     """Build the posts index."""
     if not POSTS_DIR.exists():
@@ -95,6 +151,9 @@ def build_index():
         p.pop("_mtime", None)
 
     print(f"\n  Sorted {len(posts)} posts by date (newest first)")
+
+    # Generate short link redirect pages (also adds shortId to each post)
+    build_short_links(posts)
 
     # Write index file
     index_data = {
@@ -138,7 +197,11 @@ def build_rss(posts):
         item = SubElement(channel, "item")
         SubElement(item, "title").text = post["title"]
 
-        post_url = f"{BLOG_URL}/post.html?slug={post['slug']}"
+        short_id = post.get("shortId")
+        if short_id:
+            post_url = f"{BLOG_URL}/p/{short_id}"
+        else:
+            post_url = f"{BLOG_URL}/post.html?slug={post['slug']}"
         SubElement(item, "link").text = post_url
 
         guid = SubElement(item, "guid")
