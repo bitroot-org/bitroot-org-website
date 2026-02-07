@@ -45,3 +45,6 @@ build/
 # Test media & reports
 man-flying-car-clouds.mp4
 inference-sh-report.pdf
+
+# Dev server
+server.py

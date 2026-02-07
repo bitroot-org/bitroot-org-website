@@ -162,16 +162,18 @@ img {
 }
 
 .logo {
-    font-size: 1.25rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    color: var(--bitroot-primary-blue);
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 28px;
+    width: auto;
 }
 
 .logo:hover {
     opacity: 0.8;
 }
-
 .nav-links {
     display: flex;
     gap: var(--spacing-lg);
