@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 9,
+  "count": 10,
   "posts": [
+    "2026-02-08-revolutionizing-wordpress-management-claudes-new-c.md",
     "2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo.md",
     "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
     "2026-02-06-unlocking-collaborative-coding-introducing-claude.md",
@@ -13,6 +14,25 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-02-08-revolutionizing-wordpress-management-claudes-new-c.md",
+      "slug": "2026-02-08-revolutionizing-wordpress-management-claudes-new-c",
+      "title": "Revolutionizing WordPress Management: Claude's New Connector Unleashed",
+      "date": "2026-02-08",
+      "published_at": "2026-02-08T04:15:14.443818+00:00",
+      "tags": [
+        "WordPress",
+        "Claude",
+        "AI",
+        "Anthropic"
+      ],
+      "excerpt": "WordPress users can now leverage Claude to analyze web traffic or find information about other internal site metrics.",
+      "image": "https://techcrunch.com/wp-content/uploads/2024/10/unnamed-7.png?w=1200",
+      "sources": [
+        "https://techcrunch.com/2026/02/06/it-just-got-easier-for-claude-to-check-in-on-your-wordpress-site/"
+      ],
+      "shortId": 1
+    },
     {
       "filename": "2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo.md",
       "slug": "2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo",
@@ -29,7 +49,7 @@
       "sources": [
         "https://share.google/4T0fJDumSQSmG5Cmo"
       ],
-      "shortId": 1
+      "shortId": 2
     },
     {
       "filename": "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
@@ -47,7 +67,7 @@
       "sources": [
         "https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3"
       ],
-      "shortId": 2
+      "shortId": 3
     },
     {
       "filename": "2026-02-06-unlocking-collaborative-coding-introducing-claude.md",
@@ -65,7 +85,7 @@
       "sources": [
         "https://code.claude.com/docs/en/agent-teams#compare-with-subagents"
       ],
-      "shortId": 3
+      "shortId": 4
     },
     {
       "filename": "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
@@ -84,7 +104,7 @@
       "sources": [
         "https://share.google/tM36P3WSwQLtg0J7h"
       ],
-      "shortId": 4
+      "shortId": 5
     },
     {
       "filename": "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
@@ -102,7 +122,7 @@
       "sources": [
         "https://share.google/uISHcJ3WNR4H6uMhP"
       ],
-      "shortId": 5
+      "shortId": 6
     },
     {
       "filename": "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
@@ -121,7 +141,7 @@
         "https://x.com/lydiahallie/status/2019469032844587505?s=20"
       ],
       "video": "media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.mp4",
-      "shortId": 6
+      "shortId": 7
     },
     {
       "filename": "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
@@ -139,7 +159,7 @@
       "sources": [
         "https://app.inference.sh/blog/skills/agent-skills-overview"
       ],
-      "shortId": 7
+      "shortId": 8
     },
     {
       "filename": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
@@ -158,7 +178,7 @@
         "https://x.com/i/status/2019173731042750509"
       ],
       "video": "media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.mp4",
-      "shortId": 8
+      "shortId": 9
     },
     {
       "filename": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
@@ -176,7 +196,7 @@
       "sources": [
         "https://mistral.ai/news/voxtral-transcribe-2"
       ],
-      "shortId": 9
+      "shortId": 10
     }
   ]
 }
