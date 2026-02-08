@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 10,
+  "count": 11,
   "posts": [
+    "2026-02-08-revolutionizing-coding-craft-agents-now-compatible.md",
     "2026-02-08-revolutionizing-wordpress-management-claudes-new-c.md",
     "2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo.md",
     "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
@@ -14,6 +15,25 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-02-08-revolutionizing-coding-craft-agents-now-compatible.md",
+      "slug": "2026-02-08-revolutionizing-coding-craft-agents-now-compatible",
+      "title": "Revolutionizing Coding: Craft Agents Now Compatible with Codex and Claude",
+      "date": "2026-02-08",
+      "published_at": "2026-02-08T18:02:41.964250+00:00",
+      "tags": [
+        "Codex",
+        "Craft Agents",
+        "Claude",
+        "Open Source"
+      ],
+      "excerpt": "Craft Agents can now be used with Codex and Claude, offering a free and open-source solution for developers, and we're excited to explore the implications of this update on the coding community. This new compatibility opens up a world of possibilities for developers across various platforms, including Windows, Mac, and Linux.",
+      "image": "https://pbs.twimg.com/media/HApiEWXb0AAN3dO.jpg?name=orig",
+      "sources": [
+        "https://x.com/i/status/2020535293905101186"
+      ],
+      "shortId": 1
+    },
     {
       "filename": "2026-02-08-revolutionizing-wordpress-management-claudes-new-c.md",
       "slug": "2026-02-08-revolutionizing-wordpress-management-claudes-new-c",
@@ -31,7 +51,7 @@
       "sources": [
         "https://techcrunch.com/2026/02/06/it-just-got-easier-for-claude-to-check-in-on-your-wordpress-site/"
       ],
-      "shortId": 1
+      "shortId": 2
     },
     {
       "filename": "2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo.md",
@@ -49,7 +69,7 @@
       "sources": [
         "https://share.google/4T0fJDumSQSmG5Cmo"
       ],
-      "shortId": 2
+      "shortId": 3
     },
     {
       "filename": "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
@@ -67,7 +87,7 @@
       "sources": [
         "https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3"
       ],
-      "shortId": 3
+      "shortId": 4
     },
     {
       "filename": "2026-02-06-unlocking-collaborative-coding-introducing-claude.md",
@@ -85,7 +105,7 @@
       "sources": [
         "https://code.claude.com/docs/en/agent-teams#compare-with-subagents"
       ],
-      "shortId": 4
+      "shortId": 5
     },
     {
       "filename": "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
@@ -104,7 +124,7 @@
       "sources": [
         "https://share.google/tM36P3WSwQLtg0J7h"
       ],
-      "shortId": 5
+      "shortId": 6
     },
     {
       "filename": "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
@@ -122,7 +142,7 @@
       "sources": [
         "https://share.google/uISHcJ3WNR4H6uMhP"
       ],
-      "shortId": 6
+      "shortId": 7
     },
     {
       "filename": "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
@@ -141,7 +161,7 @@
         "https://x.com/lydiahallie/status/2019469032844587505?s=20"
       ],
       "video": "media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.mp4",
-      "shortId": 7
+      "shortId": 8
     },
     {
       "filename": "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
@@ -159,7 +179,7 @@
       "sources": [
         "https://app.inference.sh/blog/skills/agent-skills-overview"
       ],
-      "shortId": 8
+      "shortId": 9
     },
     {
       "filename": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
@@ -178,7 +198,7 @@
         "https://x.com/i/status/2019173731042750509"
       ],
       "video": "media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.mp4",
-      "shortId": 9
+      "shortId": 10
     },
     {
       "filename": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
@@ -196,7 +216,7 @@
       "sources": [
         "https://mistral.ai/news/voxtral-transcribe-2"
       ],
-      "shortId": 10
+      "shortId": 11
     }
   ]
 }
