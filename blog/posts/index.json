@@ -1,18 +1,37 @@
 {
   "generated": true,
-  "count": 9,
+  "count": 10,
   "posts": [
+    "2026-02-08-revolutionizing-robotics-seeed-studio-unveils-affo.md",
     "2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo.md",
     "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
     "2026-02-06-unlocking-collaborative-coding-introducing-claude.md",
+    "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
     "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
     "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
-    "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
     "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
     "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-02-08-revolutionizing-robotics-seeed-studio-unveils-affo.md",
+      "slug": "2026-02-08-revolutionizing-robotics-seeed-studio-unveils-affo",
+      "title": "Revolutionizing Robotics: Seeed Studio Unveils Affordable Open-Source Robotic Arm",
+      "date": "2026-02-08",
+      "published_at": "2026-02-08T04:24:02.413845+00:00",
+      "tags": [
+        "robotics",
+        "open-source",
+        "Seeed Studio"
+      ],
+      "excerpt": "Seeed Studio is releasing an affordable and open source robotic arm design called the reBot Arm B601, complete with comprehensive software.",
+      "image": "https://hackster.imgix.net/uploads/attachments/1928140/_zxHYcwndO4.blob?auto=compress%2Cformat&w=600&h=450&fit=min",
+      "sources": [
+        "https://share.google/6sk9oi8DMhQSRQRh1"
+      ],
+      "shortId": 1
+    },
     {
       "filename": "2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo.md",
       "slug": "2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo",
@@ -29,7 +48,7 @@
       "sources": [
         "https://share.google/4T0fJDumSQSmG5Cmo"
       ],
-      "shortId": 1
+      "shortId": 2
     },
     {
       "filename": "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
@@ -47,7 +66,7 @@
       "sources": [
         "https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3"
       ],
-      "shortId": 2
+      "shortId": 3
     },
     {
       "filename": "2026-02-06-unlocking-collaborative-coding-introducing-claude.md",
@@ -65,44 +84,7 @@
       "sources": [
         "https://code.claude.com/docs/en/agent-teams#compare-with-subagents"
       ],
-      "shortId": 3
-    },
-    {
-      "filename": "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
-      "slug": "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa",
-      "title": "OpenAI Unveils GPT-5.3-Codex: Revolutionizing Software Development with Autonomous AI",
-      "date": "2026-02-06",
-      "published_at": "2026-02-06T03:13:48.870246+00:00",
-      "tags": [
-        "OpenAI",
-        "GPT-5.3-Codex",
-        "AI",
-        "Software Development"
-      ],
-      "excerpt": "OpenAI has launched GPT-5.3-Codex, its most advanced agentic coding model to date. Featuring a 25% speed increase over its predecessor, the model can autonomously manage the entire software lifecycle, from research to deployment. It notably assisted in its own development, marking a significant milestone in self-improving artificial intelligence capabilities. \ud83d\udcf2 OpenAI GPT-5.3-Codex Launched: New AI Agentic Model Can Autonomously Build, Debug and Manage Software.",
-      "image": "https://st1.latestly.com/wp-content/uploads/2026/02/GPT-5.3-Codex-784x441.jpg",
-      "sources": [
-        "https://share.google/tM36P3WSwQLtg0J7h"
-      ],
       "shortId": 4
-    },
-    {
-      "filename": "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
-      "slug": "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in",
-      "title": "Introducing Claude Opus 4.6: A Revolutionary Leap in AI Capabilities",
-      "date": "2026-02-06",
-      "published_at": "2026-02-06T03:07:33.660264+00:00",
-      "tags": [
-        "Claude Opus 4.6",
-        "Anthropic",
-        "AI Updates"
-      ],
-      "excerpt": "We\u2019re upgrading our smartest model. Across agentic coding, computer use, tool use, search, and finance, Opus 4.6 is an industry-leading model, often by wide margin.",
-      "image": "https://cdn.sanity.io/images/4zrzovbb/website/01d06528567e4bd22c3ddedc87f609ee5716a009-2400x1260.png",
-      "sources": [
-        "https://share.google/uISHcJ3WNR4H6uMhP"
-      ],
-      "shortId": 5
     },
     {
       "filename": "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
@@ -121,7 +103,44 @@
         "https://x.com/lydiahallie/status/2019469032844587505?s=20"
       ],
       "video": "media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.mp4",
+      "shortId": 5
+    },
+    {
+      "filename": "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
+      "slug": "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa",
+      "title": "OpenAI Unveils GPT-5.3-Codex: Revolutionizing Software Development with Autonomous AI",
+      "date": "2026-02-06",
+      "published_at": "2026-02-06T03:13:48.870246+00:00",
+      "tags": [
+        "OpenAI",
+        "GPT-5.3-Codex",
+        "AI",
+        "Software Development"
+      ],
+      "excerpt": "OpenAI has launched GPT-5.3-Codex, its most advanced agentic coding model to date. Featuring a 25% speed increase over its predecessor, the model can autonomously manage the entire software lifecycle, from research to deployment. It notably assisted in its own development, marking a significant milestone in self-improving artificial intelligence capabilities. \ud83d\udcf2 OpenAI GPT-5.3-Codex Launched: New AI Agentic Model Can Autonomously Build, Debug and Manage Software.",
+      "image": "https://st1.latestly.com/wp-content/uploads/2026/02/GPT-5.3-Codex-784x441.jpg",
+      "sources": [
+        "https://share.google/tM36P3WSwQLtg0J7h"
+      ],
       "shortId": 6
+    },
+    {
+      "filename": "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
+      "slug": "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in",
+      "title": "Introducing Claude Opus 4.6: A Revolutionary Leap in AI Capabilities",
+      "date": "2026-02-06",
+      "published_at": "2026-02-06T03:07:33.660264+00:00",
+      "tags": [
+        "Claude Opus 4.6",
+        "Anthropic",
+        "AI Updates"
+      ],
+      "excerpt": "We\u2019re upgrading our smartest model. Across agentic coding, computer use, tool use, search, and finance, Opus 4.6 is an industry-leading model, often by wide margin.",
+      "image": "https://cdn.sanity.io/images/4zrzovbb/website/01d06528567e4bd22c3ddedc87f609ee5716a009-2400x1260.png",
+      "sources": [
+        "https://share.google/uISHcJ3WNR4H6uMhP"
+      ],
+      "shortId": 7
     },
     {
       "filename": "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
@@ -139,7 +158,7 @@
       "sources": [
         "https://app.inference.sh/blog/skills/agent-skills-overview"
       ],
-      "shortId": 7
+      "shortId": 8
     },
     {
       "filename": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
@@ -158,7 +177,7 @@
         "https://x.com/i/status/2019173731042750509"
       ],
       "video": "media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.mp4",
-      "shortId": 8
+      "shortId": 9
     },
     {
       "filename": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
@@ -176,7 +195,7 @@
       "sources": [
         "https://mistral.ai/news/voxtral-transcribe-2"
       ],
-      "shortId": 9
+      "shortId": 10
     }
   ]
 }
