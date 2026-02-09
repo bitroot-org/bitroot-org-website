@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 13,
+  "count": 14,
   "posts": [
+    "2026-02-09-revolutionizing-ai-development-replicate-joins-for.md",
     "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.md",
     "2026-02-08-revolutionizing-coding-craft-agents-now-compatible.md",
     "2026-02-08-revolutionizing-wordpress-management-claudes-new-c.md",
@@ -12,11 +13,30 @@
     "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
     "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
     "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
-    "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
     "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
+    "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-02-09-revolutionizing-ai-development-replicate-joins-for.md",
+      "slug": "2026-02-09-revolutionizing-ai-development-replicate-joins-for",
+      "title": "Revolutionizing AI Development: Replicate Joins Forces with Cloudflare",
+      "date": "2026-02-09",
+      "published_at": "2026-02-09T12:30:56.856979+00:00",
+      "tags": [
+        "AI",
+        "Cloudflare",
+        "Replicate",
+        "Developer Platform"
+      ],
+      "excerpt": "Replicate is joining Cloudflare to revolutionize AI development with faster, more integrated, and scalable solutions, enabling developers to build AI apps with ease. This strategic move is set to transform the future of AI development.",
+      "image": "https://replicate.com/blog/replicate-cloudflare.png",
+      "sources": [
+        "https://replicate.com/blog/replicate-cloudflare"
+      ],
+      "shortId": 1
+    },
     {
       "filename": "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.md",
       "slug": "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash",
@@ -34,7 +54,7 @@
       "sources": [
         "https://www.linkedin.com/posts/chanin-nantasenamat_watch-me-use-coco-to-build-a-streamlit-ugcPost-7424601007264833536-P64R?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&utm_campaign=share_via"
       ],
-      "shortId": 1
+      "shortId": 2
     },
     {
       "filename": "2026-02-08-revolutionizing-coding-craft-agents-now-compatible.md",
@@ -53,7 +73,7 @@
       "sources": [
         "https://x.com/i/status/2020535293905101186"
       ],
-      "shortId": 2
+      "shortId": 3
     },
     {
       "filename": "2026-02-08-revolutionizing-wordpress-management-claudes-new-c.md",
@@ -72,7 +92,7 @@
       "sources": [
         "https://techcrunch.com/2026/02/06/it-just-got-easier-for-claude-to-check-in-on-your-wordpress-site/"
       ],
-      "shortId": 3
+      "shortId": 4
     },
     {
       "filename": "2026-02-08-revolutionizing-web-app-security-meet-shannon-the.md",
@@ -90,7 +110,7 @@
       "sources": [
         "https://www.linkedin.com/posts/walid-boulanouar_claude-code-for-hacking-is-here-shannon-ugcPost-7425888138117566464-rWZQ?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&utm_campaign=share_via"
       ],
-      "shortId": 4
+      "shortId": 5
     },
     {
       "filename": "2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo.md",
@@ -108,7 +128,7 @@
       "sources": [
         "https://share.google/4T0fJDumSQSmG5Cmo"
       ],
-      "shortId": 5
+      "shortId": 6
     },
     {
       "filename": "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
@@ -126,7 +146,7 @@
       "sources": [
         "https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3"
       ],
-      "shortId": 6
+      "shortId": 7
     },
     {
       "filename": "2026-02-06-unlocking-collaborative-coding-introducing-claude.md",
@@ -144,7 +164,7 @@
       "sources": [
         "https://code.claude.com/docs/en/agent-teams#compare-with-subagents"
       ],
-      "shortId": 7
+      "shortId": 8
     },
     {
       "filename": "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
@@ -163,7 +183,7 @@
       "sources": [
         "https://share.google/tM36P3WSwQLtg0J7h"
       ],
-      "shortId": 8
+      "shortId": 9
     },
     {
       "filename": "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
@@ -181,7 +201,7 @@
       "sources": [
         "https://share.google/uISHcJ3WNR4H6uMhP"
       ],
-      "shortId": 9
+      "shortId": 10
     },
     {
       "filename": "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
@@ -200,24 +220,6 @@
         "https://x.com/lydiahallie/status/2019469032844587505?s=20"
       ],
       "video": "media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.mp4",
-      "shortId": 10
-    },
-    {
-      "filename": "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
-      "slug": "2026-02-05-revolutionizing-ai-powered-development-with-vercel",
-      "title": "Revolutionizing AI-Powered Development with Vercel's Skills.sh",
-      "date": "2026-02-05",
-      "published_at": "2026-02-05T18:31:47.044082+00:00",
-      "tags": [
-        "Vercel",
-        "Skills.sh",
-        "AI-powered development"
-      ],
-      "excerpt": "Vercel's skills.sh is a game-changer for developers, offering a platform to build, train, and deploy AI models with ease. This update is a must-know for tech enthusiasts looking to leverage AI in their projects.",
-      "image": "https://cloud.inference.sh/web/assets/og-image.png",
-      "sources": [
-        "https://app.inference.sh/blog/skills/agent-skills-overview"
-      ],
       "shortId": 11
     },
     {
@@ -240,6 +242,24 @@
       "shortId": 12
     },
     {
+      "filename": "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
+      "slug": "2026-02-05-revolutionizing-ai-powered-development-with-vercel",
+      "title": "Revolutionizing AI-Powered Development with Vercel's Skills.sh",
+      "date": "2026-02-05",
+      "published_at": "2026-02-05T18:31:47.044082+00:00",
+      "tags": [
+        "Vercel",
+        "Skills.sh",
+        "AI-powered development"
+      ],
+      "excerpt": "Vercel's skills.sh is a game-changer for developers, offering a platform to build, train, and deploy AI models with ease. This update is a must-know for tech enthusiasts looking to leverage AI in their projects.",
+      "image": "https://cloud.inference.sh/web/assets/og-image.png",
+      "sources": [
+        "https://app.inference.sh/blog/skills/agent-skills-overview"
+      ],
+      "shortId": 13
+    },
+    {
       "filename": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
       "slug": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s",
       "title": "Introducing Voxtral Transcribe 2: Revolutionizing Speech-to-Text Models",
@@ -255,7 +275,7 @@
       "sources": [
         "https://mistral.ai/news/voxtral-transcribe-2"
       ],
-      "shortId": 13
+      "shortId": 14
     }
   ]
 }
