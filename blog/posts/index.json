@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 15,
+  "count": 16,
   "posts": [
+    "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
     "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
     "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.md",
     "2026-02-09-revolutionizing-ai-development-replicate-joins-for.md",
@@ -20,6 +21,25 @@
   ],
   "metadata": [
     {
+      "filename": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
+      "slug": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits",
+      "title": "AI Expansion Showdown: Anthropic's India Foray Hits Local Roadblock",
+      "date": "2026-02-10",
+      "published_at": "2026-02-10T02:07:30.583768+00:00",
+      "tags": [
+        "AI",
+        "Anthropic",
+        "India",
+        "Trademark"
+      ],
+      "excerpt": "India's Anthropic Software has taken the U.S. AI giant to court over a name dispute.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/01/anthropic-image-jagmeet-singh-techcrunch.jpg?resize=1200,800",
+      "sources": [
+        "https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/"
+      ],
+      "shortId": 1
+    },
+    {
       "filename": "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
       "slug": "2026-02-10-revolutionizing-ui-animations-introducing-reactbit",
       "title": "Revolutionizing UI Animations: Introducing ReactBits",
@@ -36,7 +56,7 @@
         "https://x.com/i/status/2020423330386579646"
       ],
       "video": "media/2026-02-10-revolutionizing-ui-animations-introducing-reactbit.mp4",
-      "shortId": 1
+      "shortId": 2
     },
     {
       "filename": "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.md",
@@ -55,7 +75,7 @@
       "sources": [
         "https://www.linkedin.com/posts/chanin-nantasenamat_watch-me-use-coco-to-build-a-streamlit-ugcPost-7424601007264833536-P64R?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&utm_campaign=share_via"
       ],
-      "shortId": 2
+      "shortId": 3
     },
     {
       "filename": "2026-02-09-revolutionizing-ai-development-replicate-joins-for.md",
@@ -74,7 +94,7 @@
       "sources": [
         "https://replicate.com/blog/replicate-cloudflare"
       ],
-      "shortId": 3
+      "shortId": 4
     },
     {
       "filename": "2026-02-08-revolutionizing-coding-craft-agents-now-compatible.md",
@@ -93,7 +113,7 @@
       "sources": [
         "https://x.com/i/status/2020535293905101186"
       ],
-      "shortId": 4
+      "shortId": 5
     },
     {
       "filename": "2026-02-08-revolutionizing-wordpress-management-claudes-new-c.md",
@@ -112,7 +132,7 @@
       "sources": [
         "https://techcrunch.com/2026/02/06/it-just-got-easier-for-claude-to-check-in-on-your-wordpress-site/"
       ],
-      "shortId": 5
+      "shortId": 6
     },
     {
       "filename": "2026-02-08-revolutionizing-web-app-security-meet-shannon-the.md",
@@ -130,7 +150,7 @@
       "sources": [
         "https://www.linkedin.com/posts/walid-boulanouar_claude-code-for-hacking-is-here-shannon-ugcPost-7425888138117566464-rWZQ?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&utm_campaign=share_via"
       ],
-      "shortId": 6
+      "shortId": 7
     },
     {
       "filename": "2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo.md",
@@ -148,7 +168,7 @@
       "sources": [
         "https://share.google/4T0fJDumSQSmG5Cmo"
       ],
-      "shortId": 7
+      "shortId": 8
     },
     {
       "filename": "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
@@ -166,7 +186,7 @@
       "sources": [
         "https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3"
       ],
-      "shortId": 8
+      "shortId": 9
     },
     {
       "filename": "2026-02-06-unlocking-collaborative-coding-introducing-claude.md",
@@ -184,7 +204,7 @@
       "sources": [
         "https://code.claude.com/docs/en/agent-teams#compare-with-subagents"
       ],
-      "shortId": 9
+      "shortId": 10
     },
     {
       "filename": "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
@@ -203,7 +223,7 @@
       "sources": [
         "https://share.google/tM36P3WSwQLtg0J7h"
       ],
-      "shortId": 10
+      "shortId": 11
     },
     {
       "filename": "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
@@ -221,7 +241,7 @@
       "sources": [
         "https://share.google/uISHcJ3WNR4H6uMhP"
       ],
-      "shortId": 11
+      "shortId": 12
     },
     {
       "filename": "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
@@ -240,7 +260,7 @@
         "https://x.com/lydiahallie/status/2019469032844587505?s=20"
       ],
       "video": "media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.mp4",
-      "shortId": 12
+      "shortId": 13
     },
     {
       "filename": "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
@@ -258,7 +278,7 @@
       "sources": [
         "https://app.inference.sh/blog/skills/agent-skills-overview"
       ],
-      "shortId": 13
+      "shortId": 14
     },
     {
       "filename": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
@@ -277,7 +297,7 @@
         "https://x.com/i/status/2019173731042750509"
       ],
       "video": "media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.mp4",
-      "shortId": 14
+      "shortId": 15
     },
     {
       "filename": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
@@ -295,7 +315,7 @@
       "sources": [
         "https://mistral.ai/news/voxtral-transcribe-2"
       ],
-      "shortId": 15
+      "shortId": 16
     }
   ]
 }
