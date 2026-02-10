@@ -5,26 +5,12 @@
     <link>https://bitroot.org/blog</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 10 Feb 2026 02:11:20 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Feb 2026 09:19:28 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Revolutionizing Video Creation: AI-Powered Vibe Editing Takes Center Stage</title>
+      <title>Revolutionizing UI Animations: Introducing ReactBits</title>
       <link>https://bitroot.org/blog/p/1</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/1</guid>
-      <description>Vibe Editing, a game-changing AI-powered tool, allows users to create stunning videos with just a text prompt, eliminating the need for coding and tedious editing processes. This innovative technology is set to disrupt the video creation landscape, making it more accessible to developers and non-developers alike.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2020464238880596429"&gt;https://x.com/i/status/2020464238880596429&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Tue, 10 Feb 2026 02:11:19 +0000</pubDate>
-      <category>AI</category>
-      <category>video creation</category>
-      <category>vibe editing</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2020464187043115009/img/-iRMulg3HLXQTEBY.jpg" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2020464238880596429">Original Source</source>
-    </item>
-    <item>
-      <title>Revolutionizing UI Animations: Introducing ReactBits</title>
-      <link>https://bitroot.org/blog/p/2</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/2</guid>
       <description>ReactBits is a game-changing animation library that offers a growing collection of smooth, modern UI animations for React projects, taking web design to the next level
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2020423330386579646"&gt;https://x.com/i/status/2020423330386579646&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -37,8 +23,8 @@
     </item>
     <item>
       <title>AI Expansion Showdown: Anthropic's India Foray Hits Local Roadblock</title>
-      <link>https://bitroot.org/blog/p/3</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/3</guid>
+      <link>https://bitroot.org/blog/p/2</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/2</guid>
       <description>India's Anthropic Software has taken the U.S. AI giant to court over a name dispute.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/"&gt;https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -49,6 +35,20 @@
       <category>Trademark</category>
       <enclosure url="https://techcrunch.com/wp-content/uploads/2026/01/anthropic-image-jagmeet-singh-techcrunch.jpg?resize=1200,800" type="image/jpeg" length="0" />
       <source url="https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/">Original Source</source>
+    </item>
+    <item>
+      <title>Revolutionizing Video Creation: AI-Powered Vibe Editing Takes Center Stage</title>
+      <link>https://bitroot.org/blog/p/3</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/3</guid>
+      <description>Vibe Editing, a game-changing AI-powered tool, allows users to create stunning videos with just a text prompt, eliminating the need for coding and tedious editing processes. This innovative technology is set to disrupt the video creation landscape, making it more accessible to developers and non-developers alike.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2020464238880596429"&gt;https://x.com/i/status/2020464238880596429&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 10 Feb 2026 02:11:19 +0000</pubDate>
+      <category>AI</category>
+      <category>video creation</category>
+      <category>vibe editing</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2020464187043115009/img/-iRMulg3HLXQTEBY.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2020464238880596429">Original Source</source>
     </item>
     <item>
       <title>Revolutionizing Data Workflows: Cortex Code Unleashes Natural Language Power</title>

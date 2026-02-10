@@ -2,9 +2,9 @@
   "generated": true,
   "count": 17,
   "posts": [
-    "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.md",
     "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
     "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
+    "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.md",
     "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.md",
     "2026-02-09-revolutionizing-ai-development-replicate-joins-for.md",
     "2026-02-08-revolutionizing-coding-craft-agents-now-compatible.md",
@@ -22,25 +22,6 @@
   ],
   "metadata": [
     {
-      "filename": "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.md",
-      "slug": "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi",
-      "title": "Revolutionizing Video Creation: AI-Powered Vibe Editing Takes Center Stage",
-      "date": "2026-02-10",
-      "published_at": "2026-02-10T02:11:19.181769+00:00",
-      "tags": [
-        "AI",
-        "video creation",
-        "vibe editing"
-      ],
-      "excerpt": "Vibe Editing, a game-changing AI-powered tool, allows users to create stunning videos with just a text prompt, eliminating the need for coding and tedious editing processes. This innovative technology is set to disrupt the video creation landscape, making it more accessible to developers and non-developers alike.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2020464187043115009/img/-iRMulg3HLXQTEBY.jpg",
-      "sources": [
-        "https://x.com/i/status/2020464238880596429"
-      ],
-      "video": "media/2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.mp4",
-      "shortId": 1
-    },
-    {
       "filename": "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
       "slug": "2026-02-10-revolutionizing-ui-animations-introducing-reactbit",
       "title": "Revolutionizing UI Animations: Introducing ReactBits",
@@ -57,7 +38,7 @@
         "https://x.com/i/status/2020423330386579646"
       ],
       "video": "media/2026-02-10-revolutionizing-ui-animations-introducing-reactbit.mp4",
-      "shortId": 2
+      "shortId": 1
     },
     {
       "filename": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
@@ -76,6 +57,25 @@
       "sources": [
         "https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/"
       ],
+      "shortId": 2
+    },
+    {
+      "filename": "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.md",
+      "slug": "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi",
+      "title": "Revolutionizing Video Creation: AI-Powered Vibe Editing Takes Center Stage",
+      "date": "2026-02-10",
+      "published_at": "2026-02-10T02:11:19.181769+00:00",
+      "tags": [
+        "AI",
+        "video creation",
+        "vibe editing"
+      ],
+      "excerpt": "Vibe Editing, a game-changing AI-powered tool, allows users to create stunning videos with just a text prompt, eliminating the need for coding and tedious editing processes. This innovative technology is set to disrupt the video creation landscape, making it more accessible to developers and non-developers alike.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2020464187043115009/img/-iRMulg3HLXQTEBY.jpg",
+      "sources": [
+        "https://x.com/i/status/2020464238880596429"
+      ],
+      "video": "media/2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.mp4",
       "shortId": 3
     },
     {
