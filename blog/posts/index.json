@@ -1,9 +1,10 @@
 {
   "generated": true,
-  "count": 14,
+  "count": 15,
   "posts": [
-    "2026-02-09-revolutionizing-ai-development-replicate-joins-for.md",
+    "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
     "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.md",
+    "2026-02-09-revolutionizing-ai-development-replicate-joins-for.md",
     "2026-02-08-revolutionizing-coding-craft-agents-now-compatible.md",
     "2026-02-08-revolutionizing-wordpress-management-claudes-new-c.md",
     "2026-02-08-revolutionizing-web-app-security-meet-shannon-the.md",
@@ -13,28 +14,28 @@
     "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
     "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
     "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
-    "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
     "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
+    "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
     {
-      "filename": "2026-02-09-revolutionizing-ai-development-replicate-joins-for.md",
-      "slug": "2026-02-09-revolutionizing-ai-development-replicate-joins-for",
-      "title": "Revolutionizing AI Development: Replicate Joins Forces with Cloudflare",
-      "date": "2026-02-09",
-      "published_at": "2026-02-09T12:30:56.856979+00:00",
+      "filename": "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
+      "slug": "2026-02-10-revolutionizing-ui-animations-introducing-reactbit",
+      "title": "Revolutionizing UI Animations: Introducing ReactBits",
+      "date": "2026-02-10",
+      "published_at": "2026-02-10T01:55:57.820786+00:00",
       "tags": [
-        "AI",
-        "Cloudflare",
-        "Replicate",
-        "Developer Platform"
+        "React",
+        "UI Animations",
+        "Web Development"
       ],
-      "excerpt": "Replicate is joining Cloudflare to revolutionize AI development with faster, more integrated, and scalable solutions, enabling developers to build AI apps with ease. This strategic move is set to transform the future of AI development.",
-      "image": "https://replicate.com/blog/replicate-cloudflare.png",
+      "excerpt": "ReactBits is a game-changing animation library that offers a growing collection of smooth, modern UI animations for React projects, taking web design to the next level",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2020423255082123265/img/YD4KlnqX6y9k3Ro_.jpg",
       "sources": [
-        "https://replicate.com/blog/replicate-cloudflare"
+        "https://x.com/i/status/2020423330386579646"
       ],
+      "video": "media/2026-02-10-revolutionizing-ui-animations-introducing-reactbit.mp4",
       "shortId": 1
     },
     {
@@ -57,6 +58,25 @@
       "shortId": 2
     },
     {
+      "filename": "2026-02-09-revolutionizing-ai-development-replicate-joins-for.md",
+      "slug": "2026-02-09-revolutionizing-ai-development-replicate-joins-for",
+      "title": "Revolutionizing AI Development: Replicate Joins Forces with Cloudflare",
+      "date": "2026-02-09",
+      "published_at": "2026-02-09T12:30:56.856979+00:00",
+      "tags": [
+        "AI",
+        "Cloudflare",
+        "Replicate",
+        "Developer Platform"
+      ],
+      "excerpt": "Replicate is joining Cloudflare to revolutionize AI development with faster, more integrated, and scalable solutions, enabling developers to build AI apps with ease. This strategic move is set to transform the future of AI development.",
+      "image": "https://replicate.com/blog/replicate-cloudflare.png",
+      "sources": [
+        "https://replicate.com/blog/replicate-cloudflare"
+      ],
+      "shortId": 3
+    },
+    {
       "filename": "2026-02-08-revolutionizing-coding-craft-agents-now-compatible.md",
       "slug": "2026-02-08-revolutionizing-coding-craft-agents-now-compatible",
       "title": "Revolutionizing Coding: Craft Agents Now Compatible with Codex and Claude",
@@ -73,7 +93,7 @@
       "sources": [
         "https://x.com/i/status/2020535293905101186"
       ],
-      "shortId": 3
+      "shortId": 4
     },
     {
       "filename": "2026-02-08-revolutionizing-wordpress-management-claudes-new-c.md",
@@ -92,7 +112,7 @@
       "sources": [
         "https://techcrunch.com/2026/02/06/it-just-got-easier-for-claude-to-check-in-on-your-wordpress-site/"
       ],
-      "shortId": 4
+      "shortId": 5
     },
     {
       "filename": "2026-02-08-revolutionizing-web-app-security-meet-shannon-the.md",
@@ -110,7 +130,7 @@
       "sources": [
         "https://www.linkedin.com/posts/walid-boulanouar_claude-code-for-hacking-is-here-shannon-ugcPost-7425888138117566464-rWZQ?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&utm_campaign=share_via"
       ],
-      "shortId": 5
+      "shortId": 6
     },
     {
       "filename": "2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo.md",
@@ -128,7 +148,7 @@
       "sources": [
         "https://share.google/4T0fJDumSQSmG5Cmo"
       ],
-      "shortId": 6
+      "shortId": 7
     },
     {
       "filename": "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
@@ -146,7 +166,7 @@
       "sources": [
         "https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3"
       ],
-      "shortId": 7
+      "shortId": 8
     },
     {
       "filename": "2026-02-06-unlocking-collaborative-coding-introducing-claude.md",
@@ -164,7 +184,7 @@
       "sources": [
         "https://code.claude.com/docs/en/agent-teams#compare-with-subagents"
       ],
-      "shortId": 8
+      "shortId": 9
     },
     {
       "filename": "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
@@ -183,7 +203,7 @@
       "sources": [
         "https://share.google/tM36P3WSwQLtg0J7h"
       ],
-      "shortId": 9
+      "shortId": 10
     },
     {
       "filename": "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
@@ -201,7 +221,7 @@
       "sources": [
         "https://share.google/uISHcJ3WNR4H6uMhP"
       ],
-      "shortId": 10
+      "shortId": 11
     },
     {
       "filename": "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
@@ -220,25 +240,6 @@
         "https://x.com/lydiahallie/status/2019469032844587505?s=20"
       ],
       "video": "media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.mp4",
-      "shortId": 11
-    },
-    {
-      "filename": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
-      "slug": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co",
-      "title": "Revolutionizing Coding Insights: Twitter's Claude Code Update",
-      "date": "2026-02-05",
-      "published_at": "2026-02-05T15:13:55.694372+00:00",
-      "tags": [
-        "Twitter",
-        "Claude Code",
-        "Coding Insights"
-      ],
-      "excerpt": "Claude Code introduces /insights, a command that analyzes your past month of usage to summarize projects and suggest workflow improvements.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2019173388062007297/img/jHnsIhpNNPkjIRvy.jpg",
-      "sources": [
-        "https://x.com/i/status/2019173731042750509"
-      ],
-      "video": "media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.mp4",
       "shortId": 12
     },
     {
@@ -260,6 +261,25 @@
       "shortId": 13
     },
     {
+      "filename": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
+      "slug": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co",
+      "title": "Revolutionizing Coding Insights: Twitter's Claude Code Update",
+      "date": "2026-02-05",
+      "published_at": "2026-02-05T15:13:55.694372+00:00",
+      "tags": [
+        "Twitter",
+        "Claude Code",
+        "Coding Insights"
+      ],
+      "excerpt": "Claude Code introduces /insights, a command that analyzes your past month of usage to summarize projects and suggest workflow improvements.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2019173388062007297/img/jHnsIhpNNPkjIRvy.jpg",
+      "sources": [
+        "https://x.com/i/status/2019173731042750509"
+      ],
+      "video": "media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.mp4",
+      "shortId": 14
+    },
+    {
       "filename": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
       "slug": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s",
       "title": "Introducing Voxtral Transcribe 2: Revolutionizing Speech-to-Text Models",
@@ -275,7 +295,7 @@
       "sources": [
         "https://mistral.ai/news/voxtral-transcribe-2"
       ],
-      "shortId": 14
+      "shortId": 15
     }
   ]
 }
