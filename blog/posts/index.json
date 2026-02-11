@@ -1,31 +1,30 @@
 {
   "generated": true,
-  "count": 24,
+  "count": 23,
   "posts": [
     "2026-02-11-ai-safety-leader-sounds-alarm-resignation-sparks-c.md",
-    "2026-02-10-revolutionizing-coding-the-rise-of-agent-first-dev.md",
+    "2026-02-10-revolutionizing-research-visuals-google-ais-paperb.md",
     "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan.md",
+    "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git.md",
+    "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal.md",
+    "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.md",
     "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
     "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.md",
     "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
-    "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.md",
-    "2026-02-10-revolutionizing-research-visuals-google-ais-paperb.md",
-    "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git.md",
-    "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal.md",
     "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.md",
     "2026-02-09-revolutionizing-ai-development-replicate-joins-for.md",
-    "2026-02-08-revolutionizing-coding-craft-agents-now-compatible.md",
     "2026-02-08-revolutionizing-wordpress-management-claudes-new-c.md",
     "2026-02-08-revolutionizing-web-app-security-meet-shannon-the.md",
+    "2026-02-08-revolutionizing-coding-craft-agents-now-compatible.md",
     "2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo.md",
-    "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
     "2026-02-06-unlocking-collaborative-coding-introducing-claude.md",
     "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
+    "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
     "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
     "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
     "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
-    "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
-    "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
+    "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
+    "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md"
   ],
   "metadata": [
     {
@@ -47,20 +46,22 @@
       "shortId": 1
     },
     {
-      "filename": "2026-02-10-revolutionizing-coding-the-rise-of-agent-first-dev.md",
-      "slug": "2026-02-10-revolutionizing-coding-the-rise-of-agent-first-dev",
-      "title": "Revolutionizing Coding: The Rise of Agent-First Development Environments",
+      "filename": "2026-02-10-revolutionizing-research-visuals-google-ais-paperb.md",
+      "slug": "2026-02-10-revolutionizing-research-visuals-google-ais-paperb",
+      "title": "Revolutionizing Research Visuals: Google AI's PaperBanana Framework",
       "date": "2026-02-10",
-      "published_at": "2026-02-10T19:20:14.602598+00:00",
+      "published_at": "2026-02-10T19:18:56.973545+00:00",
       "tags": [
         "AI",
-        "Developer Tools",
-        "Open Source"
+        "Research",
+        "Visualization",
+        "Google AI",
+        "PaperBanana"
       ],
-      "excerpt": "Open-source Agentic Development Environment. Founded in 2025 by Arne Strickmann and Raban von Spiegel, Emdash has 2 employees based in San Francisco, CA, USA.",
-      "image": "https://bookface-images.s3.us-west-2.amazonaws.com/logos/2d58b8e4c30fe050fa05ad377e14294337854dda.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQC4NIECAP3A4ZU6L%2F20260210%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260210T192012Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIEakiksXsixlidRLwKkS2sEaB38FmVJ%2FNt%2B0r9R0zODRAiBE32%2FFVVP%2Fs%2Ftqe3rwufY3igk3cpdooiN4KnwWKDcFjyruAwir%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDAwNjIwMTgxMTA3MiIMcLGUMbxLzTcv7zA1KsIDYzzMtKBoH4zfSmdPMIlYCkYRHZqYIEwwcsGH6HuvIcuim50HHYsdaSMVm%2Bq9cel82eo7exiCTCrX9nHrlNJW0rP%2BbxiRRvHgu1pz%2FFSS9lj8570CqTl8A0c5t20BZKDObo8UyHiI5HyIlDqS%2FTzgNTyI2%2BZPyMOleKDOOtZr1O44d1Kv58Rlyhn2DJOkcaCaZIvssqF1vrM9TO%2BPckzmH4jlIaWA51Up7gNsM6%2FRiaOw5aG6fqG4BHEykeBbMqFtuVL7%2F6rkd2lYFLVjzqVg9s1eWXaEBEE%2Bcf6BfFCHkeJp1IWdz%2BbHbqeYGvFqP6rZtv70HLIGCOuAyi3LVveEAs%2FOCzm%2BJ0%2BLP3rLL%2Fr%2BcwRqN3YyrxBV5l%2BfXxqSEtaw4O%2FlH8q3abjTErgL9WOwIjTpdGU5oPpbBKduOXg3KjvPFA65VIV0DILZ3piPCqIsDVmfr3Ozjlh96l7iZBo8yDmlJgthVW1zPXIvjXY9NUuj1juDS63eIeU1VHZxFffW8U8kA3blkIKMuym5PpinHLpsumGJVBSNDdWBewhdFuYE6S0sm%2Bab3yfc9DBMl%2F%2B2Qj9eGmxKzQjnZZ4jwo9yYtCFMIzurcwGOqYBe5H%2B5BjIZOcnEQxd2AOB9d34PkdJf%2BpS8z3fvUVWErfbE6akVmVFZve4W5y2Vhy9ziqM1cM7HJgbMuwNiR%2Fheoy1w7WEWs11nG4ZWHg4Bvwdq9sXLMXWGtr5oz%2B5hai%2BgzZwqN639x6w5ZfwaW2jEclCvXztPrGkA7%2BXwgOTwizQmCawm0t0JNhluA5ygSAq94%2FG9zclQVXwKDLBV3o6PUmBHCWPtQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=22fe3f54824c036dc0f5fc3560412c22f637526875eb986031c5bb8cde05a34c",
+      "excerpt": "Google AI Introduces PaperBanana: An Agentic Framework that Automates Publication Ready Methodology Diagrams and Statistical Plots",
+      "image": "https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-18.png",
       "sources": [
-        "https://www.ycombinator.com/companies/emdash"
+        "https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/"
       ],
       "shortId": 2
     },
@@ -83,61 +84,40 @@
       "shortId": 3
     },
     {
-      "filename": "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
-      "slug": "2026-02-10-revolutionizing-ui-animations-introducing-reactbit",
-      "title": "Revolutionizing UI Animations: Introducing ReactBits",
+      "filename": "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git.md",
+      "slug": "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git",
+      "title": "Revolutionizing Coding: GPT-5.3-Codex Now Powers GitHub Copilot",
       "date": "2026-02-10",
-      "published_at": "2026-02-10T01:55:57.820786+00:00",
+      "published_at": "2026-02-10T19:20:49.464293+00:00",
       "tags": [
-        "React",
-        "UI Animations",
-        "Web Development"
+        "GitHub Copilot",
+        "GPT-5.3-Codex",
+        "AI-powered coding"
       ],
-      "excerpt": "ReactBits is a game-changing animation library that offers a growing collection of smooth, modern UI animations for React projects, taking web design to the next level",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2020423255082123265/img/YD4KlnqX6y9k3Ro_.jpg",
+      "excerpt": "Get ready to supercharge your coding workflow with GPT-5.3-Codex, the latest AI model now available in GitHub Copilot, bringing improved performance and capabilities to the table. This update is set to revolutionize the way developers work, making coding faster, smarter, and more efficient.",
+      "image": "https://github.blog/wp-content/uploads/2026/02/github-copilot-social-card-2.png",
       "sources": [
-        "https://x.com/i/status/2020423330386579646"
+        "https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/"
       ],
-      "video": "media/2026-02-10-revolutionizing-ui-animations-introducing-reactbit.mp4",
       "shortId": 4
     },
     {
-      "filename": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.md",
-      "slug": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard",
-      "title": "India's Tech Landscape Shifts: Why Deeptech and Hardware Are the Future",
+      "filename": "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal.md",
+      "slug": "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal",
+      "title": "Introducing Nanobot: The Ultra-Lightweight Personal AI Assistant",
       "date": "2026-02-10",
-      "published_at": "2026-02-10T19:23:50.996880+00:00",
-      "tags": [
-        "Deeptech",
-        "Hardware",
-        "IT Service Exports",
-        "Artificial Intelligence"
-      ],
-      "excerpt": "India's reliance on IT service exports is no longer viable, and the country must shift its focus to deeptech and hardware to build long-term economic resilience. Zerodha founder Nithin Kamath emphasizes the need for self-sufficiency in technology to stay competitive.",
-      "image": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-18740,resizemode-75,msid-128120292/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath.jpg",
-      "sources": [
-        "https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms"
-      ],
-      "shortId": 5
-    },
-    {
-      "filename": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
-      "slug": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits",
-      "title": "AI Expansion Showdown: Anthropic's India Foray Hits Local Roadblock",
-      "date": "2026-02-10",
-      "published_at": "2026-02-10T02:07:30.583768+00:00",
+      "published_at": "2026-02-10T19:24:09.031498+00:00",
       "tags": [
         "AI",
-        "Anthropic",
-        "India",
-        "Trademark"
+        "Nanobot",
+        "Personal Assistant"
       ],
-      "excerpt": "India's Anthropic Software has taken the U.S. AI giant to court over a name dispute.",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/01/anthropic-image-jagmeet-singh-techcrunch.jpg?resize=1200,800",
+      "excerpt": "\"\ud83d\udc08 nanobot: The Ultra-Lightweight OpenClaw\". Contribute to HKUDS/nanobot development by creating an account on GitHub.",
+      "image": "https://opengraph.githubassets.com/860a29c3b70dd9f9266b82558c0c427fb47036deb672088e1b5f525631120a27/HKUDS/nanobot",
       "sources": [
-        "https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/"
+        "https://github.com/HKUDS/nanobot"
       ],
-      "shortId": 6
+      "shortId": 5
     },
     {
       "filename": "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.md",
@@ -156,63 +136,64 @@
         "https://x.com/i/status/2020464238880596429"
       ],
       "video": "media/2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.mp4",
+      "shortId": 6
+    },
+    {
+      "filename": "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
+      "slug": "2026-02-10-revolutionizing-ui-animations-introducing-reactbit",
+      "title": "Revolutionizing UI Animations: Introducing ReactBits",
+      "date": "2026-02-10",
+      "published_at": "2026-02-10T01:55:57.820786+00:00",
+      "tags": [
+        "React",
+        "UI Animations",
+        "Web Development"
+      ],
+      "excerpt": "ReactBits is a game-changing animation library that offers a growing collection of smooth, modern UI animations for React projects, taking web design to the next level",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2020423255082123265/img/YD4KlnqX6y9k3Ro_.jpg",
+      "sources": [
+        "https://x.com/i/status/2020423330386579646"
+      ],
+      "video": "media/2026-02-10-revolutionizing-ui-animations-introducing-reactbit.mp4",
       "shortId": 7
     },
     {
-      "filename": "2026-02-10-revolutionizing-research-visuals-google-ais-paperb.md",
-      "slug": "2026-02-10-revolutionizing-research-visuals-google-ais-paperb",
-      "title": "Revolutionizing Research Visuals: Google AI's PaperBanana Framework",
+      "filename": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.md",
+      "slug": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard",
+      "title": "India's Tech Landscape Shifts: Why Deeptech and Hardware Are the Future",
       "date": "2026-02-10",
-      "published_at": "2026-02-10T19:18:56.973545+00:00",
+      "published_at": "2026-02-10T19:23:50.996880+00:00",
       "tags": [
-        "AI",
-        "Research",
-        "Visualization",
-        "Google AI",
-        "PaperBanana"
+        "Deeptech",
+        "Hardware",
+        "IT Service Exports",
+        "Artificial Intelligence"
       ],
-      "excerpt": "Google AI Introduces PaperBanana: An Agentic Framework that Automates Publication Ready Methodology Diagrams and Statistical Plots",
-      "image": "https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-18.png",
+      "excerpt": "India's reliance on IT service exports is no longer viable, and the country must shift its focus to deeptech and hardware to build long-term economic resilience. Zerodha founder Nithin Kamath emphasizes the need for self-sufficiency in technology to stay competitive.",
+      "image": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-18740,resizemode-75,msid-128120292/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath.jpg",
       "sources": [
-        "https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/"
+        "https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms"
       ],
       "shortId": 8
     },
     {
-      "filename": "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git.md",
-      "slug": "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git",
-      "title": "Revolutionizing Coding: GPT-5.3-Codex Now Powers GitHub Copilot",
+      "filename": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
+      "slug": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits",
+      "title": "AI Expansion Showdown: Anthropic's India Foray Hits Local Roadblock",
       "date": "2026-02-10",
-      "published_at": "2026-02-10T19:20:49.464293+00:00",
-      "tags": [
-        "GitHub Copilot",
-        "GPT-5.3-Codex",
-        "AI-powered coding"
-      ],
-      "excerpt": "Get ready to supercharge your coding workflow with GPT-5.3-Codex, the latest AI model now available in GitHub Copilot, bringing improved performance and capabilities to the table. This update is set to revolutionize the way developers work, making coding faster, smarter, and more efficient.",
-      "image": "https://github.blog/wp-content/uploads/2026/02/github-copilot-social-card-2.png",
-      "sources": [
-        "https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/"
-      ],
-      "shortId": 9
-    },
-    {
-      "filename": "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal.md",
-      "slug": "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal",
-      "title": "Introducing Nanobot: The Ultra-Lightweight Personal AI Assistant",
-      "date": "2026-02-10",
-      "published_at": "2026-02-10T19:24:09.031498+00:00",
+      "published_at": "2026-02-10T02:07:30.583768+00:00",
       "tags": [
         "AI",
-        "Nanobot",
-        "Personal Assistant"
+        "Anthropic",
+        "India",
+        "Trademark"
       ],
-      "excerpt": "\"\ud83d\udc08 nanobot: The Ultra-Lightweight OpenClaw\". Contribute to HKUDS/nanobot development by creating an account on GitHub.",
-      "image": "https://opengraph.githubassets.com/860a29c3b70dd9f9266b82558c0c427fb47036deb672088e1b5f525631120a27/HKUDS/nanobot",
+      "excerpt": "India's Anthropic Software has taken the U.S. AI giant to court over a name dispute.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/01/anthropic-image-jagmeet-singh-techcrunch.jpg?resize=1200,800",
       "sources": [
-        "https://github.com/HKUDS/nanobot"
+        "https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/"
       ],
-      "shortId": 10
+      "shortId": 9
     },
     {
       "filename": "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.md",
@@ -231,7 +212,7 @@
       "sources": [
         "https://www.linkedin.com/posts/chanin-nantasenamat_watch-me-use-coco-to-build-a-streamlit-ugcPost-7424601007264833536-P64R?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&utm_campaign=share_via"
       ],
-      "shortId": 11
+      "shortId": 10
     },
     {
       "filename": "2026-02-09-revolutionizing-ai-development-replicate-joins-for.md",
@@ -250,26 +231,7 @@
       "sources": [
         "https://replicate.com/blog/replicate-cloudflare"
       ],
-      "shortId": 12
-    },
-    {
-      "filename": "2026-02-08-revolutionizing-coding-craft-agents-now-compatible.md",
-      "slug": "2026-02-08-revolutionizing-coding-craft-agents-now-compatible",
-      "title": "Revolutionizing Coding: Craft Agents Now Compatible with Codex and Claude",
-      "date": "2026-02-08",
-      "published_at": "2026-02-08T18:02:41.964250+00:00",
-      "tags": [
-        "Codex",
-        "Craft Agents",
-        "Claude",
-        "Open Source"
-      ],
-      "excerpt": "Craft Agents can now be used with Codex and Claude, offering a free and open-source solution for developers, and we're excited to explore the implications of this update on the coding community. This new compatibility opens up a world of possibilities for developers across various platforms, including Windows, Mac, and Linux.",
-      "image": "https://pbs.twimg.com/media/HApiEWXb0AAN3dO.jpg?name=orig",
-      "sources": [
-        "https://x.com/i/status/2020535293905101186"
-      ],
-      "shortId": 13
+      "shortId": 11
     },
     {
       "filename": "2026-02-08-revolutionizing-wordpress-management-claudes-new-c.md",
@@ -288,7 +250,7 @@
       "sources": [
         "https://techcrunch.com/2026/02/06/it-just-got-easier-for-claude-to-check-in-on-your-wordpress-site/"
       ],
-      "shortId": 14
+      "shortId": 12
     },
     {
       "filename": "2026-02-08-revolutionizing-web-app-security-meet-shannon-the.md",
@@ -306,7 +268,26 @@
       "sources": [
         "https://www.linkedin.com/posts/walid-boulanouar_claude-code-for-hacking-is-here-shannon-ugcPost-7425888138117566464-rWZQ?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&utm_campaign=share_via"
       ],
-      "shortId": 15
+      "shortId": 13
+    },
+    {
+      "filename": "2026-02-08-revolutionizing-coding-craft-agents-now-compatible.md",
+      "slug": "2026-02-08-revolutionizing-coding-craft-agents-now-compatible",
+      "title": "Revolutionizing Coding: Craft Agents Now Compatible with Codex and Claude",
+      "date": "2026-02-08",
+      "published_at": "2026-02-08T18:02:41.964250+00:00",
+      "tags": [
+        "Codex",
+        "Craft Agents",
+        "Claude",
+        "Open Source"
+      ],
+      "excerpt": "Craft Agents can now be used with Codex and Claude, offering a free and open-source solution for developers, and we're excited to explore the implications of this update on the coding community. This new compatibility opens up a world of possibilities for developers across various platforms, including Windows, Mac, and Linux.",
+      "image": "https://pbs.twimg.com/media/HApiEWXb0AAN3dO.jpg?name=orig",
+      "sources": [
+        "https://x.com/i/status/2020535293905101186"
+      ],
+      "shortId": 14
     },
     {
       "filename": "2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo.md",
@@ -324,25 +305,7 @@
       "sources": [
         "https://share.google/4T0fJDumSQSmG5Cmo"
       ],
-      "shortId": 16
-    },
-    {
-      "filename": "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
-      "slug": "2026-02-06-revolutionizing-video-creation-the-notch-prompter",
-      "title": "Revolutionizing Video Creation: The Notch Prompter",
-      "date": "2026-02-06",
-      "published_at": "2026-02-06T03:38:17.592163+00:00",
-      "tags": [
-        "video creation",
-        "AI",
-        "content creation"
-      ],
-      "excerpt": "Moody is an AI-powered notch teleprompter for Mac that keeps your script right next to your camera, maintaining natural eye contact during recordings and presentations.",
-      "image": "",
-      "sources": [
-        "https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3"
-      ],
-      "shortId": 17
+      "shortId": 15
     },
     {
       "filename": "2026-02-06-unlocking-collaborative-coding-introducing-claude.md",
@@ -360,7 +323,7 @@
       "sources": [
         "https://code.claude.com/docs/en/agent-teams#compare-with-subagents"
       ],
-      "shortId": 18
+      "shortId": 16
     },
     {
       "filename": "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
@@ -379,7 +342,25 @@
         "https://x.com/lydiahallie/status/2019469032844587505?s=20"
       ],
       "video": "media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.mp4",
-      "shortId": 19
+      "shortId": 17
+    },
+    {
+      "filename": "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
+      "slug": "2026-02-06-revolutionizing-video-creation-the-notch-prompter",
+      "title": "Revolutionizing Video Creation: The Notch Prompter",
+      "date": "2026-02-06",
+      "published_at": "2026-02-06T03:38:17.592163+00:00",
+      "tags": [
+        "video creation",
+        "AI",
+        "content creation"
+      ],
+      "excerpt": "Moody is an AI-powered notch teleprompter for Mac that keeps your script right next to your camera, maintaining natural eye contact during recordings and presentations.",
+      "image": "",
+      "sources": [
+        "https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3"
+      ],
+      "shortId": 18
     },
     {
       "filename": "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
@@ -398,7 +379,7 @@
       "sources": [
         "https://share.google/tM36P3WSwQLtg0J7h"
       ],
-      "shortId": 20
+      "shortId": 19
     },
     {
       "filename": "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
@@ -416,7 +397,7 @@
       "sources": [
         "https://share.google/uISHcJ3WNR4H6uMhP"
       ],
-      "shortId": 21
+      "shortId": 20
     },
     {
       "filename": "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
@@ -433,6 +414,24 @@
       "image": "https://cloud.inference.sh/web/assets/og-image.png",
       "sources": [
         "https://app.inference.sh/blog/skills/agent-skills-overview"
+      ],
+      "shortId": 21
+    },
+    {
+      "filename": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
+      "slug": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s",
+      "title": "Introducing Voxtral Transcribe 2: Revolutionizing Speech-to-Text Models",
+      "date": "2026-02-05",
+      "published_at": "2026-02-05T15:38:43.566527+00:00",
+      "tags": [
+        "Voxtral Transcribe 2",
+        "Speech-to-Text",
+        "AI"
+      ],
+      "excerpt": "Precision diarization, real-time transcription, and a new audio playground.",
+      "image": "https://mistral.ai/img/mistral-cover.png",
+      "sources": [
+        "https://mistral.ai/news/voxtral-transcribe-2"
       ],
       "shortId": 22
     },
@@ -454,24 +453,6 @@
       ],
       "video": "media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.mp4",
       "shortId": 23
-    },
-    {
-      "filename": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
-      "slug": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s",
-      "title": "Introducing Voxtral Transcribe 2: Revolutionizing Speech-to-Text Models",
-      "date": "2026-02-05",
-      "published_at": "2026-02-05T15:38:43.566527+00:00",
-      "tags": [
-        "Voxtral Transcribe 2",
-        "Speech-to-Text",
-        "AI"
-      ],
-      "excerpt": "Precision diarization, real-time transcription, and a new audio playground.",
-      "image": "https://mistral.ai/img/mistral-cover.png",
-      "sources": [
-        "https://mistral.ai/news/voxtral-transcribe-2"
-      ],
-      "shortId": 24
     }
   ]
 }
