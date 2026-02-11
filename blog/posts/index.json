@@ -1,9 +1,10 @@
 {
   "generated": true,
-  "count": 18,
+  "count": 19,
   "posts": [
-    "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.md",
+    "2026-02-11-ai-safety-leader-sounds-alarm-resignation-sparks-c.md",
     "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
+    "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.md",
     "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
     "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.md",
     "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.md",
@@ -14,30 +15,29 @@
     "2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo.md",
     "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
     "2026-02-06-unlocking-collaborative-coding-introducing-claude.md",
+    "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
     "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
     "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
-    "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
     "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
     "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
     {
-      "filename": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.md",
-      "slug": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard",
-      "title": "India's Tech Landscape Shifts: Why Deeptech and Hardware Are the Future",
-      "date": "2026-02-10",
-      "published_at": "2026-02-10T19:23:50.996880+00:00",
+      "filename": "2026-02-11-ai-safety-leader-sounds-alarm-resignation-sparks-c.md",
+      "slug": "2026-02-11-ai-safety-leader-sounds-alarm-resignation-sparks-c",
+      "title": "AI Safety Leader Sounds Alarm: Resignation Sparks Concerns Over Tech's Dark Side",
+      "date": "2026-02-11",
+      "published_at": "2026-02-11T11:06:32.467400+00:00",
       "tags": [
-        "Deeptech",
-        "Hardware",
-        "IT Service Exports",
-        "Artificial Intelligence"
+        "AI Safety",
+        "Anthropic AI",
+        "Tech Ethics"
       ],
-      "excerpt": "India's reliance on IT service exports is no longer viable, and the country must shift its focus to deeptech and hardware to build long-term economic resilience. Zerodha founder Nithin Kamath emphasizes the need for self-sufficiency in technology to stay competitive.",
-      "image": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-18740,resizemode-75,msid-128120292/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath.jpg",
+      "excerpt": "The resignation of Anthropic AI's safety lead has sent shockwaves through the tech community, highlighting the growing concerns over AI's potential risks to humanity. This development has significant implications for developers and the future of AI development.",
+      "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202602/mrinank-sharma-anthropic-104224244-16x9_0.png?VersionId=tsufT07Qx7LE2vr275HSEDe6X7hAnMkN",
       "sources": [
-        "https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms"
+        "https://share.google/6gzMAD1U347j7YUXX"
       ],
       "shortId": 1
     },
@@ -61,6 +61,25 @@
       "shortId": 2
     },
     {
+      "filename": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.md",
+      "slug": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard",
+      "title": "India's Tech Landscape Shifts: Why Deeptech and Hardware Are the Future",
+      "date": "2026-02-10",
+      "published_at": "2026-02-10T19:23:50.996880+00:00",
+      "tags": [
+        "Deeptech",
+        "Hardware",
+        "IT Service Exports",
+        "Artificial Intelligence"
+      ],
+      "excerpt": "India's reliance on IT service exports is no longer viable, and the country must shift its focus to deeptech and hardware to build long-term economic resilience. Zerodha founder Nithin Kamath emphasizes the need for self-sufficiency in technology to stay competitive.",
+      "image": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-18740,resizemode-75,msid-128120292/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath.jpg",
+      "sources": [
+        "https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms"
+      ],
+      "shortId": 3
+    },
+    {
       "filename": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
       "slug": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits",
       "title": "AI Expansion Showdown: Anthropic's India Foray Hits Local Roadblock",
@@ -77,7 +96,7 @@
       "sources": [
         "https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/"
       ],
-      "shortId": 3
+      "shortId": 4
     },
     {
       "filename": "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.md",
@@ -96,7 +115,7 @@
         "https://x.com/i/status/2020464238880596429"
       ],
       "video": "media/2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.mp4",
-      "shortId": 4
+      "shortId": 5
     },
     {
       "filename": "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.md",
@@ -115,7 +134,7 @@
       "sources": [
         "https://www.linkedin.com/posts/chanin-nantasenamat_watch-me-use-coco-to-build-a-streamlit-ugcPost-7424601007264833536-P64R?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&utm_campaign=share_via"
       ],
-      "shortId": 5
+      "shortId": 6
     },
     {
       "filename": "2026-02-09-revolutionizing-ai-development-replicate-joins-for.md",
@@ -134,7 +153,7 @@
       "sources": [
         "https://replicate.com/blog/replicate-cloudflare"
       ],
-      "shortId": 6
+      "shortId": 7
     },
     {
       "filename": "2026-02-08-revolutionizing-coding-craft-agents-now-compatible.md",
@@ -153,7 +172,7 @@
       "sources": [
         "https://x.com/i/status/2020535293905101186"
       ],
-      "shortId": 7
+      "shortId": 8
     },
     {
       "filename": "2026-02-08-revolutionizing-wordpress-management-claudes-new-c.md",
@@ -172,7 +191,7 @@
       "sources": [
         "https://techcrunch.com/2026/02/06/it-just-got-easier-for-claude-to-check-in-on-your-wordpress-site/"
       ],
-      "shortId": 8
+      "shortId": 9
     },
     {
       "filename": "2026-02-08-revolutionizing-web-app-security-meet-shannon-the.md",
@@ -190,7 +209,7 @@
       "sources": [
         "https://www.linkedin.com/posts/walid-boulanouar_claude-code-for-hacking-is-here-shannon-ugcPost-7425888138117566464-rWZQ?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&utm_campaign=share_via"
       ],
-      "shortId": 9
+      "shortId": 10
     },
     {
       "filename": "2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo.md",
@@ -208,7 +227,7 @@
       "sources": [
         "https://share.google/4T0fJDumSQSmG5Cmo"
       ],
-      "shortId": 10
+      "shortId": 11
     },
     {
       "filename": "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
@@ -226,7 +245,7 @@
       "sources": [
         "https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3"
       ],
-      "shortId": 11
+      "shortId": 12
     },
     {
       "filename": "2026-02-06-unlocking-collaborative-coding-introducing-claude.md",
@@ -244,44 +263,7 @@
       "sources": [
         "https://code.claude.com/docs/en/agent-teams#compare-with-subagents"
       ],
-      "shortId": 12
-    },
-    {
-      "filename": "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
-      "slug": "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa",
-      "title": "OpenAI Unveils GPT-5.3-Codex: Revolutionizing Software Development with Autonomous AI",
-      "date": "2026-02-06",
-      "published_at": "2026-02-06T03:13:48.870246+00:00",
-      "tags": [
-        "OpenAI",
-        "GPT-5.3-Codex",
-        "AI",
-        "Software Development"
-      ],
-      "excerpt": "OpenAI has launched GPT-5.3-Codex, its most advanced agentic coding model to date. Featuring a 25% speed increase over its predecessor, the model can autonomously manage the entire software lifecycle, from research to deployment. It notably assisted in its own development, marking a significant milestone in self-improving artificial intelligence capabilities. \ud83d\udcf2 OpenAI GPT-5.3-Codex Launched: New AI Agentic Model Can Autonomously Build, Debug and Manage Software.",
-      "image": "https://st1.latestly.com/wp-content/uploads/2026/02/GPT-5.3-Codex-784x441.jpg",
-      "sources": [
-        "https://share.google/tM36P3WSwQLtg0J7h"
-      ],
       "shortId": 13
-    },
-    {
-      "filename": "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
-      "slug": "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in",
-      "title": "Introducing Claude Opus 4.6: A Revolutionary Leap in AI Capabilities",
-      "date": "2026-02-06",
-      "published_at": "2026-02-06T03:07:33.660264+00:00",
-      "tags": [
-        "Claude Opus 4.6",
-        "Anthropic",
-        "AI Updates"
-      ],
-      "excerpt": "We\u2019re upgrading our smartest model. Across agentic coding, computer use, tool use, search, and finance, Opus 4.6 is an industry-leading model, often by wide margin.",
-      "image": "https://cdn.sanity.io/images/4zrzovbb/website/01d06528567e4bd22c3ddedc87f609ee5716a009-2400x1260.png",
-      "sources": [
-        "https://share.google/uISHcJ3WNR4H6uMhP"
-      ],
-      "shortId": 14
     },
     {
       "filename": "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
@@ -300,7 +282,44 @@
         "https://x.com/lydiahallie/status/2019469032844587505?s=20"
       ],
       "video": "media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.mp4",
+      "shortId": 14
+    },
+    {
+      "filename": "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
+      "slug": "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa",
+      "title": "OpenAI Unveils GPT-5.3-Codex: Revolutionizing Software Development with Autonomous AI",
+      "date": "2026-02-06",
+      "published_at": "2026-02-06T03:13:48.870246+00:00",
+      "tags": [
+        "OpenAI",
+        "GPT-5.3-Codex",
+        "AI",
+        "Software Development"
+      ],
+      "excerpt": "OpenAI has launched GPT-5.3-Codex, its most advanced agentic coding model to date. Featuring a 25% speed increase over its predecessor, the model can autonomously manage the entire software lifecycle, from research to deployment. It notably assisted in its own development, marking a significant milestone in self-improving artificial intelligence capabilities. \ud83d\udcf2 OpenAI GPT-5.3-Codex Launched: New AI Agentic Model Can Autonomously Build, Debug and Manage Software.",
+      "image": "https://st1.latestly.com/wp-content/uploads/2026/02/GPT-5.3-Codex-784x441.jpg",
+      "sources": [
+        "https://share.google/tM36P3WSwQLtg0J7h"
+      ],
       "shortId": 15
+    },
+    {
+      "filename": "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
+      "slug": "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in",
+      "title": "Introducing Claude Opus 4.6: A Revolutionary Leap in AI Capabilities",
+      "date": "2026-02-06",
+      "published_at": "2026-02-06T03:07:33.660264+00:00",
+      "tags": [
+        "Claude Opus 4.6",
+        "Anthropic",
+        "AI Updates"
+      ],
+      "excerpt": "We\u2019re upgrading our smartest model. Across agentic coding, computer use, tool use, search, and finance, Opus 4.6 is an industry-leading model, often by wide margin.",
+      "image": "https://cdn.sanity.io/images/4zrzovbb/website/01d06528567e4bd22c3ddedc87f609ee5716a009-2400x1260.png",
+      "sources": [
+        "https://share.google/uISHcJ3WNR4H6uMhP"
+      ],
+      "shortId": 16
     },
     {
       "filename": "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
@@ -318,7 +337,7 @@
       "sources": [
         "https://app.inference.sh/blog/skills/agent-skills-overview"
       ],
-      "shortId": 16
+      "shortId": 17
     },
     {
       "filename": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
@@ -337,7 +356,7 @@
         "https://x.com/i/status/2019173731042750509"
       ],
       "video": "media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.mp4",
-      "shortId": 17
+      "shortId": 18
     },
     {
       "filename": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
@@ -355,7 +374,7 @@
       "sources": [
         "https://mistral.ai/news/voxtral-transcribe-2"
       ],
-      "shortId": 18
+      "shortId": 19
     }
   ]
 }
