@@ -49,15 +49,14 @@ jobs:
           EVENT_NAME: ${{ github.event_name }}
         run: python blog/scripts/generate_post.py
 
-      - name: Build posts index
-        run: python blog/scripts/build_index.py
-
-      - name: Check for changes
+      - name: Check for new post files
         id: check_changes
         run: |
-          git add blog/posts/ blog/media/
+          git add blog/posts/*.md blog/media/ 2>/dev/null || true
           if [[ -n $(git diff --cached --name-only) ]]; then
             echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "Changed files:"
+            git diff --cached --name-only
           else
             echo "has_changes=false" >> $GITHUB_OUTPUT
           fi
@@ -83,6 +82,8 @@ jobs:
 
             ---
             🤖 Generated with [Blog Agent](/.github/workflows/blog-agent.yml)
+
+            > Index, short links, and RSS are rebuilt automatically after merge.
           branch: blog-post-${{ github.run_id }}
           delete-branch: true
           labels: blog-post
