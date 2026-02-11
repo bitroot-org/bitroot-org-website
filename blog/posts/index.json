@@ -3,28 +3,28 @@
   "count": 23,
   "posts": [
     "2026-02-11-ai-safety-leader-sounds-alarm-resignation-sparks-c.md",
-    "2026-02-10-revolutionizing-research-visuals-google-ais-paperb.md",
     "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan.md",
-    "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git.md",
-    "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal.md",
-    "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.md",
     "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
     "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.md",
     "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
+    "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.md",
+    "2026-02-10-revolutionizing-research-visuals-google-ais-paperb.md",
+    "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git.md",
+    "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal.md",
     "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.md",
     "2026-02-09-revolutionizing-ai-development-replicate-joins-for.md",
     "2026-02-08-revolutionizing-wordpress-management-claudes-new-c.md",
     "2026-02-08-revolutionizing-web-app-security-meet-shannon-the.md",
     "2026-02-08-revolutionizing-coding-craft-agents-now-compatible.md",
     "2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo.md",
-    "2026-02-06-unlocking-collaborative-coding-introducing-claude.md",
-    "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
     "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
+    "2026-02-06-unlocking-collaborative-coding-introducing-claude.md",
     "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
     "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
+    "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
     "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
-    "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
-    "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md"
+    "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
+    "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
     {
@@ -46,26 +46,6 @@
       "shortId": 1
     },
     {
-      "filename": "2026-02-10-revolutionizing-research-visuals-google-ais-paperb.md",
-      "slug": "2026-02-10-revolutionizing-research-visuals-google-ais-paperb",
-      "title": "Revolutionizing Research Visuals: Google AI's PaperBanana Framework",
-      "date": "2026-02-10",
-      "published_at": "2026-02-10T19:18:56.973545+00:00",
-      "tags": [
-        "AI",
-        "Research",
-        "Visualization",
-        "Google AI",
-        "PaperBanana"
-      ],
-      "excerpt": "Google AI Introduces PaperBanana: An Agentic Framework that Automates Publication Ready Methodology Diagrams and Statistical Plots",
-      "image": "https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-18.png",
-      "sources": [
-        "https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/"
-      ],
-      "shortId": 2
-    },
-    {
       "filename": "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan.md",
       "slug": "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan",
       "title": "Revolutionizing Coding: Composer 1.5 Unleashes Enhanced Intelligence",
@@ -81,41 +61,62 @@
       "sources": [
         "https://cursor.com/blog/composer-1-5"
       ],
+      "shortId": 2
+    },
+    {
+      "filename": "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
+      "slug": "2026-02-10-revolutionizing-ui-animations-introducing-reactbit",
+      "title": "Revolutionizing UI Animations: Introducing ReactBits",
+      "date": "2026-02-10",
+      "published_at": "2026-02-10T01:55:57.820786+00:00",
+      "tags": [
+        "React",
+        "UI Animations",
+        "Web Development"
+      ],
+      "excerpt": "ReactBits is a game-changing animation library that offers a growing collection of smooth, modern UI animations for React projects, taking web design to the next level",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2020423255082123265/img/YD4KlnqX6y9k3Ro_.jpg",
+      "sources": [
+        "https://x.com/i/status/2020423330386579646"
+      ],
+      "video": "media/2026-02-10-revolutionizing-ui-animations-introducing-reactbit.mp4",
       "shortId": 3
     },
     {
-      "filename": "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git.md",
-      "slug": "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git",
-      "title": "Revolutionizing Coding: GPT-5.3-Codex Now Powers GitHub Copilot",
+      "filename": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.md",
+      "slug": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard",
+      "title": "India's Tech Landscape Shifts: Why Deeptech and Hardware Are the Future",
       "date": "2026-02-10",
-      "published_at": "2026-02-10T19:20:49.464293+00:00",
+      "published_at": "2026-02-10T19:23:50.996880+00:00",
       "tags": [
-        "GitHub Copilot",
-        "GPT-5.3-Codex",
-        "AI-powered coding"
+        "Deeptech",
+        "Hardware",
+        "IT Service Exports",
+        "Artificial Intelligence"
       ],
-      "excerpt": "Get ready to supercharge your coding workflow with GPT-5.3-Codex, the latest AI model now available in GitHub Copilot, bringing improved performance and capabilities to the table. This update is set to revolutionize the way developers work, making coding faster, smarter, and more efficient.",
-      "image": "https://github.blog/wp-content/uploads/2026/02/github-copilot-social-card-2.png",
+      "excerpt": "India's reliance on IT service exports is no longer viable, and the country must shift its focus to deeptech and hardware to build long-term economic resilience. Zerodha founder Nithin Kamath emphasizes the need for self-sufficiency in technology to stay competitive.",
+      "image": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-18740,resizemode-75,msid-128120292/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath.jpg",
       "sources": [
-        "https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/"
+        "https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms"
       ],
       "shortId": 4
     },
     {
-      "filename": "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal.md",
-      "slug": "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal",
-      "title": "Introducing Nanobot: The Ultra-Lightweight Personal AI Assistant",
+      "filename": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
+      "slug": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits",
+      "title": "AI Expansion Showdown: Anthropic's India Foray Hits Local Roadblock",
       "date": "2026-02-10",
-      "published_at": "2026-02-10T19:24:09.031498+00:00",
+      "published_at": "2026-02-10T02:07:30.583768+00:00",
       "tags": [
         "AI",
-        "Nanobot",
-        "Personal Assistant"
+        "Anthropic",
+        "India",
+        "Trademark"
       ],
-      "excerpt": "\"\ud83d\udc08 nanobot: The Ultra-Lightweight OpenClaw\". Contribute to HKUDS/nanobot development by creating an account on GitHub.",
-      "image": "https://opengraph.githubassets.com/860a29c3b70dd9f9266b82558c0c427fb47036deb672088e1b5f525631120a27/HKUDS/nanobot",
+      "excerpt": "India's Anthropic Software has taken the U.S. AI giant to court over a name dispute.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/01/anthropic-image-jagmeet-singh-techcrunch.jpg?resize=1200,800",
       "sources": [
-        "https://github.com/HKUDS/nanobot"
+        "https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/"
       ],
       "shortId": 5
     },
@@ -139,59 +140,58 @@
       "shortId": 6
     },
     {
-      "filename": "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
-      "slug": "2026-02-10-revolutionizing-ui-animations-introducing-reactbit",
-      "title": "Revolutionizing UI Animations: Introducing ReactBits",
+      "filename": "2026-02-10-revolutionizing-research-visuals-google-ais-paperb.md",
+      "slug": "2026-02-10-revolutionizing-research-visuals-google-ais-paperb",
+      "title": "Revolutionizing Research Visuals: Google AI's PaperBanana Framework",
       "date": "2026-02-10",
-      "published_at": "2026-02-10T01:55:57.820786+00:00",
+      "published_at": "2026-02-10T19:18:56.973545+00:00",
       "tags": [
-        "React",
-        "UI Animations",
-        "Web Development"
+        "AI",
+        "Research",
+        "Visualization",
+        "Google AI",
+        "PaperBanana"
       ],
-      "excerpt": "ReactBits is a game-changing animation library that offers a growing collection of smooth, modern UI animations for React projects, taking web design to the next level",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2020423255082123265/img/YD4KlnqX6y9k3Ro_.jpg",
+      "excerpt": "Google AI Introduces PaperBanana: An Agentic Framework that Automates Publication Ready Methodology Diagrams and Statistical Plots",
+      "image": "https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-18.png",
       "sources": [
-        "https://x.com/i/status/2020423330386579646"
+        "https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/"
       ],
-      "video": "media/2026-02-10-revolutionizing-ui-animations-introducing-reactbit.mp4",
       "shortId": 7
     },
     {
-      "filename": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.md",
-      "slug": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard",
-      "title": "India's Tech Landscape Shifts: Why Deeptech and Hardware Are the Future",
+      "filename": "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git.md",
+      "slug": "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git",
+      "title": "Revolutionizing Coding: GPT-5.3-Codex Now Powers GitHub Copilot",
       "date": "2026-02-10",
-      "published_at": "2026-02-10T19:23:50.996880+00:00",
+      "published_at": "2026-02-10T19:20:49.464293+00:00",
       "tags": [
-        "Deeptech",
-        "Hardware",
-        "IT Service Exports",
-        "Artificial Intelligence"
+        "GitHub Copilot",
+        "GPT-5.3-Codex",
+        "AI-powered coding"
       ],
-      "excerpt": "India's reliance on IT service exports is no longer viable, and the country must shift its focus to deeptech and hardware to build long-term economic resilience. Zerodha founder Nithin Kamath emphasizes the need for self-sufficiency in technology to stay competitive.",
-      "image": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-18740,resizemode-75,msid-128120292/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath.jpg",
+      "excerpt": "Get ready to supercharge your coding workflow with GPT-5.3-Codex, the latest AI model now available in GitHub Copilot, bringing improved performance and capabilities to the table. This update is set to revolutionize the way developers work, making coding faster, smarter, and more efficient.",
+      "image": "https://github.blog/wp-content/uploads/2026/02/github-copilot-social-card-2.png",
       "sources": [
-        "https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms"
+        "https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/"
       ],
       "shortId": 8
     },
     {
-      "filename": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
-      "slug": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits",
-      "title": "AI Expansion Showdown: Anthropic's India Foray Hits Local Roadblock",
+      "filename": "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal.md",
+      "slug": "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal",
+      "title": "Introducing Nanobot: The Ultra-Lightweight Personal AI Assistant",
       "date": "2026-02-10",
-      "published_at": "2026-02-10T02:07:30.583768+00:00",
+      "published_at": "2026-02-10T19:24:09.031498+00:00",
       "tags": [
         "AI",
-        "Anthropic",
-        "India",
-        "Trademark"
+        "Nanobot",
+        "Personal Assistant"
       ],
-      "excerpt": "India's Anthropic Software has taken the U.S. AI giant to court over a name dispute.",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/01/anthropic-image-jagmeet-singh-techcrunch.jpg?resize=1200,800",
+      "excerpt": "\"\ud83d\udc08 nanobot: The Ultra-Lightweight OpenClaw\". Contribute to HKUDS/nanobot development by creating an account on GitHub.",
+      "image": "https://opengraph.githubassets.com/860a29c3b70dd9f9266b82558c0c427fb47036deb672088e1b5f525631120a27/HKUDS/nanobot",
       "sources": [
-        "https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/"
+        "https://github.com/HKUDS/nanobot"
       ],
       "shortId": 9
     },
@@ -308,43 +308,6 @@
       "shortId": 15
     },
     {
-      "filename": "2026-02-06-unlocking-collaborative-coding-introducing-claude.md",
-      "slug": "2026-02-06-unlocking-collaborative-coding-introducing-claude",
-      "title": "Unlocking Collaborative Coding: Introducing Claude Code's Agent Teams",
-      "date": "2026-02-06",
-      "published_at": "2026-02-06T20:00:36.186585+00:00",
-      "tags": [
-        "Claude Code",
-        "Agent Teams",
-        "Collaborative Coding"
-      ],
-      "excerpt": "Coordinate multiple Claude Code instances working together as a team, with shared tasks, inter-agent messaging, and centralized management.",
-      "image": "https://claude-code.mintlify.app/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DBuild%2Bwith%2BClaude%2BCode%26appearance%3Dsystem%26title%3DOrchestrate%2Bteams%2Bof%2BClaude%2BCode%2Bsessions%26description%3DCoordinate%2Bmultiple%2BClaude%2BCode%2Binstances%2Bworking%2Btogether%2Bas%2Ba%2Bteam%252C%2Bwith%2Bshared%2Btasks%252C%2Binter-agent%2Bmessaging%252C%2Band%2Bcentralized%2Bmanagement.%26logoLight%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaude-code%252Fo69F7a6qoW9vboof%252Flogo%252Flight.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253Do69F7a6qoW9vboof%2526q%253D85%2526s%253D536eade682636e84231afce2577f9509%26logoDark%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaude-code%252Fo69F7a6qoW9vboof%252Flogo%252Fdark.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253Do69F7a6qoW9vboof%2526q%253D85%2526s%253D0766b3221061e80143e9f300733e640b%26primaryColor%3D%25230E0E0E%26lightColor%3D%2523D4A27F%26darkColor%3D%25230E0E0E%26backgroundLight%3D%2523FDFDF7%26backgroundDark%3D%252309090B&w=1200&q=100",
-      "sources": [
-        "https://code.claude.com/docs/en/agent-teams#compare-with-subagents"
-      ],
-      "shortId": 16
-    },
-    {
-      "filename": "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
-      "slug": "2026-02-06-revolutionizing-coding-twitters-claude-code-update",
-      "title": "Revolutionizing Coding: Twitter's Claude Code Update",
-      "date": "2026-02-06",
-      "published_at": "2026-02-06T11:06:27.201899+00:00",
-      "tags": [
-        "Claude Code",
-        "AI",
-        "Coding"
-      ],
-      "excerpt": "Twitter's Claude Code now supports agent teams, enabling parallel work and coordination, and we're excited to explore its potential. This update is a game-changer for developers, allowing for faster and more efficient coding.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2019467383505924096/img/y8PJFj92TQdi95xR.jpg",
-      "sources": [
-        "https://x.com/lydiahallie/status/2019469032844587505?s=20"
-      ],
-      "video": "media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.mp4",
-      "shortId": 17
-    },
-    {
       "filename": "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
       "slug": "2026-02-06-revolutionizing-video-creation-the-notch-prompter",
       "title": "Revolutionizing Video Creation: The Notch Prompter",
@@ -360,7 +323,25 @@
       "sources": [
         "https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3"
       ],
-      "shortId": 18
+      "shortId": 16
+    },
+    {
+      "filename": "2026-02-06-unlocking-collaborative-coding-introducing-claude.md",
+      "slug": "2026-02-06-unlocking-collaborative-coding-introducing-claude",
+      "title": "Unlocking Collaborative Coding: Introducing Claude Code's Agent Teams",
+      "date": "2026-02-06",
+      "published_at": "2026-02-06T20:00:36.186585+00:00",
+      "tags": [
+        "Claude Code",
+        "Agent Teams",
+        "Collaborative Coding"
+      ],
+      "excerpt": "Coordinate multiple Claude Code instances working together as a team, with shared tasks, inter-agent messaging, and centralized management.",
+      "image": "https://claude-code.mintlify.app/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DBuild%2Bwith%2BClaude%2BCode%26appearance%3Dsystem%26title%3DOrchestrate%2Bteams%2Bof%2BClaude%2BCode%2Bsessions%26description%3DCoordinate%2Bmultiple%2BClaude%2BCode%2Binstances%2Bworking%2Btogether%2Bas%2Ba%2Bteam%252C%2Bwith%2Bshared%2Btasks%252C%2Binter-agent%2Bmessaging%252C%2Band%2Bcentralized%2Bmanagement.%26logoLight%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaude-code%252Fo69F7a6qoW9vboof%252Flogo%252Flight.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253Do69F7a6qoW9vboof%2526q%253D85%2526s%253D536eade682636e84231afce2577f9509%26logoDark%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaude-code%252Fo69F7a6qoW9vboof%252Flogo%252Fdark.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253Do69F7a6qoW9vboof%2526q%253D85%2526s%253D0766b3221061e80143e9f300733e640b%26primaryColor%3D%25230E0E0E%26lightColor%3D%2523D4A27F%26darkColor%3D%25230E0E0E%26backgroundLight%3D%2523FDFDF7%26backgroundDark%3D%252309090B&w=1200&q=100",
+      "sources": [
+        "https://code.claude.com/docs/en/agent-teams#compare-with-subagents"
+      ],
+      "shortId": 17
     },
     {
       "filename": "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
@@ -379,7 +360,7 @@
       "sources": [
         "https://share.google/tM36P3WSwQLtg0J7h"
       ],
-      "shortId": 19
+      "shortId": 18
     },
     {
       "filename": "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
@@ -397,6 +378,25 @@
       "sources": [
         "https://share.google/uISHcJ3WNR4H6uMhP"
       ],
+      "shortId": 19
+    },
+    {
+      "filename": "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
+      "slug": "2026-02-06-revolutionizing-coding-twitters-claude-code-update",
+      "title": "Revolutionizing Coding: Twitter's Claude Code Update",
+      "date": "2026-02-06",
+      "published_at": "2026-02-06T11:06:27.201899+00:00",
+      "tags": [
+        "Claude Code",
+        "AI",
+        "Coding"
+      ],
+      "excerpt": "Twitter's Claude Code now supports agent teams, enabling parallel work and coordination, and we're excited to explore its potential. This update is a game-changer for developers, allowing for faster and more efficient coding.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2019467383505924096/img/y8PJFj92TQdi95xR.jpg",
+      "sources": [
+        "https://x.com/lydiahallie/status/2019469032844587505?s=20"
+      ],
+      "video": "media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.mp4",
       "shortId": 20
     },
     {
@@ -418,24 +418,6 @@
       "shortId": 21
     },
     {
-      "filename": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
-      "slug": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s",
-      "title": "Introducing Voxtral Transcribe 2: Revolutionizing Speech-to-Text Models",
-      "date": "2026-02-05",
-      "published_at": "2026-02-05T15:38:43.566527+00:00",
-      "tags": [
-        "Voxtral Transcribe 2",
-        "Speech-to-Text",
-        "AI"
-      ],
-      "excerpt": "Precision diarization, real-time transcription, and a new audio playground.",
-      "image": "https://mistral.ai/img/mistral-cover.png",
-      "sources": [
-        "https://mistral.ai/news/voxtral-transcribe-2"
-      ],
-      "shortId": 22
-    },
-    {
       "filename": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
       "slug": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co",
       "title": "Revolutionizing Coding Insights: Twitter's Claude Code Update",
@@ -452,6 +434,24 @@
         "https://x.com/i/status/2019173731042750509"
       ],
       "video": "media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.mp4",
+      "shortId": 22
+    },
+    {
+      "filename": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
+      "slug": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s",
+      "title": "Introducing Voxtral Transcribe 2: Revolutionizing Speech-to-Text Models",
+      "date": "2026-02-05",
+      "published_at": "2026-02-05T15:38:43.566527+00:00",
+      "tags": [
+        "Voxtral Transcribe 2",
+        "Speech-to-Text",
+        "AI"
+      ],
+      "excerpt": "Precision diarization, real-time transcription, and a new audio playground.",
+      "image": "https://mistral.ai/img/mistral-cover.png",
+      "sources": [
+        "https://mistral.ai/news/voxtral-transcribe-2"
+      ],
       "shortId": 23
     }
   ]

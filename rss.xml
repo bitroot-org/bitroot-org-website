@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Feb 2026 13:41:41 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Feb 2026 13:42:04 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Safety Leader Sounds Alarm: Resignation Sparks Concerns Over Tech's Dark Side</title>
@@ -22,25 +22,9 @@
       <source url="https://share.google/6gzMAD1U347j7YUXX">Original Source</source>
     </item>
     <item>
-      <title>Revolutionizing Research Visuals: Google AI's PaperBanana Framework</title>
+      <title>Revolutionizing Coding: Composer 1.5 Unleashes Enhanced Intelligence</title>
       <link>https://bitroot.org/blog/p/2</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/2</guid>
-      <description>Google AI Introduces PaperBanana: An Agentic Framework that Automates Publication Ready Methodology Diagrams and Statistical Plots
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/"&gt;https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Tue, 10 Feb 2026 19:18:56 +0000</pubDate>
-      <category>AI</category>
-      <category>Research</category>
-      <category>Visualization</category>
-      <category>Google AI</category>
-      <category>PaperBanana</category>
-      <enclosure url="https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-18.png" type="image/jpeg" length="0" />
-      <source url="https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/">Original Source</source>
-    </item>
-    <item>
-      <title>Revolutionizing Coding: Composer 1.5 Unleashes Enhanced Intelligence</title>
-      <link>https://bitroot.org/blog/p/3</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/3</guid>
       <description>Improved reasoning over challenging coding tasks by scaling RL over 20x.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://cursor.com/blog/composer-1-5"&gt;https://cursor.com/blog/composer-1-5&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -52,32 +36,48 @@
       <source url="https://cursor.com/blog/composer-1-5">Original Source</source>
     </item>
     <item>
-      <title>Revolutionizing Coding: GPT-5.3-Codex Now Powers GitHub Copilot</title>
-      <link>https://bitroot.org/blog/p/4</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/4</guid>
-      <description>Get ready to supercharge your coding workflow with GPT-5.3-Codex, the latest AI model now available in GitHub Copilot, bringing improved performance and capabilities to the table. This update is set to revolutionize the way developers work, making coding faster, smarter, and more efficient.
+      <title>Revolutionizing UI Animations: Introducing ReactBits</title>
+      <link>https://bitroot.org/blog/p/3</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/3</guid>
+      <description>ReactBits is a game-changing animation library that offers a growing collection of smooth, modern UI animations for React projects, taking web design to the next level
 
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/"&gt;https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Tue, 10 Feb 2026 19:20:49 +0000</pubDate>
-      <category>GitHub Copilot</category>
-      <category>GPT-5.3-Codex</category>
-      <category>AI-powered coding</category>
-      <enclosure url="https://github.blog/wp-content/uploads/2026/02/github-copilot-social-card-2.png" type="image/jpeg" length="0" />
-      <source url="https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/">Original Source</source>
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2020423330386579646"&gt;https://x.com/i/status/2020423330386579646&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 10 Feb 2026 01:55:57 +0000</pubDate>
+      <category>React</category>
+      <category>UI Animations</category>
+      <category>Web Development</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2020423255082123265/img/YD4KlnqX6y9k3Ro_.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2020423330386579646">Original Source</source>
     </item>
     <item>
-      <title>Introducing Nanobot: The Ultra-Lightweight Personal AI Assistant</title>
+      <title>India's Tech Landscape Shifts: Why Deeptech and Hardware Are the Future</title>
+      <link>https://bitroot.org/blog/p/4</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/4</guid>
+      <description>India's reliance on IT service exports is no longer viable, and the country must shift its focus to deeptech and hardware to build long-term economic resilience. Zerodha founder Nithin Kamath emphasizes the need for self-sufficiency in technology to stay competitive.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms"&gt;https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 10 Feb 2026 19:23:50 +0000</pubDate>
+      <category>Deeptech</category>
+      <category>Hardware</category>
+      <category>IT Service Exports</category>
+      <category>Artificial Intelligence</category>
+      <enclosure url="https://img.etimg.com/thumb/width-1200,height-900,imgsize-18740,resizemode-75,msid-128120292/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath.jpg" type="image/jpeg" length="0" />
+      <source url="https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms">Original Source</source>
+    </item>
+    <item>
+      <title>AI Expansion Showdown: Anthropic's India Foray Hits Local Roadblock</title>
       <link>https://bitroot.org/blog/p/5</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/5</guid>
-      <description>"🐈 nanobot: The Ultra-Lightweight OpenClaw". Contribute to HKUDS/nanobot development by creating an account on GitHub.
+      <description>India's Anthropic Software has taken the U.S. AI giant to court over a name dispute.
 
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/HKUDS/nanobot"&gt;https://github.com/HKUDS/nanobot&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Tue, 10 Feb 2026 19:24:09 +0000</pubDate>
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/"&gt;https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 10 Feb 2026 02:07:30 +0000</pubDate>
       <category>AI</category>
-      <category>Nanobot</category>
-      <category>Personal Assistant</category>
-      <enclosure url="https://opengraph.githubassets.com/860a29c3b70dd9f9266b82558c0c427fb47036deb672088e1b5f525631120a27/HKUDS/nanobot" type="image/jpeg" length="0" />
-      <source url="https://github.com/HKUDS/nanobot">Original Source</source>
+      <category>Anthropic</category>
+      <category>India</category>
+      <category>Trademark</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/01/anthropic-image-jagmeet-singh-techcrunch.jpg?resize=1200,800" type="image/jpeg" length="0" />
+      <source url="https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/">Original Source</source>
     </item>
     <item>
       <title>Revolutionizing Video Creation: AI-Powered Vibe Editing Takes Center Stage</title>
@@ -94,48 +94,48 @@
       <source url="https://x.com/i/status/2020464238880596429">Original Source</source>
     </item>
     <item>
-      <title>Revolutionizing UI Animations: Introducing ReactBits</title>
+      <title>Revolutionizing Research Visuals: Google AI's PaperBanana Framework</title>
       <link>https://bitroot.org/blog/p/7</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/7</guid>
-      <description>ReactBits is a game-changing animation library that offers a growing collection of smooth, modern UI animations for React projects, taking web design to the next level
+      <description>Google AI Introduces PaperBanana: An Agentic Framework that Automates Publication Ready Methodology Diagrams and Statistical Plots
 
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2020423330386579646"&gt;https://x.com/i/status/2020423330386579646&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Tue, 10 Feb 2026 01:55:57 +0000</pubDate>
-      <category>React</category>
-      <category>UI Animations</category>
-      <category>Web Development</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2020423255082123265/img/YD4KlnqX6y9k3Ro_.jpg" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2020423330386579646">Original Source</source>
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/"&gt;https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 10 Feb 2026 19:18:56 +0000</pubDate>
+      <category>AI</category>
+      <category>Research</category>
+      <category>Visualization</category>
+      <category>Google AI</category>
+      <category>PaperBanana</category>
+      <enclosure url="https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-18.png" type="image/jpeg" length="0" />
+      <source url="https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/">Original Source</source>
     </item>
     <item>
-      <title>India's Tech Landscape Shifts: Why Deeptech and Hardware Are the Future</title>
+      <title>Revolutionizing Coding: GPT-5.3-Codex Now Powers GitHub Copilot</title>
       <link>https://bitroot.org/blog/p/8</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/8</guid>
-      <description>India's reliance on IT service exports is no longer viable, and the country must shift its focus to deeptech and hardware to build long-term economic resilience. Zerodha founder Nithin Kamath emphasizes the need for self-sufficiency in technology to stay competitive.
+      <description>Get ready to supercharge your coding workflow with GPT-5.3-Codex, the latest AI model now available in GitHub Copilot, bringing improved performance and capabilities to the table. This update is set to revolutionize the way developers work, making coding faster, smarter, and more efficient.
 
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms"&gt;https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Tue, 10 Feb 2026 19:23:50 +0000</pubDate>
-      <category>Deeptech</category>
-      <category>Hardware</category>
-      <category>IT Service Exports</category>
-      <category>Artificial Intelligence</category>
-      <enclosure url="https://img.etimg.com/thumb/width-1200,height-900,imgsize-18740,resizemode-75,msid-128120292/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath.jpg" type="image/jpeg" length="0" />
-      <source url="https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms">Original Source</source>
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/"&gt;https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 10 Feb 2026 19:20:49 +0000</pubDate>
+      <category>GitHub Copilot</category>
+      <category>GPT-5.3-Codex</category>
+      <category>AI-powered coding</category>
+      <enclosure url="https://github.blog/wp-content/uploads/2026/02/github-copilot-social-card-2.png" type="image/jpeg" length="0" />
+      <source url="https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/">Original Source</source>
     </item>
     <item>
-      <title>AI Expansion Showdown: Anthropic's India Foray Hits Local Roadblock</title>
+      <title>Introducing Nanobot: The Ultra-Lightweight Personal AI Assistant</title>
       <link>https://bitroot.org/blog/p/9</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/9</guid>
-      <description>India's Anthropic Software has taken the U.S. AI giant to court over a name dispute.
+      <description>"🐈 nanobot: The Ultra-Lightweight OpenClaw". Contribute to HKUDS/nanobot development by creating an account on GitHub.
 
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/"&gt;https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Tue, 10 Feb 2026 02:07:30 +0000</pubDate>
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/HKUDS/nanobot"&gt;https://github.com/HKUDS/nanobot&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 10 Feb 2026 19:24:09 +0000</pubDate>
       <category>AI</category>
-      <category>Anthropic</category>
-      <category>India</category>
-      <category>Trademark</category>
-      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/01/anthropic-image-jagmeet-singh-techcrunch.jpg?resize=1200,800" type="image/jpeg" length="0" />
-      <source url="https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/">Original Source</source>
+      <category>Nanobot</category>
+      <category>Personal Assistant</category>
+      <enclosure url="https://opengraph.githubassets.com/860a29c3b70dd9f9266b82558c0c427fb47036deb672088e1b5f525631120a27/HKUDS/nanobot" type="image/jpeg" length="0" />
+      <source url="https://github.com/HKUDS/nanobot">Original Source</source>
     </item>
     <item>
       <title>Revolutionizing Data Workflows: Cortex Code Unleashes Natural Language Power</title>
@@ -226,9 +226,22 @@
       <source url="https://share.google/4T0fJDumSQSmG5Cmo">Original Source</source>
     </item>
     <item>
-      <title>Unlocking Collaborative Coding: Introducing Claude Code's Agent Teams</title>
+      <title>Revolutionizing Video Creation: The Notch Prompter</title>
       <link>https://bitroot.org/blog/p/16</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/16</guid>
+      <description>Moody is an AI-powered notch teleprompter for Mac that keeps your script right next to your camera, maintaining natural eye contact during recordings and presentations.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3"&gt;https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 06 Feb 2026 03:38:17 +0000</pubDate>
+      <category>video creation</category>
+      <category>AI</category>
+      <category>content creation</category>
+      <source url="https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3">Original Source</source>
+    </item>
+    <item>
+      <title>Unlocking Collaborative Coding: Introducing Claude Code's Agent Teams</title>
+      <link>https://bitroot.org/blog/p/17</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/17</guid>
       <description>Coordinate multiple Claude Code instances working together as a team, with shared tasks, inter-agent messaging, and centralized management.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://code.claude.com/docs/en/agent-teams#compare-with-subagents"&gt;https://code.claude.com/docs/en/agent-teams#compare-with-subagents&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -240,36 +253,9 @@
       <source url="https://code.claude.com/docs/en/agent-teams#compare-with-subagents">Original Source</source>
     </item>
     <item>
-      <title>Revolutionizing Coding: Twitter's Claude Code Update</title>
-      <link>https://bitroot.org/blog/p/17</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/17</guid>
-      <description>Twitter's Claude Code now supports agent teams, enabling parallel work and coordination, and we're excited to explore its potential. This update is a game-changer for developers, allowing for faster and more efficient coding.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/lydiahallie/status/2019469032844587505?s=20"&gt;https://x.com/lydiahallie/status/2019469032844587505?s=20&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Fri, 06 Feb 2026 11:06:27 +0000</pubDate>
-      <category>Claude Code</category>
-      <category>AI</category>
-      <category>Coding</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2019467383505924096/img/y8PJFj92TQdi95xR.jpg" type="image/jpeg" length="0" />
-      <source url="https://x.com/lydiahallie/status/2019469032844587505?s=20">Original Source</source>
-    </item>
-    <item>
-      <title>Revolutionizing Video Creation: The Notch Prompter</title>
+      <title>OpenAI Unveils GPT-5.3-Codex: Revolutionizing Software Development with Autonomous AI</title>
       <link>https://bitroot.org/blog/p/18</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/18</guid>
-      <description>Moody is an AI-powered notch teleprompter for Mac that keeps your script right next to your camera, maintaining natural eye contact during recordings and presentations.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3"&gt;https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Fri, 06 Feb 2026 03:38:17 +0000</pubDate>
-      <category>video creation</category>
-      <category>AI</category>
-      <category>content creation</category>
-      <source url="https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3">Original Source</source>
-    </item>
-    <item>
-      <title>OpenAI Unveils GPT-5.3-Codex: Revolutionizing Software Development with Autonomous AI</title>
-      <link>https://bitroot.org/blog/p/19</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/19</guid>
       <description>OpenAI has launched GPT-5.3-Codex, its most advanced agentic coding model to date. Featuring a 25% speed increase over its predecessor, the model can autonomously manage the entire software lifecycle, from research to deployment. It notably assisted in its own development, marking a significant milestone in self-improving artificial intelligence capabilities. 📲 OpenAI GPT-5.3-Codex Launched: New AI Agentic Model Can Autonomously Build, Debug and Manage Software.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://share.google/tM36P3WSwQLtg0J7h"&gt;https://share.google/tM36P3WSwQLtg0J7h&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -283,8 +269,8 @@
     </item>
     <item>
       <title>Introducing Claude Opus 4.6: A Revolutionary Leap in AI Capabilities</title>
-      <link>https://bitroot.org/blog/p/20</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/20</guid>
+      <link>https://bitroot.org/blog/p/19</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/19</guid>
       <description>We’re upgrading our smartest model. Across agentic coding, computer use, tool use, search, and finance, Opus 4.6 is an industry-leading model, often by wide margin.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://share.google/uISHcJ3WNR4H6uMhP"&gt;https://share.google/uISHcJ3WNR4H6uMhP&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -294,6 +280,20 @@
       <category>AI Updates</category>
       <enclosure url="https://cdn.sanity.io/images/4zrzovbb/website/01d06528567e4bd22c3ddedc87f609ee5716a009-2400x1260.png" type="image/jpeg" length="0" />
       <source url="https://share.google/uISHcJ3WNR4H6uMhP">Original Source</source>
+    </item>
+    <item>
+      <title>Revolutionizing Coding: Twitter's Claude Code Update</title>
+      <link>https://bitroot.org/blog/p/20</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/20</guid>
+      <description>Twitter's Claude Code now supports agent teams, enabling parallel work and coordination, and we're excited to explore its potential. This update is a game-changer for developers, allowing for faster and more efficient coding.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/lydiahallie/status/2019469032844587505?s=20"&gt;https://x.com/lydiahallie/status/2019469032844587505?s=20&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 06 Feb 2026 11:06:27 +0000</pubDate>
+      <category>Claude Code</category>
+      <category>AI</category>
+      <category>Coding</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2019467383505924096/img/y8PJFj92TQdi95xR.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/lydiahallie/status/2019469032844587505?s=20">Original Source</source>
     </item>
     <item>
       <title>Revolutionizing AI-Powered Development with Vercel's Skills.sh</title>
@@ -310,23 +310,9 @@
       <source url="https://app.inference.sh/blog/skills/agent-skills-overview">Original Source</source>
     </item>
     <item>
-      <title>Introducing Voxtral Transcribe 2: Revolutionizing Speech-to-Text Models</title>
+      <title>Revolutionizing Coding Insights: Twitter's Claude Code Update</title>
       <link>https://bitroot.org/blog/p/22</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/22</guid>
-      <description>Precision diarization, real-time transcription, and a new audio playground.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://mistral.ai/news/voxtral-transcribe-2"&gt;https://mistral.ai/news/voxtral-transcribe-2&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Thu, 05 Feb 2026 15:38:43 +0000</pubDate>
-      <category>Voxtral Transcribe 2</category>
-      <category>Speech-to-Text</category>
-      <category>AI</category>
-      <enclosure url="https://mistral.ai/img/mistral-cover.png" type="image/jpeg" length="0" />
-      <source url="https://mistral.ai/news/voxtral-transcribe-2">Original Source</source>
-    </item>
-    <item>
-      <title>Revolutionizing Coding Insights: Twitter's Claude Code Update</title>
-      <link>https://bitroot.org/blog/p/23</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/23</guid>
       <description>Claude Code introduces /insights, a command that analyzes your past month of usage to summarize projects and suggest workflow improvements.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2019173731042750509"&gt;https://x.com/i/status/2019173731042750509&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -336,6 +322,20 @@
       <category>Coding Insights</category>
       <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2019173388062007297/img/jHnsIhpNNPkjIRvy.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2019173731042750509">Original Source</source>
+    </item>
+    <item>
+      <title>Introducing Voxtral Transcribe 2: Revolutionizing Speech-to-Text Models</title>
+      <link>https://bitroot.org/blog/p/23</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/23</guid>
+      <description>Precision diarization, real-time transcription, and a new audio playground.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://mistral.ai/news/voxtral-transcribe-2"&gt;https://mistral.ai/news/voxtral-transcribe-2&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 05 Feb 2026 15:38:43 +0000</pubDate>
+      <category>Voxtral Transcribe 2</category>
+      <category>Speech-to-Text</category>
+      <category>AI</category>
+      <enclosure url="https://mistral.ai/img/mistral-cover.png" type="image/jpeg" length="0" />
+      <source url="https://mistral.ai/news/voxtral-transcribe-2">Original Source</source>
     </item>
   </channel>
 </rss>
