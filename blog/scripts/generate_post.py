@@ -849,6 +849,39 @@ def close_issue(issue_number):
     requests.patch(url, headers=headers, json=data)
 
 
+def write_pr_summary(post_data, issue_data, filepath, image_url=None):
+    """Write a summary file that the workflow uses for the PR body."""
+    summary_path = os.path.join(POSTS_DIR, ".pr_summary.md")
+    title = post_data.get("title", "Untitled")
+    excerpt = post_data.get("excerpt", "")
+    tags = post_data.get("tags", [])
+    sources = issue_data.get("urls", [])
+    issue_num = issue_data.get("issue_number", "")
+
+    tags_str = ", ".join(f"`{t}`" for t in tags) if tags else "_none_"
+    sources_str = "\n".join(f"- {u}" for u in sources) if sources else "_none_"
+    image_line = f"![thumbnail]({image_url})" if image_url else "_no image_"
+
+    summary = f"""## {title}
+
+> {excerpt}
+
+{image_line}
+
+| | |
+|---|---|
+| **Tags** | {tags_str} |
+| **File** | `{os.path.basename(filepath)}` |
+| **Source issue** | #{issue_num} |
+
+### Sources
+{sources_str}
+"""
+    with open(summary_path, "w", encoding="utf-8") as f:
+        f.write(summary)
+    logger.info(f"PR summary written to {summary_path}")
+
+
 def main():
     print("Starting blog post generator...")
 
@@ -931,6 +964,9 @@ def main():
                 source_media if source_media else None
             )
             print(f"  Created: {filepath}")
+
+            # Write PR summary for the workflow to pick up
+            write_pr_summary(post_data, issue_data, filepath, source_image)
 
             # Comment on issue
             comment_on_issue(
