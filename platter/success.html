@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Payment Successful &mdash; Platter by Bitroot</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="https://bitroot.org/css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="1c575daa-78f4-4071-8066-938d8f38bc9d"></script>
+  <link href="https://bitroot.org/images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <style>
+    :root {
+      --black: #0A0A0A;
+      --cream: #FAF8F4;
+      --yellow: #FDB924;
+      --blue: #2B6FEC;
+      --white: #FFFFFF;
+      --green: #059669;
+      --border: 3px solid var(--black);
+      --shadow: 6px 6px 0 var(--black);
+      --shadow-sm: 4px 4px 0 var(--black);
+      --radius: 4px;
+      --font-display: 'Press Start 2P', monospace;
+      --font-body: 'Bricolage Grotesque', sans-serif;
+      --font-mono: 'IBM Plex Mono', monospace;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    ::selection { background: var(--yellow); color: var(--black); }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--black);
+      background: var(--cream);
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.035;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 200px 200px;
+    }
+
+    /* Nav */
+    .s-nav {
+      background: var(--cream);
+      border-bottom: var(--border);
+      height: 64px;
+      display: flex;
+      align-items: center;
+      padding: 0 48px;
+    }
+
+    .s-nav__logo { display: flex; align-items: center; text-decoration: none; }
+    .s-nav__logo img { height: 36px; }
+
+    /* Main */
+    .s-main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 24px;
+    }
+
+    .s-card {
+      background: var(--white);
+      border: var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      max-width: 620px;
+      width: 100%;
+      padding: 48px 40px;
+      text-align: center;
+      animation: pop-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    @keyframes pop-in {
+      from { opacity: 0; transform: scale(0.92) translateY(20px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    .s-check {
+      width: 64px;
+      height: 64px;
+      background: var(--green);
+      border: var(--border);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      animation: check-bounce 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
+    }
+
+    @keyframes check-bounce {
+      0% { transform: scale(0); }
+      60% { transform: scale(1.15); }
+      100% { transform: scale(1); }
+    }
+
+    .s-check svg { width: 32px; height: 32px; }
+
+    .s-title {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .s-subtitle {
+      font-family: var(--font-body);
+      font-size: 18px;
+      color: rgba(0,0,0,0.6);
+      margin-bottom: 36px;
+    }
+
+    /* Steps */
+    .s-steps {
+      text-align: left;
+      margin-bottom: 36px;
+    }
+
+    .s-step {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 16px 0;
+      border-bottom: 1px dashed rgba(0,0,0,0.1);
+    }
+
+    .s-step:last-child { border-bottom: none; }
+
+    .s-step__num {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--white);
+      background: var(--black);
+      min-width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+
+    .s-step__content { flex: 1; }
+
+    .s-step__title {
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .s-step__desc {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: rgba(0,0,0,0.5);
+      line-height: 1.5;
+    }
+
+    .s-step__desc a {
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .s-step__desc a:hover { text-decoration: underline; }
+
+    /* Badge */
+    .s-badge {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      background: var(--yellow);
+      color: var(--black);
+      border: 2px solid var(--black);
+      border-radius: 2px;
+      padding: 5px 14px;
+      margin-bottom: 32px;
+    }
+
+    /* Buttons */
+    .s-buttons {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .s-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 700;
+      padding: 14px 28px;
+      border: var(--border);
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: all 0.15s;
+      cursor: pointer;
+    }
+
+    .s-btn--primary {
+      background: var(--blue);
+      color: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .s-btn--primary:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: var(--shadow);
+    }
+
+    .s-btn--outline {
+      background: transparent;
+      color: var(--black);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .s-btn--outline:hover {
+      background: var(--black);
+      color: var(--white);
+      transform: translate(-2px, -2px);
+      box-shadow: var(--shadow);
+    }
+
+    .s-btn svg { width: 18px; height: 18px; }
+
+    /* Footer */
+    .s-footer {
+      text-align: center;
+      padding: 24px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: rgba(0,0,0,0.35);
+    }
+
+    .s-footer a {
+      color: rgba(0,0,0,0.5);
+      text-decoration: none;
+    }
+
+    .s-footer a:hover { color: var(--black); }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .s-nav { padding: 0 20px; }
+      .s-card { padding: 36px 24px; }
+      .s-title { font-size: 14px; }
+      .s-subtitle { font-size: 16px; }
+      .s-buttons { flex-direction: column; }
+      .s-btn { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="s-nav">
+    <a href="/" class="s-nav__logo">
+      <img src="images/platter-logo-text-web.png" alt="Platter by Bitroot">
+    </a>
+  </nav>
+
+  <main class="s-main">
+    <div class="s-card">
+      <div class="s-check">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+      </div>
+
+      <h1 class="s-title">Payment Successful!</h1>
+      <p class="s-subtitle">Thank you for joining Platter. You're almost there.</p>
+
+      <div class="s-badge">Access granted within 24 hours</div>
+
+      <div class="s-steps">
+        <div class="s-step">
+          <div class="s-step__num">1</div>
+          <div class="s-step__content">
+            <div class="s-step__title">Sign up on the Platter portal</div>
+            <p class="s-step__desc">Head to <a href="https://perks.bitroot.org" target="_blank">perks.bitroot.org</a> and click <strong>"Sign In"</strong> in the top right corner to create your account.</p>
+          </div>
+        </div>
+        <div class="s-step">
+          <div class="s-step__num">2</div>
+          <div class="s-step__content">
+            <div class="s-step__title">Complete your profile</div>
+            <p class="s-step__desc">Fill in your details so we can verify and approve your membership.</p>
+          </div>
+        </div>
+        <div class="s-step">
+          <div class="s-step__num">3</div>
+          <div class="s-step__content">
+            <div class="s-step__title">Get approved access</div>
+            <p class="s-step__desc">Our team will confirm your profile and grant full access to all deals and tools within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="s-buttons">
+        <a href="https://perks.bitroot.org" target="_blank" class="s-btn s-btn--primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Sign Up on Portal
+        </a>
+        <a href="platter-access-guide.txt" download class="s-btn s-btn--outline">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Instructions
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="s-footer">
+    <p>Bitroot Technology &amp; Marketing Pvt. Ltd. &middot; <a href="https://bitroot.org" target="_blank">bitroot.org</a></p>
+  </footer>
+
+</body>
+</html>
