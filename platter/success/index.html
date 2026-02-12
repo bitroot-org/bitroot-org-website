@@ -366,7 +366,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
           Sign Up on Portal
         </a>
-        <a href="../platter-access-guide.txt" download class="s-btn s-btn--outline">
+        <a href="../platter-access-guide-annual.pdf" download id="guide-download" class="s-btn s-btn--outline">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           Download Instructions
         </a>
@@ -409,6 +409,13 @@
       var successEl = document.getElementById('success-state');
       var errorEl = document.getElementById('error-state');
       var pidBox = document.getElementById('payment-id-box');
+
+      var plan = params.get('plan');
+      var guideLink = document.getElementById('guide-download');
+
+      if (plan === 'insider') {
+        guideLink.href = '../platter-access-guide-insider.pdf';
+      }
 
       if (paymentId) {
         successEl.classList.remove('hidden');
