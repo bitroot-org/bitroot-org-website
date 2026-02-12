@@ -1216,11 +1216,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     .p-price-card__razorpay {
       position: absolute;
-      width: 0;
-      height: 0;
-      overflow: hidden;
+      left: -9999px;
       opacity: 0;
-      pointer-events: none;
     }
 
     /* --- FAQ --- */
@@ -2064,10 +2061,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     document.querySelectorAll('[data-razorpay]').forEach(function(btn) {
       btn.addEventListener('click', function() {
         var form = btn.nextElementSibling;
-        if (form && form.classList.contains('p-price-card__razorpay')) {
+        if (!form || !form.classList.contains('p-price-card__razorpay')) return;
+
+        function tryClick(attempts) {
           var rpBtn = form.querySelector('.razorpay-payment-button');
-          if (rpBtn) rpBtn.click();
+          if (rpBtn) {
+            rpBtn.style.pointerEvents = 'auto';
+            rpBtn.click();
+          } else if (attempts > 0) {
+            setTimeout(function() { tryClick(attempts - 1); }, 200);
+          }
         }
+        tryClick(15);
       });
     });
 
