@@ -1061,13 +1061,49 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       opacity: 0.4;
     }
 
-    .p-pricing__currency-note {
-      text-align: center;
+    .p-pricing__toggle {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 28px;
       font-family: var(--font-mono);
       font-size: 12px;
-      color: rgba(0,0,0,0.4);
-      margin-top: 24px;
+      color: rgba(0,0,0,0.5);
     }
+
+    .p-pricing__toggle.visible { display: flex; }
+
+    .p-pricing__toggle-label { cursor: pointer; }
+    .p-pricing__toggle-label--active { color: var(--black); font-weight: 700; }
+
+    .p-pricing__toggle-switch {
+      position: relative;
+      width: 36px;
+      height: 20px;
+      background: rgba(0,0,0,0.12);
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.2s;
+      border: none;
+      padding: 0;
+    }
+
+    .p-pricing__toggle-switch::after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 14px;
+      height: 14px;
+      background: var(--white);
+      border-radius: 50%;
+      transition: transform 0.2s;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+
+    .p-pricing__toggle-switch--usd { background: var(--black); }
+    .p-pricing__toggle-switch--usd::after { transform: translateX(16px); }
 
     .p-price-card__period {
       font-family: var(--font-mono);
@@ -1748,7 +1784,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <a href="https://perks.bitroot.org" target="_blank" class="p-price-card__cta p-price-card__cta--primary">Become Insider &rarr;</a>
         </div>
       </div>
-      <p class="p-pricing__currency-note reveal reveal-delay-2" id="currency-note"></p>
+      <div class="p-pricing__toggle reveal reveal-delay-2" id="currency-toggle">
+        <span class="p-pricing__toggle-label" id="toggle-local"></span>
+        <button class="p-pricing__toggle-switch" id="toggle-switch" aria-label="Toggle currency"></button>
+        <span class="p-pricing__toggle-label" id="toggle-usd">USD</span>
+      </div>
     </div>
   </section>
 
@@ -1989,30 +2029,49 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       }
 
       function updatePrices(currency) {
-        // Update original (strikethrough) prices
         document.querySelectorAll('[data-price-original]').forEach(function(el) {
           var usd = parseFloat(el.getAttribute('data-price-original'));
           el.textContent = formatPrice(usd, currency);
         });
-
-        // Update main prices
         document.querySelectorAll('[data-price]').forEach(function(el) {
           var usd = parseFloat(el.getAttribute('data-price'));
           var suffix = el.getAttribute('data-suffix') || '';
           el.textContent = formatPrice(usd, currency) + suffix;
         });
-
-        // Update "$100,000+ in products" text
         document.querySelectorAll('[data-price-text]').forEach(function(el) {
           var usd = parseFloat(el.getAttribute('data-price-text'));
           el.textContent = formatPrice(usd, currency) + '+ in products';
         });
+      }
 
-        // Show currency note if not USD
-        var note = document.getElementById('currency-note');
-        if (note && currency.code !== 'USD') {
-          note.textContent = 'Prices shown in ' + currency.code + '. Billed in USD.';
+      var localCurrency = null;
+      var showingUsd = false;
+
+      function setupToggle(local) {
+        var toggle = document.getElementById('currency-toggle');
+        var switchBtn = document.getElementById('toggle-switch');
+        var labelLocal = document.getElementById('toggle-local');
+        var labelUsd = document.getElementById('toggle-usd');
+
+        labelLocal.textContent = local.code;
+        toggle.classList.add('visible');
+        updateToggleState();
+
+        function updateToggleState() {
+          switchBtn.className = 'p-pricing__toggle-switch' + (showingUsd ? ' p-pricing__toggle-switch--usd' : '');
+          labelLocal.className = 'p-pricing__toggle-label' + (!showingUsd ? ' p-pricing__toggle-label--active' : '');
+          labelUsd.className = 'p-pricing__toggle-label' + (showingUsd ? ' p-pricing__toggle-label--active' : '');
         }
+
+        function toggle_currency() {
+          showingUsd = !showingUsd;
+          updatePrices(showingUsd ? currencyMap.US : local);
+          updateToggleState();
+        }
+
+        switchBtn.addEventListener('click', toggle_currency);
+        labelLocal.addEventListener('click', function() { if (showingUsd) toggle_currency(); });
+        labelUsd.addEventListener('click', function() { if (!showingUsd) toggle_currency(); });
       }
 
       // Default to USD immediately
@@ -2023,13 +2082,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .then(function(res) { return res.json(); })
         .then(function(data) {
           if (data && data.country_code) {
-            var currency = getCurrency(data.country_code);
-            updatePrices(currency);
+            localCurrency = getCurrency(data.country_code);
+            if (localCurrency.code !== 'USD') {
+              showingUsd = false;
+              updatePrices(localCurrency);
+              setupToggle(localCurrency);
+            }
           }
         })
-        .catch(function() {
-          // Silently stay with USD on failure
-        });
+        .catch(function() {});
     })();
   </script>
 </body>
