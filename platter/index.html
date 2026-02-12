@@ -10,12 +10,12 @@
   <meta content="Platter by Bitroot — Exclusive Perks &amp; Rewards" property="twitter:title">
   <meta content="https://uploads-ssl.webflow.com/615add14e76ec21413cadf97/629e1f29e07c315af1758e07_bitroot-blue-pallete.png" property="twitter:image">
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="https://bitroot.org/css/normalize.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link href="../images/favicon.png" rel="shortcut icon" type="image/x-icon">
-  <link href="../images/webclip.png" rel="apple-touch-icon">
+  <link href="https://bitroot.org/images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="https://bitroot.org/images/webclip.png" rel="apple-touch-icon">
   <!-- Facebook Pixel Code -->
   <script>
 !function(f,b,e,v,n,t,s)
@@ -1553,7 +1553,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <nav class="p-nav">
     <div class="p-nav__left">
       <a href="/platter/" class="p-nav__logo">
-        <img src="/platter/images/platter-logo-text-web.png" alt="Platter by Bitroot">
+        <img src="images/platter-logo-text-web.png" alt="Platter by Bitroot">
       </a>
     </div>
     <div class="p-nav__links">
@@ -1883,7 +1883,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="p-footer__grid">
         <div>
           <a href="/platter/" class="p-footer__brand">
-            <img src="/platter/images/platter-logo-text-web.png" alt="Platter by Bitroot" style="filter: none;">
+            <img src="images/platter-logo-text-web.png" alt="Platter by Bitroot" style="filter: none;">
           </a>
           <p class="p-footer__desc">Exclusive rewards, partner deals, and premium tools for founders and teams building what's next.</p>
         </div>
@@ -2085,18 +2085,38 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       // Default to USD immediately
       updatePrices(currencyMap.US);
 
-      // Detect country via free geo API
+      // Detect country — try multiple free geo APIs with fallbacks
+      function applyCountry(code) {
+        localCurrency = getCurrency(code);
+        if (localCurrency.code !== 'USD') {
+          showingUsd = false;
+          updatePrices(localCurrency);
+          setupToggle(localCurrency);
+        }
+      }
+
       fetch('https://ipapi.co/json/')
-        .then(function(res) { return res.json(); })
+        .then(function(res) { if (!res.ok) throw new Error(); return res.json(); })
         .then(function(data) {
-          if (data && data.country_code) {
-            localCurrency = getCurrency(data.country_code);
-            if (localCurrency.code !== 'USD') {
-              showingUsd = false;
-              updatePrices(localCurrency);
-              setupToggle(localCurrency);
-            }
-          }
+          if (data && data.country_code) applyCountry(data.country_code);
+          else throw new Error();
+        })
+        .catch(function() {
+          // Fallback 1
+          return fetch('https://ipwho.is/')
+            .then(function(res) { return res.json(); })
+            .then(function(data) {
+              if (data && data.country_code) applyCountry(data.country_code);
+              else throw new Error();
+            });
+        })
+        .catch(function() {
+          // Fallback 2
+          return fetch('https://api.country.is/')
+            .then(function(res) { return res.json(); })
+            .then(function(data) {
+              if (data && data.country) applyCountry(data.country);
+            });
         })
         .catch(function() {});
     })();
