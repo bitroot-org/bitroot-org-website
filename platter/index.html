@@ -1496,18 +1496,45 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         padding: 60px 0 80px;
       }
 
-      .p-hero__visual { order: -1; overflow: hidden; }
+      .p-hero__visual { order: -1; }
 
       .p-hero__stack {
-        max-width: 380px;
-        min-height: 320px;
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
         margin: 0 auto;
       }
 
-      .p-perk-card { width: 260px; padding: 24px; }
-      .p-perk-card--1 { left: 10px; }
-      .p-perk-card--2 { left: 100px; top: 110px; }
-      .p-perk-card--3 { left: 30px; top: 220px; }
+      .p-perk-card {
+        position: relative;
+        width: 100%;
+        top: auto !important;
+        left: auto !important;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 14px;
+        padding: 14px 20px;
+        border-radius: 50px;
+        animation: none !important;
+      }
+
+      .p-perk-card:hover { transform: none !important; }
+
+      .p-perk-card__icon {
+        width: 38px;
+        height: 38px;
+        min-width: 38px;
+        margin-bottom: 0;
+        border-radius: 50%;
+      }
+
+      .p-perk-card__title { font-size: 14px; margin-bottom: 0; }
+      .p-perk-card__text { display: none; }
 
       .p-hero__sticker { display: none; }
 
@@ -1549,15 +1576,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .p-hero__title { font-size: 20px; }
       .p-hero__desc { font-size: 17px; }
 
-      .p-hero__stack {
-        max-width: 300px;
-        min-height: 280px;
-      }
-
-      .p-perk-card { width: 220px; padding: 20px; }
-      .p-perk-card--1 { left: 5px; }
-      .p-perk-card--2 { left: 70px; top: 95px; }
-      .p-perk-card--3 { left: 20px; top: 190px; }
+      .p-perk-card { padding: 12px 16px; }
+      .p-perk-card__icon { width: 34px; height: 34px; min-width: 34px; }
+      .p-perk-card__title { font-size: 13px; }
 
       .p-problem__title,
       .p-solutions__title,
@@ -1581,14 +1602,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     @media (max-width: 479px) {
       .p-hero__title { font-size: 16px; }
-      .p-perk-card { width: 180px; padding: 16px; }
-      .p-perk-card__icon { width: 36px; height: 36px; margin-bottom: 10px; }
-      .p-perk-card__title { font-size: 15px; }
-      .p-perk-card__text { font-size: 11px; }
-      .p-perk-card--1 { left: 0; }
-      .p-perk-card--2 { left: 60px; top: 85px; }
-      .p-perk-card--3 { left: 10px; top: 170px; }
-      .p-hero__stack { min-height: 240px; }
+      .p-perk-card { padding: 10px 14px; border-radius: 40px; }
+      .p-perk-card__icon { width: 30px; height: 30px; min-width: 30px; }
+      .p-perk-card__title { font-size: 12px; }
     }
   </style>
 </head>
