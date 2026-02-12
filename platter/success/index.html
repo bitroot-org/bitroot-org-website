@@ -609,22 +609,6 @@
       if (plan && plan.indexOf('?') !== -1) plan = plan.split('?')[0];
       var guideLink = document.getElementById('guide-download');
 
-      if (plan === 'insider') {
-        // Activate Insider theme
-        document.body.classList.add('insider-theme');
-        document.title = 'Welcome, Insider \u2014 Platter by Bitroot';
-        guideLink.href = '../platter-access-guide-insider.pdf';
-
-        // Show insider-specific elements
-        document.getElementById('insider-label').classList.remove('hidden');
-        document.getElementById('priority-support').classList.remove('hidden');
-
-        // Update messaging
-        document.getElementById('success-title').textContent = 'You Are Now an Insider';
-        document.getElementById('success-subtitle').textContent = 'You now have Insider access. Priority support and AI tools included.';
-        document.getElementById('step3-desc').innerHTML = 'Our team will fast-track your profile and grant full Insider access to all deals, AI tools, and priority support within 24 hours.';
-      }
-
       // Validate Razorpay payment ID format: pay_ followed by 14 alphanumeric chars
       var isValidPaymentId = paymentId && /^pay_[A-Za-z0-9]{14}$/.test(paymentId);
 
@@ -632,6 +616,18 @@
         successEl.classList.remove('hidden');
         errorEl.classList.add('hidden');
         pidBox.innerHTML = 'Payment ID: <strong>' + paymentId + '</strong>';
+
+        // Only apply Insider theme on valid payment
+        if (plan === 'insider') {
+          document.body.classList.add('insider-theme');
+          document.title = 'Welcome, Insider \u2014 Platter by Bitroot';
+          guideLink.href = '../platter-access-guide-insider.pdf';
+          document.getElementById('insider-label').classList.remove('hidden');
+          document.getElementById('priority-support').classList.remove('hidden');
+          document.getElementById('success-title').textContent = 'You Are Now an Insider';
+          document.getElementById('success-subtitle').textContent = 'You now have Insider access. Priority support and AI tools included.';
+          document.getElementById('step3-desc').innerHTML = 'Our team will fast-track your profile and grant full Insider access to all deals, AI tools, and priority support within 24 hours.';
+        }
       } else {
         successEl.classList.add('hidden');
         errorEl.classList.remove('hidden');
