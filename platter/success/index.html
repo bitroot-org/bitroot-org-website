@@ -284,6 +284,24 @@
 
     .s-error-text a:hover { text-decoration: underline; }
 
+    /* Priority support line */
+    .s-priority-support {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px dashed rgba(0,0,0,0.1);
+      color: rgba(0,0,0,0.45);
+    }
+
+    .s-priority-support a {
+      color: var(--black);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .s-priority-support a:hover { text-decoration: underline; }
+
     /* Footer */
     .s-footer {
       text-align: center;
@@ -310,6 +328,170 @@
       .s-buttons { flex-direction: column; }
       .s-btn { justify-content: center; }
     }
+
+    /* ========================================
+       INSIDER THEME — Dark premium styling
+       Applied via .insider-theme on <body>
+       ======================================== */
+
+    @keyframes gold-shimmer {
+      0% { background-position: -200% center; }
+      100% { background-position: 200% center; }
+    }
+
+    @keyframes subtle-glow {
+      0%, 100% { box-shadow: 0 0 20px rgba(253, 185, 36, 0.15); }
+      50% { box-shadow: 0 0 40px rgba(253, 185, 36, 0.3); }
+    }
+
+    .insider-theme {
+      background: #0A0A0A;
+      color: #F5F5F5;
+    }
+
+    .insider-theme .s-nav {
+      background: #0A0A0A;
+      border-bottom: 2px solid rgba(253, 185, 36, 0.3);
+    }
+
+    .insider-theme .s-nav__logo img {
+      filter: brightness(0) invert(1);
+    }
+
+    .insider-theme .s-card {
+      background: #141414;
+      border: 2px solid rgba(253, 185, 36, 0.4);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(253, 185, 36, 0.1);
+      animation: pop-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) both, subtle-glow 3s ease-in-out infinite 0.5s;
+    }
+
+    .insider-theme .s-icon {
+      border: 2px solid rgba(253, 185, 36, 0.5);
+    }
+
+    .insider-theme .s-icon--success {
+      background: linear-gradient(135deg, #D4A012, #FDB924);
+    }
+
+    .insider-theme .s-icon--success svg {
+      stroke: #0A0A0A;
+    }
+
+    .insider-theme .s-title {
+      color: #FFFFFF;
+      background: linear-gradient(90deg, #FDB924, #FFD866, #FDB924);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: gold-shimmer 4s linear infinite;
+    }
+
+    .insider-theme .s-subtitle {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .insider-theme .s-payment-id {
+      background: rgba(253, 185, 36, 0.08);
+      border: 1px solid rgba(253, 185, 36, 0.2);
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .insider-theme .s-payment-id strong {
+      color: #FDB924;
+    }
+
+    .insider-theme .s-badge {
+      background: transparent;
+      border: 2px solid #FDB924;
+      color: #FDB924;
+    }
+
+    .insider-theme .s-insider-label {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #FDB924;
+      margin-bottom: 16px;
+    }
+
+    .insider-theme .s-step {
+      border-bottom-color: rgba(255, 255, 255, 0.08);
+    }
+
+    .insider-theme .s-step__num {
+      background: #FDB924;
+      color: #0A0A0A;
+    }
+
+    .insider-theme .s-step__title {
+      color: #FFFFFF;
+    }
+
+    .insider-theme .s-step__desc {
+      color: rgba(255, 255, 255, 0.45);
+    }
+
+    .insider-theme .s-step__desc a {
+      color: #FDB924;
+    }
+
+    .insider-theme .s-step__desc strong {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .insider-theme .s-btn--primary {
+      background: #FDB924;
+      color: #0A0A0A;
+      border: 2px solid #FDB924;
+      box-shadow: 0 4px 12px rgba(253, 185, 36, 0.3);
+    }
+
+    .insider-theme .s-btn--primary:hover {
+      background: #FFD866;
+      border-color: #FFD866;
+      transform: translate(-2px, -2px);
+      box-shadow: 0 8px 24px rgba(253, 185, 36, 0.4);
+    }
+
+    .insider-theme .s-btn--outline {
+      background: transparent;
+      color: #F5F5F5;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      box-shadow: none;
+    }
+
+    .insider-theme .s-btn--outline:hover {
+      background: rgba(255, 255, 255, 0.08);
+      color: #FFFFFF;
+      border-color: rgba(255, 255, 255, 0.4);
+      transform: translate(-2px, -2px);
+      box-shadow: none;
+    }
+
+    .insider-theme .s-priority-support {
+      border-top-color: rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .insider-theme .s-priority-support a {
+      color: #FDB924;
+    }
+
+    .insider-theme .s-footer {
+      color: rgba(255, 255, 255, 0.25);
+    }
+
+    .insider-theme .s-footer a {
+      color: rgba(255, 255, 255, 0.35);
+    }
+
+    .insider-theme .s-footer a:hover {
+      color: #FDB924;
+    }
   </style>
 </head>
 <body>
@@ -323,14 +505,16 @@
   <main class="s-main">
     <!-- SUCCESS STATE -->
     <div class="s-card" id="success-state">
+      <div class="s-insider-label hidden" id="insider-label">Insider Member</div>
+
       <div class="s-icon s-icon--success">
         <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="20 6 9 17 4 12"/>
         </svg>
       </div>
 
-      <h1 class="s-title">Payment Successful!</h1>
-      <p class="s-subtitle">Thank you for joining Platter. You're almost there.</p>
+      <h1 class="s-title" id="success-title">Payment Successful!</h1>
+      <p class="s-subtitle" id="success-subtitle">Thank you for joining Platter. You're almost there.</p>
 
       <div class="s-payment-id" id="payment-id-box"></div>
 
@@ -356,7 +540,7 @@
           <div class="s-step__num">3</div>
           <div class="s-step__content">
             <div class="s-step__title">Get approved access</div>
-            <p class="s-step__desc">Our team will confirm your profile and grant full access to all deals and tools within 24 hours.</p>
+            <p class="s-step__desc" id="step3-desc">Our team will confirm your profile and grant full access to all deals and tools within 24 hours.</p>
           </div>
         </div>
       </div>
@@ -370,6 +554,10 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           Download Instructions
         </a>
+      </div>
+
+      <div class="s-priority-support hidden" id="priority-support">
+        Priority support: <a href="mailto:platter.priority@bitroot.org">platter.priority@bitroot.org</a>
       </div>
     </div>
 
@@ -422,7 +610,19 @@
       var guideLink = document.getElementById('guide-download');
 
       if (plan === 'insider') {
+        // Activate Insider theme
+        document.body.classList.add('insider-theme');
+        document.title = 'Welcome, Insider \u2014 Platter by Bitroot';
         guideLink.href = '../platter-access-guide-insider.pdf';
+
+        // Show insider-specific elements
+        document.getElementById('insider-label').classList.remove('hidden');
+        document.getElementById('priority-support').classList.remove('hidden');
+
+        // Update messaging
+        document.getElementById('success-title').textContent = 'Welcome to the Inner Circle';
+        document.getElementById('success-subtitle').textContent = 'You now have Insider access. Priority support and AI tools included.';
+        document.getElementById('step3-desc').innerHTML = 'Our team will fast-track your profile and grant full Insider access to all deals, AI tools, and priority support within 24 hours.';
       }
 
       if (paymentId) {
