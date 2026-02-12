@@ -18,6 +18,7 @@
       --blue: #2B6FEC;
       --white: #FFFFFF;
       --green: #059669;
+      --red: #DC2626;
       --border: 3px solid var(--black);
       --shadow: 6px 6px 0 var(--black);
       --shadow-sm: 4px 4px 0 var(--black);
@@ -53,7 +54,6 @@
       background-size: 200px 200px;
     }
 
-    /* Nav */
     .s-nav {
       background: var(--cream);
       border-bottom: var(--border);
@@ -66,7 +66,6 @@
     .s-nav__logo { display: flex; align-items: center; text-decoration: none; }
     .s-nav__logo img { height: 36px; }
 
-    /* Main */
     .s-main {
       flex: 1;
       display: flex;
@@ -92,26 +91,29 @@
       to { opacity: 1; transform: scale(1) translateY(0); }
     }
 
-    .s-check {
+    /* Icon circles */
+    .s-icon {
       width: 64px;
       height: 64px;
-      background: var(--green);
       border: var(--border);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       margin: 0 auto 24px;
-      animation: check-bounce 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
+      animation: icon-bounce 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
     }
 
-    @keyframes check-bounce {
+    .s-icon--success { background: var(--green); }
+    .s-icon--error { background: var(--red); }
+
+    @keyframes icon-bounce {
       0% { transform: scale(0); }
       60% { transform: scale(1.15); }
       100% { transform: scale(1); }
     }
 
-    .s-check svg { width: 32px; height: 32px; }
+    .s-icon svg { width: 32px; height: 32px; }
 
     .s-title {
       font-family: var(--font-display);
@@ -125,7 +127,40 @@
       font-family: var(--font-body);
       font-size: 18px;
       color: rgba(0,0,0,0.6);
-      margin-bottom: 36px;
+      margin-bottom: 24px;
+    }
+
+    /* Payment ID */
+    .s-payment-id {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: rgba(0,0,0,0.45);
+      background: var(--cream);
+      padding: 6px 14px;
+      border-radius: var(--radius);
+      margin-bottom: 28px;
+      word-break: break-all;
+    }
+
+    .s-payment-id strong {
+      color: var(--black);
+    }
+
+    /* Badge */
+    .s-badge {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      background: var(--yellow);
+      color: var(--black);
+      border: 2px solid var(--black);
+      border-radius: 2px;
+      padding: 5px 14px;
+      margin-bottom: 32px;
     }
 
     /* Steps */
@@ -183,22 +218,6 @@
 
     .s-step__desc a:hover { text-decoration: underline; }
 
-    /* Badge */
-    .s-badge {
-      display: inline-block;
-      font-family: var(--font-mono);
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      background: var(--yellow);
-      color: var(--black);
-      border: 2px solid var(--black);
-      border-radius: 2px;
-      padding: 5px 14px;
-      margin-bottom: 32px;
-    }
-
     /* Buttons */
     .s-buttons {
       display: flex;
@@ -248,6 +267,23 @@
 
     .s-btn svg { width: 18px; height: 18px; }
 
+    /* Error text */
+    .s-error-text {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: rgba(0,0,0,0.5);
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+
+    .s-error-text a {
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .s-error-text a:hover { text-decoration: underline; }
+
     /* Footer */
     .s-footer {
       text-align: center;
@@ -264,7 +300,8 @@
 
     .s-footer a:hover { color: var(--black); }
 
-    /* Responsive */
+    .hidden { display: none !important; }
+
     @media (max-width: 600px) {
       .s-nav { padding: 0 20px; }
       .s-card { padding: 36px 24px; }
@@ -279,13 +316,14 @@
 
   <nav class="s-nav">
     <a href="/" class="s-nav__logo">
-      <img src="images/platter-logo-text-web.png" alt="Platter by Bitroot">
+      <img src="../images/platter-logo-text-web.png" alt="Platter by Bitroot">
     </a>
   </nav>
 
   <main class="s-main">
-    <div class="s-card">
-      <div class="s-check">
+    <!-- SUCCESS STATE -->
+    <div class="s-card" id="success-state">
+      <div class="s-icon s-icon--success">
         <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="20 6 9 17 4 12"/>
         </svg>
@@ -294,6 +332,9 @@
       <h1 class="s-title">Payment Successful!</h1>
       <p class="s-subtitle">Thank you for joining Platter. You're almost there.</p>
 
+      <div class="s-payment-id" id="payment-id-box"></div>
+
+      <br>
       <div class="s-badge">Access granted within 24 hours</div>
 
       <div class="s-steps">
@@ -325,9 +366,32 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
           Sign Up on Portal
         </a>
-        <a href="platter-access-guide.txt" download class="s-btn s-btn--outline">
+        <a href="../platter-access-guide.txt" download class="s-btn s-btn--outline">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           Download Instructions
+        </a>
+      </div>
+    </div>
+
+    <!-- ERROR STATE -->
+    <div class="s-card hidden" id="error-state">
+      <div class="s-icon s-icon--error">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </div>
+
+      <h1 class="s-title">Something Went Wrong</h1>
+      <p class="s-subtitle">We couldn't verify your payment.</p>
+
+      <p class="s-error-text">
+        This page requires a valid payment ID. If you've already made a payment, please check your email for the confirmation link. If you believe this is an error, <a href="https://form.jotform.com/221531494075454" target="_blank">contact our team</a>.
+      </p>
+
+      <div class="s-buttons">
+        <a href="/" class="s-btn s-btn--primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Back to Platter
         </a>
       </div>
     </div>
@@ -336,6 +400,26 @@
   <footer class="s-footer">
     <p>Bitroot Technology &amp; Marketing Pvt. Ltd. &middot; <a href="https://bitroot.org" target="_blank">bitroot.org</a></p>
   </footer>
+
+  <script>
+    (function() {
+      var params = new URLSearchParams(window.location.search);
+      var paymentId = params.get('payment_id') || params.get('razorpay_payment_id');
+
+      var successEl = document.getElementById('success-state');
+      var errorEl = document.getElementById('error-state');
+      var pidBox = document.getElementById('payment-id-box');
+
+      if (paymentId) {
+        successEl.classList.remove('hidden');
+        errorEl.classList.add('hidden');
+        pidBox.innerHTML = 'Payment ID: <strong>' + paymentId + '</strong>';
+      } else {
+        successEl.classList.add('hidden');
+        errorEl.classList.remove('hidden');
+      }
+    })();
+  </script>
 
 </body>
 </html>
