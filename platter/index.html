@@ -1450,6 +1450,41 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       transition: all 0.2s;
     }
 
+    .p-nav__menu-btn.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .p-nav__menu-btn.active span:nth-child(2) { opacity: 0; }
+    .p-nav__menu-btn.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .p-nav__mobile-menu {
+      display: none;
+      position: fixed;
+      top: 64px;
+      left: 0; right: 0;
+      background: var(--cream);
+      border-bottom: var(--border);
+      padding: 16px 32px 24px;
+      z-index: 99;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .p-nav__mobile-menu.open { display: flex; }
+
+    .p-nav__mobile-menu a {
+      font-family: var(--font-mono);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--black);
+      text-decoration: none;
+      padding: 12px 0;
+      border-bottom: 1px dashed rgba(0,0,0,0.08);
+    }
+
+    .p-nav__mobile-menu a:last-child { border-bottom: none; }
+
     /* --- Responsive --- */
     @media (max-width: 991px) {
       .p-container { padding: 0 32px; }
@@ -1461,13 +1496,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         padding: 60px 0 80px;
       }
 
-      .p-hero__visual { order: -1; }
+      .p-hero__visual { order: -1; overflow: hidden; }
 
       .p-hero__stack {
         max-width: 380px;
-        min-height: 340px;
+        min-height: 320px;
         margin: 0 auto;
       }
+
+      .p-perk-card { width: 260px; padding: 24px; }
+      .p-perk-card--1 { left: 10px; }
+      .p-perk-card--2 { left: 100px; top: 110px; }
+      .p-perk-card--3 { left: 30px; top: 220px; }
 
       .p-hero__sticker { display: none; }
 
@@ -1511,11 +1551,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       .p-hero__stack {
         max-width: 300px;
-        min-height: 300px;
+        min-height: 280px;
       }
 
-      .p-perk-card { width: 240px; padding: 24px; }
-      .p-perk-card--2 { left: 100px; }
+      .p-perk-card { width: 220px; padding: 20px; }
+      .p-perk-card--1 { left: 5px; }
+      .p-perk-card--2 { left: 70px; top: 95px; }
+      .p-perk-card--3 { left: 20px; top: 190px; }
 
       .p-problem__title,
       .p-solutions__title,
@@ -1539,10 +1581,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     @media (max-width: 479px) {
       .p-hero__title { font-size: 16px; }
-      .p-perk-card { width: 200px; padding: 20px; }
-      .p-perk-card--2 { left: 70px; top: 100px; }
-      .p-perk-card--3 { top: 200px; }
-      .p-hero__stack { min-height: 280px; }
+      .p-perk-card { width: 180px; padding: 16px; }
+      .p-perk-card__icon { width: 36px; height: 36px; margin-bottom: 10px; }
+      .p-perk-card__title { font-size: 15px; }
+      .p-perk-card__text { font-size: 11px; }
+      .p-perk-card--1 { left: 0; }
+      .p-perk-card--2 { left: 60px; top: 85px; }
+      .p-perk-card--3 { left: 10px; top: 170px; }
+      .p-hero__stack { min-height: 240px; }
     }
   </style>
 </head>
@@ -1567,6 +1613,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <span></span><span></span><span></span>
     </button>
   </nav>
+  <div class="p-nav__mobile-menu" id="mobile-menu">
+    <a href="#solutions">What You Get</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+    <a href="#pricing">Get Access</a>
+  </div>
 
   <!-- ====== HERO ====== -->
   <section class="p-hero">
@@ -1892,7 +1944,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="p-container">
       <div class="p-footer__grid">
         <div>
-          <a href="/platter/" class="p-footer__brand">
+          <a href="/" class="p-footer__brand">
             <img src="images/platter-logo-text-web.png" alt="Platter by Bitroot" style="filter: none;">
           </a>
           <p class="p-footer__desc">Exclusive rewards, partner deals, and premium tools for founders and teams building what's next.</p>
@@ -1908,16 +1960,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div>
           <div class="p-footer__col-title">Company</div>
           <ul class="p-footer__links">
-            <li><a href="/">Bitroot Home</a></li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="https://bitroot.org" target="_blank">Bitroot Home</a></li>
+            <li><a href="https://bitroot.org/blog" target="_blank">Blog</a></li>
             <li><a href="https://form.jotform.com/221531494075454" target="_blank">Contact</a></li>
           </ul>
         </div>
         <div>
           <div class="p-footer__col-title">Legal</div>
           <ul class="p-footer__links">
-            <li><a href="/legal/terms">Terms &amp; Conditions</a></li>
-            <li><a href="/legal/privacy">Privacy Policy</a></li>
+            <li><a href="https://bitroot.org/legal/terms" target="_blank">Terms &amp; Conditions</a></li>
+            <li><a href="https://bitroot.org/legal/privacy" target="_blank">Privacy Policy</a></li>
           </ul>
         </div>
       </div>
@@ -1974,6 +2026,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
       });
     });
+
+    // Mobile hamburger menu
+    (function() {
+      var menuBtn = document.querySelector('.p-nav__menu-btn');
+      var mobileMenu = document.getElementById('mobile-menu');
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', function() {
+          menuBtn.classList.toggle('active');
+          mobileMenu.classList.toggle('open');
+        });
+        mobileMenu.querySelectorAll('a').forEach(function(link) {
+          link.addEventListener('click', function() {
+            menuBtn.classList.remove('active');
+            mobileMenu.classList.remove('open');
+          });
+        });
+      }
+    })();
 
     // Nav background on scroll
     var nav = document.querySelector('.p-nav');
