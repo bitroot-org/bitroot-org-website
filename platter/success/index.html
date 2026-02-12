@@ -355,7 +355,7 @@
     }
 
     .insider-theme .s-nav__logo img {
-      filter: brightness(0) invert(1);
+      /* keep original logo */
     }
 
     .insider-theme .s-card {
@@ -620,12 +620,15 @@
         document.getElementById('priority-support').classList.remove('hidden');
 
         // Update messaging
-        document.getElementById('success-title').textContent = 'Welcome to the Inner Circle';
+        document.getElementById('success-title').textContent = 'You Are Now an Insider';
         document.getElementById('success-subtitle').textContent = 'You now have Insider access. Priority support and AI tools included.';
         document.getElementById('step3-desc').innerHTML = 'Our team will fast-track your profile and grant full Insider access to all deals, AI tools, and priority support within 24 hours.';
       }
 
-      if (paymentId) {
+      // Validate Razorpay payment ID format: pay_ followed by 14 alphanumeric chars
+      var isValidPaymentId = paymentId && /^pay_[A-Za-z0-9]{14}$/.test(paymentId);
+
+      if (isValidPaymentId) {
         successEl.classList.remove('hidden');
         errorEl.classList.add('hidden');
         pidBox.innerHTML = 'Payment ID: <strong>' + paymentId + '</strong>';
