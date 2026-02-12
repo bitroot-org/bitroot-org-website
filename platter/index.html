@@ -1215,9 +1215,49 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
 
     .p-price-card__razorpay {
-      position: absolute;
-      left: -9999px;
-      opacity: 0;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .p-price-card__razorpay .razorpay-payment-button {
+      display: block !important;
+      width: 100% !important;
+      text-align: center !important;
+      font-family: var(--font-body) !important;
+      font-size: 15px !important;
+      font-weight: 700 !important;
+      padding: 16px !important;
+      border: 2px solid var(--black) !important;
+      border-radius: 4px !important;
+      cursor: pointer !important;
+      transition: all 0.15s !important;
+      background: transparent !important;
+      color: var(--black) !important;
+      box-shadow: 3px 3px 0 rgba(0,0,0,0.1) !important;
+      line-height: 1.2 !important;
+      height: auto !important;
+    }
+
+    .p-price-card__razorpay .razorpay-payment-button:hover {
+      background: var(--black) !important;
+      color: var(--white) !important;
+      transform: translate(-2px, -2px) !important;
+      box-shadow: 6px 6px 0 var(--black) !important;
+    }
+
+    .p-price-card__razorpay--featured .razorpay-payment-button {
+      background: var(--white) !important;
+      color: var(--black) !important;
+      border-color: var(--white) !important;
+    }
+
+    .p-price-card__razorpay--featured .razorpay-payment-button:hover {
+      background: var(--yellow) !important;
+      color: var(--black) !important;
+      border-color: var(--yellow) !important;
+      transform: translate(-2px, -2px) !important;
+      box-shadow: 6px 6px 0 rgba(0,0,0,0.3) !important;
     }
 
     /* --- FAQ --- */
@@ -1856,8 +1896,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <li data-price-text="100000">$100,000+ in products</li>
             <li>Access to the growing Platter library</li>
           </ul>
-          <button class="p-price-card__cta p-price-card__cta--outline" data-razorpay="pl_SFHM3mq9j2k3Oy">Get Annual &rarr;</button>
-          <form class="p-price-card__razorpay" id="rp-annual"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_SFHM3mq9j2k3Oy" async></script></form>
+          <form class="p-price-card__razorpay"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_SFHM3mq9j2k3Oy" async></script></form>
         </div>
         <!-- Insider -->
         <div class="p-price-card p-price-card--featured reveal reveal-delay-1">
@@ -1871,8 +1910,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <li>Priority access for all tools</li>
             <li>Exclusive Insider-only tools</li>
           </ul>
-          <button class="p-price-card__cta p-price-card__cta--primary" data-razorpay="pl_SFHTAEn8dxbYwn">Become Insider &rarr;</button>
-          <form class="p-price-card__razorpay" id="rp-insider"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_SFHTAEn8dxbYwn" async></script></form>
+          <form class="p-price-card__razorpay p-price-card__razorpay--featured"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_SFHTAEn8dxbYwn" async></script></form>
         </div>
       </div>
       <div class="p-pricing__toggle reveal reveal-delay-2" id="currency-toggle">
@@ -2054,25 +2092,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
           window.scrollTo({ top: top, behavior: 'smooth' });
         }
-      });
-    });
-
-    // Razorpay custom button triggers
-    document.querySelectorAll('[data-razorpay]').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        var form = btn.nextElementSibling;
-        if (!form || !form.classList.contains('p-price-card__razorpay')) return;
-
-        function tryClick(attempts) {
-          var rpBtn = form.querySelector('.razorpay-payment-button');
-          if (rpBtn) {
-            rpBtn.style.pointerEvents = 'auto';
-            rpBtn.click();
-          } else if (attempts > 0) {
-            setTimeout(function() { tryClick(attempts - 1); }, 200);
-          }
-        }
-        tryClick(15);
       });
     });
 
