@@ -1214,6 +1214,50 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       color: var(--black);
     }
 
+    .p-price-card__razorpay {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .p-price-card__razorpay .razorpay-payment-button {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 700;
+      padding: 16px;
+      border: var(--border);
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .p-price-card .p-price-card__razorpay .razorpay-payment-button {
+      background: transparent;
+      color: var(--black);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .p-price-card .p-price-card__razorpay .razorpay-payment-button:hover {
+      background: var(--black);
+      color: var(--white);
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0 var(--black);
+    }
+
+    .p-price-card--featured .p-price-card__razorpay .razorpay-payment-button {
+      background: var(--yellow);
+      color: var(--black);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .p-price-card--featured .p-price-card__razorpay .razorpay-payment-button:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0 var(--black);
+    }
+
     /* --- FAQ --- */
     .p-faq {
       background: var(--white);
@@ -1850,7 +1894,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <li data-price-text="100000">$100,000+ in products</li>
             <li>Access to the growing Platter library</li>
           </ul>
-          <a href="https://perks.bitroot.org" target="_blank" class="p-price-card__cta p-price-card__cta--outline">Get Annual &rarr;</a>
+          <form class="p-price-card__razorpay"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_SFHM3mq9j2k3Oy" async></script></form>
         </div>
         <!-- Insider -->
         <div class="p-price-card p-price-card--featured reveal reveal-delay-1">
@@ -1864,7 +1908,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <li>Priority access for all tools</li>
             <li>Exclusive Insider-only tools</li>
           </ul>
-          <a href="https://perks.bitroot.org" target="_blank" class="p-price-card__cta p-price-card__cta--primary">Become Insider &rarr;</a>
+          <form class="p-price-card__razorpay"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_SFHTAEn8dxbYwn" async></script></form>
         </div>
       </div>
       <div class="p-pricing__toggle reveal reveal-delay-2" id="currency-toggle">
