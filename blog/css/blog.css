@@ -298,7 +298,6 @@ img {
     border-radius: var(--radius-lg);
     overflow: hidden;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.2s ease;
     position: relative;
 }
 
@@ -341,6 +340,14 @@ img {
     background: linear-gradient(90deg, var(--bitroot-primary-blue), var(--bitroot-pink));
     opacity: 0;
     transition: opacity 0.3s ease;
+}
+
+.featured-post {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.2s ease, opacity 0.3s ease;
+}
+
+.featured-post.fade-out {
+    opacity: 0;
 }
 
 .featured-post:hover {

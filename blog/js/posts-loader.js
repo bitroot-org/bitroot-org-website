@@ -419,8 +419,6 @@ const PostsLoader = {
     initClickHandlers(posts) {
         const featured = document.querySelector('.featured-post');
         if (featured) {
-            featured.style.transition = 'opacity 0.2s ease';
-
             // Initialize video controls if present
             this.initVideoControls(featured);
         }
@@ -490,7 +488,7 @@ const PostsLoader = {
     },
 
     /**
-     * Update the featured post display
+     * Update the featured post display (smooth in-place update)
      */
     updateFeaturedPost(post, allPosts, fromAutoRotate) {
         const featured = document.querySelector('.featured-post');
@@ -503,7 +501,6 @@ const PostsLoader = {
             if (this.currentFeaturedIndex === -1) this.currentFeaturedIndex = 0;
             this.stopAutoRotate();
 
-            // Restart auto-rotate from this post
             this.autoRotateInterval = setInterval(() => {
                 const pp = this.getPagePosts();
                 this.currentFeaturedIndex = (this.currentFeaturedIndex + 1) % pp.length;
@@ -513,43 +510,70 @@ const PostsLoader = {
 
         // Pause any playing video
         const oldVideo = featured.querySelector('video');
-        if (oldVideo) {
-            oldVideo.pause();
-        }
+        if (oldVideo) oldVideo.pause();
 
-        // Fade out
-        featured.style.opacity = '0';
+        const tag = (post.tags && post.tags[0]) || 'General';
+        const image = this.getPostImage(post);
+        const displayDate = post.published_at ? this.formatDateTime(post.published_at) : this.formatDate(post.date);
+        const hasVideo = this.hasVideo(post);
 
-        setTimeout(() => {
-            // Update content
-            featured.outerHTML = this.renderFeaturedPost(post);
+        // Preload the new image before swapping
+        const preload = new Image();
+        preload.src = image;
 
-            // Re-init click handler for new featured element
-            const newFeatured = document.querySelector('.featured-post');
-            newFeatured.style.transition = 'opacity 0.2s ease';
-            newFeatured.style.opacity = '1';
+        const doSwap = () => {
+            // Fade out
+            featured.classList.add('fade-out');
 
-            // Restart progress bar
-            this.restartProgressBar();
-
-            // Initialize video controls if present
-            this.initVideoControls(newFeatured);
-
-            newFeatured.addEventListener('click', (e) => {
-                // Don't navigate if clicking video controls
-                if (e.target.closest('.video-play-btn') ||
-                    e.target.closest('.video-mute-btn') ||
-                    e.target.closest('.read-more')) {
-                    return;
+            setTimeout(() => {
+                // Update data attribute
+                featured.dataset.postSlug = post.slug;
+                if (hasVideo) {
+                    featured.dataset.video = post.video;
+                } else {
+                    delete featured.dataset.video;
                 }
-                window.location.href = `post.html?slug=${post.slug}`;
-            });
 
-            // Update list items active state
-            document.querySelectorAll('.list-item').forEach(item => {
-                item.classList.toggle('active', item.dataset.postSlug === post.slug);
-            });
-        }, 200);
+                // Update image
+                const imgEl = featured.querySelector('.post-image img');
+                if (imgEl) imgEl.src = image;
+
+                // Update text content
+                featured.querySelector('.post-tag').textContent = tag;
+                featured.querySelector('.post-date').textContent = displayDate;
+                featured.querySelector('.post-title').textContent = post.title;
+                featured.querySelector('.post-excerpt').textContent = post.excerpt || '';
+                featured.querySelector('.read-time').textContent = (post.readTime || '5 min') + ' read';
+                featured.querySelector('.read-more').href = 'post.html?slug=' + post.slug;
+
+                // Handle video elements
+                const existingVideoContainer = featured.querySelector('.video-container');
+                const existingPlayBtn = featured.querySelector('.video-play-btn');
+                const existingMuteBtn = featured.querySelector('.video-mute-btn');
+                if (existingVideoContainer) existingVideoContainer.remove();
+                if (existingPlayBtn) existingPlayBtn.remove();
+                if (existingMuteBtn) existingMuteBtn.remove();
+
+                // Restart progress bar
+                this.restartProgressBar();
+
+                // Fade in
+                featured.classList.remove('fade-out');
+
+                // Update list items active state
+                document.querySelectorAll('.list-item').forEach(item => {
+                    item.classList.toggle('active', item.dataset.postSlug === post.slug);
+                });
+            }, 300);
+        };
+
+        // If image is cached, swap immediately; otherwise wait for load
+        if (preload.complete) {
+            doSwap();
+        } else {
+            preload.onload = doSwap;
+            preload.onerror = doSwap; // still swap even if image fails
+        }
     }
 };
 
