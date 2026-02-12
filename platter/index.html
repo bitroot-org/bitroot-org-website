@@ -975,9 +975,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     .p-pricing__cards {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 24px;
-      max-width: 1050px;
+      max-width: 750px;
       margin: 0 auto;
     }
 
@@ -1046,6 +1046,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       font-family: var(--font-display);
       font-size: 32px;
       margin-bottom: 4px;
+    }
+
+    .p-price-card__price-original {
+      font-family: var(--font-display);
+      font-size: 18px;
+      text-decoration: line-through;
+      opacity: 0.45;
+      margin-bottom: 2px;
+    }
+
+    .p-price-card--featured .p-price-card__price-original {
+      color: var(--white);
+      opacity: 0.4;
+    }
+
+    .p-pricing__currency-note {
+      text-align: center;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: rgba(0,0,0,0.4);
+      margin-top: 24px;
     }
 
     .p-price-card__period {
@@ -1724,51 +1745,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <p class="p-pricing__subtitle reveal reveal-delay-2">No hidden fees. Cancel anytime.</p>
       </div>
       <div class="p-pricing__cards">
-        <!-- Starter -->
+        <!-- Annual -->
         <div class="p-price-card reveal">
-          <div class="p-price-card__name">Starter</div>
-          <div class="p-price-card__price">Free</div>
-          <div class="p-price-card__period">forever</div>
+          <div class="p-price-card__name">Annual</div>
+          <div class="p-price-card__price-original" data-price-original="250"></div>
+          <div class="p-price-card__price" data-price="180" data-suffix="/yr"></div>
+          <div class="p-price-card__period">Newlogger Pro + Product Pass access</div>
           <ul class="p-price-card__features">
-            <li>Access to basic partner deals</li>
-            <li>Monthly newsletter</li>
-            <li>Community access</li>
-            <li>Startup resource library</li>
+            <li>Everything in Monthly</li>
+            <li data-price-text="100000">$100,000+ in products</li>
+            <li>Access to the growing Platter library</li>
           </ul>
-          <a href="https://perks.bitroot.org" target="_blank" class="p-price-card__cta p-price-card__cta--outline">Get Started</a>
+          <a href="https://perks.bitroot.org" target="_blank" class="p-price-card__cta p-price-card__cta--outline">Get Annual &rarr;</a>
         </div>
-        <!-- Pro -->
+        <!-- Insider -->
         <div class="p-price-card p-price-card--featured reveal reveal-delay-1">
-          <div class="p-price-card__popular">Most Popular</div>
-          <div class="p-price-card__name">Pro</div>
-          <div class="p-price-card__price">$29/mo</div>
-          <div class="p-price-card__period">billed monthly</div>
+          <div class="p-price-card__popular">Best Value</div>
+          <div class="p-price-card__name">Insider</div>
+          <div class="p-price-card__price-original" data-price-original="350"></div>
+          <div class="p-price-card__price" data-price="250" data-suffix="/yr"></div>
+          <div class="p-price-card__period">Priority Support email</div>
           <ul class="p-price-card__features">
-            <li>Everything in Starter</li>
-            <li>Premium tool credits</li>
-            <li>Exclusive partner discounts</li>
-            <li>Priority support channel</li>
-            <li>Monthly founder meetups</li>
-            <li>Tech stack consulting</li>
+            <li>Everything in Annual</li>
+            <li>Priority access for all tools</li>
+            <li>Exclusive Insider-only tools</li>
           </ul>
-          <a href="https://perks.bitroot.org" target="_blank" class="p-price-card__cta p-price-card__cta--primary">Get Pro Access</a>
-        </div>
-        <!-- Team -->
-        <div class="p-price-card reveal reveal-delay-2">
-          <div class="p-price-card__name">Team</div>
-          <div class="p-price-card__price">$79/mo</div>
-          <div class="p-price-card__period">up to 10 seats</div>
-          <ul class="p-price-card__features">
-            <li>Everything in Pro</li>
-            <li>Team-wide tool access</li>
-            <li>Shared credits pool</li>
-            <li>Quarterly business reviews</li>
-            <li>Custom onboarding</li>
-            <li>Dedicated account manager</li>
-          </ul>
-          <a href="https://perks.bitroot.org" target="_blank" class="p-price-card__cta p-price-card__cta--outline">Contact Sales</a>
+          <a href="https://perks.bitroot.org" target="_blank" class="p-price-card__cta p-price-card__cta--primary">Become Insider &rarr;</a>
         </div>
       </div>
+      <p class="p-pricing__currency-note reveal reveal-delay-2" id="currency-note"></p>
     </div>
   </section>
 
@@ -1813,7 +1818,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <span class="p-faq-item__toggle">+</span>
           </button>
           <div class="p-faq-item__a">
-            <p>Yes. There are no long-term contracts or lock-in periods. You can cancel your Pro or Team membership at any time, and you'll retain access through the end of your billing period.</p>
+            <p>Platter operates on a one-time annual payment &mdash; there are no recurring charges or auto-renewals. Because benefits are accessible immediately upon payment, we don't offer refunds or mid-term cancellations. Your access remains active through the end of your billing period, and you won't be charged again unless you choose to renew.</p>
           </div>
         </div>
         <div class="p-faq-item reveal reveal-delay-1">
@@ -1946,6 +1951,111 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         nav.style.boxShadow = 'none';
       }
     });
+
+    // Currency detection and pricing
+    (function() {
+      var currencyMap = {
+        US: { symbol: '$', code: 'USD', rate: 1 },
+        CA: { symbol: 'CA$', code: 'CAD', rate: 1.36 },
+        GB: { symbol: '£', code: 'GBP', rate: 0.79 },
+        EU: { symbol: '€', code: 'EUR', rate: 0.92 },
+        IN: { symbol: '₹', code: 'INR', rate: 83.5 },
+        AU: { symbol: 'A$', code: 'AUD', rate: 1.53 },
+        JP: { symbol: '¥', code: 'JPY', rate: 149 },
+        SG: { symbol: 'S$', code: 'SGD', rate: 1.34 },
+        AE: { symbol: 'AED ', code: 'AED', rate: 3.67 },
+        BR: { symbol: 'R$', code: 'BRL', rate: 4.97 },
+        MX: { symbol: 'MX$', code: 'MXN', rate: 17.15 },
+        NG: { symbol: '₦', code: 'NGN', rate: 1550 },
+        ZA: { symbol: 'R', code: 'ZAR', rate: 18.6 },
+        KR: { symbol: '₩', code: 'KRW', rate: 1320 },
+        PH: { symbol: '₱', code: 'PHP', rate: 56 },
+        ID: { symbol: 'Rp', code: 'IDR', rate: 15700 },
+        MY: { symbol: 'RM', code: 'MYR', rate: 4.65 },
+        TH: { symbol: '฿', code: 'THB', rate: 35 },
+        VN: { symbol: '₫', code: 'VND', rate: 24500 },
+        PK: { symbol: 'Rs', code: 'PKR', rate: 278 },
+        BD: { symbol: '৳', code: 'BDT', rate: 110 },
+        LK: { symbol: 'Rs', code: 'LKR', rate: 310 },
+        KE: { symbol: 'KSh', code: 'KES', rate: 153 },
+        EG: { symbol: 'E£', code: 'EGP', rate: 30.9 },
+        TR: { symbol: '₺', code: 'TRY', rate: 30.2 },
+        IL: { symbol: '₪', code: 'ILS', rate: 3.64 },
+        SA: { symbol: 'SAR ', code: 'SAR', rate: 3.75 },
+        NZ: { symbol: 'NZ$', code: 'NZD', rate: 1.63 },
+        CL: { symbol: 'CL$', code: 'CLP', rate: 935 },
+        CO: { symbol: 'COL$', code: 'COP', rate: 3950 },
+        AR: { symbol: 'ARS ', code: 'ARS', rate: 870 },
+        PL: { symbol: 'zł', code: 'PLN', rate: 4.0 },
+        SE: { symbol: 'kr', code: 'SEK', rate: 10.4 },
+        NO: { symbol: 'kr', code: 'NOK', rate: 10.5 },
+        DK: { symbol: 'kr', code: 'DKK', rate: 6.85 },
+        CH: { symbol: 'CHF ', code: 'CHF', rate: 0.87 },
+        HK: { symbol: 'HK$', code: 'HKD', rate: 7.82 },
+        TW: { symbol: 'NT$', code: 'TWD', rate: 31.5 },
+        CN: { symbol: '¥', code: 'CNY', rate: 7.24 },
+        RU: { symbol: '₽', code: 'RUB', rate: 92 }
+      };
+
+      // EU countries map to the EUR entry
+      var euCountries = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES'];
+
+      function getCurrency(countryCode) {
+        if (euCountries.indexOf(countryCode) !== -1 && !currencyMap[countryCode]) {
+          return currencyMap.EU;
+        }
+        return currencyMap[countryCode] || currencyMap.US;
+      }
+
+      function formatPrice(amount, currency) {
+        var converted = Math.round(amount * currency.rate);
+        // For large rates, use no decimals; format with locale separators
+        return currency.symbol + converted.toLocaleString();
+      }
+
+      function updatePrices(currency) {
+        // Update original (strikethrough) prices
+        document.querySelectorAll('[data-price-original]').forEach(function(el) {
+          var usd = parseFloat(el.getAttribute('data-price-original'));
+          el.textContent = formatPrice(usd, currency);
+        });
+
+        // Update main prices
+        document.querySelectorAll('[data-price]').forEach(function(el) {
+          var usd = parseFloat(el.getAttribute('data-price'));
+          var suffix = el.getAttribute('data-suffix') || '';
+          el.textContent = formatPrice(usd, currency) + suffix;
+        });
+
+        // Update "$100,000+ in products" text
+        document.querySelectorAll('[data-price-text]').forEach(function(el) {
+          var usd = parseFloat(el.getAttribute('data-price-text'));
+          el.textContent = formatPrice(usd, currency) + '+ in products';
+        });
+
+        // Show currency note if not USD
+        var note = document.getElementById('currency-note');
+        if (note && currency.code !== 'USD') {
+          note.textContent = 'Prices shown in ' + currency.code + '. Billed in USD.';
+        }
+      }
+
+      // Default to USD immediately
+      updatePrices(currencyMap.US);
+
+      // Detect country via free geo API
+      fetch('https://ipapi.co/json/')
+        .then(function(res) { return res.json(); })
+        .then(function(data) {
+          if (data && data.country_code) {
+            var currency = getCurrency(data.country_code);
+            updatePrices(currency);
+          }
+        })
+        .catch(function() {
+          // Silently stay with USD on failure
+        });
+    })();
   </script>
 </body>
 </html>
