@@ -302,10 +302,39 @@ img {
     position: relative;
 }
 
+/* Progress bar */
+.featured-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: rgba(0, 0, 0, 0.06);
+    z-index: 10;
+    overflow: hidden;
+}
+
+[data-theme="dark"] .featured-progress {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.featured-progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--bitroot-primary-blue), var(--bitroot-pink));
+    border-radius: 0 2px 2px 0;
+    animation: progressFill 6000ms linear forwards;
+}
+
+@keyframes progressFill {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
 .featured-post::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: 3px;
     left: 0;
     right: 0;
     height: 4px;

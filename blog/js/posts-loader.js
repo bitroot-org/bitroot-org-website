@@ -4,9 +4,12 @@
 
 const PostsLoader = {
     postsIndexUrl: 'posts/index.json',
-    postsPerPage: 7,
+    postsPerPage: 5,
     currentPage: 1,
     allPosts: [],
+    autoRotateInterval: null,
+    autoRotateDelay: 6000, // 6 seconds per post
+    currentFeaturedIndex: 0,
 
     /**
      * Fetch all posts from index.json
@@ -101,6 +104,7 @@ const PostsLoader = {
 
         return `
             <article class="featured-post" data-post-slug="${post.slug}" ${hasVideo ? `data-video="${post.video}"` : ''}>
+                <div class="featured-progress"><div class="featured-progress-bar"></div></div>
                 <div class="post-image">
                     <img src="${image}" alt="${post.title}">
                     ${hasVideo ? `
@@ -280,7 +284,9 @@ const PostsLoader = {
         const totalPages = this.getTotalPages();
         if (page < 1 || page > totalPages) return;
 
+        this.stopAutoRotate();
         this.currentPage = page;
+        this.currentFeaturedIndex = 0;
         this.renderPage();
     },
 
@@ -313,6 +319,9 @@ const PostsLoader = {
 
         // Add click handlers
         this.initClickHandlers(this.allPosts);
+
+        // Start auto-rotate
+        this.startAutoRotate();
     },
 
     /**
@@ -442,11 +451,65 @@ const PostsLoader = {
     },
 
     /**
+     * Start auto-rotating through page posts
+     */
+    startAutoRotate() {
+        this.stopAutoRotate();
+        const pagePosts = this.getPagePosts();
+        if (pagePosts.length <= 1) return;
+
+        this.currentFeaturedIndex = 0;
+        this.restartProgressBar();
+
+        this.autoRotateInterval = setInterval(() => {
+            this.currentFeaturedIndex = (this.currentFeaturedIndex + 1) % pagePosts.length;
+            const nextPost = pagePosts[this.currentFeaturedIndex];
+            this.updateFeaturedPost(nextPost, this.allPosts, true);
+        }, this.autoRotateDelay);
+    },
+
+    /**
+     * Stop auto-rotation
+     */
+    stopAutoRotate() {
+        if (this.autoRotateInterval) {
+            clearInterval(this.autoRotateInterval);
+            this.autoRotateInterval = null;
+        }
+    },
+
+    /**
+     * Restart the progress bar animation
+     */
+    restartProgressBar() {
+        const bar = document.querySelector('.featured-progress-bar');
+        if (!bar) return;
+        bar.style.animation = 'none';
+        bar.offsetHeight; // force reflow
+        bar.style.animation = `progressFill ${this.autoRotateDelay}ms linear forwards`;
+    },
+
+    /**
      * Update the featured post display
      */
-    updateFeaturedPost(post, allPosts) {
+    updateFeaturedPost(post, allPosts, fromAutoRotate) {
         const featured = document.querySelector('.featured-post');
         if (!featured || featured.dataset.postSlug === post.slug) return;
+
+        // If manually clicked, reset auto-rotate
+        if (!fromAutoRotate) {
+            const pagePosts = this.getPagePosts();
+            this.currentFeaturedIndex = pagePosts.findIndex(p => p.slug === post.slug);
+            if (this.currentFeaturedIndex === -1) this.currentFeaturedIndex = 0;
+            this.stopAutoRotate();
+
+            // Restart auto-rotate from this post
+            this.autoRotateInterval = setInterval(() => {
+                const pp = this.getPagePosts();
+                this.currentFeaturedIndex = (this.currentFeaturedIndex + 1) % pp.length;
+                this.updateFeaturedPost(pp[this.currentFeaturedIndex], this.allPosts, true);
+            }, this.autoRotateDelay);
+        }
 
         // Pause any playing video
         const oldVideo = featured.querySelector('video');
@@ -465,6 +528,9 @@ const PostsLoader = {
             const newFeatured = document.querySelector('.featured-post');
             newFeatured.style.transition = 'opacity 0.2s ease';
             newFeatured.style.opacity = '1';
+
+            // Restart progress bar
+            this.restartProgressBar();
 
             // Initialize video controls if present
             this.initVideoControls(newFeatured);
