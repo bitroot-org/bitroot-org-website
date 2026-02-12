@@ -406,11 +406,19 @@
       var params = new URLSearchParams(window.location.search);
       var paymentId = params.get('payment_id') || params.get('razorpay_payment_id');
 
+      // Handle malformed URLs where & was replaced with ? (e.g. ?plan=insider?payment_id=xxx)
+      if (!paymentId) {
+        var match = window.location.href.match(/[?&](?:payment_id|razorpay_payment_id)=([^&?#]+)/i);
+        if (match) paymentId = match[1];
+      }
+
       var successEl = document.getElementById('success-state');
       var errorEl = document.getElementById('error-state');
       var pidBox = document.getElementById('payment-id-box');
 
       var plan = params.get('plan');
+      // Handle malformed plan param (e.g. "insider?payment_id=xxx")
+      if (plan && plan.indexOf('?') !== -1) plan = plan.split('?')[0];
       var guideLink = document.getElementById('guide-download');
 
       if (plan === 'insider') {
