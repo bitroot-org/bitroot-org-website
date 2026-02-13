@@ -79,7 +79,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="container-3">
       <div class="w-row">
         <div class="column w-col w-col-7">
-          <div class="text-block">👋 Hi, We’re Bitroot</div>
+          <a href="https://platter.bitroot.org" target="_blank" class="platter-chip">
+            <span class="platter-chip__dot"></span>
+            <span>Platter is live &mdash; check it out</span>
+            <span class="platter-chip__arrow">&rarr;</span>
+          </a>
+          <div class="text-block">👋 Hi, We're Bitroot</div>
           <div class="h1">We help Founders and Companies go<br><span class="text-span-8">Zero </span>to <span class="text-span-9">One</span></div>
           <p class="header--description">Being Technology as a Backbone for their Company.</p>
           <div class="div-block-4">
@@ -196,6 +201,57 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
   </div>
   <style>
+    .platter-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      background: #0A0A0A;
+      color: #fff;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+      border-radius: 100px;
+      text-decoration: none;
+      margin-bottom: 16px;
+      transition: background 0.2s, transform 0.2s;
+      animation: chipSlideIn 0.6s ease-out;
+    }
+
+    .platter-chip:hover {
+      background: #2B6FEC;
+      transform: translateY(-1px);
+    }
+
+    .platter-chip__dot {
+      width: 6px;
+      height: 6px;
+      background: #34D399;
+      border-radius: 50%;
+      animation: chipPulse 2s ease-in-out infinite;
+    }
+
+    .platter-chip__arrow {
+      opacity: 0.6;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+
+    .platter-chip:hover .platter-chip__arrow {
+      opacity: 1;
+      transform: translateX(2px);
+    }
+
+    @keyframes chipPulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    @keyframes chipSlideIn {
+      from { opacity: 0; transform: translateY(-8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     @keyframes perks-card-float {
       0%, 100% { transform: translateY(0px); }
       50% { transform: translateY(-10px); }
