@@ -1,0 +1,34 @@
+name: Cleanup stale branches
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Every Sunday at midnight UTC
+  workflow_dispatch:
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Delete stale blog-post branches
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Fetching stale blog-post branches..."
+          BRANCHES=$(gh api repos/${{ github.repository }}/branches --paginate -q '.[].name | select(startswith("blog-post-"))')
+
+          if [ -z "$BRANCHES" ]; then
+            echo "No stale branches found."
+            exit 0
+          fi
+
+          COUNT=0
+          for BRANCH in $BRANCHES; do
+            echo "Deleting $BRANCH"
+            gh api -X DELETE "repos/${{ github.repository }}/git/refs/heads/$BRANCH" || true
+            COUNT=$((COUNT + 1))
+          done
+
+          echo "Deleted $COUNT stale branches."
