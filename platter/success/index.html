@@ -644,5 +644,89 @@
     })();
   </script>
 
+  <!-- Umami: Post-Purchase Events -->
+  <script>
+    (function() {
+      function track(name, data) {
+        if (typeof umami !== 'undefined') umami.track(name, data);
+      }
+
+      // Determine plan for all events
+      var params = new URLSearchParams(window.location.search);
+      var plan = params.get('plan');
+      if (plan && plan.indexOf('?') !== -1) plan = plan.split('?')[0];
+      var planLabel = (plan === 'insider') ? 'insider' : 'annual';
+
+      // =============================================
+      // POST-PURCHASE: portal_signup
+      // Tracks clicks on "Sign Up on Portal" button
+      // → Key activation metric: are buyers completing onboarding?
+      // =============================================
+      var portalBtn = document.querySelector('.s-btn--primary');
+      if (portalBtn) {
+        portalBtn.addEventListener('click', function() {
+          track('portal_signup', { plan: planLabel });
+        });
+      }
+
+      // Also track the inline portal link in step 1
+      var inlinePortalLink = document.querySelector('.s-step__desc a[href*="perks.bitroot.org"]');
+      if (inlinePortalLink) {
+        inlinePortalLink.addEventListener('click', function() {
+          track('portal_signup', { plan: planLabel, source: 'step_1_link' });
+        });
+      }
+
+      // =============================================
+      // POST-PURCHASE: guide_download
+      // Tracks PDF guide downloads
+      // → Are buyers reading the instructions?
+      // =============================================
+      var guideBtn = document.getElementById('guide-download');
+      if (guideBtn) {
+        guideBtn.addEventListener('click', function() {
+          track('guide_download', { plan: planLabel });
+        });
+      }
+
+      // =============================================
+      // SUPPORT: priority_email_click (insider only)
+      // Tracks clicks on priority support email
+      // → How quickly are insiders reaching out?
+      // =============================================
+      var priorityLink = document.querySelector('#priority-support a');
+      if (priorityLink) {
+        priorityLink.addEventListener('click', function() {
+          track('priority_email_click');
+        });
+      }
+
+      // =============================================
+      // ERROR: payment_error
+      // Tracks when someone lands on error state
+      // → Failed/invalid payment attempts
+      // =============================================
+      var errorEl = document.getElementById('error-state');
+      if (errorEl && !errorEl.classList.contains('hidden')) {
+        track('payment_error', {
+          had_payment_id: !!params.get('payment_id'),
+          had_plan: !!plan
+        });
+      }
+
+      // =============================================
+      // ERROR: error_contact_click
+      // Tracks if error-state users click the contact email
+      // → Are failed users trying to reach support?
+      // =============================================
+      var errorContact = document.querySelector('#error-state a[href^="mailto:"]');
+      if (errorContact) {
+        errorContact.addEventListener('click', function() {
+          track('error_contact_click');
+        });
+      }
+    })();
+  </script>
+
 </body>
 </html>

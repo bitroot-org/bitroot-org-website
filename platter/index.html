@@ -2471,34 +2471,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <!-- Umami Funnel Events -->
   <script>
     (function() {
-      // Wait for umami to be available
       function track(name, data) {
         if (typeof umami !== 'undefined') umami.track(name, data);
       }
 
-      // --- ARRIVAL: bitroot_view ---
-      // Fire when visitor arrives from bitroot.org (top-of-funnel referral)
+      // =============================================
+      // ARRIVAL: bitroot_view
+      // Tracks referral from bitroot.org → platter
+      // =============================================
       if (document.referrer && document.referrer.indexOf('bitroot.org') !== -1
           && document.referrer.indexOf('platter') === -1) {
         track('bitroot_view', { referrer: document.referrer });
       }
 
-      // --- CONSIDERATION: pricing_view, faq_view ---
-      // Fire once when these high-intent sections enter the viewport
+      // =============================================
+      // CONSIDERATION: pricing_view, faq_view
+      // Fires once when section enters viewport
+      // =============================================
       var observed = {};
       var sectionMap = {
         'pricing': 'pricing_view',
         'faq': 'faq_view'
       };
 
-      var observer = new IntersectionObserver(function(entries) {
+      var sectionObserver = new IntersectionObserver(function(entries) {
         entries.forEach(function(entry) {
           if (entry.isIntersecting) {
             var id = entry.target.id;
             if (sectionMap[id] && !observed[id]) {
               observed[id] = true;
               track(sectionMap[id]);
-              observer.unobserve(entry.target);
+              sectionObserver.unobserve(entry.target);
             }
           }
         });
@@ -2506,17 +2509,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       Object.keys(sectionMap).forEach(function(id) {
         var el = document.getElementById(id);
-        if (el) observer.observe(el);
+        if (el) sectionObserver.observe(el);
       });
 
-      // --- INTENT: annual_cta, insider_cta ---
-      // Razorpay injects buttons async, so use event delegation on the pricing cards
+      // =============================================
+      // FAQ: faq_view with question-level granularity
+      // Tracks which specific questions people open
+      // → Tells you what objections/concerns buyers have
+      // =============================================
+      var faqQuestions = [
+        'What exactly is Platter?',
+        'Who is eligible?',
+        'What deals are included?',
+        'Can I cancel?',
+        'How is this different?',
+        'Need to be a client?',
+        'Insider-only tools?'
+      ];
+
+      document.querySelectorAll('.p-faq-item__q').forEach(function(btn, index) {
+        btn.addEventListener('click', function() {
+          var item = this.closest('.p-faq-item');
+          // Only track opens, not closes
+          if (!item.classList.contains('active')) {
+            track('faq_view', {
+              question: 'q' + (index + 1),
+              label: faqQuestions[index] || 'q' + (index + 1)
+            });
+          }
+        });
+      });
+
+      // =============================================
+      // INTENT: annual_cta, insider_cta
+      // Razorpay injects buttons async → event delegation
+      // =============================================
       var pricingCards = document.querySelector('.p-pricing__cards');
       if (pricingCards) {
         pricingCards.addEventListener('click', function(e) {
           var btn = e.target.closest('.razorpay-payment-button, .paymentButton');
           if (!btn) return;
-
           var card = e.target.closest('.p-price-card');
           if (!card) return;
 
@@ -2526,6 +2558,50 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             track('annual_cta');
           }
         });
+      }
+
+      // =============================================
+      // MICRO-INTENT: currency_toggle
+      // Tracks when someone switches currency
+      // → International interest signal
+      // =============================================
+      var toggleSwitch = document.getElementById('toggle-switch');
+      if (toggleSwitch) {
+        toggleSwitch.addEventListener('click', function() {
+          var labelLocal = document.getElementById('toggle-local');
+          var isNowUsd = !toggleSwitch.classList.contains('p-pricing__toggle-switch--usd');
+          track('currency_toggle', {
+            switched_to: isNowUsd ? 'USD' : (labelLocal ? labelLocal.textContent : 'local')
+          });
+        });
+      }
+
+      // =============================================
+      // ENGAGEMENT: cta_banner_click
+      // Tracks "Get Access Now" bottom CTA
+      // → Shows high intent (scrolled all the way down)
+      // =============================================
+      var ctaBanner = document.querySelector('.p-cta-banner a[href="#pricing"]');
+      if (ctaBanner) {
+        ctaBanner.addEventListener('click', function() {
+          track('cta_banner_click');
+        });
+      }
+
+      // =============================================
+      // SNEAK PEEK: showcase_view
+      // Tracks if the partner icon showcase was seen
+      // → Measures if social proof is working
+      // =============================================
+      var showcase = document.querySelector('.p-showcase');
+      if (showcase) {
+        var showcaseObs = new IntersectionObserver(function(entries) {
+          if (entries[0].isIntersecting) {
+            track('showcase_view');
+            showcaseObs.disconnect();
+          }
+        }, { threshold: 0.3 });
+        showcaseObs.observe(showcase);
       }
     })();
   </script>
