@@ -617,6 +617,15 @@
         errorEl.classList.add('hidden');
         pidBox.innerHTML = 'Payment ID: <strong>' + paymentId + '</strong>';
 
+        // --- CONVERSION: Track purchase event ---
+        if (typeof umami !== 'undefined') {
+          if (plan === 'insider') {
+            umami.track('insider_purchase', { payment_id: paymentId });
+          } else {
+            umami.track('annual_purchase', { payment_id: paymentId });
+          }
+        }
+
         // Only apply Insider theme on valid payment
         if (plan === 'insider') {
           document.body.classList.add('insider-theme');

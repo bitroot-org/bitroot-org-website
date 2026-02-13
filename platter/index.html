@@ -2467,5 +2467,67 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .catch(function() {});
     })();
   </script>
+
+  <!-- Umami Funnel Events -->
+  <script>
+    (function() {
+      // Wait for umami to be available
+      function track(name, data) {
+        if (typeof umami !== 'undefined') umami.track(name, data);
+      }
+
+      // --- ARRIVAL: bitroot_view ---
+      // Fire when visitor arrives from bitroot.org (top-of-funnel referral)
+      if (document.referrer && document.referrer.indexOf('bitroot.org') !== -1
+          && document.referrer.indexOf('platter') === -1) {
+        track('bitroot_view', { referrer: document.referrer });
+      }
+
+      // --- CONSIDERATION: pricing_view, faq_view ---
+      // Fire once when these high-intent sections enter the viewport
+      var observed = {};
+      var sectionMap = {
+        'pricing': 'pricing_view',
+        'faq': 'faq_view'
+      };
+
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            var id = entry.target.id;
+            if (sectionMap[id] && !observed[id]) {
+              observed[id] = true;
+              track(sectionMap[id]);
+              observer.unobserve(entry.target);
+            }
+          }
+        });
+      }, { threshold: 0.25 });
+
+      Object.keys(sectionMap).forEach(function(id) {
+        var el = document.getElementById(id);
+        if (el) observer.observe(el);
+      });
+
+      // --- INTENT: annual_cta, insider_cta ---
+      // Razorpay injects buttons async, so use event delegation on the pricing cards
+      var pricingCards = document.querySelector('.p-pricing__cards');
+      if (pricingCards) {
+        pricingCards.addEventListener('click', function(e) {
+          var btn = e.target.closest('.razorpay-payment-button, .paymentButton');
+          if (!btn) return;
+
+          var card = e.target.closest('.p-price-card');
+          if (!card) return;
+
+          if (card.classList.contains('p-price-card--featured')) {
+            track('insider_cta');
+          } else {
+            track('annual_cta');
+          }
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
