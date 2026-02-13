@@ -2569,7 +2569,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       if (toggleSwitch) {
         toggleSwitch.addEventListener('click', function() {
           var labelLocal = document.getElementById('toggle-local');
-          var isNowUsd = !toggleSwitch.classList.contains('p-pricing__toggle-switch--usd');
+          var isNowUsd = toggleSwitch.classList.contains('p-pricing__toggle-switch--usd');
           track('currency_toggle', {
             switched_to: isNowUsd ? 'USD' : (labelLocal ? labelLocal.textContent : 'local')
           });
