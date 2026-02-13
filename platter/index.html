@@ -813,6 +813,122 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .p-offering--network .p-offering__list li::before { color: var(--green); }
     .p-offering--support .p-offering__list li::before { color: var(--purple); }
 
+    /* --- Sneak Peek: Partner Showcase --- */
+    .p-showcase {
+      margin-bottom: 64px;
+    }
+
+    .p-showcase__heading {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .p-showcase__badge {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border: 2px solid var(--black);
+      border-radius: 2px;
+      background: var(--yellow-light);
+      color: #96700A;
+      transform: rotate(-1deg);
+    }
+
+    .p-showcase__marquee {
+      position: relative;
+      overflow: hidden;
+      padding: 8px 0;
+    }
+
+    .p-showcase__marquee::before,
+    .p-showcase__marquee::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100px;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .p-showcase__marquee::before {
+      left: 0;
+      background: linear-gradient(to right, var(--cream), transparent);
+    }
+
+    .p-showcase__marquee::after {
+      right: 0;
+      background: linear-gradient(to left, var(--cream), transparent);
+    }
+
+    .p-showcase__row {
+      display: flex;
+      margin-bottom: 16px;
+    }
+
+    .p-showcase__row:last-child {
+      margin-bottom: 0;
+    }
+
+    .p-showcase__track {
+      display: flex;
+      gap: 16px;
+      animation: showcaseScroll 50s linear infinite;
+      animation-direction: var(--direction, normal);
+      will-change: transform;
+    }
+
+    .p-showcase__marquee:hover .p-showcase__track {
+      animation-play-state: paused;
+    }
+
+    .p-showcase__icon {
+      width: 60px;
+      height: 60px;
+      min-width: 60px;
+      border: 2px solid var(--black);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--white);
+      box-shadow: 3px 3px 0 var(--black);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .p-showcase__icon:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 5px 5px 0 var(--black);
+    }
+
+    .p-showcase__icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .p-showcase__count {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      text-align: center;
+      color: rgba(0,0,0,0.45);
+      margin-top: 28px;
+      letter-spacing: 0.3px;
+    }
+
+    .p-showcase__count strong {
+      color: var(--black);
+      font-weight: 700;
+    }
+
+    @keyframes showcaseScroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
     /* --- Audience / Who Is This For --- */
     .p-audience {
       background: var(--white);
@@ -1601,6 +1717,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .p-problem__grid { grid-template-columns: 1fr; }
       .p-offerings { grid-template-columns: 1fr; }
       .p-personas { grid-template-columns: 1fr; }
+
+      .p-showcase__icon { width: 50px; height: 50px; min-width: 50px; }
+      .p-showcase__track { gap: 12px; }
+      .p-showcase__marquee::before,
+      .p-showcase__marquee::after { width: 60px; }
       .p-testimonials { grid-template-columns: 1fr; }
 
       .p-pricing__cards {
@@ -1644,6 +1765,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .p-pricing__title,
       .p-faq__title,
       .p-cta-banner__title { font-size: 18px; }
+
+      .p-showcase__icon { width: 44px; height: 44px; min-width: 44px; box-shadow: 2px 2px 0 var(--black); }
+      .p-showcase__track { gap: 10px; animation-duration: 35s; }
+      .p-showcase__row { margin-bottom: 10px; }
+      .p-showcase__marquee::before,
+      .p-showcase__marquee::after { width: 40px; }
+      .p-showcase__count { font-size: 11px; margin-top: 20px; }
+      .p-showcase { margin-bottom: 48px; }
 
       .p-price-card__price { font-size: 24px; }
 
@@ -1779,6 +1908,69 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <h2 class="p-solutions__title reveal reveal-delay-1">Everything You Need, One Membership</h2>
         <p class="p-solutions__subtitle reveal reveal-delay-2">Curated perks and resources to help you build, scale, and save &mdash; without the noise.</p>
       </div>
+
+      <!-- Sneak Peek: Partner Icon Showcase -->
+      <div class="p-showcase reveal">
+        <div class="p-showcase__heading">
+          <span class="p-showcase__badge">Sneak Peek</span>
+        </div>
+        <div class="p-showcase__marquee">
+          <div class="p-showcase__row" style="--direction: normal;">
+            <div class="p-showcase__track">
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7166.PNG" alt="Notion" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7167.PNG" alt="Bolt" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7168.JPG" alt="Amplitude" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7169.JPG" alt="Framer" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7170.PNG" alt="Semrush" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7171.PNG" alt="Slack" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7172.PNG" alt="Monday.com" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7173.WEBP" alt="Lemon Squeezy" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7174.PNG" alt="AWS Activate" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7187.WEBP" alt="Zapier" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7190.PNG" alt="Partner" loading="lazy"></div>
+              <!-- duplicate for seamless loop -->
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7166.PNG" alt="Notion" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7167.PNG" alt="Bolt" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7168.JPG" alt="Amplitude" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7169.JPG" alt="Framer" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7170.PNG" alt="Semrush" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7171.PNG" alt="Slack" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7172.PNG" alt="Monday.com" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7173.WEBP" alt="Lemon Squeezy" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7174.PNG" alt="AWS Activate" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7187.WEBP" alt="Zapier" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7190.PNG" alt="Partner" loading="lazy"></div>
+            </div>
+          </div>
+          <div class="p-showcase__row" style="--direction: reverse;">
+            <div class="p-showcase__track">
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7176.PNG" alt="Partner" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7191.JPG" alt="Elementor" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7192.PNG" alt="Partner" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7193.JPG" alt="Hootsuite" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7194.JPG" alt="Mailchimp" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7195.JPG" alt="Google Workspace" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7196.JPG" alt="Hostinger" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7197.PNG" alt="GoDaddy" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7198.PNG" alt="Grammarly" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7200.WEBP" alt="Fiverr" loading="lazy"></div>
+              <!-- duplicate for seamless loop -->
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7176.PNG" alt="Partner" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7191.JPG" alt="Elementor" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7192.PNG" alt="Partner" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7193.JPG" alt="Hootsuite" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7194.JPG" alt="Mailchimp" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7195.JPG" alt="Google Workspace" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7196.JPG" alt="Hostinger" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7197.PNG" alt="GoDaddy" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7198.PNG" alt="Grammarly" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7200.WEBP" alt="Fiverr" loading="lazy"></div>
+            </div>
+          </div>
+        </div>
+        <p class="p-showcase__count">Showing <strong>21</strong> of <strong>588+</strong> partner perks on the Platter</p>
+      </div>
+
       <div class="p-offerings">
         <div class="p-offering p-offering--tools reveal">
           <div class="p-offering__badge">Core Perk</div>

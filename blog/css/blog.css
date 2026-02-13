@@ -171,9 +171,6 @@ img {
     width: auto;
 }
 
-[data-theme="dark"] .logo-img {
-    filter: brightness(0) invert(1);
-}
 
 .logo:hover {
     opacity: 0.8;
