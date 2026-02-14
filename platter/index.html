@@ -2681,5 +2681,54 @@
       }
     })();
   </script>
+
+  <!-- Meta Conversions API Events -->
+  <script>
+    (function() {
+      var CAPI_URL = 'https://capi-proxy.vercel.app/api/events';
+
+      function capiTrack(eventName, customData) {
+        var eventId = crypto.randomUUID ? crypto.randomUUID()
+          : 'xxxxxxxx-xxxx-4xxx'.replace(/x/g, function() {
+              return (Math.random() * 16 | 0).toString(16);
+            });
+        // Send to Pixel with event_id for deduplication
+        if (typeof fbq !== 'undefined') {
+          fbq('track', eventName, customData || {}, { eventID: eventId });
+        }
+        // Send to CAPI proxy (fire-and-forget)
+        try {
+          navigator.sendBeacon(CAPI_URL, JSON.stringify({
+            data: [{
+              event_name: eventName,
+              event_time: Math.floor(Date.now() / 1000),
+              event_source_url: window.location.href,
+              event_id: eventId,
+              action_source: 'website',
+              user_data: { client_user_agent: navigator.userAgent },
+              custom_data: customData || {}
+            }]
+          }));
+        } catch(e) {}
+      }
+
+      // ViewContent — page load
+      capiTrack('ViewContent', { content_name: 'Platter Landing Page' });
+
+      // InitiateCheckout — Razorpay button click (event delegation, same pattern as umami)
+      var pricingCards = document.querySelector('.p-pricing__cards');
+      if (pricingCards) {
+        pricingCards.addEventListener('click', function(e) {
+          var btn = e.target.closest('.razorpay-payment-button, .paymentButton');
+          if (!btn) return;
+          var card = e.target.closest('.p-price-card');
+          if (!card) return;
+
+          var plan = card.classList.contains('p-price-card--featured') ? 'insider' : 'annual';
+          capiTrack('InitiateCheckout', { content_name: plan });
+        });
+      }
+    })();
+  </script>
 </body>
 </html>

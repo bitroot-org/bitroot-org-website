@@ -849,5 +849,53 @@ fbq('track', 'PageView');
     });
   })();
 </script>
+
+<!-- Meta Conversions API Events -->
+<script>
+  (function() {
+    var CAPI_URL = 'https://capi-proxy.vercel.app/api/events';
+
+    function capiTrack(eventName, customData) {
+      var eventId = crypto.randomUUID ? crypto.randomUUID()
+        : 'xxxxxxxx-xxxx-4xxx'.replace(/x/g, function() {
+            return (Math.random() * 16 | 0).toString(16);
+          });
+      if (typeof fbq !== 'undefined') {
+        fbq('track', eventName, customData || {}, { eventID: eventId });
+      }
+      try {
+        navigator.sendBeacon(CAPI_URL, JSON.stringify({
+          data: [{
+            event_name: eventName,
+            event_time: Math.floor(Date.now() / 1000),
+            event_source_url: window.location.href,
+            event_id: eventId,
+            action_source: 'website',
+            user_data: { client_user_agent: navigator.userAgent },
+            custom_data: customData || {}
+          }]
+        }));
+      } catch(e) {}
+    }
+
+    // ViewContent — page load
+    capiTrack('ViewContent', { content_name: 'Bitroot Homepage' });
+
+    // Contact — email and WhatsApp link clicks
+    document.querySelectorAll('a[href^="mailto:"], a[href*="wa.me"]').forEach(function(link) {
+      link.addEventListener('click', function() {
+        var method = link.href.indexOf('mailto:') === 0 ? 'email' : 'whatsapp';
+        capiTrack('Contact', { content_name: method });
+      });
+    });
+
+    // Lead — JotForm link clicks
+    document.querySelectorAll('a[href*="form.jotform.com"]').forEach(function(link) {
+      link.addEventListener('click', function() {
+        capiTrack('Lead', { content_name: link.textContent.trim() || 'JotForm' });
+      });
+    });
+  })();
+</script>
 </body>
 </html>

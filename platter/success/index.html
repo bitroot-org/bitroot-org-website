@@ -10,6 +10,36 @@
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
   <script defer src="https://cloud.umami.is/script.js" data-website-id="1c575daa-78f4-4071-8066-938d8f38bc9d"></script>
   <link href="https://bitroot.org/images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-3HDKNMVC');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "vgs6hw6zr5");
+  </script>
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1943888539888959');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1943888539888959&ev=PageView&noscript=1"></noscript>
+  <!-- End Meta Pixel Code -->
   <style>
     :root {
       --black: #0A0A0A;
@@ -495,6 +525,9 @@
   </style>
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-3HDKNMVC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <nav class="s-nav">
     <a href="/" class="s-nav__logo">
@@ -723,6 +756,66 @@
       if (errorContact) {
         errorContact.addEventListener('click', function() {
           track('error_contact_click');
+        });
+      }
+    })();
+  </script>
+
+  <!-- Meta Conversions API Events -->
+  <script>
+    (function() {
+      var CAPI_URL = 'https://capi-proxy.vercel.app/api/events';
+
+      function capiTrack(eventName, customData) {
+        var eventId = crypto.randomUUID ? crypto.randomUUID()
+          : 'xxxxxxxx-xxxx-4xxx'.replace(/x/g, function() {
+              return (Math.random() * 16 | 0).toString(16);
+            });
+        if (typeof fbq !== 'undefined') {
+          fbq('track', eventName, customData || {}, { eventID: eventId });
+        }
+        try {
+          navigator.sendBeacon(CAPI_URL, JSON.stringify({
+            data: [{
+              event_name: eventName,
+              event_time: Math.floor(Date.now() / 1000),
+              event_source_url: window.location.href,
+              event_id: eventId,
+              action_source: 'website',
+              user_data: { client_user_agent: navigator.userAgent },
+              custom_data: customData || {}
+            }]
+          }));
+        } catch(e) {}
+      }
+
+      // Purchase — on valid payment (same logic as existing umami block)
+      var params = new URLSearchParams(window.location.search);
+      var paymentId = params.get('payment_id') || params.get('razorpay_payment_id');
+      if (!paymentId) {
+        var match = window.location.href.match(/[?&](?:payment_id|razorpay_payment_id)=([^&?#]+)/i);
+        if (match) paymentId = match[1];
+      }
+      var plan = params.get('plan');
+      if (plan && plan.indexOf('?') !== -1) plan = plan.split('?')[0];
+      var planLabel = (plan === 'insider') ? 'insider' : 'annual';
+      var isValid = paymentId && /^pay_[A-Za-z0-9]{14}$/.test(paymentId);
+
+      if (isValid) {
+        capiTrack('Purchase', {
+          content_name: planLabel,
+          payment_id: paymentId
+        });
+      }
+
+      // CompleteRegistration — portal signup click
+      var portalBtn = document.querySelector('.s-btn--primary');
+      if (portalBtn) {
+        portalBtn.addEventListener('click', function() {
+          capiTrack('CompleteRegistration', {
+            content_name: planLabel,
+            status: 'portal_signup'
+          });
         });
       }
     })();
