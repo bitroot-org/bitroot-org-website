@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Disallow: /needswork1212.html
+Disallow: /pricing-section.html
+Disallow: /quick-connect.html
+Disallow: /new-page.html
+Disallow: /old-home.html
+Disallow: /401.html
+
+Sitemap: https://bitroot.org/sitemap.xml
