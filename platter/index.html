@@ -1863,24 +1863,25 @@
 
       .p-hero__sticker { display: none; }
 
-      /* Mobile: icons clustered around the benefit cards (right side) */
+      /* Tablet: scatter a few small icons at the far edges only */
       .p-hero__floating-icons { display: block; }
       .p-hero__float-icon {
-        width: 36px !important;
-        height: 36px !important;
+        width: 30px !important;
+        height: 30px !important;
         border-width: 2px;
         border-radius: 8px;
-        opacity: 0.75;
+        opacity: 0.45;
         box-shadow: 2px 2px 0 var(--black);
+        animation-duration: 8s !important;
       }
-      /* Show icons 1-8 around the card stack on mobile, hide 9-12 */
-      .p-hero__float-icon--1 { top: 5%; right: 20%; }
-      .p-hero__float-icon--2 { top: 18%; right: 5%; }
+      /* Show only 4 icons pinned to far left/right edges, hide the rest */
+      .p-hero__float-icon--1 { top: 8%; left: 12px; right: auto; }
+      .p-hero__float-icon--2 { top: 30%; right: 12px; left: auto; }
       .p-hero__float-icon--3 { display: none; }
-      .p-hero__float-icon--4 { top: 40%; right: 2%; }
+      .p-hero__float-icon--4 { top: 55%; left: 12px; right: auto; }
       .p-hero__float-icon--5 { display: none; }
-      .p-hero__float-icon--6 { top: 58%; right: 8%; }
-      .p-hero__float-icon--7 { bottom: 18%; right: 20%; }
+      .p-hero__float-icon--6 { bottom: 12%; right: 12px; left: auto; }
+      .p-hero__float-icon--7 { display: none; }
       .p-hero__float-icon--8 { display: none; }
       .p-hero__float-icon--9 { display: none; }
       .p-hero__float-icon--10 { display: none; }
@@ -1926,6 +1927,8 @@
       .p-container { padding: 0 20px; }
       .p-nav { padding: 0 20px; }
       .p-section { padding: 80px 0; }
+
+      .p-hero__floating-icons { display: none; }
 
       .p-hero__title { font-size: 20px; }
       .p-hero__desc { font-size: 17px; }
