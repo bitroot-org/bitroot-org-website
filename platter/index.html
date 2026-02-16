@@ -2637,24 +2637,31 @@
       };
 
       // Load appropriate Razorpay button based on currency
+      // Note: innerHTML doesn't execute <script> tags, so we use createElement
       function loadPaymentButtons(currency) {
         var isIndia = currency.code === 'INR';
         var btns = isIndia ? paymentButtons.INR : paymentButtons.USD;
         var currencyLabel = isIndia ? 'INR' : 'USD';
 
-        // Update Annual button
-        var annualForm = document.querySelector('.p-price-card:not(.p-price-card--featured) .p-price-card__razorpay');
-        if (annualForm) {
-          annualForm.innerHTML = '<script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="' + btns.annual + '" async><\/script>';
-          annualForm.setAttribute('data-currency', currencyLabel);
+        function injectButton(form, buttonId) {
+          if (!form) return;
+          form.innerHTML = '';
+          form.setAttribute('data-currency', currencyLabel);
+          var script = document.createElement('script');
+          script.src = 'https://checkout.razorpay.com/v1/payment-button.js';
+          script.setAttribute('data-payment_button_id', buttonId);
+          script.async = true;
+          form.appendChild(script);
         }
 
-        // Update Insider button
-        var insiderForm = document.querySelector('.p-price-card--featured .p-price-card__razorpay');
-        if (insiderForm) {
-          insiderForm.innerHTML = '<script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="' + btns.insider + '" async><\/script>';
-          insiderForm.setAttribute('data-currency', currencyLabel);
-        }
+        injectButton(
+          document.querySelector('.p-price-card:not(.p-price-card--featured) .p-price-card__razorpay'),
+          btns.annual
+        );
+        injectButton(
+          document.querySelector('.p-price-card--featured .p-price-card__razorpay'),
+          btns.insider
+        );
       }
 
       // Default to USD immediately
