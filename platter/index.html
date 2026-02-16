@@ -214,6 +214,84 @@
       50% { transform: translateY(-8px) rotate(1deg); }
     }
 
+    @keyframes icon-drift-1 {
+      0%, 100% { transform: translateY(0) rotate(-3deg); }
+      50% { transform: translateY(-18px) rotate(3deg); }
+    }
+    @keyframes icon-drift-2 {
+      0%, 100% { transform: translateY(0) rotate(2deg); }
+      50% { transform: translateY(-14px) rotate(-4deg); }
+    }
+    @keyframes icon-drift-3 {
+      0%, 100% { transform: translateY(0) rotate(4deg); }
+      50% { transform: translateY(-10px) rotate(-2deg); }
+    }
+
+    /* Floating app icons in hero */
+    .p-hero__floating-icons {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .p-hero__float-icon {
+      position: absolute;
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+      object-fit: cover;
+      border: 3px solid var(--black);
+      box-shadow: 4px 4px 0 var(--black);
+      opacity: 0.9;
+      pointer-events: auto;
+      cursor: pointer;
+      transition: opacity 0.3s, transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s;
+      will-change: transform;
+      background: var(--white);
+    }
+
+    .p-hero__float-icon:hover {
+      opacity: 1;
+      transform: scale(1.2) rotate(0deg) translateY(-8px) !important;
+      box-shadow: 6px 8px 0 rgba(0,0,0,0.9);
+      z-index: 20;
+    }
+
+    /* Icons clustered around the 3 benefit cards in p-hero__visual */
+    .p-hero__floating-icons {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Card 1: Exclusive Offers - icons around top-right area */
+    .p-hero__float-icon--1 { top: 5%; right: 25%; width: 48px; height: 48px; animation: icon-drift-1 6s ease-in-out infinite; }
+    .p-hero__float-icon--2 { top: 18%; right: 8%; width: 56px; height: 56px; animation: icon-drift-2 7s ease-in-out 0.5s infinite; }
+
+    /* Between Card 1 and 2 */
+    .p-hero__float-icon--3 { top: 32%; right: 2%; width: 44px; height: 44px; animation: icon-drift-3 8s ease-in-out 1s infinite; }
+
+    /* Card 2: Premium Tools - icons around middle */
+    .p-hero__float-icon--4 { top: 42%; right: 20%; width: 52px; height: 52px; animation: icon-drift-2 6.5s ease-in-out 0.3s infinite; }
+    .p-hero__float-icon--5 { top: 48%; right: 35%; width: 40px; height: 40px; animation: icon-drift-1 7.5s ease-in-out 1.5s infinite; }
+
+    /* Between Card 2 and 3 */
+    .p-hero__float-icon--6 { top: 58%; right: 5%; width: 48px; height: 48px; animation: icon-drift-3 5.5s ease-in-out 0.8s infinite; }
+
+    /* Card 3: Member Network - icons around bottom */
+    .p-hero__float-icon--7 { bottom: 20%; right: 25%; width: 44px; height: 44px; animation: icon-drift-2 9s ease-in-out 2s infinite; }
+    .p-hero__float-icon--8 { bottom: 8%; right: 10%; width: 52px; height: 52px; animation: icon-drift-1 8s ease-in-out 1.2s infinite; }
+
+    /* Accent icons near the card stack */
+    .p-hero__float-icon--9 { top: 55%; right: 30%; width: 36px; height: 36px; animation: icon-drift-3 7s ease-in-out 0.4s infinite; }
+    .p-hero__float-icon--10 { top: 8%; right: 45%; width: 40px; height: 40px; animation: icon-drift-1 6.5s ease-in-out 1.8s infinite; }
+
+    /* Additional icons for more visual interest */
+    .p-hero__float-icon--11 { bottom: 35%; right: 40%; width: 42px; height: 42px; animation: icon-drift-2 8s ease-in-out 2.2s infinite; }
+    .p-hero__float-icon--12 { top: 25%; right: 18%; width: 38px; height: 38px; animation: icon-drift-3 7.5s ease-in-out 0.6s infinite; }
+
     @keyframes ticker-scroll {
       0% { transform: translateX(0); }
       100% { transform: translateX(-50%); }
@@ -1785,6 +1863,30 @@
 
       .p-hero__sticker { display: none; }
 
+      /* Mobile: icons clustered around the benefit cards (right side) */
+      .p-hero__floating-icons { display: block; }
+      .p-hero__float-icon {
+        width: 36px !important;
+        height: 36px !important;
+        border-width: 2px;
+        border-radius: 8px;
+        opacity: 0.75;
+        box-shadow: 2px 2px 0 var(--black);
+      }
+      /* Show icons 1-8 around the card stack on mobile, hide 9-12 */
+      .p-hero__float-icon--1 { top: 5%; right: 20%; }
+      .p-hero__float-icon--2 { top: 18%; right: 5%; }
+      .p-hero__float-icon--3 { display: none; }
+      .p-hero__float-icon--4 { top: 40%; right: 2%; }
+      .p-hero__float-icon--5 { display: none; }
+      .p-hero__float-icon--6 { top: 58%; right: 8%; }
+      .p-hero__float-icon--7 { bottom: 18%; right: 20%; }
+      .p-hero__float-icon--8 { display: none; }
+      .p-hero__float-icon--9 { display: none; }
+      .p-hero__float-icon--10 { display: none; }
+      .p-hero__float-icon--11 { display: none; }
+      .p-hero__float-icon--12 { display: none; }
+
       .p-hero__title { font-size: 26px; }
 
       .p-problem__grid { grid-template-columns: 1fr; }
@@ -1900,6 +2002,20 @@
 
   <!-- ====== HERO ====== -->
   <section class="p-hero">
+    <div class="p-hero__floating-icons">
+      <img src="images/app-icons/IMG_7187.WEBP" alt="" class="p-hero__float-icon p-hero__float-icon--1" loading="lazy">
+      <img src="images/app-icons/IMG_7192.PNG" alt="" class="p-hero__float-icon p-hero__float-icon--2" loading="lazy">
+      <img src="images/app-icons/IMG_7200.WEBP" alt="" class="p-hero__float-icon p-hero__float-icon--3" loading="lazy">
+      <img src="images/app-icons/IMG_7197.PNG" alt="" class="p-hero__float-icon p-hero__float-icon--4" loading="lazy">
+      <img src="images/app-icons/IMG_7166.PNG" alt="" class="p-hero__float-icon p-hero__float-icon--5" loading="lazy">
+      <img src="images/app-icons/IMG_7191.JPG" alt="" class="p-hero__float-icon p-hero__float-icon--6" loading="lazy">
+      <img src="images/app-icons/IMG_7198.PNG" alt="" class="p-hero__float-icon p-hero__float-icon--7" loading="lazy">
+      <img src="images/app-icons/IMG_7190.PNG" alt="" class="p-hero__float-icon p-hero__float-icon--8" loading="lazy">
+      <img src="images/app-icons/IMG_7172.PNG" alt="" class="p-hero__float-icon p-hero__float-icon--9" loading="lazy">
+      <img src="images/app-icons/IMG_7175.PNG" alt="" class="p-hero__float-icon p-hero__float-icon--10" loading="lazy">
+      <img src="images/app-icons/IMG_7174.PNG" alt="" class="p-hero__float-icon p-hero__float-icon--11" loading="lazy">
+      <img src="images/app-icons/IMG_7171.PNG" alt="" class="p-hero__float-icon p-hero__float-icon--12" loading="lazy">
+    </div>
     <div class="p-container">
       <div class="p-hero__inner">
         <div class="p-hero__content">
@@ -2496,6 +2612,7 @@
         function toggle_currency() {
           showingUsd = !showingUsd;
           updatePrices(showingUsd ? currencyMap.US : local);
+          loadPaymentButtons(showingUsd ? currencyMap.US : local);
           updateToggleState();
         }
 
@@ -2504,15 +2621,59 @@
         labelUsd.addEventListener('click', function() { if (!showingUsd) toggle_currency(); });
       }
 
+      // Payment button IDs by currency
+      var paymentButtons = {
+        USD: {
+          annual: 'pl_SGnC8pc0cDDPzV',
+          insider: 'pl_SGnEvihAQQ3J1G'
+        },
+        INR: {
+          annual: 'pl_SFHnw369dlKoRo',
+          insider: 'pl_SFHvTPVWHfOwSR'
+        }
+      };
+
+      // Load appropriate Razorpay button based on currency
+      function loadPaymentButtons(currency) {
+        var isIndia = currency.code === 'INR';
+        var btns = isIndia ? paymentButtons.INR : paymentButtons.USD;
+        var currencyLabel = isIndia ? 'INR' : 'USD';
+
+        // Update Annual button
+        var annualForm = document.querySelector('.p-price-card:not(.p-price-card--featured) .p-price-card__razorpay');
+        if (annualForm) {
+          annualForm.innerHTML = '<script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="' + btns.annual + '" async><\/script>';
+          annualForm.setAttribute('data-currency', currencyLabel);
+        }
+
+        // Update Insider button
+        var insiderForm = document.querySelector('.p-price-card--featured .p-price-card__razorpay');
+        if (insiderForm) {
+          insiderForm.innerHTML = '<script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="' + btns.insider + '" async><\/script>';
+          insiderForm.setAttribute('data-currency', currencyLabel);
+        }
+      }
+
       // Default to USD immediately
       updatePrices(currencyMap.US);
+      loadPaymentButtons(currencyMap.US);
 
       // Detect country — try multiple free geo APIs with fallbacks
       function applyCountry(code) {
         localCurrency = getCurrency(code);
-        if (localCurrency.code !== 'USD') {
+        var isIndia = localCurrency.code === 'INR';
+
+        if (isIndia) {
+          // Indian user - show INR pricing and INR buttons
           showingUsd = false;
           updatePrices(localCurrency);
+          loadPaymentButtons(localCurrency);
+          setupToggle(localCurrency);
+        } else {
+          // International user - show USD pricing and USD buttons by default
+          showingUsd = true;
+          updatePrices(currencyMap.US);
+          loadPaymentButtons(currencyMap.US);
           setupToggle(localCurrency);
         }
       }
