@@ -1,13 +1,14 @@
 {
   "generated": true,
-  "count": 38,
+  "count": 39,
   "posts": [
+    "2026-02-17-revolutionizing-design-figma-unveils-code-to-desig.md",
     "2026-02-17-revolutionizing-tech-stacks-hyperbrowser-unveils-b.md",
     "2026-02-17-revolutionizing-coding-ollama-unveils-subagents-an.md",
-    "2026-02-16-anthropic-expands-indian-presence-with-new-bengalu.md",
     "2026-02-16-minimax-m25-revolution-unleashing-3x-faster-infere.md",
     "2026-02-16-unlocking-the-power-of-anthropic-agents-a-game-cha.md",
     "2026-02-16-revolutionizing-debugging-chrome-devtools-gets-mul.md",
+    "2026-02-16-anthropic-expands-indian-presence-with-new-bengalu.md",
     "2026-02-15-revolutionizing-voice-ai-nvidia-unveils-game-chang.md",
     "2026-02-15-revolutionizing-ai-powered-browsing-kimi-claw-unle.md",
     "2026-02-15-revolutionizing-online-discussions-the-rise-of-thr.md",
@@ -26,8 +27,8 @@
     "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
     "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.md",
     "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.md",
-    "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.md",
     "2026-02-09-revolutionizing-ai-development-replicate-joins-for.md",
+    "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.md",
     "2026-02-08-revolutionizing-wordpress-management-claudes-new-c.md",
     "2026-02-08-revolutionizing-web-app-security-meet-shannon-the.md",
     "2026-02-08-revolutionizing-coding-craft-agents-now-compatible.md",
@@ -42,6 +43,24 @@
     "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-02-17-revolutionizing-design-figma-unveils-code-to-desig.md",
+      "slug": "2026-02-17-revolutionizing-design-figma-unveils-code-to-desig",
+      "title": "Revolutionizing Design: Figma Unveils Code-to-Design Magic",
+      "date": "2026-02-17",
+      "published_at": "2026-02-17T19:04:42.217445+00:00",
+      "tags": [
+        "Figma",
+        "Design",
+        "Development"
+      ],
+      "excerpt": "Now you can take workflows that start in Claude Code even further in Figma.",
+      "image": "https://cdn.sanity.io/images/599r6htc/regionalized/1bc14c622ab6b8e2ad11229e6206c07dbad63311-3200x1800.png?w=1200&q=70&fit=max&auto=format",
+      "sources": [
+        "https://www.figma.com/blog/introducing-claude-code-to-figma/"
+      ],
+      "shortId": 1
+    },
     {
       "filename": "2026-02-17-revolutionizing-tech-stacks-hyperbrowser-unveils-b.md",
       "slug": "2026-02-17-revolutionizing-tech-stacks-hyperbrowser-unveils-b",
@@ -59,7 +78,7 @@
         "https://x.com/i/status/2023480469044818208"
       ],
       "video": "media/2026-02-17-revolutionizing-tech-stacks-hyperbrowser-unveils-b.mp4",
-      "shortId": 1
+      "shortId": 2
     },
     {
       "filename": "2026-02-17-revolutionizing-coding-ollama-unveils-subagents-an.md",
@@ -77,24 +96,6 @@
       "image": "https://ollama.com/public/og.png",
       "sources": [
         "https://ollama.com/blog/web-search-subagents-claude-code"
-      ],
-      "shortId": 2
-    },
-    {
-      "filename": "2026-02-16-anthropic-expands-indian-presence-with-new-bengalu.md",
-      "slug": "2026-02-16-anthropic-expands-indian-presence-with-new-bengalu",
-      "title": "Anthropic Expands Indian Presence with New Bengaluru Office and Strategic Partnerships",
-      "date": "2026-02-16",
-      "published_at": "2026-02-16T12:33:07.117866+00:00",
-      "tags": [
-        "AI",
-        "India",
-        "Partnerships"
-      ],
-      "excerpt": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-      "image": "https://www.anthropic.com/api/opengraph-illustration?name=Object%20Globe&backgroundColor=fig",
-      "sources": [
-        "https://www.anthropic.com/news/bengaluru-office-partnerships-across-india"
       ],
       "shortId": 3
     },
@@ -154,6 +155,24 @@
       "shortId": 6
     },
     {
+      "filename": "2026-02-16-anthropic-expands-indian-presence-with-new-bengalu.md",
+      "slug": "2026-02-16-anthropic-expands-indian-presence-with-new-bengalu",
+      "title": "Anthropic Expands Indian Presence with New Bengaluru Office and Strategic Partnerships",
+      "date": "2026-02-16",
+      "published_at": "2026-02-16T12:33:07.117866+00:00",
+      "tags": [
+        "AI",
+        "India",
+        "Partnerships"
+      ],
+      "excerpt": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+      "image": "https://www.anthropic.com/api/opengraph-illustration?name=Object%20Globe&backgroundColor=fig",
+      "sources": [
+        "https://www.anthropic.com/news/bengaluru-office-partnerships-across-india"
+      ],
+      "shortId": 7
+    },
+    {
       "filename": "2026-02-15-revolutionizing-voice-ai-nvidia-unveils-game-chang.md",
       "slug": "2026-02-15-revolutionizing-voice-ai-nvidia-unveils-game-chang",
       "title": "Revolutionizing Voice AI: NVIDIA Unveils Game-Changing PersonaPlex-7B Model",
@@ -170,7 +189,7 @@
         "https://x.com/i/status/2022995332058251548"
       ],
       "video": "media/2026-02-15-revolutionizing-voice-ai-nvidia-unveils-game-chang.mp4",
-      "shortId": 7
+      "shortId": 8
     },
     {
       "filename": "2026-02-15-revolutionizing-ai-powered-browsing-kimi-claw-unle.md",
@@ -189,7 +208,7 @@
         "https://x.com/i/status/2023029674549596301"
       ],
       "video": "media/2026-02-15-revolutionizing-ai-powered-browsing-kimi-claw-unle.mp4",
-      "shortId": 8
+      "shortId": 9
     },
     {
       "filename": "2026-02-15-revolutionizing-online-discussions-the-rise-of-thr.md",
@@ -207,7 +226,7 @@
       "sources": [
         "https://www.threads.com/@toolfoliooo/post/DUyJyygk5Ct?xmt=AQF0Sb4soJ59WdTpfk3Z2rOSnVLTlTUaJ1yFPJdnNWJL4kN6Zppry2uQuHct11bO0b8RtAvk&slof=1"
       ],
-      "shortId": 9
+      "shortId": 10
     },
     {
       "filename": "2026-02-14-revolutionizing-ai-driven-design-introducing-the-g.md",
@@ -226,7 +245,7 @@
         "https://x.com/i/status/2022038492575154555"
       ],
       "video": "media/2026-02-14-revolutionizing-ai-driven-design-introducing-the-g.mp4",
-      "shortId": 10
+      "shortId": 11
     },
     {
       "filename": "2026-02-14-revolutionizing-app-development-raydian-20-unleash.md",
@@ -245,7 +264,7 @@
         "https://x.com/i/status/2022256365901607287"
       ],
       "video": "media/2026-02-14-revolutionizing-app-development-raydian-20-unleash.mp4",
-      "shortId": 11
+      "shortId": 12
     },
     {
       "filename": "2026-02-13-revolutionizing-cicd-introducing-buildspace-the-ai.md",
@@ -264,7 +283,7 @@
       "sources": [
         "https://photon.codes/blog/ci-cd-in-the-age-of-ai"
       ],
-      "shortId": 12
+      "shortId": 13
     },
     {
       "filename": "2026-02-12-revolutionizing-content-delivery-cloudflares-real.md",
@@ -282,7 +301,7 @@
       "sources": [
         "https://x.com/i/status/2021955521213800489"
       ],
-      "shortId": 13
+      "shortId": 14
     },
     {
       "filename": "2026-02-12-revolutionizing-app-store-submissions-automated-gu.md",
@@ -301,7 +320,7 @@
         "https://x.com/i/status/2021661315329405174"
       ],
       "video": "media/2026-02-12-revolutionizing-app-store-submissions-automated-gu.mp4",
-      "shortId": 14
+      "shortId": 15
     },
     {
       "filename": "2026-02-12-revolutionary-agent-native-computing-now-accessibl.md",
@@ -320,7 +339,7 @@
         "https://x.com/Jarodxu7/status/2021620710544904355?s=20"
       ],
       "video": "media/2026-02-12-revolutionary-agent-native-computing-now-accessibl.mp4",
-      "shortId": 15
+      "shortId": 16
     },
     {
       "filename": "2026-02-11-ai-safety-leader-sounds-alarm-resignation-sparks-c.md",
@@ -338,7 +357,7 @@
       "sources": [
         "https://share.google/6gzMAD1U347j7YUXX"
       ],
-      "shortId": 16
+      "shortId": 17
     },
     {
       "filename": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
@@ -357,7 +376,7 @@
       "sources": [
         "https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/"
       ],
-      "shortId": 17
+      "shortId": 18
     },
     {
       "filename": "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal.md",
@@ -375,7 +394,7 @@
       "sources": [
         "https://github.com/HKUDS/nanobot"
       ],
-      "shortId": 18
+      "shortId": 19
     },
     {
       "filename": "2026-02-10-revolutionizing-research-visuals-google-ais-paperb.md",
@@ -395,7 +414,7 @@
       "sources": [
         "https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/"
       ],
-      "shortId": 19
+      "shortId": 20
     },
     {
       "filename": "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan.md",
@@ -413,7 +432,7 @@
       "sources": [
         "https://cursor.com/blog/composer-1-5"
       ],
-      "shortId": 20
+      "shortId": 21
     },
     {
       "filename": "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git.md",
@@ -431,7 +450,7 @@
       "sources": [
         "https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/"
       ],
-      "shortId": 21
+      "shortId": 22
     },
     {
       "filename": "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
@@ -450,7 +469,7 @@
         "https://x.com/i/status/2020423330386579646"
       ],
       "video": "media/2026-02-10-revolutionizing-ui-animations-introducing-reactbit.mp4",
-      "shortId": 22
+      "shortId": 23
     },
     {
       "filename": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.md",
@@ -469,7 +488,7 @@
       "sources": [
         "https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms"
       ],
-      "shortId": 23
+      "shortId": 24
     },
     {
       "filename": "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.md",
@@ -488,25 +507,6 @@
         "https://x.com/i/status/2020464238880596429"
       ],
       "video": "media/2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.mp4",
-      "shortId": 24
-    },
-    {
-      "filename": "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.md",
-      "slug": "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash",
-      "title": "Revolutionizing Data Workflows: Cortex Code Unleashes Natural Language Power",
-      "date": "2026-02-09",
-      "published_at": "2026-02-09T02:47:28.866300+00:00",
-      "tags": [
-        "Cortex Code",
-        "Snowflake",
-        "Natural Language",
-        "Data Workflows"
-      ],
-      "excerpt": "Cortex Code simplifies complex data workflows with natural language, making it a game-changer for developers and non-technical teams alike. This innovative tool is now generally available, offering a new way to interact with Snowflake environments.",
-      "image": "https://dms.licdn.com/playlist/vid/v2/D5605AQGc4ituv4CguA/thumbnail-with-play-button-overlay-high/B56Zwl7Sc1JoDU-/0/1770162826976?e=2147483647&v=beta&t=ZsRcvqdvGVm-MifIJLszrAwR4v1l_fRMpD-J2K92vFI",
-      "sources": [
-        "https://www.linkedin.com/posts/chanin-nantasenamat_watch-me-use-coco-to-build-a-streamlit-ugcPost-7424601007264833536-P64R?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&utm_campaign=share_via"
-      ],
       "shortId": 25
     },
     {
@@ -529,6 +529,25 @@
       "shortId": 26
     },
     {
+      "filename": "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.md",
+      "slug": "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash",
+      "title": "Revolutionizing Data Workflows: Cortex Code Unleashes Natural Language Power",
+      "date": "2026-02-09",
+      "published_at": "2026-02-09T02:47:28.866300+00:00",
+      "tags": [
+        "Cortex Code",
+        "Snowflake",
+        "Natural Language",
+        "Data Workflows"
+      ],
+      "excerpt": "Cortex Code simplifies complex data workflows with natural language, making it a game-changer for developers and non-technical teams alike. This innovative tool is now generally available, offering a new way to interact with Snowflake environments.",
+      "image": "https://dms.licdn.com/playlist/vid/v2/D5605AQGc4ituv4CguA/thumbnail-with-play-button-overlay-high/B56Zwl7Sc1JoDU-/0/1770162826976?e=2147483647&v=beta&t=ZsRcvqdvGVm-MifIJLszrAwR4v1l_fRMpD-J2K92vFI",
+      "sources": [
+        "https://www.linkedin.com/posts/chanin-nantasenamat_watch-me-use-coco-to-build-a-streamlit-ugcPost-7424601007264833536-P64R?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&utm_campaign=share_via"
+      ],
+      "shortId": 27
+    },
+    {
       "filename": "2026-02-08-revolutionizing-wordpress-management-claudes-new-c.md",
       "slug": "2026-02-08-revolutionizing-wordpress-management-claudes-new-c",
       "title": "Revolutionizing WordPress Management: Claude's New Connector Unleashed",
@@ -545,7 +564,7 @@
       "sources": [
         "https://techcrunch.com/2026/02/06/it-just-got-easier-for-claude-to-check-in-on-your-wordpress-site/"
       ],
-      "shortId": 27
+      "shortId": 28
     },
     {
       "filename": "2026-02-08-revolutionizing-web-app-security-meet-shannon-the.md",
@@ -563,7 +582,7 @@
       "sources": [
         "https://www.linkedin.com/posts/walid-boulanouar_claude-code-for-hacking-is-here-shannon-ugcPost-7425888138117566464-rWZQ?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&utm_campaign=share_via"
       ],
-      "shortId": 28
+      "shortId": 29
     },
     {
       "filename": "2026-02-08-revolutionizing-coding-craft-agents-now-compatible.md",
@@ -582,7 +601,7 @@
       "sources": [
         "https://x.com/i/status/2020535293905101186"
       ],
-      "shortId": 29
+      "shortId": 30
     },
     {
       "filename": "2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo.md",
@@ -600,7 +619,7 @@
       "sources": [
         "https://share.google/4T0fJDumSQSmG5Cmo"
       ],
-      "shortId": 30
+      "shortId": 31
     },
     {
       "filename": "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
@@ -619,7 +638,7 @@
       "sources": [
         "https://share.google/tM36P3WSwQLtg0J7h"
       ],
-      "shortId": 31
+      "shortId": 32
     },
     {
       "filename": "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
@@ -637,7 +656,7 @@
       "sources": [
         "https://share.google/uISHcJ3WNR4H6uMhP"
       ],
-      "shortId": 32
+      "shortId": 33
     },
     {
       "filename": "2026-02-06-unlocking-collaborative-coding-introducing-claude.md",
@@ -655,7 +674,7 @@
       "sources": [
         "https://code.claude.com/docs/en/agent-teams#compare-with-subagents"
       ],
-      "shortId": 33
+      "shortId": 34
     },
     {
       "filename": "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
@@ -673,7 +692,7 @@
       "sources": [
         "https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3"
       ],
-      "shortId": 34
+      "shortId": 35
     },
     {
       "filename": "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
@@ -692,7 +711,7 @@
         "https://x.com/lydiahallie/status/2019469032844587505?s=20"
       ],
       "video": "media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.mp4",
-      "shortId": 35
+      "shortId": 36
     },
     {
       "filename": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
@@ -711,7 +730,7 @@
         "https://x.com/i/status/2019173731042750509"
       ],
       "video": "media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.mp4",
-      "shortId": 36
+      "shortId": 37
     },
     {
       "filename": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
@@ -729,7 +748,7 @@
       "sources": [
         "https://mistral.ai/news/voxtral-transcribe-2"
       ],
-      "shortId": 37
+      "shortId": 38
     },
     {
       "filename": "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
@@ -747,7 +766,7 @@
       "sources": [
         "https://app.inference.sh/blog/skills/agent-skills-overview"
       ],
-      "shortId": 38
+      "shortId": 39
     }
   ]
 }
