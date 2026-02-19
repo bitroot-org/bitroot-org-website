@@ -1,51 +1,52 @@
 {
   "generated": true,
-  "count": 44,
+  "count": 45,
   "posts": [
     "2026-02-19-google-unveils-glimmer-a-revolutionary-design-lang.md",
+    "2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in.md",
     "2026-02-19-ai-rivals-clash-openai-and-anthropic-ceos-awkward.md",
-    "2026-02-18-indias-ai-startup-funding-landscape-sees-regional.md",
     "2026-02-18-revolutionizing-productivity-bitroots-game-changin.md",
     "2026-02-18-revolutionizing-startup-productivity-the-ultimate.md",
+    "2026-02-18-indias-ai-startup-funding-landscape-sees-regional.md",
     "2026-02-17-revolutionizing-design-figma-unveils-code-to-desig.md",
     "2026-02-17-revolutionizing-tech-stacks-hyperbrowser-unveils-b.md",
     "2026-02-17-revolutionizing-coding-ollama-unveils-subagents-an.md",
-    "2026-02-16-revolutionizing-debugging-chrome-devtools-gets-mul.md",
     "2026-02-16-anthropic-expands-indian-presence-with-new-bengalu.md",
-    "2026-02-16-unlocking-the-power-of-anthropic-agents-a-game-cha.md",
     "2026-02-16-minimax-m25-revolution-unleashing-3x-faster-infere.md",
-    "2026-02-15-revolutionizing-online-discussions-the-rise-of-thr.md",
+    "2026-02-16-unlocking-the-power-of-anthropic-agents-a-game-cha.md",
+    "2026-02-16-revolutionizing-debugging-chrome-devtools-gets-mul.md",
     "2026-02-15-revolutionizing-voice-ai-nvidia-unveils-game-chang.md",
     "2026-02-15-revolutionizing-ai-powered-browsing-kimi-claw-unle.md",
+    "2026-02-15-revolutionizing-online-discussions-the-rise-of-thr.md",
     "2026-02-14-revolutionizing-ai-driven-design-introducing-the-g.md",
     "2026-02-14-revolutionizing-app-development-raydian-20-unleash.md",
     "2026-02-13-revolutionizing-cicd-introducing-buildspace-the-ai.md",
+    "2026-02-12-revolutionizing-content-delivery-cloudflares-real.md",
     "2026-02-12-revolutionizing-app-store-submissions-automated-gu.md",
     "2026-02-12-revolutionary-agent-native-computing-now-accessibl.md",
-    "2026-02-12-revolutionizing-content-delivery-cloudflares-real.md",
     "2026-02-11-ai-safety-leader-sounds-alarm-resignation-sparks-c.md",
+    "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
+    "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal.md",
+    "2026-02-10-revolutionizing-research-visuals-google-ais-paperb.md",
     "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan.md",
+    "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git.md",
     "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
     "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.md",
-    "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
     "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.md",
-    "2026-02-10-revolutionizing-research-visuals-google-ais-paperb.md",
-    "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git.md",
-    "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal.md",
-    "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.md",
     "2026-02-09-revolutionizing-ai-development-replicate-joins-for.md",
-    "2026-02-08-revolutionizing-coding-craft-agents-now-compatible.md",
+    "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.md",
     "2026-02-08-revolutionizing-wordpress-management-claudes-new-c.md",
     "2026-02-08-revolutionizing-web-app-security-meet-shannon-the.md",
+    "2026-02-08-revolutionizing-coding-craft-agents-now-compatible.md",
     "2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo.md",
-    "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
     "2026-02-06-unlocking-collaborative-coding-introducing-claude.md",
+    "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
     "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
     "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
     "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
-    "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
     "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
-    "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
+    "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
+    "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md"
   ],
   "metadata": [
     {
@@ -68,6 +69,25 @@
       "shortId": 1
     },
     {
+      "filename": "2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in.md",
+      "slug": "2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in",
+      "title": "Revolutionary AI-Powered Desktop Agent Unveiled: Interpreter",
+      "date": "2026-02-19",
+      "published_at": "2026-02-19T19:04:38.946484+00:00",
+      "tags": [
+        "AI",
+        "Productivity",
+        "Technology"
+      ],
+      "excerpt": "Today I'm launching Interpreter.\n\nIt's a desktop agent that can fill PDFs, edit your Excel and Word docs, and learn new skills.\n\nRuns offline, works with any model, and it's free.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2024013495285805058/img/7WZN7wcEd-PRLveg.jpg",
+      "sources": [
+        "https://x.com/i/status/2024227639087813035"
+      ],
+      "video": "media/2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in.mp4",
+      "shortId": 2
+    },
+    {
       "filename": "2026-02-19-ai-rivals-clash-openai-and-anthropic-ceos-awkward.md",
       "slug": "2026-02-19-ai-rivals-clash-openai-and-anthropic-ceos-awkward",
       "title": "AI Rivals Clash: OpenAI and Anthropic CEOs' Awkward Moment Reveals Heated Competition",
@@ -83,24 +103,6 @@
       "image": "https://image.cnbcfm.com/api/v1/image/108267178-1771489879337-gettyimages-2261854815-AFP_984W8YD.jpeg?v=1771490672&w=1920&h=1080",
       "sources": [
         "https://www.cnbc.com/2026/02/19/openai-sam-altman-anthropic-dario-amodei-india-ai-summit.html"
-      ],
-      "shortId": 2
-    },
-    {
-      "filename": "2026-02-18-indias-ai-startup-funding-landscape-sees-regional.md",
-      "slug": "2026-02-18-indias-ai-startup-funding-landscape-sees-regional",
-      "title": "India's AI Startup Funding Landscape Sees Regional Shift",
-      "date": "2026-02-18",
-      "published_at": "2026-02-18T18:13:05.668903+00:00",
-      "tags": [
-        "AI",
-        "startups",
-        "funding"
-      ],
-      "excerpt": "India's Leading AI & Data Science Media Platform",
-      "image": "https://storage.googleapis.com/gpt-engineer-file-uploads/XW65pun0vjQL3xcUmVglEg4ZrsL2/social-images/social-1763560217027-Expert-Panel-discussion-768x512.webp",
-      "sources": [
-        "https://analyticsindiamag.com/ai-startups/funding-reset-why-karnataka-faced-a-28-drop-while-maharashtra-held-its-ground"
       ],
       "shortId": 3
     },
@@ -141,6 +143,24 @@
       "shortId": 5
     },
     {
+      "filename": "2026-02-18-indias-ai-startup-funding-landscape-sees-regional.md",
+      "slug": "2026-02-18-indias-ai-startup-funding-landscape-sees-regional",
+      "title": "India's AI Startup Funding Landscape Sees Regional Shift",
+      "date": "2026-02-18",
+      "published_at": "2026-02-18T18:13:05.668903+00:00",
+      "tags": [
+        "AI",
+        "startups",
+        "funding"
+      ],
+      "excerpt": "India's Leading AI & Data Science Media Platform",
+      "image": "https://storage.googleapis.com/gpt-engineer-file-uploads/XW65pun0vjQL3xcUmVglEg4ZrsL2/social-images/social-1763560217027-Expert-Panel-discussion-768x512.webp",
+      "sources": [
+        "https://analyticsindiamag.com/ai-startups/funding-reset-why-karnataka-faced-a-28-drop-while-maharashtra-held-its-ground"
+      ],
+      "shortId": 6
+    },
+    {
       "filename": "2026-02-17-revolutionizing-design-figma-unveils-code-to-desig.md",
       "slug": "2026-02-17-revolutionizing-design-figma-unveils-code-to-desig",
       "title": "Revolutionizing Design: Figma Unveils Code-to-Design Magic",
@@ -156,7 +176,7 @@
       "sources": [
         "https://www.figma.com/blog/introducing-claude-code-to-figma/"
       ],
-      "shortId": 6
+      "shortId": 7
     },
     {
       "filename": "2026-02-17-revolutionizing-tech-stacks-hyperbrowser-unveils-b.md",
@@ -175,7 +195,7 @@
         "https://x.com/i/status/2023480469044818208"
       ],
       "video": "media/2026-02-17-revolutionizing-tech-stacks-hyperbrowser-unveils-b.mp4",
-      "shortId": 7
+      "shortId": 8
     },
     {
       "filename": "2026-02-17-revolutionizing-coding-ollama-unveils-subagents-an.md",
@@ -193,24 +213,6 @@
       "image": "https://ollama.com/public/og.png",
       "sources": [
         "https://ollama.com/blog/web-search-subagents-claude-code"
-      ],
-      "shortId": 8
-    },
-    {
-      "filename": "2026-02-16-revolutionizing-debugging-chrome-devtools-gets-mul.md",
-      "slug": "2026-02-16-revolutionizing-debugging-chrome-devtools-gets-mul",
-      "title": "Revolutionizing Debugging: Chrome DevTools Gets Multi-Session Support",
-      "date": "2026-02-16",
-      "published_at": "2026-02-16T19:00:38.061586+00:00",
-      "tags": [
-        "Chrome DevTools",
-        "Debugging",
-        "Multi-Session Support"
-      ],
-      "excerpt": "Would multi-session support for the Chrome DevTools MCP server be useful for you? \ud83e\udd16\u2716\ufe0f\ud83c\udf0d Chime into the discussion on GitHub: https://github.com/ChromeDevTools/chrome-devtools-mcp/issues/926",
-      "image": "https://pbs.twimg.com/media/HBR0XEtaYAEdKVg.jpg?name=orig",
-      "sources": [
-        "https://x.com/i/status/2023370190269116568"
       ],
       "shortId": 9
     },
@@ -233,6 +235,24 @@
       "shortId": 10
     },
     {
+      "filename": "2026-02-16-minimax-m25-revolution-unleashing-3x-faster-infere.md",
+      "slug": "2026-02-16-minimax-m25-revolution-unleashing-3x-faster-infere",
+      "title": "MiniMax M2.5 Revolution: Unleashing 3x Faster Inference Speeds",
+      "date": "2026-02-16",
+      "published_at": "2026-02-16T18:57:33.334402+00:00",
+      "tags": [
+        "MiniMax",
+        "AI",
+        "Inference Speed"
+      ],
+      "excerpt": "MiniMax M2.5-HighSpeed is live, delivering 100 TPS and 3x faster inference speeds, designed for the next generation of Agent applications. This update is a game-changer for developers and the tech community, enabling faster and more efficient workflows.",
+      "image": "https://pbs.twimg.com/media/HBNfas7a8AAg78r.jpg?name=orig",
+      "sources": [
+        "https://x.com/i/status/2023066199995949350"
+      ],
+      "shortId": 11
+    },
+    {
       "filename": "2026-02-16-unlocking-the-power-of-anthropic-agents-a-game-cha.md",
       "slug": "2026-02-16-unlocking-the-power-of-anthropic-agents-a-game-cha",
       "title": "Unlocking the Power of Anthropic Agents: A Game-Changer for AI Development",
@@ -249,41 +269,23 @@
         "https://x.com/i/status/2023428910042513482"
       ],
       "video": "https://video.twimg.com/amplify_video/2023253339073392640/vid/avc1/3840x2160/7JQ8lRXN0Gf-NYY_.mp4?tag=21",
-      "shortId": 11
-    },
-    {
-      "filename": "2026-02-16-minimax-m25-revolution-unleashing-3x-faster-infere.md",
-      "slug": "2026-02-16-minimax-m25-revolution-unleashing-3x-faster-infere",
-      "title": "MiniMax M2.5 Revolution: Unleashing 3x Faster Inference Speeds",
-      "date": "2026-02-16",
-      "published_at": "2026-02-16T18:57:33.334402+00:00",
-      "tags": [
-        "MiniMax",
-        "AI",
-        "Inference Speed"
-      ],
-      "excerpt": "MiniMax M2.5-HighSpeed is live, delivering 100 TPS and 3x faster inference speeds, designed for the next generation of Agent applications. This update is a game-changer for developers and the tech community, enabling faster and more efficient workflows.",
-      "image": "https://pbs.twimg.com/media/HBNfas7a8AAg78r.jpg?name=orig",
-      "sources": [
-        "https://x.com/i/status/2023066199995949350"
-      ],
       "shortId": 12
     },
     {
-      "filename": "2026-02-15-revolutionizing-online-discussions-the-rise-of-thr.md",
-      "slug": "2026-02-15-revolutionizing-online-discussions-the-rise-of-thr",
-      "title": "Revolutionizing Online Discussions: The Rise of Thread Test",
-      "date": "2026-02-15",
-      "published_at": "2026-02-15T18:34:32.075247+00:00",
+      "filename": "2026-02-16-revolutionizing-debugging-chrome-devtools-gets-mul.md",
+      "slug": "2026-02-16-revolutionizing-debugging-chrome-devtools-gets-mul",
+      "title": "Revolutionizing Debugging: Chrome DevTools Gets Multi-Session Support",
+      "date": "2026-02-16",
+      "published_at": "2026-02-16T19:00:38.061586+00:00",
       "tags": [
-        "thread test",
-        "online discussions",
-        "community engagement"
+        "Chrome DevTools",
+        "Debugging",
+        "Multi-Session Support"
       ],
-      "excerpt": "A new approach to online discussions is gaining traction, enabling more meaningful and engaging interactions, and we're excited to dive into its implications for the tech community. The thread test is poised to revolutionize the way we participate in online conversations.",
-      "image": null,
+      "excerpt": "Would multi-session support for the Chrome DevTools MCP server be useful for you? \ud83e\udd16\u2716\ufe0f\ud83c\udf0d Chime into the discussion on GitHub: https://github.com/ChromeDevTools/chrome-devtools-mcp/issues/926",
+      "image": "https://pbs.twimg.com/media/HBR0XEtaYAEdKVg.jpg?name=orig",
       "sources": [
-        "https://www.threads.com/@toolfoliooo/post/DUyJyygk5Ct?xmt=AQF0Sb4soJ59WdTpfk3Z2rOSnVLTlTUaJ1yFPJdnNWJL4kN6Zppry2uQuHct11bO0b8RtAvk&slof=1"
+        "https://x.com/i/status/2023370190269116568"
       ],
       "shortId": 13
     },
@@ -326,6 +328,24 @@
       "shortId": 15
     },
     {
+      "filename": "2026-02-15-revolutionizing-online-discussions-the-rise-of-thr.md",
+      "slug": "2026-02-15-revolutionizing-online-discussions-the-rise-of-thr",
+      "title": "Revolutionizing Online Discussions: The Rise of Thread Test",
+      "date": "2026-02-15",
+      "published_at": "2026-02-15T18:34:32.075247+00:00",
+      "tags": [
+        "thread test",
+        "online discussions",
+        "community engagement"
+      ],
+      "excerpt": "A new approach to online discussions is gaining traction, enabling more meaningful and engaging interactions, and we're excited to dive into its implications for the tech community. The thread test is poised to revolutionize the way we participate in online conversations.",
+      "image": null,
+      "sources": [
+        "https://www.threads.com/@toolfoliooo/post/DUyJyygk5Ct?xmt=AQF0Sb4soJ59WdTpfk3Z2rOSnVLTlTUaJ1yFPJdnNWJL4kN6Zppry2uQuHct11bO0b8RtAvk&slof=1"
+      ],
+      "shortId": 16
+    },
+    {
       "filename": "2026-02-14-revolutionizing-ai-driven-design-introducing-the-g.md",
       "slug": "2026-02-14-revolutionizing-ai-driven-design-introducing-the-g",
       "title": "Revolutionizing AI-Driven Design: Introducing the Game-Changing Design Canvas",
@@ -342,7 +362,7 @@
         "https://x.com/i/status/2022038492575154555"
       ],
       "video": "media/2026-02-14-revolutionizing-ai-driven-design-introducing-the-g.mp4",
-      "shortId": 16
+      "shortId": 17
     },
     {
       "filename": "2026-02-14-revolutionizing-app-development-raydian-20-unleash.md",
@@ -361,7 +381,7 @@
         "https://x.com/i/status/2022256365901607287"
       ],
       "video": "media/2026-02-14-revolutionizing-app-development-raydian-20-unleash.mp4",
-      "shortId": 17
+      "shortId": 18
     },
     {
       "filename": "2026-02-13-revolutionizing-cicd-introducing-buildspace-the-ai.md",
@@ -380,7 +400,25 @@
       "sources": [
         "https://photon.codes/blog/ci-cd-in-the-age-of-ai"
       ],
-      "shortId": 18
+      "shortId": 19
+    },
+    {
+      "filename": "2026-02-12-revolutionizing-content-delivery-cloudflares-real.md",
+      "slug": "2026-02-12-revolutionizing-content-delivery-cloudflares-real",
+      "title": "Revolutionizing Content Delivery: Cloudflare's Real-Time Markdown Conversion",
+      "date": "2026-02-12",
+      "published_at": "2026-02-12T19:23:58.823429+00:00",
+      "tags": [
+        "Cloudflare",
+        "Markdown",
+        "Content Delivery"
+      ],
+      "excerpt": "Cloudflare's network now supports real-time content conversion to Markdown, treating agents as first-class citizens. This update has significant implications for developers and the tech community.",
+      "image": null,
+      "sources": [
+        "https://x.com/i/status/2021955521213800489"
+      ],
+      "shortId": 20
     },
     {
       "filename": "2026-02-12-revolutionizing-app-store-submissions-automated-gu.md",
@@ -399,7 +437,7 @@
         "https://x.com/i/status/2021661315329405174"
       ],
       "video": "media/2026-02-12-revolutionizing-app-store-submissions-automated-gu.mp4",
-      "shortId": 19
+      "shortId": 21
     },
     {
       "filename": "2026-02-12-revolutionary-agent-native-computing-now-accessibl.md",
@@ -418,25 +456,7 @@
         "https://x.com/Jarodxu7/status/2021620710544904355?s=20"
       ],
       "video": "media/2026-02-12-revolutionary-agent-native-computing-now-accessibl.mp4",
-      "shortId": 20
-    },
-    {
-      "filename": "2026-02-12-revolutionizing-content-delivery-cloudflares-real.md",
-      "slug": "2026-02-12-revolutionizing-content-delivery-cloudflares-real",
-      "title": "Revolutionizing Content Delivery: Cloudflare's Real-Time Markdown Conversion",
-      "date": "2026-02-12",
-      "published_at": "2026-02-12T19:23:58.823429+00:00",
-      "tags": [
-        "Cloudflare",
-        "Markdown",
-        "Content Delivery"
-      ],
-      "excerpt": "Cloudflare's network now supports real-time content conversion to Markdown, treating agents as first-class citizens. This update has significant implications for developers and the tech community.",
-      "image": null,
-      "sources": [
-        "https://x.com/i/status/2021955521213800489"
-      ],
-      "shortId": 21
+      "shortId": 22
     },
     {
       "filename": "2026-02-11-ai-safety-leader-sounds-alarm-resignation-sparks-c.md",
@@ -454,63 +474,7 @@
       "sources": [
         "https://share.google/6gzMAD1U347j7YUXX"
       ],
-      "shortId": 22
-    },
-    {
-      "filename": "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan.md",
-      "slug": "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan",
-      "title": "Revolutionizing Coding: Composer 1.5 Unleashes Enhanced Intelligence",
-      "date": "2026-02-10",
-      "published_at": "2026-02-10T19:19:19.902983+00:00",
-      "tags": [
-        "Composer 1.5",
-        "AI Coding",
-        "Reinforcement Learning"
-      ],
-      "excerpt": "Improved reasoning over challenging coding tasks by scaling RL over 20x.",
-      "image": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/blog/composer-1.5-og.png",
-      "sources": [
-        "https://cursor.com/blog/composer-1-5"
-      ],
       "shortId": 23
-    },
-    {
-      "filename": "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
-      "slug": "2026-02-10-revolutionizing-ui-animations-introducing-reactbit",
-      "title": "Revolutionizing UI Animations: Introducing ReactBits",
-      "date": "2026-02-10",
-      "published_at": "2026-02-10T01:55:57.820786+00:00",
-      "tags": [
-        "React",
-        "UI Animations",
-        "Web Development"
-      ],
-      "excerpt": "ReactBits is a game-changing animation library that offers a growing collection of smooth, modern UI animations for React projects, taking web design to the next level",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2020423255082123265/img/YD4KlnqX6y9k3Ro_.jpg",
-      "sources": [
-        "https://x.com/i/status/2020423330386579646"
-      ],
-      "video": "media/2026-02-10-revolutionizing-ui-animations-introducing-reactbit.mp4",
-      "shortId": 24
-    },
-    {
-      "filename": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.md",
-      "slug": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard",
-      "title": "India's Tech Landscape Shifts: Why Deeptech and Hardware Are the Future",
-      "date": "2026-02-10",
-      "published_at": "2026-02-10T19:23:50.996880+00:00",
-      "tags": [
-        "Deeptech",
-        "Hardware",
-        "IT Service Exports",
-        "Artificial Intelligence"
-      ],
-      "excerpt": "India's reliance on IT service exports is no longer viable, and the country must shift its focus to deeptech and hardware to build long-term economic resilience. Zerodha founder Nithin Kamath emphasizes the need for self-sufficiency in technology to stay competitive.",
-      "image": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-18740,resizemode-75,msid-128120292/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath.jpg",
-      "sources": [
-        "https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms"
-      ],
-      "shortId": 25
     },
     {
       "filename": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
@@ -529,26 +493,25 @@
       "sources": [
         "https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/"
       ],
-      "shortId": 26
+      "shortId": 24
     },
     {
-      "filename": "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.md",
-      "slug": "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi",
-      "title": "Revolutionizing Video Creation: AI-Powered Vibe Editing Takes Center Stage",
+      "filename": "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal.md",
+      "slug": "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal",
+      "title": "Introducing Nanobot: The Ultra-Lightweight Personal AI Assistant",
       "date": "2026-02-10",
-      "published_at": "2026-02-10T02:11:19.181769+00:00",
+      "published_at": "2026-02-10T19:24:09.031498+00:00",
       "tags": [
         "AI",
-        "video creation",
-        "vibe editing"
+        "Nanobot",
+        "Personal Assistant"
       ],
-      "excerpt": "Vibe Editing, a game-changing AI-powered tool, allows users to create stunning videos with just a text prompt, eliminating the need for coding and tedious editing processes. This innovative technology is set to disrupt the video creation landscape, making it more accessible to developers and non-developers alike.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2020464187043115009/img/-iRMulg3HLXQTEBY.jpg",
+      "excerpt": "\"\ud83d\udc08 nanobot: The Ultra-Lightweight OpenClaw\". Contribute to HKUDS/nanobot development by creating an account on GitHub.",
+      "image": "https://opengraph.githubassets.com/860a29c3b70dd9f9266b82558c0c427fb47036deb672088e1b5f525631120a27/HKUDS/nanobot",
       "sources": [
-        "https://x.com/i/status/2020464238880596429"
+        "https://github.com/HKUDS/nanobot"
       ],
-      "video": "media/2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.mp4",
-      "shortId": 27
+      "shortId": 25
     },
     {
       "filename": "2026-02-10-revolutionizing-research-visuals-google-ais-paperb.md",
@@ -568,7 +531,25 @@
       "sources": [
         "https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/"
       ],
-      "shortId": 28
+      "shortId": 26
+    },
+    {
+      "filename": "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan.md",
+      "slug": "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan",
+      "title": "Revolutionizing Coding: Composer 1.5 Unleashes Enhanced Intelligence",
+      "date": "2026-02-10",
+      "published_at": "2026-02-10T19:19:19.902983+00:00",
+      "tags": [
+        "Composer 1.5",
+        "AI Coding",
+        "Reinforcement Learning"
+      ],
+      "excerpt": "Improved reasoning over challenging coding tasks by scaling RL over 20x.",
+      "image": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/blog/composer-1.5-og.png",
+      "sources": [
+        "https://cursor.com/blog/composer-1-5"
+      ],
+      "shortId": 27
     },
     {
       "filename": "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git.md",
@@ -586,43 +567,63 @@
       "sources": [
         "https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/"
       ],
+      "shortId": 28
+    },
+    {
+      "filename": "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
+      "slug": "2026-02-10-revolutionizing-ui-animations-introducing-reactbit",
+      "title": "Revolutionizing UI Animations: Introducing ReactBits",
+      "date": "2026-02-10",
+      "published_at": "2026-02-10T01:55:57.820786+00:00",
+      "tags": [
+        "React",
+        "UI Animations",
+        "Web Development"
+      ],
+      "excerpt": "ReactBits is a game-changing animation library that offers a growing collection of smooth, modern UI animations for React projects, taking web design to the next level",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2020423255082123265/img/YD4KlnqX6y9k3Ro_.jpg",
+      "sources": [
+        "https://x.com/i/status/2020423330386579646"
+      ],
+      "video": "media/2026-02-10-revolutionizing-ui-animations-introducing-reactbit.mp4",
       "shortId": 29
     },
     {
-      "filename": "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal.md",
-      "slug": "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal",
-      "title": "Introducing Nanobot: The Ultra-Lightweight Personal AI Assistant",
+      "filename": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.md",
+      "slug": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard",
+      "title": "India's Tech Landscape Shifts: Why Deeptech and Hardware Are the Future",
       "date": "2026-02-10",
-      "published_at": "2026-02-10T19:24:09.031498+00:00",
+      "published_at": "2026-02-10T19:23:50.996880+00:00",
       "tags": [
-        "AI",
-        "Nanobot",
-        "Personal Assistant"
+        "Deeptech",
+        "Hardware",
+        "IT Service Exports",
+        "Artificial Intelligence"
       ],
-      "excerpt": "\"\ud83d\udc08 nanobot: The Ultra-Lightweight OpenClaw\". Contribute to HKUDS/nanobot development by creating an account on GitHub.",
-      "image": "https://opengraph.githubassets.com/860a29c3b70dd9f9266b82558c0c427fb47036deb672088e1b5f525631120a27/HKUDS/nanobot",
+      "excerpt": "India's reliance on IT service exports is no longer viable, and the country must shift its focus to deeptech and hardware to build long-term economic resilience. Zerodha founder Nithin Kamath emphasizes the need for self-sufficiency in technology to stay competitive.",
+      "image": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-18740,resizemode-75,msid-128120292/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath.jpg",
       "sources": [
-        "https://github.com/HKUDS/nanobot"
+        "https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms"
       ],
       "shortId": 30
     },
     {
-      "filename": "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.md",
-      "slug": "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash",
-      "title": "Revolutionizing Data Workflows: Cortex Code Unleashes Natural Language Power",
-      "date": "2026-02-09",
-      "published_at": "2026-02-09T02:47:28.866300+00:00",
+      "filename": "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.md",
+      "slug": "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi",
+      "title": "Revolutionizing Video Creation: AI-Powered Vibe Editing Takes Center Stage",
+      "date": "2026-02-10",
+      "published_at": "2026-02-10T02:11:19.181769+00:00",
       "tags": [
-        "Cortex Code",
-        "Snowflake",
-        "Natural Language",
-        "Data Workflows"
+        "AI",
+        "video creation",
+        "vibe editing"
       ],
-      "excerpt": "Cortex Code simplifies complex data workflows with natural language, making it a game-changer for developers and non-technical teams alike. This innovative tool is now generally available, offering a new way to interact with Snowflake environments.",
-      "image": "https://dms.licdn.com/playlist/vid/v2/D5605AQGc4ituv4CguA/thumbnail-with-play-button-overlay-high/B56Zwl7Sc1JoDU-/0/1770162826976?e=2147483647&v=beta&t=ZsRcvqdvGVm-MifIJLszrAwR4v1l_fRMpD-J2K92vFI",
+      "excerpt": "Vibe Editing, a game-changing AI-powered tool, allows users to create stunning videos with just a text prompt, eliminating the need for coding and tedious editing processes. This innovative technology is set to disrupt the video creation landscape, making it more accessible to developers and non-developers alike.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2020464187043115009/img/-iRMulg3HLXQTEBY.jpg",
       "sources": [
-        "https://www.linkedin.com/posts/chanin-nantasenamat_watch-me-use-coco-to-build-a-streamlit-ugcPost-7424601007264833536-P64R?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&utm_campaign=share_via"
+        "https://x.com/i/status/2020464238880596429"
       ],
+      "video": "media/2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.mp4",
       "shortId": 31
     },
     {
@@ -645,21 +646,21 @@
       "shortId": 32
     },
     {
-      "filename": "2026-02-08-revolutionizing-coding-craft-agents-now-compatible.md",
-      "slug": "2026-02-08-revolutionizing-coding-craft-agents-now-compatible",
-      "title": "Revolutionizing Coding: Craft Agents Now Compatible with Codex and Claude",
-      "date": "2026-02-08",
-      "published_at": "2026-02-08T18:02:41.964250+00:00",
+      "filename": "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.md",
+      "slug": "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash",
+      "title": "Revolutionizing Data Workflows: Cortex Code Unleashes Natural Language Power",
+      "date": "2026-02-09",
+      "published_at": "2026-02-09T02:47:28.866300+00:00",
       "tags": [
-        "Codex",
-        "Craft Agents",
-        "Claude",
-        "Open Source"
+        "Cortex Code",
+        "Snowflake",
+        "Natural Language",
+        "Data Workflows"
       ],
-      "excerpt": "Craft Agents can now be used with Codex and Claude, offering a free and open-source solution for developers, and we're excited to explore the implications of this update on the coding community. This new compatibility opens up a world of possibilities for developers across various platforms, including Windows, Mac, and Linux.",
-      "image": "https://pbs.twimg.com/media/HApiEWXb0AAN3dO.jpg?name=orig",
+      "excerpt": "Cortex Code simplifies complex data workflows with natural language, making it a game-changer for developers and non-technical teams alike. This innovative tool is now generally available, offering a new way to interact with Snowflake environments.",
+      "image": "https://dms.licdn.com/playlist/vid/v2/D5605AQGc4ituv4CguA/thumbnail-with-play-button-overlay-high/B56Zwl7Sc1JoDU-/0/1770162826976?e=2147483647&v=beta&t=ZsRcvqdvGVm-MifIJLszrAwR4v1l_fRMpD-J2K92vFI",
       "sources": [
-        "https://x.com/i/status/2020535293905101186"
+        "https://www.linkedin.com/posts/chanin-nantasenamat_watch-me-use-coco-to-build-a-streamlit-ugcPost-7424601007264833536-P64R?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&utm_campaign=share_via"
       ],
       "shortId": 33
     },
@@ -701,6 +702,25 @@
       "shortId": 35
     },
     {
+      "filename": "2026-02-08-revolutionizing-coding-craft-agents-now-compatible.md",
+      "slug": "2026-02-08-revolutionizing-coding-craft-agents-now-compatible",
+      "title": "Revolutionizing Coding: Craft Agents Now Compatible with Codex and Claude",
+      "date": "2026-02-08",
+      "published_at": "2026-02-08T18:02:41.964250+00:00",
+      "tags": [
+        "Codex",
+        "Craft Agents",
+        "Claude",
+        "Open Source"
+      ],
+      "excerpt": "Craft Agents can now be used with Codex and Claude, offering a free and open-source solution for developers, and we're excited to explore the implications of this update on the coding community. This new compatibility opens up a world of possibilities for developers across various platforms, including Windows, Mac, and Linux.",
+      "image": "https://pbs.twimg.com/media/HApiEWXb0AAN3dO.jpg?name=orig",
+      "sources": [
+        "https://x.com/i/status/2020535293905101186"
+      ],
+      "shortId": 36
+    },
+    {
       "filename": "2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo.md",
       "slug": "2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo",
       "title": "Revolutionary C Compiler Built by Team of Autonomous AI Agents",
@@ -715,24 +735,6 @@
       "image": "https://cdn.sanity.io/images/4zrzovbb/website/6cc87859f5453e9481278681aa6409856d61153c-2400x1260.png",
       "sources": [
         "https://share.google/4T0fJDumSQSmG5Cmo"
-      ],
-      "shortId": 36
-    },
-    {
-      "filename": "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
-      "slug": "2026-02-06-revolutionizing-video-creation-the-notch-prompter",
-      "title": "Revolutionizing Video Creation: The Notch Prompter",
-      "date": "2026-02-06",
-      "published_at": "2026-02-06T03:38:17.592163+00:00",
-      "tags": [
-        "video creation",
-        "AI",
-        "content creation"
-      ],
-      "excerpt": "Moody is an AI-powered notch teleprompter for Mac that keeps your script right next to your camera, maintaining natural eye contact during recordings and presentations.",
-      "image": "",
-      "sources": [
-        "https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3"
       ],
       "shortId": 37
     },
@@ -755,6 +757,24 @@
       "shortId": 38
     },
     {
+      "filename": "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
+      "slug": "2026-02-06-revolutionizing-video-creation-the-notch-prompter",
+      "title": "Revolutionizing Video Creation: The Notch Prompter",
+      "date": "2026-02-06",
+      "published_at": "2026-02-06T03:38:17.592163+00:00",
+      "tags": [
+        "video creation",
+        "AI",
+        "content creation"
+      ],
+      "excerpt": "Moody is an AI-powered notch teleprompter for Mac that keeps your script right next to your camera, maintaining natural eye contact during recordings and presentations.",
+      "image": "",
+      "sources": [
+        "https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3"
+      ],
+      "shortId": 39
+    },
+    {
       "filename": "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
       "slug": "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa",
       "title": "OpenAI Unveils GPT-5.3-Codex: Revolutionizing Software Development with Autonomous AI",
@@ -771,7 +791,7 @@
       "sources": [
         "https://share.google/tM36P3WSwQLtg0J7h"
       ],
-      "shortId": 39
+      "shortId": 40
     },
     {
       "filename": "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
@@ -789,7 +809,7 @@
       "sources": [
         "https://share.google/uISHcJ3WNR4H6uMhP"
       ],
-      "shortId": 40
+      "shortId": 41
     },
     {
       "filename": "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
@@ -808,24 +828,6 @@
         "https://x.com/lydiahallie/status/2019469032844587505?s=20"
       ],
       "video": "media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.mp4",
-      "shortId": 41
-    },
-    {
-      "filename": "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
-      "slug": "2026-02-05-revolutionizing-ai-powered-development-with-vercel",
-      "title": "Revolutionizing AI-Powered Development with Vercel's Skills.sh",
-      "date": "2026-02-05",
-      "published_at": "2026-02-05T18:31:47.044082+00:00",
-      "tags": [
-        "Vercel",
-        "Skills.sh",
-        "AI-powered development"
-      ],
-      "excerpt": "Vercel's skills.sh is a game-changer for developers, offering a platform to build, train, and deploy AI models with ease. This update is a must-know for tech enthusiasts looking to leverage AI in their projects.",
-      "image": "https://cloud.inference.sh/web/assets/og-image.png",
-      "sources": [
-        "https://app.inference.sh/blog/skills/agent-skills-overview"
-      ],
       "shortId": 42
     },
     {
@@ -864,6 +866,24 @@
         "https://mistral.ai/news/voxtral-transcribe-2"
       ],
       "shortId": 44
+    },
+    {
+      "filename": "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
+      "slug": "2026-02-05-revolutionizing-ai-powered-development-with-vercel",
+      "title": "Revolutionizing AI-Powered Development with Vercel's Skills.sh",
+      "date": "2026-02-05",
+      "published_at": "2026-02-05T18:31:47.044082+00:00",
+      "tags": [
+        "Vercel",
+        "Skills.sh",
+        "AI-powered development"
+      ],
+      "excerpt": "Vercel's skills.sh is a game-changer for developers, offering a platform to build, train, and deploy AI models with ease. This update is a must-know for tech enthusiasts looking to leverage AI in their projects.",
+      "image": "https://cloud.inference.sh/web/assets/og-image.png",
+      "sources": [
+        "https://app.inference.sh/blog/skills/agent-skills-overview"
+      ],
+      "shortId": 45
     }
   ]
 }
