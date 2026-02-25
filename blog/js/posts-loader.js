@@ -8,7 +8,7 @@ const PostsLoader = {
     currentPage: 1,
     allPosts: [],
     autoRotateInterval: null,
-    autoRotateDelay: 6000, // 6 seconds per post
+    autoRotateDelay: 18000, // 18 seconds per post
     currentFeaturedIndex: 0,
 
     /**
