@@ -547,41 +547,41 @@
       </div>
 
       <h1 class="s-title" id="success-title">Payment Successful!</h1>
-      <p class="s-subtitle" id="success-subtitle">Thank you for joining Platter. You're almost there.</p>
+      <p class="s-subtitle" id="success-subtitle">Thank you for joining Platter. Your portal access is being set up automatically.</p>
 
       <div class="s-payment-id" id="payment-id-box"></div>
 
       <br>
-      <div class="s-badge">Access granted within 24 hours</div>
+      <div class="s-badge">Instant Access</div>
 
       <div class="s-steps">
         <div class="s-step">
           <div class="s-step__num">1</div>
           <div class="s-step__content">
-            <div class="s-step__title">Sign up on the Platter portal</div>
-            <p class="s-step__desc">Head to <a href="https://perks.bitroot.org" target="_blank">perks.bitroot.org</a> and click <strong>"Sign In"</strong> in the top right corner to create your account.</p>
+            <div class="s-step__title">Check your email</div>
+            <p class="s-step__desc">We've sent a portal sign-in link to the email you used during payment. Check your inbox (and spam folder).</p>
           </div>
         </div>
         <div class="s-step">
           <div class="s-step__num">2</div>
           <div class="s-step__content">
-            <div class="s-step__title">Complete your profile</div>
-            <p class="s-step__desc">Fill in your details so we can verify and approve your membership.</p>
+            <div class="s-step__title">Sign in &amp; set your password</div>
+            <p class="s-step__desc">Click the link in your email to access <a href="https://perks.bitroot.org" target="_blank">perks.bitroot.org</a> and set up your account password.</p>
           </div>
         </div>
         <div class="s-step">
           <div class="s-step__num">3</div>
           <div class="s-step__content">
-            <div class="s-step__title">Get approved access</div>
-            <p class="s-step__desc" id="step3-desc">Our team will confirm your profile and grant full access to all deals and tools within 24 hours.</p>
+            <div class="s-step__title">Explore your deals</div>
+            <p class="s-step__desc" id="step3-desc">Browse all available perks, tools, and exclusive discounts — your access is ready.</p>
           </div>
         </div>
       </div>
 
       <div class="s-buttons">
         <a href="https://perks.bitroot.org" target="_blank" class="s-btn s-btn--primary">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-          Sign Up on Portal
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+          Open Your Portal
         </a>
         <a href="../platter-access-guide-annual.pdf" download id="guide-download" class="s-btn s-btn--outline">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
@@ -668,7 +668,7 @@
           document.getElementById('priority-support').classList.remove('hidden');
           document.getElementById('success-title').textContent = 'You Are Now an Insider';
           document.getElementById('success-subtitle').textContent = 'You now have Insider access. Priority support and AI tools included.';
-          document.getElementById('step3-desc').innerHTML = 'Our team will fast-track your profile and grant full Insider access to all deals, AI tools, and priority support within 24 hours.';
+          document.getElementById('step3-desc').textContent = 'Browse all available perks, AI tools, and exclusive discounts \u2014 your Insider access is ready.';
         }
       } else {
         successEl.classList.add('hidden');
