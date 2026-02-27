@@ -1623,6 +1623,154 @@
       max-width: 640px;
     }
 
+    /* --- Trust / Explainer --- */
+    .p-trust {
+      background: var(--white);
+      border-top: var(--border);
+      border-bottom: var(--border);
+    }
+
+    .p-trust__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .p-trust__video-wrap {
+      position: relative;
+      border: var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      aspect-ratio: 9 / 14;
+      max-height: 560px;
+      background: var(--black);
+    }
+
+    .p-trust__video-wrap video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .p-trust__video-badge {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      background: var(--yellow);
+      color: var(--black);
+      padding: 6px 12px;
+      border: 2px solid var(--black);
+      border-radius: 2px;
+    }
+
+    .p-trust__label {
+      color: var(--green);
+    }
+
+    .p-trust__title {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .p-trust__title em {
+      font-style: normal;
+      color: var(--blue);
+    }
+
+    .p-trust__desc {
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.75;
+      color: rgba(0,0,0,0.6);
+      margin-bottom: 32px;
+    }
+
+    .p-trust__checklist {
+      list-style: none;
+      margin-bottom: 36px;
+    }
+
+    .p-trust__checklist li {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      padding: 10px 0;
+      padding-left: 36px;
+      position: relative;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .p-trust__checklist li:last-child {
+      border-bottom: none;
+    }
+
+    .p-trust__checklist li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 13px;
+      width: 22px;
+      height: 22px;
+      background: var(--green);
+      border-radius: 4px;
+      border: 2px solid var(--black);
+    }
+
+    .p-trust__checklist li::after {
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: 17px;
+      width: 12px;
+      height: 7px;
+      border-left: 2.5px solid var(--white);
+      border-bottom: 2.5px solid var(--white);
+      transform: rotate(-45deg);
+    }
+
+    .p-trust__cta-row {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .p-trust__explore-link {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--blue);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: gap 0.2s;
+    }
+
+    .p-trust__explore-link:hover {
+      gap: 10px;
+      text-decoration: underline;
+    }
+
+    .p-trust__explore-link svg {
+      transition: transform 0.2s;
+    }
+
+    .p-trust__explore-link:hover svg {
+      transform: translateX(2px);
+    }
+
     /* --- CTA Banner --- */
     .p-cta-banner {
       background: var(--yellow);
@@ -1921,6 +2069,26 @@
 
       .p-nav__links { display: none; }
       .p-nav__menu-btn { display: flex; }
+
+      .p-trust__inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+      }
+
+      .p-trust__video-wrap {
+        max-width: 320px;
+        margin: 0 auto;
+        max-height: 480px;
+      }
+
+      .p-trust__checklist li {
+        text-align: left;
+      }
+
+      .p-trust__cta-row {
+        justify-content: center;
+      }
     }
 
     @media (max-width: 767px) {
@@ -1942,7 +2110,16 @@
       .p-audience__title,
       .p-pricing__title,
       .p-faq__title,
-      .p-cta-banner__title { font-size: 18px; }
+      .p-cta-banner__title,
+      .p-trust__title { font-size: 18px; }
+
+      .p-trust__video-wrap {
+        max-width: 280px;
+        max-height: 420px;
+      }
+
+      .p-trust__desc { font-size: 16px; }
+      .p-trust__checklist li { font-size: 15px; }
 
       .p-showcase__icon { width: 44px; height: 44px; min-width: 44px; box-shadow: 2px 2px 0 var(--black); }
       .p-showcase__track { gap: 10px; animation-duration: 35s; }
@@ -2055,6 +2232,41 @@
           </div>
           <div class="p-hero__sticker">
             <div class="p-hero__sticker-text">SAVE<br>$MILLIONs</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TRUST / EXPLAINER ====== -->
+  <section id="see-whats-inside" class="p-section p-trust">
+    <div class="p-container">
+      <div class="p-trust__inner">
+        <div class="p-trust__video-col reveal">
+          <div class="p-trust__video-wrap">
+            <!-- Replace src with your selfie video file -->
+            <video src="" poster="" controls playsinline preload="metadata"></video>
+            <div class="p-trust__video-badge">From the founder</div>
+          </div>
+        </div>
+        <div class="p-trust__text-col">
+          <div class="p-section__label p-trust__label reveal">See what you're getting</div>
+          <h2 class="p-trust__title reveal reveal-delay-1">Browse every deal <em>before</em> you&nbsp;buy</h2>
+          <p class="p-trust__desc reveal reveal-delay-2">We know it's hard to commit without seeing the full picture. That's why we've opened up our entire perks catalog for you to explore &mdash; no payment needed. Check out every deal, read the details, and see the exact value you'll unlock.</p>
+          <ul class="p-trust__checklist reveal reveal-delay-3">
+            <li>Browse 588+ partner deals at perks.bitroot.org</li>
+            <li>Tap into any app to see full deal details</li>
+            <li>One membership unlocks access to all deals</li>
+            <li>Activate any perk whenever you need it, all year</li>
+          </ul>
+          <div class="p-trust__cta-row reveal reveal-delay-4">
+            <div class="p-btn-3d" ontouchstart="">
+              <a href="#pricing">Get Access</a>
+            </div>
+            <a href="https://perks.bitroot.org" target="_blank" rel="noopener" class="p-trust__explore-link">
+              Explore deals first
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
           </div>
         </div>
       </div>
@@ -2737,6 +2949,7 @@
       // =============================================
       var observed = {};
       var sectionMap = {
+        'see-whats-inside': 'trust_explainer_view',
         'pricing': 'pricing_view',
         'faq': 'faq_view'
       };
