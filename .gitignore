@@ -48,3 +48,9 @@ inference-sh-report.pdf
 
 # Dev server
 server.py
+
+# Local scratch/working files
+_scratch/
+
+# Vercel local config
+capi-proxy/.vercel/
