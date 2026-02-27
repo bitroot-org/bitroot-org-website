@@ -5,55 +5,12 @@
     <link>https://bitroot.org/blog</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Feb 2026 11:09:40 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2026 16:23:15 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Revolutionizing Front-End Development: The AI-Powered Rebuild of Next.js in Just One Week</title>
+      <title>Revolutionizing Design: Pencil's SWARM Mode Takes AI-Powered Collaboration to the Next Level</title>
       <link>https://bitroot.org/blog/p/1</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/1</guid>
-      <description>One engineer used AI to rebuild Next.js on Vite in a week. vinext builds up to 4x faster, produces 57% smaller bundles, and deploys to Cloudflare Workers with a single command.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://blog.cloudflare.com/vinext/"&gt;https://blog.cloudflare.com/vinext/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Wed, 25 Feb 2026 11:00:51 +0000</pubDate>
-      <category>Next.js</category>
-      <category>Vite</category>
-      <category>AI</category>
-      <category>Cloudflare Workers</category>
-      <enclosure url="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/720QQcrdICiSJXrr9VoixA/4934fffd05d1ca10cc661238b381308e/BLOG-3194_OG.png" type="image/jpeg" length="0" />
-      <source url="https://blog.cloudflare.com/vinext/">Original Source</source>
-    </item>
-    <item>
-      <title>Claude Code Unleashes Remote Control: A Game-Changer for Developers</title>
-      <link>https://bitroot.org/blog/p/2</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/2</guid>
-      <description>Claude Code introduces Remote Control, allowing developers to start tasks on their terminal and control them from their phone, revolutionizing workflow flexibility. This feature is a significant upgrade for developers who need to manage tasks on-the-go.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2026418433911603668"&gt;https://x.com/i/status/2026418433911603668&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Wed, 25 Feb 2026 03:17:24 +0000</pubDate>
-      <category>Claude Code</category>
-      <category>Remote Control</category>
-      <category>Developer Tools</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2026417722394021888/img/7uu-_ciDtZ7v3rYC.jpg" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2026418433911603668">Original Source</source>
-    </item>
-    <item>
-      <title>Google Labs Unveils Major Upgrade to Opal, Revolutionizing No-Code AI Workflows</title>
-      <link>https://bitroot.org/blog/p/3</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/3</guid>
-      <description>Google Labs has launched a significant upgrade to Opal, its no-code visual builder for AI workflows, introducing a new agent step and enhanced tools for increased capability. This upgrade is set to transform the way developers interact with AI workflows.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2026374947996840169"&gt;https://x.com/i/status/2026374947996840169&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Wed, 25 Feb 2026 03:24:09 +0000</pubDate>
-      <category>Google Labs</category>
-      <category>Opal</category>
-      <category>No-Code AI</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2026374886722281472/img/QbPxQ28_KKRXSIEd.jpg" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2026374947996840169">Original Source</source>
-    </item>
-    <item>
-      <title>Revolutionizing Design: Pencil's SWARM Mode Takes AI-Powered Collaboration to the Next Level</title>
-      <link>https://bitroot.org/blog/p/4</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/4</guid>
       <description>Pencil just crossed 100,000 users!
 Today we are introducing SWARM mode.
 A team of AI design agents working with you in parallel.
@@ -70,9 +27,70 @@ Download now.
       <source url="https://x.com/i/status/2026329359838318906">Original Source</source>
     </item>
     <item>
-      <title>Revolutionizing AI-Powered Commerce: Razorpay and NPCI Unveil Agentic Payments</title>
+      <title>Revolutionizing AI Capabilities: The Dawn of Perplexity Computer</title>
+      <link>https://bitroot.org/blog/p/2</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/2</guid>
+      <description>Introducing Perplexity Computer.
+
+Computer unifies every current AI capability into one system.
+
+It can research, design, code, deploy, and manage any project end-to-end.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2026695550771540489"&gt;https://x.com/i/status/2026695550771540489&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 25 Feb 2026 18:04:43 +0000</pubDate>
+      <category>AI</category>
+      <category>Perplexity Computer</category>
+      <category>Tech Innovations</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2026695448996753409/img/yeKxOwuVQwjvBDYt.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2026695550771540489">Original Source</source>
+    </item>
+    <item>
+      <title>Revolutionizing Front-End Development: The AI-Powered Rebuild of Next.js in Just One Week</title>
+      <link>https://bitroot.org/blog/p/3</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/3</guid>
+      <description>One engineer used AI to rebuild Next.js on Vite in a week. vinext builds up to 4x faster, produces 57% smaller bundles, and deploys to Cloudflare Workers with a single command.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://blog.cloudflare.com/vinext/"&gt;https://blog.cloudflare.com/vinext/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 25 Feb 2026 11:00:51 +0000</pubDate>
+      <category>Next.js</category>
+      <category>Vite</category>
+      <category>AI</category>
+      <category>Cloudflare Workers</category>
+      <enclosure url="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/720QQcrdICiSJXrr9VoixA/4934fffd05d1ca10cc661238b381308e/BLOG-3194_OG.png" type="image/jpeg" length="0" />
+      <source url="https://blog.cloudflare.com/vinext/">Original Source</source>
+    </item>
+    <item>
+      <title>Google Labs Unveils Major Upgrade to Opal, Revolutionizing No-Code AI Workflows</title>
+      <link>https://bitroot.org/blog/p/4</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/4</guid>
+      <description>Google Labs has launched a significant upgrade to Opal, its no-code visual builder for AI workflows, introducing a new agent step and enhanced tools for increased capability. This upgrade is set to transform the way developers interact with AI workflows.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2026374947996840169"&gt;https://x.com/i/status/2026374947996840169&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 25 Feb 2026 03:24:09 +0000</pubDate>
+      <category>Google Labs</category>
+      <category>Opal</category>
+      <category>No-Code AI</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2026374886722281472/img/QbPxQ28_KKRXSIEd.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2026374947996840169">Original Source</source>
+    </item>
+    <item>
+      <title>Claude Code Unleashes Remote Control: A Game-Changer for Developers</title>
       <link>https://bitroot.org/blog/p/5</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/5</guid>
+      <description>Claude Code introduces Remote Control, allowing developers to start tasks on their terminal and control them from their phone, revolutionizing workflow flexibility. This feature is a significant upgrade for developers who need to manage tasks on-the-go.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2026418433911603668"&gt;https://x.com/i/status/2026418433911603668&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 25 Feb 2026 03:17:24 +0000</pubDate>
+      <category>Claude Code</category>
+      <category>Remote Control</category>
+      <category>Developer Tools</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2026417722394021888/img/7uu-_ciDtZ7v3rYC.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2026418433911603668">Original Source</source>
+    </item>
+    <item>
+      <title>Revolutionizing AI-Powered Commerce: Razorpay and NPCI Unveil Agentic Payments</title>
+      <link>https://bitroot.org/blog/p/6</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/6</guid>
       <description>Razorpay &amp; NPCI launch Agentic Payments on Claude. Enable automated UPI payments for Zomato, Swiggy &amp; Zepto. Turn AI conversations into completed transactions.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://share.google/JZHNyoCeRqofk1vze"&gt;https://share.google/JZHNyoCeRqofk1vze&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -86,8 +104,8 @@ Download now.
     </item>
     <item>
       <title>Revolutionizing Coding: Claude's Game-Changing Update</title>
-      <link>https://bitroot.org/blog/p/6</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/6</guid>
+      <link>https://bitroot.org/blog/p/7</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/7</guid>
       <description>Claude Code on desktop can now preview your running apps, review your code, and handle CI failures and PRs in the background.
 
 Here’s what's new:
@@ -101,22 +119,24 @@ Here’s what's new:
       <source url="https://x.com/i/status/2024937960572104707">Original Source</source>
     </item>
     <item>
-      <title>Revolutionizing AI-Powered Apps with Secure Docker Sandboxes</title>
-      <link>https://bitroot.org/blog/p/7</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/7</guid>
-      <description>Docker's new shell sandbox enables secure and isolated execution of AI-powered apps, and we're excited to explore its potential. This breakthrough technology allows developers to run AI assistants without exposing their systems to risks.
+      <title>Google Unveils Glimmer: A Revolutionary Design Language for UX on Smart Glasses</title>
+      <link>https://bitroot.org/blog/p/8</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/8</guid>
+      <description>Google introduces Glimmer, a new design language for UX on glasses that prioritizes voice, gesture, and eye-tracking, and discover its potential to transform the way we interact with smart glasses. This innovation is set to revolutionize the field of UX design and beyond.
 
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2024178381760143381"&gt;https://x.com/i/status/2024178381760143381&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Thu, 19 Feb 2026 19:06:39 +0000</pubDate>
-      <category>Docker</category>
-      <category>AI</category>
-      <category>Sandboxing</category>
-      <source url="https://x.com/i/status/2024178381760143381">Original Source</source>
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2023805464577011979"&gt;https://x.com/i/status/2023805464577011979&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 19 Feb 2026 19:01:33 +0000</pubDate>
+      <category>Google Design</category>
+      <category>Glimmer</category>
+      <category>Smart Glasses</category>
+      <category>UX Design</category>
+      <enclosure url="https://pbs.twimg.com/media/HBYAUP8bcAECeDt.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2023805464577011979">Original Source</source>
     </item>
     <item>
       <title>Revolutionary AI-Powered Desktop Agent Unveiled: Interpreter</title>
-      <link>https://bitroot.org/blog/p/8</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/8</guid>
+      <link>https://bitroot.org/blog/p/9</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/9</guid>
       <description>Today I'm launching Interpreter.
 
 It's a desktop agent that can fill PDFs, edit your Excel and Word docs, and learn new skills.
@@ -132,9 +152,22 @@ Runs offline, works with any model, and it's free.
       <source url="https://x.com/i/status/2024227639087813035">Original Source</source>
     </item>
     <item>
+      <title>Revolutionizing AI-Powered Apps with Secure Docker Sandboxes</title>
+      <link>https://bitroot.org/blog/p/10</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/10</guid>
+      <description>Docker's new shell sandbox enables secure and isolated execution of AI-powered apps, and we're excited to explore its potential. This breakthrough technology allows developers to run AI assistants without exposing their systems to risks.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2024178381760143381"&gt;https://x.com/i/status/2024178381760143381&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 19 Feb 2026 19:06:39 +0000</pubDate>
+      <category>Docker</category>
+      <category>AI</category>
+      <category>Sandboxing</category>
+      <source url="https://x.com/i/status/2024178381760143381">Original Source</source>
+    </item>
+    <item>
       <title>AI Rivals Clash: OpenAI and Anthropic CEOs' Awkward Moment Reveals Heated Competition</title>
-      <link>https://bitroot.org/blog/p/9</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/9</guid>
+      <link>https://bitroot.org/blog/p/11</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/11</guid>
       <description>OpenAI’s Sam Altman and Anthropic’s Dario Amodei had an awkward moment at a major AI summit, with the two CEOs of competing AI giants opting not to link hands.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.cnbc.com/2026/02/19/openai-sam-altman-anthropic-dario-amodei-india-ai-summit.html"&gt;https://www.cnbc.com/2026/02/19/openai-sam-altman-anthropic-dario-amodei-india-ai-summit.html&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -145,35 +178,6 @@ Runs offline, works with any model, and it's free.
       <category>Tech News</category>
       <enclosure url="https://image.cnbcfm.com/api/v1/image/108267178-1771489879337-gettyimages-2261854815-AFP_984W8YD.jpeg?v=1771490672&amp;w=1920&amp;h=1080" type="image/jpeg" length="0" />
       <source url="https://www.cnbc.com/2026/02/19/openai-sam-altman-anthropic-dario-amodei-india-ai-summit.html">Original Source</source>
-    </item>
-    <item>
-      <title>Google Unveils Glimmer: A Revolutionary Design Language for UX on Smart Glasses</title>
-      <link>https://bitroot.org/blog/p/10</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/10</guid>
-      <description>Google introduces Glimmer, a new design language for UX on glasses that prioritizes voice, gesture, and eye-tracking, and discover its potential to transform the way we interact with smart glasses. This innovation is set to revolutionize the field of UX design and beyond.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2023805464577011979"&gt;https://x.com/i/status/2023805464577011979&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Thu, 19 Feb 2026 19:01:33 +0000</pubDate>
-      <category>Google Design</category>
-      <category>Glimmer</category>
-      <category>Smart Glasses</category>
-      <category>UX Design</category>
-      <enclosure url="https://pbs.twimg.com/media/HBYAUP8bcAECeDt.jpg?name=orig" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2023805464577011979">Original Source</source>
-    </item>
-    <item>
-      <title>India's AI Startup Funding Landscape Sees Regional Shift</title>
-      <link>https://bitroot.org/blog/p/11</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/11</guid>
-      <description>India's Leading AI &amp; Data Science Media Platform
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://analyticsindiamag.com/ai-startups/funding-reset-why-karnataka-faced-a-28-drop-while-maharashtra-held-its-ground"&gt;https://analyticsindiamag.com/ai-startups/funding-reset-why-karnataka-faced-a-28-drop-while-maharashtra-held-its-ground&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Wed, 18 Feb 2026 18:13:05 +0000</pubDate>
-      <category>AI</category>
-      <category>startups</category>
-      <category>funding</category>
-      <enclosure url="https://storage.googleapis.com/gpt-engineer-file-uploads/XW65pun0vjQL3xcUmVglEg4ZrsL2/social-images/social-1763560217027-Expert-Panel-discussion-768x512.webp" type="image/jpeg" length="0" />
-      <source url="https://analyticsindiamag.com/ai-startups/funding-reset-why-karnataka-faced-a-28-drop-while-maharashtra-held-its-ground">Original Source</source>
     </item>
     <item>
       <title>Revolutionizing Productivity: Bitroot's Game-Changing Toolbox Unveiled</title>
@@ -215,9 +219,23 @@ Everything you need - in your pocket. 🚀
       <source url="https://x.com/i/status/2023978535161925889">Original Source</source>
     </item>
     <item>
-      <title>Revolutionizing Design: Figma Unveils Code-to-Design Magic</title>
+      <title>India's AI Startup Funding Landscape Sees Regional Shift</title>
       <link>https://bitroot.org/blog/p/14</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/14</guid>
+      <description>India's Leading AI &amp; Data Science Media Platform
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://analyticsindiamag.com/ai-startups/funding-reset-why-karnataka-faced-a-28-drop-while-maharashtra-held-its-ground"&gt;https://analyticsindiamag.com/ai-startups/funding-reset-why-karnataka-faced-a-28-drop-while-maharashtra-held-its-ground&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 18 Feb 2026 18:13:05 +0000</pubDate>
+      <category>AI</category>
+      <category>startups</category>
+      <category>funding</category>
+      <enclosure url="https://storage.googleapis.com/gpt-engineer-file-uploads/XW65pun0vjQL3xcUmVglEg4ZrsL2/social-images/social-1763560217027-Expert-Panel-discussion-768x512.webp" type="image/jpeg" length="0" />
+      <source url="https://analyticsindiamag.com/ai-startups/funding-reset-why-karnataka-faced-a-28-drop-while-maharashtra-held-its-ground">Original Source</source>
+    </item>
+    <item>
+      <title>Revolutionizing Design: Figma Unveils Code-to-Design Magic</title>
+      <link>https://bitroot.org/blog/p/15</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/15</guid>
       <description>Now you can take workflows that start in Claude Code even further in Figma.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.figma.com/blog/introducing-claude-code-to-figma/"&gt;https://www.figma.com/blog/introducing-claude-code-to-figma/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -230,8 +248,8 @@ Everything you need - in your pocket. 🚀
     </item>
     <item>
       <title>Revolutionizing Tech Stacks: Hyperbrowser Unveils Batch Mode for HyperSkill</title>
-      <link>https://bitroot.org/blog/p/15</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/15</guid>
+      <link>https://bitroot.org/blog/p/16</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/16</guid>
       <description>Hyperbrowser introduces batch mode for HyperSkill, enabling AI agents to master entire tech stacks, and we're excited to explore the implications for the tech community. This update promises to revolutionize the way developers work with AI agents and tech stacks.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2023480469044818208"&gt;https://x.com/i/status/2023480469044818208&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -244,8 +262,8 @@ Everything you need - in your pocket. 🚀
     </item>
     <item>
       <title>Revolutionizing Coding: Ollama Unveils Subagents and Web Search in Claude Code</title>
-      <link>https://bitroot.org/blog/p/16</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/16</guid>
+      <link>https://bitroot.org/blog/p/17</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/17</guid>
       <description>Ollama now supports subagents and web search in Claude Code.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://ollama.com/blog/web-search-subagents-claude-code"&gt;https://ollama.com/blog/web-search-subagents-claude-code&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -256,20 +274,6 @@ Everything you need - in your pocket. 🚀
       <category>Web Search</category>
       <enclosure url="https://ollama.com/public/og.png" type="image/jpeg" length="0" />
       <source url="https://ollama.com/blog/web-search-subagents-claude-code">Original Source</source>
-    </item>
-    <item>
-      <title>Revolutionizing Debugging: Chrome DevTools Gets Multi-Session Support</title>
-      <link>https://bitroot.org/blog/p/17</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/17</guid>
-      <description>Would multi-session support for the Chrome DevTools MCP server be useful for you? 🤖✖️🌍 Chime into the discussion on GitHub: https://github.com/ChromeDevTools/chrome-devtools-mcp/issues/926
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2023370190269116568"&gt;https://x.com/i/status/2023370190269116568&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Mon, 16 Feb 2026 19:00:38 +0000</pubDate>
-      <category>Chrome DevTools</category>
-      <category>Debugging</category>
-      <category>Multi-Session Support</category>
-      <enclosure url="https://pbs.twimg.com/media/HBR0XEtaYAEdKVg.jpg?name=orig" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2023370190269116568">Original Source</source>
     </item>
     <item>
       <title>Anthropic Expands Indian Presence with New Bengaluru Office and Strategic Partnerships</title>
@@ -286,23 +290,9 @@ Everything you need - in your pocket. 🚀
       <source url="https://www.anthropic.com/news/bengaluru-office-partnerships-across-india">Original Source</source>
     </item>
     <item>
-      <title>Unlocking the Power of Anthropic Agents: A Game-Changer for AI Development</title>
+      <title>MiniMax M2.5 Revolution: Unleashing 3x Faster Inference Speeds</title>
       <link>https://bitroot.org/blog/p/19</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/19</guid>
-      <description>The Anthropic Agent SDK is a powerful tool for building custom agents, and its potential is being overlooked by the development community. This framework has the potential to revolutionize AI development and create more sophisticated machine learning models.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2023428910042513482"&gt;https://x.com/i/status/2023428910042513482&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Mon, 16 Feb 2026 18:56:29 +0000</pubDate>
-      <category>Anthropic Agent SDK</category>
-      <category>AI Development</category>
-      <category>Machine Learning</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2023253339073392640/img/VhovnpWvug7jGnKn.jpg" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2023428910042513482">Original Source</source>
-    </item>
-    <item>
-      <title>MiniMax M2.5 Revolution: Unleashing 3x Faster Inference Speeds</title>
-      <link>https://bitroot.org/blog/p/20</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/20</guid>
       <description>MiniMax M2.5-HighSpeed is live, delivering 100 TPS and 3x faster inference speeds, designed for the next generation of Agent applications. This update is a game-changer for developers and the tech community, enabling faster and more efficient workflows.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2023066199995949350"&gt;https://x.com/i/status/2023066199995949350&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -314,17 +304,32 @@ Everything you need - in your pocket. 🚀
       <source url="https://x.com/i/status/2023066199995949350">Original Source</source>
     </item>
     <item>
-      <title>Revolutionizing Online Discussions: The Rise of Thread Test</title>
+      <title>Unlocking the Power of Anthropic Agents: A Game-Changer for AI Development</title>
+      <link>https://bitroot.org/blog/p/20</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/20</guid>
+      <description>The Anthropic Agent SDK is a powerful tool for building custom agents, and its potential is being overlooked by the development community. This framework has the potential to revolutionize AI development and create more sophisticated machine learning models.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2023428910042513482"&gt;https://x.com/i/status/2023428910042513482&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 16 Feb 2026 18:56:29 +0000</pubDate>
+      <category>Anthropic Agent SDK</category>
+      <category>AI Development</category>
+      <category>Machine Learning</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2023253339073392640/img/VhovnpWvug7jGnKn.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2023428910042513482">Original Source</source>
+    </item>
+    <item>
+      <title>Revolutionizing Debugging: Chrome DevTools Gets Multi-Session Support</title>
       <link>https://bitroot.org/blog/p/21</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/21</guid>
-      <description>A new approach to online discussions is gaining traction, enabling more meaningful and engaging interactions, and we're excited to dive into its implications for the tech community. The thread test is poised to revolutionize the way we participate in online conversations.
+      <description>Would multi-session support for the Chrome DevTools MCP server be useful for you? 🤖✖️🌍 Chime into the discussion on GitHub: https://github.com/ChromeDevTools/chrome-devtools-mcp/issues/926
 
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.threads.com/@toolfoliooo/post/DUyJyygk5Ct?xmt=AQF0Sb4soJ59WdTpfk3Z2rOSnVLTlTUaJ1yFPJdnNWJL4kN6Zppry2uQuHct11bO0b8RtAvk&amp;slof=1"&gt;https://www.threads.com/@toolfoliooo/post/DUyJyygk5Ct?xmt=AQF0Sb4soJ59WdTpfk3Z2rOSnVLTlTUaJ1yFPJdnNWJL4kN6Zppry2uQuHct11bO0b8RtAvk&amp;slof=1&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Sun, 15 Feb 2026 18:34:32 +0000</pubDate>
-      <category>thread test</category>
-      <category>online discussions</category>
-      <category>community engagement</category>
-      <source url="https://www.threads.com/@toolfoliooo/post/DUyJyygk5Ct?xmt=AQF0Sb4soJ59WdTpfk3Z2rOSnVLTlTUaJ1yFPJdnNWJL4kN6Zppry2uQuHct11bO0b8RtAvk&amp;slof=1">Original Source</source>
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2023370190269116568"&gt;https://x.com/i/status/2023370190269116568&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 16 Feb 2026 19:00:38 +0000</pubDate>
+      <category>Chrome DevTools</category>
+      <category>Debugging</category>
+      <category>Multi-Session Support</category>
+      <enclosure url="https://pbs.twimg.com/media/HBR0XEtaYAEdKVg.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2023370190269116568">Original Source</source>
     </item>
     <item>
       <title>Revolutionizing Voice AI: NVIDIA Unveils Game-Changing PersonaPlex-7B Model</title>
@@ -355,18 +360,17 @@ Everything you need - in your pocket. 🚀
       <source url="https://x.com/i/status/2023029674549596301">Original Source</source>
     </item>
     <item>
-      <title>Revolutionizing AI-Driven Design: Introducing the Game-Changing Design Canvas</title>
+      <title>Revolutionizing Online Discussions: The Rise of Thread Test</title>
       <link>https://bitroot.org/blog/p/24</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/24</guid>
-      <description>Discover how the new Design Canvas is transforming the way developers interact with AI agents, streamlining the design process and eliminating endless prompting. This innovative tool is set to revolutionize the field of AI-driven design, enabling developers to ship better designs in code with ease.
+      <description>A new approach to online discussions is gaining traction, enabling more meaningful and engaging interactions, and we're excited to dive into its implications for the tech community. The thread test is poised to revolutionize the way we participate in online conversations.
 
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2022038492575154555"&gt;https://x.com/i/status/2022038492575154555&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Sat, 14 Feb 2026 04:35:10 +0000</pubDate>
-      <category>AI</category>
-      <category>Design Canvas</category>
-      <category>Subframe</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2022037126469365761/img/xJeAX_YvlqDuHxaA.jpg" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2022038492575154555">Original Source</source>
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.threads.com/@toolfoliooo/post/DUyJyygk5Ct?xmt=AQF0Sb4soJ59WdTpfk3Z2rOSnVLTlTUaJ1yFPJdnNWJL4kN6Zppry2uQuHct11bO0b8RtAvk&amp;slof=1"&gt;https://www.threads.com/@toolfoliooo/post/DUyJyygk5Ct?xmt=AQF0Sb4soJ59WdTpfk3Z2rOSnVLTlTUaJ1yFPJdnNWJL4kN6Zppry2uQuHct11bO0b8RtAvk&amp;slof=1&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sun, 15 Feb 2026 18:34:32 +0000</pubDate>
+      <category>thread test</category>
+      <category>online discussions</category>
+      <category>community engagement</category>
+      <source url="https://www.threads.com/@toolfoliooo/post/DUyJyygk5Ct?xmt=AQF0Sb4soJ59WdTpfk3Z2rOSnVLTlTUaJ1yFPJdnNWJL4kN6Zppry2uQuHct11bO0b8RtAvk&amp;slof=1">Original Source</source>
     </item>
     <item>
       <title>Revolutionizing App Development: Raydian 2.0 Unleashed</title>
@@ -387,9 +391,23 @@ Go give it a spin, the design stage is free to use.
       <source url="https://x.com/i/status/2022256365901607287">Original Source</source>
     </item>
     <item>
-      <title>Revolutionizing CI/CD: Introducing BuildSpace, the AI-Powered Game Changer</title>
+      <title>Revolutionizing AI-Driven Design: Introducing the Game-Changing Design Canvas</title>
       <link>https://bitroot.org/blog/p/26</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/26</guid>
+      <description>Discover how the new Design Canvas is transforming the way developers interact with AI agents, streamlining the design process and eliminating endless prompting. This innovative tool is set to revolutionize the field of AI-driven design, enabling developers to ship better designs in code with ease.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2022038492575154555"&gt;https://x.com/i/status/2022038492575154555&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 14 Feb 2026 04:35:10 +0000</pubDate>
+      <category>AI</category>
+      <category>Design Canvas</category>
+      <category>Subframe</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2022037126469365761/img/xJeAX_YvlqDuHxaA.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2022038492575154555">Original Source</source>
+    </item>
+    <item>
+      <title>Revolutionizing CI/CD: Introducing BuildSpace, the AI-Powered Game Changer</title>
+      <link>https://bitroot.org/blog/p/27</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/27</guid>
       <description>Conversational Interfaces, Anywhere
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://photon.codes/blog/ci-cd-in-the-age-of-ai"&gt;https://photon.codes/blog/ci-cd-in-the-age-of-ai&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -402,9 +420,22 @@ Go give it a spin, the design stage is free to use.
       <source url="https://photon.codes/blog/ci-cd-in-the-age-of-ai">Original Source</source>
     </item>
     <item>
+      <title>Revolutionizing Content Delivery: Cloudflare's Real-Time Markdown Conversion</title>
+      <link>https://bitroot.org/blog/p/28</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/28</guid>
+      <description>Cloudflare's network now supports real-time content conversion to Markdown, treating agents as first-class citizens. This update has significant implications for developers and the tech community.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2021955521213800489"&gt;https://x.com/i/status/2021955521213800489&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 12 Feb 2026 19:23:58 +0000</pubDate>
+      <category>Cloudflare</category>
+      <category>Markdown</category>
+      <category>Content Delivery</category>
+      <source url="https://x.com/i/status/2021955521213800489">Original Source</source>
+    </item>
+    <item>
       <title>Revolutionizing App Store Submissions: Automated Guideline Compliance</title>
-      <link>https://bitroot.org/blog/p/27</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/27</guid>
+      <link>https://bitroot.org/blog/p/29</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/29</guid>
       <description>A new CLI tool scans iOS apps against App Store guidelines, ensuring compliance and streamlining the submission process. This game-changing tool automates checks for payment, privacy, and metadata requirements, making it a must-have for developers.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2021661315329405174"&gt;https://x.com/i/status/2021661315329405174&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -417,8 +448,8 @@ Go give it a spin, the design stage is free to use.
     </item>
     <item>
       <title>Revolutionary Agent-Native Computing Now Accessible to All</title>
-      <link>https://bitroot.org/blog/p/28</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/28</guid>
+      <link>https://bitroot.org/blog/p/30</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/30</guid>
       <description>Happycapy is now open to everyone, offering a secure cloud sandbox and all-in-one agent-native computing experience, powered by Claude Code and MiniMax. This innovation has the potential to revolutionize the way we approach automation and task management.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/Jarodxu7/status/2021620710544904355?s=20"&gt;https://x.com/Jarodxu7/status/2021620710544904355?s=20&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -430,22 +461,9 @@ Go give it a spin, the design stage is free to use.
       <source url="https://x.com/Jarodxu7/status/2021620710544904355?s=20">Original Source</source>
     </item>
     <item>
-      <title>Revolutionizing Content Delivery: Cloudflare's Real-Time Markdown Conversion</title>
-      <link>https://bitroot.org/blog/p/29</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/29</guid>
-      <description>Cloudflare's network now supports real-time content conversion to Markdown, treating agents as first-class citizens. This update has significant implications for developers and the tech community.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2021955521213800489"&gt;https://x.com/i/status/2021955521213800489&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Thu, 12 Feb 2026 19:23:58 +0000</pubDate>
-      <category>Cloudflare</category>
-      <category>Markdown</category>
-      <category>Content Delivery</category>
-      <source url="https://x.com/i/status/2021955521213800489">Original Source</source>
-    </item>
-    <item>
       <title>AI Safety Leader Sounds Alarm: Resignation Sparks Concerns Over Tech's Dark Side</title>
-      <link>https://bitroot.org/blog/p/30</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/30</guid>
+      <link>https://bitroot.org/blog/p/31</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/31</guid>
       <description>The resignation of Anthropic AI's safety lead has sent shockwaves through the tech community, highlighting the growing concerns over AI's potential risks to humanity. This development has significant implications for developers and the future of AI development.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://share.google/6gzMAD1U347j7YUXX"&gt;https://share.google/6gzMAD1U347j7YUXX&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -457,52 +475,9 @@ Go give it a spin, the design stage is free to use.
       <source url="https://share.google/6gzMAD1U347j7YUXX">Original Source</source>
     </item>
     <item>
-      <title>Revolutionizing Coding: Composer 1.5 Unleashes Enhanced Intelligence</title>
-      <link>https://bitroot.org/blog/p/31</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/31</guid>
-      <description>Improved reasoning over challenging coding tasks by scaling RL over 20x.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://cursor.com/blog/composer-1-5"&gt;https://cursor.com/blog/composer-1-5&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Tue, 10 Feb 2026 19:19:19 +0000</pubDate>
-      <category>Composer 1.5</category>
-      <category>AI Coding</category>
-      <category>Reinforcement Learning</category>
-      <enclosure url="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/blog/composer-1.5-og.png" type="image/jpeg" length="0" />
-      <source url="https://cursor.com/blog/composer-1-5">Original Source</source>
-    </item>
-    <item>
-      <title>Revolutionizing UI Animations: Introducing ReactBits</title>
+      <title>AI Expansion Showdown: Anthropic's India Foray Hits Local Roadblock</title>
       <link>https://bitroot.org/blog/p/32</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/32</guid>
-      <description>ReactBits is a game-changing animation library that offers a growing collection of smooth, modern UI animations for React projects, taking web design to the next level
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2020423330386579646"&gt;https://x.com/i/status/2020423330386579646&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Tue, 10 Feb 2026 01:55:57 +0000</pubDate>
-      <category>React</category>
-      <category>UI Animations</category>
-      <category>Web Development</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2020423255082123265/img/YD4KlnqX6y9k3Ro_.jpg" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2020423330386579646">Original Source</source>
-    </item>
-    <item>
-      <title>India's Tech Landscape Shifts: Why Deeptech and Hardware Are the Future</title>
-      <link>https://bitroot.org/blog/p/33</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/33</guid>
-      <description>India's reliance on IT service exports is no longer viable, and the country must shift its focus to deeptech and hardware to build long-term economic resilience. Zerodha founder Nithin Kamath emphasizes the need for self-sufficiency in technology to stay competitive.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms"&gt;https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Tue, 10 Feb 2026 19:23:50 +0000</pubDate>
-      <category>Deeptech</category>
-      <category>Hardware</category>
-      <category>IT Service Exports</category>
-      <category>Artificial Intelligence</category>
-      <enclosure url="https://img.etimg.com/thumb/width-1200,height-900,imgsize-18740,resizemode-75,msid-128120292/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath.jpg" type="image/jpeg" length="0" />
-      <source url="https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms">Original Source</source>
-    </item>
-    <item>
-      <title>AI Expansion Showdown: Anthropic's India Foray Hits Local Roadblock</title>
-      <link>https://bitroot.org/blog/p/34</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/34</guid>
       <description>India's Anthropic Software has taken the U.S. AI giant to court over a name dispute.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/"&gt;https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -515,23 +490,23 @@ Go give it a spin, the design stage is free to use.
       <source url="https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/">Original Source</source>
     </item>
     <item>
-      <title>Revolutionizing Video Creation: AI-Powered Vibe Editing Takes Center Stage</title>
-      <link>https://bitroot.org/blog/p/35</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/35</guid>
-      <description>Vibe Editing, a game-changing AI-powered tool, allows users to create stunning videos with just a text prompt, eliminating the need for coding and tedious editing processes. This innovative technology is set to disrupt the video creation landscape, making it more accessible to developers and non-developers alike.
+      <title>Introducing Nanobot: The Ultra-Lightweight Personal AI Assistant</title>
+      <link>https://bitroot.org/blog/p/33</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/33</guid>
+      <description>"🐈 nanobot: The Ultra-Lightweight OpenClaw". Contribute to HKUDS/nanobot development by creating an account on GitHub.
 
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2020464238880596429"&gt;https://x.com/i/status/2020464238880596429&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Tue, 10 Feb 2026 02:11:19 +0000</pubDate>
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/HKUDS/nanobot"&gt;https://github.com/HKUDS/nanobot&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 10 Feb 2026 19:24:09 +0000</pubDate>
       <category>AI</category>
-      <category>video creation</category>
-      <category>vibe editing</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2020464187043115009/img/-iRMulg3HLXQTEBY.jpg" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2020464238880596429">Original Source</source>
+      <category>Nanobot</category>
+      <category>Personal Assistant</category>
+      <enclosure url="https://opengraph.githubassets.com/860a29c3b70dd9f9266b82558c0c427fb47036deb672088e1b5f525631120a27/HKUDS/nanobot" type="image/jpeg" length="0" />
+      <source url="https://github.com/HKUDS/nanobot">Original Source</source>
     </item>
     <item>
       <title>Revolutionizing Research Visuals: Google AI's PaperBanana Framework</title>
-      <link>https://bitroot.org/blog/p/36</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/36</guid>
+      <link>https://bitroot.org/blog/p/34</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/34</guid>
       <description>Google AI Introduces PaperBanana: An Agentic Framework that Automates Publication Ready Methodology Diagrams and Statistical Plots
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/"&gt;https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -545,9 +520,23 @@ Go give it a spin, the design stage is free to use.
       <source url="https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/">Original Source</source>
     </item>
     <item>
+      <title>Revolutionizing Coding: Composer 1.5 Unleashes Enhanced Intelligence</title>
+      <link>https://bitroot.org/blog/p/35</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/35</guid>
+      <description>Improved reasoning over challenging coding tasks by scaling RL over 20x.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://cursor.com/blog/composer-1-5"&gt;https://cursor.com/blog/composer-1-5&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 10 Feb 2026 19:19:19 +0000</pubDate>
+      <category>Composer 1.5</category>
+      <category>AI Coding</category>
+      <category>Reinforcement Learning</category>
+      <enclosure url="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/blog/composer-1.5-og.png" type="image/jpeg" length="0" />
+      <source url="https://cursor.com/blog/composer-1-5">Original Source</source>
+    </item>
+    <item>
       <title>Revolutionizing Coding: GPT-5.3-Codex Now Powers GitHub Copilot</title>
-      <link>https://bitroot.org/blog/p/37</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/37</guid>
+      <link>https://bitroot.org/blog/p/36</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/36</guid>
       <description>Get ready to supercharge your coding workflow with GPT-5.3-Codex, the latest AI model now available in GitHub Copilot, bringing improved performance and capabilities to the table. This update is set to revolutionize the way developers work, making coding faster, smarter, and more efficient.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/"&gt;https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -559,33 +548,47 @@ Go give it a spin, the design stage is free to use.
       <source url="https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/">Original Source</source>
     </item>
     <item>
-      <title>Introducing Nanobot: The Ultra-Lightweight Personal AI Assistant</title>
-      <link>https://bitroot.org/blog/p/38</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/38</guid>
-      <description>"🐈 nanobot: The Ultra-Lightweight OpenClaw". Contribute to HKUDS/nanobot development by creating an account on GitHub.
+      <title>Revolutionizing UI Animations: Introducing ReactBits</title>
+      <link>https://bitroot.org/blog/p/37</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/37</guid>
+      <description>ReactBits is a game-changing animation library that offers a growing collection of smooth, modern UI animations for React projects, taking web design to the next level
 
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/HKUDS/nanobot"&gt;https://github.com/HKUDS/nanobot&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Tue, 10 Feb 2026 19:24:09 +0000</pubDate>
-      <category>AI</category>
-      <category>Nanobot</category>
-      <category>Personal Assistant</category>
-      <enclosure url="https://opengraph.githubassets.com/860a29c3b70dd9f9266b82558c0c427fb47036deb672088e1b5f525631120a27/HKUDS/nanobot" type="image/jpeg" length="0" />
-      <source url="https://github.com/HKUDS/nanobot">Original Source</source>
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2020423330386579646"&gt;https://x.com/i/status/2020423330386579646&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 10 Feb 2026 01:55:57 +0000</pubDate>
+      <category>React</category>
+      <category>UI Animations</category>
+      <category>Web Development</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2020423255082123265/img/YD4KlnqX6y9k3Ro_.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2020423330386579646">Original Source</source>
     </item>
     <item>
-      <title>Revolutionizing Data Workflows: Cortex Code Unleashes Natural Language Power</title>
+      <title>India's Tech Landscape Shifts: Why Deeptech and Hardware Are the Future</title>
+      <link>https://bitroot.org/blog/p/38</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/38</guid>
+      <description>India's reliance on IT service exports is no longer viable, and the country must shift its focus to deeptech and hardware to build long-term economic resilience. Zerodha founder Nithin Kamath emphasizes the need for self-sufficiency in technology to stay competitive.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms"&gt;https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 10 Feb 2026 19:23:50 +0000</pubDate>
+      <category>Deeptech</category>
+      <category>Hardware</category>
+      <category>IT Service Exports</category>
+      <category>Artificial Intelligence</category>
+      <enclosure url="https://img.etimg.com/thumb/width-1200,height-900,imgsize-18740,resizemode-75,msid-128120292/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath.jpg" type="image/jpeg" length="0" />
+      <source url="https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms">Original Source</source>
+    </item>
+    <item>
+      <title>Revolutionizing Video Creation: AI-Powered Vibe Editing Takes Center Stage</title>
       <link>https://bitroot.org/blog/p/39</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/39</guid>
-      <description>Cortex Code simplifies complex data workflows with natural language, making it a game-changer for developers and non-technical teams alike. This innovative tool is now generally available, offering a new way to interact with Snowflake environments.
+      <description>Vibe Editing, a game-changing AI-powered tool, allows users to create stunning videos with just a text prompt, eliminating the need for coding and tedious editing processes. This innovative technology is set to disrupt the video creation landscape, making it more accessible to developers and non-developers alike.
 
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.linkedin.com/posts/chanin-nantasenamat_watch-me-use-coco-to-build-a-streamlit-ugcPost-7424601007264833536-P64R?utm_source=social_share_send&amp;utm_medium=android_app&amp;rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&amp;utm_campaign=share_via"&gt;https://www.linkedin.com/posts/chanin-nantasenamat_watch-me-use-coco-to-build-a-streamlit-ugcPost-7424601007264833536-P64R?utm_source=social_share_send&amp;utm_medium=android_app&amp;rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&amp;utm_campaign=share_via&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Mon, 09 Feb 2026 02:47:28 +0000</pubDate>
-      <category>Cortex Code</category>
-      <category>Snowflake</category>
-      <category>Natural Language</category>
-      <category>Data Workflows</category>
-      <enclosure url="https://dms.licdn.com/playlist/vid/v2/D5605AQGc4ituv4CguA/thumbnail-with-play-button-overlay-high/B56Zwl7Sc1JoDU-/0/1770162826976?e=2147483647&amp;v=beta&amp;t=ZsRcvqdvGVm-MifIJLszrAwR4v1l_fRMpD-J2K92vFI" type="image/jpeg" length="0" />
-      <source url="https://www.linkedin.com/posts/chanin-nantasenamat_watch-me-use-coco-to-build-a-streamlit-ugcPost-7424601007264833536-P64R?utm_source=social_share_send&amp;utm_medium=android_app&amp;rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&amp;utm_campaign=share_via">Original Source</source>
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2020464238880596429"&gt;https://x.com/i/status/2020464238880596429&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 10 Feb 2026 02:11:19 +0000</pubDate>
+      <category>AI</category>
+      <category>video creation</category>
+      <category>vibe editing</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2020464187043115009/img/-iRMulg3HLXQTEBY.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2020464238880596429">Original Source</source>
     </item>
     <item>
       <title>Revolutionizing AI Development: Replicate Joins Forces with Cloudflare</title>
@@ -603,19 +606,19 @@ Go give it a spin, the design stage is free to use.
       <source url="https://replicate.com/blog/replicate-cloudflare">Original Source</source>
     </item>
     <item>
-      <title>Revolutionizing Coding: Craft Agents Now Compatible with Codex and Claude</title>
+      <title>Revolutionizing Data Workflows: Cortex Code Unleashes Natural Language Power</title>
       <link>https://bitroot.org/blog/p/41</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/41</guid>
-      <description>Craft Agents can now be used with Codex and Claude, offering a free and open-source solution for developers, and we're excited to explore the implications of this update on the coding community. This new compatibility opens up a world of possibilities for developers across various platforms, including Windows, Mac, and Linux.
+      <description>Cortex Code simplifies complex data workflows with natural language, making it a game-changer for developers and non-technical teams alike. This innovative tool is now generally available, offering a new way to interact with Snowflake environments.
 
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2020535293905101186"&gt;https://x.com/i/status/2020535293905101186&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Sun, 08 Feb 2026 18:02:41 +0000</pubDate>
-      <category>Codex</category>
-      <category>Craft Agents</category>
-      <category>Claude</category>
-      <category>Open Source</category>
-      <enclosure url="https://pbs.twimg.com/media/HApiEWXb0AAN3dO.jpg?name=orig" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2020535293905101186">Original Source</source>
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.linkedin.com/posts/chanin-nantasenamat_watch-me-use-coco-to-build-a-streamlit-ugcPost-7424601007264833536-P64R?utm_source=social_share_send&amp;utm_medium=android_app&amp;rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&amp;utm_campaign=share_via"&gt;https://www.linkedin.com/posts/chanin-nantasenamat_watch-me-use-coco-to-build-a-streamlit-ugcPost-7424601007264833536-P64R?utm_source=social_share_send&amp;utm_medium=android_app&amp;rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&amp;utm_campaign=share_via&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 09 Feb 2026 02:47:28 +0000</pubDate>
+      <category>Cortex Code</category>
+      <category>Snowflake</category>
+      <category>Natural Language</category>
+      <category>Data Workflows</category>
+      <enclosure url="https://dms.licdn.com/playlist/vid/v2/D5605AQGc4ituv4CguA/thumbnail-with-play-button-overlay-high/B56Zwl7Sc1JoDU-/0/1770162826976?e=2147483647&amp;v=beta&amp;t=ZsRcvqdvGVm-MifIJLszrAwR4v1l_fRMpD-J2K92vFI" type="image/jpeg" length="0" />
+      <source url="https://www.linkedin.com/posts/chanin-nantasenamat_watch-me-use-coco-to-build-a-streamlit-ugcPost-7424601007264833536-P64R?utm_source=social_share_send&amp;utm_medium=android_app&amp;rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&amp;utm_campaign=share_via">Original Source</source>
     </item>
     <item>
       <title>Revolutionizing WordPress Management: Claude's New Connector Unleashed</title>
@@ -647,9 +650,24 @@ Go give it a spin, the design stage is free to use.
       <source url="https://www.linkedin.com/posts/walid-boulanouar_claude-code-for-hacking-is-here-shannon-ugcPost-7425888138117566464-rWZQ?utm_source=social_share_send&amp;utm_medium=android_app&amp;rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&amp;utm_campaign=share_via">Original Source</source>
     </item>
     <item>
-      <title>Revolutionary C Compiler Built by Team of Autonomous AI Agents</title>
+      <title>Revolutionizing Coding: Craft Agents Now Compatible with Codex and Claude</title>
       <link>https://bitroot.org/blog/p/44</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/44</guid>
+      <description>Craft Agents can now be used with Codex and Claude, offering a free and open-source solution for developers, and we're excited to explore the implications of this update on the coding community. This new compatibility opens up a world of possibilities for developers across various platforms, including Windows, Mac, and Linux.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2020535293905101186"&gt;https://x.com/i/status/2020535293905101186&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sun, 08 Feb 2026 18:02:41 +0000</pubDate>
+      <category>Codex</category>
+      <category>Craft Agents</category>
+      <category>Claude</category>
+      <category>Open Source</category>
+      <enclosure url="https://pbs.twimg.com/media/HApiEWXb0AAN3dO.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2020535293905101186">Original Source</source>
+    </item>
+    <item>
+      <title>Revolutionary C Compiler Built by Team of Autonomous AI Agents</title>
+      <link>https://bitroot.org/blog/p/45</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/45</guid>
       <description>Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://share.google/4T0fJDumSQSmG5Cmo"&gt;https://share.google/4T0fJDumSQSmG5Cmo&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -661,36 +679,9 @@ Go give it a spin, the design stage is free to use.
       <source url="https://share.google/4T0fJDumSQSmG5Cmo">Original Source</source>
     </item>
     <item>
-      <title>Revolutionizing Video Creation: The Notch Prompter</title>
-      <link>https://bitroot.org/blog/p/45</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/45</guid>
-      <description>Moody is an AI-powered notch teleprompter for Mac that keeps your script right next to your camera, maintaining natural eye contact during recordings and presentations.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3"&gt;https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Fri, 06 Feb 2026 03:38:17 +0000</pubDate>
-      <category>video creation</category>
-      <category>AI</category>
-      <category>content creation</category>
-      <source url="https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3">Original Source</source>
-    </item>
-    <item>
-      <title>Unlocking Collaborative Coding: Introducing Claude Code's Agent Teams</title>
+      <title>OpenAI Unveils GPT-5.3-Codex: Revolutionizing Software Development with Autonomous AI</title>
       <link>https://bitroot.org/blog/p/46</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/46</guid>
-      <description>Coordinate multiple Claude Code instances working together as a team, with shared tasks, inter-agent messaging, and centralized management.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://code.claude.com/docs/en/agent-teams#compare-with-subagents"&gt;https://code.claude.com/docs/en/agent-teams#compare-with-subagents&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Fri, 06 Feb 2026 20:00:36 +0000</pubDate>
-      <category>Claude Code</category>
-      <category>Agent Teams</category>
-      <category>Collaborative Coding</category>
-      <enclosure url="https://claude-code.mintlify.app/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DBuild%2Bwith%2BClaude%2BCode%26appearance%3Dsystem%26title%3DOrchestrate%2Bteams%2Bof%2BClaude%2BCode%2Bsessions%26description%3DCoordinate%2Bmultiple%2BClaude%2BCode%2Binstances%2Bworking%2Btogether%2Bas%2Ba%2Bteam%252C%2Bwith%2Bshared%2Btasks%252C%2Binter-agent%2Bmessaging%252C%2Band%2Bcentralized%2Bmanagement.%26logoLight%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaude-code%252Fo69F7a6qoW9vboof%252Flogo%252Flight.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253Do69F7a6qoW9vboof%2526q%253D85%2526s%253D536eade682636e84231afce2577f9509%26logoDark%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaude-code%252Fo69F7a6qoW9vboof%252Flogo%252Fdark.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253Do69F7a6qoW9vboof%2526q%253D85%2526s%253D0766b3221061e80143e9f300733e640b%26primaryColor%3D%25230E0E0E%26lightColor%3D%2523D4A27F%26darkColor%3D%25230E0E0E%26backgroundLight%3D%2523FDFDF7%26backgroundDark%3D%252309090B&amp;w=1200&amp;q=100" type="image/jpeg" length="0" />
-      <source url="https://code.claude.com/docs/en/agent-teams#compare-with-subagents">Original Source</source>
-    </item>
-    <item>
-      <title>OpenAI Unveils GPT-5.3-Codex: Revolutionizing Software Development with Autonomous AI</title>
-      <link>https://bitroot.org/blog/p/47</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/47</guid>
       <description>OpenAI has launched GPT-5.3-Codex, its most advanced agentic coding model to date. Featuring a 25% speed increase over its predecessor, the model can autonomously manage the entire software lifecycle, from research to deployment. It notably assisted in its own development, marking a significant milestone in self-improving artificial intelligence capabilities. 📲 OpenAI GPT-5.3-Codex Launched: New AI Agentic Model Can Autonomously Build, Debug and Manage Software.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://share.google/tM36P3WSwQLtg0J7h"&gt;https://share.google/tM36P3WSwQLtg0J7h&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -704,8 +695,8 @@ Go give it a spin, the design stage is free to use.
     </item>
     <item>
       <title>Introducing Claude Opus 4.6: A Revolutionary Leap in AI Capabilities</title>
-      <link>https://bitroot.org/blog/p/48</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/48</guid>
+      <link>https://bitroot.org/blog/p/47</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/47</guid>
       <description>We’re upgrading our smartest model. Across agentic coding, computer use, tool use, search, and finance, Opus 4.6 is an industry-leading model, often by wide margin.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://share.google/uISHcJ3WNR4H6uMhP"&gt;https://share.google/uISHcJ3WNR4H6uMhP&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -717,9 +708,36 @@ Go give it a spin, the design stage is free to use.
       <source url="https://share.google/uISHcJ3WNR4H6uMhP">Original Source</source>
     </item>
     <item>
-      <title>Revolutionizing Coding: Twitter's Claude Code Update</title>
+      <title>Unlocking Collaborative Coding: Introducing Claude Code's Agent Teams</title>
+      <link>https://bitroot.org/blog/p/48</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/48</guid>
+      <description>Coordinate multiple Claude Code instances working together as a team, with shared tasks, inter-agent messaging, and centralized management.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://code.claude.com/docs/en/agent-teams#compare-with-subagents"&gt;https://code.claude.com/docs/en/agent-teams#compare-with-subagents&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 06 Feb 2026 20:00:36 +0000</pubDate>
+      <category>Claude Code</category>
+      <category>Agent Teams</category>
+      <category>Collaborative Coding</category>
+      <enclosure url="https://claude-code.mintlify.app/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DBuild%2Bwith%2BClaude%2BCode%26appearance%3Dsystem%26title%3DOrchestrate%2Bteams%2Bof%2BClaude%2BCode%2Bsessions%26description%3DCoordinate%2Bmultiple%2BClaude%2BCode%2Binstances%2Bworking%2Btogether%2Bas%2Ba%2Bteam%252C%2Bwith%2Bshared%2Btasks%252C%2Binter-agent%2Bmessaging%252C%2Band%2Bcentralized%2Bmanagement.%26logoLight%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaude-code%252Fo69F7a6qoW9vboof%252Flogo%252Flight.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253Do69F7a6qoW9vboof%2526q%253D85%2526s%253D536eade682636e84231afce2577f9509%26logoDark%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaude-code%252Fo69F7a6qoW9vboof%252Flogo%252Fdark.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253Do69F7a6qoW9vboof%2526q%253D85%2526s%253D0766b3221061e80143e9f300733e640b%26primaryColor%3D%25230E0E0E%26lightColor%3D%2523D4A27F%26darkColor%3D%25230E0E0E%26backgroundLight%3D%2523FDFDF7%26backgroundDark%3D%252309090B&amp;w=1200&amp;q=100" type="image/jpeg" length="0" />
+      <source url="https://code.claude.com/docs/en/agent-teams#compare-with-subagents">Original Source</source>
+    </item>
+    <item>
+      <title>Revolutionizing Video Creation: The Notch Prompter</title>
       <link>https://bitroot.org/blog/p/49</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/49</guid>
+      <description>Moody is an AI-powered notch teleprompter for Mac that keeps your script right next to your camera, maintaining natural eye contact during recordings and presentations.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3"&gt;https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 06 Feb 2026 03:38:17 +0000</pubDate>
+      <category>video creation</category>
+      <category>AI</category>
+      <category>content creation</category>
+      <source url="https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3">Original Source</source>
+    </item>
+    <item>
+      <title>Revolutionizing Coding: Twitter's Claude Code Update</title>
+      <link>https://bitroot.org/blog/p/50</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/50</guid>
       <description>Twitter's Claude Code now supports agent teams, enabling parallel work and coordination, and we're excited to explore its potential. This update is a game-changer for developers, allowing for faster and more efficient coding.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/lydiahallie/status/2019469032844587505?s=20"&gt;https://x.com/lydiahallie/status/2019469032844587505?s=20&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -729,20 +747,6 @@ Go give it a spin, the design stage is free to use.
       <category>Coding</category>
       <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2019467383505924096/img/y8PJFj92TQdi95xR.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/lydiahallie/status/2019469032844587505?s=20">Original Source</source>
-    </item>
-    <item>
-      <title>Revolutionizing AI-Powered Development with Vercel's Skills.sh</title>
-      <link>https://bitroot.org/blog/p/50</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/50</guid>
-      <description>Vercel's skills.sh is a game-changer for developers, offering a platform to build, train, and deploy AI models with ease. This update is a must-know for tech enthusiasts looking to leverage AI in their projects.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://app.inference.sh/blog/skills/agent-skills-overview"&gt;https://app.inference.sh/blog/skills/agent-skills-overview&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Thu, 05 Feb 2026 18:31:47 +0000</pubDate>
-      <category>Vercel</category>
-      <category>Skills.sh</category>
-      <category>AI-powered development</category>
-      <enclosure url="https://cloud.inference.sh/web/assets/og-image.png" type="image/jpeg" length="0" />
-      <source url="https://app.inference.sh/blog/skills/agent-skills-overview">Original Source</source>
     </item>
     <item>
       <title>Revolutionizing Coding Insights: Twitter's Claude Code Update</title>
@@ -771,6 +775,20 @@ Go give it a spin, the design stage is free to use.
       <category>AI</category>
       <enclosure url="https://mistral.ai/img/mistral-cover.png" type="image/jpeg" length="0" />
       <source url="https://mistral.ai/news/voxtral-transcribe-2">Original Source</source>
+    </item>
+    <item>
+      <title>Revolutionizing AI-Powered Development with Vercel's Skills.sh</title>
+      <link>https://bitroot.org/blog/p/53</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/53</guid>
+      <description>Vercel's skills.sh is a game-changer for developers, offering a platform to build, train, and deploy AI models with ease. This update is a must-know for tech enthusiasts looking to leverage AI in their projects.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://app.inference.sh/blog/skills/agent-skills-overview"&gt;https://app.inference.sh/blog/skills/agent-skills-overview&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 05 Feb 2026 18:31:47 +0000</pubDate>
+      <category>Vercel</category>
+      <category>Skills.sh</category>
+      <category>AI-powered development</category>
+      <enclosure url="https://cloud.inference.sh/web/assets/og-image.png" type="image/jpeg" length="0" />
+      <source url="https://app.inference.sh/blog/skills/agent-skills-overview">Original Source</source>
     </item>
   </channel>
 </rss>
