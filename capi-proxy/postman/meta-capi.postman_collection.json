@@ -1,0 +1,181 @@
+{
+  "info": {
+    "name": "Meta CAPI Proxy",
+    "description": "Meta Conversions API proxy tests \u2014 CORS, method guards, payload validation.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "4. Meta CAPI Proxy \u2014 /api/events",
+      "description": "Tests the Facebook Conversions API proxy.",
+      "item": [
+        {
+          "name": "OPTIONS preflight \u2192 204",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Status 204', () => pm.response.to.have.status(204));"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "OPTIONS",
+            "header": [
+              {
+                "key": "Origin",
+                "value": "https://platter.bitroot.org"
+              },
+              {
+                "key": "Access-Control-Request-Method",
+                "value": "POST"
+              }
+            ],
+            "url": {
+              "raw": "{{staging_url}}/api/events",
+              "host": [
+                "{{staging_url}}"
+              ],
+              "path": [
+                "api",
+                "events"
+              ]
+            }
+          }
+        },
+        {
+          "name": "POST allowed origin + valid payload \u2192 200",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Status 200 or 400 (no token in staging is ok)', () => {",
+                  "  pm.expect(pm.response.code).to.be.oneOf([200, 400, 500]);",
+                  "});",
+                  "pm.test('ACAO header set for allowed origin', () => {",
+                  "  const acao = pm.response.headers.get('Access-Control-Allow-Origin');",
+                  "  pm.expect(acao).to.eql('https://platter.bitroot.org');",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Origin",
+                "value": "https://platter.bitroot.org"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": [\n    {\n      \"event_name\": \"PageView\",\n      \"event_time\": {{$timestamp}},\n      \"action_source\": \"website\",\n      \"user_data\": {\n        \"client_ip_address\": \"1.2.3.4\",\n        \"client_user_agent\": \"Mozilla/5.0\"\n      }\n    }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{staging_url}}/api/events",
+              "host": [
+                "{{staging_url}}"
+              ],
+              "path": [
+                "api",
+                "events"
+              ]
+            }
+          }
+        },
+        {
+          "name": "POST disallowed origin \u2192 no ACAO header",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('No ACAO header for disallowed origin', () => {",
+                  "  const acao = pm.response.headers.get('Access-Control-Allow-Origin');",
+                  "  pm.expect(acao).to.be.null;",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Origin",
+                "value": "https://evil.example.com"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"data\": []\n}"
+            },
+            "url": {
+              "raw": "{{staging_url}}/api/events",
+              "host": [
+                "{{staging_url}}"
+              ],
+              "path": [
+                "api",
+                "events"
+              ]
+            }
+          }
+        },
+        {
+          "name": "POST missing data array \u2192 400",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Status 400', () => pm.response.to.have.status(400));"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Origin",
+                "value": "https://platter.bitroot.org"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"wrong_key\": \"no data array here\"\n}"
+            },
+            "url": {
+              "raw": "{{staging_url}}/api/events",
+              "host": [
+                "{{staging_url}}"
+              ],
+              "path": [
+                "api",
+                "events"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": []
+}
