@@ -5,7 +5,7 @@
  * Usage:
  *   RAZORPAY_WEBHOOK_SECRET_TEST=xxx \
  *   PERKS_PRIVATE_API_KEY=xxx \
- *   PAYMENTS_URL=https://capi-proxy.vercel.app \
+ *   PAYMENTS_URL=https://api.bitroot.org \
  *   TEST_EMAIL=test+platter@yourdomain.com \
  *   node test/test-payments.mjs
  *
