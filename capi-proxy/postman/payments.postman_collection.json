@@ -108,7 +108,7 @@
     },
     {
       "name": "2. Staging Webhook \u2014 staging-provision-perks",
-      "description": "Tests the /api/staging-provision-perks endpoint. Uses HMAC SHA256 (pre-request script) to sign payloads with RAZORPAY_WEBHOOK_SECRET_TEST.",
+      "description": "Tests the /api/payments/staging-provision-perks endpoint. Uses HMAC SHA256 (pre-request script) to sign payloads with RAZORPAY_WEBHOOK_SECRET_TEST.",
       "item": [
         {
           "name": "GET \u2192 405 (method guard)",
@@ -125,7 +125,7 @@
           "request": {
             "method": "GET",
             "url": {
-              "raw": "{{staging_url}}/api/staging-provision-perks",
+              "raw": "{{staging_url}}/api/payments/staging-provision-perks",
               "host": [
                 "{{staging_url}}"
               ],
@@ -165,7 +165,7 @@
               "raw": "{\n  \"event\": \"payment.captured\",\n  \"payload\": {\n    \"payment\": {\n      \"entity\": {\n        \"id\": \"pay_test_nosig\",\n        \"email\": \"{{test_email}}\",\n        \"amount\": 18000,\n        \"currency\": \"INR\",\n        \"status\": \"captured\"\n      }\n    }\n  }\n}"
             },
             "url": {
-              "raw": "{{staging_url}}/api/staging-provision-perks",
+              "raw": "{{staging_url}}/api/payments/staging-provision-perks",
               "host": [
                 "{{staging_url}}"
               ],
@@ -206,7 +206,7 @@
               "raw": "{\n  \"event\": \"payment.captured\",\n  \"payload\": {\n    \"payment\": {\n      \"entity\": {\n        \"id\": \"pay_test_badsig\",\n        \"email\": \"{{test_email}}\",\n        \"amount\": 18000,\n        \"currency\": \"INR\",\n        \"status\": \"captured\"\n      }\n    }\n  }\n}"
             },
             "url": {
-              "raw": "{{staging_url}}/api/staging-provision-perks",
+              "raw": "{{staging_url}}/api/payments/staging-provision-perks",
               "host": [
                 "{{staging_url}}"
               ],
@@ -262,7 +262,7 @@
               "raw": "{{_computed_body}}"
             },
             "url": {
-              "raw": "{{staging_url}}/api/staging-provision-perks",
+              "raw": "{{staging_url}}/api/payments/staging-provision-perks",
               "host": [
                 "{{staging_url}}"
               ],
@@ -342,7 +342,7 @@
               "raw": "{{_computed_body}}"
             },
             "url": {
-              "raw": "{{staging_url}}/api/staging-provision-perks",
+              "raw": "{{staging_url}}/api/payments/staging-provision-perks",
               "host": [
                 "{{staging_url}}"
               ],
@@ -402,7 +402,7 @@
               "raw": "{{_computed_body}}"
             },
             "url": {
-              "raw": "{{staging_url}}/api/staging-provision-perks",
+              "raw": "{{staging_url}}/api/payments/staging-provision-perks",
               "host": [
                 "{{staging_url}}"
               ],
@@ -448,7 +448,7 @@
               "raw": "{\n  \"event\": \"payment.captured\",\n  \"payload\": {}\n}"
             },
             "url": {
-              "raw": "{{production_url}}/api/provision-perks",
+              "raw": "{{production_url}}/api/payments/provision-perks",
               "host": [
                 "{{production_url}}"
               ],
@@ -519,7 +519,7 @@
               "raw": "{{_computed_body}}"
             },
             "url": {
-              "raw": "{{production_url}}/api/provision-perks",
+              "raw": "{{production_url}}/api/payments/provision-perks",
               "host": [
                 "{{production_url}}"
               ],

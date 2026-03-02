@@ -1,6 +1,6 @@
 /**
  * Meta Conversions API Proxy — Test Suite
- * Tests the /api/events proxy that forwards browser events to Meta CAPI.
+ * Tests the /api/meta/events proxy that forwards browser events to Meta CAPI.
  *
  * Usage:
  *   CAPI_URL=https://capi-proxy.vercel.app \
@@ -55,19 +55,19 @@ async function post(url, body, headers = {}) {
 
 // ── Suite: Meta CAPI Proxy ────────────────────────────────────────────────────
 async function suite_metaCapi() {
-  log(head(`Meta CAPI Proxy — ${CAPI_URL}/api/events`));
+  log(head(`Meta CAPI Proxy — ${CAPI_URL}/api/meta/events`));
 
   await test('Env: CAPI_URL is set', async () => {
     assert(CAPI_URL, 'Missing env var CAPI_URL');
   });
 
   await test('GET → 405 Method Not Allowed', async () => {
-    const res = await fetch(`${CAPI_URL}/api/events`);
+    const res = await fetch(`${CAPI_URL}/api/meta/events`);
     assert(res.status === 405, `Expected 405, got ${res.status}`);
   });
 
   await test('OPTIONS preflight (allowed origin) → 204', async () => {
-    const res = await fetch(`${CAPI_URL}/api/events`, {
+    const res = await fetch(`${CAPI_URL}/api/meta/events`, {
       method: 'OPTIONS',
       headers: {
         Origin: 'https://platter.bitroot.org',
@@ -79,7 +79,7 @@ async function suite_metaCapi() {
 
   await test('Disallowed origin → no Access-Control-Allow-Origin header', async () => {
     const { headers } = await post(
-      `${CAPI_URL}/api/events`,
+      `${CAPI_URL}/api/meta/events`,
       { data: [{ event_name: 'PageView', event_time: Math.floor(Date.now() / 1000), action_source: 'website', user_data: {} }] },
       { Origin: 'https://evil.example.com' }
     );
@@ -89,7 +89,7 @@ async function suite_metaCapi() {
 
   await test('POST missing data array → 400', async () => {
     const { status } = await post(
-      `${CAPI_URL}/api/events`,
+      `${CAPI_URL}/api/meta/events`,
       { not_data: 'wrong' },
       { Origin: 'https://platter.bitroot.org' }
     );
