@@ -2451,9 +2451,9 @@
 
     .p-calc__savings-year {
       font-family: var(--font-mono);
-      font-size: 9px;
-      color: rgba(255,255,255,0.2);
-      margin-top: 10px;
+      font-size: 10px;
+      color: rgba(255,255,255,0.35);
+      margin-top: 8px;
     }
 
     /* CTA bar at bottom of results */
@@ -2866,7 +2866,7 @@
           </div>
           <div class="p-calc__divider">→</div>
           <div class="p-calc__savings-col">
-            <div class="p-calc__savings-label">You Save</div>
+            <div class="p-calc__savings-label">You Save / yr</div>
             <div class="p-calc__savings-amt" id="calcSavings">$0</div>
             <div class="p-calc__savings-year" id="calcSavingsYear">&nbsp;</div>
           </div>
@@ -3158,8 +3158,8 @@
         if (retail > 0) withoutEl.classList.add('has-value'); else withoutEl.classList.remove('has-value');
         animateTo(withoutEl, retail, '$');
         animateTo(withEl,    withDeal, '$');
-        animateTo(savingsEl, savings, '$');
-        yearEl.textContent = savings > 0 ? '$' + (savings * 12) + ' saved per year' : '\u00a0';
+        animateTo(savingsEl, savings * 12, '$');
+        yearEl.textContent = savings > 0 ? '$' + savings + ' /mo' : '\u00a0';
         hintEl.innerHTML = checked.size === 0
           ? '\u2190 Select the tools you use to calculate your savings'
           : '<strong>' + checked.size + ' tool' + (checked.size !== 1 ? 's' : '') + ' selected</strong> \u2014 Platter unlocks deals on all of these';
