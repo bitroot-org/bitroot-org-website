@@ -1,17 +1,16 @@
 {
   "info": {
-    "name": "Platter Staging — Full API Suite",
-    "description": "End-to-end tests for the Platter payment→provision flow.\n\nBefore running:\n1. Import the companion environment file (platter-staging.postman_environment.json)\n2. Fill in all {{...}} variables in that environment\n3. Run the collection in order — each folder is one layer of the stack",
+    "name": "Platter \u2014 Payments & Perks Provisioning",
+    "description": "Razorpay webhook \u2192 joinsecret.com provisioning flow. Includes direct Secret API tests and staging/production webhook endpoint tests.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
-  "variable": [],
   "item": [
     {
       "name": "1. Secret API (joinsecret.com)",
       "description": "Tests the perks provisioning API directly. Run these first to confirm your API key is valid before testing the webhook handler.",
       "item": [
         {
-          "name": "Auth — Get JWT",
+          "name": "Auth \u2014 Get JWT",
           "event": [
             {
               "listen": "test",
@@ -31,13 +30,24 @@
           "request": {
             "method": "POST",
             "header": [
-              { "key": "Authorization", "value": "Bearer {{perks_private_api_key}}" }
+              {
+                "key": "Authorization",
+                "value": "Bearer {{perks_private_api_key}}"
+              }
             ],
             "url": {
               "raw": "https://www.joinsecret.com/api/v1/authentications",
               "protocol": "https",
-              "host": ["www", "joinsecret", "com"],
-              "path": ["api", "v1", "authentications"]
+              "host": [
+                "www",
+                "joinsecret",
+                "com"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "authentications"
+              ]
             },
             "description": "Exchanges the PERKS_PRIVATE_API_KEY for a short-lived JWT. The JWT is automatically saved to {{secret_jwt}} for use in the next request."
           }
@@ -64,8 +74,14 @@
           "request": {
             "method": "POST",
             "header": [
-              { "key": "Authorization", "value": "Bearer {{secret_jwt}}" },
-              { "key": "Content-Type", "value": "application/json" }
+              {
+                "key": "Authorization",
+                "value": "Bearer {{secret_jwt}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
             ],
             "body": {
               "mode": "raw",
@@ -74,20 +90,28 @@
             "url": {
               "raw": "https://www.joinsecret.com/api/v1/users",
               "protocol": "https",
-              "host": ["www", "joinsecret", "com"],
-              "path": ["api", "v1", "users"]
+              "host": [
+                "www",
+                "joinsecret",
+                "com"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users"
+              ]
             },
-            "description": "Creates (or finds existing) user on the perks portal. This is idempotent — safe to run multiple times with the same email."
+            "description": "Creates (or finds existing) user on the perks portal. This is idempotent \u2014 safe to run multiple times with the same email."
           }
         }
       ]
     },
     {
-      "name": "2. Staging Webhook — staging-provision-perks",
+      "name": "2. Staging Webhook \u2014 staging-provision-perks",
       "description": "Tests the /api/staging-provision-perks endpoint. Uses HMAC SHA256 (pre-request script) to sign payloads with RAZORPAY_WEBHOOK_SECRET_TEST.",
       "item": [
         {
-          "name": "GET → 405 (method guard)",
+          "name": "GET \u2192 405 (method guard)",
           "event": [
             {
               "listen": "test",
@@ -102,13 +126,18 @@
             "method": "GET",
             "url": {
               "raw": "{{staging_url}}/api/staging-provision-perks",
-              "host": ["{{staging_url}}"],
-              "path": ["api", "staging-provision-perks"]
+              "host": [
+                "{{staging_url}}"
+              ],
+              "path": [
+                "api",
+                "staging-provision-perks"
+              ]
             }
           }
         },
         {
-          "name": "POST no signature → 400",
+          "name": "POST no signature \u2192 400",
           "event": [
             {
               "listen": "test",
@@ -126,7 +155,10 @@
           "request": {
             "method": "POST",
             "header": [
-              { "key": "Content-Type", "value": "application/json" }
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
             ],
             "body": {
               "mode": "raw",
@@ -134,14 +166,19 @@
             },
             "url": {
               "raw": "{{staging_url}}/api/staging-provision-perks",
-              "host": ["{{staging_url}}"],
-              "path": ["api", "staging-provision-perks"]
+              "host": [
+                "{{staging_url}}"
+              ],
+              "path": [
+                "api",
+                "staging-provision-perks"
+              ]
             },
-            "description": "No x-razorpay-signature header — should be rejected."
+            "description": "No x-razorpay-signature header \u2014 should be rejected."
           }
         },
         {
-          "name": "POST wrong signature → 400",
+          "name": "POST wrong signature \u2192 400",
           "event": [
             {
               "listen": "test",
@@ -155,8 +192,14 @@
           "request": {
             "method": "POST",
             "header": [
-              { "key": "Content-Type", "value": "application/json" },
-              { "key": "x-razorpay-signature", "value": "deadbeefdeadbeefdeadbeef" }
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-razorpay-signature",
+                "value": "deadbeefdeadbeefdeadbeef"
+              }
             ],
             "body": {
               "mode": "raw",
@@ -164,13 +207,18 @@
             },
             "url": {
               "raw": "{{staging_url}}/api/staging-provision-perks",
-              "host": ["{{staging_url}}"],
-              "path": ["api", "staging-provision-perks"]
+              "host": [
+                "{{staging_url}}"
+              ],
+              "path": [
+                "api",
+                "staging-provision-perks"
+              ]
             }
           }
         },
         {
-          "name": "POST non-payment event (correct sig) → 200 ignored",
+          "name": "POST non-payment event (correct sig) \u2192 200 ignored",
           "event": [
             {
               "listen": "prerequest",
@@ -200,8 +248,14 @@
           "request": {
             "method": "POST",
             "header": [
-              { "key": "Content-Type", "value": "application/json" },
-              { "key": "x-razorpay-signature", "value": "{{_computed_sig}}" }
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-razorpay-signature",
+                "value": "{{_computed_sig}}"
+              }
             ],
             "body": {
               "mode": "raw",
@@ -209,14 +263,19 @@
             },
             "url": {
               "raw": "{{staging_url}}/api/staging-provision-perks",
-              "host": ["{{staging_url}}"],
-              "path": ["api", "staging-provision-perks"]
+              "host": [
+                "{{staging_url}}"
+              ],
+              "path": [
+                "api",
+                "staging-provision-perks"
+              ]
             },
             "description": "Webhook for an event type the handler doesn't care about. Should return 200 with status=ignored."
           }
         },
         {
-          "name": "POST payment.captured (correct sig) → 200 provisioned ✅",
+          "name": "POST payment.captured (correct sig) \u2192 200 provisioned \u2705",
           "event": [
             {
               "listen": "prerequest",
@@ -269,8 +328,14 @@
           "request": {
             "method": "POST",
             "header": [
-              { "key": "Content-Type", "value": "application/json" },
-              { "key": "x-razorpay-signature", "value": "{{_computed_sig}}" }
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-razorpay-signature",
+                "value": "{{_computed_sig}}"
+              }
             ],
             "body": {
               "mode": "raw",
@@ -278,14 +343,19 @@
             },
             "url": {
               "raw": "{{staging_url}}/api/staging-provision-perks",
-              "host": ["{{staging_url}}"],
-              "path": ["api", "staging-provision-perks"]
+              "host": [
+                "{{staging_url}}"
+              ],
+              "path": [
+                "api",
+                "staging-provision-perks"
+              ]
             },
-            "description": "THE KEY TEST — simulates a full Razorpay payment.captured webhook with a correctly computed HMAC signature. Should auth with Secret API and provision the test user."
+            "description": "THE KEY TEST \u2014 simulates a full Razorpay payment.captured webhook with a correctly computed HMAC signature. Should auth with Secret API and provision the test user."
           }
         },
         {
-          "name": "POST payment.captured missing email → 400",
+          "name": "POST payment.captured missing email \u2192 400",
           "event": [
             {
               "listen": "prerequest",
@@ -318,8 +388,14 @@
           "request": {
             "method": "POST",
             "header": [
-              { "key": "Content-Type", "value": "application/json" },
-              { "key": "x-razorpay-signature", "value": "{{_computed_sig}}" }
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-razorpay-signature",
+                "value": "{{_computed_sig}}"
+              }
             ],
             "body": {
               "mode": "raw",
@@ -327,19 +403,24 @@
             },
             "url": {
               "raw": "{{staging_url}}/api/staging-provision-perks",
-              "host": ["{{staging_url}}"],
-              "path": ["api", "staging-provision-perks"]
+              "host": [
+                "{{staging_url}}"
+              ],
+              "path": [
+                "api",
+                "staging-provision-perks"
+              ]
             }
           }
         }
       ]
     },
     {
-      "name": "3. Production Webhook — provision-perks",
-      "description": "Same tests against the production endpoint. Uses RAZORPAY_WEBHOOK_SECRET (live). ⚠️ The end-to-end test here will provision a real user.",
+      "name": "3. Production Webhook \u2014 provision-perks",
+      "description": "Same tests against the production endpoint. Uses RAZORPAY_WEBHOOK_SECRET (live). \u26a0\ufe0f The end-to-end test here will provision a real user.",
       "item": [
         {
-          "name": "POST wrong signature → 400",
+          "name": "POST wrong signature \u2192 400",
           "event": [
             {
               "listen": "test",
@@ -353,8 +434,14 @@
           "request": {
             "method": "POST",
             "header": [
-              { "key": "Content-Type", "value": "application/json" },
-              { "key": "x-razorpay-signature", "value": "deadbeef" }
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-razorpay-signature",
+                "value": "deadbeef"
+              }
             ],
             "body": {
               "mode": "raw",
@@ -362,13 +449,18 @@
             },
             "url": {
               "raw": "{{production_url}}/api/provision-perks",
-              "host": ["{{production_url}}"],
-              "path": ["api", "provision-perks"]
+              "host": [
+                "{{production_url}}"
+              ],
+              "path": [
+                "api",
+                "provision-perks"
+              ]
             }
           }
         },
         {
-          "name": "POST payment.captured (correct LIVE sig) → 200 provisioned",
+          "name": "POST payment.captured (correct LIVE sig) \u2192 200 provisioned",
           "event": [
             {
               "listen": "prerequest",
@@ -413,8 +505,14 @@
           "request": {
             "method": "POST",
             "header": [
-              { "key": "Content-Type", "value": "application/json" },
-              { "key": "x-razorpay-signature", "value": "{{_computed_sig}}" }
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "x-razorpay-signature",
+                "value": "{{_computed_sig}}"
+              }
             ],
             "body": {
               "mode": "raw",
@@ -422,140 +520,19 @@
             },
             "url": {
               "raw": "{{production_url}}/api/provision-perks",
-              "host": ["{{production_url}}"],
-              "path": ["api", "provision-perks"]
+              "host": [
+                "{{production_url}}"
+              ],
+              "path": [
+                "api",
+                "provision-perks"
+              ]
             },
-            "description": "⚠️ Uses LIVE webhook secret. Will actually provision the test_email on joinsecret.com."
-          }
-        }
-      ]
-    },
-    {
-      "name": "4. Meta CAPI Proxy — /api/events",
-      "description": "Tests the Facebook Conversions API proxy.",
-      "item": [
-        {
-          "name": "OPTIONS preflight → 204",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "exec": [
-                  "pm.test('Status 204', () => pm.response.to.have.status(204));"
-                ]
-              }
-            }
-          ],
-          "request": {
-            "method": "OPTIONS",
-            "header": [
-              { "key": "Origin", "value": "https://platter.bitroot.org" },
-              { "key": "Access-Control-Request-Method", "value": "POST" }
-            ],
-            "url": {
-              "raw": "{{staging_url}}/api/events",
-              "host": ["{{staging_url}}"],
-              "path": ["api", "events"]
-            }
-          }
-        },
-        {
-          "name": "POST allowed origin + valid payload → 200",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "exec": [
-                  "pm.test('Status 200 or 400 (no token in staging is ok)', () => {",
-                  "  pm.expect(pm.response.code).to.be.oneOf([200, 400, 500]);",
-                  "});",
-                  "pm.test('ACAO header set for allowed origin', () => {",
-                  "  const acao = pm.response.headers.get('Access-Control-Allow-Origin');",
-                  "  pm.expect(acao).to.eql('https://platter.bitroot.org');",
-                  "});"
-                ]
-              }
-            }
-          ],
-          "request": {
-            "method": "POST",
-            "header": [
-              { "key": "Content-Type", "value": "application/json" },
-              { "key": "Origin", "value": "https://platter.bitroot.org" }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n  \"data\": [\n    {\n      \"event_name\": \"PageView\",\n      \"event_time\": {{$timestamp}},\n      \"action_source\": \"website\",\n      \"user_data\": {\n        \"client_ip_address\": \"1.2.3.4\",\n        \"client_user_agent\": \"Mozilla/5.0\"\n      }\n    }\n  ]\n}"
-            },
-            "url": {
-              "raw": "{{staging_url}}/api/events",
-              "host": ["{{staging_url}}"],
-              "path": ["api", "events"]
-            }
-          }
-        },
-        {
-          "name": "POST disallowed origin → no ACAO header",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "exec": [
-                  "pm.test('No ACAO header for disallowed origin', () => {",
-                  "  const acao = pm.response.headers.get('Access-Control-Allow-Origin');",
-                  "  pm.expect(acao).to.be.null;",
-                  "});"
-                ]
-              }
-            }
-          ],
-          "request": {
-            "method": "POST",
-            "header": [
-              { "key": "Content-Type", "value": "application/json" },
-              { "key": "Origin", "value": "https://evil.example.com" }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n  \"data\": []\n}"
-            },
-            "url": {
-              "raw": "{{staging_url}}/api/events",
-              "host": ["{{staging_url}}"],
-              "path": ["api", "events"]
-            }
-          }
-        },
-        {
-          "name": "POST missing data array → 400",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "exec": [
-                  "pm.test('Status 400', () => pm.response.to.have.status(400));"
-                ]
-              }
-            }
-          ],
-          "request": {
-            "method": "POST",
-            "header": [
-              { "key": "Content-Type", "value": "application/json" },
-              { "key": "Origin", "value": "https://platter.bitroot.org" }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n  \"wrong_key\": \"no data array here\"\n}"
-            },
-            "url": {
-              "raw": "{{staging_url}}/api/events",
-              "host": ["{{staging_url}}"],
-              "path": ["api", "events"]
-            }
+            "description": "\u26a0\ufe0f Uses LIVE webhook secret. Will actually provision the test_email on joinsecret.com."
           }
         }
       ]
     }
-  ]
+  ],
+  "variable": []
 }

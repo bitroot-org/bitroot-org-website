@@ -1,13 +1,13 @@
 /**
- * Platter Staging Test Suite
- * Tests each layer of the payment→provision flow independently.
+ * Platter — Payments & Perks Provisioning Test Suite
+ * Tests the Razorpay webhook → joinsecret.com provisioning flow.
  *
  * Usage:
  *   RAZORPAY_WEBHOOK_SECRET_TEST=xxx \
  *   PERKS_PRIVATE_API_KEY=xxx \
- *   STAGING_URL=https://your-vercel-staging-url.vercel.app \
+ *   PAYMENTS_URL=https://capi-proxy.vercel.app \
  *   TEST_EMAIL=test+platter@yourdomain.com \
- *   node test/test-staging.mjs
+ *   node test/test-payments.mjs
  *
  * Exit code 0 = all passed. Exit code 1 = failures.
  */
@@ -15,19 +15,19 @@
 import { createHmac } from 'crypto';
 
 // ── Config ────────────────────────────────────────────────────────────────────
-const STAGING_URL        = (process.env.STAGING_URL || '').replace(/\/$/, '');
-const WEBHOOK_SECRET     = process.env.RAZORPAY_WEBHOOK_SECRET_TEST;
-const PERKS_API_KEY      = process.env.PERKS_PRIVATE_API_KEY;
-const TEST_EMAIL         = process.env.TEST_EMAIL || 'test+platter-ci@bitroot.org';
-const SECRET_API_BASE    = 'https://www.joinsecret.com/api';
+const PAYMENTS_URL    = (process.env.PAYMENTS_URL || '').replace(/\/$/, '');
+const WEBHOOK_SECRET  = process.env.RAZORPAY_WEBHOOK_SECRET_TEST;
+const PERKS_API_KEY   = process.env.PERKS_PRIVATE_API_KEY;
+const TEST_EMAIL      = process.env.TEST_EMAIL || 'test+platter-ci@bitroot.org';
+const SECRET_API_BASE = 'https://www.joinsecret.com/api';
 
 // ── Console helpers ───────────────────────────────────────────────────────────
-const C = { green: '\x1b[32m', red: '\x1b[31m', yellow: '\x1b[33m', dim: '\x1b[2m', bold: '\x1b[1m', reset: '\x1b[0m' };
-const log   = (...a) => console.log(...a);
-const ok    = (s) => `${C.green}✓${C.reset} ${s}`;
-const fail  = (s) => `${C.red}✗${C.reset} ${s}`;
-const info  = (s) => `  ${C.dim}→ ${s}${C.reset}`;
-const head  = (s) => `\n${C.bold}${s}${C.reset}`;
+const C = { green: '\x1b[32m', red: '\x1b[31m', dim: '\x1b[2m', bold: '\x1b[1m', reset: '\x1b[0m' };
+const log  = (...a) => console.log(...a);
+const ok   = (s) => `${C.green}✓${C.reset} ${s}`;
+const fail = (s) => `${C.red}✗${C.reset} ${s}`;
+const info = (s) => `  ${C.dim}→ ${s}${C.reset}`;
+const head = (s) => `\n${C.bold}${s}${C.reset}`;
 
 let passed = 0;
 let failed = 0;
@@ -82,7 +82,7 @@ async function post(url, body, headers = {}) {
   });
   let json = null;
   try { json = await res.json(); } catch (_) {}
-  return { status: res.status, headers: res.headers, json };
+  return { status: res.status, json };
 }
 
 // ── Suite 1: Secret API (joinsecret.com) ─────────────────────────────────────
@@ -110,7 +110,7 @@ async function suite_secretApi() {
     log(info(`JWT received (${jwt.slice(0, 20)}...)`));
   });
 
-  await test('POST /v1/users → 200 with email (idempotent)', async () => {
+  await test('POST /v1/users → 2xx with email (idempotent)', async () => {
     assert(jwt, 'Cannot run — auth step failed');
     const { status, json } = await post(
       `${SECRET_API_BASE}/v1/users`,
@@ -121,16 +121,14 @@ async function suite_secretApi() {
     assert(json?.email, `No email in response: ${JSON.stringify(json)}`);
     log(info(`email=${json.email}  already_exists=${json.already_exists}`));
   });
-
-  return jwt;
 }
 
-// ── Suite 2: Webhook Endpoint ─────────────────────────────────────────────────
+// ── Suite 2: Razorpay Webhook → Provision Perks ───────────────────────────────
 async function suite_webhookEndpoint() {
-  log(head(`2. Staging Webhook — ${STAGING_URL}/api/staging-provision-perks`));
+  log(head(`2. Razorpay Webhook → ${PAYMENTS_URL}/api/staging-provision-perks`));
 
-  await test('Env: STAGING_URL is set', async () => {
-    assert(STAGING_URL, 'Missing env var STAGING_URL');
+  await test('Env: PAYMENTS_URL is set', async () => {
+    assert(PAYMENTS_URL, 'Missing env var PAYMENTS_URL');
   });
 
   await test('Env: RAZORPAY_WEBHOOK_SECRET_TEST is set', async () => {
@@ -138,24 +136,24 @@ async function suite_webhookEndpoint() {
   });
 
   await test('GET → 405 Method Not Allowed', async () => {
-    const res = await fetch(`${STAGING_URL}/api/staging-provision-perks`);
+    const res = await fetch(`${PAYMENTS_URL}/api/staging-provision-perks`);
     assert(res.status === 405, `Expected 405, got ${res.status}`);
   });
 
   await test('POST with no signature header → 400', async () => {
     const payload = makePaymentEvent(TEST_EMAIL);
-    const { status, json } = await post(`${STAGING_URL}/api/staging-provision-perks`, payload);
+    const { status, json } = await post(`${PAYMENTS_URL}/api/staging-provision-perks`, payload);
     assert(status === 400, `Expected 400, got ${status}: ${JSON.stringify(json)}`);
     log(info(json?.error || ''));
   });
 
   await test('POST with wrong signature → 400', async () => {
     const payload = makePaymentEvent(TEST_EMAIL);
-    const { status, json } = await post(
-      `${STAGING_URL}/api/staging-provision-perks`, payload,
+    const { status } = await post(
+      `${PAYMENTS_URL}/api/staging-provision-perks`, payload,
       { 'x-razorpay-signature': 'deadbeefdeadbeef' }
     );
-    assert(status === 400, `Expected 400, got ${status}: ${JSON.stringify(json)}`);
+    assert(status === 400, `Expected 400, got ${status}`);
   });
 
   await test('POST non-payment event (correct sig) → 200 ignored', async () => {
@@ -163,12 +161,12 @@ async function suite_webhookEndpoint() {
     const payload = JSON.stringify({ event: 'refund.created', payload: {} });
     const sig = sign(payload, WEBHOOK_SECRET);
     const { status, json } = await post(
-      `${STAGING_URL}/api/staging-provision-perks`, payload,
+      `${PAYMENTS_URL}/api/staging-provision-perks`, payload,
       { 'x-razorpay-signature': sig }
     );
     assert(status === 200, `Expected 200, got ${status}: ${JSON.stringify(json)}`);
     assert(json?.status === 'ignored', `Expected status=ignored, got: ${JSON.stringify(json)}`);
-    log(info(`event ignored correctly: ${json.event}`));
+    log(info(`event ignored: ${json.event}`));
   });
 
   await test('POST payment.captured (correct sig) → 200 provisioned', async () => {
@@ -176,7 +174,7 @@ async function suite_webhookEndpoint() {
     const payload = makePaymentEvent(TEST_EMAIL);
     const sig = sign(payload, WEBHOOK_SECRET);
     const { status, json } = await post(
-      `${STAGING_URL}/api/staging-provision-perks`, payload,
+      `${PAYMENTS_URL}/api/staging-provision-perks`, payload,
       { 'x-razorpay-signature': sig }
     );
     assert(status === 200, `Expected 200, got ${status}: ${JSON.stringify(json)}`);
@@ -193,59 +191,23 @@ async function suite_webhookEndpoint() {
     });
     const sig = sign(payload, WEBHOOK_SECRET);
     const { status } = await post(
-      `${STAGING_URL}/api/staging-provision-perks`, payload,
+      `${PAYMENTS_URL}/api/staging-provision-perks`, payload,
       { 'x-razorpay-signature': sig }
     );
     assert(status === 400, `Expected 400, got ${status}`);
   });
 }
 
-// ── Suite 3: Meta CAPI Proxy ─────────────────────────────────────────────────
-async function suite_metaCapi() {
-  log(head(`3. Meta CAPI Proxy — ${STAGING_URL}/api/events`));
-
-  await test('OPTIONS preflight → 204', async () => {
-    const res = await fetch(`${STAGING_URL}/api/events`, {
-      method: 'OPTIONS',
-      headers: { Origin: 'https://platter.bitroot.org', 'Access-Control-Request-Method': 'POST' },
-    });
-    assert(res.status === 204, `Expected 204, got ${res.status}`);
-  });
-
-  await test('Disallowed origin → no ACAO header', async () => {
-    const { headers } = await post(`${STAGING_URL}/api/events`,
-      { data: [{ event_name: 'PageView', event_time: Math.floor(Date.now() / 1000), action_source: 'website', user_data: {} }] },
-      { Origin: 'https://evil.example.com' }
-    );
-    const acao = headers.get('access-control-allow-origin');
-    assert(!acao || acao === 'null', `Should not set ACAO for disallowed origin, got: ${acao}`);
-  });
-
-  await test('Missing data array → 400', async () => {
-    const { status } = await post(`${STAGING_URL}/api/events`,
-      { not_data: 'wrong' },
-      { Origin: 'https://platter.bitroot.org' }
-    );
-    assert(status === 400, `Expected 400, got ${status}`);
-  });
-
-  await test('GET → 405', async () => {
-    const res = await fetch(`${STAGING_URL}/api/events`);
-    assert(res.status === 405, `Expected 405, got ${res.status}`);
-  });
-}
-
 // ── Main ──────────────────────────────────────────────────────────────────────
 (async () => {
   log(`\n${C.bold}╔══════════════════════════════════╗`);
-  log(`║  Platter Staging Test Suite      ║`);
+  log(`║  Payments & Perks — Test Suite   ║`);
   log(`╚══════════════════════════════════╝${C.reset}`);
-  log(info(`staging: ${STAGING_URL || C.red + 'NOT SET' + C.reset}`));
-  log(info(`email:   ${TEST_EMAIL}`));
+  log(info(`endpoint: ${PAYMENTS_URL || C.red + 'NOT SET' + C.reset}`));
+  log(info(`email:    ${TEST_EMAIL}`));
 
   await suite_secretApi();
   await suite_webhookEndpoint();
-  await suite_metaCapi();
 
   const bar = '─'.repeat(40);
   log(`\n${bar}`);
