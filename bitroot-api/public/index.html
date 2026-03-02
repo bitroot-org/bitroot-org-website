@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>api.bitroot.org</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #0c0c0c;
+      --surface: #111111;
+      --border:  #1f1f1f;
+      --green:   #39d353;
+      --green-dim: #1a6b28;
+      --amber:   #f0a500;
+      --muted:   #444;
+      --text:    #c8c8c8;
+      --white:   #efefef;
+    }
+
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 40px 24px;
+    }
+
+    .terminal {
+      width: 100%;
+      max-width: 680px;
+    }
+
+    /* ASCII art */
+    .ascii {
+      color: var(--green);
+      font-size: 11px;
+      line-height: 1.2;
+      white-space: pre;
+      margin-bottom: 32px;
+      letter-spacing: 0;
+    }
+
+    @media (max-width: 600px) {
+      .ascii { font-size: 7px; }
+    }
+
+    /* Prompt line */
+    .prompt {
+      color: var(--muted);
+      margin-bottom: 24px;
+      font-size: 12px;
+    }
+
+    .prompt .host  { color: var(--green); }
+    .prompt .path  { color: var(--amber); }
+    .prompt .cmd   { color: var(--white); }
+
+    /* Section label */
+    .label {
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+      margin-top: 28px;
+    }
+
+    /* Route table */
+    .routes { width: 100%; border-collapse: collapse; }
+
+    .routes tr { border-bottom: 1px solid var(--border); }
+    .routes tr:last-child { border-bottom: none; }
+
+    .routes td {
+      padding: 10px 0;
+      vertical-align: top;
+    }
+
+    .routes td:first-child { width: 1%; white-space: nowrap; padding-right: 24px; }
+
+    .method {
+      font-size: 10px;
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 2px;
+      background: var(--green-dim);
+      color: var(--green);
+      letter-spacing: 1px;
+    }
+
+    .route-path { color: var(--white); margin-left: 12px; }
+    .route-desc { color: var(--muted); font-size: 12px; }
+
+    /* Status line */
+    .statusline {
+      margin-top: 36px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      gap: 24px;
+      font-size: 11px;
+      color: var(--muted);
+      flex-wrap: wrap;
+    }
+
+    .statusline .dot {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--green);
+      margin-right: 6px;
+      animation: pulse 2.4s ease-in-out infinite;
+      vertical-align: middle;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.3; }
+    }
+
+    /* Cursor */
+    .cursor {
+      display: inline-block;
+      width: 8px;
+      height: 14px;
+      background: var(--green);
+      vertical-align: middle;
+      animation: blink 1.1s step-end infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="terminal">
+
+    <div class="ascii">
+ ██████╗ ██╗████████╗██████╗  ██████╗  ██████╗ ████████╗
+ ██╔══██╗██║╚══██╔══╝██╔══██╗██╔═══██╗██╔═══██╗╚══██╔══╝
+ ██████╔╝██║   ██║   ██████╔╝██║   ██║██║   ██║   ██║
+ ██╔══██╗██║   ██║   ██╔══██╗██║   ██║██║   ██║   ██║
+ ██████╔╝██║   ██║   ██║  ██║╚██████╔╝╚██████╔╝   ██║
+ ╚═════╝ ╚═╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝  ╚═════╝   ╚═╝  API</div>
+
+    <div class="prompt">
+      <span class="host">bitroot</span><span style="color:var(--muted)">@</span><span class="host">api</span><span style="color:var(--muted)">:~</span><span class="path">/</span><span style="color:var(--muted)"> $ </span><span class="cmd">GET /</span> <span class="cursor"></span>
+    </div>
+
+    <div class="label">// payments</div>
+    <table class="routes">
+      <tr>
+        <td><span class="method">POST</span><span class="route-path">/api/payments/provision-perks</span></td>
+        <td class="route-desc">Razorpay live webhook → provision user on joinsecret.com</td>
+      </tr>
+      <tr>
+        <td><span class="method">POST</span><span class="route-path">/api/payments/staging-provision-perks</span></td>
+        <td class="route-desc">Razorpay test webhook → provision user (test mode)</td>
+      </tr>
+    </table>
+
+    <div class="label">// meta</div>
+    <table class="routes">
+      <tr>
+        <td><span class="method">POST</span><span class="route-path">/api/meta/events</span></td>
+        <td class="route-desc">Meta Conversions API proxy — forwards browser events server-side</td>
+      </tr>
+    </table>
+
+    <div class="statusline">
+      <span><span class="dot"></span>operational</span>
+      <span>vercel — serverless</span>
+      <span>bitroot.org</span>
+    </div>
+
+  </div>
+</body>
+</html>
