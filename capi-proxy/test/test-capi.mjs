@@ -3,7 +3,7 @@
  * Tests the /api/meta/events proxy that forwards browser events to Meta CAPI.
  *
  * Usage:
- *   CAPI_URL=https://capi-proxy.vercel.app \
+ *   CAPI_URL=https://api.bitroot.org \
  *   node test/test-capi.mjs
  *
  * Exit code 0 = all passed. Exit code 1 = failures.
