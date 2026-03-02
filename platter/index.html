@@ -2168,6 +2168,353 @@
       .p-perk-card__icon { width: 30px; height: 30px; min-width: 30px; }
       .p-perk-card__title { font-size: 12px; }
     }
+
+    /* ====================================================
+       VALUE CALCULATOR
+       ==================================================== */
+    .p-calc {
+      background: var(--black);
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .p-calc::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 20px,
+        rgba(255,255,255,0.015) 20px,
+        rgba(255,255,255,0.015) 21px
+      );
+      pointer-events: none;
+    }
+
+    .p-calc__label { color: var(--yellow); }
+
+    .p-calc__title {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 1.6;
+      max-width: 720px;
+      margin-bottom: 16px;
+    }
+
+    .p-calc__subtitle {
+      font-family: var(--font-body);
+      font-size: 17px;
+      color: rgba(255,255,255,0.45);
+      max-width: 580px;
+      margin-bottom: 36px;
+    }
+
+    /* Preset quick-select pills */
+    .p-calc__presets {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+    }
+
+    .p-calc__preset-btn {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      padding: 7px 16px;
+      border: 1.5px solid rgba(255,255,255,0.15);
+      border-radius: 100px;
+      cursor: pointer;
+      background: transparent;
+      color: rgba(255,255,255,0.45);
+      transition: all 0.15s;
+    }
+
+    .p-calc__preset-btn:hover {
+      border-color: var(--yellow);
+      color: var(--yellow);
+    }
+
+    .p-calc__preset-btn.is-active {
+      background: var(--yellow);
+      border-color: var(--yellow);
+      color: var(--black);
+    }
+
+    /* Tool grid */
+    .p-calc__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-bottom: 40px;
+    }
+
+    /* Tool card */
+    .p-calc__tool {
+      border: 2px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius);
+      padding: 14px 14px;
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: border-color 0.15s, background 0.15s;
+      position: relative;
+    }
+
+    .p-calc__tool:hover { border-color: rgba(255,255,255,0.25); }
+
+    .p-calc__tool.is-checked {
+      border-color: var(--yellow);
+      background: rgba(253,185,36,0.07);
+    }
+
+    /* Deal badge top-right */
+    .p-calc__deal-badge {
+      position: absolute;
+      top: -1px;
+      right: 10px;
+      font-family: var(--font-mono);
+      font-size: 8px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 0 0 4px 4px;
+      line-height: 1.6;
+    }
+
+    .p-calc__deal-badge--free {
+      background: #059669;
+      color: #fff;
+    }
+
+    .p-calc__deal-badge--deal {
+      background: var(--yellow);
+      color: var(--black);
+    }
+
+    /* Checkbox */
+    .p-calc__check {
+      width: 18px;
+      height: 18px;
+      border: 2px solid rgba(255,255,255,0.2);
+      border-radius: 3px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.1s, border-color 0.1s;
+    }
+
+    .p-calc__tool.is-checked .p-calc__check {
+      background: var(--yellow);
+      border-color: var(--yellow);
+    }
+
+    .p-calc__check svg { opacity: 0; transition: opacity 0.1s; }
+    .p-calc__tool.is-checked .p-calc__check svg { opacity: 1; }
+
+    /* Icon */
+    .p-calc__icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      overflow: hidden;
+      flex-shrink: 0;
+      border: 1.5px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.06);
+    }
+
+    .p-calc__icon img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    /* Text */
+    .p-calc__info { flex: 1; min-width: 0; }
+
+    .p-calc__tool-name {
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.9);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .p-calc__tool-cat {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      color: rgba(255,255,255,0.3);
+      margin-top: 2px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Retail price */
+    .p-calc__price {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: rgba(255,255,255,0.3);
+      flex-shrink: 0;
+      text-align: right;
+      transition: color 0.15s;
+    }
+
+    .p-calc__tool.is-checked .p-calc__price { color: var(--yellow); }
+
+    /* Results panel */
+    .p-calc__results {
+      border: 3px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .p-calc__results-inner {
+      display: grid;
+      grid-template-columns: 1fr 48px 1fr 48px 1fr;
+      align-items: center;
+      padding: 40px 48px;
+      gap: 8px;
+    }
+
+    .p-calc__col { text-align: center; }
+
+    .p-calc__col-label {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+      margin-bottom: 16px;
+    }
+
+    .p-calc__total {
+      font-family: var(--font-display);
+      font-size: 40px;
+      line-height: 1;
+    }
+
+    .p-calc__total--without {
+      color: rgba(255,255,255,0.22);
+      position: relative;
+      display: inline-block;
+    }
+
+    .p-calc__total--without.has-value::after {
+      content: '';
+      position: absolute;
+      left: 0; right: 0; top: 50%;
+      height: 3px;
+      background: var(--red);
+      transform: translateY(-50%);
+      border-radius: 2px;
+    }
+
+    .p-calc__total--with { color: var(--yellow); }
+
+    .p-calc__col-sub {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      color: rgba(255,255,255,0.2);
+      margin-top: 10px;
+    }
+
+    .p-calc__divider {
+      font-family: var(--font-display);
+      font-size: 12px;
+      color: rgba(255,255,255,0.12);
+      text-align: center;
+    }
+
+    .p-calc__savings-col { text-align: center; }
+
+    .p-calc__savings-label {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #34D399;
+      margin-bottom: 16px;
+    }
+
+    .p-calc__savings-amt {
+      font-family: var(--font-display);
+      font-size: 52px;
+      color: #34D399;
+      line-height: 1;
+    }
+
+    .p-calc__savings-year {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      color: rgba(255,255,255,0.2);
+      margin-top: 10px;
+    }
+
+    /* CTA bar at bottom of results */
+    .p-calc__cta-bar {
+      border-top: 2px solid rgba(255,255,255,0.07);
+      padding: 22px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      background: rgba(255,255,255,0.02);
+    }
+
+    .p-calc__cta-hint {
+      font-family: var(--font-body);
+      font-size: 14px;
+      color: rgba(255,255,255,0.35);
+      flex: 1;
+    }
+
+    .p-calc__cta-hint strong { color: var(--yellow); font-weight: 700; }
+
+    /* Disclaimer */
+    .p-calc__disclaimer {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      color: rgba(255,255,255,0.18);
+      margin-top: 20px;
+      text-align: center;
+      line-height: 1.7;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Responsive */
+    @media (max-width: 991px) {
+      .p-calc__grid { grid-template-columns: repeat(3, 1fr); }
+      .p-calc__results-inner { grid-template-columns: 1fr 32px 1fr 32px 1fr; padding: 28px 24px; }
+      .p-calc__total { font-size: 28px; }
+      .p-calc__savings-amt { font-size: 40px; }
+      .p-calc__cta-bar { padding: 20px 24px; }
+    }
+
+    @media (max-width: 767px) {
+      .p-calc__grid { grid-template-columns: repeat(2, 1fr); }
+      .p-calc__results-inner { grid-template-columns: 1fr; padding: 28px 20px; gap: 28px; }
+      .p-calc__divider { display: none; }
+      .p-calc__cta-bar { flex-direction: column; padding: 20px; text-align: center; }
+      .p-calc__title { font-size: 16px; }
+      .p-calc__total { font-size: 32px; }
+      .p-calc__savings-amt { font-size: 44px; }
+    }
+
+    @media (max-width: 479px) {
+      .p-calc__grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+      .p-calc__tool { padding: 10px 10px; gap: 8px; }
+      .p-calc__icon { width: 28px; height: 28px; }
+      .p-calc__tool-name { font-size: 11px; }
+      .p-calc__tool-cat { display: none; }
+    }
   </style>
 </head>
 <body>
@@ -2185,6 +2532,7 @@
     </div>
     <div class="p-nav__links">
       <a href="#solutions" class="p-nav__link">What You Get</a>
+      <a href="#calculator" class="p-nav__link">Calculator</a>
       <a href="#pricing" class="p-nav__link">Pricing</a>
       <a href="#faq" class="p-nav__link">FAQ</a>
       <a href="#pricing" class="p-nav__cta">Get Access</a>
@@ -2471,6 +2819,57 @@
     </div>
   </section>
 
+  <!-- ====== VALUE CALCULATOR ====== -->
+  <section id="calculator" class="p-section p-calc">
+    <div class="p-container">
+
+      <div class="p-section__label p-calc__label reveal">Value Calculator</div>
+      <h2 class="p-calc__title reveal reveal-delay-1">What's Your Startup Stack <em style="font-style:normal;background:var(--yellow);color:var(--black);padding:2px 8px;">Really</em> Costing You?</h2>
+      <p class="p-calc__subtitle reveal reveal-delay-2">Tick the tools you use. See what you're paying at retail — and what Platter members actually pay through our partner deals.</p>
+
+      <!-- Quick presets -->
+      <div class="p-calc__presets reveal reveal-delay-2">
+        <button class="p-calc__preset-btn" data-preset="dev">Dev Stack</button>
+        <button class="p-calc__preset-btn" data-preset="growth">Growth Stack</button>
+        <button class="p-calc__preset-btn" data-preset="founder">Full Founder Pack</button>
+        <button class="p-calc__preset-btn" data-preset="none">Clear All</button>
+      </div>
+
+      <!-- Tool cards — rendered by JS -->
+      <div class="p-calc__grid reveal reveal-delay-3" id="calcGrid"></div>
+
+      <!-- Results panel -->
+      <div class="p-calc__results reveal">
+        <div class="p-calc__results-inner">
+          <div class="p-calc__col">
+            <div class="p-calc__col-label">Without Platter</div>
+            <div class="p-calc__total p-calc__total--without" id="calcWithout">$0</div>
+            <div class="p-calc__col-sub">/mo at retail price</div>
+          </div>
+          <div class="p-calc__divider">→</div>
+          <div class="p-calc__col">
+            <div class="p-calc__col-label">With Platter</div>
+            <div class="p-calc__total p-calc__total--with" id="calcWith">$0</div>
+            <div class="p-calc__col-sub">/mo est. with deals</div>
+          </div>
+          <div class="p-calc__divider">→</div>
+          <div class="p-calc__savings-col">
+            <div class="p-calc__savings-label">You Save</div>
+            <div class="p-calc__savings-amt" id="calcSavings">$0</div>
+            <div class="p-calc__savings-year" id="calcSavingsYear">&nbsp;</div>
+          </div>
+        </div>
+        <div class="p-calc__cta-bar">
+          <div class="p-calc__cta-hint" id="calcHint">← Select the tools you use to calculate your savings</div>
+          <a href="#pricing" class="p-btn p-btn--primary">Unlock These Deals →</a>
+        </div>
+      </div>
+
+      <div class="p-calc__disclaimer">* Estimates based on publicly available startup deal programs from individual tools (Notion for Startups, Figma for Startups, Linear for Startups, etc.). Platter curates and simplifies access to these programs. Actual savings and eligibility may vary per tool and plan.</div>
+
+    </div>
+  </section>
+
   <!-- ====== PRICING ====== -->
   <section id="pricing" class="p-section p-pricing">
     <div class="p-container">
@@ -2665,6 +3064,115 @@
         observer.observe(el);
       });
     })();
+
+    // ── Value Calculator ─────────────────────────────────────────
+    (function() {
+      var TOOLS = [
+        { id: 'notion',    name: 'Notion',           cat: 'Docs & Wiki',      icon: 'IMG_7166.PNG',  retail: 30,  deal: 0,  badge: 'FREE',    badgeType: 'free',  preset: ['dev','growth','founder'] },
+        { id: 'slack',     name: 'Slack',             cat: 'Team Chat',        icon: 'IMG_7171.PNG',  retail: 22,  deal: 7,  badge: '~68% off', badgeType: 'deal', preset: ['growth','founder'] },
+        { id: 'clickup',   name: 'ClickUp',           cat: 'Project Mgmt',     icon: 'IMG_7172.PNG',  retail: 36,  deal: 0,  badge: 'DEAL',    badgeType: 'deal',  preset: ['growth','founder'] },
+        { id: 'figma',     name: 'Figma',             cat: 'Design',           icon: 'IMG_7175.PNG',  retail: 36,  deal: 0,  badge: 'FREE',    badgeType: 'free',  preset: ['dev','founder'] },
+        { id: 'linear',    name: 'Linear',            cat: 'Issue Tracking',   icon: 'IMG_7190.PNG',  retail: 24,  deal: 0,  badge: 'FREE',    badgeType: 'free',  preset: ['dev','founder'] },
+        { id: 'framer',    name: 'Framer',            cat: 'Website Builder',  icon: 'IMG_7169.JPG',  retail: 30,  deal: 10, badge: '67% off', badgeType: 'deal',  preset: ['dev','founder'] },
+        { id: 'loom',      name: 'Loom',              cat: 'Video Messaging',  icon: 'IMG_7168.JPG',  retail: 38,  deal: 0,  badge: 'FREE',    badgeType: 'free',  preset: ['growth','founder'] },
+        { id: 'grammarly', name: 'Grammarly',         cat: 'Writing AI',       icon: 'IMG_7198.PNG',  retail: 45,  deal: 20, badge: '55% off', badgeType: 'deal',  preset: ['growth','founder'] },
+        { id: 'lovable',   name: 'Lovable',           cat: 'AI Builder',       icon: 'IMG_7173.WEBP', retail: 50,  deal: 20, badge: '60% off', badgeType: 'deal',  preset: ['dev','founder'] },
+        { id: 'zapier',    name: 'Zapier',            cat: 'Automation',       icon: 'IMG_7187.WEBP', retail: 20,  deal: 0,  badge: 'Credits', badgeType: 'deal',  preset: ['growth','founder'] },
+        { id: 'granola',   name: 'Granola',           cat: 'AI Notes',         icon: 'IMG_7196.JPG',  retail: 54,  deal: 18, badge: '67% off', badgeType: 'deal',  preset: ['dev','growth','founder'] },
+        { id: 'gworkspace',name: 'Google Workspace',  cat: 'Email & Suite',    icon: 'IMG_7195.JPG',  retail: 18,  deal: 9,  badge: '50% off', badgeType: 'deal',  preset: ['founder'] },
+      ];
+
+      var checked = new Set();
+
+      function buildGrid() {
+        var grid = document.getElementById('calcGrid');
+        if (!grid) return;
+        grid.innerHTML = TOOLS.map(function(t) {
+          var badgeClass = t.badgeType === 'free' ? 'p-calc__deal-badge--free' : 'p-calc__deal-badge--deal';
+          return '<div class="p-calc__tool" data-id="' + t.id + '">'
+            + '<div class="p-calc__deal-badge ' + badgeClass + '">' + t.badge + '</div>'
+            + '<div class="p-calc__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="#0A0A0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>'
+            + '<div class="p-calc__icon"><img src="images/app-icons/' + t.icon + '" alt="' + t.name + '" loading="lazy"></div>'
+            + '<div class="p-calc__info"><div class="p-calc__tool-name">' + t.name + '</div><div class="p-calc__tool-cat">' + t.cat + '</div></div>'
+            + '<div class="p-calc__price">$' + t.retail + '</div>'
+            + '</div>';
+        }).join('');
+
+        grid.querySelectorAll('.p-calc__tool').forEach(function(card) {
+          card.addEventListener('click', function() {
+            var id = this.dataset.id;
+            if (checked.has(id)) { checked.delete(id); this.classList.remove('is-checked'); }
+            else { checked.add(id); this.classList.add('is-checked'); }
+            clearActivePresets();
+            updateTotals();
+          });
+        });
+      }
+
+      var animTimers = {};
+      function animateTo(el, target, prefix) {
+        clearInterval(animTimers[el.id]);
+        var from = parseInt(el.dataset.current || '0');
+        var steps = 20, step = 0;
+        animTimers[el.id] = setInterval(function() {
+          step++;
+          var ease = 1 - Math.pow(1 - step / steps, 3);
+          var val = Math.round(from + (target - from) * ease);
+          el.textContent = prefix + val;
+          el.dataset.current = String(val);
+          if (step >= steps) { clearInterval(animTimers[el.id]); el.textContent = prefix + target; el.dataset.current = String(target); }
+        }, 16);
+      }
+
+      function updateTotals() {
+        var retail = 0, withDeal = 0;
+        checked.forEach(function(id) {
+          var t = TOOLS.find(function(x) { return x.id === id; });
+          if (t) { retail += t.retail; withDeal += t.deal; }
+        });
+        var savings = retail - withDeal;
+        var withoutEl = document.getElementById('calcWithout');
+        var withEl    = document.getElementById('calcWith');
+        var savingsEl = document.getElementById('calcSavings');
+        var yearEl    = document.getElementById('calcSavingsYear');
+        var hintEl    = document.getElementById('calcHint');
+        if (retail > 0) withoutEl.classList.add('has-value'); else withoutEl.classList.remove('has-value');
+        animateTo(withoutEl, retail, '$');
+        animateTo(withEl,    withDeal, '$');
+        animateTo(savingsEl, savings, '$');
+        yearEl.textContent = savings > 0 ? '$' + (savings * 12) + ' saved per year' : '\u00a0';
+        hintEl.innerHTML = checked.size === 0
+          ? '\u2190 Select the tools you use to calculate your savings'
+          : '<strong>' + checked.size + ' tool' + (checked.size !== 1 ? 's' : '') + ' selected</strong> \u2014 Platter unlocks deals on all of these';
+      }
+
+      function applyPreset(preset) {
+        checked.clear();
+        if (preset !== 'none') {
+          TOOLS.forEach(function(t) { if (t.preset.indexOf(preset) > -1) checked.add(t.id); });
+        }
+        document.querySelectorAll('.p-calc__tool').forEach(function(card) {
+          card.classList.toggle('is-checked', checked.has(card.dataset.id));
+        });
+        updateTotals();
+      }
+
+      function clearActivePresets() {
+        document.querySelectorAll('.p-calc__preset-btn').forEach(function(b) { b.classList.remove('is-active'); });
+      }
+
+      document.querySelectorAll('.p-calc__preset-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          clearActivePresets();
+          this.classList.add('is-active');
+          applyPreset(this.dataset.preset);
+        });
+      });
+
+      buildGrid();
+      updateTotals();
+    })();
+    // ─────────────────────────────────────────────────────────────
 
     // FAQ Accordion
     document.querySelectorAll('.p-faq-item__q').forEach(function(btn) {
