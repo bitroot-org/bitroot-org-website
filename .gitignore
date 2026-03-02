@@ -52,5 +52,18 @@ server.py
 # Local scratch/working files
 _scratch/
 
-# Vercel local config
-bitroot-api/.vercel/
+# Vercel local config (covers any sub-project)
+.vercel/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Lock files from other package managers (project uses npm)
+pnpm-lock.yaml
+yarn.lock
