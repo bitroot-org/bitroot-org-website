@@ -36,7 +36,7 @@ async function getSecretJwt(privateApiKey) {
   }
 
   const data = await res.json();
-  return data.token;
+  return data.jwt_token || data.token;
 }
 
 async function createPerksUser(jwt, email) {
