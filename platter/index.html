@@ -2851,7 +2851,7 @@
           </div>
           <div class="p-calc__divider">→</div>
           <div class="p-calc__col">
-            <div class="p-calc__col-label">With Platter</div>
+            <div class="p-calc__col-label" style="color:var(--yellow)">With Platter</div>
             <div class="p-calc__total p-calc__total--with" id="calcWith">$0</div>
             <div class="p-calc__col-sub">/mo est. with deals</div>
           </div>
@@ -3071,18 +3071,28 @@
     // ── Value Calculator ─────────────────────────────────────────
     (function() {
       var TOOLS = [
-        { id: 'notion',    name: 'Notion',           cat: 'Docs & Wiki',      domain: 'notion.so',           retail: 30,  deal: 0,  badge: 'FREE',    badgeType: 'free',  preset: ['dev','growth','founder'] },
-        { id: 'slack',     name: 'Slack',             cat: 'Team Chat',        domain: 'slack.com',           retail: 22,  deal: 7,  badge: '~68% off', badgeType: 'deal', preset: ['growth','founder'] },
-        { id: 'clickup',   name: 'ClickUp',           cat: 'Project Mgmt',     domain: 'clickup.com',         retail: 36,  deal: 0,  badge: 'DEAL',    badgeType: 'deal',  preset: ['growth','founder'] },
-        { id: 'figma',     name: 'Figma',             cat: 'Design',           domain: 'figma.com',           retail: 36,  deal: 0,  badge: 'FREE',    badgeType: 'free',  preset: ['dev','founder'] },
-        { id: 'linear',    name: 'Linear',            cat: 'Issue Tracking',   domain: 'linear.app',          retail: 24,  deal: 0,  badge: 'FREE',    badgeType: 'free',  preset: ['dev','founder'] },
-        { id: 'framer',    name: 'Framer',            cat: 'Website Builder',  domain: 'framer.com',          retail: 30,  deal: 10, badge: '67% off', badgeType: 'deal',  preset: ['dev','founder'] },
-        { id: 'loom',      name: 'Loom',              cat: 'Video Messaging',  domain: 'loom.com',            retail: 38,  deal: 0,  badge: 'FREE',    badgeType: 'free',  preset: ['growth','founder'] },
-        { id: 'grammarly', name: 'Grammarly',         cat: 'Writing AI',       domain: 'grammarly.com',       retail: 45,  deal: 20, badge: '55% off', badgeType: 'deal',  preset: ['growth','founder'] },
-        { id: 'lovable',   name: 'Lovable',           cat: 'AI Builder',       domain: 'lovable.dev',         retail: 50,  deal: 20, badge: '60% off', badgeType: 'deal',  preset: ['dev','founder'] },
-        { id: 'zapier',    name: 'Zapier',            cat: 'Automation',       domain: 'zapier.com',          retail: 20,  deal: 0,  badge: 'Credits', badgeType: 'deal',  preset: ['growth','founder'] },
-        { id: 'granola',   name: 'Granola',           cat: 'AI Notes',         domain: 'granola.so',          retail: 54,  deal: 18, badge: '67% off', badgeType: 'deal',  preset: ['dev','growth','founder'] },
-        { id: 'gworkspace',name: 'Google Workspace',  cat: 'Email & Suite',    domain: 'workspace.google.com',retail: 18,  deal: 9,  badge: '50% off', badgeType: 'deal',  preset: ['founder'] },
+        { id: 'notion',      name: 'Notion',           cat: 'Docs & Wiki',      domain: 'notion.so',             retail: 30,  deal: 0,  badge: 'FREE',     badgeType: 'free',  preset: ['dev','growth','founder'] },
+        { id: 'slack',       name: 'Slack',             cat: 'Team Chat',        domain: 'slack.com',             retail: 22,  deal: 7,  badge: '~68% off', badgeType: 'deal',  preset: ['growth','founder'] },
+        { id: 'clickup',     name: 'ClickUp',           cat: 'Project Mgmt',     domain: 'clickup.com',           retail: 36,  deal: 0,  badge: 'DEAL',     badgeType: 'deal',  preset: ['growth','founder'] },
+        { id: 'figma',       name: 'Figma',             cat: 'Design',           domain: 'figma.com',             retail: 36,  deal: 0,  badge: 'FREE',     badgeType: 'free',  preset: ['dev','founder'] },
+        { id: 'linear',      name: 'Linear',            cat: 'Issue Tracking',   domain: 'linear.app',            retail: 24,  deal: 0,  badge: 'FREE',     badgeType: 'free',  preset: ['dev','founder'] },
+        { id: 'framer',      name: 'Framer',            cat: 'Website Builder',  domain: 'framer.com',            retail: 30,  deal: 10, badge: '67% off',  badgeType: 'deal',  preset: ['dev','founder'] },
+        { id: 'loom',        name: 'Loom',              cat: 'Video Messaging',  domain: 'loom.com',              retail: 38,  deal: 0,  badge: 'FREE',     badgeType: 'free',  preset: ['growth','founder'] },
+        { id: 'grammarly',   name: 'Grammarly',         cat: 'Writing AI',       domain: 'grammarly.com',         retail: 45,  deal: 20, badge: '55% off',  badgeType: 'deal',  preset: ['growth','founder'] },
+        { id: 'lovable',     name: 'Lovable',           cat: 'AI Builder',       domain: 'lovable.dev',           retail: 50,  deal: 20, badge: '60% off',  badgeType: 'deal',  preset: ['dev','founder'] },
+        { id: 'zapier',      name: 'Zapier',            cat: 'Automation',       domain: 'zapier.com',            retail: 20,  deal: 0,  badge: 'Credits',  badgeType: 'deal',  preset: ['growth','founder'] },
+        { id: 'granola',     name: 'Granola',           cat: 'AI Notes',         domain: 'granola.so',            retail: 54,  deal: 18, badge: '67% off',  badgeType: 'deal',  preset: ['dev','growth','founder'] },
+        { id: 'gworkspace',  name: 'Google Workspace',  cat: 'Email & Suite',    domain: 'workspace.google.com',  retail: 18,  deal: 9,  badge: '50% off',  badgeType: 'deal',  preset: ['founder'] },
+        { id: 'aws',         name: 'AWS Activate',      cat: 'Cloud',            domain: 'aws.amazon.com',        retail: 200, deal: 0,  badge: 'Credits',  badgeType: 'deal',  preset: ['dev','founder'] },
+        { id: 'azure',       name: 'Azure',             cat: 'Cloud',            domain: 'azure.microsoft.com',   retail: 150, deal: 0,  badge: 'Credits',  badgeType: 'deal',  preset: ['dev','founder'] },
+        { id: 'posthog',     name: 'PostHog',           cat: 'Analytics',        domain: 'posthog.com',           retail: 45,  deal: 0,  badge: 'FREE',     badgeType: 'free',  preset: ['growth','founder'] },
+        { id: 'gemini',      name: 'Gemini',            cat: 'AI Assistant',     domain: 'gemini.google.com',     retail: 20,  deal: 0,  badge: 'Credits',  badgeType: 'deal',  preset: ['dev','growth','founder'] },
+        { id: 'huggingface', name: 'Hugging Face',      cat: 'AI / ML',          domain: 'huggingface.co',        retail: 50,  deal: 0,  badge: 'Credits',  badgeType: 'deal',  preset: ['dev'] },
+        { id: 'blackbox',    name: 'Blackbox',          cat: 'AI Coding',        domain: 'blackbox.ai',           retail: 20,  deal: 8,  badge: '60% off',  badgeType: 'deal',  preset: ['dev','founder'] },
+        { id: 'elevenlabs',  name: 'Eleven Labs',       cat: 'Voice AI',         domain: 'elevenlabs.io',         retail: 22,  deal: 11, badge: '50% off',  badgeType: 'deal',  preset: ['growth','founder'] },
+        { id: 'gcloud',      name: 'Google Cloud',      cat: 'Cloud',            domain: 'cloud.google.com',      retail: 200, deal: 0,  badge: 'Credits',  badgeType: 'deal',  preset: ['dev','founder'] },
+        { id: 'otterai',     name: 'Otter.ai',          cat: 'Meeting Notes',    domain: 'otter.ai',              retail: 30,  deal: 15, badge: '50% off',  badgeType: 'deal',  preset: ['growth','founder'] },
+        { id: 'zoom',        name: 'Zoom',              cat: 'Video Calls',      domain: 'zoom.us',               retail: 20,  deal: 10, badge: '50% off',  badgeType: 'deal',  preset: ['growth','founder'] },
       ];
 
       var checked = new Set();
