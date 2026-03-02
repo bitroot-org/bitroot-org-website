@@ -246,6 +246,7 @@ fbq('track', 'PageView');
     </div>
   </div>
   <style>
+    /* ── Platter Section ── */
     .platter-chip {
       display: inline-flex;
       align-items: center;
@@ -263,107 +264,86 @@ fbq('track', 'PageView');
       transition: background 0.2s, transform 0.2s;
       animation: chipSlideIn 0.6s ease-out;
     }
-
     .platter-chip:hover {
       background: #FDB924;
       color: #0A0A0A;
       transform: translateY(-1px);
     }
-
     .platter-chip__dot {
-      width: 6px;
-      height: 6px;
+      width: 6px; height: 6px;
       background: #34D399;
       border-radius: 50%;
       animation: chipPulse 2s ease-in-out infinite;
     }
-
     .platter-chip__arrow {
       opacity: 0.6;
       transition: opacity 0.2s, transform 0.2s;
     }
-
     .platter-chip:hover .platter-chip__arrow {
       opacity: 1;
       transform: translateX(2px);
     }
-
     @keyframes chipPulse {
       0%, 100% { opacity: 1; }
       50% { opacity: 0.4; }
     }
-
     @keyframes chipSlideIn {
       from { opacity: 0; transform: translateY(-8px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
-    @keyframes perks-card-float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-10px); }
-    }
-
-    .perks-card {
+    .perks-section {
+      --platter-yellow: #FDB924;
       position: relative;
-      background: linear-gradient(135deg, #2B6FEC 0%, #1E4FB8 100%);
-      padding: 48px;
-      border-radius: 8px;
-      z-index: 3;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      cursor: pointer;
+      background: var(--platter-yellow);
+      padding: 48px 20px;
+      overflow: hidden;
     }
 
-    .perks-card:hover {
-      transform: translateY(-15px) scale(1.02);
-      box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+    /* Content block — centered */
+    .perks__content {
+      text-align: center;
+      max-width: 520px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
     }
 
-    .perks-card-icon {
-      background-color: rgba(255,255,255,0.2);
-      width: 56px;
-      height: 56px;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 24px;
-      transition: all 0.3s ease;
+    .perks__label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #000;
+      opacity: 0.6;
+      margin-bottom: 20px;
     }
 
-    .perks-card:hover .perks-card-icon {
-      transform: rotate(10deg) scale(1.1);
-      background-color: rgba(255,255,255,0.3);
+    .perks__title {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #000;
+      margin: 0 0 20px;
     }
 
-    .perks-decorative-rect {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border: 2px solid #000;
-      transition: all 0.3s ease;
+    .perks__desc {
+      font-family: 'Outfit', sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      color: rgba(0, 0, 0, 0.6);
+      margin: 0 auto 28px;
     }
 
-    .perks-card:hover ~ .perks-decorative-rect:nth-child(1) {
-      transform: rotate(-4deg);
-    }
-
-    .perks-card:hover ~ .perks-decorative-rect:nth-child(2) {
-      transform: rotate(-3deg);
-    }
-
-    .perks-card:hover ~ .perks-decorative-rect:nth-child(3) {
-      transform: rotate(-2deg);
-    }
-
-    /* 3D Button Styles */
-    .perks-button-wrapper {
+    /* 3D Blue CTA Button */
+    .perks__cta {
       position: relative;
       display: inline-block;
-      margin: 0;
     }
 
-    .perks-button-wrapper a {
+    .perks__cta a {
       color: white;
       font-family: 'Press Start 2P', cursive;
       font-weight: normal;
@@ -374,118 +354,324 @@ fbq('track', 'PageView');
       display: block;
       position: relative;
       padding: 20px 40px;
-
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       text-shadow: 0px 1px 0px #000;
-      filter: dropshadow(color=#000, offx=0px, offy=1px);
-
-      -webkit-box-shadow: inset 0 1px 0 #6B9FFF, 0 10px 0 #0A2B6E;
-      -moz-box-shadow: inset 0 1px 0 #6B9FFF, 0 10px 0 #0A2B6E;
       box-shadow: inset 0 1px 0 #6B9FFF, 0 10px 0 #0A2B6E;
-
-      -webkit-border-radius: 8px;
-      -moz-border-radius: 8px;
       border-radius: 8px;
-
       transition: all 0.1s ease;
     }
 
-    .perks-button-wrapper a:hover {
+    .perks__cta a:hover {
       top: 4px;
       background-color: #2563DB;
       box-shadow: inset 0 1px 0 #6B9FFF, 0 6px 0 #0A2B6E;
     }
 
-    .perks-button-wrapper a:active {
+    .perks__cta a:active {
       top: 10px;
       background-color: #1E4FB8;
-
-      -webkit-box-shadow: inset 0 1px 0 #6B9FFF, inset 0 -3px 0 #0A2B6E;
-      -moz-box-shadow: inset 0 1px 0 #6B9FFF, inset 0 -3px 0 #0A2B6E;
       box-shadow: inset 0 1px 0 #6B9FFF, inset 0 -3px 0 #0A2B6E;
     }
 
-    .perks-button-wrapper:after {
-      content: "";
-      height: 100%;
-      width: 100%;
-      padding: 4px;
+    .perks__cta::after {
+      content: '';
       position: absolute;
       bottom: -15px;
       left: -4px;
-      z-index: -1;
-      background-color: #000814;
-      -webkit-border-radius: 8px;
-      -moz-border-radius: 8px;
+      width: calc(100% + 8px);
+      height: 100%;
+      background: #000814;
       border-radius: 8px;
+      z-index: -1;
     }
 
-    @media screen and (max-width: 767px) {
-      .perks-section .w-col-6 {
-        padding-right: 10px !important;
-        padding-left: 10px !important;
-        text-align: center;
-      }
-      .perks-section .w-col-6:first-child {
-        margin-bottom: 40px;
-      }
-      .perks-section h1 {
-        font-size: 18px !important;
-        line-height: 1.5 !important;
-      }
-      .perks-section p {
-        font-size: 16px !important;
-      }
-      .perks-button-wrapper {
-        display: inline-block;
-      }
-      .perks-button-wrapper a {
-        font-size: 13px;
-        padding: 16px 32px;
-      }
-      .perks-card {
-        padding: 32px;
-      }
-      .perks-card h2 {
-        font-size: 16px !important;
-      }
-      .perks-card p {
-        font-size: 14px !important;
-      }
-      .perks-decorative-rect {
-        display: none;
-      }
+    /* Side icon scrollers — center-left and center-right */
+    .perks__side {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: calc(50% - 260px);
+      min-width: 200px;
+      overflow: hidden;
+      z-index: 0;
+      pointer-events: none;
+      -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+      mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+    }
+
+    .perks__side--left {
+      left: 0;
+    }
+
+    .perks__side--left::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, transparent 0%, var(--platter-yellow) 100%);
+      z-index: 1;
+    }
+
+    .perks__side--right {
+      right: 0;
+    }
+
+    .perks__side--right::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to left, transparent 0%, var(--platter-yellow) 100%);
+      z-index: 1;
+    }
+
+    .perks__side-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      position: absolute;
+      inset: 0;
+    }
+
+    .perks__side--left .perks__side-col {
+      left: -10px;
+    }
+
+    .perks__side--right .perks__side-col {
+      left: -10px;
+    }
+
+    .perks__side-row {
+      display: flex;
+      gap: 8px;
+      animation: perksScrollH 40s linear infinite;
+      animation-direction: var(--dir, normal);
+      will-change: transform;
+    }
+
+    @keyframes perksScrollH {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    .perks__icon {
+      width: 40px; height: 40px; min-width: 40px;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08), 0 0 0 1px rgba(0,0,0,0.06);
+    }
+
+    .perks__icon img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Mobile — hide side scrollers */
+    @media screen and (max-width: 991px) {
+      .perks__side { display: none; }
+      .perks-section { padding: 56px 16px; }
+      .perks__title { font-size: 18px; line-height: 1.5; }
+      .perks__desc { font-size: 16px; }
+      .perks__cta a { font-size: 13px; padding: 16px 32px; }
     }
   </style>
-  <div class="perks-section" style="background-color: #FDB924; padding: 80px 20px; position: relative; overflow: hidden;">
-    <div class="container-3">
-      <div class="w-row">
-        <div class="w-col w-col-6" style="padding-right: 40px;">
-          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; font-weight: 500; margin-bottom: 20px;">Platter by bitroot</div>
-          <h2 style="font-family: 'Press Start 2P', cursive; font-size: 26px; font-weight: 400; line-height: 1.3; margin-bottom: 24px; color: #000;">Uncover the Perks of Being a bitroot Member</h2>
-          <p style="font-size: 18px; line-height: 1.6; margin-bottom: 32px; color: #000;">As a bitroot member, you gain access to exclusive rewards and deals from our partners.</p>
-          <div ontouchstart="" class="perks-button-wrapper">
-            <a href="https://platter.bitroot.org" target="_blank">Get Access</a>
-          </div>
+  <div class="perks-section">
+    <!-- Center-left scroller -->
+    <div class="perks__side perks__side--left">
+      <div class="perks__side-col">
+        <div class="perks__side-row" style="--dir: normal;">
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7166.PNG" alt="Notion" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7167.PNG" alt="Bolt" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7168.JPG" alt="Amplitude" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7169.JPG" alt="Framer" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7170.PNG" alt="Semrush" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7171.PNG" alt="Slack" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7172.PNG" alt="Monday.com" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7173.WEBP" alt="Lemon Squeezy" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7174.PNG" alt="AWS Activate" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7187.WEBP" alt="Zapier" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7166.PNG" alt="Notion" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7167.PNG" alt="Bolt" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7168.JPG" alt="Amplitude" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7169.JPG" alt="Framer" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7170.PNG" alt="Semrush" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7171.PNG" alt="Slack" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7172.PNG" alt="Monday.com" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7173.WEBP" alt="Lemon Squeezy" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7174.PNG" alt="AWS Activate" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7187.WEBP" alt="Zapier" loading="lazy"></div>
         </div>
-        <div class="w-col w-col-6" style="display: flex; align-items: center; justify-content: center; position: relative;">
-          <div style="position: relative; width: 100%; max-width: 550px;">
-            <!-- Main blue card -->
-            <div class="perks-card">
-              <div class="perks-card-icon">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16 2L4 8V14C4 21 9 27.5 16 30C23 27.5 28 21 28 14V8L16 2Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <h2 style="font-family: 'Press Start 2P', cursive; font-size: 20px; font-weight: 400; color: #FFFFFF; margin-bottom: 16px; line-height: 1.4;">Exclusive Offers</h2>
-              <p style="font-size: 16px; line-height: 1.6; color: #FFFFFF; margin: 0;">Take advantage of special limited-time offers available only to bitroot members.</p>
-            </div>
+        <div class="perks__side-row" style="--dir: reverse;">
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7176.PNG" alt="Partner" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7191.JPG" alt="Elementor" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7192.PNG" alt="Partner" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7193.JPG" alt="Hootsuite" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7194.JPG" alt="Mailchimp" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7195.JPG" alt="Google Workspace" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7196.JPG" alt="Hostinger" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7197.PNG" alt="GoDaddy" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7198.PNG" alt="Grammarly" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7200.WEBP" alt="Fiverr" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7176.PNG" alt="Partner" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7191.JPG" alt="Elementor" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7192.PNG" alt="Partner" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7193.JPG" alt="Hootsuite" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7194.JPG" alt="Mailchimp" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7195.JPG" alt="Google Workspace" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7196.JPG" alt="Hostinger" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7197.PNG" alt="GoDaddy" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7198.PNG" alt="Grammarly" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7200.WEBP" alt="Fiverr" loading="lazy"></div>
+        </div>
+        <div class="perks__side-row" style="--dir: normal;">
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7190.PNG" alt="Partner" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7175.PNG" alt="Partner" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7169.JPG" alt="Framer" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7194.JPG" alt="Mailchimp" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7171.PNG" alt="Slack" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7196.JPG" alt="Hostinger" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7168.JPG" alt="Amplitude" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7200.WEBP" alt="Fiverr" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7172.PNG" alt="Monday.com" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7193.JPG" alt="Hootsuite" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7190.PNG" alt="Partner" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7175.PNG" alt="Partner" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7169.JPG" alt="Framer" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7194.JPG" alt="Mailchimp" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7171.PNG" alt="Slack" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7196.JPG" alt="Hostinger" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7168.JPG" alt="Amplitude" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7200.WEBP" alt="Fiverr" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7172.PNG" alt="Monday.com" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7193.JPG" alt="Hootsuite" loading="lazy"></div>
+        </div>
+        <div class="perks__side-row" style="--dir: reverse;">
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7167.PNG" alt="Bolt" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7174.PNG" alt="AWS Activate" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7197.PNG" alt="GoDaddy" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7170.PNG" alt="Semrush" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7198.PNG" alt="Grammarly" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7166.PNG" alt="Notion" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7195.JPG" alt="Google Workspace" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7191.JPG" alt="Elementor" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7187.WEBP" alt="Zapier" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7173.WEBP" alt="Lemon Squeezy" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7167.PNG" alt="Bolt" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7174.PNG" alt="AWS Activate" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7197.PNG" alt="GoDaddy" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7170.PNG" alt="Semrush" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7198.PNG" alt="Grammarly" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7166.PNG" alt="Notion" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7195.JPG" alt="Google Workspace" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7191.JPG" alt="Elementor" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7187.WEBP" alt="Zapier" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7173.WEBP" alt="Lemon Squeezy" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
 
-            <!-- Decorative tilted rectangles behind the card -->
-            <div class="perks-decorative-rect" style="top: -30px; left: -20px; transform: rotate(-3deg); z-index: 0;"></div>
-            <div class="perks-decorative-rect" style="top: -20px; left: -10px; transform: rotate(-2deg); z-index: 1;"></div>
-            <div class="perks-decorative-rect" style="top: -10px; left: 0; transform: rotate(-1deg); z-index: 2;"></div>
-          </div>
+    <!-- Center-right scroller (mirrored) -->
+    <div class="perks__side perks__side--right">
+      <div class="perks__side-col">
+        <div class="perks__side-row" style="--dir: reverse;">
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7193.JPG" alt="Hootsuite" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7172.PNG" alt="Monday.com" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7200.WEBP" alt="Fiverr" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7168.JPG" alt="Amplitude" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7196.JPG" alt="Hostinger" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7171.PNG" alt="Slack" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7190.PNG" alt="Partner" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7169.JPG" alt="Framer" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7175.PNG" alt="Partner" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7194.JPG" alt="Mailchimp" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7193.JPG" alt="Hootsuite" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7172.PNG" alt="Monday.com" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7200.WEBP" alt="Fiverr" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7168.JPG" alt="Amplitude" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7196.JPG" alt="Hostinger" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7171.PNG" alt="Slack" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7190.PNG" alt="Partner" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7169.JPG" alt="Framer" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7175.PNG" alt="Partner" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7194.JPG" alt="Mailchimp" loading="lazy"></div>
+        </div>
+        <div class="perks__side-row" style="--dir: normal;">
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7198.PNG" alt="Grammarly" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7166.PNG" alt="Notion" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7197.PNG" alt="GoDaddy" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7173.WEBP" alt="Lemon Squeezy" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7187.WEBP" alt="Zapier" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7167.PNG" alt="Bolt" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7174.PNG" alt="AWS Activate" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7170.PNG" alt="Semrush" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7192.PNG" alt="Partner" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7195.JPG" alt="Google Workspace" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7198.PNG" alt="Grammarly" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7166.PNG" alt="Notion" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7197.PNG" alt="GoDaddy" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7173.WEBP" alt="Lemon Squeezy" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7187.WEBP" alt="Zapier" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7167.PNG" alt="Bolt" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7174.PNG" alt="AWS Activate" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7170.PNG" alt="Semrush" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7192.PNG" alt="Partner" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7195.JPG" alt="Google Workspace" loading="lazy"></div>
+        </div>
+        <div class="perks__side-row" style="--dir: reverse;">
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7191.JPG" alt="Elementor" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7176.PNG" alt="Partner" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7195.JPG" alt="Google Workspace" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7170.PNG" alt="Semrush" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7166.PNG" alt="Notion" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7187.WEBP" alt="Zapier" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7174.PNG" alt="AWS Activate" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7198.PNG" alt="Grammarly" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7167.PNG" alt="Bolt" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7197.PNG" alt="GoDaddy" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7191.JPG" alt="Elementor" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7176.PNG" alt="Partner" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7195.JPG" alt="Google Workspace" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7170.PNG" alt="Semrush" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7166.PNG" alt="Notion" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7187.WEBP" alt="Zapier" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7174.PNG" alt="AWS Activate" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7198.PNG" alt="Grammarly" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7167.PNG" alt="Bolt" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7197.PNG" alt="GoDaddy" loading="lazy"></div>
+        </div>
+        <div class="perks__side-row" style="--dir: normal;">
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7173.WEBP" alt="Lemon Squeezy" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7192.PNG" alt="Partner" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7169.JPG" alt="Framer" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7200.WEBP" alt="Fiverr" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7172.PNG" alt="Monday.com" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7193.JPG" alt="Hootsuite" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7196.JPG" alt="Hostinger" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7168.JPG" alt="Amplitude" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7171.PNG" alt="Slack" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7175.PNG" alt="Partner" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7173.WEBP" alt="Lemon Squeezy" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7192.PNG" alt="Partner" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7169.JPG" alt="Framer" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7200.WEBP" alt="Fiverr" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7172.PNG" alt="Monday.com" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7193.JPG" alt="Hootsuite" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7196.JPG" alt="Hostinger" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7168.JPG" alt="Amplitude" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7171.PNG" alt="Slack" loading="lazy"></div>
+          <div class="perks__icon"><img src="platter/images/app-icons/IMG_7175.PNG" alt="Partner" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Centered content -->
+    <div class="container-3">
+      <div class="perks__content">
+        <div class="perks__label">Platter by bitroot</div>
+        <h2 class="perks__title">Uncover the Perks of Being a bitroot Member</h2>
+        <p class="perks__desc">Exclusive rewards and deals from 588+ partners — yours as a bitroot member.</p>
+        <div class="perks__cta" ontouchstart="">
+          <a href="https://platter.bitroot.org" target="_blank">Get Access</a>
         </div>
       </div>
     </div>
