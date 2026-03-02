@@ -3068,18 +3068,18 @@
     // ── Value Calculator ─────────────────────────────────────────
     (function() {
       var TOOLS = [
-        { id: 'notion',    name: 'Notion',           cat: 'Docs & Wiki',      icon: 'IMG_7166.PNG',  retail: 30,  deal: 0,  badge: 'FREE',    badgeType: 'free',  preset: ['dev','growth','founder'] },
-        { id: 'slack',     name: 'Slack',             cat: 'Team Chat',        icon: 'IMG_7171.PNG',  retail: 22,  deal: 7,  badge: '~68% off', badgeType: 'deal', preset: ['growth','founder'] },
-        { id: 'clickup',   name: 'ClickUp',           cat: 'Project Mgmt',     icon: 'IMG_7172.PNG',  retail: 36,  deal: 0,  badge: 'DEAL',    badgeType: 'deal',  preset: ['growth','founder'] },
-        { id: 'figma',     name: 'Figma',             cat: 'Design',           icon: 'IMG_7175.PNG',  retail: 36,  deal: 0,  badge: 'FREE',    badgeType: 'free',  preset: ['dev','founder'] },
-        { id: 'linear',    name: 'Linear',            cat: 'Issue Tracking',   icon: 'IMG_7190.PNG',  retail: 24,  deal: 0,  badge: 'FREE',    badgeType: 'free',  preset: ['dev','founder'] },
-        { id: 'framer',    name: 'Framer',            cat: 'Website Builder',  icon: 'IMG_7169.JPG',  retail: 30,  deal: 10, badge: '67% off', badgeType: 'deal',  preset: ['dev','founder'] },
-        { id: 'loom',      name: 'Loom',              cat: 'Video Messaging',  icon: 'IMG_7168.JPG',  retail: 38,  deal: 0,  badge: 'FREE',    badgeType: 'free',  preset: ['growth','founder'] },
-        { id: 'grammarly', name: 'Grammarly',         cat: 'Writing AI',       icon: 'IMG_7198.PNG',  retail: 45,  deal: 20, badge: '55% off', badgeType: 'deal',  preset: ['growth','founder'] },
-        { id: 'lovable',   name: 'Lovable',           cat: 'AI Builder',       icon: 'IMG_7173.WEBP', retail: 50,  deal: 20, badge: '60% off', badgeType: 'deal',  preset: ['dev','founder'] },
-        { id: 'zapier',    name: 'Zapier',            cat: 'Automation',       icon: 'IMG_7187.WEBP', retail: 20,  deal: 0,  badge: 'Credits', badgeType: 'deal',  preset: ['growth','founder'] },
-        { id: 'granola',   name: 'Granola',           cat: 'AI Notes',         icon: 'IMG_7196.JPG',  retail: 54,  deal: 18, badge: '67% off', badgeType: 'deal',  preset: ['dev','growth','founder'] },
-        { id: 'gworkspace',name: 'Google Workspace',  cat: 'Email & Suite',    icon: 'IMG_7195.JPG',  retail: 18,  deal: 9,  badge: '50% off', badgeType: 'deal',  preset: ['founder'] },
+        { id: 'notion',    name: 'Notion',           cat: 'Docs & Wiki',      domain: 'notion.so',           retail: 30,  deal: 0,  badge: 'FREE',    badgeType: 'free',  preset: ['dev','growth','founder'] },
+        { id: 'slack',     name: 'Slack',             cat: 'Team Chat',        domain: 'slack.com',           retail: 22,  deal: 7,  badge: '~68% off', badgeType: 'deal', preset: ['growth','founder'] },
+        { id: 'clickup',   name: 'ClickUp',           cat: 'Project Mgmt',     domain: 'clickup.com',         retail: 36,  deal: 0,  badge: 'DEAL',    badgeType: 'deal',  preset: ['growth','founder'] },
+        { id: 'figma',     name: 'Figma',             cat: 'Design',           domain: 'figma.com',           retail: 36,  deal: 0,  badge: 'FREE',    badgeType: 'free',  preset: ['dev','founder'] },
+        { id: 'linear',    name: 'Linear',            cat: 'Issue Tracking',   domain: 'linear.app',          retail: 24,  deal: 0,  badge: 'FREE',    badgeType: 'free',  preset: ['dev','founder'] },
+        { id: 'framer',    name: 'Framer',            cat: 'Website Builder',  domain: 'framer.com',          retail: 30,  deal: 10, badge: '67% off', badgeType: 'deal',  preset: ['dev','founder'] },
+        { id: 'loom',      name: 'Loom',              cat: 'Video Messaging',  domain: 'loom.com',            retail: 38,  deal: 0,  badge: 'FREE',    badgeType: 'free',  preset: ['growth','founder'] },
+        { id: 'grammarly', name: 'Grammarly',         cat: 'Writing AI',       domain: 'grammarly.com',       retail: 45,  deal: 20, badge: '55% off', badgeType: 'deal',  preset: ['growth','founder'] },
+        { id: 'lovable',   name: 'Lovable',           cat: 'AI Builder',       domain: 'lovable.dev',         retail: 50,  deal: 20, badge: '60% off', badgeType: 'deal',  preset: ['dev','founder'] },
+        { id: 'zapier',    name: 'Zapier',            cat: 'Automation',       domain: 'zapier.com',          retail: 20,  deal: 0,  badge: 'Credits', badgeType: 'deal',  preset: ['growth','founder'] },
+        { id: 'granola',   name: 'Granola',           cat: 'AI Notes',         domain: 'granola.so',          retail: 54,  deal: 18, badge: '67% off', badgeType: 'deal',  preset: ['dev','growth','founder'] },
+        { id: 'gworkspace',name: 'Google Workspace',  cat: 'Email & Suite',    domain: 'workspace.google.com',retail: 18,  deal: 9,  badge: '50% off', badgeType: 'deal',  preset: ['founder'] },
       ];
 
       var checked = new Set();
@@ -3089,10 +3089,12 @@
         if (!grid) return;
         grid.innerHTML = TOOLS.map(function(t) {
           var badgeClass = t.badgeType === 'free' ? 'p-calc__deal-badge--free' : 'p-calc__deal-badge--deal';
+          var logoSrc = 'https://logo.clearbit.com/' + t.domain;
+          var fallbackSrc = 'https://www.google.com/s2/favicons?domain=' + t.domain + '&sz=128';
           return '<div class="p-calc__tool" data-id="' + t.id + '">'
             + '<div class="p-calc__deal-badge ' + badgeClass + '">' + t.badge + '</div>'
             + '<div class="p-calc__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="#0A0A0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>'
-            + '<div class="p-calc__icon"><img src="images/app-icons/' + t.icon + '" alt="' + t.name + '" loading="lazy"></div>'
+            + '<div class="p-calc__icon"><img src="' + logoSrc + '" alt="' + t.name + '" loading="lazy" onerror="this.onerror=null;this.src=\'' + fallbackSrc + '\'"></div>'
             + '<div class="p-calc__info"><div class="p-calc__tool-name">' + t.name + '</div><div class="p-calc__tool-cat">' + t.cat + '</div></div>'
             + '<div class="p-calc__price">$' + t.retail + '</div>'
             + '</div>';
