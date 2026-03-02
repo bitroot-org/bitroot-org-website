@@ -95,15 +95,18 @@ async function suite_secretApi() {
     assert(PERKS_API_KEY, 'Missing env var PERKS_PRIVATE_API_KEY');
   });
 
-  await test('POST /v1/authentications → 200 with token', async () => {
+  await test('POST /v1/authentications → 2xx with token', async () => {
     assert(PERKS_API_KEY, 'Cannot run — API key not set');
-    const { status, json } = await post(
-      `${SECRET_API_BASE}/v1/authentications`, '',
-      { Authorization: `Bearer ${PERKS_API_KEY}`, 'Content-Type': '' }
-    );
-    assert(status === 200, `Expected 200, got ${status}: ${JSON.stringify(json)}`);
-    assert(json?.token, `No token in response: ${JSON.stringify(json)}`);
-    jwt = json.token;
+    const res = await fetch(`${SECRET_API_BASE}/v1/authentications`, {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${PERKS_API_KEY}` },
+    });
+    let json = null;
+    try { json = await res.json(); } catch (_) {}
+    const status = res.status;
+    assert(status >= 200 && status < 300, `Expected 2xx, got ${status}: ${JSON.stringify(json)}`);
+    jwt = json?.jwt_token || json?.token;
+    assert(jwt, `No token in response: ${JSON.stringify(json)}`);
     log(info(`JWT received (${jwt.slice(0, 20)}...)`));
   });
 

@@ -39,7 +39,7 @@ async function getSecretJwt(privateApiKey) {
   }
 
   const data = await res.json();
-  return data.token;
+  return data.jwt_token || data.token;
 }
 
 // Create user on perks portal via Secret API
