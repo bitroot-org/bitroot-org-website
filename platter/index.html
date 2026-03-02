@@ -1648,11 +1648,15 @@
       background: var(--black);
     }
 
-    .p-trust__video-wrap video {
+    .p-trust__video-wrap video,
+    .p-trust__video-wrap iframe {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
 
     .p-trust__video-badge {
@@ -1765,6 +1769,22 @@
 
     .p-trust__explore-link svg {
       transition: transform 0.2s;
+    }
+
+    .p-trust .p-showcase__marquee::before {
+      background: linear-gradient(to right, var(--white), transparent);
+    }
+
+    .p-trust .p-showcase__marquee::after {
+      background: linear-gradient(to left, var(--white), transparent);
+    }
+
+    .p-trust__showcase {
+      margin-bottom: 0;
+    }
+
+    .p-trust__showcase .p-showcase__count {
+      text-align: center;
     }
 
     .p-trust__explore-link:hover svg {
@@ -2244,7 +2264,7 @@
       <div class="p-trust__inner">
         <div class="p-trust__video-col reveal">
           <div class="p-trust__video-wrap">
-            <iframe src="https://www.youtube.com/embed/XXUwBZKUBFM" title="From the founder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%;height:100%;position:absolute;top:0;left:0;"></iframe>
+            <iframe src="https://www.youtube.com/embed/XXUwBZKUBFM" title="From the founder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="p-trust__video-badge">From the founder</div>
           </div>
         </div>
@@ -2260,14 +2280,48 @@
           </ul>
           <div class="p-trust__cta-row reveal reveal-delay-4">
             <div class="p-btn-3d" ontouchstart="">
-              <a href="#pricing">Get Access</a>
+              <a href="https://perks.bitroot.org" target="_blank" rel="noopener">Explore Deals</a>
             </div>
-            <a href="https://perks.bitroot.org" target="_blank" rel="noopener" class="p-trust__explore-link">
-              Explore deals first
+            <a href="#pricing" class="p-trust__explore-link">
+              Get Access
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
           </div>
         </div>
+      </div>
+
+      <!-- Partner Icon Showcase — full-width below the grid -->
+      <div class="p-showcase p-trust__showcase reveal" style="margin-top: 56px;">
+        <div class="p-showcase__marquee">
+          <div class="p-showcase__row" style="--direction: normal;">
+            <div class="p-showcase__track">
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7166.PNG" alt="Notion" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7167.PNG" alt="Bolt" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7168.JPG" alt="Amplitude" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7169.JPG" alt="Framer" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7170.PNG" alt="Semrush" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7171.PNG" alt="Slack" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7172.PNG" alt="Monday.com" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7173.WEBP" alt="Lemon Squeezy" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7174.PNG" alt="AWS Activate" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7187.WEBP" alt="Zapier" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7190.PNG" alt="Partner" loading="lazy"></div>
+              <!-- duplicate for seamless loop -->
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7166.PNG" alt="Notion" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7167.PNG" alt="Bolt" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7168.JPG" alt="Amplitude" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7169.JPG" alt="Framer" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7170.PNG" alt="Semrush" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7171.PNG" alt="Slack" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7172.PNG" alt="Monday.com" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7173.WEBP" alt="Lemon Squeezy" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7174.PNG" alt="AWS Activate" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7187.WEBP" alt="Zapier" loading="lazy"></div>
+              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7190.PNG" alt="Partner" loading="lazy"></div>
+            </div>
+          </div>
+        </div>
+        <p class="p-showcase__count">Showing <strong>11</strong> of <strong>588+</strong> partner perks</p>
       </div>
     </div>
   </section>
@@ -2312,68 +2366,6 @@
         <div class="p-section__label p-solutions__label reveal">What's on the Platter</div>
         <h2 class="p-solutions__title reveal reveal-delay-1">Everything You Need, One Membership</h2>
         <p class="p-solutions__subtitle reveal reveal-delay-2">Curated perks and resources to help you build, scale, and save &mdash; without the noise.</p>
-      </div>
-
-      <!-- Sneak Peek: Partner Icon Showcase -->
-      <div class="p-showcase reveal">
-        <div class="p-showcase__heading">
-          <span class="p-showcase__badge">Sneak Peek</span>
-        </div>
-        <div class="p-showcase__marquee">
-          <div class="p-showcase__row" style="--direction: normal;">
-            <div class="p-showcase__track">
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7166.PNG" alt="Notion" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7167.PNG" alt="Bolt" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7168.JPG" alt="Amplitude" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7169.JPG" alt="Framer" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7170.PNG" alt="Semrush" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7171.PNG" alt="Slack" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7172.PNG" alt="Monday.com" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7173.WEBP" alt="Lemon Squeezy" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7174.PNG" alt="AWS Activate" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7187.WEBP" alt="Zapier" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7190.PNG" alt="Partner" loading="lazy"></div>
-              <!-- duplicate for seamless loop -->
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7166.PNG" alt="Notion" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7167.PNG" alt="Bolt" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7168.JPG" alt="Amplitude" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7169.JPG" alt="Framer" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7170.PNG" alt="Semrush" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7171.PNG" alt="Slack" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7172.PNG" alt="Monday.com" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7173.WEBP" alt="Lemon Squeezy" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7174.PNG" alt="AWS Activate" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7187.WEBP" alt="Zapier" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7190.PNG" alt="Partner" loading="lazy"></div>
-            </div>
-          </div>
-          <div class="p-showcase__row" style="--direction: reverse;">
-            <div class="p-showcase__track">
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7176.PNG" alt="Partner" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7191.JPG" alt="Elementor" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7192.PNG" alt="Partner" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7193.JPG" alt="Hootsuite" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7194.JPG" alt="Mailchimp" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7195.JPG" alt="Google Workspace" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7196.JPG" alt="Hostinger" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7197.PNG" alt="GoDaddy" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7198.PNG" alt="Grammarly" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7200.WEBP" alt="Fiverr" loading="lazy"></div>
-              <!-- duplicate for seamless loop -->
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7176.PNG" alt="Partner" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7191.JPG" alt="Elementor" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7192.PNG" alt="Partner" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7193.JPG" alt="Hootsuite" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7194.JPG" alt="Mailchimp" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7195.JPG" alt="Google Workspace" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7196.JPG" alt="Hostinger" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7197.PNG" alt="GoDaddy" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7198.PNG" alt="Grammarly" loading="lazy"></div>
-              <div class="p-showcase__icon"><img src="images/app-icons/IMG_7200.WEBP" alt="Fiverr" loading="lazy"></div>
-            </div>
-          </div>
-        </div>
-        <p class="p-showcase__count">Showing <strong>21</strong> of <strong>588+</strong> partner perks on the Platter</p>
       </div>
 
       <div class="p-offerings">
