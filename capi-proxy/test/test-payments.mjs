@@ -125,7 +125,7 @@ async function suite_secretApi() {
 
 // ── Suite 2: Razorpay Webhook → Provision Perks ───────────────────────────────
 async function suite_webhookEndpoint() {
-  log(head(`2. Razorpay Webhook → ${PAYMENTS_URL}/api/staging-provision-perks`));
+  log(head(`2. Razorpay Webhook → ${PAYMENTS_URL}/api/payments/staging-provision-perks`));
 
   await test('Env: PAYMENTS_URL is set', async () => {
     assert(PAYMENTS_URL, 'Missing env var PAYMENTS_URL');
@@ -136,13 +136,13 @@ async function suite_webhookEndpoint() {
   });
 
   await test('GET → 405 Method Not Allowed', async () => {
-    const res = await fetch(`${PAYMENTS_URL}/api/staging-provision-perks`);
+    const res = await fetch(`${PAYMENTS_URL}/api/payments/staging-provision-perks`);
     assert(res.status === 405, `Expected 405, got ${res.status}`);
   });
 
   await test('POST with no signature header → 400', async () => {
     const payload = makePaymentEvent(TEST_EMAIL);
-    const { status, json } = await post(`${PAYMENTS_URL}/api/staging-provision-perks`, payload);
+    const { status, json } = await post(`${PAYMENTS_URL}/api/payments/staging-provision-perks`, payload);
     assert(status === 400, `Expected 400, got ${status}: ${JSON.stringify(json)}`);
     log(info(json?.error || ''));
   });
@@ -150,7 +150,7 @@ async function suite_webhookEndpoint() {
   await test('POST with wrong signature → 400', async () => {
     const payload = makePaymentEvent(TEST_EMAIL);
     const { status } = await post(
-      `${PAYMENTS_URL}/api/staging-provision-perks`, payload,
+      `${PAYMENTS_URL}/api/payments/staging-provision-perks`, payload,
       { 'x-razorpay-signature': 'deadbeefdeadbeef' }
     );
     assert(status === 400, `Expected 400, got ${status}`);
@@ -161,7 +161,7 @@ async function suite_webhookEndpoint() {
     const payload = JSON.stringify({ event: 'refund.created', payload: {} });
     const sig = sign(payload, WEBHOOK_SECRET);
     const { status, json } = await post(
-      `${PAYMENTS_URL}/api/staging-provision-perks`, payload,
+      `${PAYMENTS_URL}/api/payments/staging-provision-perks`, payload,
       { 'x-razorpay-signature': sig }
     );
     assert(status === 200, `Expected 200, got ${status}: ${JSON.stringify(json)}`);
@@ -174,7 +174,7 @@ async function suite_webhookEndpoint() {
     const payload = makePaymentEvent(TEST_EMAIL);
     const sig = sign(payload, WEBHOOK_SECRET);
     const { status, json } = await post(
-      `${PAYMENTS_URL}/api/staging-provision-perks`, payload,
+      `${PAYMENTS_URL}/api/payments/staging-provision-perks`, payload,
       { 'x-razorpay-signature': sig }
     );
     assert(status === 200, `Expected 200, got ${status}: ${JSON.stringify(json)}`);
@@ -191,7 +191,7 @@ async function suite_webhookEndpoint() {
     });
     const sig = sign(payload, WEBHOOK_SECRET);
     const { status } = await post(
-      `${PAYMENTS_URL}/api/staging-provision-perks`, payload,
+      `${PAYMENTS_URL}/api/payments/staging-provision-perks`, payload,
       { 'x-razorpay-signature': sig }
     );
     assert(status === 400, `Expected 400, got ${status}`);

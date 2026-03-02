@@ -6,7 +6,7 @@
   },
   "item": [
     {
-      "name": "4. Meta CAPI Proxy \u2014 /api/events",
+      "name": "4. Meta CAPI Proxy \u2014 /api/meta/events",
       "description": "Tests the Facebook Conversions API proxy.",
       "item": [
         {
@@ -34,7 +34,7 @@
               }
             ],
             "url": {
-              "raw": "{{staging_url}}/api/events",
+              "raw": "{{staging_url}}/api/meta/events",
               "host": [
                 "{{staging_url}}"
               ],
@@ -80,7 +80,7 @@
               "raw": "{\n  \"data\": [\n    {\n      \"event_name\": \"PageView\",\n      \"event_time\": {{$timestamp}},\n      \"action_source\": \"website\",\n      \"user_data\": {\n        \"client_ip_address\": \"1.2.3.4\",\n        \"client_user_agent\": \"Mozilla/5.0\"\n      }\n    }\n  ]\n}"
             },
             "url": {
-              "raw": "{{staging_url}}/api/events",
+              "raw": "{{staging_url}}/api/meta/events",
               "host": [
                 "{{staging_url}}"
               ],
@@ -123,7 +123,7 @@
               "raw": "{\n  \"data\": []\n}"
             },
             "url": {
-              "raw": "{{staging_url}}/api/events",
+              "raw": "{{staging_url}}/api/meta/events",
               "host": [
                 "{{staging_url}}"
               ],
@@ -163,7 +163,7 @@
               "raw": "{\n  \"wrong_key\": \"no data array here\"\n}"
             },
             "url": {
-              "raw": "{{staging_url}}/api/events",
+              "raw": "{{staging_url}}/api/meta/events",
               "host": [
                 "{{staging_url}}"
               ],
