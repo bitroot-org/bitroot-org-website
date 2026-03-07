@@ -3587,6 +3587,122 @@
     })();
   </script>
 
+  <!-- Umami: Navigation, CTA, Calculator & Scroll Events -->
+  <script>
+    (function() {
+      function track(name, data) {
+        if (typeof umami !== 'undefined') umami.track(name, data);
+      }
+
+      // =============================================
+      // NAV: nav:click — track navbar link clicks
+      // =============================================
+      var navTargetMap = {
+        '#solutions': 'what_you_get',
+        '#see-whats-inside': 'explore_deals',
+        '#calculator': 'calculator',
+        '#pricing': 'pricing',
+        '#faq': 'faq'
+      };
+
+      // Desktop nav links
+      document.querySelectorAll('.p-nav__link').forEach(function(link) {
+        link.addEventListener('click', function() {
+          var href = this.getAttribute('href');
+          var target = navTargetMap[href];
+          if (target) track('nav:click', { target: target });
+        });
+      });
+
+      // Mobile menu nav links (exclude "Get Access" which goes to #pricing)
+      document.querySelectorAll('.p-nav__mobile-menu a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          var href = this.getAttribute('href');
+          var target = navTargetMap[href];
+          if (target) track('nav:click', { target: target });
+        });
+      });
+
+      // =============================================
+      // CTA: cta:click — Get Access in navbar
+      // =============================================
+      var navCta = document.querySelector('.p-nav__cta');
+      if (navCta) {
+        navCta.addEventListener('click', function() {
+          track('cta:click', { location: 'nav' });
+        });
+      }
+
+      // Mobile "Get Access" (last link in mobile menu pointing to #pricing)
+      var mobileLinks = document.querySelectorAll('.p-nav__mobile-menu a[href="#pricing"]');
+      mobileLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          track('cta:click', { location: 'nav' });
+        });
+      });
+
+      // =============================================
+      // CTA: cta:click — Explore Deals in trust section
+      // =============================================
+      var exploreDealsCta = document.querySelector('.p-trust__cta-row .p-btn-3d a[href*="perks.bitroot.org"]');
+      if (exploreDealsCta) {
+        exploreDealsCta.addEventListener('click', function() {
+          track('cta:click', { location: 'hero_deals' });
+        });
+      }
+
+      // =============================================
+      // CALCULATOR: calculator:use + deal:click
+      // Fires when user selects/deselects tools or uses presets
+      // =============================================
+      var calcGrid = document.getElementById('calcGrid');
+      if (calcGrid) {
+        calcGrid.addEventListener('click', function(e) {
+          var tool = e.target.closest('.p-calc__tool');
+          if (tool) {
+            track('calculator:use', { action: 'calculate' });
+            var nameEl = tool.querySelector('.p-calc__tool-name');
+            if (nameEl) {
+              track('deal:click', { deal_name: nameEl.textContent });
+            }
+          }
+        });
+      }
+
+      // =============================================
+      // CALCULATOR PRESETS: calculator:use + category:select
+      // =============================================
+      var presetNames = {
+        dev: 'Dev Stack',
+        growth: 'Growth Stack',
+        founder: 'Full Founder Pack',
+        none: 'Clear All'
+      };
+
+      document.querySelectorAll('.p-calc__preset-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          track('calculator:use', { action: 'calculate' });
+          var preset = this.dataset.preset;
+          track('category:select', { category: presetNames[preset] || preset });
+        });
+      });
+
+      // =============================================
+      // SCROLL: page:scroll — 50% scroll depth
+      // =============================================
+      var scrollFired = false;
+      window.addEventListener('scroll', function() {
+        if (scrollFired) return;
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        if (docHeight > 0 && (scrollTop / docHeight) >= 0.5) {
+          scrollFired = true;
+          track('page:scroll', { depth: '50%' });
+        }
+      }, { passive: true });
+    })();
+  </script>
+
   <!-- Meta Conversions API Events -->
   <script>
     (function() {
