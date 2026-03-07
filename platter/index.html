@@ -3652,7 +3652,7 @@
       }
 
       // =============================================
-      // CALCULATOR: calculator:use
+      // CALCULATOR: calculator:use + deal:click
       // Fires when user selects/deselects tools or uses presets
       // =============================================
       var calcGrid = document.getElementById('calcGrid');
@@ -3661,13 +3661,29 @@
           var tool = e.target.closest('.p-calc__tool');
           if (tool) {
             track('calculator:use', { action: 'calculate' });
+            var nameEl = tool.querySelector('.p-calc__tool-name');
+            if (nameEl) {
+              track('deal:click', { deal_name: nameEl.textContent });
+            }
           }
         });
       }
 
+      // =============================================
+      // CALCULATOR PRESETS: calculator:use + category:select
+      // =============================================
+      var presetNames = {
+        dev: 'Dev Stack',
+        growth: 'Growth Stack',
+        founder: 'Full Founder Pack',
+        none: 'Clear All'
+      };
+
       document.querySelectorAll('.p-calc__preset-btn').forEach(function(btn) {
         btn.addEventListener('click', function() {
           track('calculator:use', { action: 'calculate' });
+          var preset = this.dataset.preset;
+          track('category:select', { category: presetNames[preset] || preset });
         });
       });
 
