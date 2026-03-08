@@ -1394,6 +1394,72 @@
     .p-pricing__toggle-switch--usd { background: var(--black); }
     .p-pricing__toggle-switch--usd::after { transform: translateX(16px); }
 
+    /* ── Women's Day promo ── */
+    .p-wd-banner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #FFF0F5;
+      border: 2px solid #C2185B;
+      border-radius: var(--radius);
+      padding: 10px 20px;
+      margin-bottom: 32px;
+      font-family: var(--font-mono);
+      font-size: 13px;
+      font-weight: 600;
+      color: #C2185B;
+    }
+    .p-wd-banner__icon { font-size: 16px; flex-shrink: 0; }
+
+    .p-wd-tag {
+      position: absolute;
+      bottom: -13px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: #FFF0F5;
+      color: #C2185B;
+      border: 2px solid #C2185B;
+      border-radius: 2px;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      white-space: nowrap;
+    }
+    .p-wd-tag__dot { width: 6px; height: 6px; border-radius: 50%; background: #C2185B; flex-shrink: 0; }
+
+    .p-wd-claim-note {
+      text-align: center;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: rgba(0,0,0,0.45);
+      margin-top: 28px;
+      padding: 10px 16px;
+      border: 1.5px dashed rgba(194,24,91,0.35);
+      border-radius: var(--radius);
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .p-wd-claim-note strong { color: #C2185B; }
+
+    .p-price-card__wd-wrap { position: relative; padding-bottom: 20px; margin-bottom: 20px; }
+
+    .p-price-card--featured .p-wd-tag {
+      background: #C2185B;
+      color: #fff;
+      border-color: #fff;
+    }
+    .p-price-card--featured .p-wd-tag__dot { background: #fff; }
+
+    .p-price-card--featured .p-wd-claim-note { color: rgba(255,255,255,0.5); border-color: rgba(255,255,255,0.3); }
+
     .p-price-card__period {
       font-family: var(--font-mono);
       font-size: 13px;
@@ -2547,7 +2613,7 @@
       <a href="#calculator" class="p-nav__link">Calculator</a>
       <a href="#pricing" class="p-nav__link">Pricing</a>
       <a href="#faq" class="p-nav__link">FAQ</a>
-      <a href="#pricing" class="p-nav__cta">Get Access</a>
+      <a href="#pricing" class="p-nav__cta">Women's Day Deal</a>
     </div>
     <button class="p-nav__menu-btn" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -2559,7 +2625,7 @@
     <a href="#calculator">Calculator</a>
     <a href="#pricing">Pricing</a>
     <a href="#faq">FAQ</a>
-    <a href="#pricing">Get Access</a>
+    <a href="#pricing">Women's Day Deal</a>
   </div>
 
   <!-- ====== HERO ====== -->
@@ -2585,7 +2651,7 @@
           <h1 class="p-hero__title">Uncover the <em>Perks</em> of Being a bitroot Member</h1>
           <p class="p-hero__desc">Exclusive rewards, partner deals, and premium tools &mdash; all bundled into one membership for founders and teams building what's next.</p>
           <div class="p-btn-3d" ontouchstart="">
-            <a href="#pricing">Get Access</a>
+            <a href="#pricing">Women's Day Deal</a>
           </div>
         </div>
         <div class="p-hero__visual">
@@ -2645,7 +2711,7 @@
               <a href="https://perks.bitroot.org" target="_blank" rel="noopener">Explore Deals</a>
             </div>
             <a href="#pricing" class="p-trust__explore-link">
-              Get Access
+              Women's Day Deal
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
           </div>
@@ -2859,6 +2925,10 @@
         <div class="p-section__label p-pricing__label reveal">Pricing</div>
         <h2 class="p-pricing__title reveal reveal-delay-1">Simple, Transparent Plans</h2>
         <p class="p-pricing__subtitle reveal reveal-delay-2">One-time payment. No auto-renew. No credit card lock-in.</p>
+        <div class="p-wd-banner reveal reveal-delay-3">
+          <span class="p-wd-banner__icon">♀</span>
+          Women's Day — Extra 10–15% off. Apply coupon at Razorpay checkout.
+        </div>
       </div>
       <div class="p-pricing__cards">
         <!-- Annual -->
@@ -2872,6 +2942,9 @@
             <li data-price-text="100000">$100,000+ in products</li>
             <li>Access to the growing Platter library</li>
           </ul>
+          <div class="p-price-card__wd-wrap">
+            <div class="p-wd-tag"><span class="p-wd-tag__dot"></span>Extra 10% off — Women's Day</div>
+          </div>
           <form class="p-price-card__razorpay"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_SFHnw369dlKoRo" async></script></form>
         </div>
         <!-- Insider -->
@@ -2886,9 +2959,13 @@
             <li>Priority access for all tools</li>
             <li>Exclusive Insider-only tools</li>
           </ul>
+          <div class="p-price-card__wd-wrap">
+            <div class="p-wd-tag"><span class="p-wd-tag__dot"></span>Extra 15% off — Women's Day</div>
+          </div>
           <form class="p-price-card__razorpay p-price-card__razorpay--featured"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_SFHvTPVWHfOwSR" async></script></form>
         </div>
       </div>
+      <p class="p-wd-claim-note reveal">♀ Women's Day offer — apply coupon at <strong>Razorpay checkout</strong> to claim your extra discount</p>
       <div class="p-pricing__toggle reveal reveal-delay-2" id="currency-toggle">
         <span class="p-pricing__toggle-label" id="toggle-local"></span>
         <button class="p-pricing__toggle-switch" id="toggle-switch" aria-label="Toggle currency"></button>
@@ -3011,7 +3088,7 @@
       <h2 class="p-cta-banner__title reveal">Ready to Get Started?</h2>
       <p class="p-cta-banner__text reveal reveal-delay-1">Join hundreds of founders already saving with Platter.</p>
       <div class="p-btn-3d reveal reveal-delay-2" ontouchstart="" style="display: inline-block; position: relative;">
-        <a href="#pricing">Get Access Now</a>
+        <a href="#pricing">Claim Women's Day Deal</a>
       </div>
     </div>
   </section>
