@@ -2521,9 +2521,13 @@
 
     .p-calc__savings-amt {
       font-family: var(--font-display);
-      font-size: 52px;
+      font-size: 40px;
       color: #34D399;
       line-height: 1;
+    }
+
+    .p-calc__col--highlight .p-calc__total {
+      font-size: 52px;
     }
 
     .p-calc__savings-year {
@@ -2562,6 +2566,57 @@
     }
     .p-calc__sample-note strong { color: rgba(255,255,255,0.7); }
 
+    /* Calculator currency toggle */
+    .p-calc__currency-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .p-calc__currency-opt {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .p-calc__currency-opt--active {
+      color: var(--yellow);
+    }
+
+    .p-calc__currency-switch {
+      width: 36px;
+      height: 20px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.15);
+      border: 1.5px solid rgba(255,255,255,0.2);
+      position: relative;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .p-calc__currency-switch::after {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--yellow);
+      top: 50%;
+      left: 2px;
+      transform: translateY(-50%);
+      transition: left 0.2s;
+    }
+
+    .p-calc__currency-switch--inr::after {
+      left: calc(100% - 16px);
+    }
+
     .p-calc__disclaimer {
       font-family: var(--font-mono);
       font-size: 9px;
@@ -2579,7 +2634,8 @@
       .p-calc__grid { grid-template-columns: repeat(3, 1fr); }
       .p-calc__results-inner { grid-template-columns: 1fr 32px 1fr 32px 1fr; padding: 28px 24px; }
       .p-calc__total { font-size: 28px; }
-      .p-calc__savings-amt { font-size: 40px; }
+      .p-calc__savings-amt { font-size: 28px; }
+      .p-calc__col--highlight .p-calc__total { font-size: 40px; }
       .p-calc__cta-bar { padding: 20px 24px; }
     }
 
@@ -2590,7 +2646,8 @@
       .p-calc__cta-bar { flex-direction: column; padding: 20px; text-align: center; }
       .p-calc__title { font-size: 16px; }
       .p-calc__total { font-size: 32px; }
-      .p-calc__savings-amt { font-size: 44px; }
+      .p-calc__savings-amt { font-size: 32px; }
+      .p-calc__col--highlight .p-calc__total { font-size: 44px; }
     }
 
     @media (max-width: 479px) {
@@ -2656,34 +2713,34 @@
       <div class="p-hero__inner">
         <div class="p-hero__content">
           <div class="p-hero__label">Platter by Bitroot</div>
-          <h1 class="p-hero__title">Uncover the <em>Perks</em> of Being a bitroot Member</h1>
-          <p class="p-hero__desc">Exclusive rewards, partner deals, and premium tools &mdash; all bundled into one membership for founders and teams building what's next.</p>
+          <h1 class="p-hero__title">Your Startup's Entire <em>Tech Stack</em> &mdash; One Subscription</h1>
+          <p class="p-hero__desc">Premium tools, cloud credits, and exclusive software deals for founders, freelancers, and creators &mdash; all in a single annual plan that pays for itself on day one.</p>
           <div class="p-btn-3d" ontouchstart="">
-            <a href="#pricing">Women's Day Deal</a>
+            <a href="#calculator">See What You'll Save</a>
           </div>
         </div>
         <div class="p-hero__visual">
           <div class="p-hero__stack">
             <div class="p-perk-card p-perk-card--1">
               <div class="p-perk-card__icon">
-                <svg width="24" height="24" viewBox="0 0 32 32" fill="none"><path d="M16 2L4 8V14C4 21 9 27.5 16 30C23 27.5 28 21 28 14V8L16 2Z" fill="white" stroke="white" stroke-width="2"/></svg>
+                <svg width="24" height="24" viewBox="0 0 32 32" fill="none"><rect x="4" y="4" width="24" height="24" rx="4" stroke="white" stroke-width="2"/><path d="M12 16L15 19L21 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </div>
-              <div class="p-perk-card__title">Exclusive Offers</div>
-              <p class="p-perk-card__text">Limited-time deals from our partner network</p>
+              <div class="p-perk-card__title">Premium Tools</div>
+              <p class="p-perk-card__text">Top-tier software at a fraction of the cost</p>
             </div>
             <div class="p-perk-card p-perk-card--2">
               <div class="p-perk-card__icon">
-                <svg width="24" height="24" viewBox="0 0 32 32" fill="none"><rect x="4" y="4" width="24" height="24" rx="4" stroke="#FDB924" stroke-width="2"/><path d="M12 16L15 19L21 13" stroke="#FDB924" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <svg width="24" height="24" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="#FDB924" stroke-width="2"/><path d="M16 10V22M12 14H20M12 18H20" stroke="#FDB924" stroke-width="2" stroke-linecap="round"/></svg>
               </div>
-              <div class="p-perk-card__title">Premium Tools</div>
-              <p class="p-perk-card__text">Software credits & free tiers</p>
+              <div class="p-perk-card__title">Cloud Credits</div>
+              <p class="p-perk-card__text">AWS, Azure, GCP &amp; more included</p>
             </div>
             <div class="p-perk-card p-perk-card--3">
               <div class="p-perk-card__icon">
-                <svg width="24" height="24" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="12" r="5" stroke="#2B6FEC" stroke-width="2"/><path d="M8 26C8 22 11.6 19 16 19C20.4 19 24 22 24 26" stroke="#2B6FEC" stroke-width="2" stroke-linecap="round"/></svg>
+                <svg width="24" height="24" viewBox="0 0 32 32" fill="none"><path d="M6 16L16 6L26 16L16 26Z" stroke="#2B6FEC" stroke-width="2" stroke-linejoin="round"/><circle cx="16" cy="16" r="4" stroke="#2B6FEC" stroke-width="2"/></svg>
               </div>
-              <div class="p-perk-card__title">Member Network</div>
-              <p class="p-perk-card__text">Connect with fellow founders</p>
+              <div class="p-perk-card__title">All-in-One Plan</div>
+              <p class="p-perk-card__text">One subscription replaces dozens of bills</p>
             </div>
           </div>
           <div class="p-hero__sticker">
@@ -2691,6 +2748,65 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ====== VALUE CALCULATOR ====== -->
+  <section id="calculator" class="p-section p-calc">
+    <div class="p-container">
+
+      <div class="p-section__label p-calc__label reveal">Value Calculator</div>
+      <h2 class="p-calc__title reveal reveal-delay-1">What's Your Startup Stack <em style="font-style:normal;background:var(--yellow);color:var(--black);padding:2px 8px;">Really</em> Costing You?</h2>
+      <p class="p-calc__subtitle reveal reveal-delay-2">Tick the tools you use. See what you're paying at retail — and what Platter members actually pay through our partner deals.</p>
+
+      <!-- Calculator currency toggle -->
+      <div class="p-calc__currency-toggle reveal reveal-delay-2" id="calc-currency-toggle">
+        <span class="p-calc__currency-opt p-calc__currency-opt--active" id="calc-cur-usd">USD ($)</span>
+        <button class="p-calc__currency-switch" id="calc-cur-switch" aria-label="Toggle currency"></button>
+        <span class="p-calc__currency-opt" id="calc-cur-inr">INR (₹)</span>
+      </div>
+
+      <!-- Quick presets -->
+      <div class="p-calc__presets reveal reveal-delay-2">
+        <button class="p-calc__preset-btn" data-preset="dev">Dev Stack</button>
+        <button class="p-calc__preset-btn" data-preset="growth">Growth Stack</button>
+        <button class="p-calc__preset-btn" data-preset="founder">Full Founder Pack</button>
+        <button class="p-calc__preset-btn" data-preset="none">Clear All</button>
+      </div>
+
+      <!-- Tool cards — rendered by JS -->
+      <div class="p-calc__grid reveal reveal-delay-3" id="calcGrid"></div>
+      <p class="p-calc__sample-note reveal">Showing a sample of our partner tools — Platter members get access to <strong>many more</strong> deals across 100+ products.</p>
+
+      <!-- Results panel -->
+      <div class="p-calc__results reveal">
+        <div class="p-calc__results-inner">
+          <div class="p-calc__col">
+            <div class="p-calc__col-label">Without Platter</div>
+            <div class="p-calc__total p-calc__total--without" id="calcWithout">$0</div>
+            <div class="p-calc__col-sub">/mo at retail price</div>
+          </div>
+          <div class="p-calc__divider">→</div>
+          <div class="p-calc__savings-col">
+            <div class="p-calc__savings-label">You Save / year</div>
+            <div class="p-calc__savings-amt" id="calcSavings">$0</div>
+            <div class="p-calc__savings-year" id="calcSavingsYear">&nbsp;</div>
+          </div>
+          <div class="p-calc__divider">→</div>
+          <div class="p-calc__col p-calc__col--highlight">
+            <div class="p-calc__col-label" style="color:var(--yellow)">With Platter</div>
+            <div class="p-calc__total p-calc__total--with" id="calcWith">$0</div>
+            <div class="p-calc__col-sub">/mo est. with deals</div>
+          </div>
+        </div>
+        <div class="p-calc__cta-bar">
+          <div class="p-calc__cta-hint" id="calcHint">← Select the tools you use to calculate your savings</div>
+          <a href="#pricing" class="p-btn p-btn--primary">Unlock These Deals →</a>
+        </div>
+      </div>
+
+      <div class="p-calc__disclaimer">* Savings reflect actual Platter partner deals sourced from perks.bitroot.org. Retail prices are standard monthly rates for small teams (2–3 users). Cloud credits (AWS, Azure, GCP) replace monthly spend rather than discount it. Eligibility and final savings may vary by plan and company stage.</div>
+
     </div>
   </section>
 
@@ -2758,6 +2874,64 @@
           </div>
         </div>
         <p class="p-showcase__count">Showing <strong>11</strong> of <strong>588+</strong> partner perks</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PRICING ====== -->
+  <section id="pricing" class="p-section p-pricing">
+    <div class="p-container">
+      <div class="p-pricing__header">
+        <div class="p-section__label p-pricing__label reveal">Pricing</div>
+        <h2 class="p-pricing__title reveal reveal-delay-1">Simple, Transparent Plans</h2>
+        <p class="p-pricing__subtitle reveal reveal-delay-2">One-time payment. No auto-renew. No credit card lock-in.</p>
+        <div class="p-wd-banner reveal reveal-delay-3">
+          <span class="p-wd-banner__icon">♀</span>
+          Women's Day — Extra 10–15% off. Apply coupon at Razorpay checkout.
+        </div>
+      </div>
+      <div class="p-pricing__cards">
+        <!-- Annual -->
+        <div class="p-price-card reveal">
+          <div class="p-price-card__name">Annual</div>
+          <div class="p-price-card__price-original" data-price-original="250"></div>
+          <div class="p-price-card__price" data-price="180"></div>
+          <div class="p-price-card__billing">yearly</div>
+          <div class="p-price-card__period">Newlogger Pro + Product Pass access</div>
+          <ul class="p-price-card__features">
+            <li>Everything in Monthly</li>
+            <li data-price-text="100000">$100,000+ in products</li>
+            <li>Access to the growing Platter library</li>
+          </ul>
+          <div class="p-price-card__wd-wrap">
+            <div class="p-wd-tag"><span class="p-wd-tag__dot"></span>Extra 10% off — Women's Day</div>
+          </div>
+          <form class="p-price-card__razorpay"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_SFHnw369dlKoRo" async></script></form>
+        </div>
+        <!-- Insider -->
+        <div class="p-price-card p-price-card--featured reveal reveal-delay-1">
+          <div class="p-price-card__popular">Best Value + AI Tools</div>
+          <div class="p-price-card__name">Insider</div>
+          <div class="p-price-card__price-original" data-price-original="350"></div>
+          <div class="p-price-card__price" data-price="250"></div>
+          <div class="p-price-card__billing">yearly</div>
+          <div class="p-price-card__period">Priority Support email</div>
+          <ul class="p-price-card__features">
+            <li>Everything in Annual</li>
+            <li>Priority access for all tools</li>
+            <li>Exclusive Insider-only tools</li>
+          </ul>
+          <div class="p-price-card__wd-wrap">
+            <div class="p-wd-tag"><span class="p-wd-tag__dot"></span>Extra 15% off — Women's Day</div>
+          </div>
+          <form class="p-price-card__razorpay p-price-card__razorpay--featured"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_SFHvTPVWHfOwSR" async></script></form>
+        </div>
+      </div>
+      <p class="p-wd-claim-note reveal">♀ Women's Day offer — apply coupon at <strong>Razorpay checkout</strong> to claim your extra discount</p>
+      <div class="p-pricing__toggle reveal reveal-delay-2" id="currency-toggle">
+        <span class="p-pricing__toggle-label" id="toggle-local"></span>
+        <button class="p-pricing__toggle-switch" id="toggle-switch" aria-label="Toggle currency"></button>
+        <span class="p-pricing__toggle-label" id="toggle-usd">USD</span>
       </div>
     </div>
   </section>
@@ -2872,117 +3046,6 @@
       <div class="p-ticker__item">BUILT FOR FOUNDERS <span class="p-ticker__dot"></span> CURATED BY BUILDERS <span class="p-ticker__dot"></span> TRUSTED BY STARTUPS <span class="p-ticker__dot"></span> SAVE MILLIONS <span class="p-ticker__dot"></span> NO AUTO RENEW <span class="p-ticker__dot"></span> NO CREDIT CARD LOCK-IN</div>
     </div>
   </div>
-
-  <!-- ====== WHO IS THIS FOR ====== -->
-  <!-- ====== VALUE CALCULATOR ====== -->
-  <section id="calculator" class="p-section p-calc">
-    <div class="p-container">
-
-      <div class="p-section__label p-calc__label reveal">Value Calculator</div>
-      <h2 class="p-calc__title reveal reveal-delay-1">What's Your Startup Stack <em style="font-style:normal;background:var(--yellow);color:var(--black);padding:2px 8px;">Really</em> Costing You?</h2>
-      <p class="p-calc__subtitle reveal reveal-delay-2">Tick the tools you use. See what you're paying at retail — and what Platter members actually pay through our partner deals.</p>
-
-      <!-- Quick presets -->
-      <div class="p-calc__presets reveal reveal-delay-2">
-        <button class="p-calc__preset-btn" data-preset="dev">Dev Stack</button>
-        <button class="p-calc__preset-btn" data-preset="growth">Growth Stack</button>
-        <button class="p-calc__preset-btn" data-preset="founder">Full Founder Pack</button>
-        <button class="p-calc__preset-btn" data-preset="none">Clear All</button>
-      </div>
-
-      <!-- Tool cards — rendered by JS -->
-      <div class="p-calc__grid reveal reveal-delay-3" id="calcGrid"></div>
-      <p class="p-calc__sample-note reveal">Showing a sample of our partner tools — Platter members get access to <strong>many more</strong> deals across 100+ products.</p>
-
-      <!-- Results panel -->
-      <div class="p-calc__results reveal">
-        <div class="p-calc__results-inner">
-          <div class="p-calc__col">
-            <div class="p-calc__col-label">Without Platter</div>
-            <div class="p-calc__total p-calc__total--without" id="calcWithout">$0</div>
-            <div class="p-calc__col-sub">/mo at retail price</div>
-          </div>
-          <div class="p-calc__divider">→</div>
-          <div class="p-calc__col">
-            <div class="p-calc__col-label" style="color:var(--yellow)">With Platter</div>
-            <div class="p-calc__total p-calc__total--with" id="calcWith">$0</div>
-            <div class="p-calc__col-sub">/mo est. with deals</div>
-          </div>
-          <div class="p-calc__divider">→</div>
-          <div class="p-calc__savings-col">
-            <div class="p-calc__savings-label">You Save / year</div>
-            <div class="p-calc__savings-amt" id="calcSavings">$0</div>
-            <div class="p-calc__savings-year" id="calcSavingsYear">&nbsp;</div>
-          </div>
-        </div>
-        <div class="p-calc__cta-bar">
-          <div class="p-calc__cta-hint" id="calcHint">← Select the tools you use to calculate your savings</div>
-          <a href="#pricing" class="p-btn p-btn--primary">Unlock These Deals →</a>
-        </div>
-      </div>
-
-      <div class="p-calc__disclaimer">* Savings reflect actual Platter partner deals sourced from perks.bitroot.org. Retail prices are standard monthly rates for small teams (2–3 users). Cloud credits (AWS, Azure, GCP) replace monthly spend rather than discount it. Eligibility and final savings may vary by plan and company stage.</div>
-
-    </div>
-  </section>
-
-  <!-- ====== PRICING ====== -->
-  <section id="pricing" class="p-section p-pricing">
-    <div class="p-container">
-      <div class="p-pricing__header">
-        <div class="p-section__label p-pricing__label reveal">Pricing</div>
-        <h2 class="p-pricing__title reveal reveal-delay-1">Simple, Transparent Plans</h2>
-        <p class="p-pricing__subtitle reveal reveal-delay-2">One-time payment. No auto-renew. No credit card lock-in.</p>
-        <div class="p-wd-banner reveal reveal-delay-3">
-          <span class="p-wd-banner__icon">♀</span>
-          Women's Day — Extra 10–15% off. Apply coupon at Razorpay checkout.
-        </div>
-      </div>
-      <div class="p-pricing__cards">
-        <!-- Annual -->
-        <div class="p-price-card reveal">
-          <div class="p-price-card__name">Annual</div>
-          <div class="p-price-card__price-original" data-price-original="250"></div>
-          <div class="p-price-card__price" data-price="180"></div>
-          <div class="p-price-card__billing">yearly</div>
-          <div class="p-price-card__period">Newlogger Pro + Product Pass access</div>
-          <ul class="p-price-card__features">
-            <li>Everything in Monthly</li>
-            <li data-price-text="100000">$100,000+ in products</li>
-            <li>Access to the growing Platter library</li>
-          </ul>
-          <div class="p-price-card__wd-wrap">
-            <div class="p-wd-tag"><span class="p-wd-tag__dot"></span>Extra 10% off — Women's Day</div>
-          </div>
-          <form class="p-price-card__razorpay"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_SFHnw369dlKoRo" async></script></form>
-        </div>
-        <!-- Insider -->
-        <div class="p-price-card p-price-card--featured reveal reveal-delay-1">
-          <div class="p-price-card__popular">Best Value + AI Tools</div>
-          <div class="p-price-card__name">Insider</div>
-          <div class="p-price-card__price-original" data-price-original="350"></div>
-          <div class="p-price-card__price" data-price="250"></div>
-          <div class="p-price-card__billing">yearly</div>
-          <div class="p-price-card__period">Priority Support email</div>
-          <ul class="p-price-card__features">
-            <li>Everything in Annual</li>
-            <li>Priority access for all tools</li>
-            <li>Exclusive Insider-only tools</li>
-          </ul>
-          <div class="p-price-card__wd-wrap">
-            <div class="p-wd-tag"><span class="p-wd-tag__dot"></span>Extra 15% off — Women's Day</div>
-          </div>
-          <form class="p-price-card__razorpay p-price-card__razorpay--featured"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_SFHvTPVWHfOwSR" async></script></form>
-        </div>
-      </div>
-      <p class="p-wd-claim-note reveal">♀ Women's Day offer — apply coupon at <strong>Razorpay checkout</strong> to claim your extra discount</p>
-      <div class="p-pricing__toggle reveal reveal-delay-2" id="currency-toggle">
-        <span class="p-pricing__toggle-label" id="toggle-local"></span>
-        <button class="p-pricing__toggle-switch" id="toggle-switch" aria-label="Toggle currency"></button>
-        <span class="p-pricing__toggle-label" id="toggle-usd">USD</span>
-      </div>
-    </div>
-  </section>
 
   <!-- ====== WHO IS THIS FOR ====== -->
   <section class="p-section p-audience">
@@ -3111,7 +3174,7 @@
           <a href="/" class="p-footer__brand">
             <img src="images/platter-logo-text-web.png" alt="Platter by Bitroot" style="filter: none;">
           </a>
-          <p class="p-footer__desc">Exclusive rewards, partner deals, and premium tools for founders and teams building what's next.</p>
+          <p class="p-footer__desc">Premium tools, cloud credits, and exclusive software deals for founders, freelancers, and creators.</p>
         </div>
         <div>
           <div class="p-footer__col-title">Product</div>
@@ -3169,6 +3232,13 @@
 
     // ── Value Calculator ─────────────────────────────────────────
     (function() {
+      var calcShowINR = false;
+      var INR_RATE = 83.5;
+
+      function calcPrefix() { return calcShowINR ? '₹' : '$'; }
+      function calcConvert(usd) { return calcShowINR ? Math.round(usd * INR_RATE) : usd; }
+      function calcFormat(val) { return calcPrefix() + val.toLocaleString(); }
+
       var TOOLS = [
         // Savings sourced from perks.bitroot.org partner deals
         { id: 'notion',      name: 'Notion',           cat: 'Docs & Wiki',     domain: 'notion.so',            retail: 30,  deal: 15, badge: '6mo FREE',  badgeType: 'free',  preset: ['dev','growth','founder'] },
@@ -3203,7 +3273,7 @@
             + '<div class="p-calc__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="#0A0A0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>'
             + '<div class="p-calc__icon"><img src="' + logoSrc + '" alt="' + t.name + '" loading="lazy" onerror="this.onerror=null;this.src=\'' + fallbackSrc + '\'"></div>'
             + '<div class="p-calc__info"><div class="p-calc__tool-name">' + t.name + '</div><div class="p-calc__tool-cat">' + t.cat + '</div></div>'
-            + '<div class="p-calc__price">$' + t.retail + '</div>'
+            + '<div class="p-calc__price">' + calcFormat(t.retail) + '</div>'
             + '</div>';
         }).join('');
 
@@ -3227,9 +3297,9 @@
           step++;
           var ease = 1 - Math.pow(1 - step / steps, 3);
           var val = Math.round(from + (target - from) * ease);
-          el.textContent = prefix + val;
+          el.textContent = prefix + val.toLocaleString();
           el.dataset.current = String(val);
-          if (step >= steps) { clearInterval(animTimers[el.id]); el.textContent = prefix + target; el.dataset.current = String(target); }
+          if (step >= steps) { clearInterval(animTimers[el.id]); el.textContent = prefix + target.toLocaleString(); el.dataset.current = String(target); }
         }, 16);
       }
 
@@ -3245,11 +3315,12 @@
         var savingsEl = document.getElementById('calcSavings');
         var yearEl    = document.getElementById('calcSavingsYear');
         var hintEl    = document.getElementById('calcHint');
+        var p = calcPrefix();
         if (retail > 0) withoutEl.classList.add('has-value'); else withoutEl.classList.remove('has-value');
-        animateTo(withoutEl, retail, '$');
-        animateTo(withEl,    withDeal, '$');
-        animateTo(savingsEl, savings * 12, '$');
-        yearEl.textContent = savings > 0 ? '$' + savings + ' /mo' : '\u00a0';
+        animateTo(withoutEl, calcConvert(retail), p);
+        animateTo(withEl,    calcConvert(withDeal), p);
+        animateTo(savingsEl, calcConvert(savings * 12), p);
+        yearEl.textContent = savings > 0 ? p + calcConvert(savings).toLocaleString() + ' /mo' : '\u00a0';
         hintEl.innerHTML = checked.size === 0
           ? '\u2190 Select the tools you use to calculate your savings'
           : '<strong>' + checked.size + ' tool' + (checked.size !== 1 ? 's' : '') + ' selected</strong> \u2014 Platter unlocks deals on all of these';
@@ -3277,6 +3348,35 @@
           applyPreset(this.dataset.preset);
         });
       });
+
+      // Calculator currency toggle
+      function updateGridPrices() {
+        document.querySelectorAll('.p-calc__tool').forEach(function(card) {
+          var t = TOOLS.find(function(x) { return x.id === card.dataset.id; });
+          if (t) card.querySelector('.p-calc__price').textContent = calcFormat(t.retail);
+        });
+      }
+
+      function toggleCalcCurrency() {
+        calcShowINR = !calcShowINR;
+        var switchBtn = document.getElementById('calc-cur-switch');
+        var usdLabel = document.getElementById('calc-cur-usd');
+        var inrLabel = document.getElementById('calc-cur-inr');
+        switchBtn.className = 'p-calc__currency-switch' + (calcShowINR ? ' p-calc__currency-switch--inr' : '');
+        usdLabel.className = 'p-calc__currency-opt' + (!calcShowINR ? ' p-calc__currency-opt--active' : '');
+        inrLabel.className = 'p-calc__currency-opt' + (calcShowINR ? ' p-calc__currency-opt--active' : '');
+        updateGridPrices();
+        updateTotals();
+      }
+
+      document.getElementById('calc-cur-switch').addEventListener('click', toggleCalcCurrency);
+      document.getElementById('calc-cur-usd').addEventListener('click', function() { if (calcShowINR) toggleCalcCurrency(); });
+      document.getElementById('calc-cur-inr').addEventListener('click', function() { if (!calcShowINR) toggleCalcCurrency(); });
+
+      // Expose for geo-detection sync
+      window.setCalcINR = function(showINR) {
+        if (calcShowINR !== showINR) toggleCalcCurrency();
+      };
 
       buildGrid();
       updateTotals();
@@ -3499,6 +3599,8 @@
           updatePrices(localCurrency);
           loadPaymentButtons(localCurrency);
           setupToggle(localCurrency);
+          // Sync calculator to INR
+          if (window.setCalcINR) window.setCalcINR(true);
         } else {
           // International user - show USD pricing and USD buttons by default
           showingUsd = true;
