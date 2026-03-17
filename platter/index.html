@@ -2784,7 +2784,7 @@
           <div class="p-calc__col">
             <div class="p-calc__col-label">Without Platter</div>
             <div class="p-calc__total p-calc__total--without" id="calcWithout">$0</div>
-            <div class="p-calc__col-sub">/mo at retail price</div>
+            <div class="p-calc__col-sub">/yr at retail price</div>
           </div>
           <div class="p-calc__divider">→</div>
           <div class="p-calc__savings-col">
@@ -2796,7 +2796,7 @@
           <div class="p-calc__col p-calc__col--highlight">
             <div class="p-calc__col-label" style="color:var(--yellow)">With Platter</div>
             <div class="p-calc__total p-calc__total--with" id="calcWith">$0</div>
-            <div class="p-calc__col-sub">/mo est. with deals</div>
+            <div class="p-calc__col-sub">/yr est. with deals</div>
           </div>
         </div>
         <div class="p-calc__cta-bar">
@@ -3317,10 +3317,10 @@
         var hintEl    = document.getElementById('calcHint');
         var p = calcPrefix();
         if (retail > 0) withoutEl.classList.add('has-value'); else withoutEl.classList.remove('has-value');
-        animateTo(withoutEl, calcConvert(retail), p);
-        animateTo(withEl,    calcConvert(withDeal), p);
+        animateTo(withoutEl, calcConvert(retail * 12), p);
+        animateTo(withEl,    calcConvert(withDeal * 12), p);
         animateTo(savingsEl, calcConvert(savings * 12), p);
-        yearEl.textContent = savings > 0 ? p + calcConvert(savings).toLocaleString() + ' /mo' : '\u00a0';
+        yearEl.textContent = '\u00a0';
         hintEl.innerHTML = checked.size === 0
           ? '\u2190 Select the tools you use to calculate your savings'
           : '<strong>' + checked.size + ' tool' + (checked.size !== 1 ? 's' : '') + ' selected</strong> \u2014 Platter unlocks deals on all of these';
