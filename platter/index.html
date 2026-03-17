@@ -3237,7 +3237,7 @@
 
       function calcPrefix() { return calcShowINR ? '₹' : '$'; }
       function calcConvert(usd) { return calcShowINR ? Math.round(usd * INR_RATE) : usd; }
-      function calcFormat(val) { return calcPrefix() + val.toLocaleString(); }
+      function calcFormat(val) { return calcPrefix() + calcConvert(val).toLocaleString(); }
 
       var TOOLS = [
         // Savings sourced from perks.bitroot.org partner deals
