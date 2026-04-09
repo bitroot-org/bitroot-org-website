@@ -26,6 +26,12 @@ jobs:
 
           COUNT=0
           for BRANCH in $BRANCHES; do
+            # Skip branches that still have an open PR
+            OPEN_PRS=$(gh api "repos/${{ github.repository }}/pulls?state=open&head=${{ github.repository_owner }}:${BRANCH}" -q '. | length')
+            if [ "$OPEN_PRS" -gt 0 ]; then
+              echo "Skipping $BRANCH (has open PR)"
+              continue
+            fi
             echo "Deleting $BRANCH"
             gh api -X DELETE "repos/${{ github.repository }}/git/refs/heads/$BRANCH" || true
             COUNT=$((COUNT + 1))
