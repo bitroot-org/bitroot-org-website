@@ -51,5 +51,6 @@ jobs:
             echo "No index changes to commit"
           else
             git commit -m "blog: Rebuild index, short links, and RSS"
+            git pull --rebase origin main
             git push
           fi
