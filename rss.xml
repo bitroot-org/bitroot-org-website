@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 15 Apr 2026 22:01:40 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2026 22:02:30 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Revolutionizing AI-Powered Workflows: Google Introduces Skills in Chrome</title>
@@ -157,37 +157,9 @@ Obsidian Reader now makes the transcript interactive so you can scrub, highlight
       <source url="https://x.com/i/status/2042008695035355537">Original Source</source>
     </item>
     <item>
-      <title>Revolutionizing AI Development: Claude Unveils Managed Agents</title>
+      <title>Firecrawl Reaches New Heights: Revolutionizing Web Interaction for AI Agents</title>
       <link>https://bitroot.org/blog/p/11</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/11</guid>
-      <description>Claude introduces Managed Agents, a game-changing platform for building and deploying AI agents at scale, streamlining the development process from prototype to launch. This innovation has the potential to transform the AI landscape, enabling faster and more efficient development of AI-powered applications.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2041927687460024721"&gt;https://x.com/i/status/2041927687460024721&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Thu, 09 Apr 2026 02:53:14 +0000</pubDate>
-      <category>AI</category>
-      <category>Claude</category>
-      <category>Managed Agents</category>
-      <enclosure url="https://pbs.twimg.com/media/HFZiwfuWkAEHrrV.jpg" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2041927687460024721">Original Source</source>
-    </item>
-    <item>
-      <title>Revolutionary Database Cloning: ArdentAI Changes the Game</title>
-      <link>https://bitroot.org/blog/p/12</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/12</guid>
-      <description>ArdentAI introduces instant Postgres database cloning, streamlining testing for developers and coding agents. This innovation reduces cloning time to under 6 seconds, eliminating infrastructure management.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2041651193362182281"&gt;https://x.com/i/status/2041651193362182281&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Thu, 09 Apr 2026 02:58:06 +0000</pubDate>
-      <category>ArdentAI</category>
-      <category>Database Cloning</category>
-      <category>Postgres</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2041637437034926080/img/kInbSydHMhFn0Odu.jpg" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2041651193362182281">Original Source</source>
-    </item>
-    <item>
-      <title>Firecrawl Reaches New Heights: Revolutionizing Web Interaction for AI Agents</title>
-      <link>https://bitroot.org/blog/p/13</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/13</guid>
       <description>Firecrawl has reached the top 100 GitHub repos, offering a game-changing API for AI agents to search, scrape, and interact with the web, trusted by over a million developers and thousands of enterprise teams. This milestone underscores the significance of Firecrawl's innovative approach to web interaction.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2041909075110510969"&gt;https://x.com/i/status/2041909075110510969&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -200,8 +172,8 @@ Obsidian Reader now makes the transcript interactive so you can scrub, highlight
     </item>
     <item>
       <title>Notion Unleashes AI-Powered Task Automation with Claude Agents</title>
-      <link>https://bitroot.org/blog/p/14</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/14</guid>
+      <link>https://bitroot.org/blog/p/12</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/12</guid>
       <description>Notion introduces Claude AI agents to automate tasks and workflows, revolutionizing team productivity. This integration enables seamless task management and automation, making it a game-changer for developers and teams.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2041982872698155398"&gt;https://x.com/i/status/2041982872698155398&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -211,6 +183,34 @@ Obsidian Reader now makes the transcript interactive so you can scrub, highlight
       <category>Task Automation</category>
       <enclosure url="https://pbs.twimg.com/media/HFaS39ja8AALVUD.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2041982872698155398">Original Source</source>
+    </item>
+    <item>
+      <title>Revolutionizing AI Development: Claude Unveils Managed Agents</title>
+      <link>https://bitroot.org/blog/p/13</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/13</guid>
+      <description>Claude introduces Managed Agents, a game-changing platform for building and deploying AI agents at scale, streamlining the development process from prototype to launch. This innovation has the potential to transform the AI landscape, enabling faster and more efficient development of AI-powered applications.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2041927687460024721"&gt;https://x.com/i/status/2041927687460024721&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 09 Apr 2026 02:53:14 +0000</pubDate>
+      <category>AI</category>
+      <category>Claude</category>
+      <category>Managed Agents</category>
+      <enclosure url="https://pbs.twimg.com/media/HFZiwfuWkAEHrrV.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2041927687460024721">Original Source</source>
+    </item>
+    <item>
+      <title>Revolutionary Database Cloning: ArdentAI Changes the Game</title>
+      <link>https://bitroot.org/blog/p/14</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/14</guid>
+      <description>ArdentAI introduces instant Postgres database cloning, streamlining testing for developers and coding agents. This innovation reduces cloning time to under 6 seconds, eliminating infrastructure management.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2041651193362182281"&gt;https://x.com/i/status/2041651193362182281&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 09 Apr 2026 02:58:06 +0000</pubDate>
+      <category>ArdentAI</category>
+      <category>Database Cloning</category>
+      <category>Postgres</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2041637437034926080/img/kInbSydHMhFn0Odu.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2041651193362182281">Original Source</source>
     </item>
     <item>
       <title>Revolutionizing Automation: Zapier SDK Now Open to All</title>
@@ -639,22 +639,9 @@ Follow @glazeapps for updates.
       <source url="https://x.com/i/status/2028128730132922760">Original Source</source>
     </item>
     <item>
-      <title>Revolutionizing Chatbot Development: Vercel's Game-Changing Chat SDK</title>
+      <title>Revolutionizing Video Editing: Adobe Unveils AI-Powered Quick Cut Tool</title>
       <link>https://bitroot.org/blog/p/44</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/44</guid>
-      <description>Vercel's new Chat SDK allows developers to write chatbot logic once and deploy across multiple platforms, streamlining development and increasing productivity. This innovation has the potential to revolutionize the way chatbots are built and integrated into various applications.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2026359198171402678"&gt;https://x.com/i/status/2026359198171402678&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Thu, 26 Feb 2026 16:34:07 +0000</pubDate>
-      <category>Vercel</category>
-      <category>Chat SDK</category>
-      <category>Chatbot Development</category>
-      <source url="https://x.com/i/status/2026359198171402678">Original Source</source>
-    </item>
-    <item>
-      <title>Revolutionizing Video Editing: Adobe Unveils AI-Powered Quick Cut Tool</title>
-      <link>https://bitroot.org/blog/p/45</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/45</guid>
       <description>Adobe’s new AI video editing tool stitches clips into a first draft https://www.theverge.com/tech/884285/adobe-firefly-ai-video-editing-quick-cut
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2026659388270981288"&gt;https://x.com/i/status/2026659388270981288&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -666,8 +653,8 @@ Follow @glazeapps for updates.
     </item>
     <item>
       <title>Revolutionizing Productivity: MiniMax Agent's Game-Changing Update</title>
-      <link>https://bitroot.org/blog/p/46</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/46</guid>
+      <link>https://bitroot.org/blog/p/45</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/45</guid>
       <description>MiniMax Agent's latest update combines forces with MaxClaw and 10,000+ experts to transform the way we work, making it possible to complete complex tasks in record time. This innovation has the potential to revolutionize productivity for developers and tech enthusiasts alike.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2027027163078336885"&gt;https://x.com/i/status/2027027163078336885&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -680,8 +667,8 @@ Follow @glazeapps for updates.
     </item>
     <item>
       <title>Revolutionizing Image Creation: Nano Banana 2 Unleashed</title>
-      <link>https://bitroot.org/blog/p/47</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/47</guid>
+      <link>https://bitroot.org/blog/p/46</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/46</guid>
       <description>We’re launching Nano Banana 2, built on the latest Gemini Flash model.  🍌
 
 It’s state-of-the-art for creating and editing images, combining Pro-level capabilities with lightning-fast speed. 🧵
@@ -695,24 +682,22 @@ It’s state-of-the-art for creating and editing images, combining Pro-level cap
       <source url="https://x.com/i/status/2027051577899380991">Original Source</source>
     </item>
     <item>
-      <title>Revolutionizing Front-End Development: The AI-Powered Rebuild of Next.js in Just One Week</title>
-      <link>https://bitroot.org/blog/p/48</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/48</guid>
-      <description>One engineer used AI to rebuild Next.js on Vite in a week. vinext builds up to 4x faster, produces 57% smaller bundles, and deploys to Cloudflare Workers with a single command.
+      <title>Revolutionizing Chatbot Development: Vercel's Game-Changing Chat SDK</title>
+      <link>https://bitroot.org/blog/p/47</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/47</guid>
+      <description>Vercel's new Chat SDK allows developers to write chatbot logic once and deploy across multiple platforms, streamlining development and increasing productivity. This innovation has the potential to revolutionize the way chatbots are built and integrated into various applications.
 
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://blog.cloudflare.com/vinext/"&gt;https://blog.cloudflare.com/vinext/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Wed, 25 Feb 2026 11:00:51 +0000</pubDate>
-      <category>Next.js</category>
-      <category>Vite</category>
-      <category>AI</category>
-      <category>Cloudflare Workers</category>
-      <enclosure url="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/720QQcrdICiSJXrr9VoixA/4934fffd05d1ca10cc661238b381308e/BLOG-3194_OG.png" type="image/jpeg" length="0" />
-      <source url="https://blog.cloudflare.com/vinext/">Original Source</source>
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2026359198171402678"&gt;https://x.com/i/status/2026359198171402678&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 26 Feb 2026 16:34:07 +0000</pubDate>
+      <category>Vercel</category>
+      <category>Chat SDK</category>
+      <category>Chatbot Development</category>
+      <source url="https://x.com/i/status/2026359198171402678">Original Source</source>
     </item>
     <item>
       <title>Claude Code Unleashes Remote Control: A Game-Changer for Developers</title>
-      <link>https://bitroot.org/blog/p/49</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/49</guid>
+      <link>https://bitroot.org/blog/p/48</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/48</guid>
       <description>Claude Code introduces Remote Control, allowing developers to start tasks on their terminal and control them from their phone, revolutionizing workflow flexibility. This feature is a significant upgrade for developers who need to manage tasks on-the-go.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2026418433911603668"&gt;https://x.com/i/status/2026418433911603668&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -725,8 +710,8 @@ It’s state-of-the-art for creating and editing images, combining Pro-level cap
     </item>
     <item>
       <title>Revolutionizing AI Capabilities: The Dawn of Perplexity Computer</title>
-      <link>https://bitroot.org/blog/p/50</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/50</guid>
+      <link>https://bitroot.org/blog/p/49</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/49</guid>
       <description>Introducing Perplexity Computer.
 
 Computer unifies every current AI capability into one system.
@@ -740,6 +725,21 @@ It can research, design, code, deploy, and manage any project end-to-end.
       <category>Tech Innovations</category>
       <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2026695448996753409/img/yeKxOwuVQwjvBDYt.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2026695550771540489">Original Source</source>
+    </item>
+    <item>
+      <title>Revolutionizing Front-End Development: The AI-Powered Rebuild of Next.js in Just One Week</title>
+      <link>https://bitroot.org/blog/p/50</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/50</guid>
+      <description>One engineer used AI to rebuild Next.js on Vite in a week. vinext builds up to 4x faster, produces 57% smaller bundles, and deploys to Cloudflare Workers with a single command.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://blog.cloudflare.com/vinext/"&gt;https://blog.cloudflare.com/vinext/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 25 Feb 2026 11:00:51 +0000</pubDate>
+      <category>Next.js</category>
+      <category>Vite</category>
+      <category>AI</category>
+      <category>Cloudflare Workers</category>
+      <enclosure url="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/720QQcrdICiSJXrr9VoixA/4934fffd05d1ca10cc661238b381308e/BLOG-3194_OG.png" type="image/jpeg" length="0" />
+      <source url="https://blog.cloudflare.com/vinext/">Original Source</source>
     </item>
     <item>
       <title>Revolutionizing Design: Pencil's SWARM Mode Takes AI-Powered Collaboration to the Next Level</title>
@@ -977,23 +977,9 @@ Everything you need - in your pocket. 🚀
       <source url="https://ollama.com/blog/web-search-subagents-claude-code">Original Source</source>
     </item>
     <item>
-      <title>Unlocking the Power of Anthropic Agents: A Game-Changer for AI Development</title>
+      <title>Revolutionizing Debugging: Chrome DevTools Gets Multi-Session Support</title>
       <link>https://bitroot.org/blog/p/66</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/66</guid>
-      <description>The Anthropic Agent SDK is a powerful tool for building custom agents, and its potential is being overlooked by the development community. This framework has the potential to revolutionize AI development and create more sophisticated machine learning models.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2023428910042513482"&gt;https://x.com/i/status/2023428910042513482&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Mon, 16 Feb 2026 18:56:29 +0000</pubDate>
-      <category>Anthropic Agent SDK</category>
-      <category>AI Development</category>
-      <category>Machine Learning</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2023253339073392640/img/VhovnpWvug7jGnKn.jpg" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2023428910042513482">Original Source</source>
-    </item>
-    <item>
-      <title>Revolutionizing Debugging: Chrome DevTools Gets Multi-Session Support</title>
-      <link>https://bitroot.org/blog/p/67</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/67</guid>
       <description>Would multi-session support for the Chrome DevTools MCP server be useful for you? 🤖✖️🌍 Chime into the discussion on GitHub: https://github.com/ChromeDevTools/chrome-devtools-mcp/issues/926
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2023370190269116568"&gt;https://x.com/i/status/2023370190269116568&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -1003,6 +989,20 @@ Everything you need - in your pocket. 🚀
       <category>Multi-Session Support</category>
       <enclosure url="https://pbs.twimg.com/media/HBR0XEtaYAEdKVg.jpg?name=orig" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2023370190269116568">Original Source</source>
+    </item>
+    <item>
+      <title>Unlocking the Power of Anthropic Agents: A Game-Changer for AI Development</title>
+      <link>https://bitroot.org/blog/p/67</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/67</guid>
+      <description>The Anthropic Agent SDK is a powerful tool for building custom agents, and its potential is being overlooked by the development community. This framework has the potential to revolutionize AI development and create more sophisticated machine learning models.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2023428910042513482"&gt;https://x.com/i/status/2023428910042513482&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 16 Feb 2026 18:56:29 +0000</pubDate>
+      <category>Anthropic Agent SDK</category>
+      <category>AI Development</category>
+      <category>Machine Learning</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2023253339073392640/img/VhovnpWvug7jGnKn.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2023428910042513482">Original Source</source>
     </item>
     <item>
       <title>Anthropic Expands Indian Presence with New Bengaluru Office and Strategic Partnerships</title>
@@ -1176,38 +1176,9 @@ Go give it a spin, the design stage is free to use.
       <source url="https://share.google/6gzMAD1U347j7YUXX">Original Source</source>
     </item>
     <item>
-      <title>AI Expansion Showdown: Anthropic's India Foray Hits Local Roadblock</title>
+      <title>Revolutionizing Research Visuals: Google AI's PaperBanana Framework</title>
       <link>https://bitroot.org/blog/p/80</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/80</guid>
-      <description>India's Anthropic Software has taken the U.S. AI giant to court over a name dispute.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/"&gt;https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Tue, 10 Feb 2026 02:07:30 +0000</pubDate>
-      <category>AI</category>
-      <category>Anthropic</category>
-      <category>India</category>
-      <category>Trademark</category>
-      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/01/anthropic-image-jagmeet-singh-techcrunch.jpg?resize=1200,800" type="image/jpeg" length="0" />
-      <source url="https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/">Original Source</source>
-    </item>
-    <item>
-      <title>Revolutionizing Coding: Composer 1.5 Unleashes Enhanced Intelligence</title>
-      <link>https://bitroot.org/blog/p/81</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/81</guid>
-      <description>Improved reasoning over challenging coding tasks by scaling RL over 20x.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://cursor.com/blog/composer-1-5"&gt;https://cursor.com/blog/composer-1-5&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Tue, 10 Feb 2026 19:19:19 +0000</pubDate>
-      <category>Composer 1.5</category>
-      <category>AI Coding</category>
-      <category>Reinforcement Learning</category>
-      <enclosure url="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/blog/composer-1.5-og.png" type="image/jpeg" length="0" />
-      <source url="https://cursor.com/blog/composer-1-5">Original Source</source>
-    </item>
-    <item>
-      <title>Revolutionizing Research Visuals: Google AI's PaperBanana Framework</title>
-      <link>https://bitroot.org/blog/p/82</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/82</guid>
       <description>Google AI Introduces PaperBanana: An Agentic Framework that Automates Publication Ready Methodology Diagrams and Statistical Plots
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/"&gt;https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -1221,9 +1192,66 @@ Go give it a spin, the design stage is free to use.
       <source url="https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/">Original Source</source>
     </item>
     <item>
-      <title>India's Tech Landscape Shifts: Why Deeptech and Hardware Are the Future</title>
+      <title>Revolutionizing Video Creation: AI-Powered Vibe Editing Takes Center Stage</title>
+      <link>https://bitroot.org/blog/p/81</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/81</guid>
+      <description>Vibe Editing, a game-changing AI-powered tool, allows users to create stunning videos with just a text prompt, eliminating the need for coding and tedious editing processes. This innovative technology is set to disrupt the video creation landscape, making it more accessible to developers and non-developers alike.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2020464238880596429"&gt;https://x.com/i/status/2020464238880596429&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 10 Feb 2026 02:11:19 +0000</pubDate>
+      <category>AI</category>
+      <category>video creation</category>
+      <category>vibe editing</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2020464187043115009/img/-iRMulg3HLXQTEBY.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2020464238880596429">Original Source</source>
+    </item>
+    <item>
+      <title>Revolutionizing UI Animations: Introducing ReactBits</title>
+      <link>https://bitroot.org/blog/p/82</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/82</guid>
+      <description>ReactBits is a game-changing animation library that offers a growing collection of smooth, modern UI animations for React projects, taking web design to the next level
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2020423330386579646"&gt;https://x.com/i/status/2020423330386579646&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 10 Feb 2026 01:55:57 +0000</pubDate>
+      <category>React</category>
+      <category>UI Animations</category>
+      <category>Web Development</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2020423255082123265/img/YD4KlnqX6y9k3Ro_.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2020423330386579646">Original Source</source>
+    </item>
+    <item>
+      <title>AI Expansion Showdown: Anthropic's India Foray Hits Local Roadblock</title>
       <link>https://bitroot.org/blog/p/83</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/83</guid>
+      <description>India's Anthropic Software has taken the U.S. AI giant to court over a name dispute.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/"&gt;https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 10 Feb 2026 02:07:30 +0000</pubDate>
+      <category>AI</category>
+      <category>Anthropic</category>
+      <category>India</category>
+      <category>Trademark</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/01/anthropic-image-jagmeet-singh-techcrunch.jpg?resize=1200,800" type="image/jpeg" length="0" />
+      <source url="https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/">Original Source</source>
+    </item>
+    <item>
+      <title>Revolutionizing Coding: Composer 1.5 Unleashes Enhanced Intelligence</title>
+      <link>https://bitroot.org/blog/p/84</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/84</guid>
+      <description>Improved reasoning over challenging coding tasks by scaling RL over 20x.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://cursor.com/blog/composer-1-5"&gt;https://cursor.com/blog/composer-1-5&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 10 Feb 2026 19:19:19 +0000</pubDate>
+      <category>Composer 1.5</category>
+      <category>AI Coding</category>
+      <category>Reinforcement Learning</category>
+      <enclosure url="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/blog/composer-1.5-og.png" type="image/jpeg" length="0" />
+      <source url="https://cursor.com/blog/composer-1-5">Original Source</source>
+    </item>
+    <item>
+      <title>India's Tech Landscape Shifts: Why Deeptech and Hardware Are the Future</title>
+      <link>https://bitroot.org/blog/p/85</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/85</guid>
       <description>India's reliance on IT service exports is no longer viable, and the country must shift its focus to deeptech and hardware to build long-term economic resilience. Zerodha founder Nithin Kamath emphasizes the need for self-sufficiency in technology to stay competitive.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms"&gt;https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -1237,8 +1265,8 @@ Go give it a spin, the design stage is free to use.
     </item>
     <item>
       <title>Revolutionizing Coding: GPT-5.3-Codex Now Powers GitHub Copilot</title>
-      <link>https://bitroot.org/blog/p/84</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/84</guid>
+      <link>https://bitroot.org/blog/p/86</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/86</guid>
       <description>Get ready to supercharge your coding workflow with GPT-5.3-Codex, the latest AI model now available in GitHub Copilot, bringing improved performance and capabilities to the table. This update is set to revolutionize the way developers work, making coding faster, smarter, and more efficient.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/"&gt;https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -1248,34 +1276,6 @@ Go give it a spin, the design stage is free to use.
       <category>AI-powered coding</category>
       <enclosure url="https://github.blog/wp-content/uploads/2026/02/github-copilot-social-card-2.png" type="image/jpeg" length="0" />
       <source url="https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/">Original Source</source>
-    </item>
-    <item>
-      <title>Revolutionizing Video Creation: AI-Powered Vibe Editing Takes Center Stage</title>
-      <link>https://bitroot.org/blog/p/85</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/85</guid>
-      <description>Vibe Editing, a game-changing AI-powered tool, allows users to create stunning videos with just a text prompt, eliminating the need for coding and tedious editing processes. This innovative technology is set to disrupt the video creation landscape, making it more accessible to developers and non-developers alike.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2020464238880596429"&gt;https://x.com/i/status/2020464238880596429&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Tue, 10 Feb 2026 02:11:19 +0000</pubDate>
-      <category>AI</category>
-      <category>video creation</category>
-      <category>vibe editing</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2020464187043115009/img/-iRMulg3HLXQTEBY.jpg" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2020464238880596429">Original Source</source>
-    </item>
-    <item>
-      <title>Revolutionizing UI Animations: Introducing ReactBits</title>
-      <link>https://bitroot.org/blog/p/86</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/86</guid>
-      <description>ReactBits is a game-changing animation library that offers a growing collection of smooth, modern UI animations for React projects, taking web design to the next level
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2020423330386579646"&gt;https://x.com/i/status/2020423330386579646&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Tue, 10 Feb 2026 01:55:57 +0000</pubDate>
-      <category>React</category>
-      <category>UI Animations</category>
-      <category>Web Development</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2020423255082123265/img/YD4KlnqX6y9k3Ro_.jpg" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2020423330386579646">Original Source</source>
     </item>
     <item>
       <title>Introducing Nanobot: The Ultra-Lightweight Personal AI Assistant</title>

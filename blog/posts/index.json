@@ -12,10 +12,10 @@
     "2026-04-12-revolutionizing-ai-agents-minimax-unveils-mmx-cli.md",
     "2026-04-10-revolutionizing-agent-interactions-claudes-monitor.md",
     "2026-04-09-revolutionizing-security-triage-github-copilot-cli.md",
-    "2026-04-09-revolutionizing-ai-development-claude-unveils-mana.md",
-    "2026-04-09-revolutionary-database-cloning-ardentai-changes-th.md",
     "2026-04-09-firecrawl-reaches-new-heights-revolutionizing-web.md",
     "2026-04-09-notion-unleashes-ai-powered-task-automation-with-c.md",
+    "2026-04-09-revolutionizing-ai-development-claude-unveils-mana.md",
+    "2026-04-09-revolutionary-database-cloning-ardentai-changes-th.md",
     "2026-04-08-revolutionizing-automation-zapier-sdk-now-open-to.md",
     "2026-04-08-revolutionizing-ai-dev-tool-onboarding-interactive.md",
     "2026-04-08-revolutionizing-software-security-anthropic-unveil.md",
@@ -45,13 +45,13 @@
     "2026-03-05-apple-unleashes-ai-powered-macbook-pro-with-m5-pro.md",
     "2026-03-05-revolutionizing-affordable-computing-apple-unveils.md",
     "2026-03-01-electron-apps-just-got-a-whole-lot-smarter-with-ag.md",
-    "2026-02-26-revolutionizing-chatbot-development-vercels-game-c.md",
     "2026-02-26-revolutionizing-video-editing-adobe-unveils-ai-pow.md",
     "2026-02-26-revolutionizing-productivity-minimax-agents-game-c.md",
     "2026-02-26-revolutionizing-image-creation-nano-banana-2-unlea.md",
-    "2026-02-25-revolutionizing-front-end-development-the-ai-power.md",
+    "2026-02-26-revolutionizing-chatbot-development-vercels-game-c.md",
     "2026-02-25-claude-code-unleashes-remote-control-a-game-change.md",
     "2026-02-25-revolutionizing-ai-capabilities-the-dawn-of-perple.md",
+    "2026-02-25-revolutionizing-front-end-development-the-ai-power.md",
     "2026-02-25-revolutionizing-design-pencils-swarm-mode-takes-ai.md",
     "2026-02-25-revolutionary-ai-powered-chatbot-unleashed-meet-ma.md",
     "2026-02-25-google-labs-unveils-major-upgrade-to-opal-revoluti.md",
@@ -67,8 +67,8 @@
     "2026-02-17-revolutionizing-tech-stacks-hyperbrowser-unveils-b.md",
     "2026-02-17-revolutionizing-design-figma-unveils-code-to-desig.md",
     "2026-02-17-revolutionizing-coding-ollama-unveils-subagents-an.md",
-    "2026-02-16-unlocking-the-power-of-anthropic-agents-a-game-cha.md",
     "2026-02-16-revolutionizing-debugging-chrome-devtools-gets-mul.md",
+    "2026-02-16-unlocking-the-power-of-anthropic-agents-a-game-cha.md",
     "2026-02-16-anthropic-expands-indian-presence-with-new-bengalu.md",
     "2026-02-16-minimax-m25-revolution-unleashing-3x-faster-infere.md",
     "2026-02-15-revolutionizing-online-discussions-the-rise-of-thr.md",
@@ -81,13 +81,13 @@
     "2026-02-12-revolutionizing-app-store-submissions-automated-gu.md",
     "2026-02-12-revolutionary-agent-native-computing-now-accessibl.md",
     "2026-02-11-ai-safety-leader-sounds-alarm-resignation-sparks-c.md",
-    "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
-    "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan.md",
     "2026-02-10-revolutionizing-research-visuals-google-ais-paperb.md",
-    "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.md",
-    "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git.md",
     "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.md",
     "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
+    "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
+    "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan.md",
+    "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.md",
+    "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git.md",
     "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal.md",
     "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.md",
     "2026-02-09-revolutionizing-ai-development-replicate-joins-for.md",
@@ -296,44 +296,6 @@
       "shortId": 10
     },
     {
-      "filename": "2026-04-09-revolutionizing-ai-development-claude-unveils-mana.md",
-      "slug": "2026-04-09-revolutionizing-ai-development-claude-unveils-mana",
-      "title": "Revolutionizing AI Development: Claude Unveils Managed Agents",
-      "date": "2026-04-09",
-      "published_at": "2026-04-09T02:53:14.324035+00:00",
-      "tags": [
-        "AI",
-        "Claude",
-        "Managed Agents"
-      ],
-      "excerpt": "Claude introduces Managed Agents, a game-changing platform for building and deploying AI agents at scale, streamlining the development process from prototype to launch. This innovation has the potential to transform the AI landscape, enabling faster and more efficient development of AI-powered applications.",
-      "image": "https://pbs.twimg.com/media/HFZiwfuWkAEHrrV.jpg",
-      "sources": [
-        "https://x.com/i/status/2041927687460024721"
-      ],
-      "video": "media/2026-04-09-revolutionizing-ai-development-claude-unveils-mana.mp4",
-      "shortId": 11
-    },
-    {
-      "filename": "2026-04-09-revolutionary-database-cloning-ardentai-changes-th.md",
-      "slug": "2026-04-09-revolutionary-database-cloning-ardentai-changes-th",
-      "title": "Revolutionary Database Cloning: ArdentAI Changes the Game",
-      "date": "2026-04-09",
-      "published_at": "2026-04-09T02:58:06.763223+00:00",
-      "tags": [
-        "ArdentAI",
-        "Database Cloning",
-        "Postgres"
-      ],
-      "excerpt": "ArdentAI introduces instant Postgres database cloning, streamlining testing for developers and coding agents. This innovation reduces cloning time to under 6 seconds, eliminating infrastructure management.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2041637437034926080/img/kInbSydHMhFn0Odu.jpg",
-      "sources": [
-        "https://x.com/i/status/2041651193362182281"
-      ],
-      "video": "media/2026-04-09-revolutionary-database-cloning-ardentai-changes-th.mp4",
-      "shortId": 12
-    },
-    {
       "filename": "2026-04-09-firecrawl-reaches-new-heights-revolutionizing-web.md",
       "slug": "2026-04-09-firecrawl-reaches-new-heights-revolutionizing-web",
       "title": "Firecrawl Reaches New Heights: Revolutionizing Web Interaction for AI Agents",
@@ -350,7 +312,7 @@
         "https://x.com/i/status/2041909075110510969"
       ],
       "video": "media/2026-04-09-firecrawl-reaches-new-heights-revolutionizing-web.mp4",
-      "shortId": 13
+      "shortId": 11
     },
     {
       "filename": "2026-04-09-notion-unleashes-ai-powered-task-automation-with-c.md",
@@ -369,6 +331,44 @@
         "https://x.com/i/status/2041982872698155398"
       ],
       "video": "media/2026-04-09-notion-unleashes-ai-powered-task-automation-with-c.mp4",
+      "shortId": 12
+    },
+    {
+      "filename": "2026-04-09-revolutionizing-ai-development-claude-unveils-mana.md",
+      "slug": "2026-04-09-revolutionizing-ai-development-claude-unveils-mana",
+      "title": "Revolutionizing AI Development: Claude Unveils Managed Agents",
+      "date": "2026-04-09",
+      "published_at": "2026-04-09T02:53:14.324035+00:00",
+      "tags": [
+        "AI",
+        "Claude",
+        "Managed Agents"
+      ],
+      "excerpt": "Claude introduces Managed Agents, a game-changing platform for building and deploying AI agents at scale, streamlining the development process from prototype to launch. This innovation has the potential to transform the AI landscape, enabling faster and more efficient development of AI-powered applications.",
+      "image": "https://pbs.twimg.com/media/HFZiwfuWkAEHrrV.jpg",
+      "sources": [
+        "https://x.com/i/status/2041927687460024721"
+      ],
+      "video": "media/2026-04-09-revolutionizing-ai-development-claude-unveils-mana.mp4",
+      "shortId": 13
+    },
+    {
+      "filename": "2026-04-09-revolutionary-database-cloning-ardentai-changes-th.md",
+      "slug": "2026-04-09-revolutionary-database-cloning-ardentai-changes-th",
+      "title": "Revolutionary Database Cloning: ArdentAI Changes the Game",
+      "date": "2026-04-09",
+      "published_at": "2026-04-09T02:58:06.763223+00:00",
+      "tags": [
+        "ArdentAI",
+        "Database Cloning",
+        "Postgres"
+      ],
+      "excerpt": "ArdentAI introduces instant Postgres database cloning, streamlining testing for developers and coding agents. This innovation reduces cloning time to under 6 seconds, eliminating infrastructure management.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2041637437034926080/img/kInbSydHMhFn0Odu.jpg",
+      "sources": [
+        "https://x.com/i/status/2041651193362182281"
+      ],
+      "video": "media/2026-04-09-revolutionary-database-cloning-ardentai-changes-th.mp4",
       "shortId": 14
     },
     {
@@ -917,24 +917,6 @@
       "shortId": 43
     },
     {
-      "filename": "2026-02-26-revolutionizing-chatbot-development-vercels-game-c.md",
-      "slug": "2026-02-26-revolutionizing-chatbot-development-vercels-game-c",
-      "title": "Revolutionizing Chatbot Development: Vercel's Game-Changing Chat SDK",
-      "date": "2026-02-26",
-      "published_at": "2026-02-26T16:34:07.158429+00:00",
-      "tags": [
-        "Vercel",
-        "Chat SDK",
-        "Chatbot Development"
-      ],
-      "excerpt": "Vercel's new Chat SDK allows developers to write chatbot logic once and deploy across multiple platforms, streamlining development and increasing productivity. This innovation has the potential to revolutionize the way chatbots are built and integrated into various applications.",
-      "image": null,
-      "sources": [
-        "https://x.com/i/status/2026359198171402678"
-      ],
-      "shortId": 44
-    },
-    {
       "filename": "2026-02-26-revolutionizing-video-editing-adobe-unveils-ai-pow.md",
       "slug": "2026-02-26-revolutionizing-video-editing-adobe-unveils-ai-pow",
       "title": "Revolutionizing Video Editing: Adobe Unveils AI-Powered Quick Cut Tool",
@@ -950,7 +932,7 @@
       "sources": [
         "https://x.com/i/status/2026659388270981288"
       ],
-      "shortId": 45
+      "shortId": 44
     },
     {
       "filename": "2026-02-26-revolutionizing-productivity-minimax-agents-game-c.md",
@@ -969,7 +951,7 @@
         "https://x.com/i/status/2027027163078336885"
       ],
       "video": "media/2026-02-26-revolutionizing-productivity-minimax-agents-game-c.mp4",
-      "shortId": 46
+      "shortId": 45
     },
     {
       "filename": "2026-02-26-revolutionizing-image-creation-nano-banana-2-unlea.md",
@@ -988,26 +970,25 @@
         "https://x.com/i/status/2027051577899380991"
       ],
       "video": "media/2026-02-26-revolutionizing-image-creation-nano-banana-2-unlea.mp4",
-      "shortId": 47
+      "shortId": 46
     },
     {
-      "filename": "2026-02-25-revolutionizing-front-end-development-the-ai-power.md",
-      "slug": "2026-02-25-revolutionizing-front-end-development-the-ai-power",
-      "title": "Revolutionizing Front-End Development: The AI-Powered Rebuild of Next.js in Just One Week",
-      "date": "2026-02-25",
-      "published_at": "2026-02-25T11:00:51.627887+00:00",
+      "filename": "2026-02-26-revolutionizing-chatbot-development-vercels-game-c.md",
+      "slug": "2026-02-26-revolutionizing-chatbot-development-vercels-game-c",
+      "title": "Revolutionizing Chatbot Development: Vercel's Game-Changing Chat SDK",
+      "date": "2026-02-26",
+      "published_at": "2026-02-26T16:34:07.158429+00:00",
       "tags": [
-        "Next.js",
-        "Vite",
-        "AI",
-        "Cloudflare Workers"
+        "Vercel",
+        "Chat SDK",
+        "Chatbot Development"
       ],
-      "excerpt": "One engineer used AI to rebuild Next.js on Vite in a week. vinext builds up to 4x faster, produces 57% smaller bundles, and deploys to Cloudflare Workers with a single command.",
-      "image": "https://cf-assets.www.cloudflare.com/zkvhlag99gkb/720QQcrdICiSJXrr9VoixA/4934fffd05d1ca10cc661238b381308e/BLOG-3194_OG.png",
+      "excerpt": "Vercel's new Chat SDK allows developers to write chatbot logic once and deploy across multiple platforms, streamlining development and increasing productivity. This innovation has the potential to revolutionize the way chatbots are built and integrated into various applications.",
+      "image": null,
       "sources": [
-        "https://blog.cloudflare.com/vinext/"
+        "https://x.com/i/status/2026359198171402678"
       ],
-      "shortId": 48
+      "shortId": 47
     },
     {
       "filename": "2026-02-25-claude-code-unleashes-remote-control-a-game-change.md",
@@ -1026,7 +1007,7 @@
         "https://x.com/i/status/2026418433911603668"
       ],
       "video": "media/2026-02-25-claude-code-unleashes-remote-control-a-game-change.mp4",
-      "shortId": 49
+      "shortId": 48
     },
     {
       "filename": "2026-02-25-revolutionizing-ai-capabilities-the-dawn-of-perple.md",
@@ -1045,6 +1026,25 @@
         "https://x.com/i/status/2026695550771540489"
       ],
       "video": "media/2026-02-25-revolutionizing-ai-capabilities-the-dawn-of-perple.mp4",
+      "shortId": 49
+    },
+    {
+      "filename": "2026-02-25-revolutionizing-front-end-development-the-ai-power.md",
+      "slug": "2026-02-25-revolutionizing-front-end-development-the-ai-power",
+      "title": "Revolutionizing Front-End Development: The AI-Powered Rebuild of Next.js in Just One Week",
+      "date": "2026-02-25",
+      "published_at": "2026-02-25T11:00:51.627887+00:00",
+      "tags": [
+        "Next.js",
+        "Vite",
+        "AI",
+        "Cloudflare Workers"
+      ],
+      "excerpt": "One engineer used AI to rebuild Next.js on Vite in a week. vinext builds up to 4x faster, produces 57% smaller bundles, and deploys to Cloudflare Workers with a single command.",
+      "image": "https://cf-assets.www.cloudflare.com/zkvhlag99gkb/720QQcrdICiSJXrr9VoixA/4934fffd05d1ca10cc661238b381308e/BLOG-3194_OG.png",
+      "sources": [
+        "https://blog.cloudflare.com/vinext/"
+      ],
       "shortId": 50
     },
     {
@@ -1328,6 +1328,24 @@
       "shortId": 65
     },
     {
+      "filename": "2026-02-16-revolutionizing-debugging-chrome-devtools-gets-mul.md",
+      "slug": "2026-02-16-revolutionizing-debugging-chrome-devtools-gets-mul",
+      "title": "Revolutionizing Debugging: Chrome DevTools Gets Multi-Session Support",
+      "date": "2026-02-16",
+      "published_at": "2026-02-16T19:00:38.061586+00:00",
+      "tags": [
+        "Chrome DevTools",
+        "Debugging",
+        "Multi-Session Support"
+      ],
+      "excerpt": "Would multi-session support for the Chrome DevTools MCP server be useful for you? \ud83e\udd16\u2716\ufe0f\ud83c\udf0d Chime into the discussion on GitHub: https://github.com/ChromeDevTools/chrome-devtools-mcp/issues/926",
+      "image": "https://pbs.twimg.com/media/HBR0XEtaYAEdKVg.jpg?name=orig",
+      "sources": [
+        "https://x.com/i/status/2023370190269116568"
+      ],
+      "shortId": 66
+    },
+    {
       "filename": "2026-02-16-unlocking-the-power-of-anthropic-agents-a-game-cha.md",
       "slug": "2026-02-16-unlocking-the-power-of-anthropic-agents-a-game-cha",
       "title": "Unlocking the Power of Anthropic Agents: A Game-Changer for AI Development",
@@ -1344,24 +1362,6 @@
         "https://x.com/i/status/2023428910042513482"
       ],
       "video": "https://video.twimg.com/amplify_video/2023253339073392640/vid/avc1/3840x2160/7JQ8lRXN0Gf-NYY_.mp4?tag=21",
-      "shortId": 66
-    },
-    {
-      "filename": "2026-02-16-revolutionizing-debugging-chrome-devtools-gets-mul.md",
-      "slug": "2026-02-16-revolutionizing-debugging-chrome-devtools-gets-mul",
-      "title": "Revolutionizing Debugging: Chrome DevTools Gets Multi-Session Support",
-      "date": "2026-02-16",
-      "published_at": "2026-02-16T19:00:38.061586+00:00",
-      "tags": [
-        "Chrome DevTools",
-        "Debugging",
-        "Multi-Session Support"
-      ],
-      "excerpt": "Would multi-session support for the Chrome DevTools MCP server be useful for you? \ud83e\udd16\u2716\ufe0f\ud83c\udf0d Chime into the discussion on GitHub: https://github.com/ChromeDevTools/chrome-devtools-mcp/issues/926",
-      "image": "https://pbs.twimg.com/media/HBR0XEtaYAEdKVg.jpg?name=orig",
-      "sources": [
-        "https://x.com/i/status/2023370190269116568"
-      ],
       "shortId": 67
     },
     {
@@ -1588,43 +1588,6 @@
       "shortId": 79
     },
     {
-      "filename": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
-      "slug": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits",
-      "title": "AI Expansion Showdown: Anthropic's India Foray Hits Local Roadblock",
-      "date": "2026-02-10",
-      "published_at": "2026-02-10T02:07:30.583768+00:00",
-      "tags": [
-        "AI",
-        "Anthropic",
-        "India",
-        "Trademark"
-      ],
-      "excerpt": "India's Anthropic Software has taken the U.S. AI giant to court over a name dispute.",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/01/anthropic-image-jagmeet-singh-techcrunch.jpg?resize=1200,800",
-      "sources": [
-        "https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/"
-      ],
-      "shortId": 80
-    },
-    {
-      "filename": "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan.md",
-      "slug": "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan",
-      "title": "Revolutionizing Coding: Composer 1.5 Unleashes Enhanced Intelligence",
-      "date": "2026-02-10",
-      "published_at": "2026-02-10T19:19:19.902983+00:00",
-      "tags": [
-        "Composer 1.5",
-        "AI Coding",
-        "Reinforcement Learning"
-      ],
-      "excerpt": "Improved reasoning over challenging coding tasks by scaling RL over 20x.",
-      "image": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/blog/composer-1.5-og.png",
-      "sources": [
-        "https://cursor.com/blog/composer-1-5"
-      ],
-      "shortId": 81
-    },
-    {
       "filename": "2026-02-10-revolutionizing-research-visuals-google-ais-paperb.md",
       "slug": "2026-02-10-revolutionizing-research-visuals-google-ais-paperb",
       "title": "Revolutionizing Research Visuals: Google AI's PaperBanana Framework",
@@ -1642,44 +1605,7 @@
       "sources": [
         "https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/"
       ],
-      "shortId": 82
-    },
-    {
-      "filename": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.md",
-      "slug": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard",
-      "title": "India's Tech Landscape Shifts: Why Deeptech and Hardware Are the Future",
-      "date": "2026-02-10",
-      "published_at": "2026-02-10T19:23:50.996880+00:00",
-      "tags": [
-        "Deeptech",
-        "Hardware",
-        "IT Service Exports",
-        "Artificial Intelligence"
-      ],
-      "excerpt": "India's reliance on IT service exports is no longer viable, and the country must shift its focus to deeptech and hardware to build long-term economic resilience. Zerodha founder Nithin Kamath emphasizes the need for self-sufficiency in technology to stay competitive.",
-      "image": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-18740,resizemode-75,msid-128120292/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath.jpg",
-      "sources": [
-        "https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms"
-      ],
-      "shortId": 83
-    },
-    {
-      "filename": "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git.md",
-      "slug": "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git",
-      "title": "Revolutionizing Coding: GPT-5.3-Codex Now Powers GitHub Copilot",
-      "date": "2026-02-10",
-      "published_at": "2026-02-10T19:20:49.464293+00:00",
-      "tags": [
-        "GitHub Copilot",
-        "GPT-5.3-Codex",
-        "AI-powered coding"
-      ],
-      "excerpt": "Get ready to supercharge your coding workflow with GPT-5.3-Codex, the latest AI model now available in GitHub Copilot, bringing improved performance and capabilities to the table. This update is set to revolutionize the way developers work, making coding faster, smarter, and more efficient.",
-      "image": "https://github.blog/wp-content/uploads/2026/02/github-copilot-social-card-2.png",
-      "sources": [
-        "https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/"
-      ],
-      "shortId": 84
+      "shortId": 80
     },
     {
       "filename": "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.md",
@@ -1698,7 +1624,7 @@
         "https://x.com/i/status/2020464238880596429"
       ],
       "video": "media/2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.mp4",
-      "shortId": 85
+      "shortId": 81
     },
     {
       "filename": "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
@@ -1717,6 +1643,80 @@
         "https://x.com/i/status/2020423330386579646"
       ],
       "video": "media/2026-02-10-revolutionizing-ui-animations-introducing-reactbit.mp4",
+      "shortId": 82
+    },
+    {
+      "filename": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
+      "slug": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits",
+      "title": "AI Expansion Showdown: Anthropic's India Foray Hits Local Roadblock",
+      "date": "2026-02-10",
+      "published_at": "2026-02-10T02:07:30.583768+00:00",
+      "tags": [
+        "AI",
+        "Anthropic",
+        "India",
+        "Trademark"
+      ],
+      "excerpt": "India's Anthropic Software has taken the U.S. AI giant to court over a name dispute.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/01/anthropic-image-jagmeet-singh-techcrunch.jpg?resize=1200,800",
+      "sources": [
+        "https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/"
+      ],
+      "shortId": 83
+    },
+    {
+      "filename": "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan.md",
+      "slug": "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan",
+      "title": "Revolutionizing Coding: Composer 1.5 Unleashes Enhanced Intelligence",
+      "date": "2026-02-10",
+      "published_at": "2026-02-10T19:19:19.902983+00:00",
+      "tags": [
+        "Composer 1.5",
+        "AI Coding",
+        "Reinforcement Learning"
+      ],
+      "excerpt": "Improved reasoning over challenging coding tasks by scaling RL over 20x.",
+      "image": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/blog/composer-1.5-og.png",
+      "sources": [
+        "https://cursor.com/blog/composer-1-5"
+      ],
+      "shortId": 84
+    },
+    {
+      "filename": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.md",
+      "slug": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard",
+      "title": "India's Tech Landscape Shifts: Why Deeptech and Hardware Are the Future",
+      "date": "2026-02-10",
+      "published_at": "2026-02-10T19:23:50.996880+00:00",
+      "tags": [
+        "Deeptech",
+        "Hardware",
+        "IT Service Exports",
+        "Artificial Intelligence"
+      ],
+      "excerpt": "India's reliance on IT service exports is no longer viable, and the country must shift its focus to deeptech and hardware to build long-term economic resilience. Zerodha founder Nithin Kamath emphasizes the need for self-sufficiency in technology to stay competitive.",
+      "image": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-18740,resizemode-75,msid-128120292/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath.jpg",
+      "sources": [
+        "https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms"
+      ],
+      "shortId": 85
+    },
+    {
+      "filename": "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git.md",
+      "slug": "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git",
+      "title": "Revolutionizing Coding: GPT-5.3-Codex Now Powers GitHub Copilot",
+      "date": "2026-02-10",
+      "published_at": "2026-02-10T19:20:49.464293+00:00",
+      "tags": [
+        "GitHub Copilot",
+        "GPT-5.3-Codex",
+        "AI-powered coding"
+      ],
+      "excerpt": "Get ready to supercharge your coding workflow with GPT-5.3-Codex, the latest AI model now available in GitHub Copilot, bringing improved performance and capabilities to the table. This update is set to revolutionize the way developers work, making coding faster, smarter, and more efficient.",
+      "image": "https://github.blog/wp-content/uploads/2026/02/github-copilot-social-card-2.png",
+      "sources": [
+        "https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/"
+      ],
       "shortId": 86
     },
     {
