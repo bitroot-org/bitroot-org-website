@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 101,
+  "count": 102,
   "posts": [
+    "2026-04-17-claudedevs-unveils-dedicated-channel-for-developer.md",
     "2026-04-15-revolutionizing-ai-powered-workflows-google-introd.md",
     "2026-04-15-revolutionizing-ai-powered-coding-claudes-game-cha.md",
     "2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c.md",
@@ -81,13 +82,13 @@
     "2026-02-12-revolutionizing-app-store-submissions-automated-gu.md",
     "2026-02-12-revolutionary-agent-native-computing-now-accessibl.md",
     "2026-02-11-ai-safety-leader-sounds-alarm-resignation-sparks-c.md",
-    "2026-02-10-revolutionizing-research-visuals-google-ais-paperb.md",
-    "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.md",
-    "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
     "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
     "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan.md",
+    "2026-02-10-revolutionizing-research-visuals-google-ais-paperb.md",
     "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.md",
     "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git.md",
+    "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.md",
+    "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
     "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal.md",
     "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.md",
     "2026-02-09-revolutionizing-ai-development-replicate-joins-for.md",
@@ -106,6 +107,25 @@
   ],
   "metadata": [
     {
+      "filename": "2026-04-17-claudedevs-unveils-dedicated-channel-for-developer.md",
+      "slug": "2026-04-17-claudedevs-unveils-dedicated-channel-for-developer",
+      "title": "ClaudeDevs Unveils Dedicated Channel for Developer Updates",
+      "date": "2026-04-17",
+      "published_at": "2026-04-17T14:55:58.708039+00:00",
+      "tags": [
+        "ClaudeDevs",
+        "Developer Updates",
+        "Community News"
+      ],
+      "excerpt": "For the developers building with Claude, a direct line from the team.\n\nFollow for changelogs, API releases, community updates, and deep dives.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2044779639445590016/img/u50wlq8vb0ueGG_J.jpg",
+      "sources": [
+        "https://x.com/i/status/2044780198722498580"
+      ],
+      "video": "media/2026-04-17-claudedevs-unveils-dedicated-channel-for-developer.mp4",
+      "shortId": 1
+    },
+    {
       "filename": "2026-04-15-revolutionizing-ai-powered-workflows-google-introd.md",
       "slug": "2026-04-15-revolutionizing-ai-powered-workflows-google-introd",
       "title": "Revolutionizing AI-Powered Workflows: Google Introduces Skills in Chrome",
@@ -123,7 +143,7 @@
         "https://x.com/i/status/2044106378655215625"
       ],
       "video": "media/2026-04-15-revolutionizing-ai-powered-workflows-google-introd.mp4",
-      "shortId": 1
+      "shortId": 2
     },
     {
       "filename": "2026-04-15-revolutionizing-ai-powered-coding-claudes-game-cha.md",
@@ -142,7 +162,7 @@
         "https://x.com/i/status/2044131493966909862"
       ],
       "video": "media/2026-04-15-revolutionizing-ai-powered-coding-claudes-game-cha.mp4",
-      "shortId": 2
+      "shortId": 3
     },
     {
       "filename": "2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c.md",
@@ -161,7 +181,7 @@
         "https://x.com/i/status/2044519924282847381"
       ],
       "video": "media/2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c.mp4",
-      "shortId": 3
+      "shortId": 4
     },
     {
       "filename": "2026-04-15-the-future-of-coding-is-the-era-of-traditional-ide.md",
@@ -180,7 +200,7 @@
         "https://x.com/i/status/2044140545384296913"
       ],
       "video": "https://video.twimg.com/amplify_video/2044139244525105152/vid/avc1/1920x1080/2GHTKwa088d6jyOr.mp4?tag=21",
-      "shortId": 4
+      "shortId": 5
     },
     {
       "filename": "2026-04-15-revolutionizing-automation-claude-code-routines-ar.md",
@@ -199,7 +219,7 @@
         "https://x.com/i/status/2044093913376706655"
       ],
       "video": "media/2026-04-15-revolutionizing-automation-claude-code-routines-ar.mp4",
-      "shortId": 5
+      "shortId": 6
     },
     {
       "filename": "2026-04-15-revolutionizing-app-design-ai-generated-themes-now.md",
@@ -218,7 +238,7 @@
         "https://x.com/i/status/2044111418786754620"
       ],
       "video": "media/2026-04-15-revolutionizing-app-design-ai-generated-themes-now.mp4",
-      "shortId": 6
+      "shortId": 7
     },
     {
       "filename": "2026-04-12-revolutionizing-video-consumption-interactive-tran.md",
@@ -237,7 +257,7 @@
         "https://x.com/i/status/2042683393247449148"
       ],
       "video": "https://video.twimg.com/amplify_video/2042678525627633664/vid/avc1/2756x2160/Pn6Y6f1MjrW6JOIS.mp4?tag=21",
-      "shortId": 7
+      "shortId": 8
     },
     {
       "filename": "2026-04-12-revolutionizing-ai-agents-minimax-unveils-mmx-cli.md",
@@ -255,7 +275,7 @@
       "sources": [
         "https://x.com/i/status/2042641521653256234"
       ],
-      "shortId": 8
+      "shortId": 9
     },
     {
       "filename": "2026-04-10-revolutionizing-agent-interactions-claudes-monitor.md",
@@ -274,7 +294,7 @@
         "https://x.com/i/status/2042332268450963774"
       ],
       "video": "media/2026-04-10-revolutionizing-agent-interactions-claudes-monitor.mp4",
-      "shortId": 9
+      "shortId": 10
     },
     {
       "filename": "2026-04-09-revolutionizing-security-triage-github-copilot-cli.md",
@@ -293,7 +313,7 @@
         "https://x.com/i/status/2042008695035355537"
       ],
       "video": "media/2026-04-09-revolutionizing-security-triage-github-copilot-cli.mp4",
-      "shortId": 10
+      "shortId": 11
     },
     {
       "filename": "2026-04-09-firecrawl-reaches-new-heights-revolutionizing-web.md",
@@ -312,7 +332,7 @@
         "https://x.com/i/status/2041909075110510969"
       ],
       "video": "media/2026-04-09-firecrawl-reaches-new-heights-revolutionizing-web.mp4",
-      "shortId": 11
+      "shortId": 12
     },
     {
       "filename": "2026-04-09-notion-unleashes-ai-powered-task-automation-with-c.md",
@@ -331,7 +351,7 @@
         "https://x.com/i/status/2041982872698155398"
       ],
       "video": "media/2026-04-09-notion-unleashes-ai-powered-task-automation-with-c.mp4",
-      "shortId": 12
+      "shortId": 13
     },
     {
       "filename": "2026-04-09-revolutionizing-ai-development-claude-unveils-mana.md",
@@ -350,7 +370,7 @@
         "https://x.com/i/status/2041927687460024721"
       ],
       "video": "media/2026-04-09-revolutionizing-ai-development-claude-unveils-mana.mp4",
-      "shortId": 13
+      "shortId": 14
     },
     {
       "filename": "2026-04-09-revolutionary-database-cloning-ardentai-changes-th.md",
@@ -369,7 +389,7 @@
         "https://x.com/i/status/2041651193362182281"
       ],
       "video": "media/2026-04-09-revolutionary-database-cloning-ardentai-changes-th.mp4",
-      "shortId": 14
+      "shortId": 15
     },
     {
       "filename": "2026-04-08-revolutionizing-automation-zapier-sdk-now-open-to.md",
@@ -388,7 +408,7 @@
         "https://x.com/i/status/2041501747105890393"
       ],
       "video": "media/2026-04-08-revolutionizing-automation-zapier-sdk-now-open-to.mp4",
-      "shortId": 15
+      "shortId": 16
     },
     {
       "filename": "2026-04-08-revolutionizing-ai-dev-tool-onboarding-interactive.md",
@@ -407,7 +427,7 @@
         "https://x.com/i/status/2041542766585610477"
       ],
       "video": "media/2026-04-08-revolutionizing-ai-dev-tool-onboarding-interactive.mp4",
-      "shortId": 16
+      "shortId": 17
     },
     {
       "filename": "2026-04-08-revolutionizing-software-security-anthropic-unveil.md",
@@ -425,7 +445,7 @@
       "sources": [
         "https://x.com/i/status/2041578392852517128"
       ],
-      "shortId": 17
+      "shortId": 18
     },
     {
       "filename": "2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the.md",
@@ -444,7 +464,7 @@
         "https://x.com/i/status/2041314633978659092"
       ],
       "video": "media/2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the.mp4",
-      "shortId": 18
+      "shortId": 19
     },
     {
       "filename": "2026-04-08-revolutionizing-code-productivity-autofix-pr-now-a.md",
@@ -463,7 +483,7 @@
         "https://x.com/i/status/2041654973491245509"
       ],
       "video": "media/2026-04-08-revolutionizing-code-productivity-autofix-pr-now-a.mp4",
-      "shortId": 19
+      "shortId": 20
     },
     {
       "filename": "2026-04-08-supernotes-323-revolution-unlocking-new-features-a.md",
@@ -481,7 +501,7 @@
       "sources": [
         "https://x.com/i/status/2041401159639007301"
       ],
-      "shortId": 20
+      "shortId": 21
     },
     {
       "filename": "2026-04-06-revolutionizing-design-top-tools-for-color-and-gra.md",
@@ -500,7 +520,7 @@
       "sources": [
         "https://x.com/i/status/2040387276589682858"
       ],
-      "shortId": 21
+      "shortId": 22
     },
     {
       "filename": "2026-04-06-tldraw-revolution-unlocking-next-level-collaborati.md",
@@ -519,7 +539,7 @@
         "https://x.com/i/status/2040869600137556247"
       ],
       "video": "media/2026-04-06-tldraw-revolution-unlocking-next-level-collaborati.mp4",
-      "shortId": 22
+      "shortId": 23
     },
     {
       "filename": "2026-04-06-unlocking-githubs-hidden-potential-a-personal-prod.md",
@@ -537,7 +557,7 @@
       "sources": [
         "https://x.com/i/status/2040490839881720092"
       ],
-      "shortId": 23
+      "shortId": 24
     },
     {
       "filename": "2026-04-06-revolutionizing-font-pairing-introducing-typevibe.md",
@@ -556,7 +576,7 @@
         "https://x.com/i/status/2040969883236622484"
       ],
       "video": "media/2026-04-06-revolutionizing-font-pairing-introducing-typevibe.mp4",
-      "shortId": 24
+      "shortId": 25
     },
     {
       "filename": "2026-03-30-revolutionizing-game-development-with-ommas-ai-pow.md",
@@ -575,7 +595,7 @@
         "https://x.com/i/status/2037935421905412229"
       ],
       "video": "media/2026-03-30-revolutionizing-game-development-with-ommas-ai-pow.mp4",
-      "shortId": 25
+      "shortId": 26
     },
     {
       "filename": "2026-03-24-revolutionizing-productivity-claudes-game-changing.md",
@@ -594,7 +614,7 @@
         "https://x.com/i/status/2036195789601374705"
       ],
       "video": "media/2026-03-24-revolutionizing-productivity-claudes-game-changing.mp4",
-      "shortId": 26
+      "shortId": 27
     },
     {
       "filename": "2026-03-14-rust-powered-agent-browser-revolution-lightning-fa.md",
@@ -612,7 +632,7 @@
       "sources": [
         "https://x.com/i/status/2032635370089693456"
       ],
-      "shortId": 27
+      "shortId": 28
     },
     {
       "filename": "2026-03-14-revolutionizing-ai-workflows-glm-5-unleashes-agent.md",
@@ -631,7 +651,7 @@
         "https://x.com/i/status/2032555220493033960"
       ],
       "video": "media/2026-03-14-revolutionizing-ai-workflows-glm-5-unleashes-agent.mp4",
-      "shortId": 28
+      "shortId": 29
     },
     {
       "filename": "2026-03-14-revolutionary-coding-claude-code-desktop-unveils-g.md",
@@ -650,7 +670,7 @@
         "https://x.com/i/status/2032856141059747975"
       ],
       "video": "media/2026-03-14-revolutionary-coding-claude-code-desktop-unveils-g.mp4",
-      "shortId": 29
+      "shortId": 30
     },
     {
       "filename": "2026-03-13-revolutionizing-pixel-art-a-node-based-vfx-editor.md",
@@ -669,7 +689,7 @@
         "https://x.com/i/status/2032436603453395361"
       ],
       "video": "media/2026-03-13-revolutionizing-pixel-art-a-node-based-vfx-editor.mp4",
-      "shortId": 30
+      "shortId": 31
     },
     {
       "filename": "2026-03-13-ycs-startup-school-lands-in-india-a-boost-for-loca.md",
@@ -688,7 +708,7 @@
         "https://x.com/i/status/2032291152402255892"
       ],
       "video": "media/2026-03-13-ycs-startup-school-lands-in-india-a-boost-for-loca.mp4",
-      "shortId": 31
+      "shortId": 32
     },
     {
       "filename": "2026-03-11-breakthrough-run-ai-models-entirely-in-your-browse.md",
@@ -707,7 +727,7 @@
         "https://x.com/i/status/2031037128734376089"
       ],
       "video": "media/2026-03-11-breakthrough-run-ai-models-entirely-in-your-browse.mp4",
-      "shortId": 32
+      "shortId": 33
     },
     {
       "filename": "2026-03-11-reviving-mockdown-ai-powered-wireframing-revolutio.md",
@@ -726,7 +746,7 @@
       "sources": [
         "https://x.com/i/status/2031152691502555592"
       ],
-      "shortId": 33
+      "shortId": 34
     },
     {
       "filename": "2026-03-11-jetbrains-unveils-air-a-revolutionary-ai-powered-d.md",
@@ -745,7 +765,7 @@
         "https://x.com/i/status/2031049359710650522"
       ],
       "video": "media/2026-03-11-jetbrains-unveils-air-a-revolutionary-ai-powered-d.mp4",
-      "shortId": 34
+      "shortId": 35
     },
     {
       "filename": "2026-03-09-revolutionizing-code-quality-claudes-ai-powered-co.md",
@@ -764,7 +784,7 @@
         "https://x.com/i/status/2031088171262554195"
       ],
       "video": "media/2026-03-09-revolutionizing-code-quality-claudes-ai-powered-co.mp4",
-      "shortId": 35
+      "shortId": 36
     },
     {
       "filename": "2026-03-06-revolutionizing-web-apis-anything-api-unleashed.md",
@@ -782,7 +802,7 @@
       "sources": [
         "https://x.com/i/status/2029106289528185211"
       ],
-      "shortId": 36
+      "shortId": 37
     },
     {
       "filename": "2026-03-06-revolutionizing-agent-development-langsmith-skills.md",
@@ -801,7 +821,7 @@
         "https://x.com/i/status/2029272199073354105"
       ],
       "video": "media/2026-03-06-revolutionizing-agent-development-langsmith-skills.mp4",
-      "shortId": 37
+      "shortId": 38
     },
     {
       "filename": "2026-03-06-revolutionizing-app-development-ai-powered-glaze-l.md",
@@ -820,7 +840,7 @@
         "https://x.com/i/status/2029180822838759703"
       ],
       "video": "media/2026-03-06-revolutionizing-app-development-ai-powered-glaze-l.mp4",
-      "shortId": 38
+      "shortId": 39
     },
     {
       "filename": "2026-03-06-revolutionizing-team-collaboration-openai-unveils.md",
@@ -839,7 +859,7 @@
         "https://x.com/i/status/2029296008572576217"
       ],
       "video": "media/2026-03-06-revolutionizing-team-collaboration-openai-unveils.mp4",
-      "shortId": 39
+      "shortId": 40
     },
     {
       "filename": "2026-03-05-revolutionary-voice-mode-rolls-out-in-claude-code.md",
@@ -858,7 +878,7 @@
         "https://x.com/trq212/status/2028628570692890800?s=20"
       ],
       "video": "media/2026-03-05-revolutionary-voice-mode-rolls-out-in-claude-code.mp4",
-      "shortId": 40
+      "shortId": 41
     },
     {
       "filename": "2026-03-05-apple-unleashes-ai-powered-macbook-pro-with-m5-pro.md",
@@ -878,7 +898,7 @@
       "sources": [
         "https://share.google/XBSpKN75sGxaqL1Mk"
       ],
-      "shortId": 41
+      "shortId": 42
     },
     {
       "filename": "2026-03-05-revolutionizing-affordable-computing-apple-unveils.md",
@@ -896,7 +916,7 @@
       "sources": [
         "https://share.google/Aoh06t6BFh9ZjAPJW"
       ],
-      "shortId": 42
+      "shortId": 43
     },
     {
       "filename": "2026-03-01-electron-apps-just-got-a-whole-lot-smarter-with-ag.md",
@@ -914,7 +934,7 @@
       "sources": [
         "https://x.com/i/status/2028128730132922760"
       ],
-      "shortId": 43
+      "shortId": 44
     },
     {
       "filename": "2026-02-26-revolutionizing-video-editing-adobe-unveils-ai-pow.md",
@@ -932,7 +952,7 @@
       "sources": [
         "https://x.com/i/status/2026659388270981288"
       ],
-      "shortId": 44
+      "shortId": 45
     },
     {
       "filename": "2026-02-26-revolutionizing-productivity-minimax-agents-game-c.md",
@@ -951,7 +971,7 @@
         "https://x.com/i/status/2027027163078336885"
       ],
       "video": "media/2026-02-26-revolutionizing-productivity-minimax-agents-game-c.mp4",
-      "shortId": 45
+      "shortId": 46
     },
     {
       "filename": "2026-02-26-revolutionizing-image-creation-nano-banana-2-unlea.md",
@@ -970,7 +990,7 @@
         "https://x.com/i/status/2027051577899380991"
       ],
       "video": "media/2026-02-26-revolutionizing-image-creation-nano-banana-2-unlea.mp4",
-      "shortId": 46
+      "shortId": 47
     },
     {
       "filename": "2026-02-26-revolutionizing-chatbot-development-vercels-game-c.md",
@@ -988,7 +1008,7 @@
       "sources": [
         "https://x.com/i/status/2026359198171402678"
       ],
-      "shortId": 47
+      "shortId": 48
     },
     {
       "filename": "2026-02-25-claude-code-unleashes-remote-control-a-game-change.md",
@@ -1007,7 +1027,7 @@
         "https://x.com/i/status/2026418433911603668"
       ],
       "video": "media/2026-02-25-claude-code-unleashes-remote-control-a-game-change.mp4",
-      "shortId": 48
+      "shortId": 49
     },
     {
       "filename": "2026-02-25-revolutionizing-ai-capabilities-the-dawn-of-perple.md",
@@ -1026,7 +1046,7 @@
         "https://x.com/i/status/2026695550771540489"
       ],
       "video": "media/2026-02-25-revolutionizing-ai-capabilities-the-dawn-of-perple.mp4",
-      "shortId": 49
+      "shortId": 50
     },
     {
       "filename": "2026-02-25-revolutionizing-front-end-development-the-ai-power.md",
@@ -1045,7 +1065,7 @@
       "sources": [
         "https://blog.cloudflare.com/vinext/"
       ],
-      "shortId": 50
+      "shortId": 51
     },
     {
       "filename": "2026-02-25-revolutionizing-design-pencils-swarm-mode-takes-ai.md",
@@ -1064,7 +1084,7 @@
         "https://x.com/i/status/2026329359838318906"
       ],
       "video": "media/2026-02-25-revolutionizing-design-pencils-swarm-mode-takes-ai.mp4",
-      "shortId": 51
+      "shortId": 52
     },
     {
       "filename": "2026-02-25-revolutionary-ai-powered-chatbot-unleashed-meet-ma.md",
@@ -1083,7 +1103,7 @@
         "https://x.com/i/status/2026493668417482923"
       ],
       "video": "media/2026-02-25-revolutionary-ai-powered-chatbot-unleashed-meet-ma.mp4",
-      "shortId": 52
+      "shortId": 53
     },
     {
       "filename": "2026-02-25-google-labs-unveils-major-upgrade-to-opal-revoluti.md",
@@ -1102,7 +1122,7 @@
         "https://x.com/i/status/2026374947996840169"
       ],
       "video": "media/2026-02-25-google-labs-unveils-major-upgrade-to-opal-revoluti.mp4",
-      "shortId": 53
+      "shortId": 54
     },
     {
       "filename": "2026-02-21-revolutionizing-ai-powered-commerce-razorpay-and-n.md",
@@ -1121,7 +1141,7 @@
       "sources": [
         "https://share.google/JZHNyoCeRqofk1vze"
       ],
-      "shortId": 54
+      "shortId": 55
     },
     {
       "filename": "2026-02-21-revolutionizing-coding-claudes-game-changing-updat.md",
@@ -1140,7 +1160,7 @@
         "https://x.com/i/status/2024937960572104707"
       ],
       "video": "media/2026-02-21-revolutionizing-coding-claudes-game-changing-updat.mp4",
-      "shortId": 55
+      "shortId": 56
     },
     {
       "filename": "2026-02-19-google-unveils-glimmer-a-revolutionary-design-lang.md",
@@ -1159,7 +1179,7 @@
       "sources": [
         "https://x.com/i/status/2023805464577011979"
       ],
-      "shortId": 56
+      "shortId": 57
     },
     {
       "filename": "2026-02-19-ai-rivals-clash-openai-and-anthropic-ceos-awkward.md",
@@ -1178,7 +1198,7 @@
       "sources": [
         "https://www.cnbc.com/2026/02/19/openai-sam-altman-anthropic-dario-amodei-india-ai-summit.html"
       ],
-      "shortId": 57
+      "shortId": 58
     },
     {
       "filename": "2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in.md",
@@ -1197,7 +1217,7 @@
         "https://x.com/i/status/2024227639087813035"
       ],
       "video": "media/2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in.mp4",
-      "shortId": 58
+      "shortId": 59
     },
     {
       "filename": "2026-02-19-revolutionizing-ai-powered-apps-with-secure-docker.md",
@@ -1215,7 +1235,7 @@
       "sources": [
         "https://x.com/i/status/2024178381760143381"
       ],
-      "shortId": 59
+      "shortId": 60
     },
     {
       "filename": "2026-02-18-revolutionizing-startup-productivity-the-ultimate.md",
@@ -1233,7 +1253,7 @@
       "sources": [
         "https://x.com/i/status/2023978535161925889"
       ],
-      "shortId": 60
+      "shortId": 61
     },
     {
       "filename": "2026-02-18-revolutionizing-productivity-bitroots-game-changin.md",
@@ -1251,7 +1271,7 @@
       "sources": [
         "https://x.com/i/status/2023967802823245901"
       ],
-      "shortId": 61
+      "shortId": 62
     },
     {
       "filename": "2026-02-18-indias-ai-startup-funding-landscape-sees-regional.md",
@@ -1269,7 +1289,7 @@
       "sources": [
         "https://analyticsindiamag.com/ai-startups/funding-reset-why-karnataka-faced-a-28-drop-while-maharashtra-held-its-ground"
       ],
-      "shortId": 62
+      "shortId": 63
     },
     {
       "filename": "2026-02-17-revolutionizing-tech-stacks-hyperbrowser-unveils-b.md",
@@ -1288,7 +1308,7 @@
         "https://x.com/i/status/2023480469044818208"
       ],
       "video": "media/2026-02-17-revolutionizing-tech-stacks-hyperbrowser-unveils-b.mp4",
-      "shortId": 63
+      "shortId": 64
     },
     {
       "filename": "2026-02-17-revolutionizing-design-figma-unveils-code-to-desig.md",
@@ -1306,7 +1326,7 @@
       "sources": [
         "https://www.figma.com/blog/introducing-claude-code-to-figma/"
       ],
-      "shortId": 64
+      "shortId": 65
     },
     {
       "filename": "2026-02-17-revolutionizing-coding-ollama-unveils-subagents-an.md",
@@ -1325,7 +1345,7 @@
       "sources": [
         "https://ollama.com/blog/web-search-subagents-claude-code"
       ],
-      "shortId": 65
+      "shortId": 66
     },
     {
       "filename": "2026-02-16-revolutionizing-debugging-chrome-devtools-gets-mul.md",
@@ -1343,7 +1363,7 @@
       "sources": [
         "https://x.com/i/status/2023370190269116568"
       ],
-      "shortId": 66
+      "shortId": 67
     },
     {
       "filename": "2026-02-16-unlocking-the-power-of-anthropic-agents-a-game-cha.md",
@@ -1362,7 +1382,7 @@
         "https://x.com/i/status/2023428910042513482"
       ],
       "video": "https://video.twimg.com/amplify_video/2023253339073392640/vid/avc1/3840x2160/7JQ8lRXN0Gf-NYY_.mp4?tag=21",
-      "shortId": 67
+      "shortId": 68
     },
     {
       "filename": "2026-02-16-anthropic-expands-indian-presence-with-new-bengalu.md",
@@ -1380,7 +1400,7 @@
       "sources": [
         "https://www.anthropic.com/news/bengaluru-office-partnerships-across-india"
       ],
-      "shortId": 68
+      "shortId": 69
     },
     {
       "filename": "2026-02-16-minimax-m25-revolution-unleashing-3x-faster-infere.md",
@@ -1398,7 +1418,7 @@
       "sources": [
         "https://x.com/i/status/2023066199995949350"
       ],
-      "shortId": 69
+      "shortId": 70
     },
     {
       "filename": "2026-02-15-revolutionizing-online-discussions-the-rise-of-thr.md",
@@ -1416,7 +1436,7 @@
       "sources": [
         "https://www.threads.com/@toolfoliooo/post/DUyJyygk5Ct?xmt=AQF0Sb4soJ59WdTpfk3Z2rOSnVLTlTUaJ1yFPJdnNWJL4kN6Zppry2uQuHct11bO0b8RtAvk&slof=1"
       ],
-      "shortId": 70
+      "shortId": 71
     },
     {
       "filename": "2026-02-15-revolutionizing-voice-ai-nvidia-unveils-game-chang.md",
@@ -1435,7 +1455,7 @@
         "https://x.com/i/status/2022995332058251548"
       ],
       "video": "media/2026-02-15-revolutionizing-voice-ai-nvidia-unveils-game-chang.mp4",
-      "shortId": 71
+      "shortId": 72
     },
     {
       "filename": "2026-02-15-revolutionizing-ai-powered-browsing-kimi-claw-unle.md",
@@ -1454,7 +1474,7 @@
         "https://x.com/i/status/2023029674549596301"
       ],
       "video": "media/2026-02-15-revolutionizing-ai-powered-browsing-kimi-claw-unle.mp4",
-      "shortId": 72
+      "shortId": 73
     },
     {
       "filename": "2026-02-14-revolutionizing-app-development-raydian-20-unleash.md",
@@ -1473,7 +1493,7 @@
         "https://x.com/i/status/2022256365901607287"
       ],
       "video": "media/2026-02-14-revolutionizing-app-development-raydian-20-unleash.mp4",
-      "shortId": 73
+      "shortId": 74
     },
     {
       "filename": "2026-02-14-revolutionizing-ai-driven-design-introducing-the-g.md",
@@ -1492,7 +1512,7 @@
         "https://x.com/i/status/2022038492575154555"
       ],
       "video": "media/2026-02-14-revolutionizing-ai-driven-design-introducing-the-g.mp4",
-      "shortId": 74
+      "shortId": 75
     },
     {
       "filename": "2026-02-13-revolutionizing-cicd-introducing-buildspace-the-ai.md",
@@ -1511,7 +1531,7 @@
       "sources": [
         "https://photon.codes/blog/ci-cd-in-the-age-of-ai"
       ],
-      "shortId": 75
+      "shortId": 76
     },
     {
       "filename": "2026-02-12-revolutionizing-content-delivery-cloudflares-real.md",
@@ -1529,7 +1549,7 @@
       "sources": [
         "https://x.com/i/status/2021955521213800489"
       ],
-      "shortId": 76
+      "shortId": 77
     },
     {
       "filename": "2026-02-12-revolutionizing-app-store-submissions-automated-gu.md",
@@ -1548,7 +1568,7 @@
         "https://x.com/i/status/2021661315329405174"
       ],
       "video": "media/2026-02-12-revolutionizing-app-store-submissions-automated-gu.mp4",
-      "shortId": 77
+      "shortId": 78
     },
     {
       "filename": "2026-02-12-revolutionary-agent-native-computing-now-accessibl.md",
@@ -1567,7 +1587,7 @@
         "https://x.com/Jarodxu7/status/2021620710544904355?s=20"
       ],
       "video": "media/2026-02-12-revolutionary-agent-native-computing-now-accessibl.mp4",
-      "shortId": 78
+      "shortId": 79
     },
     {
       "filename": "2026-02-11-ai-safety-leader-sounds-alarm-resignation-sparks-c.md",
@@ -1585,7 +1605,44 @@
       "sources": [
         "https://share.google/6gzMAD1U347j7YUXX"
       ],
-      "shortId": 79
+      "shortId": 80
+    },
+    {
+      "filename": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
+      "slug": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits",
+      "title": "AI Expansion Showdown: Anthropic's India Foray Hits Local Roadblock",
+      "date": "2026-02-10",
+      "published_at": "2026-02-10T02:07:30.583768+00:00",
+      "tags": [
+        "AI",
+        "Anthropic",
+        "India",
+        "Trademark"
+      ],
+      "excerpt": "India's Anthropic Software has taken the U.S. AI giant to court over a name dispute.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/01/anthropic-image-jagmeet-singh-techcrunch.jpg?resize=1200,800",
+      "sources": [
+        "https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/"
+      ],
+      "shortId": 81
+    },
+    {
+      "filename": "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan.md",
+      "slug": "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan",
+      "title": "Revolutionizing Coding: Composer 1.5 Unleashes Enhanced Intelligence",
+      "date": "2026-02-10",
+      "published_at": "2026-02-10T19:19:19.902983+00:00",
+      "tags": [
+        "Composer 1.5",
+        "AI Coding",
+        "Reinforcement Learning"
+      ],
+      "excerpt": "Improved reasoning over challenging coding tasks by scaling RL over 20x.",
+      "image": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/blog/composer-1.5-og.png",
+      "sources": [
+        "https://cursor.com/blog/composer-1-5"
+      ],
+      "shortId": 82
     },
     {
       "filename": "2026-02-10-revolutionizing-research-visuals-google-ais-paperb.md",
@@ -1605,82 +1662,7 @@
       "sources": [
         "https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/"
       ],
-      "shortId": 80
-    },
-    {
-      "filename": "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.md",
-      "slug": "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi",
-      "title": "Revolutionizing Video Creation: AI-Powered Vibe Editing Takes Center Stage",
-      "date": "2026-02-10",
-      "published_at": "2026-02-10T02:11:19.181769+00:00",
-      "tags": [
-        "AI",
-        "video creation",
-        "vibe editing"
-      ],
-      "excerpt": "Vibe Editing, a game-changing AI-powered tool, allows users to create stunning videos with just a text prompt, eliminating the need for coding and tedious editing processes. This innovative technology is set to disrupt the video creation landscape, making it more accessible to developers and non-developers alike.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2020464187043115009/img/-iRMulg3HLXQTEBY.jpg",
-      "sources": [
-        "https://x.com/i/status/2020464238880596429"
-      ],
-      "video": "media/2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.mp4",
-      "shortId": 81
-    },
-    {
-      "filename": "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
-      "slug": "2026-02-10-revolutionizing-ui-animations-introducing-reactbit",
-      "title": "Revolutionizing UI Animations: Introducing ReactBits",
-      "date": "2026-02-10",
-      "published_at": "2026-02-10T01:55:57.820786+00:00",
-      "tags": [
-        "React",
-        "UI Animations",
-        "Web Development"
-      ],
-      "excerpt": "ReactBits is a game-changing animation library that offers a growing collection of smooth, modern UI animations for React projects, taking web design to the next level",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2020423255082123265/img/YD4KlnqX6y9k3Ro_.jpg",
-      "sources": [
-        "https://x.com/i/status/2020423330386579646"
-      ],
-      "video": "media/2026-02-10-revolutionizing-ui-animations-introducing-reactbit.mp4",
-      "shortId": 82
-    },
-    {
-      "filename": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
-      "slug": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits",
-      "title": "AI Expansion Showdown: Anthropic's India Foray Hits Local Roadblock",
-      "date": "2026-02-10",
-      "published_at": "2026-02-10T02:07:30.583768+00:00",
-      "tags": [
-        "AI",
-        "Anthropic",
-        "India",
-        "Trademark"
-      ],
-      "excerpt": "India's Anthropic Software has taken the U.S. AI giant to court over a name dispute.",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/01/anthropic-image-jagmeet-singh-techcrunch.jpg?resize=1200,800",
-      "sources": [
-        "https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/"
-      ],
       "shortId": 83
-    },
-    {
-      "filename": "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan.md",
-      "slug": "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan",
-      "title": "Revolutionizing Coding: Composer 1.5 Unleashes Enhanced Intelligence",
-      "date": "2026-02-10",
-      "published_at": "2026-02-10T19:19:19.902983+00:00",
-      "tags": [
-        "Composer 1.5",
-        "AI Coding",
-        "Reinforcement Learning"
-      ],
-      "excerpt": "Improved reasoning over challenging coding tasks by scaling RL over 20x.",
-      "image": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/blog/composer-1.5-og.png",
-      "sources": [
-        "https://cursor.com/blog/composer-1-5"
-      ],
-      "shortId": 84
     },
     {
       "filename": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.md",
@@ -1699,7 +1681,7 @@
       "sources": [
         "https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms"
       ],
-      "shortId": 85
+      "shortId": 84
     },
     {
       "filename": "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git.md",
@@ -1717,7 +1699,45 @@
       "sources": [
         "https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/"
       ],
+      "shortId": 85
+    },
+    {
+      "filename": "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.md",
+      "slug": "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi",
+      "title": "Revolutionizing Video Creation: AI-Powered Vibe Editing Takes Center Stage",
+      "date": "2026-02-10",
+      "published_at": "2026-02-10T02:11:19.181769+00:00",
+      "tags": [
+        "AI",
+        "video creation",
+        "vibe editing"
+      ],
+      "excerpt": "Vibe Editing, a game-changing AI-powered tool, allows users to create stunning videos with just a text prompt, eliminating the need for coding and tedious editing processes. This innovative technology is set to disrupt the video creation landscape, making it more accessible to developers and non-developers alike.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2020464187043115009/img/-iRMulg3HLXQTEBY.jpg",
+      "sources": [
+        "https://x.com/i/status/2020464238880596429"
+      ],
+      "video": "media/2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.mp4",
       "shortId": 86
+    },
+    {
+      "filename": "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
+      "slug": "2026-02-10-revolutionizing-ui-animations-introducing-reactbit",
+      "title": "Revolutionizing UI Animations: Introducing ReactBits",
+      "date": "2026-02-10",
+      "published_at": "2026-02-10T01:55:57.820786+00:00",
+      "tags": [
+        "React",
+        "UI Animations",
+        "Web Development"
+      ],
+      "excerpt": "ReactBits is a game-changing animation library that offers a growing collection of smooth, modern UI animations for React projects, taking web design to the next level",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2020423255082123265/img/YD4KlnqX6y9k3Ro_.jpg",
+      "sources": [
+        "https://x.com/i/status/2020423330386579646"
+      ],
+      "video": "media/2026-02-10-revolutionizing-ui-animations-introducing-reactbit.mp4",
+      "shortId": 87
     },
     {
       "filename": "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal.md",
@@ -1735,7 +1755,7 @@
       "sources": [
         "https://github.com/HKUDS/nanobot"
       ],
-      "shortId": 87
+      "shortId": 88
     },
     {
       "filename": "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.md",
@@ -1754,7 +1774,7 @@
       "sources": [
         "https://www.linkedin.com/posts/chanin-nantasenamat_watch-me-use-coco-to-build-a-streamlit-ugcPost-7424601007264833536-P64R?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&utm_campaign=share_via"
       ],
-      "shortId": 88
+      "shortId": 89
     },
     {
       "filename": "2026-02-09-revolutionizing-ai-development-replicate-joins-for.md",
@@ -1773,7 +1793,7 @@
       "sources": [
         "https://replicate.com/blog/replicate-cloudflare"
       ],
-      "shortId": 89
+      "shortId": 90
     },
     {
       "filename": "2026-02-08-revolutionizing-wordpress-management-claudes-new-c.md",
@@ -1792,7 +1812,7 @@
       "sources": [
         "https://techcrunch.com/2026/02/06/it-just-got-easier-for-claude-to-check-in-on-your-wordpress-site/"
       ],
-      "shortId": 90
+      "shortId": 91
     },
     {
       "filename": "2026-02-08-revolutionizing-coding-craft-agents-now-compatible.md",
@@ -1811,7 +1831,7 @@
       "sources": [
         "https://x.com/i/status/2020535293905101186"
       ],
-      "shortId": 91
+      "shortId": 92
     },
     {
       "filename": "2026-02-08-revolutionizing-web-app-security-meet-shannon-the.md",
@@ -1829,7 +1849,7 @@
       "sources": [
         "https://www.linkedin.com/posts/walid-boulanouar_claude-code-for-hacking-is-here-shannon-ugcPost-7425888138117566464-rWZQ?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&utm_campaign=share_via"
       ],
-      "shortId": 92
+      "shortId": 93
     },
     {
       "filename": "2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo.md",
@@ -1847,7 +1867,7 @@
       "sources": [
         "https://share.google/4T0fJDumSQSmG5Cmo"
       ],
-      "shortId": 93
+      "shortId": 94
     },
     {
       "filename": "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
@@ -1865,7 +1885,7 @@
       "sources": [
         "https://share.google/uISHcJ3WNR4H6uMhP"
       ],
-      "shortId": 94
+      "shortId": 95
     },
     {
       "filename": "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
@@ -1884,7 +1904,7 @@
         "https://x.com/lydiahallie/status/2019469032844587505?s=20"
       ],
       "video": "media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.mp4",
-      "shortId": 95
+      "shortId": 96
     },
     {
       "filename": "2026-02-06-unlocking-collaborative-coding-introducing-claude.md",
@@ -1902,7 +1922,7 @@
       "sources": [
         "https://code.claude.com/docs/en/agent-teams#compare-with-subagents"
       ],
-      "shortId": 96
+      "shortId": 97
     },
     {
       "filename": "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
@@ -1921,7 +1941,7 @@
       "sources": [
         "https://share.google/tM36P3WSwQLtg0J7h"
       ],
-      "shortId": 97
+      "shortId": 98
     },
     {
       "filename": "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
@@ -1939,7 +1959,7 @@
       "sources": [
         "https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3"
       ],
-      "shortId": 98
+      "shortId": 99
     },
     {
       "filename": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
@@ -1958,7 +1978,7 @@
         "https://x.com/i/status/2019173731042750509"
       ],
       "video": "media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.mp4",
-      "shortId": 99
+      "shortId": 100
     },
     {
       "filename": "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
@@ -1976,7 +1996,7 @@
       "sources": [
         "https://app.inference.sh/blog/skills/agent-skills-overview"
       ],
-      "shortId": 100
+      "shortId": 101
     },
     {
       "filename": "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
@@ -1994,7 +2014,7 @@
       "sources": [
         "https://mistral.ai/news/voxtral-transcribe-2"
       ],
-      "shortId": 101
+      "shortId": 102
     }
   ]
 }
