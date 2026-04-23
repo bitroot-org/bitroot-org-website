@@ -279,6 +279,46 @@
             }
         }
 
+        function escapeHtml(s) {
+            return (s == null ? '' : String(s)).replace(/[&<>"']/g, c => (
+                { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]
+            ));
+        }
+
+        /**
+         * Build the combined references list:
+         *   1. Frontmatter `sources` URLs, labeled with the post title (since the
+         *      source IS the post's subject).
+         *   2. Any inline links found in the rendered body, labeled with their own
+         *      link text.
+         * Dedupes by URL so the frontmatter source wins if it appears inline too.
+         */
+        function buildReferences(metadata, renderedHtml) {
+            const refs = [];
+            const seen = new Set();
+            const title = (metadata.title || '').trim();
+
+            (metadata.sources || []).forEach(url => {
+                if (!url || seen.has(url)) return;
+                seen.add(url);
+                refs.push({ url, label: title || formatSourceLabel(url) });
+            });
+
+            try {
+                const doc = new DOMParser().parseFromString(renderedHtml, 'text/html');
+                doc.querySelectorAll('a[href]').forEach(a => {
+                    const href = a.getAttribute('href');
+                    if (!href || href.startsWith('#') || href.startsWith('mailto:')) return;
+                    if (seen.has(href)) return;
+                    seen.add(href);
+                    const text = (a.textContent || '').trim();
+                    refs.push({ url: href, label: text || formatSourceLabel(href) });
+                });
+            } catch (_) { /* DOMParser unavailable — skip body scan */ }
+
+            return refs;
+        }
+
         /**
          * Load and render the post
          */
@@ -325,6 +365,7 @@
                 // Render post
                 const tag = (metadata.tags && metadata.tags[0]) || 'General';
                 const html = marked.parse(content);
+                const references = buildReferences(metadata, html);
 
                 // Get image - use metadata image, or fallback to placeholder
                 let heroImage = metadata.image;
@@ -382,11 +423,11 @@
                     <div class="post-body">
                         ${html}
                     </div>
-                    ${metadata.sources && metadata.sources.length > 0 ? `
+                    ${references.length > 0 ? `
                         <aside class="post-sources" aria-label="Sources">
                             <h2 class="post-sources-title">Sources</h2>
                             <ol class="post-sources-list">
-                                ${metadata.sources.map(s => `<li><a href="${s}" target="_blank" rel="noopener noreferrer">${formatSourceLabel(s)}</a></li>`).join('')}
+                                ${references.map(r => `<li><a href="${escapeHtml(r.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(r.label)}</a></li>`).join('')}
                             </ol>
                         </aside>
                     ` : ''}
@@ -402,15 +443,6 @@
                                     <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
                                 </svg>
                             </button>
-                            ${metadata.sources && metadata.sources.length > 0 ? `
-                                <a href="${metadata.sources[0]}" target="_blank" rel="noopener" class="source-link" title="View original source">
-                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg>
-                                </a>
-                            ` : ''}
                         </div>
                     </nav>
                 `;

@@ -462,25 +462,6 @@ html[data-embed="1"] .post-hero-video {
     color: white;
 }
 
-/* Source link icon */
-.source-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    background: var(--bitroot-light-blue);
-    border-radius: 50%;
-    color: var(--bitroot-primary-blue);
-    transition: all 0.2s ease;
-}
-
-.source-link:hover {
-    background: var(--bitroot-primary-blue);
-    color: white;
-    transform: scale(1.1);
-}
-
 /* Responsive */
 @media (max-width: 600px) {
     .post-page {
