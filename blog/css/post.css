@@ -8,6 +8,54 @@
     width: 100%;
 }
 
+/* Sources / references footnote block */
+.post-sources {
+    margin-top: var(--spacing-2xl);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--border);
+}
+
+.post-sources-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    margin: 0 0 var(--spacing-sm) 0;
+}
+
+.post-sources-list {
+    margin: 0;
+    padding-left: 1.25rem;
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+.post-sources-list li {
+    margin-bottom: var(--spacing-xs);
+}
+
+.post-sources-list li::marker {
+    color: var(--text-muted);
+}
+
+.post-sources-list a {
+    color: var(--bitroot-primary-blue);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s ease;
+    word-break: break-word;
+}
+
+.post-sources-list a:hover {
+    border-bottom-color: var(--bitroot-primary-blue);
+}
+
+html[data-embed="1"] .post-sources {
+    margin-top: var(--spacing-xl);
+}
+
 /* Embed / reader mode: strip site chrome for mobile app webview */
 html[data-embed="1"] .header,
 html[data-embed="1"] .footer,

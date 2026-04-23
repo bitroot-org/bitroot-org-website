@@ -187,8 +187,8 @@
             let currentArray = null;
 
             for (const line of lines) {
-                if (line.match(/^\s+-\s+/)) {
-                    const value = line.replace(/^\s+-\s+/, '').trim();
+                if (line.match(/^\s*-\s+/)) {
+                    const value = line.replace(/^\s*-\s+/, '').trim();
                     if (currentArray && currentKey) {
                         metadata[currentKey].push(value.replace(/^["']|["']$/g, ''));
                     }
@@ -253,6 +253,30 @@
 
         function getPlaceholder() {
             return PLACEHOLDER_IMAGE;
+        }
+
+        /**
+         * Turn a source URL into a readable label so the sources list feels like
+         * footnotes, not a URL dump.
+         */
+        function formatSourceLabel(url) {
+            try {
+                const u = new URL(url);
+                const host = u.hostname.replace(/^www\./, '');
+                if (host === 'x.com' || host === 'twitter.com') {
+                    const m = u.pathname.match(/^\/([^\/]+)\/status\/\d+/);
+                    if (m && m[1] && m[1] !== 'i') return `@${m[1]} on X`;
+                    return 'Post on X';
+                }
+                if (host === 'github.com') {
+                    const m = u.pathname.match(/^\/([^\/]+\/[^\/]+)/);
+                    return m ? `github.com/${m[1]}` : 'github.com';
+                }
+                if (host === 'youtube.com' || host === 'youtu.be') return 'YouTube';
+                return host + (u.pathname.length > 1 ? u.pathname.replace(/\/$/, '') : '');
+            } catch (_) {
+                return url;
+            }
         }
 
         /**
@@ -358,6 +382,14 @@
                     <div class="post-body">
                         ${html}
                     </div>
+                    ${metadata.sources && metadata.sources.length > 0 ? `
+                        <aside class="post-sources" aria-label="Sources">
+                            <h2 class="post-sources-title">Sources</h2>
+                            <ol class="post-sources-list">
+                                ${metadata.sources.map(s => `<li><a href="${s}" target="_blank" rel="noopener noreferrer">${formatSourceLabel(s)}</a></li>`).join('')}
+                            </ol>
+                        </aside>
+                    ` : ''}
                     <nav class="post-nav">
                         <a href="/blog" class="back-link">&larr; Back to newslogger</a>
                         <div class="post-nav-actions">
