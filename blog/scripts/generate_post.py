@@ -37,6 +37,40 @@ MEDIA_DIR = "blog/media"
 MAX_CONTENT_LENGTH = 15000  # Max chars per URL to avoid token limits
 MAX_VIDEO_SIZE = 50 * 1024 * 1024  # 50MB max video size
 
+URL_PATTERN = re.compile(r"https?://[^\s<>\"'\)\]]+")
+MARKDOWN_LINK_PATTERN = re.compile(r"\[([^\]]+)\]\((https?://[^)\s]+)\)")
+
+
+def extract_urls(text):
+    """Return a set of URLs found in text, with common trailing punctuation stripped."""
+    urls = set()
+    for u in URL_PATTERN.findall(text or ""):
+        urls.add(u.rstrip(".,;:!?"))
+    return urls
+
+
+def sanitize_inline_links(content, allowed_urls):
+    """
+    Strip markdown link wrapping around URLs that aren't in `allowed_urls`, so
+    hallucinated links degrade to plain text instead of shipping as clickable
+    links that go nowhere (or worse, to a typo-squatted domain).
+    """
+    stripped = []
+
+    def _replace(match):
+        text, url = match.group(1), match.group(2).rstrip(".,;:!?")
+        if url in allowed_urls:
+            return match.group(0)
+        stripped.append(url)
+        return text
+
+    cleaned = MARKDOWN_LINK_PATTERN.sub(_replace, content)
+    if stripped:
+        logger.warning(
+            f"Stripped {len(stripped)} hallucinated inline link(s) not in source whitelist: {stripped}"
+        )
+    return cleaned
+
 
 def setup_groq():
     """Initialize Groq client."""
@@ -598,6 +632,14 @@ def generate_post(client, issue_data, fetched_contents):
     # Use source page title if available, otherwise fall back to issue title
     title_hint = source_titles[0] if source_titles else issue_data["title"]
 
+    # Build the URL whitelist the model may cite: every URL found in the scraped
+    # source text plus the original issue URLs. Anything outside this set is a
+    # hallucination and gets stripped post-generation.
+    allowed_urls = extract_urls(sources_text)
+    for u in issue_data.get("urls", []) or []:
+        allowed_urls.add(u.rstrip(".,;:!?"))
+    allowed_urls_list = sorted(allowed_urls)
+
     # Log source content being sent to AI
     logger.info("=" * 60)
     logger.info("SOURCE CONTENT BEING SENT TO AI")
@@ -608,6 +650,7 @@ def generate_post(client, issue_data, fetched_contents):
     logger.info(f"Issue angle: {issue_data.get('angle')}")
     logger.info(f"Total source text length: {len(sources_text)} chars")
     logger.info(f"Source text preview (first 1000 chars):\n{sources_text[:1000]}")
+    logger.info(f"Allowed URLs ({len(allowed_urls_list)}): {allowed_urls_list}")
     logger.info("=" * 60)
 
     prompt = f"""Write a short technical post about this news for Bitroot's Newslogger.
@@ -638,8 +681,13 @@ Body:
   risk, a scope gap, a lock-in concern, a pricing caveat. If the source is a vendor
   announcement, assume it's optimistic and balance it.
 - Include inline markdown links `[text](url)` whenever you mention a specific tool,
-  repo, doc, blog post, or person. These are auto-collected into a Sources section,
-  so citing inline is not optional.
+  repo, doc, blog post, or person. These are auto-collected into a Sources section.
+- STRICT URL RULE: you may ONLY use URLs that appear verbatim in the "Allowed URLs"
+  list below. Do NOT invent URLs. Do NOT guess a project's homepage or repo URL.
+  Do NOT use your training-data knowledge to add links. If you want to name a tool
+  or project and its URL is not in the Allowed URLs list, write just the name in
+  plain text — without brackets, without a link. A missing link is always fine;
+  a wrong link is not.
 - Close with "what to watch" or "when to try this" — one concrete suggestion,
   not a vague "we're excited to see".
 
@@ -660,6 +708,9 @@ Excerpt: 1–2 sentences in the same voice as the body. No first-person "we".
 
 Source page title: {title_hint}
 {f"Angle/Focus: {issue_data['angle']}" if issue_data.get('angle') else ""}
+
+Allowed URLs (the ONLY URLs you may use in inline links; any other URL is forbidden):
+{chr(10).join(f"- {u}" for u in allowed_urls_list) if allowed_urls_list else "- (none — do not include any inline links)"}
 
 Source materials:
 {sources_text}
@@ -759,6 +810,11 @@ Return ONLY this JSON object (no markdown fences, no prose around it):
         logger.error(f"JSON parsing failed: {e}")
         logger.error(f"Response text: {response_text[:1000]}")
         raise ValueError(f"Could not parse JSON from response: {str(e)}")
+
+    # Strip any markdown links the model produced pointing at URLs outside the
+    # whitelist — belt-and-braces against URL hallucination.
+    if parsed.get("content"):
+        parsed["content"] = sanitize_inline_links(parsed["content"], allowed_urls)
 
     # Log parsed/generated post data
     logger.info("=" * 60)
