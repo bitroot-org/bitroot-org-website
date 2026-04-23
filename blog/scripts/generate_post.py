@@ -610,35 +610,53 @@ def generate_post(client, issue_data, fetched_contents):
     logger.info(f"Source text preview (first 1000 chars):\n{sources_text[:1000]}")
     logger.info("=" * 60)
 
-    prompt = f"""You are a community news contributor for Bitroot, sharing exciting tech updates and discoveries from around the internet.
+    prompt = f"""Write a short technical post about this news for Bitroot's Newslogger.
+Audience: engineers who ship code at startups. They use tools, they don't buy them.
+They need to know what happened, what it does, what it costs, and whether it's worth trying.
 
-Write a blog post announcing/sharing this news with our community. Your writing style should be:
-- Like a passionate tech enthusiast sharing a cool discovery with friends
-- "We spotted this...", "Here's what caught our attention...", "The community is buzzing about..."
-- Excited but informative - share WHY this matters to developers/tech enthusiasts
-- Feel like a curator bringing interesting finds to the community
+Length: 250–450 words. Short is better than padded.
 
-Your post should:
-- Be 400-800 words (concise and punchy)
-- Have a clear, specific title about the actual news/update
-- IMPORTANT: Create your OWN unique title by reading the source content. Do NOT just copy the source page title below. Paraphrase it into a catchy, newsworthy headline.
-- Explain what the update/news is and why it's interesting
-- Add context about why this matters to developers or the tech community
-- Include your take on the implications or potential use cases
-- NOT copy text directly from sources
-- NOT be dry or corporate - be genuinely enthusiastic
+Title:
+- Plain English, under 70 characters.
+- Describe what happened. State the news.
+- Good: "Copilot CLI adds a security-triage command"
+- Bad:  "Revolutionizing Security Triage: Copilot CLI Is a Game-Changer"
+- Do NOT copy the source page title verbatim; write your own.
 
-CRITICAL FORMATTING REQUIREMENTS:
-- Structure with clear ## headings
-- SHORT paragraphs (2-3 sentences max)
-- Use bullet points for features/benefits
-- Include at least 3 section headings
-- Double newlines between paragraphs
+Lead paragraph (no heading):
+- Open with the news itself and one specific, concrete detail — a command,
+  a number, a version, a behavior, a pricing tier.
+- Do NOT open with meta-commentary about yourself or "the community".
+  Just state the news.
 
-Example tone:
-"We just spotted an exciting update from [Company] that's worth sharing with the community..."
-"Here's why this matters for developers..."
-"What caught our attention about this..."
+Body:
+- 2–4 short sections with ## headings that describe THIS post's specific content.
+- Do NOT reuse a template like "Introduction / What This Means / Key Features / Implications".
+  Vary the structure per post.
+- Short paragraphs, 1–3 sentences each.
+- Include at least one skeptical or cautionary note: a limitation, a noise/false-positive
+  risk, a scope gap, a lock-in concern, a pricing caveat. If the source is a vendor
+  announcement, assume it's optimistic and balance it.
+- Include inline markdown links `[text](url)` whenever you mention a specific tool,
+  repo, doc, blog post, or person. These are auto-collected into a Sources section,
+  so citing inline is not optional.
+- Close with "what to watch" or "when to try this" — one concrete suggestion,
+  not a vague "we're excited to see".
+
+Banned words and phrases (do not use, not even once):
+  revolutionary, revolutionize, revolutionizing, revolution,
+  game-changer, game-changing, game changer,
+  cutting-edge, must-have, must-know,
+  unleash, unleashes, supercharge,
+  "we just spotted", "we spotted",
+  "the community is buzzing", "worth sharing with the community"
+
+Allowed but use sparingly — once or twice max per post:
+  exciting, new release, interesting, notable
+
+Tags: 2–4 short noun phrases describing the topic. Lowercase fine.
+
+Excerpt: 1–2 sentences in the same voice as the body. No first-person "we".
 
 Source page title: {title_hint}
 {f"Angle/Focus: {issue_data['angle']}" if issue_data.get('angle') else ""}
@@ -646,28 +664,28 @@ Source page title: {title_hint}
 Source materials:
 {sources_text}
 
-Output format:
-Return ONLY a JSON object with these fields (no markdown code blocks, no extra text):
+Output:
+Return ONLY this JSON object (no markdown fences, no prose around it):
 {{
-  "title": "Your Own Paraphrased Title (DO NOT copy the source title verbatim)",
-  "tags": ["tag1", "tag2"],
-  "excerpt": "A 1-2 sentence summary for preview cards",
-  "content": "The full markdown content with ## headings and short paragraphs"
+  "title": "Your own plain-English title",
+  "tags": ["tag", "tag"],
+  "excerpt": "One or two sentences for preview cards.",
+  "content": "Full markdown body with ## headings and inline [text](url) links."
 }}"""
 
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=[
             {
                 "role": "system",
-                "content": "You are a community tech news contributor, sharing exciting discoveries with fellow developers. Write with enthusiasm like sharing cool finds with friends. Always respond with valid JSON only, no markdown code blocks."
+                "content": "You are a staff engineer writing for Bitroot's Newslogger. Audience is shipping engineers at startups. Write clearly, state facts, note tradeoffs, cite inline. Respond with valid JSON only, no markdown code blocks."
             },
             {
                 "role": "user",
                 "content": prompt
             }
         ],
-        temperature=0.7,
+        temperature=0.9,
         max_tokens=4096,
     )
 
