@@ -8,6 +8,34 @@
     width: 100%;
 }
 
+/* Embed / reader mode: strip site chrome for mobile app webview */
+html[data-embed="1"] .header,
+html[data-embed="1"] .footer,
+html[data-embed="1"] .cloud-ticker,
+html[data-embed="1"] .post-nav {
+    display: none !important;
+}
+
+html[data-embed="1"] .post-page {
+    padding: var(--spacing-lg) var(--spacing-md);
+}
+
+html[data-embed="1"] .post-article {
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+html[data-embed="1"] .post-article:not(:has(.post-hero-image))::before {
+    display: none;
+}
+
+html[data-embed="1"] .post-hero-image,
+html[data-embed="1"] .post-hero-video {
+    margin: 0 0 var(--spacing-lg) 0;
+    border-radius: var(--radius-md);
+}
+
 .post-article {
     background: var(--bg-secondary);
     border: 1px solid var(--border);

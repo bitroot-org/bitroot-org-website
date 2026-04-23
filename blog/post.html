@@ -42,6 +42,18 @@
             document.documentElement.setAttribute('data-theme', theme);
         })();
     </script>
+
+    <!-- Embed/reader mode: hides header, footer, chrome when opened inside the Bitroot mobile app webview -->
+    <script>
+        (function() {
+            var params = new URLSearchParams(window.location.search);
+            var hasParam = params.get('embed') === '1' || params.get('reader') === '1';
+            var isAppWebView = /BitrootApp/i.test(navigator.userAgent);
+            if (hasParam || isAppWebView) {
+                document.documentElement.setAttribute('data-embed', '1');
+            }
+        })();
+    </script>
 </head>
 <body>
     <!-- Pixelated floating clouds -->
