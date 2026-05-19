@@ -81,21 +81,21 @@ export default function Footer() {
           </div>
           <div className="text-[11px] font-mono text-ink-4 flex items-center gap-2">
             <Link
-              href="/legal/privacy.html"
+              href="/legal/privacy/"
               className="hover:text-ember transition-colors"
             >
               Privacy
             </Link>
             <span aria-hidden>·</span>
             <Link
-              href="/legal/terms.html"
+              href="/legal/terms/"
               className="hover:text-ember transition-colors"
             >
               Terms
             </Link>
             <span aria-hidden>·</span>
             <Link
-              href="/legal/refund.html"
+              href="/legal/refund/"
               className="hover:text-ember transition-colors"
             >
               Refund

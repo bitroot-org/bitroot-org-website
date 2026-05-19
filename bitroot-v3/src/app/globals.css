@@ -150,6 +150,31 @@ pre.shiki .line {
   text-decoration-color: var(--color-ember);
 }
 
+/* Inline links inside legal-prose containers — same styling as
+   .prose-link, applied automatically to <a> elements rendered via
+   dangerouslySetInnerHTML from typed legal content. */
+.legal-prose a {
+  color: var(--color-ember);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--color-ember-line);
+  transition: text-decoration-color 180ms ease;
+  word-break: break-word;
+}
+.legal-prose a:hover {
+  text-decoration-color: var(--color-ember);
+}
+.legal-prose strong {
+  color: var(--color-ink);
+  font-weight: 600;
+}
+.legal-prose em {
+  font-family: var(--font-serif), Georgia, serif;
+  font-style: italic;
+  color: var(--color-ink);
+}
+
 @keyframes pulse-dot {
   0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.35); }
   50% { opacity: 0.85; box-shadow: 0 0 0 4px rgba(22, 163, 74, 0); }
