@@ -39,6 +39,9 @@ export const metadata: Metadata = {
   },
   description:
     "Free kits, stacks, guides, and tools for founders shipping their first products. Take what you need.",
+  icons: {
+    icon: "/favicon.png",
+  },
   openGraph: {
     title: "Bitroot — The founder's toolbox",
     description:
