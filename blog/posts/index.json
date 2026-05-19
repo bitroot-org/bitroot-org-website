@@ -2,10 +2,10 @@
   "generated": true,
   "count": 150,
   "posts": [
-    "2026-05-18-chatbase-hits-10m-arr-and-launches-a-fullstack-ai.md",
     "2026-05-18-shadcnui-ships-a-full-designsystem-cli.md",
-    "2026-05-18-github-copilot-cli-adds-remotecontrol-for-local-se.md",
     "2026-05-18-higgsfield-ai-demos-claudedriven-marketing-workflo.md",
+    "2026-05-18-chatbase-hits-10m-arr-and-launches-a-fullstack-ai.md",
+    "2026-05-18-github-copilot-cli-adds-remotecontrol-for-local-se.md",
     "2026-05-17-anthropic-adds-autostack-detection-plugin-for-clau.md",
     "2026-05-17-screencharm-adds-selectable-camera-layouts-for-rec.md",
     "2026-05-17-tweet-curates-10-design-sites-for-quick-weekend-re.md",
@@ -21,13 +21,13 @@
     "2026-05-07-cloudflare-agents-can-now-selfprovision-accounts-b.md",
     "2026-05-07-claude-partners-with-spacex-to-raise-api-usage-lim.md",
     "2026-05-07-claude-managed-agents-launches-dreaming-mode-and-b.md",
+    "2026-05-05-google-launches-pomelli-catalog-for-ai-generated-b.md",
     "2026-05-05-open-design-skills-released-as-open-source-design.md",
     "2026-05-05-higgsfield-releases-cli-with-builtin-marketing-ski.md",
     "2026-05-05-hermes-agent-gains-hyperframes-video-editing-skill.md",
+    "2026-05-05-github-projects-releases-browseronly-pdf-toolkit-w.md",
     "2026-05-05-subq-launches-a-subquadratic-llm-with-12mtoken-con.md",
     "2026-05-05-openclaude-v091-makes-codex-default-and-upgrades-t.md",
-    "2026-05-05-google-launches-pomelli-catalog-for-ai-generated-b.md",
-    "2026-05-05-github-projects-releases-browseronly-pdf-toolkit-w.md",
     "2026-05-02-claude-code-adds-builtin-skill-for-claude-platform.md",
     "2026-04-30-poseidon-opens-early-access-to-numo-for-multilingu.md",
     "2026-04-30-fal-webgl-demo-serves-submegabyte-animated-glbs-in.md",
@@ -51,12 +51,12 @@
     "2026-04-22-revolutionizing-visual-creation-chatgpt-images-20.md",
     "2026-04-22-revolutionizing-productivity-openai-unveils-shared.md",
     "2026-04-17-claudedevs-unveils-dedicated-channel-for-developer.md",
-    "2026-04-15-revolutionizing-automation-claude-code-routines-ar.md",
     "2026-04-15-the-future-of-coding-is-the-era-of-traditional-ide.md",
+    "2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c.md",
+    "2026-04-15-revolutionizing-automation-claude-code-routines-ar.md",
     "2026-04-15-revolutionizing-ai-powered-workflows-google-introd.md",
     "2026-04-15-revolutionizing-ai-powered-coding-claudes-game-cha.md",
     "2026-04-15-revolutionizing-app-design-ai-generated-themes-now.md",
-    "2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c.md",
     "2026-04-12-revolutionizing-video-consumption-interactive-tran.md",
     "2026-04-12-revolutionizing-ai-agents-minimax-unveils-mmx-cli.md",
     "2026-04-10-revolutionizing-agent-interactions-claudes-monitor.md",
@@ -107,8 +107,8 @@
     "2026-02-21-revolutionizing-ai-powered-commerce-razorpay-and-n.md",
     "2026-02-21-revolutionizing-coding-claudes-game-changing-updat.md",
     "2026-02-19-revolutionizing-ai-powered-apps-with-secure-docker.md",
-    "2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in.md",
     "2026-02-19-google-unveils-glimmer-a-revolutionary-design-lang.md",
+    "2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in.md",
     "2026-02-19-ai-rivals-clash-openai-and-anthropic-ceos-awkward.md",
     "2026-02-18-revolutionizing-productivity-bitroots-game-changin.md",
     "2026-02-18-revolutionizing-startup-productivity-the-ultimate.md",
@@ -155,25 +155,6 @@
   ],
   "metadata": [
     {
-      "filename": "2026-05-18-chatbase-hits-10m-arr-and-launches-a-fullstack-ai.md",
-      "slug": "2026-05-18-chatbase-hits-10m-arr-and-launches-a-fullstack-ai",
-      "title": "Chatbase hits $10M ARR and launches a full\u2011stack AI agent platform",
-      "date": "2026-05-18",
-      "published_at": "2026-05-18T18:29:51.799299+00:00",
-      "tags": [
-        "ai agents",
-        "customer experience",
-        "saas"
-      ],
-      "excerpt": "Chatbase announced it has surpassed $10\u202fM in annual recurring revenue and introduced a new platform that bundles context, tools, and human\u2011in\u2011the\u2011loop guardrails for customer\u2011facing AI agents.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2056390673537089536/img/-7u6_IZJSt6rn6Cp.jpg",
-      "sources": [
-        "https://x.com/i/status/2056394356769366166"
-      ],
-      "video": "https://video.twimg.com/amplify_video/2056390673537089536/vid/avc1/3840x2160/4-b9R1SlDDcFveg3.mp4?tag=27",
-      "shortId": 1
-    },
-    {
       "filename": "2026-05-18-shadcnui-ships-a-full-designsystem-cli.md",
       "slug": "2026-05-18-shadcnui-ships-a-full-designsystem-cli",
       "title": "shadcn/ui ships a full design\u2011system CLI",
@@ -190,26 +171,7 @@
         "https://x.com/i/status/2056372444751909212"
       ],
       "video": "media/2026-05-18-shadcnui-ships-a-full-designsystem-cli.mp4",
-      "shortId": 2
-    },
-    {
-      "filename": "2026-05-18-github-copilot-cli-adds-remotecontrol-for-local-se.md",
-      "slug": "2026-05-18-github-copilot-cli-adds-remotecontrol-for-local-se",
-      "title": "GitHub Copilot CLI adds remote\u2011control for local sessions",
-      "date": "2026-05-18",
-      "published_at": "2026-05-18T18:31:40.213687+00:00",
-      "tags": [
-        "github",
-        "copilot",
-        "cli"
-      ],
-      "excerpt": "GitHub\u2019s Copilot CLI now supports Remote Control, letting developers start a session on one machine and pick it up on another. The feature is generally available and works with both CLI and VS\u202fCode sessions.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2056417858440105986/img/1h9mW1uxJ_qB6HOx.jpg",
-      "sources": [
-        "https://x.com/i/status/2056420570745450864"
-      ],
-      "video": "media/2026-05-18-github-copilot-cli-adds-remotecontrol-for-local-se.mp4",
-      "shortId": 3
+      "shortId": 1
     },
     {
       "filename": "2026-05-18-higgsfield-ai-demos-claudedriven-marketing-workflo.md",
@@ -228,6 +190,44 @@
         "https://x.com/i/status/2056411641592287435"
       ],
       "video": "https://video.twimg.com/amplify_video/2056404580619919361/vid/avc1/1920x1080/wT7FGshDUzNLLoiU.mp4?tag=27",
+      "shortId": 2
+    },
+    {
+      "filename": "2026-05-18-chatbase-hits-10m-arr-and-launches-a-fullstack-ai.md",
+      "slug": "2026-05-18-chatbase-hits-10m-arr-and-launches-a-fullstack-ai",
+      "title": "Chatbase hits $10M ARR and launches a full\u2011stack AI agent platform",
+      "date": "2026-05-18",
+      "published_at": "2026-05-18T18:29:51.799299+00:00",
+      "tags": [
+        "ai agents",
+        "customer experience",
+        "saas"
+      ],
+      "excerpt": "Chatbase announced it has surpassed $10\u202fM in annual recurring revenue and introduced a new platform that bundles context, tools, and human\u2011in\u2011the\u2011loop guardrails for customer\u2011facing AI agents.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2056390673537089536/img/-7u6_IZJSt6rn6Cp.jpg",
+      "sources": [
+        "https://x.com/i/status/2056394356769366166"
+      ],
+      "video": "https://video.twimg.com/amplify_video/2056390673537089536/vid/avc1/3840x2160/4-b9R1SlDDcFveg3.mp4?tag=27",
+      "shortId": 3
+    },
+    {
+      "filename": "2026-05-18-github-copilot-cli-adds-remotecontrol-for-local-se.md",
+      "slug": "2026-05-18-github-copilot-cli-adds-remotecontrol-for-local-se",
+      "title": "GitHub Copilot CLI adds remote\u2011control for local sessions",
+      "date": "2026-05-18",
+      "published_at": "2026-05-18T18:31:40.213687+00:00",
+      "tags": [
+        "github",
+        "copilot",
+        "cli"
+      ],
+      "excerpt": "GitHub\u2019s Copilot CLI now supports Remote Control, letting developers start a session on one machine and pick it up on another. The feature is generally available and works with both CLI and VS\u202fCode sessions.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2056417858440105986/img/1h9mW1uxJ_qB6HOx.jpg",
+      "sources": [
+        "https://x.com/i/status/2056420570745450864"
+      ],
+      "video": "media/2026-05-18-github-copilot-cli-adds-remotecontrol-for-local-se.mp4",
       "shortId": 4
     },
     {
@@ -514,6 +514,25 @@
       "shortId": 19
     },
     {
+      "filename": "2026-05-05-google-launches-pomelli-catalog-for-ai-generated-b.md",
+      "slug": "2026-05-05-google-launches-pomelli-catalog-for-ai-generated-b",
+      "title": "Google launches Pomelli Catalog for AI-generated brand campaigns",
+      "date": "2026-05-05",
+      "published_at": "2026-05-05T18:22:02.893739+00:00",
+      "tags": [
+        "ai marketing",
+        "brand tools",
+        "google"
+      ],
+      "excerpt": "Google's new Pomelli Catalog lets you feed product data and instantly receive AI-crafted campaign copy and photos, free of charge.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2051689980515561472/img/ep-587HlAqTTlnKc.jpg",
+      "sources": [
+        "https://x.com/i/status/2051693177053340073"
+      ],
+      "video": "media/2026-05-05-google-launches-pomelli-catalog-for-ai-generated-b.mp4",
+      "shortId": 20
+    },
+    {
       "filename": "2026-05-05-open-design-skills-released-as-open-source-design.md",
       "slug": "2026-05-05-open-design-skills-released-as-open-source-design",
       "title": "Open Design Skills released as open-source design system",
@@ -530,7 +549,7 @@
         "https://x.com/i/status/2051203959142895896"
       ],
       "video": "media/2026-05-05-open-design-skills-released-as-open-source-design.mp4",
-      "shortId": 20
+      "shortId": 21
     },
     {
       "filename": "2026-05-05-higgsfield-releases-cli-with-builtin-marketing-ski.md",
@@ -549,7 +568,7 @@
         "https://x.com/i/status/2051346056039039487"
       ],
       "video": "media/2026-05-05-higgsfield-releases-cli-with-builtin-marketing-ski.mp4",
-      "shortId": 21
+      "shortId": 22
     },
     {
       "filename": "2026-05-05-hermes-agent-gains-hyperframes-video-editing-skill.md",
@@ -568,7 +587,25 @@
         "https://x.com/i/status/2051697813554405384"
       ],
       "video": "media/2026-05-05-hermes-agent-gains-hyperframes-video-editing-skill.mp4",
-      "shortId": 22
+      "shortId": 23
+    },
+    {
+      "filename": "2026-05-05-github-projects-releases-browseronly-pdf-toolkit-w.md",
+      "slug": "2026-05-05-github-projects-releases-browseronly-pdf-toolkit-w",
+      "title": "GitHub Projects releases browser\u2011only PDF toolkit with 90+ tools",
+      "date": "2026-05-05",
+      "published_at": "2026-05-05T18:18:27.770936+00:00",
+      "tags": [
+        "pdf",
+        "webassembly",
+        "opensource"
+      ],
+      "excerpt": "GitHub Projects unveiled an open\u2011source PDF toolkit that runs fully in the browser via WebAssembly, offering more than 90 utilities without any server component.",
+      "image": "https://pbs.twimg.com/media/HHi9ngubkAALhhp.jpg?name=orig",
+      "sources": [
+        "https://x.com/i/status/2051598119478108162"
+      ],
+      "shortId": 24
     },
     {
       "filename": "2026-05-05-subq-launches-a-subquadratic-llm-with-12mtoken-con.md",
@@ -588,7 +625,7 @@
         "https://x.com/i/status/2051663268704636937"
       ],
       "video": "media/2026-05-05-subq-launches-a-subquadratic-llm-with-12mtoken-con.mp4",
-      "shortId": 23
+      "shortId": 25
     },
     {
       "filename": "2026-05-05-openclaude-v091-makes-codex-default-and-upgrades-t.md",
@@ -608,43 +645,6 @@
         "https://x.com/i/status/2051616716007075887"
       ],
       "video": "media/2026-05-05-openclaude-v091-makes-codex-default-and-upgrades-t.mp4",
-      "shortId": 24
-    },
-    {
-      "filename": "2026-05-05-google-launches-pomelli-catalog-for-ai-generated-b.md",
-      "slug": "2026-05-05-google-launches-pomelli-catalog-for-ai-generated-b",
-      "title": "Google launches Pomelli Catalog for AI-generated brand campaigns",
-      "date": "2026-05-05",
-      "published_at": "2026-05-05T18:22:02.893739+00:00",
-      "tags": [
-        "ai marketing",
-        "brand tools",
-        "google"
-      ],
-      "excerpt": "Google's new Pomelli Catalog lets you feed product data and instantly receive AI-crafted campaign copy and photos, free of charge.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2051689980515561472/img/ep-587HlAqTTlnKc.jpg",
-      "sources": [
-        "https://x.com/i/status/2051693177053340073"
-      ],
-      "video": "media/2026-05-05-google-launches-pomelli-catalog-for-ai-generated-b.mp4",
-      "shortId": 25
-    },
-    {
-      "filename": "2026-05-05-github-projects-releases-browseronly-pdf-toolkit-w.md",
-      "slug": "2026-05-05-github-projects-releases-browseronly-pdf-toolkit-w",
-      "title": "GitHub Projects releases browser\u2011only PDF toolkit with 90+ tools",
-      "date": "2026-05-05",
-      "published_at": "2026-05-05T18:18:27.770936+00:00",
-      "tags": [
-        "pdf",
-        "webassembly",
-        "opensource"
-      ],
-      "excerpt": "GitHub Projects unveiled an open\u2011source PDF toolkit that runs fully in the browser via WebAssembly, offering more than 90 utilities without any server component.",
-      "image": "https://pbs.twimg.com/media/HHi9ngubkAALhhp.jpg?name=orig",
-      "sources": [
-        "https://x.com/i/status/2051598119478108162"
-      ],
       "shortId": 26
     },
     {
@@ -1079,25 +1079,6 @@
       "shortId": 49
     },
     {
-      "filename": "2026-04-15-revolutionizing-automation-claude-code-routines-ar.md",
-      "slug": "2026-04-15-revolutionizing-automation-claude-code-routines-ar",
-      "title": "Revolutionizing Automation: Claude Code Routines Are Here",
-      "date": "2026-04-15",
-      "published_at": "2026-04-15T01:55:39.100373+00:00",
-      "tags": [
-        "Claude AI",
-        "Automation",
-        "GitHub Integration"
-      ],
-      "excerpt": "Claude Code Routines have arrived, allowing users to trigger templated agents via GitHub events or API, streamlining documentation and backlog maintenance. This innovation has the potential to transform the way developers work.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2044093860918513664/img/iW06fBgxU7Kb3qBE.jpg",
-      "sources": [
-        "https://x.com/i/status/2044093913376706655"
-      ],
-      "video": "media/2026-04-15-revolutionizing-automation-claude-code-routines-ar.mp4",
-      "shortId": 50
-    },
-    {
       "filename": "2026-04-15-the-future-of-coding-is-the-era-of-traditional-ide.md",
       "slug": "2026-04-15-the-future-of-coding-is-the-era-of-traditional-ide",
       "title": "The Future of Coding: Is the Era of Traditional IDEs Coming to an End?",
@@ -1114,7 +1095,45 @@
         "https://x.com/i/status/2044140545384296913"
       ],
       "video": "https://video.twimg.com/amplify_video/2044139244525105152/vid/avc1/1920x1080/2GHTKwa088d6jyOr.mp4?tag=21",
+      "shortId": 50
+    },
+    {
+      "filename": "2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c.md",
+      "slug": "2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c",
+      "title": "Revolutionizing Voice AI: ElevenLabs Unveils Game-Changing React SDK",
+      "date": "2026-04-15",
+      "published_at": "2026-04-15T20:59:36.760570+00:00",
+      "tags": [
+        "ElevenLabs",
+        "React SDK",
+        "Voice AI"
+      ],
+      "excerpt": "The New ElevenAgents React SDK",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2044516556634263552/img/RSZe0mXPBmWB5WXd.jpg",
+      "sources": [
+        "https://x.com/i/status/2044519924282847381"
+      ],
+      "video": "media/2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c.mp4",
       "shortId": 51
+    },
+    {
+      "filename": "2026-04-15-revolutionizing-automation-claude-code-routines-ar.md",
+      "slug": "2026-04-15-revolutionizing-automation-claude-code-routines-ar",
+      "title": "Revolutionizing Automation: Claude Code Routines Are Here",
+      "date": "2026-04-15",
+      "published_at": "2026-04-15T01:55:39.100373+00:00",
+      "tags": [
+        "Claude AI",
+        "Automation",
+        "GitHub Integration"
+      ],
+      "excerpt": "Claude Code Routines have arrived, allowing users to trigger templated agents via GitHub events or API, streamlining documentation and backlog maintenance. This innovation has the potential to transform the way developers work.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2044093860918513664/img/iW06fBgxU7Kb3qBE.jpg",
+      "sources": [
+        "https://x.com/i/status/2044093913376706655"
+      ],
+      "video": "media/2026-04-15-revolutionizing-automation-claude-code-routines-ar.mp4",
+      "shortId": 52
     },
     {
       "filename": "2026-04-15-revolutionizing-ai-powered-workflows-google-introd.md",
@@ -1134,7 +1153,7 @@
         "https://x.com/i/status/2044106378655215625"
       ],
       "video": "media/2026-04-15-revolutionizing-ai-powered-workflows-google-introd.mp4",
-      "shortId": 52
+      "shortId": 53
     },
     {
       "filename": "2026-04-15-revolutionizing-ai-powered-coding-claudes-game-cha.md",
@@ -1153,7 +1172,7 @@
         "https://x.com/i/status/2044131493966909862"
       ],
       "video": "media/2026-04-15-revolutionizing-ai-powered-coding-claudes-game-cha.mp4",
-      "shortId": 53
+      "shortId": 54
     },
     {
       "filename": "2026-04-15-revolutionizing-app-design-ai-generated-themes-now.md",
@@ -1172,25 +1191,6 @@
         "https://x.com/i/status/2044111418786754620"
       ],
       "video": "media/2026-04-15-revolutionizing-app-design-ai-generated-themes-now.mp4",
-      "shortId": 54
-    },
-    {
-      "filename": "2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c.md",
-      "slug": "2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c",
-      "title": "Revolutionizing Voice AI: ElevenLabs Unveils Game-Changing React SDK",
-      "date": "2026-04-15",
-      "published_at": "2026-04-15T20:59:36.760570+00:00",
-      "tags": [
-        "ElevenLabs",
-        "React SDK",
-        "Voice AI"
-      ],
-      "excerpt": "The New ElevenAgents React SDK",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2044516556634263552/img/RSZe0mXPBmWB5WXd.jpg",
-      "sources": [
-        "https://x.com/i/status/2044519924282847381"
-      ],
-      "video": "media/2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c.mp4",
       "shortId": 55
     },
     {
@@ -2134,25 +2134,6 @@
       "shortId": 105
     },
     {
-      "filename": "2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in.md",
-      "slug": "2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in",
-      "title": "Revolutionary AI-Powered Desktop Agent Unveiled: Interpreter",
-      "date": "2026-02-19",
-      "published_at": "2026-02-19T19:04:38.946484+00:00",
-      "tags": [
-        "AI",
-        "Productivity",
-        "Technology"
-      ],
-      "excerpt": "Today I'm launching Interpreter.\n\nIt's a desktop agent that can fill PDFs, edit your Excel and Word docs, and learn new skills.\n\nRuns offline, works with any model, and it's free.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2024013495285805058/img/7WZN7wcEd-PRLveg.jpg",
-      "sources": [
-        "https://x.com/i/status/2024227639087813035"
-      ],
-      "video": "media/2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in.mp4",
-      "shortId": 106
-    },
-    {
       "filename": "2026-02-19-google-unveils-glimmer-a-revolutionary-design-lang.md",
       "slug": "2026-02-19-google-unveils-glimmer-a-revolutionary-design-lang",
       "title": "Google Unveils Glimmer: A Revolutionary Design Language for UX on Smart Glasses",
@@ -2169,6 +2150,25 @@
       "sources": [
         "https://x.com/i/status/2023805464577011979"
       ],
+      "shortId": 106
+    },
+    {
+      "filename": "2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in.md",
+      "slug": "2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in",
+      "title": "Revolutionary AI-Powered Desktop Agent Unveiled: Interpreter",
+      "date": "2026-02-19",
+      "published_at": "2026-02-19T19:04:38.946484+00:00",
+      "tags": [
+        "AI",
+        "Productivity",
+        "Technology"
+      ],
+      "excerpt": "Today I'm launching Interpreter.\n\nIt's a desktop agent that can fill PDFs, edit your Excel and Word docs, and learn new skills.\n\nRuns offline, works with any model, and it's free.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2024013495285805058/img/7WZN7wcEd-PRLveg.jpg",
+      "sources": [
+        "https://x.com/i/status/2024227639087813035"
+      ],
+      "video": "media/2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in.mp4",
       "shortId": 107
     },
     {

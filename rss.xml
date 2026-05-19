@@ -5,26 +5,12 @@
     <link>https://bitroot.org/blog</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 19 May 2026 12:09:58 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 12:10:59 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Chatbase hits $10M ARR and launches a full‑stack AI agent platform</title>
+      <title>shadcn/ui ships a full design‑system CLI</title>
       <link>https://bitroot.org/blog/p/1</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/1</guid>
-      <description>Chatbase announced it has surpassed $10 M in annual recurring revenue and introduced a new platform that bundles context, tools, and human‑in‑the‑loop guardrails for customer‑facing AI agents.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2056394356769366166"&gt;https://x.com/i/status/2056394356769366166&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Mon, 18 May 2026 18:29:51 +0000</pubDate>
-      <category>ai agents</category>
-      <category>customer experience</category>
-      <category>saas</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2056390673537089536/img/-7u6_IZJSt6rn6Cp.jpg" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2056394356769366166">Original Source</source>
-    </item>
-    <item>
-      <title>shadcn/ui ships a full design‑system CLI</title>
-      <link>https://bitroot.org/blog/p/2</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/2</guid>
       <description>shadcn/ui now includes a complete design‑system package—tokens, component definitions, and Figma import—distributed via its CLI. Engineers can pull a ready‑made system into any Tailwind project.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2056372444751909212"&gt;https://x.com/i/status/2056372444751909212&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -36,23 +22,9 @@
       <source url="https://x.com/i/status/2056372444751909212">Original Source</source>
     </item>
     <item>
-      <title>GitHub Copilot CLI adds remote‑control for local sessions</title>
-      <link>https://bitroot.org/blog/p/3</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/3</guid>
-      <description>GitHub’s Copilot CLI now supports Remote Control, letting developers start a session on one machine and pick it up on another. The feature is generally available and works with both CLI and VS Code sessions.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2056420570745450864"&gt;https://x.com/i/status/2056420570745450864&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Mon, 18 May 2026 18:31:40 +0000</pubDate>
-      <category>github</category>
-      <category>copilot</category>
-      <category>cli</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2056417858440105986/img/1h9mW1uxJ_qB6HOx.jpg" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2056420570745450864">Original Source</source>
-    </item>
-    <item>
       <title>Higgsfield AI demos Claude‑driven marketing workflow in 18‑minute video</title>
-      <link>https://bitroot.org/blog/p/4</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/4</guid>
+      <link>https://bitroot.org/blog/p/2</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/2</guid>
       <description>Higgsfield AI released an 18‑minute walkthrough that stitches Claude’s LLM with its MCP platform, showing a laptop‑based agency pipeline from research to ad spend approval.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2056411641592287435"&gt;https://x.com/i/status/2056411641592287435&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -62,6 +34,34 @@
       <category>ai tools</category>
       <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2056404580619919361/img/PeGD0qy1MUWs-i8m.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2056411641592287435">Original Source</source>
+    </item>
+    <item>
+      <title>Chatbase hits $10M ARR and launches a full‑stack AI agent platform</title>
+      <link>https://bitroot.org/blog/p/3</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/3</guid>
+      <description>Chatbase announced it has surpassed $10 M in annual recurring revenue and introduced a new platform that bundles context, tools, and human‑in‑the‑loop guardrails for customer‑facing AI agents.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2056394356769366166"&gt;https://x.com/i/status/2056394356769366166&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 18 May 2026 18:29:51 +0000</pubDate>
+      <category>ai agents</category>
+      <category>customer experience</category>
+      <category>saas</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2056390673537089536/img/-7u6_IZJSt6rn6Cp.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2056394356769366166">Original Source</source>
+    </item>
+    <item>
+      <title>GitHub Copilot CLI adds remote‑control for local sessions</title>
+      <link>https://bitroot.org/blog/p/4</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/4</guid>
+      <description>GitHub’s Copilot CLI now supports Remote Control, letting developers start a session on one machine and pick it up on another. The feature is generally available and works with both CLI and VS Code sessions.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2056420570745450864"&gt;https://x.com/i/status/2056420570745450864&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 18 May 2026 18:31:40 +0000</pubDate>
+      <category>github</category>
+      <category>copilot</category>
+      <category>cli</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2056417858440105986/img/1h9mW1uxJ_qB6HOx.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2056420570745450864">Original Source</source>
     </item>
     <item>
       <title>Anthropic adds auto‑stack detection plugin for Claude Code</title>
@@ -284,9 +284,23 @@ Outcomes, multiagent orchestration, and webhooks are now in public beta.
       <source url="https://x.com/i/status/2052067399088664981">Original Source</source>
     </item>
     <item>
-      <title>Open Design Skills released as open-source design system</title>
+      <title>Google launches Pomelli Catalog for AI-generated brand campaigns</title>
       <link>https://bitroot.org/blog/p/20</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/20</guid>
+      <description>Google's new Pomelli Catalog lets you feed product data and instantly receive AI-crafted campaign copy and photos, free of charge.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2051693177053340073"&gt;https://x.com/i/status/2051693177053340073&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 05 May 2026 18:22:02 +0000</pubDate>
+      <category>ai marketing</category>
+      <category>brand tools</category>
+      <category>google</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2051689980515561472/img/ep-587HlAqTTlnKc.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2051693177053340073">Original Source</source>
+    </item>
+    <item>
+      <title>Open Design Skills released as open-source design system</title>
+      <link>https://bitroot.org/blog/p/21</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/21</guid>
       <description>Nexu has open‑sourced its Open Design Skills library, a ready‑made system for turning raw HTML into polished, magazine‑grade pages. It could speed up landing‑page iterations for small teams.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2051203959142895896"&gt;https://x.com/i/status/2051203959142895896&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -299,8 +313,8 @@ Outcomes, multiagent orchestration, and webhooks are now in public beta.
     </item>
     <item>
       <title>Higgsfield releases CLI with built‑in marketing skill</title>
-      <link>https://bitroot.org/blog/p/21</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/21</guid>
+      <link>https://bitroot.org/blog/p/22</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/22</guid>
       <description>Higgsfield AI adds a command‑line tool that bundles a marketing skill, aiming to keep LLM token spend low while improving output quality.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2051346056039039487"&gt;https://x.com/i/status/2051346056039039487&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -313,8 +327,8 @@ Outcomes, multiagent orchestration, and webhooks are now in public beta.
     </item>
     <item>
       <title>Hermes Agent gains Hyperframes video-editing skill</title>
-      <link>https://bitroot.org/blog/p/22</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/22</guid>
+      <link>https://bitroot.org/blog/p/23</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/23</guid>
       <description>HeyGen added a Hyperframes skill to Hermes Agent, letting developers turn the agent into a one‑command video editor. The integration is a joint effort with Nous Research and is installable via a single CLI line.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2051697813554405384"&gt;https://x.com/i/status/2051697813554405384&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -326,9 +340,23 @@ Outcomes, multiagent orchestration, and webhooks are now in public beta.
       <source url="https://x.com/i/status/2051697813554405384">Original Source</source>
     </item>
     <item>
+      <title>GitHub Projects releases browser‑only PDF toolkit with 90+ tools</title>
+      <link>https://bitroot.org/blog/p/24</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/24</guid>
+      <description>GitHub Projects unveiled an open‑source PDF toolkit that runs fully in the browser via WebAssembly, offering more than 90 utilities without any server component.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2051598119478108162"&gt;https://x.com/i/status/2051598119478108162&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 05 May 2026 18:18:27 +0000</pubDate>
+      <category>pdf</category>
+      <category>webassembly</category>
+      <category>opensource</category>
+      <enclosure url="https://pbs.twimg.com/media/HHi9ngubkAALhhp.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2051598119478108162">Original Source</source>
+    </item>
+    <item>
       <title>SubQ launches a sub‑quadratic LLM with 12M‑token context</title>
-      <link>https://bitroot.org/blog/p/23</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/23</guid>
+      <link>https://bitroot.org/blog/p/25</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/25</guid>
       <description>SubQ’s new model uses a sub‑quadratic sparse‑attention design to handle 12 million‑token contexts, delivering speed and cost advantages over existing attention engines.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2051663268704636937"&gt;https://x.com/i/status/2051663268704636937&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -342,8 +370,8 @@ Outcomes, multiagent orchestration, and webhooks are now in public beta.
     </item>
     <item>
       <title>OpenClaude v0.9.1 makes Codex default and upgrades to GPT‑5.5</title>
-      <link>https://bitroot.org/blog/p/24</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/24</guid>
+      <link>https://bitroot.org/blog/p/26</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/26</guid>
       <description>Promised fulfilled!
 
 Codex is now the default provider and GPT 5.5 is the default model of OpenClaude. 
@@ -360,34 +388,6 @@ Thank you Sam
       <category>release</category>
       <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2051616504819683328/img/hXB0aixsgmsKIsXD.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2051616716007075887">Original Source</source>
-    </item>
-    <item>
-      <title>Google launches Pomelli Catalog for AI-generated brand campaigns</title>
-      <link>https://bitroot.org/blog/p/25</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/25</guid>
-      <description>Google's new Pomelli Catalog lets you feed product data and instantly receive AI-crafted campaign copy and photos, free of charge.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2051693177053340073"&gt;https://x.com/i/status/2051693177053340073&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Tue, 05 May 2026 18:22:02 +0000</pubDate>
-      <category>ai marketing</category>
-      <category>brand tools</category>
-      <category>google</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2051689980515561472/img/ep-587HlAqTTlnKc.jpg" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2051693177053340073">Original Source</source>
-    </item>
-    <item>
-      <title>GitHub Projects releases browser‑only PDF toolkit with 90+ tools</title>
-      <link>https://bitroot.org/blog/p/26</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/26</guid>
-      <description>GitHub Projects unveiled an open‑source PDF toolkit that runs fully in the browser via WebAssembly, offering more than 90 utilities without any server component.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2051598119478108162"&gt;https://x.com/i/status/2051598119478108162&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Tue, 05 May 2026 18:18:27 +0000</pubDate>
-      <category>pdf</category>
-      <category>webassembly</category>
-      <category>opensource</category>
-      <enclosure url="https://pbs.twimg.com/media/HHi9ngubkAALhhp.jpg?name=orig" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2051598119478108162">Original Source</source>
     </item>
     <item>
       <title>Claude Code adds built‑in skill for Claude Platform tasks</title>
@@ -716,23 +716,9 @@ Follow for changelogs, API releases, community updates, and deep dives.
       <source url="https://x.com/i/status/2044780198722498580">Original Source</source>
     </item>
     <item>
-      <title>Revolutionizing Automation: Claude Code Routines Are Here</title>
+      <title>The Future of Coding: Is the Era of Traditional IDEs Coming to an End?</title>
       <link>https://bitroot.org/blog/p/50</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/50</guid>
-      <description>Claude Code Routines have arrived, allowing users to trigger templated agents via GitHub events or API, streamlining documentation and backlog maintenance. This innovation has the potential to transform the way developers work.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2044093913376706655"&gt;https://x.com/i/status/2044093913376706655&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Wed, 15 Apr 2026 01:55:39 +0000</pubDate>
-      <category>Claude AI</category>
-      <category>Automation</category>
-      <category>GitHub Integration</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2044093860918513664/img/iW06fBgxU7Kb3qBE.jpg" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2044093913376706655">Original Source</source>
-    </item>
-    <item>
-      <title>The Future of Coding: Is the Era of Traditional IDEs Coming to an End?</title>
-      <link>https://bitroot.org/blog/p/51</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/51</guid>
       <description>A new masterclass reveals how Anthropic uses Claude Code, a revolutionary tool that could make traditional IDEs obsolete by the end of the year, and explores non-coding pipeline opportunities
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2044140545384296913"&gt;https://x.com/i/status/2044140545384296913&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -744,9 +730,37 @@ Follow for changelogs, API releases, community updates, and deep dives.
       <source url="https://x.com/i/status/2044140545384296913">Original Source</source>
     </item>
     <item>
-      <title>Revolutionizing AI-Powered Workflows: Google Introduces Skills in Chrome</title>
+      <title>Revolutionizing Voice AI: ElevenLabs Unveils Game-Changing React SDK</title>
+      <link>https://bitroot.org/blog/p/51</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/51</guid>
+      <description>The New ElevenAgents React SDK
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2044519924282847381"&gt;https://x.com/i/status/2044519924282847381&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 15 Apr 2026 20:59:36 +0000</pubDate>
+      <category>ElevenLabs</category>
+      <category>React SDK</category>
+      <category>Voice AI</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2044516556634263552/img/RSZe0mXPBmWB5WXd.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2044519924282847381">Original Source</source>
+    </item>
+    <item>
+      <title>Revolutionizing Automation: Claude Code Routines Are Here</title>
       <link>https://bitroot.org/blog/p/52</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/52</guid>
+      <description>Claude Code Routines have arrived, allowing users to trigger templated agents via GitHub events or API, streamlining documentation and backlog maintenance. This innovation has the potential to transform the way developers work.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2044093913376706655"&gt;https://x.com/i/status/2044093913376706655&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 15 Apr 2026 01:55:39 +0000</pubDate>
+      <category>Claude AI</category>
+      <category>Automation</category>
+      <category>GitHub Integration</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2044093860918513664/img/iW06fBgxU7Kb3qBE.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2044093913376706655">Original Source</source>
+    </item>
+    <item>
+      <title>Revolutionizing AI-Powered Workflows: Google Introduces Skills in Chrome</title>
+      <link>https://bitroot.org/blog/p/53</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/53</guid>
       <description>Google introduces Skills in Chrome, a game-changer for building one-click workflows with AI prompts, and we're excited to dive into its implications for developers and tech enthusiasts. This innovation has the potential to streamline tasks and boost productivity like never before.
 
 &lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2044106378655215625"&gt;https://x.com/i/status/2044106378655215625&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
@@ -760,8 +774,8 @@ Follow for changelogs, API releases, community updates, and deep dives.
     </item>
     <item>
       <title>Revolutionizing AI-Powered Coding: Claude's Game-Changing Update</title>
-      <link>https://bitroot.org/blog/p/53</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/53</guid>
+      <link>https://bitroot.org/blog/p/54</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/54</guid>
       <description>We've redesigned Claude Code on desktop.
 
 You can now run multiple Claude sessions side by side from one window, with a new sidebar to manage them all.
@@ -776,8 +790,8 @@ You can now run multiple Claude sessions side by side from one window, with a ne
     </item>
     <item>
       <title>Revolutionizing App Design: AI-Generated Themes Now Available</title>
-      <link>https://bitroot.org/blog/p/54</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/54</guid>
+      <link>https://bitroot.org/blog/p/55</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/55</guid>
       <description>Gemini now generates designs for your apps while they’re building!
 
 pick between 5 themes, hit apply, and get beautiful designs out of the box.
@@ -791,20 +805,6 @@ now live in AI Studio
       <category>Google AI Studio</category>
       <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2044111151097884672/img/0zJFDJUcEryum-oo.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2044111418786754620">Original Source</source>
-    </item>
-    <item>
-      <title>Revolutionizing Voice AI: ElevenLabs Unveils Game-Changing React SDK</title>
-      <link>https://bitroot.org/blog/p/55</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/55</guid>
-      <description>The New ElevenAgents React SDK
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2044519924282847381"&gt;https://x.com/i/status/2044519924282847381&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Wed, 15 Apr 2026 20:59:36 +0000</pubDate>
-      <category>ElevenLabs</category>
-      <category>React SDK</category>
-      <category>Voice AI</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2044516556634263552/img/RSZe0mXPBmWB5WXd.jpg" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2044519924282847381">Original Source</source>
     </item>
     <item>
       <title>Revolutionizing Video Consumption: Interactive Transcripts Are Here</title>
@@ -1541,9 +1541,24 @@ Here’s what's new:
       <source url="https://x.com/i/status/2024178381760143381">Original Source</source>
     </item>
     <item>
-      <title>Revolutionary AI-Powered Desktop Agent Unveiled: Interpreter</title>
+      <title>Google Unveils Glimmer: A Revolutionary Design Language for UX on Smart Glasses</title>
       <link>https://bitroot.org/blog/p/106</link>
       <guid isPermaLink="true">https://bitroot.org/blog/p/106</guid>
+      <description>Google introduces Glimmer, a new design language for UX on glasses that prioritizes voice, gesture, and eye-tracking, and discover its potential to transform the way we interact with smart glasses. This innovation is set to revolutionize the field of UX design and beyond.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2023805464577011979"&gt;https://x.com/i/status/2023805464577011979&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 19 Feb 2026 19:01:33 +0000</pubDate>
+      <category>Google Design</category>
+      <category>Glimmer</category>
+      <category>Smart Glasses</category>
+      <category>UX Design</category>
+      <enclosure url="https://pbs.twimg.com/media/HBYAUP8bcAECeDt.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2023805464577011979">Original Source</source>
+    </item>
+    <item>
+      <title>Revolutionary AI-Powered Desktop Agent Unveiled: Interpreter</title>
+      <link>https://bitroot.org/blog/p/107</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/p/107</guid>
       <description>Today I'm launching Interpreter.
 
 It's a desktop agent that can fill PDFs, edit your Excel and Word docs, and learn new skills.
@@ -1557,21 +1572,6 @@ Runs offline, works with any model, and it's free.
       <category>Technology</category>
       <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2024013495285805058/img/7WZN7wcEd-PRLveg.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2024227639087813035">Original Source</source>
-    </item>
-    <item>
-      <title>Google Unveils Glimmer: A Revolutionary Design Language for UX on Smart Glasses</title>
-      <link>https://bitroot.org/blog/p/107</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/p/107</guid>
-      <description>Google introduces Glimmer, a new design language for UX on glasses that prioritizes voice, gesture, and eye-tracking, and discover its potential to transform the way we interact with smart glasses. This innovation is set to revolutionize the field of UX design and beyond.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2023805464577011979"&gt;https://x.com/i/status/2023805464577011979&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Thu, 19 Feb 2026 19:01:33 +0000</pubDate>
-      <category>Google Design</category>
-      <category>Glimmer</category>
-      <category>Smart Glasses</category>
-      <category>UX Design</category>
-      <enclosure url="https://pbs.twimg.com/media/HBYAUP8bcAECeDt.jpg?name=orig" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2023805464577011979">Original Source</source>
     </item>
     <item>
       <title>AI Rivals Clash: OpenAI and Anthropic CEOs' Awkward Moment Reveals Heated Competition</title>
