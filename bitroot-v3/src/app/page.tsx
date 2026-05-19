@@ -5,7 +5,7 @@ import DealsPlatter from "@/components/home/DealsPlatter";
 import BuiltFor from "@/components/home/BuiltFor";
 // import ReelsSection from "@/components/home/ReelsSection"; // hidden until videos are ready
 import NewsloggerSection from "@/components/home/NewsloggerSection";
-import QuotesSection from "@/components/home/QuotesSection";
+// import QuotesSection from "@/components/home/QuotesSection"; // hidden until we have real quotes
 import ClubBanner from "@/components/home/ClubBanner";
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
       <BuiltFor />
       {/* <ReelsSection /> — hidden until we have ready videos */}
       <NewsloggerSection />
-      <QuotesSection />
+      {/* <QuotesSection /> — hidden until we have real quotes */}
       <ClubBanner />
     </>
   );
