@@ -1,0 +1,106 @@
+name: Deploy to GitHub Pages
+
+# Builds bitroot-v3 (Next.js static export), merges it with the preserved
+# legacy static folders at repo root (blog, legal, platter, shared assets,
+# rss.xml, etc.), and deploys the combined site to GitHub Pages.
+#
+# Triggers:
+#   - push to main: any code change to v3 or root files redeploys.
+#   - workflow_run after "Blog Index Builder": blog-index.yml commits with
+#     GITHUB_TOKEN do not re-trigger push workflows by default, so we listen
+#     to its completion explicitly.
+#   - workflow_dispatch: manual rebuild.
+
+on:
+  push:
+    branches: [main]
+  workflow_run:
+    workflows: ["Blog Index Builder"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # Skip if the upstream workflow_run trigger failed.
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # workflow_run runs on the default branch HEAD by default; ensure we
+          # always build the latest main when triggered by blog-index commits.
+          ref: main
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: bitroot-v3/package-lock.json
+
+      - name: Install v3 deps
+        working-directory: bitroot-v3
+        run: npm ci
+
+      - name: Build v3 (static export)
+        working-directory: bitroot-v3
+        run: npm run build
+
+      - name: Assemble deploy directory
+        run: |
+          set -euo pipefail
+          DIST="$RUNNER_TEMP/site"
+          rm -rf "$DIST"
+          mkdir -p "$DIST"
+
+          # 1. Copy preserved legacy folders and root files first.
+          for d in blog legal platter css js images fonts documents .well-known; do
+            if [ -d "$d" ]; then
+              cp -R "$d" "$DIST/"
+            fi
+          done
+          for f in rss.xml robots.txt sitemap.xml favicon.png CNAME .nojekyll; do
+            if [ -f "$f" ]; then
+              cp "$f" "$DIST/"
+            fi
+          done
+
+          # 2. Overlay v3 static export on top. v3 owns /, /404.html,
+          #    /about/, /kits/, /stacks/, /guides/, /tools/, /templates/,
+          #    /community/, /newsletter/, /_next/, etc.
+          cp -R bitroot-v3/out/. "$DIST/"
+
+          # 3. Belt-and-braces: ensure .nojekyll exists so GH Pages does not
+          #    strip _next/ underscored paths.
+          touch "$DIST/.nojekyll"
+
+          echo "DIST=$DIST" >> "$GITHUB_ENV"
+          echo "--- top-level entries ---"
+          ls -1 "$DIST"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ env.DIST }}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

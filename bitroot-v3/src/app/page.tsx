@@ -1,0 +1,25 @@
+import Hero from "@/components/home/Hero";
+import HeroTicker from "@/components/home/HeroTicker";
+import LaneSection from "@/components/home/LaneSection";
+import DealsPlatter from "@/components/home/DealsPlatter";
+import BuiltFor from "@/components/home/BuiltFor";
+// import ReelsSection from "@/components/home/ReelsSection"; // hidden until videos are ready
+import NewsloggerSection from "@/components/home/NewsloggerSection";
+import QuotesSection from "@/components/home/QuotesSection";
+import ClubBanner from "@/components/home/ClubBanner";
+
+export default function Home() {
+  return (
+    <>
+      <Hero />
+      <HeroTicker />
+      <LaneSection />
+      <DealsPlatter />
+      <BuiltFor />
+      {/* <ReelsSection /> — hidden until we have ready videos */}
+      <NewsloggerSection />
+      <QuotesSection />
+      <ClubBanner />
+    </>
+  );
+}
