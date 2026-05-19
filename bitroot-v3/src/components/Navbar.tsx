@@ -278,7 +278,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50">
       <div className="px-4 sm:px-6 pt-3 sm:pt-4">
         {/* Desktop — canvas-style toolbar on every route */}
-        <div className="hidden md:block relative">
+        <div className="hidden md:flex relative items-start justify-between">
           {/* Logo — top left, smaller, less-rounded than the toolset */}
           <Link
             href="/"
@@ -303,6 +303,33 @@ export default function Navbar() {
               <NavItem key={link.href} link={link} />
             ))}
           </nav>
+
+          {/* Newslogger — top right, mirrors the logo chip */}
+          <Link
+            href="/blog/"
+            className={cn(
+              segmentShell,
+              "group/news px-3 h-11 mt-2 rounded-lg gap-2.5 text-ink hover:text-ember transition-colors",
+            )}
+            aria-label="Newslogger — open the blog"
+          >
+            <span
+              aria-hidden
+              className="relative inline-flex size-2 items-center justify-center"
+            >
+              <span className="absolute inline-flex size-full rounded-full bg-live/40 animate-ping" />
+              <span className="relative inline-flex size-2 rounded-full bg-live pulse-live" />
+            </span>
+            <span className="font-display text-[13px] font-semibold leading-none">
+              Newslogger
+            </span>
+            <span
+              aria-hidden
+              className="text-ink-4 group-hover/news:text-ember translate-x-0 group-hover/news:translate-x-0.5 transition-all text-[12px] leading-none"
+            >
+              →
+            </span>
+          </Link>
         </div>
 
         {/* Mobile shell */}
