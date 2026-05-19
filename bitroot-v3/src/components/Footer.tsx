@@ -79,6 +79,28 @@ export default function Footer() {
             © {new Date().getFullYear()} Bitroot · MIT for content where
             noted · No cookie walls, no popups, promise.
           </div>
+          <div className="text-[11px] font-mono text-ink-4 flex items-center gap-2">
+            <Link
+              href="/legal/privacy.html"
+              className="hover:text-ember transition-colors"
+            >
+              Privacy
+            </Link>
+            <span aria-hidden>·</span>
+            <Link
+              href="/legal/terms.html"
+              className="hover:text-ember transition-colors"
+            >
+              Terms
+            </Link>
+            <span aria-hidden>·</span>
+            <Link
+              href="/legal/refund.html"
+              className="hover:text-ember transition-colors"
+            >
+              Refund
+            </Link>
+          </div>
           <div className="text-[11px] font-mono text-ink-4">
             Need this built for you?{" "}
             <a
