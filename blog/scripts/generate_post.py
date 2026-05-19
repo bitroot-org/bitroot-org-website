@@ -37,6 +37,16 @@ MEDIA_DIR = "blog/media"
 MAX_CONTENT_LENGTH = 15000  # Max chars per URL to avoid token limits
 MAX_VIDEO_SIZE = 50 * 1024 * 1024  # 50MB max video size
 
+BROWSER_UA = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+)
+BROWSER_HEADERS = {
+    "User-Agent": BROWSER_UA,
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.5",
+}
+
 URL_PATTERN = re.compile(r"https?://[^\s<>\"'\)\]]+")
 MARKDOWN_LINK_PATTERN = re.compile(r"\[([^\]]+)\]\((https?://[^)\s]+)\)")
 
@@ -392,6 +402,45 @@ def fetch_social_media_content(url):
         return {"url": url, "content": f"Failed to fetch: {str(e)}", "image": None, "video": None, "media": [], "description": None, "success": False}
 
 
+def fetch_via_jina_reader(url):
+    """Fall back to Jina Reader (r.jina.ai) for paywalled or bot-blocked URLs.
+
+    Returns the same dict shape as fetch_url_content on success, else None.
+    Jina's free tier proxies the page through a reader that bypasses most
+    paywalls and JS rendering, returning clean LLM-ready content.
+    """
+    try:
+        jina_url = f"https://r.jina.ai/{url}"
+        resp = requests.get(jina_url, headers={"Accept": "application/json"}, timeout=60)
+        resp.raise_for_status()
+        payload = resp.json()
+        data = payload.get("data") or {}
+        content = (data.get("content") or "").strip()
+        if not content:
+            return None
+
+        image_url = None
+        images = data.get("images")
+        if isinstance(images, dict) and images:
+            image_url = next(iter(images.values()), None)
+        elif isinstance(images, list) and images:
+            image_url = images[0]
+
+        content = content[:MAX_CONTENT_LENGTH]
+        logger.info(f"Fetched via Jina Reader fallback: {url} ({len(content)} chars)")
+        return {
+            "url": url,
+            "title": data.get("title"),
+            "content": content,
+            "image": image_url,
+            "description": data.get("description"),
+            "success": True,
+        }
+    except Exception as e:
+        logger.error(f"Jina Reader fallback failed for {url}: {str(e)}")
+        return None
+
+
 def fetch_url_content(url):
     """Fetch and extract text content, image, and description from a URL."""
     # Handle Twitter/X URLs specially
@@ -409,10 +458,7 @@ def fetch_url_content(url):
         return fetch_social_media_content(url)
 
     try:
-        headers = {
-            "User-Agent": "Mozilla/5.0 (compatible; BitrootBlogAgent/1.0)"
-        }
-        resp = requests.get(url, headers=headers, timeout=30)
+        resp = requests.get(url, headers=BROWSER_HEADERS, timeout=30)
         resp.raise_for_status()
 
         soup = BeautifulSoup(resp.text, "html.parser")
@@ -529,6 +575,10 @@ def fetch_url_content(url):
         return {"url": url, "title": page_title, "content": text, "image": image_url, "description": description, "success": True}
 
     except Exception as e:
+        logger.warning(f"Direct fetch failed for {url}: {str(e)}; trying Jina Reader fallback")
+        fallback = fetch_via_jina_reader(url)
+        if fallback:
+            return fallback
         logger.error(f"Failed to fetch {url}: {str(e)}")
         return {"url": url, "content": f"Failed to fetch: {str(e)}", "image": None, "description": None, "success": False}
 
