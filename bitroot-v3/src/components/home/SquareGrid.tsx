@@ -20,6 +20,13 @@ export default function SquareGrid({ className }: { className?: string }) {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
+    // Decorative-only; skip on mobile and when reduced motion is preferred.
+    // The full-grid RAF was thrashing mobile GPUs and triggering browser OOM.
+    if (typeof window !== "undefined") {
+      if (window.matchMedia("(max-width: 767px)").matches) return;
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    }
+
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
     const pointer = { x: -1e6, y: -1e6 };
     const bursts: Burst[] = [];

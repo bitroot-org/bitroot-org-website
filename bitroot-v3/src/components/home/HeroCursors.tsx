@@ -105,7 +105,7 @@ function ActionVisual({ c }: { c: Cursor }) {
 
 export default function HeroCursors() {
   return (
-    <div aria-hidden className="absolute inset-0 pointer-events-none z-[6]">
+    <div aria-hidden className="hidden md:block absolute inset-0 pointer-events-none z-[6]">
       {cursors.map((c) => {
         const visibility = c.mobile ? "" : "hidden md:block";
         const positionClasses = `${c.mobile ?? ""} ${c.desktop}`.trim();

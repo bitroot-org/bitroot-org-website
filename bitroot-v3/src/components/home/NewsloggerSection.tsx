@@ -92,7 +92,7 @@ export default async function NewsloggerSection() {
 
   return (
     <section id="newslogger" className="relative py-18 overflow-hidden">
-      <SquareGrid className="absolute inset-0 opacity-80 [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)] [-webkit-mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)]" />
+      <SquareGrid className="hidden md:block absolute inset-0 opacity-80 [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)] [-webkit-mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)]" />
       <Container className="relative">
         <div className="flex items-end justify-between gap-6 mb-9">
           <div>
