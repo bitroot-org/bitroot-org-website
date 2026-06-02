@@ -157,7 +157,13 @@ export default async function NewsloggerSection() {
                   className="w-full aspect-[16/9] object-cover bg-paper-2 border-b border-line"
                 />
               ) : (
-                <div className="w-full aspect-[16/9] reel-scene border-b border-line" />
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src="/placeholder-blog.png"
+                  alt=""
+                  loading="lazy"
+                  className="w-full aspect-[16/9] object-cover bg-paper-2 border-b border-line"
+                />
               )}
               <div className="p-5 flex flex-col gap-2.5 flex-1">
                 {p.categories.length > 0 && (
