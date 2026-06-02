@@ -33,6 +33,7 @@
 
     <!-- Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="js/pixel-placeholder.js"></script>
 
     <!-- Theme: set before first paint -->
     <script>
@@ -251,7 +252,12 @@
 
         const PLACEHOLDER_IMAGE = 'media/placeholder-blog.png';
 
-        function getPlaceholder() {
+        // Deterministic on-brand pixel pattern, seeded per post (falls back to
+        // the static image if the generator script failed to load).
+        function getPlaceholder(seed) {
+            if (window.bitrootPixelPlaceholder) {
+                return window.bitrootPixelPlaceholder(seed || 'bitroot');
+            }
             return PLACEHOLDER_IMAGE;
         }
 
@@ -370,7 +376,7 @@
                 // Get image - use metadata image, or fallback to placeholder
                 let heroImage = metadata.image;
                 if (!heroImage) {
-                    heroImage = getPlaceholder();
+                    heroImage = getPlaceholder(slug);
                 }
 
                 // Check if we have a video (local or remote)
@@ -409,7 +415,7 @@
                         </div>
                     ` : `
                         <div class="post-hero-image">
-                            <img src="${heroImage}" alt="${metadata.title || 'Post image'}" onerror="this.src='${getPlaceholder()}'">
+                            <img src="${heroImage}" alt="${metadata.title || 'Post image'}" onerror="this.src='${getPlaceholder(slug)}'">
                         </div>
                     `}
                     <header class="post-header">

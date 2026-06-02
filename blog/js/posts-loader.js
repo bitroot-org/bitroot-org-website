@@ -83,6 +83,10 @@ const PostsLoader = {
         if (post.image) {
             return post.image;
         }
+        // Deterministic on-brand pixel pattern, seeded per post.
+        if (window.bitrootPixelPlaceholder) {
+            return window.bitrootPixelPlaceholder(post.slug || post.title || '');
+        }
         return this.placeholderImage;
     },
 
