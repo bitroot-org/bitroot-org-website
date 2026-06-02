@@ -1,6 +1,14 @@
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 import Container from "@/components/ui/Container";
 import SquareGrid from "./SquareGrid";
 
+// The site is a static export, so this runs at BUILD time only. Read the
+// freshly-committed rss.xml from the repo working tree rather than fetching
+// the live URL — at build time the deployed feed is still the *previous*
+// one, which left the homepage perpetually a post behind. Repo root is one
+// level above the Next project (process.cwd() is bitroot-v3/ during build).
+const LOCAL_FEED_PATH = path.join(process.cwd(), "..", "rss.xml");
 const FEED_URL = "https://bitroot.org/rss.xml";
 
 type Post = {
@@ -67,11 +75,26 @@ function fmtDate(iso: string): string {
   });
 }
 
+async function readFeed(): Promise<string | null> {
+  // Prefer the local repo copy (always the just-built feed). Fall back to the
+  // live URL so `next dev` still works if run from an unexpected cwd.
+  try {
+    return await readFile(LOCAL_FEED_PATH, "utf8");
+  } catch {
+    try {
+      const res = await fetch(FEED_URL, { next: { revalidate: 3600 } });
+      if (!res.ok) return null;
+      return await res.text();
+    } catch {
+      return null;
+    }
+  }
+}
+
 async function getPosts(limit = 6): Promise<Post[]> {
   try {
-    const res = await fetch(FEED_URL, { next: { revalidate: 3600 } });
-    if (!res.ok) return [];
-    const xml = await res.text();
+    const xml = await readFeed();
+    if (!xml) return [];
     const blocks = xml.match(/<item>[\s\S]*?<\/item>/g) ?? [];
     return blocks.slice(0, limit).map((b) => ({
       title: decodeEntities(pickTag(b, "title") ?? ""),

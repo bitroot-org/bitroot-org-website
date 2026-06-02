@@ -77,7 +77,7 @@ const PostsLoader = {
     /**
      * Get image URL for a post (from metadata or fallback)
      */
-    placeholderImage: 'https://placehold.net/4-800x600.png',
+    placeholderImage: 'media/placeholder-blog.png',
 
     getPostImage(post) {
         if (post.image) {
