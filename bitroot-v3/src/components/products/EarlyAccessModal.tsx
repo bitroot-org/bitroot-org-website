@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import ProductIcon from "@/components/products/ProductIcon";
 import type { Product } from "@/content/products";
+import { track } from "@/lib/analytics";
 
 type Program = "core" | "creators";
 
@@ -139,6 +140,10 @@ export default function EarlyAccessModal({ open, product, onClose }: Props) {
               onSubmit={(e) => {
                 e.preventDefault();
                 if (!program) return;
+                track("early_access_submit", {
+                  product: product.slug,
+                  program,
+                });
                 setSubmitted(true);
               }}
             >

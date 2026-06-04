@@ -1,4 +1,5 @@
 import Container from "@/components/ui/Container";
+import TrackedLink from "@/components/ui/TrackedLink";
 import HeroHeadline from "./HeroHeadline";
 import HeroCursors from "./HeroCursors";
 import HeroCardFan from "./HeroCardFan";
@@ -29,18 +30,22 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <a
+            <TrackedLink
+              label="Explore Now"
+              location="hero"
               href="#lanes"
               className="hover-lift inline-flex items-center gap-2 h-[40px] px-5 rounded-full bg-ink text-paper text-[14px] font-medium hover:bg-[#2a282d] transition-colors"
             >
               Explore Now <span aria-hidden>→</span>
-            </a>
-            <a
+            </TrackedLink>
+            <TrackedLink
+              label="Join the Club"
+              location="hero"
               href="#club"
               className="hover-lift inline-flex items-center gap-2 h-[40px] px-5 rounded-full border border-line-2 text-ink text-[14px] font-medium hover:bg-paper-2 transition-colors"
             >
               Join the Club
-            </a>
+            </TrackedLink>
           </div>
 
           <HeroCardMarquee />

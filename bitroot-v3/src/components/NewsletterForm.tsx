@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { track } from "@/lib/analytics";
 
 export default function NewsletterForm({
   compact = false,
@@ -16,6 +17,7 @@ export default function NewsletterForm({
     setState("loading");
     // TODO: wire to Resend / Buttondown
     await new Promise((r) => setTimeout(r, 600));
+    track("newsletter_signup", { location: "newsletter_page" });
     setState("done");
   }
 

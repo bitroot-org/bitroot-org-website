@@ -1,4 +1,5 @@
 import Container from "@/components/ui/Container";
+import TrackedLink from "@/components/ui/TrackedLink";
 
 const benefits = [
   {
@@ -80,12 +81,14 @@ export default function ClubBanner() {
               </ul>
 
               <div className="mt-7 flex items-center gap-3.5 flex-wrap">
-                <a
+                <TrackedLink
+                  label="Join the Club"
+                  location="club_banner"
                   href="https://bitroot.club"
                   className="inline-flex items-center gap-2 h-[38px] px-5 rounded-full bg-ember text-paper text-[14px] font-medium hover:bg-ember-2 transition-colors"
                 >
                   Join the Club <span aria-hidden>→</span>
-                </a>
+                </TrackedLink>
                 <a
                   href="#stories"
                   className="inline-flex items-center gap-2 h-[38px] px-5 rounded-full border border-white/20 text-white text-[14px] font-medium hover:bg-white/5 hover:border-white/30 transition-colors"

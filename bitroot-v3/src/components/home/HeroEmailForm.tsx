@@ -1,11 +1,16 @@
 "use client";
 
+import { track } from "@/lib/analytics";
+
 export default function HeroEmailForm() {
   return (
     <>
       <form
         className="mt-7 flex items-center gap-2 bg-paper border border-line rounded-full py-1.5 pl-4 pr-1.5 max-w-[420px] focus-within:border-ink transition-colors"
-        onSubmit={(e) => e.preventDefault()}
+        onSubmit={(e) => {
+          e.preventDefault();
+          track("newsletter_signup", { location: "hero" });
+        }}
       >
         <input
           type="email"

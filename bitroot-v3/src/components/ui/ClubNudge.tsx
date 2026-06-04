@@ -3,6 +3,8 @@
  * Always appears AFTER the content is fully delivered. No button. No color block.
  * Single line, italic, subtle — a footnote, not a CTA.
  */
+import TrackedLink from "@/components/ui/TrackedLink";
+
 export default function ClubNudge({
   children,
 }: {
@@ -14,14 +16,16 @@ export default function ClubNudge({
         {children ?? (
           <>
             Got stuck, or want this shipped end-to-end for you?{" "}
-            <a
+            <TrackedLink
+              label="bitroot.club (nudge)"
+              location="club_nudge"
               href="https://bitroot.club"
               className="prose-link not-italic"
               target="_blank"
               rel="noreferrer"
             >
               bitroot.club
-            </a>{" "}
+            </TrackedLink>{" "}
             builds custom products for founders. →
           </>
         )}
