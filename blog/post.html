@@ -62,6 +62,8 @@
             api_host: 'https://us.i.posthog.com',
             person_profiles: 'identified_only',
         })
+        // Tag every event with the surface (shared project segmentation).
+        posthog.register({ site: 'blog' })
     </script>
 </head>
 <body>
