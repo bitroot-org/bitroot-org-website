@@ -1,12 +1,14 @@
 import Link from "next/link";
 import Container from "@/components/ui/Container";
 import ClubNudge from "@/components/ui/ClubNudge";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata = {
-  title: "Community — bitroot.org",
+export const metadata = buildMetadata({
+  title: "Community — Discord, GitHub & weekly office hours",
   description:
     "Discord, GitHub Discussions, and weekly office hours. The peer-to-peer side of the toolbox.",
-};
+  path: "/community/",
+});
 
 const channels = [
   {

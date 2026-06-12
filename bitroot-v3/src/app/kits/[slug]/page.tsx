@@ -7,6 +7,8 @@ import ClubNudge from "@/components/ui/ClubNudge";
 import { kits, findItem } from "@/content/data";
 import { kitsContent } from "@/content/kits-content";
 import type { KitFeature } from "@/content/kits-content";
+import JsonLd from "@/components/JsonLd";
+import { buildMetadata, breadcrumbJsonLd } from "@/lib/seo";
 
 export function generateStaticParams() {
   return kits.map((k) => ({ slug: k.slug }));
@@ -20,10 +22,11 @@ export async function generateMetadata({
   const { slug } = await params;
   const kit = findItem(slug, "kit");
   if (!kit) return {};
-  return {
-    title: `${kit.title} — bitroot Kits`,
+  return buildMetadata({
+    title: kit.title,
     description: kit.summary,
-  };
+    path: `/kits/${kit.slug}/`,
+  });
 }
 
 const iconMap: Record<NonNullable<KitFeature["icon"]>, string> = {
@@ -52,6 +55,13 @@ export default async function KitDetailPage({
       {/* Breadcrumb + header */}
       <section className="pt-10 pb-8 border-b border-line bg-paper-2/40">
         <Container>
+          <JsonLd
+            data={breadcrumbJsonLd([
+              { name: "Home", path: "/" },
+              { name: "Kits", path: "/kits/" },
+              { name: kit.title, path: `/kits/${kit.slug}/` },
+            ])}
+          />
           <nav className="text-[12px] font-mono text-ink-4 mb-6 flex items-center gap-1.5">
             <Link href="/" className="hover:text-ember transition-colors">
               ~

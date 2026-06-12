@@ -11,6 +11,8 @@ import {
   type GuideNode,
   type GuideReference,
 } from "@/content/guides-content";
+import JsonLd from "@/components/JsonLd";
+import { buildMetadata, breadcrumbJsonLd } from "@/lib/seo";
 
 const referencedCategoryLabel = {
   kit: "kit",
@@ -86,10 +88,11 @@ export async function generateMetadata({
   const { slug } = await params;
   const guide = findItem(slug, "guide");
   if (!guide) return {};
-  return {
-    title: `${guide.title} — bitroot Guides`,
+  return buildMetadata({
+    title: guide.title,
     description: guide.summary,
-  };
+    path: `/guides/${guide.slug}/`,
+  });
 }
 
 async function renderNode(node: GuideNode, idx: number) {
@@ -331,6 +334,13 @@ export default async function GuideDetailPage({
       {/* Header */}
       <section className="pt-10 pb-12 border-b border-line bg-paper-2/40">
         <Container size="narrow">
+          <JsonLd
+            data={breadcrumbJsonLd([
+              { name: "Home", path: "/" },
+              { name: "Guides", path: "/guides/" },
+              { name: guide.title, path: `/guides/${guide.slug}/` },
+            ])}
+          />
           <nav className="text-[12px] font-mono text-ink-4 mb-6 flex items-center gap-1.5">
             <Link href="/" className="hover:text-ember transition-colors">
               ~

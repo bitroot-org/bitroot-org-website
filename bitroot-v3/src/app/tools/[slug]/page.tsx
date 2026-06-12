@@ -5,6 +5,8 @@ import ClubNudge from "@/components/ui/ClubNudge";
 import Tag from "@/components/ui/Tag";
 import ReadmeGenerator from "@/components/tools/ReadmeGenerator";
 import { tools, findItem } from "@/content/data";
+import JsonLd from "@/components/JsonLd";
+import { buildMetadata, breadcrumbJsonLd } from "@/lib/seo";
 
 export function generateStaticParams() {
   return tools.map((t) => ({ slug: t.slug }));
@@ -18,10 +20,11 @@ export async function generateMetadata({
   const { slug } = await params;
   const tool = findItem(slug, "tool");
   if (!tool) return {};
-  return {
-    title: `${tool.title} — bitroot Tools`,
+  return buildMetadata({
+    title: tool.title,
     description: tool.summary,
-  };
+    path: `/tools/${tool.slug}/`,
+  });
 }
 
 const workingTools: Partial<Record<string, () => React.ReactNode>> = {
@@ -43,6 +46,13 @@ export default async function ToolDetailPage({
     <>
       <section className="pt-10 pb-8 border-b border-line bg-paper-2/40">
         <Container>
+          <JsonLd
+            data={breadcrumbJsonLd([
+              { name: "Home", path: "/" },
+              { name: "Tools", path: "/tools/" },
+              { name: tool.title, path: `/tools/${tool.slug}/` },
+            ])}
+          />
           <nav className="text-[12px] font-mono text-ink-4 mb-6 flex items-center gap-1.5">
             <Link href="/" className="hover:text-ember transition-colors">
               ~

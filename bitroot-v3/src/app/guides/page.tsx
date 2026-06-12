@@ -3,12 +3,14 @@ import Container from "@/components/ui/Container";
 import Tag from "@/components/ui/Tag";
 import ClubNudge from "@/components/ui/ClubNudge";
 import { guides } from "@/content/data";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata = {
-  title: "Guides — bitroot.org",
+export const metadata = buildMetadata({
+  title: "Guides — tactical walkthroughs for founders",
   description:
     "Zero-fluff tactical walkthroughs for founders. Real code, reproducible steps, actual timestamps.",
-};
+  path: "/guides/",
+});
 
 const difficultyStyle = {
   starter: "bg-live-bg border-green-200 text-live",
@@ -88,9 +90,9 @@ export default function GuidesPage() {
                         guide
                       </span>
                     </div>
-                    <h3 className="font-display text-[20px] md:text-[22px] font-bold text-ink group-hover:text-ember transition-colors leading-tight">
+                    <h2 className="font-display text-[20px] md:text-[22px] font-bold text-ink group-hover:text-ember transition-colors leading-tight">
                       {guide.title}
-                    </h3>
+                    </h2>
                     <p className="mt-2 text-[13.5px] text-ink-3 leading-relaxed max-w-2xl">
                       {guide.summary}
                     </p>

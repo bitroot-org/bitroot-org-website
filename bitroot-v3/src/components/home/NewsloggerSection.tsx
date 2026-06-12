@@ -153,7 +153,10 @@ export default async function NewsloggerSection() {
                 <img
                   src={p.image}
                   alt=""
+                  width={640}
+                  height={360}
                   loading="lazy"
+                  decoding="async"
                   className="w-full aspect-[16/9] object-cover bg-paper-2 border-b border-line"
                 />
               ) : (
@@ -161,7 +164,10 @@ export default async function NewsloggerSection() {
                 <img
                   src="/placeholder-blog.png"
                   alt=""
+                  width={640}
+                  height={360}
                   loading="lazy"
+                  decoding="async"
                   className="w-full aspect-[16/9] object-cover bg-paper-2 border-b border-line"
                 />
               )}

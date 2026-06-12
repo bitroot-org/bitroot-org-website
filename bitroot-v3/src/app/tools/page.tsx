@@ -3,12 +3,14 @@ import Container from "@/components/ui/Container";
 import Tag from "@/components/ui/Tag";
 import ClubNudge from "@/components/ui/ClubNudge";
 import { tools } from "@/content/data";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata = {
-  title: "Free Tools — bitroot.org",
+export const metadata = buildMetadata({
+  title: "Free Tools — zero-signup browser utilities",
   description:
     "Zero-signup, in-browser utilities for founders. OG images, favicons, pricing pages, domain brainstorming, README generation.",
-};
+  path: "/tools/",
+});
 
 export default function ToolsPage() {
   return (
@@ -80,9 +82,9 @@ export default function ToolsPage() {
                   </span>
                 </div>
 
-                <h3 className="font-display text-[18px] font-bold text-ink group-hover:text-ember transition-colors leading-tight mb-2">
+                <h2 className="font-display text-[18px] font-bold text-ink group-hover:text-ember transition-colors leading-tight mb-2">
                   {t.title}
-                </h3>
+                </h2>
                 <p className="text-[13px] text-ink-3 leading-relaxed mb-4 line-clamp-3 min-h-[3em]">
                   {t.summary}
                 </p>

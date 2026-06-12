@@ -76,7 +76,7 @@ export default function Footer() {
 
         <div className="py-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div className="text-[11px] font-mono text-ink-4">
-            © {new Date().getFullYear()} Bitroot · MIT for content where
+            © <span suppressHydrationWarning>{new Date().getFullYear()}</span> Bitroot · MIT for content where
             noted · No cookie walls, no popups, promise.
           </div>
           <div className="text-[11px] font-mono text-ink-4 flex items-center gap-2">

@@ -2,12 +2,14 @@ import Container from "@/components/ui/Container";
 import { kits } from "@/content/data";
 import KitsGrid from "@/components/kits/KitsGrid";
 import ClubNudge from "@/components/ui/ClubNudge";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata = {
-  title: "Starter Kits — bitroot.org",
+export const metadata = buildMetadata({
+  title: "Starter Kits — clone-and-ship boilerplates",
   description:
     "Clone-and-ship boilerplates for founders. Next.js SaaS, AI wrappers, waitlists, Chrome extensions, and more. Free, opinionated, maintained.",
-};
+  path: "/kits/",
+});
 
 export default function KitsPage() {
   return (

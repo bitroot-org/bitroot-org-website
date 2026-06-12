@@ -1,12 +1,14 @@
 import Link from "next/link";
 import Container from "@/components/ui/Container";
 import ClubNudge from "@/components/ui/ClubNudge";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata = {
-  title: "About — bitroot.org",
+export const metadata = buildMetadata({
+  title: "About — the free founder's toolbox, explained",
   description:
     "Why bitroot.org exists, who runs it, and how we keep it free. A short, honest manifesto.",
-};
+  path: "/about/",
+});
 
 export default function AboutPage() {
   return (

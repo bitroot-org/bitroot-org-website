@@ -195,7 +195,12 @@ export function recentReleases(
     .slice(0, limit);
 }
 
-export function daysSince(iso: string, today = new Date()): number {
+export function daysSince(
+  iso: string,
+  // Build-time date (inlined by next.config.ts) so static HTML and hydration
+  // agree; falls back to the real clock outside the Next build.
+  today = new Date(process.env.NEXT_PUBLIC_BUILD_DATE ?? Date.now())
+): number {
   const then = new Date(iso).getTime();
   return Math.max(0, Math.round((today.getTime() - then) / 86400000));
 }

@@ -1,12 +1,14 @@
 import Container from "@/components/ui/Container";
 import NewsletterForm from "@/components/NewsletterForm";
 import ClubNudge from "@/components/ui/ClubNudge";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata = {
-  title: "Newsletter — bitroot.org",
+export const metadata = buildMetadata({
+  title: "Newsletter — one useful founder email a week",
   description:
     "One email a week. Tools we actually use, guides we just shipped, and the stuff that broke on us. No lifestyle takes.",
-};
+  path: "/newsletter/",
+});
 
 const pastIssues = [
   {
