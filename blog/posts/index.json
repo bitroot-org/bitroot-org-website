@@ -1,185 +1,206 @@
 {
   "generated": true,
-  "count": 176,
+  "count": 177,
   "posts": [
+    "2026-06-12-apple-brings-ai-to-shortcuts-in-ios-27.md",
     "2026-06-09-claude-fable-5-launches-as-a-mythosclass-model-for.md",
     "2026-06-04-reve-launches-4k-image-model-20-with-layoutaware-g.md",
-    "2026-06-03-mumbai-tech-week-was-a-market-signal.md",
-    "2026-06-03-paper-adds-vector-editing-tools-in-latest-update.md",
-    "2026-06-03-lassie-ai-raises-47m-to-automate-doctors-offices.md",
     "2026-06-03-blurr-releases-a-web-tool-with-19-filters-and-6-pi.md",
-    "2026-06-03-ideogram-releases-40-open-image-model-with-downloa.md",
     "2026-06-03-chatbase-founder-shares-a-10m-bootstrapped-playboo.md",
+    "2026-06-03-mumbai-tech-week-was-a-market-signal.md",
+    "2026-06-03-ideogram-releases-40-open-image-model-with-downloa.md",
+    "2026-06-03-lassie-ai-raises-47m-to-automate-doctors-offices.md",
+    "2026-06-03-paper-adds-vector-editing-tools-in-latest-update.md",
     "2026-06-01-microsoft-announces-the-surface-laptop-ultra-for-f.md",
     "2026-05-30-pika-launches-founder-starter-kit-for-claude-users.md",
     "2026-05-30-tweet-lists-22-places-founders-hang-out-online.md",
-    "2026-05-26-google-launches-aiventure-an-opensource-ai-dungeon.md",
-    "2026-05-26-quiverai-adds-json-prompting-to-arrow-for-tighter.md",
-    "2026-05-26-ascii-magic-launches-ai-animated-landing-page.md",
     "2026-05-26-resend-adds-mcp-and-claude-skills-to-claude-market.md",
-    "2026-05-26-base-launches-mcp-to-connect-ai-agents-with-onchai.md",
-    "2026-05-26-jitter-ai-adds-promptdriven-motion-effects.md",
     "2026-05-26-veed-launches-subtitles-api-with-free-credits-for.md",
-    "2026-05-26-github-publishes-open-source-accessibility-best-pr.md",
+    "2026-05-26-google-launches-aiventure-an-opensource-ai-dungeon.md",
     "2026-05-26-feather-launches-a-selforganizing-inbox-service.md",
+    "2026-05-26-quiverai-adds-json-prompting-to-arrow-for-tighter.md",
+    "2026-05-26-github-publishes-open-source-accessibility-best-pr.md",
+    "2026-05-26-jitter-ai-adds-promptdriven-motion-effects.md",
+    "2026-05-26-ascii-magic-launches-ai-animated-landing-page.md",
+    "2026-05-26-base-launches-mcp-to-connect-ai-agents-with-onchai.md",
     "2026-05-21-zsolt-kacso-shares-a-card-hover-animation-experime.md",
+    "2026-05-21-elevenlabs-adds-an-albert-einstein-voice-agent.md",
     "2026-05-21-browserbase-launches-browsesh-an-opensource-skill.md",
     "2026-05-21-open-design-integrates-its-ai-agent-into-codex-for.md",
-    "2026-05-21-elevenlabs-adds-an-albert-einstein-voice-agent.md",
-    "2026-05-18-higgsfield-ai-demos-claudedriven-marketing-workflo.md",
-    "2026-05-18-chatly-adds-usercontrolled-knowledge-library-to-om.md",
-    "2026-05-18-shadcnui-ships-a-full-designsystem-cli.md",
     "2026-05-18-github-copilot-cli-adds-remotecontrol-for-local-se.md",
+    "2026-05-18-shadcnui-ships-a-full-designsystem-cli.md",
+    "2026-05-18-chatly-adds-usercontrolled-knowledge-library-to-om.md",
     "2026-05-18-google-cloud-ai-powers-mivis-dialectaware-earbuds.md",
     "2026-05-18-chatbase-hits-10m-arr-and-launches-a-fullstack-ai.md",
-    "2026-05-17-screencharm-adds-selectable-camera-layouts-for-rec.md",
+    "2026-05-18-higgsfield-ai-demos-claudedriven-marketing-workflo.md",
     "2026-05-17-tweet-curates-10-design-sites-for-quick-weekend-re.md",
-    "2026-05-17-opencut-clones-capcut-hits-458k-github-stars.md",
     "2026-05-17-anthropic-adds-autostack-detection-plugin-for-clau.md",
+    "2026-05-17-screencharm-adds-selectable-camera-layouts-for-rec.md",
+    "2026-05-17-opencut-clones-capcut-hits-458k-github-stars.md",
+    "2026-05-14-claude-code-weekly-limits-rise-50-for-pro-and-ente.md",
+    "2026-05-14-lovable-launches-seo-feature-with-auto-prerenderin.md",
     "2026-05-14-cline-sdk-opensourced-as-npm-package.md",
     "2026-05-14-aitoearn-offers-a-free-opensource-hootsuite-altern.md",
-    "2026-05-14-lovable-launches-seo-feature-with-auto-prerenderin.md",
-    "2026-05-14-claude-code-weekly-limits-rise-50-for-pro-and-ente.md",
     "2026-05-14-notion-releases-ntn-cli-for-terminal-api-access.md",
     "2026-05-13-scrcpy-40-adds-flexible-display-mode-for-android-m.md",
     "2026-05-13-claude-code-adds-a-goal-command-for-persistent-tas.md",
     "2026-05-12-claude-code-introduces-an-agent-view-listing-all-s.md",
-    "2026-05-07-cloudflare-agents-can-now-selfprovision-accounts-b.md",
-    "2026-05-07-claude-partners-with-spacex-to-raise-api-usage-lim.md",
     "2026-05-07-claude-managed-agents-launches-dreaming-mode-and-b.md",
-    "2026-05-05-subq-launches-a-subquadratic-llm-with-12mtoken-con.md",
+    "2026-05-07-claude-partners-with-spacex-to-raise-api-usage-lim.md",
+    "2026-05-07-cloudflare-agents-can-now-selfprovision-accounts-b.md",
     "2026-05-05-hermes-agent-gains-hyperframes-video-editing-skill.md",
-    "2026-05-05-google-launches-pomelli-catalog-for-ai-generated-b.md",
+    "2026-05-05-subq-launches-a-subquadratic-llm-with-12mtoken-con.md",
     "2026-05-05-open-design-skills-released-as-open-source-design.md",
     "2026-05-05-higgsfield-releases-cli-with-builtin-marketing-ski.md",
-    "2026-05-05-github-projects-releases-browseronly-pdf-toolkit-w.md",
     "2026-05-05-openclaude-v091-makes-codex-default-and-upgrades-t.md",
+    "2026-05-05-github-projects-releases-browseronly-pdf-toolkit-w.md",
+    "2026-05-05-google-launches-pomelli-catalog-for-ai-generated-b.md",
     "2026-05-02-claude-code-adds-builtin-skill-for-claude-platform.md",
     "2026-04-30-poseidon-opens-early-access-to-numo-for-multilingu.md",
     "2026-04-30-fal-webgl-demo-serves-submegabyte-animated-glbs-in.md",
     "2026-04-27-elevenlabs-launches-50-preconfigured-agent-templat.md",
-    "2026-04-27-hyperframes-lets-you-generate-videos-from-html-css.md",
     "2026-04-27-dot-matrix-adds-55-free-react-dotmatrix-loaders.md",
+    "2026-04-27-hyperframes-lets-you-generate-videos-from-html-css.md",
     "2026-04-26-anything-adds-aigenerated-app-store-screenshots.md",
     "2026-04-25-anthropic-pilots-clauderun-marketplace-for-office.md",
-    "2026-04-24-gemma-4-runs-offline-with-lm-studio-and-opencode.md",
     "2026-04-24-free-open-source-ai-video-clipping-tool-challenges.md",
-    "2026-04-24-deepseek-v4pro-pricing-looks-cheap-next-to-gpt55.md",
     "2026-04-24-github-copilot-now-runs-openai-gpt55.md",
+    "2026-04-24-gemma-4-runs-offline-with-lm-studio-and-opencode.md",
+    "2026-04-24-deepseek-v4pro-pricing-looks-cheap-next-to-gpt55.md",
     "2026-04-24-vs-code-ships-a-virtual-pet-extension.md",
     "2026-04-23-claude-blog-outlines-how-agents-should-use-mcp-api.md",
     "2026-04-23-nvidia-launches-free-hosted-apis-for-80-ai-models.md",
-    "2026-04-22-revolutionary-infinite-canvas-ide-nyx-unveiled.md",
+    "2026-04-22-revolutionizing-web-scraping-firecrawls-game-chang.md",
     "2026-04-22-revolutionizing-productivity-parallel-agents-unlea.md",
+    "2026-04-22-unlocking-hidden-traffic-okaras-seo-hack-for-organ.md",
+    "2026-04-22-revolutionary-infinite-canvas-ide-nyx-unveiled.md",
+    "2026-04-22-revolutionizing-visual-creation-chatgpt-images-20.md",
     "2026-04-22-revolutionizing-productivity-openai-unveils-shared.md",
     "2026-04-22-revolutionizing-code-review-claude-code-unveils-ul.md",
-    "2026-04-22-unlocking-hidden-traffic-okaras-seo-hack-for-organ.md",
-    "2026-04-22-revolutionizing-visual-creation-chatgpt-images-20.md",
-    "2026-04-22-revolutionizing-web-scraping-firecrawls-game-chang.md",
     "2026-04-17-claudedevs-unveils-dedicated-channel-for-developer.md",
+    "2026-04-15-revolutionizing-ai-powered-coding-claudes-game-cha.md",
+    "2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c.md",
     "2026-04-15-revolutionizing-app-design-ai-generated-themes-now.md",
     "2026-04-15-revolutionizing-ai-powered-workflows-google-introd.md",
-    "2026-04-15-the-future-of-coding-is-the-era-of-traditional-ide.md",
-    "2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c.md",
-    "2026-04-15-revolutionizing-ai-powered-coding-claudes-game-cha.md",
     "2026-04-15-revolutionizing-automation-claude-code-routines-ar.md",
-    "2026-04-12-revolutionizing-video-consumption-interactive-tran.md",
+    "2026-04-15-the-future-of-coding-is-the-era-of-traditional-ide.md",
     "2026-04-12-revolutionizing-ai-agents-minimax-unveils-mmx-cli.md",
+    "2026-04-12-revolutionizing-video-consumption-interactive-tran.md",
     "2026-04-10-revolutionizing-agent-interactions-claudes-monitor.md",
-    "2026-04-09-firecrawl-reaches-new-heights-revolutionizing-web.md",
     "2026-04-09-revolutionizing-security-triage-github-copilot-cli.md",
-    "2026-04-09-revolutionary-database-cloning-ardentai-changes-th.md",
     "2026-04-09-notion-unleashes-ai-powered-task-automation-with-c.md",
+    "2026-04-09-firecrawl-reaches-new-heights-revolutionizing-web.md",
+    "2026-04-09-revolutionary-database-cloning-ardentai-changes-th.md",
     "2026-04-09-revolutionizing-ai-development-claude-unveils-mana.md",
-    "2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the.md",
-    "2026-04-08-supernotes-323-revolution-unlocking-new-features-a.md",
     "2026-04-08-revolutionizing-code-productivity-autofix-pr-now-a.md",
-    "2026-04-08-revolutionizing-automation-zapier-sdk-now-open-to.md",
     "2026-04-08-revolutionizing-software-security-anthropic-unveil.md",
     "2026-04-08-revolutionizing-ai-dev-tool-onboarding-interactive.md",
-    "2026-04-06-revolutionizing-font-pairing-introducing-typevibe.md",
-    "2026-04-06-tldraw-revolution-unlocking-next-level-collaborati.md",
+    "2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the.md",
+    "2026-04-08-revolutionizing-automation-zapier-sdk-now-open-to.md",
+    "2026-04-08-supernotes-323-revolution-unlocking-new-features-a.md",
     "2026-04-06-unlocking-githubs-hidden-potential-a-personal-prod.md",
     "2026-04-06-revolutionizing-design-top-tools-for-color-and-gra.md",
+    "2026-04-06-revolutionizing-font-pairing-introducing-typevibe.md",
+    "2026-04-06-tldraw-revolution-unlocking-next-level-collaborati.md",
     "2026-03-30-revolutionizing-game-development-with-ommas-ai-pow.md",
     "2026-03-24-revolutionizing-productivity-claudes-game-changing.md",
     "2026-03-14-revolutionary-coding-claude-code-desktop-unveils-g.md",
-    "2026-03-14-rust-powered-agent-browser-revolution-lightning-fa.md",
     "2026-03-14-revolutionizing-ai-workflows-glm-5-unleashes-agent.md",
-    "2026-03-13-revolutionizing-pixel-art-a-node-based-vfx-editor.md",
+    "2026-03-14-rust-powered-agent-browser-revolution-lightning-fa.md",
     "2026-03-13-ycs-startup-school-lands-in-india-a-boost-for-loca.md",
+    "2026-03-13-revolutionizing-pixel-art-a-node-based-vfx-editor.md",
+    "2026-03-11-breakthrough-run-ai-models-entirely-in-your-browse.md",
     "2026-03-11-reviving-mockdown-ai-powered-wireframing-revolutio.md",
     "2026-03-11-jetbrains-unveils-air-a-revolutionary-ai-powered-d.md",
-    "2026-03-11-breakthrough-run-ai-models-entirely-in-your-browse.md",
     "2026-03-09-revolutionizing-code-quality-claudes-ai-powered-co.md",
-    "2026-03-06-revolutionizing-app-development-ai-powered-glaze-l.md",
     "2026-03-06-revolutionizing-agent-development-langsmith-skills.md",
     "2026-03-06-revolutionizing-web-apis-anything-api-unleashed.md",
     "2026-03-06-revolutionizing-team-collaboration-openai-unveils.md",
+    "2026-03-06-revolutionizing-app-development-ai-powered-glaze-l.md",
     "2026-03-05-apple-unleashes-ai-powered-macbook-pro-with-m5-pro.md",
     "2026-03-05-revolutionizing-affordable-computing-apple-unveils.md",
     "2026-03-05-revolutionary-voice-mode-rolls-out-in-claude-code.md",
     "2026-03-01-electron-apps-just-got-a-whole-lot-smarter-with-ag.md",
     "2026-02-26-revolutionizing-productivity-minimax-agents-game-c.md",
+    "2026-02-26-revolutionizing-image-creation-nano-banana-2-unlea.md",
     "2026-02-26-revolutionizing-video-editing-adobe-unveils-ai-pow.md",
     "2026-02-26-revolutionizing-chatbot-development-vercels-game-c.md",
-    "2026-02-26-revolutionizing-image-creation-nano-banana-2-unlea.md",
-    "2026-02-25-google-labs-unveils-major-upgrade-to-opal-revoluti.md",
     "2026-02-25-revolutionary-ai-powered-chatbot-unleashed-meet-ma.md",
-    "2026-02-25-revolutionizing-ai-capabilities-the-dawn-of-perple.md",
     "2026-02-25-revolutionizing-front-end-development-the-ai-power.md",
-    "2026-02-25-claude-code-unleashes-remote-control-a-game-change.md",
+    "2026-02-25-google-labs-unveils-major-upgrade-to-opal-revoluti.md",
+    "2026-02-25-revolutionizing-ai-capabilities-the-dawn-of-perple.md",
     "2026-02-25-revolutionizing-design-pencils-swarm-mode-takes-ai.md",
+    "2026-02-25-claude-code-unleashes-remote-control-a-game-change.md",
     "2026-02-21-revolutionizing-ai-powered-commerce-razorpay-and-n.md",
     "2026-02-21-revolutionizing-coding-claudes-game-changing-updat.md",
+    "2026-02-19-revolutionizing-ai-powered-apps-with-secure-docker.md",
+    "2026-02-19-ai-rivals-clash-openai-and-anthropic-ceos-awkward.md",
     "2026-02-19-google-unveils-glimmer-a-revolutionary-design-lang.md",
     "2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in.md",
-    "2026-02-19-ai-rivals-clash-openai-and-anthropic-ceos-awkward.md",
-    "2026-02-19-revolutionizing-ai-powered-apps-with-secure-docker.md",
     "2026-02-18-revolutionizing-startup-productivity-the-ultimate.md",
     "2026-02-18-revolutionizing-productivity-bitroots-game-changin.md",
     "2026-02-18-indias-ai-startup-funding-landscape-sees-regional.md",
-    "2026-02-17-revolutionizing-design-figma-unveils-code-to-desig.md",
-    "2026-02-17-revolutionizing-tech-stacks-hyperbrowser-unveils-b.md",
     "2026-02-17-revolutionizing-coding-ollama-unveils-subagents-an.md",
-    "2026-02-16-unlocking-the-power-of-anthropic-agents-a-game-cha.md",
+    "2026-02-17-revolutionizing-tech-stacks-hyperbrowser-unveils-b.md",
+    "2026-02-17-revolutionizing-design-figma-unveils-code-to-desig.md",
     "2026-02-16-revolutionizing-debugging-chrome-devtools-gets-mul.md",
+    "2026-02-16-unlocking-the-power-of-anthropic-agents-a-game-cha.md",
     "2026-02-16-anthropic-expands-indian-presence-with-new-bengalu.md",
     "2026-02-16-minimax-m25-revolution-unleashing-3x-faster-infere.md",
     "2026-02-15-revolutionizing-ai-powered-browsing-kimi-claw-unle.md",
-    "2026-02-15-revolutionizing-online-discussions-the-rise-of-thr.md",
     "2026-02-15-revolutionizing-voice-ai-nvidia-unveils-game-chang.md",
-    "2026-02-14-revolutionizing-ai-driven-design-introducing-the-g.md",
+    "2026-02-15-revolutionizing-online-discussions-the-rise-of-thr.md",
     "2026-02-14-revolutionizing-app-development-raydian-20-unleash.md",
+    "2026-02-14-revolutionizing-ai-driven-design-introducing-the-g.md",
     "2026-02-13-revolutionizing-cicd-introducing-buildspace-the-ai.md",
-    "2026-02-12-revolutionizing-app-store-submissions-automated-gu.md",
     "2026-02-12-revolutionizing-content-delivery-cloudflares-real.md",
     "2026-02-12-revolutionary-agent-native-computing-now-accessibl.md",
+    "2026-02-12-revolutionizing-app-store-submissions-automated-gu.md",
     "2026-02-11-ai-safety-leader-sounds-alarm-resignation-sparks-c.md",
     "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.md",
-    "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.md",
-    "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
-    "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal.md",
     "2026-02-10-revolutionizing-research-visuals-google-ais-paperb.md",
     "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
-    "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan.md",
+    "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
+    "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal.md",
     "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git.md",
+    "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan.md",
+    "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.md",
     "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.md",
     "2026-02-09-revolutionizing-ai-development-replicate-joins-for.md",
-    "2026-02-08-revolutionizing-wordpress-management-claudes-new-c.md",
     "2026-02-08-revolutionizing-coding-craft-agents-now-compatible.md",
     "2026-02-08-revolutionizing-web-app-security-meet-shannon-the.md",
+    "2026-02-08-revolutionizing-wordpress-management-claudes-new-c.md",
     "2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo.md",
-    "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
     "2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.md",
-    "2026-02-06-unlocking-collaborative-coding-introducing-claude.md",
-    "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
     "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
-    "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
+    "2026-02-06-unlocking-collaborative-coding-introducing-claude.md",
+    "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
+    "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md",
+    "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
     "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-06-12-apple-brings-ai-to-shortcuts-in-ios-27.md",
+      "slug": "2026-06-12-apple-brings-ai-to-shortcuts-in-ios-27",
+      "title": "Apple brings AI to Shortcuts in iOS 27, letting anyone automate with plain English",
+      "date": "2026-06-12",
+      "published_at": "2026-06-12T09:00:00.000000+00:00",
+      "tags": [
+        "apple",
+        "ios",
+        "automation",
+        "apple intelligence",
+        "shortcuts"
+      ],
+      "excerpt": "Apple announced an AI-powered upgrade to its Shortcuts app at WWDC 2026, letting users describe automations in plain English instead of manually chaining actions.",
+      "image": "",
+      "sources": [
+        "https://techcrunch.com/2026/06/08/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/"
+      ],
+      "shortId": 1
+    },
     {
       "filename": "2026-06-09-claude-fable-5-launches-as-a-mythosclass-model-for.md",
       "slug": "2026-06-09-claude-fable-5-launches-as-a-mythosclass-model-for",
@@ -197,7 +218,7 @@
         "https://x.com/i/status/2064394146916229443"
       ],
       "video": "media/2026-06-09-claude-fable-5-launches-as-a-mythosclass-model-for.mp4",
-      "shortId": 1
+      "shortId": 2
     },
     {
       "filename": "2026-06-04-reve-launches-4k-image-model-20-with-layoutaware-g.md",
@@ -216,63 +237,7 @@
         "https://x.com/i/status/2062260665121919101"
       ],
       "video": "media/2026-06-04-reve-launches-4k-image-model-20-with-layoutaware-g.mp4",
-      "shortId": 2
-    },
-    {
-      "filename": "2026-06-03-mumbai-tech-week-was-a-market-signal.md",
-      "slug": "2026-06-03-mumbai-tech-week-was-a-market-signal",
-      "title": "Mumbai Tech Week Wasn't an Event. It Was a Market Signal.",
-      "date": "2026-06-03",
-      "published_at": "2026-06-03T12:25:25+00:00",
-      "tags": [
-        "AI",
-        "India",
-        "Events",
-        "Markets",
-        "Mumbai Tech Week"
-      ],
-      "excerpt": "We walked into Mumbai Tech Week expecting product launches and walked out thinking about markets. When startups, enterprises, governments, investors, and the world's largest AI companies share one room, the signals underneath the keynotes matter more than the announcements on stage.",
-      "image": "https://bitroot.org/blog/media/images/mtw-photo.jpg",
-      "sources": [],
       "shortId": 3
-    },
-    {
-      "filename": "2026-06-03-paper-adds-vector-editing-tools-in-latest-update.md",
-      "slug": "2026-06-03-paper-adds-vector-editing-tools-in-latest-update",
-      "title": "Paper adds vector editing tools in latest update",
-      "date": "2026-06-03",
-      "published_at": "2026-06-03T19:00:26.317097+00:00",
-      "tags": [
-        "paper",
-        "vector editing",
-        "design tools"
-      ],
-      "excerpt": "New work for Paper's new Vector Editing!\n\nDirection: Will Taylor (@visualsbywlroo)\n\nDesign and Animation: Kendall Gathas, Chaewon Kang, Connor Roy-Shaw, Will Taylor (@visualsbywlroo)",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2062230880404336640/img/12bRzEG2wM9yokEh.jpg",
-      "sources": [
-        "https://x.com/i/status/2062231122184990871"
-      ],
-      "video": "media/2026-06-03-paper-adds-vector-editing-tools-in-latest-update.mp4",
-      "shortId": 4
-    },
-    {
-      "filename": "2026-06-03-lassie-ai-raises-47m-to-automate-doctors-offices.md",
-      "slug": "2026-06-03-lassie-ai-raises-47m-to-automate-doctors-offices",
-      "title": "Lassie AI raises $47M to automate doctors' offices",
-      "date": "2026-06-03",
-      "published_at": "2026-06-03T18:56:49.506527+00:00",
-      "tags": [
-        "ai",
-        "healthtech",
-        "startup funding"
-      ],
-      "excerpt": "Lassie, an AI platform for small medical practices, announced a $47M Series A led by a16z and claims to save each clinic about 30 hours of work each month.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2062169235103907840/img/Q8v-9n4MNaOO8ZU0.jpg",
-      "sources": [
-        "https://x.com/i/status/2062184922090246332"
-      ],
-      "video": "https://video.twimg.com/amplify_video/2062169235103907840/vid/avc1/2880x2160/KlWqLwknylYrOOOm.mp4?tag=27",
-      "shortId": 5
     },
     {
       "filename": "2026-06-03-blurr-releases-a-web-tool-with-19-filters-and-6-pi.md",
@@ -291,6 +256,43 @@
         "https://x.com/i/status/2061501427353288954"
       ],
       "video": "media/2026-06-03-blurr-releases-a-web-tool-with-19-filters-and-6-pi.mp4",
+      "shortId": 4
+    },
+    {
+      "filename": "2026-06-03-chatbase-founder-shares-a-10m-bootstrapped-playboo.md",
+      "slug": "2026-06-03-chatbase-founder-shares-a-10m-bootstrapped-playboo",
+      "title": "Chatbase founder shares a $10M bootstrapped playbook",
+      "date": "2026-06-03",
+      "published_at": "2026-06-03T18:59:17.168913+00:00",
+      "tags": [
+        "bootstrapping",
+        "saas",
+        "product"
+      ],
+      "excerpt": "EO posted a 15\u2011question interview with Chatbase founder Yasser Elsaid, outlining how he grew to $10\u202fM ARR without external capital. The thread highlights concrete tactics for early\u2011stage builders.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2060862725316886528/img/P-yNB-v1p50YGyl4.jpg",
+      "sources": [
+        "https://x.com/i/status/2060868914117214376"
+      ],
+      "video": "https://video.twimg.com/amplify_video/2060862725316886528/vid/avc1/3840x2160/2rW2yzhnce6mtxwt.mp4?tag=27",
+      "shortId": 5
+    },
+    {
+      "filename": "2026-06-03-mumbai-tech-week-was-a-market-signal.md",
+      "slug": "2026-06-03-mumbai-tech-week-was-a-market-signal",
+      "title": "Mumbai Tech Week Wasn't an Event. It Was a Market Signal.",
+      "date": "2026-06-03",
+      "published_at": "2026-06-03T12:25:25+00:00",
+      "tags": [
+        "AI",
+        "India",
+        "Events",
+        "Markets",
+        "Mumbai Tech Week"
+      ],
+      "excerpt": "We walked into Mumbai Tech Week expecting product launches and walked out thinking about markets. When startups, enterprises, governments, investors, and the world's largest AI companies share one room, the signals underneath the keynotes matter more than the announcements on stage.",
+      "image": "https://bitroot.org/blog/media/images/mtw-photo.jpg",
+      "sources": [],
       "shortId": 6
     },
     {
@@ -313,23 +315,42 @@
       "shortId": 7
     },
     {
-      "filename": "2026-06-03-chatbase-founder-shares-a-10m-bootstrapped-playboo.md",
-      "slug": "2026-06-03-chatbase-founder-shares-a-10m-bootstrapped-playboo",
-      "title": "Chatbase founder shares a $10M bootstrapped playbook",
+      "filename": "2026-06-03-lassie-ai-raises-47m-to-automate-doctors-offices.md",
+      "slug": "2026-06-03-lassie-ai-raises-47m-to-automate-doctors-offices",
+      "title": "Lassie AI raises $47M to automate doctors' offices",
       "date": "2026-06-03",
-      "published_at": "2026-06-03T18:59:17.168913+00:00",
+      "published_at": "2026-06-03T18:56:49.506527+00:00",
       "tags": [
-        "bootstrapping",
-        "saas",
-        "product"
+        "ai",
+        "healthtech",
+        "startup funding"
       ],
-      "excerpt": "EO posted a 15\u2011question interview with Chatbase founder Yasser Elsaid, outlining how he grew to $10\u202fM ARR without external capital. The thread highlights concrete tactics for early\u2011stage builders.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2060862725316886528/img/P-yNB-v1p50YGyl4.jpg",
+      "excerpt": "Lassie, an AI platform for small medical practices, announced a $47M Series A led by a16z and claims to save each clinic about 30 hours of work each month.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2062169235103907840/img/Q8v-9n4MNaOO8ZU0.jpg",
       "sources": [
-        "https://x.com/i/status/2060868914117214376"
+        "https://x.com/i/status/2062184922090246332"
       ],
-      "video": "https://video.twimg.com/amplify_video/2060862725316886528/vid/avc1/3840x2160/2rW2yzhnce6mtxwt.mp4?tag=27",
+      "video": "https://video.twimg.com/amplify_video/2062169235103907840/vid/avc1/2880x2160/KlWqLwknylYrOOOm.mp4?tag=27",
       "shortId": 8
+    },
+    {
+      "filename": "2026-06-03-paper-adds-vector-editing-tools-in-latest-update.md",
+      "slug": "2026-06-03-paper-adds-vector-editing-tools-in-latest-update",
+      "title": "Paper adds vector editing tools in latest update",
+      "date": "2026-06-03",
+      "published_at": "2026-06-03T19:00:26.317097+00:00",
+      "tags": [
+        "paper",
+        "vector editing",
+        "design tools"
+      ],
+      "excerpt": "New work for Paper's new Vector Editing!\n\nDirection: Will Taylor (@visualsbywlroo)\n\nDesign and Animation: Kendall Gathas, Chaewon Kang, Connor Roy-Shaw, Will Taylor (@visualsbywlroo)",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2062230880404336640/img/12bRzEG2wM9yokEh.jpg",
+      "sources": [
+        "https://x.com/i/status/2062231122184990871"
+      ],
+      "video": "media/2026-06-03-paper-adds-vector-editing-tools-in-latest-update.mp4",
+      "shortId": 9
     },
     {
       "filename": "2026-06-01-microsoft-announces-the-surface-laptop-ultra-for-f.md",
@@ -348,7 +369,7 @@
         "https://x.com/i/status/2061329225886453989"
       ],
       "video": "media/2026-06-01-microsoft-announces-the-surface-laptop-ultra-for-f.mp4",
-      "shortId": 9
+      "shortId": 10
     },
     {
       "filename": "2026-05-30-pika-launches-founder-starter-kit-for-claude-users.md",
@@ -367,7 +388,7 @@
         "https://x.com/i/status/2060053796001399035"
       ],
       "video": "media/2026-05-30-pika-launches-founder-starter-kit-for-claude-users.mp4",
-      "shortId": 10
+      "shortId": 11
     },
     {
       "filename": "2026-05-30-tweet-lists-22-places-founders-hang-out-online.md",
@@ -385,65 +406,7 @@
       "sources": [
         "https://x.com/i/status/2059538588300365981"
       ],
-      "shortId": 11
-    },
-    {
-      "filename": "2026-05-26-google-launches-aiventure-an-opensource-ai-dungeon.md",
-      "slug": "2026-05-26-google-launches-aiventure-an-opensource-ai-dungeon",
-      "title": "Google launches AIventure, an open\u2011source AI dungeon crawler for devs",
-      "date": "2026-05-26",
-      "published_at": "2026-05-26T19:24:58.062127+00:00",
-      "tags": [
-        "gemma",
-        "aiventure",
-        "developer tools"
-      ],
-      "excerpt": "Google's Gemma\u202f4 now powers AIventure, a free dungeon\u2011crawling demo that lets you prompt an NPC to generate a web app on the fly. It showcases agentic workflows without any license fees, but it needs decent hardware.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2059340879354298368/img/zRhZNileosZm4Jx1.jpg",
-      "sources": [
-        "https://x.com/i/status/2059343174112522532"
-      ],
-      "video": "media/2026-05-26-google-launches-aiventure-an-opensource-ai-dungeon.mp4",
       "shortId": 12
-    },
-    {
-      "filename": "2026-05-26-quiverai-adds-json-prompting-to-arrow-for-tighter.md",
-      "slug": "2026-05-26-quiverai-adds-json-prompting-to-arrow-for-tighter",
-      "title": "QuiverAI adds JSON prompting to Arrow for tighter output control",
-      "date": "2026-05-26",
-      "published_at": "2026-05-26T19:33:29.885065+00:00",
-      "tags": [
-        "json prompting",
-        "ai",
-        "arrow"
-      ],
-      "excerpt": "JSON-based prompting helps Arrow follow instructions more consistently and reduces unwanted variations.\n\nBetter control from the first generation.",
-      "image": "https://pbs.twimg.com/ext_tw_video_thumb/2059295888774737921/pu/img/r_c2nx4Nr4ZwyZvS.jpg",
-      "sources": [
-        "https://x.com/i/status/2059295909809098960"
-      ],
-      "video": "media/2026-05-26-quiverai-adds-json-prompting-to-arrow-for-tighter.mp4",
-      "shortId": 13
-    },
-    {
-      "filename": "2026-05-26-ascii-magic-launches-ai-animated-landing-page.md",
-      "slug": "2026-05-26-ascii-magic-launches-ai-animated-landing-page",
-      "title": "Ascii Magic launches AI-animated landing page",
-      "date": "2026-05-26",
-      "published_at": "2026-05-26T19:24:27.398745+00:00",
-      "tags": [
-        "ai-generated ui",
-        "landing page",
-        "paper",
-        "claude"
-      ],
-      "excerpt": "Ascii Magic landing page is live\u2728\nCheck out http://ascii-magic.com/landing\n\nBuilt end-to-end with Paper + Claude.\nAnimated completely using AI (more on this soon)",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2059299925100539904/img/uDOQQLLXtmrb9Yfz.jpg",
-      "sources": [
-        "https://x.com/i/status/2059300319331565930"
-      ],
-      "video": "media/2026-05-26-ascii-magic-launches-ai-animated-landing-page.mp4",
-      "shortId": 14
     },
     {
       "filename": "2026-05-26-resend-adds-mcp-and-claude-skills-to-claude-market.md",
@@ -462,45 +425,7 @@
         "https://x.com/i/status/2059275268276224331"
       ],
       "video": "media/2026-05-26-resend-adds-mcp-and-claude-skills-to-claude-market.mp4",
-      "shortId": 15
-    },
-    {
-      "filename": "2026-05-26-base-launches-mcp-to-connect-ai-agents-with-onchai.md",
-      "slug": "2026-05-26-base-launches-mcp-to-connect-ai-agents-with-onchai",
-      "title": "Base launches MCP to connect AI agents with on\u2011chain trading",
-      "date": "2026-05-26",
-      "published_at": "2026-05-26T19:31:24.396110+00:00",
-      "tags": [
-        "base",
-        "agent",
-        "onchain"
-      ],
-      "excerpt": "Base introduced MCP, a gateway that lets AI agents link to a Base account, trade assets, and call plugins from other apps. Early adopters should weigh the convenience against the nascent security model.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2059305823117975552/img/wWyQQ--0lsuZI3T7.jpg",
-      "sources": [
-        "https://x.com/i/status/2059305907385704529"
-      ],
-      "video": "media/2026-05-26-base-launches-mcp-to-connect-ai-agents-with-onchai.mp4",
-      "shortId": 16
-    },
-    {
-      "filename": "2026-05-26-jitter-ai-adds-promptdriven-motion-effects.md",
-      "slug": "2026-05-26-jitter-ai-adds-promptdriven-motion-effects",
-      "title": "Jitter AI adds prompt\u2011driven motion effects",
-      "date": "2026-05-26",
-      "published_at": "2026-05-26T19:21:50.806991+00:00",
-      "tags": [
-        "ai animation",
-        "video tools",
-        "prompt engineering"
-      ],
-      "excerpt": "Jitter\u2019s new AI lets you describe a motion effect in plain text and get a ready\u2011to\u2011tweak animation in seconds. The feature is live, but pricing and accuracy remain to be seen.",
-      "image": "https://pbs.twimg.com/tweet_video_thumb/HJQFxSfXUAAbSah.jpg",
-      "sources": [
-        "https://x.com/i/status/2059277428971688065"
-      ],
-      "video": "media/2026-05-26-jitter-ai-adds-promptdriven-motion-effects.mp4",
-      "shortId": 17
+      "shortId": 13
     },
     {
       "filename": "2026-05-26-veed-launches-subtitles-api-with-free-credits-for.md",
@@ -520,25 +445,26 @@
         "https://x.com/i/status/2059269493382434992"
       ],
       "video": "media/2026-05-26-veed-launches-subtitles-api-with-free-credits-for.mp4",
-      "shortId": 18
+      "shortId": 14
     },
     {
-      "filename": "2026-05-26-github-publishes-open-source-accessibility-best-pr.md",
-      "slug": "2026-05-26-github-publishes-open-source-accessibility-best-pr",
-      "title": "GitHub publishes open-source accessibility best-practice guide",
+      "filename": "2026-05-26-google-launches-aiventure-an-opensource-ai-dungeon.md",
+      "slug": "2026-05-26-google-launches-aiventure-an-opensource-ai-dungeon",
+      "title": "Google launches AIventure, an open\u2011source AI dungeon crawler for devs",
       "date": "2026-05-26",
-      "published_at": "2026-05-26T19:32:12.498529+00:00",
+      "published_at": "2026-05-26T19:24:58.062127+00:00",
       "tags": [
-        "accessibility",
-        "open source",
-        "guidelines"
+        "gemma",
+        "aiventure",
+        "developer tools"
       ],
-      "excerpt": "GitHub has released a free guide on accessibility best practices for open\u2011source projects. Shipping engineers can use it to improve inclusivity without added cost.",
-      "image": null,
+      "excerpt": "Google's Gemma\u202f4 now powers AIventure, a free dungeon\u2011crawling demo that lets you prompt an NPC to generate a web app on the fly. It showcases agentic workflows without any license fees, but it needs decent hardware.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2059340879354298368/img/zRhZNileosZm4Jx1.jpg",
       "sources": [
-        "https://x.com/i/status/2059080832363425950"
+        "https://x.com/i/status/2059343174112522532"
       ],
-      "shortId": 19
+      "video": "media/2026-05-26-google-launches-aiventure-an-opensource-ai-dungeon.mp4",
+      "shortId": 15
     },
     {
       "filename": "2026-05-26-feather-launches-a-selforganizing-inbox-service.md",
@@ -557,7 +483,102 @@
         "https://x.com/i/status/2058335516429635732"
       ],
       "video": "media/2026-05-26-feather-launches-a-selforganizing-inbox-service.mp4",
+      "shortId": 16
+    },
+    {
+      "filename": "2026-05-26-quiverai-adds-json-prompting-to-arrow-for-tighter.md",
+      "slug": "2026-05-26-quiverai-adds-json-prompting-to-arrow-for-tighter",
+      "title": "QuiverAI adds JSON prompting to Arrow for tighter output control",
+      "date": "2026-05-26",
+      "published_at": "2026-05-26T19:33:29.885065+00:00",
+      "tags": [
+        "json prompting",
+        "ai",
+        "arrow"
+      ],
+      "excerpt": "JSON-based prompting helps Arrow follow instructions more consistently and reduces unwanted variations.\n\nBetter control from the first generation.",
+      "image": "https://pbs.twimg.com/ext_tw_video_thumb/2059295888774737921/pu/img/r_c2nx4Nr4ZwyZvS.jpg",
+      "sources": [
+        "https://x.com/i/status/2059295909809098960"
+      ],
+      "video": "media/2026-05-26-quiverai-adds-json-prompting-to-arrow-for-tighter.mp4",
+      "shortId": 17
+    },
+    {
+      "filename": "2026-05-26-github-publishes-open-source-accessibility-best-pr.md",
+      "slug": "2026-05-26-github-publishes-open-source-accessibility-best-pr",
+      "title": "GitHub publishes open-source accessibility best-practice guide",
+      "date": "2026-05-26",
+      "published_at": "2026-05-26T19:32:12.498529+00:00",
+      "tags": [
+        "accessibility",
+        "open source",
+        "guidelines"
+      ],
+      "excerpt": "GitHub has released a free guide on accessibility best practices for open\u2011source projects. Shipping engineers can use it to improve inclusivity without added cost.",
+      "image": null,
+      "sources": [
+        "https://x.com/i/status/2059080832363425950"
+      ],
+      "shortId": 18
+    },
+    {
+      "filename": "2026-05-26-jitter-ai-adds-promptdriven-motion-effects.md",
+      "slug": "2026-05-26-jitter-ai-adds-promptdriven-motion-effects",
+      "title": "Jitter AI adds prompt\u2011driven motion effects",
+      "date": "2026-05-26",
+      "published_at": "2026-05-26T19:21:50.806991+00:00",
+      "tags": [
+        "ai animation",
+        "video tools",
+        "prompt engineering"
+      ],
+      "excerpt": "Jitter\u2019s new AI lets you describe a motion effect in plain text and get a ready\u2011to\u2011tweak animation in seconds. The feature is live, but pricing and accuracy remain to be seen.",
+      "image": "https://pbs.twimg.com/tweet_video_thumb/HJQFxSfXUAAbSah.jpg",
+      "sources": [
+        "https://x.com/i/status/2059277428971688065"
+      ],
+      "video": "media/2026-05-26-jitter-ai-adds-promptdriven-motion-effects.mp4",
+      "shortId": 19
+    },
+    {
+      "filename": "2026-05-26-ascii-magic-launches-ai-animated-landing-page.md",
+      "slug": "2026-05-26-ascii-magic-launches-ai-animated-landing-page",
+      "title": "Ascii Magic launches AI-animated landing page",
+      "date": "2026-05-26",
+      "published_at": "2026-05-26T19:24:27.398745+00:00",
+      "tags": [
+        "ai-generated ui",
+        "landing page",
+        "paper",
+        "claude"
+      ],
+      "excerpt": "Ascii Magic landing page is live\u2728\nCheck out http://ascii-magic.com/landing\n\nBuilt end-to-end with Paper + Claude.\nAnimated completely using AI (more on this soon)",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2059299925100539904/img/uDOQQLLXtmrb9Yfz.jpg",
+      "sources": [
+        "https://x.com/i/status/2059300319331565930"
+      ],
+      "video": "media/2026-05-26-ascii-magic-launches-ai-animated-landing-page.mp4",
       "shortId": 20
+    },
+    {
+      "filename": "2026-05-26-base-launches-mcp-to-connect-ai-agents-with-onchai.md",
+      "slug": "2026-05-26-base-launches-mcp-to-connect-ai-agents-with-onchai",
+      "title": "Base launches MCP to connect AI agents with on\u2011chain trading",
+      "date": "2026-05-26",
+      "published_at": "2026-05-26T19:31:24.396110+00:00",
+      "tags": [
+        "base",
+        "agent",
+        "onchain"
+      ],
+      "excerpt": "Base introduced MCP, a gateway that lets AI agents link to a Base account, trade assets, and call plugins from other apps. Early adopters should weigh the convenience against the nascent security model.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2059305823117975552/img/wWyQQ--0lsuZI3T7.jpg",
+      "sources": [
+        "https://x.com/i/status/2059305907385704529"
+      ],
+      "video": "media/2026-05-26-base-launches-mcp-to-connect-ai-agents-with-onchai.mp4",
+      "shortId": 21
     },
     {
       "filename": "2026-05-21-zsolt-kacso-shares-a-card-hover-animation-experime.md",
@@ -576,45 +597,7 @@
         "https://x.com/i/status/2056713047301902478"
       ],
       "video": "media/2026-05-21-zsolt-kacso-shares-a-card-hover-animation-experime.mp4",
-      "shortId": 21
-    },
-    {
-      "filename": "2026-05-21-browserbase-launches-browsesh-an-opensource-skill.md",
-      "slug": "2026-05-21-browserbase-launches-browsesh-an-opensource-skill",
-      "title": "Browserbase launches Browse.sh, an open\u2011source skill catalog for web agents",
-      "date": "2026-05-21",
-      "published_at": "2026-05-21T12:57:32.870325+00:00",
-      "tags": [
-        "browser automation",
-        "open-source",
-        "web agents"
-      ],
-      "excerpt": "Browserbase released Browse.sh, a free catalog of hundreds of site\u2011specific navigation skills for agents. It aims to give bots a reliable playbook for common web tasks.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2056401090552410112/img/ArrdUEpSr-F8jB1U.jpg",
-      "sources": [
-        "https://x.com/i/status/2056404332824944970"
-      ],
-      "video": "media/2026-05-21-browserbase-launches-browsesh-an-opensource-skill.mp4",
       "shortId": 22
-    },
-    {
-      "filename": "2026-05-21-open-design-integrates-its-ai-agent-into-codex-for.md",
-      "slug": "2026-05-21-open-design-integrates-its-ai-agent-into-codex-for",
-      "title": "Open Design integrates its AI agent into Codex for live canvas editing",
-      "date": "2026-05-21",
-      "published_at": "2026-05-21T12:57:09.944480+00:00",
-      "tags": [
-        "design tools",
-        "ai",
-        "codex"
-      ],
-      "excerpt": "Open Design now runs inside Codex, letting its AI agent manipulate the design canvas directly. Engineers should weigh the workflow boost against the lack of pricing details and early\u2011stage tooling.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2056306525631565824/img/lWL73U_ghzJB8XUH.jpg",
-      "sources": [
-        "https://x.com/i/status/2056309544997818507"
-      ],
-      "video": "media/2026-05-21-open-design-integrates-its-ai-agent-into-codex-for.mp4",
-      "shortId": 23
     },
     {
       "filename": "2026-05-21-elevenlabs-adds-an-albert-einstein-voice-agent.md",
@@ -633,44 +616,63 @@
         "https://x.com/i/status/2056724239797944618"
       ],
       "video": "https://video.twimg.com/amplify_video/2056723617455501312/vid/avc1/3840x2160/fnVQc2cYqUs-qPbZ.mp4?tag=27",
+      "shortId": 23
+    },
+    {
+      "filename": "2026-05-21-browserbase-launches-browsesh-an-opensource-skill.md",
+      "slug": "2026-05-21-browserbase-launches-browsesh-an-opensource-skill",
+      "title": "Browserbase launches Browse.sh, an open\u2011source skill catalog for web agents",
+      "date": "2026-05-21",
+      "published_at": "2026-05-21T12:57:32.870325+00:00",
+      "tags": [
+        "browser automation",
+        "open-source",
+        "web agents"
+      ],
+      "excerpt": "Browserbase released Browse.sh, a free catalog of hundreds of site\u2011specific navigation skills for agents. It aims to give bots a reliable playbook for common web tasks.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2056401090552410112/img/ArrdUEpSr-F8jB1U.jpg",
+      "sources": [
+        "https://x.com/i/status/2056404332824944970"
+      ],
+      "video": "media/2026-05-21-browserbase-launches-browsesh-an-opensource-skill.mp4",
       "shortId": 24
     },
     {
-      "filename": "2026-05-18-higgsfield-ai-demos-claudedriven-marketing-workflo.md",
-      "slug": "2026-05-18-higgsfield-ai-demos-claudedriven-marketing-workflo",
-      "title": "Higgsfield AI demos Claude\u2011driven marketing workflow in 18\u2011minute video",
-      "date": "2026-05-18",
-      "published_at": "2026-05-18T18:29:11.811570+00:00",
+      "filename": "2026-05-21-open-design-integrates-its-ai-agent-into-codex-for.md",
+      "slug": "2026-05-21-open-design-integrates-its-ai-agent-into-codex-for",
+      "title": "Open Design integrates its AI agent into Codex for live canvas editing",
+      "date": "2026-05-21",
+      "published_at": "2026-05-21T12:57:09.944480+00:00",
       "tags": [
-        "marketing automation",
-        "llm integration",
-        "ai tools"
+        "design tools",
+        "ai",
+        "codex"
       ],
-      "excerpt": "Higgsfield AI released an 18\u2011minute walkthrough that stitches Claude\u2019s LLM with its MCP platform, showing a laptop\u2011based agency pipeline from research to ad spend approval.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2056404580619919361/img/PeGD0qy1MUWs-i8m.jpg",
+      "excerpt": "Open Design now runs inside Codex, letting its AI agent manipulate the design canvas directly. Engineers should weigh the workflow boost against the lack of pricing details and early\u2011stage tooling.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2056306525631565824/img/lWL73U_ghzJB8XUH.jpg",
       "sources": [
-        "https://x.com/i/status/2056411641592287435"
+        "https://x.com/i/status/2056309544997818507"
       ],
-      "video": "https://video.twimg.com/amplify_video/2056404580619919361/vid/avc1/1920x1080/wT7FGshDUzNLLoiU.mp4?tag=27",
+      "video": "media/2026-05-21-open-design-integrates-its-ai-agent-into-codex-for.mp4",
       "shortId": 25
     },
     {
-      "filename": "2026-05-18-chatly-adds-usercontrolled-knowledge-library-to-om.md",
-      "slug": "2026-05-18-chatly-adds-usercontrolled-knowledge-library-to-om",
-      "title": "Chatly adds user\u2011controlled knowledge library to OmniAgent",
+      "filename": "2026-05-18-github-copilot-cli-adds-remotecontrol-for-local-se.md",
+      "slug": "2026-05-18-github-copilot-cli-adds-remotecontrol-for-local-se",
+      "title": "GitHub Copilot CLI adds remote\u2011control for local sessions",
       "date": "2026-05-18",
-      "published_at": "2026-05-18T18:36:54.800233+00:00",
+      "published_at": "2026-05-18T18:31:40.213687+00:00",
       "tags": [
-        "ai workspace",
-        "knowledge management",
-        "prompt engineering"
+        "github",
+        "copilot",
+        "cli"
       ],
-      "excerpt": "Chatly\u2019s new Sources library lets teams upload files and references that OmniAgent uses as the primary context for every answer, cutting down on copy\u2011paste. The feature is free to try but may carry hidden costs and privacy considerations.",
-      "image": "https://pbs.twimg.com/ext_tw_video_thumb/2056408379233329152/pu/img/vnqzDQtVaEscS51I.jpg",
+      "excerpt": "GitHub\u2019s Copilot CLI now supports Remote Control, letting developers start a session on one machine and pick it up on another. The feature is generally available and works with both CLI and VS\u202fCode sessions.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2056417858440105986/img/1h9mW1uxJ_qB6HOx.jpg",
       "sources": [
-        "https://x.com/i/status/2056408432677142920"
+        "https://x.com/i/status/2056420570745450864"
       ],
-      "video": "media/2026-05-18-chatly-adds-usercontrolled-knowledge-library-to-om.mp4",
+      "video": "media/2026-05-18-github-copilot-cli-adds-remotecontrol-for-local-se.mp4",
       "shortId": 26
     },
     {
@@ -693,22 +695,22 @@
       "shortId": 27
     },
     {
-      "filename": "2026-05-18-github-copilot-cli-adds-remotecontrol-for-local-se.md",
-      "slug": "2026-05-18-github-copilot-cli-adds-remotecontrol-for-local-se",
-      "title": "GitHub Copilot CLI adds remote\u2011control for local sessions",
+      "filename": "2026-05-18-chatly-adds-usercontrolled-knowledge-library-to-om.md",
+      "slug": "2026-05-18-chatly-adds-usercontrolled-knowledge-library-to-om",
+      "title": "Chatly adds user\u2011controlled knowledge library to OmniAgent",
       "date": "2026-05-18",
-      "published_at": "2026-05-18T18:31:40.213687+00:00",
+      "published_at": "2026-05-18T18:36:54.800233+00:00",
       "tags": [
-        "github",
-        "copilot",
-        "cli"
+        "ai workspace",
+        "knowledge management",
+        "prompt engineering"
       ],
-      "excerpt": "GitHub\u2019s Copilot CLI now supports Remote Control, letting developers start a session on one machine and pick it up on another. The feature is generally available and works with both CLI and VS\u202fCode sessions.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2056417858440105986/img/1h9mW1uxJ_qB6HOx.jpg",
+      "excerpt": "Chatly\u2019s new Sources library lets teams upload files and references that OmniAgent uses as the primary context for every answer, cutting down on copy\u2011paste. The feature is free to try but may carry hidden costs and privacy considerations.",
+      "image": "https://pbs.twimg.com/ext_tw_video_thumb/2056408379233329152/pu/img/vnqzDQtVaEscS51I.jpg",
       "sources": [
-        "https://x.com/i/status/2056420570745450864"
+        "https://x.com/i/status/2056408432677142920"
       ],
-      "video": "media/2026-05-18-github-copilot-cli-adds-remotecontrol-for-local-se.mp4",
+      "video": "media/2026-05-18-chatly-adds-usercontrolled-knowledge-library-to-om.mp4",
       "shortId": 28
     },
     {
@@ -763,22 +765,22 @@
       "shortId": 30
     },
     {
-      "filename": "2026-05-17-screencharm-adds-selectable-camera-layouts-for-rec.md",
-      "slug": "2026-05-17-screencharm-adds-selectable-camera-layouts-for-rec",
-      "title": "ScreenCharm adds selectable camera layouts for recordings",
-      "date": "2026-05-17",
-      "published_at": "2026-05-17T18:51:29.513364+00:00",
+      "filename": "2026-05-18-higgsfield-ai-demos-claudedriven-marketing-workflo.md",
+      "slug": "2026-05-18-higgsfield-ai-demos-claudedriven-marketing-workflo",
+      "title": "Higgsfield AI demos Claude\u2011driven marketing workflow in 18\u2011minute video",
+      "date": "2026-05-18",
+      "published_at": "2026-05-18T18:29:11.811570+00:00",
       "tags": [
-        "screen recording",
-        "camera layout",
-        "product update"
+        "marketing automation",
+        "llm integration",
+        "ai tools"
       ],
-      "excerpt": "ScreenCharm now lets you dock the recording camera on any screen edge, but the zoom effect is disabled for non\u2011default layouts.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2056030716408766464/img/8MjLVFq74Rj0yCn8.jpg",
+      "excerpt": "Higgsfield AI released an 18\u2011minute walkthrough that stitches Claude\u2019s LLM with its MCP platform, showing a laptop\u2011based agency pipeline from research to ad spend approval.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2056404580619919361/img/PeGD0qy1MUWs-i8m.jpg",
       "sources": [
-        "https://x.com/i/status/2056033761632891361"
+        "https://x.com/i/status/2056411641592287435"
       ],
-      "video": "media/2026-05-17-screencharm-adds-selectable-camera-layouts-for-rec.mp4",
+      "video": "https://video.twimg.com/amplify_video/2056404580619919361/vid/avc1/1920x1080/wT7FGshDUzNLLoiU.mp4?tag=27",
       "shortId": 31
     },
     {
@@ -801,25 +803,6 @@
       "shortId": 32
     },
     {
-      "filename": "2026-05-17-opencut-clones-capcut-hits-458k-github-stars.md",
-      "slug": "2026-05-17-opencut-clones-capcut-hits-458k-github-stars",
-      "title": "OpenCut clones CapCut, hits 45.8k GitHub stars",
-      "date": "2026-05-17",
-      "published_at": "2026-05-17T18:50:42.414167+00:00",
-      "tags": [
-        "open-source",
-        "video editing",
-        "github"
-      ],
-      "excerpt": "A community\u2011built, MIT\u2011licensed video editor called OpenCut matches CapCut\u2019s core features without watermarks or subscriptions, and its code now has over 45\u202fk stars on GitHub.",
-      "image": "https://pbs.twimg.com/ext_tw_video_thumb/2055166433445736448/pu/img/igRSCtE4TX-1oyB-.jpg",
-      "sources": [
-        "https://x.com/i/status/2055957914561732946"
-      ],
-      "video": "media/2026-05-17-opencut-clones-capcut-hits-458k-github-stars.mp4",
-      "shortId": 33
-    },
-    {
       "filename": "2026-05-17-anthropic-adds-autostack-detection-plugin-for-clau.md",
       "slug": "2026-05-17-anthropic-adds-autostack-detection-plugin-for-clau",
       "title": "Anthropic adds auto\u2011stack detection plugin for Claude Code",
@@ -836,42 +819,61 @@
         "https://x.com/i/status/2055830602683998718"
       ],
       "video": "media/2026-05-17-anthropic-adds-autostack-detection-plugin-for-clau.mp4",
+      "shortId": 33
+    },
+    {
+      "filename": "2026-05-17-screencharm-adds-selectable-camera-layouts-for-rec.md",
+      "slug": "2026-05-17-screencharm-adds-selectable-camera-layouts-for-rec",
+      "title": "ScreenCharm adds selectable camera layouts for recordings",
+      "date": "2026-05-17",
+      "published_at": "2026-05-17T18:51:29.513364+00:00",
+      "tags": [
+        "screen recording",
+        "camera layout",
+        "product update"
+      ],
+      "excerpt": "ScreenCharm now lets you dock the recording camera on any screen edge, but the zoom effect is disabled for non\u2011default layouts.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2056030716408766464/img/8MjLVFq74Rj0yCn8.jpg",
+      "sources": [
+        "https://x.com/i/status/2056033761632891361"
+      ],
+      "video": "media/2026-05-17-screencharm-adds-selectable-camera-layouts-for-rec.mp4",
       "shortId": 34
     },
     {
-      "filename": "2026-05-14-cline-sdk-opensourced-as-npm-package.md",
-      "slug": "2026-05-14-cline-sdk-opensourced-as-npm-package",
-      "title": "Cline SDK open\u2011sourced as npm package",
-      "date": "2026-05-14",
-      "published_at": "2026-05-14T02:18:29.845337+00:00",
+      "filename": "2026-05-17-opencut-clones-capcut-hits-458k-github-stars.md",
+      "slug": "2026-05-17-opencut-clones-capcut-hits-458k-github-stars",
+      "title": "OpenCut clones CapCut, hits 45.8k GitHub stars",
+      "date": "2026-05-17",
+      "published_at": "2026-05-17T18:50:42.414167+00:00",
       "tags": [
-        "sdk",
-        "cli",
-        "opensource"
+        "open-source",
+        "video editing",
+        "github"
       ],
-      "excerpt": "Cline has released its SDK on npm, letting developers embed the same extension harness used in its coding agent. The package can be added with a single install command.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2054578938681405440/img/FXgnGDc0yIeZrbxm.jpg",
+      "excerpt": "A community\u2011built, MIT\u2011licensed video editor called OpenCut matches CapCut\u2019s core features without watermarks or subscriptions, and its code now has over 45\u202fk stars on GitHub.",
+      "image": "https://pbs.twimg.com/ext_tw_video_thumb/2055166433445736448/pu/img/igRSCtE4TX-1oyB-.jpg",
       "sources": [
-        "https://x.com/i/status/2054580767779700775"
+        "https://x.com/i/status/2055957914561732946"
       ],
-      "video": "media/2026-05-14-cline-sdk-opensourced-as-npm-package.mp4",
+      "video": "media/2026-05-17-opencut-clones-capcut-hits-458k-github-stars.mp4",
       "shortId": 35
     },
     {
-      "filename": "2026-05-14-aitoearn-offers-a-free-opensource-hootsuite-altern.md",
-      "slug": "2026-05-14-aitoearn-offers-a-free-opensource-hootsuite-altern",
-      "title": "AiToEarn offers a free open\u2011source Hootsuite alternative",
+      "filename": "2026-05-14-claude-code-weekly-limits-rise-50-for-pro-and-ente.md",
+      "slug": "2026-05-14-claude-code-weekly-limits-rise-50-for-pro-and-ente",
+      "title": "Claude Code weekly limits rise 50% for Pro and Enterprise users",
       "date": "2026-05-14",
-      "published_at": "2026-05-14T02:03:37.830217+00:00",
+      "published_at": "2026-05-14T02:00:25.873763+00:00",
       "tags": [
-        "ai",
-        "social media",
-        "open source"
+        "anthropic",
+        "claude code",
+        "usage limits"
       ],
-      "excerpt": "AiToEarn is a full\u2011AI content\u2011marketing agent that can publish to 14 platforms with one Docker command, challenging paid SaaS tools at no cost.",
-      "image": "https://pbs.twimg.com/media/HIMp7dObsAAMtw5.jpg?name=orig",
+      "excerpt": "Claude Code weekly limits are increasing 50%, now through July 13.\n\nLive now for all Pro, Max, Team, and seat-based Enterprise users.",
+      "image": "https://pbs.twimg.com/media/HIOLKb7bsAAXtoD.jpg?name=orig",
       "sources": [
-        "https://x.com/i/status/2054531959528079430"
+        "https://x.com/i/status/2054639777685934564"
       ],
       "shortId": 36
     },
@@ -895,22 +897,41 @@
       "shortId": 37
     },
     {
-      "filename": "2026-05-14-claude-code-weekly-limits-rise-50-for-pro-and-ente.md",
-      "slug": "2026-05-14-claude-code-weekly-limits-rise-50-for-pro-and-ente",
-      "title": "Claude Code weekly limits rise 50% for Pro and Enterprise users",
+      "filename": "2026-05-14-cline-sdk-opensourced-as-npm-package.md",
+      "slug": "2026-05-14-cline-sdk-opensourced-as-npm-package",
+      "title": "Cline SDK open\u2011sourced as npm package",
       "date": "2026-05-14",
-      "published_at": "2026-05-14T02:00:25.873763+00:00",
+      "published_at": "2026-05-14T02:18:29.845337+00:00",
       "tags": [
-        "anthropic",
-        "claude code",
-        "usage limits"
+        "sdk",
+        "cli",
+        "opensource"
       ],
-      "excerpt": "Claude Code weekly limits are increasing 50%, now through July 13.\n\nLive now for all Pro, Max, Team, and seat-based Enterprise users.",
-      "image": "https://pbs.twimg.com/media/HIOLKb7bsAAXtoD.jpg?name=orig",
+      "excerpt": "Cline has released its SDK on npm, letting developers embed the same extension harness used in its coding agent. The package can be added with a single install command.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2054578938681405440/img/FXgnGDc0yIeZrbxm.jpg",
       "sources": [
-        "https://x.com/i/status/2054639777685934564"
+        "https://x.com/i/status/2054580767779700775"
       ],
+      "video": "media/2026-05-14-cline-sdk-opensourced-as-npm-package.mp4",
       "shortId": 38
+    },
+    {
+      "filename": "2026-05-14-aitoearn-offers-a-free-opensource-hootsuite-altern.md",
+      "slug": "2026-05-14-aitoearn-offers-a-free-opensource-hootsuite-altern",
+      "title": "AiToEarn offers a free open\u2011source Hootsuite alternative",
+      "date": "2026-05-14",
+      "published_at": "2026-05-14T02:03:37.830217+00:00",
+      "tags": [
+        "ai",
+        "social media",
+        "open source"
+      ],
+      "excerpt": "AiToEarn is a full\u2011AI content\u2011marketing agent that can publish to 14 platforms with one Docker command, challenging paid SaaS tools at no cost.",
+      "image": "https://pbs.twimg.com/media/HIMp7dObsAAMtw5.jpg?name=orig",
+      "sources": [
+        "https://x.com/i/status/2054531959528079430"
+      ],
+      "shortId": 39
     },
     {
       "filename": "2026-05-14-notion-releases-ntn-cli-for-terminal-api-access.md",
@@ -929,7 +950,7 @@
         "https://x.com/i/status/2054594852818764178"
       ],
       "video": "media/2026-05-14-notion-releases-ntn-cli-for-terminal-api-access.mp4",
-      "shortId": 39
+      "shortId": 40
     },
     {
       "filename": "2026-05-13-scrcpy-40-adds-flexible-display-mode-for-android-m.md",
@@ -948,7 +969,7 @@
         "https://x.com/i/status/2054463213022929032"
       ],
       "video": "media/2026-05-13-scrcpy-40-adds-flexible-display-mode-for-android-m.mp4",
-      "shortId": 40
+      "shortId": 41
     },
     {
       "filename": "2026-05-13-claude-code-adds-a-goal-command-for-persistent-tas.md",
@@ -967,7 +988,7 @@
         "https://x.com/i/status/2054351031279186040"
       ],
       "video": "media/2026-05-13-claude-code-adds-a-goal-command-for-persistent-tas.mp4",
-      "shortId": 41
+      "shortId": 42
     },
     {
       "filename": "2026-05-12-claude-code-introduces-an-agent-view-listing-all-s.md",
@@ -986,45 +1007,7 @@
         "https://x.com/i/status/2053940934736228454"
       ],
       "video": "media/2026-05-12-claude-code-introduces-an-agent-view-listing-all-s.mp4",
-      "shortId": 42
-    },
-    {
-      "filename": "2026-05-07-cloudflare-agents-can-now-selfprovision-accounts-b.md",
-      "slug": "2026-05-07-cloudflare-agents-can-now-selfprovision-accounts-b",
-      "title": "Cloudflare agents can now self\u2011provision accounts, buy domains, and deploy",
-      "date": "2026-05-07",
-      "published_at": "2026-05-07T02:15:05.761261+00:00",
-      "tags": [
-        "cloudflare",
-        "agents",
-        "deployment"
-      ],
-      "excerpt": "\"Agents can now create Cloudflare accounts, buy domains, and deploy\"\n\nHere's how it works in 4 minutes.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2052028417172779010/img/pYzqMHSTjTGDWXeE.jpg",
-      "sources": [
-        "https://x.com/i/status/2052029139775787314"
-      ],
-      "video": "https://video.twimg.com/amplify_video/2052028417172779010/vid/avc1/1920x1080/ljwW-gGVn2gF_Qoj.mp4?tag=27",
       "shortId": 43
-    },
-    {
-      "filename": "2026-05-07-claude-partners-with-spacex-to-raise-api-usage-lim.md",
-      "slug": "2026-05-07-claude-partners-with-spacex-to-raise-api-usage-lim",
-      "title": "Claude partners with SpaceX to raise API usage limits",
-      "date": "2026-05-07",
-      "published_at": "2026-05-07T01:38:59.047262+00:00",
-      "tags": [
-        "anthropic",
-        "ai",
-        "api",
-        "compute"
-      ],
-      "excerpt": "Claude announced a partnership with SpaceX that expands its compute pool, allowing higher usage caps for Claude Code and the Claude API. Engineers can now run larger prompts without hitting current limits, but pricing stays token\u2011based.",
-      "image": null,
-      "sources": [
-        "https://x.com/i/status/2052060691893227611"
-      ],
-      "shortId": 44
     },
     {
       "filename": "2026-05-07-claude-managed-agents-launches-dreaming-mode-and-b.md",
@@ -1043,26 +1026,44 @@
         "https://x.com/i/status/2052067399088664981"
       ],
       "video": "media/2026-05-07-claude-managed-agents-launches-dreaming-mode-and-b.mp4",
+      "shortId": 44
+    },
+    {
+      "filename": "2026-05-07-claude-partners-with-spacex-to-raise-api-usage-lim.md",
+      "slug": "2026-05-07-claude-partners-with-spacex-to-raise-api-usage-lim",
+      "title": "Claude partners with SpaceX to raise API usage limits",
+      "date": "2026-05-07",
+      "published_at": "2026-05-07T01:38:59.047262+00:00",
+      "tags": [
+        "anthropic",
+        "ai",
+        "api",
+        "compute"
+      ],
+      "excerpt": "Claude announced a partnership with SpaceX that expands its compute pool, allowing higher usage caps for Claude Code and the Claude API. Engineers can now run larger prompts without hitting current limits, but pricing stays token\u2011based.",
+      "image": null,
+      "sources": [
+        "https://x.com/i/status/2052060691893227611"
+      ],
       "shortId": 45
     },
     {
-      "filename": "2026-05-05-subq-launches-a-subquadratic-llm-with-12mtoken-con.md",
-      "slug": "2026-05-05-subq-launches-a-subquadratic-llm-with-12mtoken-con",
-      "title": "SubQ launches a sub\u2011quadratic LLM with 12M\u2011token context",
-      "date": "2026-05-05",
-      "published_at": "2026-05-05T18:17:11.580017+00:00",
+      "filename": "2026-05-07-cloudflare-agents-can-now-selfprovision-accounts-b.md",
+      "slug": "2026-05-07-cloudflare-agents-can-now-selfprovision-accounts-b",
+      "title": "Cloudflare agents can now self\u2011provision accounts, buy domains, and deploy",
+      "date": "2026-05-07",
+      "published_at": "2026-05-07T02:15:05.761261+00:00",
       "tags": [
-        "llm",
-        "sparse attention",
-        "performance",
-        "cost"
+        "cloudflare",
+        "agents",
+        "deployment"
       ],
-      "excerpt": "SubQ\u2019s new model uses a sub\u2011quadratic sparse\u2011attention design to handle 12\u202fmillion\u2011token contexts, delivering speed and cost advantages over existing attention engines.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2051654813717573632/img/aGtVgqlCkr4yOfHF.jpg",
+      "excerpt": "\"Agents can now create Cloudflare accounts, buy domains, and deploy\"\n\nHere's how it works in 4 minutes.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2052028417172779010/img/pYzqMHSTjTGDWXeE.jpg",
       "sources": [
-        "https://x.com/i/status/2051663268704636937"
+        "https://x.com/i/status/2052029139775787314"
       ],
-      "video": "media/2026-05-05-subq-launches-a-subquadratic-llm-with-12mtoken-con.mp4",
+      "video": "https://video.twimg.com/amplify_video/2052028417172779010/vid/avc1/1920x1080/ljwW-gGVn2gF_Qoj.mp4?tag=27",
       "shortId": 46
     },
     {
@@ -1085,22 +1086,23 @@
       "shortId": 47
     },
     {
-      "filename": "2026-05-05-google-launches-pomelli-catalog-for-ai-generated-b.md",
-      "slug": "2026-05-05-google-launches-pomelli-catalog-for-ai-generated-b",
-      "title": "Google launches Pomelli Catalog for AI-generated brand campaigns",
+      "filename": "2026-05-05-subq-launches-a-subquadratic-llm-with-12mtoken-con.md",
+      "slug": "2026-05-05-subq-launches-a-subquadratic-llm-with-12mtoken-con",
+      "title": "SubQ launches a sub\u2011quadratic LLM with 12M\u2011token context",
       "date": "2026-05-05",
-      "published_at": "2026-05-05T18:22:02.893739+00:00",
+      "published_at": "2026-05-05T18:17:11.580017+00:00",
       "tags": [
-        "ai marketing",
-        "brand tools",
-        "google"
+        "llm",
+        "sparse attention",
+        "performance",
+        "cost"
       ],
-      "excerpt": "Google's new Pomelli Catalog lets you feed product data and instantly receive AI-crafted campaign copy and photos, free of charge.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2051689980515561472/img/ep-587HlAqTTlnKc.jpg",
+      "excerpt": "SubQ\u2019s new model uses a sub\u2011quadratic sparse\u2011attention design to handle 12\u202fmillion\u2011token contexts, delivering speed and cost advantages over existing attention engines.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2051654813717573632/img/aGtVgqlCkr4yOfHF.jpg",
       "sources": [
-        "https://x.com/i/status/2051693177053340073"
+        "https://x.com/i/status/2051663268704636937"
       ],
-      "video": "media/2026-05-05-google-launches-pomelli-catalog-for-ai-generated-b.mp4",
+      "video": "media/2026-05-05-subq-launches-a-subquadratic-llm-with-12mtoken-con.mp4",
       "shortId": 48
     },
     {
@@ -1142,24 +1144,6 @@
       "shortId": 50
     },
     {
-      "filename": "2026-05-05-github-projects-releases-browseronly-pdf-toolkit-w.md",
-      "slug": "2026-05-05-github-projects-releases-browseronly-pdf-toolkit-w",
-      "title": "GitHub Projects releases browser\u2011only PDF toolkit with 90+ tools",
-      "date": "2026-05-05",
-      "published_at": "2026-05-05T18:18:27.770936+00:00",
-      "tags": [
-        "pdf",
-        "webassembly",
-        "opensource"
-      ],
-      "excerpt": "GitHub Projects unveiled an open\u2011source PDF toolkit that runs fully in the browser via WebAssembly, offering more than 90 utilities without any server component.",
-      "image": "https://pbs.twimg.com/media/HHi9ngubkAALhhp.jpg?name=orig",
-      "sources": [
-        "https://x.com/i/status/2051598119478108162"
-      ],
-      "shortId": 51
-    },
-    {
       "filename": "2026-05-05-openclaude-v091-makes-codex-default-and-upgrades-t.md",
       "slug": "2026-05-05-openclaude-v091-makes-codex-default-and-upgrades-t",
       "title": "OpenClaude v0.9.1 makes Codex default and upgrades to GPT\u20115.5",
@@ -1177,7 +1161,44 @@
         "https://x.com/i/status/2051616716007075887"
       ],
       "video": "media/2026-05-05-openclaude-v091-makes-codex-default-and-upgrades-t.mp4",
+      "shortId": 51
+    },
+    {
+      "filename": "2026-05-05-github-projects-releases-browseronly-pdf-toolkit-w.md",
+      "slug": "2026-05-05-github-projects-releases-browseronly-pdf-toolkit-w",
+      "title": "GitHub Projects releases browser\u2011only PDF toolkit with 90+ tools",
+      "date": "2026-05-05",
+      "published_at": "2026-05-05T18:18:27.770936+00:00",
+      "tags": [
+        "pdf",
+        "webassembly",
+        "opensource"
+      ],
+      "excerpt": "GitHub Projects unveiled an open\u2011source PDF toolkit that runs fully in the browser via WebAssembly, offering more than 90 utilities without any server component.",
+      "image": "https://pbs.twimg.com/media/HHi9ngubkAALhhp.jpg?name=orig",
+      "sources": [
+        "https://x.com/i/status/2051598119478108162"
+      ],
       "shortId": 52
+    },
+    {
+      "filename": "2026-05-05-google-launches-pomelli-catalog-for-ai-generated-b.md",
+      "slug": "2026-05-05-google-launches-pomelli-catalog-for-ai-generated-b",
+      "title": "Google launches Pomelli Catalog for AI-generated brand campaigns",
+      "date": "2026-05-05",
+      "published_at": "2026-05-05T18:22:02.893739+00:00",
+      "tags": [
+        "ai marketing",
+        "brand tools",
+        "google"
+      ],
+      "excerpt": "Google's new Pomelli Catalog lets you feed product data and instantly receive AI-crafted campaign copy and photos, free of charge.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2051689980515561472/img/ep-587HlAqTTlnKc.jpg",
+      "sources": [
+        "https://x.com/i/status/2051693177053340073"
+      ],
+      "video": "media/2026-05-05-google-launches-pomelli-catalog-for-ai-generated-b.mp4",
+      "shortId": 53
     },
     {
       "filename": "2026-05-02-claude-code-adds-builtin-skill-for-claude-platform.md",
@@ -1196,7 +1217,7 @@
         "https://x.com/i/status/2049575802568839648"
       ],
       "video": "media/2026-05-02-claude-code-adds-builtin-skill-for-claude-platform.mp4",
-      "shortId": 53
+      "shortId": 54
     },
     {
       "filename": "2026-04-30-poseidon-opens-early-access-to-numo-for-multilingu.md",
@@ -1215,7 +1236,7 @@
         "https://x.com/i/status/2049526025751855207"
       ],
       "video": "media/2026-04-30-poseidon-opens-early-access-to-numo-for-multilingu.mp4",
-      "shortId": 54
+      "shortId": 55
     },
     {
       "filename": "2026-04-30-fal-webgl-demo-serves-submegabyte-animated-glbs-in.md",
@@ -1234,7 +1255,7 @@
         "https://x.com/i/status/2049836416289407133"
       ],
       "video": "media/2026-04-30-fal-webgl-demo-serves-submegabyte-animated-glbs-in.mp4",
-      "shortId": 55
+      "shortId": 56
     },
     {
       "filename": "2026-04-27-elevenlabs-launches-50-preconfigured-agent-templat.md",
@@ -1252,25 +1273,6 @@
       "sources": [
         "https://x.com/i/status/2048794727881789930"
       ],
-      "shortId": 56
-    },
-    {
-      "filename": "2026-04-27-hyperframes-lets-you-generate-videos-from-html-css.md",
-      "slug": "2026-04-27-hyperframes-lets-you-generate-videos-from-html-css",
-      "title": "HyperFrames lets you generate videos from HTML, CSS, and JS",
-      "date": "2026-04-27",
-      "published_at": "2026-04-27T18:44:02.605533+00:00",
-      "tags": [
-        "video generation",
-        "open source",
-        "ai tools"
-      ],
-      "excerpt": "HyperFrames is a free, open\u2011source Agent Skill that turns web code into video, working with any LLM. It\u2019s a quick way to prototype visual output without buying a dedicated service.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2048779038253010944/img/siCpRLTdNT-WIjzH.jpg",
-      "sources": [
-        "https://x.com/i/status/2048779120985645145"
-      ],
-      "video": "media/2026-04-27-hyperframes-lets-you-generate-videos-from-html-css.mp4",
       "shortId": 57
     },
     {
@@ -1292,6 +1294,25 @@
       "shortId": 58
     },
     {
+      "filename": "2026-04-27-hyperframes-lets-you-generate-videos-from-html-css.md",
+      "slug": "2026-04-27-hyperframes-lets-you-generate-videos-from-html-css",
+      "title": "HyperFrames lets you generate videos from HTML, CSS, and JS",
+      "date": "2026-04-27",
+      "published_at": "2026-04-27T18:44:02.605533+00:00",
+      "tags": [
+        "video generation",
+        "open source",
+        "ai tools"
+      ],
+      "excerpt": "HyperFrames is a free, open\u2011source Agent Skill that turns web code into video, working with any LLM. It\u2019s a quick way to prototype visual output without buying a dedicated service.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2048779038253010944/img/siCpRLTdNT-WIjzH.jpg",
+      "sources": [
+        "https://x.com/i/status/2048779120985645145"
+      ],
+      "video": "media/2026-04-27-hyperframes-lets-you-generate-videos-from-html-css.mp4",
+      "shortId": 59
+    },
+    {
       "filename": "2026-04-26-anything-adds-aigenerated-app-store-screenshots.md",
       "slug": "2026-04-26-anything-adds-aigenerated-app-store-screenshots",
       "title": "Anything adds AI\u2011generated App Store screenshots",
@@ -1308,7 +1329,7 @@
         "https://x.com/i/status/2047782953959170239"
       ],
       "video": "media/2026-04-26-anything-adds-aigenerated-app-store-screenshots.mp4",
-      "shortId": 59
+      "shortId": 60
     },
     {
       "filename": "2026-04-25-anthropic-pilots-clauderun-marketplace-for-office.md",
@@ -1327,25 +1348,6 @@
         "https://x.com/i/status/2047728360818696302"
       ],
       "video": "media/2026-04-25-anthropic-pilots-clauderun-marketplace-for-office.mp4",
-      "shortId": 60
-    },
-    {
-      "filename": "2026-04-24-gemma-4-runs-offline-with-lm-studio-and-opencode.md",
-      "slug": "2026-04-24-gemma-4-runs-offline-with-lm-studio-and-opencode",
-      "title": "Gemma 4 runs offline with LM Studio and OpenCode",
-      "date": "2026-04-24",
-      "published_at": "2026-04-24T21:24:01.909307+00:00",
-      "tags": [
-        "gemma",
-        "offline",
-        "local inference"
-      ],
-      "excerpt": "Google's Gemma 4 model can be executed entirely on a local machine using LM Studio and OpenCode, letting engineers parse PDFs and build sites without network access.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2047398550607364096/img/hi43ppowtntl1TPm.jpg",
-      "sources": [
-        "https://x.com/i/status/2047406475631624285"
-      ],
-      "video": "https://video.twimg.com/amplify_video/2047398550607364096/vid/avc1/1920x1080/cOcCQgOfNHSYwsqx.mp4?tag=21",
       "shortId": 61
     },
     {
@@ -1368,24 +1370,6 @@
       "shortId": 62
     },
     {
-      "filename": "2026-04-24-deepseek-v4pro-pricing-looks-cheap-next-to-gpt55.md",
-      "slug": "2026-04-24-deepseek-v4pro-pricing-looks-cheap-next-to-gpt55",
-      "title": "DeepSeek V4\u2011Pro pricing looks cheap next to GPT\u20115.5",
-      "date": "2026-04-24",
-      "published_at": "2026-04-24T21:29:46.002616+00:00",
-      "tags": [
-        "llm",
-        "pricing",
-        "cloud"
-      ],
-      "excerpt": "A recent tweet highlights that DeepSeek V4\u2011Pro charges $1.74 per million input tokens, far below the $5\u2011$30 rates announced for GPT\u20115.5, raising questions about cost strategy for startups.",
-      "image": "https://pbs.twimg.com/media/HGqNR-pWcAA6luP.jpg?name=orig",
-      "sources": [
-        "https://x.com/i/status/2047605548346941643"
-      ],
-      "shortId": 63
-    },
-    {
       "filename": "2026-04-24-github-copilot-now-runs-openai-gpt55.md",
       "slug": "2026-04-24-github-copilot-now-runs-openai-gpt55",
       "title": "GitHub Copilot now runs OpenAI GPT\u20115.5",
@@ -1402,7 +1386,44 @@
         "https://x.com/i/status/2047747243617460482"
       ],
       "video": "media/2026-04-24-github-copilot-now-runs-openai-gpt55.mp4",
+      "shortId": 63
+    },
+    {
+      "filename": "2026-04-24-gemma-4-runs-offline-with-lm-studio-and-opencode.md",
+      "slug": "2026-04-24-gemma-4-runs-offline-with-lm-studio-and-opencode",
+      "title": "Gemma 4 runs offline with LM Studio and OpenCode",
+      "date": "2026-04-24",
+      "published_at": "2026-04-24T21:24:01.909307+00:00",
+      "tags": [
+        "gemma",
+        "offline",
+        "local inference"
+      ],
+      "excerpt": "Google's Gemma 4 model can be executed entirely on a local machine using LM Studio and OpenCode, letting engineers parse PDFs and build sites without network access.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2047398550607364096/img/hi43ppowtntl1TPm.jpg",
+      "sources": [
+        "https://x.com/i/status/2047406475631624285"
+      ],
+      "video": "https://video.twimg.com/amplify_video/2047398550607364096/vid/avc1/1920x1080/cOcCQgOfNHSYwsqx.mp4?tag=21",
       "shortId": 64
+    },
+    {
+      "filename": "2026-04-24-deepseek-v4pro-pricing-looks-cheap-next-to-gpt55.md",
+      "slug": "2026-04-24-deepseek-v4pro-pricing-looks-cheap-next-to-gpt55",
+      "title": "DeepSeek V4\u2011Pro pricing looks cheap next to GPT\u20115.5",
+      "date": "2026-04-24",
+      "published_at": "2026-04-24T21:29:46.002616+00:00",
+      "tags": [
+        "llm",
+        "pricing",
+        "cloud"
+      ],
+      "excerpt": "A recent tweet highlights that DeepSeek V4\u2011Pro charges $1.74 per million input tokens, far below the $5\u2011$30 rates announced for GPT\u20115.5, raising questions about cost strategy for startups.",
+      "image": "https://pbs.twimg.com/media/HGqNR-pWcAA6luP.jpg?name=orig",
+      "sources": [
+        "https://x.com/i/status/2047605548346941643"
+      ],
+      "shortId": 65
     },
     {
       "filename": "2026-04-24-vs-code-ships-a-virtual-pet-extension.md",
@@ -1421,7 +1442,7 @@
         "https://x.com/i/status/2047314929695310196"
       ],
       "video": "media/2026-04-24-vs-code-ships-a-virtual-pet-extension.mp4",
-      "shortId": 65
+      "shortId": 66
     },
     {
       "filename": "2026-04-23-claude-blog-outlines-how-agents-should-use-mcp-api.md",
@@ -1439,7 +1460,7 @@
       "sources": [
         "https://x.com/ClaudeDevs/status/2047086372666921217?s=20"
       ],
-      "shortId": 66
+      "shortId": 67
     },
     {
       "filename": "2026-04-23-nvidia-launches-free-hosted-apis-for-80-ai-models.md",
@@ -1457,26 +1478,26 @@
       "sources": [
         "https://x.com/dhruvtwt_/status/2047006444701274380"
       ],
-      "shortId": 67
+      "shortId": 68
     },
     {
-      "filename": "2026-04-22-revolutionary-infinite-canvas-ide-nyx-unveiled.md",
-      "slug": "2026-04-22-revolutionary-infinite-canvas-ide-nyx-unveiled",
-      "title": "Revolutionary Infinite-Canvas IDE Nyx Unveiled",
+      "filename": "2026-04-22-revolutionizing-web-scraping-firecrawls-game-chang.md",
+      "slug": "2026-04-22-revolutionizing-web-scraping-firecrawls-game-chang",
+      "title": "Revolutionizing Web Scraping: Firecrawl's Game-Changing Update",
       "date": "2026-04-22",
-      "published_at": "2026-04-22T18:03:03.557809+00:00",
+      "published_at": "2026-04-22T17:57:09.437253+00:00",
       "tags": [
-        "Nyx",
-        "Infinite-Canvas IDE",
-        "AI-powered Coding"
+        "web scraping",
+        "Firecrawl",
+        "change tracking"
       ],
-      "excerpt": "Kraggi's Nyx is a game-changing infinite-canvas IDE that integrates multiple AI models, streamlining coding and development. This innovative platform is set to transform the way developers work.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2046826808746668032/img/NCy_IXIwsTvyZbXf.jpg",
+      "excerpt": "Firecrawl's latest update enables effortless monitoring of entire sites for pricing changes, doc updates, or inventory shifts, making it a game-changer for developers and tech enthusiasts",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2046982489231740928/img/hk7SmfiW-7pnCe-I.jpg",
       "sources": [
-        "https://x.com/i/status/2046827332124430774"
+        "https://x.com/i/status/2046982541245321671"
       ],
-      "video": "media/2026-04-22-revolutionary-infinite-canvas-ide-nyx-unveiled.mp4",
-      "shortId": 68
+      "video": "media/2026-04-22-revolutionizing-web-scraping-firecrawls-game-chang.mp4",
+      "shortId": 69
     },
     {
       "filename": "2026-04-22-revolutionizing-productivity-parallel-agents-unlea.md",
@@ -1494,45 +1515,7 @@
       "sources": [
         "https://x.com/i/status/2047004387961106435"
       ],
-      "shortId": 69
-    },
-    {
-      "filename": "2026-04-22-revolutionizing-productivity-openai-unveils-shared.md",
-      "slug": "2026-04-22-revolutionizing-productivity-openai-unveils-shared",
-      "title": "Revolutionizing Productivity: OpenAI Unveils Shared Workspace Agents in ChatGPT",
-      "date": "2026-04-22",
-      "published_at": "2026-04-22T18:45:04.822087+00:00",
-      "tags": [
-        "OpenAI",
-        "ChatGPT",
-        "Workspace Agents"
-      ],
-      "excerpt": "Introducing workspace agents in ChatGPT\u2014shared agents that can handle complex tasks and long-running workflows across tools and teams.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2047004707844194304/img/IhMl2PZiOc460lx8.jpg",
-      "sources": [
-        "https://x.com/i/status/2047008987665809771"
-      ],
-      "video": "media/2026-04-22-revolutionizing-productivity-openai-unveils-shared.mp4",
       "shortId": 70
-    },
-    {
-      "filename": "2026-04-22-revolutionizing-code-review-claude-code-unveils-ul.md",
-      "slug": "2026-04-22-revolutionizing-code-review-claude-code-unveils-ul",
-      "title": "Revolutionizing Code Review: Claude Code Unveils Ultrareview",
-      "date": "2026-04-22",
-      "published_at": "2026-04-22T17:52:06.887665+00:00",
-      "tags": [
-        "Claude Code",
-        "Ultrareview",
-        "Code Review"
-      ],
-      "excerpt": "Claude Code introduces Ultrareview, a game-changing feature that harnesses the power of cloud-based bug-hunting agents to streamline code review. This innovation promises to simplify the development process and improve code quality.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2046999336412913664/img/Orz36ChX1Wvcp-7s.jpg",
-      "sources": [
-        "https://x.com/i/status/2046999435239133246"
-      ],
-      "video": "media/2026-04-22-revolutionizing-code-review-claude-code-unveils-ul.mp4",
-      "shortId": 71
     },
     {
       "filename": "2026-04-22-unlocking-hidden-traffic-okaras-seo-hack-for-organ.md",
@@ -1551,6 +1534,25 @@
         "https://x.com/i/status/2046866025795461145"
       ],
       "video": "media/2026-04-22-unlocking-hidden-traffic-okaras-seo-hack-for-organ.mp4",
+      "shortId": 71
+    },
+    {
+      "filename": "2026-04-22-revolutionary-infinite-canvas-ide-nyx-unveiled.md",
+      "slug": "2026-04-22-revolutionary-infinite-canvas-ide-nyx-unveiled",
+      "title": "Revolutionary Infinite-Canvas IDE Nyx Unveiled",
+      "date": "2026-04-22",
+      "published_at": "2026-04-22T18:03:03.557809+00:00",
+      "tags": [
+        "Nyx",
+        "Infinite-Canvas IDE",
+        "AI-powered Coding"
+      ],
+      "excerpt": "Kraggi's Nyx is a game-changing infinite-canvas IDE that integrates multiple AI models, streamlining coding and development. This innovative platform is set to transform the way developers work.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2046826808746668032/img/NCy_IXIwsTvyZbXf.jpg",
+      "sources": [
+        "https://x.com/i/status/2046827332124430774"
+      ],
+      "video": "media/2026-04-22-revolutionary-infinite-canvas-ide-nyx-unveiled.mp4",
       "shortId": 72
     },
     {
@@ -1573,23 +1575,42 @@
       "shortId": 73
     },
     {
-      "filename": "2026-04-22-revolutionizing-web-scraping-firecrawls-game-chang.md",
-      "slug": "2026-04-22-revolutionizing-web-scraping-firecrawls-game-chang",
-      "title": "Revolutionizing Web Scraping: Firecrawl's Game-Changing Update",
+      "filename": "2026-04-22-revolutionizing-productivity-openai-unveils-shared.md",
+      "slug": "2026-04-22-revolutionizing-productivity-openai-unveils-shared",
+      "title": "Revolutionizing Productivity: OpenAI Unveils Shared Workspace Agents in ChatGPT",
       "date": "2026-04-22",
-      "published_at": "2026-04-22T17:57:09.437253+00:00",
+      "published_at": "2026-04-22T18:45:04.822087+00:00",
       "tags": [
-        "web scraping",
-        "Firecrawl",
-        "change tracking"
+        "OpenAI",
+        "ChatGPT",
+        "Workspace Agents"
       ],
-      "excerpt": "Firecrawl's latest update enables effortless monitoring of entire sites for pricing changes, doc updates, or inventory shifts, making it a game-changer for developers and tech enthusiasts",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2046982489231740928/img/hk7SmfiW-7pnCe-I.jpg",
+      "excerpt": "Introducing workspace agents in ChatGPT\u2014shared agents that can handle complex tasks and long-running workflows across tools and teams.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2047004707844194304/img/IhMl2PZiOc460lx8.jpg",
       "sources": [
-        "https://x.com/i/status/2046982541245321671"
+        "https://x.com/i/status/2047008987665809771"
       ],
-      "video": "media/2026-04-22-revolutionizing-web-scraping-firecrawls-game-chang.mp4",
+      "video": "media/2026-04-22-revolutionizing-productivity-openai-unveils-shared.mp4",
       "shortId": 74
+    },
+    {
+      "filename": "2026-04-22-revolutionizing-code-review-claude-code-unveils-ul.md",
+      "slug": "2026-04-22-revolutionizing-code-review-claude-code-unveils-ul",
+      "title": "Revolutionizing Code Review: Claude Code Unveils Ultrareview",
+      "date": "2026-04-22",
+      "published_at": "2026-04-22T17:52:06.887665+00:00",
+      "tags": [
+        "Claude Code",
+        "Ultrareview",
+        "Code Review"
+      ],
+      "excerpt": "Claude Code introduces Ultrareview, a game-changing feature that harnesses the power of cloud-based bug-hunting agents to streamline code review. This innovation promises to simplify the development process and improve code quality.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2046999336412913664/img/Orz36ChX1Wvcp-7s.jpg",
+      "sources": [
+        "https://x.com/i/status/2046999435239133246"
+      ],
+      "video": "media/2026-04-22-revolutionizing-code-review-claude-code-unveils-ul.mp4",
+      "shortId": 75
     },
     {
       "filename": "2026-04-17-claudedevs-unveils-dedicated-channel-for-developer.md",
@@ -1608,7 +1629,45 @@
         "https://x.com/i/status/2044780198722498580"
       ],
       "video": "media/2026-04-17-claudedevs-unveils-dedicated-channel-for-developer.mp4",
-      "shortId": 75
+      "shortId": 76
+    },
+    {
+      "filename": "2026-04-15-revolutionizing-ai-powered-coding-claudes-game-cha.md",
+      "slug": "2026-04-15-revolutionizing-ai-powered-coding-claudes-game-cha",
+      "title": "Revolutionizing AI-Powered Coding: Claude's Game-Changing Update",
+      "date": "2026-04-15",
+      "published_at": "2026-04-15T01:54:44.989876+00:00",
+      "tags": [
+        "AI",
+        "Coding",
+        "Claude"
+      ],
+      "excerpt": "We've redesigned Claude Code on desktop.\n\nYou can now run multiple Claude sessions side by side from one window, with a new sidebar to manage them all.",
+      "image": "https://pbs.twimg.com/media/HF43A0sXYAA494v.jpg",
+      "sources": [
+        "https://x.com/i/status/2044131493966909862"
+      ],
+      "video": "media/2026-04-15-revolutionizing-ai-powered-coding-claudes-game-cha.mp4",
+      "shortId": 77
+    },
+    {
+      "filename": "2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c.md",
+      "slug": "2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c",
+      "title": "Revolutionizing Voice AI: ElevenLabs Unveils Game-Changing React SDK",
+      "date": "2026-04-15",
+      "published_at": "2026-04-15T20:59:36.760570+00:00",
+      "tags": [
+        "ElevenLabs",
+        "React SDK",
+        "Voice AI"
+      ],
+      "excerpt": "The New ElevenAgents React SDK",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2044516556634263552/img/RSZe0mXPBmWB5WXd.jpg",
+      "sources": [
+        "https://x.com/i/status/2044519924282847381"
+      ],
+      "video": "media/2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c.mp4",
+      "shortId": 78
     },
     {
       "filename": "2026-04-15-revolutionizing-app-design-ai-generated-themes-now.md",
@@ -1627,7 +1686,7 @@
         "https://x.com/i/status/2044111418786754620"
       ],
       "video": "media/2026-04-15-revolutionizing-app-design-ai-generated-themes-now.mp4",
-      "shortId": 76
+      "shortId": 79
     },
     {
       "filename": "2026-04-15-revolutionizing-ai-powered-workflows-google-introd.md",
@@ -1647,63 +1706,6 @@
         "https://x.com/i/status/2044106378655215625"
       ],
       "video": "media/2026-04-15-revolutionizing-ai-powered-workflows-google-introd.mp4",
-      "shortId": 77
-    },
-    {
-      "filename": "2026-04-15-the-future-of-coding-is-the-era-of-traditional-ide.md",
-      "slug": "2026-04-15-the-future-of-coding-is-the-era-of-traditional-ide",
-      "title": "The Future of Coding: Is the Era of Traditional IDEs Coming to an End?",
-      "date": "2026-04-15",
-      "published_at": "2026-04-15T02:02:07.974224+00:00",
-      "tags": [
-        "coding",
-        "IDEs",
-        "Claude Code"
-      ],
-      "excerpt": "A new masterclass reveals how Anthropic uses Claude Code, a revolutionary tool that could make traditional IDEs obsolete by the end of the year, and explores non-coding pipeline opportunities",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2044139244525105152/img/jCff5LdNEPDkStJA.jpg",
-      "sources": [
-        "https://x.com/i/status/2044140545384296913"
-      ],
-      "video": "https://video.twimg.com/amplify_video/2044139244525105152/vid/avc1/1920x1080/2GHTKwa088d6jyOr.mp4?tag=21",
-      "shortId": 78
-    },
-    {
-      "filename": "2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c.md",
-      "slug": "2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c",
-      "title": "Revolutionizing Voice AI: ElevenLabs Unveils Game-Changing React SDK",
-      "date": "2026-04-15",
-      "published_at": "2026-04-15T20:59:36.760570+00:00",
-      "tags": [
-        "ElevenLabs",
-        "React SDK",
-        "Voice AI"
-      ],
-      "excerpt": "The New ElevenAgents React SDK",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2044516556634263552/img/RSZe0mXPBmWB5WXd.jpg",
-      "sources": [
-        "https://x.com/i/status/2044519924282847381"
-      ],
-      "video": "media/2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c.mp4",
-      "shortId": 79
-    },
-    {
-      "filename": "2026-04-15-revolutionizing-ai-powered-coding-claudes-game-cha.md",
-      "slug": "2026-04-15-revolutionizing-ai-powered-coding-claudes-game-cha",
-      "title": "Revolutionizing AI-Powered Coding: Claude's Game-Changing Update",
-      "date": "2026-04-15",
-      "published_at": "2026-04-15T01:54:44.989876+00:00",
-      "tags": [
-        "AI",
-        "Coding",
-        "Claude"
-      ],
-      "excerpt": "We've redesigned Claude Code on desktop.\n\nYou can now run multiple Claude sessions side by side from one window, with a new sidebar to manage them all.",
-      "image": "https://pbs.twimg.com/media/HF43A0sXYAA494v.jpg",
-      "sources": [
-        "https://x.com/i/status/2044131493966909862"
-      ],
-      "video": "media/2026-04-15-revolutionizing-ai-powered-coding-claudes-game-cha.mp4",
       "shortId": 80
     },
     {
@@ -1726,22 +1728,22 @@
       "shortId": 81
     },
     {
-      "filename": "2026-04-12-revolutionizing-video-consumption-interactive-tran.md",
-      "slug": "2026-04-12-revolutionizing-video-consumption-interactive-tran",
-      "title": "Revolutionizing Video Consumption: Interactive Transcripts Are Here",
-      "date": "2026-04-12",
-      "published_at": "2026-04-12T05:50:30.271430+00:00",
+      "filename": "2026-04-15-the-future-of-coding-is-the-era-of-traditional-ide.md",
+      "slug": "2026-04-15-the-future-of-coding-is-the-era-of-traditional-ide",
+      "title": "The Future of Coding: Is the Era of Traditional IDEs Coming to an End?",
+      "date": "2026-04-15",
+      "published_at": "2026-04-15T02:02:07.974224+00:00",
       "tags": [
-        "tech updates",
-        "video consumption",
-        "interactive transcripts"
+        "coding",
+        "IDEs",
+        "Claude Code"
       ],
-      "excerpt": "I can't go back to the regular YouTube UI after this \ud83d\ude05\n\nObsidian Reader now makes the transcript interactive so you can scrub, highlight, auto-scroll. It feels so nice.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2042678525627633664/img/r-KNUFvnCDyqk2O3.jpg",
+      "excerpt": "A new masterclass reveals how Anthropic uses Claude Code, a revolutionary tool that could make traditional IDEs obsolete by the end of the year, and explores non-coding pipeline opportunities",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2044139244525105152/img/jCff5LdNEPDkStJA.jpg",
       "sources": [
-        "https://x.com/i/status/2042683393247449148"
+        "https://x.com/i/status/2044140545384296913"
       ],
-      "video": "https://video.twimg.com/amplify_video/2042678525627633664/vid/avc1/2756x2160/Pn6Y6f1MjrW6JOIS.mp4?tag=21",
+      "video": "https://video.twimg.com/amplify_video/2044139244525105152/vid/avc1/1920x1080/2GHTKwa088d6jyOr.mp4?tag=21",
       "shortId": 82
     },
     {
@@ -1763,6 +1765,25 @@
       "shortId": 83
     },
     {
+      "filename": "2026-04-12-revolutionizing-video-consumption-interactive-tran.md",
+      "slug": "2026-04-12-revolutionizing-video-consumption-interactive-tran",
+      "title": "Revolutionizing Video Consumption: Interactive Transcripts Are Here",
+      "date": "2026-04-12",
+      "published_at": "2026-04-12T05:50:30.271430+00:00",
+      "tags": [
+        "tech updates",
+        "video consumption",
+        "interactive transcripts"
+      ],
+      "excerpt": "I can't go back to the regular YouTube UI after this \ud83d\ude05\n\nObsidian Reader now makes the transcript interactive so you can scrub, highlight, auto-scroll. It feels so nice.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2042678525627633664/img/r-KNUFvnCDyqk2O3.jpg",
+      "sources": [
+        "https://x.com/i/status/2042683393247449148"
+      ],
+      "video": "https://video.twimg.com/amplify_video/2042678525627633664/vid/avc1/2756x2160/Pn6Y6f1MjrW6JOIS.mp4?tag=21",
+      "shortId": 84
+    },
+    {
       "filename": "2026-04-10-revolutionizing-agent-interactions-claudes-monitor.md",
       "slug": "2026-04-10-revolutionizing-agent-interactions-claudes-monitor",
       "title": "Revolutionizing Agent Interactions: Claude's Monitor Tool Unveiled",
@@ -1779,25 +1800,6 @@
         "https://x.com/i/status/2042332268450963774"
       ],
       "video": "media/2026-04-10-revolutionizing-agent-interactions-claudes-monitor.mp4",
-      "shortId": 84
-    },
-    {
-      "filename": "2026-04-09-firecrawl-reaches-new-heights-revolutionizing-web.md",
-      "slug": "2026-04-09-firecrawl-reaches-new-heights-revolutionizing-web",
-      "title": "Firecrawl Reaches New Heights: Revolutionizing Web Interaction for AI Agents",
-      "date": "2026-04-09",
-      "published_at": "2026-04-09T03:00:35.483804+00:00",
-      "tags": [
-        "Firecrawl",
-        "AI Agents",
-        "Web Interaction"
-      ],
-      "excerpt": "Firecrawl has reached the top 100 GitHub repos, offering a game-changing API for AI agents to search, scrape, and interact with the web, trusted by over a million developers and thousands of enterprise teams. This milestone underscores the significance of Firecrawl's innovative approach to web interaction.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2041909020173426688/img/4LWyfiguOdYxiZk8.jpg",
-      "sources": [
-        "https://x.com/i/status/2041909075110510969"
-      ],
-      "video": "media/2026-04-09-firecrawl-reaches-new-heights-revolutionizing-web.mp4",
       "shortId": 85
     },
     {
@@ -1820,25 +1822,6 @@
       "shortId": 86
     },
     {
-      "filename": "2026-04-09-revolutionary-database-cloning-ardentai-changes-th.md",
-      "slug": "2026-04-09-revolutionary-database-cloning-ardentai-changes-th",
-      "title": "Revolutionary Database Cloning: ArdentAI Changes the Game",
-      "date": "2026-04-09",
-      "published_at": "2026-04-09T02:58:06.763223+00:00",
-      "tags": [
-        "ArdentAI",
-        "Database Cloning",
-        "Postgres"
-      ],
-      "excerpt": "ArdentAI introduces instant Postgres database cloning, streamlining testing for developers and coding agents. This innovation reduces cloning time to under 6 seconds, eliminating infrastructure management.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2041637437034926080/img/kInbSydHMhFn0Odu.jpg",
-      "sources": [
-        "https://x.com/i/status/2041651193362182281"
-      ],
-      "video": "media/2026-04-09-revolutionary-database-cloning-ardentai-changes-th.mp4",
-      "shortId": 87
-    },
-    {
       "filename": "2026-04-09-notion-unleashes-ai-powered-task-automation-with-c.md",
       "slug": "2026-04-09-notion-unleashes-ai-powered-task-automation-with-c",
       "title": "Notion Unleashes AI-Powered Task Automation with Claude Agents",
@@ -1855,7 +1838,45 @@
         "https://x.com/i/status/2041982872698155398"
       ],
       "video": "media/2026-04-09-notion-unleashes-ai-powered-task-automation-with-c.mp4",
+      "shortId": 87
+    },
+    {
+      "filename": "2026-04-09-firecrawl-reaches-new-heights-revolutionizing-web.md",
+      "slug": "2026-04-09-firecrawl-reaches-new-heights-revolutionizing-web",
+      "title": "Firecrawl Reaches New Heights: Revolutionizing Web Interaction for AI Agents",
+      "date": "2026-04-09",
+      "published_at": "2026-04-09T03:00:35.483804+00:00",
+      "tags": [
+        "Firecrawl",
+        "AI Agents",
+        "Web Interaction"
+      ],
+      "excerpt": "Firecrawl has reached the top 100 GitHub repos, offering a game-changing API for AI agents to search, scrape, and interact with the web, trusted by over a million developers and thousands of enterprise teams. This milestone underscores the significance of Firecrawl's innovative approach to web interaction.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2041909020173426688/img/4LWyfiguOdYxiZk8.jpg",
+      "sources": [
+        "https://x.com/i/status/2041909075110510969"
+      ],
+      "video": "media/2026-04-09-firecrawl-reaches-new-heights-revolutionizing-web.mp4",
       "shortId": 88
+    },
+    {
+      "filename": "2026-04-09-revolutionary-database-cloning-ardentai-changes-th.md",
+      "slug": "2026-04-09-revolutionary-database-cloning-ardentai-changes-th",
+      "title": "Revolutionary Database Cloning: ArdentAI Changes the Game",
+      "date": "2026-04-09",
+      "published_at": "2026-04-09T02:58:06.763223+00:00",
+      "tags": [
+        "ArdentAI",
+        "Database Cloning",
+        "Postgres"
+      ],
+      "excerpt": "ArdentAI introduces instant Postgres database cloning, streamlining testing for developers and coding agents. This innovation reduces cloning time to under 6 seconds, eliminating infrastructure management.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2041637437034926080/img/kInbSydHMhFn0Odu.jpg",
+      "sources": [
+        "https://x.com/i/status/2041651193362182281"
+      ],
+      "video": "media/2026-04-09-revolutionary-database-cloning-ardentai-changes-th.mp4",
+      "shortId": 89
     },
     {
       "filename": "2026-04-09-revolutionizing-ai-development-claude-unveils-mana.md",
@@ -1874,44 +1895,7 @@
         "https://x.com/i/status/2041927687460024721"
       ],
       "video": "media/2026-04-09-revolutionizing-ai-development-claude-unveils-mana.mp4",
-      "shortId": 89
-    },
-    {
-      "filename": "2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the.md",
-      "slug": "2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the",
-      "title": "Revolutionary AI Teacher: Clicky Buddy Changes the Game for Learning",
-      "date": "2026-04-08",
-      "published_at": "2026-04-08T09:23:37.395297+00:00",
-      "tags": [
-        "AI",
-        "EdTech",
-        "Innovation"
-      ],
-      "excerpt": "Meet Clicky, an AI-powered teacher that assists learners in real-time, and discover its potential to transform the way we acquire new skills. This cutting-edge tool is set to revolutionize the edtech landscape with its interactive and personalized approach.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2041313187883261952/img/DiF4z36g4_F72A7N.jpg",
-      "sources": [
-        "https://x.com/i/status/2041314633978659092"
-      ],
-      "video": "media/2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the.mp4",
       "shortId": 90
-    },
-    {
-      "filename": "2026-04-08-supernotes-323-revolution-unlocking-new-features-a.md",
-      "slug": "2026-04-08-supernotes-323-revolution-unlocking-new-features-a",
-      "title": "Supernotes 3.2.3 Revolution: Unlocking New Features and Enhancements",
-      "date": "2026-04-08",
-      "published_at": "2026-04-08T02:27:50.353731+00:00",
-      "tags": [
-        "Supernotes",
-        "Productivity",
-        "Update"
-      ],
-      "excerpt": "The latest Supernotes update brings exciting new features, improvements, and bug fixes, taking user experience to the next level. Discover what's new and why it matters for developers and tech enthusiasts.",
-      "image": "https://pbs.twimg.com/media/HFSDiOGagAAtDM3.jpg?name=orig",
-      "sources": [
-        "https://x.com/i/status/2041401159639007301"
-      ],
-      "shortId": 91
     },
     {
       "filename": "2026-04-08-revolutionizing-code-productivity-autofix-pr-now-a.md",
@@ -1930,26 +1914,7 @@
         "https://x.com/i/status/2041654973491245509"
       ],
       "video": "media/2026-04-08-revolutionizing-code-productivity-autofix-pr-now-a.mp4",
-      "shortId": 92
-    },
-    {
-      "filename": "2026-04-08-revolutionizing-automation-zapier-sdk-now-open-to.md",
-      "slug": "2026-04-08-revolutionizing-automation-zapier-sdk-now-open-to",
-      "title": "Revolutionizing Automation: Zapier SDK Now Open to All",
-      "date": "2026-04-08",
-      "published_at": "2026-04-08T02:25:24.072480+00:00",
-      "tags": [
-        "Zapier",
-        "Automation",
-        "AI Agents"
-      ],
-      "excerpt": "Zapier's SDK is now available to everyone, enabling AI agents to access over 8,000 apps and their APIs, and changing the game for automation and development. This launch opens up new possibilities for developers and tech enthusiasts to streamline workflows and unlock new use cases.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2040204642618163200/img/ttyREQ-03VATWcqg.jpg",
-      "sources": [
-        "https://x.com/i/status/2041501747105890393"
-      ],
-      "video": "media/2026-04-08-revolutionizing-automation-zapier-sdk-now-open-to.mp4",
-      "shortId": 93
+      "shortId": 91
     },
     {
       "filename": "2026-04-08-revolutionizing-software-security-anthropic-unveil.md",
@@ -1967,7 +1932,7 @@
       "sources": [
         "https://x.com/i/status/2041578392852517128"
       ],
-      "shortId": 94
+      "shortId": 92
     },
     {
       "filename": "2026-04-08-revolutionizing-ai-dev-tool-onboarding-interactive.md",
@@ -1986,45 +1951,63 @@
         "https://x.com/i/status/2041542766585610477"
       ],
       "video": "media/2026-04-08-revolutionizing-ai-dev-tool-onboarding-interactive.mp4",
+      "shortId": 93
+    },
+    {
+      "filename": "2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the.md",
+      "slug": "2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the",
+      "title": "Revolutionary AI Teacher: Clicky Buddy Changes the Game for Learning",
+      "date": "2026-04-08",
+      "published_at": "2026-04-08T09:23:37.395297+00:00",
+      "tags": [
+        "AI",
+        "EdTech",
+        "Innovation"
+      ],
+      "excerpt": "Meet Clicky, an AI-powered teacher that assists learners in real-time, and discover its potential to transform the way we acquire new skills. This cutting-edge tool is set to revolutionize the edtech landscape with its interactive and personalized approach.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2041313187883261952/img/DiF4z36g4_F72A7N.jpg",
+      "sources": [
+        "https://x.com/i/status/2041314633978659092"
+      ],
+      "video": "media/2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the.mp4",
+      "shortId": 94
+    },
+    {
+      "filename": "2026-04-08-revolutionizing-automation-zapier-sdk-now-open-to.md",
+      "slug": "2026-04-08-revolutionizing-automation-zapier-sdk-now-open-to",
+      "title": "Revolutionizing Automation: Zapier SDK Now Open to All",
+      "date": "2026-04-08",
+      "published_at": "2026-04-08T02:25:24.072480+00:00",
+      "tags": [
+        "Zapier",
+        "Automation",
+        "AI Agents"
+      ],
+      "excerpt": "Zapier's SDK is now available to everyone, enabling AI agents to access over 8,000 apps and their APIs, and changing the game for automation and development. This launch opens up new possibilities for developers and tech enthusiasts to streamline workflows and unlock new use cases.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2040204642618163200/img/ttyREQ-03VATWcqg.jpg",
+      "sources": [
+        "https://x.com/i/status/2041501747105890393"
+      ],
+      "video": "media/2026-04-08-revolutionizing-automation-zapier-sdk-now-open-to.mp4",
       "shortId": 95
     },
     {
-      "filename": "2026-04-06-revolutionizing-font-pairing-introducing-typevibe.md",
-      "slug": "2026-04-06-revolutionizing-font-pairing-introducing-typevibe",
-      "title": "Revolutionizing Font Pairing: Introducing Typevibe",
-      "date": "2026-04-06",
-      "published_at": "2026-04-06T19:13:43.851217+00:00",
+      "filename": "2026-04-08-supernotes-323-revolution-unlocking-new-features-a.md",
+      "slug": "2026-04-08-supernotes-323-revolution-unlocking-new-features-a",
+      "title": "Supernotes 3.2.3 Revolution: Unlocking New Features and Enhancements",
+      "date": "2026-04-08",
+      "published_at": "2026-04-08T02:27:50.353731+00:00",
       "tags": [
-        "font pairing",
-        "Typevibe",
-        "design tools"
+        "Supernotes",
+        "Productivity",
+        "Update"
       ],
-      "excerpt": "Typevibe is a game-changing tool that simplifies font pairing, offering unique recommendations and 32 design templates to streamline your design process. This innovative solution is a must-try for developers and designers alike.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2040969469762191362/img/NAPniO8V24THM2yk.jpg",
+      "excerpt": "The latest Supernotes update brings exciting new features, improvements, and bug fixes, taking user experience to the next level. Discover what's new and why it matters for developers and tech enthusiasts.",
+      "image": "https://pbs.twimg.com/media/HFSDiOGagAAtDM3.jpg?name=orig",
       "sources": [
-        "https://x.com/i/status/2040969883236622484"
+        "https://x.com/i/status/2041401159639007301"
       ],
-      "video": "media/2026-04-06-revolutionizing-font-pairing-introducing-typevibe.mp4",
       "shortId": 96
-    },
-    {
-      "filename": "2026-04-06-tldraw-revolution-unlocking-next-level-collaborati.md",
-      "slug": "2026-04-06-tldraw-revolution-unlocking-next-level-collaborati",
-      "title": "tldraw Revolution: Unlocking Next-Level Collaborative Diagramming",
-      "date": "2026-04-06",
-      "published_at": "2026-04-06T19:19:28.036255+00:00",
-      "tags": [
-        "tldraw",
-        "collaboration",
-        "diagramming"
-      ],
-      "excerpt": "In the next version of tldraw,",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2040869375868305408/img/3gmmVwpbff-T60Nw.jpg",
-      "sources": [
-        "https://x.com/i/status/2040869600137556247"
-      ],
-      "video": "media/2026-04-06-tldraw-revolution-unlocking-next-level-collaborati.mp4",
-      "shortId": 97
     },
     {
       "filename": "2026-04-06-unlocking-githubs-hidden-potential-a-personal-prod.md",
@@ -2042,7 +2025,7 @@
       "sources": [
         "https://x.com/i/status/2040490839881720092"
       ],
-      "shortId": 98
+      "shortId": 97
     },
     {
       "filename": "2026-04-06-revolutionizing-design-top-tools-for-color-and-gra.md",
@@ -2061,7 +2044,45 @@
       "sources": [
         "https://x.com/i/status/2040387276589682858"
       ],
+      "shortId": 98
+    },
+    {
+      "filename": "2026-04-06-revolutionizing-font-pairing-introducing-typevibe.md",
+      "slug": "2026-04-06-revolutionizing-font-pairing-introducing-typevibe",
+      "title": "Revolutionizing Font Pairing: Introducing Typevibe",
+      "date": "2026-04-06",
+      "published_at": "2026-04-06T19:13:43.851217+00:00",
+      "tags": [
+        "font pairing",
+        "Typevibe",
+        "design tools"
+      ],
+      "excerpt": "Typevibe is a game-changing tool that simplifies font pairing, offering unique recommendations and 32 design templates to streamline your design process. This innovative solution is a must-try for developers and designers alike.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2040969469762191362/img/NAPniO8V24THM2yk.jpg",
+      "sources": [
+        "https://x.com/i/status/2040969883236622484"
+      ],
+      "video": "media/2026-04-06-revolutionizing-font-pairing-introducing-typevibe.mp4",
       "shortId": 99
+    },
+    {
+      "filename": "2026-04-06-tldraw-revolution-unlocking-next-level-collaborati.md",
+      "slug": "2026-04-06-tldraw-revolution-unlocking-next-level-collaborati",
+      "title": "tldraw Revolution: Unlocking Next-Level Collaborative Diagramming",
+      "date": "2026-04-06",
+      "published_at": "2026-04-06T19:19:28.036255+00:00",
+      "tags": [
+        "tldraw",
+        "collaboration",
+        "diagramming"
+      ],
+      "excerpt": "In the next version of tldraw,",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2040869375868305408/img/3gmmVwpbff-T60Nw.jpg",
+      "sources": [
+        "https://x.com/i/status/2040869600137556247"
+      ],
+      "video": "media/2026-04-06-tldraw-revolution-unlocking-next-level-collaborati.mp4",
+      "shortId": 100
     },
     {
       "filename": "2026-03-30-revolutionizing-game-development-with-ommas-ai-pow.md",
@@ -2080,7 +2101,7 @@
         "https://x.com/i/status/2037935421905412229"
       ],
       "video": "media/2026-03-30-revolutionizing-game-development-with-ommas-ai-pow.mp4",
-      "shortId": 100
+      "shortId": 101
     },
     {
       "filename": "2026-03-24-revolutionizing-productivity-claudes-game-changing.md",
@@ -2099,7 +2120,7 @@
         "https://x.com/i/status/2036195789601374705"
       ],
       "video": "media/2026-03-24-revolutionizing-productivity-claudes-game-changing.mp4",
-      "shortId": 101
+      "shortId": 102
     },
     {
       "filename": "2026-03-14-revolutionary-coding-claude-code-desktop-unveils-g.md",
@@ -2118,24 +2139,6 @@
         "https://x.com/i/status/2032856141059747975"
       ],
       "video": "media/2026-03-14-revolutionary-coding-claude-code-desktop-unveils-g.mp4",
-      "shortId": 102
-    },
-    {
-      "filename": "2026-03-14-rust-powered-agent-browser-revolution-lightning-fa.md",
-      "slug": "2026-03-14-rust-powered-agent-browser-revolution-lightning-fa",
-      "title": "Rust-Powered Agent-Browser Revolution: Lightning-Fast Performance and Tiny Footprint",
-      "date": "2026-03-14",
-      "published_at": "2026-03-14T19:12:03.927591+00:00",
-      "tags": [
-        "Rust",
-        "Agent-Browser",
-        "Performance Optimization"
-      ],
-      "excerpt": "The agent-browser is now fully native Rust, boasting a 1.6x faster cold start, 18x less memory, and a 99x smaller install, making it a game-changer for developers. This update brings faster shipping, more control, and unprecedented capabilities to the table.",
-      "image": "https://pbs.twimg.com/media/HDVfGNGXkAA7lOa.jpg?name=orig",
-      "sources": [
-        "https://x.com/i/status/2032635370089693456"
-      ],
       "shortId": 103
     },
     {
@@ -2158,22 +2161,21 @@
       "shortId": 104
     },
     {
-      "filename": "2026-03-13-revolutionizing-pixel-art-a-node-based-vfx-editor.md",
-      "slug": "2026-03-13-revolutionizing-pixel-art-a-node-based-vfx-editor",
-      "title": "Revolutionizing Pixel Art: A Node-Based VFX Editor Emerges",
-      "date": "2026-03-13",
-      "published_at": "2026-03-13T15:55:32.077939+00:00",
+      "filename": "2026-03-14-rust-powered-agent-browser-revolution-lightning-fa.md",
+      "slug": "2026-03-14-rust-powered-agent-browser-revolution-lightning-fa",
+      "title": "Rust-Powered Agent-Browser Revolution: Lightning-Fast Performance and Tiny Footprint",
+      "date": "2026-03-14",
+      "published_at": "2026-03-14T19:12:03.927591+00:00",
       "tags": [
-        "Pixel Art",
-        "VFX Editor",
-        "Node-Based Editor"
+        "Rust",
+        "Agent-Browser",
+        "Performance Optimization"
       ],
-      "excerpt": "Pixel Composer : un \u00e9diteur VFX \u00e0 base de nodes pour le pixel art \nhttps://github.com/Ttanasart-pt/Pixel-Composer",
-      "image": "https://pbs.twimg.com/tweet_video_thumb/HDSqT1OWQAAldug.jpg",
+      "excerpt": "The agent-browser is now fully native Rust, boasting a 1.6x faster cold start, 18x less memory, and a 99x smaller install, making it a game-changer for developers. This update brings faster shipping, more control, and unprecedented capabilities to the table.",
+      "image": "https://pbs.twimg.com/media/HDVfGNGXkAA7lOa.jpg?name=orig",
       "sources": [
-        "https://x.com/i/status/2032436603453395361"
+        "https://x.com/i/status/2032635370089693456"
       ],
-      "video": "media/2026-03-13-revolutionizing-pixel-art-a-node-based-vfx-editor.mp4",
       "shortId": 105
     },
     {
@@ -2196,42 +2198,23 @@
       "shortId": 106
     },
     {
-      "filename": "2026-03-11-reviving-mockdown-ai-powered-wireframing-revolutio.md",
-      "slug": "2026-03-11-reviving-mockdown-ai-powered-wireframing-revolutio",
-      "title": "Reviving Mockdown: AI-Powered Wireframing Revolution",
-      "date": "2026-03-11",
-      "published_at": "2026-03-11T02:28:08.413578+00:00",
+      "filename": "2026-03-13-revolutionizing-pixel-art-a-node-based-vfx-editor.md",
+      "slug": "2026-03-13-revolutionizing-pixel-art-a-node-based-vfx-editor",
+      "title": "Revolutionizing Pixel Art: A Node-Based VFX Editor Emerges",
+      "date": "2026-03-13",
+      "published_at": "2026-03-13T15:55:32.077939+00:00",
       "tags": [
-        "Mockdown",
-        "AI",
-        "Wireframing",
-        "Claude Code"
+        "Pixel Art",
+        "VFX Editor",
+        "Node-Based Editor"
       ],
-      "excerpt": "Mockdown is alive again.\n\nAI agents read markdown better than they read your mind.\n\nDraw a wireframe in ASCII, paste it into Claude Code, get a working page back.\n\nhttp://www.mockdown.design",
-      "image": "https://pbs.twimg.com/media/HDAaTjpWQAAVd-7.jpg?name=orig",
+      "excerpt": "Pixel Composer : un \u00e9diteur VFX \u00e0 base de nodes pour le pixel art \nhttps://github.com/Ttanasart-pt/Pixel-Composer",
+      "image": "https://pbs.twimg.com/tweet_video_thumb/HDSqT1OWQAAldug.jpg",
       "sources": [
-        "https://x.com/i/status/2031152691502555592"
+        "https://x.com/i/status/2032436603453395361"
       ],
+      "video": "media/2026-03-13-revolutionizing-pixel-art-a-node-based-vfx-editor.mp4",
       "shortId": 107
-    },
-    {
-      "filename": "2026-03-11-jetbrains-unveils-air-a-revolutionary-ai-powered-d.md",
-      "slug": "2026-03-11-jetbrains-unveils-air-a-revolutionary-ai-powered-d",
-      "title": "JetBrains Unveils Air: A Revolutionary AI-Powered Development Environment",
-      "date": "2026-03-11",
-      "published_at": "2026-03-11T02:27:11.559898+00:00",
-      "tags": [
-        "JetBrains",
-        "AI",
-        "Development Environment"
-      ],
-      "excerpt": "JetBrains introduces Air, an agentic development environment that supports top AI models, and we're excited to explore its potential for developers. This new tool is set to change the way we code and interact with AI assistants.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2031048511664664576/img/hpC5D_EvlOW99QK9.jpg",
-      "sources": [
-        "https://x.com/i/status/2031049359710650522"
-      ],
-      "video": "media/2026-03-11-jetbrains-unveils-air-a-revolutionary-ai-powered-d.mp4",
-      "shortId": 108
     },
     {
       "filename": "2026-03-11-breakthrough-run-ai-models-entirely-in-your-browse.md",
@@ -2250,7 +2233,45 @@
         "https://x.com/i/status/2031037128734376089"
       ],
       "video": "media/2026-03-11-breakthrough-run-ai-models-entirely-in-your-browse.mp4",
+      "shortId": 108
+    },
+    {
+      "filename": "2026-03-11-reviving-mockdown-ai-powered-wireframing-revolutio.md",
+      "slug": "2026-03-11-reviving-mockdown-ai-powered-wireframing-revolutio",
+      "title": "Reviving Mockdown: AI-Powered Wireframing Revolution",
+      "date": "2026-03-11",
+      "published_at": "2026-03-11T02:28:08.413578+00:00",
+      "tags": [
+        "Mockdown",
+        "AI",
+        "Wireframing",
+        "Claude Code"
+      ],
+      "excerpt": "Mockdown is alive again.\n\nAI agents read markdown better than they read your mind.\n\nDraw a wireframe in ASCII, paste it into Claude Code, get a working page back.\n\nhttp://www.mockdown.design",
+      "image": "https://pbs.twimg.com/media/HDAaTjpWQAAVd-7.jpg?name=orig",
+      "sources": [
+        "https://x.com/i/status/2031152691502555592"
+      ],
       "shortId": 109
+    },
+    {
+      "filename": "2026-03-11-jetbrains-unveils-air-a-revolutionary-ai-powered-d.md",
+      "slug": "2026-03-11-jetbrains-unveils-air-a-revolutionary-ai-powered-d",
+      "title": "JetBrains Unveils Air: A Revolutionary AI-Powered Development Environment",
+      "date": "2026-03-11",
+      "published_at": "2026-03-11T02:27:11.559898+00:00",
+      "tags": [
+        "JetBrains",
+        "AI",
+        "Development Environment"
+      ],
+      "excerpt": "JetBrains introduces Air, an agentic development environment that supports top AI models, and we're excited to explore its potential for developers. This new tool is set to change the way we code and interact with AI assistants.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2031048511664664576/img/hpC5D_EvlOW99QK9.jpg",
+      "sources": [
+        "https://x.com/i/status/2031049359710650522"
+      ],
+      "video": "media/2026-03-11-jetbrains-unveils-air-a-revolutionary-ai-powered-d.mp4",
+      "shortId": 110
     },
     {
       "filename": "2026-03-09-revolutionizing-code-quality-claudes-ai-powered-co.md",
@@ -2269,25 +2290,6 @@
         "https://x.com/i/status/2031088171262554195"
       ],
       "video": "media/2026-03-09-revolutionizing-code-quality-claudes-ai-powered-co.mp4",
-      "shortId": 110
-    },
-    {
-      "filename": "2026-03-06-revolutionizing-app-development-ai-powered-glaze-l.md",
-      "slug": "2026-03-06-revolutionizing-app-development-ai-powered-glaze-l",
-      "title": "Revolutionizing App Development: AI-Powered Glaze Launches",
-      "date": "2026-03-06",
-      "published_at": "2026-03-06T02:08:28.808014+00:00",
-      "tags": [
-        "Glaze",
-        "Raycast",
-        "AI-powered development"
-      ],
-      "excerpt": "Today we're launching Glaze \ud83d\udca0\n\nCreate any desktop app in minutes by chatting with AI.\nBeautiful, powerful, and truly personal.\n\nLearn more on https://glazeapp.com\nFollow @glazeapps for updates.",
-      "image": "https://pbs.twimg.com/media/HCkLlEHWkAAJpny.png",
-      "sources": [
-        "https://x.com/i/status/2029180822838759703"
-      ],
-      "video": "media/2026-03-06-revolutionizing-app-development-ai-powered-glaze-l.mp4",
       "shortId": 111
     },
     {
@@ -2347,6 +2349,25 @@
       "shortId": 114
     },
     {
+      "filename": "2026-03-06-revolutionizing-app-development-ai-powered-glaze-l.md",
+      "slug": "2026-03-06-revolutionizing-app-development-ai-powered-glaze-l",
+      "title": "Revolutionizing App Development: AI-Powered Glaze Launches",
+      "date": "2026-03-06",
+      "published_at": "2026-03-06T02:08:28.808014+00:00",
+      "tags": [
+        "Glaze",
+        "Raycast",
+        "AI-powered development"
+      ],
+      "excerpt": "Today we're launching Glaze \ud83d\udca0\n\nCreate any desktop app in minutes by chatting with AI.\nBeautiful, powerful, and truly personal.\n\nLearn more on https://glazeapp.com\nFollow @glazeapps for updates.",
+      "image": "https://pbs.twimg.com/media/HCkLlEHWkAAJpny.png",
+      "sources": [
+        "https://x.com/i/status/2029180822838759703"
+      ],
+      "video": "media/2026-03-06-revolutionizing-app-development-ai-powered-glaze-l.mp4",
+      "shortId": 115
+    },
+    {
       "filename": "2026-03-05-apple-unleashes-ai-powered-macbook-pro-with-m5-pro.md",
       "slug": "2026-03-05-apple-unleashes-ai-powered-macbook-pro-with-m5-pro",
       "title": "Apple Unleashes AI-Powered MacBook Pro with M5 Pro and M5 Max Chips",
@@ -2364,7 +2385,7 @@
       "sources": [
         "https://share.google/XBSpKN75sGxaqL1Mk"
       ],
-      "shortId": 115
+      "shortId": 116
     },
     {
       "filename": "2026-03-05-revolutionizing-affordable-computing-apple-unveils.md",
@@ -2382,7 +2403,7 @@
       "sources": [
         "https://share.google/Aoh06t6BFh9ZjAPJW"
       ],
-      "shortId": 116
+      "shortId": 117
     },
     {
       "filename": "2026-03-05-revolutionary-voice-mode-rolls-out-in-claude-code.md",
@@ -2401,7 +2422,7 @@
         "https://x.com/trq212/status/2028628570692890800?s=20"
       ],
       "video": "media/2026-03-05-revolutionary-voice-mode-rolls-out-in-claude-code.mp4",
-      "shortId": 117
+      "shortId": 118
     },
     {
       "filename": "2026-03-01-electron-apps-just-got-a-whole-lot-smarter-with-ag.md",
@@ -2419,7 +2440,7 @@
       "sources": [
         "https://x.com/i/status/2028128730132922760"
       ],
-      "shortId": 118
+      "shortId": 119
     },
     {
       "filename": "2026-02-26-revolutionizing-productivity-minimax-agents-game-c.md",
@@ -2438,43 +2459,7 @@
         "https://x.com/i/status/2027027163078336885"
       ],
       "video": "media/2026-02-26-revolutionizing-productivity-minimax-agents-game-c.mp4",
-      "shortId": 119
-    },
-    {
-      "filename": "2026-02-26-revolutionizing-video-editing-adobe-unveils-ai-pow.md",
-      "slug": "2026-02-26-revolutionizing-video-editing-adobe-unveils-ai-pow",
-      "title": "Revolutionizing Video Editing: Adobe Unveils AI-Powered Quick Cut Tool",
-      "date": "2026-02-26",
-      "published_at": "2026-02-26T16:41:56.838692+00:00",
-      "tags": [
-        "Adobe",
-        "AI",
-        "Video Editing"
-      ],
-      "excerpt": "Adobe\u2019s new AI video editing tool stitches clips into a first draft https://www.theverge.com/tech/884285/adobe-firefly-ai-video-editing-quick-cut",
-      "image": null,
-      "sources": [
-        "https://x.com/i/status/2026659388270981288"
-      ],
       "shortId": 120
-    },
-    {
-      "filename": "2026-02-26-revolutionizing-chatbot-development-vercels-game-c.md",
-      "slug": "2026-02-26-revolutionizing-chatbot-development-vercels-game-c",
-      "title": "Revolutionizing Chatbot Development: Vercel's Game-Changing Chat SDK",
-      "date": "2026-02-26",
-      "published_at": "2026-02-26T16:34:07.158429+00:00",
-      "tags": [
-        "Vercel",
-        "Chat SDK",
-        "Chatbot Development"
-      ],
-      "excerpt": "Vercel's new Chat SDK allows developers to write chatbot logic once and deploy across multiple platforms, streamlining development and increasing productivity. This innovation has the potential to revolutionize the way chatbots are built and integrated into various applications.",
-      "image": null,
-      "sources": [
-        "https://x.com/i/status/2026359198171402678"
-      ],
-      "shortId": 121
     },
     {
       "filename": "2026-02-26-revolutionizing-image-creation-nano-banana-2-unlea.md",
@@ -2493,25 +2478,42 @@
         "https://x.com/i/status/2027051577899380991"
       ],
       "video": "media/2026-02-26-revolutionizing-image-creation-nano-banana-2-unlea.mp4",
+      "shortId": 121
+    },
+    {
+      "filename": "2026-02-26-revolutionizing-video-editing-adobe-unveils-ai-pow.md",
+      "slug": "2026-02-26-revolutionizing-video-editing-adobe-unveils-ai-pow",
+      "title": "Revolutionizing Video Editing: Adobe Unveils AI-Powered Quick Cut Tool",
+      "date": "2026-02-26",
+      "published_at": "2026-02-26T16:41:56.838692+00:00",
+      "tags": [
+        "Adobe",
+        "AI",
+        "Video Editing"
+      ],
+      "excerpt": "Adobe\u2019s new AI video editing tool stitches clips into a first draft https://www.theverge.com/tech/884285/adobe-firefly-ai-video-editing-quick-cut",
+      "image": null,
+      "sources": [
+        "https://x.com/i/status/2026659388270981288"
+      ],
       "shortId": 122
     },
     {
-      "filename": "2026-02-25-google-labs-unveils-major-upgrade-to-opal-revoluti.md",
-      "slug": "2026-02-25-google-labs-unveils-major-upgrade-to-opal-revoluti",
-      "title": "Google Labs Unveils Major Upgrade to Opal, Revolutionizing No-Code AI Workflows",
-      "date": "2026-02-25",
-      "published_at": "2026-02-25T03:24:09.507777+00:00",
+      "filename": "2026-02-26-revolutionizing-chatbot-development-vercels-game-c.md",
+      "slug": "2026-02-26-revolutionizing-chatbot-development-vercels-game-c",
+      "title": "Revolutionizing Chatbot Development: Vercel's Game-Changing Chat SDK",
+      "date": "2026-02-26",
+      "published_at": "2026-02-26T16:34:07.158429+00:00",
       "tags": [
-        "Google Labs",
-        "Opal",
-        "No-Code AI"
+        "Vercel",
+        "Chat SDK",
+        "Chatbot Development"
       ],
-      "excerpt": "Google Labs has launched a significant upgrade to Opal, its no-code visual builder for AI workflows, introducing a new agent step and enhanced tools for increased capability. This upgrade is set to transform the way developers interact with AI workflows.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2026374886722281472/img/QbPxQ28_KKRXSIEd.jpg",
+      "excerpt": "Vercel's new Chat SDK allows developers to write chatbot logic once and deploy across multiple platforms, streamlining development and increasing productivity. This innovation has the potential to revolutionize the way chatbots are built and integrated into various applications.",
+      "image": null,
       "sources": [
-        "https://x.com/i/status/2026374947996840169"
+        "https://x.com/i/status/2026359198171402678"
       ],
-      "video": "media/2026-02-25-google-labs-unveils-major-upgrade-to-opal-revoluti.mp4",
       "shortId": 123
     },
     {
@@ -2534,25 +2536,6 @@
       "shortId": 124
     },
     {
-      "filename": "2026-02-25-revolutionizing-ai-capabilities-the-dawn-of-perple.md",
-      "slug": "2026-02-25-revolutionizing-ai-capabilities-the-dawn-of-perple",
-      "title": "Revolutionizing AI Capabilities: The Dawn of Perplexity Computer",
-      "date": "2026-02-25",
-      "published_at": "2026-02-25T18:04:43.428272+00:00",
-      "tags": [
-        "AI",
-        "Perplexity Computer",
-        "Tech Innovations"
-      ],
-      "excerpt": "Introducing Perplexity Computer.\n\nComputer unifies every current AI capability into one system.\n\nIt can research, design, code, deploy, and manage any project end-to-end.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2026695448996753409/img/yeKxOwuVQwjvBDYt.jpg",
-      "sources": [
-        "https://x.com/i/status/2026695550771540489"
-      ],
-      "video": "media/2026-02-25-revolutionizing-ai-capabilities-the-dawn-of-perple.mp4",
-      "shortId": 125
-    },
-    {
       "filename": "2026-02-25-revolutionizing-front-end-development-the-ai-power.md",
       "slug": "2026-02-25-revolutionizing-front-end-development-the-ai-power",
       "title": "Revolutionizing Front-End Development: The AI-Powered Rebuild of Next.js in Just One Week",
@@ -2569,25 +2552,44 @@
       "sources": [
         "https://blog.cloudflare.com/vinext/"
       ],
+      "shortId": 125
+    },
+    {
+      "filename": "2026-02-25-google-labs-unveils-major-upgrade-to-opal-revoluti.md",
+      "slug": "2026-02-25-google-labs-unveils-major-upgrade-to-opal-revoluti",
+      "title": "Google Labs Unveils Major Upgrade to Opal, Revolutionizing No-Code AI Workflows",
+      "date": "2026-02-25",
+      "published_at": "2026-02-25T03:24:09.507777+00:00",
+      "tags": [
+        "Google Labs",
+        "Opal",
+        "No-Code AI"
+      ],
+      "excerpt": "Google Labs has launched a significant upgrade to Opal, its no-code visual builder for AI workflows, introducing a new agent step and enhanced tools for increased capability. This upgrade is set to transform the way developers interact with AI workflows.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2026374886722281472/img/QbPxQ28_KKRXSIEd.jpg",
+      "sources": [
+        "https://x.com/i/status/2026374947996840169"
+      ],
+      "video": "media/2026-02-25-google-labs-unveils-major-upgrade-to-opal-revoluti.mp4",
       "shortId": 126
     },
     {
-      "filename": "2026-02-25-claude-code-unleashes-remote-control-a-game-change.md",
-      "slug": "2026-02-25-claude-code-unleashes-remote-control-a-game-change",
-      "title": "Claude Code Unleashes Remote Control: A Game-Changer for Developers",
+      "filename": "2026-02-25-revolutionizing-ai-capabilities-the-dawn-of-perple.md",
+      "slug": "2026-02-25-revolutionizing-ai-capabilities-the-dawn-of-perple",
+      "title": "Revolutionizing AI Capabilities: The Dawn of Perplexity Computer",
       "date": "2026-02-25",
-      "published_at": "2026-02-25T03:17:24.562902+00:00",
+      "published_at": "2026-02-25T18:04:43.428272+00:00",
       "tags": [
-        "Claude Code",
-        "Remote Control",
-        "Developer Tools"
+        "AI",
+        "Perplexity Computer",
+        "Tech Innovations"
       ],
-      "excerpt": "Claude Code introduces Remote Control, allowing developers to start tasks on their terminal and control them from their phone, revolutionizing workflow flexibility. This feature is a significant upgrade for developers who need to manage tasks on-the-go.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2026417722394021888/img/7uu-_ciDtZ7v3rYC.jpg",
+      "excerpt": "Introducing Perplexity Computer.\n\nComputer unifies every current AI capability into one system.\n\nIt can research, design, code, deploy, and manage any project end-to-end.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2026695448996753409/img/yeKxOwuVQwjvBDYt.jpg",
       "sources": [
-        "https://x.com/i/status/2026418433911603668"
+        "https://x.com/i/status/2026695550771540489"
       ],
-      "video": "media/2026-02-25-claude-code-unleashes-remote-control-a-game-change.mp4",
+      "video": "media/2026-02-25-revolutionizing-ai-capabilities-the-dawn-of-perple.mp4",
       "shortId": 127
     },
     {
@@ -2610,6 +2612,25 @@
       "shortId": 128
     },
     {
+      "filename": "2026-02-25-claude-code-unleashes-remote-control-a-game-change.md",
+      "slug": "2026-02-25-claude-code-unleashes-remote-control-a-game-change",
+      "title": "Claude Code Unleashes Remote Control: A Game-Changer for Developers",
+      "date": "2026-02-25",
+      "published_at": "2026-02-25T03:17:24.562902+00:00",
+      "tags": [
+        "Claude Code",
+        "Remote Control",
+        "Developer Tools"
+      ],
+      "excerpt": "Claude Code introduces Remote Control, allowing developers to start tasks on their terminal and control them from their phone, revolutionizing workflow flexibility. This feature is a significant upgrade for developers who need to manage tasks on-the-go.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2026417722394021888/img/7uu-_ciDtZ7v3rYC.jpg",
+      "sources": [
+        "https://x.com/i/status/2026418433911603668"
+      ],
+      "video": "media/2026-02-25-claude-code-unleashes-remote-control-a-game-change.mp4",
+      "shortId": 129
+    },
+    {
       "filename": "2026-02-21-revolutionizing-ai-powered-commerce-razorpay-and-n.md",
       "slug": "2026-02-21-revolutionizing-ai-powered-commerce-razorpay-and-n",
       "title": "Revolutionizing AI-Powered Commerce: Razorpay and NPCI Unveil Agentic Payments",
@@ -2626,7 +2647,7 @@
       "sources": [
         "https://share.google/JZHNyoCeRqofk1vze"
       ],
-      "shortId": 129
+      "shortId": 130
     },
     {
       "filename": "2026-02-21-revolutionizing-coding-claudes-game-changing-updat.md",
@@ -2645,44 +2666,24 @@
         "https://x.com/i/status/2024937960572104707"
       ],
       "video": "media/2026-02-21-revolutionizing-coding-claudes-game-changing-updat.mp4",
-      "shortId": 130
-    },
-    {
-      "filename": "2026-02-19-google-unveils-glimmer-a-revolutionary-design-lang.md",
-      "slug": "2026-02-19-google-unveils-glimmer-a-revolutionary-design-lang",
-      "title": "Google Unveils Glimmer: A Revolutionary Design Language for UX on Smart Glasses",
-      "date": "2026-02-19",
-      "published_at": "2026-02-19T19:01:33.212827+00:00",
-      "tags": [
-        "Google Design",
-        "Glimmer",
-        "Smart Glasses",
-        "UX Design"
-      ],
-      "excerpt": "Google introduces Glimmer, a new design language for UX on glasses that prioritizes voice, gesture, and eye-tracking, and discover its potential to transform the way we interact with smart glasses. This innovation is set to revolutionize the field of UX design and beyond.",
-      "image": "https://pbs.twimg.com/media/HBYAUP8bcAECeDt.jpg?name=orig",
-      "sources": [
-        "https://x.com/i/status/2023805464577011979"
-      ],
       "shortId": 131
     },
     {
-      "filename": "2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in.md",
-      "slug": "2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in",
-      "title": "Revolutionary AI-Powered Desktop Agent Unveiled: Interpreter",
+      "filename": "2026-02-19-revolutionizing-ai-powered-apps-with-secure-docker.md",
+      "slug": "2026-02-19-revolutionizing-ai-powered-apps-with-secure-docker",
+      "title": "Revolutionizing AI-Powered Apps with Secure Docker Sandboxes",
       "date": "2026-02-19",
-      "published_at": "2026-02-19T19:04:38.946484+00:00",
+      "published_at": "2026-02-19T19:06:39.362862+00:00",
       "tags": [
+        "Docker",
         "AI",
-        "Productivity",
-        "Technology"
+        "Sandboxing"
       ],
-      "excerpt": "Today I'm launching Interpreter.\n\nIt's a desktop agent that can fill PDFs, edit your Excel and Word docs, and learn new skills.\n\nRuns offline, works with any model, and it's free.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2024013495285805058/img/7WZN7wcEd-PRLveg.jpg",
+      "excerpt": "Docker's new shell sandbox enables secure and isolated execution of AI-powered apps, and we're excited to explore its potential. This breakthrough technology allows developers to run AI assistants without exposing their systems to risks.",
+      "image": null,
       "sources": [
-        "https://x.com/i/status/2024227639087813035"
+        "https://x.com/i/status/2024178381760143381"
       ],
-      "video": "media/2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in.mp4",
       "shortId": 132
     },
     {
@@ -2705,22 +2706,42 @@
       "shortId": 133
     },
     {
-      "filename": "2026-02-19-revolutionizing-ai-powered-apps-with-secure-docker.md",
-      "slug": "2026-02-19-revolutionizing-ai-powered-apps-with-secure-docker",
-      "title": "Revolutionizing AI-Powered Apps with Secure Docker Sandboxes",
+      "filename": "2026-02-19-google-unveils-glimmer-a-revolutionary-design-lang.md",
+      "slug": "2026-02-19-google-unveils-glimmer-a-revolutionary-design-lang",
+      "title": "Google Unveils Glimmer: A Revolutionary Design Language for UX on Smart Glasses",
       "date": "2026-02-19",
-      "published_at": "2026-02-19T19:06:39.362862+00:00",
+      "published_at": "2026-02-19T19:01:33.212827+00:00",
       "tags": [
-        "Docker",
-        "AI",
-        "Sandboxing"
+        "Google Design",
+        "Glimmer",
+        "Smart Glasses",
+        "UX Design"
       ],
-      "excerpt": "Docker's new shell sandbox enables secure and isolated execution of AI-powered apps, and we're excited to explore its potential. This breakthrough technology allows developers to run AI assistants without exposing their systems to risks.",
-      "image": null,
+      "excerpt": "Google introduces Glimmer, a new design language for UX on glasses that prioritizes voice, gesture, and eye-tracking, and discover its potential to transform the way we interact with smart glasses. This innovation is set to revolutionize the field of UX design and beyond.",
+      "image": "https://pbs.twimg.com/media/HBYAUP8bcAECeDt.jpg?name=orig",
       "sources": [
-        "https://x.com/i/status/2024178381760143381"
+        "https://x.com/i/status/2023805464577011979"
       ],
       "shortId": 134
+    },
+    {
+      "filename": "2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in.md",
+      "slug": "2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in",
+      "title": "Revolutionary AI-Powered Desktop Agent Unveiled: Interpreter",
+      "date": "2026-02-19",
+      "published_at": "2026-02-19T19:04:38.946484+00:00",
+      "tags": [
+        "AI",
+        "Productivity",
+        "Technology"
+      ],
+      "excerpt": "Today I'm launching Interpreter.\n\nIt's a desktop agent that can fill PDFs, edit your Excel and Word docs, and learn new skills.\n\nRuns offline, works with any model, and it's free.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2024013495285805058/img/7WZN7wcEd-PRLveg.jpg",
+      "sources": [
+        "https://x.com/i/status/2024227639087813035"
+      ],
+      "video": "media/2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in.mp4",
+      "shortId": 135
     },
     {
       "filename": "2026-02-18-revolutionizing-startup-productivity-the-ultimate.md",
@@ -2738,7 +2759,7 @@
       "sources": [
         "https://x.com/i/status/2023978535161925889"
       ],
-      "shortId": 135
+      "shortId": 136
     },
     {
       "filename": "2026-02-18-revolutionizing-productivity-bitroots-game-changin.md",
@@ -2756,7 +2777,7 @@
       "sources": [
         "https://x.com/i/status/2023967802823245901"
       ],
-      "shortId": 136
+      "shortId": 137
     },
     {
       "filename": "2026-02-18-indias-ai-startup-funding-landscape-sees-regional.md",
@@ -2774,44 +2795,7 @@
       "sources": [
         "https://analyticsindiamag.com/ai-startups/funding-reset-why-karnataka-faced-a-28-drop-while-maharashtra-held-its-ground"
       ],
-      "shortId": 137
-    },
-    {
-      "filename": "2026-02-17-revolutionizing-design-figma-unveils-code-to-desig.md",
-      "slug": "2026-02-17-revolutionizing-design-figma-unveils-code-to-desig",
-      "title": "Revolutionizing Design: Figma Unveils Code-to-Design Magic",
-      "date": "2026-02-17",
-      "published_at": "2026-02-17T19:04:42.217445+00:00",
-      "tags": [
-        "Figma",
-        "Design",
-        "Development"
-      ],
-      "excerpt": "Now you can take workflows that start in Claude Code even further in Figma.",
-      "image": "https://cdn.sanity.io/images/599r6htc/regionalized/1bc14c622ab6b8e2ad11229e6206c07dbad63311-3200x1800.png?w=1200&q=70&fit=max&auto=format",
-      "sources": [
-        "https://www.figma.com/blog/introducing-claude-code-to-figma/"
-      ],
       "shortId": 138
-    },
-    {
-      "filename": "2026-02-17-revolutionizing-tech-stacks-hyperbrowser-unveils-b.md",
-      "slug": "2026-02-17-revolutionizing-tech-stacks-hyperbrowser-unveils-b",
-      "title": "Revolutionizing Tech Stacks: Hyperbrowser Unveils Batch Mode for HyperSkill",
-      "date": "2026-02-17",
-      "published_at": "2026-02-17T17:00:11.197575+00:00",
-      "tags": [
-        "Hyperbrowser",
-        "HyperSkill",
-        "AI Agents"
-      ],
-      "excerpt": "Hyperbrowser introduces batch mode for HyperSkill, enabling AI agents to master entire tech stacks, and we're excited to explore the implications for the tech community. This update promises to revolutionize the way developers work with AI agents and tech stacks.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2023480413063417856/img/V8nba7L3Ua6bqszv.jpg",
-      "sources": [
-        "https://x.com/i/status/2023480469044818208"
-      ],
-      "video": "media/2026-02-17-revolutionizing-tech-stacks-hyperbrowser-unveils-b.mp4",
-      "shortId": 139
     },
     {
       "filename": "2026-02-17-revolutionizing-coding-ollama-unveils-subagents-an.md",
@@ -2830,25 +2814,43 @@
       "sources": [
         "https://ollama.com/blog/web-search-subagents-claude-code"
       ],
+      "shortId": 139
+    },
+    {
+      "filename": "2026-02-17-revolutionizing-tech-stacks-hyperbrowser-unveils-b.md",
+      "slug": "2026-02-17-revolutionizing-tech-stacks-hyperbrowser-unveils-b",
+      "title": "Revolutionizing Tech Stacks: Hyperbrowser Unveils Batch Mode for HyperSkill",
+      "date": "2026-02-17",
+      "published_at": "2026-02-17T17:00:11.197575+00:00",
+      "tags": [
+        "Hyperbrowser",
+        "HyperSkill",
+        "AI Agents"
+      ],
+      "excerpt": "Hyperbrowser introduces batch mode for HyperSkill, enabling AI agents to master entire tech stacks, and we're excited to explore the implications for the tech community. This update promises to revolutionize the way developers work with AI agents and tech stacks.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2023480413063417856/img/V8nba7L3Ua6bqszv.jpg",
+      "sources": [
+        "https://x.com/i/status/2023480469044818208"
+      ],
+      "video": "media/2026-02-17-revolutionizing-tech-stacks-hyperbrowser-unveils-b.mp4",
       "shortId": 140
     },
     {
-      "filename": "2026-02-16-unlocking-the-power-of-anthropic-agents-a-game-cha.md",
-      "slug": "2026-02-16-unlocking-the-power-of-anthropic-agents-a-game-cha",
-      "title": "Unlocking the Power of Anthropic Agents: A Game-Changer for AI Development",
-      "date": "2026-02-16",
-      "published_at": "2026-02-16T18:56:29.833462+00:00",
+      "filename": "2026-02-17-revolutionizing-design-figma-unveils-code-to-desig.md",
+      "slug": "2026-02-17-revolutionizing-design-figma-unveils-code-to-desig",
+      "title": "Revolutionizing Design: Figma Unveils Code-to-Design Magic",
+      "date": "2026-02-17",
+      "published_at": "2026-02-17T19:04:42.217445+00:00",
       "tags": [
-        "Anthropic Agent SDK",
-        "AI Development",
-        "Machine Learning"
+        "Figma",
+        "Design",
+        "Development"
       ],
-      "excerpt": "The Anthropic Agent SDK is a powerful tool for building custom agents, and its potential is being overlooked by the development community. This framework has the potential to revolutionize AI development and create more sophisticated machine learning models.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2023253339073392640/img/VhovnpWvug7jGnKn.jpg",
+      "excerpt": "Now you can take workflows that start in Claude Code even further in Figma.",
+      "image": "https://cdn.sanity.io/images/599r6htc/regionalized/1bc14c622ab6b8e2ad11229e6206c07dbad63311-3200x1800.png?w=1200&q=70&fit=max&auto=format",
       "sources": [
-        "https://x.com/i/status/2023428910042513482"
+        "https://www.figma.com/blog/introducing-claude-code-to-figma/"
       ],
-      "video": "https://video.twimg.com/amplify_video/2023253339073392640/vid/avc1/3840x2160/7JQ8lRXN0Gf-NYY_.mp4?tag=21",
       "shortId": 141
     },
     {
@@ -2870,6 +2872,25 @@
       "shortId": 142
     },
     {
+      "filename": "2026-02-16-unlocking-the-power-of-anthropic-agents-a-game-cha.md",
+      "slug": "2026-02-16-unlocking-the-power-of-anthropic-agents-a-game-cha",
+      "title": "Unlocking the Power of Anthropic Agents: A Game-Changer for AI Development",
+      "date": "2026-02-16",
+      "published_at": "2026-02-16T18:56:29.833462+00:00",
+      "tags": [
+        "Anthropic Agent SDK",
+        "AI Development",
+        "Machine Learning"
+      ],
+      "excerpt": "The Anthropic Agent SDK is a powerful tool for building custom agents, and its potential is being overlooked by the development community. This framework has the potential to revolutionize AI development and create more sophisticated machine learning models.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2023253339073392640/img/VhovnpWvug7jGnKn.jpg",
+      "sources": [
+        "https://x.com/i/status/2023428910042513482"
+      ],
+      "video": "https://video.twimg.com/amplify_video/2023253339073392640/vid/avc1/3840x2160/7JQ8lRXN0Gf-NYY_.mp4?tag=21",
+      "shortId": 143
+    },
+    {
       "filename": "2026-02-16-anthropic-expands-indian-presence-with-new-bengalu.md",
       "slug": "2026-02-16-anthropic-expands-indian-presence-with-new-bengalu",
       "title": "Anthropic Expands Indian Presence with New Bengaluru Office and Strategic Partnerships",
@@ -2885,7 +2906,7 @@
       "sources": [
         "https://www.anthropic.com/news/bengaluru-office-partnerships-across-india"
       ],
-      "shortId": 143
+      "shortId": 144
     },
     {
       "filename": "2026-02-16-minimax-m25-revolution-unleashing-3x-faster-infere.md",
@@ -2903,7 +2924,7 @@
       "sources": [
         "https://x.com/i/status/2023066199995949350"
       ],
-      "shortId": 144
+      "shortId": 145
     },
     {
       "filename": "2026-02-15-revolutionizing-ai-powered-browsing-kimi-claw-unle.md",
@@ -2922,24 +2943,6 @@
         "https://x.com/i/status/2023029674549596301"
       ],
       "video": "media/2026-02-15-revolutionizing-ai-powered-browsing-kimi-claw-unle.mp4",
-      "shortId": 145
-    },
-    {
-      "filename": "2026-02-15-revolutionizing-online-discussions-the-rise-of-thr.md",
-      "slug": "2026-02-15-revolutionizing-online-discussions-the-rise-of-thr",
-      "title": "Revolutionizing Online Discussions: The Rise of Thread Test",
-      "date": "2026-02-15",
-      "published_at": "2026-02-15T18:34:32.075247+00:00",
-      "tags": [
-        "thread test",
-        "online discussions",
-        "community engagement"
-      ],
-      "excerpt": "A new approach to online discussions is gaining traction, enabling more meaningful and engaging interactions, and we're excited to dive into its implications for the tech community. The thread test is poised to revolutionize the way we participate in online conversations.",
-      "image": null,
-      "sources": [
-        "https://www.threads.com/@toolfoliooo/post/DUyJyygk5Ct?xmt=AQF0Sb4soJ59WdTpfk3Z2rOSnVLTlTUaJ1yFPJdnNWJL4kN6Zppry2uQuHct11bO0b8RtAvk&slof=1"
-      ],
       "shortId": 146
     },
     {
@@ -2962,22 +2965,21 @@
       "shortId": 147
     },
     {
-      "filename": "2026-02-14-revolutionizing-ai-driven-design-introducing-the-g.md",
-      "slug": "2026-02-14-revolutionizing-ai-driven-design-introducing-the-g",
-      "title": "Revolutionizing AI-Driven Design: Introducing the Game-Changing Design Canvas",
-      "date": "2026-02-14",
-      "published_at": "2026-02-14T04:35:10.585317+00:00",
+      "filename": "2026-02-15-revolutionizing-online-discussions-the-rise-of-thr.md",
+      "slug": "2026-02-15-revolutionizing-online-discussions-the-rise-of-thr",
+      "title": "Revolutionizing Online Discussions: The Rise of Thread Test",
+      "date": "2026-02-15",
+      "published_at": "2026-02-15T18:34:32.075247+00:00",
       "tags": [
-        "AI",
-        "Design Canvas",
-        "Subframe"
+        "thread test",
+        "online discussions",
+        "community engagement"
       ],
-      "excerpt": "Discover how the new Design Canvas is transforming the way developers interact with AI agents, streamlining the design process and eliminating endless prompting. This innovative tool is set to revolutionize the field of AI-driven design, enabling developers to ship better designs in code with ease.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2022037126469365761/img/xJeAX_YvlqDuHxaA.jpg",
+      "excerpt": "A new approach to online discussions is gaining traction, enabling more meaningful and engaging interactions, and we're excited to dive into its implications for the tech community. The thread test is poised to revolutionize the way we participate in online conversations.",
+      "image": null,
       "sources": [
-        "https://x.com/i/status/2022038492575154555"
+        "https://www.threads.com/@toolfoliooo/post/DUyJyygk5Ct?xmt=AQF0Sb4soJ59WdTpfk3Z2rOSnVLTlTUaJ1yFPJdnNWJL4kN6Zppry2uQuHct11bO0b8RtAvk&slof=1"
       ],
-      "video": "media/2026-02-14-revolutionizing-ai-driven-design-introducing-the-g.mp4",
       "shortId": 148
     },
     {
@@ -3000,6 +3002,25 @@
       "shortId": 149
     },
     {
+      "filename": "2026-02-14-revolutionizing-ai-driven-design-introducing-the-g.md",
+      "slug": "2026-02-14-revolutionizing-ai-driven-design-introducing-the-g",
+      "title": "Revolutionizing AI-Driven Design: Introducing the Game-Changing Design Canvas",
+      "date": "2026-02-14",
+      "published_at": "2026-02-14T04:35:10.585317+00:00",
+      "tags": [
+        "AI",
+        "Design Canvas",
+        "Subframe"
+      ],
+      "excerpt": "Discover how the new Design Canvas is transforming the way developers interact with AI agents, streamlining the design process and eliminating endless prompting. This innovative tool is set to revolutionize the field of AI-driven design, enabling developers to ship better designs in code with ease.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2022037126469365761/img/xJeAX_YvlqDuHxaA.jpg",
+      "sources": [
+        "https://x.com/i/status/2022038492575154555"
+      ],
+      "video": "media/2026-02-14-revolutionizing-ai-driven-design-introducing-the-g.mp4",
+      "shortId": 150
+    },
+    {
       "filename": "2026-02-13-revolutionizing-cicd-introducing-buildspace-the-ai.md",
       "slug": "2026-02-13-revolutionizing-cicd-introducing-buildspace-the-ai",
       "title": "Revolutionizing CI/CD: Introducing BuildSpace, the AI-Powered Game Changer",
@@ -3016,25 +3037,6 @@
       "sources": [
         "https://photon.codes/blog/ci-cd-in-the-age-of-ai"
       ],
-      "shortId": 150
-    },
-    {
-      "filename": "2026-02-12-revolutionizing-app-store-submissions-automated-gu.md",
-      "slug": "2026-02-12-revolutionizing-app-store-submissions-automated-gu",
-      "title": "Revolutionizing App Store Submissions: Automated Guideline Compliance",
-      "date": "2026-02-12",
-      "published_at": "2026-02-12T18:55:07.642085+00:00",
-      "tags": [
-        "App Store",
-        "iOS Development",
-        "CLI Tools"
-      ],
-      "excerpt": "A new CLI tool scans iOS apps against App Store guidelines, ensuring compliance and streamlining the submission process. This game-changing tool automates checks for payment, privacy, and metadata requirements, making it a must-have for developers.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2021661265601736704/img/unNAGbptn10BXCu3.jpg",
-      "sources": [
-        "https://x.com/i/status/2021661315329405174"
-      ],
-      "video": "media/2026-02-12-revolutionizing-app-store-submissions-automated-gu.mp4",
       "shortId": 151
     },
     {
@@ -3075,6 +3077,25 @@
       "shortId": 153
     },
     {
+      "filename": "2026-02-12-revolutionizing-app-store-submissions-automated-gu.md",
+      "slug": "2026-02-12-revolutionizing-app-store-submissions-automated-gu",
+      "title": "Revolutionizing App Store Submissions: Automated Guideline Compliance",
+      "date": "2026-02-12",
+      "published_at": "2026-02-12T18:55:07.642085+00:00",
+      "tags": [
+        "App Store",
+        "iOS Development",
+        "CLI Tools"
+      ],
+      "excerpt": "A new CLI tool scans iOS apps against App Store guidelines, ensuring compliance and streamlining the submission process. This game-changing tool automates checks for payment, privacy, and metadata requirements, making it a must-have for developers.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2021661265601736704/img/unNAGbptn10BXCu3.jpg",
+      "sources": [
+        "https://x.com/i/status/2021661315329405174"
+      ],
+      "video": "media/2026-02-12-revolutionizing-app-store-submissions-automated-gu.mp4",
+      "shortId": 154
+    },
+    {
       "filename": "2026-02-11-ai-safety-leader-sounds-alarm-resignation-sparks-c.md",
       "slug": "2026-02-11-ai-safety-leader-sounds-alarm-resignation-sparks-c",
       "title": "AI Safety Leader Sounds Alarm: Resignation Sparks Concerns Over Tech's Dark Side",
@@ -3090,7 +3111,7 @@
       "sources": [
         "https://share.google/6gzMAD1U347j7YUXX"
       ],
-      "shortId": 154
+      "shortId": 155
     },
     {
       "filename": "2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.md",
@@ -3109,63 +3130,7 @@
         "https://x.com/i/status/2020464238880596429"
       ],
       "video": "media/2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.mp4",
-      "shortId": 155
-    },
-    {
-      "filename": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.md",
-      "slug": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard",
-      "title": "India's Tech Landscape Shifts: Why Deeptech and Hardware Are the Future",
-      "date": "2026-02-10",
-      "published_at": "2026-02-10T19:23:50.996880+00:00",
-      "tags": [
-        "Deeptech",
-        "Hardware",
-        "IT Service Exports",
-        "Artificial Intelligence"
-      ],
-      "excerpt": "India's reliance on IT service exports is no longer viable, and the country must shift its focus to deeptech and hardware to build long-term economic resilience. Zerodha founder Nithin Kamath emphasizes the need for self-sufficiency in technology to stay competitive.",
-      "image": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-18740,resizemode-75,msid-128120292/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath.jpg",
-      "sources": [
-        "https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms"
-      ],
       "shortId": 156
-    },
-    {
-      "filename": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
-      "slug": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits",
-      "title": "AI Expansion Showdown: Anthropic's India Foray Hits Local Roadblock",
-      "date": "2026-02-10",
-      "published_at": "2026-02-10T02:07:30.583768+00:00",
-      "tags": [
-        "AI",
-        "Anthropic",
-        "India",
-        "Trademark"
-      ],
-      "excerpt": "India's Anthropic Software has taken the U.S. AI giant to court over a name dispute.",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/01/anthropic-image-jagmeet-singh-techcrunch.jpg?resize=1200,800",
-      "sources": [
-        "https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/"
-      ],
-      "shortId": 157
-    },
-    {
-      "filename": "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal.md",
-      "slug": "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal",
-      "title": "Introducing Nanobot: The Ultra-Lightweight Personal AI Assistant",
-      "date": "2026-02-10",
-      "published_at": "2026-02-10T19:24:09.031498+00:00",
-      "tags": [
-        "AI",
-        "Nanobot",
-        "Personal Assistant"
-      ],
-      "excerpt": "\"\ud83d\udc08 nanobot: The Ultra-Lightweight OpenClaw\". Contribute to HKUDS/nanobot development by creating an account on GitHub.",
-      "image": "https://opengraph.githubassets.com/860a29c3b70dd9f9266b82558c0c427fb47036deb672088e1b5f525631120a27/HKUDS/nanobot",
-      "sources": [
-        "https://github.com/HKUDS/nanobot"
-      ],
-      "shortId": 158
     },
     {
       "filename": "2026-02-10-revolutionizing-research-visuals-google-ais-paperb.md",
@@ -3185,7 +3150,7 @@
       "sources": [
         "https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/"
       ],
-      "shortId": 159
+      "shortId": 157
     },
     {
       "filename": "2026-02-10-revolutionizing-ui-animations-introducing-reactbit.md",
@@ -3204,25 +3169,44 @@
         "https://x.com/i/status/2020423330386579646"
       ],
       "video": "media/2026-02-10-revolutionizing-ui-animations-introducing-reactbit.mp4",
-      "shortId": 160
+      "shortId": 158
     },
     {
-      "filename": "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan.md",
-      "slug": "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan",
-      "title": "Revolutionizing Coding: Composer 1.5 Unleashes Enhanced Intelligence",
+      "filename": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.md",
+      "slug": "2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits",
+      "title": "AI Expansion Showdown: Anthropic's India Foray Hits Local Roadblock",
       "date": "2026-02-10",
-      "published_at": "2026-02-10T19:19:19.902983+00:00",
+      "published_at": "2026-02-10T02:07:30.583768+00:00",
       "tags": [
-        "Composer 1.5",
-        "AI Coding",
-        "Reinforcement Learning"
+        "AI",
+        "Anthropic",
+        "India",
+        "Trademark"
       ],
-      "excerpt": "Improved reasoning over challenging coding tasks by scaling RL over 20x.",
-      "image": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/blog/composer-1.5-og.png",
+      "excerpt": "India's Anthropic Software has taken the U.S. AI giant to court over a name dispute.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/01/anthropic-image-jagmeet-singh-techcrunch.jpg?resize=1200,800",
       "sources": [
-        "https://cursor.com/blog/composer-1-5"
+        "https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/"
       ],
-      "shortId": 161
+      "shortId": 159
+    },
+    {
+      "filename": "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal.md",
+      "slug": "2026-02-10-introducing-nanobot-the-ultra-lightweight-personal",
+      "title": "Introducing Nanobot: The Ultra-Lightweight Personal AI Assistant",
+      "date": "2026-02-10",
+      "published_at": "2026-02-10T19:24:09.031498+00:00",
+      "tags": [
+        "AI",
+        "Nanobot",
+        "Personal Assistant"
+      ],
+      "excerpt": "\"\ud83d\udc08 nanobot: The Ultra-Lightweight OpenClaw\". Contribute to HKUDS/nanobot development by creating an account on GitHub.",
+      "image": "https://opengraph.githubassets.com/860a29c3b70dd9f9266b82558c0c427fb47036deb672088e1b5f525631120a27/HKUDS/nanobot",
+      "sources": [
+        "https://github.com/HKUDS/nanobot"
+      ],
+      "shortId": 160
     },
     {
       "filename": "2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git.md",
@@ -3240,7 +3224,44 @@
       "sources": [
         "https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/"
       ],
+      "shortId": 161
+    },
+    {
+      "filename": "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan.md",
+      "slug": "2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan",
+      "title": "Revolutionizing Coding: Composer 1.5 Unleashes Enhanced Intelligence",
+      "date": "2026-02-10",
+      "published_at": "2026-02-10T19:19:19.902983+00:00",
+      "tags": [
+        "Composer 1.5",
+        "AI Coding",
+        "Reinforcement Learning"
+      ],
+      "excerpt": "Improved reasoning over challenging coding tasks by scaling RL over 20x.",
+      "image": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/blog/composer-1.5-og.png",
+      "sources": [
+        "https://cursor.com/blog/composer-1-5"
+      ],
       "shortId": 162
+    },
+    {
+      "filename": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.md",
+      "slug": "2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard",
+      "title": "India's Tech Landscape Shifts: Why Deeptech and Hardware Are the Future",
+      "date": "2026-02-10",
+      "published_at": "2026-02-10T19:23:50.996880+00:00",
+      "tags": [
+        "Deeptech",
+        "Hardware",
+        "IT Service Exports",
+        "Artificial Intelligence"
+      ],
+      "excerpt": "India's reliance on IT service exports is no longer viable, and the country must shift its focus to deeptech and hardware to build long-term economic resilience. Zerodha founder Nithin Kamath emphasizes the need for self-sufficiency in technology to stay competitive.",
+      "image": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-18740,resizemode-75,msid-128120292/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath.jpg",
+      "sources": [
+        "https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms"
+      ],
+      "shortId": 163
     },
     {
       "filename": "2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.md",
@@ -3259,7 +3280,7 @@
       "sources": [
         "https://www.linkedin.com/posts/chanin-nantasenamat_watch-me-use-coco-to-build-a-streamlit-ugcPost-7424601007264833536-P64R?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&utm_campaign=share_via"
       ],
-      "shortId": 163
+      "shortId": 164
     },
     {
       "filename": "2026-02-09-revolutionizing-ai-development-replicate-joins-for.md",
@@ -3277,25 +3298,6 @@
       "image": "https://replicate.com/blog/replicate-cloudflare.png",
       "sources": [
         "https://replicate.com/blog/replicate-cloudflare"
-      ],
-      "shortId": 164
-    },
-    {
-      "filename": "2026-02-08-revolutionizing-wordpress-management-claudes-new-c.md",
-      "slug": "2026-02-08-revolutionizing-wordpress-management-claudes-new-c",
-      "title": "Revolutionizing WordPress Management: Claude's New Connector Unleashed",
-      "date": "2026-02-08",
-      "published_at": "2026-02-08T04:15:14.443818+00:00",
-      "tags": [
-        "WordPress",
-        "Claude",
-        "AI",
-        "Anthropic"
-      ],
-      "excerpt": "WordPress users can now leverage Claude to analyze web traffic or find information about other internal site metrics.",
-      "image": "https://techcrunch.com/wp-content/uploads/2024/10/unnamed-7.png?w=1200",
-      "sources": [
-        "https://techcrunch.com/2026/02/06/it-just-got-easier-for-claude-to-check-in-on-your-wordpress-site/"
       ],
       "shortId": 165
     },
@@ -3337,6 +3339,25 @@
       "shortId": 167
     },
     {
+      "filename": "2026-02-08-revolutionizing-wordpress-management-claudes-new-c.md",
+      "slug": "2026-02-08-revolutionizing-wordpress-management-claudes-new-c",
+      "title": "Revolutionizing WordPress Management: Claude's New Connector Unleashed",
+      "date": "2026-02-08",
+      "published_at": "2026-02-08T04:15:14.443818+00:00",
+      "tags": [
+        "WordPress",
+        "Claude",
+        "AI",
+        "Anthropic"
+      ],
+      "excerpt": "WordPress users can now leverage Claude to analyze web traffic or find information about other internal site metrics.",
+      "image": "https://techcrunch.com/wp-content/uploads/2024/10/unnamed-7.png?w=1200",
+      "sources": [
+        "https://techcrunch.com/2026/02/06/it-just-got-easier-for-claude-to-check-in-on-your-wordpress-site/"
+      ],
+      "shortId": 168
+    },
+    {
       "filename": "2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo.md",
       "slug": "2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo",
       "title": "Revolutionary C Compiler Built by Team of Autonomous AI Agents",
@@ -3351,24 +3372,6 @@
       "image": "https://cdn.sanity.io/images/4zrzovbb/website/6cc87859f5453e9481278681aa6409856d61153c-2400x1260.png",
       "sources": [
         "https://share.google/4T0fJDumSQSmG5Cmo"
-      ],
-      "shortId": 168
-    },
-    {
-      "filename": "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
-      "slug": "2026-02-06-revolutionizing-video-creation-the-notch-prompter",
-      "title": "Revolutionizing Video Creation: The Notch Prompter",
-      "date": "2026-02-06",
-      "published_at": "2026-02-06T03:38:17.592163+00:00",
-      "tags": [
-        "video creation",
-        "AI",
-        "content creation"
-      ],
-      "excerpt": "Moody is an AI-powered notch teleprompter for Mac that keeps your script right next to your camera, maintaining natural eye contact during recordings and presentations.",
-      "image": "",
-      "sources": [
-        "https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3"
       ],
       "shortId": 169
     },
@@ -3392,6 +3395,25 @@
       "shortId": 170
     },
     {
+      "filename": "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
+      "slug": "2026-02-06-revolutionizing-coding-twitters-claude-code-update",
+      "title": "Revolutionizing Coding: Twitter's Claude Code Update",
+      "date": "2026-02-06",
+      "published_at": "2026-02-06T11:06:27.201899+00:00",
+      "tags": [
+        "Claude Code",
+        "AI",
+        "Coding"
+      ],
+      "excerpt": "Twitter's Claude Code now supports agent teams, enabling parallel work and coordination, and we're excited to explore its potential. This update is a game-changer for developers, allowing for faster and more efficient coding.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2019467383505924096/img/y8PJFj92TQdi95xR.jpg",
+      "sources": [
+        "https://x.com/lydiahallie/status/2019469032844587505?s=20"
+      ],
+      "video": "media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.mp4",
+      "shortId": 171
+    },
+    {
       "filename": "2026-02-06-unlocking-collaborative-coding-introducing-claude.md",
       "slug": "2026-02-06-unlocking-collaborative-coding-introducing-claude",
       "title": "Unlocking Collaborative Coding: Introducing Claude Code's Agent Teams",
@@ -3407,7 +3429,25 @@
       "sources": [
         "https://code.claude.com/docs/en/agent-teams#compare-with-subagents"
       ],
-      "shortId": 171
+      "shortId": 172
+    },
+    {
+      "filename": "2026-02-06-revolutionizing-video-creation-the-notch-prompter.md",
+      "slug": "2026-02-06-revolutionizing-video-creation-the-notch-prompter",
+      "title": "Revolutionizing Video Creation: The Notch Prompter",
+      "date": "2026-02-06",
+      "published_at": "2026-02-06T03:38:17.592163+00:00",
+      "tags": [
+        "video creation",
+        "AI",
+        "content creation"
+      ],
+      "excerpt": "Moody is an AI-powered notch teleprompter for Mac that keeps your script right next to your camera, maintaining natural eye contact during recordings and presentations.",
+      "image": "",
+      "sources": [
+        "https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3"
+      ],
+      "shortId": 173
     },
     {
       "filename": "2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.md",
@@ -3425,44 +3465,6 @@
       "sources": [
         "https://share.google/uISHcJ3WNR4H6uMhP"
       ],
-      "shortId": 172
-    },
-    {
-      "filename": "2026-02-06-revolutionizing-coding-twitters-claude-code-update.md",
-      "slug": "2026-02-06-revolutionizing-coding-twitters-claude-code-update",
-      "title": "Revolutionizing Coding: Twitter's Claude Code Update",
-      "date": "2026-02-06",
-      "published_at": "2026-02-06T11:06:27.201899+00:00",
-      "tags": [
-        "Claude Code",
-        "AI",
-        "Coding"
-      ],
-      "excerpt": "Twitter's Claude Code now supports agent teams, enabling parallel work and coordination, and we're excited to explore its potential. This update is a game-changer for developers, allowing for faster and more efficient coding.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2019467383505924096/img/y8PJFj92TQdi95xR.jpg",
-      "sources": [
-        "https://x.com/lydiahallie/status/2019469032844587505?s=20"
-      ],
-      "video": "media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.mp4",
-      "shortId": 173
-    },
-    {
-      "filename": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
-      "slug": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co",
-      "title": "Revolutionizing Coding Insights: Twitter's Claude Code Update",
-      "date": "2026-02-05",
-      "published_at": "2026-02-05T15:13:55.694372+00:00",
-      "tags": [
-        "Twitter",
-        "Claude Code",
-        "Coding Insights"
-      ],
-      "excerpt": "Claude Code introduces /insights, a command that analyzes your past month of usage to summarize projects and suggest workflow improvements.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2019173388062007297/img/jHnsIhpNNPkjIRvy.jpg",
-      "sources": [
-        "https://x.com/i/status/2019173731042750509"
-      ],
-      "video": "media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.mp4",
       "shortId": 174
     },
     {
@@ -3484,6 +3486,25 @@
       "shortId": 175
     },
     {
+      "filename": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co.md",
+      "slug": "2026-02-05-revolutionizing-coding-insights-twitters-claude-co",
+      "title": "Revolutionizing Coding Insights: Twitter's Claude Code Update",
+      "date": "2026-02-05",
+      "published_at": "2026-02-05T15:13:55.694372+00:00",
+      "tags": [
+        "Twitter",
+        "Claude Code",
+        "Coding Insights"
+      ],
+      "excerpt": "Claude Code introduces /insights, a command that analyzes your past month of usage to summarize projects and suggest workflow improvements.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2019173388062007297/img/jHnsIhpNNPkjIRvy.jpg",
+      "sources": [
+        "https://x.com/i/status/2019173731042750509"
+      ],
+      "video": "media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.mp4",
+      "shortId": 176
+    },
+    {
       "filename": "2026-02-05-revolutionizing-ai-powered-development-with-vercel.md",
       "slug": "2026-02-05-revolutionizing-ai-powered-development-with-vercel",
       "title": "Revolutionizing AI-Powered Development with Vercel's Skills.sh",
@@ -3499,7 +3520,7 @@
       "sources": [
         "https://app.inference.sh/blog/skills/agent-skills-overview"
       ],
-      "shortId": 176
+      "shortId": 177
     }
   ]
 }
