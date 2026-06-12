@@ -1130,3 +1130,102 @@ html.intro-reveal .footer {
         text-align: center;
     }
 }
+
+/* ---------------------------------------------------------------------------
+   SEO/CWV refresh additions
+   - list items are real anchors now (crawlable + proper tap targets)
+   - externalized cloud SVG strips render via <img>
+   - stable featured-card height to avoid rotation layout shift
+   --------------------------------------------------------------------------- */
+
+a.list-item {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cloud-ticker-track img {
+    flex-shrink: 0;
+    height: 320px;
+    width: 2400px;
+}
+
+.theme-toggle {
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.list-read-time {
+    font-size: 0.75rem;
+}
+
+/* Clamp featured card text so the 18s auto-rotation never changes the card
+   height (timer-driven height changes count as CLS). */
+.featured-post .post-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 2.6em;
+}
+
+.featured-post .post-excerpt {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 5.1em;
+}
+
+/* Crawlable archive of every post below the showcase */
+.post-archive {
+    max-width: 1200px;
+    margin: var(--spacing-3xl) auto 0;
+    padding: 0 var(--spacing-xl);
+}
+
+.archive-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: lowercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--spacing-md);
+}
+
+.archive-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    columns: 2;
+    column-gap: var(--spacing-xl);
+}
+
+.archive-list li {
+    padding: 6px 0;
+    border-bottom: 1px solid var(--border);
+    break-inside: avoid;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.archive-list a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.archive-list a:hover {
+    color: var(--accent);
+}
+
+.archive-date {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    margin-left: var(--spacing-sm);
+    white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+    .archive-list {
+        columns: 1;
+    }
+}

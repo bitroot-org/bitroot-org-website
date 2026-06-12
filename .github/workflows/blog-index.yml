@@ -46,11 +46,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add blog/posts/index.json blog/p/ rss.xml
+          git add blog/posts/index.json blog/p/ blog/sitemap.xml blog/index.html rss.xml
           if git diff --cached --quiet; then
             echo "No index changes to commit"
           else
-            git commit -m "blog: Rebuild index, short links, and RSS"
+            git commit -m "blog: Rebuild index, short links, sitemap, and RSS"
             git pull --rebase origin main
             git push
           fi

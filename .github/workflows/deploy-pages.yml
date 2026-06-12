@@ -49,6 +49,16 @@ jobs:
           cache: 'npm'
           cache-dependency-path: bitroot-v3/package-lock.json
 
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: 'blog/scripts/requirements.txt'
+
+      - name: Install blog build deps
+        run: pip install python-frontmatter markdown
+
       - name: Install v3 deps
         working-directory: bitroot-v3
         run: npm ci
@@ -76,12 +86,16 @@ jobs:
             fi
           done
 
-          # 2. Overlay v3 static export on top. v3 owns /, /404.html,
+          # 2. Pre-render every blog post to a static page at
+          #    $DIST/blog/<slug>/index.html (crawlable clean URLs).
+          python blog/scripts/build_post_pages.py --out "$DIST"
+
+          # 3. Overlay v3 static export on top. v3 owns /, /404.html,
           #    /about/, /kits/, /stacks/, /guides/, /tools/, /templates/,
-          #    /community/, /newsletter/, /_next/, etc.
+          #    /community/, /newsletter/, /_next/, sitemap.xml, etc.
           cp -R bitroot-v3/out/. "$DIST/"
 
-          # 3. Belt-and-braces: ensure .nojekyll exists so GH Pages does not
+          # 4. Belt-and-braces: ensure .nojekyll exists so GH Pages does not
           #    strip _next/ underscored paths.
           touch "$DIST/.nojekyll"
 

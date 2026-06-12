@@ -18,23 +18,20 @@ const PostsLoader = {
         try {
             const response = await fetch(this.postsIndexUrl);
             if (!response.ok) {
-                console.error('Failed to fetch posts index:', response.status);
                 return [];
             }
 
             const index = await response.json();
-            console.log('Loaded posts index:', index.count, 'posts');
 
-            // Use metadata directly, add readTime calculation
             const posts = index.metadata.map(post => ({
                 ...post,
-                readTime: '5 min' // Default read time
+                url: post.url || `/blog/${post.slug}/`,
+                readTime: post.readTime || '5 min'
             }));
 
             // Sort by date descending (newest first)
             return posts.sort((a, b) => new Date(b.date) - new Date(a.date));
         } catch (e) {
-            console.error('Error loading posts:', e);
             return [];
         }
     },
@@ -142,7 +139,7 @@ const PostsLoader = {
                     <p class="post-excerpt">${post.excerpt || ''}</p>
                     <div class="post-footer">
                         <span class="read-time">${post.readTime} read</span>
-                        <a href="post.html?slug=${post.slug}" class="read-more">Read more &rarr;</a>
+                        <a href="${post.url}" class="read-more">Read more &rarr;</a>
                     </div>
                 </div>
             </article>
@@ -156,14 +153,14 @@ const PostsLoader = {
         const tag = (post.tags && post.tags[0]) || 'General';
 
         return `
-            <article class="list-item" data-post-slug="${post.slug}">
+            <a class="list-item" data-post-slug="${post.slug}" href="${post.url}">
                 <span class="list-date">${this.formatDate(post.date, true)}</span>
                 <div class="list-content">
                     <span class="list-tag">${tag}</span>
-                    <h4 class="list-title">${post.title}</h4>
+                    <h3 class="list-title">${post.title}</h3>
                     <span class="list-read-time">${post.readTime}</span>
                 </div>
-            </article>
+            </a>
         `;
     },
 
@@ -174,14 +171,14 @@ const PostsLoader = {
         const tag = (post.tags && post.tags[0]) || 'General';
 
         return `
-            <article class="list-item${isActive ? ' active' : ''}" data-post-slug="${post.slug}">
+            <a class="list-item${isActive ? ' active' : ''}" data-post-slug="${post.slug}" href="${post.url}">
                 <span class="list-date">${this.formatDate(post.date, true)}</span>
                 <div class="list-content">
                     <span class="list-tag">${tag}</span>
-                    <h4 class="list-title">${post.title}</h4>
+                    <h3 class="list-title">${post.title}</h3>
                     <span class="list-read-time">${post.readTime}</span>
                 </div>
-            </article>
+            </a>
         `;
     },
 
@@ -309,7 +306,7 @@ const PostsLoader = {
         featuredContainer.innerHTML = `
             ${this.renderFeaturedPost(featured)}
             <aside class="post-list">
-                <h3 class="list-header">Recent</h3>
+                <h2 class="list-header">Recent</h2>
                 ${pagePosts.map(p => this.renderListItemWithState(p, p.slug === featured.slug)).join('')}
             </aside>
         `;
@@ -347,20 +344,23 @@ const PostsLoader = {
      * Initialize the posts loader and render posts
      */
     async init() {
-        console.log('PostsLoader initializing...');
         const posts = await this.fetchAllPosts();
 
         if (posts.length === 0) {
-            console.log('No posts found, showing empty state');
-            const container = document.querySelector('.showcase-grid');
-            if (container) {
-                container.innerHTML = this.renderEmptyState();
-            }
+            // Keep whatever was statically rendered at build time.
             return;
         }
 
-        console.log('Rendering', posts.length, 'posts');
         this.allPosts = posts;
+
+        // Pause the featured rotation while the tab is hidden.
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                this.stopAutoRotate();
+            } else {
+                this.startAutoRotate();
+            }
+        });
 
         // Add pagination container if it doesn't exist
         const showcase = document.querySelector('.showcase');
@@ -427,15 +427,7 @@ const PostsLoader = {
             this.initVideoControls(featured);
         }
 
-        document.querySelectorAll('.list-item').forEach(item => {
-            item.addEventListener('click', () => {
-                const slug = item.dataset.postSlug;
-                const post = posts.find(p => p.slug === slug);
-                if (post) {
-                    this.updateFeaturedPost(post, posts);
-                }
-            });
-        });
+        // List items are real anchors now — they navigate natively.
 
         // Featured post click navigates to post page
         if (featured) {
@@ -447,7 +439,7 @@ const PostsLoader = {
                     return;
                 }
                 const slug = featured.dataset.postSlug;
-                window.location.href = `post.html?slug=${slug}`;
+                window.location.href = `/blog/${slug}/`;
             });
         }
     },
@@ -457,6 +449,7 @@ const PostsLoader = {
      */
     startAutoRotate() {
         this.stopAutoRotate();
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
         const pagePosts = this.getPagePosts();
         if (pagePosts.length <= 1) return;
 
@@ -548,7 +541,7 @@ const PostsLoader = {
                 featured.querySelector('.post-title').textContent = post.title;
                 featured.querySelector('.post-excerpt').textContent = post.excerpt || '';
                 featured.querySelector('.read-time').textContent = (post.readTime || '5 min') + ' read';
-                featured.querySelector('.read-more').href = 'post.html?slug=' + post.slug;
+                featured.querySelector('.read-more').href = post.url || ('/blog/' + post.slug + '/');
 
                 // Handle video elements
                 const existingVideoContainer = featured.querySelector('.video-container');

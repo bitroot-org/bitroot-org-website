@@ -518,3 +518,81 @@ html[data-embed="1"] .post-hero-video {
         padding: var(--spacing-lg);
     }
 }
+
+/* ---------------------------------------------------------------------------
+   Newer/older post navigation (static post pages)
+   --------------------------------------------------------------------------- */
+
+.post-adjacent {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--border);
+}
+
+.post-adjacent-link {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-width: 48%;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.post-adjacent-link:hover .post-adjacent-title {
+    color: var(--accent);
+}
+
+.post-adjacent-next {
+    text-align: right;
+    margin-left: auto;
+}
+
+.post-adjacent-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: lowercase;
+    letter-spacing: 0.05em;
+}
+
+.post-adjacent-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.4;
+    transition: color 0.2s;
+}
+
+.post-adjacent-spacer {
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    .post-adjacent {
+        flex-direction: column;
+    }
+    .post-adjacent-link {
+        max-width: 100%;
+    }
+    .post-adjacent-next {
+        text-align: left;
+        margin-left: 0;
+    }
+}
+
+/* Reserve hero space before media loads — without a fixed box the whole
+   article shifts down once the image/video arrives (CLS). */
+.post-hero-image,
+.post-hero-video {
+    aspect-ratio: 16 / 9;
+    max-height: 500px;
+}
+
+.post-hero-image img {
+    height: 100%;
+}
+
+.post-hero-video video {
+    height: 100%;
+}
