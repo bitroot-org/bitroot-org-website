@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 177,
+  "count": 178,
   "posts": [
     "2026-06-12-apple-brings-ai-to-shortcuts-in-ios-27.md",
+    "2026-06-09-faang-is-dead-say-hello-to-mangos.md",
     "2026-06-09-claude-fable-5-launches-as-a-mythosclass-model-for.md",
     "2026-06-04-reve-launches-4k-image-model-20-with-layoutaware-g.md",
     "2026-06-03-paper-adds-vector-editing-tools-in-latest-update.md",
@@ -199,6 +200,28 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/06/tim-cook-wwdc-2026.jpeg?resize=1280,722",
       "sources": [
         "https://techcrunch.com/2026/06/08/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/"
+      ],
+      "readTime": "2 min",
+      "shortId": 178
+    },
+    {
+      "filename": "2026-06-09-faang-is-dead-say-hello-to-mangos.md",
+      "slug": "2026-06-09-faang-is-dead-say-hello-to-mangos",
+      "url": "/blog/2026-06-09-faang-is-dead-say-hello-to-mangos/",
+      "title": "FAANG is dead. Say hello to MANGOS",
+      "date": "2026-06-09",
+      "published_at": "2026-06-09T09:00:00.000000+00:00",
+      "tags": [
+        "tech industry",
+        "startup funding",
+        "ipo",
+        "venture capital",
+        "artificial intelligence"
+      ],
+      "excerpt": "Meta, Anthropic, Nvidia, Google, OpenAI, and SpaceX \u2014 the new power bloc reshaping tech's next decade. MANGOS is the new FAANG.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/Mango-crushing-fang.png?resize=1280,1024",
+      "sources": [
+        "https://techcrunch.com/2026/06/09/its-not-faang-anymore-its-mangos/"
       ],
       "readTime": "2 min",
       "shortId": 177
