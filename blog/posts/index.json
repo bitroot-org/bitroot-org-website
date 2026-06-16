@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 178,
+  "count": 179,
   "posts": [
+    "2026-06-16-meta-edits-vs-capcut.md",
     "2026-06-09-faang-is-dead-say-hello-to-mangos.md",
     "2026-06-12-apple-brings-ai-to-shortcuts-in-ios-27.md",
     "2026-06-09-claude-fable-5-launches-as-a-mythosclass-model-for.md",
@@ -182,6 +183,29 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-06-16-meta-edits-vs-capcut.md",
+      "slug": "2026-06-16-meta-edits-vs-capcut",
+      "url": "/blog/2026-06-16-meta-edits-vs-capcut/",
+      "title": "Meta Edits vs CapCut: Can Meta\u2019s New AI Editor Help Startups Create Content Faster?",
+      "date": "2026-06-16",
+      "published_at": "2026-06-16T09:00:00.000000+00:00",
+      "tags": [
+        "meta",
+        "video editing",
+        "content creation",
+        "social media",
+        "ai tools"
+      ],
+      "excerpt": "Meta is adding an AI assistant and a desktop version to its Edits platform, taking aim at CapCut. Here's what it means for startups producing short-form content.",
+      "image": "https://techcrunch.com/wp-content/uploads/2025/05/meta-edits.png?resize=1280,751",
+      "sources": [
+        "https://techcrunch.com/2026/06/11/metas-edits-app-is-getting-an-ai-assistant-and-a-desktop-version/",
+        "https://www.indiatoday.in/technology/news/story/meta-edits-app-is-coming-to-your-desktop-it-is-also-getting-its-own-ai-assistant-2925608-2026-06-12"
+      ],
+      "readTime": "4 min",
+      "shortId": 179
+    },
     {
       "filename": "2026-06-09-faang-is-dead-say-hello-to-mangos.md",
       "slug": "2026-06-09-faang-is-dead-say-hello-to-mangos",
