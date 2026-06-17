@@ -2,7 +2,6 @@
 date: '2026-06-17'
 excerpt: Sovereign AI is becoming a strategic priority for nations and enterprises
   that want greater control over their data, models, infrastructure, and future competitiveness.
-image: https://instant-rose-s2z7anlq.edgeone.app/ChatGPT%20Image%20Jun%2017,%202026,%2011_30_36%20AM.png
 published_at: '2026-06-17T09:00:00.000000+00:00'
 sources:
 - https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/sovereign-ai-building-ecosystems-for-strategic-resilience-and-impact
