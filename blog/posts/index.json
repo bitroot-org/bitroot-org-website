@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 181,
+  "count": 182,
   "posts": [
+    "2026-06-18-midjourney-launches-a-medicalfocused-division.md",
     "2026-06-18-companies-might-control-the-algorithm.md",
     "2026-06-17-sovereign-ai-infrastructure.md",
     "2026-06-16-meta-edits-vs-capcut.md",
@@ -185,6 +186,27 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-06-18-midjourney-launches-a-medicalfocused-division.md",
+      "slug": "2026-06-18-midjourney-launches-a-medicalfocused-division",
+      "url": "/blog/2026-06-18-midjourney-launches-a-medicalfocused-division/",
+      "title": "Midjourney launches a medical\u2011focused division",
+      "date": "2026-06-18",
+      "published_at": "2026-06-18T09:26:31.556421+00:00",
+      "tags": [
+        "midjourney",
+        "medical ai",
+        "image generation"
+      ],
+      "excerpt": "Announcing a new division of Midjourney called \"Midjourney Medical\"",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2067417890098499584/img/MFFwG8qdfYbJALQD.jpg",
+      "sources": [
+        "https://x.com/i/status/2067421950314688759"
+      ],
+      "readTime": "2 min",
+      "video": "https://video.twimg.com/amplify_video/2067417890098499584/vid/avc1/3840x2160/9isS2qKcym5fQmWa.mp4?tag=28",
+      "shortId": 182
+    },
     {
       "filename": "2026-06-18-companies-might-control-the-algorithm.md",
       "slug": "2026-06-18-companies-might-control-the-algorithm",
