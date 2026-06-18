@@ -1,19 +1,18 @@
 ---
 date: '2026-06-17'
-excerpt: Sovereign AI is becoming a strategic priority for nations and enterprises
-  that want greater control over their data, models, infrastructure, and future competitiveness.
-image: media/sovereign-ai-hero.png
+excerpt: 'Sovereign AI is becoming a strategic priority for nations and enterprises that want greater control over their data, models, infrastructure, and future competitiveness.'
+image: https://bitroot.org/blog/media/sovereign-ai-hero.png
 published_at: '2026-06-17T09:00:00.000000+00:00'
 sources:
 - https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/sovereign-ai-building-ecosystems-for-strategic-resilience-and-impact
 - https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-sovereign-ai
 tags:
-- sovereign ai
-- ai infrastructure
-- ai policy
-- enterprise ai
-- india
-title: "Sovereign AI Isn't Bureaucratic Jargon. It's the Next Layer of AI Infrastructure."
+- 'sovereign ai'
+- 'ai infrastructure'
+- 'ai policy'
+- 'enterprise ai'
+- 'india'
+title: 'Sovereign AI Isn''t Bureaucratic Jargon. It''s the Next Layer of AI Infrastructure.'
 ---
 
 [AI](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/sovereign-ai-building-ecosystems-for-strategic-resilience-and-impact) conversations usually revolve around models, agents, automation, and productivity gains. But a different conversation is quietly taking place among governments, enterprises, and technology leaders worldwide.
