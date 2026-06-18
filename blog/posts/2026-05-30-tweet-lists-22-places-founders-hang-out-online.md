@@ -1,16 +1,15 @@
 ---
 date: '2026-05-30'
-excerpt: A recent tweet enumerates 22 forums where startup founders gather, offering
-  engineers concrete channels for feedback, recruiting, and market insight.
-image: null
+excerpt: 'A recent tweet enumerates 22 forums where startup founders gather, offering engineers concrete channels for feedback, recruiting, and market insight.'
+image: https://bitroot.org/blog/media/22-founder-links.png
 published_at: '2026-05-30T06:57:40.354897+00:00'
 sources:
 - https://x.com/i/status/2059538588300365981
 tags:
-- founder communities
-- startup platforms
-- community engagement
-title: Tweet lists 22 places founders hang out online
+- 'founder communities'
+- 'startup platforms'
+- 'community engagement'
+title: '22 places founders hang out online'
 ---
 
 Hridoy Rehman posted a tweet that lists 22 online platforms where startup founders hang out, ranging from X (Twitter) to Founder Cafe, and includes a brief one‑liner for each venue. The full list is captured in the original [tweet](https://x.com/i/status/2059538588300365981).
