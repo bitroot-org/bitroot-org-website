@@ -5,8 +5,22 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 18 Jun 2026 17:09:20 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2026 17:21:54 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Open Design open-sources Cursor Design AI studio</title>
+      <link>https://bitroot.org/blog/2026-06-18-open-design-open-sources-cursor-design-ai-studio/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-06-18-open-design-open-sources-cursor-design-ai-studio/</guid>
+      <description>Open Design has released the Cursor Design AI studio as open‑source software, letting engineers experiment with AI‑driven point, comment, edit and remix workflows.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/OpenDesignHQ/status/2067192475853180997?s=20"&gt;https://x.com/OpenDesignHQ/status/2067192475853180997?s=20&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 18 Jun 2026 17:08:34 +0000</pubDate>
+      <category>ai design</category>
+      <category>open source</category>
+      <category>design tools</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2067190753172799488/img/vEwpC275hhcO1xMG.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/OpenDesignHQ/status/2067192475853180997?s=20">Original Source</source>
+    </item>
     <item>
       <title>Midjourney launches a medical‑focused division</title>
       <link>https://bitroot.org/blog/2026-06-18-midjourney-launches-a-medicalfocused-division/</link>

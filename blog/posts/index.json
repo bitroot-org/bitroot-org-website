@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 182,
+  "count": 183,
   "posts": [
+    "2026-06-18-open-design-open-sources-cursor-design-ai-studio.md",
     "2026-06-18-midjourney-launches-a-medicalfocused-division.md",
     "2026-06-18-companies-might-control-the-algorithm.md",
     "2026-06-17-sovereign-ai-infrastructure.md",
@@ -186,6 +187,27 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-06-18-open-design-open-sources-cursor-design-ai-studio.md",
+      "slug": "2026-06-18-open-design-open-sources-cursor-design-ai-studio",
+      "url": "/blog/2026-06-18-open-design-open-sources-cursor-design-ai-studio/",
+      "title": "Open Design open-sources Cursor Design AI studio",
+      "date": "2026-06-18",
+      "published_at": "2026-06-18T17:08:34.646879+00:00",
+      "tags": [
+        "ai design",
+        "open source",
+        "design tools"
+      ],
+      "excerpt": "Open Design has released the Cursor Design AI studio as open\u2011source software, letting engineers experiment with AI\u2011driven point, comment, edit and remix workflows.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2067190753172799488/img/vEwpC275hhcO1xMG.jpg",
+      "sources": [
+        "https://x.com/OpenDesignHQ/status/2067192475853180997?s=20"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-06-18-open-design-open-sources-cursor-design-ai-studio.mp4",
+      "shortId": 183
+    },
     {
       "filename": "2026-06-18-midjourney-launches-a-medicalfocused-division.md",
       "slug": "2026-06-18-midjourney-launches-a-medicalfocused-division",
