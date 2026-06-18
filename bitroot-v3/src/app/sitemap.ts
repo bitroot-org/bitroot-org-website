@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/legal/privacy/", priority: 0.3 },
     { path: "/legal/terms/", priority: 0.3 },
     { path: "/legal/refund/", priority: 0.3 },
+    { path: "/froots/privacy/", priority: 0.3 },
   ];
 
   const itemRoutes = [...kits, ...guides, ...tools].map((item) => ({

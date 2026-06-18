@@ -1,65 +1,14 @@
-import Link from "next/link";
 import Container from "@/components/ui/Container";
+import { Block, Section } from "@/components/legal/blocks";
+import LegalToc from "@/components/legal/LegalToc";
 import {
-  estimateReadMinutes,
-  legalDocs,
-  legalOrder,
-  type LegalDoc,
-} from "@/content/legal-content";
-import { Block, Section } from "./blocks";
-import LegalTabs from "./LegalTabs";
-import LegalToc from "./LegalToc";
+  estimateFrootsReadMinutes,
+  type FrootsDoc,
+} from "@/content/froots-content";
 
-// ── Pager nav ─────────────────────────────────────────────────────
-function PagerNav({ currentSlug }: { currentSlug: LegalDoc["slug"] }) {
-  const idx = legalOrder.indexOf(currentSlug);
-  const prev = idx > 0 ? legalDocs[legalOrder[idx - 1]] : null;
-  const next =
-    idx < legalOrder.length - 1 ? legalDocs[legalOrder[idx + 1]] : null;
-
-  return (
-    <nav
-      aria-label="Other legal documents"
-      className="mt-16 pt-8 border-t border-line grid grid-cols-1 sm:grid-cols-2 gap-3"
-    >
-      {prev ? (
-        <Link
-          href={`/legal/${prev.slug}/`}
-          className="group flex flex-col gap-1 rounded-md border border-line p-4 hover:border-ink-3 transition-colors"
-        >
-          <span className="font-mono text-[10.5px] uppercase tracking-[0.16em] text-ink-4">
-            ← Previous
-          </span>
-          <span className="font-display text-[16px] text-ink group-hover:text-ember transition-colors">
-            {prev.title}
-          </span>
-        </Link>
-      ) : (
-        <span />
-      )}
-      {next ? (
-        <Link
-          href={`/legal/${next.slug}/`}
-          className="group flex flex-col gap-1 rounded-md border border-line p-4 hover:border-ink-3 transition-colors sm:text-right"
-        >
-          <span className="font-mono text-[10.5px] uppercase tracking-[0.16em] text-ink-4">
-            Next →
-          </span>
-          <span className="font-display text-[16px] text-ink group-hover:text-ember transition-colors">
-            {next.title}
-          </span>
-        </Link>
-      ) : (
-        <span />
-      )}
-    </nav>
-  );
-}
-
-// ── Main article ──────────────────────────────────────────────────
-export default function LegalArticle({ doc }: { doc: LegalDoc }) {
-  const readMins = estimateReadMinutes(doc);
-  const fmtDate = new Date(doc.effective).toLocaleDateString("en-GB", {
+export default function FrootsPolicy({ doc }: { doc: FrootsDoc }) {
+  const readMins = estimateFrootsReadMinutes(doc);
+  const fmtDate = new Date(doc.updated).toLocaleDateString("en-GB", {
     day: "2-digit",
     month: "short",
     year: "numeric",
@@ -81,7 +30,7 @@ export default function LegalArticle({ doc }: { doc: LegalDoc }) {
           </h1>
 
           <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-[11.5px] text-ink-4 tabular-nums">
-            <span>Effective {fmtDate}</span>
+            <span>Last updated {fmtDate}</span>
             <span aria-hidden className="text-line-2">
               ·
             </span>
@@ -93,9 +42,6 @@ export default function LegalArticle({ doc }: { doc: LegalDoc }) {
           </div>
         </header>
 
-        {/* Tabs */}
-        <LegalTabs current={doc.slug} />
-
         {/* Tagline card */}
         <div className="mt-10 relative border border-line rounded-lg bg-paper-2/40 p-6 sm:p-7">
           <span
@@ -104,7 +50,7 @@ export default function LegalArticle({ doc }: { doc: LegalDoc }) {
           />
           <div className="font-mono text-[10.5px] uppercase tracking-[0.18em] text-ink-4 mb-3 flex items-center gap-2">
             <span aria-hidden className="size-1 rounded-full bg-live" />
-            Plain English
+            The short version
           </div>
           <p className="font-serif italic text-[18px] sm:text-[19px] text-ink-2 leading-[1.55]">
             {doc.tagline}
@@ -150,23 +96,14 @@ export default function LegalArticle({ doc }: { doc: LegalDoc }) {
                 </dt>
                 <dd className="text-ink-2">
                   <a
-                    href={`mailto:${doc.contact.email}`}
+                    href={`mailto:${doc.contactEmail}`}
                     className="prose-link font-mono"
                   >
-                    {doc.contact.email}
+                    {doc.contactEmail}
                   </a>
-                </dd>
-                <dt className="font-mono text-[11px] uppercase tracking-[0.14em] text-ink-4 pt-0.5">
-                  Postal
-                </dt>
-                <dd className="text-ink-2 leading-[1.55]">
-                  {doc.contact.postal}
                 </dd>
               </dl>
             </section>
-
-            {/* Pager */}
-            <PagerNav currentSlug={doc.slug} />
           </article>
 
           <LegalToc sections={doc.sections} />
