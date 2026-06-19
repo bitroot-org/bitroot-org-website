@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 186,
+  "count": 187,
   "posts": [
     "2026-06-19-ai-is-learning-to-run-software-not-just-build-it.md",
+    "2026-06-18-temple-launches-entropy-metric-to-track-realtime-m.md",
     "2026-06-18-slack-shares-slackbot-prompts-to-streamline-produc.md",
     "2026-06-18-open-design-open-sources-cursor-design-ai-studio.md",
     "2026-06-18-midjourney-launches-a-medicalfocused-division.md",
@@ -216,6 +217,26 @@
         "https://x.com/elder_plinius/status/2064776322979676227"
       ],
       "readTime": "5 min",
+      "shortId": 187
+    },
+    {
+      "filename": "2026-06-18-temple-launches-entropy-metric-to-track-realtime-m.md",
+      "slug": "2026-06-18-temple-launches-entropy-metric-to-track-realtime-m",
+      "url": "/blog/2026-06-18-temple-launches-entropy-metric-to-track-realtime-m/",
+      "title": "Temple launches Entropy metric to track real\u2011time metabolic cost",
+      "date": "2026-06-18",
+      "published_at": "2026-06-18T18:13:56.645923+00:00",
+      "tags": [
+        "biometrics",
+        "health metrics",
+        "startup tools"
+      ],
+      "excerpt": "Temple\u2019s new Entropy\u2122 index reports a live 1\u2011to\u2011250 score every second, promising finer\u2011grained insight into metabolic load than heart rate. Early access is open, but the metric\u2019s validation is still limited.",
+      "image": "https://pbs.twimg.com/media/HLGDi5FbUAAxN93.jpg?name=orig",
+      "sources": [
+        "https://x.com/i/status/2067578443047596141"
+      ],
+      "readTime": "2 min",
       "shortId": 186
     },
     {

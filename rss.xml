@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 19 Jun 2026 09:54:14 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 09:54:54 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Is Learning To Run Software, Not Just Build It</title>
@@ -25,6 +25,20 @@
       <category>Anthropic</category>
       <enclosure url="https://pbs.twimg.com/media/HKeIBrvWcAIhXqN?format=jpg&amp;name=large" type="image/jpeg" length="0" />
       <source url="https://claude.com/blog/artifacts-in-claude-code">Original Source</source>
+    </item>
+    <item>
+      <title>Temple launches Entropy metric to track real‑time metabolic cost</title>
+      <link>https://bitroot.org/blog/2026-06-18-temple-launches-entropy-metric-to-track-realtime-m/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-06-18-temple-launches-entropy-metric-to-track-realtime-m/</guid>
+      <description>Temple’s new Entropy™ index reports a live 1‑to‑250 score every second, promising finer‑grained insight into metabolic load than heart rate. Early access is open, but the metric’s validation is still limited.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2067578443047596141"&gt;https://x.com/i/status/2067578443047596141&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 18 Jun 2026 18:13:56 +0000</pubDate>
+      <category>biometrics</category>
+      <category>health metrics</category>
+      <category>startup tools</category>
+      <enclosure url="https://pbs.twimg.com/media/HLGDi5FbUAAxN93.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2067578443047596141">Original Source</source>
     </item>
     <item>
       <title>Slack shares Slackbot prompts to streamline product feedback</title>
