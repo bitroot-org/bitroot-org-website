@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 19 Jun 2026 06:39:10 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 09:53:40 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Is Learning To Run Software, Not Just Build It</title>
@@ -53,6 +53,19 @@
       <category>image generation</category>
       <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2067417890098499584/img/MFFwG8qdfYbJALQD.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2067421950314688759">Original Source</source>
+    </item>
+    <item>
+      <title>Cursor launches Origin: code storage and git hosting service</title>
+      <link>https://bitroot.org/blog/2026-06-18-cursor-launches-origin-code-storage-and-git-hostin/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-06-18-cursor-launches-origin-code-storage-and-git-hostin/</guid>
+      <description>Cursor announced Origin, a new code storage and Git hosting platform slated for a fall release, with a waitlist now open for early access.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2067012220832329782"&gt;https://x.com/i/status/2067012220832329782&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 18 Jun 2026 18:25:31 +0000</pubDate>
+      <category>code hosting</category>
+      <category>git</category>
+      <category>developer tools</category>
+      <source url="https://x.com/i/status/2067012220832329782">Original Source</source>
     </item>
     <item>
       <title>Companies Might Control the Algorithm. But Soon You'll Choose the Algorithm.</title>
