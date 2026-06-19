@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { identify, today, track } from "@/lib/analytics";
 import Container from "@/components/ui/Container";
 import Tag from "@/components/ui/Tag";
 import ProductIcon from "@/components/products/ProductIcon";
@@ -226,20 +227,7 @@ export default function ProductsClient() {
               <p className="mt-4 text-[15.5px] text-ink-3 leading-relaxed">
                 One email per launch. Not a drip campaign. Unsubscribe whenever.
               </p>
-              <form className="mt-6 flex flex-col sm:flex-row gap-2 max-w-lg">
-                <input
-                  type="email"
-                  required
-                  placeholder="you@yourstartup.com"
-                  className="flex-1 rounded-full border border-line bg-paper px-4 py-2.5 text-[14px] placeholder:text-ink-4 focus:outline-none focus:border-ember"
-                />
-                <button
-                  type="submit"
-                  className="hover-lift rounded-full bg-ink text-paper px-5 py-2.5 text-[13.5px] font-medium hover:bg-ink-2 transition-colors"
-                >
-                  Notify me
-                </button>
-              </form>
+              <HeadsUpForm />
               <p className="mt-3 text-[11.5px] font-mono text-ink-4">
                 No spam. Unsubscribe with one click.
               </p>
@@ -254,6 +242,62 @@ export default function ProductsClient() {
         onClose={closeModal}
       />
     </>
+  );
+}
+
+/* ─── Heads-up (launch notify) form ────────────────────────────────────── */
+
+function HeadsUpForm() {
+  const [email, setEmail] = useState("");
+  const [done, setDone] = useState(false);
+
+  if (done) {
+    return (
+      <div className="mt-6 flex items-center gap-2 text-[14px] text-live">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path
+            d="M4 8.5l2.5 2.5L12 5.5"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+        You&apos;re on the list — we&apos;ll ping you at the next launch.
+      </div>
+    );
+  }
+
+  return (
+    <form
+      className="mt-6 flex flex-col sm:flex-row gap-2 max-w-lg"
+      onSubmit={(e) => {
+        e.preventDefault();
+        if (!email) return;
+        identify(
+          email,
+          { newsletter_subscriber: true },
+          { newsletter_signup_date: today() },
+        );
+        track("newsletter_signup", { location: "products_heads_up" });
+        setDone(true);
+      }}
+    >
+      <input
+        type="email"
+        required
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        placeholder="you@yourstartup.com"
+        className="flex-1 rounded-full border border-line bg-paper px-4 py-2.5 text-[14px] placeholder:text-ink-4 focus:outline-none focus:border-ember"
+      />
+      <button
+        type="submit"
+        className="hover-lift rounded-full bg-ink text-paper px-5 py-2.5 text-[13.5px] font-medium hover:bg-ink-2 transition-colors"
+      >
+        Notify me
+      </button>
+    </form>
   );
 }
 

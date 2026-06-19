@@ -14,6 +14,20 @@ function loadPosthog() {
       // Autocapture pageviews + pageleaves, including App Router client-side
       // navigations (history changes), plus sensible modern defaults.
       defaults: "2025-05-24",
+      // "always": create a person profile for every visitor (incl. anonymous)
+      // so geo / device / first-touch UTM land on the person object and power
+      // person-level cohorts (e.g. "visitors from India") before any form is
+      // filled. PostHog sets $geoip_* and $initial_utm_*/$initial_referrer as
+      // person properties automatically on the autocaptured pageview, so this
+      // needs no extra $set events and adds no event cost.
+      //
+      // Billing: the first 1M events/month are free regardless of profile mode,
+      // so for bitroot.org's volume this is $0. Above 1M, "always" bills the
+      // *entire* event stream at the ~5x identified rate (~$0.000248 vs
+      // ~$0.00005/event). If volume approaches 1M/month, switch this back to
+      // "identified_only" — converters still keep full first-touch attribution
+      // via the persisted $initial_* props applied on identify().
+      person_profiles: "always",
     });
 
     // Tag every event with the surface it came from so the shared PostHog

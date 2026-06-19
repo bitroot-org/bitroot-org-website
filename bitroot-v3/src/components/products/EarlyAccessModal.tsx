@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import ProductIcon from "@/components/products/ProductIcon";
 import type { Product } from "@/content/products";
-import { track } from "@/lib/analytics";
+import { identify, track } from "@/lib/analytics";
 
 type Program = "core" | "creators";
 
@@ -140,9 +140,21 @@ export default function EarlyAccessModal({ open, product, onClose }: Props) {
               onSubmit={(e) => {
                 e.preventDefault();
                 if (!program) return;
+                identify(
+                  form.email,
+                  {
+                    name: form.name.trim() || undefined,
+                    converted_via: "early_access",
+                    converted_on_site: "bitroot.org",
+                  },
+                  { early_access_program: program },
+                );
                 track("early_access_submit", {
                   product: product.slug,
                   program,
+                  name: form.name.trim() || undefined,
+                  handle: form.handle.trim() || undefined,
+                  context: form.context.trim() || undefined,
                 });
                 setSubmitted(true);
               }}

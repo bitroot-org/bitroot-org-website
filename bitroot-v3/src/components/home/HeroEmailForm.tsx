@@ -1,18 +1,28 @@
 "use client";
 
-import { track } from "@/lib/analytics";
+import { useRef } from "react";
+import { identify, today, track } from "@/lib/analytics";
 
 export default function HeroEmailForm() {
+  const emailRef = useRef<HTMLInputElement>(null);
   return (
     <>
       <form
         className="mt-7 flex items-center gap-2 bg-paper border border-line rounded-full py-1.5 pl-4 pr-1.5 max-w-[420px] focus-within:border-ink transition-colors"
         onSubmit={(e) => {
           e.preventDefault();
+          const email = emailRef.current?.value ?? "";
+          if (email)
+            identify(
+              email,
+              { newsletter_subscriber: true },
+              { newsletter_signup_date: today() },
+            );
           track("newsletter_signup", { location: "hero" });
         }}
       >
         <input
+          ref={emailRef}
           type="email"
           aria-label="Email"
           placeholder="you@startup.dev"
