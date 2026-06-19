@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 19 Jun 2026 09:55:32 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 10:13:51 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Is Learning To Run Software, Not Just Build It</title>
@@ -95,6 +95,20 @@
       <category>google vids</category>
       <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2067619336911831040/img/xTSx0rYPwTjeiJVB.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2067631530890113477">Original Source</source>
+    </item>
+    <item>
+      <title>Fastlane adds Claude for Social Media, auto‑creates viral videos</title>
+      <link>https://bitroot.org/blog/2026-06-18-fastlane-adds-claude-for-social-media-autocreates/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-06-18-fastlane-adds-claude-for-social-media-autocreates/</guid>
+      <description>Today we're introducing Claude for Social Media. Just enter your website and Fastlane creates thousands of viral videos promoting your product in one click. This is truly insane.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2067501867198996528"&gt;https://x.com/i/status/2067501867198996528&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 18 Jun 2026 18:11:00 +0000</pubDate>
+      <category>fastlane</category>
+      <category>ai video</category>
+      <category>social media</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2067499429251432448/img/WgmWI2TGioxvI7_S.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2067501867198996528">Original Source</source>
     </item>
     <item>
       <title>Cursor launches Origin: code storage and git hosting service</title>

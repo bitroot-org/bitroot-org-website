@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "count": 188,
+  "count": 189,
   "posts": [
     "2026-06-19-ai-is-learning-to-run-software-not-just-build-it.md",
     "2026-06-18-temple-launches-entropy-metric-to-track-realtime-m.md",
@@ -8,6 +8,7 @@
     "2026-06-18-open-design-open-sources-cursor-design-ai-studio.md",
     "2026-06-18-midjourney-launches-a-medicalfocused-division.md",
     "2026-06-18-google-vids-adds-ai-avatars-voiceovers-and-slide-t.md",
+    "2026-06-18-fastlane-adds-claude-for-social-media-autocreates.md",
     "2026-06-18-cursor-launches-origin-code-storage-and-git-hostin.md",
     "2026-06-18-companies-might-control-the-algorithm.md",
     "2026-06-17-sovereign-ai-infrastructure.md",
@@ -218,7 +219,7 @@
         "https://x.com/elder_plinius/status/2064776322979676227"
       ],
       "readTime": "5 min",
-      "shortId": 188
+      "shortId": 189
     },
     {
       "filename": "2026-06-18-temple-launches-entropy-metric-to-track-realtime-m.md",
@@ -238,7 +239,7 @@
         "https://x.com/i/status/2067578443047596141"
       ],
       "readTime": "2 min",
-      "shortId": 187
+      "shortId": 188
     },
     {
       "filename": "2026-06-18-slack-shares-slackbot-prompts-to-streamline-produc.md",
@@ -259,7 +260,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-06-18-slack-shares-slackbot-prompts-to-streamline-produc.mp4",
-      "shortId": 186
+      "shortId": 187
     },
     {
       "filename": "2026-06-18-open-design-open-sources-cursor-design-ai-studio.md",
@@ -280,7 +281,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-06-18-open-design-open-sources-cursor-design-ai-studio.mp4",
-      "shortId": 185
+      "shortId": 186
     },
     {
       "filename": "2026-06-18-midjourney-launches-a-medicalfocused-division.md",
@@ -301,7 +302,7 @@
       ],
       "readTime": "2 min",
       "video": "https://video.twimg.com/amplify_video/2067417890098499584/vid/avc1/3840x2160/9isS2qKcym5fQmWa.mp4?tag=28",
-      "shortId": 184
+      "shortId": 185
     },
     {
       "filename": "2026-06-18-google-vids-adds-ai-avatars-voiceovers-and-slide-t.md",
@@ -322,6 +323,27 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-06-18-google-vids-adds-ai-avatars-voiceovers-and-slide-t.mp4",
+      "shortId": 184
+    },
+    {
+      "filename": "2026-06-18-fastlane-adds-claude-for-social-media-autocreates.md",
+      "slug": "2026-06-18-fastlane-adds-claude-for-social-media-autocreates",
+      "url": "/blog/2026-06-18-fastlane-adds-claude-for-social-media-autocreates/",
+      "title": "Fastlane adds Claude for Social Media, auto\u2011creates viral videos",
+      "date": "2026-06-18",
+      "published_at": "2026-06-18T18:11:00.133151+00:00",
+      "tags": [
+        "fastlane",
+        "ai video",
+        "social media"
+      ],
+      "excerpt": "Today we're introducing Claude for Social Media. Just enter your website and Fastlane creates thousands of viral videos promoting your product in one click. This is truly insane.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2067499429251432448/img/WgmWI2TGioxvI7_S.jpg",
+      "sources": [
+        "https://x.com/i/status/2067501867198996528"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-06-18-fastlane-adds-claude-for-social-media-autocreates.mp4",
       "shortId": 183
     },
     {
