@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 19 Jun 2026 09:54:54 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 09:55:32 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Is Learning To Run Software, Not Just Build It</title>
@@ -81,6 +81,20 @@
       <category>image generation</category>
       <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2067417890098499584/img/MFFwG8qdfYbJALQD.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2067421950314688759">Original Source</source>
+    </item>
+    <item>
+      <title>Google Vids adds AI avatars, voiceovers, and slide-to-video conversion</title>
+      <link>https://bitroot.org/blog/2026-06-18-google-vids-adds-ai-avatars-voiceovers-and-slide-t/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-06-18-google-vids-adds-ai-avatars-voiceovers-and-slide-t/</guid>
+      <description>Google Vids now lets users turn Slides into videos with AI avatars and voiceovers in 24 languages. The beta is free but pricing and quality limits remain to be seen.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2067631530890113477"&gt;https://x.com/i/status/2067631530890113477&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 18 Jun 2026 18:11:59 +0000</pubDate>
+      <category>video generation</category>
+      <category>ai avatars</category>
+      <category>google vids</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2067619336911831040/img/xTSx0rYPwTjeiJVB.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2067631530890113477">Original Source</source>
     </item>
     <item>
       <title>Cursor launches Origin: code storage and git hosting service</title>
