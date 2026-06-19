@@ -2,8 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bitroot.org/blog/</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bitroot.org/blog/2026-06-19-ai-is-learning-to-run-software-not-just-build-it/</loc>
+    <lastmod>2026-06-19</lastmod>
   </url>
   <url>
     <loc>https://bitroot.org/blog/2026-06-18-open-design-open-sources-cursor-design-ai-studio/</loc>

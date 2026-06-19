@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 183,
+  "count": 184,
   "posts": [
+    "2026-06-19-ai-is-learning-to-run-software-not-just-build-it.md",
     "2026-06-18-open-design-open-sources-cursor-design-ai-studio.md",
     "2026-06-18-midjourney-launches-a-medicalfocused-division.md",
     "2026-06-18-companies-might-control-the-algorithm.md",
@@ -187,6 +188,34 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-06-19-ai-is-learning-to-run-software-not-just-build-it.md",
+      "slug": "2026-06-19-ai-is-learning-to-run-software-not-just-build-it",
+      "url": "/blog/2026-06-19-ai-is-learning-to-run-software-not-just-build-it/",
+      "title": "AI Is Learning To Run Software, Not Just Build It",
+      "date": "2026-06-19",
+      "published_at": "2026-06-19T06:12:58.875Z",
+      "tags": [
+        "AI",
+        "Claude",
+        "Claude Artifacts",
+        "AI Application Platforms",
+        "AI Development",
+        "Startups",
+        "Software Development",
+        "Anthropic"
+      ],
+      "excerpt": "While everyone focused on Fable 5, leaked prompts, and jailbreak claims, a bigger shift was unfolding. AI is evolving from generating software to creating applications that remember users, maintain state, and continue operating over time, bringing us closer to a future where AI doesn't just build software, but helps run it.",
+      "image": "https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fanthropic-disputes-the-claude-fable-5-jailbreak-after-a-v0-wbd918euwf7h1.png%3Fwidth%3D1200%26format%3Dpng%26auto%3Dwebp%26s%3D9795416de7e868116054d919769320b13e31356d",
+      "sources": [
+        "https://claude.com/blog/artifacts-in-claude-code",
+        "https://www.anthropic.com/news/artifacts",
+        "https://www.reddit.com/r/ArtificialInteligence/comments/1u6f668/anthropic_disputes_the_claude_fable_5_jailbreak/",
+        "https://x.com/elder_plinius/status/2064776322979676227"
+      ],
+      "readTime": "5 min",
+      "shortId": 184
+    },
     {
       "filename": "2026-06-18-open-design-open-sources-cursor-design-ai-studio.md",
       "slug": "2026-06-18-open-design-open-sources-cursor-design-ai-studio",
