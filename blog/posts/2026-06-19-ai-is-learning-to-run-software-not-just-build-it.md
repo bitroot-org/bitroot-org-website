@@ -1,7 +1,7 @@
 ---
 date: '2026-06-19'
 excerpt: 'While everyone focused on Fable 5, leaked prompts, and jailbreak claims, a bigger shift was unfolding. AI is evolving from generating software to creating applications that remember users, maintain state, and continue operating over time, bringing us closer to a future where AI doesn''t just build software, but helps run it.'
-image: https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fanthropic-disputes-the-claude-fable-5-jailbreak-after-a-v0-wbd918euwf7h1.png%3Fwidth%3D1200%26format%3Dpng%26auto%3Dwebp%26s%3D9795416de7e868116054d919769320b13e31356d
+image: https://youtu.be/vUdNaAAc4FY?si=Vrmp6QrhiKus_aN_
 published_at: '2026-06-19T06:12:58.875Z'
 sources:
 - https://claude.com/blog/artifacts-in-claude-code
