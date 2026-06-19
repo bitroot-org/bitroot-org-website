@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 185,
+  "count": 186,
   "posts": [
     "2026-06-19-ai-is-learning-to-run-software-not-just-build-it.md",
+    "2026-06-18-slack-shares-slackbot-prompts-to-streamline-produc.md",
     "2026-06-18-open-design-open-sources-cursor-design-ai-studio.md",
     "2026-06-18-midjourney-launches-a-medicalfocused-division.md",
     "2026-06-18-cursor-launches-origin-code-storage-and-git-hostin.md",
@@ -215,6 +216,27 @@
         "https://x.com/elder_plinius/status/2064776322979676227"
       ],
       "readTime": "5 min",
+      "shortId": 186
+    },
+    {
+      "filename": "2026-06-18-slack-shares-slackbot-prompts-to-streamline-produc.md",
+      "slug": "2026-06-18-slack-shares-slackbot-prompts-to-streamline-produc",
+      "url": "/blog/2026-06-18-slack-shares-slackbot-prompts-to-streamline-produc/",
+      "title": "Slack shares Slackbot prompts to streamline product feedback",
+      "date": "2026-06-18",
+      "published_at": "2026-06-18T18:15:11.236735+00:00",
+      "tags": [
+        "slackbot",
+        "product feedback",
+        "tooling"
+      ],
+      "excerpt": "Slack posted a short video demonstrating ready\u2011made Slackbot prompts that pull tagged feedback into a channel, helping teams focus on the most important requests.",
+      "image": "https://pbs.twimg.com/media/HLCT-GFW0AAUqRl.jpg",
+      "sources": [
+        "https://x.com/i/status/2067314945151144206"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-06-18-slack-shares-slackbot-prompts-to-streamline-produc.mp4",
       "shortId": 185
     },
     {

@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 19 Jun 2026 09:53:40 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 09:54:14 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Is Learning To Run Software, Not Just Build It</title>
@@ -25,6 +25,20 @@
       <category>Anthropic</category>
       <enclosure url="https://pbs.twimg.com/media/HKeIBrvWcAIhXqN?format=jpg&amp;name=large" type="image/jpeg" length="0" />
       <source url="https://claude.com/blog/artifacts-in-claude-code">Original Source</source>
+    </item>
+    <item>
+      <title>Slack shares Slackbot prompts to streamline product feedback</title>
+      <link>https://bitroot.org/blog/2026-06-18-slack-shares-slackbot-prompts-to-streamline-produc/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-06-18-slack-shares-slackbot-prompts-to-streamline-produc/</guid>
+      <description>Slack posted a short video demonstrating ready‑made Slackbot prompts that pull tagged feedback into a channel, helping teams focus on the most important requests.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2067314945151144206"&gt;https://x.com/i/status/2067314945151144206&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 18 Jun 2026 18:15:11 +0000</pubDate>
+      <category>slackbot</category>
+      <category>product feedback</category>
+      <category>tooling</category>
+      <enclosure url="https://pbs.twimg.com/media/HLCT-GFW0AAUqRl.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2067314945151144206">Original Source</source>
     </item>
     <item>
       <title>Open Design open-sources Cursor Design AI studio</title>
