@@ -1,7 +1,7 @@
 ---
 date: '2026-06-19'
 excerpt: 'While everyone focused on Fable 5, leaked prompts, and jailbreak claims, a bigger shift was unfolding. AI is evolving from generating software to creating applications that remember users, maintain state, and continue operating over time, bringing us closer to a future where AI doesn''t just build software, but helps run it.'
-image: https://youtu.be/vUdNaAAc4FY?si=Vrmp6QrhiKus_aN_
+image: https://pbs.twimg.com/media/HKeIBrvWcAIhXqN?format=jpg&name=large
 published_at: '2026-06-19T06:12:58.875Z'
 sources:
 - https://claude.com/blog/artifacts-in-claude-code
