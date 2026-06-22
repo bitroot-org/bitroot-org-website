@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 189,
+  "count": 190,
   "posts": [
+    "2026-06-19-valessa-launches-free-svgto3dglass-converter-in-th.md",
     "2026-06-19-ai-is-learning-to-run-software-not-just-build-it.md",
     "2026-06-18-temple-launches-entropy-metric-to-track-realtime-m.md",
     "2026-06-18-slack-shares-slackbot-prompts-to-streamline-produc.md",
@@ -193,6 +194,27 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-06-19-valessa-launches-free-svgto3dglass-converter-in-th.md",
+      "slug": "2026-06-19-valessa-launches-free-svgto3dglass-converter-in-th",
+      "url": "/blog/2026-06-19-valessa-launches-free-svgto3dglass-converter-in-th/",
+      "title": "Valessa launches free SVG\u2011to\u20113D\u2011glass converter in the browser",
+      "date": "2026-06-19",
+      "published_at": "2026-06-19T18:46:47.288220+00:00",
+      "tags": [
+        "svg",
+        "3d",
+        "webgl"
+      ],
+      "excerpt": "Drop in an SVG. Get 3D glass back in a second. That's Valessa. In your browser, no installs, fully free. Go break it: https://valessa.riotters.com/ Built with @threejs #threejs #WebGL",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2067916321841446912/img/Dqg1CbDvIeGdiB7d.jpg",
+      "sources": [
+        "https://x.com/i/status/2067916411003924942"
+      ],
+      "readTime": "2 min",
+      "video": "https://video.twimg.com/amplify_video/2067916321841446912/vid/avc1/3664x2160/h_gUIfrG2xdcU5HI.mp4?tag=28",
+      "shortId": 190
+    },
     {
       "filename": "2026-06-19-ai-is-learning-to-run-software-not-just-build-it.md",
       "slug": "2026-06-19-ai-is-learning-to-run-software-not-just-build-it",
