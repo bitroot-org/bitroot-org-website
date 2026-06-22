@@ -1,15 +1,14 @@
 ---
 date: '2026-06-18'
-excerpt: Cursor announced Origin, a new code storage and Git hosting platform slated
-  for a fall release, with a waitlist now open for early access.
-image: null
+excerpt: 'Cursor announced Origin, a new code storage and Git hosting platform slated for a fall release, with a waitlist now open for early access.'
+image: https://pbs.twimg.com/card_img/2067011785404887040/kPl0llQ5?format=jpg&name=medium
 published_at: '2026-06-18T18:25:31.542315+00:00'
 sources:
 - https://x.com/i/status/2067012220832329782
 tags:
-- code hosting
-- git
-- developer tools
+- 'code hosting'
+- 'git'
+- 'developer tools'
 title: 'Cursor launches Origin: code storage and git hosting service'
 ---
 
