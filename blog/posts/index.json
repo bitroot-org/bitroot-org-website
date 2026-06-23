@@ -1,8 +1,10 @@
 {
   "generated": true,
-  "count": 192,
+  "count": 194,
   "posts": [
     "2026-06-23-openai-doesnt-want-to-find-more-bugs-it-wants-to-p.md",
+    "2026-06-23-google-makes-interactions-api-generally-available.md",
+    "2026-06-23-elevenlabs-adds-multiplatform-ad-localization-to-e.md",
     "2026-06-23-cursor-announces-new-model-built-with-spacex-data.md",
     "2026-06-19-valessa-launches-free-svgto3dglass-converter-in-th.md",
     "2026-06-19-ai-is-learning-to-run-software-not-just-build-it.md",
@@ -226,6 +228,47 @@
         "https://www.cisa.gov/topics/cyber-threats-and-advisories/software-security"
       ],
       "readTime": "5 min",
+      "shortId": 194
+    },
+    {
+      "filename": "2026-06-23-google-makes-interactions-api-generally-available.md",
+      "slug": "2026-06-23-google-makes-interactions-api-generally-available",
+      "url": "/blog/2026-06-23-google-makes-interactions-api-generally-available/",
+      "title": "Google makes Interactions API generally available for Gemini",
+      "date": "2026-06-23",
+      "published_at": "2026-06-23T01:52:34.079205+00:00",
+      "tags": [
+        "google",
+        "api",
+        "gemini"
+      ],
+      "excerpt": "Google\u2019s Interactions API is now GA, offering managed agents and background execution for Gemini models. The rollout adds a production\u2011ready entry point for AI\u2011driven workflows.",
+      "image": "https://pbs.twimg.com/media/HLbejaxa8AARgd9.jpg?name=orig",
+      "sources": [
+        "https://x.com/i/status/2069108666121503068"
+      ],
+      "readTime": "2 min",
+      "shortId": 193
+    },
+    {
+      "filename": "2026-06-23-elevenlabs-adds-multiplatform-ad-localization-to-e.md",
+      "slug": "2026-06-23-elevenlabs-adds-multiplatform-ad-localization-to-e",
+      "url": "/blog/2026-06-23-elevenlabs-adds-multiplatform-ad-localization-to-e/",
+      "title": "ElevenLabs adds multi\u2011platform ad localization to ElevenCreative",
+      "date": "2026-06-23",
+      "published_at": "2026-06-23T01:54:26.240535+00:00",
+      "tags": [
+        "ads",
+        "localization",
+        "elevenlabs"
+      ],
+      "excerpt": "ElevenLabs' new Ads Engine lets you pull Google, Meta, and LinkedIn campaigns into ElevenCreative, translate them into 50+ languages, and push the results back. Engineers need to weigh integration effort against potential reach.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2069106830585008128/img/AG7lyyRH-XI-r1Cf.jpg",
+      "sources": [
+        "https://x.com/i/status/2069111326987673761"
+      ],
+      "readTime": "2 min",
+      "video": "https://video.twimg.com/amplify_video/2069106830585008128/vid/avc1/3840x2160/JNV3XcjuWcKTO7Al.mp4?tag=28",
       "shortId": 192
     },
     {

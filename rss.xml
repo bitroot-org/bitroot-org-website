@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 23 Jun 2026 17:40:41 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 17:41:21 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OpenAI Doesn't Want To Find More Bugs. It Wants To Patch The Internet.</title>
@@ -27,6 +27,34 @@
       <category>Security Remediation</category>
       <enclosure url="https://techcrunch.com/wp-content/uploads/2025/09/GettyImages-2214107176.jpg?resize=1280,853" type="image/jpeg" length="0" />
       <source url="https://openai.com/index/patch-the-planet/">Original Source</source>
+    </item>
+    <item>
+      <title>Google makes Interactions API generally available for Gemini</title>
+      <link>https://bitroot.org/blog/2026-06-23-google-makes-interactions-api-generally-available/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-06-23-google-makes-interactions-api-generally-available/</guid>
+      <description>Google’s Interactions API is now GA, offering managed agents and background execution for Gemini models. The rollout adds a production‑ready entry point for AI‑driven workflows.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2069108666121503068"&gt;https://x.com/i/status/2069108666121503068&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 23 Jun 2026 01:52:34 +0000</pubDate>
+      <category>google</category>
+      <category>api</category>
+      <category>gemini</category>
+      <enclosure url="https://pbs.twimg.com/media/HLbejaxa8AARgd9.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2069108666121503068">Original Source</source>
+    </item>
+    <item>
+      <title>ElevenLabs adds multi‑platform ad localization to ElevenCreative</title>
+      <link>https://bitroot.org/blog/2026-06-23-elevenlabs-adds-multiplatform-ad-localization-to-e/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-06-23-elevenlabs-adds-multiplatform-ad-localization-to-e/</guid>
+      <description>ElevenLabs' new Ads Engine lets you pull Google, Meta, and LinkedIn campaigns into ElevenCreative, translate them into 50+ languages, and push the results back. Engineers need to weigh integration effort against potential reach.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2069111326987673761"&gt;https://x.com/i/status/2069111326987673761&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 23 Jun 2026 01:54:26 +0000</pubDate>
+      <category>ads</category>
+      <category>localization</category>
+      <category>elevenlabs</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2069106830585008128/img/AG7lyyRH-XI-r1Cf.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2069111326987673761">Original Source</source>
     </item>
     <item>
       <title>Cursor announces new model built with SpaceX data at Compile</title>
