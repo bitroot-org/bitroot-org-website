@@ -24,8 +24,6 @@ tags:
 title: 'OpenAI Doesn''t Want To Find More Bugs. It Wants To Patch The Internet.'
 ---
 
-# **OpenAI Doesn't Want To Find More Bugs. It Wants To Patch The Internet.**
-
 AI is becoming remarkably good at finding software vulnerabilities.
 
 That's both good news and a growing problem.
