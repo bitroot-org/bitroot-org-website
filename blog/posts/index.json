@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 194,
+  "count": 195,
   "posts": [
+    "2026-06-23-palette-launches-free-matchmaking-platform-for-des.md",
     "2026-06-23-openai-doesnt-want-to-find-more-bugs-it-wants-to-p.md",
     "2026-06-23-google-makes-interactions-api-generally-available.md",
     "2026-06-23-elevenlabs-adds-multiplatform-ad-localization-to-e.md",
@@ -198,6 +199,27 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-06-23-palette-launches-free-matchmaking-platform-for-des.md",
+      "slug": "2026-06-23-palette-launches-free-matchmaking-platform-for-des",
+      "url": "/blog/2026-06-23-palette-launches-free-matchmaking-platform-for-des/",
+      "title": "Palette launches free matchmaking platform for design studios",
+      "date": "2026-06-23",
+      "published_at": "2026-06-23T01:59:51.557678+00:00",
+      "tags": [
+        "design",
+        "founders",
+        "matchmaking"
+      ],
+      "excerpt": "Palette introduces a free service that pairs startup founders with design studios based on a short questionnaire, aiming to cut the cold\u2011email grind.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2068995799912960000/img/AKXwopJCJRT8TgRC.jpg",
+      "sources": [
+        "https://x.com/i/status/2068995853184840101"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-06-23-palette-launches-free-matchmaking-platform-for-des.mp4",
+      "shortId": 195
+    },
     {
       "filename": "2026-06-23-openai-doesnt-want-to-find-more-bugs-it-wants-to-p.md",
       "slug": "2026-06-23-openai-doesnt-want-to-find-more-bugs-it-wants-to-p",
