@@ -5,8 +5,29 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 22 Jun 2026 17:18:21 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 06:04:28 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenAI Doesn't Want To Find More Bugs. It Wants To Patch The Internet.</title>
+      <link>https://bitroot.org/blog/2026-06-23-openai-doesnt-want-to-find-more-bugs-it-wants-to-p/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-06-23-openai-doesnt-want-to-find-more-bugs-it-wants-to-p/</guid>
+      <description>AI is making vulnerability discovery faster than ever, but fixing those vulnerabilities remains a growing challenge. OpenAI's new Patch the Planet initiative aims to help secure critical open-source software, signaling a broader shift in cybersecurity from finding bugs to remediating them before attackers can exploit them.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://openai.com/index/patch-the-planet/"&gt;https://openai.com/index/patch-the-planet/&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://openai.com/index/finding-and-fixing-real-world-software-vulnerabilities-with-ai/"&gt;https://openai.com/index/finding-and-fixing-real-world-software-vulnerabilities-with-ai/&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://opensource.org/osd"&gt;https://opensource.org/osd&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.linuxfoundation.org/research/open-source-software-facts"&gt;https://www.linuxfoundation.org/research/open-source-software-facts&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://owasp.org/www-project-top-ten/"&gt;https://owasp.org/www-project-top-ten/&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.cisa.gov/topics/cyber-threats-and-advisories/software-security"&gt;https://www.cisa.gov/topics/cyber-threats-and-advisories/software-security&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 23 Jun 2026 06:03:49 +0000</pubDate>
+      <category>OpenAI</category>
+      <category>Cybersecurity</category>
+      <category>Open Source Security</category>
+      <category>Vulnerability Management</category>
+      <category>AI Security</category>
+      <category>Software Vulnerabilities</category>
+      <category>Patch the Planet</category>
+      <category>Open Source Software</category>
+      <category>Software Supply Chain Security</category>
+      <category>Security Remediation</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2025/09/GettyImages-2214107176.jpg?resize=1280,853" type="image/jpeg" length="0" />
+      <source url="https://openai.com/index/patch-the-planet/">Original Source</source>
+    </item>
     <item>
       <title>Valessa launches free SVG‑to‑3D‑glass converter in the browser</title>
       <link>https://bitroot.org/blog/2026-06-19-valessa-launches-free-svgto3dglass-converter-in-th/</link>

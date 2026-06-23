@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 190,
+  "count": 191,
   "posts": [
+    "2026-06-23-openai-doesnt-want-to-find-more-bugs-it-wants-to-p.md",
     "2026-06-19-valessa-launches-free-svgto3dglass-converter-in-th.md",
     "2026-06-19-ai-is-learning-to-run-software-not-just-build-it.md",
     "2026-06-18-temple-launches-entropy-metric-to-track-realtime-m.md",
@@ -194,6 +195,38 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-06-23-openai-doesnt-want-to-find-more-bugs-it-wants-to-p.md",
+      "slug": "2026-06-23-openai-doesnt-want-to-find-more-bugs-it-wants-to-p",
+      "url": "/blog/2026-06-23-openai-doesnt-want-to-find-more-bugs-it-wants-to-p/",
+      "title": "OpenAI Doesn't Want To Find More Bugs. It Wants To Patch The Internet.",
+      "date": "2026-06-23",
+      "published_at": "2026-06-23T06:03:49.689Z",
+      "tags": [
+        "OpenAI",
+        "Cybersecurity",
+        "Open Source Security",
+        "Vulnerability Management",
+        "AI Security",
+        "Software Vulnerabilities",
+        "Patch the Planet",
+        "Open Source Software",
+        "Software Supply Chain Security",
+        "Security Remediation"
+      ],
+      "excerpt": "AI is making vulnerability discovery faster than ever, but fixing those vulnerabilities remains a growing challenge. OpenAI's new Patch the Planet initiative aims to help secure critical open-source software, signaling a broader shift in cybersecurity from finding bugs to remediating them before attackers can exploit them.",
+      "image": "https://techcrunch.com/wp-content/uploads/2025/09/GettyImages-2214107176.jpg?resize=1280,853",
+      "sources": [
+        "https://openai.com/index/patch-the-planet/",
+        "https://openai.com/index/finding-and-fixing-real-world-software-vulnerabilities-with-ai/",
+        "https://opensource.org/osd",
+        "https://www.linuxfoundation.org/research/open-source-software-facts",
+        "https://owasp.org/www-project-top-ten/",
+        "https://www.cisa.gov/topics/cyber-threats-and-advisories/software-security"
+      ],
+      "readTime": "6 min",
+      "shortId": 191
+    },
     {
       "filename": "2026-06-19-valessa-launches-free-svgto3dglass-converter-in-th.md",
       "slug": "2026-06-19-valessa-launches-free-svgto3dglass-converter-in-th",
