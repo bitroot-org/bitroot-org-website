@@ -5,8 +5,29 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 25 Jun 2026 04:02:29 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2026 06:17:54 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Figma Motion Isn't About Animation. It's About Removing Another Tool From The Workflow.</title>
+      <link>https://bitroot.org/blog/2026-06-25-figma-motion-isnt-about-animation-its-about-removi/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-06-25-figma-motion-isnt-about-animation-its-about-removi/</guid>
+      <description>At Config 2026, Figma introduced Motion, a new feature that brings animation and interactive design directly into Figma. While the update adds motion capabilities, the bigger story is Figma's effort to streamline the design-to-development workflow by eliminating another tool from the product creation process.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.figma.com/blog/introducing-figma-motion/"&gt;https://www.figma.com/blog/introducing-figma-motion/&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://config.figma.com/"&gt;https://config.figma.com/&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.figma.com/prototyping/"&gt;https://www.figma.com/prototyping/&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.figma.com/dev-mode/"&gt;https://www.figma.com/dev-mode/&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.adobe.com/products/aftereffects.html"&gt;https://www.adobe.com/products/aftereffects.html&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://bitroot.org/blog/2026-06-25-figma-launches-motion-feature-at-config-2026/"&gt;https://bitroot.org/blog/2026-06-25-figma-launches-motion-feature-at-config-2026/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 25 Jun 2026 06:17:06 +0000</pubDate>
+      <category>Figma Motion</category>
+      <category>Config 2026</category>
+      <category>Figma</category>
+      <category>Product Design</category>
+      <category>UX Design</category>
+      <category>Design-to-Development Workflow</category>
+      <category>Interactive Prototyping</category>
+      <category>Motion Design</category>
+      <category>Product Development</category>
+      <category>Design Tools</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2069827477296353280/img/KaLT56GEN2vHV1XI.jpg" type="image/jpeg" length="0" />
+      <source url="https://www.figma.com/blog/introducing-figma-motion/">Original Source</source>
+    </item>
     <item>
       <title>Figma launches Motion feature at Config 2026</title>
       <link>https://bitroot.org/blog/2026-06-25-figma-launches-motion-feature-at-config-2026/</link>

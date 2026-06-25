@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 198,
+  "count": 199,
   "posts": [
+    "2026-06-25-figma-motion-isnt-about-animation-its-about-removi.md",
     "2026-06-25-figma-launches-motion-feature-at-config-2026.md",
     "2026-06-23-palette-launches-free-matchmaking-platform-for-des.md",
     "2026-06-23-openai-doesnt-want-to-find-more-bugs-it-wants-to-p.md",
@@ -202,6 +203,38 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-06-25-figma-motion-isnt-about-animation-its-about-removi.md",
+      "slug": "2026-06-25-figma-motion-isnt-about-animation-its-about-removi",
+      "url": "/blog/2026-06-25-figma-motion-isnt-about-animation-its-about-removi/",
+      "title": "Figma Motion Isn't About Animation. It's About Removing Another Tool From The Workflow.",
+      "date": "2026-06-25",
+      "published_at": "2026-06-25T06:17:06.752Z",
+      "tags": [
+        "Figma Motion",
+        "Config 2026",
+        "Figma",
+        "Product Design",
+        "UX Design",
+        "Design-to-Development Workflow",
+        "Interactive Prototyping",
+        "Motion Design",
+        "Product Development",
+        "Design Tools"
+      ],
+      "excerpt": "At Config 2026, Figma introduced Motion, a new feature that brings animation and interactive design directly into Figma. While the update adds motion capabilities, the bigger story is Figma's effort to streamline the design-to-development workflow by eliminating another tool from the product creation process.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2069827477296353280/img/KaLT56GEN2vHV1XI.jpg",
+      "sources": [
+        "https://www.figma.com/blog/introducing-figma-motion/",
+        "https://config.figma.com/",
+        "https://www.figma.com/prototyping/",
+        "https://www.figma.com/dev-mode/",
+        "https://www.adobe.com/products/aftereffects.html",
+        "https://bitroot.org/blog/2026-06-25-figma-launches-motion-feature-at-config-2026/"
+      ],
+      "readTime": "5 min",
+      "shortId": 199
+    },
     {
       "filename": "2026-06-25-figma-launches-motion-feature-at-config-2026.md",
       "slug": "2026-06-25-figma-launches-motion-feature-at-config-2026",
