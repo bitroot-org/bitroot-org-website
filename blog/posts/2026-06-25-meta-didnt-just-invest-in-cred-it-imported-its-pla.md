@@ -1,7 +1,7 @@
 ---
 date: '2026-06-25'
 excerpt: 'Meta''s $900 million investment in CRED is making headlines, but the bigger story may be Kunal Shah''s appointment as WhatsApp''s new chief. The move signals Meta''s growing focus on payments, commerce, and financial services, while bringing one of India''s most influential fintech founders into WhatsApp''s future strategy.'
-image: https://pbs.twimg.com/media/HLo-UHXaUAAJljk?format=jpg&name=large
+image: https://pbs.twimg.com/media/HLpB4PnbwAAXSog?format=jpg&name=large
 published_at: '2026-06-25T06:48:56.110Z'
 sources:
 - https://whatsappbusiness.com/
