@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 23 Jun 2026 17:43:25 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2026 04:00:24 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Palette launches free matchmaking platform for design studios</title>
@@ -97,6 +97,20 @@
       <category>startup tools</category>
       <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2069142239335342080/img/dOnb8a8YMszF_AJA.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2069149296436330776">Original Source</source>
+    </item>
+    <item>
+      <title>Anthropic adds Claude Tag for Slack task delegation</title>
+      <link>https://bitroot.org/blog/2026-06-23-anthropic-adds-claude-tag-for-slack-task-delegatio/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-06-23-anthropic-adds-claude-tag-for-slack-task-delegatio/</guid>
+      <description>Claude Tag lets teams call Claude directly from Slack by tagging the bot, turning it into a collaborative teammate. It’s a modest addition that may streamline routine requests but carries privacy and noise considerations.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2069468693017268244"&gt;https://x.com/i/status/2069468693017268244&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 23 Jun 2026 17:40:20 +0000</pubDate>
+      <category>anthropic</category>
+      <category>slack integration</category>
+      <category>ai assistant</category>
+      <enclosure url="https://pbs.twimg.com/media/HLg9iF5XYAAhaS7.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2069468693017268244">Original Source</source>
     </item>
     <item>
       <title>Valessa launches free SVG‑to‑3D‑glass converter in the browser</title>

@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "count": 196,
+  "count": 197,
   "posts": [
     "2026-06-23-palette-launches-free-matchmaking-platform-for-des.md",
     "2026-06-23-openai-doesnt-want-to-find-more-bugs-it-wants-to-p.md",
@@ -8,6 +8,7 @@
     "2026-06-23-google-makes-interactions-api-generally-available.md",
     "2026-06-23-elevenlabs-adds-multiplatform-ad-localization-to-e.md",
     "2026-06-23-cursor-announces-new-model-built-with-spacex-data.md",
+    "2026-06-23-anthropic-adds-claude-tag-for-slack-task-delegatio.md",
     "2026-06-19-valessa-launches-free-svgto3dglass-converter-in-th.md",
     "2026-06-19-ai-is-learning-to-run-software-not-just-build-it.md",
     "2026-06-18-temple-launches-entropy-metric-to-track-realtime-m.md",
@@ -219,7 +220,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-06-23-palette-launches-free-matchmaking-platform-for-des.mp4",
-      "shortId": 196
+      "shortId": 197
     },
     {
       "filename": "2026-06-23-openai-doesnt-want-to-find-more-bugs-it-wants-to-p.md",
@@ -251,7 +252,7 @@
         "https://www.cisa.gov/topics/cyber-threats-and-advisories/software-security"
       ],
       "readTime": "5 min",
-      "shortId": 195
+      "shortId": 196
     },
     {
       "filename": "2026-06-23-meta-names-kunal-shah-as-global-head-of-whatsapp.md",
@@ -271,7 +272,7 @@
         "https://x.com/i/status/2069083323935424696"
       ],
       "readTime": "2 min",
-      "shortId": 194
+      "shortId": 195
     },
     {
       "filename": "2026-06-23-google-makes-interactions-api-generally-available.md",
@@ -291,7 +292,7 @@
         "https://x.com/i/status/2069108666121503068"
       ],
       "readTime": "2 min",
-      "shortId": 193
+      "shortId": 194
     },
     {
       "filename": "2026-06-23-elevenlabs-adds-multiplatform-ad-localization-to-e.md",
@@ -312,7 +313,7 @@
       ],
       "readTime": "2 min",
       "video": "https://video.twimg.com/amplify_video/2069106830585008128/vid/avc1/3840x2160/JNV3XcjuWcKTO7Al.mp4?tag=28",
-      "shortId": 192
+      "shortId": 193
     },
     {
       "filename": "2026-06-23-cursor-announces-new-model-built-with-spacex-data.md",
@@ -333,6 +334,27 @@
       ],
       "readTime": "2 min",
       "video": "https://video.twimg.com/amplify_video/2069142239335342080/vid/avc1/1920x1080/ttcK9Y3a3odWMA1M.mp4?tag=28",
+      "shortId": 192
+    },
+    {
+      "filename": "2026-06-23-anthropic-adds-claude-tag-for-slack-task-delegatio.md",
+      "slug": "2026-06-23-anthropic-adds-claude-tag-for-slack-task-delegatio",
+      "url": "/blog/2026-06-23-anthropic-adds-claude-tag-for-slack-task-delegatio/",
+      "title": "Anthropic adds Claude Tag for Slack task delegation",
+      "date": "2026-06-23",
+      "published_at": "2026-06-23T17:40:20.297751+00:00",
+      "tags": [
+        "anthropic",
+        "slack integration",
+        "ai assistant"
+      ],
+      "excerpt": "Claude Tag lets teams call Claude directly from Slack by tagging the bot, turning it into a collaborative teammate. It\u2019s a modest addition that may streamline routine requests but carries privacy and noise considerations.",
+      "image": "https://pbs.twimg.com/media/HLg9iF5XYAAhaS7.jpg",
+      "sources": [
+        "https://x.com/i/status/2069468693017268244"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-06-23-anthropic-adds-claude-tag-for-slack-task-delegatio.mp4",
       "shortId": 191
     },
     {
