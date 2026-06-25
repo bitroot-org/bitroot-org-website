@@ -1,13 +1,12 @@
 {
   "generated": true,
-  "count": 200,
+  "count": 199,
   "posts": [
     "2026-06-25-meta-didnt-just-invest-in-cred-it-imported-its-pla.md",
     "2026-06-25-figma-motion-isnt-about-animation-its-about-removi.md",
     "2026-06-25-figma-launches-motion-feature-at-config-2026.md",
     "2026-06-23-palette-launches-free-matchmaking-platform-for-des.md",
     "2026-06-23-openai-doesnt-want-to-find-more-bugs-it-wants-to-p.md",
-    "2026-06-23-meta-names-kunal-shah-as-global-head-of-whatsapp.md",
     "2026-06-23-google-makes-interactions-api-generally-available.md",
     "2026-06-23-elevenlabs-adds-multiplatform-ad-localization-to-e.md",
     "2026-06-23-cursor-announces-new-model-built-with-spacex-data.md",
@@ -233,7 +232,7 @@
         "https://techcrunch.com/2026/06/22/whatsapp-gets-new-chief-as-meta-taps-indias-cred-founder-kunal-shah-and-invests-900m-in-startup/"
       ],
       "readTime": "5 min",
-      "shortId": 200
+      "shortId": 199
     },
     {
       "filename": "2026-06-25-figma-motion-isnt-about-animation-its-about-removi.md",
@@ -265,7 +264,7 @@
         "https://bitroot.org/blog/2026-06-25-figma-launches-motion-feature-at-config-2026/"
       ],
       "readTime": "5 min",
-      "shortId": 199
+      "shortId": 198
     },
     {
       "filename": "2026-06-25-figma-launches-motion-feature-at-config-2026.md",
@@ -286,7 +285,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-06-25-figma-launches-motion-feature-at-config-2026.mp4",
-      "shortId": 198
+      "shortId": 197
     },
     {
       "filename": "2026-06-23-palette-launches-free-matchmaking-platform-for-des.md",
@@ -307,7 +306,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-06-23-palette-launches-free-matchmaking-platform-for-des.mp4",
-      "shortId": 197
+      "shortId": 196
     },
     {
       "filename": "2026-06-23-openai-doesnt-want-to-find-more-bugs-it-wants-to-p.md",
@@ -339,26 +338,6 @@
         "https://www.cisa.gov/topics/cyber-threats-and-advisories/software-security"
       ],
       "readTime": "5 min",
-      "shortId": 196
-    },
-    {
-      "filename": "2026-06-23-meta-names-kunal-shah-as-global-head-of-whatsapp.md",
-      "slug": "2026-06-23-meta-names-kunal-shah-as-global-head-of-whatsapp",
-      "url": "/blog/2026-06-23-meta-names-kunal-shah-as-global-head-of-whatsapp/",
-      "title": "Meta names Kunal Shah as global head of WhatsApp",
-      "date": "2026-06-23",
-      "published_at": "2026-06-23T02:05:58.979705+00:00",
-      "tags": [
-        "whatsapp",
-        "meta",
-        "leadership"
-      ],
-      "excerpt": "Meta has appointed Kunal Shah, founder of CRED and FreeCharge, as the new global head of WhatsApp, signaling a push toward broader product scaling and AI integration.",
-      "image": "https://pbs.twimg.com/media/HLbcTrPaAAAMYDe.jpg?name=orig",
-      "sources": [
-        "https://x.com/i/status/2069083323935424696"
-      ],
-      "readTime": "2 min",
       "shortId": 195
     },
     {
