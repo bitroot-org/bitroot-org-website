@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 29 Jun 2026 19:34:23 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 19:35:25 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cursor launches iOS app with always‑on cloud agents</title>
@@ -38,6 +38,20 @@
       <category>AI Trust</category>
       <category>Generative AI</category>
       <enclosure url="https://images.ctfassets.net/kftzwdyauwt9/6vqEtiJWI45VyDgCniABzZ/f89ed847a8e956ad4c7dc281d641f817/1-OAI-ChatGPT-Personal-Finances-GoalPlanning-16x9.png?w=1920&amp;q=80&amp;fm=webp" type="image/png" length="0" />
+    </item>
+    <item>
+      <title>asciilab launches to turn images and videos into ASCII art</title>
+      <link>https://bitroot.org/blog/2026-06-29-asciilab-launches-to-turn-images-and-videos-into-a/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-06-29-asciilab-launches-to-turn-images-and-videos-into-a/</guid>
+      <description>Turn your images and videos into ASCII art 👾 ❋ http://javii.tools · asciilab launched!
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2071381213634347233"&gt;https://x.com/i/status/2071381213634347233&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 29 Jun 2026 19:10:15 +0000</pubDate>
+      <category>ascii art</category>
+      <category>image processing</category>
+      <category>developer tools</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2071377770081378304/img/QfN-UnEcg5eG5tqu.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2071381213634347233">Original Source</source>
     </item>
     <item>
       <title>Meta Didn't Just Invest In CRED. It Imported Its Playbook.</title>

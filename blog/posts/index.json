@@ -1,9 +1,10 @@
 {
   "generated": true,
-  "count": 201,
+  "count": 202,
   "posts": [
     "2026-06-29-cursor-launches-ios-app-with-alwayson-cloud-agents.md",
     "2026-06-29-chatgpt-isnt-just-getting-smarter-its-getting-more.md",
+    "2026-06-29-asciilab-launches-to-turn-images-and-videos-into-a.md",
     "2026-06-25-meta-didnt-just-invest-in-cred-it-imported-its-pla.md",
     "2026-06-25-figma-motion-isnt-about-animation-its-about-removi.md",
     "2026-06-25-figma-launches-motion-feature-at-config-2026.md",
@@ -224,7 +225,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-06-29-cursor-launches-ios-app-with-alwayson-cloud-agents.mp4",
-      "shortId": 201
+      "shortId": 202
     },
     {
       "filename": "2026-06-29-chatgpt-isnt-just-getting-smarter-its-getting-more.md",
@@ -249,6 +250,27 @@
       "image": "https://images.ctfassets.net/kftzwdyauwt9/6vqEtiJWI45VyDgCniABzZ/f89ed847a8e956ad4c7dc281d641f817/1-OAI-ChatGPT-Personal-Finances-GoalPlanning-16x9.png?w=1920&q=80&fm=webp",
       "sources": [],
       "readTime": "6 min",
+      "shortId": 201
+    },
+    {
+      "filename": "2026-06-29-asciilab-launches-to-turn-images-and-videos-into-a.md",
+      "slug": "2026-06-29-asciilab-launches-to-turn-images-and-videos-into-a",
+      "url": "/blog/2026-06-29-asciilab-launches-to-turn-images-and-videos-into-a/",
+      "title": "asciilab launches to turn images and videos into ASCII art",
+      "date": "2026-06-29",
+      "published_at": "2026-06-29T19:10:15.086003+00:00",
+      "tags": [
+        "ascii art",
+        "image processing",
+        "developer tools"
+      ],
+      "excerpt": "Turn your images and videos into ASCII art \ud83d\udc7e \u274b http://javii.tools \u00b7 asciilab launched!",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2071377770081378304/img/QfN-UnEcg5eG5tqu.jpg",
+      "sources": [
+        "https://x.com/i/status/2071381213634347233"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-06-29-asciilab-launches-to-turn-images-and-videos-into-a.mp4",
       "shortId": 200
     },
     {
