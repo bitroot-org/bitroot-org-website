@@ -5,8 +5,22 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 29 Jun 2026 10:08:27 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 19:34:23 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cursor launches iOS app with always‑on cloud agents</title>
+      <link>https://bitroot.org/blog/2026-06-29-cursor-launches-ios-app-with-alwayson-cloud-agents/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-06-29-cursor-launches-ios-app-with-alwayson-cloud-agents/</guid>
+      <description>Cursor released a native iOS client that can spin up always‑on cloud agents and remote‑control local agents, with a limited‑time 75 % discount on Composer 2.5.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2071641103191998810"&gt;https://x.com/i/status/2071641103191998810&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 29 Jun 2026 19:09:34 +0000</pubDate>
+      <category>cursor</category>
+      <category>ios</category>
+      <category>cloud agents</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2071638346145923072/img/nqFrOzzGvR8kxbee.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2071641103191998810">Original Source</source>
+    </item>
     <item>
       <title>ChatGPT Isn't Just Getting Smarter. It's Getting More Personal.</title>
       <link>https://bitroot.org/blog/2026-06-29-chatgpt-isnt-just-getting-smarter-its-getting-more/</link>

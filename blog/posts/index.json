@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 200,
+  "count": 201,
   "posts": [
+    "2026-06-29-cursor-launches-ios-app-with-alwayson-cloud-agents.md",
     "2026-06-29-chatgpt-isnt-just-getting-smarter-its-getting-more.md",
     "2026-06-25-meta-didnt-just-invest-in-cred-it-imported-its-pla.md",
     "2026-06-25-figma-motion-isnt-about-animation-its-about-removi.md",
@@ -204,6 +205,27 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-06-29-cursor-launches-ios-app-with-alwayson-cloud-agents.md",
+      "slug": "2026-06-29-cursor-launches-ios-app-with-alwayson-cloud-agents",
+      "url": "/blog/2026-06-29-cursor-launches-ios-app-with-alwayson-cloud-agents/",
+      "title": "Cursor launches iOS app with always\u2011on cloud agents",
+      "date": "2026-06-29",
+      "published_at": "2026-06-29T19:09:34.686583+00:00",
+      "tags": [
+        "cursor",
+        "ios",
+        "cloud agents"
+      ],
+      "excerpt": "Cursor released a native iOS client that can spin up always\u2011on cloud agents and remote\u2011control local agents, with a limited\u2011time 75 % discount on Composer 2.5.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2071638346145923072/img/nqFrOzzGvR8kxbee.jpg",
+      "sources": [
+        "https://x.com/i/status/2071641103191998810"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-06-29-cursor-launches-ios-app-with-alwayson-cloud-agents.mp4",
+      "shortId": 201
+    },
     {
       "filename": "2026-06-29-chatgpt-isnt-just-getting-smarter-its-getting-more.md",
       "slug": "2026-06-29-chatgpt-isnt-just-getting-smarter-its-getting-more",
