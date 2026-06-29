@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 202,
+  "count": 203,
   "posts": [
+    "2026-06-29-fal-adds-extract-object-api-for-instant-image-cuto.md",
     "2026-06-29-cursor-launches-ios-app-with-alwayson-cloud-agents.md",
     "2026-06-29-chatgpt-isnt-just-getting-smarter-its-getting-more.md",
     "2026-06-29-asciilab-launches-to-turn-images-and-videos-into-a.md",
@@ -206,6 +207,27 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-06-29-fal-adds-extract-object-api-for-instant-image-cuto.md",
+      "slug": "2026-06-29-fal-adds-extract-object-api-for-instant-image-cuto",
+      "url": "/blog/2026-06-29-fal-adds-extract-object-api-for-instant-image-cuto/",
+      "title": "Fal adds Extract Object API for instant image cutouts",
+      "date": "2026-06-29",
+      "published_at": "2026-06-29T19:20:37.442226+00:00",
+      "tags": [
+        "image processing",
+        "api",
+        "computer vision"
+      ],
+      "excerpt": "Fal\u2019s new Extract Object model returns a clean RGBA PNG cutout from a single API call, turning natural\u2011language prompts into ready\u2011to\u2011use assets.",
+      "image": "https://pbs.twimg.com/ext_tw_video_thumb/2071631718763626496/pu/img/7U36B0aChwwFAUjV.jpg",
+      "sources": [
+        "https://x.com/i/status/2071631739705762296"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-06-29-fal-adds-extract-object-api-for-instant-image-cuto.mp4",
+      "shortId": 203
+    },
     {
       "filename": "2026-06-29-cursor-launches-ios-app-with-alwayson-cloud-agents.md",
       "slug": "2026-06-29-cursor-launches-ios-app-with-alwayson-cloud-agents",

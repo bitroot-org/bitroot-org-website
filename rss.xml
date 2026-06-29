@@ -5,8 +5,22 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 29 Jun 2026 19:35:25 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 19:37:15 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fal adds Extract Object API for instant image cutouts</title>
+      <link>https://bitroot.org/blog/2026-06-29-fal-adds-extract-object-api-for-instant-image-cuto/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-06-29-fal-adds-extract-object-api-for-instant-image-cuto/</guid>
+      <description>Fal’s new Extract Object model returns a clean RGBA PNG cutout from a single API call, turning natural‑language prompts into ready‑to‑use assets.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2071631739705762296"&gt;https://x.com/i/status/2071631739705762296&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 29 Jun 2026 19:20:37 +0000</pubDate>
+      <category>image processing</category>
+      <category>api</category>
+      <category>computer vision</category>
+      <enclosure url="https://pbs.twimg.com/ext_tw_video_thumb/2071631718763626496/pu/img/7U36B0aChwwFAUjV.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2071631739705762296">Original Source</source>
+    </item>
     <item>
       <title>Cursor launches iOS app with always‑on cloud agents</title>
       <link>https://bitroot.org/blog/2026-06-29-cursor-launches-ios-app-with-alwayson-cloud-agents/</link>
