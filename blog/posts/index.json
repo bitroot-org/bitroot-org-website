@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 199,
+  "count": 200,
   "posts": [
+    "2026-06-29-chatgpt-isnt-just-getting-smarter-its-getting-more.md",
     "2026-06-25-meta-didnt-just-invest-in-cred-it-imported-its-pla.md",
     "2026-06-25-figma-motion-isnt-about-animation-its-about-removi.md",
     "2026-06-25-figma-launches-motion-feature-at-config-2026.md",
@@ -203,6 +204,31 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-06-29-chatgpt-isnt-just-getting-smarter-its-getting-more.md",
+      "slug": "2026-06-29-chatgpt-isnt-just-getting-smarter-its-getting-more",
+      "url": "/blog/2026-06-29-chatgpt-isnt-just-getting-smarter-its-getting-more/",
+      "title": "ChatGPT Isn't Just Getting Smarter. It's Getting More Personal.",
+      "date": "2026-06-29",
+      "published_at": "2026-06-29T10:07:31.055Z",
+      "tags": [
+        "ChatGPT Release Notes",
+        "ChatGPT Personal Finance",
+        "ChatGPT Memory",
+        "ChatGPT Projects",
+        "ChatGPT Connectors",
+        "OpenAI",
+        "AI Personalization",
+        "Context-Aware AI",
+        "AI Trust",
+        "Generative AI"
+      ],
+      "excerpt": "OpenAI's latest ChatGPT release notes reveal more than new features. From Personal Finance to Memory and Connectors, every update points to a bigger shift: AI is becoming more valuable by understanding users, not just answering prompts.",
+      "image": "https://images.ctfassets.net/kftzwdyauwt9/6vqEtiJWI45VyDgCniABzZ/f89ed847a8e956ad4c7dc281d641f817/1-OAI-ChatGPT-Personal-Finances-GoalPlanning-16x9.png?w=1920&q=80&fm=webp",
+      "sources": [],
+      "readTime": "6 min",
+      "shortId": 200
+    },
     {
       "filename": "2026-06-25-meta-didnt-just-invest-in-cred-it-imported-its-pla.md",
       "slug": "2026-06-25-meta-didnt-just-invest-in-cred-it-imported-its-pla",

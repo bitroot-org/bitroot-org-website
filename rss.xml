@@ -5,8 +5,26 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 25 Jun 2026 10:08:55 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 10:08:27 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ChatGPT Isn't Just Getting Smarter. It's Getting More Personal.</title>
+      <link>https://bitroot.org/blog/2026-06-29-chatgpt-isnt-just-getting-smarter-its-getting-more/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-06-29-chatgpt-isnt-just-getting-smarter-its-getting-more/</guid>
+      <description>OpenAI's latest ChatGPT release notes reveal more than new features. From Personal Finance to Memory and Connectors, every update points to a bigger shift: AI is becoming more valuable by understanding users, not just answering prompts.</description>
+      <pubDate>Mon, 29 Jun 2026 10:07:31 +0000</pubDate>
+      <category>ChatGPT Release Notes</category>
+      <category>ChatGPT Personal Finance</category>
+      <category>ChatGPT Memory</category>
+      <category>ChatGPT Projects</category>
+      <category>ChatGPT Connectors</category>
+      <category>OpenAI</category>
+      <category>AI Personalization</category>
+      <category>Context-Aware AI</category>
+      <category>AI Trust</category>
+      <category>Generative AI</category>
+      <enclosure url="https://images.ctfassets.net/kftzwdyauwt9/6vqEtiJWI45VyDgCniABzZ/f89ed847a8e956ad4c7dc281d641f817/1-OAI-ChatGPT-Personal-Finances-GoalPlanning-16x9.png?w=1920&amp;q=80&amp;fm=webp" type="image/png" length="0" />
+    </item>
     <item>
       <title>Meta Didn't Just Invest In CRED. It Imported Its Playbook.</title>
       <link>https://bitroot.org/blog/2026-06-25-meta-didnt-just-invest-in-cred-it-imported-its-pla/</link>
