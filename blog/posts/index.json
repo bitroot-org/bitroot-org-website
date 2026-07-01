@@ -1,9 +1,10 @@
 {
   "generated": true,
-  "count": 205,
+  "count": 206,
   "posts": [
     "2026-07-01-motionfly-launches-agent28-ai-video-editor-free-fo.md",
     "2026-07-01-claude-sonnet-5-adds-autonomous-planning-and-tool.md",
+    "2026-07-01-browserbase-launches-readytorun-browser-agents.md",
     "2026-06-29-fal-adds-extract-object-api-for-instant-image-cuto.md",
     "2026-06-29-cursor-launches-ios-app-with-alwayson-cloud-agents.md",
     "2026-06-29-chatgpt-isnt-just-getting-smarter-its-getting-more.md",
@@ -228,7 +229,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-01-motionfly-launches-agent28-ai-video-editor-free-fo.mp4",
-      "shortId": 205
+      "shortId": 206
     },
     {
       "filename": "2026-07-01-claude-sonnet-5-adds-autonomous-planning-and-tool.md",
@@ -249,6 +250,27 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-01-claude-sonnet-5-adds-autonomous-planning-and-tool.mp4",
+      "shortId": 205
+    },
+    {
+      "filename": "2026-07-01-browserbase-launches-readytorun-browser-agents.md",
+      "slug": "2026-07-01-browserbase-launches-readytorun-browser-agents",
+      "url": "/blog/2026-07-01-browserbase-launches-readytorun-browser-agents/",
+      "title": "Browserbase launches ready\u2011to\u2011run browser agents",
+      "date": "2026-07-01",
+      "published_at": "2026-07-01T03:21:48.492895+00:00",
+      "tags": [
+        "browser automation",
+        "api",
+        "devtools"
+      ],
+      "excerpt": "Browserbase now offers pre\u2011packaged browser agents that can be started with a single prompt and one API call, aiming to simplify web automation for developers.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2071984483998330881/img/3VLS8bmqkmiYoO3W.jpg",
+      "sources": [
+        "https://x.com/i/status/2071994225865150708"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-01-browserbase-launches-readytorun-browser-agents.mp4",
       "shortId": 204
     },
     {

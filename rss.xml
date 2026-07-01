@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Jul 2026 06:51:33 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2026 06:52:29 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Motionfly launches Agent28 AI video editor, free for first 1k users</title>
@@ -34,6 +34,20 @@
       <category>agentic</category>
       <enclosure url="https://pbs.twimg.com/media/HMFJYt8XEAAYMDz.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2072017450611142835">Original Source</source>
+    </item>
+    <item>
+      <title>Browserbase launches ready‑to‑run browser agents</title>
+      <link>https://bitroot.org/blog/2026-07-01-browserbase-launches-readytorun-browser-agents/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-01-browserbase-launches-readytorun-browser-agents/</guid>
+      <description>Browserbase now offers pre‑packaged browser agents that can be started with a single prompt and one API call, aiming to simplify web automation for developers.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2071994225865150708"&gt;https://x.com/i/status/2071994225865150708&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 01 Jul 2026 03:21:48 +0000</pubDate>
+      <category>browser automation</category>
+      <category>api</category>
+      <category>devtools</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2071984483998330881/img/3VLS8bmqkmiYoO3W.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2071994225865150708">Original Source</source>
     </item>
     <item>
       <title>Fal adds Extract Object API for instant image cutouts</title>
