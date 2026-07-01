@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 204,
+  "count": 205,
   "posts": [
+    "2026-07-01-motionfly-launches-agent28-ai-video-editor-free-fo.md",
     "2026-07-01-claude-sonnet-5-adds-autonomous-planning-and-tool.md",
     "2026-06-29-fal-adds-extract-object-api-for-instant-image-cuto.md",
     "2026-06-29-cursor-launches-ios-app-with-alwayson-cloud-agents.md",
@@ -208,6 +209,27 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-07-01-motionfly-launches-agent28-ai-video-editor-free-fo.md",
+      "slug": "2026-07-01-motionfly-launches-agent28-ai-video-editor-free-fo",
+      "url": "/blog/2026-07-01-motionfly-launches-agent28-ai-video-editor-free-fo/",
+      "title": "Motionfly launches Agent28 AI video editor, free for first 1k users",
+      "date": "2026-07-01",
+      "published_at": "2026-07-01T03:20:58.086896+00:00",
+      "tags": [
+        "video editing",
+        "ai tools",
+        "automation"
+      ],
+      "excerpt": "Motionfly's Agent28 claims a ten\u2011fold reduction in editing time by auto\u2011adding zooms, graphics, B\u2011roll, captions, and more. The first thousand users get free access, but the paid model is still undefined.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2072002374483197952/img/INi4DssIFYqRuZGS.jpg",
+      "sources": [
+        "https://x.com/i/status/2072002524060496314"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-01-motionfly-launches-agent28-ai-video-editor-free-fo.mp4",
+      "shortId": 205
+    },
     {
       "filename": "2026-07-01-claude-sonnet-5-adds-autonomous-planning-and-tool.md",
       "slug": "2026-07-01-claude-sonnet-5-adds-autonomous-planning-and-tool",

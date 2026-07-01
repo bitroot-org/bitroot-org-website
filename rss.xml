@@ -5,8 +5,22 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Jul 2026 06:50:12 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2026 06:51:33 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Motionfly launches Agent28 AI video editor, free for first 1k users</title>
+      <link>https://bitroot.org/blog/2026-07-01-motionfly-launches-agent28-ai-video-editor-free-fo/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-01-motionfly-launches-agent28-ai-video-editor-free-fo/</guid>
+      <description>Motionfly's Agent28 claims a ten‑fold reduction in editing time by auto‑adding zooms, graphics, B‑roll, captions, and more. The first thousand users get free access, but the paid model is still undefined.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2072002524060496314"&gt;https://x.com/i/status/2072002524060496314&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 01 Jul 2026 03:20:58 +0000</pubDate>
+      <category>video editing</category>
+      <category>ai tools</category>
+      <category>automation</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2072002374483197952/img/INi4DssIFYqRuZGS.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2072002524060496314">Original Source</source>
+    </item>
     <item>
       <title>Claude Sonnet 5 adds autonomous planning and tool use</title>
       <link>https://bitroot.org/blog/2026-07-01-claude-sonnet-5-adds-autonomous-planning-and-tool/</link>
