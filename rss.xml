@@ -5,8 +5,22 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 29 Jun 2026 19:37:15 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2026 06:50:12 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude Sonnet 5 adds autonomous planning and tool use</title>
+      <link>https://bitroot.org/blog/2026-07-01-claude-sonnet-5-adds-autonomous-planning-and-tool/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-01-claude-sonnet-5-adds-autonomous-planning-and-tool/</guid>
+      <description>Anthropic's Claude Sonnet 5 can plan, browse the web, and run terminal commands on its own, narrowing the gap with larger, pricier models.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2072017450611142835"&gt;https://x.com/i/status/2072017450611142835&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 01 Jul 2026 03:17:23 +0000</pubDate>
+      <category>ai</category>
+      <category>large-language-model</category>
+      <category>agentic</category>
+      <enclosure url="https://pbs.twimg.com/media/HMFJYt8XEAAYMDz.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2072017450611142835">Original Source</source>
+    </item>
     <item>
       <title>Fal adds Extract Object API for instant image cutouts</title>
       <link>https://bitroot.org/blog/2026-06-29-fal-adds-extract-object-api-for-instant-image-cuto/</link>

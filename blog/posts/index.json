@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 203,
+  "count": 204,
   "posts": [
+    "2026-07-01-claude-sonnet-5-adds-autonomous-planning-and-tool.md",
     "2026-06-29-fal-adds-extract-object-api-for-instant-image-cuto.md",
     "2026-06-29-cursor-launches-ios-app-with-alwayson-cloud-agents.md",
     "2026-06-29-chatgpt-isnt-just-getting-smarter-its-getting-more.md",
@@ -207,6 +208,27 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-07-01-claude-sonnet-5-adds-autonomous-planning-and-tool.md",
+      "slug": "2026-07-01-claude-sonnet-5-adds-autonomous-planning-and-tool",
+      "url": "/blog/2026-07-01-claude-sonnet-5-adds-autonomous-planning-and-tool/",
+      "title": "Claude Sonnet 5 adds autonomous planning and tool use",
+      "date": "2026-07-01",
+      "published_at": "2026-07-01T03:17:23.180319+00:00",
+      "tags": [
+        "ai",
+        "large-language-model",
+        "agentic"
+      ],
+      "excerpt": "Anthropic's Claude Sonnet 5 can plan, browse the web, and run terminal commands on its own, narrowing the gap with larger, pricier models.",
+      "image": "https://pbs.twimg.com/media/HMFJYt8XEAAYMDz.jpg",
+      "sources": [
+        "https://x.com/i/status/2072017450611142835"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-01-claude-sonnet-5-adds-autonomous-planning-and-tool.mp4",
+      "shortId": 204
+    },
     {
       "filename": "2026-06-29-fal-adds-extract-object-api-for-instant-image-cuto.md",
       "slug": "2026-06-29-fal-adds-extract-object-api-for-instant-image-cuto",
