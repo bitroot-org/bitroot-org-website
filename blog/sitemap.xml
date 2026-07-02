@@ -2,8 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bitroot.org/blog/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-07-02</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bitroot.org/blog/2026-07-02-higgsfield-launches-shorts-studio-powered-by-gemin/</loc>
+    <lastmod>2026-07-02</lastmod>
   </url>
   <url>
     <loc>https://bitroot.org/blog/2026-07-01-motionfly-launches-agent28-ai-video-editor-free-fo/</loc>

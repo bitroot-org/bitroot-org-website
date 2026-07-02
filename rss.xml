@@ -5,8 +5,22 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Jul 2026 06:52:29 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2026 22:06:25 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Higgsfield launches Shorts Studio powered by Gemini Omni Flash</title>
+      <link>https://bitroot.org/blog/2026-07-02-higgsfield-launches-shorts-studio-powered-by-gemin/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-02-higgsfield-launches-shorts-studio-powered-by-gemin/</guid>
+      <description>Higgsfield AI unveiled Shorts Studio, an AI‑driven editor that reshapes any clip for short‑form platforms using Gemini Omni Flash. No pricing details are public yet.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2072380736120959244"&gt;https://x.com/i/status/2072380736120959244&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 02 Jul 2026 02:58:27 +0000</pubDate>
+      <category>short-form video</category>
+      <category>ai editing</category>
+      <category>gemini</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2072380437868027905/img/83VsJHuzQ4YR7hp7.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2072380736120959244">Original Source</source>
+    </item>
     <item>
       <title>Motionfly launches Agent28 AI video editor, free for first 1k users</title>
       <link>https://bitroot.org/blog/2026-07-01-motionfly-launches-agent28-ai-video-editor-free-fo/</link>

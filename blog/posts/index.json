@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 206,
+  "count": 207,
   "posts": [
+    "2026-07-02-higgsfield-launches-shorts-studio-powered-by-gemin.md",
     "2026-07-01-motionfly-launches-agent28-ai-video-editor-free-fo.md",
     "2026-07-01-claude-sonnet-5-adds-autonomous-planning-and-tool.md",
     "2026-07-01-browserbase-launches-readytorun-browser-agents.md",
@@ -210,6 +211,27 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-07-02-higgsfield-launches-shorts-studio-powered-by-gemin.md",
+      "slug": "2026-07-02-higgsfield-launches-shorts-studio-powered-by-gemin",
+      "url": "/blog/2026-07-02-higgsfield-launches-shorts-studio-powered-by-gemin/",
+      "title": "Higgsfield launches Shorts Studio powered by Gemini Omni Flash",
+      "date": "2026-07-02",
+      "published_at": "2026-07-02T02:58:27.760630+00:00",
+      "tags": [
+        "short-form video",
+        "ai editing",
+        "gemini"
+      ],
+      "excerpt": "Higgsfield AI unveiled Shorts Studio, an AI\u2011driven editor that reshapes any clip for short\u2011form platforms using Gemini Omni Flash. No pricing details are public yet.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2072380437868027905/img/83VsJHuzQ4YR7hp7.jpg",
+      "sources": [
+        "https://x.com/i/status/2072380736120959244"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-02-higgsfield-launches-shorts-studio-powered-by-gemin.mp4",
+      "shortId": 207
+    },
     {
       "filename": "2026-07-01-motionfly-launches-agent28-ai-video-editor-free-fo.md",
       "slug": "2026-07-01-motionfly-launches-agent28-ai-video-editor-free-fo",
