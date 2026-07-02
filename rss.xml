@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 02 Jul 2026 22:06:25 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2026 22:07:25 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Higgsfield launches Shorts Studio powered by Gemini Omni Flash</title>
@@ -20,6 +20,20 @@
       <category>gemini</category>
       <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2072380437868027905/img/83VsJHuzQ4YR7hp7.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2072380736120959244">Original Source</source>
+    </item>
+    <item>
+      <title>Fish Audio makes S2.1 Pro TTS model free for developers</title>
+      <link>https://bitroot.org/blog/2026-07-02-fish-audio-makes-s21-pro-tts-model-free-for-develo/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-02-fish-audio-makes-s21-pro-tts-model-free-for-develo/</guid>
+      <description>Fish Audio has opened its top‑tier S2.1 Pro voice model to developers at no cost, offering 83 languages and unlimited usage via the existing API endpoint.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2072319320386883690"&gt;https://x.com/i/status/2072319320386883690&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 02 Jul 2026 02:59:18 +0000</pubDate>
+      <category>text-to-speech</category>
+      <category>api</category>
+      <category>developer-tools</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2072271134561857536/img/jC9GTbzQggc_QvEl.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2072319320386883690">Original Source</source>
     </item>
     <item>
       <title>Motionfly launches Agent28 AI video editor, free for first 1k users</title>
