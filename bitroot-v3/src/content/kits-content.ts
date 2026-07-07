@@ -96,4 +96,78 @@ ADMIN_PASSWORD=change-me`,
       "If you need scheduling, A/B testing, or a full landing page builder, this is too lean. This kit is one job: collect emails well.",
     license: "MIT",
   },
+  "latex-invoice-kit": {
+    slug: "latex-invoice-kit",
+    github: "https://github.com/bitroot-org/latex-invoice-kit",
+    tagline: "Generate professional PDF invoices with LaTeX templates.",
+    oneLiner:
+      "Create beautiful, customizable invoices using LaTeX templates. Perfect for freelancers and small businesses who want professional-looking invoices without design work.",
+    stack: [
+      { name: "Next.js 16", why: "API routes for PDF generation, static pages for the UI." },
+      { name: "LaTeX", why: "Professional typesetting for invoices that look like they came from a Fortune 500." },
+      { name: "Supabase", why: "Store invoice data, client info, and track payment status." },
+    ],
+    features: [
+      {
+        icon: "ui",
+        title: "Beautiful LaTeX templates",
+        description:
+          "Multiple professional invoice templates. Customize colors, fonts, and layouts to match your brand.",
+      },
+      {
+        icon: "db",
+        title: "Client & invoice management",
+        description:
+          "Store clients, track invoices, and manage payment status. Export to PDF with one click.",
+      },
+      {
+        icon: "email",
+        title: "Email invoices directly",
+        description:
+          "Send invoices via email with Resend integration. Track when clients open and download.",
+      },
+    ],
+    installCommand: `npx create-bitroot@latest my-invoices --kit latex-invoice-kit
+cd my-invoices
+cp .env.example .env.local
+npm run dev`,
+    envExample: `NEXT_PUBLIC_APP_URL=http://localhost:3000
+SUPABASE_URL=https://your-project.supabase.co
+SUPABASE_SERVICE_KEY=eyJhbG...
+RESEND_API_KEY=re_...`,
+    walkthrough: [
+      {
+        title: "1. Set up Supabase",
+        body: "Create a Supabase project and run the seed script to set up tables for clients, invoices, and line items.",
+        code: {
+          lang: "bash",
+          source: `npm run db:seed`,
+        },
+      },
+      {
+        title: "2. Install LaTeX dependencies",
+        body: "The kit uses node-latex to compile templates. Make sure you have a LaTeX distribution installed locally or use our Docker setup.",
+        code: {
+          lang: "bash",
+          source: `# macOS
+brew install --cask mactex
+
+# Ubuntu/Debian
+sudo apt-get install texlive-full`,
+        },
+      },
+      {
+        title: "3. Configure email (optional)",
+        body: "Add your Resend API key to send invoices directly. Skip this if you only want to download PDFs.",
+      },
+    ],
+    gotchas: [
+      "LaTeX compilation can be slow on first run. We cache compiled templates to speed up subsequent generations.",
+      "Special characters in invoice data (like &, %, $) need to be escaped for LaTeX. The kit handles this automatically.",
+      "If PDFs aren't generating, check that your LaTeX installation is in your PATH.",
+    ],
+    whyNot:
+      "If you need accounting software with tax calculations, recurring billing, or payment processing, use QuickBooks or FreshBooks. This kit is for generating beautiful one-off invoices.",
+    license: "MIT",
+  },
 };
