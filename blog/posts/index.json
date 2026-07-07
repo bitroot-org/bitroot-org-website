@@ -1,7 +1,9 @@
 {
   "generated": true,
-  "count": 210,
+  "count": 212,
   "posts": [
+    "2026-07-07-relume-launches-library-mcp-for-aiassisted-compone.md",
+    "2026-07-07-ramp-launches-aiagent-integration-for-company-onbo.md",
     "2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au.md",
     "2026-07-06-the-best-chrome-alternatives-in-2026-ai-privacy-mi.md",
     "2026-07-02-higgsfield-launches-shorts-studio-powered-by-gemin.md",
@@ -214,6 +216,48 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-07-07-relume-launches-library-mcp-for-aiassisted-compone.md",
+      "slug": "2026-07-07-relume-launches-library-mcp-for-aiassisted-compone",
+      "url": "/blog/2026-07-07-relume-launches-library-mcp-for-aiassisted-compone/",
+      "title": "Relume launches Library MCP for AI\u2011assisted component selection",
+      "date": "2026-07-07",
+      "published_at": "2026-07-07T18:07:23.005301+00:00",
+      "tags": [
+        "relume",
+        "component library",
+        "ai tools"
+      ],
+      "excerpt": "Relume\u2019s new Library MCP puts 1,000+ production\u2011ready UI components inside popular AI assistants, letting engineers pull and restyle elements without leaving the prompt.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2073929458160168960/img/5Iq96DAnkzEbrXpo.jpg",
+      "sources": [
+        "https://x.com/i/status/2074222854183514438"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-07-relume-launches-library-mcp-for-aiassisted-compone.mp4",
+      "shortId": 212
+    },
+    {
+      "filename": "2026-07-07-ramp-launches-aiagent-integration-for-company-onbo.md",
+      "slug": "2026-07-07-ramp-launches-aiagent-integration-for-company-onbo",
+      "url": "/blog/2026-07-07-ramp-launches-aiagent-integration-for-company-onbo/",
+      "title": "Ramp launches AI\u2011agent integration for company onboarding",
+      "date": "2026-07-07",
+      "published_at": "2026-07-07T18:06:33.991120+00:00",
+      "tags": [
+        "ramp",
+        "ai agents",
+        "finance automation"
+      ],
+      "excerpt": "Ramp introduced \"Ramp for Agents\", letting AI agents set up a company's financial account, apply for credit, and start paying bills with a single prompt. The feature aims to replace manual paperwork with automated onboarding.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2074495741599404034/img/OKjuwqYWAbyEfhwH.jpg",
+      "sources": [
+        "https://x.com/i/status/2074496959851713018"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-07-ramp-launches-aiagent-integration-for-company-onbo.mp4",
+      "shortId": 211
+    },
     {
       "filename": "2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au.md",
       "slug": "2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au",

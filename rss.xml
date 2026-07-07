@@ -5,8 +5,36 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 07 Jul 2026 18:24:05 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jul 2026 18:25:14 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Relume launches Library MCP for AI‑assisted component selection</title>
+      <link>https://bitroot.org/blog/2026-07-07-relume-launches-library-mcp-for-aiassisted-compone/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-07-relume-launches-library-mcp-for-aiassisted-compone/</guid>
+      <description>Relume’s new Library MCP puts 1,000+ production‑ready UI components inside popular AI assistants, letting engineers pull and restyle elements without leaving the prompt.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2074222854183514438"&gt;https://x.com/i/status/2074222854183514438&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 07 Jul 2026 18:07:23 +0000</pubDate>
+      <category>relume</category>
+      <category>component library</category>
+      <category>ai tools</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2073929458160168960/img/5Iq96DAnkzEbrXpo.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2074222854183514438">Original Source</source>
+    </item>
+    <item>
+      <title>Ramp launches AI‑agent integration for company onboarding</title>
+      <link>https://bitroot.org/blog/2026-07-07-ramp-launches-aiagent-integration-for-company-onbo/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-07-ramp-launches-aiagent-integration-for-company-onbo/</guid>
+      <description>Ramp introduced "Ramp for Agents", letting AI agents set up a company's financial account, apply for credit, and start paying bills with a single prompt. The feature aims to replace manual paperwork with automated onboarding.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2074496959851713018"&gt;https://x.com/i/status/2074496959851713018&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 07 Jul 2026 18:06:33 +0000</pubDate>
+      <category>ramp</category>
+      <category>ai agents</category>
+      <category>finance automation</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2074495741599404034/img/OKjuwqYWAbyEfhwH.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2074496959851713018">Original Source</source>
+    </item>
     <item>
       <title>Better Auth joins Vercel to focus on open‑source auth framework</title>
       <link>https://bitroot.org/blog/2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au/</link>
