@@ -5,8 +5,22 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 06 Jul 2026 06:25:34 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jul 2026 18:24:05 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Better Auth joins Vercel to focus on open‑source auth framework</title>
+      <link>https://bitroot.org/blog/2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au/</guid>
+      <description>Better Auth announced it is becoming part of Vercel, promising more resources for its open‑source authentication framework while staying platform agnostic.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2074523839300513921"&gt;https://x.com/i/status/2074523839300513921&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 07 Jul 2026 18:00:32 +0000</pubDate>
+      <category>authentication</category>
+      <category>open source</category>
+      <category>vercel</category>
+      <enclosure url="https://pbs.twimg.com/media/HMmsK1dbMAAXvdq.png?name=orig" type="image/png" length="0" />
+      <source url="https://x.com/i/status/2074523839300513921">Original Source</source>
+    </item>
     <item>
       <title>The Best Chrome Alternatives In 2026: AI, Privacy &amp; Mindful Browsers Explained</title>
       <link>https://bitroot.org/blog/2026-07-06-the-best-chrome-alternatives-in-2026-ai-privacy-mi/</link>

@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 209,
+  "count": 210,
   "posts": [
+    "2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au.md",
     "2026-07-06-the-best-chrome-alternatives-in-2026-ai-privacy-mi.md",
     "2026-07-02-higgsfield-launches-shorts-studio-powered-by-gemin.md",
     "2026-07-02-fish-audio-makes-s21-pro-tts-model-free-for-develo.md",
@@ -213,6 +214,26 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au.md",
+      "slug": "2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au",
+      "url": "/blog/2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au/",
+      "title": "Better Auth joins Vercel to focus on open\u2011source auth framework",
+      "date": "2026-07-07",
+      "published_at": "2026-07-07T18:00:32.934203+00:00",
+      "tags": [
+        "authentication",
+        "open source",
+        "vercel"
+      ],
+      "excerpt": "Better Auth announced it is becoming part of Vercel, promising more resources for its open\u2011source authentication framework while staying platform agnostic.",
+      "image": "https://pbs.twimg.com/media/HMmsK1dbMAAXvdq.png?name=orig",
+      "sources": [
+        "https://x.com/i/status/2074523839300513921"
+      ],
+      "readTime": "2 min",
+      "shortId": 210
+    },
     {
       "filename": "2026-07-06-the-best-chrome-alternatives-in-2026-ai-privacy-mi.md",
       "slug": "2026-07-06-the-best-chrome-alternatives-in-2026-ai-privacy-mi",
