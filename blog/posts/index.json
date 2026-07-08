@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 212,
+  "count": 213,
   "posts": [
+    "2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p.md",
     "2026-07-07-relume-launches-library-mcp-for-aiassisted-compone.md",
     "2026-07-07-ramp-launches-aiagent-integration-for-company-onbo.md",
     "2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au.md",
@@ -216,6 +217,29 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p.md",
+      "slug": "2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p",
+      "url": "/blog/2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p/",
+      "title": "The real skill of working with Claude Fable isn't prompting. It's knowing what you don't know.",
+      "date": "2026-07-08",
+      "published_at": "2026-07-08T10:38:43.387Z",
+      "tags": [
+        "Claude Fable",
+        "Anthropic",
+        "Claude AI",
+        "AI Prompting",
+        "Prompt Engineering",
+        "AI Reasoning",
+        "AI Productivity",
+        "Artificial Intelligence"
+      ],
+      "excerpt": "Anthropic's Claude Fable introduces a simple but powerful idea: better AI outputs don't start with better prompts, they start by uncovering your unknowns. Here's how the framework can improve decision-making for founders, marketers, and AI users.",
+      "image": "https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a4be4919e159adcdfa3ec1c_94358c3c.png",
+      "sources": [],
+      "readTime": "9 min",
+      "shortId": 213
+    },
     {
       "filename": "2026-07-07-relume-launches-library-mcp-for-aiassisted-compone.md",
       "slug": "2026-07-07-relume-launches-library-mcp-for-aiassisted-compone",
