@@ -96,4 +96,80 @@ ADMIN_PASSWORD=change-me`,
       "If you need scheduling, A/B testing, or a full landing page builder, this is too lean. This kit is one job: collect emails well.",
     license: "MIT",
   },
+  "latex-invoice-kit": {
+    slug: "latex-invoice-kit",
+    github: "https://github.com/rutvapai14/Gmail-Cleaner-",
+    tagline: "Professional invoices. LaTeX precision. One command.",
+    oneLiner:
+      "Generate pixel-perfect invoices with LaTeX templates. Customizable, PDF-ready, and built for freelancers who care about presentation.",
+    stack: [
+      { name: "Next.js 16", why: "Server actions + API routes for LaTeX compilation." },
+      { name: "LaTeX", why: "Unmatched typographic precision for professional documents." },
+      { name: "Node.js", why: "Server-side PDF generation with child_process." },
+    ],
+    features: [
+      {
+        icon: "ui",
+        title: "Professional LaTeX templates",
+        description:
+          "Clean, customizable invoice templates with proper typography and spacing.",
+      },
+      {
+        icon: "deploy",
+        title: "PDF generation",
+        description:
+          "Compile LaTeX to PDF on-demand. Download or email directly to clients.",
+      },
+      {
+        icon: "db",
+        title: "Invoice history",
+        description:
+          "Store invoice metadata, track payments, and re-generate past invoices.",
+      },
+    ],
+    installCommand: `npx create-bitroot@latest my-invoices --kit latex-invoice-kit
+cd my-invoices
+cp .env.example .env.local
+npm run dev`,
+    envExample: `NEXT_PUBLIC_APP_URL=http://localhost:3000
+DATABASE_URL=postgresql://user:pass@localhost:5432/invoices
+LATEX_BIN=/usr/bin/pdflatex`,
+    walkthrough: [
+      {
+        title: "1. Install LaTeX distribution",
+        body: "Install TeX Live (Linux/macOS) or MiKTeX (Windows). Verify pdflatex is in your PATH.",
+        code: {
+          lang: "bash",
+          source: `# macOS
+brew install --cask mactex
+
+# Ubuntu/Debian
+sudo apt-get install texlive-full
+
+# Verify
+pdflatex --version`,
+        },
+      },
+      {
+        title: "2. Configure database",
+        body: "Point DATABASE_URL to your Postgres instance. Run migrations to create the invoices table.",
+        code: {
+          lang: "bash",
+          source: `npm run db:migrate`,
+        },
+      },
+      {
+        title: "3. Customize templates",
+        body: "Edit templates in /latex/templates/. Variables use \\VAR{} syntax. Change logo, colors, and layout to match your brand.",
+      },
+    ],
+    gotchas: [
+      "LaTeX compilation can fail silently — check logs in /tmp/ if PDFs don't generate.",
+      "Special characters ($, &, %) must be escaped in invoice line items.",
+      "Large LaTeX installations (3+ GB) — use a minimal scheme if disk space is tight.",
+    ],
+    whyNot:
+      "If you need real-time collaborative editing or WYSIWYG, LaTeX is overkill. This kit is for developers who want programmatic control over document layout.",
+    license: "MIT",
+  },
 };
