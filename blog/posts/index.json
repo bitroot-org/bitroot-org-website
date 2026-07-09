@@ -1,9 +1,11 @@
 {
   "generated": true,
-  "count": 214,
+  "count": 216,
   "posts": [
     "2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p.md",
+    "2026-07-08-tavus-adds-a-google-meet-participant-integration.md",
     "2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm.md",
+    "2026-07-08-openai-launches-gptlive-voice-model-in-chatgpt.md",
     "2026-07-07-relume-launches-library-mcp-for-aiassisted-compone.md",
     "2026-07-07-ramp-launches-aiagent-integration-for-company-onbo.md",
     "2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au.md",
@@ -239,7 +241,28 @@
       "image": "https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a4be4919e159adcdfa3ec1c_94358c3c.png",
       "sources": [],
       "readTime": "9 min",
-      "shortId": 214
+      "shortId": 216
+    },
+    {
+      "filename": "2026-07-08-tavus-adds-a-google-meet-participant-integration.md",
+      "slug": "2026-07-08-tavus-adds-a-google-meet-participant-integration",
+      "url": "/blog/2026-07-08-tavus-adds-a-google-meet-participant-integration/",
+      "title": "Tavus adds a Google Meet participant integration",
+      "date": "2026-07-08",
+      "published_at": "2026-07-08T18:52:51.434143+00:00",
+      "tags": [
+        "google meet",
+        "ai assistant",
+        "integration"
+      ],
+      "excerpt": "Tavus now lets a PAL join Google Meet calls as a real participant, enabling custom notetakers or meeting hosts with a few clicks.",
+      "image": "https://pbs.twimg.com/media/HMubm2Va8AAo-Pe.jpg",
+      "sources": [
+        "https://x.com/i/status/2074894605125026072"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-08-tavus-adds-a-google-meet-participant-integration.mp4",
+      "shortId": 215
     },
     {
       "filename": "2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm.md",
@@ -260,6 +283,27 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm.mp4",
+      "shortId": 214
+    },
+    {
+      "filename": "2026-07-08-openai-launches-gptlive-voice-model-in-chatgpt.md",
+      "slug": "2026-07-08-openai-launches-gptlive-voice-model-in-chatgpt",
+      "url": "/blog/2026-07-08-openai-launches-gptlive-voice-model-in-chatgpt/",
+      "title": "OpenAI launches GPT\u2011Live voice model in ChatGPT",
+      "date": "2026-07-08",
+      "published_at": "2026-07-08T18:50:43.533562+00:00",
+      "tags": [
+        "gpt-live",
+        "voice ai",
+        "chatgpt"
+      ],
+      "excerpt": "Introducing GPT-Live, a new generation of voice models for natural human-AI interaction. Rolling out in ChatGPT starting today. You\u2019ll want to turn the sound on for this one.",
+      "image": "https://pbs.twimg.com/media/HMuNB0WboAE_A7s.jpg",
+      "sources": [
+        "https://x.com/i/status/2074907025537224840"
+      ],
+      "readTime": "2 min",
+      "video": "https://video.twimg.com/amplify_video/2074902339463598081/vid/avc1/3840x2160/SlZg3Bq2mrXXDoO4.mp4?tag=28",
       "shortId": 213
     },
     {

@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 09 Jul 2026 02:28:59 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2026 02:29:41 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The real skill of working with Claude Fable isn't prompting. It's knowing what you don't know.</title>
@@ -24,6 +24,20 @@
       <enclosure url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a4be4919e159adcdfa3ec1c_94358c3c.png" type="image/png" length="0" />
     </item>
     <item>
+      <title>Tavus adds a Google Meet participant integration</title>
+      <link>https://bitroot.org/blog/2026-07-08-tavus-adds-a-google-meet-participant-integration/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-08-tavus-adds-a-google-meet-participant-integration/</guid>
+      <description>Tavus now lets a PAL join Google Meet calls as a real participant, enabling custom notetakers or meeting hosts with a few clicks.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2074894605125026072"&gt;https://x.com/i/status/2074894605125026072&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 08 Jul 2026 18:52:51 +0000</pubDate>
+      <category>google meet</category>
+      <category>ai assistant</category>
+      <category>integration</category>
+      <enclosure url="https://pbs.twimg.com/media/HMubm2Va8AAo-Pe.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2074894605125026072">Original Source</source>
+    </item>
+    <item>
       <title>SpaceXAI releases Grok 4.5, a coding-focused LLM</title>
       <link>https://bitroot.org/blog/2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm/</link>
       <guid isPermaLink="true">https://bitroot.org/blog/2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm/</guid>
@@ -36,6 +50,20 @@
       <category>startup tooling</category>
       <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2074912187391610880/img/BliQqOpmregZ5fSo.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2074915721684086811">Original Source</source>
+    </item>
+    <item>
+      <title>OpenAI launches GPT‑Live voice model in ChatGPT</title>
+      <link>https://bitroot.org/blog/2026-07-08-openai-launches-gptlive-voice-model-in-chatgpt/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-08-openai-launches-gptlive-voice-model-in-chatgpt/</guid>
+      <description>Introducing GPT-Live, a new generation of voice models for natural human-AI interaction. Rolling out in ChatGPT starting today. You’ll want to turn the sound on for this one.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2074907025537224840"&gt;https://x.com/i/status/2074907025537224840&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 08 Jul 2026 18:50:43 +0000</pubDate>
+      <category>gpt-live</category>
+      <category>voice ai</category>
+      <category>chatgpt</category>
+      <enclosure url="https://pbs.twimg.com/media/HMuNB0WboAE_A7s.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2074907025537224840">Original Source</source>
     </item>
     <item>
       <title>Relume launches Library MCP for AI‑assisted component selection</title>
