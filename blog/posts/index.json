@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 213,
+  "count": 214,
   "posts": [
     "2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p.md",
+    "2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm.md",
     "2026-07-07-relume-launches-library-mcp-for-aiassisted-compone.md",
     "2026-07-07-ramp-launches-aiagent-integration-for-company-onbo.md",
     "2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au.md",
@@ -238,6 +239,27 @@
       "image": "https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a4be4919e159adcdfa3ec1c_94358c3c.png",
       "sources": [],
       "readTime": "9 min",
+      "shortId": 214
+    },
+    {
+      "filename": "2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm.md",
+      "slug": "2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm",
+      "url": "/blog/2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm/",
+      "title": "SpaceXAI releases Grok 4.5, a coding-focused LLM",
+      "date": "2026-07-08",
+      "published_at": "2026-07-08T18:50:07.447833+00:00",
+      "tags": [
+        "ai coding model",
+        "large language model",
+        "startup tooling"
+      ],
+      "excerpt": "SpaceXAI unveiled Grok 4.5, a coding\u2011focused large language model built with Cursor that claims faster inference and lower cost. Engineers should weigh its speed claims against unknown pricing and vendor lock\u2011in before adopting.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2074912187391610880/img/BliQqOpmregZ5fSo.jpg",
+      "sources": [
+        "https://x.com/i/status/2074915721684086811"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm.mp4",
       "shortId": 213
     },
     {

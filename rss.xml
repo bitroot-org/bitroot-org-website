@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Jul 2026 10:39:43 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2026 02:28:59 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The real skill of working with Claude Fable isn't prompting. It's knowing what you don't know.</title>
@@ -22,6 +22,20 @@
       <category>AI Productivity</category>
       <category>Artificial Intelligence</category>
       <enclosure url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a4be4919e159adcdfa3ec1c_94358c3c.png" type="image/png" length="0" />
+    </item>
+    <item>
+      <title>SpaceXAI releases Grok 4.5, a coding-focused LLM</title>
+      <link>https://bitroot.org/blog/2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm/</guid>
+      <description>SpaceXAI unveiled Grok 4.5, a coding‑focused large language model built with Cursor that claims faster inference and lower cost. Engineers should weigh its speed claims against unknown pricing and vendor lock‑in before adopting.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2074915721684086811"&gt;https://x.com/i/status/2074915721684086811&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 08 Jul 2026 18:50:07 +0000</pubDate>
+      <category>ai coding model</category>
+      <category>large language model</category>
+      <category>startup tooling</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2074912187391610880/img/BliQqOpmregZ5fSo.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2074915721684086811">Original Source</source>
     </item>
     <item>
       <title>Relume launches Library MCP for AI‑assisted component selection</title>
