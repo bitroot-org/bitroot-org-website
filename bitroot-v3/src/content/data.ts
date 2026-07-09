@@ -43,6 +43,17 @@ export const kits: Item[] = [
     href: "/kits/latex-invoice-kit",
     difficulty: "intermediate",
   },
+  {
+    slug: "captchas-kit",
+    category: "kit",
+    title: "CAPTCHAs Kit",
+    summary:
+      "Generate and validate CAPTCHAs on your own server. Image generation, audio fallback, and rate limiting built in. Privacy-first, no tracking.",
+    tags: ["Next.js", "Node.js", "Redis"],
+    updatedAt: "2026-07-09",
+    href: "/kits/captchas-kit",
+    difficulty: "intermediate",
+  },
 ];
 
 export const guides: Item[] = [
