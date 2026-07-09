@@ -239,7 +239,7 @@ export default function LaneSection() {
         <div className={`lane-drawer ${active ? "open" : ""}`}>
           <div className="lane-drawer-inner">
             {active && (
-              <div className="grid lg:grid-cols-2 relative">
+              <div className="relative">
                 <button
                   type="button"
                   aria-label="Close"
@@ -296,40 +296,6 @@ export default function LaneSection() {
                     >
                       {active.expanded.secondaryCta}
                     </Link>
-                  </div>
-                </div>
-                <div className="border-l border-line bg-paper-2 p-6 flex flex-col gap-3 min-h-[280px]">
-                  <div className="relative aspect-[16/10] rounded-[10px] overflow-hidden border border-line bg-paper">
-                    <div className="absolute inset-0 reel-scene" />
-                    <div className="absolute inset-0 grid place-items-center">
-                      <div className="w-14 h-14 rounded-full bg-ink/95 text-paper grid place-items-center shadow-[0_8px_24px_-8px_rgba(23,21,18,0.4)]">
-                        <svg
-                          width="18"
-                          height="18"
-                          viewBox="0 0 24 24"
-                          fill="currentColor"
-                          style={{ marginLeft: 3 }}
-                        >
-                          <path d="M8 5v14l11-7z" />
-                        </svg>
-                      </div>
-                    </div>
-                    <div className="absolute left-3.5 bottom-3.5 font-mono text-[11px] text-ink-3 bg-paper border border-line rounded-md px-2 py-1">
-                      {active.expanded.ribbon}
-                    </div>
-                  </div>
-                  <div className="flex items-center justify-between font-mono text-[11.5px] text-ink-4 mt-1">
-                    <span>{active.expanded.note}</span>
-                    <div className="flex gap-1.5">
-                      {active.expanded.chips.map((c) => (
-                        <span
-                          key={c}
-                          className="bg-paper border border-line rounded-full px-2.5 py-0.5 font-mono text-[11px] text-ink-2"
-                        >
-                          {c}
-                        </span>
-                      ))}
-                    </div>
                   </div>
                 </div>
               </div>
