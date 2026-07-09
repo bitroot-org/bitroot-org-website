@@ -98,7 +98,7 @@ ADMIN_PASSWORD=change-me`,
   },
   "latex-invoice-kit": {
     slug: "latex-invoice-kit",
-    github: "https://github.com/rutvapai14/Gmail-Cleaner-",
+    github: "https://github.com/yashthakur1/Invoice-Boilerplate",
     tagline: "Professional invoices. LaTeX precision. One command.",
     oneLiner:
       "Generate pixel-perfect invoices with LaTeX templates. Customizable, PDF-ready, and built for freelancers who care about presentation.",
