@@ -458,4 +458,120 @@ npm run start:workers`,
       "If you need a full email client with sending, calendars, and contacts, this isn't it. InboxVault is read-only archival and search, not a replacement for your mail client.",
     license: "MIT",
   },
+  "archiveflow-kit": {
+    slug: "archiveflow-kit",
+    github: "https://github.com/yashthakur1/OpenArchiver_6",
+    tagline: "Archive every mailbox. Search all of it, forever.",
+    oneLiner:
+      "Self-hosted email archiving platform that sits between your mail servers and storage — ingest from Google Workspace, Microsoft 365, IMAP, or EML/Mbox uploads, then search everything instantly with retention policies and legal holds for compliance.",
+    stack: [
+      { name: "SvelteKit", why: "Frontend UI with Tailwind CSS and Shadcn components, server-rendered on its own dev port." },
+      { name: "Node.js + Express", why: "Backend API and Drizzle ORM data layer, run as a separate service from the frontend." },
+      { name: "PostgreSQL + Drizzle ORM", why: "Type-safe schema and migrations for archived messages and metadata." },
+      { name: "Meilisearch", why: "Full-text search across message bodies, subjects, senders, and attachments." },
+      { name: "BullMQ + Valkey/Redis", why: "Distributed task queue for parallel email ingestion and indexing." },
+    ],
+    features: [
+      {
+        icon: "email",
+        title: "Universal mailbox connectivity",
+        description:
+          "Native ingestion from Google Workspace, Microsoft 365, standard IMAP servers, or EML/Mbox file uploads.",
+      },
+      {
+        icon: "db",
+        title: "Full-text search",
+        description:
+          "Meilisearch indexes bodies, subjects, senders, and attachments — find any message in milliseconds.",
+      },
+      {
+        icon: "auth",
+        title: "Compliance tooling",
+        description:
+          "Retention policies, legal holds, and role-based access control for teams that need to prove what they kept and why.",
+      },
+      {
+        icon: "deploy",
+        title: "Distributed ingestion",
+        description:
+          "BullMQ task queues parallelize large mailbox imports across worker processes instead of blocking on one at a time.",
+      },
+    ],
+    installCommand: `git clone https://github.com/yashthakur1/OpenArchiver_6.git
+cd OpenArchiver_6
+npm install
+cp .env.example .env`,
+    envExample: `DATABASE_URL=postgresql://user:pass@localhost:5432/archiveflow
+MEILI_HOST=http://localhost:7700
+MEILI_MASTER_KEY=your-master-key-here
+REDIS_HOST=localhost
+REDIS_PORT=6379
+JWT_SECRET=your-secure-random-string`,
+    walkthrough: [
+      {
+        title: "1. Clone the repository",
+        body: "Clone the monorepo and move into the project directory.",
+        code: {
+          lang: "bash",
+          source: `git clone https://github.com/yashthakur1/OpenArchiver_6.git
+cd OpenArchiver_6`,
+        },
+      },
+      {
+        title: "2. Install dependencies",
+        body: "Install all monorepo dependencies using npm workspaces — this covers the frontend, backend API, and workers in one pass.",
+        code: {
+          lang: "bash",
+          source: `npm install`,
+        },
+      },
+      {
+        title: "3. Configure environment variables",
+        body: "Copy .env.example to .env and fill in your database, search, and queue credentials — DATABASE_URL, MEILI_HOST/MEILI_MASTER_KEY, REDIS_HOST/REDIS_PORT, and a JWT_SECRET for auth.",
+        code: {
+          lang: "bash",
+          source: `cp .env.example .env`,
+        },
+      },
+      {
+        title: "4. Run database migrations",
+        body: "Generate and apply Drizzle migrations against your PostgreSQL database.",
+        code: {
+          lang: "bash",
+          source: `npm run db:generate
+npm run db:migrate`,
+        },
+      },
+      {
+        title: "5. Start the development environment",
+        body: "One command concurrently runs the SvelteKit frontend (http://localhost:3000), the backend API (http://localhost:4000), and the background workers that handle mailbox ingestion and indexing.",
+        code: {
+          lang: "bash",
+          source: `npm run dev:oss`,
+        },
+      },
+      {
+        title: "6. Build and deploy",
+        body: "Build the production bundles, then start the app server and the background workers as separate long-running processes (e.g. under pm2 or systemd).",
+        code: {
+          lang: "bash",
+          source: `npm run build:oss
+npm run start:oss
+
+# in a separate terminal or service
+npm run start:workers`,
+        },
+      },
+    ],
+    gotchas: [
+      "The dev/build/start scripts are the `:oss` variants (dev:oss, build:oss, start:oss) — the plain npm run dev/build won't start the full stack in this monorepo.",
+      "Workers run as a separate process from the app server — forgetting to start npm run start:workers in production means ingestion silently stops even though the UI still loads.",
+      "Large mailbox imports (100k+ messages) run through BullMQ in the background and can take hours on first sync.",
+      "Meilisearch needs at least 1GB RAM for indexing large archives — bump it for bigger imports.",
+      "Retention/legal-hold policies are enforced app-side — deleting rows directly in Postgres bypasses them, so always go through the API.",
+    ],
+    whyNot:
+      "If you need real-time collaboration, a full email client with sending, or compliance certifications (HIPAA, SOC2) out of the box, this isn't it. ArchiveFlow is read-only archival and search, not a mail client or a certified compliance platform.",
+    license: "MIT",
+  },
 };
