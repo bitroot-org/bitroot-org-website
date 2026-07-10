@@ -342,4 +342,120 @@ python3 changedetection.py -d ./data -p 5000 -C`,
       "If you need uptime/availability or response-time monitoring, this isn't it — it only detects content changes, not whether a site is up. Use a dedicated uptime monitor for that.",
     license: "Custom (community edition + separate commercial license — see LICENSE.md)",
   },
+  "inboxvault-kit": {
+    slug: "inboxvault-kit",
+    github: "https://github.com/yashthakur1/MailVault",
+    tagline: "Own your email archive. Search it forever.",
+    oneLiner:
+      "Self-hosted email backup and search. Connect any IMAP account, sync your entire history, and search years of mail with Meilisearch-powered full-text search. Keep your archive under your control.",
+    stack: [
+      { name: "SvelteKit", why: "Frontend UI, server-rendered and served on its own dev port." },
+      { name: "Node.js API + Workers", why: "Separate backend service plus background workers for IMAP sync — both run alongside the frontend via npm workspaces." },
+      { name: "PostgreSQL + Drizzle ORM", why: "Type-safe schema and migrations for accounts, messages, and folders." },
+      { name: "Meilisearch", why: "Full-text search across subjects, bodies, and attachments." },
+      { name: "Valkey/Redis", why: "Backs the background job queue that drives IMAP sync." },
+    ],
+    features: [
+      {
+        icon: "email",
+        title: "IMAP sync",
+        description:
+          "Connect Gmail, Outlook, or any IMAP provider. Sync your entire mailbox history in the background.",
+      },
+      {
+        icon: "db",
+        title: "Full-text search",
+        description:
+          "Meilisearch indexes subjects, bodies, and attachment names. Find any email in milliseconds.",
+      },
+      {
+        icon: "ui",
+        title: "Clean web interface",
+        description:
+          "Browse folders, read threads, and search your archive from a fast, responsive SvelteKit UI.",
+      },
+      {
+        icon: "deploy",
+        title: "Self-hosted",
+        description:
+          "Frontend, backend API, and workers all run on your own infrastructure. No third-party access to your mail.",
+      },
+    ],
+    installCommand: `git clone https://github.com/yashthakur1/MailVault.git
+cd MailVault
+npm install
+cp .env.example .env`,
+    envExample: `DATABASE_URL=postgresql://user:pass@localhost:5432/mailvault
+MEILI_HOST=http://localhost:7700
+MEILI_MASTER_KEY=your-master-key-here
+REDIS_HOST=localhost
+REDIS_PORT=6379
+JWT_SECRET=your-secure-random-string`,
+    walkthrough: [
+      {
+        title: "1. Clone the repository",
+        body: "Clone the monorepo and move into the project directory.",
+        code: {
+          lang: "bash",
+          source: `git clone https://github.com/yashthakur1/MailVault.git
+cd MailVault`,
+        },
+      },
+      {
+        title: "2. Install dependencies",
+        body: "Install all monorepo dependencies using npm workspaces — this covers the frontend, backend API, and workers in one pass.",
+        code: {
+          lang: "bash",
+          source: `npm install`,
+        },
+      },
+      {
+        title: "3. Configure environment variables",
+        body: "Copy .env.example to .env and fill in your database, search, and queue credentials — DATABASE_URL, MEILI_HOST/MEILI_MASTER_KEY, REDIS_HOST/REDIS_PORT, and a JWT_SECRET for auth.",
+        code: {
+          lang: "bash",
+          source: `cp .env.example .env`,
+        },
+      },
+      {
+        title: "4. Run database migrations",
+        body: "Generate and apply Drizzle migrations against your PostgreSQL database.",
+        code: {
+          lang: "bash",
+          source: `npm run db:generate
+npm run db:migrate`,
+        },
+      },
+      {
+        title: "5. Start the development environment",
+        body: "One command concurrently runs the SvelteKit frontend (http://localhost:3000), the backend API (http://localhost:4000), and the background workers that handle email ingestion and indexing.",
+        code: {
+          lang: "bash",
+          source: `npm run dev:oss`,
+        },
+      },
+      {
+        title: "6. Build and deploy",
+        body: "Build the production bundles, then start the app server and the background workers as separate long-running processes (e.g. under pm2 or systemd).",
+        code: {
+          lang: "bash",
+          source: `npm run build:oss
+npm run start:oss
+
+# in a separate terminal or service
+npm run start:workers`,
+        },
+      },
+    ],
+    gotchas: [
+      "The dev/build/start scripts are the `:oss` variants (dev:oss, build:oss, start:oss) — the plain npm run dev/build won't start the full stack in this monorepo.",
+      "Workers run as a separate process from the app server — forgetting to start npm run start:workers in production means mail stops syncing even though the UI still loads.",
+      "IMAP sync can be slow for large mailboxes (100k+ messages) — the initial sync runs in the background and can take hours.",
+      "Gmail requires an app-specific password if you have 2FA enabled. Regular account passwords won't work.",
+      "Meilisearch needs at least 1GB RAM for indexing large archives.",
+    ],
+    whyNot:
+      "If you need a full email client with sending, calendars, and contacts, this isn't it. InboxVault is read-only archival and search, not a replacement for your mail client.",
+    license: "MIT",
+  },
 };

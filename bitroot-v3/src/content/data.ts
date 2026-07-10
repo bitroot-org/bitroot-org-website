@@ -65,6 +65,17 @@ export const kits: Item[] = [
     href: "/kits/sitewatch-kit",
     difficulty: "intermediate",
   },
+  {
+    slug: "inboxvault-kit",
+    category: "kit",
+    title: "InboxVault – Email Backup & Archive Kit",
+    summary:
+      "Self-hosted email backup and search. IMAP sync, full-text search with Meilisearch, and a clean web UI to browse years of mail. Own your archive.",
+    tags: ["SvelteKit", "PostgreSQL", "Meilisearch"],
+    updatedAt: "2026-07-11",
+    href: "/kits/inboxvault-kit",
+    difficulty: "intermediate",
+  },
 ];
 
 export const guides: Item[] = [
