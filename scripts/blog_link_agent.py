@@ -64,6 +64,18 @@ def tweet_id(url: str) -> str | None:
     return m.group(1) if m else None
 
 
+def post_exists(url: str) -> bool:
+    """Fallback verification via X's public oEmbed endpoint (no auth).
+    Returns True only if X confirms the post exists."""
+    try:
+        r = requests.get("https://publish.twitter.com/oembed",
+                         params={"url": url, "omit_script": "true"},
+                         timeout=15)
+        return r.status_code == 200
+    except requests.RequestException:
+        return False
+
+
 def call_grok() -> tuple[list[dict], set[str]]:
     """Returns (candidates, citation_ids)."""
     yesterday = (datetime.now(timezone.utc) - timedelta(days=1)).strftime("%Y-%m-%d")
@@ -104,12 +116,18 @@ def call_grok() -> tuple[list[dict], set[str]]:
 
     print(f"DEBUG model text (first 500 chars): {text[:500]!r}")
 
-    # Citations: trust only posts Grok actually found on X.
-    citation_ids = set()
+    # Citations: trust only posts Grok actually found on X. They can appear
+    # (a) top-level, or (b) as url_citation annotations on content blocks.
+    citation_urls = []
     for c in data.get("citations", []) or []:
-        cid = tweet_id(c if isinstance(c, str) else c.get("url", ""))
-        if cid:
-            citation_ids.add(cid)
+        citation_urls.append(c if isinstance(c, str) else c.get("url", ""))
+    for item in data.get("output", []):
+        for block in item.get("content", []) or []:
+            for ann in block.get("annotations", []) or []:
+                citation_urls.append(ann.get("url", ""))
+    citation_ids = {tid for u in citation_urls if (tid := tweet_id(u))}
+    print(f"DEBUG citation URLs found: {len(citation_urls)} "
+          f"({len(citation_ids)} unique post IDs)")
 
     # Parse the JSON array (strip accidental fences).
     text = re.sub(r"^```(?:json)?|```$", "", text.strip(), flags=re.M).strip()
@@ -182,11 +200,14 @@ def main():
         if not tid:
             print(f"Skipping (not a post URL): {url}")
             continue
-        if tid not in citation_ids:
-            # No matching citation = Grok didn't actually find this on X.
-            # (An empty citation set means the whole answer is unsourced.)
-            print(f"Skipping (not citation-backed, possibly hallucinated): {url}")
+        if tid in citation_ids:
+            verified = "citation"
+        elif post_exists(url):
+            verified = "oembed"
+        else:
+            print(f"Skipping (unverifiable, possibly hallucinated): {url}")
             continue
+        print(f"Verified via {verified}: {url}")
         if tid in seen:
             print(f"Skipping (already filed): {url}")
             continue
