@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 10 Jul 2026 13:05:54 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2026 13:06:35 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pi AI coding agent released as free open‑source tool</title>
@@ -62,6 +62,20 @@
       <category>tooling</category>
       <enclosure url="https://pbs.twimg.com/media/HM2TvUfaUAAYMi4.jpg?name=orig" type="image/jpeg" length="0" />
       <source url="https://x.com/VivekIntel/status/2075477455322923026">Original Source</source>
+    </item>
+    <item>
+      <title>AgenC lets you run a self‑named AI agent on your phone for $2/day</title>
+      <link>https://bitroot.org/blog/2026-07-10-agenc-lets-you-run-a-selfnamed-ai-agent-on-your-ph/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-10-agenc-lets-you-run-a-selfnamed-ai-agent-on-your-ph/</guid>
+      <description>The AI agent named itself during setup. AgenC is an open source agent that runs on your own machine. Works best with Grok. 15 minutes to a named agent on your phone with a $2/day spending cap.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/tetsuoai/status/2075475435698454546"&gt;https://x.com/tetsuoai/status/2075475435698454546&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 10 Jul 2026 11:18:31 +0000</pubDate>
+      <category>ai agents</category>
+      <category>open source</category>
+      <category>personal ai</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2075474641389555712/img/X72suMUUA9HrdbR-.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/tetsuoai/status/2075475435698454546">Original Source</source>
     </item>
     <item>
       <title>The real skill of working with Claude Fable isn't prompting. It's knowing what you don't know.</title>

@@ -1,11 +1,12 @@
 {
   "generated": true,
-  "count": 220,
+  "count": 221,
   "posts": [
     "2026-07-10-pi-ai-coding-agent-released-as-free-opensource-too.md",
     "2026-07-10-openhands-launches-agent-canvas-for-selfhosted-ai.md",
     "2026-07-10-langchain-launches-openwiki-to-autogenerate-a-livi.md",
     "2026-07-10-github-curates-300-ai-security-tools-for-engineers.md",
+    "2026-07-10-agenc-lets-you-run-a-selfnamed-ai-agent-on-your-ph.md",
     "2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p.md",
     "2026-07-08-tavus-adds-a-google-meet-participant-integration.md",
     "2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm.md",
@@ -242,7 +243,7 @@
         "https://x.com/fusionaivisuals/status/2075250024519438457"
       ],
       "readTime": "2 min",
-      "shortId": 220
+      "shortId": 221
     },
     {
       "filename": "2026-07-10-openhands-launches-agent-canvas-for-selfhosted-ai.md",
@@ -276,7 +277,7 @@
           "url": "https://pbs.twimg.com/media/HMxlbDzaUAAyaYF.jpg?name=orig"
         }
       ],
-      "shortId": 219
+      "shortId": 220
     },
     {
       "filename": "2026-07-10-langchain-launches-openwiki-to-autogenerate-a-livi.md",
@@ -296,7 +297,7 @@
         "https://x.com/iblai_/status/2075301557063553329"
       ],
       "readTime": "2 min",
-      "shortId": 218
+      "shortId": 219
     },
     {
       "filename": "2026-07-10-github-curates-300-ai-security-tools-for-engineers.md",
@@ -316,6 +317,27 @@
         "https://x.com/VivekIntel/status/2075477455322923026"
       ],
       "readTime": "2 min",
+      "shortId": 218
+    },
+    {
+      "filename": "2026-07-10-agenc-lets-you-run-a-selfnamed-ai-agent-on-your-ph.md",
+      "slug": "2026-07-10-agenc-lets-you-run-a-selfnamed-ai-agent-on-your-ph",
+      "url": "/blog/2026-07-10-agenc-lets-you-run-a-selfnamed-ai-agent-on-your-ph/",
+      "title": "AgenC lets you run a self\u2011named AI agent on your phone for $2/day",
+      "date": "2026-07-10",
+      "published_at": "2026-07-10T11:18:31.326429+00:00",
+      "tags": [
+        "ai agents",
+        "open source",
+        "personal ai"
+      ],
+      "excerpt": "The AI agent named itself during setup. AgenC is an open source agent that runs on your own machine. Works best with Grok. 15 minutes to a named agent on your phone with a $2/day spending cap.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2075474641389555712/img/X72suMUUA9HrdbR-.jpg",
+      "sources": [
+        "https://x.com/tetsuoai/status/2075475435698454546"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-10-agenc-lets-you-run-a-selfnamed-ai-agent-on-your-ph.mp4",
       "shortId": 217
     },
     {
