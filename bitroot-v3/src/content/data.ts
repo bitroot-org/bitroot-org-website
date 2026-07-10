@@ -32,6 +32,28 @@ export const kits: Item[] = [
     href: "/kits/waitlist-kit",
     difficulty: "starter",
   },
+  {
+    slug: "latex-invoice-kit",
+    category: "kit",
+    title: "Modern LaTeX Invoice Generator Kit",
+    summary:
+      "Generate pixel-perfect invoices with LaTeX templates. Customizable, PDF-ready, and built for freelancers who care about presentation.",
+    tags: ["Next.js", "LaTeX", "Node.js"],
+    updatedAt: "2026-07-08",
+    href: "/kits/latex-invoice-kit",
+    difficulty: "intermediate",
+  },
+  {
+    slug: "captchas-kit",
+    category: "kit",
+    title: "CAPTCHAs Kit",
+    summary:
+      "Generate and validate CAPTCHAs on your own server. Image generation, audio fallback, and rate limiting built in. Privacy-first, no tracking.",
+    tags: ["Next.js", "Node.js", "Redis"],
+    updatedAt: "2026-07-09",
+    href: "/kits/captchas-kit",
+    difficulty: "intermediate",
+  },
 ];
 
 export const guides: Item[] = [

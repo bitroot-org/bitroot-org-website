@@ -42,7 +42,7 @@ export default function Hero() {
               label="Join the Club"
               location="hero"
               href="#club"
-              className="hover-lift inline-flex items-center gap-2 h-[40px] px-5 rounded-full border border-line-2 text-ink text-[14px] font-medium hover:bg-paper-2 transition-colors"
+              className="hover-lift inline-flex items-center gap-2 h-[40px] px-5 rounded-full bg-ink text-paper text-[14px] font-medium hover:bg-[#2a282d] transition-colors"
             >
               Join the Club
             </TrackedLink>
