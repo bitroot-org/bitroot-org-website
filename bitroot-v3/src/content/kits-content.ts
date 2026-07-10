@@ -256,4 +256,90 @@ sudo systemctl start redis`,
       "If you need advanced bot detection (behavioral analysis, risk scoring), consider a managed service like hCaptcha or Cloudflare Turnstile. This kit focuses on simple, self-hosted challenge-response.",
     license: "MIT",
   },
+  "sitewatch-kit": {
+    slug: "sitewatch-kit",
+    github: "https://github.com/yashthakur1/Change_Detection_14",
+    tagline: "Monitor any website. Get alerted the second it changes.",
+    oneLiner:
+      "A self-hosted fork of changedetection.io — track page content with a visual selector, run scheduled or on-demand checks, and get notified over Discord, Slack, Telegram, email, or 100+ other channels the moment something moves.",
+    stack: [
+      { name: "Python (Flask)", why: "Core app, web UI, and scheduler in one process — no separate frontend to deploy." },
+      { name: "Docker", why: "One `docker compose up -d` gets a running instance with persistent storage." },
+      { name: "Playwright / Selenium", why: "Optional headless browser fetching for JS-heavy pages a plain HTTP GET can't see." },
+      { name: "Apprise", why: "Notification fan-out to 100+ services (Discord, Slack, Telegram, email, webhooks) from one config." },
+    ],
+    features: [
+      {
+        icon: "ui",
+        title: "Visual selector tool",
+        description:
+          "Point-and-click in the browser to pick exactly which element on a page to watch — no manual CSS/XPath needed.",
+      },
+      {
+        icon: "ai",
+        title: "AI-powered change summaries",
+        description:
+          "Optional LLM integration (OpenAI, Gemini, Anthropic, Ollama) summarizes what actually changed instead of a raw diff.",
+      },
+      {
+        icon: "email",
+        title: "Multi-channel notifications",
+        description:
+          "Discord, Slack, Telegram, email, webhooks, and 100+ more via Apprise, with Jinja2-templated messages.",
+      },
+      {
+        icon: "deploy",
+        title: "Browser automation steps",
+        description:
+          "Script logins, form fills, and clicks before a check runs, so gated or interactive pages can be monitored too.",
+      },
+    ],
+    installCommand: `git clone https://github.com/yashthakur1/Change_Detection_14.git sitewatch
+cd sitewatch
+docker compose up -d`,
+    envExample: `PORT=5000
+BASE_URL=http://localhost:5000
+LOGGER_LEVEL=INFO
+# Optional — headless browser fetching for JS-heavy pages
+PLAYWRIGHT_DRIVER_URL=ws://sockpuppetbrowser:3000
+# Optional — outbound proxy
+HTTP_PROXY=
+HTTPS_PROXY=`,
+    walkthrough: [
+      {
+        title: "1. Start it with Docker",
+        body: "Clone the repo and bring up the bundled docker-compose.yml — it maps the UI to 127.0.0.1:5000 and persists state in a named volume.",
+        code: {
+          lang: "bash",
+          source: `docker compose up -d`,
+        },
+      },
+      {
+        title: "2. Or run it directly with Python",
+        body: "No Docker? Install the requirements and run the entry point directly, pointing -d at a local data folder.",
+        code: {
+          lang: "bash",
+          source: `pip3 install -r requirements.txt
+python3 changedetection.py -d ./data -p 5000 -C`,
+        },
+      },
+      {
+        title: "3. Add your first watch",
+        body: "Open http://127.0.0.1:5000, paste a URL, and use the visual selector to pick the element to track. Set a check interval and you're monitoring.",
+      },
+      {
+        title: "4. Wire up notifications",
+        body: "Add a notification URL under Settings (Apprise syntax) for Discord/Slack/Telegram/email/webhooks, and customize the alert text with Jinja2.",
+      },
+    ],
+    gotchas: [
+      "JS-heavy pages need the Playwright/Selenium browser service enabled (commented out by default in docker-compose.yml) — plain HTTP fetching won't render them.",
+      "Data persists in a Docker named volume — back it up before `docker compose down -v` or you'll lose every configured watch.",
+      "AI-powered change summaries require your own LLM API key (OpenAI/Gemini/Anthropic/Ollama); the feature is disabled without one.",
+      "Respect target sites' terms of service and robots.txt — this can trivially be pointed at pages you don't have permission to poll on a schedule.",
+    ],
+    whyNot:
+      "If you need uptime/availability or response-time monitoring, this isn't it — it only detects content changes, not whether a site is up. Use a dedicated uptime monitor for that.",
+    license: "Custom (community edition + separate commercial license — see LICENSE.md)",
+  },
 };
