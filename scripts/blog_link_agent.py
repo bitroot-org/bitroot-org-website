@@ -172,15 +172,9 @@ def ensure_label():
 
 
 def create_issue(post: dict):
-    body = (
-        f"**Link:** {post['url']}\n\n"
-        f"**Media:** {post.get('media', 'unknown')}\n\n"
-        f"**Why it's interesting:** {post.get('summary', '')}\n\n"
-        f"---\n_Filed automatically by the blog-link agent._"
-    )
     r = gh("POST", f"/repos/{REPO}/issues",
-           json={"title": f"[blog-link] {post.get('title', post['url'])[:120]}",
-                 "body": body, "labels": [LABEL]})
+           json={"title": post.get("title", post["url"])[:120],
+                 "body": post["url"], "labels": [LABEL]})
     r.raise_for_status()
     print(f"Created issue #{r.json()['number']}: {post['url']}")
 
