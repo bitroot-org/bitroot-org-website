@@ -30,11 +30,15 @@ REPO = os.environ["GITHUB_REPOSITORY"]
 
 STATE_FILE = Path(__file__).parent / "seen_links.json"
 LABEL = "blog-link"
-MODEL = "grok-4-1-fast-reasoning"  # cheap + supports x_search; upgrade if needed
+MODEL = "grok-4.5"  # must be a reasoning model with x_search tool support
 MAX_ISSUES_PER_RUN = 5
 
 # Tune this to your taste — it is the heart of the agent.
 CURATION_PROMPT = """\
+You MUST use the x_search tool to find real, current posts on X. Do NOT \
+answer from memory — every result must come from an actual search. Run \
+multiple searches with different queries if the first returns little.
+
 Search X for posts from the last 24 hours about NICHE tech releases and \
 genuinely interesting technical articles. Focus on: new developer tools, \
 open-source project launches, indie hardware/software releases, deep-dive \
@@ -83,12 +87,22 @@ def call_grok() -> tuple[list[dict], set[str]]:
     resp.raise_for_status()
     data = resp.json()
 
+    if data.get("error"):
+        raise RuntimeError(f"xAI API error: {data['error']}")
+
+    # Debug visibility: what did the model actually do?
+    output_types = [item.get("type") for item in data.get("output", [])]
+    print(f"DEBUG output item types: {output_types}")
+    print(f"DEBUG server_side_tool_usage: {data.get('server_side_tool_usage')}")
+
     # Final assistant text = last output item's text content.
     text = ""
     for item in data.get("output", []):
         for block in item.get("content", []) or []:
             if block.get("type") in ("output_text", "text"):
                 text = block.get("text", text)
+
+    print(f"DEBUG model text (first 500 chars): {text[:500]!r}")
 
     # Citations: trust only posts Grok actually found on X.
     citation_ids = set()
@@ -168,7 +182,9 @@ def main():
         if not tid:
             print(f"Skipping (not a post URL): {url}")
             continue
-        if citation_ids and tid not in citation_ids:
+        if tid not in citation_ids:
+            # No matching citation = Grok didn't actually find this on X.
+            # (An empty citation set means the whole answer is unsourced.)
             print(f"Skipping (not citation-backed, possibly hallucinated): {url}")
             continue
         if tid in seen:
