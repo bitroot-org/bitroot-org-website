@@ -1,7 +1,11 @@
 {
   "generated": true,
-  "count": 216,
+  "count": 220,
   "posts": [
+    "2026-07-10-pi-ai-coding-agent-released-as-free-opensource-too.md",
+    "2026-07-10-openhands-launches-agent-canvas-for-selfhosted-ai.md",
+    "2026-07-10-langchain-launches-openwiki-to-autogenerate-a-livi.md",
+    "2026-07-10-github-curates-300-ai-security-tools-for-engineers.md",
     "2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p.md",
     "2026-07-08-tavus-adds-a-google-meet-participant-integration.md",
     "2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm.md",
@@ -220,6 +224,100 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-07-10-pi-ai-coding-agent-released-as-free-opensource-too.md",
+      "slug": "2026-07-10-pi-ai-coding-agent-released-as-free-opensource-too",
+      "url": "/blog/2026-07-10-pi-ai-coding-agent-released-as-free-opensource-too/",
+      "title": "Pi AI coding agent released as free open\u2011source tool",
+      "date": "2026-07-10",
+      "published_at": "2026-07-10T11:44:39.729867+00:00",
+      "tags": [
+        "ai coding",
+        "open-source",
+        "tool"
+      ],
+      "excerpt": "Pi arrives on GitHub with four built\u2011in utilities, a 1,000\u2011token system prompt, and full visibility into every model call.",
+      "image": "https://pbs.twimg.com/media/HMzEwTybkAARGnk.jpg?name=orig",
+      "sources": [
+        "https://x.com/fusionaivisuals/status/2075250024519438457"
+      ],
+      "readTime": "2 min",
+      "shortId": 220
+    },
+    {
+      "filename": "2026-07-10-openhands-launches-agent-canvas-for-selfhosted-ai.md",
+      "slug": "2026-07-10-openhands-launches-agent-canvas-for-selfhosted-ai",
+      "url": "/blog/2026-07-10-openhands-launches-agent-canvas-for-selfhosted-ai/",
+      "title": "OpenHands launches Agent Canvas for self\u2011hosted AI coding teams",
+      "date": "2026-07-10",
+      "published_at": "2026-07-10T11:44:24.088229+00:00",
+      "tags": [
+        "ai coding",
+        "self-hosted",
+        "devops"
+      ],
+      "excerpt": "OpenHands adds Agent Canvas, a control center that lets you run multiple LLM coding agents from one UI and hook them into GitHub, Slack, Notion, and more.",
+      "image": "https://pbs.twimg.com/media/HMxlaO8akAERz3C.jpg?name=orig",
+      "sources": [
+        "https://x.com/DivyanshT91162/status/2075145051681009898"
+      ],
+      "readTime": "2 min",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://pbs.twimg.com/media/HMxlaO8akAERz3C.jpg?name=orig"
+        },
+        {
+          "type": "image",
+          "url": "https://pbs.twimg.com/media/HMxlapUbMAAdKxe.jpg?name=orig"
+        },
+        {
+          "type": "image",
+          "url": "https://pbs.twimg.com/media/HMxlbDzaUAAyaYF.jpg?name=orig"
+        }
+      ],
+      "shortId": 219
+    },
+    {
+      "filename": "2026-07-10-langchain-launches-openwiki-to-autogenerate-a-livi.md",
+      "slug": "2026-07-10-langchain-launches-openwiki-to-autogenerate-a-livi",
+      "url": "/blog/2026-07-10-langchain-launches-openwiki-to-autogenerate-a-livi/",
+      "title": "LangChain launches OpenWiki to auto\u2011generate a living codebase wiki",
+      "date": "2026-07-10",
+      "published_at": "2026-07-10T11:44:09.253881+00:00",
+      "tags": [
+        "open-source",
+        "documentation",
+        "langchain"
+      ],
+      "excerpt": "LangChain\u2019s new OpenWiki agent reads your repository on every commit and updates a wiki automatically, aiming to cut the time engineers spend hunting for documentation.",
+      "image": "https://pbs.twimg.com/media/HMzzxE-XIAADszF.jpg?name=orig",
+      "sources": [
+        "https://x.com/iblai_/status/2075301557063553329"
+      ],
+      "readTime": "2 min",
+      "shortId": 218
+    },
+    {
+      "filename": "2026-07-10-github-curates-300-ai-security-tools-for-engineers.md",
+      "slug": "2026-07-10-github-curates-300-ai-security-tools-for-engineers",
+      "url": "/blog/2026-07-10-github-curates-300-ai-security-tools-for-engineers/",
+      "title": "GitHub curates 300+ AI security tools for engineers",
+      "date": "2026-07-10",
+      "published_at": "2026-07-10T11:43:44.022380+00:00",
+      "tags": [
+        "ai security",
+        "open source",
+        "tooling"
+      ],
+      "excerpt": "A new GitHub list aggregates over 300 AI\u2011powered security projects, from red\u2011team agents to LLM fuzzers, giving startup engineers a free catalog to explore.",
+      "image": "https://pbs.twimg.com/media/HM2TvUfaUAAYMi4.jpg?name=orig",
+      "sources": [
+        "https://x.com/VivekIntel/status/2075477455322923026"
+      ],
+      "readTime": "2 min",
+      "shortId": 217
+    },
     {
       "filename": "2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p.md",
       "slug": "2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p",

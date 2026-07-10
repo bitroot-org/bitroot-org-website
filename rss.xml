@@ -5,8 +5,64 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 09 Jul 2026 02:30:21 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2026 13:05:54 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pi AI coding agent released as free open‑source tool</title>
+      <link>https://bitroot.org/blog/2026-07-10-pi-ai-coding-agent-released-as-free-opensource-too/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-10-pi-ai-coding-agent-released-as-free-opensource-too/</guid>
+      <description>Pi arrives on GitHub with four built‑in utilities, a 1,000‑token system prompt, and full visibility into every model call.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/fusionaivisuals/status/2075250024519438457"&gt;https://x.com/fusionaivisuals/status/2075250024519438457&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 10 Jul 2026 11:44:39 +0000</pubDate>
+      <category>ai coding</category>
+      <category>open-source</category>
+      <category>tool</category>
+      <enclosure url="https://pbs.twimg.com/media/HMzEwTybkAARGnk.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/fusionaivisuals/status/2075250024519438457">Original Source</source>
+    </item>
+    <item>
+      <title>OpenHands launches Agent Canvas for self‑hosted AI coding teams</title>
+      <link>https://bitroot.org/blog/2026-07-10-openhands-launches-agent-canvas-for-selfhosted-ai/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-10-openhands-launches-agent-canvas-for-selfhosted-ai/</guid>
+      <description>OpenHands adds Agent Canvas, a control center that lets you run multiple LLM coding agents from one UI and hook them into GitHub, Slack, Notion, and more.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/DivyanshT91162/status/2075145051681009898"&gt;https://x.com/DivyanshT91162/status/2075145051681009898&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 10 Jul 2026 11:44:24 +0000</pubDate>
+      <category>ai coding</category>
+      <category>self-hosted</category>
+      <category>devops</category>
+      <enclosure url="https://pbs.twimg.com/media/HMxlaO8akAERz3C.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/DivyanshT91162/status/2075145051681009898">Original Source</source>
+    </item>
+    <item>
+      <title>LangChain launches OpenWiki to auto‑generate a living codebase wiki</title>
+      <link>https://bitroot.org/blog/2026-07-10-langchain-launches-openwiki-to-autogenerate-a-livi/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-10-langchain-launches-openwiki-to-autogenerate-a-livi/</guid>
+      <description>LangChain’s new OpenWiki agent reads your repository on every commit and updates a wiki automatically, aiming to cut the time engineers spend hunting for documentation.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/iblai_/status/2075301557063553329"&gt;https://x.com/iblai_/status/2075301557063553329&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 10 Jul 2026 11:44:09 +0000</pubDate>
+      <category>open-source</category>
+      <category>documentation</category>
+      <category>langchain</category>
+      <enclosure url="https://pbs.twimg.com/media/HMzzxE-XIAADszF.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/iblai_/status/2075301557063553329">Original Source</source>
+    </item>
+    <item>
+      <title>GitHub curates 300+ AI security tools for engineers</title>
+      <link>https://bitroot.org/blog/2026-07-10-github-curates-300-ai-security-tools-for-engineers/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-10-github-curates-300-ai-security-tools-for-engineers/</guid>
+      <description>A new GitHub list aggregates over 300 AI‑powered security projects, from red‑team agents to LLM fuzzers, giving startup engineers a free catalog to explore.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/VivekIntel/status/2075477455322923026"&gt;https://x.com/VivekIntel/status/2075477455322923026&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 10 Jul 2026 11:43:44 +0000</pubDate>
+      <category>ai security</category>
+      <category>open source</category>
+      <category>tooling</category>
+      <enclosure url="https://pbs.twimg.com/media/HM2TvUfaUAAYMi4.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/VivekIntel/status/2075477455322923026">Original Source</source>
+    </item>
     <item>
       <title>The real skill of working with Claude Fable isn't prompting. It's knowing what you don't know.</title>
       <link>https://bitroot.org/blog/2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p/</link>
