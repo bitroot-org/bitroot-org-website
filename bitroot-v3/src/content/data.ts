@@ -54,6 +54,17 @@ export const kits: Item[] = [
     href: "/kits/captchas-kit",
     difficulty: "intermediate",
   },
+  {
+    slug: "sitewatch-kit",
+    category: "kit",
+    title: "SiteWatch – Website Change Detection Kit",
+    summary:
+      "Self-hosted website change detection — visual selectors, scheduled checks, and alerts over Discord, Slack, Telegram, email, and 100+ other channels via Apprise.",
+    tags: ["Python", "Flask", "Docker"],
+    updatedAt: "2026-07-10",
+    href: "/kits/sitewatch-kit",
+    difficulty: "intermediate",
+  },
 ];
 
 export const guides: Item[] = [
