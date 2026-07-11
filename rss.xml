@@ -5,8 +5,25 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 10 Jul 2026 13:06:35 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 06:29:38 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The AI agent that works while you sleep, and actually delivers in the morning</title>
+      <link>https://bitroot.org/blog/2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual/</guid>
+      <description>The first AI model an engineering team trusted to work through the night — and what it took to get there.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://claude.com/blog/working-at-the-frontier-how-cognition-trusts-claude-fable-5-to-work-through-the-night"&gt;https://claude.com/blog/working-at-the-frontier-how-cognition-trusts-claude-fable-5-to-work-through-the-night&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 11 Jul 2026 06:29:02 +0000</pubDate>
+      <category>Claude Fable 5</category>
+      <category>Agentic AI</category>
+      <category>AI Software Engineer</category>
+      <category>Cognition</category>
+      <category>Claude Code</category>
+      <category>AI Productivity</category>
+      <enclosure url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a4dd0c75a04f6ca41530255_C41-77690-D2-02-0006_VS_R1.jpeg" type="image/jpeg" length="0" />
+      <source url="https://claude.com/blog/working-at-the-frontier-how-cognition-trusts-claude-fable-5-to-work-through-the-night">Original Source</source>
+    </item>
     <item>
       <title>Pi AI coding agent released as free open‑source tool</title>
       <link>https://bitroot.org/blog/2026-07-10-pi-ai-coding-agent-released-as-free-opensource-too/</link>
