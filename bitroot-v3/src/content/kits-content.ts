@@ -570,8 +570,87 @@ npm run start:workers`,
       "Meilisearch needs at least 1GB RAM for indexing large archives — bump it for bigger imports.",
       "Retention/legal-hold policies are enforced app-side — deleting rows directly in Postgres bypasses them, so always go through the API.",
     ],
+  "pulsedash-kit": {
+    slug: "pulsedash-kit",
+    github: "https://github.com/yashthakur1/dash",
+    tagline: "Every link, tool, and bookmark. One dashboard, self-hosted.",
+    oneLiner:
+      "A personal and team dashboard that replaces scattered browser bookmarks — organize resources into collections, arrange a widget grid, jump to anything with Ctrl+K, and pull in an RSS reader, all backed by your own PocketBase instance.",
+    stack: [
+      { name: "Next.js", why: "React frontend and API routes for the dashboard UI and Ctrl+K search." },
+      { name: "PocketBase", why: "Single-binary backend — SQLite storage, auth, and a real-time API with nothing extra to deploy." },
+      { name: "Tailwind CSS", why: "Utility-first styling for the widget grid, collections, and theming/wallpapers." },
+      { name: "Node.js jobs service", why: "Separate background process that fetches RSS feeds and runs scheduled monitoring." },
+    ],
+    features: [
+      {
+        icon: "ui",
+        title: "Customizable widget dashboard",
+        description:
+          "Arrange bookmarks, collections, and tools into a widget grid you rearrange to match how you actually work.",
+      },
+      {
+        icon: "db",
+        title: "Collections & resource organization",
+        description:
+          "Group links and tools into collections instead of drowning in browser bookmarks. Backed by PocketBase/SQLite.",
+      },
+      {
+        icon: "auth",
+        title: "Built-in authentication",
+        description:
+          "PocketBase-backed accounts and access control, so team dashboards stay private.",
+      },
+      {
+        icon: "deploy",
+        title: "Self-hosted, single PocketBase binary",
+        description:
+          "No managed backend to pay for — PocketBase runs as one executable alongside the app and jobs service.",
+      },
+    ],
+    installCommand: `git clone https://github.com/yashthakur1/dash.git pulsedash
+cd pulsedash
+npm install`,
+    envExample: `NEXT_PUBLIC_PB_URL=http://127.0.0.1:8090
+NEXT_PUBLIC_APP_URL=http://127.0.0.1:3000`,
+    walkthrough: [
+      {
+        title: "1. Set up PocketBase (backend)",
+        body: "Download the PocketBase v0.30.4 executable for your OS into the pocketbase/ directory, then run migrations and start the server — it serves the API on http://127.0.0.1:8090.",
+        code: {
+          lang: "bash",
+          source: `./pocketbase migrate --dir ./pb_data --migrationsDir ./pocketbase/pb_migrations
+./pocketbase serve --dir ./pb_data --migrationsDir ./pocketbase/pb_migrations`,
+        },
+      },
+      {
+        title: "2. Start the jobs service",
+        body: "In a separate terminal, install and run the background jobs service that handles RSS fetching and monitoring.",
+        code: {
+          lang: "bash",
+          source: `cd jobs
+npm install
+npm run dev`,
+        },
+      },
+      {
+        title: "3. Configure and run the Next.js app",
+        body: "Back in the repo root, install dependencies, add a .env.local pointing at your PocketBase instance, and start the dev server.",
+        code: {
+          lang: "bash",
+          source: `npm install
+npm run dev`,
+        },
+      },
+    ],
+    gotchas: [
+      "All three processes — PocketBase, the jobs service, and Next.js — need to be running at once, or RSS/monitoring silently stops updating even though the dashboard still loads.",
+      "Run PocketBase migrate before serve on a fresh pb_data directory, or the app fails to boot with a missing-schema error.",
+      "Two-factor auth ships via speakeasy — back up your PocketBase pb_data volume before rotating secrets or enabling it for a team.",
+    ],
     whyNot:
-      "If you need real-time collaboration, a full email client with sending, or compliance certifications (HIPAA, SOC2) out of the box, this isn't it. ArchiveFlow is read-only archival and search, not a mail client or a certified compliance platform.",
-    license: "MIT",
+      "If you just need one shared bookmarks list, this is more than you need — the collections, widgets, and RSS layer add real setup overhead (three processes to run). This kit is for people who want one page that replaces ten browser tabs.",
+    license:
+      "Not specified — the source repo ships no LICENSE file. Confirm terms with the author before redistributing.",
   },
 };
