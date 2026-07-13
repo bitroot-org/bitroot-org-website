@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 222,
+  "count": 223,
   "posts": [
+    "2026-07-13-hypertexting-app-turns-the-open-web-into-a-scrolla.md",
     "2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual.md",
     "2026-07-10-pi-ai-coding-agent-released-as-free-opensource-too.md",
     "2026-07-10-openhands-launches-agent-canvas-for-selfhosted-ai.md",
@@ -226,6 +227,36 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-07-13-hypertexting-app-turns-the-open-web-into-a-scrolla.md",
+      "slug": "2026-07-13-hypertexting-app-turns-the-open-web-into-a-scrolla",
+      "url": "/blog/2026-07-13-hypertexting-app-turns-the-open-web-into-a-scrolla/",
+      "title": "HyperTexting App Turns the Open Web Into a Scrollable Social Feed",
+      "date": "2026-07-13",
+      "published_at": "2026-07-13T13:02:38.054Z",
+      "tags": [
+        "HyperTexting",
+        "HyperTexting App",
+        "Open Web",
+        "RSS",
+        "RSS Reader",
+        "Social Media",
+        "Social Media Alternative",
+        "Algorithm-Free Social Media",
+        "Creator Economy",
+        "Content Discovery",
+        "News Reader",
+        "Digital Publishing"
+      ],
+      "excerpt": "HyperTexting is a new iPhone app that transforms the open web into a scrollable social feed using RSS. Learn how it works, its key features, benefits, drawbacks, and why it could be a compelling alternative to algorithm-driven social media.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/07/welcome-cover.png?resize=900,453",
+      "sources": [
+        "https://techcrunch.com/2026/07/10/a-new-app-hypertexting-turns-the-open-web-into-a-scrollable-social-media-like-feed/",
+        "https://hypertexting.com/"
+      ],
+      "readTime": "4 min",
+      "shortId": 223
+    },
     {
       "filename": "2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual.md",
       "slug": "2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual",

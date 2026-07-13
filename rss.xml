@@ -5,8 +5,31 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 11 Jul 2026 06:29:38 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2026 13:03:17 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HyperTexting App Turns the Open Web Into a Scrollable Social Feed</title>
+      <link>https://bitroot.org/blog/2026-07-13-hypertexting-app-turns-the-open-web-into-a-scrolla/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-13-hypertexting-app-turns-the-open-web-into-a-scrolla/</guid>
+      <description>HyperTexting is a new iPhone app that transforms the open web into a scrollable social feed using RSS. Learn how it works, its key features, benefits, drawbacks, and why it could be a compelling alternative to algorithm-driven social media.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/07/10/a-new-app-hypertexting-turns-the-open-web-into-a-scrollable-social-media-like-feed/"&gt;https://techcrunch.com/2026/07/10/a-new-app-hypertexting-turns-the-open-web-into-a-scrollable-social-media-like-feed/&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://hypertexting.com/"&gt;https://hypertexting.com/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 13 Jul 2026 13:02:38 +0000</pubDate>
+      <category>HyperTexting</category>
+      <category>HyperTexting App</category>
+      <category>Open Web</category>
+      <category>RSS</category>
+      <category>RSS Reader</category>
+      <category>Social Media</category>
+      <category>Social Media Alternative</category>
+      <category>Algorithm-Free Social Media</category>
+      <category>Creator Economy</category>
+      <category>Content Discovery</category>
+      <category>News Reader</category>
+      <category>Digital Publishing</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/07/welcome-cover.png?resize=900,453" type="image/png" length="0" />
+      <source url="https://techcrunch.com/2026/07/10/a-new-app-hypertexting-turns-the-open-web-into-a-scrollable-social-media-like-feed/">Original Source</source>
+    </item>
     <item>
       <title>The AI agent that works while you sleep, and actually delivers in the morning</title>
       <link>https://bitroot.org/blog/2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual/</link>
