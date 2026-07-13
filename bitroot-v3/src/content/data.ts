@@ -77,14 +77,14 @@ export const kits: Item[] = [
     difficulty: "intermediate",
   },
   {
-    slug: "archiveflow-kit",
+    slug: "pulsedash-kit",
     category: "kit",
-    title: "ArchiveFlow – Open Source Data Archiving Kit",
+    title: "PulseDash – Analytics Dashboard Kit",
     summary:
-      "Self-hosted email archiving and search — ingest from Google Workspace, Microsoft 365, or IMAP, then search everything instantly with retention policies and legal holds built in.",
-    tags: ["SvelteKit", "Node.js", "Meilisearch"],
-    updatedAt: "2026-07-12",
-    href: "/kits/archiveflow-kit",
+      "Self-hosted personal and team dashboard for organizing links, resources, bookmarks, and tools in one place — customizable widgets, instant Ctrl+K search, and a built-in RSS reader.",
+    tags: ["Next.js", "PocketBase", "Tailwind CSS"],
+    updatedAt: "2026-07-13",
+    href: "/kits/pulsedash-kit",
     difficulty: "intermediate",
   },
 ];
