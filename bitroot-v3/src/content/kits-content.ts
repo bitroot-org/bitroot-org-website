@@ -746,4 +746,97 @@ go build -o ./build/linkforge ./bin/slash/main.go
     license:
       "Not specified — the source repo ships no LICENSE file. Confirm terms with the author before redistributing.",
   },
+  "pdfcraft-kit": {
+    slug: "pdfcraft-kit",
+    github: "https://github.com/yashthakur1/PdfDing_8",
+    tagline: "Your PDFs, organized, annotated, and searchable — self-hosted.",
+    oneLiner:
+      "A self-hosted PDF vault — upload and organize documents into collections, annotate with highlights and notes, share with your team, and lock it down with WebAuthn/TOTP, all backed by Django and PostgreSQL.",
+    stack: [
+      { name: "Django 5", why: "Python backend, auth, and admin — server-rendered with HTMX for interactivity." },
+      { name: "HTMX + Alpine.js", why: "Dynamic UI without a separate frontend build step or SPA framework." },
+      { name: "Tailwind CSS", why: "Utility-first styling for the document grid, viewer, and collections UI." },
+      { name: "PostgreSQL / SQLite", why: "Postgres for production, SQLite for zero-config local development." },
+    ],
+    features: [
+      {
+        icon: "db",
+        title: "Smart collections",
+        description:
+          "Organize PDFs into collections instead of one long flat document list.",
+      },
+      {
+        icon: "ui",
+        title: "Annotation & highlights",
+        description:
+          "Mark up PDFs with highlights and notes directly in the browser.",
+      },
+      {
+        icon: "auth",
+        title: "WebAuthn & TOTP",
+        description:
+          "Lock the vault down with passkeys or two-factor auth, not just a password.",
+      },
+      {
+        icon: "deploy",
+        title: "Team sharing",
+        description:
+          "Share individual documents or whole collections with teammates.",
+      },
+    ],
+    installCommand: `git clone https://github.com/yashthakur1/PdfDing_8.git pdfcraft
+cd pdfcraft
+poetry install`,
+    envExample: `DEBUG=True
+SECRET_KEY=your-super-secret-development-key
+DATABASE_TYPE=SQLITE`,
+    walkthrough: [
+      {
+        title: "1. Install backend dependencies",
+        body: "Use Poetry (recommended) or pip to install the Django backend's dependencies.",
+        code: {
+          lang: "bash",
+          source: `poetry install
+# or
+pip install -r requirements.txt`,
+        },
+      },
+      {
+        title: "2. Configure the database",
+        body: "SQLite works out of the box for local dev. For Postgres, create the database yourself first, point the POSTGRES_* env vars at it, then run migrations.",
+        code: {
+          lang: "bash",
+          source: `# .env for Postgres
+DATABASE_TYPE=POSTGRES
+POSTGRES_NAME=docvault
+POSTGRES_USER=youruser
+POSTGRES_PASSWORD=yourpassword
+POSTGRES_HOST=127.0.0.1
+POSTGRES_PORT=5432
+
+python manage.py migrate`,
+        },
+      },
+      {
+        title: "3. Build the frontend and run the server",
+        body: "Install and build the Tailwind/HTMX frontend assets, then start the Django dev server from the pdfding directory.",
+        code: {
+          lang: "bash",
+          source: `npm install
+npm run build
+cd pdfding
+python manage.py runserver`,
+        },
+      },
+    ],
+    gotchas: [
+      "DEBUG=True is for local dev only — set it to False and configure a real SECRET_KEY before production.",
+      "Switching to Postgres means creating the database yourself first — the app won't create it for you.",
+      "The Django server expects frontend assets already built (npm run build) — skip that step and the UI serves unstyled or broken pages.",
+    ],
+    whyNot:
+      "If you just need to view or convert a couple of PDFs, this is overkill — accounts, collections, and WebAuthn add real setup (Django + Postgres + a frontend build) for something a simple PDF viewer does with zero setup. This kit is for teams that want a private, self-hosted document vault.",
+    license:
+      "Not specified — the source repo ships no LICENSE file. Confirm terms with the author before redistributing.",
+  },
 };
