@@ -109,6 +109,17 @@ export const kits: Item[] = [
     href: "/kits/linkforge-kit",
     difficulty: "intermediate",
   },
+  {
+    slug: "pdfcraft-kit",
+    category: "kit",
+    title: "PDFCraft – PDF Processing & Automation Kit",
+    summary:
+      "Self-hosted PDF vault — collections, annotations, team sharing, and WebAuthn/TOTP security, built on Django and PostgreSQL.",
+    tags: ["Django", "HTMX", "PostgreSQL"],
+    updatedAt: "2026-07-13",
+    href: "/kits/pdfcraft-kit",
+    difficulty: "intermediate",
+  },
 ];
 
 export const guides: Item[] = [
