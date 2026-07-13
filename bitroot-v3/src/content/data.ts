@@ -98,6 +98,17 @@ export const kits: Item[] = [
     href: "/kits/pulsedash-kit",
     difficulty: "intermediate",
   },
+  {
+    slug: "linkforge-kit",
+    category: "kit",
+    title: "LinkForge – Smart Link Management Kit",
+    summary:
+      "Self-hosted link shortener and manager — custom short links, collections, public/team sharing, and click stats in one React + Go app.",
+    tags: ["React", "Go", "TailwindCSS"],
+    updatedAt: "2026-07-13",
+    href: "/kits/linkforge-kit",
+    difficulty: "intermediate",
+  },
 ];
 
 export const guides: Item[] = [
