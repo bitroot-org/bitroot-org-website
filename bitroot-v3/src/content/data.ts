@@ -77,6 +77,17 @@ export const kits: Item[] = [
     difficulty: "intermediate",
   },
   {
+    slug: "archiveflow-kit",
+    category: "kit",
+    title: "ArchiveFlow – Open Source Data Archiving Kit",
+    summary:
+      "Self-hosted email archiving and search — ingest from Google Workspace, Microsoft 365, or IMAP, then search everything instantly with retention policies and legal holds built in.",
+    tags: ["SvelteKit", "Node.js", "Meilisearch"],
+    updatedAt: "2026-07-12",
+    href: "/kits/archiveflow-kit",
+    difficulty: "intermediate",
+  },
+  {
     slug: "pulsedash-kit",
     category: "kit",
     title: "PulseDash – Analytics Dashboard Kit",
