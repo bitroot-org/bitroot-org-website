@@ -657,4 +657,93 @@ npm run dev`,
     license:
       "Not specified — the source repo ships no LICENSE file. Confirm terms with the author before redistributing.",
   },
+  "linkforge-kit": {
+    slug: "linkforge-kit",
+    github: "https://github.com/yashthakur1/LinkForge",
+    tagline: "Shorten, organize, and share every link — self-hosted.",
+    oneLiner:
+      "A self-hosted link management platform — shorten URLs, organize them into collections, share publicly or with your team, and track click stats, all from a single React + Go app you run yourself.",
+    stack: [
+      { name: "React + TypeScript", why: "Frontend UI built with Vite and styled with TailwindCSS." },
+      { name: "Go", why: "Single compiled backend binary — serves the API and, in production, the built frontend too." },
+      { name: "SQLite / PostgreSQL", why: "SQLite for zero-config single-file storage, or Postgres for a managed multi-user deployment." },
+      { name: "Docker Compose", why: "One-command deployment that wires the backend, frontend, and database together." },
+    ],
+    features: [
+      {
+        icon: "deploy",
+        title: "Custom short links",
+        description:
+          "Shorten URLs with your own custom slugs instead of random strings.",
+      },
+      {
+        icon: "ui",
+        title: "Collections & organization",
+        description:
+          "Group related links into collections instead of one long flat list.",
+      },
+      {
+        icon: "auth",
+        title: "Public & team sharing",
+        description:
+          "Share individual links or whole collections publicly, or keep them scoped to your team.",
+      },
+      {
+        icon: "db",
+        title: "Click & usage stats",
+        description:
+          "See how many times each link was opened, without wiring up a separate analytics tool.",
+      },
+    ],
+    installCommand: `git clone https://github.com/yashthakur1/LinkForge.git linkforge
+cd linkforge
+docker-compose up -d`,
+    envExample: `LINKFORGE_MODE=prod
+LINKFORGE_PORT=5231
+LINKFORGE_DATA=./data
+LINKFORGE_DRIVER=sqlite
+LINKFORGE_DSN=./data/linkforge.db`,
+    walkthrough: [
+      {
+        title: "1. Run it with Docker (recommended)",
+        body: "Clone the repo and bring up the bundled docker-compose.yml — it builds the frontend and backend together and persists data to a local volume.",
+        code: {
+          lang: "bash",
+          source: `docker-compose up -d`,
+        },
+      },
+      {
+        title: "2. Or run frontend and backend separately",
+        body: "No Docker? Install the frontend dependencies with pnpm and start the Vite dev server in one terminal, then run the Go backend in a second.",
+        code: {
+          lang: "bash",
+          source: `# Terminal 1 — frontend
+cd frontend/web && pnpm install && pnpm dev
+
+# Terminal 2 — backend
+go run ./bin/slash/main.go --mode dev --port 8082`,
+        },
+      },
+      {
+        title: "3. Build for production",
+        body: "Build the frontend, copy the static output into the backend's route directory, then compile a single Go binary that serves both.",
+        code: {
+          lang: "bash",
+          source: `cd frontend/web && pnpm build
+cp -r dist ../../server/route/frontend/
+go build -o ./build/linkforge ./bin/slash/main.go
+./build/linkforge --mode prod`,
+        },
+      },
+    ],
+    gotchas: [
+      "The dev frontend (Vite) and backend run on different ports — hitting the wrong one locally is the most common 'nothing loads' issue.",
+      "Production mode expects the frontend's built dist/ folder already copied into server/route/frontend/ — skip that step and the Go binary serves a 404 for the UI.",
+      "SQLite is the default driver; switch LINKFORGE_DRIVER to postgres and set LINKFORGE_DSN to a connection string for multi-user/production use.",
+    ],
+    whyNot:
+      "If you just need a single quick redirect link, this is overkill — collections, sharing, and stats add real setup (frontend build + Go binary + a database) for something a free URL shortener does in one click. This kit is for teams who want to own their link data.",
+    license:
+      "Not specified — the source repo ships no LICENSE file. Confirm terms with the author before redistributing.",
+  },
 };
