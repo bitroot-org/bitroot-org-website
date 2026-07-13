@@ -45,10 +45,6 @@ export default function KitsPage() {
               </span>
               <span className="text-ink-4">·</span>
               <span>MIT licensed</span>
-              <span className="text-ink-4">·</span>
-              <span>no signup</span>
-              <span className="text-ink-4">·</span>
-              <span>no email wall</span>
             </div>
           </div>
         </Container>

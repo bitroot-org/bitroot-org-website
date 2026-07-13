@@ -28,7 +28,7 @@ export const kits: Item[] = [
     summary:
       "Single-page waitlist with email capture, referral counter, and a real admin dashboard. Ship a landing page in an hour.",
     tags: ["Next.js", "Resend", "Supabase"],
-    updatedAt: "2026-05-19",
+    updatedAt: "2026-07-13",
     href: "/kits/waitlist-kit",
     difficulty: "starter",
   },
