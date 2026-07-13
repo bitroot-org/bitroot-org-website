@@ -570,6 +570,10 @@ npm run start:workers`,
       "Meilisearch needs at least 1GB RAM for indexing large archives — bump it for bigger imports.",
       "Retention/legal-hold policies are enforced app-side — deleting rows directly in Postgres bypasses them, so always go through the API.",
     ],
+    whyNot:
+      "If you need real-time collaboration, a full email client with sending, or compliance certifications (HIPAA, SOC2) out of the box, this isn't it. ArchiveFlow is read-only archival and search, not a mail client or a certified compliance platform.",
+    license: "MIT",
+  },
   "pulsedash-kit": {
     slug: "pulsedash-kit",
     github: "https://github.com/yashthakur1/dash",
