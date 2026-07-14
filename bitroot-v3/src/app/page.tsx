@@ -16,10 +16,10 @@ export default function Home() {
       <LaneSection />
       <DealsPlatter />
       <BuiltFor />
+      <ClubBanner />
       {/* <ReelsSection /> — hidden until we have ready videos */}
       <NewsloggerSection />
       {/* <QuotesSection /> — hidden until we have real quotes */}
-      <ClubBanner />
     </>
   );
 }
