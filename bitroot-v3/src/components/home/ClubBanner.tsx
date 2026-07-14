@@ -1,136 +1,215 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
 import Container from "@/components/ui/Container";
 import TrackedLink from "@/components/ui/TrackedLink";
 
-const benefits = [
-  {
-    title: "BitSupport · priority tickets",
-    sub: "Tier-based help, from quick fixes to ongoing support.",
-  },
-  {
-    title: "Direct access to operators",
-    sub: "Book calls and office hours with people who've shipped what you're building.",
-  },
-  {
-    title: "Member-only drops",
-    sub: "New apps, kits, tools, and deals — before they go public.",
-  },
-];
-
-const memberAvatars = [
+const MEMBER_AVATARS = [
   { initials: "JK", grad: "from-[#7782ee] to-[#3d3b40]" },
   { initials: "RM", grad: "from-[#bfcfe7] to-[#525ceb]" },
   { initials: "SA", grad: "from-[#c9cef5] to-[#525ceb]" },
   { initials: "EL", grad: "from-[#a8a5cf] to-[#3d3b40]" },
-  { initials: "TN", grad: "from-[#525ceb] to-[#3d3b40]" },
 ];
 
 export default function ClubBanner() {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  // Use a ref (not state) for isVisible so the animation loop reads the latest
+  // value without needing to be recreated whenever visibility changes.
+  const isVisibleRef = useRef(false);
+  const frameRef = useRef<number>();
+  const starsRef = useRef<Array<{ x: number; y: number; r: number; speed: number; opacity: number }>>([]);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+  // canvasReady prevents a white flash before the canvas gradient is painted.
+  const [canvasReady, setCanvasReady] = useState(false);
+
+  // ── Detect prefers-reduced-motion ────────────────────────────────────────
+  useEffect(() => {
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setPrefersReducedMotion(mq.matches);
+    const onChange = (e: MediaQueryListEvent) => setPrefersReducedMotion(e.matches);
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
+  }, []);
+
+  // ── Single starfield effect: setup + animation loop in one useEffect ─────
+  // This avoids the AI's bug where a second useEffect re-initialised stars on
+  // every isVisible change, causing stutter and redundant RAF loops.
+  useEffect(() => {
+    if (prefersReducedMotion) return;
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    let ctx: CanvasRenderingContext2D | null = null;
+    try {
+      ctx = canvas.getContext("2d");
+    } catch (_) {
+      // Canvas not supported — fallback background via CSS is already applied.
+      return;
+    }
+    if (!ctx) return;
+
+    setCanvasReady(true);
+
+    const initStars = () => {
+      const count = Math.floor((canvas.width * canvas.height) / 8000);
+      starsRef.current = Array.from({ length: count }, () => ({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        r: Math.random() * 1.5 + 0.5,
+        speed: Math.random() * 0.3 + 0.1,
+        opacity: Math.random() * 0.5 + 0.3,
+      }));
+    };
+
+    const resize = () => {
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+      initStars();
+    };
+
+    // Single RAF loop — pauses drawing (but keeps the loop alive) when
+    // the banner is not in the viewport, as required by the ticket.
+    const draw = () => {
+      if (ctx && canvas && isVisibleRef.current) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        starsRef.current.forEach(star => {
+          star.y += star.speed;
+          if (star.y > canvas.height) {
+            star.y = 0;
+            star.x = Math.random() * canvas.width;
+          }
+          ctx!.beginPath();
+          ctx!.arc(star.x, star.y, star.r, 0, Math.PI * 2);
+          ctx!.fillStyle = `rgba(199, 206, 245, ${star.opacity})`;
+          ctx!.fill();
+        });
+      }
+      frameRef.current = requestAnimationFrame(draw);
+    };
+
+    resize();
+    window.addEventListener("resize", resize);
+
+    // IntersectionObserver — pause animation when scrolled out of view.
+    const observer = new IntersectionObserver(
+      entries => { isVisibleRef.current = entries[0]?.isIntersecting ?? false; },
+      { threshold: 0.1 }
+    );
+    observer.observe(canvas);
+
+    draw();
+
+    return () => {
+      window.removeEventListener("resize", resize);
+      observer.disconnect();
+      if (frameRef.current) cancelAnimationFrame(frameRef.current);
+    };
+  }, [prefersReducedMotion]);
+
+  // Dark background applied via CSS when canvas is not yet ready or when
+  // prefers-reduced-motion is on — ensures the content is always visible.
+  const fallbackBg = "linear-gradient(160deg, #14132b 0%, #1c1a3a 50%, #211e44 100%)";
+
   return (
-    <section id="club" className="py-18">
+    <section id="club" className="py-12">
       <Container>
         <div
-          className="relative overflow-hidden rounded-[22px] text-[#eae6f5] px-7 py-10 sm:px-12 sm:py-14 lg:p-16 shadow-[0_30px_80px_-30px_rgba(20,18,42,0.6),0_0_0_1px_rgba(82,92,235,0.18)]"
+          className="relative overflow-hidden rounded-[22px] text-[#eae6f5] px-8 py-14 shadow-[0_30px_80px_-30px_rgba(20,18,42,0.6),0_0_0_1px_rgba(82,92,235,0.18)]"
           style={{
-            background:
-              "radial-gradient(900px 600px at 12% 0%, rgba(82,92,235,0.40), transparent 60%), radial-gradient(700px 500px at 100% 100%, rgba(119,130,238,0.22), transparent 60%), linear-gradient(160deg, #14132b 0%, #1c1a3a 50%, #211e44 100%)",
+            minHeight: "280px",
+            // Show fallback gradient when canvas not ready or motion reduced
+            background: !canvasReady || prefersReducedMotion ? fallbackBg : "transparent",
           }}
         >
+          {/* Starfield canvas — full-bleed, sits behind all content */}
+          {!prefersReducedMotion && (
+            <canvas
+              ref={canvasRef}
+              className="absolute inset-0 w-full h-full pointer-events-none"
+              style={{ background: fallbackBg }}
+              aria-hidden="true"
+            />
+          )}
+
+          {/* Subtle grid overlay (matches the reference GIF) */}
           <div
-            className="absolute inset-0 club-grid pointer-events-none opacity-90"
-            aria-hidden
-          />
-          <div
-            className="absolute -top-40 -left-20 w-[420px] h-[420px] rounded-full pointer-events-none blur-3xl"
-            style={{ background: "rgba(82,92,235,0.30)" }}
-            aria-hidden
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              backgroundImage:
+                "linear-gradient(rgba(82,92,235,0.06) 1px, transparent 1px)," +
+                "linear-gradient(90deg, rgba(82,92,235,0.06) 1px, transparent 1px)",
+              backgroundSize: "40px 40px",
+            }}
+            aria-hidden="true"
           />
 
-          <div className="relative grid gap-12 lg:grid-cols-[1.2fr_1fr] items-center">
-            <div>
+          {/* Content */}
+          <div className="relative z-10 flex flex-col items-center text-center gap-6">
+            {/* Heading block */}
+            <div className="flex flex-col items-center gap-3">
+              {/* Eyebrow — monospace, small caps style matching the GIF */}
               <span
-                className="eyebrow-mono"
+                className="font-mono text-[11px] tracking-[0.18em] uppercase"
                 style={{ color: "#c9cef5" }}
               >
-                community
+                -/ community
               </span>
-              <h2 className="font-sans mt-3.5 mb-4 text-white text-[clamp(38px,4.6vw,56px)] font-semibold tracking-[-0.03em] leading-[1.02]">
-                Bitroot Club <span className="serif-em">→</span>
+
+              <h2 className="font-sans text-white text-[clamp(30px,4vw,46px)] font-bold tracking-[-0.03em] leading-[1.05] m-0">
+                Bitroot Club
               </h2>
-              <p className="text-[16px] text-[#c9c2dd] leading-[1.55] m-0 max-w-[44ch]">
-                A members-only room for founders building thoughtfully. Real
-                feedback, no LinkedIn voice.
-              </p>
 
-              <ul className="m-0 mt-7 p-0 list-none flex flex-col gap-3.5">
-                {benefits.map((b) => (
-                  <li
-                    key={b.title}
-                    className="flex items-start gap-3 text-[15px] text-[#e0d9ee] leading-[1.45]"
-                  >
-                    <span className="flex-none w-2 h-2 rounded-[2px] bg-ember mt-1.5 shadow-[0_0_10px_rgba(82,92,235,0.7)]" />
-                    <span className="flex-1 min-w-0">
-                      <strong className="font-semibold text-white">
-                        {b.title}
-                      </strong>
-                      <small className="block mt-1 text-[13px] text-[#a8a3bf] leading-[1.5]">
-                        {b.sub}
-                      </small>
-                    </span>
-                  </li>
-                ))}
-              </ul>
-
-              <div className="mt-7 flex items-center gap-3.5 flex-wrap">
-                <TrackedLink
-                  label="Join the Club"
-                  location="club_banner"
-                  href="https://bitroot.club"
-                  className="inline-flex items-center gap-2 h-[38px] px-5 rounded-full bg-ember text-paper text-[14px] font-medium hover:bg-ember-2 transition-colors"
-                >
-                  Join the Club <span aria-hidden>→</span>
-                </TrackedLink>
-                <a
-                  href="#stories"
-                  className="inline-flex items-center gap-2 h-[38px] px-5 rounded-full border border-white/20 text-white text-[14px] font-medium hover:bg-white/5 hover:border-white/30 transition-colors"
-                >
-                  See who&apos;s inside
-                </a>
+              {/* Body copy — matches ticket description + reference GIF exactly */}
+              <div className="flex flex-col gap-1.5 max-w-[640px]">
+                <p className="text-white text-[15px] leading-[1.55] m-0">
+                  Priority support, new apps, kits, tools, and deals before they go public.
+                </p>
+                <p className="text-[14px] leading-[1.5] m-0" style={{ color: "#c9c2dd" }}>
+                  Everything you need to design, build, launch, and grow your product, in one place.
+                </p>
               </div>
             </div>
 
-            <div
-              className="rounded-[14px] p-6 flex flex-col gap-5 backdrop-blur-sm border border-[rgba(199,206,245,0.22)] shadow-[0_20px_50px_-20px_rgba(82,92,235,0.45),inset_0_1px_0_rgba(255,255,255,0.06)]"
-              style={{
-                background:
-                  "linear-gradient(160deg, rgba(82,92,235,0.16) 0%, rgba(82,92,235,0.06) 60%, rgba(20,18,42,0.35) 100%)",
-              }}
-            >
-              <div className="flex items-center justify-between font-mono text-[12px] text-[#b6b0c8]">
-                <span>members</span>
-                <b className="text-white font-medium">412 / 500</b>
-              </div>
-              <div className="flex items-center">
-                {memberAvatars.map((a, i) => (
-                  <div
-                    key={a.initials}
-                    className={`w-[32px] h-[32px] rounded-full border-2 border-[#191638] bg-gradient-to-br ${a.grad} grid place-items-center font-mono text-[10px] text-white font-medium shadow-[0_0_12px_rgba(82,92,235,0.4)] ${i === 0 ? "" : "-ml-2"}`}
-                  >
-                    {a.initials}
-                  </div>
-                ))}
-                <div className="w-[32px] h-[32px] rounded-full border-2 border-[#191638] bg-[rgba(82,92,235,0.22)] text-white font-mono text-[10px] grid place-items-center -ml-2">
-                  +407
+            {/* Action row — wraps cleanly on mobile per ticket requirements */}
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              {/* Primary CTA */}
+              <TrackedLink
+                label="Join the Club"
+                location="club_banner"
+                href="https://bitroot.club"
+                className="inline-flex items-center gap-2 h-[42px] px-6 rounded-full bg-[#525ceb] text-white text-[14px] font-medium hover:bg-[#4350d9] transition-colors whitespace-nowrap"
+              >
+                Join the Club <span aria-hidden="true">→</span>
+              </TrackedLink>
+
+              {/* Secondary CTA — keeping original destination */}
+              <a
+                href="https://bitroot.club/members"
+                className="inline-flex items-center gap-2 h-[42px] px-6 rounded-full border border-white/25 text-white text-[14px] font-medium hover:bg-white/[0.06] hover:border-white/40 transition-colors whitespace-nowrap"
+              >
+                See who&apos;s inside
+              </a>
+
+              {/* Thin vertical divider — hidden on small screens when row wraps */}
+              <div
+                className="hidden sm:block w-px h-8 bg-gradient-to-b from-transparent via-white/20 to-transparent flex-shrink-0"
+                aria-hidden="true"
+              />
+
+              {/* Member avatars + count */}
+              <div className="flex items-center gap-3">
+                <div className="flex items-center" aria-label="Member avatars">
+                  {MEMBER_AVATARS.map((a, i) => (
+                    <div
+                      key={a.initials}
+                      className={`w-[34px] h-[34px] rounded-full border-2 border-[#191638] bg-gradient-to-br ${a.grad} grid place-items-center font-mono text-[10px] text-white font-medium shadow-[0_0_10px_rgba(82,92,235,0.35)] ${i === 0 ? "" : "-ml-2"}`}
+                      aria-hidden="true"
+                    >
+                      {a.initials}
+                    </div>
+                  ))}
                 </div>
-              </div>
-              <div className="flex items-center justify-between font-mono text-[12px] text-[#b6b0c8]">
-                <span>this week</span>
-                <b className="text-white font-medium">
-                  14 new deals · 3 office hours
-                </b>
-              </div>
-              <div className="flex items-center justify-between border-t border-[rgba(199,206,245,0.16)] pt-4 font-mono text-[12px]">
-                <span className="text-[#8e8aa8]">$ bitroot · join</span>
-                <span className="text-ember drop-shadow-[0_0_8px_rgba(82,92,235,0.8)]">●</span>
+                <span className="text-white text-[14px] font-medium">412 members</span>
               </div>
             </div>
           </div>
