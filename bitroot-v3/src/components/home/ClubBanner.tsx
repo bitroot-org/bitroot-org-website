@@ -16,7 +16,7 @@ export default function ClubBanner() {
   // Use a ref (not state) for isVisible so the animation loop reads the latest
   // value without needing to be recreated whenever visibility changes.
   const isVisibleRef = useRef(false);
-  const frameRef = useRef<number>();
+  const frameRef = useRef<number | null>(null);
   const starsRef = useRef<Array<{ x: number; y: number; r: number; speed: number; opacity: number }>>([]);
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   // canvasReady prevents a white flash before the canvas gradient is painted.
