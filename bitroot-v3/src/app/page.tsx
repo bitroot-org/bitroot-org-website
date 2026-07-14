@@ -18,9 +18,9 @@ export default function Home() {
       <BitStudioSpotlight />
       <DealsPlatter />
       <BuiltFor />
-      <ClubBanner />
       {/* <ReelsSection /> — hidden until we have ready videos */}
       <NewsloggerSection />
+      <ClubBanner />
       {/* <QuotesSection /> — hidden until we have real quotes */}
     </>
   );
