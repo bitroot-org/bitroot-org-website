@@ -5,8 +5,22 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 13 Jul 2026 13:03:17 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 05:33:23 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude now has India pricing. Here's what it actually costs - and what's still missing.</title>
+      <link>https://bitroot.org/blog/2026-07-14-claude-now-has-india-pricing-heres-what-it-actuall/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-14-claude-now-has-india-pricing-heres-what-it-actuall/</guid>
+      <description>Anthropic has quietly introduced rupee-denominated pricing for Claude in India — no announcement, no press release. Here's the full breakdown of what every plan costs, what the UPI gap means for Indian founders, and how it compares to ChatGPT and Gemini.</description>
+      <pubDate>Tue, 14 Jul 2026 05:32:31 +0000</pubDate>
+      <category>Claude India</category>
+      <category>Anthropic</category>
+      <category>AI Pricing</category>
+      <category>Indian Founders</category>
+      <category>Claude Pro</category>
+      <category>AI Tools India</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2269811684.jpg" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>HyperTexting App Turns the Open Web Into a Scrollable Social Feed</title>
       <link>https://bitroot.org/blog/2026-07-13-hypertexting-app-turns-the-open-web-into-a-scrolla/</link>
