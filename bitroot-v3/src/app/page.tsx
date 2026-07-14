@@ -2,7 +2,8 @@ import Hero from "@/components/home/Hero";
 import HeroTicker from "@/components/home/HeroTicker";
 import LaneSection from "@/components/home/LaneSection";
 import BitStudioSpotlight from "@/components/home/BitStudioSpotlight";
-import DealsPlatter from "@/components/home/DealsPlatter";
+// ARCHIVED 2026-07-14 — deals platter hidden from homepage, do not delete, may be restored later
+// import DealsPlatter from "@/components/home/DealsPlatter";
 import BuiltFor from "@/components/home/BuiltFor";
 // import ReelsSection from "@/components/home/ReelsSection"; // hidden until videos are ready
 import NewsloggerSection from "@/components/home/NewsloggerSection";
@@ -16,9 +17,10 @@ export default function Home() {
       <HeroTicker />
       <LaneSection />
       <BitStudioSpotlight />
-      <DealsPlatter />
+      {/* ARCHIVED 2026-07-14 — deals platter hidden from homepage, do not delete, may be restored later */}
+      {/* <DealsPlatter /> */}
       <BuiltFor />
-      {/* <ReelsSection /> — hidden until we have ready videos */}
+      {/* <ReelsSection /> — hidden until videos are ready */}
       <NewsloggerSection />
       <ClubBanner />
       {/* <QuotesSection /> — hidden until we have real quotes */}
