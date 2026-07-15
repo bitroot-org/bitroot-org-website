@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import ProductIcon from "@/components/products/ProductIcon";
 import type { Product } from "@/content/products";
 import { identify, track } from "@/lib/analytics";
+import { requestEarlyAccess } from "@/lib/forms";
 
 type Program = "core" | "creators";
 
@@ -18,6 +19,8 @@ const initialForm = { name: "", email: "", handle: "", context: "" };
 export default function EarlyAccessModal({ open, product, onClose }: Props) {
   const [program, setProgram] = useState<Program | null>(null);
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
   const [form, setForm] = useState(initialForm);
 
   // Reset state shortly after close (so the exit animation reads clean).
@@ -26,6 +29,8 @@ export default function EarlyAccessModal({ open, product, onClose }: Props) {
       const t = window.setTimeout(() => {
         setProgram(null);
         setSubmitted(false);
+        setSubmitting(false);
+        setSubmitError(false);
         setForm(initialForm);
       }, 250);
       return () => window.clearTimeout(t);
@@ -137,9 +142,25 @@ export default function EarlyAccessModal({ open, product, onClose }: Props) {
             {/* form */}
             <form
               className="mt-6"
-              onSubmit={(e) => {
+              onSubmit={async (e) => {
                 e.preventDefault();
-                if (!program) return;
+                if (!program || submitting) return;
+                setSubmitting(true);
+                setSubmitError(false);
+                const result = await requestEarlyAccess({
+                  name: form.name.trim(),
+                  email: form.email.trim(),
+                  product: product.slug,
+                  productName: product.name,
+                  program,
+                  handle: form.handle.trim() || undefined,
+                  context: form.context.trim() || undefined,
+                });
+                setSubmitting(false);
+                if (!result.ok) {
+                  setSubmitError(true);
+                  return;
+                }
                 identify(
                   form.email,
                   {
@@ -197,14 +218,20 @@ export default function EarlyAccessModal({ open, product, onClose }: Props) {
 
               <div className="mt-5 flex items-center justify-between gap-3 flex-wrap">
                 <p className="text-[11.5px] font-mono text-ink-4">
-                  Access lands in your inbox within 7 days.
+                  {submitError ? (
+                    <span className="text-ember">
+                      Something went wrong — please try again.
+                    </span>
+                  ) : (
+                    <>Access lands in your inbox within 7 days.</>
+                  )}
                 </p>
                 <button
                   type="submit"
-                  disabled={!program || !form.name || !form.email}
+                  disabled={!program || !form.name || !form.email || submitting}
                   className="hover-lift inline-flex items-center gap-1.5 text-[13px] font-medium bg-ink text-paper hover:bg-ink-2 rounded-full px-5 py-2 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
                 >
-                  Request access
+                  {submitting ? "Sending…" : "Request access"}
                   <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
                     <path
                       d="M3 8h10M9 4l4 4-4 4"

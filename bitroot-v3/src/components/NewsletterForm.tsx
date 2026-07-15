@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { identify, today, track } from "@/lib/analytics";
+import { subscribeNewsletter } from "@/lib/forms";
 
 export default function NewsletterForm({
   compact = false,
@@ -9,14 +10,19 @@ export default function NewsletterForm({
   compact?: boolean;
 }) {
   const [email, setEmail] = useState("");
-  const [state, setState] = useState<"idle" | "loading" | "done">("idle");
+  const [state, setState] = useState<"idle" | "loading" | "done" | "error">(
+    "idle",
+  );
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!email) return;
     setState("loading");
-    // TODO: wire to Resend / Buttondown
-    await new Promise((r) => setTimeout(r, 600));
+    const result = await subscribeNewsletter(email, "newsletter_page");
+    if (!result.ok) {
+      setState("error");
+      return;
+    }
     identify(
       email,
       { newsletter_subscriber: true },
@@ -44,6 +50,7 @@ export default function NewsletterForm({
   }
 
   return (
+    <>
     <form onSubmit={onSubmit} className="flex gap-2">
       <input
         type="email"
@@ -65,5 +72,11 @@ export default function NewsletterForm({
         {state === "loading" ? "…" : "Subscribe"}
       </button>
     </form>
+    {state === "error" && (
+      <p className="mt-2 text-[12px] text-ember">
+        Something went wrong — please try again in a moment.
+      </p>
+    )}
+    </>
   );
 }

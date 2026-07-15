@@ -1,0 +1,11 @@
+# Deploy: npx wrangler deploy (from this directory).
+# Secrets (npx wrangler secret put <NAME>): DATABASE_URL, BREVO_API_KEY,
+# ADMIN_TOKEN, MAILERLITE_API_KEY. Local dev reads them from .dev.vars.
+name = "bitroot-forms"
+main = "worker.js"
+compatibility_date = "2025-06-01"
+
+[vars]
+SENDER_EMAIL = "founder@bitroot.club"
+SENDER_NAME = "Yash from Bitroot"
+NOTIFY_EMAIL = "yt@bitroot.org"

@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import type { Item } from "@/content/data";
 import Tag from "@/components/ui/Tag";
-import Carousel from "@/components/ui/Carousel";
 
 type Difficulty = "all" | "starter" | "intermediate" | "advanced";
 
@@ -134,15 +133,12 @@ export default function KitsGrid({ kits }: { kits: Item[] }) {
           </p>
         </div>
       ) : (
-        <Carousel
-          ariaLabel="Kits"
-          slideClassName="w-[clamp(280px,32vw,360px)] h-auto"
-        >
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-5">
           {filtered.map((kit) => (
             <Link
               key={kit.slug}
               href={kit.href}
-              className="repo-card group relative flex h-full flex-col rounded-2xl border border-line bg-paper p-6"
+              className="repo-card group relative mb-5 flex break-inside-avoid flex-col rounded-2xl border border-line bg-paper p-6"
             >
               <div className="flex items-start justify-between gap-4 mb-3">
                 <div className="flex items-center gap-2">
@@ -182,7 +178,7 @@ export default function KitsGrid({ kits }: { kits: Item[] }) {
               <h3 className="font-display text-[20px] font-bold text-ink group-hover:text-ember transition-colors mb-2 leading-tight">
                 {kit.title}
               </h3>
-              <p className="text-[13.5px] text-ink-3 leading-relaxed mb-4 line-clamp-2">
+              <p className="text-[13.5px] text-ink-3 leading-relaxed mb-4">
                 {kit.summary}
               </p>
 
@@ -211,7 +207,7 @@ export default function KitsGrid({ kits }: { kits: Item[] }) {
               </div>
             </Link>
           ))}
-        </Carousel>
+        </div>
       )}
     </div>
   );

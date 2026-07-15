@@ -71,3 +71,5 @@ yarn.lock
 # Generated static post pages (built by blog/scripts/build_post_pages.py at
 # deploy time; run the script locally to preview clean URLs with server.py)
 /blog/2[0-9][0-9][0-9]-*/
+.dev.vars
+api/.wrangler/
