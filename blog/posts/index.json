@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 224,
+  "count": 225,
   "posts": [
+    "2026-07-15-gpt-5-6-sols-first-week-unprecedented-demand-scali.md",
     "2026-07-14-claude-now-has-india-pricing-heres-what-it-actuall.md",
     "2026-07-13-hypertexting-app-turns-the-open-web-into-a-scrolla.md",
     "2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual.md",
@@ -228,6 +229,31 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-07-15-gpt-5-6-sols-first-week-unprecedented-demand-scali.md",
+      "slug": "2026-07-15-gpt-5-6-sols-first-week-unprecedented-demand-scali",
+      "url": "/blog/2026-07-15-gpt-5-6-sols-first-week-unprecedented-demand-scali/",
+      "title": "GPT-5.6 Sol's First Week: Unprecedented Demand, Scaling Chaos, and the Safety Bugs OpenAI Knew About",
+      "date": "2026-07-15",
+      "published_at": "2026-07-15T04:50:21.102Z",
+      "tags": [
+        "AI Safety",
+        "GPT-5.6",
+        "Infrastructure",
+        "Agentic AI",
+        "OpenAI",
+        "Deployment",
+        "Startups",
+        "Founders",
+        "ChatGPT Work",
+        "Scaling"
+      ],
+      "excerpt": "OpenAI's GPT-5.6 reached 8 million users in five days. It also deleted user files and crashed infrastructure. Matt Shumer's Mac got wiped when GPT-5.6 Sol misexpanded a shell variable. A developer lost his entire production database the same day. Both incidents matched a \"severity level 3\" failure OpenAI documented before launch. The company shipped anyway.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/05/openai-logo-code-background.jpg?resize=1280,852",
+      "sources": [],
+      "readTime": "8 min",
+      "shortId": 225
+    },
     {
       "filename": "2026-07-14-claude-now-has-india-pricing-heres-what-it-actuall.md",
       "slug": "2026-07-14-claude-now-has-india-pricing-heres-what-it-actuall",
