@@ -108,10 +108,11 @@ async function handleNewsletter(body, env, ctx) {
         }
       }
       if (!sub.welcome_email_sent_at) {
+        const posts = await latestPosts();
         const sent = await sendBrevo(env, {
           to: [{ email }],
           subject: "Welcome to Bitroot — a letter from Yash",
-          htmlContent: welcomeHtml(),
+          htmlContent: welcomeHtml({ posts }),
         });
         if (sent) {
           await sql(
@@ -409,8 +410,7 @@ const SANS =
   "'Geist',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif";
 const MONO =
   "'Geist Mono','SF Mono',SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace";
-const SERIF = "'Instrument Serif',Georgia,'Times New Roman',serif";
-const FONTS_CSS = `<style type="text/css">@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Geist:wght@400..800&family=Geist+Mono:wght@400..600&family=Instrument+Serif:ital@0;1&display=swap');</style>`;
+const FONTS_CSS = `<style type="text/css">@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Geist:wght@400..800&family=Geist+Mono:wght@400..600&display=swap');</style>`;
 // Served from the static site (email clients don't render SVG).
 const LOGO_URL = "https://bitroot.org/images/email/bitroot-logo.png";
 
@@ -456,13 +456,58 @@ function esc(s) {
 
 function signoff() {
   return `<p style="margin:28px 0 2px;font-family:${SANS};font-size:15px;line-height:1.6;color:${INK_SOFT};">Talk soon,</p>
-    <p style="margin:0;font-family:${SERIF};font-style:italic;font-size:28px;line-height:1.15;color:${INK};">Yash</p>
+    <p style="margin:0;font-family:'Segoe Script','Bradley Hand','Snell Roundhand','Brush Script MT',cursive;font-size:30px;line-height:1.1;color:${BRAND};">Yash</p>
     <p style="margin:6px 0 0;font-family:${MONO};font-size:11.5px;color:${INK_FAINT};">Yash Thakur &middot; founder, Bitroot</p>`;
 }
 
+// Latest blog posts for the welcome letter's "fresh from the blog" section.
+// Sourced from the blog index (newest first, image required); edge-cached an
+// hour. Fails soft — an empty list just omits the section.
+async function latestPosts() {
+  try {
+    const res = await fetch("https://bitroot.org/blog/posts/index.json", {
+      cf: { cacheTtl: 3600, cacheEverything: true },
+    });
+    if (!res.ok) return [];
+    const data = await res.json();
+    return (data.metadata || [])
+      .filter((p) => p.image && p.title && p.url)
+      .slice(0, 3)
+      .map((p) => ({
+        title: p.title,
+        date: p.date,
+        image: p.image,
+        url: `https://bitroot.org${p.url}`,
+      }));
+  } catch {
+    return [];
+  }
+}
+
+function blogSection(posts) {
+  if (!posts.length) return "";
+  const rows = posts
+    .map(
+      (p, i) => `<tr>
+        <td width="118" style="padding:12px 16px 12px 0;${i > 0 ? "border-top:1px solid #eee9e0;" : ""}vertical-align:top;">
+          <a href="${p.url}"><img src="${esc(p.image)}" width="118" height="78" alt="" style="display:block;border:0;border-radius:10px;width:118px;height:78px;object-fit:cover;background:#eee9e0;" /></a>
+        </td>
+        <td style="padding:12px 0;${i > 0 ? "border-top:1px solid #eee9e0;" : ""}vertical-align:top;">
+          <a href="${p.url}" style="font-family:${SANS};font-size:14px;font-weight:600;line-height:1.4;color:${INK};text-decoration:none;">${esc(p.title)}</a>
+          <div style="font-family:${MONO};font-size:10.5px;color:${INK_FAINT};margin-top:4px;">${esc(p.date)}</div>
+        </td>
+      </tr>`,
+    )
+    .join("");
+  return `<p style="margin:26px 0 6px;font-family:${MONO};font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:${INK_FAINT};">fresh from the blog</p>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin:0 0 6px;">${rows}</table>
+    <p style="margin:2px 0 0;"><a href="https://bitroot.org/blog/" style="font-family:${MONO};font-size:11.5px;color:${BRAND};text-decoration:none;">read the newslogger &rarr;</a></p>`;
+}
+
 // The welcome email is a founder's letter, not a receipt — a personal note
-// from Yash, what to expect, one CTA, and a "start here" map of the toolbox.
-function welcomeHtml() {
+// from Yash, what to expect, one CTA, a "start here" map of the toolbox, and
+// the three latest blog posts.
+function welcomeHtml({ posts = [] } = {}) {
   const startHere = [
     {
       label: "kits",
@@ -527,6 +572,7 @@ function welcomeHtml() {
     </table>
     <p style="margin:0 0 10px;font-family:${MONO};font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:${INK_FAINT};">start here</p>
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin:0 0 6px;">${startRows}</table>
+    ${blogSection(posts)}
     <p style="${P}margin-top:22px;">
       One more thing: this address takes replies, and I read them. Tell me what you&rsquo;re building &mdash; it genuinely shapes what we write next.
     </p>
