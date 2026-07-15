@@ -124,6 +124,18 @@ export const kits: Item[] = [
 
 export const guides: Item[] = [
   {
+    slug: "automate-marketing-ops-with-claude-cowork",
+    category: "guide",
+    title:
+      "How to Automate Marketing Operations with Claude Cowork: A Hands-On Guide for 2026",
+    summary:
+      "Step-by-step guide to building automated reporting, campaign builds, and task workflows — with real templates and skills. Weekly reports go from 5 hours to 15 minutes.",
+    tags: ["AI", "Claude", "Marketing", "Automation"],
+    updatedAt: "2026-07-15",
+    href: "/guides/automate-marketing-ops-with-claude-cowork",
+    difficulty: "intermediate",
+  },
+  {
     slug: "ship-a-waitlist-in-2-hours",
     category: "guide",
     title: "Ship a waitlist in 2 hours",
