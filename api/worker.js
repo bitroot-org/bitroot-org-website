@@ -120,6 +120,17 @@ async function handleNewsletter(body, env, ctx) {
             [sub.id],
           );
         }
+        // welcome_email_sent_at doubles as the "already notified" marker so
+        // repeat submits of the same address don't re-notify.
+        await sendBrevo(env, {
+          to: notifyRecipients(env),
+          replyTo: { email },
+          subject: `New sign up: newsletter on ${siteDomain(site)}`,
+          textContent: internalText("newsletter", siteDomain(site), [
+            ["Email", email],
+            ["Location", location],
+          ]),
+        });
       }
     })(),
   );
@@ -169,14 +180,14 @@ async function handleEarlyAccess(body, env, ctx) {
         sendBrevo(env, {
           to: notifyRecipients(env),
           replyTo: { email, name: name || undefined },
-          subject: `[Early access · bitroot.org] ${name || email} · ${productName} · ${programName}`,
-          htmlContent: internalHtml("New early-access request", [
+          subject: `New sign up: early access on ${siteDomain("org")}`,
+          textContent: internalText("early access", siteDomain("org"), [
             ["Name", name],
             ["Email", email],
             ["Product", productName],
             ["Program", programName],
             ["Handle", handle],
-            ["Building / making", context],
+            ["Context", context],
           ]),
         }),
       ];
@@ -208,13 +219,17 @@ async function handleContact(body, env, ctx) {
       sendBrevo(env, {
         to: [{ email, name: name || undefined }],
         subject: "Got your message — we'll reply within one business day",
-        htmlContent: contactAckHtml({ firstName: (name || "").split(/\s+/)[0] || "there" }),
+        htmlContent: contactAckHtml({
+          firstName: (name || "").split(/\s+/)[0] || "there",
+          topic,
+          message,
+        }),
       }),
       sendBrevo(env, {
         to: notifyRecipients(env),
         replyTo: { email, name: name || undefined },
-        subject: `[Contact · bitroot.org] ${name || email}${topic ? ` · ${topic}` : ""}`,
-        htmlContent: internalHtml("New message", [
+        subject: `New sign up: contact form on ${siteDomain("org")}`,
+        textContent: internalText("contact form", siteDomain("org"), [
           ["Name", name],
           ["Email", email],
           ["Topic", topic],
@@ -325,13 +340,26 @@ async function mailerliteUpsert(env, email) {
 
 /* ─── Brevo ────────────────────────────────────────────────────────────── */
 
+// Map a `site` capture value to the domain shown in internal notifications.
+function siteDomain(site) {
+  const domains = {
+    org: "bitroot.org",
+    club: "bitroot.club",
+    blog: "bitroot.org/blog",
+    platter: "bitroot.org/platter",
+  };
+  return domains[site] || site || "bitroot.org";
+}
+
 function notifyRecipients(env) {
   const emails = [...new Set([env.NOTIFY_EMAIL].filter(Boolean))];
   return emails.map((email) => ({ email }));
 }
 
 // Returns true on success. Never throws — a mail outage must not fail a form.
-async function sendBrevo(env, { to, subject, htmlContent, replyTo }) {
+// Pass htmlContent for designed subscriber emails, textContent for plain
+// internal notifications.
+async function sendBrevo(env, { to, subject, htmlContent, textContent, replyTo }) {
   if (!env.BREVO_API_KEY) {
     console.warn("BREVO_API_KEY not set — skipping send");
     return false;
@@ -349,7 +377,8 @@ async function sendBrevo(env, { to, subject, htmlContent, replyTo }) {
         to,
         replyTo,
         subject,
-        htmlContent,
+        ...(htmlContent ? { htmlContent } : {}),
+        ...(textContent ? { textContent } : {}),
       }),
     });
     if (!res.ok) {
@@ -366,16 +395,50 @@ async function sendBrevo(env, { to, subject, htmlContent, replyTo }) {
 /* ─── Email templates (paper/ink, ember accent — matches bitroot.org) ──── */
 
 const EMBER = "#c2410c";
+const INK = "#1c1917";
+const INK_SOFT = "#57534e";
+const INK_FAINT = "#9a958a";
+const LINE = "#e8e5de";
+const SANS =
+  "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif";
+const MONO =
+  "'SF Mono',SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace";
+// Served from the static site (email clients don't render SVG).
+const LOGO_URL = "https://bitroot.org/images/email/bitroot-logo.png";
 
-function shell(inner, footer = "Bitroot &middot; bitroot.org") {
-  return `<div style="margin:0;padding:32px 16px;background:#f7f6f3;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
-    <div style="max-width:520px;margin:0 auto;background:#fffdf9;border:1px solid #e8e5de;border-radius:16px;overflow:hidden;">
-      <div style="height:3px;background:linear-gradient(90deg,${EMBER},rgba(194,65,12,0.25),transparent);"></div>
-      <div style="padding:32px;">${inner}</div>
-    </div>
-    <p style="max-width:520px;margin:16px auto 0;text-align:center;font-size:12px;color:#9a958a;">${footer}</p>
+// Shared frame: paper background, one card, logo lockup over a dashed rule,
+// terminal-style eyebrow. Tables + inline styles only (Outlook/Gmail safe).
+function shell({ eyebrow, inner, footnote }) {
+  return `<div style="margin:0;padding:36px 16px;background:#f4f2ed;font-family:${SANS};">
+    <table role="presentation" align="center" width="560" cellpadding="0" cellspacing="0" style="width:100%;max-width:560px;margin:0 auto;">
+      <tr><td>
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#fffdf9;border:1px solid ${LINE};border-radius:18px;">
+          <tr><td style="height:3px;border-radius:18px 18px 0 0;background:${EMBER};background-image:linear-gradient(90deg,${EMBER},rgba(194,65,12,0.25),transparent);font-size:0;line-height:0;">&nbsp;</td></tr>
+          <tr><td style="padding:28px 36px 0;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="36" style="vertical-align:middle;"><img src="${LOGO_URL}" width="32" height="32" alt="Bitroot" style="display:block;border:0;border-radius:8px;" /></td>
+                <td style="vertical-align:middle;padding-left:10px;font-family:${SANS};font-size:16px;font-weight:800;letter-spacing:-0.01em;color:${INK};">bitroot<span style="color:${EMBER};">.org</span></td>
+                <td align="right" style="vertical-align:middle;font-family:${MONO};font-size:10.5px;color:${INK_FAINT};">the founder&rsquo;s toolbox</td>
+              </tr>
+            </table>
+            <div style="margin-top:20px;border-top:1px dashed #d9d4c9;font-size:0;line-height:0;">&nbsp;</div>
+          </td></tr>
+          <tr><td style="padding:18px 36px 36px;">
+            <p style="margin:0 0 10px;font-family:${MONO};font-size:11px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:${EMBER};">~/ ${eyebrow}</p>
+            ${inner}
+          </td></tr>
+        </table>
+        <p style="margin:18px 8px 0;text-align:center;font-family:${MONO};font-size:11px;line-height:1.7;color:${INK_FAINT};">
+          bitroot.org &mdash; free, no gates, maintained weekly${footnote ? `<br/>${footnote}` : ""}
+        </p>
+      </td></tr>
+    </table>
   </div>`;
 }
+
+const H1 = `margin:0 0 16px;font-family:${SANS};font-size:27px;line-height:1.2;font-weight:800;letter-spacing:-0.02em;color:${INK};`;
+const P = `margin:0 0 18px;font-family:${SANS};font-size:15px;line-height:1.65;color:${INK_SOFT};`;
 
 function esc(s) {
   return String(s == null ? "" : s)
@@ -385,63 +448,107 @@ function esc(s) {
 }
 
 function signoff() {
-  return `<p style="margin:28px 0 2px;font-size:15px;line-height:1.6;color:#57534e;">Talk soon,</p>
+  return `<p style="margin:28px 0 2px;font-family:${SANS};font-size:15px;line-height:1.6;color:${INK_SOFT};">Talk soon,</p>
     <p style="margin:0;font-family:'Segoe Script','Bradley Hand','Snell Roundhand','Brush Script MT',cursive;font-size:30px;line-height:1.1;color:${EMBER};">Yash</p>
-    <p style="margin:6px 0 0;font-size:13px;color:#9a958a;">Yash Thakur &middot; Founder, Bitroot</p>`;
+    <p style="margin:6px 0 0;font-family:${MONO};font-size:11.5px;color:${INK_FAINT};">Yash Thakur &middot; founder, Bitroot</p>`;
 }
 
 function welcomeHtml() {
-  return shell(`
-    <p style="margin:0 0 4px;font-size:11px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:${EMBER};">~/ the weekly dispatch</p>
-    <h1 style="margin:0 0 16px;font-size:26px;line-height:1.25;color:#1c1917;">You&rsquo;re on the list. 🎉</h1>
-    <p style="margin:0 0 18px;font-size:15px;line-height:1.6;color:#57534e;">
+  return shell({
+    eyebrow: "the weekly dispatch",
+    inner: `
+    <h1 style="${H1}">You&rsquo;re on the list.</h1>
+    <p style="${P}">
       One email, every Sunday: what we shipped, what broke, and what&rsquo;s new in the toolbox. No fluff, no lifestyle takes.
     </p>
-    <p style="margin:0 0 18px;font-size:15px;line-height:1.6;color:#57534e;">
-      Until then, the full archive is public at <a href="https://bitroot.org/newsletter/" style="color:${EMBER};">bitroot.org/newsletter</a> &mdash; no gates, permanent URLs.
-    </p>
-    <p style="margin:0;font-size:13px;line-height:1.55;color:#9a958a;">Change your mind later? Every issue has a one-click unsubscribe.</p>
-    ${signoff()}
-  `);
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin:0 0 18px;">
+      <tr>
+        <td style="padding:10px 0;border-top:1px solid #eee9e0;font-family:${MONO};font-size:11px;color:${INK_FAINT};white-space:nowrap;padding-right:16px;">sun 07:00</td>
+        <td style="padding:10px 0;border-top:1px solid #eee9e0;font-family:${SANS};font-size:14px;line-height:1.5;color:${INK_SOFT};">The dispatch lands in this inbox.</td>
+      </tr>
+      <tr>
+        <td style="padding:10px 0;border-top:1px solid #eee9e0;font-family:${MONO};font-size:11px;color:${INK_FAINT};white-space:nowrap;padding-right:16px;">anytime</td>
+        <td style="padding:10px 0;border-top:1px solid #eee9e0;font-family:${SANS};font-size:14px;line-height:1.5;color:${INK_SOFT};">The full archive stays public at <a href="https://bitroot.org/newsletter/" style="color:${EMBER};">bitroot.org/newsletter</a> &mdash; permanent URLs, no gates.</td>
+      </tr>
+      <tr>
+        <td style="padding:10px 0;border-top:1px solid #eee9e0;border-bottom:1px solid #eee9e0;font-family:${MONO};font-size:11px;color:${INK_FAINT};white-space:nowrap;padding-right:16px;">any issue</td>
+        <td style="padding:10px 0;border-top:1px solid #eee9e0;border-bottom:1px solid #eee9e0;font-family:${SANS};font-size:14px;line-height:1.5;color:${INK_SOFT};">One-click unsubscribe, no hard feelings.</td>
+      </tr>
+    </table>
+    ${signoff()}`,
+    footnote:
+      "You&rsquo;re getting this because you subscribed at bitroot.org.",
+  });
 }
 
 function earlyAccessHtml({ firstName, productName, programName }) {
-  return shell(`
-    <p style="margin:0 0 4px;font-size:11px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:${EMBER};">Request received</p>
-    <h1 style="margin:0 0 16px;font-size:26px;line-height:1.25;color:#1c1917;">You&rsquo;re in the queue, ${esc(firstName)}.</h1>
-    <p style="margin:0 0 18px;font-size:15px;line-height:1.6;color:#57534e;">
-      Your <strong style="color:#1c1917;">${esc(programName)}</strong> request for <strong style="color:#1c1917;">${esc(productName)}</strong> is logged. Here&rsquo;s what happens next:
+  return shell({
+    eyebrow: "request received",
+    inner: `
+    <h1 style="${H1}">You&rsquo;re in the queue, ${esc(firstName)}.</h1>
+    <p style="${P}">
+      Your <strong style="color:${INK};">${esc(programName)}</strong> request for <strong style="color:${INK};">${esc(productName)}</strong> is logged. Here&rsquo;s what happens next:
     </p>
-    <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;">
-      <tr><td style="padding:11px 0;font-size:14px;line-height:1.5;color:#57534e;border-bottom:1px solid #eee9e0;"><strong style="color:#1c1917;">Today</strong> &middot; Your request is in the review queue.</td></tr>
-      <tr><td style="padding:11px 0;font-size:14px;line-height:1.5;color:#57534e;border-bottom:1px solid #eee9e0;"><strong style="color:#1c1917;">Within 7 days</strong> &middot; Your access link lands in this inbox.</td></tr>
-      <tr><td style="padding:11px 0;font-size:14px;line-height:1.5;color:#57534e;"><strong style="color:#1c1917;">Need it sooner?</strong> &middot; Just reply to this email &mdash; it reaches a human.</td></tr>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin:0 0 4px;">
+      <tr>
+        <td style="padding:10px 0;border-top:1px solid #eee9e0;font-family:${MONO};font-size:11px;color:${INK_FAINT};white-space:nowrap;padding-right:16px;vertical-align:top;">today</td>
+        <td style="padding:10px 0;border-top:1px solid #eee9e0;font-family:${SANS};font-size:14px;line-height:1.5;color:${INK_SOFT};">Your request is in the review queue.</td>
+      </tr>
+      <tr>
+        <td style="padding:10px 0;border-top:1px solid #eee9e0;font-family:${MONO};font-size:11px;color:${INK_FAINT};white-space:nowrap;padding-right:16px;vertical-align:top;">&le; 7 days</td>
+        <td style="padding:10px 0;border-top:1px solid #eee9e0;font-family:${SANS};font-size:14px;line-height:1.5;color:${INK_SOFT};">Your access link lands in this inbox.</td>
+      </tr>
+      <tr>
+        <td style="padding:10px 0;border-top:1px solid #eee9e0;border-bottom:1px solid #eee9e0;font-family:${MONO};font-size:11px;color:${INK_FAINT};white-space:nowrap;padding-right:16px;vertical-align:top;">sooner?</td>
+        <td style="padding:10px 0;border-top:1px solid #eee9e0;border-bottom:1px solid #eee9e0;font-family:${SANS};font-size:14px;line-height:1.5;color:${INK_SOFT};">Reply to this email &mdash; it reaches a human.</td>
+      </tr>
     </table>
-    ${signoff()}
-  `);
+    ${signoff()}`,
+    footnote:
+      "One-off confirmation &mdash; you&rsquo;re not on a list unless you asked to be.",
+  });
 }
 
-function contactAckHtml({ firstName }) {
-  return shell(`
-    <p style="margin:0 0 4px;font-size:11px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:${EMBER};">Message received</p>
-    <h1 style="margin:0 0 16px;font-size:26px;line-height:1.25;color:#1c1917;">Thanks, ${esc(firstName)} &mdash; we&rsquo;ve got it.</h1>
-    <p style="margin:0 0 18px;font-size:15px;line-height:1.6;color:#57534e;">
+function contactAckHtml({ firstName, topic, message }) {
+  const quoted = message
+    ? `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 18px;">
+        <tr>
+          <td width="3" style="background:${LINE};border-radius:3px;font-size:0;line-height:0;">&nbsp;</td>
+          <td style="padding:2px 0 2px 16px;">
+            <p style="margin:0 0 6px;font-family:${MONO};font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:${INK_FAINT};">your message${topic ? ` &middot; ${esc(topic)}` : ""}</p>
+            <p style="margin:0;font-family:${SANS};font-size:14px;line-height:1.6;color:${INK_SOFT};white-space:pre-wrap;">${esc(message.length > 600 ? `${message.slice(0, 600)}…` : message)}</p>
+          </td>
+        </tr>
+      </table>`
+    : "";
+  return shell({
+    eyebrow: "message received",
+    inner: `
+    <h1 style="${H1}">Thanks, ${esc(firstName)} &mdash; we&rsquo;ve got it.</h1>
+    <p style="${P}">
       Your message is in our inbox and a real person will reply within one business day. If anything is urgent, reply to this email and it jumps the queue.
     </p>
-    ${signoff()}
-  `);
+    ${quoted}
+    ${signoff()}`,
+    footnote:
+      "One-off confirmation &mdash; sent because you wrote to us at bitroot.org/contact.",
+  });
 }
 
-function internalHtml(title, fields) {
-  const row = ([label, value]) =>
-    value
-      ? `<tr><td style="padding:8px 12px 8px 0;font-size:13px;color:#9a958a;white-space:nowrap;vertical-align:top;">${esc(label)}</td><td style="padding:8px 0;font-size:14px;color:#1c1917;white-space:pre-wrap;">${esc(value)}</td></tr>`
-      : "";
-  return shell(
-    `<p style="margin:0 0 4px;font-size:11px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:${EMBER};">${esc(title)}</p>
-     <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;">${fields.map(row).join("")}</table>`,
-    "Source &middot; bitroot.org &mdash; sent from the bitroot.org website",
-  );
+// Internal notifications: a plain typed email, nothing designed. Long or
+// multi-line values drop onto their own block so the message stays readable.
+function internalText(context, source, fields) {
+  const lines = [];
+  for (const [label, value] of fields) {
+    if (!value) continue;
+    const key = label.toLowerCase();
+    if (String(value).length > 80 || /\n/.test(String(value))) {
+      lines.push(`${key}:\n${value}`);
+    } else {
+      lines.push(`${`${key}:`.padEnd(10)}${value}`);
+    }
+  }
+  return `New sign up: ${context} on ${source}\n\n${lines.join("\n")}\n\n—\nbitroot-forms · reply to this email to answer them directly`;
 }
 
 /* ─── Small helpers ────────────────────────────────────────────────────── */
