@@ -1,7 +1,7 @@
-import Link from "next/link";
 import Container from "@/components/ui/Container";
 import Tag from "@/components/ui/Tag";
 import ProductIcon from "@/components/products/ProductIcon";
+import BitStudioCTA from "@/components/home/BitStudioCTA";
 import { products, daysSince, type ProductStatus } from "@/content/products";
 
 function StatusTag({ status }: { status: ProductStatus }) {
@@ -12,20 +12,6 @@ function StatusTag({ status }: { status: ProductStatus }) {
     return <Tag variant="ember">EARLY ACCESS</Tag>;
   }
   return <Tag variant="muted">WAITLIST</Tag>;
-}
-
-function Arrow() {
-  return (
-    <svg width="13" height="13" viewBox="0 0 16 16" fill="none">
-      <path
-        d="M3 8h10M9 4l4 4-4 4"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
 }
 
 export default function BitStudioSpotlight() {
@@ -180,24 +166,8 @@ export default function BitStudioSpotlight() {
                 </div>
               )}
 
-              {/* CTA buttons */}
-              <div className="mt-7 flex flex-wrap items-center gap-2">
-                {/* Primary: redirects to /products/ landing at the BitStudio card */}
-                <Link
-                  href="/products/#bitstudio"
-                  className="hover-lift inline-flex items-center gap-1.5 text-[13.5px] font-medium bg-ink text-paper hover:bg-ink-2 rounded-full px-5 py-2.5"
-                >
-                  Claim early access
-                  <Arrow />
-                </Link>
-                {/* Secondary: redirects to /products/#releases (absolute, we are on homepage) */}
-                <Link
-                  href="/products/#releases"
-                  className="hover-lift inline-flex items-center gap-1.5 text-[13.5px] font-medium border border-line bg-paper text-ink-2 hover:border-ink-3 hover:text-ink rounded-full px-5 py-2.5"
-                >
-                  See release notes
-                </Link>
-              </div>
+              {/* CTA buttons — modal opens in place, no detour to /products */}
+              <BitStudioCTA product={bitStudio} />
             </div>
           </div>
         </div>

@@ -711,3 +711,17 @@ pre.shiki .line {
   0%, 60%, 100% { opacity: 0.3; transform: translateY(0); }
   30% { opacity: 1; transform: translateY(-3px); }
 }
+
+/* ─── Page fade navigation (FadeLink) ─── */
+
+/* FadeLink adds .page-fading before router.push; PageFadeReset removes it
+   after the route change so the destination fades back in. */
+@media (prefers-reduced-motion: no-preference) {
+  body {
+    transition: opacity 200ms ease;
+  }
+}
+body.page-fading {
+  opacity: 0;
+  pointer-events: none;
+}

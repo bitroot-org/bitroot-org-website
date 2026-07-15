@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { identify, today, track } from "@/lib/analytics";
+import { subscribeNewsletter } from "@/lib/forms";
 import Container from "@/components/ui/Container";
 import Tag from "@/components/ui/Tag";
 import ProductIcon from "@/components/products/ProductIcon";
@@ -249,7 +250,10 @@ export default function ProductsClient() {
 
 function HeadsUpForm() {
   const [email, setEmail] = useState("");
-  const [done, setDone] = useState(false);
+  const [state, setState] = useState<"idle" | "loading" | "done" | "error">(
+    "idle",
+  );
+  const done = state === "done";
 
   if (done) {
     return (
@@ -269,35 +273,49 @@ function HeadsUpForm() {
   }
 
   return (
-    <form
-      className="mt-6 flex flex-col sm:flex-row gap-2 max-w-lg"
-      onSubmit={(e) => {
-        e.preventDefault();
-        if (!email) return;
-        identify(
-          email,
-          { newsletter_subscriber: true },
-          { newsletter_signup_date: today() },
-        );
-        track("newsletter_signup", { location: "products_heads_up" });
-        setDone(true);
-      }}
-    >
-      <input
-        type="email"
-        required
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="you@yourstartup.com"
-        className="flex-1 rounded-full border border-line bg-paper px-4 py-2.5 text-[14px] placeholder:text-ink-4 focus:outline-none focus:border-ember"
-      />
-      <button
-        type="submit"
-        className="hover-lift rounded-full bg-ink text-paper px-5 py-2.5 text-[13.5px] font-medium hover:bg-ink-2 transition-colors"
+    <>
+      <form
+        className="mt-6 flex flex-col sm:flex-row gap-2 max-w-lg"
+        onSubmit={async (e) => {
+          e.preventDefault();
+          if (!email || state === "loading") return;
+          setState("loading");
+          const result = await subscribeNewsletter(email, "products_heads_up");
+          if (!result.ok) {
+            setState("error");
+            return;
+          }
+          identify(
+            email,
+            { newsletter_subscriber: true },
+            { newsletter_signup_date: today() },
+          );
+          track("newsletter_signup", { location: "products_heads_up" });
+          setState("done");
+        }}
       >
-        Notify me
-      </button>
-    </form>
+        <input
+          type="email"
+          required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="you@yourstartup.com"
+          className="flex-1 rounded-full border border-line bg-paper px-4 py-2.5 text-[14px] placeholder:text-ink-4 focus:outline-none focus:border-ember"
+        />
+        <button
+          type="submit"
+          disabled={state === "loading"}
+          className="hover-lift rounded-full bg-ink text-paper px-5 py-2.5 text-[13.5px] font-medium hover:bg-ink-2 disabled:opacity-60 transition-colors"
+        >
+          {state === "loading" ? "…" : "Notify me"}
+        </button>
+      </form>
+      {state === "error" && (
+        <p className="mt-2 text-[12px] text-ember">
+          Something went wrong — please try again in a moment.
+        </p>
+      )}
+    </>
   );
 }
 

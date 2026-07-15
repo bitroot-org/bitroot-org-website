@@ -13,7 +13,8 @@ type IconKey =
   | "kits"
   | "guides"
   | "tools"
-  | "newsletter";
+  | "newsletter"
+  | "contact";
 
 type NavLink = {
   label: string;
@@ -29,6 +30,7 @@ const nav: NavLink[] = [
   { label: "Guides", href: "/guides", icon: "guides", pillarKey: "guides" },
   { label: "Tools", href: "/tools", icon: "tools", pillarKey: "tools" },
   { label: "Newsletter", href: "/newsletter", icon: "newsletter" },
+  { label: "Contact", href: "/contact", icon: "contact" },
 ];
 
 function pillarFor(key: NonNullable<NavLink["pillarKey"]>) {
@@ -96,6 +98,13 @@ function NavIcon({ name, size = 22 }: { name: IconKey; size?: number }) {
         <svg {...props}>
           <rect x="3" y="5" width="18" height="14" rx="2" />
           <path d="M3.5 7l8.5 6 8.5-6" />
+        </svg>
+      );
+    case "contact":
+      return (
+        <svg {...props}>
+          <path d="M20 12a8 8 0 10-3.1 6.3L20 19l-.7-3.1A7.96 7.96 0 0020 12z" />
+          <path d="M8.5 10.5h7M8.5 13.5h4.5" />
         </svg>
       );
   }

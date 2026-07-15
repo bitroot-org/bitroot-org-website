@@ -421,7 +421,6 @@ function shell({ eyebrow, inner, footnote }) {
     <table role="presentation" align="center" width="560" cellpadding="0" cellspacing="0" style="width:100%;max-width:560px;margin:0 auto;">
       <tr><td>
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#fffdf9;border:1px solid ${LINE};border-radius:18px;">
-          <tr><td style="height:3px;border-radius:18px 18px 0 0;background:${BRAND};background-image:linear-gradient(90deg,${BRAND},rgba(28,119,245,0.25),transparent);font-size:0;line-height:0;">&nbsp;</td></tr>
           <tr><td style="padding:28px 36px 0;">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
               <tr>

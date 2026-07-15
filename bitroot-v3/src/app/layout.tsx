@@ -8,6 +8,7 @@ import {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
+import { PageFadeReset } from "@/components/ui/FadeLink";
 import { siteName, siteUrl } from "@/lib/seo";
 import "./globals.css";
 
@@ -92,6 +93,7 @@ export default function RootLayout({
       <body className="min-h-screen text-ink antialiased font-sans flex flex-col">
         <JsonLd data={organizationJsonLd} />
         <JsonLd data={webSiteJsonLd} />
+        <PageFadeReset />
         <div className="page-bg" aria-hidden />
         <Navbar />
         <main className="flex-1">{children}</main>
