@@ -12,6 +12,7 @@ import type { PostHog } from "posthog-js";
  *   - cta_click          { label, location, href? }
  *   - newsletter_signup  { location }
  *   - early_access_submit { product, program, name?, handle?, context? }
+ *   - contact_submit     { topic?, location }
  *
  * Identity: on any form submit that collects an email, call identify(email)
  * so the anonymous session merges into a person profile keyed by email. This

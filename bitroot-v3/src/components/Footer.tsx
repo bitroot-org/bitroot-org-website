@@ -27,6 +27,7 @@ const sections = [
       { label: "Who we are", href: "/about" },
       { label: "Why .org exists", href: "/about#why" },
       { label: "Contribute", href: "/about#contribute" },
+      { label: "Contact", href: "/contact" },
       { label: "RSS", href: "/rss.xml" },
     ],
   },
