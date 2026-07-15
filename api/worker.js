@@ -394,50 +394,58 @@ async function sendBrevo(env, { to, subject, htmlContent, textContent, replyTo }
 
 /* ─── Email templates (paper/ink, ember accent — matches bitroot.org) ──── */
 
-const EMBER = "#c2410c";
+// Brand primary (matches the logo mark).
+const BRAND = "#1c77f5";
 const INK = "#1c1917";
 const INK_SOFT = "#57534e";
 const INK_FAINT = "#9a958a";
 const LINE = "#e8e5de";
+// Brand faces with graceful fallbacks. The @import in shell() loads them in
+// clients that allow remote fonts (Apple Mail/iOS); Gmail et al. fall back
+// to the system stacks below.
+const DISPLAY =
+  "'Funnel Display',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif";
 const SANS =
-  "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif";
+  "'Geist',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif";
 const MONO =
-  "'SF Mono',SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace";
+  "'Geist Mono','SF Mono',SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace";
+const SERIF = "'Instrument Serif',Georgia,'Times New Roman',serif";
+const FONTS_CSS = `<style type="text/css">@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Geist:wght@400..800&family=Geist+Mono:wght@400..600&family=Instrument+Serif:ital@0;1&display=swap');</style>`;
 // Served from the static site (email clients don't render SVG).
 const LOGO_URL = "https://bitroot.org/images/email/bitroot-logo.png";
 
 // Shared frame: paper background, one card, logo lockup over a dashed rule,
 // terminal-style eyebrow. Tables + inline styles only (Outlook/Gmail safe).
 function shell({ eyebrow, inner, footnote }) {
-  return `<div style="margin:0;padding:36px 16px;background:#f4f2ed;font-family:${SANS};">
+  return `${FONTS_CSS}<div style="margin:0;padding:36px 16px;background:#f4f2ed;font-family:${SANS};">
     <table role="presentation" align="center" width="560" cellpadding="0" cellspacing="0" style="width:100%;max-width:560px;margin:0 auto;">
       <tr><td>
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#fffdf9;border:1px solid ${LINE};border-radius:18px;">
-          <tr><td style="height:3px;border-radius:18px 18px 0 0;background:${EMBER};background-image:linear-gradient(90deg,${EMBER},rgba(194,65,12,0.25),transparent);font-size:0;line-height:0;">&nbsp;</td></tr>
+          <tr><td style="height:3px;border-radius:18px 18px 0 0;background:${BRAND};background-image:linear-gradient(90deg,${BRAND},rgba(28,119,245,0.25),transparent);font-size:0;line-height:0;">&nbsp;</td></tr>
           <tr><td style="padding:28px 36px 0;">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
               <tr>
                 <td width="36" style="vertical-align:middle;"><img src="${LOGO_URL}" width="32" height="32" alt="Bitroot" style="display:block;border:0;border-radius:8px;" /></td>
-                <td style="vertical-align:middle;padding-left:10px;font-family:${SANS};font-size:16px;font-weight:800;letter-spacing:-0.01em;color:${INK};">bitroot<span style="color:${EMBER};">.org</span></td>
+                <td style="vertical-align:middle;padding-left:10px;font-family:${DISPLAY};font-size:16px;font-weight:700;letter-spacing:-0.01em;color:${INK};">bitroot<span style="color:${BRAND};">.org</span></td>
                 <td align="right" style="vertical-align:middle;font-family:${MONO};font-size:10.5px;color:${INK_FAINT};">the founder&rsquo;s toolbox</td>
               </tr>
             </table>
             <div style="margin-top:20px;border-top:1px dashed #d9d4c9;font-size:0;line-height:0;">&nbsp;</div>
           </td></tr>
           <tr><td style="padding:18px 36px 36px;">
-            <p style="margin:0 0 10px;font-family:${MONO};font-size:11px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:${EMBER};">~/ ${eyebrow}</p>
+            <p style="margin:0 0 10px;font-family:${MONO};font-size:11px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:${BRAND};">~/ ${eyebrow}</p>
             ${inner}
           </td></tr>
         </table>
         <p style="margin:18px 8px 0;text-align:center;font-family:${MONO};font-size:11px;line-height:1.7;color:${INK_FAINT};">
-          bitroot.org &mdash; free, no gates, maintained weekly${footnote ? `<br/>${footnote}` : ""}
+          <a href="https://bitroot.org" style="color:${BRAND};text-decoration:none;">bitroot.org</a> &mdash; free, no gates, maintained weekly${footnote ? `<br/>${footnote}` : ""}
         </p>
       </td></tr>
     </table>
   </div>`;
 }
 
-const H1 = `margin:0 0 16px;font-family:${SANS};font-size:27px;line-height:1.2;font-weight:800;letter-spacing:-0.02em;color:${INK};`;
+const H1 = `margin:0 0 16px;font-family:${DISPLAY};font-size:28px;line-height:1.15;font-weight:700;letter-spacing:-0.01em;color:${INK};`;
 const P = `margin:0 0 18px;font-family:${SANS};font-size:15px;line-height:1.65;color:${INK_SOFT};`;
 
 function esc(s) {
@@ -449,7 +457,7 @@ function esc(s) {
 
 function signoff() {
   return `<p style="margin:28px 0 2px;font-family:${SANS};font-size:15px;line-height:1.6;color:${INK_SOFT};">Talk soon,</p>
-    <p style="margin:0;font-family:'Segoe Script','Bradley Hand','Snell Roundhand','Brush Script MT',cursive;font-size:30px;line-height:1.1;color:${EMBER};">Yash</p>
+    <p style="margin:0;font-family:${SERIF};font-style:italic;font-size:28px;line-height:1.15;color:${INK};">Yash</p>
     <p style="margin:6px 0 0;font-family:${MONO};font-size:11.5px;color:${INK_FAINT};">Yash Thakur &middot; founder, Bitroot</p>`;
 }
 
@@ -468,7 +476,7 @@ function welcomeHtml() {
       </tr>
       <tr>
         <td style="padding:10px 0;border-top:1px solid #eee9e0;font-family:${MONO};font-size:11px;color:${INK_FAINT};white-space:nowrap;padding-right:16px;">anytime</td>
-        <td style="padding:10px 0;border-top:1px solid #eee9e0;font-family:${SANS};font-size:14px;line-height:1.5;color:${INK_SOFT};">The full archive stays public at <a href="https://bitroot.org/newsletter/" style="color:${EMBER};">bitroot.org/newsletter</a> &mdash; permanent URLs, no gates.</td>
+        <td style="padding:10px 0;border-top:1px solid #eee9e0;font-family:${SANS};font-size:14px;line-height:1.5;color:${INK_SOFT};">The full archive stays public at <a href="https://bitroot.org/newsletter/" style="color:${BRAND};">bitroot.org/newsletter</a> &mdash; permanent URLs, no gates.</td>
       </tr>
       <tr>
         <td style="padding:10px 0;border-top:1px solid #eee9e0;border-bottom:1px solid #eee9e0;font-family:${MONO};font-size:11px;color:${INK_FAINT};white-space:nowrap;padding-right:16px;">any issue</td>
