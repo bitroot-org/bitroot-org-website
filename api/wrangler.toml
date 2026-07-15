@@ -4,6 +4,7 @@
 name = "bitroot-forms"
 main = "worker.js"
 compatibility_date = "2025-06-01"
+routes = [{ pattern = "api.bitroot.in", custom_domain = true }]
 
 [vars]
 SENDER_EMAIL = "founder@bitroot.club"

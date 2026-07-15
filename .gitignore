@@ -73,3 +73,4 @@ yarn.lock
 /blog/2[0-9][0-9][0-9]-*/
 .dev.vars
 api/.wrangler/
+api/.secrets.bulk.json
