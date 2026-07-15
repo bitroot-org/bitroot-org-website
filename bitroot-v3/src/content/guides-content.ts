@@ -43,6 +43,619 @@ export type GuideContent = {
 };
 
 export const guidesContent: Record<string, GuideContent> = {
+  "automate-marketing-ops-with-claude-cowork": {
+    slug: "automate-marketing-ops-with-claude-cowork",
+    tagline:
+      "Step-by-step guide to building automated reporting, campaign builds, and task workflows — with real templates and skills for marketing teams of any size. From weekly reports (5 hours to 15 minutes) to multi-step campaign automation that runs on schedule.",
+    timeEstimate: "1–2 hours to set up your first automation",
+    youWillNeed: [
+      "Claude Desktop app (Pro plan $20/month minimum; Max plan $100/month for high-volume)",
+      "Marketing tech stack connected (HubSpot, Google Analytics, Slack, Google Drive minimum)",
+      "1–2 hours to set up your first automation",
+      "Basic file organization (you'll create a \"Claude Cowork\" folder structure)",
+      "Willingness to iterate (first automation gets faster each time after)",
+    ],
+    youWillEndUpWith:
+      "Fully automated weekly reports (saving 5–8 hours/week), an automated campaign build system that processes requests hourly, a reusable \"Skills\" library for your team's recurring tasks, and a human-in-the-loop approval system — Claude generates, you review, you ship.",
+    toc: [
+      { label: "0. Real numbers", id: "real-numbers" },
+      { label: "1. Why teams are switching", id: "why-switching" },
+      { label: "2. How Cowork actually works", id: "how-it-works" },
+      { label: "3. Workflow: weekly report", id: "workflow-weekly-report" },
+      { label: "4. Workflow: campaign builds", id: "workflow-campaign-build" },
+      { label: "5. Structure your folder", id: "folder-structure" },
+      { label: "6. Building custom skills", id: "building-skills" },
+      { label: "7. Common mistakes", id: "common-mistakes" },
+      { label: "8. FAQ", id: "faq" },
+      { label: "9. Your challenge", id: "challenge" },
+      { label: "10. Resources", id: "resources" },
+    ],
+    body: [
+      {
+        type: "callout",
+        tone: "tip",
+        body: "Real numbers: weekly report 90 min → 15 min (83% time saved). Campaign build 2–3 hours → 30 min per request. Competitive brief 90 min → 10 min. Content repurposing (blog → 6 channels) 2 hours → 20 min.",
+      },
+
+      { type: "h2", body: "Why marketing ops teams are switching to Claude Cowork", id: "why-switching" },
+      { type: "h3", body: "The gap between AI tools and embedded workflows" },
+      {
+        type: "p",
+        body: "In 2026, 91% of marketers use AI tools. Only 6% have actually embedded them into workflows (Supermetrics 2026). The difference is context.",
+      },
+      {
+        type: "p",
+        body: "Chat AI requires: open ChatGPT or Claude web, paste data manually, copy output, paste into Slack or email or Google Sheets, reformat to match your brand, repeat next week.",
+      },
+      {
+        type: "p",
+        body: "Claude Cowork removes the manual paste-and-reformat steps, and automates the repeat. It reads your files, connects to your tools, executes multi-step sequences, and ships final deliverables — all scheduled and recurring.",
+      },
+      { type: "h3", body: "What changed in January 2026" },
+      {
+        type: "p",
+        body: "Anthropic launched Cowork with file-first context (upload your brand guide once, it loads on every task), tool integration (connect HubSpot, Google Analytics, Slack — Cowork queries them live), Skills (turn a successful output into a permanent, reusable automation), scheduling (run the same report every Friday at 5 AM automatically), and Projects (your folder, instructions, and task history stay between sessions).",
+      },
+      {
+        type: "p",
+        body: "Cowork isn't a chatbot with extra buttons. It's an agent that reads your stack, follows your processes, and executes autonomously.",
+      },
+      { type: "h3", body: "Why this matters for marketing ops" },
+      {
+        type: "p",
+        body: "Marketing automation ROI is $5.44 per $1 spent (Gartner 2025), but only if you actually embed it. Most teams don't, because of four recurring problems:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Tool sprawl: data in Salesforce, ads in Meta, email in HubSpot, analytics in GA4 — reporting requires exporting from 5 places",
+          "Brand consistency: AI outputs generic copy; your brand has rules about tone, length, banned phrases",
+          "Repetition: same reports, same approvals, same campaign briefs every week",
+          "Handoff delays: marketing generates a brief, design waits, sales ignores the deck by Thursday",
+        ],
+      },
+      {
+        type: "p",
+        body: "Cowork solves all four. Once you build the automation, it stays built.",
+      },
+
+      { type: "h2", body: "How Claude Cowork actually works (for marketing)", id: "how-it-works" },
+      { type: "h3", body: "The three layers of Cowork" },
+      {
+        type: "p",
+        body: "Layer 1: Context — your folder. Everything in your Cowork folder is context. Cowork reads it all automatically before every task, which is why outputs match your brand without you repeating the rules each time.",
+      },
+      {
+        type: "code",
+        lang: "md",
+        source: `Claude Cowork/
+├── ABOUT ME/
+│   ├── Brand guidelines.pdf
+│   ├── Campaign strategy (FY2026).txt
+│   ├── Audience persona (ICP).md
+│   └── KPI targets.xlsx
+├── PROJECTS/
+│   ├── Q3 product launch/
+│   │   └── Campaign brief (draft).md
+│   └── Black Friday 2026/
+│       └── Email sequence outline.txt
+└── TEMPLATES/
+    ├── Weekly report template.md
+    ├── Competitive brief skeleton.md
+    └── Campaign audit checklist.txt`,
+      },
+      {
+        type: "p",
+        body: "Layer 2: Skills — reusable workflows. A \"Skill\" is a permanent recipe for a task. After your first successful report automation, you tell Claude: \"Create a Skill to remember this.\" Cowork generates a skill file that includes what data to pull, how to format it, what insights to highlight, and who to send it to. Next week, the same skill runs again — no re-explaining needed.",
+      },
+      {
+        type: "p",
+        body: "Layer 3: Connectors — live data. Connectors (via Anthropic's MCP protocol) let Cowork query your actual tools without exporting CSVs — Google Analytics for last week's traffic by channel, HubSpot for pipeline by stage, Slack for delivering the finished report, Google Drive or Sheets for reading data and writing analysis. Without connectors, you export a CSV, Cowork analyzes it, and you re-import results. With connectors, it happens in one flow.",
+      },
+      { type: "h3", body: "How it connects to your marketing stack" },
+      {
+        type: "p",
+        body: "The workflow for automated reporting looks like this:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Friday, 5 AM: scheduler triggers your \"Weekly Report\" skill",
+          "Cowork reads your brand guidelines (tone, format), your KPI targets (context for what \"good\" looks like), live data from GA4, HubSpot, and Salesforce via connectors, and last week's report (to show trends)",
+          "Cowork generates a new report with analysis and recommended actions, embedded charts, and highlights of what changed vs. last week",
+          "5:30 AM: report lands in Google Drive with a Slack notification",
+          "You review: check if the data looks right (human-in-the-loop verification)",
+          "You ship: Slack message to leadership or email to stakeholders",
+        ],
+      },
+      {
+        type: "p",
+        body: "What used to take 90 minutes on a Friday afternoon now happens while you sleep.",
+      },
+
+      { type: "h2", body: "Real workflow #1: automated weekly marketing report", id: "workflow-weekly-report" },
+      { type: "h3", body: "The problem it solves" },
+      {
+        type: "p",
+        body: "Your CEO asks Friday at 2 PM: \"What happened this week?\" You open Google Analytics to export traffic by channel, open HubSpot to get MQL and SQL counts, open Meta Ads Manager to pull spend and ROAS, open your email platform to get open/click rates, open a Google Doc to assemble it manually, write trends, recommend actions — and it's 4 PM by the time you hit send.",
+      },
+      {
+        type: "p",
+        body: "With Cowork, it's done by 5 AM Friday, waiting in Slack.",
+      },
+      { type: "h3", body: "How to set it up, step by step" },
+      {
+        type: "p",
+        body: "Step 1 — create your folder structure. In your Documents folder, create an ABOUT ME folder with brand voice and KPI benchmark files, a PROJECTS folder with your last report, and a TEMPLATES folder with the report format you want Cowork to follow:",
+      },
+      {
+        type: "code",
+        lang: "md",
+        source: `Claude Cowork/
+├── ABOUT ME/
+│   ├── Brand voice.txt
+│   │   "Tone: conversational, data-driven, no hype.
+│   │    Avoid: synergy, leverage, circle back.
+│   │    Audience: CMOs and growth leaders."
+│   └── KPI benchmarks.txt
+│       "Weekly MQL target: 150
+│        Weekly SQL target: 40
+│        Monthly CAC target: $450"
+├── PROJECTS/
+│   └── Weekly reporting/
+│       └── Last week's report.md
+└── TEMPLATES/
+    └── Weekly report format.md
+        "# Weekly Marketing Report [DATE]
+
+         ## Traffic
+         - Total sessions:
+         - Source breakdown:
+         - Key pages:
+
+         ## Lead Gen
+         - MQLs:
+         - SQLs:
+         - CAC:
+
+         ## Trends & Insights
+
+         ## Recommended Actions"`,
+      },
+      {
+        type: "p",
+        body: "Step 2 — connect your data sources. In Claude Desktop, go to Settings → MCP Servers and enable Google Analytics (via a Coupler.io MCP connector), HubSpot (native MCP available), and Slack for sending the finished report. Coupler.io is the easiest MCP connector for marketing data — it covers 400+ sources including GA4, Meta, Google Ads, and Salesforce.",
+      },
+      {
+        type: "p",
+        body: "Step 3 — create your first report manually. Open Claude Cowork, select your \"Weekly reporting\" project folder, and prompt it:",
+      },
+      {
+        type: "snippet",
+        title: "Weekly report prompt",
+        body: "Read my brand voice, KPI benchmarks, and last week's report template.\n\nConnect to Google Analytics and pull: total sessions, users, bounce rate for this week; top 5 pages by sessions; traffic breakdown by source (organic, direct, paid, referral).\n\nConnect to HubSpot and pull: MQLs generated this week; SQLs generated this week; deals closed this week; current pipeline value.\n\nCompare to last week and include % change for each metric, and whether we're tracking to targets.\n\nWrite analysis: what's moving, what's flat, which channels are performing, what we should do next.\n\nFormat it exactly like the template. Use the brand voice: conversational, data-driven, no corporate jargon.\n\nSend the final report to my Slack #marketing-metrics channel.",
+      },
+      {
+        type: "p",
+        body: "Cowork reads your files, queries GA4 and HubSpot live, calculates trends, writes analysis in your voice, and posts to Slack.",
+      },
+      {
+        type: "p",
+        body: "Step 4 — turn it into a reusable skill. Once the report looks good, tell Claude: \"Create a Skill to remember this report workflow. I want to run it every Friday at 5 AM automatically.\" Claude generates a skill file. You review it, verify it, and save it to your Cowork folder. Done.",
+      },
+      {
+        type: "p",
+        body: "Step 5 — schedule it. In Cowork, go to \"Dispatch\" (the scheduling tab) and set the frequency to every Friday at 5:00 AM, the skill to Weekly Marketing Report, and the action to run and post to Slack. From now on, your report runs automatically.",
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Real time savings: first report (manual) 90 minutes, second report (with skill) 15 minutes, weeks 3+ around 10 minutes. That's roughly 70 hours/year per person.",
+      },
+
+      { type: "h2", body: "Real workflow #2: automated campaign build & audit system", id: "workflow-campaign-build" },
+      { type: "h3", body: "The problem it solves" },
+      {
+        type: "p",
+        body: "Your team gets campaign brief requests all day — sales wants a landing page, content needs an email sequence, partnerships needs event invite templates in 3 hours. Each request means opening last campaign's files, manually updating copy and dates and CTAs, building a presentation or templates, sending for approval, and redoing half of it because \"the tone's off.\" This is where teams lose 10–20 hours/week to busywork instead of strategy.",
+      },
+      {
+        type: "p",
+        body: "With Cowork, requests hit a dispatcher skill that routes them to specialist skills. The campaign is built in 30 minutes, QA'd by humans, and shipped.",
+      },
+      { type: "h3", body: "The architecture: dispatcher + specialist skills" },
+      {
+        type: "p",
+        body: "This is the \"agentic\" part — skills calling other skills. A request like \"build email nurture sequence for DevOps audience\" hits a Dispatcher Skill, which reads your brand guidelines, the request, and the available specialist skills, then routes it to the Email Sequence Specialist. That specialist queries the email template library, segment characteristics, and past email performance data, then generates the sequence, subject lines, CTAs, and send timing. It routes to an Audit Specialist skill that checks brand compliance, link validity, CTA clarity, and mobile responsiveness, then posts to Slack #campaign-audits for human review. Marketers approve, and it ships.",
+      },
+      { type: "h3", body: "How to build it" },
+      {
+        type: "p",
+        body: "You'll need three base skills.",
+      },
+      {
+        type: "code",
+        lang: "md",
+        filename: "Skill #1 — Email Sequence Builder",
+        source: `Read:
+- Brand guidelines
+- Email template library (folder of past emails)
+- The campaign brief (audience, goal, timeline)
+
+Generate:
+- 5-email sequence
+- Subject line for each
+- Preview text
+- Clear CTA for each
+
+Output as:
+- Markdown with email copy
+- HTML snippet if needed
+- Spreadsheet with metrics (expected open rate, CTR)`,
+      },
+      {
+        type: "code",
+        lang: "md",
+        filename: "Skill #2 — Landing Page Builder",
+        source: `Read:
+- Brand guidelines
+- Landing page template
+- Campaign brief (offer, audience, conversion goal)
+
+Generate:
+- Hero headline
+- Subheading (benefit-focused)
+- 3 section bodies
+- 2 CTA buttons (primary + secondary)
+- FAQ section (3–5 questions)
+
+Output as:
+- HTML ready to drop into Unbounce / Webflow
+- Or Markdown for handoff to design`,
+      },
+      {
+        type: "code",
+        lang: "md",
+        filename: "Skill #3 — Campaign Auditor",
+        source: `Read:
+- The generated campaign (email / landing page / ad copy)
+- Brand guidelines
+
+Check for:
+- Brand voice consistency
+- Link validity (URLs work)
+- CTA clarity (is the ask clear?)
+- No misspellings
+- Mobile-friendly structure
+- Regulatory compliance (GDPR-friendly unsubscribe, CAN-SPAM, etc.)
+
+Output:
+- Pass/Flag assessment
+- If flagged: specific fixes needed
+- Human review checklist`,
+      },
+      {
+        type: "p",
+        body: "Then create the Dispatcher Skill: it reads the incoming request (via a Slack message) and the available skills, routes to Email Sequence Builder if the request mentions \"email\", to Landing Page Builder if it mentions \"landing page\" or \"lander\", or to an Ad Copy Specialist if it mentions \"ad copy\" or \"social\" — then executes the selected skill, sends the output to the Audit Specialist, and posts to Slack for review.",
+      },
+      {
+        type: "p",
+        body: "Set up Slack so users post campaign requests in #campaign-requests, Cowork picks them up automatically, the dispatcher routes the request, and finished work posts in #campaign-audits for approval.",
+      },
+      { type: "h3", body: "The approval loop (human-in-the-loop)" },
+      {
+        type: "p",
+        body: "This is critical: Claude generates, humans approve before shipping. A campaign is built automatically and posted to #campaign-audits. You review it — \"Looks good\" or \"Fix the subject line.\" If fixes are needed, you tell Claude what's wrong, Claude iterates, you approve, and the campaign ships. This approval loop prevents hallucinations, keeps brand voice consistent, and maintains legal/compliance safety.",
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Real time savings: first campaign brief (manual) 2–3 hours, Cowork-assisted (review + 1–2 revisions) 30 minutes, weeks in with refined skills 15 minutes. For a team doing 10 campaigns/month, that's 30 hours down to 5 hours/month — one full person freed up.",
+      },
+
+      { type: "h2", body: "How to structure your Cowork folder for success", id: "folder-structure" },
+      {
+        type: "code",
+        lang: "md",
+        source: `Claude Cowork/
+│
+├── ABOUT ME/
+│   ├── Brand voice rules.txt
+│   ├── Company mission & positioning.md
+│   ├── Target audience (ICP).txt
+│   ├── Competitor positioning.txt
+│   ├── Visual guidelines (no images—text instructions).txt
+│   └── KPI targets for 2026.xlsx
+│
+├── PROJECTS/
+│   ├── Weekly reporting/
+│   │   ├── Last week's report.md
+│   │   ├── KPI targets for reporting.txt
+│   │   └── Analytics dashboard snapshot.txt
+│   │
+│   ├── Q3 product launch/
+│   │   ├── Campaign brief.md
+│   │   ├── Target audience profile.txt
+│   │   ├── Launch timeline.txt
+│   │   └── Competitor analysis.txt
+│   │
+│   └── Content calendar/
+│       ├── Editorial guidelines.txt
+│       ├── Blog topics (backlog).txt
+│       └── Publishing schedule.xlsx
+│
+├── TEMPLATES/
+│   ├── Weekly report format.md
+│   ├── Campaign brief skeleton.md
+│   ├── Email sequence outline.md
+│   ├── Landing page outline.md
+│   ├── Competitive brief template.md
+│   └── Content audit checklist.md
+│
+├── LIBRARY/
+│   ├── Past campaigns (30 best performing).md
+│   ├── Email subject line swipe file.txt
+│   ├── CTA phrasing guide.txt
+│   └── Audience segments (how to target them).txt
+│
+└── CLAUDE OUTPUTS/
+    ├── Weekly reports/
+    ├── Campaign drafts/
+    ├── Content recommendations/
+    └── Analysis & audits/`,
+      },
+      { type: "h3", body: "What each folder does" },
+      {
+        type: "ul",
+        items: [
+          "ABOUT ME: never changes. This is your brand DNA — Cowork reads it on every task to ensure consistency.",
+          "PROJECTS: active work. Campaign briefs, client info, timelines. Cowork reads these for context when you ask it to work on \"the Q3 launch.\" Archive projects after they ship.",
+          "TEMPLATES: reusable formats. When Cowork needs to produce an email, it reads your template and follows that structure — saves you from \"the output format looks weird.\"",
+          "LIBRARY: competitive intelligence, past campaigns that worked, subject line examples. Cowork references these to make better creative decisions. Update quarterly.",
+          "CLAUDE OUTPUTS: where Cowork saves finished work. You review here before shipping anywhere. Archive old work monthly.",
+        ],
+      },
+      { type: "h3", body: "The single most important file: brand voice rules" },
+      {
+        type: "p",
+        body: "This one file determines whether Cowork outputs sound like your company or sound generic. Spend 30 minutes writing it once:",
+      },
+      {
+        type: "code",
+        lang: "md",
+        filename: "Brand voice rules.txt",
+        source: `BRAND VOICE RULES
+
+Audience: B2B marketing operations leaders, CMOs, growth marketers
+Sophistication level: Advanced (assume they understand marketing automation, metrics, and AI)
+Tone: Helpful expert, not salesy. Data-driven but human-friendly.
+
+DO USE:
+- Short sentences
+- Second person ("you")
+- Specific numbers and examples
+- Active voice
+- Plain words (use, not utilize; help, not facilitate)
+
+DON'T USE:
+- Exclamation marks (except for occasional enthusiasm)
+- Jargon (no "cutting-edge," "best-in-class," "synergize")
+- Buzzwords (no "leverage," "empower," "unlock," "seamless")
+- Passive voice
+- All-caps for emphasis
+- Ellipses for drama
+
+STRUCTURE RULES:
+- Headers: Sentence case, action-oriented ("How to set it up", not "Setup Instructions")
+- Lists: Short intro, then bullet points (3–7 items max)
+- Paragraphs: 2–3 sentences, then a line break. Long walls of text don't exist.
+- CTAs: Verb first ("Create your first skill" not "Ready to get started?")`,
+      },
+      {
+        type: "p",
+        body: "Once this file exists, include it in every Cowork task. When you ask Claude to write an email subject line or a competitive brief, the first instruction is always: \"Read my brand voice rules. Follow them exactly.\"",
+      },
+
+      { type: "h2", body: "Building custom skills for your team", id: "building-skills" },
+      {
+        type: "p",
+        body: "A Skill is a reusable workflow file stored in your Cowork folder. When you tell Claude \"Create a Skill,\" it generates a YAML file that contains the exact steps from that successful run, plus timing and routing.",
+      },
+      { type: "h3", body: "How to create a skill from a successful run" },
+      {
+        type: "ol",
+        items: [
+          "Do the task manually in Cowork — prompt: \"Pull GA4 data, HubSpot data, and generate a weekly report in Markdown format following my template.\" Cowork does it, you review the output, it's good.",
+          "Ask Claude to create a Skill — prompt: \"Create a Skill to remember this workflow. I want to run it every Friday at 5 AM and post the result to Slack.\"",
+          "Claude generates the Skill file — a .skill file containing the exact steps from that run, plus timing and routing.",
+          "Save the Skill to Claude Cowork/SKILLS/Weekly Report.skill",
+          "Run the Skill — next week, prompt \"Run my Weekly Report skill\" and it runs automatically, no re-explaining needed.",
+        ],
+      },
+      { type: "h3", body: "Chaining skills together" },
+      {
+        type: "p",
+        body: "The power of Skills comes from chaining them. A Dispatcher Skill receives a campaign brief and routes it to a Content Strategy Skill (generates audience insights and messaging pillars), which feeds an Email Writer Skill (uses the pillars to write a nurture sequence), which feeds an Audit Skill (QAs the content) and ends with a Slack notification to marketers for approval. Each Skill reads the output of the previous one — the final result is better than doing it manually because each step builds on the last with context.",
+      },
+      { type: "h3", body: "Skill library — examples you should create" },
+      {
+        type: "ul",
+        items: [
+          "Weekly Report — runs Friday 5 AM, input pulled automatically from connectors, outputs a Marketing Report posted to Slack",
+          "Competitive Brief — on-demand, input \"Analyze [competitor]\", outputs a 2-page brief plus battle card",
+          "Email Sequence Builder — on-demand, input a campaign brief, outputs a 5-email sequence",
+          "Content Repurposing — on-demand, input a blog post URL, outputs LinkedIn, email, and 3 social posts",
+          "Campaign Audit — on-demand, input a draft campaign, outputs a QA checklist plus recommendations",
+          "SEO Audit — runs weekly automatically, outputs a technical audit plus fixes",
+        ],
+      },
+      { type: "h3", body: "Updating skills" },
+      {
+        type: "p",
+        body: "As your team learns what works, update Skills. If your first weekly report had 10 sections but only 4 matter to leadership after month 1, edit the skill: \"Remove trends and competitors sections, keep: traffic, leads, pipeline, actions.\" The next report is tighter. Edit Skills without re-creating them — find the skill file in your folder, make changes, save. The next run uses the updated version.",
+      },
+
+      { type: "h2", body: "Common mistakes & how to fix them", id: "common-mistakes" },
+      { type: "h3", body: "Mistake #1: not having a brand voice file" },
+      {
+        type: "p",
+        body: "Problem: Cowork outputs feel generic — the email reads like ChatGPT, not your company. Why: you never told Claude how your company talks, so each task Cowork has to guess. Fix: spend 30 minutes writing your brand voice rules and include it in every prompt.",
+      },
+      {
+        type: "p",
+        body: "Before: \"Write a campaign email.\" After: \"Read my brand voice rules. Write a campaign email in that voice. Use short sentences, active voice, specific numbers, no jargon.\" Result: Cowork outputs actually sound like your company.",
+      },
+      { type: "h3", body: "Mistake #2: feeding outdated data" },
+      {
+        type: "p",
+        body: "Problem: you manually update a CSV each week and upload it to Cowork; the report includes old numbers. Why: manual data is stale data — by Friday when the report runs, Tuesday's numbers are wrong. Fix: use connectors instead, so Cowork queries GA4, HubSpot, and Salesforce directly at runtime and always has current data.",
+      },
+      { type: "h3", body: "Mistake #3: asking Cowork to do too much in one skill" },
+      {
+        type: "p",
+        body: "Problem: you ask Cowork to \"Build a campaign, audit it, post it, and notify leadership\" and it gets confused halfway through. Why: multi-step complex tasks need multiple Skills chained together, not one mega-skill. Fix: break it into smaller Skills — one to build, one to audit, one to notify. That takes it from an 80% success rate with confusing output to 100% success with clean handoffs.",
+      },
+      { type: "h3", body: "Mistake #4: setting skills to run unattended, with no human review" },
+      {
+        type: "p",
+        body: "Problem: \"Schedule it to run completely automated. Ship to production without review.\" Why: AI can hallucinate — a skill might generate a campaign with a broken link, wrong product info, or brand misalignment, and shipping that to customers causes real damage. Fix: always add human approval. Cowork generates, posts to Slack for review, a marketer approves, and only then does Cowork ship.",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        body: "Human-in-the-loop takes 2 minutes. Fixing a shipped mistake takes 2 hours.",
+      },
+      { type: "h3", body: "Mistake #5: overloading your folder with every single file" },
+      {
+        type: "p",
+        body: "Problem: you dump 200 files into your Cowork folder and Cowork reads all of them before every task — slow, confused outputs. Why: more context means slower processing, and old files introduce noise. Fix: keep your folder clean — ABOUT ME should hold only static files that never change (5–8 files max), PROJECTS only active projects (archive monthly), TEMPLATES 6–10 max, and LIBRARY the top 30 past campaigns, culled quarterly. A lean folder gives fast, focused outputs.",
+      },
+      { type: "h3", body: "Mistake #6: never iterating on outputs" },
+      {
+        type: "p",
+        body: "Problem: \"Cowork generated something. It's not perfect, but good enough. Shipped it.\" Why: you skipped the correction loop. Fix: when an output is close but off, don't start over — tell Claude exactly what's wrong (\"the subject line is too long, make it under 20 characters; the CTA is vague, say what they get\") and let it regenerate. First campaign takes 3 iterations. Fifth campaign takes 1.",
+      },
+      { type: "h3", body: "Mistake #7: assuming Cowork can handle your entire stack" },
+      {
+        type: "p",
+        body: "Problem: \"Why isn't Cowork pulling data from my custom internal tool?\" Why: Cowork needs a connector (MCP server) for each tool, and custom tools don't have one. Fix: for tools without MCP support, export data manually into a Google Sheet for Cowork to read, use Zapier to push data into Google Drive for Cowork to pick up, or use Coupler.io MCP as a universal translator covering 400+ sources. Most common tools (GA4, HubSpot, Salesforce, Slack, Google Workspace) have native MCP — niche tools don't, so plan accordingly.",
+      },
+
+      { type: "h2", body: "FAQ: marketing ops specific questions", id: "faq" },
+      { type: "h3", body: "How much does Claude Cowork cost?" },
+      {
+        type: "p",
+        body: "Claude Cowork requires a Claude Desktop subscription. Pro plan is $20/month, Max plan is $100/month. For small teams doing light automation (1–2 scheduled reports, occasional drafts), Pro is enough. For teams running 5+ automated workflows daily plus heavy iterative work, Max is worth it because Pro burns through tokens faster on multi-step tasks. A team of 3 running 10 automations/month typically uses Pro; a team of 5+ running 20+ automations/month should use Max.",
+      },
+      { type: "h3", body: "Can Cowork work with Salesforce data?" },
+      {
+        type: "p",
+        body: "Yes, but it depends on your setup. Anthropic's MCP protocol supports Salesforce connectors — if yours is set up, Cowork can query Salesforce directly. If not, export a Salesforce report to CSV, upload it to Google Drive, and tell Cowork to analyze the report in your Drive. Neither is ideal, but both work.",
+      },
+      { type: "h3", body: "What if I have sensitive customer data? Can Cowork see it?" },
+      {
+        type: "p",
+        body: "Cowork reads files in your Cowork folder, so don't store raw PII (customer emails, phone numbers, SSNs) there. Instead store aggregated data (\"250 customers in Northeast segment\"), anonymized examples (\"typical customer profile: mid-market SaaS, $5M ARR\"), and never raw CSV exports with customer names, emails, or details. For compliance-heavy work, Anthropic offers enterprise deployments with self-hosted MCP servers so data never leaves your network.",
+      },
+      { type: "h3", body: "How long until we see ROI on Cowork?" },
+      {
+        type: "p",
+        body: "First automation saves 5–8 hours — that pays for Pro ($20/month) in week 1. By month 1, three automations (report + campaigns + content) save 15 hours/week. By month 2, five or more automations across the full ops stack save 25–30 hours/week. By month 3+, optimized and refined skills save 40+ hours/week. For a $60K/year junior marketer, saving 40 hours/week is $46K/year in freed-up capacity — Pro pays for itself over 200x.",
+      },
+      { type: "h3", body: "What if Cowork generates bad data or hallucinates in a report?" },
+      {
+        type: "p",
+        body: "That's why humans approve before shipping. Cowork can misread a CSV, transpose numbers, or misinterpret a metric definition. Always review the output before sending it anywhere, spot-check one number against the source, and trust but verify — it usually gets 95% right, but the 5% wrong can be costly. If you spot a mistake, tell Cowork exactly what's wrong, let it recalculate, review again, then ship. This approval loop takes 2 minutes per report and is non-negotiable.",
+      },
+      { type: "h3", body: "Can our team collaborate on Skills, or does one person own them?" },
+      {
+        type: "p",
+        body: "Both. Skills live in your shared Cowork folder — one person creates a skill, another runs it, a third updates it based on what worked. Everyone has access; just clarify ownership so two people don't edit the same skill at once. Document each skill briefly (what it does, when to use it, input/output, owner, last updated) so new team members know what it does.",
+      },
+      { type: "h3", body: "Does Cowork integrate with Zapier or Make?" },
+      {
+        type: "p",
+        body: "Not directly yet, but Zapier can trigger Cowork indirectly — for example, a form submission triggers Zapier, which uploads to Google Drive, which Cowork reads to generate a response and post to Slack. It's a workaround, but it works for some workflows. Anthropic is expanding MCP integrations regularly, so native Zapier/Make support may arrive soon.",
+      },
+      { type: "h3", body: "What happens if Cowork makes a mistake and we ship a bad campaign?" },
+      {
+        type: "p",
+        body: "That's on the process, not the tool — Cowork generates and posts to Slack, not shipped yet. You review it, catch the mistake before it goes live, ask Cowork to fix it, approve the fix, then ship. If you skip approval and ship anyway, that's on you; the tool did its job, the process failed.",
+      },
+      { type: "h3", body: "Can we use Cowork for compliance/legal work like GDPR unsubscribe links?" },
+      {
+        type: "p",
+        body: "Cowork can generate templates, but don't rely on it alone for legal compliance. It can add an unsubscribe footer, include GDPR-compliant consent language, and remind you of CAN-SPAM requirements — but it can't guarantee compliance, keep up with every regulatory change, or review your specific privacy policy. Use it as a helper, not a replacement for legal review.",
+      },
+      { type: "h3", body: "How do we measure if Cowork is actually saving time?" },
+      {
+        type: "p",
+        body: "Track it. Before Cowork: weekly report 90 minutes, campaign brief 2 hours, content repurposing 2 hours — 4.5 hours/week total. After Cowork (month 1): weekly report 15 minutes (review only), campaign brief 30 minutes (review plus one revision), content repurposing 20 minutes (review) — 1 hour/week total. That's 3.5 hours/week saved, or 168 hours/year per person. For a team of 3, that's 504 hours/year — at $60K/year salary, roughly $14,400 in freed-up capacity, against a $240/year Cowork Pro subscription. ROI: 60x.",
+      },
+
+      { type: "h2", body: "Your challenge: build one automation this week", id: "challenge" },
+      {
+        type: "p",
+        body: "Don't try to automate your entire ops stack tomorrow. Pick one repeating task — your weekly report is the easiest, highest-ROI place to start. Email campaigns are medium complexity, high value. Competitive briefs are medium, strategic. Don't start with full-stack marketing orchestration — that's too complex for a first attempt.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Download Claude Desktop",
+          "Create your Cowork folder structure",
+          "Write your brand voice rules (30 minutes)",
+          "Build your first automated report manually",
+          "Turn it into a skill",
+          "Schedule it",
+        ],
+      },
+      {
+        type: "p",
+        body: "By next Friday, your report is running on its own.",
+      },
+
+      { type: "h2", body: "Authoritative resources for marketing operations automation", id: "resources" },
+      {
+        type: "linklist",
+        items: [
+          {
+            title: "Claude Desktop Download",
+            url: "https://claude.ai/download",
+            meta: "macOS, Windows",
+          },
+          {
+            title: "MCP Server List",
+            url: "https://github.com/modelcontextprotocol/servers",
+            meta: "official",
+          },
+          {
+            title: "Coupler.io MCP",
+            url: "https://coupler.io/",
+            meta: "400+ data sources",
+          },
+          {
+            title: "3 Claude Cowork Workflows That Automate My Real Marketing Tasks",
+            url: "https://vibeproductmarketing.substack.com/p/3-claude-cowork-workflows-for-marketing",
+            note: "Product marketer's breakdown",
+          },
+          {
+            title: "Claude Cowork Marketing Guide 2026",
+            url: "https://www.geeky-gadgets.com/marketing-dashboards-claude-cowork/",
+            note: "Comprehensive guide",
+          },
+          {
+            title: "20 Ways to Use AI as Your Marketing Co-Worker",
+            url: "https://www.futureofmarketing.de/p/claude-cowork-for-marketing",
+            note: "Deep dive",
+          },
+        ],
+      },
+      {
+        type: "p",
+        body: "Suggested learning path: month 1 — set up your folder, create brand voice rules, build one automation (weekly report). Month 2 — build 2–3 more automations (campaigns, content repurposing). Month 3 — start chaining skills, refine based on what your team actually uses. Month 4+ — optimize, share with the team, reduce hours further.",
+      },
+    ],
+  },
   "ship-a-waitlist-in-2-hours": {
     slug: "ship-a-waitlist-in-2-hours",
     tagline:
