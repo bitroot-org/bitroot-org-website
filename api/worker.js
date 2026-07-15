@@ -110,7 +110,7 @@ async function handleNewsletter(body, env, ctx) {
       if (!sub.welcome_email_sent_at) {
         const sent = await sendBrevo(env, {
           to: [{ email }],
-          subject: "You're on the list — one email, every Sunday",
+          subject: "Welcome to Bitroot — a letter from Yash",
           htmlContent: welcomeHtml(),
         });
         if (sent) {
@@ -460,28 +460,76 @@ function signoff() {
     <p style="margin:6px 0 0;font-family:${MONO};font-size:11.5px;color:${INK_FAINT};">Yash Thakur &middot; founder, Bitroot</p>`;
 }
 
+// The welcome email is a founder's letter, not a receipt — a personal note
+// from Yash, what to expect, one CTA, and a "start here" map of the toolbox.
 function welcomeHtml() {
+  const startHere = [
+    {
+      label: "kits",
+      title: "Clone a working starter",
+      body: "Waitlists, invoices, captchas — shipped code, not boilerplate.",
+      href: "https://bitroot.org/kits/",
+    },
+    {
+      label: "guides",
+      title: "Reproduce, step by step",
+      body: "Every guide runs from a blank directory to a working thing.",
+      href: "https://bitroot.org/guides/",
+    },
+    {
+      label: "products",
+      title: "Try the tiny apps",
+      body: "Early access starts with a small cohort — grab a seat.",
+      href: "https://bitroot.org/products/",
+    },
+  ];
+  const startRows = startHere
+    .map(
+      (s, i) => `<tr>
+        <td style="padding:12px 0;${i > 0 ? "border-top:1px solid #eee9e0;" : ""}font-family:${MONO};font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:${BRAND};white-space:nowrap;padding-right:18px;vertical-align:top;">${s.label}</td>
+        <td style="padding:12px 0;${i > 0 ? "border-top:1px solid #eee9e0;" : ""}">
+          <a href="${s.href}" style="font-family:${SANS};font-size:14px;font-weight:600;color:${INK};text-decoration:none;">${s.title} &rarr;</a>
+          <div style="font-family:${SANS};font-size:13px;line-height:1.55;color:${INK_SOFT};margin-top:2px;">${s.body}</div>
+        </td>
+      </tr>`,
+    )
+    .join("");
+
   return shell({
-    eyebrow: "the weekly dispatch",
+    eyebrow: "founder&rsquo;s letter",
     inner: `
-    <h1 style="${H1}">You&rsquo;re on the list.</h1>
+    <h1 style="${H1}">Welcome to Bitroot.</h1>
+    <p style="${P}">Hello &mdash; I&rsquo;m Yash. Thanks for trusting me with a slot in your inbox; I know exactly how much those cost.</p>
     <p style="${P}">
-      One email, every Sunday: what we shipped, what broke, and what&rsquo;s new in the toolbox. No fluff, no lifestyle takes.
+      I started bitroot.org because every useful founder resource I found had a gate in front of it &mdash; an email wall, a trial, a course at the end of the tunnel. So we built the opposite: a toolbox that&rsquo;s free, tactical, and honest about what we&rsquo;d actually use. Every kit is something we&rsquo;ve shipped. Every guide reproduces from a blank directory. That&rsquo;s the whole trick.
     </p>
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin:0 0 18px;">
+    <p style="margin:0 0 10px;font-family:${MONO};font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:${INK_FAINT};">what to expect</p>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin:0 0 24px;">
       <tr>
         <td style="padding:10px 0;border-top:1px solid #eee9e0;font-family:${MONO};font-size:11px;color:${INK_FAINT};white-space:nowrap;padding-right:16px;">sun 07:00</td>
-        <td style="padding:10px 0;border-top:1px solid #eee9e0;font-family:${SANS};font-size:14px;line-height:1.5;color:${INK_SOFT};">The dispatch lands in this inbox.</td>
+        <td style="padding:10px 0;border-top:1px solid #eee9e0;font-family:${SANS};font-size:14px;line-height:1.5;color:${INK_SOFT};">One dispatch: what we shipped, what broke, what&rsquo;s new. No fluff, no lifestyle takes.</td>
       </tr>
       <tr>
         <td style="padding:10px 0;border-top:1px solid #eee9e0;font-family:${MONO};font-size:11px;color:${INK_FAINT};white-space:nowrap;padding-right:16px;">anytime</td>
-        <td style="padding:10px 0;border-top:1px solid #eee9e0;font-family:${SANS};font-size:14px;line-height:1.5;color:${INK_SOFT};">The full archive stays public at <a href="https://bitroot.org/newsletter/" style="color:${BRAND};">bitroot.org/newsletter</a> &mdash; permanent URLs, no gates.</td>
+        <td style="padding:10px 0;border-top:1px solid #eee9e0;font-family:${SANS};font-size:14px;line-height:1.5;color:${INK_SOFT};">The archive stays public at <a href="https://bitroot.org/newsletter/" style="color:${BRAND};">bitroot.org/newsletter</a> &mdash; permanent URLs, no gates.</td>
       </tr>
       <tr>
         <td style="padding:10px 0;border-top:1px solid #eee9e0;border-bottom:1px solid #eee9e0;font-family:${MONO};font-size:11px;color:${INK_FAINT};white-space:nowrap;padding-right:16px;">any issue</td>
         <td style="padding:10px 0;border-top:1px solid #eee9e0;border-bottom:1px solid #eee9e0;font-family:${SANS};font-size:14px;line-height:1.5;color:${INK_SOFT};">One-click unsubscribe, no hard feelings.</td>
       </tr>
     </table>
+    <table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 0 28px;">
+      <tr>
+        <td style="border-radius:999px;background:${BRAND};">
+          <a href="https://bitroot.org/" style="display:inline-block;padding:11px 26px;font-family:${SANS};font-size:14px;font-weight:600;color:#ffffff;text-decoration:none;border-radius:999px;">Open the toolbox &rarr;</a>
+        </td>
+      </tr>
+    </table>
+    <p style="margin:0 0 10px;font-family:${MONO};font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:${INK_FAINT};">start here</p>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin:0 0 6px;">${startRows}</table>
+    <p style="${P}margin-top:22px;">
+      One more thing: this address takes replies, and I read them. Tell me what you&rsquo;re building &mdash; it genuinely shapes what we write next.
+    </p>
     ${signoff()}`,
     footnote:
       "You&rsquo;re getting this because you subscribed at bitroot.org.",
