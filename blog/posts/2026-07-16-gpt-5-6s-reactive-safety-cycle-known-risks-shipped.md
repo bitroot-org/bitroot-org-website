@@ -94,7 +94,7 @@ This is infrastructure stress at scale. Not heroic. Expected given the shipping 
 
 ## **OpenAI's Response: Announce Prevention Tools *After* Incidents**
 
-On July 14, 11 hours after incidents went viral, OpenAI announced GPT-Red.
+On July 15, several hours after incidents went viral, OpenAI announced GPT-Red.
 
 GPT-Red is an automated red teaming tool to find vulnerabilities "before wider deployment."
 
@@ -103,7 +103,7 @@ This is the cycle made visible:
 1. **June 26:** OpenAI documents safety gaps in System Card  
 2. **July 9:** OpenAI ships the model anyway  
 3. **July 10:** Users hit the documented risks in production  
-4. **July 14:** OpenAI announces tools to prevent what just happened
+4. **July 15:** OpenAI announces tools to prevent what just happened
 
 The announcement frames GPT-Red as forward-looking safety. But the model is already deployed. 8 million users already have it. The incidents already happened.
 
