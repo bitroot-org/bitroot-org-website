@@ -5,13 +5,13 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 16 Jul 2026 05:02:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 05:32:11 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>GPT-5.6 Sol's First Week: Unprecedented Demand, Scaling Chaos, and the Safety Bugs OpenAI Knew About</title>
+      <title>GPT-5.6's Reactive Safety Cycle: Known Risks, Shipped Anyway, Fix Announced Later</title>
       <link>https://bitroot.org/blog/2026-07-15-gpt-5-6-sols-first-week-unprecedented-demand-scali/</link>
       <guid isPermaLink="true">https://bitroot.org/blog/2026-07-15-gpt-5-6-sols-first-week-unprecedented-demand-scali/</guid>
-      <description>OpenAI's GPT-5.6 reached 8 million users in five days. It also deleted user files and crashed infrastructure. Matt Shumer's Mac got wiped when GPT-5.6 Sol misexpanded a shell variable. A developer lost his entire production database the same day. Both incidents matched a "severity level 3" failure OpenAI documented before launch. The company shipped anyway.</description>
+      <description>Five days after GPT-5.6 launched, it was deleting user files and crashing infrastructure, exactly as OpenAI's System Card documented before shipping. Matt Shumer's Mac got wiped. A developer lost his production database. Then OpenAI announced GPT-Red, a "prevention tool," 11 hours after incidents went viral. This is the cycle: document risks → ship → users hit risks → announce fixes → next model s</description>
       <pubDate>Wed, 15 Jul 2026 04:50:21 +0000</pubDate>
       <category>AI Safety</category>
       <category>GPT-5.6</category>

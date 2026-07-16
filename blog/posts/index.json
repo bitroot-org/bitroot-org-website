@@ -233,8 +233,8 @@
       "filename": "2026-07-15-gpt-5-6-sols-first-week-unprecedented-demand-scali.md",
       "slug": "2026-07-15-gpt-5-6-sols-first-week-unprecedented-demand-scali",
       "url": "/blog/2026-07-15-gpt-5-6-sols-first-week-unprecedented-demand-scali/",
-      "title": "GPT-5.6 Sol's First Week: Unprecedented Demand, Scaling Chaos, and the Safety Bugs OpenAI Knew About",
-      "date": "2026-07-15",
+      "title": "GPT-5.6's Reactive Safety Cycle: Known Risks, Shipped Anyway, Fix Announced Later",
+      "date": "2026-07-16",
       "published_at": "2026-07-15T04:50:21.102Z",
       "tags": [
         "AI Safety",
@@ -248,7 +248,7 @@
         "ChatGPT Work",
         "Scaling"
       ],
-      "excerpt": "OpenAI's GPT-5.6 reached 8 million users in five days. It also deleted user files and crashed infrastructure. Matt Shumer's Mac got wiped when GPT-5.6 Sol misexpanded a shell variable. A developer lost his entire production database the same day. Both incidents matched a \"severity level 3\" failure OpenAI documented before launch. The company shipped anyway.",
+      "excerpt": "Five days after GPT-5.6 launched, it was deleting user files and crashing infrastructure, exactly as OpenAI's System Card documented before shipping. Matt Shumer's Mac got wiped. A developer lost his production database. Then OpenAI announced GPT-Red, a \"prevention tool,\" 11 hours after incidents went viral. This is the cycle: document risks \u2192 ship \u2192 users hit risks \u2192 announce fixes \u2192 next model s",
       "image": "https://techcrunch.com/wp-content/uploads/2026/05/openai-logo-code-background.jpg?resize=1280,852",
       "sources": [],
       "readTime": "6 min",
