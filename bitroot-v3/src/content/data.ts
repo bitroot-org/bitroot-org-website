@@ -129,7 +129,7 @@ export const guides: Item[] = [
     title:
       "How to Automate Marketing Operations with Claude Cowork: A Hands-On Guide for 2026",
     summary:
-      "Step-by-step guide to building automated reporting, campaign builds, and task workflows — with real templates and skills. Weekly reports go from 5 hours to 15 minutes.",
+      "A hands-on guide to automating marketing reporting and campaign builds with Claude Cowork — including the exact workflows from Anthropic's own marketing operations team.",
     tags: ["AI", "Claude", "Marketing", "Automation"],
     updatedAt: "2026-07-15",
     href: "/guides/automate-marketing-ops-with-claude-cowork",
