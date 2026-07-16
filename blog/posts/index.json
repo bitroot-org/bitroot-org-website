@@ -251,7 +251,7 @@
       "excerpt": "OpenAI's GPT-5.6 reached 8 million users in five days. It also deleted user files and crashed infrastructure. Matt Shumer's Mac got wiped when GPT-5.6 Sol misexpanded a shell variable. A developer lost his entire production database the same day. Both incidents matched a \"severity level 3\" failure OpenAI documented before launch. The company shipped anyway.",
       "image": "https://techcrunch.com/wp-content/uploads/2026/05/openai-logo-code-background.jpg?resize=1280,852",
       "sources": [],
-      "readTime": "8 min",
+      "readTime": "6 min",
       "shortId": 225
     },
     {
