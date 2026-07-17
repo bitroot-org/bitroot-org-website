@@ -5,8 +5,91 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 16 Jul 2026 05:52:31 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 03:15:16 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>YouTube unveils Codex Micro, a lightweight AI code helper</title>
+      <link>https://bitroot.org/blog/2026-07-17-youtube-unveils-codex-micro-a-lightweight-ai-code/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-17-youtube-unveils-codex-micro-a-lightweight-ai-code/</guid>
+      <description>Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://share.google/IUreul71KXi6QHD9c"&gt;https://share.google/IUreul71KXi6QHD9c&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 17 Jul 2026 02:39:02 +0000</pubDate>
+      <category>youtube</category>
+      <category>ai code assistant</category>
+      <category>developer tools</category>
+      <source url="https://share.google/IUreul71KXi6QHD9c">Original Source</source>
+    </item>
+    <item>
+      <title>X.AI open-sources Grok Build, its AI coding agent and terminal UI</title>
+      <link>https://bitroot.org/blog/2026-07-17-xai-open-sources-grok-build-its-ai-coding-agent-an/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-17-xai-open-sources-grok-build-its-ai-coding-agent-an/</guid>
+      <description>Explore the harness behind our coding agent and TUI.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.ai/news/grok-build-open-source"&gt;https://x.ai/news/grok-build-open-source&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 17 Jul 2026 02:59:12 +0000</pubDate>
+      <category>ai coding</category>
+      <category>open source</category>
+      <category>cli</category>
+      <enclosure url="https://x.ai/images/news/open-source-cover.png" type="image/png" length="0" />
+      <source url="https://x.ai/news/grok-build-open-source">Original Source</source>
+    </item>
+    <item>
+      <title>Nora control plane launches for OpenClaw &amp; Hermes on Kubernetes</title>
+      <link>https://bitroot.org/blog/2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on/</guid>
+      <description>Nora provides a self‑hosted control plane for managing OpenClaw and Hermes runtimes on Docker/Kubernetes, offering a single view for deployment, inspection, and recovery.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/solomon2773/status/2077629467980161317"&gt;https://x.com/solomon2773/status/2077629467980161317&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 16 Jul 2026 10:51:42 +0000</pubDate>
+      <category>kubernetes</category>
+      <category>control plane</category>
+      <category>open-source</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2077628803011031040/img/Gn4uydb55T12pKzc.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/solomon2773/status/2077629467980161317">Original Source</source>
+    </item>
+    <item>
+      <title>Lemma open‑source platform lets agents and humans share tables and approvals</title>
+      <link>https://bitroot.org/blog/2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s/</guid>
+      <description>Lemma is now open source and lets you wire AI agents with human reviewers using shared tables, with a quick‑start example that runs in under an hour.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/LekhikaVyas/status/2077628443706155049"&gt;https://x.com/LekhikaVyas/status/2077628443706155049&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 16 Jul 2026 10:50:18 +0000</pubDate>
+      <category>lemma</category>
+      <category>open-source</category>
+      <category>automation</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2077628323052867584/img/0lQuuyrGlwksOfrF.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/LekhikaVyas/status/2077628443706155049">Original Source</source>
+    </item>
+    <item>
+      <title>Inkling model released with 975B parameters and multimodal support</title>
+      <link>https://bitroot.org/blog/2026-07-16-inkling-model-released-with-975b-parameters-and-mu/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-16-inkling-model-released-with-975b-parameters-and-mu/</guid>
+      <description>Inkling, the first open model from Thinky Machines, ships 975 B parameters, 1 M token context, and native text, image, and audio reasoning, with a ready‑to‑run stack.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/lmsysorg/status/2077457150046269779"&gt;https://x.com/lmsysorg/status/2077457150046269779&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 16 Jul 2026 10:50:43 +0000</pubDate>
+      <category>large language model</category>
+      <category>multimodal</category>
+      <category>open source</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2077457043691319296/img/IfrTS5_Mp9k_TIPl.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/lmsysorg/status/2077457150046269779">Original Source</source>
+    </item>
+    <item>
+      <title>Harness launches a human‑friendly CLI for DevSecOps workflows</title>
+      <link>https://bitroot.org/blog/2026-07-16-harness-launches-a-humanfriendly-cli-for-devsecops/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-16-harness-launches-a-humanfriendly-cli-for-devsecops/</guid>
+      <description>Harness unveiled a new command‑line interface aimed at developers and AI agents, promising tighter security integration and deterministic execution. The tool is open‑source and targets terminal‑first workflows.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/harnessio/status/2077413070616617212"&gt;https://x.com/harnessio/status/2077413070616617212&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 16 Jul 2026 10:51:23 +0000</pubDate>
+      <category>cli</category>
+      <category>devsecops</category>
+      <category>developer tools</category>
+      <enclosure url="https://pbs.twimg.com/media/HNRymyzaUAAnCFS.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/harnessio/status/2077413070616617212">Original Source</source>
+    </item>
     <item>
       <title>GPT-5.6's Reactive Safety Cycle: Known Risks, Shipped Anyway, Fix Announced Later</title>
       <link>https://bitroot.org/blog/2026-07-16-gpt-5-6s-reactive-safety-cycle-known-risks-shipped/</link>
@@ -24,6 +107,20 @@
       <category>ChatGPT Work</category>
       <category>Scaling</category>
       <enclosure url="https://techcrunch.com/wp-content/uploads/2026/05/openai-logo-code-background.jpg?resize=1280,852" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>Alaya Lab opens Alaya World: open-source interactive video model</title>
+      <link>https://bitroot.org/blog/2026-07-16-alaya-lab-opens-alaya-world-open-source-interactiv/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-16-alaya-lab-opens-alaya-world-open-source-interactiv/</guid>
+      <description>Alaya Lab released Alaya World, an open‑source video world model that streams 720p at 24 fps and sustains coherent generation for over a minute. The inference code is ready now, with training assets slated for later this year.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/alayastd/status/2077588265067258309"&gt;https://x.com/alayastd/status/2077588265067258309&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 16 Jul 2026 10:51:59 +0000</pubDate>
+      <category>interactive video</category>
+      <category>open-source</category>
+      <category>world model</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2077587439653474304/img/f7mZg6SUn2mXlQVf.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/alayastd/status/2077588265067258309">Original Source</source>
     </item>
     <item>
       <title>Claude now has India pricing. Here's what it actually costs - and what's still missing.</title>

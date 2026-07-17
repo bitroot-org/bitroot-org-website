@@ -2,11 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bitroot.org/blog/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://bitroot.org/blog/2026-07-17-youtube-unveils-codex-micro-a-lightweight-ai-code/</loc>
+    <lastmod>2026-07-17</lastmod>
+  </url>
+  <url>
+    <loc>https://bitroot.org/blog/2026-07-17-xai-open-sources-grok-build-its-ai-coding-agent-an/</loc>
+    <lastmod>2026-07-17</lastmod>
+  </url>
+  <url>
+    <loc>https://bitroot.org/blog/2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on/</loc>
+    <lastmod>2026-07-16</lastmod>
+  </url>
+  <url>
+    <loc>https://bitroot.org/blog/2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s/</loc>
+    <lastmod>2026-07-16</lastmod>
+  </url>
+  <url>
+    <loc>https://bitroot.org/blog/2026-07-16-inkling-model-released-with-975b-parameters-and-mu/</loc>
+    <lastmod>2026-07-16</lastmod>
+  </url>
+  <url>
+    <loc>https://bitroot.org/blog/2026-07-16-harness-launches-a-humanfriendly-cli-for-devsecops/</loc>
+    <lastmod>2026-07-16</lastmod>
+  </url>
+  <url>
     <loc>https://bitroot.org/blog/2026-07-16-gpt-5-6s-reactive-safety-cycle-known-risks-shipped/</loc>
+    <lastmod>2026-07-16</lastmod>
+  </url>
+  <url>
+    <loc>https://bitroot.org/blog/2026-07-16-alaya-lab-opens-alaya-world-open-source-interactiv/</loc>
     <lastmod>2026-07-16</lastmod>
   </url>
   <url>

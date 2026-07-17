@@ -1,8 +1,15 @@
 {
   "generated": true,
-  "count": 225,
+  "count": 232,
   "posts": [
+    "2026-07-17-youtube-unveils-codex-micro-a-lightweight-ai-code.md",
+    "2026-07-17-xai-open-sources-grok-build-its-ai-coding-agent-an.md",
+    "2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on.md",
+    "2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s.md",
+    "2026-07-16-inkling-model-released-with-975b-parameters-and-mu.md",
+    "2026-07-16-harness-launches-a-humanfriendly-cli-for-devsecops.md",
     "2026-07-16-gpt-5-6s-reactive-safety-cycle-known-risks-shipped.md",
+    "2026-07-16-alaya-lab-opens-alaya-world-open-source-interactiv.md",
     "2026-07-14-claude-now-has-india-pricing-heres-what-it-actuall.md",
     "2026-07-13-hypertexting-app-turns-the-open-web-into-a-scrolla.md",
     "2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual.md",
@@ -230,6 +237,129 @@
   ],
   "metadata": [
     {
+      "filename": "2026-07-17-youtube-unveils-codex-micro-a-lightweight-ai-code.md",
+      "slug": "2026-07-17-youtube-unveils-codex-micro-a-lightweight-ai-code",
+      "url": "/blog/2026-07-17-youtube-unveils-codex-micro-a-lightweight-ai-code/",
+      "title": "YouTube unveils Codex Micro, a lightweight AI code helper",
+      "date": "2026-07-17",
+      "published_at": "2026-07-17T02:39:02.989370+00:00",
+      "tags": [
+        "youtube",
+        "ai code assistant",
+        "developer tools"
+      ],
+      "excerpt": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+      "image": null,
+      "sources": [
+        "https://share.google/IUreul71KXi6QHD9c"
+      ],
+      "readTime": "2 min",
+      "shortId": 232
+    },
+    {
+      "filename": "2026-07-17-xai-open-sources-grok-build-its-ai-coding-agent-an.md",
+      "slug": "2026-07-17-xai-open-sources-grok-build-its-ai-coding-agent-an",
+      "url": "/blog/2026-07-17-xai-open-sources-grok-build-its-ai-coding-agent-an/",
+      "title": "X.AI open-sources Grok Build, its AI coding agent and terminal UI",
+      "date": "2026-07-17",
+      "published_at": "2026-07-17T02:59:12.919750+00:00",
+      "tags": [
+        "ai coding",
+        "open source",
+        "cli"
+      ],
+      "excerpt": "Explore the harness behind our coding agent and TUI.",
+      "image": "https://x.ai/images/news/open-source-cover.png",
+      "sources": [
+        "https://x.ai/news/grok-build-open-source"
+      ],
+      "readTime": "2 min",
+      "shortId": 231
+    },
+    {
+      "filename": "2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on.md",
+      "slug": "2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on",
+      "url": "/blog/2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on/",
+      "title": "Nora control plane launches for OpenClaw & Hermes on Kubernetes",
+      "date": "2026-07-16",
+      "published_at": "2026-07-16T10:51:42.585560+00:00",
+      "tags": [
+        "kubernetes",
+        "control plane",
+        "open-source"
+      ],
+      "excerpt": "Nora provides a self\u2011hosted control plane for managing OpenClaw and Hermes runtimes on Docker/Kubernetes, offering a single view for deployment, inspection, and recovery.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2077628803011031040/img/Gn4uydb55T12pKzc.jpg",
+      "sources": [
+        "https://x.com/solomon2773/status/2077629467980161317"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on.mp4",
+      "shortId": 230
+    },
+    {
+      "filename": "2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s.md",
+      "slug": "2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s",
+      "url": "/blog/2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s/",
+      "title": "Lemma open\u2011source platform lets agents and humans share tables and approvals",
+      "date": "2026-07-16",
+      "published_at": "2026-07-16T10:50:18.985040+00:00",
+      "tags": [
+        "lemma",
+        "open-source",
+        "automation"
+      ],
+      "excerpt": "Lemma is now open source and lets you wire AI agents with human reviewers using shared tables, with a quick\u2011start example that runs in under an hour.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2077628323052867584/img/0lQuuyrGlwksOfrF.jpg",
+      "sources": [
+        "https://x.com/LekhikaVyas/status/2077628443706155049"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s.mp4",
+      "shortId": 229
+    },
+    {
+      "filename": "2026-07-16-inkling-model-released-with-975b-parameters-and-mu.md",
+      "slug": "2026-07-16-inkling-model-released-with-975b-parameters-and-mu",
+      "url": "/blog/2026-07-16-inkling-model-released-with-975b-parameters-and-mu/",
+      "title": "Inkling model released with 975B parameters and multimodal support",
+      "date": "2026-07-16",
+      "published_at": "2026-07-16T10:50:43.044395+00:00",
+      "tags": [
+        "large language model",
+        "multimodal",
+        "open source"
+      ],
+      "excerpt": "Inkling, the first open model from Thinky Machines, ships 975 B parameters, 1 M token context, and native text, image, and audio reasoning, with a ready\u2011to\u2011run stack.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2077457043691319296/img/IfrTS5_Mp9k_TIPl.jpg",
+      "sources": [
+        "https://x.com/lmsysorg/status/2077457150046269779"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-16-inkling-model-released-with-975b-parameters-and-mu.mp4",
+      "shortId": 228
+    },
+    {
+      "filename": "2026-07-16-harness-launches-a-humanfriendly-cli-for-devsecops.md",
+      "slug": "2026-07-16-harness-launches-a-humanfriendly-cli-for-devsecops",
+      "url": "/blog/2026-07-16-harness-launches-a-humanfriendly-cli-for-devsecops/",
+      "title": "Harness launches a human\u2011friendly CLI for DevSecOps workflows",
+      "date": "2026-07-16",
+      "published_at": "2026-07-16T10:51:23.371639+00:00",
+      "tags": [
+        "cli",
+        "devsecops",
+        "developer tools"
+      ],
+      "excerpt": "Harness unveiled a new command\u2011line interface aimed at developers and AI agents, promising tighter security integration and deterministic execution. The tool is open\u2011source and targets terminal\u2011first workflows.",
+      "image": "https://pbs.twimg.com/media/HNRymyzaUAAnCFS.jpg?name=orig",
+      "sources": [
+        "https://x.com/harnessio/status/2077413070616617212"
+      ],
+      "readTime": "2 min",
+      "shortId": 227
+    },
+    {
       "filename": "2026-07-16-gpt-5-6s-reactive-safety-cycle-known-risks-shipped.md",
       "slug": "2026-07-16-gpt-5-6s-reactive-safety-cycle-known-risks-shipped",
       "url": "/blog/2026-07-16-gpt-5-6s-reactive-safety-cycle-known-risks-shipped/",
@@ -252,6 +382,27 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/05/openai-logo-code-background.jpg?resize=1280,852",
       "sources": [],
       "readTime": "6 min",
+      "shortId": 226
+    },
+    {
+      "filename": "2026-07-16-alaya-lab-opens-alaya-world-open-source-interactiv.md",
+      "slug": "2026-07-16-alaya-lab-opens-alaya-world-open-source-interactiv",
+      "url": "/blog/2026-07-16-alaya-lab-opens-alaya-world-open-source-interactiv/",
+      "title": "Alaya Lab opens Alaya World: open-source interactive video model",
+      "date": "2026-07-16",
+      "published_at": "2026-07-16T10:51:59.288396+00:00",
+      "tags": [
+        "interactive video",
+        "open-source",
+        "world model"
+      ],
+      "excerpt": "Alaya Lab released Alaya World, an open\u2011source video world model that streams 720p at 24 fps and sustains coherent generation for over a minute. The inference code is ready now, with training assets slated for later this year.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2077587439653474304/img/f7mZg6SUn2mXlQVf.jpg",
+      "sources": [
+        "https://x.com/alayastd/status/2077588265067258309"
+      ],
+      "readTime": "2 min",
+      "video": "https://video.twimg.com/amplify_video/2077587439653474304/vid/avc1/1920x1080/rHj0U4GJ1UFLEUmN.mp4?tag=29",
       "shortId": 225
     },
     {
