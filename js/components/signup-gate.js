@@ -202,6 +202,13 @@ export class SignupGate {
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  new SignupGate();
-});
+// 1. Instantiate immediately (don't wait for DOMContentLoaded)
+const gate = new SignupGate();
+
+// 2. Hook into the History API so it detects Next.js client-side link clicks
+const originalPushState = history.pushState;
+history.pushState = function() {
+  originalPushState.apply(this, arguments);
+  // Re-run the init logic whenever Next.js changes the route
+  setTimeout(() => gate.init(), 100); 
+};
