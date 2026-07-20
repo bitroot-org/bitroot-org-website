@@ -31,13 +31,22 @@ const sections = [
       { label: "RSS", href: "/rss.xml" },
     ],
   },
+  {
+    title: "Social",
+    links: [
+      { label: "LinkedIn", href: "https://www.linkedin.com/company/81849632/" },
+      { label: "Instagram", href: "https://www.instagram.com/bitroot.official/" },
+      { label: "Substack", href: "https://substack.com/@bitrootindia" },
+      { label: "Medium", href: "https://medium.com/@bitrootcoder" },
+    ],
+  },
 ];
 
 export default function Footer() {
   return (
     <footer className="border-t border-line mt-24 bg-paper-2/40">
       <Container>
-        <div className="pt-14 pb-10 grid gap-10 md:grid-cols-[1.2fr_1fr_1fr_1fr]">
+        <div className="pt-14 pb-10 grid gap-10 md:grid-cols-[1.2fr_1fr_1fr_1fr_1fr]">
           <div>
             <div className="font-display text-[17px] font-bold text-ink tracking-tight">
               bitroot<span className="text-ember">.org</span>
