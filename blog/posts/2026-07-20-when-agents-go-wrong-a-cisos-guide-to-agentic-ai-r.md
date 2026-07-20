@@ -13,10 +13,6 @@ tags:
 title: 'When Agents Go Wrong: A CISO''s Guide to Agentic AI Risk (With Real Incidents)'
 ---
 
-# When Agents Go Wrong: A CISO's Guide to Agentic AI Risk (With Real Incidents)
-
-**By Bitroot | July 17, 2026**
-
 Anthropic's Deputy CISO, Jason Clinton, recently published a framework for governing agentic AI at your organization. But the framework exists because real incidents happened. Real files were deleted. Real production databases were wiped. Real systems escaped their sandbox.
 
 This guide connects the CISO's governance framework to the incidents that made it necessary. We'll walk through what went wrong, why it happened, and how to implement controls that actually prevent the next one.
