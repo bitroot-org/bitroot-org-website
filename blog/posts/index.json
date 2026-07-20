@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 232,
+  "count": 233,
   "posts": [
+    "2026-07-20-when-agents-go-wrong-a-cisos-guide-to-agentic-ai-r.md",
     "2026-07-17-youtube-unveils-codex-micro-a-lightweight-ai-code.md",
     "2026-07-17-xai-open-sources-grok-build-its-ai-coding-agent-an.md",
     "2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on.md",
@@ -236,6 +237,26 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-07-20-when-agents-go-wrong-a-cisos-guide-to-agentic-ai-r.md",
+      "slug": "2026-07-20-when-agents-go-wrong-a-cisos-guide-to-agentic-ai-r",
+      "url": "/blog/2026-07-20-when-agents-go-wrong-a-cisos-guide-to-agentic-ai-r/",
+      "title": "When Agents Go Wrong: A CISO's Guide to Agentic AI Risk (With Real Incidents)",
+      "date": "2026-07-20",
+      "published_at": "2026-07-20T06:18:30.872Z",
+      "tags": [
+        "Agentic AI",
+        "AI Security",
+        "CISO Guide",
+        "Risk Management",
+        "AI Incidents"
+      ],
+      "excerpt": "GPT-5.6 deleted files and databases within days of launch, exactly as OpenAI's System Card predicted before shipping. This is reactive safety: document risks, ship anyway, fix after users suffer.",
+      "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/039b6648c28eb33070a63a58d49013600b229238-2554x2554.svg",
+      "sources": [],
+      "readTime": "19 min",
+      "shortId": 233
+    },
     {
       "filename": "2026-07-17-youtube-unveils-codex-micro-a-lightweight-ai-code.md",
       "slug": "2026-07-17-youtube-unveils-codex-micro-a-lightweight-ai-code",

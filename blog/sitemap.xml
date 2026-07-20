@@ -2,8 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bitroot.org/blog/</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-20</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bitroot.org/blog/2026-07-20-when-agents-go-wrong-a-cisos-guide-to-agentic-ai-r/</loc>
+    <lastmod>2026-07-20</lastmod>
   </url>
   <url>
     <loc>https://bitroot.org/blog/2026-07-17-youtube-unveils-codex-micro-a-lightweight-ai-code/</loc>
