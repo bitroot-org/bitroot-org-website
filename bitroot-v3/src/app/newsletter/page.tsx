@@ -1,7 +1,7 @@
 import Container from "@/components/ui/Container";
 import NewsletterForm from "@/components/NewsletterForm";
-import ClubNudge from "@/components/ui/ClubNudge";
 import { buildMetadata } from "@/lib/seo";
+// import ClubNudge from "@/components/ui/ClubNudge"; // ARCHIVED 2026-07-15 — restore with past issues section
 
 export const metadata = buildMetadata({
   title: "Newsletter — one useful founder email a week",
@@ -10,48 +10,49 @@ export const metadata = buildMetadata({
   path: "/newsletter/",
 });
 
-const pastIssues = [
-  {
-    n: 34,
-    date: "Apr 07, 2026",
-    title: "Waitlist kit v2, Stripe gotchas, and a faster RSC mental model",
-    blurb:
-      "The rebuilt waitlist kit ships with referral tracking. Plus a Stripe webhook edge case that ate 3 hours and our new favorite RSC explainer.",
-  },
-  {
-    n: 33,
-    date: "Mar 31, 2026",
-    title: "Analytics that actually matter + Neon vs Turso in Q2",
-    blurb:
-      "Five events worth tracking, one dashboard layout, and a real benchmark between two serverless Postgres options for an AI side project.",
-  },
-  {
-    n: 32,
-    date: "Mar 24, 2026",
-    title: "The React Email deliverability checklist",
-    blurb:
-      "DNS, SPF, DKIM, DMARC — explained once, forever. Plus a bad-state test you can run in 10 seconds.",
-  },
-  {
-    n: 31,
-    date: "Mar 17, 2026",
-    title: "Weekend MVP stack update and a cold-email template that worked",
-    blurb:
-      "Why we swapped Mailgun for Resend (finally), and the five-line cold email that got us 3 replies out of 12 sends last week.",
-  },
-  {
-    n: 30,
-    date: "Mar 10, 2026",
-    title: "A pricing experiment, a landing page teardown, and a new guide",
-    blurb:
-      "We doubled our hobby-tier price and nothing bad happened. Plus the full teardown of a subscriber's landing page.",
-  },
-];
+// ARCHIVED 2026-07-15 — past issues data hidden, do not delete
+// const pastIssues = [
+//   {
+//     n: 34,
+//     date: "Apr 07, 2026",
+//     title: "Waitlist kit v2, Stripe gotchas, and a faster RSC mental model",
+//     blurb:
+//       "The rebuilt waitlist kit ships with referral tracking. Plus a Stripe webhook edge case that ate 3 hours and our new favorite RSC explainer.",
+//   },
+//   {
+//     n: 33,
+//     date: "Mar 31, 2026",
+//     title: "Analytics that actually matter + Neon vs Turso in Q2",
+//     blurb:
+//       "Five events worth tracking, one dashboard layout, and a real benchmark between two serverless Postgres options for an AI side project.",
+//   },
+//   {
+//     n: 32,
+//     date: "Mar 24, 2026",
+//     title: "The React Email deliverability checklist",
+//     blurb:
+//       "DNS, SPF, DKIM, DMARC — explained once, forever. Plus a bad-state test you can run in 10 seconds.",
+//   },
+//   {
+//     n: 31,
+//     date: "Mar 17, 2026",
+//     title: "Weekend MVP stack update and a cold-email template that worked",
+//     blurb:
+//       "Why we swapped Mailgun for Resend (finally), and the five-line cold email that got us 3 replies out of 12 sends last week.",
+//   },
+//   {
+//     n: 30,
+//     date: "Mar 10, 2026",
+//     title: "A pricing experiment, a landing page teardown, and a new guide",
+//     blurb:
+//       "We doubled our hobby-tier price and nothing bad happened. Plus the full teardown of a subscriber's landing page.",
+//   },
+// ];
 
 export default function NewsletterPage() {
   return (
     <>
-      <section className="pt-16 pb-14 border-b border-line relative overflow-hidden">
+      <section className="pt-16 pb-14 border-b border-line relative overflow-hidden min-h-[calc(100vh-16rem)] flex items-center">
         <div
           className="absolute inset-0 opacity-[0.04] pointer-events-none"
           style={{
@@ -90,6 +91,7 @@ export default function NewsletterPage() {
         </Container>
       </section>
 
+      {/* ARCHIVED 2026-07-15 — past issues hidden, do not delete
       <section className="py-16">
         <Container size="narrow">
           <div className="flex items-center gap-3 mb-8">
@@ -159,6 +161,7 @@ export default function NewsletterPage() {
           </ClubNudge>
         </Container>
       </section>
+      */}
     </>
   );
 }
