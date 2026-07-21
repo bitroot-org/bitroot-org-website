@@ -5,8 +5,16 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 20 Jul 2026 06:25:32 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2026 05:16:57 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why Apple Raised Prices Across Hardware &amp; Subscriptions in 2026: A Data-Driven Analysis</title>
+      <link>https://bitroot.org/blog/2026-07-21-why-apple-raised-prices-across-hardware-subscripti/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-21-why-apple-raised-prices-across-hardware-subscripti/</guid>
+      <description>Apple raised prices twice in three weeks. Hardware in June, subscriptions in July. Different cost drivers, compressed timeline, same strategic direction.</description>
+      <pubDate>Tue, 21 Jul 2026 05:16:09 +0000</pubDate>
+      <enclosure url="https://static.toiimg.com/thumb/msid-132501351,imgsize-50946,width-400,height-225,resizemode-4/apple.jpg" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>When Agents Go Wrong: A CISO's Guide to Agentic AI Risk (With Real Incidents)</title>
       <link>https://bitroot.org/blog/2026-07-20-when-agents-go-wrong-a-cisos-guide-to-agentic-ai-r/</link>
