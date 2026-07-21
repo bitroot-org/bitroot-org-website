@@ -124,6 +124,17 @@ export const kits: Item[] = [
 
 export const guides: Item[] = [
   {
+    slug: "git-github-quick-guide",
+    category: "guide",
+    title: "Git & GitHub Quick Guide",
+    summary:
+      "A minimal, high-velocity reference for daily Git and GitHub operations — branching, committing, merging vs. rebasing, undoing mistakes, stashing, and resolving conflicts.",
+    tags: ["Git", "GitHub", "Workflow", "Reference"],
+    updatedAt: "2026-07-21",
+    href: "/guides/git-github-quick-guide",
+    difficulty: "starter",
+  },
+  {
     slug: "automate-marketing-ops-with-claude-cowork",
     category: "guide",
     title:
