@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 239,
+  "count": 240,
   "posts": [
     "2026-07-21-why-apple-raised-prices-across-hardware-subscripti.md",
+    "2026-07-21-monid-replaces-apify-with-perrequest-social-media.md",
     "2026-07-20-zeroprep-turns-spoken-talks-into-slide-decks-now-o.md",
     "2026-07-20-when-agents-go-wrong-a-cisos-guide-to-agentic-ai-r.md",
     "2026-07-20-opensource-agent-security-adds-five-preflight-cont.md",
@@ -255,6 +256,27 @@
       "image": "https://static.toiimg.com/thumb/msid-132501351,imgsize-50946,width-400,height-225,resizemode-4/apple.jpg",
       "sources": [],
       "readTime": "11 min",
+      "shortId": 240
+    },
+    {
+      "filename": "2026-07-21-monid-replaces-apify-with-perrequest-social-media.md",
+      "slug": "2026-07-21-monid-replaces-apify-with-perrequest-social-media",
+      "url": "/blog/2026-07-21-monid-replaces-apify-with-perrequest-social-media/",
+      "title": "Monid replaces Apify with per\u2011request social media scraping",
+      "date": "2026-07-21",
+      "published_at": "2026-07-21T07:11:42.464476+00:00",
+      "tags": [
+        "social media scraping",
+        "api",
+        "pricing"
+      ],
+      "excerpt": "Monid shuts down Apify and offers a pay\u2011as\u2011you\u2011go API that reads major social platforms without logins, starting at $0.0015 per request.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2079289624183316480/img/2Mxu-4ft7Uv7y94o.jpg",
+      "sources": [
+        "https://x.com/i/status/2079289736250970258"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-21-monid-replaces-apify-with-perrequest-social-media.mp4",
       "shortId": 239
     },
     {

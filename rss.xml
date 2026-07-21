@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 21 Jul 2026 05:45:05 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2026 09:06:18 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Apple Raised Prices Across Hardware &amp; Subscriptions in 2026: A Data-Driven Analysis</title>
@@ -14,6 +14,20 @@
       <description>Apple raised prices twice in three weeks. Hardware in June, subscriptions in July. Different cost drivers, compressed timeline, same strategic direction.</description>
       <pubDate>Tue, 21 Jul 2026 05:16:09 +0000</pubDate>
       <enclosure url="https://static.toiimg.com/thumb/msid-132501351,imgsize-50946,width-400,height-225,resizemode-4/apple.jpg" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>Monid replaces Apify with per‑request social media scraping</title>
+      <link>https://bitroot.org/blog/2026-07-21-monid-replaces-apify-with-perrequest-social-media/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-21-monid-replaces-apify-with-perrequest-social-media/</guid>
+      <description>Monid shuts down Apify and offers a pay‑as‑you‑go API that reads major social platforms without logins, starting at $0.0015 per request.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2079289736250970258"&gt;https://x.com/i/status/2079289736250970258&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 21 Jul 2026 07:11:42 +0000</pubDate>
+      <category>social media scraping</category>
+      <category>api</category>
+      <category>pricing</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2079289624183316480/img/2Mxu-4ft7Uv7y94o.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2079289736250970258">Original Source</source>
     </item>
     <item>
       <title>ZeroPrep turns spoken talks into slide decks, now open source</title>
