@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 21 Jul 2026 05:16:57 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2026 05:17:49 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Apple Raised Prices Across Hardware &amp; Subscriptions in 2026: A Data-Driven Analysis</title>
@@ -14,6 +14,20 @@
       <description>Apple raised prices twice in three weeks. Hardware in June, subscriptions in July. Different cost drivers, compressed timeline, same strategic direction.</description>
       <pubDate>Tue, 21 Jul 2026 05:16:09 +0000</pubDate>
       <enclosure url="https://static.toiimg.com/thumb/msid-132501351,imgsize-50946,width-400,height-225,resizemode-4/apple.jpg" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>ZeroPrep turns spoken talks into slide decks, now open source</title>
+      <link>https://bitroot.org/blog/2026-07-20-zeroprep-turns-spoken-talks-into-slide-decks-now-o/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-20-zeroprep-turns-spoken-talks-into-slide-decks-now-o/</guid>
+      <description>ZeroPrep auto‑generates slide decks from live speech, adding near‑real‑time images, and the code is now open‑source on GitHub. It can shrink prep time for demo talks, but output quality varies with the source audio.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/ramsri_goutham/status/2079069398267281715"&gt;https://x.com/ramsri_goutham/status/2079069398267281715&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 20 Jul 2026 11:37:34 +0000</pubDate>
+      <category>presentation</category>
+      <category>automation</category>
+      <category>open-source</category>
+      <enclosure url="https://pbs.twimg.com/media/HNpVGoHbQAA_XzT.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/ramsri_goutham/status/2079069398267281715">Original Source</source>
     </item>
     <item>
       <title>When Agents Go Wrong: A CISO's Guide to Agentic AI Risk (With Real Incidents)</title>
@@ -27,6 +41,62 @@
       <category>Risk Management</category>
       <category>AI Incidents</category>
       <enclosure url="https://www-cdn.anthropic.com/images/4zrzovbb/website/039b6648c28eb33070a63a58d49013600b229238-2554x2554.svg" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>Open‑source agent-security adds five preflight controls</title>
+      <link>https://bitroot.org/blog/2026-07-20-opensource-agent-security-adds-five-preflight-cont/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-20-opensource-agent-security-adds-five-preflight-cont/</guid>
+      <description>Nyk released the MIT‑licensed agent‑security CLI, which provides five lightweight preflight checks to harden coding agents before they touch a repository.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/nykdotdev/status/2079068942681993237"&gt;https://x.com/nykdotdev/status/2079068942681993237&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 20 Jul 2026 11:39:02 +0000</pubDate>
+      <category>security</category>
+      <category>cli</category>
+      <category>open-source</category>
+      <enclosure url="https://pbs.twimg.com/media/HNpWAEUakAAY5Sj.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/nykdotdev/status/2079068942681993237">Original Source</source>
+    </item>
+    <item>
+      <title>GoChat UI Chrome extension brings floating chat to OpenCode Go</title>
+      <link>https://bitroot.org/blog/2026-07-20-gochat-ui-chrome-extension-brings-floating-chat-to/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-20-gochat-ui-chrome-extension-brings-floating-chat-to/</guid>
+      <description>The new GoChat UI Chrome extension adds a floating chat window for OpenCode Go subscriptions, streaming replies from every model without requiring an account or telemetry.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/theadaloguy/status/2079087378522919057"&gt;https://x.com/theadaloguy/status/2079087378522919057&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 20 Jul 2026 11:38:18 +0000</pubDate>
+      <category>chrome extension</category>
+      <category>go</category>
+      <category>open source</category>
+      <enclosure url="https://pbs.twimg.com/media/HNpmZJdboAAU-l5.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/theadaloguy/status/2079087378522919057">Original Source</source>
+    </item>
+    <item>
+      <title>Go blog shows how to do graceful TCP server shutdown</title>
+      <link>https://bitroot.org/blog/2026-07-20-go-blog-shows-how-to-do-graceful-tcp-server-shutdo/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-20-go-blog-shows-how-to-do-graceful-tcp-server-shutdo/</guid>
+      <description>Arpit’s new blog post explains why merely closing a listener isn’t enough for a clean Go TCP server shutdown and offers a practical pattern for production services.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/_xonoxc/status/2079084544322572478"&gt;https://x.com/_xonoxc/status/2079084544322572478&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 20 Jul 2026 11:37:09 +0000</pubDate>
+      <category>go</category>
+      <category>tcp</category>
+      <category>graceful shutdown</category>
+      <enclosure url="https://pbs.twimg.com/media/HNpilbCasAASC6d.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/_xonoxc/status/2079084544322572478">Original Source</source>
+    </item>
+    <item>
+      <title>BangerGen open-source: local AI turns ideas into ready-to-post content</title>
+      <link>https://bitroot.org/blog/2026-07-20-bangergen-open-source-local-ai-turns-ideas-into-re/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-20-bangergen-open-source-local-ai-turns-ideas-into-re/</guid>
+      <description>BangerGen, a tool that refines rough ideas into scored, platform‑ready posts using local AI, is now open‑source and runs on Ollama with optional ComfyUI visuals.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/DegenApeDev/status/2079011617795375453"&gt;https://x.com/DegenApeDev/status/2079011617795375453&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 20 Jul 2026 11:38:42 +0000</pubDate>
+      <category>ai</category>
+      <category>content-generation</category>
+      <category>open-source</category>
+      <enclosure url="https://pbs.twimg.com/media/HNohvpJagAAk57L.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/DegenApeDev/status/2079011617795375453">Original Source</source>
     </item>
     <item>
       <title>YouTube unveils Codex Micro, a lightweight AI code helper</title>

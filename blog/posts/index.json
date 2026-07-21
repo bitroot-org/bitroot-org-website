@@ -1,9 +1,14 @@
 {
   "generated": true,
-  "count": 234,
+  "count": 239,
   "posts": [
     "2026-07-21-why-apple-raised-prices-across-hardware-subscripti.md",
+    "2026-07-20-zeroprep-turns-spoken-talks-into-slide-decks-now-o.md",
     "2026-07-20-when-agents-go-wrong-a-cisos-guide-to-agentic-ai-r.md",
+    "2026-07-20-opensource-agent-security-adds-five-preflight-cont.md",
+    "2026-07-20-gochat-ui-chrome-extension-brings-floating-chat-to.md",
+    "2026-07-20-go-blog-shows-how-to-do-graceful-tcp-server-shutdo.md",
+    "2026-07-20-bangergen-open-source-local-ai-turns-ideas-into-re.md",
     "2026-07-17-youtube-unveils-codex-micro-a-lightweight-ai-code.md",
     "2026-07-17-xai-open-sources-grok-build-its-ai-coding-agent-an.md",
     "2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on.md",
@@ -250,7 +255,27 @@
       "image": "https://static.toiimg.com/thumb/msid-132501351,imgsize-50946,width-400,height-225,resizemode-4/apple.jpg",
       "sources": [],
       "readTime": "10 min",
-      "shortId": 234
+      "shortId": 239
+    },
+    {
+      "filename": "2026-07-20-zeroprep-turns-spoken-talks-into-slide-decks-now-o.md",
+      "slug": "2026-07-20-zeroprep-turns-spoken-talks-into-slide-decks-now-o",
+      "url": "/blog/2026-07-20-zeroprep-turns-spoken-talks-into-slide-decks-now-o/",
+      "title": "ZeroPrep turns spoken talks into slide decks, now open source",
+      "date": "2026-07-20",
+      "published_at": "2026-07-20T11:37:34.661586+00:00",
+      "tags": [
+        "presentation",
+        "automation",
+        "open-source"
+      ],
+      "excerpt": "ZeroPrep auto\u2011generates slide decks from live speech, adding near\u2011real\u2011time images, and the code is now open\u2011source on GitHub. It can shrink prep time for demo talks, but output quality varies with the source audio.",
+      "image": "https://pbs.twimg.com/media/HNpVGoHbQAA_XzT.jpg?name=orig",
+      "sources": [
+        "https://x.com/ramsri_goutham/status/2079069398267281715"
+      ],
+      "readTime": "2 min",
+      "shortId": 238
     },
     {
       "filename": "2026-07-20-when-agents-go-wrong-a-cisos-guide-to-agentic-ai-r.md",
@@ -270,6 +295,86 @@
       "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/039b6648c28eb33070a63a58d49013600b229238-2554x2554.svg",
       "sources": [],
       "readTime": "19 min",
+      "shortId": 237
+    },
+    {
+      "filename": "2026-07-20-opensource-agent-security-adds-five-preflight-cont.md",
+      "slug": "2026-07-20-opensource-agent-security-adds-five-preflight-cont",
+      "url": "/blog/2026-07-20-opensource-agent-security-adds-five-preflight-cont/",
+      "title": "Open\u2011source agent-security adds five preflight controls",
+      "date": "2026-07-20",
+      "published_at": "2026-07-20T11:39:02.512801+00:00",
+      "tags": [
+        "security",
+        "cli",
+        "open-source"
+      ],
+      "excerpt": "Nyk released the MIT\u2011licensed agent\u2011security CLI, which provides five lightweight preflight checks to harden coding agents before they touch a repository.",
+      "image": "https://pbs.twimg.com/media/HNpWAEUakAAY5Sj.jpg?name=orig",
+      "sources": [
+        "https://x.com/nykdotdev/status/2079068942681993237"
+      ],
+      "readTime": "2 min",
+      "shortId": 236
+    },
+    {
+      "filename": "2026-07-20-gochat-ui-chrome-extension-brings-floating-chat-to.md",
+      "slug": "2026-07-20-gochat-ui-chrome-extension-brings-floating-chat-to",
+      "url": "/blog/2026-07-20-gochat-ui-chrome-extension-brings-floating-chat-to/",
+      "title": "GoChat UI Chrome extension brings floating chat to OpenCode Go",
+      "date": "2026-07-20",
+      "published_at": "2026-07-20T11:38:18.254865+00:00",
+      "tags": [
+        "chrome extension",
+        "go",
+        "open source"
+      ],
+      "excerpt": "The new GoChat UI Chrome extension adds a floating chat window for OpenCode Go subscriptions, streaming replies from every model without requiring an account or telemetry.",
+      "image": "https://pbs.twimg.com/media/HNpmZJdboAAU-l5.jpg?name=orig",
+      "sources": [
+        "https://x.com/theadaloguy/status/2079087378522919057"
+      ],
+      "readTime": "1 min",
+      "shortId": 235
+    },
+    {
+      "filename": "2026-07-20-go-blog-shows-how-to-do-graceful-tcp-server-shutdo.md",
+      "slug": "2026-07-20-go-blog-shows-how-to-do-graceful-tcp-server-shutdo",
+      "url": "/blog/2026-07-20-go-blog-shows-how-to-do-graceful-tcp-server-shutdo/",
+      "title": "Go blog shows how to do graceful TCP server shutdown",
+      "date": "2026-07-20",
+      "published_at": "2026-07-20T11:37:09.535885+00:00",
+      "tags": [
+        "go",
+        "tcp",
+        "graceful shutdown"
+      ],
+      "excerpt": "Arpit\u2019s new blog post explains why merely closing a listener isn\u2019t enough for a clean Go TCP server shutdown and offers a practical pattern for production services.",
+      "image": "https://pbs.twimg.com/media/HNpilbCasAASC6d.jpg?name=orig",
+      "sources": [
+        "https://x.com/_xonoxc/status/2079084544322572478"
+      ],
+      "readTime": "2 min",
+      "shortId": 234
+    },
+    {
+      "filename": "2026-07-20-bangergen-open-source-local-ai-turns-ideas-into-re.md",
+      "slug": "2026-07-20-bangergen-open-source-local-ai-turns-ideas-into-re",
+      "url": "/blog/2026-07-20-bangergen-open-source-local-ai-turns-ideas-into-re/",
+      "title": "BangerGen open-source: local AI turns ideas into ready-to-post content",
+      "date": "2026-07-20",
+      "published_at": "2026-07-20T11:38:42.400572+00:00",
+      "tags": [
+        "ai",
+        "content-generation",
+        "open-source"
+      ],
+      "excerpt": "BangerGen, a tool that refines rough ideas into scored, platform\u2011ready posts using local AI, is now open\u2011source and runs on Ollama with optional ComfyUI visuals.",
+      "image": "https://pbs.twimg.com/media/HNohvpJagAAk57L.jpg?name=orig",
+      "sources": [
+        "https://x.com/DegenApeDev/status/2079011617795375453"
+      ],
+      "readTime": "2 min",
       "shortId": 233
     },
     {
