@@ -43,6 +43,211 @@ export type GuideContent = {
 };
 
 export const guidesContent: Record<string, GuideContent> = {
+  "git-github-quick-guide": {
+    slug: "git-github-quick-guide",
+    tagline:
+      "A minimal, high-velocity guide for daily Git and GitHub operations. Use this reference to get up to speed in minutes.",
+    timeEstimate: "10 minutes to read, keep it bookmarked forever",
+    youWillNeed: [
+      "Git installed locally",
+      "A GitHub account (or any Git remote)",
+      "A terminal",
+    ],
+    youWillEndUpWith:
+      "A working reference for the daily Git cycle — branching, committing, pushing, merging vs. rebasing, undoing mistakes, stashing, and resolving conflicts — plus a fast command cheat sheet.",
+    toc: [
+      { label: "1. Setup & identity", id: "setup" },
+      { label: "2. Daily development cycle", id: "daily-cycle" },
+      { label: "3. Merging vs. rebasing", id: "merge-vs-rebase" },
+      { label: "4. Undoing mistakes", id: "undoing-mistakes" },
+      { label: "5. Stashing & saving work", id: "stashing" },
+      { label: "6. Resolving merge conflicts", id: "conflicts" },
+      { label: "7. Fast commands reference", id: "fast-reference" },
+    ],
+    body: [
+      { type: "h2", body: "Setup & identity", id: "setup" },
+      {
+        type: "p",
+        body: "Configure your identity globally. This metadata is attached to all your commits.",
+      },
+      {
+        type: "code",
+        lang: "bash",
+        source: `# Configure username and email
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+# Check your configuration
+git config --list`,
+      },
+      {
+        type: "callout",
+        tone: "tip",
+        body: "Use SSH keys for authentication instead of HTTPS to avoid entering credentials repeatedly. Generate one using: `ssh-keygen -t ed25519 -C \"your.email@example.com\"`",
+      },
+
+      { type: "h2", body: "Daily development cycle", id: "daily-cycle" },
+      {
+        type: "p",
+        body: "Follow this lifecycle for day-to-day coding:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Switch branch",
+          "Write code",
+          "Stage changes",
+          "Commit",
+          "Push to GitHub",
+        ],
+      },
+      { type: "h3", body: "Step 1: create a feature branch" },
+      {
+        type: "p",
+        body: "Always isolate your changes on a new branch. Avoid committing directly to main.",
+      },
+      {
+        type: "code",
+        lang: "bash",
+        source: `git switch -c feature/new-cool-feature`,
+      },
+      { type: "h3", body: "Step 2: stage & commit changes" },
+      {
+        type: "p",
+        body: "Stage files when they reach a logical checkpoint and commit them with a descriptive message.",
+      },
+      {
+        type: "code",
+        lang: "bash",
+        source: `# Stage specific files
+git add path/to/file.js
+
+# Stage all changes
+git add .
+
+# Save staged changes to history
+git commit -m "feat: implement user registration form"`,
+      },
+      { type: "h3", body: "Step 3: push and pull" },
+      {
+        type: "p",
+        body: "Keep your local repository in sync with GitHub.",
+      },
+      {
+        type: "code",
+        lang: "bash",
+        source: `# Push your branch for the first time (sets tracking)
+git push -u origin feature/new-cool-feature
+
+# Push subsequent changes
+git push
+
+# Pull the latest changes from the remote main branch
+git pull origin main`,
+      },
+
+      { type: "h2", body: "Merging vs. rebasing", id: "merge-vs-rebase" },
+      {
+        type: "p",
+        body: "When integrating changes from main into your feature branch:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Merge (`git merge main`) — use when integrating finished features. Preserves detailed history; adds a merge commit.",
+          "Rebase (`git rebase main`) — use when syncing your local branch with the latest main. Linearizes history; rewrites commit hashes.",
+        ],
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        body: "The golden rule of rebasing: never rebase commits that have already been pushed to a public or shared remote repository. It will break history for others.",
+      },
+
+      { type: "h2", body: "Undoing mistakes", id: "undoing-mistakes" },
+      {
+        type: "ul",
+        items: [
+          "Discard local changes in a file — `git restore <file>` — reverts the file to its last committed state.",
+          "Unstage a staged file — `git restore --staged <file>` — removes the file from staging, keeps your edits.",
+          "Undo last commit, keep changes — `git reset --soft HEAD~1` — pulls the changes back into the staging area.",
+          "Undo last commit, delete changes — `git reset --hard HEAD~1` — destroys all changes since the last commit.",
+          "Revert a pushed commit safely — `git revert <commit-hash>` — creates a new commit that undoes the specified commit.",
+        ],
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        body: "`git reset --hard` destroys uncommitted work with no undo. Double-check what you're about to discard before running it.",
+      },
+
+      { type: "h2", body: "Stashing & saving work", id: "stashing" },
+      {
+        type: "p",
+        body: "Use stash to temporarily shelve your current changes if you need to switch branches quickly without committing incomplete work.",
+      },
+      {
+        type: "code",
+        lang: "bash",
+        source: `# Save uncommitted changes
+git stash -m "wip: auth implementation"
+
+# List saved stashes
+git stash list
+
+# Restore your latest stash and delete it from the stash list
+git stash pop
+
+# Restore a stash but keep it in the list
+git stash apply stash@{0}`,
+      },
+
+      { type: "h2", body: "Resolving merge conflicts", id: "conflicts" },
+      {
+        type: "p",
+        body: "Conflicts occur when Git cannot auto-merge changes — for example, the same line edited on two different branches.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Locate conflicts — run `git status` to see conflicting files.",
+          "Edit files — look for conflict markers in your code.",
+          "Resolve & commit — choose which code to keep, delete the markers (`<<<<<<<`, `=======`, `>>>>>>>`), then stage and commit.",
+        ],
+      },
+      {
+        type: "code",
+        lang: "js",
+        source: `<<<<<<< HEAD
+const URL = "https://api.production.com";
+=======
+const URL = "https://api.staging.com";
+>>>>>>> feature/new-cool-feature`,
+      },
+      {
+        type: "code",
+        lang: "bash",
+        source: `git add <resolved-file>
+git commit -m "chore: resolve merge conflict"`,
+      },
+
+      { type: "h2", body: "Fast commands reference", id: "fast-reference" },
+      {
+        type: "ul",
+        items: [
+          "Initialize repo — `git init`",
+          "Clone repo — `git clone <url>`",
+          "Check status — `git status`",
+          "View differences — `git diff`",
+          "View commit history — `git log --oneline --graph`",
+          "List branches — `git branch`",
+          "Delete branch — `git branch -d <branch-name>`",
+          "Create tag — `git tag -a v1.0.0 -m \"Release v1.0.0\"`",
+          "Push tags — `git push origin --tags`",
+        ],
+      },
+    ],
+  },
   "automate-marketing-ops-with-claude-cowork": {
     slug: "automate-marketing-ops-with-claude-cowork",
     tagline:
