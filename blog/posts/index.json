@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 240,
+  "count": 241,
   "posts": [
+    "2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven.md",
     "2026-07-21-why-apple-raised-prices-across-hardware-subscripti.md",
     "2026-07-21-monid-replaces-apify-with-perrequest-social-media.md",
     "2026-07-20-zeroprep-turns-spoken-talks-into-slide-decks-now-o.md",
@@ -244,6 +245,26 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven.md",
+      "slug": "2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven",
+      "url": "/blog/2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven/",
+      "title": "Kimi K3 vs Claude Fable 5: Benchmark Reality vs. Vendor Claims",
+      "date": "2026-07-22",
+      "published_at": "2026-07-22T07:27:54.812Z",
+      "tags": [
+        "Artificial Intelligence",
+        "Large Language Models",
+        "Open Source AI",
+        "AI Benchmarks",
+        "Claude Fable 5"
+      ],
+      "excerpt": "Moonshot AI's Kimi K3 beats Claude Fable 5 on benchmarks, but the victory is incomplete. Here's what actually matters: Fable 5 wins 8 of 14 shared benchmarks. K3 wins 6, dominating on coding and agentic work. But Anthropic accused Moonshot of 3.4 million distillation exchanges against Claude, meaning K3 may have learned from Claude to outperform it.",
+      "image": "https://aitoolsreview.co.uk/_next/image?url=%2Fmedia%2Farticles%2Finsights%2Fkimi-k3-vs-claude-fable-5%2Faa-intelligence-index.avif&w=1920&q=75&dpl=dpl_269LMm4WTq3eHE8nnHxFFvL2KnDc",
+      "sources": [],
+      "readTime": "6 min",
+      "shortId": 241
+    },
     {
       "filename": "2026-07-21-why-apple-raised-prices-across-hardware-subscripti.md",
       "slug": "2026-07-21-why-apple-raised-prices-across-hardware-subscripti",

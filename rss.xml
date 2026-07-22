@@ -5,8 +5,21 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 21 Jul 2026 09:06:18 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2026 07:28:37 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kimi K3 vs Claude Fable 5: Benchmark Reality vs. Vendor Claims</title>
+      <link>https://bitroot.org/blog/2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven/</guid>
+      <description>Moonshot AI's Kimi K3 beats Claude Fable 5 on benchmarks, but the victory is incomplete. Here's what actually matters: Fable 5 wins 8 of 14 shared benchmarks. K3 wins 6, dominating on coding and agentic work. But Anthropic accused Moonshot of 3.4 million distillation exchanges against Claude, meaning K3 may have learned from Claude to outperform it.</description>
+      <pubDate>Wed, 22 Jul 2026 07:27:54 +0000</pubDate>
+      <category>Artificial Intelligence</category>
+      <category>Large Language Models</category>
+      <category>Open Source AI</category>
+      <category>AI Benchmarks</category>
+      <category>Claude Fable 5</category>
+      <enclosure url="https://aitoolsreview.co.uk/_next/image?url=%2Fmedia%2Farticles%2Finsights%2Fkimi-k3-vs-claude-fable-5%2Faa-intelligence-index.avif&amp;w=1920&amp;q=75&amp;dpl=dpl_269LMm4WTq3eHE8nnHxFFvL2KnDc" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Why Apple Raised Prices Across Hardware &amp; Subscriptions in 2026: A Data-Driven Analysis</title>
       <link>https://bitroot.org/blog/2026-07-21-why-apple-raised-prices-across-hardware-subscripti/</link>
