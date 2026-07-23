@@ -5,8 +5,21 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 22 Jul 2026 07:28:37 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 04:22:16 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Buzz launches as open‑source group chat alternative to Slack</title>
+      <link>https://bitroot.org/blog/2026-07-23-buzz-launches-as-opensource-group-chat-alternative/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-23-buzz-launches-as-opensource-group-chat-alternative/</guid>
+      <description>Buzz is an open‑source, decentralized group‑chat platform aimed at teams that want to move away from Slack and GitHub. It promises self‑sovereign messaging with a model‑agnostic design.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2079605800998146171"&gt;https://x.com/i/status/2079605800998146171&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 02:07:57 +0000</pubDate>
+      <category>group chat</category>
+      <category>open source</category>
+      <category>team communication</category>
+      <source url="https://x.com/i/status/2079605800998146171">Original Source</source>
+    </item>
     <item>
       <title>Kimi K3 vs Claude Fable 5: Benchmark Reality vs. Vendor Claims</title>
       <link>https://bitroot.org/blog/2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven/</link>

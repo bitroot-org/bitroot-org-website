@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 241,
+  "count": 242,
   "posts": [
+    "2026-07-23-buzz-launches-as-opensource-group-chat-alternative.md",
     "2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven.md",
     "2026-07-21-why-apple-raised-prices-across-hardware-subscripti.md",
     "2026-07-21-monid-replaces-apify-with-perrequest-social-media.md",
@@ -245,6 +246,26 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-07-23-buzz-launches-as-opensource-group-chat-alternative.md",
+      "slug": "2026-07-23-buzz-launches-as-opensource-group-chat-alternative",
+      "url": "/blog/2026-07-23-buzz-launches-as-opensource-group-chat-alternative/",
+      "title": "Buzz launches as open\u2011source group chat alternative to Slack",
+      "date": "2026-07-23",
+      "published_at": "2026-07-23T02:07:57.170116+00:00",
+      "tags": [
+        "group chat",
+        "open source",
+        "team communication"
+      ],
+      "excerpt": "Buzz is an open\u2011source, decentralized group\u2011chat platform aimed at teams that want to move away from Slack and GitHub. It promises self\u2011sovereign messaging with a model\u2011agnostic design.",
+      "image": null,
+      "sources": [
+        "https://x.com/i/status/2079605800998146171"
+      ],
+      "readTime": "2 min",
+      "shortId": 242
+    },
     {
       "filename": "2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven.md",
       "slug": "2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven",
