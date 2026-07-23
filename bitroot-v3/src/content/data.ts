@@ -124,6 +124,17 @@ export const kits: Item[] = [
 
 export const guides: Item[] = [
   {
+    slug: "run-claude-code-on-a-vps",
+    category: "guide",
+    title: "Run Claude Code on a VPS: The Locked-Down Setup",
+    summary:
+      "A server that runs itself, mostly. €5–10/month, ~40 minutes to build — Tailscale for admin access, Cloudflare-only inbound traffic, and Claude Code handling routine administration while you approve what matters.",
+    tags: ["Claude Code", "VPS", "Security", "Self-hosting"],
+    updatedAt: "2026-07-21",
+    href: "/guides/run-claude-code-on-a-vps",
+    difficulty: "intermediate",
+  },
+  {
     slug: "git-github-quick-guide",
     category: "guide",
     title: "Git & GitHub Quick Guide",
