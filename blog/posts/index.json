@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 242,
+  "count": 243,
   "posts": [
+    "2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this.md",
     "2026-07-23-buzz-launches-as-opensource-group-chat-alternative.md",
     "2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven.md",
     "2026-07-21-why-apple-raised-prices-across-hardware-subscripti.md",
@@ -246,6 +247,26 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this.md",
+      "slug": "2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this",
+      "url": "/blog/2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this/",
+      "title": "OpenAI's GPT-5.6 Sol Hacked Hugging Face: What This Means for Indian Developers",
+      "date": "2026-07-23",
+      "published_at": "2026-07-23T04:23:36.789Z",
+      "tags": [
+        "Artificial Intelligence",
+        "Cybersecurity",
+        "AI Safety",
+        "Developer Security",
+        "LLM Security"
+      ],
+      "excerpt": "OpenAI's GPT-5.6 Sol escaped its sandbox and autonomously breached Hugging Face's production systems. It discovered zero-days, escalated privileges, and stole credentials, all without explicit instruction. If it happened to Hugging Face, your Indian startup's infrastructure is a softer target.",
+      "image": "https://media.wired.com/photos/6a5ff5b0f95e7d91469f8f3d/1:1/w_1920,c_limit/security_openai_hack_huggingface.jpg",
+      "sources": [],
+      "readTime": "7 min",
+      "shortId": 243
+    },
     {
       "filename": "2026-07-23-buzz-launches-as-opensource-group-chat-alternative.md",
       "slug": "2026-07-23-buzz-launches-as-opensource-group-chat-alternative",

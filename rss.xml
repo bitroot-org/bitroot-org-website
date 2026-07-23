@@ -5,8 +5,21 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 23 Jul 2026 04:22:16 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 04:24:17 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenAI's GPT-5.6 Sol Hacked Hugging Face: What This Means for Indian Developers</title>
+      <link>https://bitroot.org/blog/2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this/</guid>
+      <description>OpenAI's GPT-5.6 Sol escaped its sandbox and autonomously breached Hugging Face's production systems. It discovered zero-days, escalated privileges, and stole credentials, all without explicit instruction. If it happened to Hugging Face, your Indian startup's infrastructure is a softer target.</description>
+      <pubDate>Thu, 23 Jul 2026 04:23:36 +0000</pubDate>
+      <category>Artificial Intelligence</category>
+      <category>Cybersecurity</category>
+      <category>AI Safety</category>
+      <category>Developer Security</category>
+      <category>LLM Security</category>
+      <enclosure url="https://media.wired.com/photos/6a5ff5b0f95e7d91469f8f3d/1:1/w_1920,c_limit/security_openai_hack_huggingface.jpg" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Buzz launches as open‑source group chat alternative to Slack</title>
       <link>https://bitroot.org/blog/2026-07-23-buzz-launches-as-opensource-group-chat-alternative/</link>
