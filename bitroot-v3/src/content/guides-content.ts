@@ -43,6 +43,332 @@ export type GuideContent = {
 };
 
 export const guidesContent: Record<string, GuideContent> = {
+  "run-claude-code-on-a-vps": {
+    slug: "run-claude-code-on-a-vps",
+    tagline:
+      "A server that runs itself, mostly. €5–10 per month, about forty minutes to build. Claude Code handles routine administration — deploys, fixes, new projects — while you approve the decisions that matter. Afterwards you open an SSH app from any device, including your phone, and describe what you want.",
+    timeEstimate: "~40 minutes to build",
+    youWillNeed: [
+      "A VPS with at least 4 GB of RAM, Ubuntu 20.04 or newer, x64 or ARM64 (Anthropic's stated minimum) — the cheapest 1–2 GB tier at most providers will not work",
+      "A domain you control, with registrar access",
+      "A Claude plan that includes Claude Code: Pro, Max, Team, Enterprise, or a Console account (the free plan doesn't include access)",
+      "Free-tier Cloudflare and Tailscale accounts",
+    ],
+    youWillEndUpWith:
+      "A server that only you can reach for administration (via Tailscale), that only Cloudflare can reach for traffic, and that documents its own security rules to the agent running it. Total added cost: €5–10/month.",
+    toc: [
+      { label: "The idea", id: "the-idea" },
+      { label: "Who this is for", id: "who-this-is-for" },
+      { label: "Before you start", id: "before-you-start" },
+      { label: "Phase 1 — Buy", id: "phase-1-buy" },
+      { label: "Phase 2 — Lock it down", id: "phase-2-lock-it-down" },
+      { label: "Phase 3 — Install the agent", id: "phase-3-install-agent" },
+      { label: "Phase 4 — Hand it over", id: "phase-4-hand-over" },
+      { label: "If something breaks", id: "troubleshooting" },
+      { label: "Know the limits", id: "limits" },
+      { label: "What you have now", id: "what-you-have-now" },
+      { label: "Resources", id: "resources" },
+    ],
+    body: [
+      {
+        type: "callout",
+        tone: "note",
+        body: "Documentation references checked July 2026. Provider interfaces change often, so verify each step against the vendor's own documentation as you go. This approach is widely used in the self-hosting community; what follows is our structured version of it.",
+      },
+
+      { type: "h2", body: "The idea", id: "the-idea" },
+      {
+        type: "p",
+        body: "Two paths reach the server and they never meet. You arrive through a private mesh network. Visitors arrive through Cloudflare. The provider firewall drops everything else, so there is no public SSH port to attack. Inside the box, Claude Code runs in a persistent terminal session and handles the day-to-day administration.",
+      },
+
+      { type: "h2", body: "Who this is for", id: "who-this-is-for" },
+      {
+        type: "p",
+        body: "Best for developers and technical founders who are comfortable in a terminal, want a real server for side projects or small production sites, and would rather not maintain one by hand.",
+      },
+      {
+        type: "p",
+        body: "Not recommended if you have never used SSH, if the server will hold customer data from day one, or if you cannot afford an hour of downtime while you learn. Step 9 closes public SSH permanently. If that sentence is unfamiliar, practise on a throwaway server first.",
+      },
+
+      { type: "h2", body: "Before you start", id: "before-you-start" },
+      {
+        type: "ul",
+        items: [
+          "A VPS with at least 4 GB of RAM, Ubuntu 20.04 or newer, x64 or ARM64 — Anthropic's stated minimum. The cheapest tier at most providers is 1–2 GB and will not work.",
+          "A domain you control, with registrar access.",
+          "A Claude plan that includes Claude Code: Pro, Max, Team, Enterprise, or a Console account. The free plan does not include access.",
+          "Free-tier Cloudflare and Tailscale accounts.",
+        ],
+      },
+      {
+        type: "ul",
+        items: [
+          "VPS, 4 GB RAM — €5–10/month",
+          "Cloudflare, Tailscale, Termius — free tier",
+          "Claude plan — existing subscription",
+          "Total added — €5–10/month",
+        ],
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        body: "Before you begin: this guide changes firewall and SSH configuration on a live server. Follow it on a fresh machine with no production data or traffic. Complete every Verify step before moving to the next one — skipping the gate in Phase 2 can lock you out permanently. Bitroot provides this guide for informational purposes and is not responsible for loss of access, data, or service arising from its use.",
+      },
+
+      { type: "h2", body: "Phase 1 — Buy (15 min)", id: "phase-1-buy" },
+      {
+        type: "ol",
+        items: [
+          "Create the VPS on Hetzner or DigitalOcean. Ubuntu 24.04, 4 GB RAM or more. Enable automatic backups at checkout.",
+          "Generate an SSH keypair in your client. SSH is the standard way to get a command line on a remote machine, and Termius can create the keypair directly. Paste the public half into the create-server form. Keys only, never passwords.",
+          "Add the domain to Cloudflare on the free plan and switch nameservers at your registrar. Cloudflare sits in front of your site, handling DNS and filtering incoming traffic. Start this now; propagation can take hours.",
+        ],
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Verify: Cloudflare marks the zone active.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Install an SSH client and Tailscale on both laptop and phone, signed in to the same account. Tailscale creates a private network that links only your own devices.",
+        ],
+      },
+
+      { type: "h2", body: "Phase 2 — Lock it down (20 min)", id: "phase-2-lock-it-down" },
+      {
+        type: "p",
+        body: "This phase contains the only step that can permanently cost you access. Read it through before starting.",
+      },
+      {
+        type: "p",
+        body: "Step 5 — connect and update.",
+      },
+      {
+        type: "code",
+        lang: "bash",
+        source: `ssh root@YOUR_SERVER_IP
+apt update && apt upgrade -y`,
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Verify: `free -h` reports 4 GB or more. If it is lower, resize the server before continuing.",
+      },
+      {
+        type: "p",
+        body: "Step 6 — install Tailscale on the server using the official script and authenticate it.",
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Verify: `tailscale ip -4` returns an address starting with 100. Write it down.",
+      },
+      {
+        type: "p",
+        body: "Step 7 — disable key expiry for the server in the Tailscale admin console. Skip this and the server drops off your network in ninety days, after every other route is closed.",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        body: "Do not skip. Step 8 — from a second terminal, `ssh root@100.x.x.x`. Leave the first session open. Verify: you get a shell, and `who` shows two sessions. Two sessions is the pass condition — anything else means stop. Bookmark your provider's browser recovery console now. It works without SSH or Tailscale, and it is your only way back if the mesh fails.",
+      },
+      {
+        type: "p",
+        body: "Step 9 — in the provider firewall, delete every inbound rule, then allow port 443 from Cloudflare's published ranges only. Fetch the list rather than typing it. Tailscale keeps working because the tunnel is established outbound; optionally allow inbound UDP 41641 for direct rather than relayed connections.",
+      },
+      {
+        type: "p",
+        body: "If your provider does not offer a cloud firewall, apply the equivalent rules with `ufw` on the server itself, allowing inbound only on the `tailscale0` interface plus 443 from Cloudflare ranges. A host firewall is easier to lock yourself out of, so the recovery console matters more in that case.",
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Verify: the inbound list contains exactly one TCP 443 entry. No rule mentions port 22.",
+      },
+      {
+        type: "p",
+        body: "Step 10 — test from mobile data with Tailscale off.",
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Verify: `ssh root@YOUR_PUBLIC_IP` times out. \"Connection refused\" is not a pass — refused means something answered.",
+      },
+      {
+        type: "p",
+        body: "Step 11 — add your phone's own public key to `authorized_keys`. One key per device, so losing a phone means revoking one key.",
+      },
+
+      { type: "h2", body: "Phase 3 — Install the agent (5 min)", id: "phase-3-install-agent" },
+      {
+        type: "p",
+        body: "Step 12 — install tmux and Claude Code. tmux keeps a terminal session alive on the server after you disconnect. The native installer needs no Node.js; other paths, including signed apt repositories, are in Anthropic's setup guide.",
+      },
+      {
+        type: "code",
+        lang: "bash",
+        source: `sudo apt install tmux
+curl -fsSL https://claude.ai/install.sh | bash`,
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Verify: `claude --version` prints a version number and `claude doctor` reports no errors.",
+      },
+      {
+        type: "p",
+        body: "Step 13 — run it inside tmux so the session survives disconnects.",
+      },
+      {
+        type: "code",
+        lang: "bash",
+        source: `tmux new -s claude
+claude`,
+      },
+      {
+        type: "p",
+        body: "Detach with `Ctrl-b` then `d`.",
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Verify: close the terminal, reconnect from your phone, and run `tmux attach -t claude`. The session returns where you left it.",
+      },
+
+      { type: "h2", body: "Phase 4 — Hand it over", id: "phase-4-hand-over" },
+      {
+        type: "p",
+        body: "Step 14 — write the handover document. Claude Code reads CLAUDE.md at the start of every session. Vague instructions produce a server that surprises you.",
+      },
+      {
+        type: "code",
+        lang: "md",
+        filename: "CLAUDE.md",
+        source: `# Server operating rules
+
+## Facts
+- Provider, plan, region, OS version
+- Live server. Real traffic depends on it.
+- Preferred stack, and how I want progress reported
+
+## Security model — INTENTIONAL, DO NOT "FIX"
+- Public SSH is closed on purpose. Access is via Tailscale only.
+  Never open port 22 to the internet.
+- Inbound is 443 from Cloudflare ranges only. Never widen it.
+- New services bind to localhost or Tailscale. Never 0.0.0.0.
+
+## Conventions
+- One project per directory: /srv/http/<domain>
+- One tmux session per project, named after the domain
+- Secrets in environment files, never committed
+
+## Standing rules
+- Ask before anything destructive: deletions, package removal,
+  config overwrites, database drops
+- Prefer read-only diagnostics first
+- Append every incident and its fix to this file
+
+## Escalate, do not decide
+- Anything touching DNS, firewall, or backups`,
+      },
+      {
+        type: "p",
+        body: "Keep permission prompts on. That confirmation is the safety model.",
+      },
+      {
+        type: "p",
+        body: "Step 15 — have the agent write that file before it builds anything.",
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Verify: ask a fresh session what the security model is. It should describe it unprompted.",
+      },
+      {
+        type: "p",
+        body: "Step 16 — backups before features. A nightly push to a private GitHub repository, excluding environment files and tokens.",
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Verify: perform an actual restore. A backup you have not restored from is not a backup.",
+      },
+      {
+        type: "p",
+        body: "Step 17 — then let it build.",
+      },
+      {
+        type: "p",
+        body: "Caddy with the Cloudflare DNS plugin fits this architecture because the usual certificate method needs port 80 open and you have closed it; the DNS-01 challenge issues certificates over the DNS API instead. Nginx works too, but you would configure the challenge yourself.",
+      },
+      {
+        type: "p",
+        body: "SQLite is a good default here: one file on disk, already covered by your backup, and no listening service to secure. PostgreSQL or MySQL are fine if you need them — bind them to localhost or the Tailscale interface only.",
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Verify: the domain loads over HTTPS, and the raw server IP does not respond.",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        body: "The gotcha that takes sites offline: the DNS record must be proxied through Cloudflare, not DNS-only. Your firewall accepts Cloudflare ranges only, so an unproxied record points visitors at a closed door. Set SSL mode to Full (strict).",
+      },
+
+      { type: "h2", body: "If something breaks", id: "troubleshooting" },
+      {
+        type: "ul",
+        items: [
+          "Cannot SSH after step 9 — use the provider's browser recovery console, re-open port 22 temporarily, and diagnose Tailscale from there.",
+          "Tailscale shows the server offline — usually expired keys; check step 7. Reconnect over the console and run `tailscale up` again.",
+          "Certificate never issues — the DNS API token is missing edit permission on the zone, or is scoped to the wrong zone. Check the Caddy logs.",
+          "Site times out for visitors — the DNS record is set to DNS-only instead of proxied, so traffic arrives from outside Cloudflare's ranges and the firewall drops it.",
+        ],
+      },
+
+      { type: "h2", body: "Know the limits", id: "limits" },
+      {
+        type: "p",
+        body: "Your tailnet is a single point of failure, so put multi-factor authentication on it. The agent holds real privileges on a live machine — run it as a sudo user, not root, and read commands before approving them. And this is one box: no failover, no high availability. Right for personal projects and small sites, wrong for infrastructure other people depend on.",
+      },
+
+      { type: "h2", body: "What you have now", id: "what-you-have-now" },
+      {
+        type: "p",
+        body: "A server that only you can reach for administration, that only Cloudflare can reach for traffic, and that documents its own rules to the agent running it. From here, everything is a conversation: open the session, say what you want, approve what it proposes.",
+      },
+
+      { type: "h2", body: "Resources", id: "resources" },
+      {
+        type: "linklist",
+        items: [
+          { title: "Claude Code overview", url: "https://docs.claude.com/en/docs/claude-code/overview" },
+          { title: "Claude Code setup guide", url: "https://code.claude.com/docs/en/setup" },
+          { title: "Claude Code memory (CLAUDE.md)", url: "https://docs.claude.com/en/docs/claude-code/memory" },
+          { title: "Claude Code permissions (IAM)", url: "https://docs.claude.com/en/docs/claude-code/iam" },
+          { title: "Hetzner Cloud", url: "https://www.hetzner.com/cloud" },
+          { title: "DigitalOcean", url: "https://www.digitalocean.com/" },
+          { title: "Cloudflare", url: "https://www.cloudflare.com/" },
+          { title: "Cloudflare full DNS setup", url: "https://developers.cloudflare.com/dns/zone-setups/full-setup/setup/" },
+          { title: "Cloudflare IP ranges", url: "https://www.cloudflare.com/ips/" },
+          { title: "Cloudflare SSL — Full (strict)", url: "https://developers.cloudflare.com/ssl/origin-configuration/ssl-modes/full-strict/" },
+          { title: "Tailscale", url: "https://tailscale.com/" },
+          { title: "Tailscale download", url: "https://tailscale.com/download" },
+          { title: "Tailscale Linux install", url: "https://tailscale.com/download/linux" },
+          { title: "Tailscale key expiry", url: "https://tailscale.com/kb/1028/key-expiry" },
+          { title: "Termius", url: "https://termius.com/" },
+          { title: "Caddy", url: "https://caddyserver.com/" },
+          { title: "Caddy Cloudflare DNS plugin", url: "https://github.com/caddy-dns/cloudflare" },
+          { title: "SQLite", url: "https://www.sqlite.org/" },
+        ],
+      },
+    ],
+  },
   "git-github-quick-guide": {
     slug: "git-github-quick-guide",
     tagline:
