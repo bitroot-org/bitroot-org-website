@@ -1,17 +1,15 @@
 ---
 date: '2026-07-23'
-excerpt: Buzz is an open‑source, decentralized group‑chat platform aimed at teams
-  that want to move away from Slack and GitHub. It promises self‑sovereign messaging
-  with a model‑agnostic design.
-image: null
+excerpt: 'Buzz is an open‑source, decentralized group‑chat platform aimed at teams that want to move away from Slack and GitHub. It promises self‑sovereign messaging with a model‑agnostic design.'
+image: https://pbs.twimg.com/card_img/2079583114641444864/ZFxGc51V?format=jpg&name=900x900
 published_at: '2026-07-23T02:07:57.170116+00:00'
 sources:
 - https://x.com/i/status/2079605800998146171
 tags:
-- group chat
-- open source
-- team communication
-title: Buzz launches as open‑source group chat alternative to Slack
+- 'group chat'
+- 'open source'
+- 'team communication'
+title: 'Buzz launches as open‑source group chat alternative to Slack'
 ---
 
 Buzz was announced today with a single tweet from its creator, offering a new group‑chat platform for teams and bots of any size. The launch includes a public website https://buzz.xyz and an open‑source codebase.
