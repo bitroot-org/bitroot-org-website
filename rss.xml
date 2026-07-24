@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 24 Jul 2026 09:30:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2026 10:49:28 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Google's Gemini 3.5 Pro Is Months Behind: The Coding Performance Gap Explained</title>
@@ -117,6 +117,21 @@
       <category>ai tooling</category>
       <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2080059036527976448/img/dkdJGmQiXx3OwvDB.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/RoundtableSpace/status/2080084226364366994">Original Source</source>
+    </item>
+    <item>
+      <title>Claude Code adds beta security scanning plugin for terminal</title>
+      <link>https://bitroot.org/blog/2026-07-23-claude-code-adds-beta-security-scanning-plugin-for/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-23-claude-code-adds-beta-security-scanning-plugin-for/</guid>
+      <description>Claude’s new security plugin lets you scan code for vulnerabilities from the terminal, either per‑change or across the whole repo, while you’re already using Claude inference.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2079990597973057691"&gt;https://x.com/i/status/2079990597973057691&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 02:06:38 +0000</pubDate>
+      <category>security</category>
+      <category>code scanning</category>
+      <category>claude</category>
+      <category>beta</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2079986661207732224/img/6P-2l2p-49hKFPco.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2079990597973057691">Original Source</source>
     </item>
     <item>
       <title>Buzz launches as open‑source group chat alternative to Slack</title>
