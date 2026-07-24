@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 243,
+  "count": 244,
   "posts": [
+    "2026-07-24-why-googles-gemini-3-5-pro-is-months-behind-the-co.md",
     "2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this.md",
     "2026-07-23-buzz-launches-as-opensource-group-chat-alternative.md",
     "2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven.md",
@@ -247,6 +248,26 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-07-24-why-googles-gemini-3-5-pro-is-months-behind-the-co.md",
+      "slug": "2026-07-24-why-googles-gemini-3-5-pro-is-months-behind-the-co",
+      "url": "/blog/2026-07-24-why-googles-gemini-3-5-pro-is-months-behind-the-co/",
+      "title": "Why Google's Gemini 3.5 Pro Is Months Behind: The Coding Performance Gap Explained",
+      "date": "2026-07-24",
+      "published_at": "2026-07-24T04:54:54.106Z",
+      "tags": [
+        "AI",
+        "LLM",
+        "Google Gemini",
+        "AI development",
+        "Technology"
+      ],
+      "excerpt": "Google promised Gemini 3.5 Pro in June, it's still not shipped in July. Why? The flagship can't match Claude's coding performance, and that's what enterprises actually buy.",
+      "image": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2026/07/Gemini-3.5-Pro-cover.jpg?w=1500&quality=82&strip=all&ssl=1",
+      "sources": [],
+      "readTime": "13 min",
+      "shortId": 244
+    },
     {
       "filename": "2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this.md",
       "slug": "2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this",

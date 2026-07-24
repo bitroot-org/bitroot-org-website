@@ -5,8 +5,21 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 23 Jul 2026 04:29:28 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2026 04:55:41 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why Google's Gemini 3.5 Pro Is Months Behind: The Coding Performance Gap Explained</title>
+      <link>https://bitroot.org/blog/2026-07-24-why-googles-gemini-3-5-pro-is-months-behind-the-co/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-24-why-googles-gemini-3-5-pro-is-months-behind-the-co/</guid>
+      <description>Google promised Gemini 3.5 Pro in June, it's still not shipped in July. Why? The flagship can't match Claude's coding performance, and that's what enterprises actually buy.</description>
+      <pubDate>Fri, 24 Jul 2026 04:54:54 +0000</pubDate>
+      <category>AI</category>
+      <category>LLM</category>
+      <category>Google Gemini</category>
+      <category>AI development</category>
+      <category>Technology</category>
+      <enclosure url="https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2026/07/Gemini-3.5-Pro-cover.jpg?w=1500&amp;quality=82&amp;strip=all&amp;ssl=1" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>OpenAI's GPT-5.6 Sol Hacked Hugging Face: What This Means for Indian Developers</title>
       <link>https://bitroot.org/blog/2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this/</link>
