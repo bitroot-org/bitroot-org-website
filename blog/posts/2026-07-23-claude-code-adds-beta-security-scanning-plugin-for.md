@@ -1,5 +1,5 @@
 ---
-date: '2026-07-23'
+date: '2026-07-24'
 excerpt: 'Claude’s new security plugin lets you scan code for vulnerabilities from the terminal, either per‑change or across the whole repo, while you’re already using Claude inference.'
 image: https://pbs.twimg.com/amplify_video_thumb/2079986661207732224/img/6P-2l2p-49hKFPco.jpg
 published_at: '2026-07-23T02:06:38.520174+00:00'
