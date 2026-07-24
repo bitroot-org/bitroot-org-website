@@ -1,19 +1,15 @@
 ---
-date: '2026-07-23'
-excerpt: 'Claude Code on desktop now works with the iOS simulator.
-
-
-  Build and run your iOS app, and the simulator opens in a panel right next to your
-  conversation. Available today in public beta.'
+date: '2026-07-24'
+excerpt: '''Claude Code on desktop now works with the iOS simulator.'
 image: https://pbs.twimg.com/media/HNx8dz-bwAAm8xR.jpg?name=orig
 published_at: '2026-07-23T02:06:08.989579+00:00'
 sources:
 - https://x.com/i/status/2079674432038248611
 tags:
-- claude
-- ios development
-- desktop tools
-title: Claude Code desktop adds iOS simulator panel in public beta
+- 'claude'
+- 'ios development'
+- 'desktop tools'
+title: 'Claude Code desktop adds iOS simulator panel in public beta'
 ---
 
 Claude Code on desktop now opens the iOS simulator in a panel next to your conversation, and the feature is available today in public beta. Build and run your iOS app, and the simulator appears side‑by‑side with the Claude chat window.
