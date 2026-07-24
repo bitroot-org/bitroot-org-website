@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 24 Jul 2026 14:57:38 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2026 14:58:31 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Google's Gemini 3.5 Pro Is Months Behind: The Coding Performance Gap Explained</title>
@@ -19,6 +19,20 @@
       <category>AI development</category>
       <category>Technology</category>
       <enclosure url="https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2026/07/Gemini-3.5-Pro-cover.jpg?w=1500&amp;quality=82&amp;strip=all&amp;ssl=1" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>Claude Code desktop adds iOS simulator panel in public beta</title>
+      <link>https://bitroot.org/blog/2026-07-23-claude-code-desktop-adds-ios-simulator-panel-in-pu/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-23-claude-code-desktop-adds-ios-simulator-panel-in-pu/</guid>
+      <description>'Claude Code on desktop now works with the iOS simulator.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2079674432038248611"&gt;https://x.com/i/status/2079674432038248611&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 02:06:08 +0000</pubDate>
+      <category>claude</category>
+      <category>ios development</category>
+      <category>desktop tools</category>
+      <enclosure url="https://pbs.twimg.com/media/HNx8dz-bwAAm8xR.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2079674432038248611">Original Source</source>
     </item>
     <item>
       <title>Claude Code's New Security Scanner: Free Vulnerability Detection That Replaces a $500/Month Tool</title>
