@@ -1,9 +1,14 @@
 {
   "generated": true,
-  "count": 244,
+  "count": 249,
   "posts": [
     "2026-07-24-why-googles-gemini-3-5-pro-is-months-behind-the-co.md",
+    "2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video.md",
+    "2026-07-23-world-monitor-opensources-a-billiondollar-warroom.md",
+    "2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas.md",
     "2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this.md",
+    "2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now.md",
+    "2026-07-23-claude-code-eyes-adds-visual-hardware-verification.md",
     "2026-07-23-buzz-launches-as-opensource-group-chat-alternative.md",
     "2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven.md",
     "2026-07-21-why-apple-raised-prices-across-hardware-subscripti.md",
@@ -266,7 +271,71 @@
       "image": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2026/07/Gemini-3.5-Pro-cover.jpg?w=1500&quality=82&strip=all&ssl=1",
       "sources": [],
       "readTime": "13 min",
-      "shortId": 244
+      "shortId": 249
+    },
+    {
+      "filename": "2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video.md",
+      "slug": "2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video",
+      "url": "/blog/2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video/",
+      "title": "Yeta Labs releases demo of a massive causal video model",
+      "date": "2026-07-23",
+      "published_at": "2026-07-23T11:02:22.608662+00:00",
+      "tags": [
+        "video generation",
+        "causal model",
+        "hardware"
+      ],
+      "excerpt": "We built a massive causal video model, using a mix of Ascend NPUs and NVIDIA GPUs on @yetalabs. Demo \ud83d\udc47 Waitlist @ https://world.yeta.ai",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2080162880540831744/img/fVGO-7iGBytKJhCL.jpg",
+      "sources": [
+        "https://x.com/Fried_rice/status/2080172920782066079"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video.mp4",
+      "shortId": 248
+    },
+    {
+      "filename": "2026-07-23-world-monitor-opensources-a-billiondollar-warroom.md",
+      "slug": "2026-07-23-world-monitor-opensources-a-billiondollar-warroom",
+      "url": "/blog/2026-07-23-world-monitor-opensources-a-billiondollar-warroom/",
+      "title": "World Monitor open\u2011sources a billion\u2011dollar war\u2011room for free",
+      "date": "2026-07-23",
+      "published_at": "2026-07-23T11:03:06.323090+00:00",
+      "tags": [
+        "open source intelligence",
+        "geopolitical monitoring",
+        "real\u2011time analytics"
+      ],
+      "excerpt": "A developer has released World Monitor, a free GitHub project that aggregates 500+ news feeds, AI summaries, and live 3D maps\u2014features once locked behind multi\u2011million\u2011dollar contracts.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2080032886007230465/img/pk36SoYpjDnX4VaL.jpg",
+      "sources": [
+        "https://x.com/Abobsterina/status/2080032942810706375"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-23-world-monitor-opensources-a-billiondollar-warroom.mp4",
+      "shortId": 247
+    },
+    {
+      "filename": "2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas.md",
+      "slug": "2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas",
+      "url": "/blog/2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas/",
+      "title": "Storm Gauge GARCH indicator for TradingView released as open-source",
+      "date": "2026-07-23",
+      "published_at": "2026-07-23T11:02:28.818932+00:00",
+      "tags": [
+        "tradingview",
+        "garch",
+        "volatility",
+        "open-source"
+      ],
+      "excerpt": "The Storm Gauge, an open\u2011source TradingView indicator that applies a GARCH volatility model, is now installable via a one\u2011line Claude Code command and shows early backtest gains on Bitcoin.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2080163505848950784/img/Ly9lhCXQvLWTWnhv.jpg",
+      "sources": [
+        "https://x.com/milesdeutscher/status/2080163535250948523"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas.mp4",
+      "shortId": 246
     },
     {
       "filename": "2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this.md",
@@ -286,6 +355,48 @@
       "image": "https://media.wired.com/photos/6a5ff5b0f95e7d91469f8f3d/1:1/w_1920,c_limit/security_openai_hack_huggingface.jpg",
       "sources": [],
       "readTime": "7 min",
+      "shortId": 245
+    },
+    {
+      "filename": "2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now.md",
+      "slug": "2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now",
+      "url": "/blog/2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now/",
+      "title": "MIT and Toyota open\u2011source CarCrashNet dataset, now viewable in FiftyOne",
+      "date": "2026-07-23",
+      "published_at": "2026-07-23T11:01:56.513076+00:00",
+      "tags": [
+        "datasets",
+        "computer vision",
+        "simulation",
+        "fiftyone"
+      ],
+      "excerpt": "MIT and Toyota released CarCrashNet, a 15k\u2011plus crash simulation dataset, and the open\u2011source FiftyOne library can ingest it for interactive exploration.",
+      "image": "https://pbs.twimg.com/tweet_video_thumb/HN5AizwX0AA9NBn.jpg",
+      "sources": [
+        "https://x.com/jimmy_voxel51/status/2080171071756464329"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now.mp4",
+      "shortId": 244
+    },
+    {
+      "filename": "2026-07-23-claude-code-eyes-adds-visual-hardware-verification.md",
+      "slug": "2026-07-23-claude-code-eyes-adds-visual-hardware-verification",
+      "url": "/blog/2026-07-23-claude-code-eyes-adds-visual-hardware-verification/",
+      "title": "Claude Code Eyes adds visual hardware verification to Claude Code",
+      "date": "2026-07-23",
+      "published_at": "2026-07-23T11:03:02.096076+00:00",
+      "tags": [
+        "hardware testing",
+        "ai tooling"
+      ],
+      "excerpt": "Claude Code Eyes lets Claude Code close the loop on firmware development by automatically analyzing camera snapshots of a board or display, reducing manual screenshot work.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2080059036527976448/img/dkdJGmQiXx3OwvDB.jpg",
+      "sources": [
+        "https://x.com/RoundtableSpace/status/2080084226364366994"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-23-claude-code-eyes-adds-visual-hardware-verification.mp4",
       "shortId": 243
     },
     {

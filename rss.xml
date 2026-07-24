@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 24 Jul 2026 04:55:41 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2026 09:29:24 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Google's Gemini 3.5 Pro Is Months Behind: The Coding Performance Gap Explained</title>
@@ -21,6 +21,49 @@
       <enclosure url="https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2026/07/Gemini-3.5-Pro-cover.jpg?w=1500&amp;quality=82&amp;strip=all&amp;ssl=1" type="image/jpeg" length="0" />
     </item>
     <item>
+      <title>Yeta Labs releases demo of a massive causal video model</title>
+      <link>https://bitroot.org/blog/2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video/</guid>
+      <description>We built a massive causal video model, using a mix of Ascend NPUs and NVIDIA GPUs on @yetalabs. Demo 👇 Waitlist @ https://world.yeta.ai
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/Fried_rice/status/2080172920782066079"&gt;https://x.com/Fried_rice/status/2080172920782066079&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:02:22 +0000</pubDate>
+      <category>video generation</category>
+      <category>causal model</category>
+      <category>hardware</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2080162880540831744/img/fVGO-7iGBytKJhCL.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/Fried_rice/status/2080172920782066079">Original Source</source>
+    </item>
+    <item>
+      <title>World Monitor open‑sources a billion‑dollar war‑room for free</title>
+      <link>https://bitroot.org/blog/2026-07-23-world-monitor-opensources-a-billiondollar-warroom/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-23-world-monitor-opensources-a-billiondollar-warroom/</guid>
+      <description>A developer has released World Monitor, a free GitHub project that aggregates 500+ news feeds, AI summaries, and live 3D maps—features once locked behind multi‑million‑dollar contracts.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/Abobsterina/status/2080032942810706375"&gt;https://x.com/Abobsterina/status/2080032942810706375&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:03:06 +0000</pubDate>
+      <category>open source intelligence</category>
+      <category>geopolitical monitoring</category>
+      <category>real‑time analytics</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2080032886007230465/img/pk36SoYpjDnX4VaL.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/Abobsterina/status/2080032942810706375">Original Source</source>
+    </item>
+    <item>
+      <title>Storm Gauge GARCH indicator for TradingView released as open-source</title>
+      <link>https://bitroot.org/blog/2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas/</guid>
+      <description>The Storm Gauge, an open‑source TradingView indicator that applies a GARCH volatility model, is now installable via a one‑line Claude Code command and shows early backtest gains on Bitcoin.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/milesdeutscher/status/2080163535250948523"&gt;https://x.com/milesdeutscher/status/2080163535250948523&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:02:28 +0000</pubDate>
+      <category>tradingview</category>
+      <category>garch</category>
+      <category>volatility</category>
+      <category>open-source</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2080163505848950784/img/Ly9lhCXQvLWTWnhv.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/milesdeutscher/status/2080163535250948523">Original Source</source>
+    </item>
+    <item>
       <title>OpenAI's GPT-5.6 Sol Hacked Hugging Face: What This Means for Indian Developers</title>
       <link>https://bitroot.org/blog/2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this/</link>
       <guid isPermaLink="true">https://bitroot.org/blog/2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this/</guid>
@@ -32,6 +75,34 @@
       <category>Developer Security</category>
       <category>LLM Security</category>
       <enclosure url="https://media.wired.com/photos/6a5ff5b0f95e7d91469f8f3d/1:1/w_1920,c_limit/security_openai_hack_huggingface.jpg" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>MIT and Toyota open‑source CarCrashNet dataset, now viewable in FiftyOne</title>
+      <link>https://bitroot.org/blog/2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now/</guid>
+      <description>MIT and Toyota released CarCrashNet, a 15k‑plus crash simulation dataset, and the open‑source FiftyOne library can ingest it for interactive exploration.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/jimmy_voxel51/status/2080171071756464329"&gt;https://x.com/jimmy_voxel51/status/2080171071756464329&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:01:56 +0000</pubDate>
+      <category>datasets</category>
+      <category>computer vision</category>
+      <category>simulation</category>
+      <category>fiftyone</category>
+      <enclosure url="https://pbs.twimg.com/tweet_video_thumb/HN5AizwX0AA9NBn.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/jimmy_voxel51/status/2080171071756464329">Original Source</source>
+    </item>
+    <item>
+      <title>Claude Code Eyes adds visual hardware verification to Claude Code</title>
+      <link>https://bitroot.org/blog/2026-07-23-claude-code-eyes-adds-visual-hardware-verification/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-23-claude-code-eyes-adds-visual-hardware-verification/</guid>
+      <description>Claude Code Eyes lets Claude Code close the loop on firmware development by automatically analyzing camera snapshots of a board or display, reducing manual screenshot work.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/RoundtableSpace/status/2080084226364366994"&gt;https://x.com/RoundtableSpace/status/2080084226364366994&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 23 Jul 2026 11:03:02 +0000</pubDate>
+      <category>hardware testing</category>
+      <category>ai tooling</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2080059036527976448/img/dkdJGmQiXx3OwvDB.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/RoundtableSpace/status/2080084226364366994">Original Source</source>
     </item>
     <item>
       <title>Buzz launches as open‑source group chat alternative to Slack</title>
