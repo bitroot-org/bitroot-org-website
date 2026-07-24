@@ -3,6 +3,7 @@
   "count": 251,
   "posts": [
     "2026-07-24-why-googles-gemini-3-5-pro-is-months-behind-the-co.md",
+    "2026-07-23-claude-code-adds-beta-security-scanning-plugin-for.md",
     "2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video.md",
     "2026-07-23-world-monitor-opensources-a-billiondollar-warroom.md",
     "2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas.md",
@@ -10,7 +11,6 @@
     "2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now.md",
     "2026-07-23-cursor-launches-router-to-cut-model-costs-by-60.md",
     "2026-07-23-claude-code-eyes-adds-visual-hardware-verification.md",
-    "2026-07-23-claude-code-adds-beta-security-scanning-plugin-for.md",
     "2026-07-23-buzz-launches-as-opensource-group-chat-alternative.md",
     "2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven.md",
     "2026-07-21-why-apple-raised-prices-across-hardware-subscripti.md",
@@ -276,6 +276,27 @@
       "shortId": 251
     },
     {
+      "filename": "2026-07-23-claude-code-adds-beta-security-scanning-plugin-for.md",
+      "slug": "2026-07-23-claude-code-adds-beta-security-scanning-plugin-for",
+      "url": "/blog/2026-07-23-claude-code-adds-beta-security-scanning-plugin-for/",
+      "title": "Claude Code's New Security Scanner: Free Vulnerability Detection That Replaces a $500/Month Tool",
+      "date": "2026-07-24",
+      "published_at": "2026-07-23T02:06:38.520174+00:00",
+      "tags": [
+        "security",
+        "code scanning",
+        "claude",
+        "beta"
+      ],
+      "excerpt": "Claude\u2019s new security plugin lets you scan code for vulnerabilities from the terminal, either per\u2011change or across the whole repo, while you\u2019re already using Claude inference.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2079986661207732224/img/6P-2l2p-49hKFPco.jpg",
+      "sources": [
+        "https://x.com/i/status/2079990597973057691"
+      ],
+      "readTime": "3 min",
+      "shortId": 250
+    },
+    {
       "filename": "2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video.md",
       "slug": "2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video",
       "url": "/blog/2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video/",
@@ -294,7 +315,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video.mp4",
-      "shortId": 250
+      "shortId": 249
     },
     {
       "filename": "2026-07-23-world-monitor-opensources-a-billiondollar-warroom.md",
@@ -315,7 +336,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-world-monitor-opensources-a-billiondollar-warroom.mp4",
-      "shortId": 249
+      "shortId": 248
     },
     {
       "filename": "2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas.md",
@@ -337,7 +358,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas.mp4",
-      "shortId": 248
+      "shortId": 247
     },
     {
       "filename": "2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this.md",
@@ -357,7 +378,7 @@
       "image": "https://media.wired.com/photos/6a5ff5b0f95e7d91469f8f3d/1:1/w_1920,c_limit/security_openai_hack_huggingface.jpg",
       "sources": [],
       "readTime": "7 min",
-      "shortId": 247
+      "shortId": 246
     },
     {
       "filename": "2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now.md",
@@ -379,7 +400,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now.mp4",
-      "shortId": 246
+      "shortId": 245
     },
     {
       "filename": "2026-07-23-cursor-launches-router-to-cut-model-costs-by-60.md",
@@ -400,7 +421,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-cursor-launches-router-to-cut-model-costs-by-60.mp4",
-      "shortId": 245
+      "shortId": 244
     },
     {
       "filename": "2026-07-23-claude-code-eyes-adds-visual-hardware-verification.md",
@@ -420,27 +441,6 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-claude-code-eyes-adds-visual-hardware-verification.mp4",
-      "shortId": 244
-    },
-    {
-      "filename": "2026-07-23-claude-code-adds-beta-security-scanning-plugin-for.md",
-      "slug": "2026-07-23-claude-code-adds-beta-security-scanning-plugin-for",
-      "url": "/blog/2026-07-23-claude-code-adds-beta-security-scanning-plugin-for/",
-      "title": "Claude Code's New Security Scanner: Free Vulnerability Detection That Replaces a $500/Month Tool",
-      "date": "2026-07-23",
-      "published_at": "2026-07-23T02:06:38.520174+00:00",
-      "tags": [
-        "security",
-        "code scanning",
-        "claude",
-        "beta"
-      ],
-      "excerpt": "Claude\u2019s new security plugin lets you scan code for vulnerabilities from the terminal, either per\u2011change or across the whole repo, while you\u2019re already using Claude inference.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2079986661207732224/img/6P-2l2p-49hKFPco.jpg",
-      "sources": [
-        "https://x.com/i/status/2079990597973057691"
-      ],
-      "readTime": "3 min",
       "shortId": 243
     },
     {
