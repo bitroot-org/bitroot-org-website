@@ -5,8 +5,22 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 24 Jul 2026 14:58:31 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2026 05:26:39 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bitchat GitHub Takedown: Why Developers in India Must Rethink Offline-First Apps</title>
+      <link>https://bitroot.org/blog/2026-07-25-bitchat-github-takedown-why-developers-in-india-mu/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-25-bitchat-github-takedown-why-developers-in-india-mu/</guid>
+      <description>Bitchat's gone from GitHub. China removed it from App Store in April. Now India. If you're building offline-first or decentralized communication tools, the pattern is clear—regulatory friction is a structural cost, not an edge case.-
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://techcrunch.com/2026/07/24/indias-move-against-jack-dorseys-bitchat-sparks-legal-debate/"&gt;https://techcrunch.com/2026/07/24/indias-move-against-jack-dorseys-bitchat-sparks-legal-debate/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 25 Jul 2026 05:25:43 +0000</pubDate>
+      <category>Startups</category>
+      <category>Open Source</category>
+      <category>Technology</category>
+      <enclosure url="https://th-i.thgim.com/public/incoming/s017lf/article71262085.ece/alternates/LANDSCAPE_1200/12-11-JACK_DORSEY_CEO_TWITTER_B.jpg" type="image/jpeg" length="0" />
+      <source url="https://techcrunch.com/2026/07/24/indias-move-against-jack-dorseys-bitchat-sparks-legal-debate/">Original Source</source>
+    </item>
     <item>
       <title>Why Google's Gemini 3.5 Pro Is Months Behind: The Coding Performance Gap Explained</title>
       <link>https://bitroot.org/blog/2026-07-24-why-googles-gemini-3-5-pro-is-months-behind-the-co/</link>
