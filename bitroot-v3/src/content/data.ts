@@ -130,7 +130,7 @@ export const guides: Item[] = [
     summary:
       "A category-by-category toolkit for taking a SaaS from idea to paying customers on near-zero fixed spend — what to prioritize in hosting, database, auth, payments, analytics, email, and more, and the order to add them in.",
     tags: ["SaaS", "Bootstrapping", "Tools", "Free tier"],
-    updatedAt: "2026-07-21",
+    updatedAt: "2026-07-27",
     href: "/guides/launch-a-saas-on-almost-0-per-month",
     difficulty: "starter",
   },
