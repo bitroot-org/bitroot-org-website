@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "count": 253,
+  "count": 258,
   "posts": [
     "2026-07-25-bitchat-github-takedown-why-developers-in-india-mu.md",
     "2026-07-24-why-googles-gemini-3-5-pro-is-months-behind-the-co.md",
@@ -23,6 +23,11 @@
     "2026-07-20-gochat-ui-chrome-extension-brings-floating-chat-to.md",
     "2026-07-20-go-blog-shows-how-to-do-graceful-tcp-server-shutdo.md",
     "2026-07-20-bangergen-open-source-local-ai-turns-ideas-into-re.md",
+    "2026-07-18-open-source-tool-turns-phone-video-into-a-local-3d.md",
+    "2026-07-18-open-source-badminton-hawkeye-system-released-by-c.md",
+    "2026-07-18-ods-launches-oneclick-local-ai-inference-stack.md",
+    "2026-07-18-octoc2-launches-a-githubonly-c2-framework.md",
+    "2026-07-18-firecrawl-launches-openlovable-to-autogenerate-rea.md",
     "2026-07-17-youtube-unveils-codex-micro-a-lightweight-ai-code.md",
     "2026-07-17-xai-open-sources-grok-build-its-ai-coding-agent-an.md",
     "2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on.md",
@@ -275,7 +280,7 @@
         "https://techcrunch.com/2026/07/24/indias-move-against-jack-dorseys-bitchat-sparks-legal-debate/"
       ],
       "readTime": "6 min",
-      "shortId": 253
+      "shortId": 258
     },
     {
       "filename": "2026-07-24-why-googles-gemini-3-5-pro-is-months-behind-the-co.md",
@@ -295,7 +300,7 @@
       "image": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2026/07/Gemini-3.5-Pro-cover.jpg?w=1500&quality=82&strip=all&ssl=1",
       "sources": [],
       "readTime": "13 min",
-      "shortId": 252
+      "shortId": 257
     },
     {
       "filename": "2026-07-23-claude-code-desktop-adds-ios-simulator-panel-in-pu.md",
@@ -315,7 +320,7 @@
         "https://x.com/i/status/2079674432038248611"
       ],
       "readTime": "2 min",
-      "shortId": 251
+      "shortId": 256
     },
     {
       "filename": "2026-07-23-claude-code-adds-beta-security-scanning-plugin-for.md",
@@ -336,7 +341,7 @@
         "https://x.com/i/status/2079990597973057691"
       ],
       "readTime": "3 min",
-      "shortId": 250
+      "shortId": 255
     },
     {
       "filename": "2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video.md",
@@ -357,7 +362,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video.mp4",
-      "shortId": 249
+      "shortId": 254
     },
     {
       "filename": "2026-07-23-world-monitor-opensources-a-billiondollar-warroom.md",
@@ -378,7 +383,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-world-monitor-opensources-a-billiondollar-warroom.mp4",
-      "shortId": 248
+      "shortId": 253
     },
     {
       "filename": "2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas.md",
@@ -400,7 +405,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas.mp4",
-      "shortId": 247
+      "shortId": 252
     },
     {
       "filename": "2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this.md",
@@ -420,7 +425,7 @@
       "image": "https://media.wired.com/photos/6a5ff5b0f95e7d91469f8f3d/1:1/w_1920,c_limit/security_openai_hack_huggingface.jpg",
       "sources": [],
       "readTime": "7 min",
-      "shortId": 246
+      "shortId": 251
     },
     {
       "filename": "2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now.md",
@@ -442,7 +447,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now.mp4",
-      "shortId": 245
+      "shortId": 250
     },
     {
       "filename": "2026-07-23-cursor-launches-router-to-cut-model-costs-by-60.md",
@@ -463,7 +468,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-cursor-launches-router-to-cut-model-costs-by-60.mp4",
-      "shortId": 244
+      "shortId": 249
     },
     {
       "filename": "2026-07-23-claude-code-eyes-adds-visual-hardware-verification.md",
@@ -483,7 +488,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-claude-code-eyes-adds-visual-hardware-verification.mp4",
-      "shortId": 243
+      "shortId": 248
     },
     {
       "filename": "2026-07-23-buzz-launches-as-opensource-group-chat-alternative.md",
@@ -503,7 +508,7 @@
         "https://x.com/i/status/2079605800998146171"
       ],
       "readTime": "2 min",
-      "shortId": 242
+      "shortId": 247
     },
     {
       "filename": "2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven.md",
@@ -523,7 +528,7 @@
       "image": "https://aitoolsreview.co.uk/_next/image?url=%2Fmedia%2Farticles%2Finsights%2Fkimi-k3-vs-claude-fable-5%2Faa-intelligence-index.avif&w=1920&q=75&dpl=dpl_269LMm4WTq3eHE8nnHxFFvL2KnDc",
       "sources": [],
       "readTime": "6 min",
-      "shortId": 241
+      "shortId": 246
     },
     {
       "filename": "2026-07-21-why-apple-raised-prices-across-hardware-subscripti.md",
@@ -537,7 +542,7 @@
       "image": "https://static.toiimg.com/thumb/msid-132501351,imgsize-50946,width-400,height-225,resizemode-4/apple.jpg",
       "sources": [],
       "readTime": "11 min",
-      "shortId": 240
+      "shortId": 245
     },
     {
       "filename": "2026-07-21-monid-replaces-apify-with-perrequest-social-media.md",
@@ -558,7 +563,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-21-monid-replaces-apify-with-perrequest-social-media.mp4",
-      "shortId": 239
+      "shortId": 244
     },
     {
       "filename": "2026-07-20-zeroprep-turns-spoken-talks-into-slide-decks-now-o.md",
@@ -578,7 +583,7 @@
         "https://x.com/ramsri_goutham/status/2079069398267281715"
       ],
       "readTime": "2 min",
-      "shortId": 238
+      "shortId": 243
     },
     {
       "filename": "2026-07-20-when-agents-go-wrong-a-cisos-guide-to-agentic-ai-r.md",
@@ -598,7 +603,7 @@
       "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/039b6648c28eb33070a63a58d49013600b229238-2554x2554.svg",
       "sources": [],
       "readTime": "19 min",
-      "shortId": 237
+      "shortId": 242
     },
     {
       "filename": "2026-07-20-opensource-agent-security-adds-five-preflight-cont.md",
@@ -618,7 +623,7 @@
         "https://x.com/nykdotdev/status/2079068942681993237"
       ],
       "readTime": "2 min",
-      "shortId": 236
+      "shortId": 241
     },
     {
       "filename": "2026-07-20-gochat-ui-chrome-extension-brings-floating-chat-to.md",
@@ -638,7 +643,7 @@
         "https://x.com/theadaloguy/status/2079087378522919057"
       ],
       "readTime": "1 min",
-      "shortId": 235
+      "shortId": 240
     },
     {
       "filename": "2026-07-20-go-blog-shows-how-to-do-graceful-tcp-server-shutdo.md",
@@ -658,7 +663,7 @@
         "https://x.com/_xonoxc/status/2079084544322572478"
       ],
       "readTime": "2 min",
-      "shortId": 234
+      "shortId": 239
     },
     {
       "filename": "2026-07-20-bangergen-open-source-local-ai-turns-ideas-into-re.md",
@@ -676,6 +681,108 @@
       "image": "https://pbs.twimg.com/media/HNohvpJagAAk57L.jpg?name=orig",
       "sources": [
         "https://x.com/DegenApeDev/status/2079011617795375453"
+      ],
+      "readTime": "2 min",
+      "shortId": 238
+    },
+    {
+      "filename": "2026-07-18-open-source-tool-turns-phone-video-into-a-local-3d.md",
+      "slug": "2026-07-18-open-source-tool-turns-phone-video-into-a-local-3d",
+      "url": "/blog/2026-07-18-open-source-tool-turns-phone-video-into-a-local-3d/",
+      "title": "Open-source tool turns phone video into a local 3D walkable world",
+      "date": "2026-07-18",
+      "published_at": "2026-07-18T10:12:25.524236+00:00",
+      "tags": [
+        "3d reconstruction",
+        "open-source",
+        "mobile"
+      ],
+      "excerpt": "A new open\u2011source utility converts any phone\u2011recorded video into a 996k\u2011point, 60 fps walkable 3D scene that runs entirely on your GPU, with no cloud dependence.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2078311452012847104/img/9MH3xfRXdaHzSPNE.jpg",
+      "sources": [
+        "https://x.com/0x0SojalSec/status/2078311540282012024"
+      ],
+      "readTime": "2 min",
+      "video": "https://video.twimg.com/amplify_video/2078311452012847104/vid/avc1/2940x1846/sANthlRyS6_BusGx.mp4?tag=29",
+      "shortId": 237
+    },
+    {
+      "filename": "2026-07-18-open-source-badminton-hawkeye-system-released-by-c.md",
+      "slug": "2026-07-18-open-source-badminton-hawkeye-system-released-by-c",
+      "url": "/blog/2026-07-18-open-source-badminton-hawkeye-system-released-by-c/",
+      "title": "Open-source badminton Hawk\u2011Eye system released by Chinese developer",
+      "date": "2026-07-18",
+      "published_at": "2026-07-18T10:13:07.429677+00:00",
+      "tags": [
+        "computer vision",
+        "sports analytics",
+        "open source"
+      ],
+      "excerpt": "A Chinese developer published a fully local, Apache 2.0\u2011licensed badminton Hawk\u2011Eye pipeline with code, model weights, and a zero\u2011cost deployment option.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2078329244912914432/img/TZCsjCJe1q3rgi-9.jpg",
+      "sources": [
+        "https://x.com/0xTria/status/2078329275065696557"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-18-open-source-badminton-hawkeye-system-released-by-c.mp4",
+      "shortId": 236
+    },
+    {
+      "filename": "2026-07-18-ods-launches-oneclick-local-ai-inference-stack.md",
+      "slug": "2026-07-18-ods-launches-oneclick-local-ai-inference-stack",
+      "url": "/blog/2026-07-18-ods-launches-oneclick-local-ai-inference-stack/",
+      "title": "ODS launches one\u2011click local AI inference stack",
+      "date": "2026-07-18",
+      "published_at": "2026-07-18T10:11:20.677508+00:00",
+      "tags": [
+        "local ai",
+        "inference",
+        "open source"
+      ],
+      "excerpt": "ODS detects your hardware, pulls the optimal model, and spins up a private AI server with Open WebUI\u2014all without cloud or subscription.",
+      "image": "https://pbs.twimg.com/media/HNcoODQWAAAZ4K2.jpg?name=orig",
+      "sources": [
+        "https://x.com/TheAhmadOsman/status/2078174547745046934"
+      ],
+      "readTime": "2 min",
+      "shortId": 235
+    },
+    {
+      "filename": "2026-07-18-octoc2-launches-a-githubonly-c2-framework.md",
+      "slug": "2026-07-18-octoc2-launches-a-githubonly-c2-framework",
+      "url": "/blog/2026-07-18-octoc2-launches-a-githubonly-c2-framework/",
+      "title": "OctoC2 launches a GitHub\u2011only C2 framework",
+      "date": "2026-07-18",
+      "published_at": "2026-07-18T10:11:44.274013+00:00",
+      "tags": [
+        "c2",
+        "redteam",
+        "infosec"
+      ],
+      "excerpt": "OctoC2 runs its beacon entirely inside GitHub, talking only to the public GitHub API. The design eliminates the need for external servers but brings its own trade\u2011offs.",
+      "image": "https://pbs.twimg.com/media/HNbuOLPXgAA8Ev2.jpg?name=orig",
+      "sources": [
+        "https://x.com/Yass1nMohamed/status/2078110214142767323"
+      ],
+      "readTime": "2 min",
+      "shortId": 234
+    },
+    {
+      "filename": "2026-07-18-firecrawl-launches-openlovable-to-autogenerate-rea.md",
+      "slug": "2026-07-18-firecrawl-launches-openlovable-to-autogenerate-rea",
+      "url": "/blog/2026-07-18-firecrawl-launches-openlovable-to-autogenerate-rea/",
+      "title": "Firecrawl launches open\u2011lovable to auto\u2011generate React sites",
+      "date": "2026-07-18",
+      "published_at": "2026-07-18T10:13:22.167538+00:00",
+      "tags": [
+        "react",
+        "ai tools",
+        "open source"
+      ],
+      "excerpt": "Firecrawl\u2019s new open\u2011lovable tool can clone any website into a modern React app with an AI\u2011driven chat interface, but it requires an API key and the generated code may need cleanup.",
+      "image": "https://pbs.twimg.com/media/HNe8E3KWUAAh1nt.jpg?name=orig",
+      "sources": [
+        "https://x.com/N0V4Dev/status/2078336551696626102"
       ],
       "readTime": "2 min",
       "shortId": 233

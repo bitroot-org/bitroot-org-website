@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 25 Jul 2026 05:26:39 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2026 00:46:01 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bitchat GitHub Takedown: Why Developers in India Must Rethink Offline-First Apps</title>
@@ -292,6 +292,76 @@
       <category>open-source</category>
       <enclosure url="https://pbs.twimg.com/media/HNohvpJagAAk57L.jpg?name=orig" type="image/jpeg" length="0" />
       <source url="https://x.com/DegenApeDev/status/2079011617795375453">Original Source</source>
+    </item>
+    <item>
+      <title>Open-source tool turns phone video into a local 3D walkable world</title>
+      <link>https://bitroot.org/blog/2026-07-18-open-source-tool-turns-phone-video-into-a-local-3d/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-18-open-source-tool-turns-phone-video-into-a-local-3d/</guid>
+      <description>A new open‑source utility converts any phone‑recorded video into a 996k‑point, 60 fps walkable 3D scene that runs entirely on your GPU, with no cloud dependence.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/0x0SojalSec/status/2078311540282012024"&gt;https://x.com/0x0SojalSec/status/2078311540282012024&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 18 Jul 2026 10:12:25 +0000</pubDate>
+      <category>3d reconstruction</category>
+      <category>open-source</category>
+      <category>mobile</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2078311452012847104/img/9MH3xfRXdaHzSPNE.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/0x0SojalSec/status/2078311540282012024">Original Source</source>
+    </item>
+    <item>
+      <title>Open-source badminton Hawk‑Eye system released by Chinese developer</title>
+      <link>https://bitroot.org/blog/2026-07-18-open-source-badminton-hawkeye-system-released-by-c/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-18-open-source-badminton-hawkeye-system-released-by-c/</guid>
+      <description>A Chinese developer published a fully local, Apache 2.0‑licensed badminton Hawk‑Eye pipeline with code, model weights, and a zero‑cost deployment option.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/0xTria/status/2078329275065696557"&gt;https://x.com/0xTria/status/2078329275065696557&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 18 Jul 2026 10:13:07 +0000</pubDate>
+      <category>computer vision</category>
+      <category>sports analytics</category>
+      <category>open source</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2078329244912914432/img/TZCsjCJe1q3rgi-9.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/0xTria/status/2078329275065696557">Original Source</source>
+    </item>
+    <item>
+      <title>ODS launches one‑click local AI inference stack</title>
+      <link>https://bitroot.org/blog/2026-07-18-ods-launches-oneclick-local-ai-inference-stack/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-18-ods-launches-oneclick-local-ai-inference-stack/</guid>
+      <description>ODS detects your hardware, pulls the optimal model, and spins up a private AI server with Open WebUI—all without cloud or subscription.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/TheAhmadOsman/status/2078174547745046934"&gt;https://x.com/TheAhmadOsman/status/2078174547745046934&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 18 Jul 2026 10:11:20 +0000</pubDate>
+      <category>local ai</category>
+      <category>inference</category>
+      <category>open source</category>
+      <enclosure url="https://pbs.twimg.com/media/HNcoODQWAAAZ4K2.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/TheAhmadOsman/status/2078174547745046934">Original Source</source>
+    </item>
+    <item>
+      <title>OctoC2 launches a GitHub‑only C2 framework</title>
+      <link>https://bitroot.org/blog/2026-07-18-octoc2-launches-a-githubonly-c2-framework/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-18-octoc2-launches-a-githubonly-c2-framework/</guid>
+      <description>OctoC2 runs its beacon entirely inside GitHub, talking only to the public GitHub API. The design eliminates the need for external servers but brings its own trade‑offs.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/Yass1nMohamed/status/2078110214142767323"&gt;https://x.com/Yass1nMohamed/status/2078110214142767323&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 18 Jul 2026 10:11:44 +0000</pubDate>
+      <category>c2</category>
+      <category>redteam</category>
+      <category>infosec</category>
+      <enclosure url="https://pbs.twimg.com/media/HNbuOLPXgAA8Ev2.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/Yass1nMohamed/status/2078110214142767323">Original Source</source>
+    </item>
+    <item>
+      <title>Firecrawl launches open‑lovable to auto‑generate React sites</title>
+      <link>https://bitroot.org/blog/2026-07-18-firecrawl-launches-openlovable-to-autogenerate-rea/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-18-firecrawl-launches-openlovable-to-autogenerate-rea/</guid>
+      <description>Firecrawl’s new open‑lovable tool can clone any website into a modern React app with an AI‑driven chat interface, but it requires an API key and the generated code may need cleanup.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/N0V4Dev/status/2078336551696626102"&gt;https://x.com/N0V4Dev/status/2078336551696626102&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 18 Jul 2026 10:13:22 +0000</pubDate>
+      <category>react</category>
+      <category>ai tools</category>
+      <category>open source</category>
+      <enclosure url="https://pbs.twimg.com/media/HNe8E3KWUAAh1nt.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/N0V4Dev/status/2078336551696626102">Original Source</source>
     </item>
     <item>
       <title>YouTube unveils Codex Micro, a lightweight AI code helper</title>
