@@ -43,6 +43,258 @@ export type GuideContent = {
 };
 
 export const guidesContent: Record<string, GuideContent> = {
+  "launch-a-saas-on-almost-0-per-month": {
+    slug: "launch-a-saas-on-almost-0-per-month",
+    tagline:
+      "You can take a SaaS product from idea to paying customers in 2026 on almost no fixed monthly spend. Free tiers cover most of what an early-stage product needs, and the few things you pay for scale with usage rather than upfront. This guide walks the stack category by category and tells you what to actually look for so you can choose for yourself.",
+    timeEstimate: "20 minutes to read, use it as a checklist while you build",
+    youWillNeed: [
+      "An idea worth validating before you spend anything on it",
+      "Willingness to pick a reasonable tool per category instead of the objectively best one",
+      "A stage-by-stage mindset — add tools only when the current stage demands them",
+    ],
+    youWillEndUpWith:
+      "A category-by-category shortlist of tools (hosting, database, auth, payments, analytics, email, landing pages, design, support) chosen for how their free tier lasts and how their paid tier scales, plus a sequencing checklist so you never buy a tool before the stage that needs it.",
+    toc: [
+      { label: "The principle before the tools", id: "principle" },
+      { label: "At a glance", id: "at-a-glance" },
+      { label: "1. Build and hosting", id: "build-hosting" },
+      { label: "2. Database and backend", id: "database-backend" },
+      { label: "3. Authentication", id: "authentication" },
+      { label: "4. Payments", id: "payments" },
+      { label: "5. Product analytics", id: "analytics" },
+      { label: "6. Email", id: "email" },
+      { label: "7. Landing page and launch", id: "landing-launch" },
+      { label: "8. Design", id: "design" },
+      { label: "9. Support and communication", id: "support" },
+      { label: "Sequencing: buy nothing before you need it", id: "sequencing" },
+      { label: "A realistic cost picture", id: "cost-picture" },
+      { label: "Before you commit", id: "before-you-commit" },
+    ],
+    body: [
+      {
+        type: "callout",
+        tone: "note",
+        body: "Tool references and free-tier details checked against vendor and third-party sources in July 2026. Free tiers and pricing in this space change frequently, so confirm current limits on each vendor's own page before you commit — the named tools are examples, not endorsements.",
+      },
+
+      { type: "h2", body: "The principle before the tools", id: "principle" },
+      {
+        type: "p",
+        body: "Two numbers decide whether a tool belongs in a low-cost launch stack, and neither is the headline price.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Where the free tier runs out — a generous free tier that covers you until real revenue is worth more than a slightly cheaper paid plan. You want to pay only once the tool is making you money.",
+          "How the paid tier scales — some tools stay predictable as you grow; others jump sharply at a threshold, or meter something (visitors, events, contacts) that balloons with success. A tool that is cheap at zero and brutal at $10K MRR is a trap.",
+        ],
+      },
+      {
+        type: "p",
+        body: "Keep total fixed cost near zero until revenue covers it. Everything below is organized around that.",
+      },
+
+      { type: "h2", body: "At a glance", id: "at-a-glance" },
+      {
+        type: "ul",
+        items: [
+          "Build & hosting — prioritize a free tier that permits commercial use, then usage-based pricing. Examples: Netlify (Vercel for non-commercial).",
+          "Database & backend — prioritize database + auth in one free tier. Examples: Supabase, Firebase.",
+          "Authentication — prioritize a free tier by monthly active users, with social login + MFA. Examples: Clerk, Supabase/Firebase auth.",
+          "Payments — prioritize no monthly minimum, with tax/VAT handling. Examples: Stripe, Lemon Squeezy, Paddle.",
+          "Product analytics — prioritize a large free event allowance that bundles replay + flags. Examples: PostHog; Plausible, Umami.",
+          "Email — prioritize a free send tier, with transactional + marketing on one platform. Examples: Resend, Loops.",
+          "Landing & launch — match the tool to your stage: capture first, testing later. Examples: Webflow, Framer.",
+          "Design — prioritize free for individuals, with template kits. Examples: Figma.",
+          "Support & comms — prioritize free team chat and basic customer messaging. Examples: Slack; shared-inbox tools.",
+        ],
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Named tools are examples to illustrate each category, not endorsements. Confirm current free-tier limits on each vendor's page.",
+      },
+
+      { type: "h2", body: "1. Build and hosting", id: "build-hosting" },
+      {
+        type: "p",
+        body: "Where your app actually runs. Modern platforms have generous free or hobby tiers that host a real product at zero cost until you have meaningful traffic.",
+      },
+      {
+        type: "p",
+        body: "What to look for: a free tier that covers a live product, then usage-based pricing rather than a big fixed jump. Read the commercial-use terms — some hobby tiers permit personal projects only, not revenue-generating ones.",
+      },
+      {
+        type: "p",
+        body: "Examples: Netlify allows commercial use on its free tier within usage limits, which suits a real product. Vercel's Hobby tier is excellent but restricted to non-commercial use, so a revenue-generating SaaS is expected to move to its paid plan. For backend and database together, platforms like Supabase bundle database, auth, and APIs on one free tier.",
+      },
+
+      { type: "h2", body: "2. Database and backend", id: "database-backend" },
+      {
+        type: "p",
+        body: "Storing data and running server logic. The current generation of backend-as-a-service tools collapse several categories — database, authentication, storage — into one, which is exactly what a solo founder wants.",
+      },
+      {
+        type: "p",
+        body: "What to look for: database plus auth in one free tier, so you are not stitching and paying for three services.",
+      },
+      {
+        type: "p",
+        body: "Examples: Supabase and Firebase both give you a database, authentication, and file storage on a free plan that comfortably covers early usage. One Supabase caveat worth knowing: free projects pause after about a week of inactivity, so a quiet pre-launch project can go briefly offline until you resume it.",
+      },
+
+      { type: "h2", body: "3. Authentication", id: "authentication" },
+      {
+        type: "p",
+        body: "Letting users sign up and log in securely. Building this yourself is slow and risky; proven providers handle it, often free at low volume.",
+      },
+      {
+        type: "p",
+        body: "What to look for: a free tier measured in monthly active users, with social login and multi-factor included.",
+      },
+      {
+        type: "p",
+        body: "Examples: Clerk and auth-focused tiers inside Supabase or Firebase cover authentication for early user counts without a bill.",
+      },
+
+      { type: "h2", body: "4. Payments", id: "payments" },
+      {
+        type: "p",
+        body: "Taking money. You do not pay a monthly fee here — you pay a percentage per transaction — so this is the one category where \"free until revenue\" is automatic.",
+      },
+      {
+        type: "p",
+        body: "What to look for: no monthly minimum, and whether the tool handles global sales tax and VAT for you. Merchant-of-record tools do that compliance work; a raw payment processor leaves it to you.",
+      },
+      {
+        type: "p",
+        body: "Examples: Stripe is the default processor and charges only per transaction. Lemon Squeezy and Paddle act as merchant of record, handling tax and VAT automatically, which saves real work as you sell internationally. Note that Stripe acquired Lemon Squeezy in 2024, though they remain separate products.",
+      },
+
+      { type: "h2", body: "5. Product analytics", id: "analytics" },
+      {
+        type: "p",
+        body: "Understanding what users do inside your product. This is where free tiers are unusually generous right now, so there is little reason to pay early.",
+      },
+      {
+        type: "p",
+        body: "What to look for: a free event allowance large enough to last well past launch, ideally bundling analytics with session replay and feature flags so you replace several tools with one.",
+      },
+      {
+        type: "p",
+        body: "Examples: PostHog bundles analytics, session replay, and experiments on one platform with a free tier aimed at early-stage use. For lightweight, privacy-friendly web stats, Umami has a free cloud tier and is open-source if you want to self-host, while Plausible is a paid but inexpensive option in the same space.",
+      },
+
+      { type: "h2", body: "6. Email", id: "email" },
+      {
+        type: "p",
+        body: "Two different jobs live here: transactional email (password resets, receipts) and marketing email (newsletters, launch announcements). Some tools do both.",
+      },
+      {
+        type: "p",
+        body: "What to look for: a free tier covering your early send volume, and clean developer-friendly sending for transactional mail.",
+      },
+      {
+        type: "p",
+        body: "Examples: Resend and Loops both offer non-expiring free tiers that cover early volume. Resend is transactional-first with a clean developer API — sending marketing broadcasts on the same domain is a deliverability risk, so keep those separate — while Loops is designed to handle both transactional and lifecycle/marketing email in one product.",
+      },
+
+      { type: "h2", body: "7. Landing page and launch", id: "landing-launch" },
+      {
+        type: "p",
+        body: "The page that captures interest and, later, converts traffic. What you need here depends on your stage, which is worth separating out.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Pre-launch: if you are validating and collecting a waitlist, a prelaunch page and email capture is enough — simple tools stand one up in minutes.",
+          "At launch and after: a proper landing-page builder with templates, and later A/B testing once you are running paid traffic. Do not buy conversion-optimization tooling before you have traffic to optimize.",
+        ],
+      },
+      {
+        type: "p",
+        body: "Examples: website builders like Webflow and Framer have free plans to build and preview a page; connecting your own custom domain (which a real product needs) moves you to an inexpensive paid plan, starting around $5–10/month.",
+      },
+
+      { type: "h2", body: "8. Design", id: "design" },
+      {
+        type: "p",
+        body: "Making it look credible without a designer. The industry-standard design tool has a free tier that covers a solo founder entirely.",
+      },
+      {
+        type: "p",
+        body: "What to look for: free for individuals, with templates and component kits so you are not starting from a blank canvas.",
+      },
+      {
+        type: "p",
+        body: "Examples: Figma offers a free plan for individual use, with a large community library of free UI kits and templates.",
+      },
+
+      { type: "h2", body: "9. Support and communication", id: "support" },
+      {
+        type: "p",
+        body: "Talking to early users and your own team. Almost every tool here has a free tier that lasts well beyond launch.",
+      },
+      {
+        type: "p",
+        body: "What to look for: free tiers on team chat and basic customer messaging; you rarely need dedicated support software early on, so this is a category to keep deliberately light.",
+      },
+      {
+        type: "p",
+        body: "Examples: Slack's free tier handles team communication. For customer support, a shared inbox on your existing email, or a free-tier live-chat widget like Tawk.to or Crisp, covers early volume without a subscription.",
+      },
+
+      { type: "h2", body: "Sequencing: buy nothing before you need it", id: "sequencing" },
+      {
+        type: "p",
+        body: "The cheapest stack is also the one you assemble in order, adding each tool only when the stage demands it.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Validating — landing page, email capture, analytics. Nothing else. You are testing demand, not running a business yet.",
+          "Building — add hosting, database, auth, and design. All available free at this scale.",
+          "Launching — add payments (pay-per-transaction, so no fixed cost) and transactional email.",
+          "Growing — only now consider paid tiers, and only for the tools where you have hit a free-tier ceiling that is actually costing you customers.",
+        ],
+      },
+      {
+        type: "p",
+        body: "Most founders over-buy by reaching for paid plans and conversion tooling before they have the traffic or revenue to justify them. The discipline is to let each bill be triggered by growth, not anticipation.",
+      },
+
+      { type: "h2", body: "A realistic cost picture", id: "cost-picture" },
+      {
+        type: "p",
+        body: "For a typical early-stage SaaS, the fixed monthly cost of this stack can sit at or near zero: hosting, database, auth, analytics, design, and team chat all have free tiers that cover pre-revenue usage. The variable costs — payment processing fees, and occasional overages on email or analytics — only appear once you have customers, which is exactly when you can afford them. In practice, many bootstrapped founders report keeping total tooling spend well under $100/month until they are past their first revenue, though your mix will vary.",
+      },
+      {
+        type: "p",
+        body: "The one thing worth spending on earlier than feels comfortable is anything that protects customer trust or data — reliable auth and payments — because a failure there costs more than the subscription ever would.",
+      },
+      {
+        type: "callout",
+        tone: "tip",
+        body: "A caution that matters more than any tool choice: the stack matters less than shipping. It is easy to spend a week comparing analytics tools instead of building the thing customers pay for. Pick a reasonable option in each category, move on, and change it later if it actually pinches.",
+      },
+
+      { type: "h2", body: "Before you commit", id: "before-you-commit" },
+      {
+        type: "ul",
+        items: [
+          "Confirm every free-tier limit on the vendor's own page — the named tools here are examples chosen to illustrate each category, not recommendations, and their limits move.",
+          "Check how each paid tier scales, not just its entry price — the question that matters is what this costs at 10x your current usage.",
+          "Prefer tools that collapse categories — one tool covering database, auth, and storage, or analytics, replay, and flags, is cheaper and simpler than three.",
+          "Add tools in stage order — if you are not yet at the stage a tool serves, you do not need it yet.",
+        ],
+      },
+      {
+        type: "p",
+        body: "The goal is not to assemble the most impressive stack. It is to spend nothing until the product earns it, and to make sure the tools you pick will not punish you for growing.",
+      },
+    ],
+  },
   "run-claude-code-on-a-vps": {
     slug: "run-claude-code-on-a-vps",
     tagline:
