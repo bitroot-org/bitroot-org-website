@@ -5,8 +5,20 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 27 Jul 2026 00:46:52 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2026 01:31:54 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude Opus 5 vs. Fable 5: Which Model Should Your SaaS Use?</title>
+      <link>https://bitroot.org/blog/2026-07-27-claude-opus-5-vs-fable-5-which-model-should-your-s/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-27-claude-opus-5-vs-fable-5-which-model-should-your-s/</guid>
+      <description>Opus 5 outperforms Fable 5 on benchmarks, and costs 60% less. Here's why Opus 5 is now the default Claude model for SaaS, and when to upgrade from Opus 4.8.</description>
+      <pubDate>Mon, 27 Jul 2026 01:31:04 +0000</pubDate>
+      <category>AI</category>
+      <category>Opus 5</category>
+      <category>Anthropic</category>
+      <category>SaaS</category>
+      <enclosure url="https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F54b7ab1d2c2521f83ae5d2da5f9d99321c370d24-2880x1620.png&amp;w=3840&amp;q=75" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Bitchat GitHub Takedown: Why Developers in India Must Rethink Offline-First Apps</title>
       <link>https://bitroot.org/blog/2026-07-25-bitchat-github-takedown-why-developers-in-india-mu/</link>

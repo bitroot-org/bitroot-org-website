@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 263,
+  "count": 264,
   "posts": [
+    "2026-07-27-claude-opus-5-vs-fable-5-which-model-should-your-s.md",
     "2026-07-25-bitchat-github-takedown-why-developers-in-india-mu.md",
     "2026-07-18-firecrawl-launches-openlovable-to-autogenerate-rea.md",
     "2026-07-13-css-texteffects-library-expands-to-66-readymade-st.md",
@@ -267,6 +268,25 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-07-27-claude-opus-5-vs-fable-5-which-model-should-your-s.md",
+      "slug": "2026-07-27-claude-opus-5-vs-fable-5-which-model-should-your-s",
+      "url": "/blog/2026-07-27-claude-opus-5-vs-fable-5-which-model-should-your-s/",
+      "title": "Claude Opus 5 vs. Fable 5: Which Model Should Your SaaS Use?",
+      "date": "2026-07-27",
+      "published_at": "2026-07-27T01:31:04.114Z",
+      "tags": [
+        "AI",
+        "Opus 5",
+        "Anthropic",
+        "SaaS"
+      ],
+      "excerpt": "Opus 5 outperforms Fable 5 on benchmarks, and costs 60% less. Here's why Opus 5 is now the default Claude model for SaaS, and when to upgrade from Opus 4.8.",
+      "image": "https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F54b7ab1d2c2521f83ae5d2da5f9d99321c370d24-2880x1620.png&w=3840&q=75",
+      "sources": [],
+      "readTime": "8 min",
+      "shortId": 264
+    },
     {
       "filename": "2026-07-25-bitchat-github-takedown-why-developers-in-india-mu.md",
       "slug": "2026-07-25-bitchat-github-takedown-why-developers-in-india-mu",
