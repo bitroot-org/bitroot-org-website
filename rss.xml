@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 27 Jul 2026 00:46:01 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2026 00:46:52 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bitchat GitHub Takedown: Why Developers in India Must Rethink Offline-First Apps</title>
@@ -20,6 +20,34 @@
       <category>Technology</category>
       <enclosure url="https://th-i.thgim.com/public/incoming/s017lf/article71262085.ece/alternates/LANDSCAPE_1200/12-11-JACK_DORSEY_CEO_TWITTER_B.jpg" type="image/jpeg" length="0" />
       <source url="https://techcrunch.com/2026/07/24/indias-move-against-jack-dorseys-bitchat-sparks-legal-debate/">Original Source</source>
+    </item>
+    <item>
+      <title>Firecrawl launches open‑lovable to auto‑generate React sites</title>
+      <link>https://bitroot.org/blog/2026-07-18-firecrawl-launches-openlovable-to-autogenerate-rea/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-18-firecrawl-launches-openlovable-to-autogenerate-rea/</guid>
+      <description>Firecrawl’s new open‑lovable tool can clone any website into a modern React app with an AI‑driven chat interface, but it requires an API key and the generated code may need cleanup.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/N0V4Dev/status/2078336551696626102"&gt;https://x.com/N0V4Dev/status/2078336551696626102&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 18 Jul 2026 10:13:22 +0000</pubDate>
+      <category>react</category>
+      <category>ai tools</category>
+      <category>open source</category>
+      <enclosure url="https://pbs.twimg.com/media/HNe8E3KWUAAh1nt.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/N0V4Dev/status/2078336551696626102">Original Source</source>
+    </item>
+    <item>
+      <title>CSS text‑effects library expands to 66 ready‑made styles</title>
+      <link>https://bitroot.org/blog/2026-07-13-css-texteffects-library-expands-to-66-readymade-st/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-13-css-texteffects-library-expands-to-66-readymade-st/</guid>
+      <description>The open‑source text‑effects collection now includes 66 CSS snippets, adding nine new options and AI‑ready prompts for quick integration.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/codesharpdev/status/2076542275296108963"&gt;https://x.com/codesharpdev/status/2076542275296108963&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 13 Jul 2026 11:53:16 +0000</pubDate>
+      <category>css</category>
+      <category>ui</category>
+      <category>open-source</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2076542133906116608/img/O1bt-grEOM8JdvR7.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/codesharpdev/status/2076542275296108963">Original Source</source>
     </item>
     <item>
       <title>Why Google's Gemini 3.5 Pro Is Months Behind: The Coding Performance Gap Explained</title>
@@ -350,20 +378,6 @@
       <source url="https://x.com/Yass1nMohamed/status/2078110214142767323">Original Source</source>
     </item>
     <item>
-      <title>Firecrawl launches open‑lovable to auto‑generate React sites</title>
-      <link>https://bitroot.org/blog/2026-07-18-firecrawl-launches-openlovable-to-autogenerate-rea/</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-18-firecrawl-launches-openlovable-to-autogenerate-rea/</guid>
-      <description>Firecrawl’s new open‑lovable tool can clone any website into a modern React app with an AI‑driven chat interface, but it requires an API key and the generated code may need cleanup.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/N0V4Dev/status/2078336551696626102"&gt;https://x.com/N0V4Dev/status/2078336551696626102&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Sat, 18 Jul 2026 10:13:22 +0000</pubDate>
-      <category>react</category>
-      <category>ai tools</category>
-      <category>open source</category>
-      <enclosure url="https://pbs.twimg.com/media/HNe8E3KWUAAh1nt.jpg?name=orig" type="image/jpeg" length="0" />
-      <source url="https://x.com/N0V4Dev/status/2078336551696626102">Original Source</source>
-    </item>
-    <item>
       <title>YouTube unveils Codex Micro, a lightweight AI code helper</title>
       <link>https://bitroot.org/blog/2026-07-17-youtube-unveils-codex-micro-a-lightweight-ai-code/</link>
       <guid isPermaLink="true">https://bitroot.org/blog/2026-07-17-youtube-unveils-codex-micro-a-lightweight-ai-code/</guid>
@@ -491,6 +505,63 @@
       <category>Claude Pro</category>
       <category>AI Tools India</category>
       <enclosure url="https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2269811684.jpg" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>Tencent Cloud open‑sources CubeSandbox for AI agent isolation</title>
+      <link>https://bitroot.org/blog/2026-07-13-tencent-cloud-opensources-cubesandbox-for-ai-agent/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-13-tencent-cloud-opensources-cubesandbox-for-ai-agent/</guid>
+      <description>CubeSandbox is a lightweight RustVMM sandbox that starts in 60 ms, uses under 5 MB RAM per instance, and is Apache 2.0‑licensed, offering a fast, low‑overhead environment for AI agents.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/XAMTO_AI/status/2076443738004742262"&gt;https://x.com/XAMTO_AI/status/2076443738004742262&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 13 Jul 2026 11:54:24 +0000</pubDate>
+      <category>sandbox</category>
+      <category>ai agents</category>
+      <category>rustvmm</category>
+      <enclosure url="https://pbs.twimg.com/media/HNC2v8gaoAArmz6.png?name=orig" type="image/png" length="0" />
+      <source url="https://x.com/XAMTO_AI/status/2076443738004742262">Original Source</source>
+    </item>
+    <item>
+      <title>OpenPencil launches 7 MB design app with .fig support, AI and CLI</title>
+      <link>https://bitroot.org/blog/2026-07-13-openpencil-launches-7-mb-design-app-with-fig-suppo/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-13-openpencil-launches-7-mb-design-app-with-fig-suppo/</guid>
+      <description>~7MB. Itu ukuran OpenPencil. Aplikasi desain open-source yg bisa buka file .fig, punya AI built-in, &amp; jalan di browser + desktop 😆 Bahkan ada CLI &amp; MCP server buat agent.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/grafisify/status/2076531540465762429"&gt;https://x.com/grafisify/status/2076531540465762429&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 13 Jul 2026 11:53:41 +0000</pubDate>
+      <category>design tool</category>
+      <category>open-source</category>
+      <category>cli</category>
+      <category>ai</category>
+      <enclosure url="https://pbs.twimg.com/media/HNFSYNYagAA1Kkb.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/grafisify/status/2076531540465762429">Original Source</source>
+    </item>
+    <item>
+      <title>Nexterm opens source tool for unified SSH, VNC, and RDP access</title>
+      <link>https://bitroot.org/blog/2026-07-13-nexterm-opens-source-tool-for-unified-ssh-vnc-and/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-13-nexterm-opens-source-tool-for-unified-ssh-vnc-and/</guid>
+      <description>Nexterm bundles SSH, VNC, RDP, SFTP, Docker, and Proxmox into a single web UI, letting startups centralize remote server access without buying a commercial product.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/tom_doerr/status/2076543941793534213"&gt;https://x.com/tom_doerr/status/2076543941793534213&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 13 Jul 2026 11:55:50 +0000</pubDate>
+      <category>server management</category>
+      <category>ssh</category>
+      <category>open-source</category>
+      <enclosure url="https://pbs.twimg.com/media/HNFdtgpXYAANb03.png?name=orig" type="image/png" length="0" />
+      <source url="https://x.com/tom_doerr/status/2076543941793534213">Original Source</source>
+    </item>
+    <item>
+      <title>LibreCode launches as a fully local AI code editor</title>
+      <link>https://bitroot.org/blog/2026-07-13-librecode-launches-as-a-fully-local-ai-code-editor/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-13-librecode-launches-as-a-fully-local-ai-code-editor/</guid>
+      <description>LibreCode is a free, locally‑run AI editor that bundles a reverse‑engineering toolkit and avoids any cloud subscription fees.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/chenzeling4/status/2076274378455883869"&gt;https://x.com/chenzeling4/status/2076274378455883869&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 13 Jul 2026 11:55:10 +0000</pubDate>
+      <category>ai code editor</category>
+      <category>local development</category>
+      <category>open source</category>
+      <enclosure url="https://pbs.twimg.com/media/HNBoi2faAAAu4BL.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/chenzeling4/status/2076274378455883869">Original Source</source>
     </item>
     <item>
       <title>HyperTexting App Turns the Open Web Into a Scrollable Social Feed</title>
