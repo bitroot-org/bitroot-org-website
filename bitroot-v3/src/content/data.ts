@@ -124,6 +124,17 @@ export const kits: Item[] = [
 
 export const guides: Item[] = [
   {
+    slug: "launch-a-saas-on-almost-0-per-month",
+    category: "guide",
+    title: "Launching a SaaS on (Almost) $0/Month: A Category-by-Category Toolkit",
+    summary:
+      "A category-by-category toolkit for taking a SaaS from idea to paying customers on near-zero fixed spend — what to prioritize in hosting, database, auth, payments, analytics, email, and more, and the order to add them in.",
+    tags: ["SaaS", "Bootstrapping", "Tools", "Free tier"],
+    updatedAt: "2026-07-21",
+    href: "/guides/launch-a-saas-on-almost-0-per-month",
+    difficulty: "starter",
+  },
+  {
     slug: "run-claude-code-on-a-vps",
     category: "guide",
     title: "Run Claude Code on a VPS: The Locked-Down Setup",
