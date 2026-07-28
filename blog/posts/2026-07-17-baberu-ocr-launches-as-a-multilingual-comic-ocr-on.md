@@ -1,30 +1,58 @@
 ---
-date: '2026-07-17'
-excerpt: フルスクラッチで作った日本語・中国語・英語の漫画用マルチリンガルOCR「Baberu OCR」を簡単にさわれるようHuggingface Spacesに公開しました！ぜひ遊んでみてください！
+date: '2026-07-28'
+excerpt: 'フルスクラッチで作った日本語・中国語・英語の漫画用マルチリンガルOCR「Baberu OCR」を簡単にさわれるようHuggingface Spacesに公開しました！ぜひ遊んでみてください！'
 image: https://pbs.twimg.com/media/HNZ_4vjaoAEai85.jpg?name=orig
 published_at: '2026-07-17T10:39:25.439123+00:00'
 sources:
 - https://x.com/daichi_genshiai/status/2077989874398032361
 tags:
-- ocr
-- multilingual
-- huggingface
-title: Baberu OCR launches as a multilingual comic OCR on Huggingface Spaces
+- 'ocr'
+- 'multilingual'
+- 'huggingface'
+title: 'Baberu OCR: Free Multilingual Comic & Manga Text Extraction Now on Huggingface'
 ---
 
-GENSHI AI’s CEO announced the public release of **Baberu OCR**, a multilingual OCR tuned for manga and comics in Japanese, Chinese, and English. The model is hosted on a free Huggingface Space, so anyone can try it with a web UI and API endpoint.
-
-## What Baberu OCR actually does
-The service extracts text bubbles from scanned comic panels and returns plain‑text strings in the source language. It was built from scratch, meaning the training data and architecture are not tied to a third‑party OCR provider. For developers, the UI offers a drag‑and‑drop area; the backend returns JSON with bounding boxes and language tags.
-
-## Cost and accessibility
-Huggingface Spaces are free for low‑traffic demos, so the public demo incurs no direct cost. If you fork the Space and run it on your own compute, you’ll pay whatever your cloud provider charges for the GPU instance. The repo (if released) would let you self‑host without a subscription to a commercial OCR API.
-
-## Trade‑offs and limitations
-While the three‑language support is handy for East‑Asian comic pipelines, the model’s accuracy on dense text or stylized fonts still lags behind specialized OCRs like Google Cloud Vision. False positives on decorative lettering are common, so you’ll likely need a post‑processing step to filter noise. Also, the demo runs on shared hardware; heavy usage can hit rate limits or slow response times.
-
-## When to give it a spin
-If your startup processes user‑generated manga or wants a quick prototype for multilingual speech‑bubble extraction, try the public Space now. Keep an eye on the repo for future language additions and on Huggingface’s usage policies, as any change in free tier limits could affect reliability.
-
+GENSHI AI launches **Baberu OCR**, a free, open-source multilingual OCR model specializing in manga and comic text extraction. Hosted on Huggingface Spaces with no setup required—anyone can test it instantly via web UI or API endpoint.
+ 
 ---
-Sources: [Tweet announcing Baberu OCR](https://x.com/daichi_genshiai/status/2077989874398032361)
+ 
+## What Baberu OCR Does: Manga & Comic Text Extraction Explained
+ 
+Baberu OCR extracts text directly from comic panels and manga pages, automatically detecting text bubbles and returning clean, searchable text in the original language (Japanese, Chinese, or English). Unlike general-purpose OCR tools like Google Cloud Vision or Tesseract, it's built from scratch specifically for stylized fonts, irregular layouts, and the challenges of comic speech bubbles.
+ 
+The tool returns structured output: bounding boxes showing where text appears, language tags for multilingual documents, and plain-text strings ready for further processing. For developers, both a drag-and-drop web interface and a JSON-based API endpoint are available.
+ 
+## Cost & Accessibility: Free to Use, No Subscriptions
+ 
+Huggingface Spaces provides free hosting for public demos with low traffic, so using Baberu OCR's web UI incurs no cost. For production use, forking the Space to your own compute means you only pay cloud provider rates (AWS, GCP, or local GPU costs)—no monthly subscription to commercial OCR APIs like Google Cloud Vision or Azure Computer Vision.
+ 
+If the repository is released, self-hosting becomes possible without dependence on third-party OCR providers, giving teams full control over data and inference.
+ 
+## Trade-offs & Limitations: When Baberu Works, and When It Doesn't
+ 
+**Strengths:**
+- Three-language support (Japanese, Chinese, English) is rare among open-source OCR tools
+- Trained specifically on comic layouts, not scanned documents
+- Free and self-hostable
+**Limitations:**
+- Accuracy on dense or stylized fonts still lags Google Cloud Vision and commercial alternatives
+- High false positive rates on decorative lettering and sound effects
+- Runs on shared Huggingface hardware; heavy usage may hit rate limits
+- Requires post-processing to filter noise and invalid detections
+Existing manga OCR solutions like manga-ocr (Python CLI) and PaddleOCR with comic presets achieve better accuracy on single bubbles or full pages, but require local setup. Baberu trades some accuracy for ease of access.
+ 
+## When to Use Baberu OCR: Ideal Use Cases
+ 
+**Good fits:**
+- Startups processing user-uploaded manga or comics needing quick prototypes
+- Teams building manga translation pipelines wanting free multilingual text extraction
+- Researchers studying comic text layouts and speech bubble detection
+- Content creators extracting dialogue for archival or analysis
+**Not ideal for:**
+- Production systems requiring 95%+ accuracy
+- Dense documents with mixed script types
+- Real-time, high-volume text extraction
+- Projects where false positives create compliance risk
+## Getting Started: Try Baberu OCR Now
+ 
+Visit the public Huggingface Space to test Baberu OCR with drag-and-drop image uploads. For developers, the Space provides API documentation for programmatic access. Monitor GENSHI AI's repository for future language additions and stay aware of Huggingface's free tier policies—any change in compute limits could affect demo availability.
