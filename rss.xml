@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 28 Jul 2026 10:19:11 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2026 10:22:16 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Open-Weights Models Are Fine: What Founders Should Actually Worry About</title>
@@ -20,6 +20,20 @@
       <category>Founders</category>
       <enclosure url="https://images.t2online.in/cdn-cgi/image/width=480,height=270,quality=70,fit=cover,gravity=face,format=auto/https://apis.t2online.in/getImageStream/7947/1785210298445.jpg" type="image/jpeg" length="0" />
       <source url="https://www.anthropic.com/news/position-open-weights-models">Original Source</source>
+    </item>
+    <item>
+      <title>Baberu OCR: Free Multilingual Comic &amp; Manga Text Extraction Now on Huggingface</title>
+      <link>https://bitroot.org/blog/2026-07-17-baberu-ocr-launches-as-a-multilingual-comic-ocr-on/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-17-baberu-ocr-launches-as-a-multilingual-comic-ocr-on/</guid>
+      <description>フルスクラッチで作った日本語・中国語・英語の漫画用マルチリンガルOCR「Baberu OCR」を簡単にさわれるようHuggingface Spacesに公開しました！ぜひ遊んでみてください！
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/daichi_genshiai/status/2077989874398032361"&gt;https://x.com/daichi_genshiai/status/2077989874398032361&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 17 Jul 2026 10:39:25 +0000</pubDate>
+      <category>ocr</category>
+      <category>multilingual</category>
+      <category>huggingface</category>
+      <enclosure url="https://pbs.twimg.com/media/HNZ_4vjaoAEai85.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/daichi_genshiai/status/2077989874398032361">Original Source</source>
     </item>
     <item>
       <title>Claude Opus 5 vs. Fable 5: Which Model Should Your SaaS Use?</title>
@@ -496,20 +510,6 @@
       <category>automation</category>
       <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2077975717103423488/img/dCfQu5LFgLSqkRPp.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/realcoreychiu/status/2077978244159000806">Original Source</source>
-    </item>
-    <item>
-      <title>Baberu OCR launches as a multilingual comic OCR on Huggingface Spaces</title>
-      <link>https://bitroot.org/blog/2026-07-17-baberu-ocr-launches-as-a-multilingual-comic-ocr-on/</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-17-baberu-ocr-launches-as-a-multilingual-comic-ocr-on/</guid>
-      <description>フルスクラッチで作った日本語・中国語・英語の漫画用マルチリンガルOCR「Baberu OCR」を簡単にさわれるようHuggingface Spacesに公開しました！ぜひ遊んでみてください！
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/daichi_genshiai/status/2077989874398032361"&gt;https://x.com/daichi_genshiai/status/2077989874398032361&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Fri, 17 Jul 2026 10:39:25 +0000</pubDate>
-      <category>ocr</category>
-      <category>multilingual</category>
-      <category>huggingface</category>
-      <enclosure url="https://pbs.twimg.com/media/HNZ_4vjaoAEai85.jpg?name=orig" type="image/jpeg" length="0" />
-      <source url="https://x.com/daichi_genshiai/status/2077989874398032361">Original Source</source>
     </item>
     <item>
       <title>Nora control plane launches for OpenClaw &amp; Hermes on Kubernetes</title>
