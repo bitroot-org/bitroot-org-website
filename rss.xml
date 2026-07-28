@@ -5,8 +5,22 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 27 Jul 2026 09:16:52 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2026 04:52:50 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Open-Weights Models Are Fine: What Founders Should Actually Worry About</title>
+      <link>https://bitroot.org/blog/2026-07-28-open-weights-models-are-fine-what-founders-should/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-28-open-weights-models-are-fine-what-founders-should/</guid>
+      <description>Dario's policy statement doesn't mean what most think. Here's what actually matters for your model choice.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.anthropic.com/news/position-open-weights-models"&gt;https://www.anthropic.com/news/position-open-weights-models&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 28 Jul 2026 04:51:55 +0000</pubDate>
+      <category>AI</category>
+      <category>Open-Source</category>
+      <category>Founders</category>
+      <enclosure url="https://images.t2online.in/cdn-cgi/image/width=480,height=270,quality=70,fit=cover,gravity=face,format=auto/https://apis.t2online.in/getImageStream/7947/1785210298445.jpg" type="image/jpeg" length="0" />
+      <source url="https://www.anthropic.com/news/position-open-weights-models">Original Source</source>
+    </item>
     <item>
       <title>Claude Opus 5 vs. Fable 5: Which Model Should Your SaaS Use?</title>
       <link>https://bitroot.org/blog/2026-07-27-claude-opus-5-vs-fable-5-which-model-should-your-s/</link>
