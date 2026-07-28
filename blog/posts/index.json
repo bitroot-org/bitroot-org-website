@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "count": 271,
+  "count": 276,
   "posts": [
     "2026-07-28-open-weights-models-are-fine-what-founders-should.md",
     "2026-07-17-baberu-ocr-launches-as-a-multilingual-comic-ocr-on.md",
@@ -20,7 +20,12 @@
     "2026-07-23-cursor-launches-router-to-cut-model-costs-by-60.md",
     "2026-07-23-claude-code-eyes-adds-visual-hardware-verification.md",
     "2026-07-23-buzz-launches-as-opensource-group-chat-alternative.md",
+    "2026-07-22-signspot-launches-ai-pdf-signature-field-extractor.md",
+    "2026-07-22-runtimewire-opens-free-live-aieconomy-news-feed.md",
+    "2026-07-22-patchy-082-adds-affinity-import-and-scripting-test.md",
+    "2026-07-22-opensource-ai-agent-audits-video-frames-automatica.md",
     "2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven.md",
+    "2026-07-22-ateno-releases-ai-room-designer-with-free-trial-an.md",
     "2026-07-21-why-apple-raised-prices-across-hardware-subscripti.md",
     "2026-07-21-monid-replaces-apify-with-perrequest-social-media.md",
     "2026-07-20-zeroprep-turns-spoken-talks-into-slide-decks-now-o.md",
@@ -293,7 +298,7 @@
         "https://www.anthropic.com/news/position-open-weights-models"
       ],
       "readTime": "6 min",
-      "shortId": 271
+      "shortId": 276
     },
     {
       "filename": "2026-07-17-baberu-ocr-launches-as-a-multilingual-comic-ocr-on.md",
@@ -313,7 +318,7 @@
         "https://x.com/daichi_genshiai/status/2077989874398032361"
       ],
       "readTime": "3 min",
-      "shortId": 270
+      "shortId": 275
     },
     {
       "filename": "2026-07-27-claude-opus-5-vs-fable-5-which-model-should-your-s.md",
@@ -332,7 +337,7 @@
       "image": "https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F54b7ab1d2c2521f83ae5d2da5f9d99321c370d24-2880x1620.png&w=3840&q=75",
       "sources": [],
       "readTime": "8 min",
-      "shortId": 269
+      "shortId": 274
     },
     {
       "filename": "2026-07-27-agentic-ai-for-founders-when-you-need-agents-and-w.md",
@@ -350,7 +355,7 @@
       "image": "https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2024/12/marquee-agentforce-agentic-ai.png?resize=1024,576",
       "sources": [],
       "readTime": "5 min",
-      "shortId": 268
+      "shortId": 273
     },
     {
       "filename": "2026-07-25-bitchat-github-takedown-why-developers-in-india-mu.md",
@@ -370,7 +375,7 @@
         "https://techcrunch.com/2026/07/24/indias-move-against-jack-dorseys-bitchat-sparks-legal-debate/"
       ],
       "readTime": "6 min",
-      "shortId": 267
+      "shortId": 272
     },
     {
       "filename": "2026-07-18-firecrawl-launches-openlovable-to-autogenerate-rea.md",
@@ -390,7 +395,7 @@
         "https://x.com/N0V4Dev/status/2078336551696626102"
       ],
       "readTime": "2 min",
-      "shortId": 266
+      "shortId": 271
     },
     {
       "filename": "2026-07-13-css-texteffects-library-expands-to-66-readymade-st.md",
@@ -410,7 +415,7 @@
         "https://x.com/codesharpdev/status/2076542275296108963"
       ],
       "readTime": "2 min",
-      "shortId": 265
+      "shortId": 270
     },
     {
       "filename": "2026-07-24-why-googles-gemini-3-5-pro-is-months-behind-the-co.md",
@@ -430,7 +435,7 @@
       "image": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2026/07/Gemini-3.5-Pro-cover.jpg?w=1500&quality=82&strip=all&ssl=1",
       "sources": [],
       "readTime": "13 min",
-      "shortId": 264
+      "shortId": 269
     },
     {
       "filename": "2026-07-23-claude-code-desktop-adds-ios-simulator-panel-in-pu.md",
@@ -450,7 +455,7 @@
         "https://x.com/i/status/2079674432038248611"
       ],
       "readTime": "2 min",
-      "shortId": 263
+      "shortId": 268
     },
     {
       "filename": "2026-07-23-claude-code-adds-beta-security-scanning-plugin-for.md",
@@ -471,7 +476,7 @@
         "https://x.com/i/status/2079990597973057691"
       ],
       "readTime": "3 min",
-      "shortId": 262
+      "shortId": 267
     },
     {
       "filename": "2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video.md",
@@ -492,7 +497,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video.mp4",
-      "shortId": 261
+      "shortId": 266
     },
     {
       "filename": "2026-07-23-world-monitor-opensources-a-billiondollar-warroom.md",
@@ -513,7 +518,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-world-monitor-opensources-a-billiondollar-warroom.mp4",
-      "shortId": 260
+      "shortId": 265
     },
     {
       "filename": "2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas.md",
@@ -535,7 +540,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas.mp4",
-      "shortId": 259
+      "shortId": 264
     },
     {
       "filename": "2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this.md",
@@ -555,7 +560,7 @@
       "image": "https://media.wired.com/photos/6a5ff5b0f95e7d91469f8f3d/1:1/w_1920,c_limit/security_openai_hack_huggingface.jpg",
       "sources": [],
       "readTime": "7 min",
-      "shortId": 258
+      "shortId": 263
     },
     {
       "filename": "2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now.md",
@@ -577,7 +582,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now.mp4",
-      "shortId": 257
+      "shortId": 262
     },
     {
       "filename": "2026-07-23-cursor-launches-router-to-cut-model-costs-by-60.md",
@@ -598,7 +603,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-cursor-launches-router-to-cut-model-costs-by-60.mp4",
-      "shortId": 256
+      "shortId": 261
     },
     {
       "filename": "2026-07-23-claude-code-eyes-adds-visual-hardware-verification.md",
@@ -618,7 +623,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-claude-code-eyes-adds-visual-hardware-verification.mp4",
-      "shortId": 255
+      "shortId": 260
     },
     {
       "filename": "2026-07-23-buzz-launches-as-opensource-group-chat-alternative.md",
@@ -638,7 +643,90 @@
         "https://x.com/i/status/2079605800998146171"
       ],
       "readTime": "2 min",
-      "shortId": 254
+      "shortId": 259
+    },
+    {
+      "filename": "2026-07-22-signspot-launches-ai-pdf-signature-field-extractor.md",
+      "slug": "2026-07-22-signspot-launches-ai-pdf-signature-field-extractor",
+      "url": "/blog/2026-07-22-signspot-launches-ai-pdf-signature-field-extractor/",
+      "title": "SignSpot launches AI PDF signature field extractor",
+      "date": "2026-07-22",
+      "published_at": "2026-07-22T11:00:48.062214+00:00",
+      "tags": [
+        "pdf",
+        "ai",
+        "signature",
+        "fastapi"
+      ],
+      "excerpt": "SignSpot is an open\u2011source FastAPI service that auto\u2011detects signature fields in PDFs and returns clean background images, now live for quick testing.",
+      "image": "https://pbs.twimg.com/media/HNzv2HMXYAA4fWI.jpg?name=orig",
+      "sources": [
+        "https://x.com/Adedoyinjames_/status/2079803185384825294"
+      ],
+      "readTime": "2 min",
+      "shortId": 258
+    },
+    {
+      "filename": "2026-07-22-runtimewire-opens-free-live-aieconomy-news-feed.md",
+      "slug": "2026-07-22-runtimewire-opens-free-live-aieconomy-news-feed",
+      "url": "/blog/2026-07-22-runtimewire-opens-free-live-aieconomy-news-feed/",
+      "title": "RuntimeWire opens free live AI\u2011economy news feed",
+      "date": "2026-07-22",
+      "published_at": "2026-07-22T11:00:30.284602+00:00",
+      "tags": [
+        "ai",
+        "news",
+        "api"
+      ],
+      "excerpt": "RuntimeWire has released a public MCP endpoint that streams AI\u2011economy headlines in real time, supports keyword search, and returns full article bodies without any authentication or rate limits.",
+      "image": "https://pbs.twimg.com/media/HNz3p43WsAAWOi1.jpg?name=orig",
+      "sources": [
+        "https://x.com/runtimewire/status/2079809429411611008"
+      ],
+      "readTime": "2 min",
+      "shortId": 257
+    },
+    {
+      "filename": "2026-07-22-patchy-082-adds-affinity-import-and-scripting-test.md",
+      "slug": "2026-07-22-patchy-082-adds-affinity-import-and-scripting-test",
+      "url": "/blog/2026-07-22-patchy-082-adds-affinity-import-and-scripting-test/",
+      "title": "Patchy 0.82 adds Affinity import and scripting test",
+      "date": "2026-07-22",
+      "published_at": "2026-07-22T10:59:49.283047+00:00",
+      "tags": [
+        "patchy",
+        "image editing",
+        "open source"
+      ],
+      "excerpt": "Patchy 0.82 brings Affinity Designer (.af) import and a new breakout test inside layered images, with builds for Windows, macOS, and Linux.",
+      "image": "https://pbs.twimg.com/ext_tw_video_thumb/2079761693270253569/pu/img/NPDG_lAtWAUCWx7T.jpg",
+      "sources": [
+        "https://x.com/rtsoft/status/2079761713381970211"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-22-patchy-082-adds-affinity-import-and-scripting-test.mp4",
+      "shortId": 256
+    },
+    {
+      "filename": "2026-07-22-opensource-ai-agent-audits-video-frames-automatica.md",
+      "slug": "2026-07-22-opensource-ai-agent-audits-video-frames-automatica",
+      "url": "/blog/2026-07-22-opensource-ai-agent-audits-video-frames-automatica/",
+      "title": "Open\u2011source AI agent audits video frames automatically",
+      "date": "2026-07-22",
+      "published_at": "2026-07-22T10:59:25.087707+00:00",
+      "tags": [
+        "video ai",
+        "open source",
+        "visual audit"
+      ],
+      "excerpt": "A new open\u2011source agent can watch video files frame\u2011by\u2011frame, flagging visual defects without manual review. It\u2019s free to use but requires GPU resources to run.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2079808466563330048/img/J2fw9V2jZXCUXqyF.jpg",
+      "sources": [
+        "https://x.com/buildwith_SUMIT/status/2079810132330807504"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-22-opensource-ai-agent-audits-video-frames-automatica.mp4",
+      "shortId": 255
     },
     {
       "filename": "2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven.md",
@@ -658,6 +746,27 @@
       "image": "https://aitoolsreview.co.uk/_next/image?url=%2Fmedia%2Farticles%2Finsights%2Fkimi-k3-vs-claude-fable-5%2Faa-intelligence-index.avif&w=1920&q=75&dpl=dpl_269LMm4WTq3eHE8nnHxFFvL2KnDc",
       "sources": [],
       "readTime": "6 min",
+      "shortId": 254
+    },
+    {
+      "filename": "2026-07-22-ateno-releases-ai-room-designer-with-free-trial-an.md",
+      "slug": "2026-07-22-ateno-releases-ai-room-designer-with-free-trial-an",
+      "url": "/blog/2026-07-22-ateno-releases-ai-room-designer-with-free-trial-an/",
+      "title": "Ateno releases AI room designer with free trial and paid Pro tier",
+      "date": "2026-07-22",
+      "published_at": "2026-07-22T11:01:07.626477+00:00",
+      "tags": [
+        "ai design",
+        "room redesign",
+        "startup tools"
+      ],
+      "excerpt": "Ateno's new AI room designer turns a single photo into realistic redesigns and an interactive 3\u2011D model, offering a free tier and a $9.99 / month Pro upgrade. Engineers can try it for quick mockups but should watch for stock mismatches and browser performance limits.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2079807549780692992/img/qEtkC57milyvxhhF.jpg",
+      "sources": [
+        "https://x.com/SviatoslavG/status/2079807586665451758"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-22-ateno-releases-ai-room-designer-with-free-trial-an.mp4",
       "shortId": 253
     },
     {
