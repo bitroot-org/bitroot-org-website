@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 28 Jul 2026 04:52:50 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2026 10:19:11 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Open-Weights Models Are Fine: What Founders Should Actually Worry About</title>
@@ -440,6 +440,76 @@
       <category>cli</category>
       <enclosure url="https://x.ai/images/news/open-source-cover.png" type="image/png" length="0" />
       <source url="https://x.ai/news/grok-build-open-source">Original Source</source>
+    </item>
+    <item>
+      <title>Tauri‑2 based SkillsPlusPlus adds one‑click AI tool integration</title>
+      <link>https://bitroot.org/blog/2026-07-17-tauri2-based-skillsplusplus-adds-oneclick-ai-tool/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-17-tauri2-based-skillsplusplus-adds-oneclick-ai-tool/</guid>
+      <description>用 Tauri 2 打造的桌面端 Skills 管理工具，聚合 skills sh、LobeHub、SkillHub cn 等来源的 AI 技能，并一键安装/卸载/重装到 Codex、Claude、Cursor、Gemini CLI 等十余种 AI 工具的本地目录。 https://github.com/cpcc/SkillsPlusPlus
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/QingQ77/status/2077991939404603697"&gt;https://x.com/QingQ77/status/2077991939404603697&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 17 Jul 2026 10:40:08 +0000</pubDate>
+      <category>ai tools</category>
+      <category>desktop app</category>
+      <category>tauri</category>
+      <enclosure url="https://pbs.twimg.com/media/HNRPouKaUAAgQIF.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/QingQ77/status/2077991939404603697">Original Source</source>
+    </item>
+    <item>
+      <title>Self‑hosted Condenser lets you browse Telegram channels like Twitter</title>
+      <link>https://bitroot.org/blog/2026-07-17-selfhosted-condenser-lets-you-browse-telegram-chan/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-17-selfhosted-condenser-lets-you-browse-telegram-chan/</guid>
+      <description>我做了一个自部署的阅读器，叫 Condenser，可以用 Twitter 的方式刷 Telegram 上关注的频道。刚刚测了下 iOS 版也可以用了。repo 还没有修整，但是非常的 agent native，因此如果你有兴趣的话，直接 clone 下来让你的 agent 来安装部署，应该是完全没问题的 https://github.com/reorx/condenser
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/novoreorx/status/2077963033142530148"&gt;https://x.com/novoreorx/status/2077963033142530148&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 17 Jul 2026 10:39:42 +0000</pubDate>
+      <category>telegram</category>
+      <category>self-hosted</category>
+      <category>reader</category>
+      <enclosure url="https://pbs.twimg.com/media/HNZm5EwaUAEiU5d.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/novoreorx/status/2077963033142530148">Original Source</source>
+    </item>
+    <item>
+      <title>Open‑source “Shep” agent orchestrator targets GitHub issues labeled “shep”</title>
+      <link>https://bitroot.org/blog/2026-07-17-opensource-shep-agent-orchestrator-targets-github/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-17-opensource-shep-agent-orchestrator-targets-github/</guid>
+      <description>Craig Ruks released Shep, an open‑source orchestrator that watches for GitHub issues tagged “shep” and hands them off to AI agents. It’s a lightweight way to prototype custom issue‑driven bots.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/craigruks/status/2077957220759978436"&gt;https://x.com/craigruks/status/2077957220759978436&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 17 Jul 2026 10:39:02 +0000</pubDate>
+      <category>agent orchestrator</category>
+      <category>github issues</category>
+      <category>open source</category>
+      <enclosure url="https://pbs.twimg.com/tweet_video_thumb/HNZin8RbMAA1gYV.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/craigruks/status/2077957220759978436">Original Source</source>
+    </item>
+    <item>
+      <title>kooky 0.36 adds keep‑awake mode for laptops</title>
+      <link>https://bitroot.org/blog/2026-07-17-kooky-036-adds-keepawake-mode-for-laptops/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-17-kooky-036-adds-keepawake-mode-for-laptops/</guid>
+      <description>kooky最新版本v0.36.0上线重磅功能keep awake，让你的笔记本电脑在合盖时，agent也能保持工作！ auto档：在agent工作/ssh连接时，保持唤醒状态 always档：电脑始终保持唤醒状态 灵感源自于前几天看到一个推特老哥做的产品，感觉非常适合在终端里内置这个功能，欢迎体验！ http://github.com/iAmCorey/kooky
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/realcoreychiu/status/2077978244159000806"&gt;https://x.com/realcoreychiu/status/2077978244159000806&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 17 Jul 2026 10:40:24 +0000</pubDate>
+      <category>kooky</category>
+      <category>laptop</category>
+      <category>automation</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2077975717103423488/img/dCfQu5LFgLSqkRPp.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/realcoreychiu/status/2077978244159000806">Original Source</source>
+    </item>
+    <item>
+      <title>Baberu OCR launches as a multilingual comic OCR on Huggingface Spaces</title>
+      <link>https://bitroot.org/blog/2026-07-17-baberu-ocr-launches-as-a-multilingual-comic-ocr-on/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-17-baberu-ocr-launches-as-a-multilingual-comic-ocr-on/</guid>
+      <description>フルスクラッチで作った日本語・中国語・英語の漫画用マルチリンガルOCR「Baberu OCR」を簡単にさわれるようHuggingface Spacesに公開しました！ぜひ遊んでみてください！
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/daichi_genshiai/status/2077989874398032361"&gt;https://x.com/daichi_genshiai/status/2077989874398032361&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 17 Jul 2026 10:39:25 +0000</pubDate>
+      <category>ocr</category>
+      <category>multilingual</category>
+      <category>huggingface</category>
+      <enclosure url="https://pbs.twimg.com/media/HNZ_4vjaoAEai85.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/daichi_genshiai/status/2077989874398032361">Original Source</source>
     </item>
     <item>
       <title>Nora control plane launches for OpenClaw &amp; Hermes on Kubernetes</title>
