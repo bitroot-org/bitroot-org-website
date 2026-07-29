@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 276,
+  "count": 277,
   "posts": [
+    "2026-07-29-cursor-start-at-649-month-what-developers-in-india.md",
     "2026-07-28-open-weights-models-are-fine-what-founders-should.md",
     "2026-07-17-baberu-ocr-launches-as-a-multilingual-comic-ocr-on.md",
     "2026-07-27-claude-opus-5-vs-fable-5-which-model-should-your-s.md",
@@ -280,6 +281,25 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-07-29-cursor-start-at-649-month-what-developers-in-india.md",
+      "slug": "2026-07-29-cursor-start-at-649-month-what-developers-in-india",
+      "url": "/blog/2026-07-29-cursor-start-at-649-month-what-developers-in-india/",
+      "title": "Cursor Start at \u20b9649/Month: What Developers in India Actually Get (And What They Don't)",
+      "date": "2026-07-29",
+      "published_at": "2026-07-29T03:55:44.130Z",
+      "tags": [
+        "Cursor",
+        "AI",
+        "Coding",
+        "Grok"
+      ],
+      "excerpt": "Cursor Start at \u20b9649/month vs $20 Pro: what developers actually get. Honest comparison of features, pricing tiers, and when each makes sense for your workflow.",
+      "image": "https://pbs.twimg.com/media/HOSr9QJaQAA6z-S?format=png&name=900x900",
+      "sources": [],
+      "readTime": "9 min",
+      "shortId": 277
+    },
     {
       "filename": "2026-07-28-open-weights-models-are-fine-what-founders-should.md",
       "slug": "2026-07-28-open-weights-models-are-fine-what-founders-should",
