@@ -5,8 +5,17 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 29 Jul 2026 03:56:59 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2026 08:00:51 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WhatsApp Calls in Your Browser: Does It Replace Zoom?</title>
+      <link>https://bitroot.org/blog/2026-07-29-whatsapp-calls-in-your-browser-does-it-replace-zoo/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-29-whatsapp-calls-in-your-browser-does-it-replace-zoo/</guid>
+      <description>WhatsApp calls just landed in your browser. No app needed. No download. July 28, 2026 changed how you think about video calling.</description>
+      <pubDate>Wed, 29 Jul 2026 07:59:40 +0000</pubDate>
+      <category>WhatsApp</category>
+      <enclosure url="https://media.licdn.com/dms/image/v2/D5622AQGgvj1NR6GkCA/feedshare-shrink_800/B56Z.pNheXKMAc-/0/1785250322596?e=1787184000&amp;v=beta&amp;t=XdMWYFGyTAWV2cmdu2TjgKsKu54qXFTN2Urc80iboRI" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Cursor Start at ₹649/Month: What Developers in India Actually Get (And What They Don't)</title>
       <link>https://bitroot.org/blog/2026-07-29-cursor-start-at-649-month-what-developers-in-india/</link>
