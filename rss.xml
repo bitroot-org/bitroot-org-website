@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 29 Jul 2026 08:00:51 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 07:25:24 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>WhatsApp Calls in Your Browser: Does It Replace Zoom?</title>
@@ -15,6 +15,20 @@
       <pubDate>Wed, 29 Jul 2026 07:59:40 +0000</pubDate>
       <category>WhatsApp</category>
       <enclosure url="https://media.licdn.com/dms/image/v2/D5622AQGgvj1NR6GkCA/feedshare-shrink_800/B56Z.pNheXKMAc-/0/1785250322596?e=1787184000&amp;v=beta&amp;t=XdMWYFGyTAWV2cmdu2TjgKsKu54qXFTN2Urc80iboRI" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>MCP becomes stateless, enabling serverless and edge deployments</title>
+      <link>https://bitroot.org/blog/2026-07-29-mcp-becomes-stateless-enabling-serverless-and-edge/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-29-mcp-becomes-stateless-enabling-serverless-and-edge/</guid>
+      <description>MCP now runs without session state, so you can host it on serverless platforms or edge nodes and scale behind any load balancer. The shift removes a long‑standing operational constraint but adds new considerations.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2082164250496348268"&gt;https://x.com/i/status/2082164250496348268&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 29 Jul 2026 02:41:43 +0000</pubDate>
+      <category>mcp</category>
+      <category>serverless</category>
+      <category>edge computing</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2082152403114348544/img/hZTMBpD7IpCT1zXh.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2082164250496348268">Original Source</source>
     </item>
     <item>
       <title>Cursor Start at ₹649/Month: What Developers in India Actually Get (And What They Don't)</title>
