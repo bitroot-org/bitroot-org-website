@@ -1,18 +1,15 @@
 ---
-date: '2026-07-29'
-excerpt: MCP now runs without session state, so you can host it on serverless platforms
-  or edge nodes and scale behind any load balancer. The shift removes a long‑standing
-  operational constraint but adds new considerations.
+date: '2026-07-30'
+excerpt: 'MCP now runs without session state, so you can host it on serverless platforms or edge nodes and scale behind any load balancer. The shift removes a long‑standing operational constraint but adds new considerations.'
 image: https://pbs.twimg.com/amplify_video_thumb/2082152403114348544/img/hZTMBpD7IpCT1zXh.jpg
 published_at: '2026-07-29T02:41:43.581641+00:00'
 sources:
 - https://x.com/i/status/2082164250496348268
 tags:
-- mcp
-- serverless
-- edge computing
-title: MCP becomes stateless, enabling serverless and edge deployments
-video: media/2026-07-29-mcp-becomes-stateless-enabling-serverless-and-edge.mp4
+- 'mcp'
+- 'serverless'
+- 'edge computing'
+title: 'MCP becomes stateless, enabling serverless and edge deployments'
 ---
 
 MCP’s latest update removes built‑in session state, turning the service into a pure‑stateless component. The change was announced in a tweet by ClaudeDevs, noting that the new model lets you deploy on serverless or edge infrastructure and scale horizontally behind any load balancer ([source](https://x.com/i/status/2082164250496348268)).
