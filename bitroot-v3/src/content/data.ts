@@ -124,6 +124,17 @@ export const kits: Item[] = [
 
 export const guides: Item[] = [
   {
+    slug: "launchrock-vs-unbounce",
+    category: "guide",
+    title: "Launchrock vs Unbounce: Which Fits What You're Building",
+    summary:
+      "These two tools aren't really competitors — Launchrock validates an idea before you have a product, Unbounce squeezes more conversions out of paid-ad traffic once you have something to sell. A stage-based comparison, not a feature scoreboard.",
+    tags: ["Landing Pages", "CRO", "Comparison", "Prelaunch"],
+    updatedAt: "2026-07-30",
+    href: "/guides/launchrock-vs-unbounce",
+    difficulty: "starter",
+  },
+  {
     slug: "launch-a-saas-on-almost-0-per-month",
     category: "guide",
     title: "Launching a SaaS on (Almost) $0/Month: A Category-by-Category Toolkit",

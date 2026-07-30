@@ -43,6 +43,230 @@ export type GuideContent = {
 };
 
 export const guidesContent: Record<string, GuideContent> = {
+  "launchrock-vs-unbounce": {
+    slug: "launchrock-vs-unbounce",
+    tagline:
+      "Short version: these two tools are not really competitors, and choosing between them on a feature scoreboard is the wrong way to decide. Launchrock exists to validate an idea before it has a product. Unbounce exists to squeeze more conversions out of paid-ad traffic once you have something to sell. This guide is built around the requirement, not a winner.",
+    timeEstimate: "10 minutes to read",
+    youWillNeed: [
+      "A clear read on which stage you're actually at — pre-product or running paid traffic",
+      "No prior familiarity with either tool required",
+    ],
+    youWillEndUpWith:
+      "A clear answer on whether Launchrock or Unbounce (or neither, yet) fits where you are — plus the pricing shape of each and the features that actually separate them.",
+    toc: [
+      { label: "At a glance", id: "at-a-glance" },
+      { label: "The one distinction that decides it", id: "the-distinction" },
+      { label: "Match the tool to your situation", id: "match-your-situation" },
+      { label: "Pricing, in general terms", id: "pricing" },
+      { label: "Where each one is strong", id: "strengths" },
+      { label: "Feature breakdown", id: "feature-breakdown" },
+      { label: "Where you are in the founder journey", id: "founder-journey" },
+      { label: "Resources", id: "resources" },
+    ],
+    body: [
+      {
+        type: "callout",
+        tone: "note",
+        body: "Feature references checked July 2026. Both vendors change plans and limits often, so confirm current pricing on their own pages before committing budget — links are in Resources at the end.",
+      },
+
+      { type: "h2", body: "At a glance", id: "at-a-glance" },
+      {
+        type: "ul",
+        items: [
+          "Purpose — Launchrock: prelaunch and email capture. Unbounce: conversion-rate optimization for paid traffic.",
+          "Best for — Launchrock: founders validating an idea. Unbounce: marketing teams running ad campaigns.",
+          "A/B testing — Launchrock: no. Unbounce: yes (on higher tiers).",
+          "AI features — Launchrock: none. Unbounce: Smart Traffic, Unbounce's proprietary AI traffic routing.",
+          "Pricing model — Launchrock: low, flat (verify current — see Resources). Unbounce: visitor-metered tiers, features gated by tier.",
+          "Ideal stage — Launchrock: before the product exists. Unbounce: after the product exists, with ad spend.",
+        ],
+      },
+      {
+        type: "p",
+        body: "CRO, above, means conversion-rate optimization: the practice of systematically improving the share of visitors who take the action you want — signing up, buying — usually through testing different versions of a page.",
+      },
+
+      { type: "h2", body: "The one distinction that decides it", id: "the-distinction" },
+      {
+        type: "p",
+        body: "Launchrock is a launch and email-capture tool. You use it before the product exists, to stand up a \"coming soon\" or waitlist page in minutes, collect signups, and get a read on whether anyone wants the thing. It leans toward simple viral and referral mechanics — share links, basic tracking — aimed at founders and early-stage startups rather than marketing teams.",
+      },
+      {
+        type: "p",
+        body: "Unbounce is a conversion-rate-optimization platform. You use it after the product exists, to build landing pages for paid campaigns and then systematically improve how many visitors convert. Its reputation rests on A/B testing and Smart Traffic — Unbounce's proprietary AI feature that routes each visitor to the page variant most likely to convert them, trained on conversion data across its customer base.",
+      },
+      {
+        type: "p",
+        body: "If you have not built the product yet, most of Unbounce's machinery is priced for a problem you do not have. If you are spending real money on ads and conversion rate is a number you track weekly, Launchrock does not have the tools to move it. Everything below follows from that split.",
+      },
+
+      { type: "h2", body: "Match the tool to your situation", id: "match-your-situation" },
+      {
+        type: "p",
+        body: "You are pre-launch and validating an idea. You want a page live today, an email list started, and a signal on demand. You are not running paid traffic and you have nothing to A/B test yet. This is Launchrock's job. Reaching for Unbounce here means paying a CRO platform to do a splash page.",
+      },
+      {
+        type: "callout",
+        tone: "tip",
+        body: "Example: launching a new SaaS waitlist to see if anyone signs up → Launchrock.",
+      },
+      {
+        type: "p",
+        body: "You are running paid ad campaigns and optimizing conversions. You have a product, a budget, and you care about cost per acquisition. You want to test variants, replace text dynamically to match ad keywords, and ideally let AI handle traffic routing. This is Unbounce's job. Launchrock cannot A/B test, so it cannot do this work at all.",
+      },
+      {
+        type: "callout",
+        tone: "tip",
+        body: "Example: running Google Ads to a product page and trying to lift conversions → Unbounce.",
+      },
+      {
+        type: "p",
+        body: "You are somewhere in between — product exists, but no real ad spend yet. For many teams at this stage, neither tool is the strongest fit: Launchrock is too thin once you are past validation, and Unbounce is priced for a level of paid volume you have not reached. The honest note is simply this: do not over-buy Unbounce before your ad spend justifies it.",
+      },
+
+      { type: "h2", body: "Pricing, in general terms", id: "pricing" },
+      {
+        type: "p",
+        body: "Unbounce uses visitor-metered tiers, and the features most people associate with it sit higher up the ladder than the entry price suggests. The pattern that matters, regardless of the exact figures:",
+      },
+      {
+        type: "ul",
+        items: [
+          "The entry tier is a page builder — no A/B testing.",
+          "A middle tier adds A/B testing, the baseline of optimization.",
+          "A higher tier adds Smart Traffic, the AI routing feature Unbounce is known for.",
+          "Every tier meters monthly visitors, with overage charges past the cap, and annual billing is discounted.",
+        ],
+      },
+      {
+        type: "p",
+        body: "The practical takeaway: the features you are probably buying Unbounce for are not on the cheapest plan, so price it at the tier that includes what you actually need, not the headline number.",
+      },
+      {
+        type: "p",
+        body: "Launchrock is generally positioned in a lower price bracket — prelaunch tools tend to cost far less than a CRO platform, consistent with the narrower job. Its current pricing is not clearly published across sources, so confirm it directly before relying on any figure.",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        body: "Verify before you buy. Confirm both vendors' current prices, visitor caps, and which features sit on which tier on their own pricing pages. Plans in this category change often, and the feature gates matter as much as the price.",
+      },
+
+      { type: "h2", body: "Where each one is strong", id: "strengths" },
+      {
+        type: "p",
+        body: "Launchrock is strong at speed and simplicity for a prelaunch moment — a page up fast, emails captured, minimal setup, no learning curve. Its ceiling is also its design: no split testing, limited depth, little to grow into once you are past validation.",
+      },
+      {
+        type: "p",
+        body: "Unbounce is strong at conversion optimization — a mature A/B testing workflow, dynamic text replacement for matching pages to ad keywords, conversion-focused templates, and Smart Traffic's automatic routing. Its cost is real, both in money and in complexity, and for a small team not running paid volume, most of that power goes unused while the visitor caps and tier gates still apply.",
+      },
+
+      { type: "h2", body: "Feature breakdown", id: "feature-breakdown" },
+      {
+        type: "p",
+        body: "The tools barely overlap on features, so this is less a scoreboard than a map of what each actually does.",
+      },
+      { type: "h3", body: "Launchrock — built for the prelaunch window" },
+      {
+        type: "ul",
+        items: [
+          "Page building — a drag-and-drop, template-based editor for a single \"launching soon\" or waitlist page. No coding, fast to stand up.",
+          "Email capture — signup forms optimized for waitlists, the core job.",
+          "Viral and referral sharing — built-in social sharing and referral mechanics, so early signups can pull in more signups. The feature that most distinguishes it from a plain page builder.",
+          "Analytics — a basic dashboard for page views, signups, and conversion from early visitors. Enough to see whether the page is working, not enough for user-level funnels.",
+          "Integrations — limited. Reviewers consistently flag the thin native integration list as a gap, so connecting captured leads into a larger marketing stack can take extra work.",
+        ],
+      },
+      {
+        type: "p",
+        body: "The pattern: narrow and shallow by design. It does the prelaunch job with little setup and does not pretend to do more.",
+      },
+      { type: "h3", body: "Unbounce — built for conversion optimization" },
+      {
+        type: "ul",
+        items: [
+          "Page building — a deep drag-and-drop builder with conversion-focused templates, plus popups and sticky bars.",
+          "A/B testing — split-test page variants to see which converts better, the baseline of optimization, and something Launchrock cannot do at all. Sits above the entry tier.",
+          "Smart Traffic — Unbounce's proprietary AI that routes each visitor to the variant most likely to convert them, instead of splitting traffic evenly and waiting for a result. Its signature feature, on the higher tiers.",
+          "Dynamic text replacement — automatically swaps page text to match the ad keyword a visitor searched, so one page can mirror many ads without building each by hand.",
+          "Analytics — conversion reporting and audience insights aimed at improving campaign performance.",
+          "Integrations — a large native integration library plus custom scripts and tracking pixels.",
+        ],
+      },
+      {
+        type: "p",
+        body: "The pattern: broad and deep, built to move a conversion number, and priced accordingly.",
+      },
+      {
+        type: "callout",
+        tone: "tip",
+        body: "The honest summary of the whole table is one line: Launchrock helps you find out if people want the thing; Unbounce helps you convert more of the people who already showed up.",
+      },
+
+      { type: "h2", body: "Where you are in the founder journey", id: "founder-journey" },
+      {
+        type: "p",
+        body: "Because the two tools map to different moments, the clearest way to choose is to place yourself on the timeline.",
+      },
+      {
+        type: "p",
+        body: "Idea stage — nothing built yet. You are testing whether the idea has pull. A waitlist page, an email list, and a demand signal are exactly what you need, and referral sharing helps the list grow itself. Launchrock fits here; Unbounce is machinery for a stage you have not reached.",
+      },
+      {
+        type: "p",
+        body: "Early traction — product exists, growth is organic. You have something real but you are not buying traffic yet. Launchrock starts to feel thin — you have outgrown the waitlist page — but you also have no campaigns to A/B test, so Unbounce's core value is idle. This is the awkward middle. Keep your setup simple and resist buying a CRO platform before you have traffic to optimize.",
+      },
+      {
+        type: "p",
+        body: "Paid acquisition — you are spending on ads. Now conversion rate is money. Every point of improvement on a landing page pays back against ad spend, which is precisely what A/B testing, dynamic text replacement, and Smart Traffic are for. Unbounce fits here; Launchrock has nothing to offer this stage.",
+      },
+      {
+        type: "p",
+        body: "Most founders will use something like Launchrock once, early, and reach for something like Unbounce much later — if they ever run enough paid volume to justify it. They are not rivals so much as tools for two different chapters.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Validating an idea, want a waitlist or coming-soon page live today, no paid traffic yet → Launchrock",
+          "Have a product and an ad budget, treat conversion rate as a KPI you actively work → Unbounce",
+          "Product exists but little to no ad spend → neither is a clear fit yet — keep your setup simple and avoid over-buying until paid acquisition becomes a priority",
+        ],
+      },
+      {
+        type: "p",
+        body: "If you find yourself wanting Launchrock's price with Unbounce's testing, that mismatch is the signal that neither is quite right for your stage yet — worth sitting with before you commit budget either way.",
+      },
+      {
+        type: "p",
+        body: "Ultimately this is not a feature comparison — it is a question of choosing the tool that matches your stage.",
+      },
+
+      { type: "h2", body: "Resources", id: "resources" },
+      {
+        type: "linklist",
+        items: [
+          {
+            title: "Unbounce Pricing",
+            url: "https://unbounce.com/pricing/",
+            note: "Current plans, visitor caps, and feature tiers",
+          },
+          {
+            title: "Launchrock",
+            url: "https://launchrock.com/",
+            note: "Product and current pricing",
+          },
+        ],
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Confirm current plans and prices on these pages before purchasing; figures in this category change frequently.",
+      },
+    ],
+  },
   "launch-a-saas-on-almost-0-per-month": {
     slug: "launch-a-saas-on-almost-0-per-month",
     tagline:
