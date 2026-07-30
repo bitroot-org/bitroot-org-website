@@ -2,8 +2,8 @@
   "generated": true,
   "count": 279,
   "posts": [
-    "2026-07-29-whatsapp-calls-in-your-browser-does-it-replace-zoo.md",
     "2026-07-29-mcp-becomes-stateless-enabling-serverless-and-edge.md",
+    "2026-07-29-whatsapp-calls-in-your-browser-does-it-replace-zoo.md",
     "2026-07-29-cursor-start-at-649-month-what-developers-in-india.md",
     "2026-07-28-open-weights-models-are-fine-what-founders-should.md",
     "2026-07-17-baberu-ocr-launches-as-a-multilingual-comic-ocr-on.md",
@@ -284,6 +284,26 @@
   ],
   "metadata": [
     {
+      "filename": "2026-07-29-mcp-becomes-stateless-enabling-serverless-and-edge.md",
+      "slug": "2026-07-29-mcp-becomes-stateless-enabling-serverless-and-edge",
+      "url": "/blog/2026-07-29-mcp-becomes-stateless-enabling-serverless-and-edge/",
+      "title": "MCP becomes stateless, enabling serverless and edge deployments",
+      "date": "2026-07-30",
+      "published_at": "2026-07-29T02:41:43.581641+00:00",
+      "tags": [
+        "mcp",
+        "serverless",
+        "edge computing"
+      ],
+      "excerpt": "MCP now runs without session state, so you can host it on serverless platforms or edge nodes and scale behind any load balancer. The shift removes a long\u2011standing operational constraint but adds new considerations.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2082152403114348544/img/hZTMBpD7IpCT1zXh.jpg",
+      "sources": [
+        "https://x.com/i/status/2082164250496348268"
+      ],
+      "readTime": "2 min",
+      "shortId": 279
+    },
+    {
       "filename": "2026-07-29-whatsapp-calls-in-your-browser-does-it-replace-zoo.md",
       "slug": "2026-07-29-whatsapp-calls-in-your-browser-does-it-replace-zoo",
       "url": "/blog/2026-07-29-whatsapp-calls-in-your-browser-does-it-replace-zoo/",
@@ -297,27 +317,6 @@
       "image": "https://media.licdn.com/dms/image/v2/D5622AQGgvj1NR6GkCA/feedshare-shrink_800/B56Z.pNheXKMAc-/0/1785250322596?e=1787184000&v=beta&t=XdMWYFGyTAWV2cmdu2TjgKsKu54qXFTN2Urc80iboRI",
       "sources": [],
       "readTime": "4 min",
-      "shortId": 279
-    },
-    {
-      "filename": "2026-07-29-mcp-becomes-stateless-enabling-serverless-and-edge.md",
-      "slug": "2026-07-29-mcp-becomes-stateless-enabling-serverless-and-edge",
-      "url": "/blog/2026-07-29-mcp-becomes-stateless-enabling-serverless-and-edge/",
-      "title": "MCP becomes stateless, enabling serverless and edge deployments",
-      "date": "2026-07-29",
-      "published_at": "2026-07-29T02:41:43.581641+00:00",
-      "tags": [
-        "mcp",
-        "serverless",
-        "edge computing"
-      ],
-      "excerpt": "MCP now runs without session state, so you can host it on serverless platforms or edge nodes and scale behind any load balancer. The shift removes a long\u2011standing operational constraint but adds new considerations.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2082152403114348544/img/hZTMBpD7IpCT1zXh.jpg",
-      "sources": [
-        "https://x.com/i/status/2082164250496348268"
-      ],
-      "readTime": "2 min",
-      "video": "media/2026-07-29-mcp-becomes-stateless-enabling-serverless-and-edge.mp4",
       "shortId": 278
     },
     {
