@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 280,
+  "count": 281,
   "posts": [
     "2026-07-31-privacy-analytics-for-startups-reignat-vs-plausibl.md",
+    "2026-07-31-how-openais-20-efficiency-gain-extends-your-runway.md",
     "2026-07-29-mcp-becomes-stateless-enabling-serverless-and-edge.md",
     "2026-07-29-whatsapp-calls-in-your-browser-does-it-replace-zoo.md",
     "2026-07-29-cursor-start-at-649-month-what-developers-in-india.md",
@@ -299,6 +300,24 @@
       "image": "https://images.ctfassets.net/ddoznp8df51r/7orRkab7hje1kz2nKh9nkD/33d84053996f68e78cd1d4cbed5e78d9/07w.png?w=800&fm=avif&q=100",
       "sources": [],
       "readTime": "4 min",
+      "shortId": 281
+    },
+    {
+      "filename": "2026-07-31-how-openais-20-efficiency-gain-extends-your-runway.md",
+      "slug": "2026-07-31-how-openais-20-efficiency-gain-extends-your-runway",
+      "url": "/blog/2026-07-31-how-openais-20-efficiency-gain-extends-your-runway/",
+      "title": "How OpenAI's 20% Efficiency Gain Extends Your Runway (And Which Model to Pick)",
+      "date": "2026-07-31",
+      "published_at": "2026-07-31T12:40:37.657Z",
+      "tags": [
+        "AI",
+        "OpenAI",
+        "GPT"
+      ],
+      "excerpt": "Last week, OpenAI shipped something that changes that calculation: GPT-5.6 Sol, with two improvements that matter.",
+      "image": "https://diplo-media.s3.eu-central-1.amazonaws.com/2026/06/openai-gpt-5-6-sol-preview-1024x576.jpg",
+      "sources": [],
+      "readTime": "7 min",
       "shortId": 280
     },
     {

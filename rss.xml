@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 31 Jul 2026 11:10:52 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2026 12:41:56 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Privacy Analytics for Startups: Reignat vs Plausible vs Fathom</title>
@@ -16,6 +16,17 @@
       <category>Analytics</category>
       <category>Privacy</category>
       <enclosure url="https://images.ctfassets.net/ddoznp8df51r/7orRkab7hje1kz2nKh9nkD/33d84053996f68e78cd1d4cbed5e78d9/07w.png?w=800&amp;fm=avif&amp;q=100" type="image/png" length="0" />
+    </item>
+    <item>
+      <title>How OpenAI's 20% Efficiency Gain Extends Your Runway (And Which Model to Pick)</title>
+      <link>https://bitroot.org/blog/2026-07-31-how-openais-20-efficiency-gain-extends-your-runway/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-31-how-openais-20-efficiency-gain-extends-your-runway/</guid>
+      <description>Last week, OpenAI shipped something that changes that calculation: GPT-5.6 Sol, with two improvements that matter.</description>
+      <pubDate>Fri, 31 Jul 2026 12:40:37 +0000</pubDate>
+      <category>AI</category>
+      <category>OpenAI</category>
+      <category>GPT</category>
+      <enclosure url="https://diplo-media.s3.eu-central-1.amazonaws.com/2026/06/openai-gpt-5-6-sol-preview-1024x576.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>MCP becomes stateless, enabling serverless and edge deployments</title>
