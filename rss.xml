@@ -5,8 +5,18 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 30 Jul 2026 07:26:28 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2026 11:10:52 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Privacy Analytics for Startups: Reignat vs Plausible vs Fathom</title>
+      <link>https://bitroot.org/blog/2026-07-31-privacy-analytics-for-startups-reignat-vs-plausibl/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-31-privacy-analytics-for-startups-reignat-vs-plausibl/</guid>
+      <description>Google Analytics has GDPR fines hitting six figures. Your bootstrap budget can't absorb that hit.</description>
+      <pubDate>Fri, 31 Jul 2026 11:08:38 +0000</pubDate>
+      <category>Analytics</category>
+      <category>Privacy</category>
+      <enclosure url="https://images.ctfassets.net/ddoznp8df51r/7orRkab7hje1kz2nKh9nkD/33d84053996f68e78cd1d4cbed5e78d9/07w.png?w=800&amp;fm=avif&amp;q=100" type="image/png" length="0" />
+    </item>
     <item>
       <title>MCP becomes stateless, enabling serverless and edge deployments</title>
       <link>https://bitroot.org/blog/2026-07-29-mcp-becomes-stateless-enabling-serverless-and-edge/</link>
