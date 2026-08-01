@@ -1,6 +1,7 @@
 ---
 date: '2026-08-01'
 excerpt: 'You shipped in two weeks. Got a ProductHunt vote or two. Downloaded by maybe a hundred people. Then... nothing.'
+image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqIXSA21BWLq5nf3YnOTF-29rW8WBoWdFuQBns1IU-Qg&s=10
 published_at: '2026-08-01T05:52:06.544Z'
 sources: []
 tags:
