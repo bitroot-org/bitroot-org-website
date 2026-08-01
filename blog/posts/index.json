@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 281,
+  "count": 282,
   "posts": [
+    "2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh.md",
     "2026-07-31-privacy-analytics-for-startups-reignat-vs-plausibl.md",
     "2026-07-31-how-openais-20-efficiency-gain-extends-your-runway.md",
     "2026-07-29-mcp-becomes-stateless-enabling-serverless-and-edge.md",
@@ -285,6 +286,23 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh.md",
+      "slug": "2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh",
+      "url": "/blog/2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh/",
+      "title": "From Prompt Wrapper to Agentic Product: The 2026 Shift OpenAI & Anthropic Are Signaling",
+      "date": "2026-08-01",
+      "published_at": "2026-08-01T05:52:06.544Z",
+      "tags": [
+        "Agent. AI",
+        "Wrapper"
+      ],
+      "excerpt": "You shipped in two weeks. Got a ProductHunt vote or two. Downloaded by maybe a hundred people. Then... nothing.",
+      "image": "",
+      "sources": [],
+      "readTime": "8 min",
+      "shortId": 282
+    },
     {
       "filename": "2026-07-31-privacy-analytics-for-startups-reignat-vs-plausibl.md",
       "slug": "2026-07-31-privacy-analytics-for-startups-reignat-vs-plausibl",

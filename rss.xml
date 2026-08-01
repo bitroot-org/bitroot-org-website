@@ -5,8 +5,17 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 31 Jul 2026 12:41:56 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Aug 2026 05:53:06 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>From Prompt Wrapper to Agentic Product: The 2026 Shift OpenAI &amp; Anthropic Are Signaling</title>
+      <link>https://bitroot.org/blog/2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh/</guid>
+      <description>You shipped in two weeks. Got a ProductHunt vote or two. Downloaded by maybe a hundred people. Then... nothing.</description>
+      <pubDate>Sat, 01 Aug 2026 05:52:06 +0000</pubDate>
+      <category>Agent. AI</category>
+      <category>Wrapper</category>
+    </item>
     <item>
       <title>Privacy Analytics for Startups: Reignat vs Plausible vs Fathom</title>
       <link>https://bitroot.org/blog/2026-07-31-privacy-analytics-for-startups-reignat-vs-plausibl/</link>
