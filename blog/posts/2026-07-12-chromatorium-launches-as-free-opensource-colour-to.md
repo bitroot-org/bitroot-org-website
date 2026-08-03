@@ -1,19 +1,16 @@
 ---
-date: '2026-07-12'
-excerpt: Chromatorium is a free, open‑source colour utility aimed at creators, offering
-  a set of practical colour features via a web demo and GitHub repo. It targets illustration
-  and UI design workflows without any licensing cost.
+date: '2026-08-03'
+excerpt: 'Chromatorium is a free, open‑source colour utility aimed at creators, offering a set of practical colour features via a web demo and GitHub repo. It targets illustration and UI design workflows without any licensing cost.'
 image: https://pbs.twimg.com/amplify_video_thumb/2076177341840314368/img/QYdxNLTgU0CZs5no.jpg
 published_at: '2026-07-12T10:20:37.626943+00:00'
 sources:
 - https://x.com/Be_Mai_Waifu/status/2076180299420184830
 tags:
-- color tool
-- open source
-- design
-- illustration
-title: Chromatorium launches as free open‑source colour tool
-video: media/2026-07-12-chromatorium-launches-as-free-opensource-colour-to.mp4
+- 'color tool'
+- 'open source'
+- 'design'
+- 'illustration'
+title: 'Chromatorium launches as free open‑source colour tool'
 ---
 
 Chromatorium hit release today as a free, open‑source colour utility for creators, with a live demo at https://nakoso1.github.io/Chromatorium/ and source code on GitHub https://github.com/Nakoso1/Chromatorium. The author describes it as a personal workflow tool now shared publicly.
