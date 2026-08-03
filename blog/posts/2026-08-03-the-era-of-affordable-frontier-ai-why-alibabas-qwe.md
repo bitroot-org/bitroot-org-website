@@ -99,23 +99,3 @@ Qwen 3.8-Max isn't just another model. It's proof that the frontier AI commodity
 The barrier to entry for AI startups just got lower. The bar for differentiation just got higher.
  
 ---
- 
-## Citations
- 
-[1] Neowin. "Alibaba releases Qwen3.8-Max, challenging GPT-5.6 Sol and Claude Fable 5 on AI benchmarks." August 3, 2026. https://www.neowin.net/news/alibaba-releases-qwen38-max-challenging-gpt-56-sol-and-claude-fable-5-on-ai-benchmarks/
- 
-[2] CryptoBriefing. "Alibaba unveils Qwen3.8-Max AI model, rivaling top global competitors." https://cryptobriefing.com/alibaba-unveils-qwen38-max-ai-model-rivaling-top-global-competitors/
- 
-[3] Bloomberg. "Alibaba's Qwen3.8-Max AI Model Claims Benchmark Scores Rivaling Anthropic." August 3, 2026. https://www.bloomberg.com/news/articles/2026-08-03/alibaba-drops-another-china-ai-model-with-breakthrough-performance
- 
-[4] MarkTechPost. "Alibaba Qwen Releases Qwen3.8-Max: A 2.4 Trillion Parameter MoE Model." August 3, 2026. https://www.marktechpost.com/2026/08/03/alibaba-qwen-releases-qwen3-8-max/
- 
-[5] Business Standard. "Alibaba unveils largest AI model Qwen3.8-Max as competition intensifies." August 3, 2026. https://www.business-standard.com/technology/tech-news/alibaba-unveils-largest-ai-model-qwen3-8-max-as-competition-intensifies-126080300201_1.html
- 
-[6] South China Morning Post. "Alibaba's AI model Qwen3.8-Max made widely accessible ahead of open-weights release." https://www.scmp.com/tech/article/3362738/alibabas-ai-model-qwen38-max-made-widely-accessible-ahead-open-weights-release
- 
-[7] OfficeChai. "Alibaba Releases Qwen 3.8 Max, Beats GPT 5.6 Sol And Fable On Many Benchmarks." August 3, 2026. https://officechai.com/ai/alibaba-releases-qwen-3-8-max-beats-gpt-5-6-sol-and-fable-on-many-benchmarks/
- 
-[8] Yotta Labs. "Qwen 3.8-Max: Release Date, Specs, and How to Access It (2026)." https://www.yottalabs.ai/post/qwen-3-8-max-release-date-specs-how-to-access-2026
- 
-[9] Thomas Wiegold Blog. "Qwen3.8-Max Review: I Tested Alibaba's 2.4T Model." https://thomas-wiegold.com/blog/qwen-3-8-max-review/
