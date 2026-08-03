@@ -5,8 +5,19 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 03 Aug 2026 04:49:55 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Aug 2026 12:37:37 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Era of Affordable Frontier AI: Why Alibaba's Qwen 3.8-Max Changes Everything</title>
+      <link>https://bitroot.org/blog/2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe/</guid>
+      <description>On August 3, 2026, Alibaba officially unveiled Qwen3.8-Max, a 2.4-trillion-parameter mixture-of-experts model designed to compete with leading frontier models, now available via QwenCloud. But this isn't just another model release. This is the moment proprietary AI started becoming a commodity.</description>
+      <pubDate>Mon, 03 Aug 2026 12:36:35 +0000</pubDate>
+      <category>Frontier AI</category>
+      <category>AI</category>
+      <category>Qwen</category>
+      <enclosure url="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202608/alibaba-qwen-38-max-034326994-16x9_0.png?VersionId=P_ZfILY4UplgBo0wjUTGq9fEVLyT7yHa&amp;size=690:388" type="image/png" length="0" />
+    </item>
     <item>
       <title>Ship an App in 2026: How AI Coding Unlocked a New Founder Playbook</title>
       <link>https://bitroot.org/blog/2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f/</link>

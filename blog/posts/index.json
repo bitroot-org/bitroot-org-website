@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 283,
+  "count": 284,
   "posts": [
+    "2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe.md",
     "2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f.md",
     "2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh.md",
     "2026-07-31-privacy-analytics-for-startups-reignat-vs-plausibl.md",
@@ -287,6 +288,24 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe.md",
+      "slug": "2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe",
+      "url": "/blog/2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe/",
+      "title": "The Era of Affordable Frontier AI: Why Alibaba's Qwen 3.8-Max Changes Everything",
+      "date": "2026-08-03",
+      "published_at": "2026-08-03T12:36:35.803Z",
+      "tags": [
+        "Frontier AI",
+        "AI",
+        "Qwen"
+      ],
+      "excerpt": "On August 3, 2026, Alibaba officially unveiled Qwen3.8-Max, a 2.4-trillion-parameter mixture-of-experts model designed to compete with leading frontier models, now available via QwenCloud. But this isn't just another model release. This is the moment proprietary AI started becoming a commodity.",
+      "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202608/alibaba-qwen-38-max-034326994-16x9_0.png?VersionId=P_ZfILY4UplgBo0wjUTGq9fEVLyT7yHa&size=690:388",
+      "sources": [],
+      "readTime": "6 min",
+      "shortId": 284
+    },
     {
       "filename": "2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f.md",
       "slug": "2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f",
