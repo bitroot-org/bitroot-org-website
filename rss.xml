@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 03 Aug 2026 12:37:37 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Aug 2026 12:38:45 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Era of Affordable Frontier AI: Why Alibaba's Qwen 3.8-Max Changes Everything</title>
@@ -29,6 +29,21 @@
       <category>iOS</category>
       <category>Google Play</category>
       <enclosure url="https://techcrunch.com/wp-content/uploads/2025/12/app-of-the-year.jpg" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>Chromatorium launches as free open‑source colour tool</title>
+      <link>https://bitroot.org/blog/2026-07-12-chromatorium-launches-as-free-opensource-colour-to/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-12-chromatorium-launches-as-free-opensource-colour-to/</guid>
+      <description>Chromatorium is a free, open‑source colour utility aimed at creators, offering a set of practical colour features via a web demo and GitHub repo. It targets illustration and UI design workflows without any licensing cost.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/Be_Mai_Waifu/status/2076180299420184830"&gt;https://x.com/Be_Mai_Waifu/status/2076180299420184830&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sun, 12 Jul 2026 10:20:37 +0000</pubDate>
+      <category>color tool</category>
+      <category>open source</category>
+      <category>design</category>
+      <category>illustration</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2076177341840314368/img/QYdxNLTgU0CZs5no.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/Be_Mai_Waifu/status/2076180299420184830">Original Source</source>
     </item>
     <item>
       <title>From Prompt Wrapper to Agentic Product: The 2026 Shift OpenAI &amp; Anthropic Are Signaling</title>
@@ -852,6 +867,63 @@
       <category>Digital Publishing</category>
       <enclosure url="https://techcrunch.com/wp-content/uploads/2026/07/welcome-cover.png?resize=900,453" type="image/png" length="0" />
       <source url="https://techcrunch.com/2026/07/10/a-new-app-hypertexting-turns-the-open-web-into-a-scrollable-social-media-like-feed/">Original Source</source>
+    </item>
+    <item>
+      <title>SwiftUI tool automates Sparkle macOS release workflow</title>
+      <link>https://bitroot.org/blog/2026-07-12-swiftui-tool-automates-sparkle-macos-release-workf/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-12-swiftui-tool-automates-sparkle-macos-release-workf/</guid>
+      <description>An indie developer released a native SwiftUI utility that streamlines the five‑step Sparkle release process, handling DMG creation to Cloudflare R2 upload without leaving the local machine.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/ddflj3310/status/2076108920771481889"&gt;https://x.com/ddflj3310/status/2076108920771481889&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sun, 12 Jul 2026 10:19:40 +0000</pubDate>
+      <category>macos</category>
+      <category>release automation</category>
+      <category>swiftui</category>
+      <enclosure url="https://pbs.twimg.com/media/HM_R8sPaIAA6n6V.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/ddflj3310/status/2076108920771481889">Original Source</source>
+    </item>
+    <item>
+      <title>LingBot-World 2.0 open‑sourced with brain‑cerebellum scaffolding</title>
+      <link>https://bitroot.org/blog/2026-07-12-lingbot-world-20-opensourced-with-braincerebellum/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-12-lingbot-world-20-opensourced-with-braincerebellum/</guid>
+      <description>LingBot‑World 2.0 ships with a brain‑cerebellum scaffold that turns a raw video world model into an interactive generator, and it’s available for free with both 14 B and 1.3 B variants.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/XRoboHub/status/2076189155399434689"&gt;https://x.com/XRoboHub/status/2076189155399434689&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sun, 12 Jul 2026 10:20:22 +0000</pubDate>
+      <category>generative world model</category>
+      <category>agentic AI</category>
+      <category>video synthesis</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2076182782385213440/img/LMn7uhnv2usjtoCq.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/XRoboHub/status/2076189155399434689">Original Source</source>
+    </item>
+    <item>
+      <title>Huibing Dong shares TPU paged‑attention deep‑dive video</title>
+      <link>https://bitroot.org/blog/2026-07-12-huibing-dong-shares-tpu-pagedattention-deepdive-vi/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-12-huibing-dong-shares-tpu-pagedattention-deepdive-vi/</guid>
+      <description>A new 30‑minute video and blog explain how paged attention can be implemented on Google’s TPUs, highlighting performance gains and engineering trade‑offs.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/gdymind/status/2076185988288987402"&gt;https://x.com/gdymind/status/2076185988288987402&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sun, 12 Jul 2026 10:19:12 +0000</pubDate>
+      <category>tpu</category>
+      <category>attention</category>
+      <category>hardware</category>
+      <category>machine learning</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2076183975761231872/img/Y_cWsAL2ppYYqIGz.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/gdymind/status/2076185988288987402">Original Source</source>
+    </item>
+    <item>
+      <title>ClipReel lets you trim YouTube or X videos to clips without downloading</title>
+      <link>https://bitroot.org/blog/2026-07-12-clipreel-lets-you-trim-youtube-or-x-videos-to-clip/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-12-clipreel-lets-you-trim-youtube-or-x-videos-to-clip/</guid>
+      <description>ClipReel is a free web app that trims YouTube or X links into short clips, adds AI captions, and exports in any aspect ratio without pulling the full video.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/Nirmaldarji16/status/2076172621478314162"&gt;https://x.com/Nirmaldarji16/status/2076172621478314162&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sun, 12 Jul 2026 10:20:29 +0000</pubDate>
+      <category>video clipping</category>
+      <category>ai captions</category>
+      <category>web tool</category>
+      <enclosure url="https://pbs.twimg.com/media/HNAL02FboAAhOiP.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/Nirmaldarji16/status/2076172621478314162">Original Source</source>
     </item>
     <item>
       <title>The AI agent that works while you sleep, and actually delivers in the morning</title>

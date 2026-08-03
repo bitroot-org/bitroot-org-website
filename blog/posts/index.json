@@ -1,9 +1,10 @@
 {
   "generated": true,
-  "count": 284,
+  "count": 289,
   "posts": [
     "2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe.md",
     "2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f.md",
+    "2026-07-12-chromatorium-launches-as-free-opensource-colour-to.md",
     "2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh.md",
     "2026-07-31-privacy-analytics-for-startups-reignat-vs-plausibl.md",
     "2026-07-31-how-openais-20-efficiency-gain-extends-your-runway.md",
@@ -64,6 +65,10 @@
     "2026-07-13-nexterm-opens-source-tool-for-unified-ssh-vnc-and.md",
     "2026-07-13-librecode-launches-as-a-fully-local-ai-code-editor.md",
     "2026-07-13-hypertexting-app-turns-the-open-web-into-a-scrolla.md",
+    "2026-07-12-swiftui-tool-automates-sparkle-macos-release-workf.md",
+    "2026-07-12-lingbot-world-20-opensourced-with-braincerebellum.md",
+    "2026-07-12-huibing-dong-shares-tpu-pagedattention-deepdive-vi.md",
+    "2026-07-12-clipreel-lets-you-trim-youtube-or-x-videos-to-clip.md",
     "2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual.md",
     "2026-07-10-pi-ai-coding-agent-released-as-free-opensource-too.md",
     "2026-07-10-openhands-launches-agent-canvas-for-selfhosted-ai.md",
@@ -304,7 +309,7 @@
       "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202608/alibaba-qwen-38-max-034326994-16x9_0.png?VersionId=P_ZfILY4UplgBo0wjUTGq9fEVLyT7yHa&size=690:388",
       "sources": [],
       "readTime": "6 min",
-      "shortId": 284
+      "shortId": 289
     },
     {
       "filename": "2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f.md",
@@ -323,7 +328,28 @@
       "image": "https://techcrunch.com/wp-content/uploads/2025/12/app-of-the-year.jpg",
       "sources": [],
       "readTime": "5 min",
-      "shortId": 283
+      "shortId": 288
+    },
+    {
+      "filename": "2026-07-12-chromatorium-launches-as-free-opensource-colour-to.md",
+      "slug": "2026-07-12-chromatorium-launches-as-free-opensource-colour-to",
+      "url": "/blog/2026-07-12-chromatorium-launches-as-free-opensource-colour-to/",
+      "title": "Chromatorium launches as free open\u2011source colour tool",
+      "date": "2026-08-03",
+      "published_at": "2026-07-12T10:20:37.626943+00:00",
+      "tags": [
+        "color tool",
+        "open source",
+        "design",
+        "illustration"
+      ],
+      "excerpt": "Chromatorium is a free, open\u2011source colour utility aimed at creators, offering a set of practical colour features via a web demo and GitHub repo. It targets illustration and UI design workflows without any licensing cost.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2076177341840314368/img/QYdxNLTgU0CZs5no.jpg",
+      "sources": [
+        "https://x.com/Be_Mai_Waifu/status/2076180299420184830"
+      ],
+      "readTime": "2 min",
+      "shortId": 287
     },
     {
       "filename": "2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh.md",
@@ -340,7 +366,7 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqIXSA21BWLq5nf3YnOTF-29rW8WBoWdFuQBns1IU-Qg&s=10",
       "sources": [],
       "readTime": "8 min",
-      "shortId": 282
+      "shortId": 286
     },
     {
       "filename": "2026-07-31-privacy-analytics-for-startups-reignat-vs-plausibl.md",
@@ -357,7 +383,7 @@
       "image": "https://images.ctfassets.net/ddoznp8df51r/7orRkab7hje1kz2nKh9nkD/33d84053996f68e78cd1d4cbed5e78d9/07w.png?w=800&fm=avif&q=100",
       "sources": [],
       "readTime": "4 min",
-      "shortId": 281
+      "shortId": 285
     },
     {
       "filename": "2026-07-31-how-openais-20-efficiency-gain-extends-your-runway.md",
@@ -375,7 +401,7 @@
       "image": "https://diplo-media.s3.eu-central-1.amazonaws.com/2026/06/openai-gpt-5-6-sol-preview-1024x576.jpg",
       "sources": [],
       "readTime": "7 min",
-      "shortId": 280
+      "shortId": 284
     },
     {
       "filename": "2026-07-29-mcp-becomes-stateless-enabling-serverless-and-edge.md",
@@ -395,7 +421,7 @@
         "https://x.com/i/status/2082164250496348268"
       ],
       "readTime": "2 min",
-      "shortId": 279
+      "shortId": 283
     },
     {
       "filename": "2026-07-29-whatsapp-calls-in-your-browser-does-it-replace-zoo.md",
@@ -411,7 +437,7 @@
       "image": "https://media.licdn.com/dms/image/v2/D5622AQGgvj1NR6GkCA/feedshare-shrink_800/B56Z.pNheXKMAc-/0/1785250322596?e=1787184000&v=beta&t=XdMWYFGyTAWV2cmdu2TjgKsKu54qXFTN2Urc80iboRI",
       "sources": [],
       "readTime": "4 min",
-      "shortId": 278
+      "shortId": 282
     },
     {
       "filename": "2026-07-29-cursor-start-at-649-month-what-developers-in-india.md",
@@ -430,7 +456,7 @@
       "image": "https://pbs.twimg.com/media/HOSr9QJaQAA6z-S?format=png&name=900x900",
       "sources": [],
       "readTime": "9 min",
-      "shortId": 277
+      "shortId": 281
     },
     {
       "filename": "2026-07-28-open-weights-models-are-fine-what-founders-should.md",
@@ -450,7 +476,7 @@
         "https://www.anthropic.com/news/position-open-weights-models"
       ],
       "readTime": "6 min",
-      "shortId": 276
+      "shortId": 280
     },
     {
       "filename": "2026-07-17-baberu-ocr-launches-as-a-multilingual-comic-ocr-on.md",
@@ -470,7 +496,7 @@
         "https://x.com/daichi_genshiai/status/2077989874398032361"
       ],
       "readTime": "3 min",
-      "shortId": 275
+      "shortId": 279
     },
     {
       "filename": "2026-07-27-claude-opus-5-vs-fable-5-which-model-should-your-s.md",
@@ -489,7 +515,7 @@
       "image": "https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F54b7ab1d2c2521f83ae5d2da5f9d99321c370d24-2880x1620.png&w=3840&q=75",
       "sources": [],
       "readTime": "8 min",
-      "shortId": 274
+      "shortId": 278
     },
     {
       "filename": "2026-07-27-agentic-ai-for-founders-when-you-need-agents-and-w.md",
@@ -507,7 +533,7 @@
       "image": "https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2024/12/marquee-agentforce-agentic-ai.png?resize=1024,576",
       "sources": [],
       "readTime": "5 min",
-      "shortId": 273
+      "shortId": 277
     },
     {
       "filename": "2026-07-25-bitchat-github-takedown-why-developers-in-india-mu.md",
@@ -527,7 +553,7 @@
         "https://techcrunch.com/2026/07/24/indias-move-against-jack-dorseys-bitchat-sparks-legal-debate/"
       ],
       "readTime": "6 min",
-      "shortId": 272
+      "shortId": 276
     },
     {
       "filename": "2026-07-18-firecrawl-launches-openlovable-to-autogenerate-rea.md",
@@ -547,7 +573,7 @@
         "https://x.com/N0V4Dev/status/2078336551696626102"
       ],
       "readTime": "2 min",
-      "shortId": 271
+      "shortId": 275
     },
     {
       "filename": "2026-07-13-css-texteffects-library-expands-to-66-readymade-st.md",
@@ -567,7 +593,7 @@
         "https://x.com/codesharpdev/status/2076542275296108963"
       ],
       "readTime": "2 min",
-      "shortId": 270
+      "shortId": 274
     },
     {
       "filename": "2026-07-24-why-googles-gemini-3-5-pro-is-months-behind-the-co.md",
@@ -587,7 +613,7 @@
       "image": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2026/07/Gemini-3.5-Pro-cover.jpg?w=1500&quality=82&strip=all&ssl=1",
       "sources": [],
       "readTime": "13 min",
-      "shortId": 269
+      "shortId": 273
     },
     {
       "filename": "2026-07-23-claude-code-desktop-adds-ios-simulator-panel-in-pu.md",
@@ -607,7 +633,7 @@
         "https://x.com/i/status/2079674432038248611"
       ],
       "readTime": "2 min",
-      "shortId": 268
+      "shortId": 272
     },
     {
       "filename": "2026-07-23-claude-code-adds-beta-security-scanning-plugin-for.md",
@@ -628,7 +654,7 @@
         "https://x.com/i/status/2079990597973057691"
       ],
       "readTime": "3 min",
-      "shortId": 267
+      "shortId": 271
     },
     {
       "filename": "2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video.md",
@@ -649,7 +675,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video.mp4",
-      "shortId": 266
+      "shortId": 270
     },
     {
       "filename": "2026-07-23-world-monitor-opensources-a-billiondollar-warroom.md",
@@ -670,7 +696,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-world-monitor-opensources-a-billiondollar-warroom.mp4",
-      "shortId": 265
+      "shortId": 269
     },
     {
       "filename": "2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas.md",
@@ -692,7 +718,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas.mp4",
-      "shortId": 264
+      "shortId": 268
     },
     {
       "filename": "2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this.md",
@@ -712,7 +738,7 @@
       "image": "https://media.wired.com/photos/6a5ff5b0f95e7d91469f8f3d/1:1/w_1920,c_limit/security_openai_hack_huggingface.jpg",
       "sources": [],
       "readTime": "7 min",
-      "shortId": 263
+      "shortId": 267
     },
     {
       "filename": "2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now.md",
@@ -734,7 +760,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now.mp4",
-      "shortId": 262
+      "shortId": 266
     },
     {
       "filename": "2026-07-23-cursor-launches-router-to-cut-model-costs-by-60.md",
@@ -755,7 +781,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-cursor-launches-router-to-cut-model-costs-by-60.mp4",
-      "shortId": 261
+      "shortId": 265
     },
     {
       "filename": "2026-07-23-claude-code-eyes-adds-visual-hardware-verification.md",
@@ -775,7 +801,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-claude-code-eyes-adds-visual-hardware-verification.mp4",
-      "shortId": 260
+      "shortId": 264
     },
     {
       "filename": "2026-07-23-buzz-launches-as-opensource-group-chat-alternative.md",
@@ -795,7 +821,7 @@
         "https://x.com/i/status/2079605800998146171"
       ],
       "readTime": "2 min",
-      "shortId": 259
+      "shortId": 263
     },
     {
       "filename": "2026-07-22-signspot-launches-ai-pdf-signature-field-extractor.md",
@@ -816,7 +842,7 @@
         "https://x.com/Adedoyinjames_/status/2079803185384825294"
       ],
       "readTime": "2 min",
-      "shortId": 258
+      "shortId": 262
     },
     {
       "filename": "2026-07-22-runtimewire-opens-free-live-aieconomy-news-feed.md",
@@ -836,7 +862,7 @@
         "https://x.com/runtimewire/status/2079809429411611008"
       ],
       "readTime": "2 min",
-      "shortId": 257
+      "shortId": 261
     },
     {
       "filename": "2026-07-22-patchy-082-adds-affinity-import-and-scripting-test.md",
@@ -857,7 +883,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-22-patchy-082-adds-affinity-import-and-scripting-test.mp4",
-      "shortId": 256
+      "shortId": 260
     },
     {
       "filename": "2026-07-22-opensource-ai-agent-audits-video-frames-automatica.md",
@@ -878,7 +904,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-22-opensource-ai-agent-audits-video-frames-automatica.mp4",
-      "shortId": 255
+      "shortId": 259
     },
     {
       "filename": "2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven.md",
@@ -898,7 +924,7 @@
       "image": "https://aitoolsreview.co.uk/_next/image?url=%2Fmedia%2Farticles%2Finsights%2Fkimi-k3-vs-claude-fable-5%2Faa-intelligence-index.avif&w=1920&q=75&dpl=dpl_269LMm4WTq3eHE8nnHxFFvL2KnDc",
       "sources": [],
       "readTime": "6 min",
-      "shortId": 254
+      "shortId": 258
     },
     {
       "filename": "2026-07-22-ateno-releases-ai-room-designer-with-free-trial-an.md",
@@ -919,7 +945,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-22-ateno-releases-ai-room-designer-with-free-trial-an.mp4",
-      "shortId": 253
+      "shortId": 257
     },
     {
       "filename": "2026-07-21-why-apple-raised-prices-across-hardware-subscripti.md",
@@ -933,7 +959,7 @@
       "image": "https://static.toiimg.com/thumb/msid-132501351,imgsize-50946,width-400,height-225,resizemode-4/apple.jpg",
       "sources": [],
       "readTime": "11 min",
-      "shortId": 252
+      "shortId": 256
     },
     {
       "filename": "2026-07-21-monid-replaces-apify-with-perrequest-social-media.md",
@@ -954,7 +980,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-21-monid-replaces-apify-with-perrequest-social-media.mp4",
-      "shortId": 251
+      "shortId": 255
     },
     {
       "filename": "2026-07-20-zeroprep-turns-spoken-talks-into-slide-decks-now-o.md",
@@ -974,7 +1000,7 @@
         "https://x.com/ramsri_goutham/status/2079069398267281715"
       ],
       "readTime": "2 min",
-      "shortId": 250
+      "shortId": 254
     },
     {
       "filename": "2026-07-20-when-agents-go-wrong-a-cisos-guide-to-agentic-ai-r.md",
@@ -994,7 +1020,7 @@
       "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/039b6648c28eb33070a63a58d49013600b229238-2554x2554.svg",
       "sources": [],
       "readTime": "19 min",
-      "shortId": 249
+      "shortId": 253
     },
     {
       "filename": "2026-07-20-opensource-agent-security-adds-five-preflight-cont.md",
@@ -1014,7 +1040,7 @@
         "https://x.com/nykdotdev/status/2079068942681993237"
       ],
       "readTime": "2 min",
-      "shortId": 248
+      "shortId": 252
     },
     {
       "filename": "2026-07-20-gochat-ui-chrome-extension-brings-floating-chat-to.md",
@@ -1034,7 +1060,7 @@
         "https://x.com/theadaloguy/status/2079087378522919057"
       ],
       "readTime": "1 min",
-      "shortId": 247
+      "shortId": 251
     },
     {
       "filename": "2026-07-20-go-blog-shows-how-to-do-graceful-tcp-server-shutdo.md",
@@ -1054,7 +1080,7 @@
         "https://x.com/_xonoxc/status/2079084544322572478"
       ],
       "readTime": "2 min",
-      "shortId": 246
+      "shortId": 250
     },
     {
       "filename": "2026-07-20-bangergen-open-source-local-ai-turns-ideas-into-re.md",
@@ -1074,7 +1100,7 @@
         "https://x.com/DegenApeDev/status/2079011617795375453"
       ],
       "readTime": "2 min",
-      "shortId": 245
+      "shortId": 249
     },
     {
       "filename": "2026-07-18-open-source-tool-turns-phone-video-into-a-local-3d.md",
@@ -1095,7 +1121,7 @@
       ],
       "readTime": "2 min",
       "video": "https://video.twimg.com/amplify_video/2078311452012847104/vid/avc1/2940x1846/sANthlRyS6_BusGx.mp4?tag=29",
-      "shortId": 244
+      "shortId": 248
     },
     {
       "filename": "2026-07-18-open-source-badminton-hawkeye-system-released-by-c.md",
@@ -1116,7 +1142,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-18-open-source-badminton-hawkeye-system-released-by-c.mp4",
-      "shortId": 243
+      "shortId": 247
     },
     {
       "filename": "2026-07-18-ods-launches-oneclick-local-ai-inference-stack.md",
@@ -1136,7 +1162,7 @@
         "https://x.com/TheAhmadOsman/status/2078174547745046934"
       ],
       "readTime": "2 min",
-      "shortId": 242
+      "shortId": 246
     },
     {
       "filename": "2026-07-18-octoc2-launches-a-githubonly-c2-framework.md",
@@ -1156,7 +1182,7 @@
         "https://x.com/Yass1nMohamed/status/2078110214142767323"
       ],
       "readTime": "2 min",
-      "shortId": 241
+      "shortId": 245
     },
     {
       "filename": "2026-07-17-youtube-unveils-codex-micro-a-lightweight-ai-code.md",
@@ -1176,7 +1202,7 @@
         "https://share.google/IUreul71KXi6QHD9c"
       ],
       "readTime": "2 min",
-      "shortId": 240
+      "shortId": 244
     },
     {
       "filename": "2026-07-17-xai-open-sources-grok-build-its-ai-coding-agent-an.md",
@@ -1196,7 +1222,7 @@
         "https://x.ai/news/grok-build-open-source"
       ],
       "readTime": "2 min",
-      "shortId": 239
+      "shortId": 243
     },
     {
       "filename": "2026-07-17-tauri2-based-skillsplusplus-adds-oneclick-ai-tool.md",
@@ -1216,7 +1242,7 @@
         "https://x.com/QingQ77/status/2077991939404603697"
       ],
       "readTime": "2 min",
-      "shortId": 238
+      "shortId": 242
     },
     {
       "filename": "2026-07-17-selfhosted-condenser-lets-you-browse-telegram-chan.md",
@@ -1246,7 +1272,7 @@
           "url": "https://pbs.twimg.com/media/HNZm6Jdb0AAXPrV.jpg?name=orig"
         }
       ],
-      "shortId": 237
+      "shortId": 241
     },
     {
       "filename": "2026-07-17-opensource-shep-agent-orchestrator-targets-github.md",
@@ -1267,7 +1293,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-17-opensource-shep-agent-orchestrator-targets-github.mp4",
-      "shortId": 236
+      "shortId": 240
     },
     {
       "filename": "2026-07-17-kooky-036-adds-keepawake-mode-for-laptops.md",
@@ -1288,7 +1314,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-17-kooky-036-adds-keepawake-mode-for-laptops.mp4",
-      "shortId": 235
+      "shortId": 239
     },
     {
       "filename": "2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on.md",
@@ -1309,7 +1335,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on.mp4",
-      "shortId": 234
+      "shortId": 238
     },
     {
       "filename": "2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s.md",
@@ -1330,7 +1356,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s.mp4",
-      "shortId": 233
+      "shortId": 237
     },
     {
       "filename": "2026-07-16-inkling-model-released-with-975b-parameters-and-mu.md",
@@ -1351,7 +1377,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-16-inkling-model-released-with-975b-parameters-and-mu.mp4",
-      "shortId": 232
+      "shortId": 236
     },
     {
       "filename": "2026-07-16-harness-launches-a-humanfriendly-cli-for-devsecops.md",
@@ -1371,7 +1397,7 @@
         "https://x.com/harnessio/status/2077413070616617212"
       ],
       "readTime": "2 min",
-      "shortId": 231
+      "shortId": 235
     },
     {
       "filename": "2026-07-16-gpt-5-6s-reactive-safety-cycle-known-risks-shipped.md",
@@ -1396,7 +1422,7 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/05/openai-logo-code-background.jpg?resize=1280,852",
       "sources": [],
       "readTime": "6 min",
-      "shortId": 230
+      "shortId": 234
     },
     {
       "filename": "2026-07-16-alaya-lab-opens-alaya-world-open-source-interactiv.md",
@@ -1417,7 +1443,7 @@
       ],
       "readTime": "2 min",
       "video": "https://video.twimg.com/amplify_video/2077587439653474304/vid/avc1/1920x1080/rHj0U4GJ1UFLEUmN.mp4?tag=29",
-      "shortId": 229
+      "shortId": 233
     },
     {
       "filename": "2026-07-14-claude-now-has-india-pricing-heres-what-it-actuall.md",
@@ -1438,7 +1464,7 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2269811684.jpg",
       "sources": [],
       "readTime": "8 min",
-      "shortId": 228
+      "shortId": 232
     },
     {
       "filename": "2026-07-13-tencent-cloud-opensources-cubesandbox-for-ai-agent.md",
@@ -1458,7 +1484,7 @@
         "https://x.com/XAMTO_AI/status/2076443738004742262"
       ],
       "readTime": "2 min",
-      "shortId": 227
+      "shortId": 231
     },
     {
       "filename": "2026-07-13-openpencil-launches-7-mb-design-app-with-fig-suppo.md",
@@ -1479,7 +1505,7 @@
         "https://x.com/grafisify/status/2076531540465762429"
       ],
       "readTime": "2 min",
-      "shortId": 226
+      "shortId": 230
     },
     {
       "filename": "2026-07-13-nexterm-opens-source-tool-for-unified-ssh-vnc-and.md",
@@ -1499,7 +1525,7 @@
         "https://x.com/tom_doerr/status/2076543941793534213"
       ],
       "readTime": "2 min",
-      "shortId": 225
+      "shortId": 229
     },
     {
       "filename": "2026-07-13-librecode-launches-as-a-fully-local-ai-code-editor.md",
@@ -1519,7 +1545,7 @@
         "https://x.com/chenzeling4/status/2076274378455883869"
       ],
       "readTime": "2 min",
-      "shortId": 224
+      "shortId": 228
     },
     {
       "filename": "2026-07-13-hypertexting-app-turns-the-open-web-into-a-scrolla.md",
@@ -1549,6 +1575,129 @@
         "https://hypertexting.com/"
       ],
       "readTime": "4 min",
+      "shortId": 227
+    },
+    {
+      "filename": "2026-07-12-swiftui-tool-automates-sparkle-macos-release-workf.md",
+      "slug": "2026-07-12-swiftui-tool-automates-sparkle-macos-release-workf",
+      "url": "/blog/2026-07-12-swiftui-tool-automates-sparkle-macos-release-workf/",
+      "title": "SwiftUI tool automates Sparkle macOS release workflow",
+      "date": "2026-07-12",
+      "published_at": "2026-07-12T10:19:40.824541+00:00",
+      "tags": [
+        "macos",
+        "release automation",
+        "swiftui"
+      ],
+      "excerpt": "An indie developer released a native SwiftUI utility that streamlines the five\u2011step Sparkle release process, handling DMG creation to Cloudflare R2 upload without leaving the local machine.",
+      "image": "https://pbs.twimg.com/media/HM_R8sPaIAA6n6V.jpg?name=orig",
+      "sources": [
+        "https://x.com/ddflj3310/status/2076108920771481889"
+      ],
+      "readTime": "2 min",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://pbs.twimg.com/media/HM_R8sPaIAA6n6V.jpg?name=orig"
+        },
+        {
+          "type": "image",
+          "url": "https://pbs.twimg.com/media/HM_R9OLa0AAU2p2.jpg?name=orig"
+        },
+        {
+          "type": "image",
+          "url": "https://pbs.twimg.com/media/HM_R9zTbEAAPr94.jpg?name=orig"
+        },
+        {
+          "type": "image",
+          "url": "https://pbs.twimg.com/media/HM_SC8MaIAAAPYx.jpg?name=orig"
+        }
+      ],
+      "shortId": 226
+    },
+    {
+      "filename": "2026-07-12-lingbot-world-20-opensourced-with-braincerebellum.md",
+      "slug": "2026-07-12-lingbot-world-20-opensourced-with-braincerebellum",
+      "url": "/blog/2026-07-12-lingbot-world-20-opensourced-with-braincerebellum/",
+      "title": "LingBot-World 2.0 open\u2011sourced with brain\u2011cerebellum scaffolding",
+      "date": "2026-07-12",
+      "published_at": "2026-07-12T10:20:22.716499+00:00",
+      "tags": [
+        "generative world model",
+        "agentic AI",
+        "video synthesis"
+      ],
+      "excerpt": "LingBot\u2011World 2.0 ships with a brain\u2011cerebellum scaffold that turns a raw video world model into an interactive generator, and it\u2019s available for free with both 14 B and 1.3 B variants.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2076182782385213440/img/LMn7uhnv2usjtoCq.jpg",
+      "sources": [
+        "https://x.com/XRoboHub/status/2076189155399434689"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-12-lingbot-world-20-opensourced-with-braincerebellum.mp4",
+      "media": [
+        {
+          "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2076182782385213440/img/LMn7uhnv2usjtoCq.jpg",
+          "type": "video",
+          "url": "https://video.twimg.com/amplify_video/2076182782385213440/vid/avc1/1998x1080/Kk53rtcIWynGPoNK.mp4?tag=28"
+        },
+        {
+          "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2076184198524919808/img/RrC-TT1qibqR8WMI.jpg",
+          "type": "video",
+          "url": "https://video.twimg.com/amplify_video/2076184198524919808/vid/avc1/1920x1146/8ESRNXH0WfTHyAX_.mp4?tag=28"
+        },
+        {
+          "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2076188341192822784/img/VW0APzyOOzvAxPiB.jpg",
+          "type": "video",
+          "url": "https://video.twimg.com/amplify_video/2076188341192822784/vid/avc1/3216x1952/b1MReCAdllQiCmm1.mp4?tag=28"
+        },
+        {
+          "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2076188368220893184/img/4dDwiNj5aLIWdED3.jpg",
+          "type": "video",
+          "url": "https://video.twimg.com/amplify_video/2076188368220893184/vid/avc1/1664x960/wS0-rdcJJW7VYII7.mp4?tag=28"
+        }
+      ],
+      "shortId": 225
+    },
+    {
+      "filename": "2026-07-12-huibing-dong-shares-tpu-pagedattention-deepdive-vi.md",
+      "slug": "2026-07-12-huibing-dong-shares-tpu-pagedattention-deepdive-vi",
+      "url": "/blog/2026-07-12-huibing-dong-shares-tpu-pagedattention-deepdive-vi/",
+      "title": "Huibing Dong shares TPU paged\u2011attention deep\u2011dive video",
+      "date": "2026-07-12",
+      "published_at": "2026-07-12T10:19:12.416270+00:00",
+      "tags": [
+        "tpu",
+        "attention",
+        "hardware",
+        "machine learning"
+      ],
+      "excerpt": "A new 30\u2011minute video and blog explain how paged attention can be implemented on Google\u2019s TPUs, highlighting performance gains and engineering trade\u2011offs.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2076183975761231872/img/Y_cWsAL2ppYYqIGz.jpg",
+      "sources": [
+        "https://x.com/gdymind/status/2076185988288987402"
+      ],
+      "readTime": "2 min",
+      "video": "https://video.twimg.com/amplify_video/2076183975761231872/vid/avc1/3326x2160/cZvIMqBj_BP3mExe.mp4?tag=28",
+      "shortId": 224
+    },
+    {
+      "filename": "2026-07-12-clipreel-lets-you-trim-youtube-or-x-videos-to-clip.md",
+      "slug": "2026-07-12-clipreel-lets-you-trim-youtube-or-x-videos-to-clip",
+      "url": "/blog/2026-07-12-clipreel-lets-you-trim-youtube-or-x-videos-to-clip/",
+      "title": "ClipReel lets you trim YouTube or X videos to clips without downloading",
+      "date": "2026-07-12",
+      "published_at": "2026-07-12T10:20:29.718394+00:00",
+      "tags": [
+        "video clipping",
+        "ai captions",
+        "web tool"
+      ],
+      "excerpt": "ClipReel is a free web app that trims YouTube or X links into short clips, adds AI captions, and exports in any aspect ratio without pulling the full video.",
+      "image": "https://pbs.twimg.com/media/HNAL02FboAAhOiP.jpg?name=orig",
+      "sources": [
+        "https://x.com/Nirmaldarji16/status/2076172621478314162"
+      ],
+      "readTime": "2 min",
       "shortId": 223
     },
     {
