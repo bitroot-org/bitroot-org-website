@@ -124,6 +124,17 @@ export const kits: Item[] = [
 
 export const guides: Item[] = [
   {
+    slug: "automate-your-first-100k-zapier-workflows",
+    category: "guide",
+    title: "How to Automate Your First $100K in Revenue: 5 Zapier Workflows Every Founder Needs",
+    summary:
+      "Five copy-paste Zapier workflows for lead capture, invoice follow-up, customer onboarding, feedback logging, and weekly reporting — roughly 13+ hours reclaimed per month, one workflow at a time.",
+    tags: ["Zapier", "Automation", "Founder", "No-code"],
+    updatedAt: "2026-08-03",
+    href: "/guides/automate-your-first-100k-zapier-workflows",
+    difficulty: "starter",
+  },
+  {
     slug: "launchrock-vs-unbounce",
     category: "guide",
     title: "Launchrock vs Unbounce: Which Fits What You're Building",

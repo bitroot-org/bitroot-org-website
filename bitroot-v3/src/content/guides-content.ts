@@ -43,6 +43,292 @@ export type GuideContent = {
 };
 
 export const guidesContent: Record<string, GuideContent> = {
+  "automate-your-first-100k-zapier-workflows": {
+    slug: "automate-your-first-100k-zapier-workflows",
+    tagline:
+      "Most founders waste 10–20 hours a week on manual tasks. These 5 copy-paste Zapier workflows automate lead capture, CRM updates, follow-ups, and reporting. Implement one workflow and reclaim 2–4 hours. Implement all five and reclaim a half-time hire's worth of work.",
+    timeEstimate: "15 minutes per workflow, spread across a month",
+    youWillNeed: [
+      "A Zapier account (free tier covers 100 tasks/month, enough to test 1–2 workflows)",
+      "The apps you already use for leads, invoicing, and CRM — Airtable, Stripe, Slack are used as examples throughout",
+      "One workflow at a time — don't build all five in a single sitting",
+    ],
+    youWillEndUpWith:
+      "Five automated workflows covering lead capture, invoice follow-up, customer onboarding, feedback logging, and a weekly sales report — roughly 13+ hours reclaimed per month, running with no code and no deployment.",
+    toc: [
+      { label: "The founder's automation problem", id: "the-problem" },
+      { label: "Why Zapier (not Make, not IFTTT)", id: "why-zapier" },
+      { label: "1. Lead capture → CRM add", id: "workflow-1" },
+      { label: "2. Invoice sent → payment reminder", id: "workflow-2" },
+      { label: "3. New purchase → welcome sequence", id: "workflow-3" },
+      { label: "4. Product feedback → log + notify", id: "workflow-4" },
+      { label: "5. Weekly sales report", id: "workflow-5" },
+      { label: "Total time saved", id: "total-time-saved" },
+      { label: "Avoid these mistakes", id: "mistakes" },
+      { label: "Next steps", id: "next-steps" },
+      { label: "FAQ", id: "faq" },
+      { label: "Your competitive edge", id: "competitive-edge" },
+    ],
+    body: [
+      {
+        type: "callout",
+        tone: "tip",
+        body: "TL;DR: most founders waste 10–20 hours/week on manual tasks. These 5 copy-paste Zapier workflows automate lead capture, CRM updates, follow-ups, and reporting. Implement one workflow = reclaim 2–4 hours. Implement all five = reclaim a half-time hire's worth of work.",
+      },
+
+      { type: "h2", body: "The founder's automation problem", id: "the-problem" },
+      {
+        type: "p",
+        body: "You're grinding. Leads come in via email, form, social DM. You copy them into Airtable. You send a follow-up email. You log it in your CRM. You create a Slack reminder to check back. You manually update your weekly sales report.",
+      },
+      {
+        type: "p",
+        body: "That's 20 minutes per lead. 50 leads/month = 16+ hours of pure admin work.",
+      },
+      {
+        type: "p",
+        body: "Zapier fixes this. One automation runs 24/7. No code. No deployment. Just \"when X happens, do Y.\"",
+      },
+
+      { type: "h2", body: "Why Zapier (not Make, not IFTTT)", id: "why-zapier" },
+      {
+        type: "ul",
+        items: [
+          "Zapier — 7,000+ app integrations, Stripe/PayPal/Airtable/HubSpot all supported, most founder-friendly.",
+          "Make (formerly Integromat) — cheaper, more powerful, steeper learning curve.",
+          "IFTTT — too limited for business workflows.",
+        ],
+      },
+      {
+        type: "p",
+        body: "For your first automation, start with Zapier. It's faster to learn and cheaper for low volume (free tier covers 100 tasks/month).",
+      },
+
+      { type: "h2", body: "Workflow 1: lead capture → automatic CRM add", id: "workflow-1" },
+      {
+        type: "p",
+        body: "15 minutes to setup. What it does: lead fills your form → Zapier adds them to Airtable + sends you a Slack notification.",
+      },
+      {
+        type: "p",
+        body: "Why: stop manually copying names into spreadsheets. CRM stays current.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Trigger: new form submission (Typeform, Google Forms, or website form)",
+          "Action 1: add new record to Airtable (name, email, phone, source)",
+          "Action 2: send Slack message to #leads channel (notify team instantly)",
+        ],
+      },
+      {
+        type: "p",
+        body: "Result: lead appears in your CRM within 10 seconds of signup. Your team sees it immediately.",
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Time saved: 2 hours/month (if you get 50 leads, that's 50 × 2 min of manual copy-paste).",
+      },
+
+      { type: "h2", body: "Workflow 2: invoice sent → Slack alert + payment reminder", id: "workflow-2" },
+      {
+        type: "p",
+        body: "What it does: you send an invoice via Stripe → Zapier sends a Slack alert to you + a reminder email to the customer after 7 days.",
+      },
+      {
+        type: "p",
+        body: "Why: stop forgetting to follow up on unpaid invoices. Revenue goes up.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Trigger: new paid invoice created (Stripe, Wave, or QuickBooks)",
+          "Action 1: send Slack message to #invoices (\"Invoice for $X sent to [customer], due [date]\")",
+          "Action 2: send email reminder after 7 days (if invoice still unpaid)",
+          "Action 3: send SMS reminder after 14 days (optional, Twilio)",
+        ],
+      },
+      {
+        type: "p",
+        body: "Result: invoices get paid 3–5 days faster (follow-up works). Less chasing customers.",
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Time saved: 3 hours/month (if you send 20 invoices/month, that's 20 × 9 min of follow-up).",
+      },
+
+      { type: "h2", body: "Workflow 3: new customer purchase → welcome sequence", id: "workflow-3" },
+      {
+        type: "p",
+        body: "What it does: customer buys → Zapier sends a welcome email + SMS + creates a task in your CRM (email + SMS + task).",
+      },
+      {
+        type: "p",
+        body: "Why: customer onboarding is chaotic. This automates the first impression.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Trigger: new customer created in Stripe",
+          "Action 1: send welcome email (from email template in Gmail)",
+          "Action 2: send SMS with setup instructions (Twilio)",
+          "Action 3: create task in Airtable for you to follow up 48 hours later",
+          "Action 4: add them to email list (Mailchimp, Substack, or Klaviyo)",
+        ],
+      },
+      {
+        type: "p",
+        body: "Result: every new customer gets a warm welcome automatically. You don't forget onboarding.",
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Time saved: 4 hours/month (if you get 30 customers/month, that's 30 × 8 min of manual onboarding).",
+      },
+
+      { type: "h2", body: "Workflow 4: product feedback → Airtable log + team Slack notification", id: "workflow-4" },
+      {
+        type: "p",
+        body: "What it does: customer sends feedback → Zapier logs it + alerts the team.",
+      },
+      {
+        type: "p",
+        body: "Why: feedback gets lost. This centralizes it so you can see patterns.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Trigger: feedback form submitted (Typeform, Google Forms, or email)",
+          "Action 1: create record in Airtable \"Feedback\" table (feedback text, customer name, date, priority)",
+          "Action 2: send Slack message to #feedback channel (with sentiment: feature request, bug, or praise)",
+          "Action 3 (optional): create task in GitHub Issues if it's a bug",
+        ],
+      },
+      {
+        type: "p",
+        body: "Result: all feedback in one place. Team sees it instantly. Patterns emerge (top 3 feature requests become obvious).",
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Time saved: 2 hours/month (if you get 40 pieces of feedback/month, that's 40 × 3 min of logging).",
+      },
+
+      { type: "h2", body: "Workflow 5: weekly sales report (automated)", id: "workflow-5" },
+      {
+        type: "p",
+        body: "What it does: every Monday 9 AM, Zapier sends you a digest email with revenue last week, customers signed up, invoices sent, unpaid amounts, and churn.",
+      },
+      {
+        type: "p",
+        body: "Why: stop spending 30 minutes manually compiling numbers. One email tells you everything.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Trigger: schedule (every Monday at 9 AM)",
+          "Action 1: get data from Stripe (total revenue last 7 days, new customers)",
+          "Action 2: get data from Airtable (open deals, closed deals)",
+          "Action 3: get data from email (opens, clicks on marketing emails)",
+          "Action 4: send email digest with all stats + % change vs. last week",
+        ],
+      },
+      {
+        type: "p",
+        body: "Result: you wake up Monday and know exactly how your business did. Decisions made faster.",
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Time saved: 2 hours/month (30 min × 4 weeks of manual reporting).",
+      },
+
+      { type: "h2", body: "Total time saved: 13+ hours/month", id: "total-time-saved" },
+      {
+        type: "p",
+        body: "These 5 workflows add up to 13+ hours reclaimed per month.",
+      },
+      {
+        type: "p",
+        body: "Over a year: 156+ hours. At a founder hourly rate of $50–100/hr, that's $7,800–$15,600 in time value recovered.",
+      },
+      {
+        type: "p",
+        body: "Cost of Zapier: $29.99–$49/month (Professional plan, depending on billing cycle and task volume). ROI: 150–300x in year one (13+ hours saved × $50–100/hr founder rate = $7,800–$15,600 recovered vs. $360–$588/year Zapier cost).",
+      },
+
+      { type: "h2", body: "Avoid these common mistakes", id: "mistakes" },
+      {
+        type: "ul",
+        items: [
+          "Building 10 workflows at once — overwhelmed, none work right. Fix: start with Workflow #1. Get it working. Add Workflow #2.",
+          "Not testing before launch — workflow breaks silently. Fix: use Zapier's test feature; send yourself a test task.",
+          "Forgetting to monitor — workflow dies and you don't notice. Fix: check the Zapier dashboard 2x/month; set up email alerts.",
+          "Overcomplicated logic — hard to debug when it breaks. Fix: keep workflows simple (1–3 actions max). Expand later.",
+          "Wrong trigger timing — double charges or missed actions. Fix: test with a small sample first; adjust timing.",
+        ],
+      },
+
+      { type: "h2", body: "Next steps", id: "next-steps" },
+      {
+        type: "ol",
+        items: [
+          "Week 1: build Workflow #1 (Lead Capture). Test with 5 leads.",
+          "Week 2: build Workflow #2 (Invoice Follow-up). Test on next invoice.",
+          "Week 3: build Workflow #3 (Welcome Sequence). Test with next customer.",
+          "Week 4: build Workflows #4 + #5. Automate feedback + reporting.",
+        ],
+      },
+      {
+        type: "p",
+        body: "By end of month: you've reclaimed ~3 hours/week. You've freed up time to focus on actual business, not admin.",
+      },
+
+      { type: "h2", body: "FAQ", id: "faq" },
+      { type: "h3", body: "Will Zapier break my data?" },
+      {
+        type: "p",
+        body: "No. Use Zapier's test feature before turning on. It shows exactly what will happen.",
+      },
+      { type: "h3", body: "What if I need something more complex?" },
+      {
+        type: "p",
+        body: "Use Make instead. Or hire a developer for around $500 to build custom automation with Python or Node.js.",
+      },
+      { type: "h3", body: "What if an app isn't on Zapier?" },
+      {
+        type: "p",
+        body: "90% of SaaS apps are. Check the Zapier marketplace. If missing, use Zapier's \"Webhooks\" feature to connect anything.",
+      },
+      { type: "h3", body: "How much does it cost?" },
+      {
+        type: "p",
+        body: "Zapier free tier: 100 tasks/month (enough for testing 1–2 workflows). Professional plan: $29.99/month (monthly billing) or $19.99/month (annual billing) for 750 tasks. Most founders with 5 workflows land at $49/month (annual) for 2,000 tasks.",
+      },
+      { type: "h3", body: "Can I export this later if I switch platforms?" },
+      {
+        type: "p",
+        body: "Yes. Zapier stores all data in your apps (Airtable, Stripe, etc.). You own the data.",
+      },
+
+      { type: "h2", body: "Your competitive edge", id: "competitive-edge" },
+      {
+        type: "p",
+        body: "Founders using Zapier are 2x faster than those doing everything manually.",
+      },
+      {
+        type: "p",
+        body: "They send better follow-ups. They onboard customers smoother. They see opportunities faster.",
+      },
+      {
+        type: "callout",
+        tone: "tip",
+        body: "Start this week. Pick Workflow #1. You'll get 2–4 hours back this month alone.",
+      },
+    ],
+  },
   "launchrock-vs-unbounce": {
     slug: "launchrock-vs-unbounce",
     tagline:
