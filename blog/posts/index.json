@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 289,
+  "count": 290,
   "posts": [
+    "2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod.md",
     "2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe.md",
     "2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f.md",
     "2026-07-12-chromatorium-launches-as-free-opensource-colour-to.md",
@@ -293,6 +294,25 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod.md",
+      "slug": "2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod",
+      "url": "/blog/2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod/",
+      "title": "Why Cloud Providers Are Abandoning the SaaS AI Model",
+      "date": "2026-08-04",
+      "published_at": "2026-08-04T04:53:44.560Z",
+      "tags": [
+        "AWS",
+        "Cloud",
+        "SaaS",
+        "AI"
+      ],
+      "excerpt": "The era of outsourcing AI to external providers is ending.",
+      "image": "https://techcrunch.com/wp-content/uploads/2025/06/SuperBlocks-founder-Brad-Menezes.jpg?resize=1280,865",
+      "sources": [],
+      "readTime": "5 min",
+      "shortId": 290
+    },
     {
       "filename": "2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe.md",
       "slug": "2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe",

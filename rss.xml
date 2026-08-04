@@ -5,8 +5,20 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 03 Aug 2026 13:03:19 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 04:54:53 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why Cloud Providers Are Abandoning the SaaS AI Model</title>
+      <link>https://bitroot.org/blog/2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod/</guid>
+      <description>The era of outsourcing AI to external providers is ending.</description>
+      <pubDate>Tue, 04 Aug 2026 04:53:44 +0000</pubDate>
+      <category>AWS</category>
+      <category>Cloud</category>
+      <category>SaaS</category>
+      <category>AI</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2025/06/SuperBlocks-founder-Brad-Menezes.jpg?resize=1280,865" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>The Era of Affordable Frontier AI: Why Alibaba's Qwen 3.8-Max Changes Everything</title>
       <link>https://bitroot.org/blog/2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe/</link>
