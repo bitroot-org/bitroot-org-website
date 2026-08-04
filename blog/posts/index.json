@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "count": 291,
+  "count": 296,
   "posts": [
     "2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod.md",
     "2026-08-04-claude-model-selection-for-founders-the-100-to-10k.md",
@@ -38,7 +38,12 @@
     "2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven.md",
     "2026-07-22-ateno-releases-ai-room-designer-with-free-trial-an.md",
     "2026-07-21-why-apple-raised-prices-across-hardware-subscripti.md",
+    "2026-07-21-vigolium-launches-ai-driven-open-source-vulnerabil.md",
+    "2026-07-21-unlimited-ocr-opensource-3b-model-reads-100page-pd.md",
+    "2026-07-21-tiny-mac-app-sundial-logs-minutebyminute-activity.md",
     "2026-07-21-monid-replaces-apify-with-perrequest-social-media.md",
+    "2026-07-21-last30days-skill-lets-ai-agents-fetch-realengageme.md",
+    "2026-07-21-aos-community-edition-launches-with-rust-cli-and-p.md",
     "2026-07-20-zeroprep-turns-spoken-talks-into-slide-decks-now-o.md",
     "2026-07-20-when-agents-go-wrong-a-cisos-guide-to-agentic-ai-r.md",
     "2026-07-20-opensource-agent-security-adds-five-preflight-cont.md",
@@ -312,7 +317,7 @@
       "image": "https://techcrunch.com/wp-content/uploads/2025/06/SuperBlocks-founder-Brad-Menezes.jpg?resize=1280,865",
       "sources": [],
       "readTime": "5 min",
-      "shortId": 291
+      "shortId": 296
     },
     {
       "filename": "2026-08-04-claude-model-selection-for-founders-the-100-to-10k.md",
@@ -332,7 +337,7 @@
         "https://claude.com/blog/claude-models-explained-choosing-the-best-model-for-your-use-case"
       ],
       "readTime": "6 min",
-      "shortId": 290
+      "shortId": 295
     },
     {
       "filename": "2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe.md",
@@ -350,7 +355,7 @@
       "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202608/alibaba-qwen-38-max-034326994-16x9_0.png?VersionId=P_ZfILY4UplgBo0wjUTGq9fEVLyT7yHa&size=690:388",
       "sources": [],
       "readTime": "5 min",
-      "shortId": 289
+      "shortId": 294
     },
     {
       "filename": "2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f.md",
@@ -369,7 +374,7 @@
       "image": "https://techcrunch.com/wp-content/uploads/2025/12/app-of-the-year.jpg",
       "sources": [],
       "readTime": "5 min",
-      "shortId": 288
+      "shortId": 293
     },
     {
       "filename": "2026-07-12-chromatorium-launches-as-free-opensource-colour-to.md",
@@ -390,7 +395,7 @@
         "https://x.com/Be_Mai_Waifu/status/2076180299420184830"
       ],
       "readTime": "2 min",
-      "shortId": 287
+      "shortId": 292
     },
     {
       "filename": "2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh.md",
@@ -407,7 +412,7 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqIXSA21BWLq5nf3YnOTF-29rW8WBoWdFuQBns1IU-Qg&s=10",
       "sources": [],
       "readTime": "8 min",
-      "shortId": 286
+      "shortId": 291
     },
     {
       "filename": "2026-07-31-privacy-analytics-for-startups-reignat-vs-plausibl.md",
@@ -424,7 +429,7 @@
       "image": "https://images.ctfassets.net/ddoznp8df51r/7orRkab7hje1kz2nKh9nkD/33d84053996f68e78cd1d4cbed5e78d9/07w.png?w=800&fm=avif&q=100",
       "sources": [],
       "readTime": "4 min",
-      "shortId": 285
+      "shortId": 290
     },
     {
       "filename": "2026-07-31-how-openais-20-efficiency-gain-extends-your-runway.md",
@@ -442,7 +447,7 @@
       "image": "https://diplo-media.s3.eu-central-1.amazonaws.com/2026/06/openai-gpt-5-6-sol-preview-1024x576.jpg",
       "sources": [],
       "readTime": "7 min",
-      "shortId": 284
+      "shortId": 289
     },
     {
       "filename": "2026-07-29-mcp-becomes-stateless-enabling-serverless-and-edge.md",
@@ -462,7 +467,7 @@
         "https://x.com/i/status/2082164250496348268"
       ],
       "readTime": "2 min",
-      "shortId": 283
+      "shortId": 288
     },
     {
       "filename": "2026-07-29-whatsapp-calls-in-your-browser-does-it-replace-zoo.md",
@@ -478,7 +483,7 @@
       "image": "https://media.licdn.com/dms/image/v2/D5622AQGgvj1NR6GkCA/feedshare-shrink_800/B56Z.pNheXKMAc-/0/1785250322596?e=1787184000&v=beta&t=XdMWYFGyTAWV2cmdu2TjgKsKu54qXFTN2Urc80iboRI",
       "sources": [],
       "readTime": "4 min",
-      "shortId": 282
+      "shortId": 287
     },
     {
       "filename": "2026-07-29-cursor-start-at-649-month-what-developers-in-india.md",
@@ -497,7 +502,7 @@
       "image": "https://pbs.twimg.com/media/HOSr9QJaQAA6z-S?format=png&name=900x900",
       "sources": [],
       "readTime": "9 min",
-      "shortId": 281
+      "shortId": 286
     },
     {
       "filename": "2026-07-28-open-weights-models-are-fine-what-founders-should.md",
@@ -517,7 +522,7 @@
         "https://www.anthropic.com/news/position-open-weights-models"
       ],
       "readTime": "6 min",
-      "shortId": 280
+      "shortId": 285
     },
     {
       "filename": "2026-07-17-baberu-ocr-launches-as-a-multilingual-comic-ocr-on.md",
@@ -537,7 +542,7 @@
         "https://x.com/daichi_genshiai/status/2077989874398032361"
       ],
       "readTime": "3 min",
-      "shortId": 279
+      "shortId": 284
     },
     {
       "filename": "2026-07-27-claude-opus-5-vs-fable-5-which-model-should-your-s.md",
@@ -556,7 +561,7 @@
       "image": "https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F54b7ab1d2c2521f83ae5d2da5f9d99321c370d24-2880x1620.png&w=3840&q=75",
       "sources": [],
       "readTime": "8 min",
-      "shortId": 278
+      "shortId": 283
     },
     {
       "filename": "2026-07-27-agentic-ai-for-founders-when-you-need-agents-and-w.md",
@@ -574,7 +579,7 @@
       "image": "https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2024/12/marquee-agentforce-agentic-ai.png?resize=1024,576",
       "sources": [],
       "readTime": "5 min",
-      "shortId": 277
+      "shortId": 282
     },
     {
       "filename": "2026-07-25-bitchat-github-takedown-why-developers-in-india-mu.md",
@@ -594,7 +599,7 @@
         "https://techcrunch.com/2026/07/24/indias-move-against-jack-dorseys-bitchat-sparks-legal-debate/"
       ],
       "readTime": "6 min",
-      "shortId": 276
+      "shortId": 281
     },
     {
       "filename": "2026-07-18-firecrawl-launches-openlovable-to-autogenerate-rea.md",
@@ -614,7 +619,7 @@
         "https://x.com/N0V4Dev/status/2078336551696626102"
       ],
       "readTime": "2 min",
-      "shortId": 275
+      "shortId": 280
     },
     {
       "filename": "2026-07-13-css-texteffects-library-expands-to-66-readymade-st.md",
@@ -634,7 +639,7 @@
         "https://x.com/codesharpdev/status/2076542275296108963"
       ],
       "readTime": "2 min",
-      "shortId": 274
+      "shortId": 279
     },
     {
       "filename": "2026-07-24-why-googles-gemini-3-5-pro-is-months-behind-the-co.md",
@@ -654,7 +659,7 @@
       "image": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2026/07/Gemini-3.5-Pro-cover.jpg?w=1500&quality=82&strip=all&ssl=1",
       "sources": [],
       "readTime": "13 min",
-      "shortId": 273
+      "shortId": 278
     },
     {
       "filename": "2026-07-23-claude-code-desktop-adds-ios-simulator-panel-in-pu.md",
@@ -674,7 +679,7 @@
         "https://x.com/i/status/2079674432038248611"
       ],
       "readTime": "2 min",
-      "shortId": 272
+      "shortId": 277
     },
     {
       "filename": "2026-07-23-claude-code-adds-beta-security-scanning-plugin-for.md",
@@ -695,7 +700,7 @@
         "https://x.com/i/status/2079990597973057691"
       ],
       "readTime": "3 min",
-      "shortId": 271
+      "shortId": 276
     },
     {
       "filename": "2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video.md",
@@ -716,7 +721,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video.mp4",
-      "shortId": 270
+      "shortId": 275
     },
     {
       "filename": "2026-07-23-world-monitor-opensources-a-billiondollar-warroom.md",
@@ -737,7 +742,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-world-monitor-opensources-a-billiondollar-warroom.mp4",
-      "shortId": 269
+      "shortId": 274
     },
     {
       "filename": "2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas.md",
@@ -759,7 +764,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas.mp4",
-      "shortId": 268
+      "shortId": 273
     },
     {
       "filename": "2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this.md",
@@ -779,7 +784,7 @@
       "image": "https://media.wired.com/photos/6a5ff5b0f95e7d91469f8f3d/1:1/w_1920,c_limit/security_openai_hack_huggingface.jpg",
       "sources": [],
       "readTime": "7 min",
-      "shortId": 267
+      "shortId": 272
     },
     {
       "filename": "2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now.md",
@@ -801,7 +806,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now.mp4",
-      "shortId": 266
+      "shortId": 271
     },
     {
       "filename": "2026-07-23-cursor-launches-router-to-cut-model-costs-by-60.md",
@@ -822,7 +827,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-cursor-launches-router-to-cut-model-costs-by-60.mp4",
-      "shortId": 265
+      "shortId": 270
     },
     {
       "filename": "2026-07-23-claude-code-eyes-adds-visual-hardware-verification.md",
@@ -842,7 +847,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-claude-code-eyes-adds-visual-hardware-verification.mp4",
-      "shortId": 264
+      "shortId": 269
     },
     {
       "filename": "2026-07-23-buzz-launches-as-opensource-group-chat-alternative.md",
@@ -862,7 +867,7 @@
         "https://x.com/i/status/2079605800998146171"
       ],
       "readTime": "2 min",
-      "shortId": 263
+      "shortId": 268
     },
     {
       "filename": "2026-07-22-signspot-launches-ai-pdf-signature-field-extractor.md",
@@ -883,7 +888,7 @@
         "https://x.com/Adedoyinjames_/status/2079803185384825294"
       ],
       "readTime": "2 min",
-      "shortId": 262
+      "shortId": 267
     },
     {
       "filename": "2026-07-22-runtimewire-opens-free-live-aieconomy-news-feed.md",
@@ -903,7 +908,7 @@
         "https://x.com/runtimewire/status/2079809429411611008"
       ],
       "readTime": "2 min",
-      "shortId": 261
+      "shortId": 266
     },
     {
       "filename": "2026-07-22-patchy-082-adds-affinity-import-and-scripting-test.md",
@@ -924,7 +929,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-22-patchy-082-adds-affinity-import-and-scripting-test.mp4",
-      "shortId": 260
+      "shortId": 265
     },
     {
       "filename": "2026-07-22-opensource-ai-agent-audits-video-frames-automatica.md",
@@ -945,7 +950,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-22-opensource-ai-agent-audits-video-frames-automatica.mp4",
-      "shortId": 259
+      "shortId": 264
     },
     {
       "filename": "2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven.md",
@@ -965,7 +970,7 @@
       "image": "https://aitoolsreview.co.uk/_next/image?url=%2Fmedia%2Farticles%2Finsights%2Fkimi-k3-vs-claude-fable-5%2Faa-intelligence-index.avif&w=1920&q=75&dpl=dpl_269LMm4WTq3eHE8nnHxFFvL2KnDc",
       "sources": [],
       "readTime": "6 min",
-      "shortId": 258
+      "shortId": 263
     },
     {
       "filename": "2026-07-22-ateno-releases-ai-room-designer-with-free-trial-an.md",
@@ -986,7 +991,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-22-ateno-releases-ai-room-designer-with-free-trial-an.mp4",
-      "shortId": 257
+      "shortId": 262
     },
     {
       "filename": "2026-07-21-why-apple-raised-prices-across-hardware-subscripti.md",
@@ -1000,7 +1005,68 @@
       "image": "https://static.toiimg.com/thumb/msid-132501351,imgsize-50946,width-400,height-225,resizemode-4/apple.jpg",
       "sources": [],
       "readTime": "11 min",
-      "shortId": 256
+      "shortId": 261
+    },
+    {
+      "filename": "2026-07-21-vigolium-launches-ai-driven-open-source-vulnerabil.md",
+      "slug": "2026-07-21-vigolium-launches-ai-driven-open-source-vulnerabil",
+      "url": "/blog/2026-07-21-vigolium-launches-ai-driven-open-source-vulnerabil/",
+      "title": "Vigolium launches AI-driven open-source vulnerability assessment framework",
+      "date": "2026-07-21",
+      "published_at": "2026-07-21T10:59:37.387563+00:00",
+      "tags": [
+        "vulnerability scanning",
+        "open source",
+        "appsec"
+      ],
+      "excerpt": "Vigolium is an open-source framework that blends deterministic scanning with AI\u2011assisted planning, aiming to streamline web application security testing without upfront licensing costs.",
+      "image": "https://pbs.twimg.com/media/HNuvrWvb0AAZ0lL.jpg?name=orig",
+      "sources": [
+        "https://x.com/VivekIntel/status/2079448821285929469"
+      ],
+      "readTime": "2 min",
+      "shortId": 260
+    },
+    {
+      "filename": "2026-07-21-unlimited-ocr-opensource-3b-model-reads-100page-pd.md",
+      "slug": "2026-07-21-unlimited-ocr-opensource-3b-model-reads-100page-pd",
+      "url": "/blog/2026-07-21-unlimited-ocr-opensource-3b-model-reads-100page-pd/",
+      "title": "Unlimited-OCR open\u2011source: 3B model reads 100\u2011page PDFs in one pass",
+      "date": "2026-07-21",
+      "published_at": "2026-07-21T10:59:05.160906+00:00",
+      "tags": [
+        "ocr",
+        "open source",
+        "local ai"
+      ],
+      "excerpt": "Baidu\u2019s Unlimited-OCR model can process whole 100\u2011page PDFs locally with a 32K context window, offering a free alternative to cloud OCR services.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2079433693265833984/img/QDmtJh7IOXQoBavt.jpg",
+      "sources": [
+        "https://x.com/AlexMurdock5499/status/2079433722252657068"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-21-unlimited-ocr-opensource-3b-model-reads-100page-pd.mp4",
+      "shortId": 259
+    },
+    {
+      "filename": "2026-07-21-tiny-mac-app-sundial-logs-minutebyminute-activity.md",
+      "slug": "2026-07-21-tiny-mac-app-sundial-logs-minutebyminute-activity",
+      "url": "/blog/2026-07-21-tiny-mac-app-sundial-logs-minutebyminute-activity/",
+      "title": "Tiny Mac app Sundial logs minute\u2011by\u2011minute activity and offers AI work insights",
+      "date": "2026-07-21",
+      "published_at": "2026-07-21T10:57:53.673831+00:00",
+      "tags": [
+        "mac",
+        "time tracking",
+        "productivity"
+      ],
+      "excerpt": "Ayush built Sundial, a minimal macOS app that records each minute of usage, tags apps and sites, and surfaces AI\u2011driven habit insights tied to TickTick tasks. It shows a 5\u2011hour workday split evenly between focus and distraction.",
+      "image": "https://pbs.twimg.com/media/HNuqTxcbwAAr6BR.jpg?name=orig",
+      "sources": [
+        "https://x.com/ayushtweetshere/status/2079445161957085463"
+      ],
+      "readTime": "2 min",
+      "shortId": 258
     },
     {
       "filename": "2026-07-21-monid-replaces-apify-with-perrequest-social-media.md",
@@ -1021,6 +1087,46 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-21-monid-replaces-apify-with-perrequest-social-media.mp4",
+      "shortId": 257
+    },
+    {
+      "filename": "2026-07-21-last30days-skill-lets-ai-agents-fetch-realengageme.md",
+      "slug": "2026-07-21-last30days-skill-lets-ai-agents-fetch-realengageme",
+      "url": "/blog/2026-07-21-last30days-skill-lets-ai-agents-fetch-realengageme/",
+      "title": "last30days skill lets AI agents fetch real\u2011engagement data from socials",
+      "date": "2026-07-21",
+      "published_at": "2026-07-21T10:58:19.768840+00:00",
+      "tags": [
+        "ai agents",
+        "open source",
+        "social media research"
+      ],
+      "excerpt": "The open\u2011source last30days skill queries Reddit, X, YouTube, HN, Polymarket, TikTok and more in parallel, ranking results by actual engagement. It plugs into Claude Code, Codex, Cursor and Gemini CLI at no cost.",
+      "image": "https://pbs.twimg.com/media/HNua-chagAAfqU7.jpg?name=orig",
+      "sources": [
+        "https://x.com/heyashishsaini/status/2079426058496119186"
+      ],
+      "readTime": "2 min",
+      "shortId": 256
+    },
+    {
+      "filename": "2026-07-21-aos-community-edition-launches-with-rust-cli-and-p.md",
+      "slug": "2026-07-21-aos-community-edition-launches-with-rust-cli-and-p",
+      "url": "/blog/2026-07-21-aos-community-edition-launches-with-rust-cli-and-p/",
+      "title": "AOS Community Edition launches with Rust CLI and provenance signing",
+      "date": "2026-07-21",
+      "published_at": "2026-07-21T10:59:00.820992+00:00",
+      "tags": [
+        "agent operating system",
+        "rust",
+        "ai"
+      ],
+      "excerpt": "Unicity's AOS Community Edition brings an open\u2011source Rust agent OS with a CLI, HTTP API, and built\u2011in Sigstore provenance, but its Rust\u2011centric tooling may limit quick adoption.",
+      "image": "https://pbs.twimg.com/media/HNutYhpaQAAJWaE.jpg?name=orig",
+      "sources": [
+        "https://x.com/chenzeling4/status/2079446292456157185"
+      ],
+      "readTime": "2 min",
       "shortId": 255
     },
     {

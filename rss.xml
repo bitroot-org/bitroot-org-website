@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 04 Aug 2026 08:54:11 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 08:55:20 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Cloud Providers Are Abandoning the SaaS AI Model</title>
@@ -477,6 +477,48 @@
       <enclosure url="https://static.toiimg.com/thumb/msid-132501351,imgsize-50946,width-400,height-225,resizemode-4/apple.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
+      <title>Vigolium launches AI-driven open-source vulnerability assessment framework</title>
+      <link>https://bitroot.org/blog/2026-07-21-vigolium-launches-ai-driven-open-source-vulnerabil/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-21-vigolium-launches-ai-driven-open-source-vulnerabil/</guid>
+      <description>Vigolium is an open-source framework that blends deterministic scanning with AI‑assisted planning, aiming to streamline web application security testing without upfront licensing costs.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/VivekIntel/status/2079448821285929469"&gt;https://x.com/VivekIntel/status/2079448821285929469&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 21 Jul 2026 10:59:37 +0000</pubDate>
+      <category>vulnerability scanning</category>
+      <category>open source</category>
+      <category>appsec</category>
+      <enclosure url="https://pbs.twimg.com/media/HNuvrWvb0AAZ0lL.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/VivekIntel/status/2079448821285929469">Original Source</source>
+    </item>
+    <item>
+      <title>Unlimited-OCR open‑source: 3B model reads 100‑page PDFs in one pass</title>
+      <link>https://bitroot.org/blog/2026-07-21-unlimited-ocr-opensource-3b-model-reads-100page-pd/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-21-unlimited-ocr-opensource-3b-model-reads-100page-pd/</guid>
+      <description>Baidu’s Unlimited-OCR model can process whole 100‑page PDFs locally with a 32K context window, offering a free alternative to cloud OCR services.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/AlexMurdock5499/status/2079433722252657068"&gt;https://x.com/AlexMurdock5499/status/2079433722252657068&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 21 Jul 2026 10:59:05 +0000</pubDate>
+      <category>ocr</category>
+      <category>open source</category>
+      <category>local ai</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2079433693265833984/img/QDmtJh7IOXQoBavt.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/AlexMurdock5499/status/2079433722252657068">Original Source</source>
+    </item>
+    <item>
+      <title>Tiny Mac app Sundial logs minute‑by‑minute activity and offers AI work insights</title>
+      <link>https://bitroot.org/blog/2026-07-21-tiny-mac-app-sundial-logs-minutebyminute-activity/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-21-tiny-mac-app-sundial-logs-minutebyminute-activity/</guid>
+      <description>Ayush built Sundial, a minimal macOS app that records each minute of usage, tags apps and sites, and surfaces AI‑driven habit insights tied to TickTick tasks. It shows a 5‑hour workday split evenly between focus and distraction.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/ayushtweetshere/status/2079445161957085463"&gt;https://x.com/ayushtweetshere/status/2079445161957085463&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 21 Jul 2026 10:57:53 +0000</pubDate>
+      <category>mac</category>
+      <category>time tracking</category>
+      <category>productivity</category>
+      <enclosure url="https://pbs.twimg.com/media/HNuqTxcbwAAr6BR.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/ayushtweetshere/status/2079445161957085463">Original Source</source>
+    </item>
+    <item>
       <title>Monid replaces Apify with per‑request social media scraping</title>
       <link>https://bitroot.org/blog/2026-07-21-monid-replaces-apify-with-perrequest-social-media/</link>
       <guid isPermaLink="true">https://bitroot.org/blog/2026-07-21-monid-replaces-apify-with-perrequest-social-media/</guid>
@@ -489,6 +531,34 @@
       <category>pricing</category>
       <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2079289624183316480/img/2Mxu-4ft7Uv7y94o.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2079289736250970258">Original Source</source>
+    </item>
+    <item>
+      <title>last30days skill lets AI agents fetch real‑engagement data from socials</title>
+      <link>https://bitroot.org/blog/2026-07-21-last30days-skill-lets-ai-agents-fetch-realengageme/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-21-last30days-skill-lets-ai-agents-fetch-realengageme/</guid>
+      <description>The open‑source last30days skill queries Reddit, X, YouTube, HN, Polymarket, TikTok and more in parallel, ranking results by actual engagement. It plugs into Claude Code, Codex, Cursor and Gemini CLI at no cost.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/heyashishsaini/status/2079426058496119186"&gt;https://x.com/heyashishsaini/status/2079426058496119186&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 21 Jul 2026 10:58:19 +0000</pubDate>
+      <category>ai agents</category>
+      <category>open source</category>
+      <category>social media research</category>
+      <enclosure url="https://pbs.twimg.com/media/HNua-chagAAfqU7.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/heyashishsaini/status/2079426058496119186">Original Source</source>
+    </item>
+    <item>
+      <title>AOS Community Edition launches with Rust CLI and provenance signing</title>
+      <link>https://bitroot.org/blog/2026-07-21-aos-community-edition-launches-with-rust-cli-and-p/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-21-aos-community-edition-launches-with-rust-cli-and-p/</guid>
+      <description>Unicity's AOS Community Edition brings an open‑source Rust agent OS with a CLI, HTTP API, and built‑in Sigstore provenance, but its Rust‑centric tooling may limit quick adoption.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/chenzeling4/status/2079446292456157185"&gt;https://x.com/chenzeling4/status/2079446292456157185&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 21 Jul 2026 10:59:00 +0000</pubDate>
+      <category>agent operating system</category>
+      <category>rust</category>
+      <category>ai</category>
+      <enclosure url="https://pbs.twimg.com/media/HNutYhpaQAAJWaE.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/chenzeling4/status/2079446292456157185">Original Source</source>
     </item>
     <item>
       <title>ZeroPrep turns spoken talks into slide decks, now open source</title>
