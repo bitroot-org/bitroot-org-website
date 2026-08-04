@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 290,
+  "count": 291,
   "posts": [
     "2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod.md",
+    "2026-08-04-claude-model-selection-for-founders-the-100-to-10k.md",
     "2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe.md",
     "2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f.md",
     "2026-07-12-chromatorium-launches-as-free-opensource-colour-to.md",
@@ -311,6 +312,26 @@
       "image": "https://techcrunch.com/wp-content/uploads/2025/06/SuperBlocks-founder-Brad-Menezes.jpg?resize=1280,865",
       "sources": [],
       "readTime": "5 min",
+      "shortId": 291
+    },
+    {
+      "filename": "2026-08-04-claude-model-selection-for-founders-the-100-to-10k.md",
+      "slug": "2026-08-04-claude-model-selection-for-founders-the-100-to-10k",
+      "url": "/blog/2026-08-04-claude-model-selection-for-founders-the-100-to-10k/",
+      "title": "Claude Model Selection for Founders: The $100-to-$10K Runways",
+      "date": "2026-08-04",
+      "published_at": "2026-08-04T08:52:55.675Z",
+      "tags": [
+        "AI",
+        "Claude",
+        "API"
+      ],
+      "excerpt": "This guide is for solo founders, pre-seed teams, and anyone building on runway. It answers the question you actually need answered: \"Which Claude model can I afford right now, and when do I upgrade?\"",
+      "image": "https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d225e31f7aa22c1f28cb_46e4aa7ea208ed440d5bd9e9e3a0ee66bc336ff1-1000x1000.svg",
+      "sources": [
+        "https://claude.com/blog/claude-models-explained-choosing-the-best-model-for-your-use-case"
+      ],
+      "readTime": "6 min",
       "shortId": 290
     },
     {
