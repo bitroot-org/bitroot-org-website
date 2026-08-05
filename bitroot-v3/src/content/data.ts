@@ -124,6 +124,17 @@ export const kits: Item[] = [
 
 export const guides: Item[] = [
   {
+    slug: "ai-native-qa",
+    category: "guide",
+    title: "AI-Native QA: How to Replace Your QA Team Without Actually Replacing Humans",
+    summary:
+      "Google fixed 1,072 Chrome security bugs in a month using Gemini — more than the previous 23 releases combined. A step-by-step stack for AI-native QA: Claude PR review, fuzzing + LLM triage, automated threat modeling, and where humans still belong.",
+    tags: ["AI", "QA", "Security", "CI/CD"],
+    updatedAt: "2026-08-05",
+    href: "/guides/ai-native-qa",
+    difficulty: "intermediate",
+  },
+  {
     slug: "automate-your-first-100k-zapier-workflows",
     category: "guide",
     title: "How to Automate Your First $100K in Revenue: 5 Zapier Workflows Every Founder Needs",
