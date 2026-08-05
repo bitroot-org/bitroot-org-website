@@ -1,7 +1,10 @@
 ---
 date: '2026-06-25'
-excerpt: 'At Config 2026, Figma introduced Motion, a new feature that brings animation and interactive design directly into Figma. While the update adds motion capabilities, the bigger story is Figma''s effort to streamline the design-to-development workflow by eliminating another tool from the product creation process.'
-image: https://i.ytimg.com/vi/wpGI6BmhbJU/maxresdefault.jpg
+excerpt: At Config 2026, Figma introduced Motion, a new feature that brings animation
+  and interactive design directly into Figma. While the update adds motion capabilities,
+  the bigger story is Figma's effort to streamline the design-to-development workflow
+  by eliminating another tool from the product creation process.
+image: media/2026-06-25-figma-motion-isnt-about-animation-its-about-removi.jpg
 published_at: '2026-06-25T06:17:06.752Z'
 sources:
 - https://www.figma.com/blog/introducing-figma-motion/
@@ -11,17 +14,18 @@ sources:
 - https://www.adobe.com/products/aftereffects.html
 - https://bitroot.org/blog/2026-06-25-figma-launches-motion-feature-at-config-2026/
 tags:
-- 'Figma Motion'
-- 'Config 2026'
-- 'Figma'
-- 'Product Design'
-- 'UX Design'
-- 'Design-to-Development Workflow'
-- 'Interactive Prototyping'
-- 'Motion Design'
-- 'Product Development'
-- 'Design Tools'
-title: 'Figma Motion Isn''t About Animation. It''s About Removing Another Tool From The Workflow.'
+- Figma Motion
+- Config 2026
+- Figma
+- Product Design
+- UX Design
+- Design-to-Development Workflow
+- Interactive Prototyping
+- Motion Design
+- Product Development
+- Design Tools
+title: Figma Motion Isn't About Animation. It's About Removing Another Tool From The
+  Workflow.
 ---
 
 At [Config 2026](https://www.figma.com/blog/config-2026-recap/), [Figma introduced Motion](https://bitroot.org/blog/2026-06-25-figma-launches-motion-feature-at-config-2026/), a new feature that allows designers to create animations and interactive experiences directly within Figma.

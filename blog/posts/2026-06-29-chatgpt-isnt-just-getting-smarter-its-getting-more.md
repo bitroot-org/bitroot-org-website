@@ -1,21 +1,23 @@
 ---
 date: '2026-06-29'
-excerpt: 'OpenAI''s latest ChatGPT release notes reveal more than new features. From Personal Finance to Memory and Connectors, every update points to a bigger shift: AI is becoming more valuable by understanding users, not just answering prompts.'
-image: https://images.ctfassets.net/kftzwdyauwt9/6vqEtiJWI45VyDgCniABzZ/f89ed847a8e956ad4c7dc281d641f817/1-OAI-ChatGPT-Personal-Finances-GoalPlanning-16x9.png?w=1920&q=80&fm=webp
+excerpt: 'OpenAI''s latest ChatGPT release notes reveal more than new features. From
+  Personal Finance to Memory and Connectors, every update points to a bigger shift:
+  AI is becoming more valuable by understanding users, not just answering prompts.'
+image: media/2026-06-29-chatgpt-isnt-just-getting-smarter-its-getting-more.webp
 published_at: '2026-06-29T10:07:31.055Z'
 sources: []
 tags:
-- 'ChatGPT Release Notes'
-- 'ChatGPT Personal Finance'
-- 'ChatGPT Memory'
-- 'ChatGPT Projects'
-- 'ChatGPT Connectors'
-- 'OpenAI'
-- 'AI Personalization'
-- 'Context-Aware AI'
-- 'AI Trust'
-- 'Generative AI'
-title: 'ChatGPT Isn''t Just Getting Smarter. It''s Getting More Personal.'
+- ChatGPT Release Notes
+- ChatGPT Personal Finance
+- ChatGPT Memory
+- ChatGPT Projects
+- ChatGPT Connectors
+- OpenAI
+- AI Personalization
+- Context-Aware AI
+- AI Trust
+- Generative AI
+title: ChatGPT Isn't Just Getting Smarter. It's Getting More Personal.
 ---
 
 OpenAI's latest [ChatGPT release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) introduce several major updates, including [Personal Finance](https://openai.com/index/personal-finance-chatgpt/), smarter Memory, Projects, [Connectors](https://help.openai.com/en/articles/11487775-apps-in-chatgpt), Deep Research improvements, and new workflow enhancements. On the surface, they look like independent feature releases.

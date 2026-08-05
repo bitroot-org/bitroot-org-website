@@ -3,7 +3,7 @@ date: '2026-07-23'
 excerpt: Claude Code Eyes lets Claude Code close the loop on firmware development
   by automatically analyzing camera snapshots of a board or display, reducing manual
   screenshot work.
-image: https://pbs.twimg.com/amplify_video_thumb/2080059036527976448/img/dkdJGmQiXx3OwvDB.jpg
+image: media/2026-07-23-claude-code-eyes-adds-visual-hardware-verification.jpg
 published_at: '2026-07-23T11:03:02.096076+00:00'
 sources:
 - https://x.com/RoundtableSpace/status/2080084226364366994

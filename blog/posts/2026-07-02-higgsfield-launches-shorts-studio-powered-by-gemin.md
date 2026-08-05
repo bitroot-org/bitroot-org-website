@@ -3,7 +3,7 @@ date: '2026-07-02'
 excerpt: Higgsfield AI unveiled Shorts Studio, an AI‑driven editor that reshapes any
   clip for short‑form platforms using Gemini Omni Flash. No pricing details are public
   yet.
-image: https://pbs.twimg.com/amplify_video_thumb/2072380437868027905/img/83VsJHuzQ4YR7hp7.jpg
+image: media/2026-07-02-higgsfield-launches-shorts-studio-powered-by-gemin.jpg
 published_at: '2026-07-02T02:58:27.760630+00:00'
 sources:
 - https://x.com/i/status/2072380736120959244

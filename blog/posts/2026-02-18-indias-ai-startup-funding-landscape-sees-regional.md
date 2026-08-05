@@ -1,7 +1,7 @@
 ---
 date: '2026-02-18'
 excerpt: India's Leading AI & Data Science Media Platform
-image: https://storage.googleapis.com/gpt-engineer-file-uploads/XW65pun0vjQL3xcUmVglEg4ZrsL2/social-images/social-1763560217027-Expert-Panel-discussion-768x512.webp
+image: media/2026-02-18-indias-ai-startup-funding-landscape-sees-regional.webp
 published_at: '2026-02-18T18:13:05.668903+00:00'
 sources:
 - https://analyticsindiamag.com/ai-startups/funding-reset-why-karnataka-faced-a-28-drop-while-maharashtra-held-its-ground
@@ -11,7 +11,6 @@ tags:
 - funding
 title: India's AI Startup Funding Landscape Sees Regional Shift
 ---
-
 
 ## Introduction to the Shift
 We just spotted an exciting update from the Indian startup scene that's worth sharing with the community. The AI startup funding landscape in India is undergoing a significant regional shift. Here's what caught our attention: Karnataka, once a hub for AI startups, has faced a 28% drop in funding, while Maharashtra has managed to hold its ground.

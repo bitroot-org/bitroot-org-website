@@ -3,7 +3,7 @@ date: '2026-07-17'
 excerpt: Craig Ruks released Shep, an open‑source orchestrator that watches for GitHub
   issues tagged “shep” and hands them off to AI agents. It’s a lightweight way to
   prototype custom issue‑driven bots.
-image: https://pbs.twimg.com/tweet_video_thumb/HNZin8RbMAA1gYV.jpg
+image: media/2026-07-17-opensource-shep-agent-orchestrator-targets-github.jpg
 published_at: '2026-07-17T10:39:02.547748+00:00'
 sources:
 - https://x.com/craigruks/status/2077957220759978436

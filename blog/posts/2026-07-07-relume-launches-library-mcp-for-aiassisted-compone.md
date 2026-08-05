@@ -3,7 +3,7 @@ date: '2026-07-07'
 excerpt: Relume’s new Library MCP puts 1,000+ production‑ready UI components inside
   popular AI assistants, letting engineers pull and restyle elements without leaving
   the prompt.
-image: https://pbs.twimg.com/amplify_video_thumb/2073929458160168960/img/5Iq96DAnkzEbrXpo.jpg
+image: media/2026-07-07-relume-launches-library-mcp-for-aiassisted-compone.jpg
 published_at: '2026-07-07T18:07:23.005301+00:00'
 sources:
 - https://x.com/i/status/2074222854183514438

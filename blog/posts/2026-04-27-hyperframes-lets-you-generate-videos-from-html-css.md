@@ -3,7 +3,7 @@ date: '2026-04-27'
 excerpt: HyperFrames is a free, open‑source Agent Skill that turns web code into video,
   working with any LLM. It’s a quick way to prototype visual output without buying
   a dedicated service.
-image: https://pbs.twimg.com/amplify_video_thumb/2048779038253010944/img/siCpRLTdNT-WIjzH.jpg
+image: media/2026-04-27-hyperframes-lets-you-generate-videos-from-html-css.jpg
 published_at: '2026-04-27T18:44:02.605533+00:00'
 sources:
 - https://x.com/i/status/2048779120985645145

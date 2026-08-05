@@ -4,7 +4,7 @@ excerpt: Google introduces Skills in Chrome, a game-changer for building one-cli
   workflows with AI prompts, and we're excited to dive into its implications for developers
   and tech enthusiasts. This innovation has the potential to streamline tasks and
   boost productivity like never before.
-image: https://pbs.twimg.com/amplify_video_thumb/2044106049536643073/img/_OtHkXtJKFsabJBW.jpg
+image: media/2026-04-15-revolutionizing-ai-powered-workflows-google-introd.jpg
 published_at: '2026-04-15T21:00:08.702443+00:00'
 sources:
 - https://x.com/i/status/2044106378655215625
@@ -16,7 +16,6 @@ tags:
 title: 'Revolutionizing AI-Powered Workflows: Google Introduces Skills in Chrome'
 video: media/2026-04-15-revolutionizing-ai-powered-workflows-google-introd.mp4
 ---
-
 
 ## Introduction to Skills in Chrome
 We just spotted an exciting update from Google that's worth sharing with the community - the introduction of Skills in Chrome, a new way to build one-click workflows for frequently used AI prompts. Here's what caught our attention about this update: it has the potential to revolutionize the way we interact with AI-powered tools. The community is buzzing about the endless possibilities this feature brings to the table.

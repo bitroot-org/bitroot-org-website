@@ -1,15 +1,15 @@
 ---
 date: '2026-08-04'
-excerpt: 'The era of outsourcing AI to external providers is ending.'
-image: https://techcrunch.com/wp-content/uploads/2025/06/SuperBlocks-founder-Brad-Menezes.jpg?resize=1280,865
+excerpt: The era of outsourcing AI to external providers is ending.
+image: media/2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod.jpg
 published_at: '2026-08-04T04:53:44.560Z'
 sources: []
 tags:
-- 'AWS'
-- 'Cloud'
-- 'SaaS'
-- 'AI'
-title: 'Why Cloud Providers Are Abandoning the SaaS AI Model'
+- AWS
+- Cloud
+- SaaS
+- AI
+title: Why Cloud Providers Are Abandoning the SaaS AI Model
 ---
 
 The era of outsourcing AI to external providers is ending.

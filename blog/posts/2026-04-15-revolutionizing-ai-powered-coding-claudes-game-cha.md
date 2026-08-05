@@ -5,7 +5,7 @@ excerpt: 'We''ve redesigned Claude Code on desktop.
 
   You can now run multiple Claude sessions side by side from one window, with a new
   sidebar to manage them all.'
-image: https://pbs.twimg.com/media/HF43A0sXYAA494v.jpg
+image: media/2026-04-15-revolutionizing-ai-powered-coding-claudes-game-cha.jpg
 published_at: '2026-04-15T01:54:44.989876+00:00'
 sources:
 - https://x.com/i/status/2044131493966909862
@@ -16,7 +16,6 @@ tags:
 title: 'Revolutionizing AI-Powered Coding: Claude''s Game-Changing Update'
 video: media/2026-04-15-revolutionizing-ai-powered-coding-claudes-game-cha.mp4
 ---
-
 
 ## Introduction to Claude's Update
 We just spotted an exciting update from Claude that's worth sharing with the community, and it's all about enhancing the coding experience. Claude has redesigned its coding platform, Claude Code, to make it more intuitive and efficient. Here's what caught our attention about this update.

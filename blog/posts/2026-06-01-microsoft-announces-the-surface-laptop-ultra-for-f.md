@@ -10,7 +10,7 @@ excerpt: 'Introducing Surface Laptop Ultra.
 
 
   Sign up to learn more: https://msft.it/6019vw79T'
-image: https://pbs.twimg.com/media/HJtQAWEXwAEmauj.png
+image: media/2026-06-01-microsoft-announces-the-surface-laptop-ultra-for-f.png
 published_at: '2026-06-01T17:04:28.669483+00:00'
 sources:
 - https://x.com/i/status/2061329225886453989

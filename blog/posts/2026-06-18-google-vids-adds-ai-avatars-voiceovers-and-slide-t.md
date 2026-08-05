@@ -2,7 +2,7 @@
 date: '2026-06-18'
 excerpt: Google Vids now lets users turn Slides into videos with AI avatars and voiceovers
   in 24 languages. The beta is free but pricing and quality limits remain to be seen.
-image: https://pbs.twimg.com/amplify_video_thumb/2067619336911831040/img/xTSx0rYPwTjeiJVB.jpg
+image: media/2026-06-18-google-vids-adds-ai-avatars-voiceovers-and-slide-t.jpg
 published_at: '2026-06-18T18:11:59.599640+00:00'
 sources:
 - https://x.com/i/status/2067631530890113477

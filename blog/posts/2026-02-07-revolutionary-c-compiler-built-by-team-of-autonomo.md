@@ -2,7 +2,7 @@
 date: '2026-02-07'
 excerpt: Anthropic is an AI safety and research company that's working to build reliable,
   interpretable, and steerable AI systems.
-image: https://cdn.sanity.io/images/4zrzovbb/website/6cc87859f5453e9481278681aa6409856d61153c-2400x1260.png
+image: media/2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo.png
 published_at: '2026-02-07T04:15:36.091765+00:00'
 sources:
 - https://share.google/4T0fJDumSQSmG5Cmo
@@ -12,7 +12,6 @@ tags:
 - Autonomous Agents
 title: Revolutionary C Compiler Built by Team of Autonomous AI Agents
 ---
-
 
 ## Introduction to Autonomous Agent Teams
 We just spotted an exciting update from Anthropic that's worth sharing with the community - a team of autonomous AI agents, known as Claude, have successfully built a C compiler from scratch. This project demonstrates the power of agent teams in achieving complex tasks without human intervention.

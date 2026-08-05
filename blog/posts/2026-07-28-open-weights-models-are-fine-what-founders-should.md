@@ -1,14 +1,15 @@
 ---
 date: '2026-07-28'
-excerpt: 'Dario''s policy statement doesn''t mean what most think. Here''s what actually matters for your model choice.'
-image: https://images.t2online.in/cdn-cgi/image/width=480,height=270,quality=70,fit=cover,gravity=face,format=auto/https://apis.t2online.in/getImageStream/7947/1785210298445.jpg
+excerpt: Dario's policy statement doesn't mean what most think. Here's what actually
+  matters for your model choice.
+image: media/2026-07-28-open-weights-models-are-fine-what-founders-should.jpg
 published_at: '2026-07-28T04:51:55.123Z'
 sources:
 - https://www.anthropic.com/news/position-open-weights-models
 tags:
-- 'AI'
-- 'Open-Source'
-- 'Founders'
+- AI
+- Open-Source
+- Founders
 title: 'Open-Weights Models Are Fine: What Founders Should Actually Worry About'
 ---
 

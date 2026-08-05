@@ -3,7 +3,7 @@ date: '2026-04-24'
 excerpt: OpenAI’s GPT‑5.5 is generally available and has been baked into GitHub Copilot,
   promising better results on complex coding tasks. Engineers can test it via Copilot
   CLI or the @code UI, but should weigh cost and false‑positive risk.
-image: https://pbs.twimg.com/amplify_video_thumb/2047735113140559872/img/ay7zAXw59DiLdVKu.jpg
+image: media/2026-04-24-github-copilot-now-runs-openai-gpt55.jpg
 published_at: '2026-04-24T21:33:49.201154+00:00'
 sources:
 - https://x.com/i/status/2047747243617460482

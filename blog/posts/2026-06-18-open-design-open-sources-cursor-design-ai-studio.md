@@ -2,7 +2,7 @@
 date: '2026-06-18'
 excerpt: Open Design has released the Cursor Design AI studio as open‑source software,
   letting engineers experiment with AI‑driven point, comment, edit and remix workflows.
-image: https://pbs.twimg.com/amplify_video_thumb/2067190753172799488/img/vEwpC275hhcO1xMG.jpg
+image: media/2026-06-18-open-design-open-sources-cursor-design-ai-studio.jpg
 published_at: '2026-06-18T17:08:34.646879+00:00'
 sources:
 - https://x.com/OpenDesignHQ/status/2067192475853180997?s=20

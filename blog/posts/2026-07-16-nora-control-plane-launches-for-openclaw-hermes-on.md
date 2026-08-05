@@ -3,7 +3,7 @@ date: '2026-07-16'
 excerpt: Nora provides a self‑hosted control plane for managing OpenClaw and Hermes
   runtimes on Docker/Kubernetes, offering a single view for deployment, inspection,
   and recovery.
-image: https://pbs.twimg.com/amplify_video_thumb/2077628803011031040/img/Gn4uydb55T12pKzc.jpg
+image: media/2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on.jpg
 published_at: '2026-07-16T10:51:42.585560+00:00'
 sources:
 - https://x.com/solomon2773/status/2077629467980161317

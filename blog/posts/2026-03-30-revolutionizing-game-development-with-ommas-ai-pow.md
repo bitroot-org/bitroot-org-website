@@ -4,7 +4,7 @@ excerpt: Omma's AI-powered tools are changing the game development landscape wit
   its level builder and controllable color theme parameters, allowing for unprecedented
   creativity and innovation. This technology has the potential to democratize game
   development and make it more accessible to developers of all levels.
-image: https://pbs.twimg.com/amplify_video_thumb/2037933153227276288/img/WYTjR7GBFF-eO0is.jpg
+image: media/2026-03-30-revolutionizing-game-development-with-ommas-ai-pow.jpg
 published_at: '2026-03-30T17:10:37.691245+00:00'
 sources:
 - https://x.com/i/status/2037935421905412229
@@ -15,7 +15,6 @@ tags:
 title: Revolutionizing Game Development with Omma's AI-Powered Tools
 video: media/2026-03-30-revolutionizing-game-development-with-ommas-ai-pow.mp4
 ---
-
 
 ## Introduction to Omma's Game-Changing Technology
 We just spotted an exciting update from Omma that's worth sharing with the community. Omma is using AI to make game development more accessible and fun, and we can't wait to dive in and explore its potential. With its level builder and controllable color theme parameters, Omma is opening up new possibilities for developers.

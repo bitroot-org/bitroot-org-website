@@ -3,7 +3,7 @@ date: '2026-07-21'
 excerpt: Ayush built Sundial, a minimal macOS app that records each minute of usage,
   tags apps and sites, and surfaces AI‑driven habit insights tied to TickTick tasks.
   It shows a 5‑hour workday split evenly between focus and distraction.
-image: https://pbs.twimg.com/media/HNuqTxcbwAAr6BR.jpg?name=orig
+image: media/2026-07-21-tiny-mac-app-sundial-logs-minutebyminute-activity.jpg
 published_at: '2026-07-21T10:57:53.673831+00:00'
 sources:
 - https://x.com/ayushtweetshere/status/2079445161957085463

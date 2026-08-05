@@ -3,7 +3,7 @@ date: '2026-04-12'
 excerpt: "I can't go back to the regular YouTube UI after this \U0001F605\n\nObsidian
   Reader now makes the transcript interactive so you can scrub, highlight, auto-scroll.
   It feels so nice."
-image: https://pbs.twimg.com/amplify_video_thumb/2042678525627633664/img/r-KNUFvnCDyqk2O3.jpg
+image: media/2026-04-12-revolutionizing-video-consumption-interactive-tran.jpg
 published_at: '2026-04-12T05:50:30.271430+00:00'
 sources:
 - https://x.com/i/status/2042683393247449148
@@ -14,7 +14,6 @@ tags:
 title: 'Revolutionizing Video Consumption: Interactive Transcripts Are Here'
 video: https://video.twimg.com/amplify_video/2042678525627633664/vid/avc1/2756x2160/Pn6Y6f1MjrW6JOIS.mp4?tag=21
 ---
-
 
 ## Introduction to Interactive Transcripts
 We just spotted an exciting update from kepano that's worth sharing with the community: Obsidian Reader now makes video transcripts interactive. This means you can scrub, highlight, and auto-scroll through transcripts, making video consumption more engaging and efficient.

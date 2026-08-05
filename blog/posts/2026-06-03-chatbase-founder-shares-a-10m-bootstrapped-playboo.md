@@ -3,7 +3,7 @@ date: '2026-06-03'
 excerpt: EO posted a 15‑question interview with Chatbase founder Yasser Elsaid, outlining
   how he grew to $10 M ARR without external capital. The thread highlights concrete
   tactics for early‑stage builders.
-image: https://pbs.twimg.com/amplify_video_thumb/2060862725316886528/img/P-yNB-v1p50YGyl4.jpg
+image: media/2026-06-03-chatbase-founder-shares-a-10m-bootstrapped-playboo.jpg
 published_at: '2026-06-03T18:59:17.168913+00:00'
 sources:
 - https://x.com/i/status/2060868914117214376

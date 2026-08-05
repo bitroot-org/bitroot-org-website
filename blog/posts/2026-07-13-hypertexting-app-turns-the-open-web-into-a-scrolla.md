@@ -1,25 +1,27 @@
 ---
 date: '2026-07-13'
-excerpt: 'HyperTexting is a new iPhone app that transforms the open web into a scrollable social feed using RSS. Learn how it works, its key features, benefits, drawbacks, and why it could be a compelling alternative to algorithm-driven social media.'
-image: https://techcrunch.com/wp-content/uploads/2026/07/welcome-cover.png?resize=900,453
+excerpt: HyperTexting is a new iPhone app that transforms the open web into a scrollable
+  social feed using RSS. Learn how it works, its key features, benefits, drawbacks,
+  and why it could be a compelling alternative to algorithm-driven social media.
+image: media/2026-07-13-hypertexting-app-turns-the-open-web-into-a-scrolla.png
 published_at: '2026-07-13T13:02:38.054Z'
 sources:
 - https://techcrunch.com/2026/07/10/a-new-app-hypertexting-turns-the-open-web-into-a-scrollable-social-media-like-feed/
 - https://hypertexting.com/
 tags:
-- 'HyperTexting'
-- 'HyperTexting App'
-- 'Open Web'
-- 'RSS'
-- 'RSS Reader'
-- 'Social Media'
-- 'Social Media Alternative'
-- 'Algorithm-Free Social Media'
-- 'Creator Economy'
-- 'Content Discovery'
-- 'News Reader'
-- 'Digital Publishing'
-title: 'HyperTexting App Turns the Open Web Into a Scrollable Social Feed'
+- HyperTexting
+- HyperTexting App
+- Open Web
+- RSS
+- RSS Reader
+- Social Media
+- Social Media Alternative
+- Algorithm-Free Social Media
+- Creator Economy
+- Content Discovery
+- News Reader
+- Digital Publishing
+title: HyperTexting App Turns the Open Web Into a Scrollable Social Feed
 ---
 
 Social media feeds are increasingly dominated by algorithms, ads, and AI-generated content. **HyperTexting** takes a different approach by turning the open web into a familiar, scrollable feed where you follow websites instead of platforms. Built on RSS, the app lets users browse blogs, newsletters, podcasts, and creator websites in one chronological timeline while giving creators an easier way to publish directly to their own websites.

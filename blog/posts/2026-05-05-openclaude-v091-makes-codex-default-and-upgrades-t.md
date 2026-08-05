@@ -3,7 +3,7 @@ date: '2026-05-05'
 excerpt: "Promised fulfilled!\n\nCodex is now the default provider and GPT 5.5 is
   the default model of OpenClaude. \n\nv0.9.1 released with big updates! \U0001F525\n\nThank
   you Sam"
-image: https://pbs.twimg.com/amplify_video_thumb/2051616504819683328/img/hXB0aixsgmsKIsXD.jpg
+image: media/2026-05-05-openclaude-v091-makes-codex-default-and-upgrades-t.jpg
 published_at: '2026-05-05T18:19:04.750824+00:00'
 sources:
 - https://x.com/i/status/2051616716007075887

@@ -1,13 +1,15 @@
 ---
 date: '2026-07-27'
-excerpt: 'Most founders don''t need agents yet. Many never will. But some will gain massive competitive advantage by building them. The difference isn''t about hype—it''s whether agents actually solve your specific problem.'
-image: https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2024/12/marquee-agentforce-agentic-ai.png?resize=1024,576
+excerpt: Most founders don't need agents yet. Many never will. But some will gain
+  massive competitive advantage by building them. The difference isn't about hype—it's
+  whether agents actually solve your specific problem.
+image: media/2026-07-27-agentic-ai-for-founders-when-you-need-agents-and-w.webp
 published_at: '2026-07-27T09:15:48.454Z'
 sources: []
 tags:
-- 'AI'
-- 'Agents'
-- 'Founders'
+- AI
+- Agents
+- Founders
 title: 'Agentic AI for Founders: When You Need Agents (And When You Don''t)'
 ---
 

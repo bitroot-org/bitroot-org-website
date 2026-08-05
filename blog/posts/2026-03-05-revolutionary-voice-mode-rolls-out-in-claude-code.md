@@ -3,7 +3,7 @@ date: '2026-03-05'
 excerpt: Claude Code introduces a game-changing voice mode, allowing users to interact
   with the platform using voice commands, and it's rolling out to 5% of users now.
   This innovative feature is set to revolutionize the coding experience.
-image: https://pbs.twimg.com/amplify_video_thumb/2028628068517183489/img/pqaAS9fN8tZTs8fY.jpg
+image: media/2026-03-05-revolutionary-voice-mode-rolls-out-in-claude-code.jpg
 published_at: '2026-03-05T08:15:46.678636+00:00'
 sources:
 - https://x.com/trq212/status/2028628570692890800?s=20
@@ -14,7 +14,6 @@ tags:
 title: Revolutionary Voice Mode Rolls Out in Claude Code
 video: media/2026-03-05-revolutionary-voice-mode-rolls-out-in-claude-code.mp4
 ---
-
 
 ## Introduction to Voice Mode
 We just spotted an exciting update from the team behind Claude Code that's worth sharing with the community - the rollout of a revolutionary voice mode. Here's what caught our attention: this feature enables users to interact with the platform using voice commands, making coding more accessible and convenient. 

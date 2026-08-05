@@ -2,7 +2,7 @@
 date: '2026-07-21'
 excerpt: Monid shuts down Apify and offers a pay‑as‑you‑go API that reads major social
   platforms without logins, starting at $0.0015 per request.
-image: https://pbs.twimg.com/amplify_video_thumb/2079289624183316480/img/2Mxu-4ft7Uv7y94o.jpg
+image: media/2026-07-21-monid-replaces-apify-with-perrequest-social-media.jpg
 published_at: '2026-07-21T07:11:42.464476+00:00'
 sources:
 - https://x.com/i/status/2079289736250970258

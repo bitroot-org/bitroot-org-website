@@ -3,7 +3,7 @@ date: '2026-06-18'
 excerpt: Temple’s new Entropy™ index reports a live 1‑to‑250 score every second, promising
   finer‑grained insight into metabolic load than heart rate. Early access is open,
   but the metric’s validation is still limited.
-image: https://pbs.twimg.com/media/HLGDi5FbUAAxN93.jpg?name=orig
+image: media/2026-06-18-temple-launches-entropy-metric-to-track-realtime-m.jpg
 published_at: '2026-06-18T18:13:56.645923+00:00'
 sources:
 - https://x.com/i/status/2067578443047596141

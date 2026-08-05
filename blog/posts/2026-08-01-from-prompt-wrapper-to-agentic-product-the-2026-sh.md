@@ -1,13 +1,15 @@
 ---
 date: '2026-08-01'
-excerpt: 'You shipped in two weeks. Got a ProductHunt vote or two. Downloaded by maybe a hundred people. Then... nothing.'
-image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqIXSA21BWLq5nf3YnOTF-29rW8WBoWdFuQBns1IU-Qg&s=10
+excerpt: You shipped in two weeks. Got a ProductHunt vote or two. Downloaded by maybe
+  a hundred people. Then... nothing.
+image: media/2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh.jpg
 published_at: '2026-08-01T05:52:06.544Z'
 sources: []
 tags:
-- 'Agent. AI'
-- 'Wrapper'
-title: 'From Prompt Wrapper to Agentic Product: The 2026 Shift OpenAI & Anthropic Are Signaling'
+- Agent. AI
+- Wrapper
+title: 'From Prompt Wrapper to Agentic Product: The 2026 Shift OpenAI & Anthropic
+  Are Signaling'
 ---
 
 You built an AI product last year. Simple concept: take user input, send to Claude, wrap the response in a nice interface, charge per query.

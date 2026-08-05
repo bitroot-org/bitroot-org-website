@@ -3,7 +3,7 @@ date: '2026-07-01'
 excerpt: Motionfly's Agent28 claims a ten‑fold reduction in editing time by auto‑adding
   zooms, graphics, B‑roll, captions, and more. The first thousand users get free access,
   but the paid model is still undefined.
-image: https://pbs.twimg.com/amplify_video_thumb/2072002374483197952/img/INi4DssIFYqRuZGS.jpg
+image: media/2026-07-01-motionfly-launches-agent28-ai-video-editor-free-fo.jpg
 published_at: '2026-07-01T03:20:58.086896+00:00'
 sources:
 - https://x.com/i/status/2072002524060496314

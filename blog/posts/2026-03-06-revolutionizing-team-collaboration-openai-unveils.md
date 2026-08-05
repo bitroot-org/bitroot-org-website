@@ -4,7 +4,7 @@ excerpt: OpenAI introduces Symphony, a game-changing platform that streamlines t
   collaboration by turning project work into isolated, autonomous implementation runs.
   This innovation has the potential to transform the way teams manage work and supervise
   coding agents.
-image: https://pbs.twimg.com/amplify_video_thumb/2029279697796775937/img/dYX7ItiJU1IlfxTh.jpg
+image: media/2026-03-06-revolutionizing-team-collaboration-openai-unveils.jpg
 published_at: '2026-03-06T02:08:51.390929+00:00'
 sources:
 - https://x.com/i/status/2029296008572576217
@@ -15,7 +15,6 @@ tags:
 title: 'Revolutionizing Team Collaboration: OpenAI Unveils Symphony'
 video: media/2026-03-06-revolutionizing-team-collaboration-openai-unveils.mp4
 ---
-
 
 ## Introduction to Symphony
 We just spotted an exciting update from OpenAI that's worth sharing with the community - the introduction of Symphony, a revolutionary platform designed to transform team collaboration. Here's what caught our attention: Symphony turns project work into isolated, autonomous implementation runs, allowing teams to manage work instead of supervising coding agents.

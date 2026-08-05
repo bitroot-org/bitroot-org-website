@@ -3,7 +3,7 @@ date: '2026-04-15'
 excerpt: A new masterclass reveals how Anthropic uses Claude Code, a revolutionary
   tool that could make traditional IDEs obsolete by the end of the year, and explores
   non-coding pipeline opportunities
-image: https://pbs.twimg.com/amplify_video_thumb/2044139244525105152/img/jCff5LdNEPDkStJA.jpg
+image: media/2026-04-15-the-future-of-coding-is-the-era-of-traditional-ide.jpg
 published_at: '2026-04-15T02:02:07.974224+00:00'
 sources:
 - https://x.com/i/status/2044140545384296913
@@ -14,7 +14,6 @@ tags:
 title: 'The Future of Coding: Is the Era of Traditional IDEs Coming to an End?'
 video: https://video.twimg.com/amplify_video/2044139244525105152/vid/avc1/1920x1080/2GHTKwa088d6jyOr.mp4?tag=21
 ---
-
 
 ## Introduction to Claude Code
 We just spotted an exciting update from Boris Cherny, the creator of Claude Code, that's worth sharing with the community. Here's what caught our attention: he thinks Integrated Development Environments (IDEs) are dead by the end of the year. 

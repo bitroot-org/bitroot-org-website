@@ -3,7 +3,7 @@ date: '2026-05-18'
 excerpt: shadcn/ui now includes a complete design‑system package—tokens, component
   definitions, and Figma import—distributed via its CLI. Engineers can pull a ready‑made
   system into any Tailwind project.
-image: https://pbs.twimg.com/amplify_video_thumb/2056372181894926336/img/Sku8MNN6X8Et04te.jpg
+image: media/2026-05-18-shadcnui-ships-a-full-designsystem-cli.jpg
 published_at: '2026-05-18T18:28:03.748951+00:00'
 sources:
 - https://x.com/i/status/2056372444751909212

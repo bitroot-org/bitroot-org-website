@@ -4,7 +4,7 @@ excerpt: Y Combinator's Startup School is coming to India, featuring talks from 
   founders and sessions with YC partners, and this is a huge opportunity for local
   entrepreneurs to learn and grow. This event is a must-attend for anyone looking
   to launch or scale a startup in India.
-image: https://pbs.twimg.com/amplify_video_thumb/2032249538669658117/img/dobq-IadLifowgfC.jpg
+image: media/2026-03-13-ycs-startup-school-lands-in-india-a-boost-for-loca.jpg
 published_at: '2026-03-13T15:54:56.667969+00:00'
 sources:
 - https://x.com/i/status/2032291152402255892
@@ -15,7 +15,6 @@ tags:
 title: 'YC''s Startup School Lands in India: A Boost for Local Entrepreneurs'
 video: media/2026-03-13-ycs-startup-school-lands-in-india-a-boost-for-loca.mp4
 ---
-
 
 ## Introduction to Startup School
 We just spotted an exciting update from Y Combinator that's worth sharing with the community - their renowned Startup School is making its way to India. This is huge news for the local startup ecosystem, as it brings a wealth of knowledge and expertise to aspiring entrepreneurs. Here's why this matters for developers and founders in India.

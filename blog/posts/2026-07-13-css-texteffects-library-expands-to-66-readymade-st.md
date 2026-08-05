@@ -1,15 +1,16 @@
 ---
 date: '2026-07-25'
-excerpt: 'The open‑source text‑effects collection now includes 66 CSS snippets, adding nine new options and AI‑ready prompts for quick integration.'
-image: https://pbs.twimg.com/amplify_video_thumb/2076542133906116608/img/O1bt-grEOM8JdvR7.jpg
+excerpt: The open‑source text‑effects collection now includes 66 CSS snippets, adding
+  nine new options and AI‑ready prompts for quick integration.
+image: media/2026-07-13-css-texteffects-library-expands-to-66-readymade-st.jpg
 published_at: '2026-07-13T11:53:16.844209+00:00'
 sources:
 - https://x.com/codesharpdev/status/2076542275296108963
 tags:
-- 'css'
-- 'ui'
-- 'open-source'
-title: 'CSS text‑effects library expands to 66 ready‑made styles'
+- css
+- ui
+- open-source
+title: CSS text‑effects library expands to 66 ready‑made styles
 ---
 
 The open‑source CSS text‑effects library announced today that it now ships **66** ready‑to‑use effects, nine more than the previous release. The project provides raw CSS snippets and an AI‑ready prompt that can be dropped into any code generator.

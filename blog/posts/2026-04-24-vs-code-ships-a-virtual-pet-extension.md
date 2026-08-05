@@ -2,7 +2,7 @@
 date: '2026-04-24'
 excerpt: "Add a little fun to your coding sessions \U0001F436\U0001F431\nThis extension
   lets you keep a virtual pet right inside VS Code."
-image: https://pbs.twimg.com/ext_tw_video_thumb/2047314901568229377/pu/img/Td7Mo9Pc_6AlyCfp.jpg
+image: media/2026-04-24-vs-code-ships-a-virtual-pet-extension.jpg
 published_at: '2026-04-24T21:26:02.719563+00:00'
 sources:
 - https://x.com/i/status/2047314929695310196

@@ -2,7 +2,7 @@
 date: '2026-06-18'
 excerpt: Slack posted a short video demonstrating ready‑made Slackbot prompts that
   pull tagged feedback into a channel, helping teams focus on the most important requests.
-image: https://pbs.twimg.com/media/HLCT-GFW0AAUqRl.jpg
+image: media/2026-06-18-slack-shares-slackbot-prompts-to-streamline-produc.jpg
 published_at: '2026-06-18T18:15:11.236735+00:00'
 sources:
 - https://x.com/i/status/2067314945151144206

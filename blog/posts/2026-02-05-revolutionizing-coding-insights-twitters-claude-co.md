@@ -1,7 +1,8 @@
 ---
 date: '2026-02-05'
-excerpt: "Claude Code introduces /insights, a command that analyzes your past month of usage to summarize projects and suggest workflow improvements."
-image: https://pbs.twimg.com/amplify_video_thumb/2019173388062007297/img/jHnsIhpNNPkjIRvy.jpg
+excerpt: Claude Code introduces /insights, a command that analyzes your past month
+  of usage to summarize projects and suggest workflow improvements.
+image: media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.jpg
 published_at: '2026-02-05T15:13:55.694372+00:00'
 sources:
 - https://x.com/i/status/2019173731042750509
@@ -12,7 +13,6 @@ tags:
 title: 'Revolutionizing Coding Insights: Twitter''s Claude Code Update'
 video: media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.mp4
 ---
-
 
 ## Introduction to Claude Code Insights
 We just spotted an exciting update from Twitter's Claude Code that's worth sharing with the community. The new /insights command is a powerful tool that analyzes a user's message history from the past month, providing a summary of their projects and suggesting ways to improve their workflow.

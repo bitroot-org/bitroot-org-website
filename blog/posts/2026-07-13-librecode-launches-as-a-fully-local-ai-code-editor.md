@@ -2,7 +2,7 @@
 date: '2026-07-13'
 excerpt: LibreCode is a free, locally‑run AI editor that bundles a reverse‑engineering
   toolkit and avoids any cloud subscription fees.
-image: https://pbs.twimg.com/media/HNBoi2faAAAu4BL.jpg?name=orig
+image: media/2026-07-13-librecode-launches-as-a-fully-local-ai-code-editor.jpg
 published_at: '2026-07-13T11:55:10.306587+00:00'
 sources:
 - https://x.com/chenzeling4/status/2076274378455883869

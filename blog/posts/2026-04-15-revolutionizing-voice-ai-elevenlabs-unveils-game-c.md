@@ -1,7 +1,7 @@
 ---
 date: '2026-04-15'
 excerpt: The New ElevenAgents React SDK
-image: https://pbs.twimg.com/amplify_video_thumb/2044516556634263552/img/RSZe0mXPBmWB5WXd.jpg
+image: media/2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c.jpg
 published_at: '2026-04-15T20:59:36.760570+00:00'
 sources:
 - https://x.com/i/status/2044519924282847381
@@ -12,7 +12,6 @@ tags:
 title: 'Revolutionizing Voice AI: ElevenLabs Unveils Game-Changing React SDK'
 video: media/2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c.mp4
 ---
-
 
 ## Introduction to ElevenAgents React SDK
 We just spotted an exciting update from ElevenLabs that's worth sharing with the community - the launch of the New ElevenAgents React SDK. Here's what caught our attention: this powerful tool is designed to help developers create stunning voice AI experiences. 

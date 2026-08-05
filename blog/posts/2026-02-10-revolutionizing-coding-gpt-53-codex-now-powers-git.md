@@ -4,7 +4,7 @@ excerpt: Get ready to supercharge your coding workflow with GPT-5.3-Codex, the l
   AI model now available in GitHub Copilot, bringing improved performance and capabilities
   to the table. This update is set to revolutionize the way developers work, making
   coding faster, smarter, and more efficient.
-image: https://github.blog/wp-content/uploads/2026/02/github-copilot-social-card-2.png
+image: media/2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git.png
 published_at: '2026-02-10T19:20:49.464293+00:00'
 sources:
 - https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/
@@ -14,7 +14,6 @@ tags:
 - AI-powered coding
 title: 'Revolutionizing Coding: GPT-5.3-Codex Now Powers GitHub Copilot'
 ---
-
 
 ## Introduction to GPT-5.3-Codex
 We just spotted an exciting update from GitHub that's worth sharing with the community - GPT-5.3-Codex, the latest agentic coding model from OpenAI, is now rolling out in GitHub Copilot. This new model promises to deliver significant improvements in coding, agentic, and real-world capabilities.

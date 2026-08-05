@@ -4,7 +4,7 @@ excerpt: LangChain introduces LangSmith Skills and CLI, empowering coding agents
   take charge of their own development, and we're excited to dive into the implications
   and potential use cases. This breakthrough enables agents to debug, create datasets,
   and run experiments natively through the terminal.
-image: https://pbs.twimg.com/ext_tw_video_thumb/2029272155498639360/pu/img/Wg__efvP4CyYGA64.jpg
+image: media/2026-03-06-revolutionizing-agent-development-langsmith-skills.jpg
 published_at: '2026-03-06T02:09:59.761447+00:00'
 sources:
 - https://x.com/i/status/2029272199073354105
@@ -15,7 +15,6 @@ tags:
 title: 'Revolutionizing Agent Development: LangSmith Skills and CLI Unleashed'
 video: media/2026-03-06-revolutionizing-agent-development-langsmith-skills.mp4
 ---
-
 
 ## Introduction to LangSmith Skills and CLI
 We just spotted an exciting update from LangChain that's worth sharing with the community - the release of LangSmith Skills and CLI. This development is a game-changer for agent engineering, as it allows coding agents to become experts in their own lifecycle. Here's what caught our attention about this update: the potential for autonomous agent development.

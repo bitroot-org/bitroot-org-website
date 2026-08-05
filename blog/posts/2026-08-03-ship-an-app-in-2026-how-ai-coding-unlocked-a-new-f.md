@@ -1,14 +1,15 @@
 ---
 date: '2026-08-03'
-excerpt: 'Everyone said apps were dead. I agents would make traditional apps obsolete. Developers would abandon the App Store. ChatGPT would replace everything.'
-image: https://techcrunch.com/wp-content/uploads/2025/12/app-of-the-year.jpg
+excerpt: Everyone said apps were dead. I agents would make traditional apps obsolete.
+  Developers would abandon the App Store. ChatGPT would replace everything.
+image: media/2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f.jpg
 published_at: '2026-08-03T04:48:59.316Z'
 sources: []
 tags:
-- 'Apps'
-- 'AI'
-- 'iOS'
-- 'Google Play'
+- Apps
+- AI
+- iOS
+- Google Play
 title: 'Ship an App in 2026: How AI Coding Unlocked a New Founder Playbook'
 ---
 

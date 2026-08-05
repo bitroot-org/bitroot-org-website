@@ -3,7 +3,7 @@ date: '2026-03-06'
 excerpt: "Today we're launching Glaze \U0001F4A0\n\nCreate any desktop app in minutes
   by chatting with AI.\nBeautiful, powerful, and truly personal.\n\nLearn more on
   https://glazeapp.com\nFollow @glazeapps for updates."
-image: https://pbs.twimg.com/media/HCkLlEHWkAAJpny.png
+image: media/2026-03-06-revolutionizing-app-development-ai-powered-glaze-l.png
 published_at: '2026-03-06T02:08:28.808014+00:00'
 sources:
 - https://x.com/i/status/2029180822838759703
@@ -14,7 +14,6 @@ tags:
 title: 'Revolutionizing App Development: AI-Powered Glaze Launches'
 video: media/2026-03-06-revolutionizing-app-development-ai-powered-glaze-l.mp4
 ---
-
 
 ## Introduction to Glaze
 We just spotted an exciting update from Raycast that's worth sharing with the community - the launch of Glaze, a platform that allows users to create desktop apps in minutes by chatting with AI. Here's what caught our attention about this innovative tool: it's beautiful, powerful, and truly personal.

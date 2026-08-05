@@ -63,6 +63,17 @@ def post_url(slug):
     return f"{BLOG_URL}/{slug}/"
 
 
+def absolute_image(image):
+    """Absolute URL for a post image. Self-hosted images are stored as
+    paths relative to /blog/ (e.g. 'media/foo.jpg')."""
+    image = str(image or "")
+    if not image or image.startswith(("http://", "https://")):
+        return image
+    if image.startswith("/"):
+        return f"{SITE_URL}{image}"
+    return f"{BLOG_URL}/{image}"
+
+
 def get_post_metadata(filepath):
     """Extract metadata from a post file."""
     try:
@@ -129,7 +140,7 @@ def build_short_links(posts):
         slug = post["slug"]
         title = post.get("title", "Untitled")
         excerpt = clamp(post.get("excerpt") or "Read this article on the Bitroot newslogger.")
-        image = post.get("image") or f"{SITE_URL}/images/newslogger-og.jpg"
+        image = absolute_image(post.get("image")) or f"{SITE_URL}/images/newslogger-og.jpg"
         canonical = post_url(slug)
 
         html = f"""<!DOCTYPE html>
@@ -176,7 +187,7 @@ def render_featured_card(post):
     return f"""            <article class="featured-post" data-post-slug="{esc(post['slug'])}">
                 <div class="featured-progress"><div class="featured-progress-bar"></div></div>
                 <div class="post-image">
-                    <img src="{esc(image)}" alt="{esc(post['title'])}" width="800" height="450" fetchpriority="high" decoding="async">
+                    <img src="{esc(image)}" alt="{esc(post['title'])}" width="800" height="450" fetchpriority="high" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('{esc(post['slug'])}'):'media/placeholder-blog.png'">
                 </div>
                 <div class="post-content">
                     <div class="post-meta">
@@ -452,9 +463,9 @@ def build_rss(posts):
         for tag in post.get("tags", []):
             SubElement(item, "category").text = tag
 
-        # Image enclosure
-        image = post.get("image", "")
-        if image and image.startswith("http"):
+        # Image enclosure (self-hosted media/ paths become absolute URLs)
+        image = absolute_image(post.get("image", ""))
+        if image:
             enc = SubElement(item, "enclosure")
             enc.set("url", image)
             enc.set("type", guess_mime(image))

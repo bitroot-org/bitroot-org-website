@@ -3,7 +3,7 @@ date: '2026-04-09'
 excerpt: Notion introduces Claude AI agents to automate tasks and workflows, revolutionizing
   team productivity. This integration enables seamless task management and automation,
   making it a game-changer for developers and teams.
-image: https://pbs.twimg.com/media/HFaS39ja8AALVUD.jpg
+image: media/2026-04-09-notion-unleashes-ai-powered-task-automation-with-c.jpg
 published_at: '2026-04-09T02:54:28.393214+00:00'
 sources:
 - https://x.com/i/status/2041982872698155398
@@ -14,7 +14,6 @@ tags:
 title: Notion Unleashes AI-Powered Task Automation with Claude Agents
 video: media/2026-04-09-notion-unleashes-ai-powered-task-automation-with-c.mp4
 ---
-
 
 ## Introduction to Claude Agents
 We just spotted an exciting update from Notion that's worth sharing with the community - the introduction of Claude AI agents in Notion. Here's what caught our attention: Claude agents can turn your task board into a to-do list, automating workflows like never before.

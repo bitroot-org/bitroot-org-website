@@ -3,7 +3,7 @@ date: '2026-04-24'
 excerpt: A recent tweet highlights that DeepSeek V4‑Pro charges $1.74 per million
   input tokens, far below the $5‑$30 rates announced for GPT‑5.5, raising questions
   about cost strategy for startups.
-image: https://pbs.twimg.com/media/HGqNR-pWcAA6luP.jpg?name=orig
+image: media/2026-04-24-deepseek-v4pro-pricing-looks-cheap-next-to-gpt55.jpg
 published_at: '2026-04-24T21:29:46.002616+00:00'
 sources:
 - https://x.com/i/status/2047605548346941643

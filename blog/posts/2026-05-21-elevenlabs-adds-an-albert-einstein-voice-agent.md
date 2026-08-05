@@ -2,7 +2,7 @@
 date: '2026-05-21'
 excerpt: ElevenLabs released a synthetic Albert Einstein voice and an accompanying
   agent that reads his writings aloud, expanding its library of celebrity voices.
-image: https://pbs.twimg.com/amplify_video_thumb/2056723617455501312/img/BDJyrUkpnCrnGpzk.jpg
+image: media/2026-05-21-elevenlabs-adds-an-albert-einstein-voice-agent.jpg
 published_at: '2026-05-21T12:58:15.852187+00:00'
 sources:
 - https://x.com/i/status/2056724239797944618

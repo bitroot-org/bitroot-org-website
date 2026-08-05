@@ -4,7 +4,7 @@ excerpt: MiniMax Agent's latest update combines forces with MaxClaw and 10,000+ 
   to transform the way we work, making it possible to complete complex tasks in record
   time. This innovation has the potential to revolutionize productivity for developers
   and tech enthusiasts alike.
-image: https://pbs.twimg.com/amplify_video_thumb/2027025589111283712/img/SKZEzNrDAsS2yr8u.jpg
+image: media/2026-02-26-revolutionizing-productivity-minimax-agents-game-c.jpg
 published_at: '2026-02-26T16:43:47.404442+00:00'
 sources:
 - https://x.com/i/status/2027027163078336885
@@ -15,7 +15,6 @@ tags:
 title: 'Revolutionizing Productivity: MiniMax Agent''s Game-Changing Update'
 video: media/2026-02-26-revolutionizing-productivity-minimax-agents-game-c.mp4
 ---
-
 
 ## Introduction to the Update
 We just spotted an exciting update from MiniMax Agent that's worth sharing with the community. The company has integrated its platform with MaxClaw and tapped into the expertise of over 10,000 professionals, creating a powerhouse of productivity. This update is a total game-changer for anyone looking to streamline their workflow.

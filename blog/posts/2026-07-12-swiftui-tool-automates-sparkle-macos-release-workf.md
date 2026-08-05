@@ -3,7 +3,7 @@ date: '2026-07-12'
 excerpt: An indie developer released a native SwiftUI utility that streamlines the
   five‑step Sparkle release process, handling DMG creation to Cloudflare R2 upload
   without leaving the local machine.
-image: https://pbs.twimg.com/media/HM_R8sPaIAA6n6V.jpg?name=orig
+image: media/2026-07-12-swiftui-tool-automates-sparkle-macos-release-workf.jpg
 media:
 - type: image
   url: https://pbs.twimg.com/media/HM_R8sPaIAA6n6V.jpg?name=orig

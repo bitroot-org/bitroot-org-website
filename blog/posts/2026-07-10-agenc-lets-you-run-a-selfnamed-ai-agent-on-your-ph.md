@@ -5,7 +5,7 @@ excerpt: 'The AI agent named itself during setup.
 
   AgenC is an open source agent that runs on your own machine. Works best with Grok.
   15 minutes to a named agent on your phone with a $2/day spending cap.'
-image: https://pbs.twimg.com/amplify_video_thumb/2075474641389555712/img/X72suMUUA9HrdbR-.jpg
+image: media/2026-07-10-agenc-lets-you-run-a-selfnamed-ai-agent-on-your-ph.jpg
 published_at: '2026-07-10T11:18:31.326429+00:00'
 sources:
 - https://x.com/tetsuoai/status/2075475435698454546

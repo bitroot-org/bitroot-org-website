@@ -4,7 +4,7 @@ excerpt: 'For the developers building with Claude, a direct line from the team.
 
 
   Follow for changelogs, API releases, community updates, and deep dives.'
-image: https://pbs.twimg.com/amplify_video_thumb/2044779639445590016/img/u50wlq8vb0ueGG_J.jpg
+image: media/2026-04-17-claudedevs-unveils-dedicated-channel-for-developer.jpg
 published_at: '2026-04-17T14:55:58.708039+00:00'
 sources:
 - https://x.com/i/status/2044780198722498580
@@ -15,7 +15,6 @@ tags:
 title: ClaudeDevs Unveils Dedicated Channel for Developer Updates
 video: media/2026-04-17-claudedevs-unveils-dedicated-channel-for-developer.mp4
 ---
-
 
 ## Introduction to ClaudeDevs Update Channel
 We just spotted an exciting update from ClaudeDevs that's worth sharing with the community - a dedicated channel for developers building with Claude. This new channel promises to keep developers in the loop with the latest updates, releases, and insights. 

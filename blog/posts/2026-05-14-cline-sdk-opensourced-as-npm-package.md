@@ -3,7 +3,7 @@ date: '2026-05-14'
 excerpt: Cline has released its SDK on npm, letting developers embed the same extension
   harness used in its coding agent. The package can be added with a single install
   command.
-image: https://pbs.twimg.com/amplify_video_thumb/2054578938681405440/img/FXgnGDc0yIeZrbxm.jpg
+image: media/2026-05-14-cline-sdk-opensourced-as-npm-package.jpg
 published_at: '2026-05-14T02:18:29.845337+00:00'
 sources:
 - https://x.com/i/status/2054580767779700775

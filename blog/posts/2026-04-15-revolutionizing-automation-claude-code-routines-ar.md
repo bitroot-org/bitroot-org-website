@@ -3,7 +3,7 @@ date: '2026-04-15'
 excerpt: Claude Code Routines have arrived, allowing users to trigger templated agents
   via GitHub events or API, streamlining documentation and backlog maintenance. This
   innovation has the potential to transform the way developers work.
-image: https://pbs.twimg.com/amplify_video_thumb/2044093860918513664/img/iW06fBgxU7Kb3qBE.jpg
+image: media/2026-04-15-revolutionizing-automation-claude-code-routines-ar.jpg
 published_at: '2026-04-15T01:55:39.100373+00:00'
 sources:
 - https://x.com/i/status/2044093913376706655
@@ -14,7 +14,6 @@ tags:
 title: 'Revolutionizing Automation: Claude Code Routines Are Here'
 video: media/2026-04-15-revolutionizing-automation-claude-code-routines-ar.mp4
 ---
-
 
 ## Introduction to Claude Code Routines
 We just spotted an exciting update from Noah Zweben that's worth sharing with the community - Claude Code Routines are now available. Here's what caught our attention about this: the ability to trigger templated agents via GitHub events or API, making it a game-changer for automation.

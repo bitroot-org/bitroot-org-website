@@ -4,7 +4,7 @@ excerpt: 'Introducing Code Review, a new feature for Claude Code.
 
 
   When a PR opens, Claude dispatches a team of agents to hunt for bugs.'
-image: https://pbs.twimg.com/amplify_video_thumb/2031087443961851904/img/djTbAdaklBTC4hQE.jpg
+image: media/2026-03-09-revolutionizing-code-quality-claudes-ai-powered-co.jpg
 published_at: '2026-03-09T19:48:39.517894+00:00'
 sources:
 - https://x.com/i/status/2031088171262554195
@@ -15,7 +15,6 @@ tags:
 title: 'Revolutionizing Code Quality: Claude''s AI-Powered Code Review Unleashed'
 video: media/2026-03-09-revolutionizing-code-quality-claudes-ai-powered-co.mp4
 ---
-
 
 ## Introduction to Code Review
 We just spotted an exciting update from Claude that's worth sharing with the community - the launch of Code Review, a powerful new feature that leverages AI to enhance code quality. Here's what caught our attention: when a pull request opens, Claude dispatches a team of agents to hunt for bugs, making the development process more efficient.

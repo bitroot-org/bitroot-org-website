@@ -1,7 +1,7 @@
 ---
 date: '2026-03-13'
 excerpt: "Pixel Composer : un éditeur VFX à base de nodes pour le pixel art \nhttps://github.com/Ttanasart-pt/Pixel-Composer"
-image: https://pbs.twimg.com/tweet_video_thumb/HDSqT1OWQAAldug.jpg
+image: media/2026-03-13-revolutionizing-pixel-art-a-node-based-vfx-editor.jpg
 published_at: '2026-03-13T15:55:32.077939+00:00'
 sources:
 - https://x.com/i/status/2032436603453395361
@@ -12,7 +12,6 @@ tags:
 title: 'Revolutionizing Pixel Art: A Node-Based VFX Editor Emerges'
 video: media/2026-03-13-revolutionizing-pixel-art-a-node-based-vfx-editor.mp4
 ---
-
 
 ## Introduction to Pixel Composer
 We just spotted an exciting update from Camille Roux on X that's worth sharing with the community - a node-based VFX editor called Pixel Composer, specifically designed for pixel art. This innovative tool has the potential to revolutionize the way developers and artists create stunning visual effects. 

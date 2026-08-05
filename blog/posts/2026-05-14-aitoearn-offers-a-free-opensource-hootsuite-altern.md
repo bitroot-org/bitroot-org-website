@@ -2,7 +2,7 @@
 date: '2026-05-14'
 excerpt: AiToEarn is a full‑AI content‑marketing agent that can publish to 14 platforms
   with one Docker command, challenging paid SaaS tools at no cost.
-image: https://pbs.twimg.com/media/HIMp7dObsAAMtw5.jpg?name=orig
+image: media/2026-05-14-aitoearn-offers-a-free-opensource-hootsuite-altern.jpg
 published_at: '2026-05-14T02:03:37.830217+00:00'
 sources:
 - https://x.com/i/status/2054531959528079430

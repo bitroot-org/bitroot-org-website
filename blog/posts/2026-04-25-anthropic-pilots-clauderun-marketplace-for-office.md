@@ -3,7 +3,7 @@ date: '2026-04-25'
 excerpt: Anthropic's new internal experiment lets its AI assistant Claude buy, sell,
   and negotiate items for employees, revealing both promise and practical concerns
   for startup teams.
-image: https://pbs.twimg.com/amplify_video_thumb/2047716403000606720/img/5rq3VoaCzbgqTM4v.jpg
+image: media/2026-04-25-anthropic-pilots-clauderun-marketplace-for-office.jpg
 published_at: '2026-04-25T14:55:21.991918+00:00'
 sources:
 - https://x.com/i/status/2047728360818696302

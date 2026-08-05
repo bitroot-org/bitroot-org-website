@@ -2,7 +2,7 @@
 date: '2026-05-17'
 excerpt: ScreenCharm now lets you dock the recording camera on any screen edge, but
   the zoom effect is disabled for non‑default layouts.
-image: https://pbs.twimg.com/amplify_video_thumb/2056030716408766464/img/8MjLVFq74Rj0yCn8.jpg
+image: media/2026-05-17-screencharm-adds-selectable-camera-layouts-for-rec.jpg
 published_at: '2026-05-17T18:51:29.513364+00:00'
 sources:
 - https://x.com/i/status/2056033761632891361

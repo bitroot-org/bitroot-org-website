@@ -3,7 +3,7 @@ date: '2026-05-26'
 excerpt: Jitter’s new AI lets you describe a motion effect in plain text and get a
   ready‑to‑tweak animation in seconds. The feature is live, but pricing and accuracy
   remain to be seen.
-image: https://pbs.twimg.com/tweet_video_thumb/HJQFxSfXUAAbSah.jpg
+image: media/2026-05-26-jitter-ai-adds-promptdriven-motion-effects.jpg
 published_at: '2026-05-26T19:21:50.806991+00:00'
 sources:
 - https://x.com/i/status/2059277428971688065

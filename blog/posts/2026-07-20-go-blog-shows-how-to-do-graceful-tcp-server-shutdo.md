@@ -3,7 +3,7 @@ date: '2026-07-20'
 excerpt: Arpit’s new blog post explains why merely closing a listener isn’t enough
   for a clean Go TCP server shutdown and offers a practical pattern for production
   services.
-image: https://pbs.twimg.com/media/HNpilbCasAASC6d.jpg?name=orig
+image: media/2026-07-20-go-blog-shows-how-to-do-graceful-tcp-server-shutdo.jpg
 published_at: '2026-07-20T11:37:09.535885+00:00'
 sources:
 - https://x.com/_xonoxc/status/2079084544322572478

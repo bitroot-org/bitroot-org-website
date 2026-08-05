@@ -2,7 +2,7 @@
 date: '2026-05-26'
 excerpt: "Introducing Feather - A self organizing inbox!\n\nTry it out at http://feather.computer.
   We'd love to know what you think \U0001FAB6"
-image: https://pbs.twimg.com/amplify_video_thumb/2058335459139571712/img/RioXasYRxqNFxdX6.jpg
+image: media/2026-05-26-feather-launches-a-selforganizing-inbox-service.jpg
 published_at: '2026-05-26T19:19:43.923877+00:00'
 sources:
 - https://x.com/i/status/2058335516429635732

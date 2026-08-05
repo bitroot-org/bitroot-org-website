@@ -2,7 +2,7 @@
 date: '2026-07-22'
 excerpt: A new open‑source agent can watch video files frame‑by‑frame, flagging visual
   defects without manual review. It’s free to use but requires GPU resources to run.
-image: https://pbs.twimg.com/amplify_video_thumb/2079808466563330048/img/J2fw9V2jZXCUXqyF.jpg
+image: media/2026-07-22-opensource-ai-agent-audits-video-frames-automatica.jpg
 published_at: '2026-07-22T10:59:25.087707+00:00'
 sources:
 - https://x.com/buildwith_SUMIT/status/2079810132330807504

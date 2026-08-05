@@ -3,7 +3,7 @@ date: '2026-03-14'
 excerpt: GLM-5 introduces Agent Mode, a game-changer for AI workflows, allowing for
   instant insights and automated tasks. This update is a must-know for developers
   and tech enthusiasts looking to streamline their workflows.
-image: https://pbs.twimg.com/amplify_video_thumb/2032555146874597379/img/pPldQrCTZe7D0Xgh.jpg
+image: media/2026-03-14-revolutionizing-ai-workflows-glm-5-unleashes-agent.jpg
 published_at: '2026-03-14T19:09:37.811538+00:00'
 sources:
 - https://x.com/i/status/2032555220493033960
@@ -14,7 +14,6 @@ tags:
 title: 'Revolutionizing AI Workflows: GLM-5 Unleashes Agent Mode'
 video: media/2026-03-14-revolutionizing-ai-workflows-glm-5-unleashes-agent.mp4
 ---
-
 
 ## Introduction to GLM-5 Agent Mode
 We just spotted an exciting update from Hugging Models that's worth sharing with the community - the introduction of Agent Mode in GLM-5. This new feature is a significant upgrade to the existing GLM model, and we can't wait to dive into its capabilities.

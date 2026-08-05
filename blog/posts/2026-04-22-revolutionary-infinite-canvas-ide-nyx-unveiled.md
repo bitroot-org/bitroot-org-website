@@ -3,7 +3,7 @@ date: '2026-04-22'
 excerpt: Kraggi's Nyx is a game-changing infinite-canvas IDE that integrates multiple
   AI models, streamlining coding and development. This innovative platform is set
   to transform the way developers work.
-image: https://pbs.twimg.com/amplify_video_thumb/2046826808746668032/img/NCy_IXIwsTvyZbXf.jpg
+image: media/2026-04-22-revolutionary-infinite-canvas-ide-nyx-unveiled.jpg
 published_at: '2026-04-22T18:03:03.557809+00:00'
 sources:
 - https://x.com/i/status/2046827332124430774
@@ -14,7 +14,6 @@ tags:
 title: Revolutionary Infinite-Canvas IDE Nyx Unveiled
 video: media/2026-04-22-revolutionary-infinite-canvas-ide-nyx-unveiled.mp4
 ---
-
 
 ## Introduction to Nyx
 We just spotted an exciting update from Kraggi that's worth sharing with the community - the launch of Nyx, an infinite-canvas IDE that's about to revolutionize the way we code. Here's what caught our attention: Nyx brings together multiple AI models, including Claude Code, Codex, Gemini, Hermes Agent, and Droid, all living on tiles that can be arranged as desired.

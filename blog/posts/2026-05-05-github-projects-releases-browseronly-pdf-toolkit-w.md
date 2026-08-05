@@ -2,7 +2,7 @@
 date: '2026-05-05'
 excerpt: GitHub Projects unveiled an open‑source PDF toolkit that runs fully in the
   browser via WebAssembly, offering more than 90 utilities without any server component.
-image: https://pbs.twimg.com/media/HHi9ngubkAALhhp.jpg?name=orig
+image: media/2026-05-05-github-projects-releases-browseronly-pdf-toolkit-w.jpg
 published_at: '2026-05-05T18:18:27.770936+00:00'
 sources:
 - https://x.com/i/status/2051598119478108162

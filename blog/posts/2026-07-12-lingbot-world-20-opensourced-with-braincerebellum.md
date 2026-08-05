@@ -3,7 +3,7 @@ date: '2026-07-12'
 excerpt: LingBot‑World 2.0 ships with a brain‑cerebellum scaffold that turns a raw
   video world model into an interactive generator, and it’s available for free with
   both 14 B and 1.3 B variants.
-image: https://pbs.twimg.com/amplify_video_thumb/2076182782385213440/img/LMn7uhnv2usjtoCq.jpg
+image: media/2026-07-12-lingbot-world-20-opensourced-with-braincerebellum.jpg
 media:
 - thumbnail: https://pbs.twimg.com/amplify_video_thumb/2076182782385213440/img/LMn7uhnv2usjtoCq.jpg
   type: video

@@ -2,7 +2,7 @@
 date: '2026-07-18'
 excerpt: A new open‑source utility converts any phone‑recorded video into a 996k‑point,
   60 fps walkable 3D scene that runs entirely on your GPU, with no cloud dependence.
-image: https://pbs.twimg.com/amplify_video_thumb/2078311452012847104/img/9MH3xfRXdaHzSPNE.jpg
+image: media/2026-07-18-open-source-tool-turns-phone-video-into-a-local-3d.jpg
 published_at: '2026-07-18T10:12:25.524236+00:00'
 sources:
 - https://x.com/0x0SojalSec/status/2078311540282012024

@@ -8,7 +8,7 @@ excerpt: 'New work for Paper''s new Vector Editing!
 
   Design and Animation: Kendall Gathas, Chaewon Kang, Connor Roy-Shaw, Will Taylor
   (@visualsbywlroo)'
-image: https://pbs.twimg.com/amplify_video_thumb/2062230880404336640/img/12bRzEG2wM9yokEh.jpg
+image: media/2026-06-03-paper-adds-vector-editing-tools-in-latest-update.jpg
 published_at: '2026-06-03T19:00:26.317097+00:00'
 sources:
 - https://x.com/i/status/2062231122184990871

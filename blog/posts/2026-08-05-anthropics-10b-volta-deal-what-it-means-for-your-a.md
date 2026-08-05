@@ -1,14 +1,17 @@
 ---
 date: '2026-08-05'
-excerpt: 'Here''s what founders need to know: the deal is real. The infrastructure is coming. But your API bill probably won''t drop until Q2 2027 at the earliest, and execution risk is baked into every step. For strategic context on current Claude pricing, see our Claude model selection guide.'
-image: https://techcrunch.com/wp-content/uploads/2026/06/Claude-photo.jpg
+excerpt: 'Here''s what founders need to know: the deal is real. The infrastructure
+  is coming. But your API bill probably won''t drop until Q2 2027 at the earliest,
+  and execution risk is baked into every step. For strategic context on current Claude
+  pricing, see our Claude model selection guide.'
+image: media/2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a.jpg
 published_at: '2026-08-05T05:41:04.303Z'
 sources: []
 tags:
-- 'AI'
-- 'API'
-- 'Anthropic'
-- 'Volta'
+- AI
+- API
+- Anthropic
+- Volta
 title: 'Anthropic''s $10B Volta Deal: What It Means for Your API Bill (And When)'
 ---
 

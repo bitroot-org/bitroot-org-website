@@ -2,7 +2,7 @@
 date: '2026-07-10'
 excerpt: A new GitHub list aggregates over 300 AI‑powered security projects, from
   red‑team agents to LLM fuzzers, giving startup engineers a free catalog to explore.
-image: https://pbs.twimg.com/media/HM2TvUfaUAAYMi4.jpg?name=orig
+image: null
 published_at: '2026-07-10T11:43:44.022380+00:00'
 sources:
 - https://x.com/VivekIntel/status/2075477455322923026

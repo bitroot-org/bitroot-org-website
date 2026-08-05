@@ -3,7 +3,7 @@ date: '2026-07-13'
 excerpt: Nexterm bundles SSH, VNC, RDP, SFTP, Docker, and Proxmox into a single web
   UI, letting startups centralize remote server access without buying a commercial
   product.
-image: https://pbs.twimg.com/media/HNFdtgpXYAANb03.png?name=orig
+image: media/2026-07-13-nexterm-opens-source-tool-for-unified-ssh-vnc-and.png
 published_at: '2026-07-13T11:55:50.851758+00:00'
 sources:
 - https://x.com/tom_doerr/status/2076543941793534213

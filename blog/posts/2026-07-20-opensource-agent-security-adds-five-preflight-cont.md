@@ -2,7 +2,7 @@
 date: '2026-07-20'
 excerpt: Nyk released the MIT‑licensed agent‑security CLI, which provides five lightweight
   preflight checks to harden coding agents before they touch a repository.
-image: https://pbs.twimg.com/media/HNpWAEUakAAY5Sj.jpg?name=orig
+image: media/2026-07-20-opensource-agent-security-adds-five-preflight-cont.jpg
 published_at: '2026-07-20T11:39:02.512801+00:00'
 sources:
 - https://x.com/nykdotdev/status/2079068942681993237

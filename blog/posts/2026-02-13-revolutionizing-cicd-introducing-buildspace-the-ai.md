@@ -1,7 +1,7 @@
 ---
 date: '2026-02-13'
 excerpt: Conversational Interfaces, Anywhere
-image: https://framerusercontent.com/images/AwZTXvV6qNfQzOMbhOCGVHEybxo.png?width=2400&height=1260
+image: media/2026-02-13-revolutionizing-cicd-introducing-buildspace-the-ai.png
 published_at: '2026-02-13T19:51:57.201126+00:00'
 sources:
 - https://photon.codes/blog/ci-cd-in-the-age-of-ai
@@ -12,7 +12,6 @@ tags:
 - BuildSpace
 title: 'Revolutionizing CI/CD: Introducing BuildSpace, the AI-Powered Game Changer'
 ---
-
 
 ## Introduction to BuildSpace
 We just spotted an exciting update from Photon that's worth sharing with the community - the introduction of BuildSpace, a library of reusable GitHub Actions that snap together like LEGO to form CI/CD pipelines. Here's what caught our attention about this innovative solution.

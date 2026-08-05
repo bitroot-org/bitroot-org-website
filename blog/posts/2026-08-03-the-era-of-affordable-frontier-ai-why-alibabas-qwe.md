@@ -1,13 +1,16 @@
 ---
 date: '2026-08-03'
-excerpt: 'On August 3, 2026, Alibaba officially unveiled Qwen3.8-Max, a 2.4-trillion-parameter mixture-of-experts model designed to compete with leading frontier models, now available via QwenCloud. But this isn''t just another model release. This is the moment proprietary AI started becoming a commodity.'
-image: https://akm-img-a-in.tosshub.com/indiatoday/images/story/202608/alibaba-qwen-38-max-034326994-16x9_0.png?VersionId=P_ZfILY4UplgBo0wjUTGq9fEVLyT7yHa&size=690:388
+excerpt: On August 3, 2026, Alibaba officially unveiled Qwen3.8-Max, a 2.4-trillion-parameter
+  mixture-of-experts model designed to compete with leading frontier models, now available
+  via QwenCloud. But this isn't just another model release. This is the moment proprietary
+  AI started becoming a commodity.
+image: media/2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe.jpg
 published_at: '2026-08-03T12:36:35.803Z'
 sources: []
 tags:
-- 'Frontier AI'
-- 'AI'
-- 'Qwen'
+- Frontier AI
+- AI
+- Qwen
 title: 'The Era of Affordable Frontier AI: Why Alibaba''s Qwen 3.8-Max Changes Everything'
 ---
 

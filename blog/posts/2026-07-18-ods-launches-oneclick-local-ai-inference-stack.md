@@ -2,7 +2,7 @@
 date: '2026-07-18'
 excerpt: ODS detects your hardware, pulls the optimal model, and spins up a private
   AI server with Open WebUI—all without cloud or subscription.
-image: https://pbs.twimg.com/media/HNcoODQWAAAZ4K2.jpg?name=orig
+image: media/2026-07-18-ods-launches-oneclick-local-ai-inference-stack.jpg
 published_at: '2026-07-18T10:11:20.677508+00:00'
 sources:
 - https://x.com/TheAhmadOsman/status/2078174547745046934

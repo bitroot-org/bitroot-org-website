@@ -3,7 +3,7 @@ date: '2026-06-23'
 excerpt: Google’s Interactions API is now GA, offering managed agents and background
   execution for Gemini models. The rollout adds a production‑ready entry point for
   AI‑driven workflows.
-image: https://pbs.twimg.com/media/HLbejaxa8AARgd9.jpg?name=orig
+image: media/2026-06-23-google-makes-interactions-api-generally-available.jpg
 published_at: '2026-06-23T01:52:34.079205+00:00'
 sources:
 - https://x.com/i/status/2069108666121503068

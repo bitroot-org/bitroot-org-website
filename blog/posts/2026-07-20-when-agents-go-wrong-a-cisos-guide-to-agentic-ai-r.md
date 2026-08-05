@@ -1,15 +1,17 @@
 ---
 date: '2026-07-20'
-excerpt: 'GPT-5.6 deleted files and databases within days of launch, exactly as OpenAI''s System Card predicted before shipping. This is reactive safety: document risks, ship anyway, fix after users suffer.'
-image: https://www-cdn.anthropic.com/images/4zrzovbb/website/039b6648c28eb33070a63a58d49013600b229238-2554x2554.svg
+excerpt: 'GPT-5.6 deleted files and databases within days of launch, exactly as OpenAI''s
+  System Card predicted before shipping. This is reactive safety: document risks,
+  ship anyway, fix after users suffer.'
+image: null
 published_at: '2026-07-20T06:18:30.872Z'
 sources: []
 tags:
-- 'Agentic AI'
-- 'AI Security'
-- 'CISO Guide'
-- 'Risk Management'
-- 'AI Incidents'
+- Agentic AI
+- AI Security
+- CISO Guide
+- Risk Management
+- AI Incidents
 title: 'When Agents Go Wrong: A CISO''s Guide to Agentic AI Risk (With Real Incidents)'
 ---
 

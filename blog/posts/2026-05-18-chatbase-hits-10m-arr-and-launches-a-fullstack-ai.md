@@ -3,7 +3,7 @@ date: '2026-05-18'
 excerpt: Chatbase announced it has surpassed $10 M in annual recurring revenue and
   introduced a new platform that bundles context, tools, and human‑in‑the‑loop guardrails
   for customer‑facing AI agents.
-image: https://pbs.twimg.com/amplify_video_thumb/2056390673537089536/img/-7u6_IZJSt6rn6Cp.jpg
+image: media/2026-05-18-chatbase-hits-10m-arr-and-launches-a-fullstack-ai.jpg
 published_at: '2026-05-18T18:29:51.799299+00:00'
 sources:
 - https://x.com/i/status/2056394356769366166

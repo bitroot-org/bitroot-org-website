@@ -7,7 +7,7 @@ excerpt: 'Introducing Perplexity Computer.
 
 
   It can research, design, code, deploy, and manage any project end-to-end.'
-image: https://pbs.twimg.com/amplify_video_thumb/2026695448996753409/img/yeKxOwuVQwjvBDYt.jpg
+image: media/2026-02-25-revolutionizing-ai-capabilities-the-dawn-of-perple.jpg
 published_at: '2026-02-25T18:04:43.428272+00:00'
 sources:
 - https://x.com/i/status/2026695550771540489
@@ -18,7 +18,6 @@ tags:
 title: 'Revolutionizing AI Capabilities: The Dawn of Perplexity Computer'
 video: media/2026-02-25-revolutionizing-ai-capabilities-the-dawn-of-perple.mp4
 ---
-
 
 ## Introduction to Perplexity Computer
 We just spotted an exciting update from Perplexity that's worth sharing with the community - the introduction of Perplexity Computer, a system that unifies every current AI capability into one platform. This innovative technology has the potential to transform the way developers work and interact with AI. Here's what caught our attention about this revolutionary update.

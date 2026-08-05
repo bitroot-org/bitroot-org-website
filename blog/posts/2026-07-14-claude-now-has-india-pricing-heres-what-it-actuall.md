@@ -1,17 +1,21 @@
 ---
 date: '2026-07-14'
-excerpt: 'Anthropic has quietly introduced rupee-denominated pricing for Claude in India — no announcement, no press release. Here''s the full breakdown of what every plan costs, what the UPI gap means for Indian founders, and how it compares to ChatGPT and Gemini.'
-image: https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2269811684.jpg
+excerpt: Anthropic has quietly introduced rupee-denominated pricing for Claude in
+  India — no announcement, no press release. Here's the full breakdown of what every
+  plan costs, what the UPI gap means for Indian founders, and how it compares to ChatGPT
+  and Gemini.
+image: media/2026-07-14-claude-now-has-india-pricing-heres-what-it-actuall.jpg
 published_at: '2026-07-14T05:32:31.603Z'
 sources: []
 tags:
-- 'Claude India'
-- 'Anthropic'
-- 'AI Pricing'
-- 'Indian Founders'
-- 'Claude Pro'
-- 'AI Tools India'
-title: 'Claude now has India pricing. Here''s what it actually costs - and what''s still missing.'
+- Claude India
+- Anthropic
+- AI Pricing
+- Indian Founders
+- Claude Pro
+- AI Tools India
+title: Claude now has India pricing. Here's what it actually costs - and what's still
+  missing.
 ---
 
 Anthropic has introduced rupee-denominated pricing for Claude in India — quietly, without an announcement, and years after Indian users first asked for it. If you have been paying for Claude in dollars and absorbing forex conversion fees and GST on top, that friction is now gone for most plans.

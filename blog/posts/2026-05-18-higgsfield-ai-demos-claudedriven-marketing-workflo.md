@@ -3,7 +3,7 @@ date: '2026-05-18'
 excerpt: Higgsfield AI released an 18‑minute walkthrough that stitches Claude’s LLM
   with its MCP platform, showing a laptop‑based agency pipeline from research to ad
   spend approval.
-image: https://pbs.twimg.com/amplify_video_thumb/2056404580619919361/img/PeGD0qy1MUWs-i8m.jpg
+image: media/2026-05-18-higgsfield-ai-demos-claudedriven-marketing-workflo.jpg
 published_at: '2026-05-18T18:29:11.811570+00:00'
 sources:
 - https://x.com/i/status/2056411641592287435

@@ -7,7 +7,7 @@ excerpt: 'Gemini now generates designs for your apps while they’re building!
 
 
   now live in AI Studio'
-image: https://pbs.twimg.com/amplify_video_thumb/2044111151097884672/img/0zJFDJUcEryum-oo.jpg
+image: media/2026-04-15-revolutionizing-app-design-ai-generated-themes-now.jpg
 published_at: '2026-04-15T02:04:27.387749+00:00'
 sources:
 - https://x.com/i/status/2044111418786754620
@@ -18,7 +18,6 @@ tags:
 title: 'Revolutionizing App Design: AI-Generated Themes Now Available'
 video: media/2026-04-15-revolutionizing-app-design-ai-generated-themes-now.mp4
 ---
-
 
 ## Introduction to AI-Powered App Design
 We just spotted an exciting update from Google AI Studio that's worth sharing with the community - their Gemini feature can now generate designs for apps while they're being built. Here's what caught our attention: the ability to pick between 5 themes and get beautiful designs out of the box. 

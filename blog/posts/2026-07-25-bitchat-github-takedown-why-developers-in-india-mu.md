@@ -1,15 +1,18 @@
 ---
 date: '2026-07-25'
-excerpt: 'Bitchat''s gone from GitHub. China removed it from App Store in April. Now India. If you''re building offline-first or decentralized communication tools, the pattern is clear—regulatory friction is a structural cost, not an edge case.-'
-image: https://th-i.thgim.com/public/incoming/s017lf/article71262085.ece/alternates/LANDSCAPE_1200/12-11-JACK_DORSEY_CEO_TWITTER_B.jpg
+excerpt: Bitchat's gone from GitHub. China removed it from App Store in April. Now
+  India. If you're building offline-first or decentralized communication tools, the
+  pattern is clear—regulatory friction is a structural cost, not an edge case.-
+image: media/2026-07-25-bitchat-github-takedown-why-developers-in-india-mu.jpg
 published_at: '2026-07-25T05:25:43.919Z'
 sources:
 - https://techcrunch.com/2026/07/24/indias-move-against-jack-dorseys-bitchat-sparks-legal-debate/
 tags:
-- 'Startups'
-- 'Open Source'
-- 'Technology'
-title: 'Bitchat GitHub Takedown: Why Developers in India Must Rethink Offline-First Apps'
+- Startups
+- Open Source
+- Technology
+title: 'Bitchat GitHub Takedown: Why Developers in India Must Rethink Offline-First
+  Apps'
 ---
 
 On July 24, 2026, Ex-Twitter co-founder Jack Dorsey announced that GitHub received an order from the Indian government to remove repositories hosting Bitchat—a messaging application designed to work without internet connectivity. The takedown order was issued amid ongoing protests regarding alleged exam irregularities.

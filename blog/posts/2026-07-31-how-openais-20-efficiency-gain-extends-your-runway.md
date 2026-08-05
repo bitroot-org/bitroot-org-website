@@ -1,14 +1,15 @@
 ---
 date: '2026-07-31'
-excerpt: 'Last week, OpenAI shipped something that changes that calculation: GPT-5.6 Sol, with two improvements that matter.'
-image: https://diplo-media.s3.eu-central-1.amazonaws.com/2026/06/openai-gpt-5-6-sol-preview-1024x576.jpg
+excerpt: 'Last week, OpenAI shipped something that changes that calculation: GPT-5.6
+  Sol, with two improvements that matter.'
+image: media/2026-07-31-how-openais-20-efficiency-gain-extends-your-runway.jpg
 published_at: '2026-07-31T12:40:37.657Z'
 sources: []
 tags:
-- 'AI'
-- 'OpenAI'
-- 'GPT'
-title: 'How OpenAI''s 20% Efficiency Gain Extends Your Runway (And Which Model to Pick)'
+- AI
+- OpenAI
+- GPT
+title: How OpenAI's 20% Efficiency Gain Extends Your Runway (And Which Model to Pick)
 ---
 
 You just got a notification from your OpenAI dashboard. Your AI bill jumped $800 last month.

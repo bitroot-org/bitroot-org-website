@@ -2,7 +2,7 @@
 date: '2026-02-10'
 excerpt: "\"\U0001F408 nanobot: The Ultra-Lightweight OpenClaw\". Contribute to HKUDS/nanobot
   development by creating an account on GitHub."
-image: https://opengraph.githubassets.com/860a29c3b70dd9f9266b82558c0c427fb47036deb672088e1b5f525631120a27/HKUDS/nanobot
+image: null
 published_at: '2026-02-10T19:24:09.031498+00:00'
 sources:
 - https://github.com/HKUDS/nanobot

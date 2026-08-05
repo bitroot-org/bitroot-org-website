@@ -8,7 +8,7 @@ excerpt: 'Today I''m launching Interpreter.
 
 
   Runs offline, works with any model, and it''s free.'
-image: https://pbs.twimg.com/amplify_video_thumb/2024013495285805058/img/7WZN7wcEd-PRLveg.jpg
+image: media/2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in.jpg
 published_at: '2026-02-19T19:04:38.946484+00:00'
 sources:
 - https://x.com/i/status/2024227639087813035
@@ -19,7 +19,6 @@ tags:
 title: 'Revolutionary AI-Powered Desktop Agent Unveiled: Interpreter'
 video: media/2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in.mp4
 ---
-
 
 ## Introduction to Interpreter
 We just spotted an exciting update from killian that's worth sharing with the community, as it has the potential to revolutionize our daily productivity. Interpreter is a desktop agent that can perform a variety of tasks, including filling out PDFs and editing Excel and Word documents. 

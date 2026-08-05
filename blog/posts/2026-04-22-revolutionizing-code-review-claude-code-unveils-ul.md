@@ -3,7 +3,7 @@ date: '2026-04-22'
 excerpt: Claude Code introduces Ultrareview, a game-changing feature that harnesses
   the power of cloud-based bug-hunting agents to streamline code review. This innovation
   promises to simplify the development process and improve code quality.
-image: https://pbs.twimg.com/amplify_video_thumb/2046999336412913664/img/Orz36ChX1Wvcp-7s.jpg
+image: media/2026-04-22-revolutionizing-code-review-claude-code-unveils-ul.jpg
 published_at: '2026-04-22T17:52:06.887665+00:00'
 sources:
 - https://x.com/i/status/2046999435239133246
@@ -14,7 +14,6 @@ tags:
 title: 'Revolutionizing Code Review: Claude Code Unveils Ultrareview'
 video: media/2026-04-22-revolutionizing-code-review-claude-code-unveils-ul.mp4
 ---
-
 
 ## Introduction to Ultrareview
 We just spotted an exciting update from ClaudeDevs that's worth sharing with the community - the introduction of Ultrareview in Claude Code. This feature is a research preview that utilizes a fleet of bug-hunting agents in the cloud to identify potential issues in your code. 

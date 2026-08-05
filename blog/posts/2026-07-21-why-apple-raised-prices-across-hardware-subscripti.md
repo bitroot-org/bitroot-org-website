@@ -1,11 +1,13 @@
 ---
 date: '2026-07-21'
-excerpt: 'Apple raised prices twice in three weeks. Hardware in June, subscriptions in July. Different cost drivers, compressed timeline, same strategic direction.'
-image: https://static.toiimg.com/thumb/msid-132501351,imgsize-50946,width-400,height-225,resizemode-4/apple.jpg
+excerpt: Apple raised prices twice in three weeks. Hardware in June, subscriptions
+  in July. Different cost drivers, compressed timeline, same strategic direction.
+image: media/2026-07-21-why-apple-raised-prices-across-hardware-subscripti.jpg
 published_at: '2026-07-21T05:16:09.877Z'
 sources: []
 tags: []
-title: 'Why Apple Raised Prices Across Hardware & Subscriptions in 2026: A Data-Driven Analysis'
+title: 'Why Apple Raised Prices Across Hardware & Subscriptions in 2026: A Data-Driven
+  Analysis'
 ---
 
 Apple raised prices twice in three weeks. Hardware first—MacBooks and iPads jumped 20-40% on June 25, 2026. Subscriptions followed three weeks later on July 17—Apple Music up 17-28%, Apple One bundles up $2/month. Different product categories, different stated supply chain reasons, same company, same compressed timeframe, same strategic direction. Your instinct that something feels off is correct. But this isn't conspiracy or greed. It's something more systematic: strategic margin optimization using real supply chain pressure as operational cover.

@@ -1,14 +1,15 @@
 ---
 date: '2026-07-27'
-excerpt: 'Opus 5 outperforms Fable 5 on benchmarks, and costs 60% less. Here''s why Opus 5 is now the default Claude model for SaaS, and when to upgrade from Opus 4.8.'
-image: https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F54b7ab1d2c2521f83ae5d2da5f9d99321c370d24-2880x1620.png&w=3840&q=75
+excerpt: Opus 5 outperforms Fable 5 on benchmarks, and costs 60% less. Here's why
+  Opus 5 is now the default Claude model for SaaS, and when to upgrade from Opus 4.8.
+image: media/2026-07-27-claude-opus-5-vs-fable-5-which-model-should-your-s.webp
 published_at: '2026-07-27T01:31:04.114Z'
 sources: []
 tags:
-- 'AI'
-- 'Opus 5'
-- 'Anthropic'
-- 'SaaS'
+- AI
+- Opus 5
+- Anthropic
+- SaaS
 title: 'Claude Opus 5 vs. Fable 5: Which Model Should Your SaaS Use?'
 ---
 

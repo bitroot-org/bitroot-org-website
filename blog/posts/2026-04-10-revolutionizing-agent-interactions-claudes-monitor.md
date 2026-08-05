@@ -3,7 +3,7 @@ date: '2026-04-10'
 excerpt: Noah Zweben announces the Monitor tool, a game-changer for Claude's background
   scripts, and we're excited to dive into its potential. This innovation promises
   to reduce token usage and move away from polling in the agent loop.
-image: https://pbs.twimg.com/amplify_video_thumb/2042332212532596736/img/YwBOHFk1xJkZQG0B.jpg
+image: media/2026-04-10-revolutionizing-agent-interactions-claudes-monitor.jpg
 published_at: '2026-04-10T17:37:30.477429+00:00'
 sources:
 - https://x.com/i/status/2042332268450963774
@@ -14,7 +14,6 @@ tags:
 title: 'Revolutionizing Agent Interactions: Claude''s Monitor Tool Unveiled'
 video: media/2026-04-10-revolutionizing-agent-interactions-claudes-monitor.mp4
 ---
-
 
 ## Introduction to the Monitor Tool
 We just spotted an exciting update from Noah Zweben that's worth sharing with the community - the introduction of the Monitor tool for Claude. This tool allows Claude to create background scripts that wake the agent up when needed, and we can't wait to explore its possibilities.

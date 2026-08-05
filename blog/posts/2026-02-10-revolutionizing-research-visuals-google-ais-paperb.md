@@ -2,7 +2,7 @@
 date: '2026-02-10'
 excerpt: 'Google AI Introduces PaperBanana: An Agentic Framework that Automates Publication
   Ready Methodology Diagrams and Statistical Plots'
-image: https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-18.png
+image: media/2026-02-10-revolutionizing-research-visuals-google-ais-paperb.png
 published_at: '2026-02-10T19:18:56.973545+00:00'
 sources:
 - https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/
@@ -14,7 +14,6 @@ tags:
 - PaperBanana
 title: 'Revolutionizing Research Visuals: Google AI''s PaperBanana Framework'
 ---
-
 
 ## Introduction to PaperBanana
 We just spotted an exciting update from Google AI that's worth sharing with the community - the introduction of PaperBanana, a multi-agent framework that automates high-quality academic diagrams and plots. Here's what caught our attention about this innovative tool: it has the potential to streamline the research workflow by automating a labor-intensive bottleneck.

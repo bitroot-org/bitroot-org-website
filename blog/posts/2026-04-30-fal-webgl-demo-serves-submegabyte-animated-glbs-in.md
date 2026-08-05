@@ -2,7 +2,7 @@
 date: '2026-04-30'
 excerpt: A new Fal‑powered WebGL demo shows how to turn AI‑generated images into animated
   GLB assets under 1 MB, using a fully static front‑end.
-image: https://pbs.twimg.com/amplify_video_thumb/2049776252043800577/img/qiP2OE9xXmEWsuHh.jpg
+image: media/2026-04-30-fal-webgl-demo-serves-submegabyte-animated-glbs-in.jpg
 published_at: '2026-04-30T20:25:55.177126+00:00'
 sources:
 - https://x.com/i/status/2049836416289407133

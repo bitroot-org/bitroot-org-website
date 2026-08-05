@@ -10,7 +10,7 @@ excerpt: 'Mockdown is alive again.
 
 
   http://www.mockdown.design'
-image: https://pbs.twimg.com/media/HDAaTjpWQAAVd-7.jpg?name=orig
+image: media/2026-03-11-reviving-mockdown-ai-powered-wireframing-revolutio.jpg
 published_at: '2026-03-11T02:28:08.413578+00:00'
 sources:
 - https://x.com/i/status/2031152691502555592
@@ -21,7 +21,6 @@ tags:
 - Claude Code
 title: 'Reviving Mockdown: AI-Powered Wireframing Revolution'
 ---
-
 
 ## Introduction to Mockdown
 We just spotted an exciting update from Mike Bespalov that's worth sharing with the community - Mockdown is alive again, and it's more powerful than ever. This tool has the potential to revolutionize the way we approach wireframing and design. Here's what caught our attention about this update: the ability to draw a wireframe in ASCII and get a working page back using Claude Code.

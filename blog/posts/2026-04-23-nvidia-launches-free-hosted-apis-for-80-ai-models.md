@@ -3,7 +3,7 @@ date: '2026-04-23'
 excerpt: Nvidia now provides free access to around 80 large language models via hosted
   APIs, with a simple key‑based setup. Engineers can experiment without paying for
   inference.
-image: https://pbs.twimg.com/media/HGhtdU7aMAAl5f5.png?name=orig
+image: media/2026-04-23-nvidia-launches-free-hosted-apis-for-80-ai-models.png
 published_at: '2026-04-23T09:12:29.006793+00:00'
 sources:
 - https://x.com/dhruvtwt_/status/2047006444701274380

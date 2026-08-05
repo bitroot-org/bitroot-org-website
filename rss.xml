@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 05 Aug 2026 06:28:43 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2026 15:35:30 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bending Spoons Acquires Airtable for $1.285B: What Founders Need to Know</title>
@@ -16,7 +16,7 @@
       <category>M&amp;A</category>
       <category>Founders</category>
       <category>MCP</category>
-      <enclosure url="https://pbs.twimg.com/media/HO3FWInXwAEWuKV?format=jpg&amp;name=small" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-08-05-bending-spoons-acquires-airtable-for-1-285b-what-f.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Anthropic's $10B Volta Deal: What It Means for Your API Bill (And When)</title>
@@ -28,7 +28,7 @@
       <category>API</category>
       <category>Anthropic</category>
       <category>Volta</category>
-      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/06/Claude-photo.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Why Cloud Providers Are Abandoning the SaaS AI Model</title>
@@ -40,7 +40,7 @@
       <category>Cloud</category>
       <category>SaaS</category>
       <category>AI</category>
-      <enclosure url="https://techcrunch.com/wp-content/uploads/2025/06/SuperBlocks-founder-Brad-Menezes.jpg?resize=1280,865" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Claude Model Selection for Founders: The $100-to-$10K Runways</title>
@@ -53,7 +53,6 @@
       <category>AI</category>
       <category>Claude</category>
       <category>API</category>
-      <enclosure url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d225e31f7aa22c1f28cb_46e4aa7ea208ed440d5bd9e9e3a0ee66bc336ff1-1000x1000.svg" type="image/jpeg" length="0" />
       <source url="https://claude.com/blog/claude-models-explained-choosing-the-best-model-for-your-use-case">Original Source</source>
     </item>
     <item>
@@ -65,7 +64,7 @@
       <category>Frontier AI</category>
       <category>AI</category>
       <category>Qwen</category>
-      <enclosure url="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202608/alibaba-qwen-38-max-034326994-16x9_0.png?VersionId=P_ZfILY4UplgBo0wjUTGq9fEVLyT7yHa&amp;size=690:388" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Ship an App in 2026: How AI Coding Unlocked a New Founder Playbook</title>
@@ -77,7 +76,7 @@
       <category>AI</category>
       <category>iOS</category>
       <category>Google Play</category>
-      <enclosure url="https://techcrunch.com/wp-content/uploads/2025/12/app-of-the-year.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Chromatorium launches as free open‑source colour tool</title>
@@ -91,7 +90,7 @@
       <category>open source</category>
       <category>design</category>
       <category>illustration</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2076177341840314368/img/QYdxNLTgU0CZs5no.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-12-chromatorium-launches-as-free-opensource-colour-to.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/Be_Mai_Waifu/status/2076180299420184830">Original Source</source>
     </item>
     <item>
@@ -102,7 +101,7 @@
       <pubDate>Sat, 01 Aug 2026 05:52:06 +0000</pubDate>
       <category>Agent. AI</category>
       <category>Wrapper</category>
-      <enclosure url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqIXSA21BWLq5nf3YnOTF-29rW8WBoWdFuQBns1IU-Qg&amp;s=10" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Privacy Analytics for Startups: Reignat vs Plausible vs Fathom</title>
@@ -112,7 +111,7 @@
       <pubDate>Fri, 31 Jul 2026 11:08:38 +0000</pubDate>
       <category>Analytics</category>
       <category>Privacy</category>
-      <enclosure url="https://images.ctfassets.net/ddoznp8df51r/7orRkab7hje1kz2nKh9nkD/33d84053996f68e78cd1d4cbed5e78d9/07w.png?w=800&amp;fm=avif&amp;q=100" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-31-privacy-analytics-for-startups-reignat-vs-plausibl.avif" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>How OpenAI's 20% Efficiency Gain Extends Your Runway (And Which Model to Pick)</title>
@@ -123,7 +122,7 @@
       <category>AI</category>
       <category>OpenAI</category>
       <category>GPT</category>
-      <enclosure url="https://diplo-media.s3.eu-central-1.amazonaws.com/2026/06/openai-gpt-5-6-sol-preview-1024x576.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-31-how-openais-20-efficiency-gain-extends-your-runway.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>MCP becomes stateless, enabling serverless and edge deployments</title>
@@ -136,7 +135,7 @@
       <category>mcp</category>
       <category>serverless</category>
       <category>edge computing</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2082152403114348544/img/hZTMBpD7IpCT1zXh.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-29-mcp-becomes-stateless-enabling-serverless-and-edge.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2082164250496348268">Original Source</source>
     </item>
     <item>
@@ -146,7 +145,7 @@
       <description>WhatsApp calls just landed in your browser. No app needed. No download. July 28, 2026 changed how you think about video calling.</description>
       <pubDate>Wed, 29 Jul 2026 07:59:40 +0000</pubDate>
       <category>WhatsApp</category>
-      <enclosure url="https://media.licdn.com/dms/image/v2/D5622AQGgvj1NR6GkCA/feedshare-shrink_800/B56Z.pNheXKMAc-/0/1785250322596?e=1787184000&amp;v=beta&amp;t=XdMWYFGyTAWV2cmdu2TjgKsKu54qXFTN2Urc80iboRI" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-29-whatsapp-calls-in-your-browser-does-it-replace-zoo.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Cursor Start at ₹649/Month: What Developers in India Actually Get (And What They Don't)</title>
@@ -158,7 +157,7 @@
       <category>AI</category>
       <category>Coding</category>
       <category>Grok</category>
-      <enclosure url="https://pbs.twimg.com/media/HOSr9QJaQAA6z-S?format=png&amp;name=900x900" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-29-cursor-start-at-649-month-what-developers-in-india.png" type="image/png" length="0" />
     </item>
     <item>
       <title>Open-Weights Models Are Fine: What Founders Should Actually Worry About</title>
@@ -171,7 +170,7 @@
       <category>AI</category>
       <category>Open-Source</category>
       <category>Founders</category>
-      <enclosure url="https://images.t2online.in/cdn-cgi/image/width=480,height=270,quality=70,fit=cover,gravity=face,format=auto/https://apis.t2online.in/getImageStream/7947/1785210298445.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-28-open-weights-models-are-fine-what-founders-should.jpg" type="image/jpeg" length="0" />
       <source url="https://www.anthropic.com/news/position-open-weights-models">Original Source</source>
     </item>
     <item>
@@ -185,7 +184,7 @@
       <category>ocr</category>
       <category>multilingual</category>
       <category>huggingface</category>
-      <enclosure url="https://pbs.twimg.com/media/HNZ_4vjaoAEai85.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-17-baberu-ocr-launches-as-a-multilingual-comic-ocr-on.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/daichi_genshiai/status/2077989874398032361">Original Source</source>
     </item>
     <item>
@@ -198,7 +197,7 @@
       <category>Opus 5</category>
       <category>Anthropic</category>
       <category>SaaS</category>
-      <enclosure url="https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F54b7ab1d2c2521f83ae5d2da5f9d99321c370d24-2880x1620.png&amp;w=3840&amp;q=75" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-27-claude-opus-5-vs-fable-5-which-model-should-your-s.webp" type="image/webp" length="0" />
     </item>
     <item>
       <title>Agentic AI for Founders: When You Need Agents (And When You Don't)</title>
@@ -209,7 +208,7 @@
       <category>AI</category>
       <category>Agents</category>
       <category>Founders</category>
-      <enclosure url="https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2024/12/marquee-agentforce-agentic-ai.png?resize=1024,576" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-27-agentic-ai-for-founders-when-you-need-agents-and-w.webp" type="image/webp" length="0" />
     </item>
     <item>
       <title>Bitchat GitHub Takedown: Why Developers in India Must Rethink Offline-First Apps</title>
@@ -222,7 +221,7 @@
       <category>Startups</category>
       <category>Open Source</category>
       <category>Technology</category>
-      <enclosure url="https://th-i.thgim.com/public/incoming/s017lf/article71262085.ece/alternates/LANDSCAPE_1200/12-11-JACK_DORSEY_CEO_TWITTER_B.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-25-bitchat-github-takedown-why-developers-in-india-mu.jpg" type="image/jpeg" length="0" />
       <source url="https://techcrunch.com/2026/07/24/indias-move-against-jack-dorseys-bitchat-sparks-legal-debate/">Original Source</source>
     </item>
     <item>
@@ -236,7 +235,7 @@
       <category>react</category>
       <category>ai tools</category>
       <category>open source</category>
-      <enclosure url="https://pbs.twimg.com/media/HNe8E3KWUAAh1nt.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-18-firecrawl-launches-openlovable-to-autogenerate-rea.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/N0V4Dev/status/2078336551696626102">Original Source</source>
     </item>
     <item>
@@ -250,7 +249,7 @@
       <category>css</category>
       <category>ui</category>
       <category>open-source</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2076542133906116608/img/O1bt-grEOM8JdvR7.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-13-css-texteffects-library-expands-to-66-readymade-st.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/codesharpdev/status/2076542275296108963">Original Source</source>
     </item>
     <item>
@@ -264,7 +263,7 @@
       <category>Google Gemini</category>
       <category>AI development</category>
       <category>Technology</category>
-      <enclosure url="https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2026/07/Gemini-3.5-Pro-cover.jpg?w=1500&amp;quality=82&amp;strip=all&amp;ssl=1" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-24-why-googles-gemini-3-5-pro-is-months-behind-the-co.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Claude Code desktop adds iOS simulator panel in public beta</title>
@@ -277,7 +276,7 @@
       <category>claude</category>
       <category>ios development</category>
       <category>desktop tools</category>
-      <enclosure url="https://pbs.twimg.com/media/HNx8dz-bwAAm8xR.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-23-claude-code-desktop-adds-ios-simulator-panel-in-pu.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2079674432038248611">Original Source</source>
     </item>
     <item>
@@ -292,7 +291,7 @@
       <category>code scanning</category>
       <category>claude</category>
       <category>beta</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2079986661207732224/img/6P-2l2p-49hKFPco.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-23-claude-code-adds-beta-security-scanning-plugin-for.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2079990597973057691">Original Source</source>
     </item>
     <item>
@@ -306,7 +305,7 @@
       <category>video generation</category>
       <category>causal model</category>
       <category>hardware</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2080162880540831744/img/fVGO-7iGBytKJhCL.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/Fried_rice/status/2080172920782066079">Original Source</source>
     </item>
     <item>
@@ -320,7 +319,7 @@
       <category>open source intelligence</category>
       <category>geopolitical monitoring</category>
       <category>real‑time analytics</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2080032886007230465/img/pk36SoYpjDnX4VaL.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-23-world-monitor-opensources-a-billiondollar-warroom.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/Abobsterina/status/2080032942810706375">Original Source</source>
     </item>
     <item>
@@ -335,7 +334,7 @@
       <category>garch</category>
       <category>volatility</category>
       <category>open-source</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2080163505848950784/img/Ly9lhCXQvLWTWnhv.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/milesdeutscher/status/2080163535250948523">Original Source</source>
     </item>
     <item>
@@ -349,7 +348,7 @@
       <category>AI Safety</category>
       <category>Developer Security</category>
       <category>LLM Security</category>
-      <enclosure url="https://media.wired.com/photos/6a5ff5b0f95e7d91469f8f3d/1:1/w_1920,c_limit/security_openai_hack_huggingface.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>MIT and Toyota open‑source CarCrashNet dataset, now viewable in FiftyOne</title>
@@ -363,7 +362,7 @@
       <category>computer vision</category>
       <category>simulation</category>
       <category>fiftyone</category>
-      <enclosure url="https://pbs.twimg.com/tweet_video_thumb/HN5AizwX0AA9NBn.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/jimmy_voxel51/status/2080171071756464329">Original Source</source>
     </item>
     <item>
@@ -377,7 +376,7 @@
       <category>ai</category>
       <category>cost optimization</category>
       <category>model routing</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2079993297507164160/img/fam5VXpRkuraLQ-y.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-23-cursor-launches-router-to-cut-model-costs-by-60.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2079993729532989500">Original Source</source>
     </item>
     <item>
@@ -390,7 +389,7 @@
       <pubDate>Thu, 23 Jul 2026 11:03:02 +0000</pubDate>
       <category>hardware testing</category>
       <category>ai tooling</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2080059036527976448/img/dkdJGmQiXx3OwvDB.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-23-claude-code-eyes-adds-visual-hardware-verification.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/RoundtableSpace/status/2080084226364366994">Original Source</source>
     </item>
     <item>
@@ -404,7 +403,6 @@
       <category>group chat</category>
       <category>open source</category>
       <category>team communication</category>
-      <enclosure url="https://pbs.twimg.com/card_img/2079583114641444864/ZFxGc51V?format=jpg&amp;name=900x900" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2079605800998146171">Original Source</source>
     </item>
     <item>
@@ -419,7 +417,7 @@
       <category>ai</category>
       <category>signature</category>
       <category>fastapi</category>
-      <enclosure url="https://pbs.twimg.com/media/HNzv2HMXYAA4fWI.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-22-signspot-launches-ai-pdf-signature-field-extractor.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/Adedoyinjames_/status/2079803185384825294">Original Source</source>
     </item>
     <item>
@@ -433,7 +431,7 @@
       <category>ai</category>
       <category>news</category>
       <category>api</category>
-      <enclosure url="https://pbs.twimg.com/media/HNz3p43WsAAWOi1.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-22-runtimewire-opens-free-live-aieconomy-news-feed.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/runtimewire/status/2079809429411611008">Original Source</source>
     </item>
     <item>
@@ -447,7 +445,7 @@
       <category>patchy</category>
       <category>image editing</category>
       <category>open source</category>
-      <enclosure url="https://pbs.twimg.com/ext_tw_video_thumb/2079761693270253569/pu/img/NPDG_lAtWAUCWx7T.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-22-patchy-082-adds-affinity-import-and-scripting-test.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/rtsoft/status/2079761713381970211">Original Source</source>
     </item>
     <item>
@@ -461,7 +459,7 @@
       <category>video ai</category>
       <category>open source</category>
       <category>visual audit</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2079808466563330048/img/J2fw9V2jZXCUXqyF.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-22-opensource-ai-agent-audits-video-frames-automatica.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/buildwith_SUMIT/status/2079810132330807504">Original Source</source>
     </item>
     <item>
@@ -475,7 +473,7 @@
       <category>Open Source AI</category>
       <category>AI Benchmarks</category>
       <category>Claude Fable 5</category>
-      <enclosure url="https://aitoolsreview.co.uk/_next/image?url=%2Fmedia%2Farticles%2Finsights%2Fkimi-k3-vs-claude-fable-5%2Faa-intelligence-index.avif&amp;w=1920&amp;q=75&amp;dpl=dpl_269LMm4WTq3eHE8nnHxFFvL2KnDc" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven.avif" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Ateno releases AI room designer with free trial and paid Pro tier</title>
@@ -488,7 +486,7 @@
       <category>ai design</category>
       <category>room redesign</category>
       <category>startup tools</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2079807549780692992/img/qEtkC57milyvxhhF.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-22-ateno-releases-ai-room-designer-with-free-trial-an.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/SviatoslavG/status/2079807586665451758">Original Source</source>
     </item>
     <item>
@@ -497,7 +495,7 @@
       <guid isPermaLink="true">https://bitroot.org/blog/2026-07-21-why-apple-raised-prices-across-hardware-subscripti/</guid>
       <description>Apple raised prices twice in three weeks. Hardware in June, subscriptions in July. Different cost drivers, compressed timeline, same strategic direction.</description>
       <pubDate>Tue, 21 Jul 2026 05:16:09 +0000</pubDate>
-      <enclosure url="https://static.toiimg.com/thumb/msid-132501351,imgsize-50946,width-400,height-225,resizemode-4/apple.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-21-why-apple-raised-prices-across-hardware-subscripti.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Vigolium launches AI-driven open-source vulnerability assessment framework</title>
@@ -510,7 +508,6 @@
       <category>vulnerability scanning</category>
       <category>open source</category>
       <category>appsec</category>
-      <enclosure url="https://pbs.twimg.com/media/HNuvrWvb0AAZ0lL.jpg?name=orig" type="image/jpeg" length="0" />
       <source url="https://x.com/VivekIntel/status/2079448821285929469">Original Source</source>
     </item>
     <item>
@@ -524,7 +521,7 @@
       <category>ocr</category>
       <category>open source</category>
       <category>local ai</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2079433693265833984/img/QDmtJh7IOXQoBavt.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-21-unlimited-ocr-opensource-3b-model-reads-100page-pd.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/AlexMurdock5499/status/2079433722252657068">Original Source</source>
     </item>
     <item>
@@ -538,7 +535,7 @@
       <category>mac</category>
       <category>time tracking</category>
       <category>productivity</category>
-      <enclosure url="https://pbs.twimg.com/media/HNuqTxcbwAAr6BR.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-21-tiny-mac-app-sundial-logs-minutebyminute-activity.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/ayushtweetshere/status/2079445161957085463">Original Source</source>
     </item>
     <item>
@@ -552,7 +549,7 @@
       <category>social media scraping</category>
       <category>api</category>
       <category>pricing</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2079289624183316480/img/2Mxu-4ft7Uv7y94o.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-21-monid-replaces-apify-with-perrequest-social-media.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2079289736250970258">Original Source</source>
     </item>
     <item>
@@ -566,7 +563,7 @@
       <category>ai agents</category>
       <category>open source</category>
       <category>social media research</category>
-      <enclosure url="https://pbs.twimg.com/media/HNua-chagAAfqU7.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-21-last30days-skill-lets-ai-agents-fetch-realengageme.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/heyashishsaini/status/2079426058496119186">Original Source</source>
     </item>
     <item>
@@ -580,7 +577,7 @@
       <category>agent operating system</category>
       <category>rust</category>
       <category>ai</category>
-      <enclosure url="https://pbs.twimg.com/media/HNutYhpaQAAJWaE.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-21-aos-community-edition-launches-with-rust-cli-and-p.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/chenzeling4/status/2079446292456157185">Original Source</source>
     </item>
     <item>
@@ -594,7 +591,7 @@
       <category>presentation</category>
       <category>automation</category>
       <category>open-source</category>
-      <enclosure url="https://pbs.twimg.com/media/HNpVGoHbQAA_XzT.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-20-zeroprep-turns-spoken-talks-into-slide-decks-now-o.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/ramsri_goutham/status/2079069398267281715">Original Source</source>
     </item>
     <item>
@@ -608,7 +605,6 @@
       <category>CISO Guide</category>
       <category>Risk Management</category>
       <category>AI Incidents</category>
-      <enclosure url="https://www-cdn.anthropic.com/images/4zrzovbb/website/039b6648c28eb33070a63a58d49013600b229238-2554x2554.svg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Open‑source agent-security adds five preflight controls</title>
@@ -621,7 +617,7 @@
       <category>security</category>
       <category>cli</category>
       <category>open-source</category>
-      <enclosure url="https://pbs.twimg.com/media/HNpWAEUakAAY5Sj.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-20-opensource-agent-security-adds-five-preflight-cont.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/nykdotdev/status/2079068942681993237">Original Source</source>
     </item>
     <item>
@@ -635,7 +631,7 @@
       <category>chrome extension</category>
       <category>go</category>
       <category>open source</category>
-      <enclosure url="https://pbs.twimg.com/media/HNpmZJdboAAU-l5.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-20-gochat-ui-chrome-extension-brings-floating-chat-to.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/theadaloguy/status/2079087378522919057">Original Source</source>
     </item>
     <item>
@@ -649,7 +645,7 @@
       <category>go</category>
       <category>tcp</category>
       <category>graceful shutdown</category>
-      <enclosure url="https://pbs.twimg.com/media/HNpilbCasAASC6d.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-20-go-blog-shows-how-to-do-graceful-tcp-server-shutdo.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/_xonoxc/status/2079084544322572478">Original Source</source>
     </item>
     <item>
@@ -663,7 +659,7 @@
       <category>ai</category>
       <category>content-generation</category>
       <category>open-source</category>
-      <enclosure url="https://pbs.twimg.com/media/HNohvpJagAAk57L.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-20-bangergen-open-source-local-ai-turns-ideas-into-re.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/DegenApeDev/status/2079011617795375453">Original Source</source>
     </item>
     <item>
@@ -677,7 +673,7 @@
       <category>3d reconstruction</category>
       <category>open-source</category>
       <category>mobile</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2078311452012847104/img/9MH3xfRXdaHzSPNE.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-18-open-source-tool-turns-phone-video-into-a-local-3d.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/0x0SojalSec/status/2078311540282012024">Original Source</source>
     </item>
     <item>
@@ -691,7 +687,7 @@
       <category>computer vision</category>
       <category>sports analytics</category>
       <category>open source</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2078329244912914432/img/TZCsjCJe1q3rgi-9.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-18-open-source-badminton-hawkeye-system-released-by-c.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/0xTria/status/2078329275065696557">Original Source</source>
     </item>
     <item>
@@ -705,7 +701,7 @@
       <category>local ai</category>
       <category>inference</category>
       <category>open source</category>
-      <enclosure url="https://pbs.twimg.com/media/HNcoODQWAAAZ4K2.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-18-ods-launches-oneclick-local-ai-inference-stack.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/TheAhmadOsman/status/2078174547745046934">Original Source</source>
     </item>
     <item>
@@ -719,7 +715,7 @@
       <category>c2</category>
       <category>redteam</category>
       <category>infosec</category>
-      <enclosure url="https://pbs.twimg.com/media/HNbuOLPXgAA8Ev2.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-18-octoc2-launches-a-githubonly-c2-framework.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/Yass1nMohamed/status/2078110214142767323">Original Source</source>
     </item>
     <item>
@@ -746,7 +742,7 @@
       <category>ai coding</category>
       <category>open source</category>
       <category>cli</category>
-      <enclosure url="https://x.ai/images/news/open-source-cover.png" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-17-xai-open-sources-grok-build-its-ai-coding-agent-an.png" type="image/png" length="0" />
       <source url="https://x.ai/news/grok-build-open-source">Original Source</source>
     </item>
     <item>
@@ -760,7 +756,7 @@
       <category>ai tools</category>
       <category>desktop app</category>
       <category>tauri</category>
-      <enclosure url="https://pbs.twimg.com/media/HNRPouKaUAAgQIF.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-17-tauri2-based-skillsplusplus-adds-oneclick-ai-tool.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/QingQ77/status/2077991939404603697">Original Source</source>
     </item>
     <item>
@@ -774,7 +770,7 @@
       <category>telegram</category>
       <category>self-hosted</category>
       <category>reader</category>
-      <enclosure url="https://pbs.twimg.com/media/HNZm5EwaUAEiU5d.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-17-selfhosted-condenser-lets-you-browse-telegram-chan.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/novoreorx/status/2077963033142530148">Original Source</source>
     </item>
     <item>
@@ -788,7 +784,7 @@
       <category>agent orchestrator</category>
       <category>github issues</category>
       <category>open source</category>
-      <enclosure url="https://pbs.twimg.com/tweet_video_thumb/HNZin8RbMAA1gYV.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-17-opensource-shep-agent-orchestrator-targets-github.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/craigruks/status/2077957220759978436">Original Source</source>
     </item>
     <item>
@@ -802,7 +798,7 @@
       <category>kooky</category>
       <category>laptop</category>
       <category>automation</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2077975717103423488/img/dCfQu5LFgLSqkRPp.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-17-kooky-036-adds-keepawake-mode-for-laptops.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/realcoreychiu/status/2077978244159000806">Original Source</source>
     </item>
     <item>
@@ -816,7 +812,7 @@
       <category>kubernetes</category>
       <category>control plane</category>
       <category>open-source</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2077628803011031040/img/Gn4uydb55T12pKzc.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/solomon2773/status/2077629467980161317">Original Source</source>
     </item>
     <item>
@@ -830,7 +826,7 @@
       <category>lemma</category>
       <category>open-source</category>
       <category>automation</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2077628323052867584/img/0lQuuyrGlwksOfrF.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/LekhikaVyas/status/2077628443706155049">Original Source</source>
     </item>
     <item>
@@ -844,7 +840,7 @@
       <category>large language model</category>
       <category>multimodal</category>
       <category>open source</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2077457043691319296/img/IfrTS5_Mp9k_TIPl.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-16-inkling-model-released-with-975b-parameters-and-mu.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/lmsysorg/status/2077457150046269779">Original Source</source>
     </item>
     <item>
@@ -858,7 +854,7 @@
       <category>cli</category>
       <category>devsecops</category>
       <category>developer tools</category>
-      <enclosure url="https://pbs.twimg.com/media/HNRymyzaUAAnCFS.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-16-harness-launches-a-humanfriendly-cli-for-devsecops.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/harnessio/status/2077413070616617212">Original Source</source>
     </item>
     <item>
@@ -877,7 +873,7 @@
       <category>Founders</category>
       <category>ChatGPT Work</category>
       <category>Scaling</category>
-      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/05/openai-logo-code-background.jpg?resize=1280,852" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-16-gpt-5-6s-reactive-safety-cycle-known-risks-shipped.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Alaya Lab opens Alaya World: open-source interactive video model</title>
@@ -890,7 +886,7 @@
       <category>interactive video</category>
       <category>open-source</category>
       <category>world model</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2077587439653474304/img/f7mZg6SUn2mXlQVf.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-16-alaya-lab-opens-alaya-world-open-source-interactiv.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/alayastd/status/2077588265067258309">Original Source</source>
     </item>
     <item>
@@ -905,7 +901,7 @@
       <category>Indian Founders</category>
       <category>Claude Pro</category>
       <category>AI Tools India</category>
-      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2269811684.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-14-claude-now-has-india-pricing-heres-what-it-actuall.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Tencent Cloud open‑sources CubeSandbox for AI agent isolation</title>
@@ -918,7 +914,7 @@
       <category>sandbox</category>
       <category>ai agents</category>
       <category>rustvmm</category>
-      <enclosure url="https://pbs.twimg.com/media/HNC2v8gaoAArmz6.png?name=orig" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-13-tencent-cloud-opensources-cubesandbox-for-ai-agent.png" type="image/png" length="0" />
       <source url="https://x.com/XAMTO_AI/status/2076443738004742262">Original Source</source>
     </item>
     <item>
@@ -933,7 +929,7 @@
       <category>open-source</category>
       <category>cli</category>
       <category>ai</category>
-      <enclosure url="https://pbs.twimg.com/media/HNFSYNYagAA1Kkb.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-13-openpencil-launches-7-mb-design-app-with-fig-suppo.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/grafisify/status/2076531540465762429">Original Source</source>
     </item>
     <item>
@@ -947,7 +943,7 @@
       <category>server management</category>
       <category>ssh</category>
       <category>open-source</category>
-      <enclosure url="https://pbs.twimg.com/media/HNFdtgpXYAANb03.png?name=orig" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-13-nexterm-opens-source-tool-for-unified-ssh-vnc-and.png" type="image/png" length="0" />
       <source url="https://x.com/tom_doerr/status/2076543941793534213">Original Source</source>
     </item>
     <item>
@@ -961,7 +957,7 @@
       <category>ai code editor</category>
       <category>local development</category>
       <category>open source</category>
-      <enclosure url="https://pbs.twimg.com/media/HNBoi2faAAAu4BL.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-13-librecode-launches-as-a-fully-local-ai-code-editor.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/chenzeling4/status/2076274378455883869">Original Source</source>
     </item>
     <item>
@@ -984,7 +980,7 @@
       <category>Content Discovery</category>
       <category>News Reader</category>
       <category>Digital Publishing</category>
-      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/07/welcome-cover.png?resize=900,453" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-13-hypertexting-app-turns-the-open-web-into-a-scrolla.png" type="image/png" length="0" />
       <source url="https://techcrunch.com/2026/07/10/a-new-app-hypertexting-turns-the-open-web-into-a-scrollable-social-media-like-feed/">Original Source</source>
     </item>
     <item>
@@ -998,7 +994,7 @@
       <category>macos</category>
       <category>release automation</category>
       <category>swiftui</category>
-      <enclosure url="https://pbs.twimg.com/media/HM_R8sPaIAA6n6V.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-12-swiftui-tool-automates-sparkle-macos-release-workf.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/ddflj3310/status/2076108920771481889">Original Source</source>
     </item>
     <item>
@@ -1012,7 +1008,7 @@
       <category>generative world model</category>
       <category>agentic AI</category>
       <category>video synthesis</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2076182782385213440/img/LMn7uhnv2usjtoCq.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-12-lingbot-world-20-opensourced-with-braincerebellum.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/XRoboHub/status/2076189155399434689">Original Source</source>
     </item>
     <item>
@@ -1027,7 +1023,7 @@
       <category>attention</category>
       <category>hardware</category>
       <category>machine learning</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2076183975761231872/img/Y_cWsAL2ppYYqIGz.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-12-huibing-dong-shares-tpu-pagedattention-deepdive-vi.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/gdymind/status/2076185988288987402">Original Source</source>
     </item>
     <item>
@@ -1041,7 +1037,7 @@
       <category>video clipping</category>
       <category>ai captions</category>
       <category>web tool</category>
-      <enclosure url="https://pbs.twimg.com/media/HNAL02FboAAhOiP.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-12-clipreel-lets-you-trim-youtube-or-x-videos-to-clip.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/Nirmaldarji16/status/2076172621478314162">Original Source</source>
     </item>
     <item>
@@ -1058,7 +1054,7 @@
       <category>Cognition</category>
       <category>Claude Code</category>
       <category>AI Productivity</category>
-      <enclosure url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a4dd0c75a04f6ca41530255_C41-77690-D2-02-0006_VS_R1.jpeg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual.jpg" type="image/jpeg" length="0" />
       <source url="https://claude.com/blog/working-at-the-frontier-how-cognition-trusts-claude-fable-5-to-work-through-the-night">Original Source</source>
     </item>
     <item>
@@ -1072,7 +1068,7 @@
       <category>ai coding</category>
       <category>open-source</category>
       <category>tool</category>
-      <enclosure url="https://pbs.twimg.com/media/HMzEwTybkAARGnk.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-10-pi-ai-coding-agent-released-as-free-opensource-too.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/fusionaivisuals/status/2075250024519438457">Original Source</source>
     </item>
     <item>
@@ -1086,7 +1082,7 @@
       <category>ai coding</category>
       <category>self-hosted</category>
       <category>devops</category>
-      <enclosure url="https://pbs.twimg.com/media/HMxlaO8akAERz3C.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-10-openhands-launches-agent-canvas-for-selfhosted-ai.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/DivyanshT91162/status/2075145051681009898">Original Source</source>
     </item>
     <item>
@@ -1100,7 +1096,7 @@
       <category>open-source</category>
       <category>documentation</category>
       <category>langchain</category>
-      <enclosure url="https://pbs.twimg.com/media/HMzzxE-XIAADszF.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-10-langchain-launches-openwiki-to-autogenerate-a-livi.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/iblai_/status/2075301557063553329">Original Source</source>
     </item>
     <item>
@@ -1114,7 +1110,6 @@
       <category>ai security</category>
       <category>open source</category>
       <category>tooling</category>
-      <enclosure url="https://pbs.twimg.com/media/HM2TvUfaUAAYMi4.jpg?name=orig" type="image/jpeg" length="0" />
       <source url="https://x.com/VivekIntel/status/2075477455322923026">Original Source</source>
     </item>
     <item>
@@ -1128,7 +1123,7 @@
       <category>ai agents</category>
       <category>open source</category>
       <category>personal ai</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2075474641389555712/img/X72suMUUA9HrdbR-.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-10-agenc-lets-you-run-a-selfnamed-ai-agent-on-your-ph.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/tetsuoai/status/2075475435698454546">Original Source</source>
     </item>
     <item>
@@ -1145,7 +1140,7 @@
       <category>AI Reasoning</category>
       <category>AI Productivity</category>
       <category>Artificial Intelligence</category>
-      <enclosure url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a4be4919e159adcdfa3ec1c_94358c3c.png" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p.png" type="image/png" length="0" />
     </item>
     <item>
       <title>Tavus adds a Google Meet participant integration</title>
@@ -1158,7 +1153,7 @@
       <category>google meet</category>
       <category>ai assistant</category>
       <category>integration</category>
-      <enclosure url="https://pbs.twimg.com/media/HMubm2Va8AAo-Pe.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-08-tavus-adds-a-google-meet-participant-integration.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2074894605125026072">Original Source</source>
     </item>
     <item>
@@ -1172,7 +1167,7 @@
       <category>ai coding model</category>
       <category>large language model</category>
       <category>startup tooling</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2074912187391610880/img/BliQqOpmregZ5fSo.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2074915721684086811">Original Source</source>
     </item>
     <item>
@@ -1186,7 +1181,7 @@
       <category>gpt-live</category>
       <category>voice ai</category>
       <category>chatgpt</category>
-      <enclosure url="https://pbs.twimg.com/media/HMuNB0WboAE_A7s.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-08-openai-launches-gptlive-voice-model-in-chatgpt.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2074907025537224840">Original Source</source>
     </item>
     <item>
@@ -1200,7 +1195,7 @@
       <category>relume</category>
       <category>component library</category>
       <category>ai tools</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2073929458160168960/img/5Iq96DAnkzEbrXpo.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-07-relume-launches-library-mcp-for-aiassisted-compone.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2074222854183514438">Original Source</source>
     </item>
     <item>
@@ -1214,7 +1209,7 @@
       <category>ramp</category>
       <category>ai agents</category>
       <category>finance automation</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2074495741599404034/img/OKjuwqYWAbyEfhwH.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-07-ramp-launches-aiagent-integration-for-company-onbo.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2074496959851713018">Original Source</source>
     </item>
     <item>
@@ -1228,7 +1223,7 @@
       <category>authentication</category>
       <category>open source</category>
       <category>vercel</category>
-      <enclosure url="https://pbs.twimg.com/media/HMmsK1dbMAAXvdq.png?name=orig" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au.png" type="image/png" length="0" />
       <source url="https://x.com/i/status/2074523839300513921">Original Source</source>
     </item>
     <item>
@@ -1245,7 +1240,7 @@
       <category>Brave Browser</category>
       <category>Comet Browser</category>
       <category>Mindful Browsers</category>
-      <enclosure url="https://pbs.twimg.com/media/HMhdKgjbMAE9QMl?format=jpg&amp;name=900x900" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-06-the-best-chrome-alternatives-in-2026-ai-privacy-mi.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Higgsfield launches Shorts Studio powered by Gemini Omni Flash</title>
@@ -1258,7 +1253,7 @@
       <category>short-form video</category>
       <category>ai editing</category>
       <category>gemini</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2072380437868027905/img/83VsJHuzQ4YR7hp7.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-02-higgsfield-launches-shorts-studio-powered-by-gemin.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2072380736120959244">Original Source</source>
     </item>
     <item>
@@ -1272,7 +1267,7 @@
       <category>text-to-speech</category>
       <category>api</category>
       <category>developer-tools</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2072271134561857536/img/jC9GTbzQggc_QvEl.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-02-fish-audio-makes-s21-pro-tts-model-free-for-develo.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2072319320386883690">Original Source</source>
     </item>
     <item>
@@ -1286,7 +1281,7 @@
       <category>video editing</category>
       <category>ai tools</category>
       <category>automation</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2072002374483197952/img/INi4DssIFYqRuZGS.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-01-motionfly-launches-agent28-ai-video-editor-free-fo.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2072002524060496314">Original Source</source>
     </item>
     <item>
@@ -1300,7 +1295,7 @@
       <category>ai</category>
       <category>large-language-model</category>
       <category>agentic</category>
-      <enclosure url="https://pbs.twimg.com/media/HMFJYt8XEAAYMDz.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-01-claude-sonnet-5-adds-autonomous-planning-and-tool.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2072017450611142835">Original Source</source>
     </item>
     <item>
@@ -1314,7 +1309,7 @@
       <category>browser automation</category>
       <category>api</category>
       <category>devtools</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2071984483998330881/img/3VLS8bmqkmiYoO3W.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-07-01-browserbase-launches-readytorun-browser-agents.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2071994225865150708">Original Source</source>
     </item>
     <item>
@@ -1328,7 +1323,7 @@
       <category>image processing</category>
       <category>api</category>
       <category>computer vision</category>
-      <enclosure url="https://pbs.twimg.com/ext_tw_video_thumb/2071631718763626496/pu/img/7U36B0aChwwFAUjV.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-29-fal-adds-extract-object-api-for-instant-image-cuto.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2071631739705762296">Original Source</source>
     </item>
     <item>
@@ -1342,7 +1337,7 @@
       <category>cursor</category>
       <category>ios</category>
       <category>cloud agents</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2071638346145923072/img/nqFrOzzGvR8kxbee.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-29-cursor-launches-ios-app-with-alwayson-cloud-agents.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2071641103191998810">Original Source</source>
     </item>
     <item>
@@ -1361,7 +1356,7 @@
       <category>Context-Aware AI</category>
       <category>AI Trust</category>
       <category>Generative AI</category>
-      <enclosure url="https://images.ctfassets.net/kftzwdyauwt9/6vqEtiJWI45VyDgCniABzZ/f89ed847a8e956ad4c7dc281d641f817/1-OAI-ChatGPT-Personal-Finances-GoalPlanning-16x9.png?w=1920&amp;q=80&amp;fm=webp" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-29-chatgpt-isnt-just-getting-smarter-its-getting-more.webp" type="image/webp" length="0" />
     </item>
     <item>
       <title>asciilab launches to turn images and videos into ASCII art</title>
@@ -1374,7 +1369,7 @@
       <category>ascii art</category>
       <category>image processing</category>
       <category>developer tools</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2071377770081378304/img/QfN-UnEcg5eG5tqu.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-29-asciilab-launches-to-turn-images-and-videos-into-a.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2071381213634347233">Original Source</source>
     </item>
     <item>
@@ -1395,7 +1390,7 @@
       <category>Business Messaging</category>
       <category>Startup Leadership</category>
       <category>Meta Investment</category>
-      <enclosure url="https://pbs.twimg.com/media/HLpB4PnbwAAXSog?format=jpg&amp;name=large" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-25-meta-didnt-just-invest-in-cred-it-imported-its-pla.jpg" type="image/jpeg" length="0" />
       <source url="https://whatsappbusiness.com/">Original Source</source>
     </item>
     <item>
@@ -1416,7 +1411,7 @@
       <category>Motion Design</category>
       <category>Product Development</category>
       <category>Design Tools</category>
-      <enclosure url="https://i.ytimg.com/vi/wpGI6BmhbJU/maxresdefault.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-25-figma-motion-isnt-about-animation-its-about-removi.jpg" type="image/jpeg" length="0" />
       <source url="https://www.figma.com/blog/introducing-figma-motion/">Original Source</source>
     </item>
     <item>
@@ -1430,7 +1425,7 @@
       <category>figma</category>
       <category>design tools</category>
       <category>animation</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2069827477296353280/img/KaLT56GEN2vHV1XI.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-25-figma-launches-motion-feature-at-config-2026.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2069827742800253230">Original Source</source>
     </item>
     <item>
@@ -1444,7 +1439,7 @@
       <category>design</category>
       <category>founders</category>
       <category>matchmaking</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2068995799912960000/img/AKXwopJCJRT8TgRC.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-23-palette-launches-free-matchmaking-platform-for-des.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2068995853184840101">Original Source</source>
     </item>
     <item>
@@ -1465,7 +1460,7 @@
       <category>Open Source Software</category>
       <category>Software Supply Chain Security</category>
       <category>Security Remediation</category>
-      <enclosure url="https://techcrunch.com/wp-content/uploads/2025/09/GettyImages-2214107176.jpg?resize=1280,853" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-23-openai-doesnt-want-to-find-more-bugs-it-wants-to-p.jpg" type="image/jpeg" length="0" />
       <source url="https://openai.com/index/patch-the-planet/">Original Source</source>
     </item>
     <item>
@@ -1479,7 +1474,7 @@
       <category>google</category>
       <category>api</category>
       <category>gemini</category>
-      <enclosure url="https://pbs.twimg.com/media/HLbejaxa8AARgd9.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-23-google-makes-interactions-api-generally-available.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2069108666121503068">Original Source</source>
     </item>
     <item>
@@ -1493,7 +1488,7 @@
       <category>ads</category>
       <category>localization</category>
       <category>elevenlabs</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2069106830585008128/img/AG7lyyRH-XI-r1Cf.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-23-elevenlabs-adds-multiplatform-ad-localization-to-e.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2069111326987673761">Original Source</source>
     </item>
     <item>
@@ -1507,7 +1502,7 @@
       <category>ai coding</category>
       <category>model training</category>
       <category>startup tools</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2069142239335342080/img/dOnb8a8YMszF_AJA.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-23-cursor-announces-new-model-built-with-spacex-data.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2069149296436330776">Original Source</source>
     </item>
     <item>
@@ -1521,7 +1516,7 @@
       <category>anthropic</category>
       <category>slack integration</category>
       <category>ai assistant</category>
-      <enclosure url="https://pbs.twimg.com/media/HLg9iF5XYAAhaS7.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-23-anthropic-adds-claude-tag-for-slack-task-delegatio.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2069468693017268244">Original Source</source>
     </item>
     <item>
@@ -1535,7 +1530,7 @@
       <category>svg</category>
       <category>3d</category>
       <category>webgl</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2067916321841446912/img/Dqg1CbDvIeGdiB7d.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-19-valessa-launches-free-svgto3dglass-converter-in-th.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2067916411003924942">Original Source</source>
     </item>
     <item>
@@ -1554,7 +1549,7 @@
       <category>Startups</category>
       <category>Software Development</category>
       <category>Anthropic</category>
-      <enclosure url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQZ237vHWwJ5azzxb0nyyAmWNzu3W8dG624k_HIrQ-g0deuHnB3z0PsbwL&amp;s=10" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-19-ai-is-learning-to-run-software-not-just-build-it.jpg" type="image/jpeg" length="0" />
       <source url="https://claude.com/blog/artifacts-in-claude-code">Original Source</source>
     </item>
     <item>
@@ -1568,7 +1563,7 @@
       <category>biometrics</category>
       <category>health metrics</category>
       <category>startup tools</category>
-      <enclosure url="https://pbs.twimg.com/media/HLGDi5FbUAAxN93.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-18-temple-launches-entropy-metric-to-track-realtime-m.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2067578443047596141">Original Source</source>
     </item>
     <item>
@@ -1582,7 +1577,7 @@
       <category>slackbot</category>
       <category>product feedback</category>
       <category>tooling</category>
-      <enclosure url="https://pbs.twimg.com/media/HLCT-GFW0AAUqRl.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-18-slack-shares-slackbot-prompts-to-streamline-produc.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2067314945151144206">Original Source</source>
     </item>
     <item>
@@ -1596,7 +1591,7 @@
       <category>ai design</category>
       <category>open source</category>
       <category>design tools</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2067190753172799488/img/vEwpC275hhcO1xMG.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-18-open-design-open-sources-cursor-design-ai-studio.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/OpenDesignHQ/status/2067192475853180997?s=20">Original Source</source>
     </item>
     <item>
@@ -1610,7 +1605,7 @@
       <category>midjourney</category>
       <category>medical ai</category>
       <category>image generation</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2067417890098499584/img/MFFwG8qdfYbJALQD.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-18-midjourney-launches-a-medicalfocused-division.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2067421950314688759">Original Source</source>
     </item>
     <item>
@@ -1624,7 +1619,7 @@
       <category>video generation</category>
       <category>ai avatars</category>
       <category>google vids</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2067619336911831040/img/xTSx0rYPwTjeiJVB.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-18-google-vids-adds-ai-avatars-voiceovers-and-slide-t.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2067631530890113477">Original Source</source>
     </item>
     <item>
@@ -1638,7 +1633,7 @@
       <category>fastlane</category>
       <category>ai video</category>
       <category>social media</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2067499429251432448/img/WgmWI2TGioxvI7_S.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-18-fastlane-adds-claude-for-social-media-autocreates.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2067501867198996528">Original Source</source>
     </item>
     <item>
@@ -1652,7 +1647,6 @@
       <category>code hosting</category>
       <category>git</category>
       <category>developer tools</category>
-      <enclosure url="https://pbs.twimg.com/card_img/2067011785404887040/kPl0llQ5?format=jpg&amp;name=medium" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2067012220832329782">Original Source</source>
     </item>
     <item>
@@ -1668,7 +1662,7 @@
       <category>content creators</category>
       <category>marketing</category>
       <category>instagram</category>
-      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/06/image.jpeg?resize=800,697" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-18-companies-might-control-the-algorithm.jpg" type="image/jpeg" length="0" />
       <source url="https://techcrunch.com/2026/06/17/social-medias-next-evolution-user-controlled-algorithms/">Original Source</source>
     </item>
     <item>
@@ -1700,7 +1694,7 @@
       <category>content creation</category>
       <category>social media</category>
       <category>ai tools</category>
-      <enclosure url="https://techcrunch.com/wp-content/uploads/2025/05/meta-edits.png?resize=1280,751" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-16-meta-edits-vs-capcut.png" type="image/png" length="0" />
       <source url="https://techcrunch.com/2026/06/11/metas-edits-app-is-getting-an-ai-assistant-and-a-desktop-version/">Original Source</source>
     </item>
     <item>
@@ -1716,7 +1710,7 @@
       <category>ipo</category>
       <category>venture capital</category>
       <category>artificial intelligence</category>
-      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/06/Mango-crushing-fang.png?resize=1280,1024" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-09-faang-is-dead-say-hello-to-mangos.png" type="image/png" length="0" />
       <source url="https://techcrunch.com/2026/06/09/its-not-faang-anymore-its-mangos/">Original Source</source>
     </item>
     <item>
@@ -1732,7 +1726,7 @@
       <category>automation</category>
       <category>apple intelligence</category>
       <category>shortcuts</category>
-      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/06/tim-cook-wwdc-2026.jpeg?resize=1280,722" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-12-apple-brings-ai-to-shortcuts-in-ios-27.jpg" type="image/jpeg" length="0" />
       <source url="https://techcrunch.com/2026/06/08/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/">Original Source</source>
     </item>
     <item>
@@ -1746,7 +1740,7 @@
       <category>ai model</category>
       <category>anthropic</category>
       <category>large language model</category>
-      <enclosure url="https://pbs.twimg.com/media/HKY5eixXIAE9EAZ.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-09-claude-fable-5-launches-as-a-mythosclass-model-for.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2064394146916229443">Original Source</source>
     </item>
     <item>
@@ -1760,7 +1754,7 @@
       <category>image generation</category>
       <category>ai model</category>
       <category>startup tools</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2062259801481175040/img/_i0p8Vph7ddMmjlD.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-04-reve-launches-4k-image-model-20-with-layoutaware-g.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2062260665121919101">Original Source</source>
     </item>
     <item>
@@ -1774,7 +1768,7 @@
       <category>paper</category>
       <category>vector editing</category>
       <category>design tools</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2062230880404336640/img/12bRzEG2wM9yokEh.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-03-paper-adds-vector-editing-tools-in-latest-update.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2062231122184990871">Original Source</source>
     </item>
     <item>
@@ -1801,7 +1795,7 @@
       <category>ai</category>
       <category>healthtech</category>
       <category>startup funding</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2062169235103907840/img/Q8v-9n4MNaOO8ZU0.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-03-lassie-ai-raises-47m-to-automate-doctors-offices.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2062184922090246332">Original Source</source>
     </item>
     <item>
@@ -1815,7 +1809,7 @@
       <category>image generation</category>
       <category>open model</category>
       <category>ideogram</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2062202150915371008/img/MFGaulr4ZPNZNLaI.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-03-ideogram-releases-40-open-image-model-with-downloa.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2062202208700313872">Original Source</source>
     </item>
     <item>
@@ -1829,7 +1823,7 @@
       <category>bootstrapping</category>
       <category>saas</category>
       <category>product</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2060862725316886528/img/P-yNB-v1p50YGyl4.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-03-chatbase-founder-shares-a-10m-bootstrapped-playboo.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2060868914117214376">Original Source</source>
     </item>
     <item>
@@ -1843,7 +1837,7 @@
       <category>image processing</category>
       <category>web tool</category>
       <category>design</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2061501354384998400/img/RtWD2EdXgZ4g2pXY.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-03-blurr-releases-a-web-tool-with-19-filters-and-6-pi.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2061501427353288954">Original Source</source>
     </item>
     <item>
@@ -1857,7 +1851,7 @@
       <category>hardware</category>
       <category>laptops</category>
       <category>surface</category>
-      <enclosure url="https://pbs.twimg.com/media/HJtQAWEXwAEmauj.png" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-06-01-microsoft-announces-the-surface-laptop-ultra-for-f.png" type="image/png" length="0" />
       <source url="https://x.com/i/status/2061329225886453989">Original Source</source>
     </item>
     <item>
@@ -1885,7 +1879,7 @@
       <category>founder tools</category>
       <category>branding</category>
       <category>startup resources</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2060051996523302912/img/tVphVL7k0oXfY-gZ.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-30-pika-launches-founder-starter-kit-for-claude-users.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2060053796001399035">Original Source</source>
     </item>
     <item>
@@ -1900,7 +1894,7 @@
       <category>subtitles</category>
       <category>video</category>
       <category>ai</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2059269424025382912/img/QmhqClgMjoPy4stw.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-26-veed-launches-subtitles-api-with-free-credits-for.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2059269493382434992">Original Source</source>
     </item>
     <item>
@@ -1914,7 +1908,7 @@
       <category>resend</category>
       <category>claude</category>
       <category>plugin integration</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2059274186934407168/img/pAbWgskgEtgHoGEP.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-26-resend-adds-mcp-and-claude-skills-to-claude-market.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2059275268276224331">Original Source</source>
     </item>
     <item>
@@ -1928,7 +1922,7 @@
       <category>json prompting</category>
       <category>ai</category>
       <category>arrow</category>
-      <enclosure url="https://pbs.twimg.com/ext_tw_video_thumb/2059295888774737921/pu/img/r_c2nx4Nr4ZwyZvS.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-26-quiverai-adds-json-prompting-to-arrow-for-tighter.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2059295909809098960">Original Source</source>
     </item>
     <item>
@@ -1942,7 +1936,7 @@
       <category>ai animation</category>
       <category>video tools</category>
       <category>prompt engineering</category>
-      <enclosure url="https://pbs.twimg.com/tweet_video_thumb/HJQFxSfXUAAbSah.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-26-jitter-ai-adds-promptdriven-motion-effects.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2059277428971688065">Original Source</source>
     </item>
     <item>
@@ -1956,7 +1950,7 @@
       <category>gemma</category>
       <category>aiventure</category>
       <category>developer tools</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2059340879354298368/img/zRhZNileosZm4Jx1.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-26-google-launches-aiventure-an-opensource-ai-dungeon.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2059343174112522532">Original Source</source>
     </item>
     <item>
@@ -1983,7 +1977,7 @@
       <category>inbox</category>
       <category>productivity</category>
       <category>startup</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2058335459139571712/img/RioXasYRxqNFxdX6.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-26-feather-launches-a-selforganizing-inbox-service.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2058335516429635732">Original Source</source>
     </item>
     <item>
@@ -1997,7 +1991,7 @@
       <category>base</category>
       <category>agent</category>
       <category>onchain</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2059305823117975552/img/wWyQQ--0lsuZI3T7.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-26-base-launches-mcp-to-connect-ai-agents-with-onchai.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2059305907385704529">Original Source</source>
     </item>
     <item>
@@ -2012,7 +2006,7 @@
       <category>landing page</category>
       <category>paper</category>
       <category>claude</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2059299925100539904/img/uDOQQLLXtmrb9Yfz.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-26-ascii-magic-launches-ai-animated-landing-page.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2059300319331565930">Original Source</source>
     </item>
     <item>
@@ -2026,7 +2020,7 @@
       <category>ui</category>
       <category>animation</category>
       <category>frontend</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2056710619395457024/img/MOJ1Qzi8oeKZQ0x3.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-21-zsolt-kacso-shares-a-card-hover-animation-experime.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2056713047301902478">Original Source</source>
     </item>
     <item>
@@ -2040,7 +2034,7 @@
       <category>design tools</category>
       <category>ai</category>
       <category>codex</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2056306525631565824/img/lWL73U_ghzJB8XUH.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-21-open-design-integrates-its-ai-agent-into-codex-for.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2056309544997818507">Original Source</source>
     </item>
     <item>
@@ -2054,7 +2048,7 @@
       <category>voice ai</category>
       <category>text-to-speech</category>
       <category>elevenlabs</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2056723617455501312/img/BDJyrUkpnCrnGpzk.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-21-elevenlabs-adds-an-albert-einstein-voice-agent.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2056724239797944618">Original Source</source>
     </item>
     <item>
@@ -2068,7 +2062,7 @@
       <category>browser automation</category>
       <category>open-source</category>
       <category>web agents</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2056401090552410112/img/ArrdUEpSr-F8jB1U.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-21-browserbase-launches-browsesh-an-opensource-skill.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2056404332824944970">Original Source</source>
     </item>
     <item>
@@ -2082,7 +2076,7 @@
       <category>design system</category>
       <category>tailwind</category>
       <category>cli</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2056372181894926336/img/Sku8MNN6X8Et04te.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-18-shadcnui-ships-a-full-designsystem-cli.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2056372444751909212">Original Source</source>
     </item>
     <item>
@@ -2096,7 +2090,7 @@
       <category>marketing automation</category>
       <category>llm integration</category>
       <category>ai tools</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2056404580619919361/img/PeGD0qy1MUWs-i8m.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-18-higgsfield-ai-demos-claudedriven-marketing-workflo.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2056411641592287435">Original Source</source>
     </item>
     <item>
@@ -2110,7 +2104,7 @@
       <category>google cloud</category>
       <category>audio ai</category>
       <category>startup engineering</category>
-      <enclosure url="https://pbs.twimg.com/media/HHxc2F1a8AA04zz.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-18-google-cloud-ai-powers-mivis-dialectaware-earbuds.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2053808704772841633">Original Source</source>
     </item>
     <item>
@@ -2124,7 +2118,7 @@
       <category>github</category>
       <category>copilot</category>
       <category>cli</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2056417858440105986/img/1h9mW1uxJ_qB6HOx.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-18-github-copilot-cli-adds-remotecontrol-for-local-se.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2056420570745450864">Original Source</source>
     </item>
     <item>
@@ -2138,7 +2132,7 @@
       <category>ai workspace</category>
       <category>knowledge management</category>
       <category>prompt engineering</category>
-      <enclosure url="https://pbs.twimg.com/ext_tw_video_thumb/2056408379233329152/pu/img/vnqzDQtVaEscS51I.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-18-chatly-adds-usercontrolled-knowledge-library-to-om.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2056408432677142920">Original Source</source>
     </item>
     <item>
@@ -2152,7 +2146,7 @@
       <category>ai agents</category>
       <category>customer experience</category>
       <category>saas</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2056390673537089536/img/-7u6_IZJSt6rn6Cp.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-18-chatbase-hits-10m-arr-and-launches-a-fullstack-ai.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2056394356769366166">Original Source</source>
     </item>
     <item>
@@ -2166,7 +2160,7 @@
       <category>design</category>
       <category>frontend</category>
       <category>resources</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2055918886663622656/img/9xiCYOnGxhdeeqhx.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-17-tweet-curates-10-design-sites-for-quick-weekend-re.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2055922458876608947">Original Source</source>
     </item>
     <item>
@@ -2180,7 +2174,7 @@
       <category>screen recording</category>
       <category>camera layout</category>
       <category>product update</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2056030716408766464/img/8MjLVFq74Rj0yCn8.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-17-screencharm-adds-selectable-camera-layouts-for-rec.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2056033761632891361">Original Source</source>
     </item>
     <item>
@@ -2194,7 +2188,7 @@
       <category>open-source</category>
       <category>video editing</category>
       <category>github</category>
-      <enclosure url="https://pbs.twimg.com/ext_tw_video_thumb/2055166433445736448/pu/img/igRSCtE4TX-1oyB-.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-17-opencut-clones-capcut-hits-458k-github-stars.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2055957914561732946">Original Source</source>
     </item>
     <item>
@@ -2208,7 +2202,7 @@
       <category>anthropic</category>
       <category>claude code</category>
       <category>plugin</category>
-      <enclosure url="https://pbs.twimg.com/ext_tw_video_thumb/2055830586330357760/pu/img/KaxltSjnODsRprow.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-17-anthropic-adds-autostack-detection-plugin-for-clau.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2055830602683998718">Original Source</source>
     </item>
     <item>
@@ -2222,7 +2216,7 @@
       <category>notion</category>
       <category>cli</category>
       <category>api</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2054571358743564288/img/QzdmRgrrqT0OJuNn.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-14-notion-releases-ntn-cli-for-terminal-api-access.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2054594852818764178">Original Source</source>
     </item>
     <item>
@@ -2236,7 +2230,7 @@
       <category>seo</category>
       <category>server-side rendering</category>
       <category>lovable</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2054548525330137088/img/CW2xo-XhNULAXdDO.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-14-lovable-launches-seo-feature-with-auto-prerenderin.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2054549753224937956">Original Source</source>
     </item>
     <item>
@@ -2250,7 +2244,7 @@
       <category>sdk</category>
       <category>cli</category>
       <category>opensource</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2054578938681405440/img/FXgnGDc0yIeZrbxm.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-14-cline-sdk-opensourced-as-npm-package.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2054580767779700775">Original Source</source>
     </item>
     <item>
@@ -2264,7 +2258,7 @@
       <category>anthropic</category>
       <category>claude code</category>
       <category>usage limits</category>
-      <enclosure url="https://pbs.twimg.com/media/HIOLKb7bsAAXtoD.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-14-claude-code-weekly-limits-rise-50-for-pro-and-ente.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2054639777685934564">Original Source</source>
     </item>
     <item>
@@ -2278,7 +2272,7 @@
       <category>ai</category>
       <category>social media</category>
       <category>open source</category>
-      <enclosure url="https://pbs.twimg.com/media/HIMp7dObsAAMtw5.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-14-aitoearn-offers-a-free-opensource-hootsuite-altern.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2054531959528079430">Original Source</source>
     </item>
     <item>
@@ -2292,7 +2286,7 @@
       <category>android mirroring</category>
       <category>open source</category>
       <category>screen casting</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2054463118177116160/img/8Xiqdw9phqhc-lHC.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-13-scrcpy-40-adds-flexible-display-mode-for-android-m.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2054463213022929032">Original Source</source>
     </item>
     <item>
@@ -2306,7 +2300,7 @@
       <category>claude code</category>
       <category>ai assistants</category>
       <category>developer tools</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2054349890713694208/img/m016gisFnU7luF0A.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-13-claude-code-adds-a-goal-command-for-persistent-tas.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2054351031279186040">Original Source</source>
     </item>
     <item>
@@ -2320,7 +2314,7 @@
       <category>ai coding assistant</category>
       <category>session management</category>
       <category>preview feature</category>
-      <enclosure url="https://pbs.twimg.com/media/HIEVJQ4XoAAXNNi.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-12-claude-code-introduces-an-agent-view-listing-all-s.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2053940934736228454">Original Source</source>
     </item>
     <item>
@@ -2334,7 +2328,7 @@
       <category>cloudflare</category>
       <category>agents</category>
       <category>deployment</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2052028417172779010/img/pYzqMHSTjTGDWXeE.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-07-cloudflare-agents-can-now-selfprovision-accounts-b.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2052029139775787314">Original Source</source>
     </item>
     <item>
@@ -2362,7 +2356,7 @@
       <category>ai agents</category>
       <category>orchestration</category>
       <category>beta</category>
-      <enclosure url="https://pbs.twimg.com/media/HHpoqNAXcAcHY8h.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-07-claude-managed-agents-launches-dreaming-mode-and-b.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2052067399088664981">Original Source</source>
     </item>
     <item>
@@ -2377,7 +2371,7 @@
       <category>sparse attention</category>
       <category>performance</category>
       <category>cost</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2051654813717573632/img/aGtVgqlCkr4yOfHF.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-05-subq-launches-a-subquadratic-llm-with-12mtoken-con.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2051663268704636937">Original Source</source>
     </item>
     <item>
@@ -2392,7 +2386,7 @@
       <category>ai</category>
       <category>model</category>
       <category>release</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2051616504819683328/img/hXB0aixsgmsKIsXD.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-05-openclaude-v091-makes-codex-default-and-upgrades-t.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2051616716007075887">Original Source</source>
     </item>
     <item>
@@ -2406,7 +2400,7 @@
       <category>design system</category>
       <category>open source</category>
       <category>frontend</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2051202687484530688/img/V6T-iUoD-KFVoKxc.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-05-open-design-skills-released-as-open-source-design.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2051203959142895896">Original Source</source>
     </item>
     <item>
@@ -2420,7 +2414,7 @@
       <category>cli</category>
       <category>marketing</category>
       <category>ai</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2051345934630658048/img/H50XmeFpc8Ib78If.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-05-higgsfield-releases-cli-with-builtin-marketing-ski.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2051346056039039487">Original Source</source>
     </item>
     <item>
@@ -2434,7 +2428,7 @@
       <category>video editing</category>
       <category>ai tools</category>
       <category>developer tooling</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2051697749222170631/img/nCPUV9551HFm-a-A.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-05-hermes-agent-gains-hyperframes-video-editing-skill.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2051697813554405384">Original Source</source>
     </item>
     <item>
@@ -2448,7 +2442,7 @@
       <category>ai marketing</category>
       <category>brand tools</category>
       <category>google</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2051689980515561472/img/ep-587HlAqTTlnKc.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-05-google-launches-pomelli-catalog-for-ai-generated-b.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2051693177053340073">Original Source</source>
     </item>
     <item>
@@ -2462,7 +2456,7 @@
       <category>pdf</category>
       <category>webassembly</category>
       <category>opensource</category>
-      <enclosure url="https://pbs.twimg.com/media/HHi9ngubkAALhhp.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-05-github-projects-releases-browseronly-pdf-toolkit-w.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2051598119478108162">Original Source</source>
     </item>
     <item>
@@ -2476,7 +2470,7 @@
       <category>claude</category>
       <category>ai tooling</category>
       <category>devops</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2049574832241864704/img/zb_ZHb-8NXRzl5vp.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-05-02-claude-code-adds-builtin-skill-for-claude-platform.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2049575802568839648">Original Source</source>
     </item>
     <item>
@@ -2490,7 +2484,7 @@
       <category>ai training data</category>
       <category>voice collection</category>
       <category>startup tools</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2049516568267419648/img/P5GWSvbPU96ONyID.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-30-poseidon-opens-early-access-to-numo-for-multilingu.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2049526025751855207">Original Source</source>
     </item>
     <item>
@@ -2504,7 +2498,7 @@
       <category>fal</category>
       <category>webgl</category>
       <category>3d pipeline</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2049776252043800577/img/qiP2OE9xXmEWsuHh.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-30-fal-webgl-demo-serves-submegabyte-animated-glbs-in.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2049836416289407133">Original Source</source>
     </item>
     <item>
@@ -2518,7 +2512,7 @@
       <category>video generation</category>
       <category>open source</category>
       <category>ai tools</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2048779038253010944/img/siCpRLTdNT-WIjzH.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-27-hyperframes-lets-you-generate-videos-from-html-css.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2048779120985645145">Original Source</source>
     </item>
     <item>
@@ -2532,7 +2526,7 @@
       <category>ai agents</category>
       <category>productivity</category>
       <category>elevenlabs</category>
-      <enclosure url="https://pbs.twimg.com/media/HG7H8lVWQAA1pru.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-27-elevenlabs-launches-50-preconfigured-agent-templat.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2048794727881789930">Original Source</source>
     </item>
     <item>
@@ -2546,7 +2540,7 @@
       <category>react</category>
       <category>ui components</category>
       <category>open-source</category>
-      <enclosure url="https://dotmatrix.zzzzshawn.cloud/og.png" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-27-dot-matrix-adds-55-free-react-dotmatrix-loaders.png" type="image/png" length="0" />
       <source url="https://dotmatrix.zzzzshawn.cloud/">Original Source</source>
     </item>
     <item>
@@ -2560,7 +2554,7 @@
       <category>ai</category>
       <category>screenshots</category>
       <category>automation</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2047782324931031040/img/seftU4O4TShx8b9P.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-26-anything-adds-aigenerated-app-store-screenshots.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2047782953959170239">Original Source</source>
     </item>
     <item>
@@ -2574,7 +2568,7 @@
       <category>ai marketplace</category>
       <category>internal tooling</category>
       <category>claude</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2047716403000606720/img/5rq3VoaCzbgqTM4v.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-25-anthropic-pilots-clauderun-marketplace-for-office.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2047728360818696302">Original Source</source>
     </item>
     <item>
@@ -2588,7 +2582,7 @@
       <category>visual studio code</category>
       <category>extensions</category>
       <category>developer tools</category>
-      <enclosure url="https://pbs.twimg.com/ext_tw_video_thumb/2047314901568229377/pu/img/Td7Mo9Pc_6AlyCfp.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-24-vs-code-ships-a-virtual-pet-extension.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2047314929695310196">Original Source</source>
     </item>
     <item>
@@ -2602,7 +2596,7 @@
       <category>github copilot</category>
       <category>gpt-5.5</category>
       <category>ai coding</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2047735113140559872/img/ay7zAXw59DiLdVKu.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-24-github-copilot-now-runs-openai-gpt55.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2047747243617460482">Original Source</source>
     </item>
     <item>
@@ -2616,7 +2610,7 @@
       <category>gemma</category>
       <category>offline</category>
       <category>local inference</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2047398550607364096/img/hi43ppowtntl1TPm.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-24-gemma-4-runs-offline-with-lm-studio-and-opencode.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2047406475631624285">Original Source</source>
     </item>
     <item>
@@ -2630,7 +2624,7 @@
       <category>video clipping</category>
       <category>open source</category>
       <category>ai tools</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2047362125404991489/img/zuuGOdnYvpgWoSRW.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-24-free-open-source-ai-video-clipping-tool-challenges.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2047366820026593444">Original Source</source>
     </item>
     <item>
@@ -2644,7 +2638,7 @@
       <category>llm</category>
       <category>pricing</category>
       <category>cloud</category>
-      <enclosure url="https://pbs.twimg.com/media/HGqNR-pWcAA6luP.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-24-deepseek-v4pro-pricing-looks-cheap-next-to-gpt55.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2047605548346941643">Original Source</source>
     </item>
     <item>
@@ -2658,7 +2652,7 @@
       <category>nvidia</category>
       <category>ai models</category>
       <category>hosted api</category>
-      <enclosure url="https://pbs.twimg.com/media/HGhtdU7aMAAl5f5.png?name=orig" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-23-nvidia-launches-free-hosted-apis-for-80-ai-models.png" type="image/png" length="0" />
       <source url="https://x.com/dhruvtwt_/status/2047006444701274380">Original Source</source>
     </item>
     <item>
@@ -2685,7 +2679,7 @@
       <category>SEO</category>
       <category>Okara</category>
       <category>Organic Traffic</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2046865909852381184/img/8LM14RWth99TnP44.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-22-unlocking-hidden-traffic-okaras-seo-hack-for-organ.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2046866025795461145">Original Source</source>
     </item>
     <item>
@@ -2699,7 +2693,7 @@
       <category>web scraping</category>
       <category>Firecrawl</category>
       <category>change tracking</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2046982489231740928/img/hk7SmfiW-7pnCe-I.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-22-revolutionizing-web-scraping-firecrawls-game-chang.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2046982541245321671">Original Source</source>
     </item>
     <item>
@@ -2713,7 +2707,7 @@
       <category>AI</category>
       <category>Image Generation</category>
       <category>ChatGPT</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2046668430842146816/img/bF2-O5T-0PUVRVCs.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-22-revolutionizing-visual-creation-chatgpt-images-20.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2046670977145372771">Original Source</source>
     </item>
     <item>
@@ -2727,7 +2721,7 @@
       <category>Parallel Agents</category>
       <category>Zed</category>
       <category>Productivity</category>
-      <enclosure url="https://pbs.twimg.com/media/HGhrpE0WYAE3Io7.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-22-revolutionizing-productivity-parallel-agents-unlea.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2047004387961106435">Original Source</source>
     </item>
     <item>
@@ -2741,7 +2735,7 @@
       <category>OpenAI</category>
       <category>ChatGPT</category>
       <category>Workspace Agents</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2047004707844194304/img/IhMl2PZiOc460lx8.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-22-revolutionizing-productivity-openai-unveils-shared.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2047008987665809771">Original Source</source>
     </item>
     <item>
@@ -2755,7 +2749,7 @@
       <category>Claude Code</category>
       <category>Ultrareview</category>
       <category>Code Review</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2046999336412913664/img/Orz36ChX1Wvcp-7s.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-22-revolutionizing-code-review-claude-code-unveils-ul.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2046999435239133246">Original Source</source>
     </item>
     <item>
@@ -2769,7 +2763,7 @@
       <category>Nyx</category>
       <category>Infinite-Canvas IDE</category>
       <category>AI-powered Coding</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2046826808746668032/img/NCy_IXIwsTvyZbXf.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-22-revolutionary-infinite-canvas-ide-nyx-unveiled.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2046827332124430774">Original Source</source>
     </item>
     <item>
@@ -2783,7 +2777,7 @@
       <category>ClaudeDevs</category>
       <category>Developer Updates</category>
       <category>Community News</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2044779639445590016/img/u50wlq8vb0ueGG_J.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-17-claudedevs-unveils-dedicated-channel-for-developer.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2044780198722498580">Original Source</source>
     </item>
     <item>
@@ -2797,7 +2791,7 @@
       <category>coding</category>
       <category>IDEs</category>
       <category>Claude Code</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2044139244525105152/img/jCff5LdNEPDkStJA.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-15-the-future-of-coding-is-the-era-of-traditional-ide.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2044140545384296913">Original Source</source>
     </item>
     <item>
@@ -2811,7 +2805,7 @@
       <category>ElevenLabs</category>
       <category>React SDK</category>
       <category>Voice AI</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2044516556634263552/img/RSZe0mXPBmWB5WXd.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2044519924282847381">Original Source</source>
     </item>
     <item>
@@ -2825,7 +2819,7 @@
       <category>Claude AI</category>
       <category>Automation</category>
       <category>GitHub Integration</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2044093860918513664/img/iW06fBgxU7Kb3qBE.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-15-revolutionizing-automation-claude-code-routines-ar.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2044093913376706655">Original Source</source>
     </item>
     <item>
@@ -2839,7 +2833,7 @@
       <category>AI</category>
       <category>App Design</category>
       <category>Google AI Studio</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2044111151097884672/img/0zJFDJUcEryum-oo.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-15-revolutionizing-app-design-ai-generated-themes-now.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2044111418786754620">Original Source</source>
     </item>
     <item>
@@ -2854,7 +2848,7 @@
       <category>Chrome</category>
       <category>AI</category>
       <category>Productivity</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2044106049536643073/img/_OtHkXtJKFsabJBW.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-15-revolutionizing-ai-powered-workflows-google-introd.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2044106378655215625">Original Source</source>
     </item>
     <item>
@@ -2868,7 +2862,7 @@
       <category>AI</category>
       <category>Coding</category>
       <category>Claude</category>
-      <enclosure url="https://pbs.twimg.com/media/HF43A0sXYAA494v.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-15-revolutionizing-ai-powered-coding-claudes-game-cha.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2044131493966909862">Original Source</source>
     </item>
     <item>
@@ -2882,7 +2876,7 @@
       <category>tech updates</category>
       <category>video consumption</category>
       <category>interactive transcripts</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2042678525627633664/img/r-KNUFvnCDyqk2O3.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-12-revolutionizing-video-consumption-interactive-tran.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2042683393247449148">Original Source</source>
     </item>
     <item>
@@ -2896,7 +2890,7 @@
       <category>AI</category>
       <category>Machine Learning</category>
       <category>MMX-CLI</category>
-      <enclosure url="https://pbs.twimg.com/media/HFjrmYuakAQVPU2.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-12-revolutionizing-ai-agents-minimax-unveils-mmx-cli.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2042641521653256234">Original Source</source>
     </item>
     <item>
@@ -2910,7 +2904,7 @@
       <category>AI</category>
       <category>Automation</category>
       <category>Claude</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2042332212532596736/img/YwBOHFk1xJkZQG0B.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-10-revolutionizing-agent-interactions-claudes-monitor.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2042332268450963774">Original Source</source>
     </item>
     <item>
@@ -2924,7 +2918,7 @@
       <category>GitHub</category>
       <category>Security</category>
       <category>Copilot CLI</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2042008590156787712/img/IiivejD1EO03rhg2.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-09-revolutionizing-security-triage-github-copilot-cli.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2042008695035355537">Original Source</source>
     </item>
     <item>
@@ -2938,7 +2932,7 @@
       <category>AI</category>
       <category>Claude</category>
       <category>Managed Agents</category>
-      <enclosure url="https://pbs.twimg.com/media/HFZiwfuWkAEHrrV.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-09-revolutionizing-ai-development-claude-unveils-mana.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2041927687460024721">Original Source</source>
     </item>
     <item>
@@ -2952,7 +2946,7 @@
       <category>ArdentAI</category>
       <category>Database Cloning</category>
       <category>Postgres</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2041637437034926080/img/kInbSydHMhFn0Odu.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-09-revolutionary-database-cloning-ardentai-changes-th.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2041651193362182281">Original Source</source>
     </item>
     <item>
@@ -2966,7 +2960,7 @@
       <category>Notion</category>
       <category>AI</category>
       <category>Task Automation</category>
-      <enclosure url="https://pbs.twimg.com/media/HFaS39ja8AALVUD.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-09-notion-unleashes-ai-powered-task-automation-with-c.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2041982872698155398">Original Source</source>
     </item>
     <item>
@@ -2980,7 +2974,7 @@
       <category>Firecrawl</category>
       <category>AI Agents</category>
       <category>Web Interaction</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2041909020173426688/img/4LWyfiguOdYxiZk8.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-09-firecrawl-reaches-new-heights-revolutionizing-web.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2041909075110510969">Original Source</source>
     </item>
     <item>
@@ -2994,7 +2988,7 @@
       <category>Supernotes</category>
       <category>Productivity</category>
       <category>Update</category>
-      <enclosure url="https://pbs.twimg.com/media/HFSDiOGagAAtDM3.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-08-supernotes-323-revolution-unlocking-new-features-a.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2041401159639007301">Original Source</source>
     </item>
     <item>
@@ -3021,7 +3015,7 @@
       <category>autofix-pr</category>
       <category>productivity</category>
       <category>command-line</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2041654899818328064/img/1vkvIo3nmRfkdutN.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-08-revolutionizing-code-productivity-autofix-pr-now-a.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2041654973491245509">Original Source</source>
     </item>
     <item>
@@ -3035,7 +3029,7 @@
       <category>Zapier</category>
       <category>Automation</category>
       <category>AI Agents</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2040204642618163200/img/ttyREQ-03VATWcqg.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-08-revolutionizing-automation-zapier-sdk-now-open-to.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2041501747105890393">Original Source</source>
     </item>
     <item>
@@ -3049,7 +3043,7 @@
       <category>AI</category>
       <category>Developer Tools</category>
       <category>Onboarding</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2039495080659030016/img/JPrPKLJvq9Gj0OE-.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-08-revolutionizing-ai-dev-tool-onboarding-interactive.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2041542766585610477">Original Source</source>
     </item>
     <item>
@@ -3063,7 +3057,7 @@
       <category>AI</category>
       <category>EdTech</category>
       <category>Innovation</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2041313187883261952/img/DiF4z36g4_F72A7N.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2041314633978659092">Original Source</source>
     </item>
     <item>
@@ -3090,7 +3084,7 @@
       <category>tldraw</category>
       <category>collaboration</category>
       <category>diagramming</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2040869375868305408/img/3gmmVwpbff-T60Nw.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-06-tldraw-revolution-unlocking-next-level-collaborati.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2040869600137556247">Original Source</source>
     </item>
     <item>
@@ -3104,7 +3098,7 @@
       <category>font pairing</category>
       <category>Typevibe</category>
       <category>design tools</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2040969469762191362/img/NAPniO8V24THM2yk.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-06-revolutionizing-font-pairing-introducing-typevibe.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2040969883236622484">Original Source</source>
     </item>
     <item>
@@ -3119,7 +3113,7 @@
       <category>color</category>
       <category>gradients</category>
       <category>tools</category>
-      <enclosure url="https://pbs.twimg.com/media/HFDpah7bcAEwOgn.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-04-06-revolutionizing-design-top-tools-for-color-and-gra.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2040387276589682858">Original Source</source>
     </item>
     <item>
@@ -3133,7 +3127,7 @@
       <category>Omma</category>
       <category>AI</category>
       <category>Game Development</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2037933153227276288/img/WYTjR7GBFF-eO0is.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-03-30-revolutionizing-game-development-with-ommas-ai-pow.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2037935421905412229">Original Source</source>
     </item>
     <item>
@@ -3147,7 +3141,7 @@
       <category>AI</category>
       <category>Productivity</category>
       <category>Claude</category>
-      <enclosure url="https://pbs.twimg.com/media/HEIFrMWaIAIHvE0.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-03-24-revolutionizing-productivity-claudes-game-changing.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2036195789601374705">Original Source</source>
     </item>
     <item>
@@ -3161,7 +3155,7 @@
       <category>Rust</category>
       <category>Agent-Browser</category>
       <category>Performance Optimization</category>
-      <enclosure url="https://pbs.twimg.com/media/HDVfGNGXkAA7lOa.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-03-14-rust-powered-agent-browser-revolution-lightning-fa.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2032635370089693456">Original Source</source>
     </item>
     <item>
@@ -3175,7 +3169,7 @@
       <category>AI</category>
       <category>GLM-5</category>
       <category>Agent Mode</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2032555146874597379/img/pPldQrCTZe7D0Xgh.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-03-14-revolutionizing-ai-workflows-glm-5-unleashes-agent.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2032555220493033960">Original Source</source>
     </item>
     <item>
@@ -3189,7 +3183,7 @@
       <category>Claude Code Desktop</category>
       <category>MCP</category>
       <category>Frontend Preview</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2032841499344351232/img/gtXcMEcevG40ZG2k.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-03-14-revolutionary-coding-claude-code-desktop-unveils-g.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2032856141059747975">Original Source</source>
     </item>
     <item>
@@ -3203,7 +3197,7 @@
       <category>Startup School</category>
       <category>Y Combinator</category>
       <category>India</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2032249538669658117/img/dobq-IadLifowgfC.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-03-13-ycs-startup-school-lands-in-india-a-boost-for-loca.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2032291152402255892">Original Source</source>
     </item>
     <item>
@@ -3217,7 +3211,7 @@
       <category>Pixel Art</category>
       <category>VFX Editor</category>
       <category>Node-Based Editor</category>
-      <enclosure url="https://pbs.twimg.com/tweet_video_thumb/HDSqT1OWQAAldug.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-03-13-revolutionizing-pixel-art-a-node-based-vfx-editor.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2032436603453395361">Original Source</source>
     </item>
     <item>
@@ -3232,7 +3226,7 @@
       <category>AI</category>
       <category>Wireframing</category>
       <category>Claude Code</category>
-      <enclosure url="https://pbs.twimg.com/media/HDAaTjpWQAAVd-7.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-03-11-reviving-mockdown-ai-powered-wireframing-revolutio.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2031152691502555592">Original Source</source>
     </item>
     <item>
@@ -3246,7 +3240,7 @@
       <category>JetBrains</category>
       <category>AI</category>
       <category>Development Environment</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2031048511664664576/img/hpC5D_EvlOW99QK9.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-03-11-jetbrains-unveils-air-a-revolutionary-ai-powered-d.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2031049359710650522">Original Source</source>
     </item>
     <item>
@@ -3260,7 +3254,7 @@
       <category>AI</category>
       <category>WebGPU</category>
       <category>TranslateGemma</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2031037104478662656/img/VK1UIKaZifIvOi0R.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-03-11-breakthrough-run-ai-models-entirely-in-your-browse.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2031037128734376089">Original Source</source>
     </item>
     <item>
@@ -3274,7 +3268,7 @@
       <category>AI</category>
       <category>Code Review</category>
       <category>Claude</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2031087443961851904/img/djTbAdaklBTC4hQE.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-03-09-revolutionizing-code-quality-claudes-ai-powered-co.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2031088171262554195">Original Source</source>
     </item>
     <item>
@@ -3288,7 +3282,7 @@
       <category>API</category>
       <category>Web Development</category>
       <category>Innovation</category>
-      <enclosure url="https://pbs.twimg.com/media/HCjU30nXUAAnzQ3.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-03-06-revolutionizing-web-apis-anything-api-unleashed.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2029106289528185211">Original Source</source>
     </item>
     <item>
@@ -3302,7 +3296,7 @@
       <category>OpenAI</category>
       <category>Symphony</category>
       <category>Collaboration Tools</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2029279697796775937/img/dYX7ItiJU1IlfxTh.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-03-06-revolutionizing-team-collaboration-openai-unveils.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2029296008572576217">Original Source</source>
     </item>
     <item>
@@ -3316,7 +3310,7 @@
       <category>Glaze</category>
       <category>Raycast</category>
       <category>AI-powered development</category>
-      <enclosure url="https://pbs.twimg.com/media/HCkLlEHWkAAJpny.png" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-03-06-revolutionizing-app-development-ai-powered-glaze-l.png" type="image/png" length="0" />
       <source url="https://x.com/i/status/2029180822838759703">Original Source</source>
     </item>
     <item>
@@ -3330,7 +3324,7 @@
       <category>LangChain</category>
       <category>AI</category>
       <category>Agent Development</category>
-      <enclosure url="https://pbs.twimg.com/ext_tw_video_thumb/2029272155498639360/pu/img/Wg__efvP4CyYGA64.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-03-06-revolutionizing-agent-development-langsmith-skills.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2029272199073354105">Original Source</source>
     </item>
     <item>
@@ -3344,7 +3338,7 @@
       <category>MacBook Neo</category>
       <category>Apple</category>
       <category>Laptops</category>
-      <enclosure url="https://www.apple.com/newsroom/images/2026/03/say-hello-to-macbook-neo/tile/Apple-MacBook-Neo-hero-260304-lp.jpg.og.jpg?202603050319" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-03-05-revolutionizing-affordable-computing-apple-unveils.jpg" type="image/jpeg" length="0" />
       <source url="https://share.google/Aoh06t6BFh9ZjAPJW">Original Source</source>
     </item>
     <item>
@@ -3358,7 +3352,7 @@
       <category>Claude Code</category>
       <category>Voice Mode</category>
       <category>AI Coding</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2028628068517183489/img/pqaAS9fN8tZTs8fY.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-03-05-revolutionary-voice-mode-rolls-out-in-claude-code.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/trq212/status/2028628570692890800?s=20">Original Source</source>
     </item>
     <item>
@@ -3374,7 +3368,7 @@
       <category>M5 Pro</category>
       <category>M5 Max</category>
       <category>AI</category>
-      <enclosure url="https://www.apple.com/newsroom/images/2026/03/apple-introduces-macbook-pro-with-all-new-m5-pro-and-m5-max/tile/Apple-MacBook-Pro-M5-Pro-and-M5-Max-Capture-One-260303-lp.jpg.og.jpg?202603050320" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-03-05-apple-unleashes-ai-powered-macbook-pro-with-m5-pro.jpg" type="image/jpeg" length="0" />
       <source url="https://share.google/XBSpKN75sGxaqL1Mk">Original Source</source>
     </item>
     <item>
@@ -3414,7 +3408,7 @@
       <category>MiniMax_Agent</category>
       <category>MaxClaw</category>
       <category>AI_Powered_Productivity</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2027025589111283712/img/SKZEzNrDAsS2yr8u.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-26-revolutionizing-productivity-minimax-agents-game-c.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2027027163078336885">Original Source</source>
     </item>
     <item>
@@ -3428,7 +3422,7 @@
       <category>Google DeepMind</category>
       <category>Nano Banana 2</category>
       <category>AI-powered Image Editing</category>
-      <enclosure url="https://pbs.twimg.com/tweet_video_thumb/HCGHbQnaYAEbEM-.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-26-revolutionizing-image-creation-nano-banana-2-unlea.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2027051577899380991">Original Source</source>
     </item>
     <item>
@@ -3456,7 +3450,7 @@
       <category>Vite</category>
       <category>AI</category>
       <category>Cloudflare Workers</category>
-      <enclosure url="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/720QQcrdICiSJXrr9VoixA/4934fffd05d1ca10cc661238b381308e/BLOG-3194_OG.png" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-25-revolutionizing-front-end-development-the-ai-power.png" type="image/png" length="0" />
       <source url="https://blog.cloudflare.com/vinext/">Original Source</source>
     </item>
     <item>
@@ -3470,7 +3464,7 @@
       <category>AI</category>
       <category>Design</category>
       <category>Collaboration</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2026309809713381376/img/6X7ZjyF6evwb__ru.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-25-revolutionizing-design-pencils-swarm-mode-takes-ai.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2026329359838318906">Original Source</source>
     </item>
     <item>
@@ -3484,7 +3478,7 @@
       <category>AI</category>
       <category>Perplexity Computer</category>
       <category>Tech Innovations</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2026695448996753409/img/yeKxOwuVQwjvBDYt.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-25-revolutionizing-ai-capabilities-the-dawn-of-perple.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2026695550771540489">Original Source</source>
     </item>
     <item>
@@ -3498,7 +3492,7 @@
       <category>AI</category>
       <category>Chatbots</category>
       <category>MiniMax_Agent</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2026493185942499328/img/RWaFkIcKLG4ua40j.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-25-revolutionary-ai-powered-chatbot-unleashed-meet-ma.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2026493668417482923">Original Source</source>
     </item>
     <item>
@@ -3512,7 +3506,7 @@
       <category>Google Labs</category>
       <category>Opal</category>
       <category>No-Code AI</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2026374886722281472/img/QbPxQ28_KKRXSIEd.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-25-google-labs-unveils-major-upgrade-to-opal-revoluti.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2026374947996840169">Original Source</source>
     </item>
     <item>
@@ -3526,7 +3520,7 @@
       <category>Claude Code</category>
       <category>Remote Control</category>
       <category>Developer Tools</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2026417722394021888/img/7uu-_ciDtZ7v3rYC.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-25-claude-code-unleashes-remote-control-a-game-change.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2026418433911603668">Original Source</source>
     </item>
     <item>
@@ -3540,7 +3534,7 @@
       <category>Claude</category>
       <category>Coding</category>
       <category>AI</category>
-      <enclosure url="https://pbs.twimg.com/media/HBoKy76XUAAhXsA.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-21-revolutionizing-coding-claudes-game-changing-updat.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2024937960572104707">Original Source</source>
     </item>
     <item>
@@ -3555,7 +3549,7 @@
       <category>Razorpay</category>
       <category>NPCI</category>
       <category>AI Commerce</category>
-      <enclosure url="https://blog.razorpay.in/wp-content/uploads/2026/02/Blog.png" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-21-revolutionizing-ai-powered-commerce-razorpay-and-n.png" type="image/png" length="0" />
       <source url="https://share.google/JZHNyoCeRqofk1vze">Original Source</source>
     </item>
     <item>
@@ -3582,7 +3576,7 @@
       <category>AI</category>
       <category>Productivity</category>
       <category>Technology</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2024013495285805058/img/7WZN7wcEd-PRLveg.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2024227639087813035">Original Source</source>
     </item>
     <item>
@@ -3597,7 +3591,7 @@
       <category>Glimmer</category>
       <category>Smart Glasses</category>
       <category>UX Design</category>
-      <enclosure url="https://pbs.twimg.com/media/HBYAUP8bcAECeDt.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-19-google-unveils-glimmer-a-revolutionary-design-lang.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2023805464577011979">Original Source</source>
     </item>
     <item>
@@ -3612,7 +3606,7 @@
       <category>OpenAI</category>
       <category>Anthropic</category>
       <category>Tech News</category>
-      <enclosure url="https://image.cnbcfm.com/api/v1/image/108267178-1771489879337-gettyimages-2261854815-AFP_984W8YD.jpeg?v=1771490672&amp;w=1920&amp;h=1080" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-19-ai-rivals-clash-openai-and-anthropic-ceos-awkward.jpg" type="image/jpeg" length="0" />
       <source url="https://www.cnbc.com/2026/02/19/openai-sam-altman-anthropic-dario-amodei-india-ai-summit.html">Original Source</source>
     </item>
     <item>
@@ -3626,7 +3620,7 @@
       <category>SaaS</category>
       <category>Productivity</category>
       <category>Startup Tools</category>
-      <enclosure url="https://pbs.twimg.com/media/HBadt9tbcAAzJrN.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-18-revolutionizing-startup-productivity-the-ultimate.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2023978535161925889">Original Source</source>
     </item>
     <item>
@@ -3640,7 +3634,6 @@
       <category>productivity</category>
       <category>toolkit</category>
       <category>saas</category>
-      <enclosure url="https://pbs.twimg.com/media/HBaT-NybcAAkE4D.jpg?name=orig" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2023967802823245901">Original Source</source>
     </item>
     <item>
@@ -3654,7 +3647,7 @@
       <category>AI</category>
       <category>startups</category>
       <category>funding</category>
-      <enclosure url="https://storage.googleapis.com/gpt-engineer-file-uploads/XW65pun0vjQL3xcUmVglEg4ZrsL2/social-images/social-1763560217027-Expert-Panel-discussion-768x512.webp" type="image/webp" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-18-indias-ai-startup-funding-landscape-sees-regional.webp" type="image/webp" length="0" />
       <source url="https://analyticsindiamag.com/ai-startups/funding-reset-why-karnataka-faced-a-28-drop-while-maharashtra-held-its-ground">Original Source</source>
     </item>
     <item>
@@ -3668,7 +3661,7 @@
       <category>Hyperbrowser</category>
       <category>HyperSkill</category>
       <category>AI Agents</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2023480413063417856/img/V8nba7L3Ua6bqszv.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-17-revolutionizing-tech-stacks-hyperbrowser-unveils-b.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2023480469044818208">Original Source</source>
     </item>
     <item>
@@ -3682,7 +3675,7 @@
       <category>Figma</category>
       <category>Design</category>
       <category>Development</category>
-      <enclosure url="https://cdn.sanity.io/images/599r6htc/regionalized/1bc14c622ab6b8e2ad11229e6206c07dbad63311-3200x1800.png?w=1200&amp;q=70&amp;fit=max&amp;auto=format" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-17-revolutionizing-design-figma-unveils-code-to-desig.png" type="image/png" length="0" />
       <source url="https://www.figma.com/blog/introducing-claude-code-to-figma/">Original Source</source>
     </item>
     <item>
@@ -3697,7 +3690,7 @@
       <category>Claude Code</category>
       <category>Subagents</category>
       <category>Web Search</category>
-      <enclosure url="https://ollama.com/public/og.png" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-17-revolutionizing-coding-ollama-unveils-subagents-an.png" type="image/png" length="0" />
       <source url="https://ollama.com/blog/web-search-subagents-claude-code">Original Source</source>
     </item>
     <item>
@@ -3711,7 +3704,7 @@
       <category>Anthropic Agent SDK</category>
       <category>AI Development</category>
       <category>Machine Learning</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2023253339073392640/img/VhovnpWvug7jGnKn.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-16-unlocking-the-power-of-anthropic-agents-a-game-cha.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2023428910042513482">Original Source</source>
     </item>
     <item>
@@ -3725,7 +3718,7 @@
       <category>Chrome DevTools</category>
       <category>Debugging</category>
       <category>Multi-Session Support</category>
-      <enclosure url="https://pbs.twimg.com/media/HBR0XEtaYAEdKVg.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-16-revolutionizing-debugging-chrome-devtools-gets-mul.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2023370190269116568">Original Source</source>
     </item>
     <item>
@@ -3739,7 +3732,7 @@
       <category>MiniMax</category>
       <category>AI</category>
       <category>Inference Speed</category>
-      <enclosure url="https://pbs.twimg.com/media/HBNfas7a8AAg78r.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-16-minimax-m25-revolution-unleashing-3x-faster-infere.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2023066199995949350">Original Source</source>
     </item>
     <item>
@@ -3753,7 +3746,7 @@
       <category>AI</category>
       <category>India</category>
       <category>Partnerships</category>
-      <enclosure url="https://www.anthropic.com/api/opengraph-illustration?name=Object%20Globe&amp;backgroundColor=fig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-16-anthropic-expands-indian-presence-with-new-bengalu.png" type="image/png" length="0" />
       <source url="https://www.anthropic.com/news/bengaluru-office-partnerships-across-india">Original Source</source>
     </item>
     <item>
@@ -3767,7 +3760,7 @@
       <category>Voice AI</category>
       <category>NVIDIA</category>
       <category>PersonaPlex-7B</category>
-      <enclosure url="https://pbs.twimg.com/ext_tw_video_thumb/2022995312135344128/pu/img/n_LMyO2sgo9oiPR7.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-15-revolutionizing-voice-ai-nvidia-unveils-game-chang.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2022995332058251548">Original Source</source>
     </item>
     <item>
@@ -3794,7 +3787,6 @@
       <category>Kimi.ai</category>
       <category>OpenClaw</category>
       <category>AI Browsing</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2023029535974055936/img/Qf6wkOTM3Z8nwkvI.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2023029674549596301">Original Source</source>
     </item>
     <item>
@@ -3808,7 +3800,7 @@
       <category>Raydian</category>
       <category>App Development</category>
       <category>Autonomous Coding</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2022255471160090624/img/xtY_Qze7Tam97zEx.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-14-revolutionizing-app-development-raydian-20-unleash.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2022256365901607287">Original Source</source>
     </item>
     <item>
@@ -3822,7 +3814,7 @@
       <category>AI</category>
       <category>Design Canvas</category>
       <category>Subframe</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2022037126469365761/img/xJeAX_YvlqDuHxaA.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-14-revolutionizing-ai-driven-design-introducing-the-g.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2022038492575154555">Original Source</source>
     </item>
     <item>
@@ -3837,7 +3829,7 @@
       <category>AI</category>
       <category>Automation</category>
       <category>BuildSpace</category>
-      <enclosure url="https://framerusercontent.com/images/AwZTXvV6qNfQzOMbhOCGVHEybxo.png?width=2400&amp;height=1260" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-13-revolutionizing-cicd-introducing-buildspace-the-ai.png" type="image/png" length="0" />
       <source url="https://photon.codes/blog/ci-cd-in-the-age-of-ai">Original Source</source>
     </item>
     <item>
@@ -3864,7 +3856,7 @@
       <category>App Store</category>
       <category>iOS Development</category>
       <category>CLI Tools</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2021661265601736704/img/unNAGbptn10BXCu3.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-12-revolutionizing-app-store-submissions-automated-gu.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2021661315329405174">Original Source</source>
     </item>
     <item>
@@ -3878,7 +3870,7 @@
       <category>Happycapy</category>
       <category>Agent-Native Computing</category>
       <category>Cloud Sandbox</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2021616989278703616/img/2rup7JZhBcXcrohe.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-12-revolutionary-agent-native-computing-now-accessibl.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/Jarodxu7/status/2021620710544904355?s=20">Original Source</source>
     </item>
     <item>
@@ -3892,7 +3884,7 @@
       <category>AI Safety</category>
       <category>Anthropic AI</category>
       <category>Tech Ethics</category>
-      <enclosure url="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202602/mrinank-sharma-anthropic-104224244-16x9_0.png?VersionId=tsufT07Qx7LE2vr275HSEDe6X7hAnMkN" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-11-ai-safety-leader-sounds-alarm-resignation-sparks-c.jpg" type="image/jpeg" length="0" />
       <source url="https://share.google/6gzMAD1U347j7YUXX">Original Source</source>
     </item>
     <item>
@@ -3906,7 +3898,7 @@
       <category>AI</category>
       <category>video creation</category>
       <category>vibe editing</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2020464187043115009/img/-iRMulg3HLXQTEBY.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2020464238880596429">Original Source</source>
     </item>
     <item>
@@ -3920,7 +3912,7 @@
       <category>React</category>
       <category>UI Animations</category>
       <category>Web Development</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2020423255082123265/img/YD4KlnqX6y9k3Ro_.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-10-revolutionizing-ui-animations-introducing-reactbit.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2020423330386579646">Original Source</source>
     </item>
     <item>
@@ -3936,7 +3928,7 @@
       <category>Visualization</category>
       <category>Google AI</category>
       <category>PaperBanana</category>
-      <enclosure url="https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-18.png" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-10-revolutionizing-research-visuals-google-ais-paperb.png" type="image/png" length="0" />
       <source url="https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/">Original Source</source>
     </item>
     <item>
@@ -3950,7 +3942,7 @@
       <category>GitHub Copilot</category>
       <category>GPT-5.3-Codex</category>
       <category>AI-powered coding</category>
-      <enclosure url="https://github.blog/wp-content/uploads/2026/02/github-copilot-social-card-2.png" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git.png" type="image/png" length="0" />
       <source url="https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/">Original Source</source>
     </item>
     <item>
@@ -3964,7 +3956,7 @@
       <category>Composer 1.5</category>
       <category>AI Coding</category>
       <category>Reinforcement Learning</category>
-      <enclosure url="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/blog/composer-1.5-og.png" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan.png" type="image/png" length="0" />
       <source url="https://cursor.com/blog/composer-1-5">Original Source</source>
     </item>
     <item>
@@ -3978,7 +3970,6 @@
       <category>AI</category>
       <category>Nanobot</category>
       <category>Personal Assistant</category>
-      <enclosure url="https://opengraph.githubassets.com/860a29c3b70dd9f9266b82558c0c427fb47036deb672088e1b5f525631120a27/HKUDS/nanobot" type="image/jpeg" length="0" />
       <source url="https://github.com/HKUDS/nanobot">Original Source</source>
     </item>
     <item>
@@ -3993,7 +3984,7 @@
       <category>Hardware</category>
       <category>IT Service Exports</category>
       <category>Artificial Intelligence</category>
-      <enclosure url="https://img.etimg.com/thumb/width-1200,height-900,imgsize-18740,resizemode-75,msid-128120292/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.jpg" type="image/jpeg" length="0" />
       <source url="https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms">Original Source</source>
     </item>
     <item>
@@ -4008,7 +3999,7 @@
       <category>Anthropic</category>
       <category>India</category>
       <category>Trademark</category>
-      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/01/anthropic-image-jagmeet-singh-techcrunch.jpg?resize=1200,800" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.jpg" type="image/jpeg" length="0" />
       <source url="https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/">Original Source</source>
     </item>
     <item>
@@ -4023,7 +4014,7 @@
       <category>Snowflake</category>
       <category>Natural Language</category>
       <category>Data Workflows</category>
-      <enclosure url="https://dms.licdn.com/playlist/vid/v2/D5605AQGc4ituv4CguA/thumbnail-with-play-button-overlay-high/B56Zwl7Sc1JoDU-/0/1770162826976?e=2147483647&amp;v=beta&amp;t=ZsRcvqdvGVm-MifIJLszrAwR4v1l_fRMpD-J2K92vFI" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.jpg" type="image/jpeg" length="0" />
       <source url="https://www.linkedin.com/posts/chanin-nantasenamat_watch-me-use-coco-to-build-a-streamlit-ugcPost-7424601007264833536-P64R?utm_source=social_share_send&amp;utm_medium=android_app&amp;rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&amp;utm_campaign=share_via">Original Source</source>
     </item>
     <item>
@@ -4038,7 +4029,7 @@
       <category>Cloudflare</category>
       <category>Replicate</category>
       <category>Developer Platform</category>
-      <enclosure url="https://replicate.com/blog/replicate-cloudflare.png" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-09-revolutionizing-ai-development-replicate-joins-for.png" type="image/png" length="0" />
       <source url="https://replicate.com/blog/replicate-cloudflare">Original Source</source>
     </item>
     <item>
@@ -4053,7 +4044,7 @@
       <category>Claude</category>
       <category>AI</category>
       <category>Anthropic</category>
-      <enclosure url="https://techcrunch.com/wp-content/uploads/2024/10/unnamed-7.png?w=1200" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-08-revolutionizing-wordpress-management-claudes-new-c.png" type="image/png" length="0" />
       <source url="https://techcrunch.com/2026/02/06/it-just-got-easier-for-claude-to-check-in-on-your-wordpress-site/">Original Source</source>
     </item>
     <item>
@@ -4067,7 +4058,7 @@
       <category>AI</category>
       <category>Cybersecurity</category>
       <category>Web Development</category>
-      <enclosure url="https://dms.licdn.com/playlist/vid/v2/D4E05AQGDNjzQvsJPoQ/thumbnail-with-play-button-overlay-high/B4EZw4N6kvGkDU-/0/1770469700015?e=2147483647&amp;v=beta&amp;t=5HUitf5IIkdg1pJNfviwpgMVUOmiEvL36VbmBP-VHZ4" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-08-revolutionizing-web-app-security-meet-shannon-the.jpg" type="image/jpeg" length="0" />
       <source url="https://www.linkedin.com/posts/walid-boulanouar_claude-code-for-hacking-is-here-shannon-ugcPost-7425888138117566464-rWZQ?utm_source=social_share_send&amp;utm_medium=android_app&amp;rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&amp;utm_campaign=share_via">Original Source</source>
     </item>
     <item>
@@ -4082,7 +4073,7 @@
       <category>Craft Agents</category>
       <category>Claude</category>
       <category>Open Source</category>
-      <enclosure url="https://pbs.twimg.com/media/HApiEWXb0AAN3dO.jpg?name=orig" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-08-revolutionizing-coding-craft-agents-now-compatible.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2020535293905101186">Original Source</source>
     </item>
     <item>
@@ -4096,7 +4087,7 @@
       <category>AI</category>
       <category>Compiler</category>
       <category>Autonomous Agents</category>
-      <enclosure url="https://cdn.sanity.io/images/4zrzovbb/website/6cc87859f5453e9481278681aa6409856d61153c-2400x1260.png" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo.png" type="image/png" length="0" />
       <source url="https://share.google/4T0fJDumSQSmG5Cmo">Original Source</source>
     </item>
     <item>
@@ -4110,7 +4101,6 @@
       <category>Claude Code</category>
       <category>Agent Teams</category>
       <category>Collaborative Coding</category>
-      <enclosure url="https://claude-code.mintlify.app/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DBuild%2Bwith%2BClaude%2BCode%26appearance%3Dsystem%26title%3DOrchestrate%2Bteams%2Bof%2BClaude%2BCode%2Bsessions%26description%3DCoordinate%2Bmultiple%2BClaude%2BCode%2Binstances%2Bworking%2Btogether%2Bas%2Ba%2Bteam%252C%2Bwith%2Bshared%2Btasks%252C%2Binter-agent%2Bmessaging%252C%2Band%2Bcentralized%2Bmanagement.%26logoLight%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaude-code%252Fo69F7a6qoW9vboof%252Flogo%252Flight.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253Do69F7a6qoW9vboof%2526q%253D85%2526s%253D536eade682636e84231afce2577f9509%26logoDark%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaude-code%252Fo69F7a6qoW9vboof%252Flogo%252Fdark.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253Do69F7a6qoW9vboof%2526q%253D85%2526s%253D0766b3221061e80143e9f300733e640b%26primaryColor%3D%25230E0E0E%26lightColor%3D%2523D4A27F%26darkColor%3D%25230E0E0E%26backgroundLight%3D%2523FDFDF7%26backgroundDark%3D%252309090B&amp;w=1200&amp;q=100" type="image/jpeg" length="0" />
       <source url="https://code.claude.com/docs/en/agent-teams#compare-with-subagents">Original Source</source>
     </item>
     <item>
@@ -4137,7 +4127,7 @@
       <category>Claude Code</category>
       <category>AI</category>
       <category>Coding</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2019467383505924096/img/y8PJFj92TQdi95xR.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/lydiahallie/status/2019469032844587505?s=20">Original Source</source>
     </item>
     <item>
@@ -4152,7 +4142,7 @@
       <category>GPT-5.3-Codex</category>
       <category>AI</category>
       <category>Software Development</category>
-      <enclosure url="https://st1.latestly.com/wp-content/uploads/2026/02/GPT-5.3-Codex-784x441.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.jpg" type="image/jpeg" length="0" />
       <source url="https://share.google/tM36P3WSwQLtg0J7h">Original Source</source>
     </item>
     <item>
@@ -4166,7 +4156,7 @@
       <category>Claude Opus 4.6</category>
       <category>Anthropic</category>
       <category>AI Updates</category>
-      <enclosure url="https://cdn.sanity.io/images/4zrzovbb/website/01d06528567e4bd22c3ddedc87f609ee5716a009-2400x1260.png" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.png" type="image/png" length="0" />
       <source url="https://share.google/uISHcJ3WNR4H6uMhP">Original Source</source>
     </item>
     <item>
@@ -4180,7 +4170,7 @@
       <category>Twitter</category>
       <category>Claude Code</category>
       <category>Coding Insights</category>
-      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2019173388062007297/img/jHnsIhpNNPkjIRvy.jpg" type="image/jpeg" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2019173731042750509">Original Source</source>
     </item>
     <item>
@@ -4194,7 +4184,7 @@
       <category>Vercel</category>
       <category>Skills.sh</category>
       <category>AI-powered development</category>
-      <enclosure url="https://cloud.inference.sh/web/assets/og-image.png" type="image/png" length="0" />
+      <enclosure url="https://bitroot.org/blog/media/2026-02-05-revolutionizing-ai-powered-development-with-vercel.png" type="image/png" length="0" />
       <source url="https://app.inference.sh/blog/skills/agent-skills-overview">Original Source</source>
     </item>
     <item>
@@ -4208,7 +4198,6 @@
       <category>Voxtral Transcribe 2</category>
       <category>Speech-to-Text</category>
       <category>AI</category>
-      <enclosure url="https://mistral.ai/img/mistral-cover.png" type="image/png" length="0" />
       <source url="https://mistral.ai/news/voxtral-transcribe-2">Original Source</source>
     </item>
   </channel>

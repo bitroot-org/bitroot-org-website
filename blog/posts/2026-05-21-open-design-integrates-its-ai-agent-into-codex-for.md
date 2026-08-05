@@ -3,7 +3,7 @@ date: '2026-05-21'
 excerpt: Open Design now runs inside Codex, letting its AI agent manipulate the design
   canvas directly. Engineers should weigh the workflow boost against the lack of pricing
   details and early‑stage tooling.
-image: https://pbs.twimg.com/amplify_video_thumb/2056306525631565824/img/lWL73U_ghzJB8XUH.jpg
+image: media/2026-05-21-open-design-integrates-its-ai-agent-into-codex-for.jpg
 published_at: '2026-05-21T12:57:09.944480+00:00'
 sources:
 - https://x.com/i/status/2056309544997818507

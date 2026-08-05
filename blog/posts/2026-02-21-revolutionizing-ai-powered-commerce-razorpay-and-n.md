@@ -2,7 +2,7 @@
 date: '2026-02-21'
 excerpt: Razorpay & NPCI launch Agentic Payments on Claude. Enable automated UPI payments
   for Zomato, Swiggy & Zepto. Turn AI conversations into completed transactions.
-image: https://blog.razorpay.in/wp-content/uploads/2026/02/Blog.png
+image: media/2026-02-21-revolutionizing-ai-powered-commerce-razorpay-and-n.png
 published_at: '2026-02-21T19:39:30.847490+00:00'
 sources:
 - https://share.google/JZHNyoCeRqofk1vze

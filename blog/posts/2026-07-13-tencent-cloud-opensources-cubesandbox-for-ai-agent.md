@@ -3,7 +3,7 @@ date: '2026-07-13'
 excerpt: CubeSandbox is a lightweight RustVMM sandbox that starts in 60 ms, uses under
   5 MB RAM per instance, and is Apache 2.0‑licensed, offering a fast, low‑overhead
   environment for AI agents.
-image: https://pbs.twimg.com/media/HNC2v8gaoAArmz6.png?name=orig
+image: media/2026-07-13-tencent-cloud-opensources-cubesandbox-for-ai-agent.png
 published_at: '2026-07-13T11:54:24.364550+00:00'
 sources:
 - https://x.com/XAMTO_AI/status/2076443738004742262

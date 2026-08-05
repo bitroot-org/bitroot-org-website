@@ -3,7 +3,7 @@ date: '2026-05-26'
 excerpt: Google's Gemma 4 now powers AIventure, a free dungeon‑crawling demo that
   lets you prompt an NPC to generate a web app on the fly. It showcases agentic workflows
   without any license fees, but it needs decent hardware.
-image: https://pbs.twimg.com/amplify_video_thumb/2059340879354298368/img/zRhZNileosZm4Jx1.jpg
+image: media/2026-05-26-google-launches-aiventure-an-opensource-ai-dungeon.jpg
 published_at: '2026-05-26T19:24:58.062127+00:00'
 sources:
 - https://x.com/i/status/2059343174112522532

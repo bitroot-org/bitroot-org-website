@@ -4,7 +4,7 @@ excerpt: Claude Code introduces a new /powerup command, bringing interactive les
   to the terminal, and marking the beginning of a new era in AI dev tool onboarding.
   This innovation is set to make AI development more accessible and user-friendly
   for developers.
-image: https://pbs.twimg.com/amplify_video_thumb/2039495080659030016/img/JPrPKLJvq9Gj0OE-.jpg
+image: media/2026-04-08-revolutionizing-ai-dev-tool-onboarding-interactive.jpg
 published_at: '2026-04-08T02:28:14.215480+00:00'
 sources:
 - https://x.com/i/status/2041542766585610477
@@ -16,7 +16,6 @@ title: 'Revolutionizing AI Dev Tool Onboarding: Interactive Learning Comes to Cl
   Code'
 video: media/2026-04-08-revolutionizing-ai-dev-tool-onboarding-interactive.mp4
 ---
-
 
 ## Introduction to Interactive Learning
 We just spotted an exciting update from Claude Code that's worth sharing with the community - a new /powerup command that teaches you how to use the tool right inside the terminal. This command brings interactive lessons, one unlock at a time, making it easier for developers to get started with AI development. 

@@ -3,7 +3,7 @@ date: '2026-07-20'
 excerpt: The new GoChat UI Chrome extension adds a floating chat window for OpenCode
   Go subscriptions, streaming replies from every model without requiring an account
   or telemetry.
-image: https://pbs.twimg.com/media/HNpmZJdboAAU-l5.jpg?name=orig
+image: media/2026-07-20-gochat-ui-chrome-extension-brings-floating-chat-to.jpg
 published_at: '2026-07-20T11:38:18.254865+00:00'
 sources:
 - https://x.com/theadaloguy/status/2079087378522919057

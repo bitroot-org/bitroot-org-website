@@ -3,7 +3,7 @@ date: '2026-02-06'
 excerpt: We’re upgrading our smartest model. Across agentic coding, computer use,
   tool use, search, and finance, Opus 4.6 is an industry-leading model, often by wide
   margin.
-image: https://cdn.sanity.io/images/4zrzovbb/website/01d06528567e4bd22c3ddedc87f609ee5716a009-2400x1260.png
+image: media/2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.png
 published_at: '2026-02-06T03:07:33.660264+00:00'
 sources:
 - https://share.google/uISHcJ3WNR4H6uMhP

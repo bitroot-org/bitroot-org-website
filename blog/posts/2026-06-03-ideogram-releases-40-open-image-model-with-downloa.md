@@ -2,7 +2,7 @@
 date: '2026-06-03'
 excerpt: Ideogram 4.0 drops an open‑source image generation model that you can download,
   fine‑tune, and run locally, while still being accessible via the existing API plans.
-image: https://pbs.twimg.com/amplify_video_thumb/2062202150915371008/img/MFGaulr4ZPNZNLaI.jpg
+image: media/2026-06-03-ideogram-releases-40-open-image-model-with-downloa.jpg
 published_at: '2026-06-03T19:01:12.158532+00:00'
 sources:
 - https://x.com/i/status/2062202208700313872

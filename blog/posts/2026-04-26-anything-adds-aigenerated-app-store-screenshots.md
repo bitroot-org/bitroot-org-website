@@ -4,7 +4,7 @@ excerpt: 'BREAKING: the screenshot bottleneck is gone!
 
 
   Anything now generates designer grade App Store screenshots'
-image: https://pbs.twimg.com/amplify_video_thumb/2047782324931031040/img/seftU4O4TShx8b9P.jpg
+image: media/2026-04-26-anything-adds-aigenerated-app-store-screenshots.jpg
 published_at: '2026-04-26T15:21:20.573555+00:00'
 sources:
 - https://x.com/i/status/2047782953959170239

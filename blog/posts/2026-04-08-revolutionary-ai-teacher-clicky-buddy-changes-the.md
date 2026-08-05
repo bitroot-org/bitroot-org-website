@@ -4,7 +4,7 @@ excerpt: Meet Clicky, an AI-powered teacher that assists learners in real-time, 
   discover its potential to transform the way we acquire new skills. This cutting-edge
   tool is set to revolutionize the edtech landscape with its interactive and personalized
   approach.
-image: https://pbs.twimg.com/amplify_video_thumb/2041313187883261952/img/DiF4z36g4_F72A7N.jpg
+image: media/2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the.jpg
 published_at: '2026-04-08T09:23:37.395297+00:00'
 sources:
 - https://x.com/i/status/2041314633978659092
@@ -15,7 +15,6 @@ tags:
 title: 'Revolutionary AI Teacher: Clicky Buddy Changes the Game for Learning'
 video: media/2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the.mp4
 ---
-
 
 ## Introduction to Clicky
 We just spotted an exciting update from Farza about an innovative tool called Clicky, an AI teacher that lives next to your cursor, offering real-time guidance and support. Here's why this matters for developers and learners alike: it has the potential to make learning more engaging, effective, and accessible. What caught our attention about Clicky is its ability to see the screen, talk to the user, and point at specific elements, mimicking a human teacher.

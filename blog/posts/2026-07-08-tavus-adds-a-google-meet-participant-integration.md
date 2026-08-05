@@ -2,7 +2,7 @@
 date: '2026-07-08'
 excerpt: Tavus now lets a PAL join Google Meet calls as a real participant, enabling
   custom notetakers or meeting hosts with a few clicks.
-image: https://pbs.twimg.com/media/HMubm2Va8AAo-Pe.jpg
+image: media/2026-07-08-tavus-adds-a-google-meet-participant-integration.jpg
 published_at: '2026-07-08T18:52:51.434143+00:00'
 sources:
 - https://x.com/i/status/2074894605125026072

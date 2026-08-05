@@ -4,7 +4,7 @@ excerpt: Hyperbrowser introduces batch mode for HyperSkill, enabling AI agents t
   master entire tech stacks, and we're excited to explore the implications for the
   tech community. This update promises to revolutionize the way developers work with
   AI agents and tech stacks.
-image: https://pbs.twimg.com/amplify_video_thumb/2023480413063417856/img/V8nba7L3Ua6bqszv.jpg
+image: media/2026-02-17-revolutionizing-tech-stacks-hyperbrowser-unveils-b.jpg
 published_at: '2026-02-17T17:00:11.197575+00:00'
 sources:
 - https://x.com/i/status/2023480469044818208
@@ -15,7 +15,6 @@ tags:
 title: 'Revolutionizing Tech Stacks: Hyperbrowser Unveils Batch Mode for HyperSkill'
 video: media/2026-02-17-revolutionizing-tech-stacks-hyperbrowser-unveils-b.mp4
 ---
-
 
 ## Introduction to HyperSkill Batch Mode
 We just spotted an exciting update from Hyperbrowser that's worth sharing with the community - the introduction of batch mode for HyperSkill. This feature allows AI agents to master entire tech stacks, not just single tools, which is a game-changer for developers. 

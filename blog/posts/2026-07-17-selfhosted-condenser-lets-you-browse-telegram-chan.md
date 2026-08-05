@@ -5,7 +5,7 @@ excerpt: '我做了一个自部署的阅读器，叫 Condenser，可以用 Twitt
 
 
   https://github.com/reorx/condenser'
-image: https://pbs.twimg.com/media/HNZm5EwaUAEiU5d.jpg?name=orig
+image: media/2026-07-17-selfhosted-condenser-lets-you-browse-telegram-chan.jpg
 media:
 - type: image
   url: https://pbs.twimg.com/media/HNZm5EwaUAEiU5d.jpg?name=orig

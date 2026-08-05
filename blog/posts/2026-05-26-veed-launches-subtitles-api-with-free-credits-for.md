@@ -2,7 +2,7 @@
 date: '2026-05-26'
 excerpt: VEED announced a Subtitles API that supports over 100 languages and offers
   free credits to the first 100 users who retweet the launch tweet.
-image: https://pbs.twimg.com/amplify_video_thumb/2059269424025382912/img/QmhqClgMjoPy4stw.jpg
+image: media/2026-05-26-veed-launches-subtitles-api-with-free-credits-for.jpg
 published_at: '2026-05-26T19:22:24.950568+00:00'
 sources:
 - https://x.com/i/status/2059269493382434992

@@ -3,7 +3,7 @@ date: '2026-07-13'
 excerpt: "~7MB. Itu ukuran OpenPencil.\n\nAplikasi desain open-source yg bisa buka
   file .fig, punya AI built-in, & jalan di browser + desktop \U0001F606\n\nBahkan
   ada CLI & MCP server buat agent."
-image: https://pbs.twimg.com/media/HNFSYNYagAA1Kkb.jpg?name=orig
+image: media/2026-07-13-openpencil-launches-7-mb-design-app-with-fig-suppo.jpg
 published_at: '2026-07-13T11:53:41.050605+00:00'
 sources:
 - https://x.com/grafisify/status/2076531540465762429

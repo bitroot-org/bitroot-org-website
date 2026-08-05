@@ -36,6 +36,7 @@ POSTS_DIR = "blog/posts"
 MEDIA_DIR = "blog/media"
 MAX_CONTENT_LENGTH = 15000  # Max chars per URL to avoid token limits
 MAX_VIDEO_SIZE = 50 * 1024 * 1024  # 50MB max video size
+MAX_IMAGE_SIZE = 8 * 1024 * 1024  # 8MB max cover image size
 
 BROWSER_UA = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -664,6 +665,78 @@ def download_media(url, slug, media_type="video"):
         return None
 
 
+IMAGE_EXT_BY_MIME = {
+    "image/jpeg": "jpg",
+    "image/png": "png",
+    "image/webp": "webp",
+    "image/gif": "gif",
+    "image/avif": "avif",
+}
+
+
+def download_image(url, slug):
+    """Download a cover image and save it locally.
+
+    Remote og:/CDN images (especially pbs.twimg.com) rot over time — the
+    tweet gets deleted or the CDN blocks hotlinking — leaving broken cards
+    across the site. Self-hosting at generation time fixes that for good.
+
+    Returns a path relative to blog root (media/<file>), or None on failure.
+    """
+    try:
+        logger.info(f"Downloading image from: {url}")
+        headers = {
+            "User-Agent": BROWSER_UA,
+            "Referer": "https://twitter.com/",
+        }
+        with requests.get(url, headers=headers, stream=True, timeout=30) as resp:
+            resp.raise_for_status()
+
+            content_type = resp.headers.get("content-type", "").split(";")[0].strip().lower()
+            ext = IMAGE_EXT_BY_MIME.get(content_type)
+            if not ext:
+                # Fall back to sniffing the URL (pbs.twimg.com uses ?format=jpg)
+                u = url.lower()
+                for candidate in ("jpg", "jpeg", "png", "webp", "gif", "avif"):
+                    if f".{candidate}" in u or f"format={candidate}" in u:
+                        ext = "jpg" if candidate == "jpeg" else candidate
+                        break
+            if not ext:
+                logger.warning(f"Not an image (content-type: {content_type}), skipping download")
+                return None
+
+            content_length = resp.headers.get("content-length")
+            if content_length and int(content_length) > MAX_IMAGE_SIZE:
+                logger.warning(f"Image too large ({content_length} bytes), skipping download")
+                return None
+
+            os.makedirs(MEDIA_DIR, exist_ok=True)
+            filename = f"{slug}.{ext}"
+            filepath = os.path.join(MEDIA_DIR, filename)
+
+            total_size = 0
+            with open(filepath, "wb") as f:
+                for chunk in resp.iter_content(chunk_size=8192):
+                    if chunk:
+                        f.write(chunk)
+                        total_size += len(chunk)
+                        if total_size > MAX_IMAGE_SIZE:
+                            logger.warning("Image exceeded max size during download, aborting")
+                            os.remove(filepath)
+                            return None
+
+            if total_size == 0:
+                os.remove(filepath)
+                return None
+
+        logger.info(f"Downloaded image to: {filepath} ({total_size} bytes)")
+        return f"media/{filename}"
+
+    except Exception as e:
+        logger.error(f"Failed to download image: {str(e)}")
+        return None
+
+
 def generate_post(client, issue_data, fetched_contents):
     """Use Groq to synthesize a blog post from the fetched content."""
     # Build context from fetched content
@@ -903,6 +976,15 @@ def create_post_file(post_data, source_urls, image_url=None, source_excerpt=None
 
     # Use source excerpt if available, fallback to AI-generated excerpt
     excerpt = source_excerpt if source_excerpt else post_data.get("excerpt", "")
+
+    # Self-host the cover image so cards don't break when the remote
+    # og:image/CDN URL later dies. Keep the remote URL only as a fallback.
+    if image_url and image_url.startswith("http"):
+        local_image = download_image(image_url, f"{today}-{slug}")
+        if local_image:
+            image_url = local_image
+        else:
+            logger.warning(f"Keeping remote image URL (download failed): {image_url}")
 
     # Download video/GIF if available (to avoid hotlink blocking)
     local_video = None

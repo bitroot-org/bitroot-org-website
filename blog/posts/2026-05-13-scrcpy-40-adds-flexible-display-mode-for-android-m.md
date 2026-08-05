@@ -2,7 +2,7 @@
 date: '2026-05-13'
 excerpt: "scrcpy 4.0 is out \U0001F680\n\nTry the new flex display feature (and more):
   https://github.com/Genymobile/scrcpy/releases/tag/v4.0"
-image: https://pbs.twimg.com/amplify_video_thumb/2054463118177116160/img/8Xiqdw9phqhc-lHC.jpg
+image: media/2026-05-13-scrcpy-40-adds-flexible-display-mode-for-android-m.jpg
 published_at: '2026-05-13T14:36:27.083950+00:00'
 sources:
 - https://x.com/i/status/2054463213022929032

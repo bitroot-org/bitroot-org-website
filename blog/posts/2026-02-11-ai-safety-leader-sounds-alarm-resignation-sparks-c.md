@@ -4,7 +4,7 @@ excerpt: The resignation of Anthropic AI's safety lead has sent shockwaves throu
   the tech community, highlighting the growing concerns over AI's potential risks
   to humanity. This development has significant implications for developers and the
   future of AI development.
-image: https://akm-img-a-in.tosshub.com/indiatoday/images/story/202602/mrinank-sharma-anthropic-104224244-16x9_0.png?VersionId=tsufT07Qx7LE2vr275HSEDe6X7hAnMkN
+image: media/2026-02-11-ai-safety-leader-sounds-alarm-resignation-sparks-c.jpg
 published_at: '2026-02-11T11:06:32.467400+00:00'
 sources:
 - https://share.google/6gzMAD1U347j7YUXX
@@ -15,7 +15,6 @@ tags:
 title: 'AI Safety Leader Sounds Alarm: Resignation Sparks Concerns Over Tech''s Dark
   Side'
 ---
-
 
 ## Introduction to the Crisis
 We just spotted a disturbing update from the AI world that's worth sharing with the community: the resignation of Anthropic AI's safety lead, Mrinank Sharma, who expressed dire concerns over the state of the world and the perils of uncontrolled AI growth. Here's what caught our attention about this - the usually quiet and reserved AI safety expert is sounding the alarm, and it's a wake-up call for all of us. 

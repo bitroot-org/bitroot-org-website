@@ -2,7 +2,7 @@
 date: '2026-03-05'
 excerpt: Apple announced the latest 14- and 16-inch MacBook Pro with the all-new M5
   Pro and M5 Max.
-image: https://www.apple.com/newsroom/images/2026/03/apple-introduces-macbook-pro-with-all-new-m5-pro-and-m5-max/tile/Apple-MacBook-Pro-M5-Pro-and-M5-Max-Capture-One-260303-lp.jpg.og.jpg?202603050320
+image: media/2026-03-05-apple-unleashes-ai-powered-macbook-pro-with-m5-pro.jpg
 published_at: '2026-03-05T05:20:04.393100+00:00'
 sources:
 - https://share.google/XBSpKN75sGxaqL1Mk

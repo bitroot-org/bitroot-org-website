@@ -2,7 +2,7 @@
 date: '2026-07-10'
 excerpt: OpenHands adds Agent Canvas, a control center that lets you run multiple
   LLM coding agents from one UI and hook them into GitHub, Slack, Notion, and more.
-image: https://pbs.twimg.com/media/HMxlaO8akAERz3C.jpg?name=orig
+image: media/2026-07-10-openhands-launches-agent-canvas-for-selfhosted-ai.jpg
 media:
 - type: image
   url: https://pbs.twimg.com/media/HMxlaO8akAERz3C.jpg?name=orig

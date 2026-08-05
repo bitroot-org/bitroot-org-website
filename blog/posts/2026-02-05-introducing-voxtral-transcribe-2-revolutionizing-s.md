@@ -1,7 +1,7 @@
 ---
 date: '2026-02-05'
 excerpt: Precision diarization, real-time transcription, and a new audio playground.
-image: https://mistral.ai/img/mistral-cover.png
+image: null
 published_at: '2026-02-05T15:38:43.566527+00:00'
 sources:
 - https://mistral.ai/news/voxtral-transcribe-2
@@ -11,7 +11,6 @@ tags:
 - AI
 title: 'Introducing Voxtral Transcribe 2: Revolutionizing Speech-to-Text Models'
 ---
-
 
 ## Introduction to Voxtral Transcribe 2
 We just spotted an exciting update from Mistral that's worth sharing with the community - the release of Voxtral Transcribe 2, a next-generation speech-to-text model that's set to transform voice applications across industries. Here's what caught our attention about this update: it offers state-of-the-art transcription quality, diarization, and ultra-low latency.

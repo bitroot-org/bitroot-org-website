@@ -1,19 +1,23 @@
 ---
 date: '2026-07-08'
-excerpt: 'Anthropic''s Claude Fable introduces a simple but powerful idea: better AI outputs don''t start with better prompts, they start by uncovering your unknowns. Here''s how the framework can improve decision-making for founders, marketers, and AI users.'
-image: https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a4be4919e159adcdfa3ec1c_94358c3c.png
+excerpt: 'Anthropic''s Claude Fable introduces a simple but powerful idea: better
+  AI outputs don''t start with better prompts, they start by uncovering your unknowns.
+  Here''s how the framework can improve decision-making for founders, marketers, and
+  AI users.'
+image: media/2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p.png
 published_at: '2026-07-08T10:38:43.387Z'
 sources: []
 tags:
-- 'Claude Fable'
-- 'Anthropic'
-- 'Claude AI'
-- 'AI Prompting'
-- 'Prompt Engineering'
-- 'AI Reasoning'
-- 'AI Productivity'
-- 'Artificial Intelligence'
-title: 'The real skill of working with Claude Fable isn''t prompting. It''s knowing what you don''t know.'
+- Claude Fable
+- Anthropic
+- Claude AI
+- AI Prompting
+- Prompt Engineering
+- AI Reasoning
+- AI Productivity
+- Artificial Intelligence
+title: The real skill of working with Claude Fable isn't prompting. It's knowing what
+  you don't know.
 ---
 
 [Anthropic](https://www.anthropic.com/) studied approximately 400,000 Claude Code sessions and found something that reframes the entire conversation about AI productivity: users make roughly 70% of the planning decisions in a typical session, while Claude handles roughly 80% of the execution. The model isn't the bottleneck. You are.

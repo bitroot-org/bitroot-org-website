@@ -3,7 +3,7 @@ date: '2026-07-21'
 excerpt: The open‑source last30days skill queries Reddit, X, YouTube, HN, Polymarket,
   TikTok and more in parallel, ranking results by actual engagement. It plugs into
   Claude Code, Codex, Cursor and Gemini CLI at no cost.
-image: https://pbs.twimg.com/media/HNua-chagAAfqU7.jpg?name=orig
+image: media/2026-07-21-last30days-skill-lets-ai-agents-fetch-realengageme.jpg
 published_at: '2026-07-21T10:58:19.768840+00:00'
 sources:
 - https://x.com/heyashishsaini/status/2079426058496119186

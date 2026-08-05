@@ -4,7 +4,7 @@ excerpt: 'New in Claude Code: agent view.
 
 
   One list of all your sessions, available today as a research preview.'
-image: https://pbs.twimg.com/media/HIEVJQ4XoAAXNNi.jpg
+image: media/2026-05-12-claude-code-introduces-an-agent-view-listing-all-s.jpg
 published_at: '2026-05-12T02:26:44.450818+00:00'
 sources:
 - https://x.com/i/status/2053940934736228454

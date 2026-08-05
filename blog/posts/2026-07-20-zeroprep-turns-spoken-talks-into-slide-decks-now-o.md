@@ -3,7 +3,7 @@ date: '2026-07-20'
 excerpt: ZeroPrep auto‑generates slide decks from live speech, adding near‑real‑time
   images, and the code is now open‑source on GitHub. It can shrink prep time for demo
   talks, but output quality varies with the source audio.
-image: https://pbs.twimg.com/media/HNpVGoHbQAA_XzT.jpg?name=orig
+image: media/2026-07-20-zeroprep-turns-spoken-talks-into-slide-decks-now-o.jpg
 published_at: '2026-07-20T11:37:34.661586+00:00'
 sources:
 - https://x.com/ramsri_goutham/status/2079069398267281715

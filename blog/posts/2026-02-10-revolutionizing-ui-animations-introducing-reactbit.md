@@ -3,7 +3,7 @@ date: '2026-02-10'
 excerpt: ReactBits is a game-changing animation library that offers a growing collection
   of smooth, modern UI animations for React projects, taking web design to the next
   level
-image: https://pbs.twimg.com/amplify_video_thumb/2020423255082123265/img/YD4KlnqX6y9k3Ro_.jpg
+image: media/2026-02-10-revolutionizing-ui-animations-introducing-reactbit.jpg
 published_at: '2026-02-10T01:55:57.820786+00:00'
 sources:
 - https://x.com/i/status/2020423330386579646
@@ -14,7 +14,6 @@ tags:
 title: 'Revolutionizing UI Animations: Introducing ReactBits'
 video: media/2026-02-10-revolutionizing-ui-animations-introducing-reactbit.mp4
 ---
-
 
 ## Introduction to ReactBits
 We just spotted an exciting update from Abraham John that's worth sharing with the community - a next-level animation library called ReactBits. This library provides a growing collection of smooth, modern UI animations that can be easily plugged into React projects. 

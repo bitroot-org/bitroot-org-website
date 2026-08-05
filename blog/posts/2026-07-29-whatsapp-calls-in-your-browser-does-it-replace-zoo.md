@@ -1,11 +1,12 @@
 ---
 date: '2026-07-29'
-excerpt: 'WhatsApp calls just landed in your browser. No app needed. No download. July 28, 2026 changed how you think about video calling.'
-image: https://media.licdn.com/dms/image/v2/D5622AQGgvj1NR6GkCA/feedshare-shrink_800/B56Z.pNheXKMAc-/0/1785250322596?e=1787184000&v=beta&t=XdMWYFGyTAWV2cmdu2TjgKsKu54qXFTN2Urc80iboRI
+excerpt: WhatsApp calls just landed in your browser. No app needed. No download. July
+  28, 2026 changed how you think about video calling.
+image: media/2026-07-29-whatsapp-calls-in-your-browser-does-it-replace-zoo.jpg
 published_at: '2026-07-29T07:59:40.213Z'
 sources: []
 tags:
-- 'WhatsApp'
+- WhatsApp
 title: 'WhatsApp Calls in Your Browser: Does It Replace Zoom?'
 ---
 

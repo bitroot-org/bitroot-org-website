@@ -1,21 +1,26 @@
 ---
 date: '2026-07-16'
-excerpt: 'Five days after GPT-5.6 launched, it was deleting user files and crashing infrastructure, exactly as OpenAI''s System Card documented before shipping. Matt Shumer''s Mac got wiped. A developer lost his production database. Then OpenAI announced GPT-Red, a "prevention tool," 11 hours after incidents went viral. This is the cycle: document risks → ship → users hit risks → announce fixes → next model s'
-image: https://techcrunch.com/wp-content/uploads/2026/05/openai-logo-code-background.jpg?resize=1280,852
+excerpt: 'Five days after GPT-5.6 launched, it was deleting user files and crashing
+  infrastructure, exactly as OpenAI''s System Card documented before shipping. Matt
+  Shumer''s Mac got wiped. A developer lost his production database. Then OpenAI announced
+  GPT-Red, a "prevention tool," 11 hours after incidents went viral. This is the cycle:
+  document risks → ship → users hit risks → announce fixes → next model s'
+image: media/2026-07-16-gpt-5-6s-reactive-safety-cycle-known-risks-shipped.jpg
 published_at: '2026-07-16T05:35:32.741Z'
 sources: []
 tags:
-- 'AI Safety'
-- 'GPT-5.6'
-- 'Infrastructure'
-- 'Agentic AI'
-- 'OpenAI'
-- 'Deployment'
-- 'Startups'
-- 'Founders'
-- 'ChatGPT Work'
-- 'Scaling'
-title: 'GPT-5.6''s Reactive Safety Cycle: Known Risks, Shipped Anyway, Fix Announced Later'
+- AI Safety
+- GPT-5.6
+- Infrastructure
+- Agentic AI
+- OpenAI
+- Deployment
+- Startups
+- Founders
+- ChatGPT Work
+- Scaling
+title: 'GPT-5.6''s Reactive Safety Cycle: Known Risks, Shipped Anyway, Fix Announced
+  Later'
 ---
 
 Five days after [GPT-5.6 launched publicly](https://openai.com/index/gpt-5-6/) on July 9, the frontier model was already deleting users' files and causing infrastructure outages. [OpenAI's System Card](https://deploymentsafety.openai.com/gpt-5-6) documented these exact safety gaps before release and shipped it anyway.

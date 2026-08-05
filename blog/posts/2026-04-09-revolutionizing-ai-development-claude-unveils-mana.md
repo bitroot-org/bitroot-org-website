@@ -4,7 +4,7 @@ excerpt: Claude introduces Managed Agents, a game-changing platform for building
   deploying AI agents at scale, streamlining the development process from prototype
   to launch. This innovation has the potential to transform the AI landscape, enabling
   faster and more efficient development of AI-powered applications.
-image: https://pbs.twimg.com/media/HFZiwfuWkAEHrrV.jpg
+image: media/2026-04-09-revolutionizing-ai-development-claude-unveils-mana.jpg
 published_at: '2026-04-09T02:53:14.324035+00:00'
 sources:
 - https://x.com/i/status/2041927687460024721
@@ -15,7 +15,6 @@ tags:
 title: 'Revolutionizing AI Development: Claude Unveils Managed Agents'
 video: media/2026-04-09-revolutionizing-ai-development-claude-unveils-mana.mp4
 ---
-
 
 ## Introduction to Claude Managed Agents
 We just spotted an exciting update from Claude that's worth sharing with the community - the introduction of Claude Managed Agents. This innovative platform is designed to simplify the process of building and deploying AI agents at scale. 

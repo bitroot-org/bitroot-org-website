@@ -2,7 +2,7 @@
 date: '2026-06-18'
 excerpt: For most of social media's history, users had very little say in how content
   reached them. That model is beginning to change.
-image: https://techcrunch.com/wp-content/uploads/2026/06/image.jpeg?resize=800,697
+image: media/2026-06-18-companies-might-control-the-algorithm.jpg
 published_at: '2026-06-18T09:00:00.000000+00:00'
 sources:
 - https://techcrunch.com/2026/06/17/social-medias-next-evolution-user-controlled-algorithms/

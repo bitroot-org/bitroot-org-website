@@ -3,7 +3,7 @@ date: '2026-02-26'
 excerpt: "We’re launching Nano Banana 2, built on the latest Gemini Flash model.  \U0001F34C\n\nIt’s
   state-of-the-art for creating and editing images, combining Pro-level capabilities
   with lightning-fast speed. \U0001F9F5"
-image: https://pbs.twimg.com/tweet_video_thumb/HCGHbQnaYAEbEM-.jpg
+image: media/2026-02-26-revolutionizing-image-creation-nano-banana-2-unlea.jpg
 published_at: '2026-02-26T16:40:45.348932+00:00'
 sources:
 - https://x.com/i/status/2027051577899380991
@@ -14,7 +14,6 @@ tags:
 title: 'Revolutionizing Image Creation: Nano Banana 2 Unleashed'
 video: media/2026-02-26-revolutionizing-image-creation-nano-banana-2-unlea.mp4
 ---
-
 
 ## Introduction to Nano Banana 2
 We just spotted an exciting update from Google DeepMind that's worth sharing with the community - the launch of Nano Banana 2, a cutting-edge tool for creating and editing images. Here's what caught our attention about this innovative release. 

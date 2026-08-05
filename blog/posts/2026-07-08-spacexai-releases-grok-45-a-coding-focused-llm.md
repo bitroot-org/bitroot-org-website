@@ -3,7 +3,7 @@ date: '2026-07-08'
 excerpt: SpaceXAI unveiled Grok 4.5, a coding‑focused large language model built with
   Cursor that claims faster inference and lower cost. Engineers should weigh its speed
   claims against unknown pricing and vendor lock‑in before adopting.
-image: https://pbs.twimg.com/amplify_video_thumb/2074912187391610880/img/BliQqOpmregZ5fSo.jpg
+image: media/2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm.jpg
 published_at: '2026-07-08T18:50:07.447833+00:00'
 sources:
 - https://x.com/i/status/2074915721684086811

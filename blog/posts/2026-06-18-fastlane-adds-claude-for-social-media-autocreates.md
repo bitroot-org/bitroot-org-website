@@ -8,7 +8,7 @@ excerpt: 'Today we''re introducing Claude for Social Media.
 
 
   This is truly insane.'
-image: https://pbs.twimg.com/amplify_video_thumb/2067499429251432448/img/WgmWI2TGioxvI7_S.jpg
+image: media/2026-06-18-fastlane-adds-claude-for-social-media-autocreates.jpg
 published_at: '2026-06-18T18:11:00.133151+00:00'
 sources:
 - https://x.com/i/status/2067501867198996528

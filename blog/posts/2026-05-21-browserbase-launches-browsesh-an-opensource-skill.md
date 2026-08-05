@@ -3,7 +3,7 @@ date: '2026-05-21'
 excerpt: Browserbase released Browse.sh, a free catalog of hundreds of site‑specific
   navigation skills for agents. It aims to give bots a reliable playbook for common
   web tasks.
-image: https://pbs.twimg.com/amplify_video_thumb/2056401090552410112/img/ArrdUEpSr-F8jB1U.jpg
+image: media/2026-05-21-browserbase-launches-browsesh-an-opensource-skill.jpg
 published_at: '2026-05-21T12:57:32.870325+00:00'
 sources:
 - https://x.com/i/status/2056404332824944970

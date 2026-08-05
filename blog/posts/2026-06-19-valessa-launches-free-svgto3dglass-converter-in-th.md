@@ -8,7 +8,7 @@ excerpt: 'Drop in an SVG. Get 3D glass back in a second. That''s Valessa. In you
 
 
   Built with @threejs #threejs #WebGL'
-image: https://pbs.twimg.com/amplify_video_thumb/2067916321841446912/img/Dqg1CbDvIeGdiB7d.jpg
+image: media/2026-06-19-valessa-launches-free-svgto3dglass-converter-in-th.jpg
 published_at: '2026-06-19T18:46:47.288220+00:00'
 sources:
 - https://x.com/i/status/2067916411003924942

@@ -1,15 +1,17 @@
 ---
 date: '2026-07-29'
-excerpt: 'Cursor Start at ₹649/month vs $20 Pro: what developers actually get. Honest comparison of features, pricing tiers, and when each makes sense for your workflow.'
-image: https://pbs.twimg.com/media/HOSr9QJaQAA6z-S?format=png&name=900x900
+excerpt: 'Cursor Start at ₹649/month vs $20 Pro: what developers actually get. Honest
+  comparison of features, pricing tiers, and when each makes sense for your workflow.'
+image: media/2026-07-29-cursor-start-at-649-month-what-developers-in-india.png
 published_at: '2026-07-29T03:55:44.130Z'
 sources: []
 tags:
-- 'Cursor'
-- 'AI'
-- 'Coding'
-- 'Grok'
-title: 'Cursor Start at ₹649/Month: What Developers in India Actually Get (And What They Don''t)'
+- Cursor
+- AI
+- Coding
+- Grok
+title: 'Cursor Start at ₹649/Month: What Developers in India Actually Get (And What
+  They Don''t)'
 ---
 
 Cursor just launched its first country-specific pricing tier. ₹649 a month—roughly $8—makes AI-powered coding accessible to individual developers, students, and bootstrap teams across India. But the trade-offs matter. Here's what you actually get, what you're missing, and whether Start or Pro makes sense for your workflow.

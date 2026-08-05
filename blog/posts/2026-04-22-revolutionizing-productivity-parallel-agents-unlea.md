@@ -3,7 +3,7 @@ date: '2026-04-22'
 excerpt: Zed's Parallel Agents is a game-changer for developers, allowing multiple
   agents to run simultaneously, streamlining workflows and boosting productivity.
   This innovation is set to transform the way we work on projects.
-image: https://pbs.twimg.com/media/HGhrpE0WYAE3Io7.jpg?name=orig
+image: media/2026-04-22-revolutionizing-productivity-parallel-agents-unlea.jpg
 published_at: '2026-04-22T17:52:59.314288+00:00'
 sources:
 - https://x.com/i/status/2047004387961106435
@@ -13,7 +13,6 @@ tags:
 - Productivity
 title: 'Revolutionizing Productivity: Parallel Agents Unleashed'
 ---
-
 
 ## Introduction to Parallel Agents
 We just spotted an exciting update from Zed that's worth sharing with the community, and it's all about Parallel Agents. This feature allows developers to mix and match any agent, run them all at once, and manage everything from a new Threads Sidebar. 

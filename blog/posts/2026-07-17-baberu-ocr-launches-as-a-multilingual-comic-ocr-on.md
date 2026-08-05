@@ -1,14 +1,14 @@
 ---
 date: '2026-07-28'
-excerpt: 'フルスクラッチで作った日本語・中国語・英語の漫画用マルチリンガルOCR「Baberu OCR」を簡単にさわれるようHuggingface Spacesに公開しました！ぜひ遊んでみてください！'
-image: https://pbs.twimg.com/media/HNZ_4vjaoAEai85.jpg?name=orig
+excerpt: フルスクラッチで作った日本語・中国語・英語の漫画用マルチリンガルOCR「Baberu OCR」を簡単にさわれるようHuggingface Spacesに公開しました！ぜひ遊んでみてください！
+image: media/2026-07-17-baberu-ocr-launches-as-a-multilingual-comic-ocr-on.jpg
 published_at: '2026-07-17T10:39:25.439123+00:00'
 sources:
 - https://x.com/daichi_genshiai/status/2077989874398032361
 tags:
-- 'ocr'
-- 'multilingual'
-- 'huggingface'
+- ocr
+- multilingual
+- huggingface
 title: 'Baberu OCR: Free Multilingual Comic & Manga Text Extraction Now on Huggingface'
 ---
 

@@ -13,7 +13,7 @@ excerpt: 'kooky最新版本v0.36.0上线重磅功能keep awake，让你的笔记
 
 
   http://github.com/iAmCorey/kooky'
-image: https://pbs.twimg.com/amplify_video_thumb/2077975717103423488/img/dCfQu5LFgLSqkRPp.jpg
+image: media/2026-07-17-kooky-036-adds-keepawake-mode-for-laptops.jpg
 published_at: '2026-07-17T10:40:24.582451+00:00'
 sources:
 - https://x.com/realcoreychiu/status/2077978244159000806

@@ -3,7 +3,7 @@ date: '2026-04-08'
 excerpt: The latest Supernotes update brings exciting new features, improvements,
   and bug fixes, taking user experience to the next level. Discover what's new and
   why it matters for developers and tech enthusiasts.
-image: https://pbs.twimg.com/media/HFSDiOGagAAtDM3.jpg?name=orig
+image: media/2026-04-08-supernotes-323-revolution-unlocking-new-features-a.jpg
 published_at: '2026-04-08T02:27:50.353731+00:00'
 sources:
 - https://x.com/i/status/2041401159639007301
@@ -13,7 +13,6 @@ tags:
 - Update
 title: 'Supernotes 3.2.3 Revolution: Unlocking New Features and Enhancements'
 ---
-
 
 ## Introduction to Supernotes 3.2.3
 We just spotted an exciting update from Supernotes that's worth sharing with the community. Supernotes 3.2.3 has dropped, and it's packed with new features, improvements, and bug fixes. Here's what caught our attention about this update.

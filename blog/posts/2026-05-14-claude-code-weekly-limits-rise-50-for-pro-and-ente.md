@@ -4,7 +4,7 @@ excerpt: 'Claude Code weekly limits are increasing 50%, now through July 13.
 
 
   Live now for all Pro, Max, Team, and seat-based Enterprise users.'
-image: https://pbs.twimg.com/media/HIOLKb7bsAAXtoD.jpg?name=orig
+image: media/2026-05-14-claude-code-weekly-limits-rise-50-for-pro-and-ente.jpg
 published_at: '2026-05-14T02:00:25.873763+00:00'
 sources:
 - https://x.com/i/status/2054639777685934564

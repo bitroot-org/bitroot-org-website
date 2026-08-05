@@ -4,7 +4,7 @@ excerpt: Firecrawl has reached the top 100 GitHub repos, offering a game-changin
   API for AI agents to search, scrape, and interact with the web, trusted by over
   a million developers and thousands of enterprise teams. This milestone underscores
   the significance of Firecrawl's innovative approach to web interaction.
-image: https://pbs.twimg.com/amplify_video_thumb/2041909020173426688/img/4LWyfiguOdYxiZk8.jpg
+image: media/2026-04-09-firecrawl-reaches-new-heights-revolutionizing-web.jpg
 published_at: '2026-04-09T03:00:35.483804+00:00'
 sources:
 - https://x.com/i/status/2041909075110510969
@@ -15,7 +15,6 @@ tags:
 title: 'Firecrawl Reaches New Heights: Revolutionizing Web Interaction for AI Agents'
 video: media/2026-04-09-firecrawl-reaches-new-heights-revolutionizing-web.mp4
 ---
-
 
 ## Introduction to Firecrawl's Milestone
 We just spotted an exciting update from Firecrawl that's worth sharing with the community - they've now become a top 100 GitHub repository. This achievement is a testament to the impact of their innovative API, which enables AI agents to seamlessly search, scrape, and interact with the web. 

@@ -3,7 +3,7 @@ date: '2026-06-12'
 excerpt: Apple announced an AI-powered upgrade to its Shortcuts app at WWDC 2026,
   letting users describe automations in plain English instead of manually chaining
   actions.
-image: https://techcrunch.com/wp-content/uploads/2026/06/tim-cook-wwdc-2026.jpeg?resize=1280,722
+image: media/2026-06-12-apple-brings-ai-to-shortcuts-in-ios-27.jpg
 published_at: '2026-06-12T09:00:00.000000+00:00'
 sources:
 - https://techcrunch.com/2026/06/08/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/
@@ -13,7 +13,8 @@ tags:
 - automation
 - apple intelligence
 - shortcuts
-title: Apple brings AI to Shortcuts in iOS 27, letting anyone automate with plain English
+title: Apple brings AI to Shortcuts in iOS 27, letting anyone automate with plain
+  English
 ---
 
 Apple announced an AI-powered upgrade to its Shortcuts app at WWDC 2026, making automation accessible to everyday iPhone users for the first time. Instead of manually chaining app actions and variables, users can now just describe what they want, and Apple Intelligence builds the workflow for them.

@@ -1,7 +1,10 @@
 ---
 date: '2026-06-23'
-excerpt: 'AI is making vulnerability discovery faster than ever, but fixing those vulnerabilities remains a growing challenge. OpenAI''s new Patch the Planet initiative aims to help secure critical open-source software, signaling a broader shift in cybersecurity from finding bugs to remediating them before attackers can exploit them.'
-image: https://techcrunch.com/wp-content/uploads/2025/09/GettyImages-2214107176.jpg?resize=1280,853
+excerpt: AI is making vulnerability discovery faster than ever, but fixing those vulnerabilities
+  remains a growing challenge. OpenAI's new Patch the Planet initiative aims to help
+  secure critical open-source software, signaling a broader shift in cybersecurity
+  from finding bugs to remediating them before attackers can exploit them.
+image: media/2026-06-23-openai-doesnt-want-to-find-more-bugs-it-wants-to-p.jpg
 published_at: '2026-06-23T06:03:49.689Z'
 sources:
 - https://openai.com/index/patch-the-planet/
@@ -11,17 +14,17 @@ sources:
 - https://owasp.org/www-project-top-ten/
 - https://www.cisa.gov/topics/cyber-threats-and-advisories/software-security
 tags:
-- 'OpenAI'
-- 'Cybersecurity'
-- 'Open Source Security'
-- 'Vulnerability Management'
-- 'AI Security'
-- 'Software Vulnerabilities'
-- 'Patch the Planet'
-- 'Open Source Software'
-- 'Software Supply Chain Security'
-- 'Security Remediation'
-title: 'OpenAI Doesn''t Want To Find More Bugs. It Wants To Patch The Internet.'
+- OpenAI
+- Cybersecurity
+- Open Source Security
+- Vulnerability Management
+- AI Security
+- Software Vulnerabilities
+- Patch the Planet
+- Open Source Software
+- Software Supply Chain Security
+- Security Remediation
+title: OpenAI Doesn't Want To Find More Bugs. It Wants To Patch The Internet.
 ---
 
 AI is becoming remarkably good at finding software vulnerabilities.

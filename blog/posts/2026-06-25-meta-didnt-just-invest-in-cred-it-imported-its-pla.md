@@ -1,7 +1,10 @@
 ---
 date: '2026-06-25'
-excerpt: 'Meta''s $900 million investment in CRED is making headlines, but the bigger story may be Kunal Shah''s appointment as WhatsApp''s new chief. The move signals Meta''s growing focus on payments, commerce, and financial services, while bringing one of India''s most influential fintech founders into WhatsApp''s future strategy.'
-image: https://pbs.twimg.com/media/HLpB4PnbwAAXSog?format=jpg&name=large
+excerpt: Meta's $900 million investment in CRED is making headlines, but the bigger
+  story may be Kunal Shah's appointment as WhatsApp's new chief. The move signals
+  Meta's growing focus on payments, commerce, and financial services, while bringing
+  one of India's most influential fintech founders into WhatsApp's future strategy.
+image: media/2026-06-25-meta-didnt-just-invest-in-cred-it-imported-its-pla.jpg
 published_at: '2026-06-25T06:48:56.110Z'
 sources:
 - https://whatsappbusiness.com/
@@ -10,17 +13,17 @@ sources:
 - https://cred.club/
 - https://techcrunch.com/2026/06/22/whatsapp-gets-new-chief-as-meta-taps-indias-cred-founder-kunal-shah-and-invests-900m-in-startup/
 tags:
-- 'Kunal Shah'
-- 'WhatsApp'
-- 'Meta'
-- 'CRED'
-- 'WhatsApp Payments'
-- 'Fintech'
-- 'Digital Payments'
-- 'Business Messaging'
-- 'Startup Leadership'
-- 'Meta Investment'
-title: 'Meta Didn''t Just Invest In CRED. It Imported Its Playbook.'
+- Kunal Shah
+- WhatsApp
+- Meta
+- CRED
+- WhatsApp Payments
+- Fintech
+- Digital Payments
+- Business Messaging
+- Startup Leadership
+- Meta Investment
+title: Meta Didn't Just Invest In CRED. It Imported Its Playbook.
 ---
 
 Meta has invested $900 million in [CRED](https://cred.club/) and appointed founder Kunal Shah as WhatsApp's new chief. The move combines a major strategic investment with one of the most significant leadership appointments in WhatsApp's history.

@@ -4,7 +4,7 @@ excerpt: MiniMax introduces MMX-CLI, a groundbreaking infrastructure that empowe
   AI agents with seven new senses, revolutionizing their capabilities and potential
   applications. This update is a game-changer for developers and the tech community,
   enabling agents to interact with the world in unprecedented ways.
-image: https://pbs.twimg.com/media/HFjrmYuakAQVPU2.jpg?name=orig
+image: media/2026-04-12-revolutionizing-ai-agents-minimax-unveils-mmx-cli.jpg
 published_at: '2026-04-12T09:16:04.343053+00:00'
 sources:
 - https://x.com/i/status/2042641521653256234
@@ -14,7 +14,6 @@ tags:
 - MMX-CLI
 title: 'Revolutionizing AI Agents: MiniMax Unveils MMX-CLI for Enhanced Capabilities'
 ---
-
 
 ## Introduction to MMX-CLI
 We just spotted an exciting update from MiniMax that's worth sharing with the community - the introduction of MMX-CLI, a innovative infrastructure designed specifically for AI agents. This new tool gives agents seven new senses, including image, video, voice, music, vision, search, and conversation, powered by MiniMax's full-modal stack.

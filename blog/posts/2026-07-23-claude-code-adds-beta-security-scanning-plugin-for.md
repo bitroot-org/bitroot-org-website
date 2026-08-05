@@ -1,16 +1,19 @@
 ---
 date: '2026-07-24'
-excerpt: 'Claude’s new security plugin lets you scan code for vulnerabilities from the terminal, either per‑change or across the whole repo, while you’re already using Claude inference.'
-image: https://pbs.twimg.com/amplify_video_thumb/2079986661207732224/img/6P-2l2p-49hKFPco.jpg
+excerpt: Claude’s new security plugin lets you scan code for vulnerabilities from
+  the terminal, either per‑change or across the whole repo, while you’re already using
+  Claude inference.
+image: media/2026-07-23-claude-code-adds-beta-security-scanning-plugin-for.jpg
 published_at: '2026-07-23T02:06:38.520174+00:00'
 sources:
 - https://x.com/i/status/2079990597973057691
 tags:
-- 'security'
-- 'code scanning'
-- 'claude'
-- 'beta'
-title: 'Claude Code''s New Security Scanner: Free Vulnerability Detection That Replaces a $500/Month Tool'
+- security
+- code scanning
+- claude
+- beta
+title: 'Claude Code''s New Security Scanner: Free Vulnerability Detection That Replaces
+  a $500/Month Tool'
 ---
 
 Anthropic just released Claude Security, a free plugin for Claude Code that scans your codebase for vulnerabilities without leaving your terminal. If you're a bootstrapped founder shipping code solo—or a small team without a dedicated security person—this changes what you can afford.

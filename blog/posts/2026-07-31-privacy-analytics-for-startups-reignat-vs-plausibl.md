@@ -1,12 +1,13 @@
 ---
 date: '2026-07-31'
-excerpt: 'Google Analytics has GDPR fines hitting six figures. Your bootstrap budget can''t absorb that hit.'
-image: https://images.ctfassets.net/ddoznp8df51r/7orRkab7hje1kz2nKh9nkD/33d84053996f68e78cd1d4cbed5e78d9/07w.png?w=800&fm=avif&q=100
+excerpt: Google Analytics has GDPR fines hitting six figures. Your bootstrap budget
+  can't absorb that hit.
+image: media/2026-07-31-privacy-analytics-for-startups-reignat-vs-plausibl.avif
 published_at: '2026-07-31T11:08:38.763Z'
 sources: []
 tags:
-- 'Analytics'
-- 'Privacy'
+- Analytics
+- Privacy
 title: 'Privacy Analytics for Startups: Reignat vs Plausible vs Fathom'
 ---
 

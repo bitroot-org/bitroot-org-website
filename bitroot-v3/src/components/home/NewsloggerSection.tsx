@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import Container from "@/components/ui/Container";
+import FeedCardImage from "./FeedCardImage";
 import SquareGrid from "./SquareGrid";
 
 // The site is a static export, so this runs at BUILD time only. Read the
@@ -148,29 +149,7 @@ export default async function NewsloggerSection() {
               rel="noreferrer"
               className="group flex flex-col bg-paper border border-line rounded-[16px] overflow-hidden no-underline text-inherit hover:border-line-2 hover:-translate-y-0.5 transition-all"
             >
-              {p.image ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={p.image}
-                  alt=""
-                  width={640}
-                  height={360}
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full aspect-[16/9] object-cover bg-paper-2 border-b border-line"
-                />
-              ) : (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src="/placeholder-blog.png"
-                  alt=""
-                  width={640}
-                  height={360}
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full aspect-[16/9] object-cover bg-paper-2 border-b border-line"
-                />
-              )}
+              <FeedCardImage src={p.image} />
               <div className="p-5 flex flex-col gap-2.5 flex-1">
                 {p.categories.length > 0 && (
                   <div className="flex flex-wrap gap-1.5">

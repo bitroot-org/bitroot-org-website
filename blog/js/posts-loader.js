@@ -80,11 +80,27 @@ const PostsLoader = {
         if (post.image) {
             return post.image;
         }
-        // Deterministic on-brand pixel pattern, seeded per post.
+        return this.fallbackImage(post);
+    },
+
+    /**
+     * Fallback when a post has no image or its image fails to load.
+     * Deterministic on-brand pixel pattern, seeded per post.
+     */
+    fallbackImage(post) {
         if (window.bitrootPixelPlaceholder) {
             return window.bitrootPixelPlaceholder(post.slug || post.title || '');
         }
         return this.placeholderImage;
+    },
+
+    /**
+     * Inline onerror attribute so a dead image URL degrades to the
+     * placeholder instead of a broken-image icon.
+     */
+    imageOnError(post) {
+        const slug = (post.slug || '').replace(/[^\w-]/g, '');
+        return `onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('${slug}'):'${this.placeholderImage}'"`;
     },
 
     /**
@@ -107,7 +123,7 @@ const PostsLoader = {
             <article class="featured-post" data-post-slug="${post.slug}" ${hasVideo ? `data-video="${post.video}"` : ''}>
                 <div class="featured-progress"><div class="featured-progress-bar"></div></div>
                 <div class="post-image">
-                    <img src="${image}" alt="${post.title}">
+                    <img src="${image}" alt="${post.title}" ${this.imageOnError(post)}>
                     ${hasVideo ? `
                         <div class="video-container" style="display: none;">
                             <video src="${post.video}" playsinline loop></video>
@@ -510,7 +526,7 @@ const PostsLoader = {
         if (oldVideo) oldVideo.pause();
 
         const tag = (post.tags && post.tags[0]) || 'General';
-        const image = this.getPostImage(post);
+        let image = this.getPostImage(post);
         const displayDate = post.published_at ? this.formatDateTime(post.published_at) : this.formatDate(post.date);
         const hasVideo = this.hasVideo(post);
 
@@ -569,7 +585,11 @@ const PostsLoader = {
             doSwap();
         } else {
             preload.onload = doSwap;
-            preload.onerror = doSwap; // still swap even if image fails
+            preload.onerror = () => {
+                // Dead image URL — swap with the placeholder instead.
+                image = this.fallbackImage(post);
+                doSwap();
+            };
         }
     }
 };

@@ -3,7 +3,7 @@ date: '2026-02-12'
 excerpt: A new CLI tool scans iOS apps against App Store guidelines, ensuring compliance
   and streamlining the submission process. This game-changing tool automates checks
   for payment, privacy, and metadata requirements, making it a must-have for developers.
-image: https://pbs.twimg.com/amplify_video_thumb/2021661265601736704/img/unNAGbptn10BXCu3.jpg
+image: media/2026-02-12-revolutionizing-app-store-submissions-automated-gu.jpg
 published_at: '2026-02-12T18:55:07.642085+00:00'
 sources:
 - https://x.com/i/status/2021661315329405174
@@ -14,7 +14,6 @@ tags:
 title: 'Revolutionizing App Store Submissions: Automated Guideline Compliance'
 video: media/2026-02-12-revolutionizing-app-store-submissions-automated-gu.mp4
 ---
-
 
 ## Introduction to the Game-Changer
 We just spotted an exciting update from Landseer Enga that's worth sharing with the community - a CLI tool that scans your iOS app against every App Store guideline before you submit. This tool is a total game-changer for developers, saving time and reducing the risk of rejection.

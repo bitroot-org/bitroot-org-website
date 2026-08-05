@@ -4,7 +4,7 @@ excerpt: Craft Agents can now be used with Codex and Claude, offering a free and
   solution for developers, and we're excited to explore the implications of this update
   on the coding community. This new compatibility opens up a world of possibilities
   for developers across various platforms, including Windows, Mac, and Linux.
-image: https://pbs.twimg.com/media/HApiEWXb0AAN3dO.jpg?name=orig
+image: media/2026-02-08-revolutionizing-coding-craft-agents-now-compatible.jpg
 published_at: '2026-02-08T18:02:41.964250+00:00'
 sources:
 - https://x.com/i/status/2020535293905101186
@@ -15,7 +15,6 @@ tags:
 - Open Source
 title: 'Revolutionizing Coding: Craft Agents Now Compatible with Codex and Claude'
 ---
-
 
 ## Introduction to the Update
 We just spotted an exciting update from Balint Orosz that's worth sharing with the community: Craft Agents can now be used with Codex and Claude. This news has significant implications for developers, and we're eager to dive into the details. The community is buzzing about the potential of this integration.

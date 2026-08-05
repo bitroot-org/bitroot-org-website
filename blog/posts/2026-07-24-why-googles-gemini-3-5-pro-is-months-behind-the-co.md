@@ -1,16 +1,19 @@
 ---
 date: '2026-07-24'
-excerpt: 'Google promised Gemini 3.5 Pro in June, it''s still not shipped in July. Why? The flagship can''t match Claude''s coding performance, and that''s what enterprises actually buy.'
-image: https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2026/07/Gemini-3.5-Pro-cover.jpg?w=1500&quality=82&strip=all&ssl=1
+excerpt: Google promised Gemini 3.5 Pro in June, it's still not shipped in July. Why?
+  The flagship can't match Claude's coding performance, and that's what enterprises
+  actually buy.
+image: media/2026-07-24-why-googles-gemini-3-5-pro-is-months-behind-the-co.jpg
 published_at: '2026-07-24T04:54:54.106Z'
 sources: []
 tags:
-- 'AI'
-- 'LLM'
-- 'Google Gemini'
-- 'AI development'
-- 'Technology'
-title: 'Why Google''s Gemini 3.5 Pro Is Months Behind: The Coding Performance Gap Explained'
+- AI
+- LLM
+- Google Gemini
+- AI development
+- Technology
+title: 'Why Google''s Gemini 3.5 Pro Is Months Behind: The Coding Performance Gap
+  Explained'
 ---
 
 Google promised Gemini 3.5 Pro in June. It's now July, and the flagship model still isn't live. The company released three lightweight alternatives (Gemini 3.6 Flash, Gemini 3.5 Flash-Lite, Gemini 3.5 Flash Cyber) to keep developers engaged. But the model everyone is waiting for—the one that's supposed to compete with Claude Opus 4.8 and GPT-5.5—remains in testing.

@@ -1,7 +1,11 @@
 ---
 date: '2026-06-19'
-excerpt: 'While everyone focused on Fable 5, leaked prompts, and jailbreak claims, a bigger shift was unfolding. AI is evolving from generating software to creating applications that remember users, maintain state, and continue operating over time, bringing us closer to a future where AI doesn''t just build software, but helps run it.'
-image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQZ237vHWwJ5azzxb0nyyAmWNzu3W8dG624k_HIrQ-g0deuHnB3z0PsbwL&s=10
+excerpt: While everyone focused on Fable 5, leaked prompts, and jailbreak claims,
+  a bigger shift was unfolding. AI is evolving from generating software to creating
+  applications that remember users, maintain state, and continue operating over time,
+  bringing us closer to a future where AI doesn't just build software, but helps run
+  it.
+image: media/2026-06-19-ai-is-learning-to-run-software-not-just-build-it.jpg
 published_at: '2026-06-19T06:12:58.875Z'
 sources:
 - https://claude.com/blog/artifacts-in-claude-code
@@ -9,15 +13,15 @@ sources:
 - https://www.reddit.com/r/ArtificialInteligence/comments/1u6f668/anthropic_disputes_the_claude_fable_5_jailbreak/
 - https://x.com/elder_plinius/status/2064776322979676227
 tags:
-- 'AI'
-- 'Claude'
-- 'Claude Artifacts'
-- 'AI Application Platforms'
-- 'AI Development'
-- 'Startups'
-- 'Software Development'
-- 'Anthropic'
-title: 'AI Is Learning To Run Software, Not Just Build It'
+- AI
+- Claude
+- Claude Artifacts
+- AI Application Platforms
+- AI Development
+- Startups
+- Software Development
+- Anthropic
+title: AI Is Learning To Run Software, Not Just Build It
 ---
 
 # **AI Is Learning To Run Software, Not Just Build It**

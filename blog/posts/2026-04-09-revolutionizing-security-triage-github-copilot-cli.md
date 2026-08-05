@@ -4,7 +4,7 @@ excerpt: GitHub Copilot CLI automates security triage, allowing devs to identify
   address vulnerabilities quickly, and we're excited to share the implications of
   this update with the community. This tool is set to revolutionize the way developers
   tackle security debt, making it a must-know for anyone in the industry.
-image: https://pbs.twimg.com/amplify_video_thumb/2042008590156787712/img/IiivejD1EO03rhg2.jpg
+image: media/2026-04-09-revolutionizing-security-triage-github-copilot-cli.jpg
 published_at: '2026-04-09T02:57:05.082871+00:00'
 sources:
 - https://x.com/i/status/2042008695035355537
@@ -15,7 +15,6 @@ tags:
 title: 'Revolutionizing Security Triage: GitHub Copilot CLI Is a Game-Changer'
 video: media/2026-04-09-revolutionizing-security-triage-github-copilot-cli.mp4
 ---
-
 
 ## Introduction to GitHub Copilot CLI
 We just spotted an exciting update from GitHub that's worth sharing with the community - the introduction of GitHub Copilot CLI, a tool that automates security triage right from the terminal. Here's what caught our attention about this: it can run a full security scan, map findings to the OWASP Top 10, and automatically bulk-open GitHub Issues. 

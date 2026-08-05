@@ -8,7 +8,7 @@ excerpt: 'Introducing GPT-Live, a new generation of voice models for natural hum
 
 
   You’ll want to turn the sound on for this one.'
-image: https://pbs.twimg.com/media/HMuNB0WboAE_A7s.jpg
+image: media/2026-07-08-openai-launches-gptlive-voice-model-in-chatgpt.jpg
 published_at: '2026-07-08T18:50:43.533562+00:00'
 sources:
 - https://x.com/i/status/2074907025537224840

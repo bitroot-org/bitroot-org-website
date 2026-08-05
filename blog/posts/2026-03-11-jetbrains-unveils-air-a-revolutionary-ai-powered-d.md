@@ -3,7 +3,7 @@ date: '2026-03-11'
 excerpt: JetBrains introduces Air, an agentic development environment that supports
   top AI models, and we're excited to explore its potential for developers. This new
   tool is set to change the way we code and interact with AI assistants.
-image: https://pbs.twimg.com/amplify_video_thumb/2031048511664664576/img/hpC5D_EvlOW99QK9.jpg
+image: media/2026-03-11-jetbrains-unveils-air-a-revolutionary-ai-powered-d.jpg
 published_at: '2026-03-11T02:27:11.559898+00:00'
 sources:
 - https://x.com/i/status/2031049359710650522
@@ -14,7 +14,6 @@ tags:
 title: 'JetBrains Unveils Air: A Revolutionary AI-Powered Development Environment'
 video: media/2026-03-11-jetbrains-unveils-air-a-revolutionary-ai-powered-d.mp4
 ---
-
 
 ## Introduction to Air
 We just spotted an exciting update from JetBrains that's worth sharing with the community - the introduction of Air, an agentic development environment. Here's what caught our attention: Air supports some of the most advanced AI models, including Codex, Claude, Gemini, and their own Junie. 

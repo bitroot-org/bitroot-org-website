@@ -1,7 +1,7 @@
 ---
 date: '2026-04-06'
 excerpt: In the next version of tldraw,
-image: https://pbs.twimg.com/amplify_video_thumb/2040869375868305408/img/3gmmVwpbff-T60Nw.jpg
+image: media/2026-04-06-tldraw-revolution-unlocking-next-level-collaborati.jpg
 published_at: '2026-04-06T19:19:28.036255+00:00'
 sources:
 - https://x.com/i/status/2040869600137556247
@@ -12,7 +12,6 @@ tags:
 title: 'tldraw Revolution: Unlocking Next-Level Collaborative Diagramming'
 video: media/2026-04-06-tldraw-revolution-unlocking-next-level-collaborati.mp4
 ---
-
 
 ## Introduction to tldraw
 We just spotted an exciting update from tldraw that's worth sharing with the community, and we can't wait to dive in. The next version of tldraw is set to revolutionize the way we create and collaborate on diagrams. Here's what caught our attention about this update.

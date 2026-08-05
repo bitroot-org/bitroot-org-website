@@ -2,7 +2,7 @@
 date: '2026-04-22'
 excerpt: Introducing workspace agents in ChatGPT—shared agents that can handle complex
   tasks and long-running workflows across tools and teams.
-image: https://pbs.twimg.com/amplify_video_thumb/2047004707844194304/img/IhMl2PZiOc460lx8.jpg
+image: media/2026-04-22-revolutionizing-productivity-openai-unveils-shared.jpg
 published_at: '2026-04-22T18:45:04.822087+00:00'
 sources:
 - https://x.com/i/status/2047008987665809771
@@ -13,7 +13,6 @@ tags:
 title: 'Revolutionizing Productivity: OpenAI Unveils Shared Workspace Agents in ChatGPT'
 video: media/2026-04-22-revolutionizing-productivity-openai-unveils-shared.mp4
 ---
-
 
 ## Introduction to Workspace Agents
 We just spotted an exciting update from OpenAI that's worth sharing with the community - the introduction of workspace agents in ChatGPT. Here's what caught our attention: these shared agents can handle complex tasks and long-running workflows across tools and teams. 

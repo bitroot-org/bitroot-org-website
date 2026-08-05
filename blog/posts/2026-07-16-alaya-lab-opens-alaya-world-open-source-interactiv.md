@@ -3,7 +3,7 @@ date: '2026-07-16'
 excerpt: Alaya Lab released Alaya World, an open‑source video world model that streams
   720p at 24 fps and sustains coherent generation for over a minute. The inference
   code is ready now, with training assets slated for later this year.
-image: https://pbs.twimg.com/amplify_video_thumb/2077587439653474304/img/f7mZg6SUn2mXlQVf.jpg
+image: media/2026-07-16-alaya-lab-opens-alaya-world-open-source-interactiv.jpg
 published_at: '2026-07-16T10:51:59.288396+00:00'
 sources:
 - https://x.com/alayastd/status/2077588265067258309

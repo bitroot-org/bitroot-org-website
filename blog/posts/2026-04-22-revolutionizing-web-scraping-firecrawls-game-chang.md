@@ -3,7 +3,7 @@ date: '2026-04-22'
 excerpt: Firecrawl's latest update enables effortless monitoring of entire sites for
   pricing changes, doc updates, or inventory shifts, making it a game-changer for
   developers and tech enthusiasts
-image: https://pbs.twimg.com/amplify_video_thumb/2046982489231740928/img/hk7SmfiW-7pnCe-I.jpg
+image: media/2026-04-22-revolutionizing-web-scraping-firecrawls-game-chang.jpg
 published_at: '2026-04-22T17:57:09.437253+00:00'
 sources:
 - https://x.com/i/status/2046982541245321671
@@ -14,7 +14,6 @@ tags:
 title: 'Revolutionizing Web Scraping: Firecrawl''s Game-Changing Update'
 video: media/2026-04-22-revolutionizing-web-scraping-firecrawls-game-chang.mp4
 ---
-
 
 ## Introduction to Firecrawl's Update
 We just spotted an exciting update from Firecrawl that's worth sharing with the community, and it's all about taking web scraping to the next level. Firecrawl's new /crawl endpoint allows users to monitor an entire site for changes, making it easier to track pricing updates, documentation changes, or inventory shifts. This update is a significant improvement for developers and tech enthusiasts who rely on web scraping for their projects.

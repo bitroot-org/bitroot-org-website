@@ -3,7 +3,7 @@ date: '2026-06-23'
 excerpt: Claude Tag lets teams call Claude directly from Slack by tagging the bot,
   turning it into a collaborative teammate. It’s a modest addition that may streamline
   routine requests but carries privacy and noise considerations.
-image: https://pbs.twimg.com/media/HLg9iF5XYAAhaS7.jpg
+image: media/2026-06-23-anthropic-adds-claude-tag-for-slack-task-delegatio.jpg
 published_at: '2026-06-23T17:40:20.297751+00:00'
 sources:
 - https://x.com/i/status/2069468693017268244

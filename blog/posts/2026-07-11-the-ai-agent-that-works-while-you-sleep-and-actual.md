@@ -1,18 +1,19 @@
 ---
 date: '2026-07-11'
-excerpt: 'The first AI model an engineering team trusted to work through the night — and what it took to get there.'
-image: https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a4dd0c75a04f6ca41530255_C41-77690-D2-02-0006_VS_R1.jpeg
+excerpt: The first AI model an engineering team trusted to work through the night
+  — and what it took to get there.
+image: media/2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual.jpg
 published_at: '2026-07-11T06:29:02.726Z'
 sources:
 - https://claude.com/blog/working-at-the-frontier-how-cognition-trusts-claude-fable-5-to-work-through-the-night
 tags:
-- 'Claude Fable 5'
-- 'Agentic AI'
-- 'AI Software Engineer'
-- 'Cognition'
-- 'Claude Code'
-- 'AI Productivity'
-title: 'The AI agent that works while you sleep, and actually delivers in the morning'
+- Claude Fable 5
+- Agentic AI
+- AI Software Engineer
+- Cognition
+- Claude Code
+- AI Productivity
+title: The AI agent that works while you sleep, and actually delivers in the morning
 ---
 
 There is a specific kind of trust that engineering teams extend to a new hire. You don't give them a critical production task on day one. You watch them handle something small. Then something medium. You look at how they handle an edge case they weren't prepared for. Only after months of evidence do you let them work unsupervised on something that matters.

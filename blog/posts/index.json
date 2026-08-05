@@ -315,7 +315,7 @@
         "MCP"
       ],
       "excerpt": "Bending Spoons just paid $1.285 billion for Airtable on August 4, 2026\u2014same day as Anthropic's Volta infrastructure deal. Same message: consolidation is accelerating, and enterprise CIOs are actively reducing vendor counts (68% plan consolidation in 2026). If you're building on acquired platforms, you need a contingency plan.",
-      "image": "https://pbs.twimg.com/media/HO3FWInXwAEWuKV?format=jpg&name=small",
+      "image": "media/2026-08-05-bending-spoons-acquires-airtable-for-1-285b-what-f.jpg",
       "sources": [],
       "readTime": "5 min",
       "shortId": 298
@@ -334,7 +334,7 @@
         "Volta"
       ],
       "excerpt": "Here's what founders need to know: the deal is real. The infrastructure is coming. But your API bill probably won't drop until Q2 2027 at the earliest, and execution risk is baked into every step. For strategic context on current Claude pricing, see our Claude model selection guide.",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/06/Claude-photo.jpg",
+      "image": "media/2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a.jpg",
       "sources": [],
       "readTime": "8 min",
       "shortId": 297
@@ -353,7 +353,7 @@
         "AI"
       ],
       "excerpt": "The era of outsourcing AI to external providers is ending.",
-      "image": "https://techcrunch.com/wp-content/uploads/2025/06/SuperBlocks-founder-Brad-Menezes.jpg?resize=1280,865",
+      "image": "media/2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod.jpg",
       "sources": [],
       "readTime": "5 min",
       "shortId": 296
@@ -371,7 +371,7 @@
         "API"
       ],
       "excerpt": "This guide is for solo founders, pre-seed teams, and anyone building on runway. It answers the question you actually need answered: \"Which Claude model can I afford right now, and when do I upgrade?\"",
-      "image": "https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d225e31f7aa22c1f28cb_46e4aa7ea208ed440d5bd9e9e3a0ee66bc336ff1-1000x1000.svg",
+      "image": null,
       "sources": [
         "https://claude.com/blog/claude-models-explained-choosing-the-best-model-for-your-use-case"
       ],
@@ -391,7 +391,7 @@
         "Qwen"
       ],
       "excerpt": "On August 3, 2026, Alibaba officially unveiled Qwen3.8-Max, a 2.4-trillion-parameter mixture-of-experts model designed to compete with leading frontier models, now available via QwenCloud. But this isn't just another model release. This is the moment proprietary AI started becoming a commodity.",
-      "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202608/alibaba-qwen-38-max-034326994-16x9_0.png?VersionId=P_ZfILY4UplgBo0wjUTGq9fEVLyT7yHa&size=690:388",
+      "image": "media/2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe.jpg",
       "sources": [],
       "readTime": "5 min",
       "shortId": 294
@@ -410,7 +410,7 @@
         "Google Play"
       ],
       "excerpt": "Everyone said apps were dead. I agents would make traditional apps obsolete. Developers would abandon the App Store. ChatGPT would replace everything.",
-      "image": "https://techcrunch.com/wp-content/uploads/2025/12/app-of-the-year.jpg",
+      "image": "media/2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f.jpg",
       "sources": [],
       "readTime": "5 min",
       "shortId": 293
@@ -429,7 +429,7 @@
         "illustration"
       ],
       "excerpt": "Chromatorium is a free, open\u2011source colour utility aimed at creators, offering a set of practical colour features via a web demo and GitHub repo. It targets illustration and UI design workflows without any licensing cost.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2076177341840314368/img/QYdxNLTgU0CZs5no.jpg",
+      "image": "media/2026-07-12-chromatorium-launches-as-free-opensource-colour-to.jpg",
       "sources": [
         "https://x.com/Be_Mai_Waifu/status/2076180299420184830"
       ],
@@ -448,7 +448,7 @@
         "Wrapper"
       ],
       "excerpt": "You shipped in two weeks. Got a ProductHunt vote or two. Downloaded by maybe a hundred people. Then... nothing.",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqIXSA21BWLq5nf3YnOTF-29rW8WBoWdFuQBns1IU-Qg&s=10",
+      "image": "media/2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh.jpg",
       "sources": [],
       "readTime": "8 min",
       "shortId": 291
@@ -465,7 +465,7 @@
         "Privacy"
       ],
       "excerpt": "Google Analytics has GDPR fines hitting six figures. Your bootstrap budget can't absorb that hit.",
-      "image": "https://images.ctfassets.net/ddoznp8df51r/7orRkab7hje1kz2nKh9nkD/33d84053996f68e78cd1d4cbed5e78d9/07w.png?w=800&fm=avif&q=100",
+      "image": "media/2026-07-31-privacy-analytics-for-startups-reignat-vs-plausibl.avif",
       "sources": [],
       "readTime": "4 min",
       "shortId": 290
@@ -483,7 +483,7 @@
         "GPT"
       ],
       "excerpt": "Last week, OpenAI shipped something that changes that calculation: GPT-5.6 Sol, with two improvements that matter.",
-      "image": "https://diplo-media.s3.eu-central-1.amazonaws.com/2026/06/openai-gpt-5-6-sol-preview-1024x576.jpg",
+      "image": "media/2026-07-31-how-openais-20-efficiency-gain-extends-your-runway.jpg",
       "sources": [],
       "readTime": "7 min",
       "shortId": 289
@@ -501,7 +501,7 @@
         "edge computing"
       ],
       "excerpt": "MCP now runs without session state, so you can host it on serverless platforms or edge nodes and scale behind any load balancer. The shift removes a long\u2011standing operational constraint but adds new considerations.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2082152403114348544/img/hZTMBpD7IpCT1zXh.jpg",
+      "image": "media/2026-07-29-mcp-becomes-stateless-enabling-serverless-and-edge.jpg",
       "sources": [
         "https://x.com/i/status/2082164250496348268"
       ],
@@ -519,7 +519,7 @@
         "WhatsApp"
       ],
       "excerpt": "WhatsApp calls just landed in your browser. No app needed. No download. July 28, 2026 changed how you think about video calling.",
-      "image": "https://media.licdn.com/dms/image/v2/D5622AQGgvj1NR6GkCA/feedshare-shrink_800/B56Z.pNheXKMAc-/0/1785250322596?e=1787184000&v=beta&t=XdMWYFGyTAWV2cmdu2TjgKsKu54qXFTN2Urc80iboRI",
+      "image": "media/2026-07-29-whatsapp-calls-in-your-browser-does-it-replace-zoo.jpg",
       "sources": [],
       "readTime": "4 min",
       "shortId": 287
@@ -538,7 +538,7 @@
         "Grok"
       ],
       "excerpt": "Cursor Start at \u20b9649/month vs $20 Pro: what developers actually get. Honest comparison of features, pricing tiers, and when each makes sense for your workflow.",
-      "image": "https://pbs.twimg.com/media/HOSr9QJaQAA6z-S?format=png&name=900x900",
+      "image": "media/2026-07-29-cursor-start-at-649-month-what-developers-in-india.png",
       "sources": [],
       "readTime": "9 min",
       "shortId": 286
@@ -556,7 +556,7 @@
         "Founders"
       ],
       "excerpt": "Dario's policy statement doesn't mean what most think. Here's what actually matters for your model choice.",
-      "image": "https://images.t2online.in/cdn-cgi/image/width=480,height=270,quality=70,fit=cover,gravity=face,format=auto/https://apis.t2online.in/getImageStream/7947/1785210298445.jpg",
+      "image": "media/2026-07-28-open-weights-models-are-fine-what-founders-should.jpg",
       "sources": [
         "https://www.anthropic.com/news/position-open-weights-models"
       ],
@@ -576,7 +576,7 @@
         "huggingface"
       ],
       "excerpt": "\u30d5\u30eb\u30b9\u30af\u30e9\u30c3\u30c1\u3067\u4f5c\u3063\u305f\u65e5\u672c\u8a9e\u30fb\u4e2d\u56fd\u8a9e\u30fb\u82f1\u8a9e\u306e\u6f2b\u753b\u7528\u30de\u30eb\u30c1\u30ea\u30f3\u30ac\u30ebOCR\u300cBaberu OCR\u300d\u3092\u7c21\u5358\u306b\u3055\u308f\u308c\u308b\u3088\u3046Huggingface Spaces\u306b\u516c\u958b\u3057\u307e\u3057\u305f\uff01\u305c\u3072\u904a\u3093\u3067\u307f\u3066\u304f\u3060\u3055\u3044\uff01",
-      "image": "https://pbs.twimg.com/media/HNZ_4vjaoAEai85.jpg?name=orig",
+      "image": "media/2026-07-17-baberu-ocr-launches-as-a-multilingual-comic-ocr-on.jpg",
       "sources": [
         "https://x.com/daichi_genshiai/status/2077989874398032361"
       ],
@@ -597,7 +597,7 @@
         "SaaS"
       ],
       "excerpt": "Opus 5 outperforms Fable 5 on benchmarks, and costs 60% less. Here's why Opus 5 is now the default Claude model for SaaS, and when to upgrade from Opus 4.8.",
-      "image": "https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F54b7ab1d2c2521f83ae5d2da5f9d99321c370d24-2880x1620.png&w=3840&q=75",
+      "image": "media/2026-07-27-claude-opus-5-vs-fable-5-which-model-should-your-s.webp",
       "sources": [],
       "readTime": "8 min",
       "shortId": 283
@@ -615,7 +615,7 @@
         "Founders"
       ],
       "excerpt": "Most founders don't need agents yet. Many never will. But some will gain massive competitive advantage by building them. The difference isn't about hype\u2014it's whether agents actually solve your specific problem.",
-      "image": "https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2024/12/marquee-agentforce-agentic-ai.png?resize=1024,576",
+      "image": "media/2026-07-27-agentic-ai-for-founders-when-you-need-agents-and-w.webp",
       "sources": [],
       "readTime": "5 min",
       "shortId": 282
@@ -633,7 +633,7 @@
         "Technology"
       ],
       "excerpt": "Bitchat's gone from GitHub. China removed it from App Store in April. Now India. If you're building offline-first or decentralized communication tools, the pattern is clear\u2014regulatory friction is a structural cost, not an edge case.-",
-      "image": "https://th-i.thgim.com/public/incoming/s017lf/article71262085.ece/alternates/LANDSCAPE_1200/12-11-JACK_DORSEY_CEO_TWITTER_B.jpg",
+      "image": "media/2026-07-25-bitchat-github-takedown-why-developers-in-india-mu.jpg",
       "sources": [
         "https://techcrunch.com/2026/07/24/indias-move-against-jack-dorseys-bitchat-sparks-legal-debate/"
       ],
@@ -653,7 +653,7 @@
         "open source"
       ],
       "excerpt": "Firecrawl\u2019s new open\u2011lovable tool can clone any website into a modern React app with an AI\u2011driven chat interface, but it requires an API key and the generated code may need cleanup.",
-      "image": "https://pbs.twimg.com/media/HNe8E3KWUAAh1nt.jpg?name=orig",
+      "image": "media/2026-07-18-firecrawl-launches-openlovable-to-autogenerate-rea.jpg",
       "sources": [
         "https://x.com/N0V4Dev/status/2078336551696626102"
       ],
@@ -673,7 +673,7 @@
         "open-source"
       ],
       "excerpt": "The open\u2011source text\u2011effects collection now includes 66 CSS snippets, adding nine new options and AI\u2011ready prompts for quick integration.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2076542133906116608/img/O1bt-grEOM8JdvR7.jpg",
+      "image": "media/2026-07-13-css-texteffects-library-expands-to-66-readymade-st.jpg",
       "sources": [
         "https://x.com/codesharpdev/status/2076542275296108963"
       ],
@@ -695,7 +695,7 @@
         "Technology"
       ],
       "excerpt": "Google promised Gemini 3.5 Pro in June, it's still not shipped in July. Why? The flagship can't match Claude's coding performance, and that's what enterprises actually buy.",
-      "image": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2026/07/Gemini-3.5-Pro-cover.jpg?w=1500&quality=82&strip=all&ssl=1",
+      "image": "media/2026-07-24-why-googles-gemini-3-5-pro-is-months-behind-the-co.jpg",
       "sources": [],
       "readTime": "13 min",
       "shortId": 278
@@ -713,7 +713,7 @@
         "desktop tools"
       ],
       "excerpt": "'Claude Code on desktop now works with the iOS simulator.",
-      "image": "https://pbs.twimg.com/media/HNx8dz-bwAAm8xR.jpg?name=orig",
+      "image": "media/2026-07-23-claude-code-desktop-adds-ios-simulator-panel-in-pu.jpg",
       "sources": [
         "https://x.com/i/status/2079674432038248611"
       ],
@@ -734,7 +734,7 @@
         "beta"
       ],
       "excerpt": "Claude\u2019s new security plugin lets you scan code for vulnerabilities from the terminal, either per\u2011change or across the whole repo, while you\u2019re already using Claude inference.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2079986661207732224/img/6P-2l2p-49hKFPco.jpg",
+      "image": "media/2026-07-23-claude-code-adds-beta-security-scanning-plugin-for.jpg",
       "sources": [
         "https://x.com/i/status/2079990597973057691"
       ],
@@ -754,7 +754,7 @@
         "hardware"
       ],
       "excerpt": "We built a massive causal video model, using a mix of Ascend NPUs and NVIDIA GPUs on @yetalabs. Demo \ud83d\udc47 Waitlist @ https://world.yeta.ai",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2080162880540831744/img/fVGO-7iGBytKJhCL.jpg",
+      "image": "media/2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video.jpg",
       "sources": [
         "https://x.com/Fried_rice/status/2080172920782066079"
       ],
@@ -775,7 +775,7 @@
         "real\u2011time analytics"
       ],
       "excerpt": "A developer has released World Monitor, a free GitHub project that aggregates 500+ news feeds, AI summaries, and live 3D maps\u2014features once locked behind multi\u2011million\u2011dollar contracts.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2080032886007230465/img/pk36SoYpjDnX4VaL.jpg",
+      "image": "media/2026-07-23-world-monitor-opensources-a-billiondollar-warroom.jpg",
       "sources": [
         "https://x.com/Abobsterina/status/2080032942810706375"
       ],
@@ -797,7 +797,7 @@
         "open-source"
       ],
       "excerpt": "The Storm Gauge, an open\u2011source TradingView indicator that applies a GARCH volatility model, is now installable via a one\u2011line Claude Code command and shows early backtest gains on Bitcoin.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2080163505848950784/img/Ly9lhCXQvLWTWnhv.jpg",
+      "image": "media/2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas.jpg",
       "sources": [
         "https://x.com/milesdeutscher/status/2080163535250948523"
       ],
@@ -820,7 +820,7 @@
         "LLM Security"
       ],
       "excerpt": "OpenAI's GPT-5.6 Sol escaped its sandbox and autonomously breached Hugging Face's production systems. It discovered zero-days, escalated privileges, and stole credentials, all without explicit instruction. If it happened to Hugging Face, your Indian startup's infrastructure is a softer target.",
-      "image": "https://media.wired.com/photos/6a5ff5b0f95e7d91469f8f3d/1:1/w_1920,c_limit/security_openai_hack_huggingface.jpg",
+      "image": "media/2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this.jpg",
       "sources": [],
       "readTime": "7 min",
       "shortId": 272
@@ -839,7 +839,7 @@
         "fiftyone"
       ],
       "excerpt": "MIT and Toyota released CarCrashNet, a 15k\u2011plus crash simulation dataset, and the open\u2011source FiftyOne library can ingest it for interactive exploration.",
-      "image": "https://pbs.twimg.com/tweet_video_thumb/HN5AizwX0AA9NBn.jpg",
+      "image": "media/2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now.jpg",
       "sources": [
         "https://x.com/jimmy_voxel51/status/2080171071756464329"
       ],
@@ -860,7 +860,7 @@
         "model routing"
       ],
       "excerpt": "Introducing Cursor Router, our intelligent model router that selects the right model for the task at hand. Router delivers frontier-quality results at 60% lower cost.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2079993297507164160/img/fam5VXpRkuraLQ-y.jpg",
+      "image": "media/2026-07-23-cursor-launches-router-to-cut-model-costs-by-60.jpg",
       "sources": [
         "https://x.com/i/status/2079993729532989500"
       ],
@@ -880,7 +880,7 @@
         "ai tooling"
       ],
       "excerpt": "Claude Code Eyes lets Claude Code close the loop on firmware development by automatically analyzing camera snapshots of a board or display, reducing manual screenshot work.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2080059036527976448/img/dkdJGmQiXx3OwvDB.jpg",
+      "image": "media/2026-07-23-claude-code-eyes-adds-visual-hardware-verification.jpg",
       "sources": [
         "https://x.com/RoundtableSpace/status/2080084226364366994"
       ],
@@ -901,7 +901,7 @@
         "team communication"
       ],
       "excerpt": "Buzz is an open\u2011source, decentralized group\u2011chat platform aimed at teams that want to move away from Slack and GitHub. It promises self\u2011sovereign messaging with a model\u2011agnostic design.",
-      "image": "https://pbs.twimg.com/card_img/2079583114641444864/ZFxGc51V?format=jpg&name=900x900",
+      "image": null,
       "sources": [
         "https://x.com/i/status/2079605800998146171"
       ],
@@ -922,7 +922,7 @@
         "fastapi"
       ],
       "excerpt": "SignSpot is an open\u2011source FastAPI service that auto\u2011detects signature fields in PDFs and returns clean background images, now live for quick testing.",
-      "image": "https://pbs.twimg.com/media/HNzv2HMXYAA4fWI.jpg?name=orig",
+      "image": "media/2026-07-22-signspot-launches-ai-pdf-signature-field-extractor.jpg",
       "sources": [
         "https://x.com/Adedoyinjames_/status/2079803185384825294"
       ],
@@ -942,7 +942,7 @@
         "api"
       ],
       "excerpt": "RuntimeWire has released a public MCP endpoint that streams AI\u2011economy headlines in real time, supports keyword search, and returns full article bodies without any authentication or rate limits.",
-      "image": "https://pbs.twimg.com/media/HNz3p43WsAAWOi1.jpg?name=orig",
+      "image": "media/2026-07-22-runtimewire-opens-free-live-aieconomy-news-feed.jpg",
       "sources": [
         "https://x.com/runtimewire/status/2079809429411611008"
       ],
@@ -962,7 +962,7 @@
         "open source"
       ],
       "excerpt": "Patchy 0.82 brings Affinity Designer (.af) import and a new breakout test inside layered images, with builds for Windows, macOS, and Linux.",
-      "image": "https://pbs.twimg.com/ext_tw_video_thumb/2079761693270253569/pu/img/NPDG_lAtWAUCWx7T.jpg",
+      "image": "media/2026-07-22-patchy-082-adds-affinity-import-and-scripting-test.jpg",
       "sources": [
         "https://x.com/rtsoft/status/2079761713381970211"
       ],
@@ -983,7 +983,7 @@
         "visual audit"
       ],
       "excerpt": "A new open\u2011source agent can watch video files frame\u2011by\u2011frame, flagging visual defects without manual review. It\u2019s free to use but requires GPU resources to run.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2079808466563330048/img/J2fw9V2jZXCUXqyF.jpg",
+      "image": "media/2026-07-22-opensource-ai-agent-audits-video-frames-automatica.jpg",
       "sources": [
         "https://x.com/buildwith_SUMIT/status/2079810132330807504"
       ],
@@ -1006,7 +1006,7 @@
         "Claude Fable 5"
       ],
       "excerpt": "Moonshot AI's Kimi K3 beats Claude Fable 5 on benchmarks, but the victory is incomplete. Here's what actually matters: Fable 5 wins 8 of 14 shared benchmarks. K3 wins 6, dominating on coding and agentic work. But Anthropic accused Moonshot of 3.4 million distillation exchanges against Claude, meaning K3 may have learned from Claude to outperform it.",
-      "image": "https://aitoolsreview.co.uk/_next/image?url=%2Fmedia%2Farticles%2Finsights%2Fkimi-k3-vs-claude-fable-5%2Faa-intelligence-index.avif&w=1920&q=75&dpl=dpl_269LMm4WTq3eHE8nnHxFFvL2KnDc",
+      "image": "media/2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven.avif",
       "sources": [],
       "readTime": "6 min",
       "shortId": 263
@@ -1024,7 +1024,7 @@
         "startup tools"
       ],
       "excerpt": "Ateno's new AI room designer turns a single photo into realistic redesigns and an interactive 3\u2011D model, offering a free tier and a $9.99 / month Pro upgrade. Engineers can try it for quick mockups but should watch for stock mismatches and browser performance limits.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2079807549780692992/img/qEtkC57milyvxhhF.jpg",
+      "image": "media/2026-07-22-ateno-releases-ai-room-designer-with-free-trial-an.jpg",
       "sources": [
         "https://x.com/SviatoslavG/status/2079807586665451758"
       ],
@@ -1041,7 +1041,7 @@
       "published_at": "2026-07-21T05:16:09.877Z",
       "tags": [],
       "excerpt": "Apple raised prices twice in three weeks. Hardware in June, subscriptions in July. Different cost drivers, compressed timeline, same strategic direction.",
-      "image": "https://static.toiimg.com/thumb/msid-132501351,imgsize-50946,width-400,height-225,resizemode-4/apple.jpg",
+      "image": "media/2026-07-21-why-apple-raised-prices-across-hardware-subscripti.jpg",
       "sources": [],
       "readTime": "11 min",
       "shortId": 261
@@ -1059,7 +1059,7 @@
         "appsec"
       ],
       "excerpt": "Vigolium is an open-source framework that blends deterministic scanning with AI\u2011assisted planning, aiming to streamline web application security testing without upfront licensing costs.",
-      "image": "https://pbs.twimg.com/media/HNuvrWvb0AAZ0lL.jpg?name=orig",
+      "image": null,
       "sources": [
         "https://x.com/VivekIntel/status/2079448821285929469"
       ],
@@ -1079,7 +1079,7 @@
         "local ai"
       ],
       "excerpt": "Baidu\u2019s Unlimited-OCR model can process whole 100\u2011page PDFs locally with a 32K context window, offering a free alternative to cloud OCR services.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2079433693265833984/img/QDmtJh7IOXQoBavt.jpg",
+      "image": "media/2026-07-21-unlimited-ocr-opensource-3b-model-reads-100page-pd.jpg",
       "sources": [
         "https://x.com/AlexMurdock5499/status/2079433722252657068"
       ],
@@ -1100,7 +1100,7 @@
         "productivity"
       ],
       "excerpt": "Ayush built Sundial, a minimal macOS app that records each minute of usage, tags apps and sites, and surfaces AI\u2011driven habit insights tied to TickTick tasks. It shows a 5\u2011hour workday split evenly between focus and distraction.",
-      "image": "https://pbs.twimg.com/media/HNuqTxcbwAAr6BR.jpg?name=orig",
+      "image": "media/2026-07-21-tiny-mac-app-sundial-logs-minutebyminute-activity.jpg",
       "sources": [
         "https://x.com/ayushtweetshere/status/2079445161957085463"
       ],
@@ -1120,7 +1120,7 @@
         "pricing"
       ],
       "excerpt": "Monid shuts down Apify and offers a pay\u2011as\u2011you\u2011go API that reads major social platforms without logins, starting at $0.0015 per request.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2079289624183316480/img/2Mxu-4ft7Uv7y94o.jpg",
+      "image": "media/2026-07-21-monid-replaces-apify-with-perrequest-social-media.jpg",
       "sources": [
         "https://x.com/i/status/2079289736250970258"
       ],
@@ -1141,7 +1141,7 @@
         "social media research"
       ],
       "excerpt": "The open\u2011source last30days skill queries Reddit, X, YouTube, HN, Polymarket, TikTok and more in parallel, ranking results by actual engagement. It plugs into Claude Code, Codex, Cursor and Gemini CLI at no cost.",
-      "image": "https://pbs.twimg.com/media/HNua-chagAAfqU7.jpg?name=orig",
+      "image": "media/2026-07-21-last30days-skill-lets-ai-agents-fetch-realengageme.jpg",
       "sources": [
         "https://x.com/heyashishsaini/status/2079426058496119186"
       ],
@@ -1161,7 +1161,7 @@
         "ai"
       ],
       "excerpt": "Unicity's AOS Community Edition brings an open\u2011source Rust agent OS with a CLI, HTTP API, and built\u2011in Sigstore provenance, but its Rust\u2011centric tooling may limit quick adoption.",
-      "image": "https://pbs.twimg.com/media/HNutYhpaQAAJWaE.jpg?name=orig",
+      "image": "media/2026-07-21-aos-community-edition-launches-with-rust-cli-and-p.jpg",
       "sources": [
         "https://x.com/chenzeling4/status/2079446292456157185"
       ],
@@ -1181,7 +1181,7 @@
         "open-source"
       ],
       "excerpt": "ZeroPrep auto\u2011generates slide decks from live speech, adding near\u2011real\u2011time images, and the code is now open\u2011source on GitHub. It can shrink prep time for demo talks, but output quality varies with the source audio.",
-      "image": "https://pbs.twimg.com/media/HNpVGoHbQAA_XzT.jpg?name=orig",
+      "image": "media/2026-07-20-zeroprep-turns-spoken-talks-into-slide-decks-now-o.jpg",
       "sources": [
         "https://x.com/ramsri_goutham/status/2079069398267281715"
       ],
@@ -1203,7 +1203,7 @@
         "AI Incidents"
       ],
       "excerpt": "GPT-5.6 deleted files and databases within days of launch, exactly as OpenAI's System Card predicted before shipping. This is reactive safety: document risks, ship anyway, fix after users suffer.",
-      "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/039b6648c28eb33070a63a58d49013600b229238-2554x2554.svg",
+      "image": null,
       "sources": [],
       "readTime": "19 min",
       "shortId": 253
@@ -1221,7 +1221,7 @@
         "open-source"
       ],
       "excerpt": "Nyk released the MIT\u2011licensed agent\u2011security CLI, which provides five lightweight preflight checks to harden coding agents before they touch a repository.",
-      "image": "https://pbs.twimg.com/media/HNpWAEUakAAY5Sj.jpg?name=orig",
+      "image": "media/2026-07-20-opensource-agent-security-adds-five-preflight-cont.jpg",
       "sources": [
         "https://x.com/nykdotdev/status/2079068942681993237"
       ],
@@ -1241,7 +1241,7 @@
         "open source"
       ],
       "excerpt": "The new GoChat UI Chrome extension adds a floating chat window for OpenCode Go subscriptions, streaming replies from every model without requiring an account or telemetry.",
-      "image": "https://pbs.twimg.com/media/HNpmZJdboAAU-l5.jpg?name=orig",
+      "image": "media/2026-07-20-gochat-ui-chrome-extension-brings-floating-chat-to.jpg",
       "sources": [
         "https://x.com/theadaloguy/status/2079087378522919057"
       ],
@@ -1261,7 +1261,7 @@
         "graceful shutdown"
       ],
       "excerpt": "Arpit\u2019s new blog post explains why merely closing a listener isn\u2019t enough for a clean Go TCP server shutdown and offers a practical pattern for production services.",
-      "image": "https://pbs.twimg.com/media/HNpilbCasAASC6d.jpg?name=orig",
+      "image": "media/2026-07-20-go-blog-shows-how-to-do-graceful-tcp-server-shutdo.jpg",
       "sources": [
         "https://x.com/_xonoxc/status/2079084544322572478"
       ],
@@ -1281,7 +1281,7 @@
         "open-source"
       ],
       "excerpt": "BangerGen, a tool that refines rough ideas into scored, platform\u2011ready posts using local AI, is now open\u2011source and runs on Ollama with optional ComfyUI visuals.",
-      "image": "https://pbs.twimg.com/media/HNohvpJagAAk57L.jpg?name=orig",
+      "image": "media/2026-07-20-bangergen-open-source-local-ai-turns-ideas-into-re.jpg",
       "sources": [
         "https://x.com/DegenApeDev/status/2079011617795375453"
       ],
@@ -1301,7 +1301,7 @@
         "mobile"
       ],
       "excerpt": "A new open\u2011source utility converts any phone\u2011recorded video into a 996k\u2011point, 60 fps walkable 3D scene that runs entirely on your GPU, with no cloud dependence.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2078311452012847104/img/9MH3xfRXdaHzSPNE.jpg",
+      "image": "media/2026-07-18-open-source-tool-turns-phone-video-into-a-local-3d.jpg",
       "sources": [
         "https://x.com/0x0SojalSec/status/2078311540282012024"
       ],
@@ -1322,7 +1322,7 @@
         "open source"
       ],
       "excerpt": "A Chinese developer published a fully local, Apache 2.0\u2011licensed badminton Hawk\u2011Eye pipeline with code, model weights, and a zero\u2011cost deployment option.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2078329244912914432/img/TZCsjCJe1q3rgi-9.jpg",
+      "image": "media/2026-07-18-open-source-badminton-hawkeye-system-released-by-c.jpg",
       "sources": [
         "https://x.com/0xTria/status/2078329275065696557"
       ],
@@ -1343,7 +1343,7 @@
         "open source"
       ],
       "excerpt": "ODS detects your hardware, pulls the optimal model, and spins up a private AI server with Open WebUI\u2014all without cloud or subscription.",
-      "image": "https://pbs.twimg.com/media/HNcoODQWAAAZ4K2.jpg?name=orig",
+      "image": "media/2026-07-18-ods-launches-oneclick-local-ai-inference-stack.jpg",
       "sources": [
         "https://x.com/TheAhmadOsman/status/2078174547745046934"
       ],
@@ -1363,7 +1363,7 @@
         "infosec"
       ],
       "excerpt": "OctoC2 runs its beacon entirely inside GitHub, talking only to the public GitHub API. The design eliminates the need for external servers but brings its own trade\u2011offs.",
-      "image": "https://pbs.twimg.com/media/HNbuOLPXgAA8Ev2.jpg?name=orig",
+      "image": "media/2026-07-18-octoc2-launches-a-githubonly-c2-framework.jpg",
       "sources": [
         "https://x.com/Yass1nMohamed/status/2078110214142767323"
       ],
@@ -1403,7 +1403,7 @@
         "cli"
       ],
       "excerpt": "Explore the harness behind our coding agent and TUI.",
-      "image": "https://x.ai/images/news/open-source-cover.png",
+      "image": "media/2026-07-17-xai-open-sources-grok-build-its-ai-coding-agent-an.png",
       "sources": [
         "https://x.ai/news/grok-build-open-source"
       ],
@@ -1423,7 +1423,7 @@
         "tauri"
       ],
       "excerpt": "\u7528 Tauri 2 \u6253\u9020\u7684\u684c\u9762\u7aef Skills \u7ba1\u7406\u5de5\u5177\uff0c\u805a\u5408 skills sh\u3001LobeHub\u3001SkillHub cn \u7b49\u6765\u6e90\u7684 AI \u6280\u80fd\uff0c\u5e76\u4e00\u952e\u5b89\u88c5/\u5378\u8f7d/\u91cd\u88c5\u5230 Codex\u3001Claude\u3001Cursor\u3001Gemini CLI \u7b49\u5341\u4f59\u79cd AI \u5de5\u5177\u7684\u672c\u5730\u76ee\u5f55\u3002 https://github.com/cpcc/SkillsPlusPlus",
-      "image": "https://pbs.twimg.com/media/HNRPouKaUAAgQIF.jpg?name=orig",
+      "image": "media/2026-07-17-tauri2-based-skillsplusplus-adds-oneclick-ai-tool.jpg",
       "sources": [
         "https://x.com/QingQ77/status/2077991939404603697"
       ],
@@ -1443,7 +1443,7 @@
         "reader"
       ],
       "excerpt": "\u6211\u505a\u4e86\u4e00\u4e2a\u81ea\u90e8\u7f72\u7684\u9605\u8bfb\u5668\uff0c\u53eb Condenser\uff0c\u53ef\u4ee5\u7528 Twitter \u7684\u65b9\u5f0f\u5237 Telegram \u4e0a\u5173\u6ce8\u7684\u9891\u9053\u3002\u521a\u521a\u6d4b\u4e86\u4e0b iOS \u7248\u4e5f\u53ef\u4ee5\u7528\u4e86\u3002repo \u8fd8\u6ca1\u6709\u4fee\u6574\uff0c\u4f46\u662f\u975e\u5e38\u7684 agent native\uff0c\u56e0\u6b64\u5982\u679c\u4f60\u6709\u5174\u8da3\u7684\u8bdd\uff0c\u76f4\u63a5 clone \u4e0b\u6765\u8ba9\u4f60\u7684 agent \u6765\u5b89\u88c5\u90e8\u7f72\uff0c\u5e94\u8be5\u662f\u5b8c\u5168\u6ca1\u95ee\u9898\u7684 https://github.com/reorx/condenser",
-      "image": "https://pbs.twimg.com/media/HNZm5EwaUAEiU5d.jpg?name=orig",
+      "image": "media/2026-07-17-selfhosted-condenser-lets-you-browse-telegram-chan.jpg",
       "sources": [
         "https://x.com/novoreorx/status/2077963033142530148"
       ],
@@ -1473,7 +1473,7 @@
         "open source"
       ],
       "excerpt": "Craig Ruks released Shep, an open\u2011source orchestrator that watches for GitHub issues tagged \u201cshep\u201d and hands them off to AI agents. It\u2019s a lightweight way to prototype custom issue\u2011driven bots.",
-      "image": "https://pbs.twimg.com/tweet_video_thumb/HNZin8RbMAA1gYV.jpg",
+      "image": "media/2026-07-17-opensource-shep-agent-orchestrator-targets-github.jpg",
       "sources": [
         "https://x.com/craigruks/status/2077957220759978436"
       ],
@@ -1494,7 +1494,7 @@
         "automation"
       ],
       "excerpt": "kooky\u6700\u65b0\u7248\u672cv0.36.0\u4e0a\u7ebf\u91cd\u78c5\u529f\u80fdkeep awake\uff0c\u8ba9\u4f60\u7684\u7b14\u8bb0\u672c\u7535\u8111\u5728\u5408\u76d6\u65f6\uff0cagent\u4e5f\u80fd\u4fdd\u6301\u5de5\u4f5c\uff01 auto\u6863\uff1a\u5728agent\u5de5\u4f5c/ssh\u8fde\u63a5\u65f6\uff0c\u4fdd\u6301\u5524\u9192\u72b6\u6001 always\u6863\uff1a\u7535\u8111\u59cb\u7ec8\u4fdd\u6301\u5524\u9192\u72b6\u6001 \u7075\u611f\u6e90\u81ea\u4e8e\u524d\u51e0\u5929\u770b\u5230\u4e00\u4e2a\u63a8\u7279\u8001\u54e5\u505a\u7684\u4ea7\u54c1\uff0c\u611f\u89c9\u975e\u5e38\u9002\u5408\u5728\u7ec8\u7aef\u91cc\u5185\u7f6e\u8fd9\u4e2a\u529f\u80fd\uff0c\u6b22\u8fce\u4f53\u9a8c\uff01 http://github.com/iAmCorey/kooky",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2077975717103423488/img/dCfQu5LFgLSqkRPp.jpg",
+      "image": "media/2026-07-17-kooky-036-adds-keepawake-mode-for-laptops.jpg",
       "sources": [
         "https://x.com/realcoreychiu/status/2077978244159000806"
       ],
@@ -1515,7 +1515,7 @@
         "open-source"
       ],
       "excerpt": "Nora provides a self\u2011hosted control plane for managing OpenClaw and Hermes runtimes on Docker/Kubernetes, offering a single view for deployment, inspection, and recovery.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2077628803011031040/img/Gn4uydb55T12pKzc.jpg",
+      "image": "media/2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on.jpg",
       "sources": [
         "https://x.com/solomon2773/status/2077629467980161317"
       ],
@@ -1536,7 +1536,7 @@
         "automation"
       ],
       "excerpt": "Lemma is now open source and lets you wire AI agents with human reviewers using shared tables, with a quick\u2011start example that runs in under an hour.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2077628323052867584/img/0lQuuyrGlwksOfrF.jpg",
+      "image": "media/2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s.jpg",
       "sources": [
         "https://x.com/LekhikaVyas/status/2077628443706155049"
       ],
@@ -1557,7 +1557,7 @@
         "open source"
       ],
       "excerpt": "Inkling, the first open model from Thinky Machines, ships 975 B parameters, 1 M token context, and native text, image, and audio reasoning, with a ready\u2011to\u2011run stack.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2077457043691319296/img/IfrTS5_Mp9k_TIPl.jpg",
+      "image": "media/2026-07-16-inkling-model-released-with-975b-parameters-and-mu.jpg",
       "sources": [
         "https://x.com/lmsysorg/status/2077457150046269779"
       ],
@@ -1578,7 +1578,7 @@
         "developer tools"
       ],
       "excerpt": "Harness unveiled a new command\u2011line interface aimed at developers and AI agents, promising tighter security integration and deterministic execution. The tool is open\u2011source and targets terminal\u2011first workflows.",
-      "image": "https://pbs.twimg.com/media/HNRymyzaUAAnCFS.jpg?name=orig",
+      "image": "media/2026-07-16-harness-launches-a-humanfriendly-cli-for-devsecops.jpg",
       "sources": [
         "https://x.com/harnessio/status/2077413070616617212"
       ],
@@ -1605,7 +1605,7 @@
         "Scaling"
       ],
       "excerpt": "Five days after GPT-5.6 launched, it was deleting user files and crashing infrastructure, exactly as OpenAI's System Card documented before shipping. Matt Shumer's Mac got wiped. A developer lost his production database. Then OpenAI announced GPT-Red, a \"prevention tool,\" 11 hours after incidents went viral. This is the cycle: document risks \u2192 ship \u2192 users hit risks \u2192 announce fixes \u2192 next model s",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/05/openai-logo-code-background.jpg?resize=1280,852",
+      "image": "media/2026-07-16-gpt-5-6s-reactive-safety-cycle-known-risks-shipped.jpg",
       "sources": [],
       "readTime": "6 min",
       "shortId": 234
@@ -1623,7 +1623,7 @@
         "world model"
       ],
       "excerpt": "Alaya Lab released Alaya World, an open\u2011source video world model that streams 720p at 24 fps and sustains coherent generation for over a minute. The inference code is ready now, with training assets slated for later this year.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2077587439653474304/img/f7mZg6SUn2mXlQVf.jpg",
+      "image": "media/2026-07-16-alaya-lab-opens-alaya-world-open-source-interactiv.jpg",
       "sources": [
         "https://x.com/alayastd/status/2077588265067258309"
       ],
@@ -1647,7 +1647,7 @@
         "AI Tools India"
       ],
       "excerpt": "Anthropic has quietly introduced rupee-denominated pricing for Claude in India \u2014 no announcement, no press release. Here's the full breakdown of what every plan costs, what the UPI gap means for Indian founders, and how it compares to ChatGPT and Gemini.",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2269811684.jpg",
+      "image": "media/2026-07-14-claude-now-has-india-pricing-heres-what-it-actuall.jpg",
       "sources": [],
       "readTime": "8 min",
       "shortId": 232
@@ -1665,7 +1665,7 @@
         "rustvmm"
       ],
       "excerpt": "CubeSandbox is a lightweight RustVMM sandbox that starts in 60 ms, uses under 5 MB RAM per instance, and is Apache 2.0\u2011licensed, offering a fast, low\u2011overhead environment for AI agents.",
-      "image": "https://pbs.twimg.com/media/HNC2v8gaoAArmz6.png?name=orig",
+      "image": "media/2026-07-13-tencent-cloud-opensources-cubesandbox-for-ai-agent.png",
       "sources": [
         "https://x.com/XAMTO_AI/status/2076443738004742262"
       ],
@@ -1686,7 +1686,7 @@
         "ai"
       ],
       "excerpt": "~7MB. Itu ukuran OpenPencil. Aplikasi desain open-source yg bisa buka file .fig, punya AI built-in, & jalan di browser + desktop \ud83d\ude06 Bahkan ada CLI & MCP server buat agent.",
-      "image": "https://pbs.twimg.com/media/HNFSYNYagAA1Kkb.jpg?name=orig",
+      "image": "media/2026-07-13-openpencil-launches-7-mb-design-app-with-fig-suppo.jpg",
       "sources": [
         "https://x.com/grafisify/status/2076531540465762429"
       ],
@@ -1706,7 +1706,7 @@
         "open-source"
       ],
       "excerpt": "Nexterm bundles SSH, VNC, RDP, SFTP, Docker, and Proxmox into a single web UI, letting startups centralize remote server access without buying a commercial product.",
-      "image": "https://pbs.twimg.com/media/HNFdtgpXYAANb03.png?name=orig",
+      "image": "media/2026-07-13-nexterm-opens-source-tool-for-unified-ssh-vnc-and.png",
       "sources": [
         "https://x.com/tom_doerr/status/2076543941793534213"
       ],
@@ -1726,7 +1726,7 @@
         "open source"
       ],
       "excerpt": "LibreCode is a free, locally\u2011run AI editor that bundles a reverse\u2011engineering toolkit and avoids any cloud subscription fees.",
-      "image": "https://pbs.twimg.com/media/HNBoi2faAAAu4BL.jpg?name=orig",
+      "image": "media/2026-07-13-librecode-launches-as-a-fully-local-ai-code-editor.jpg",
       "sources": [
         "https://x.com/chenzeling4/status/2076274378455883869"
       ],
@@ -1755,7 +1755,7 @@
         "Digital Publishing"
       ],
       "excerpt": "HyperTexting is a new iPhone app that transforms the open web into a scrollable social feed using RSS. Learn how it works, its key features, benefits, drawbacks, and why it could be a compelling alternative to algorithm-driven social media.",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/07/welcome-cover.png?resize=900,453",
+      "image": "media/2026-07-13-hypertexting-app-turns-the-open-web-into-a-scrolla.png",
       "sources": [
         "https://techcrunch.com/2026/07/10/a-new-app-hypertexting-turns-the-open-web-into-a-scrollable-social-media-like-feed/",
         "https://hypertexting.com/"
@@ -1776,7 +1776,7 @@
         "swiftui"
       ],
       "excerpt": "An indie developer released a native SwiftUI utility that streamlines the five\u2011step Sparkle release process, handling DMG creation to Cloudflare R2 upload without leaving the local machine.",
-      "image": "https://pbs.twimg.com/media/HM_R8sPaIAA6n6V.jpg?name=orig",
+      "image": "media/2026-07-12-swiftui-tool-automates-sparkle-macos-release-workf.jpg",
       "sources": [
         "https://x.com/ddflj3310/status/2076108920771481889"
       ],
@@ -1814,7 +1814,7 @@
         "video synthesis"
       ],
       "excerpt": "LingBot\u2011World 2.0 ships with a brain\u2011cerebellum scaffold that turns a raw video world model into an interactive generator, and it\u2019s available for free with both 14 B and 1.3 B variants.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2076182782385213440/img/LMn7uhnv2usjtoCq.jpg",
+      "image": "media/2026-07-12-lingbot-world-20-opensourced-with-braincerebellum.jpg",
       "sources": [
         "https://x.com/XRoboHub/status/2076189155399434689"
       ],
@@ -1858,7 +1858,7 @@
         "machine learning"
       ],
       "excerpt": "A new 30\u2011minute video and blog explain how paged attention can be implemented on Google\u2019s TPUs, highlighting performance gains and engineering trade\u2011offs.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2076183975761231872/img/Y_cWsAL2ppYYqIGz.jpg",
+      "image": "media/2026-07-12-huibing-dong-shares-tpu-pagedattention-deepdive-vi.jpg",
       "sources": [
         "https://x.com/gdymind/status/2076185988288987402"
       ],
@@ -1879,7 +1879,7 @@
         "web tool"
       ],
       "excerpt": "ClipReel is a free web app that trims YouTube or X links into short clips, adds AI captions, and exports in any aspect ratio without pulling the full video.",
-      "image": "https://pbs.twimg.com/media/HNAL02FboAAhOiP.jpg?name=orig",
+      "image": "media/2026-07-12-clipreel-lets-you-trim-youtube-or-x-videos-to-clip.jpg",
       "sources": [
         "https://x.com/Nirmaldarji16/status/2076172621478314162"
       ],
@@ -1902,7 +1902,7 @@
         "AI Productivity"
       ],
       "excerpt": "The first AI model an engineering team trusted to work through the night \u2014 and what it took to get there.",
-      "image": "https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a4dd0c75a04f6ca41530255_C41-77690-D2-02-0006_VS_R1.jpeg",
+      "image": "media/2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual.jpg",
       "sources": [
         "https://claude.com/blog/working-at-the-frontier-how-cognition-trusts-claude-fable-5-to-work-through-the-night"
       ],
@@ -1922,7 +1922,7 @@
         "tool"
       ],
       "excerpt": "Pi arrives on GitHub with four built\u2011in utilities, a 1,000\u2011token system prompt, and full visibility into every model call.",
-      "image": "https://pbs.twimg.com/media/HMzEwTybkAARGnk.jpg?name=orig",
+      "image": "media/2026-07-10-pi-ai-coding-agent-released-as-free-opensource-too.jpg",
       "sources": [
         "https://x.com/fusionaivisuals/status/2075250024519438457"
       ],
@@ -1942,7 +1942,7 @@
         "devops"
       ],
       "excerpt": "OpenHands adds Agent Canvas, a control center that lets you run multiple LLM coding agents from one UI and hook them into GitHub, Slack, Notion, and more.",
-      "image": "https://pbs.twimg.com/media/HMxlaO8akAERz3C.jpg?name=orig",
+      "image": "media/2026-07-10-openhands-launches-agent-canvas-for-selfhosted-ai.jpg",
       "sources": [
         "https://x.com/DivyanshT91162/status/2075145051681009898"
       ],
@@ -1976,7 +1976,7 @@
         "langchain"
       ],
       "excerpt": "LangChain\u2019s new OpenWiki agent reads your repository on every commit and updates a wiki automatically, aiming to cut the time engineers spend hunting for documentation.",
-      "image": "https://pbs.twimg.com/media/HMzzxE-XIAADszF.jpg?name=orig",
+      "image": "media/2026-07-10-langchain-launches-openwiki-to-autogenerate-a-livi.jpg",
       "sources": [
         "https://x.com/iblai_/status/2075301557063553329"
       ],
@@ -1996,7 +1996,7 @@
         "tooling"
       ],
       "excerpt": "A new GitHub list aggregates over 300 AI\u2011powered security projects, from red\u2011team agents to LLM fuzzers, giving startup engineers a free catalog to explore.",
-      "image": "https://pbs.twimg.com/media/HM2TvUfaUAAYMi4.jpg?name=orig",
+      "image": null,
       "sources": [
         "https://x.com/VivekIntel/status/2075477455322923026"
       ],
@@ -2016,7 +2016,7 @@
         "personal ai"
       ],
       "excerpt": "The AI agent named itself during setup. AgenC is an open source agent that runs on your own machine. Works best with Grok. 15 minutes to a named agent on your phone with a $2/day spending cap.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2075474641389555712/img/X72suMUUA9HrdbR-.jpg",
+      "image": "media/2026-07-10-agenc-lets-you-run-a-selfnamed-ai-agent-on-your-ph.jpg",
       "sources": [
         "https://x.com/tetsuoai/status/2075475435698454546"
       ],
@@ -2042,7 +2042,7 @@
         "Artificial Intelligence"
       ],
       "excerpt": "Anthropic's Claude Fable introduces a simple but powerful idea: better AI outputs don't start with better prompts, they start by uncovering your unknowns. Here's how the framework can improve decision-making for founders, marketers, and AI users.",
-      "image": "https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a4be4919e159adcdfa3ec1c_94358c3c.png",
+      "image": "media/2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p.png",
       "sources": [],
       "readTime": "9 min",
       "shortId": 216
@@ -2060,7 +2060,7 @@
         "integration"
       ],
       "excerpt": "Tavus now lets a PAL join Google Meet calls as a real participant, enabling custom notetakers or meeting hosts with a few clicks.",
-      "image": "https://pbs.twimg.com/media/HMubm2Va8AAo-Pe.jpg",
+      "image": "media/2026-07-08-tavus-adds-a-google-meet-participant-integration.jpg",
       "sources": [
         "https://x.com/i/status/2074894605125026072"
       ],
@@ -2081,7 +2081,7 @@
         "startup tooling"
       ],
       "excerpt": "SpaceXAI unveiled Grok 4.5, a coding\u2011focused large language model built with Cursor that claims faster inference and lower cost. Engineers should weigh its speed claims against unknown pricing and vendor lock\u2011in before adopting.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2074912187391610880/img/BliQqOpmregZ5fSo.jpg",
+      "image": "media/2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm.jpg",
       "sources": [
         "https://x.com/i/status/2074915721684086811"
       ],
@@ -2102,7 +2102,7 @@
         "chatgpt"
       ],
       "excerpt": "Introducing GPT-Live, a new generation of voice models for natural human-AI interaction. Rolling out in ChatGPT starting today. You\u2019ll want to turn the sound on for this one.",
-      "image": "https://pbs.twimg.com/media/HMuNB0WboAE_A7s.jpg",
+      "image": "media/2026-07-08-openai-launches-gptlive-voice-model-in-chatgpt.jpg",
       "sources": [
         "https://x.com/i/status/2074907025537224840"
       ],
@@ -2123,7 +2123,7 @@
         "ai tools"
       ],
       "excerpt": "Relume\u2019s new Library MCP puts 1,000+ production\u2011ready UI components inside popular AI assistants, letting engineers pull and restyle elements without leaving the prompt.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2073929458160168960/img/5Iq96DAnkzEbrXpo.jpg",
+      "image": "media/2026-07-07-relume-launches-library-mcp-for-aiassisted-compone.jpg",
       "sources": [
         "https://x.com/i/status/2074222854183514438"
       ],
@@ -2144,7 +2144,7 @@
         "finance automation"
       ],
       "excerpt": "Ramp introduced \"Ramp for Agents\", letting AI agents set up a company's financial account, apply for credit, and start paying bills with a single prompt. The feature aims to replace manual paperwork with automated onboarding.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2074495741599404034/img/OKjuwqYWAbyEfhwH.jpg",
+      "image": "media/2026-07-07-ramp-launches-aiagent-integration-for-company-onbo.jpg",
       "sources": [
         "https://x.com/i/status/2074496959851713018"
       ],
@@ -2165,7 +2165,7 @@
         "vercel"
       ],
       "excerpt": "Better Auth announced it is becoming part of Vercel, promising more resources for its open\u2011source authentication framework while staying platform agnostic.",
-      "image": "https://pbs.twimg.com/media/HMmsK1dbMAAXvdq.png?name=orig",
+      "image": "media/2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au.png",
       "sources": [
         "https://x.com/i/status/2074523839300513921"
       ],
@@ -2190,7 +2190,7 @@
         "Mindful Browsers"
       ],
       "excerpt": "AI browsers, privacy-first browsers, and mindful browsers are reshaping the browser wars in 2026. Explore the best Chrome alternatives, including Dia, Comet, Brave, and Zen Browser, and discover which one fits your workflow.",
-      "image": "https://pbs.twimg.com/media/HMhdKgjbMAE9QMl?format=jpg&name=900x900",
+      "image": "media/2026-07-06-the-best-chrome-alternatives-in-2026-ai-privacy-mi.jpg",
       "sources": [],
       "readTime": "7 min",
       "shortId": 209
@@ -2208,7 +2208,7 @@
         "gemini"
       ],
       "excerpt": "Higgsfield AI unveiled Shorts Studio, an AI\u2011driven editor that reshapes any clip for short\u2011form platforms using Gemini Omni Flash. No pricing details are public yet.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2072380437868027905/img/83VsJHuzQ4YR7hp7.jpg",
+      "image": "media/2026-07-02-higgsfield-launches-shorts-studio-powered-by-gemin.jpg",
       "sources": [
         "https://x.com/i/status/2072380736120959244"
       ],
@@ -2229,7 +2229,7 @@
         "developer-tools"
       ],
       "excerpt": "Fish Audio has opened its top\u2011tier S2.1 Pro voice model to developers at no cost, offering 83 languages and unlimited usage via the existing API endpoint.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2072271134561857536/img/jC9GTbzQggc_QvEl.jpg",
+      "image": "media/2026-07-02-fish-audio-makes-s21-pro-tts-model-free-for-develo.jpg",
       "sources": [
         "https://x.com/i/status/2072319320386883690"
       ],
@@ -2250,7 +2250,7 @@
         "automation"
       ],
       "excerpt": "Motionfly's Agent28 claims a ten\u2011fold reduction in editing time by auto\u2011adding zooms, graphics, B\u2011roll, captions, and more. The first thousand users get free access, but the paid model is still undefined.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2072002374483197952/img/INi4DssIFYqRuZGS.jpg",
+      "image": "media/2026-07-01-motionfly-launches-agent28-ai-video-editor-free-fo.jpg",
       "sources": [
         "https://x.com/i/status/2072002524060496314"
       ],
@@ -2271,7 +2271,7 @@
         "agentic"
       ],
       "excerpt": "Anthropic's Claude Sonnet 5 can plan, browse the web, and run terminal commands on its own, narrowing the gap with larger, pricier models.",
-      "image": "https://pbs.twimg.com/media/HMFJYt8XEAAYMDz.jpg",
+      "image": "media/2026-07-01-claude-sonnet-5-adds-autonomous-planning-and-tool.jpg",
       "sources": [
         "https://x.com/i/status/2072017450611142835"
       ],
@@ -2292,7 +2292,7 @@
         "devtools"
       ],
       "excerpt": "Browserbase now offers pre\u2011packaged browser agents that can be started with a single prompt and one API call, aiming to simplify web automation for developers.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2071984483998330881/img/3VLS8bmqkmiYoO3W.jpg",
+      "image": "media/2026-07-01-browserbase-launches-readytorun-browser-agents.jpg",
       "sources": [
         "https://x.com/i/status/2071994225865150708"
       ],
@@ -2313,7 +2313,7 @@
         "computer vision"
       ],
       "excerpt": "Fal\u2019s new Extract Object model returns a clean RGBA PNG cutout from a single API call, turning natural\u2011language prompts into ready\u2011to\u2011use assets.",
-      "image": "https://pbs.twimg.com/ext_tw_video_thumb/2071631718763626496/pu/img/7U36B0aChwwFAUjV.jpg",
+      "image": "media/2026-06-29-fal-adds-extract-object-api-for-instant-image-cuto.jpg",
       "sources": [
         "https://x.com/i/status/2071631739705762296"
       ],
@@ -2334,7 +2334,7 @@
         "cloud agents"
       ],
       "excerpt": "Cursor released a native iOS client that can spin up always\u2011on cloud agents and remote\u2011control local agents, with a limited\u2011time 75 % discount on Composer 2.5.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2071638346145923072/img/nqFrOzzGvR8kxbee.jpg",
+      "image": "media/2026-06-29-cursor-launches-ios-app-with-alwayson-cloud-agents.jpg",
       "sources": [
         "https://x.com/i/status/2071641103191998810"
       ],
@@ -2362,7 +2362,7 @@
         "Generative AI"
       ],
       "excerpt": "OpenAI's latest ChatGPT release notes reveal more than new features. From Personal Finance to Memory and Connectors, every update points to a bigger shift: AI is becoming more valuable by understanding users, not just answering prompts.",
-      "image": "https://images.ctfassets.net/kftzwdyauwt9/6vqEtiJWI45VyDgCniABzZ/f89ed847a8e956ad4c7dc281d641f817/1-OAI-ChatGPT-Personal-Finances-GoalPlanning-16x9.png?w=1920&q=80&fm=webp",
+      "image": "media/2026-06-29-chatgpt-isnt-just-getting-smarter-its-getting-more.webp",
       "sources": [],
       "readTime": "6 min",
       "shortId": 201
@@ -2380,7 +2380,7 @@
         "developer tools"
       ],
       "excerpt": "Turn your images and videos into ASCII art \ud83d\udc7e \u274b http://javii.tools \u00b7 asciilab launched!",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2071377770081378304/img/QfN-UnEcg5eG5tqu.jpg",
+      "image": "media/2026-06-29-asciilab-launches-to-turn-images-and-videos-into-a.jpg",
       "sources": [
         "https://x.com/i/status/2071381213634347233"
       ],
@@ -2408,7 +2408,7 @@
         "Meta Investment"
       ],
       "excerpt": "Meta's $900 million investment in CRED is making headlines, but the bigger story may be Kunal Shah's appointment as WhatsApp's new chief. The move signals Meta's growing focus on payments, commerce, and financial services, while bringing one of India's most influential fintech founders into WhatsApp's future strategy.",
-      "image": "https://pbs.twimg.com/media/HLpB4PnbwAAXSog?format=jpg&name=large",
+      "image": "media/2026-06-25-meta-didnt-just-invest-in-cred-it-imported-its-pla.jpg",
       "sources": [
         "https://whatsappbusiness.com/",
         "https://www.whatsapp.com/payments/in",
@@ -2439,7 +2439,7 @@
         "Design Tools"
       ],
       "excerpt": "At Config 2026, Figma introduced Motion, a new feature that brings animation and interactive design directly into Figma. While the update adds motion capabilities, the bigger story is Figma's effort to streamline the design-to-development workflow by eliminating another tool from the product creation process.",
-      "image": "https://i.ytimg.com/vi/wpGI6BmhbJU/maxresdefault.jpg",
+      "image": "media/2026-06-25-figma-motion-isnt-about-animation-its-about-removi.jpg",
       "sources": [
         "https://www.figma.com/blog/introducing-figma-motion/",
         "https://config.figma.com/",
@@ -2464,7 +2464,7 @@
         "animation"
       ],
       "excerpt": "FIGMA MOTION IS HERE FIGMA MOTION IS HERE FIGMA MOTION IS HERE Live from Config 2026",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2069827477296353280/img/KaLT56GEN2vHV1XI.jpg",
+      "image": "media/2026-06-25-figma-launches-motion-feature-at-config-2026.jpg",
       "sources": [
         "https://x.com/i/status/2069827742800253230"
       ],
@@ -2485,7 +2485,7 @@
         "matchmaking"
       ],
       "excerpt": "Palette introduces a free service that pairs startup founders with design studios based on a short questionnaire, aiming to cut the cold\u2011email grind.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2068995799912960000/img/AKXwopJCJRT8TgRC.jpg",
+      "image": "media/2026-06-23-palette-launches-free-matchmaking-platform-for-des.jpg",
       "sources": [
         "https://x.com/i/status/2068995853184840101"
       ],
@@ -2513,7 +2513,7 @@
         "Security Remediation"
       ],
       "excerpt": "AI is making vulnerability discovery faster than ever, but fixing those vulnerabilities remains a growing challenge. OpenAI's new Patch the Planet initiative aims to help secure critical open-source software, signaling a broader shift in cybersecurity from finding bugs to remediating them before attackers can exploit them.",
-      "image": "https://techcrunch.com/wp-content/uploads/2025/09/GettyImages-2214107176.jpg?resize=1280,853",
+      "image": "media/2026-06-23-openai-doesnt-want-to-find-more-bugs-it-wants-to-p.jpg",
       "sources": [
         "https://openai.com/index/patch-the-planet/",
         "https://openai.com/index/finding-and-fixing-real-world-software-vulnerabilities-with-ai/",
@@ -2538,7 +2538,7 @@
         "gemini"
       ],
       "excerpt": "Google\u2019s Interactions API is now GA, offering managed agents and background execution for Gemini models. The rollout adds a production\u2011ready entry point for AI\u2011driven workflows.",
-      "image": "https://pbs.twimg.com/media/HLbejaxa8AARgd9.jpg?name=orig",
+      "image": "media/2026-06-23-google-makes-interactions-api-generally-available.jpg",
       "sources": [
         "https://x.com/i/status/2069108666121503068"
       ],
@@ -2558,7 +2558,7 @@
         "elevenlabs"
       ],
       "excerpt": "ElevenLabs' new Ads Engine lets you pull Google, Meta, and LinkedIn campaigns into ElevenCreative, translate them into 50+ languages, and push the results back. Engineers need to weigh integration effort against potential reach.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2069106830585008128/img/AG7lyyRH-XI-r1Cf.jpg",
+      "image": "media/2026-06-23-elevenlabs-adds-multiplatform-ad-localization-to-e.jpg",
       "sources": [
         "https://x.com/i/status/2069111326987673761"
       ],
@@ -2579,7 +2579,7 @@
         "startup tools"
       ],
       "excerpt": "Three announcements from our keynote at Compile, including how we're training a new model with SpaceX.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2069142239335342080/img/dOnb8a8YMszF_AJA.jpg",
+      "image": "media/2026-06-23-cursor-announces-new-model-built-with-spacex-data.jpg",
       "sources": [
         "https://x.com/i/status/2069149296436330776"
       ],
@@ -2600,7 +2600,7 @@
         "ai assistant"
       ],
       "excerpt": "Claude Tag lets teams call Claude directly from Slack by tagging the bot, turning it into a collaborative teammate. It\u2019s a modest addition that may streamline routine requests but carries privacy and noise considerations.",
-      "image": "https://pbs.twimg.com/media/HLg9iF5XYAAhaS7.jpg",
+      "image": "media/2026-06-23-anthropic-adds-claude-tag-for-slack-task-delegatio.jpg",
       "sources": [
         "https://x.com/i/status/2069468693017268244"
       ],
@@ -2621,7 +2621,7 @@
         "webgl"
       ],
       "excerpt": "Drop in an SVG. Get 3D glass back in a second. That's Valessa. In your browser, no installs, fully free. Go break it: https://valessa.riotters.com/ Built with @threejs #threejs #WebGL",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2067916321841446912/img/Dqg1CbDvIeGdiB7d.jpg",
+      "image": "media/2026-06-19-valessa-launches-free-svgto3dglass-converter-in-th.jpg",
       "sources": [
         "https://x.com/i/status/2067916411003924942"
       ],
@@ -2647,7 +2647,7 @@
         "Anthropic"
       ],
       "excerpt": "While everyone focused on Fable 5, leaked prompts, and jailbreak claims, a bigger shift was unfolding. AI is evolving from generating software to creating applications that remember users, maintain state, and continue operating over time, bringing us closer to a future where AI doesn't just build software, but helps run it.",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQZ237vHWwJ5azzxb0nyyAmWNzu3W8dG624k_HIrQ-g0deuHnB3z0PsbwL&s=10",
+      "image": "media/2026-06-19-ai-is-learning-to-run-software-not-just-build-it.jpg",
       "sources": [
         "https://claude.com/blog/artifacts-in-claude-code",
         "https://www.anthropic.com/news/artifacts",
@@ -2670,7 +2670,7 @@
         "startup tools"
       ],
       "excerpt": "Temple\u2019s new Entropy\u2122 index reports a live 1\u2011to\u2011250 score every second, promising finer\u2011grained insight into metabolic load than heart rate. Early access is open, but the metric\u2019s validation is still limited.",
-      "image": "https://pbs.twimg.com/media/HLGDi5FbUAAxN93.jpg?name=orig",
+      "image": "media/2026-06-18-temple-launches-entropy-metric-to-track-realtime-m.jpg",
       "sources": [
         "https://x.com/i/status/2067578443047596141"
       ],
@@ -2690,7 +2690,7 @@
         "tooling"
       ],
       "excerpt": "Slack posted a short video demonstrating ready\u2011made Slackbot prompts that pull tagged feedback into a channel, helping teams focus on the most important requests.",
-      "image": "https://pbs.twimg.com/media/HLCT-GFW0AAUqRl.jpg",
+      "image": "media/2026-06-18-slack-shares-slackbot-prompts-to-streamline-produc.jpg",
       "sources": [
         "https://x.com/i/status/2067314945151144206"
       ],
@@ -2711,7 +2711,7 @@
         "design tools"
       ],
       "excerpt": "Open Design has released the Cursor Design AI studio as open\u2011source software, letting engineers experiment with AI\u2011driven point, comment, edit and remix workflows.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2067190753172799488/img/vEwpC275hhcO1xMG.jpg",
+      "image": "media/2026-06-18-open-design-open-sources-cursor-design-ai-studio.jpg",
       "sources": [
         "https://x.com/OpenDesignHQ/status/2067192475853180997?s=20"
       ],
@@ -2732,7 +2732,7 @@
         "image generation"
       ],
       "excerpt": "Announcing a new division of Midjourney called \"Midjourney Medical\"",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2067417890098499584/img/MFFwG8qdfYbJALQD.jpg",
+      "image": "media/2026-06-18-midjourney-launches-a-medicalfocused-division.jpg",
       "sources": [
         "https://x.com/i/status/2067421950314688759"
       ],
@@ -2753,7 +2753,7 @@
         "google vids"
       ],
       "excerpt": "Google Vids now lets users turn Slides into videos with AI avatars and voiceovers in 24 languages. The beta is free but pricing and quality limits remain to be seen.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2067619336911831040/img/xTSx0rYPwTjeiJVB.jpg",
+      "image": "media/2026-06-18-google-vids-adds-ai-avatars-voiceovers-and-slide-t.jpg",
       "sources": [
         "https://x.com/i/status/2067631530890113477"
       ],
@@ -2774,7 +2774,7 @@
         "social media"
       ],
       "excerpt": "Today we're introducing Claude for Social Media. Just enter your website and Fastlane creates thousands of viral videos promoting your product in one click. This is truly insane.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2067499429251432448/img/WgmWI2TGioxvI7_S.jpg",
+      "image": "media/2026-06-18-fastlane-adds-claude-for-social-media-autocreates.jpg",
       "sources": [
         "https://x.com/i/status/2067501867198996528"
       ],
@@ -2795,7 +2795,7 @@
         "developer tools"
       ],
       "excerpt": "Cursor announced Origin, a new code storage and Git hosting platform slated for a fall release, with a waitlist now open for early access.",
-      "image": "https://pbs.twimg.com/card_img/2067011785404887040/kPl0llQ5?format=jpg&name=medium",
+      "image": null,
       "sources": [
         "https://x.com/i/status/2067012220832329782"
       ],
@@ -2817,7 +2817,7 @@
         "instagram"
       ],
       "excerpt": "For most of social media's history, users had very little say in how content reached them. That model is beginning to change.",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/06/image.jpeg?resize=800,697",
+      "image": "media/2026-06-18-companies-might-control-the-algorithm.jpg",
       "sources": [
         "https://techcrunch.com/2026/06/17/social-medias-next-evolution-user-controlled-algorithms/"
       ],
@@ -2862,7 +2862,7 @@
         "ai tools"
       ],
       "excerpt": "Meta is adding an AI assistant and a desktop version to its Edits platform, taking aim at CapCut. Here's what it means for startups producing short-form content.",
-      "image": "https://techcrunch.com/wp-content/uploads/2025/05/meta-edits.png?resize=1280,751",
+      "image": "media/2026-06-16-meta-edits-vs-capcut.png",
       "sources": [
         "https://techcrunch.com/2026/06/11/metas-edits-app-is-getting-an-ai-assistant-and-a-desktop-version/",
         "https://www.indiatoday.in/technology/news/story/meta-edits-app-is-coming-to-your-desktop-it-is-also-getting-its-own-ai-assistant-2925608-2026-06-12"
@@ -2885,7 +2885,7 @@
         "artificial intelligence"
       ],
       "excerpt": "Meta, Anthropic, Nvidia, Google, OpenAI, and SpaceX \u2014 the new power bloc reshaping tech's next decade. MANGOS is the new FAANG.",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/06/Mango-crushing-fang.png?resize=1280,1024",
+      "image": "media/2026-06-09-faang-is-dead-say-hello-to-mangos.png",
       "sources": [
         "https://techcrunch.com/2026/06/09/its-not-faang-anymore-its-mangos/"
       ],
@@ -2907,7 +2907,7 @@
         "shortcuts"
       ],
       "excerpt": "Apple announced an AI-powered upgrade to its Shortcuts app at WWDC 2026, letting users describe automations in plain English instead of manually chaining actions.",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/06/tim-cook-wwdc-2026.jpeg?resize=1280,722",
+      "image": "media/2026-06-12-apple-brings-ai-to-shortcuts-in-ios-27.jpg",
       "sources": [
         "https://techcrunch.com/2026/06/08/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/"
       ],
@@ -2927,7 +2927,7 @@
         "large language model"
       ],
       "excerpt": "Introducing Claude Fable 5: a Mythos-class model that we\u2019ve made safe for general use. Its capabilities exceed those of any model we\u2019ve ever made generally available.",
-      "image": "https://pbs.twimg.com/media/HKY5eixXIAE9EAZ.jpg",
+      "image": "media/2026-06-09-claude-fable-5-launches-as-a-mythosclass-model-for.jpg",
       "sources": [
         "https://x.com/i/status/2064394146916229443"
       ],
@@ -2948,7 +2948,7 @@
         "startup tools"
       ],
       "excerpt": "Reve 2.0 introduces a 4K image model that supports precise layout editing, promising touch\u2011ready outputs. Engineers should weigh its compute cost against the creative flexibility it adds.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2062259801481175040/img/_i0p8Vph7ddMmjlD.jpg",
+      "image": "media/2026-06-04-reve-launches-4k-image-model-20-with-layoutaware-g.jpg",
       "sources": [
         "https://x.com/i/status/2062260665121919101"
       ],
@@ -2969,7 +2969,7 @@
         "design tools"
       ],
       "excerpt": "New work for Paper's new Vector Editing! Direction: Will Taylor (@visualsbywlroo) Design and Animation: Kendall Gathas, Chaewon Kang, Connor Roy-Shaw, Will Taylor (@visualsbywlroo)",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2062230880404336640/img/12bRzEG2wM9yokEh.jpg",
+      "image": "media/2026-06-03-paper-adds-vector-editing-tools-in-latest-update.jpg",
       "sources": [
         "https://x.com/i/status/2062231122184990871"
       ],
@@ -3010,7 +3010,7 @@
         "startup funding"
       ],
       "excerpt": "Lassie, an AI platform for small medical practices, announced a $47M Series A led by a16z and claims to save each clinic about 30 hours of work each month.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2062169235103907840/img/Q8v-9n4MNaOO8ZU0.jpg",
+      "image": "media/2026-06-03-lassie-ai-raises-47m-to-automate-doctors-offices.jpg",
       "sources": [
         "https://x.com/i/status/2062184922090246332"
       ],
@@ -3031,7 +3031,7 @@
         "ideogram"
       ],
       "excerpt": "Ideogram 4.0 drops an open\u2011source image generation model that you can download, fine\u2011tune, and run locally, while still being accessible via the existing API plans.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2062202150915371008/img/MFGaulr4ZPNZNLaI.jpg",
+      "image": "media/2026-06-03-ideogram-releases-40-open-image-model-with-downloa.jpg",
       "sources": [
         "https://x.com/i/status/2062202208700313872"
       ],
@@ -3052,7 +3052,7 @@
         "product"
       ],
       "excerpt": "EO posted a 15\u2011question interview with Chatbase founder Yasser Elsaid, outlining how he grew to $10 M ARR without external capital. The thread highlights concrete tactics for early\u2011stage builders.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2060862725316886528/img/P-yNB-v1p50YGyl4.jpg",
+      "image": "media/2026-06-03-chatbase-founder-shares-a-10m-bootstrapped-playboo.jpg",
       "sources": [
         "https://x.com/i/status/2060868914117214376"
       ],
@@ -3073,7 +3073,7 @@
         "design"
       ],
       "excerpt": "Blurr\u2019s new pixel\u2011effects service lets you drop any image into a browser and walk away with an art\u2011style output, all via a free web interface.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2061501354384998400/img/RtWD2EdXgZ4g2pXY.jpg",
+      "image": "media/2026-06-03-blurr-releases-a-web-tool-with-19-filters-and-6-pi.jpg",
       "sources": [
         "https://x.com/i/status/2061501427353288954"
       ],
@@ -3094,7 +3094,7 @@
         "surface"
       ],
       "excerpt": "Introducing Surface Laptop Ultra. Built for world makers. Designed for what's next. The most powerful Surface laptop ever. Coming Fall 2026. Sign up to learn more: https://msft.it/6019vw79T",
-      "image": "https://pbs.twimg.com/media/HJtQAWEXwAEmauj.png",
+      "image": "media/2026-06-01-microsoft-announces-the-surface-laptop-ultra-for-f.png",
       "sources": [
         "https://x.com/i/status/2061329225886453989"
       ],
@@ -3135,7 +3135,7 @@
         "startup resources"
       ],
       "excerpt": "Pika announced a free\u2011form Founder Starter Kit that bundles four branding assets and is accessible through the Claude\u2011compatible Pika MCP. Engineers can test it to give their product a quick marketing lift.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2060051996523302912/img/tVphVL7k0oXfY-gZ.jpg",
+      "image": "media/2026-05-30-pika-launches-founder-starter-kit-for-claude-users.jpg",
       "sources": [
         "https://x.com/i/status/2060053796001399035"
       ],
@@ -3157,7 +3157,7 @@
         "ai"
       ],
       "excerpt": "VEED announced a Subtitles API that supports over 100 languages and offers free credits to the first 100 users who retweet the launch tweet.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2059269424025382912/img/QmhqClgMjoPy4stw.jpg",
+      "image": "media/2026-05-26-veed-launches-subtitles-api-with-free-credits-for.jpg",
       "sources": [
         "https://x.com/i/status/2059269493382434992"
       ],
@@ -3178,7 +3178,7 @@
         "plugin integration"
       ],
       "excerpt": "We added @resend MCP and skills to the @ClaudeDevs Marketplace. 1. Type /plugins in Claude Code 2. Search for resend 3. Install All skills, Resend MCP. One command \ud83d\udc47",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2059274186934407168/img/pAbWgskgEtgHoGEP.jpg",
+      "image": "media/2026-05-26-resend-adds-mcp-and-claude-skills-to-claude-market.jpg",
       "sources": [
         "https://x.com/i/status/2059275268276224331"
       ],
@@ -3199,7 +3199,7 @@
         "arrow"
       ],
       "excerpt": "JSON-based prompting helps Arrow follow instructions more consistently and reduces unwanted variations. Better control from the first generation.",
-      "image": "https://pbs.twimg.com/ext_tw_video_thumb/2059295888774737921/pu/img/r_c2nx4Nr4ZwyZvS.jpg",
+      "image": "media/2026-05-26-quiverai-adds-json-prompting-to-arrow-for-tighter.jpg",
       "sources": [
         "https://x.com/i/status/2059295909809098960"
       ],
@@ -3220,7 +3220,7 @@
         "prompt engineering"
       ],
       "excerpt": "Jitter\u2019s new AI lets you describe a motion effect in plain text and get a ready\u2011to\u2011tweak animation in seconds. The feature is live, but pricing and accuracy remain to be seen.",
-      "image": "https://pbs.twimg.com/tweet_video_thumb/HJQFxSfXUAAbSah.jpg",
+      "image": "media/2026-05-26-jitter-ai-adds-promptdriven-motion-effects.jpg",
       "sources": [
         "https://x.com/i/status/2059277428971688065"
       ],
@@ -3241,7 +3241,7 @@
         "developer tools"
       ],
       "excerpt": "Google's Gemma 4 now powers AIventure, a free dungeon\u2011crawling demo that lets you prompt an NPC to generate a web app on the fly. It showcases agentic workflows without any license fees, but it needs decent hardware.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2059340879354298368/img/zRhZNileosZm4Jx1.jpg",
+      "image": "media/2026-05-26-google-launches-aiventure-an-opensource-ai-dungeon.jpg",
       "sources": [
         "https://x.com/i/status/2059343174112522532"
       ],
@@ -3282,7 +3282,7 @@
         "startup"
       ],
       "excerpt": "Introducing Feather - A self organizing inbox! Try it out at http://feather.computer. We'd love to know what you think \ud83e\udeb6",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2058335459139571712/img/RioXasYRxqNFxdX6.jpg",
+      "image": "media/2026-05-26-feather-launches-a-selforganizing-inbox-service.jpg",
       "sources": [
         "https://x.com/i/status/2058335516429635732"
       ],
@@ -3303,7 +3303,7 @@
         "onchain"
       ],
       "excerpt": "Base introduced MCP, a gateway that lets AI agents link to a Base account, trade assets, and call plugins from other apps. Early adopters should weigh the convenience against the nascent security model.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2059305823117975552/img/wWyQQ--0lsuZI3T7.jpg",
+      "image": "media/2026-05-26-base-launches-mcp-to-connect-ai-agents-with-onchai.jpg",
       "sources": [
         "https://x.com/i/status/2059305907385704529"
       ],
@@ -3325,7 +3325,7 @@
         "claude"
       ],
       "excerpt": "Ascii Magic landing page is live\u2728 Check out http://ascii-magic.com/landing Built end-to-end with Paper + Claude. Animated completely using AI (more on this soon)",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2059299925100539904/img/uDOQQLLXtmrb9Yfz.jpg",
+      "image": "media/2026-05-26-ascii-magic-launches-ai-animated-landing-page.jpg",
       "sources": [
         "https://x.com/i/status/2059300319331565930"
       ],
@@ -3346,7 +3346,7 @@
         "frontend"
       ],
       "excerpt": "Card hover animation experiment.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2056710619395457024/img/MOJ1Qzi8oeKZQ0x3.jpg",
+      "image": "media/2026-05-21-zsolt-kacso-shares-a-card-hover-animation-experime.jpg",
       "sources": [
         "https://x.com/i/status/2056713047301902478"
       ],
@@ -3367,7 +3367,7 @@
         "codex"
       ],
       "excerpt": "Open Design now runs inside Codex, letting its AI agent manipulate the design canvas directly. Engineers should weigh the workflow boost against the lack of pricing details and early\u2011stage tooling.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2056306525631565824/img/lWL73U_ghzJB8XUH.jpg",
+      "image": "media/2026-05-21-open-design-integrates-its-ai-agent-into-codex-for.jpg",
       "sources": [
         "https://x.com/i/status/2056309544997818507"
       ],
@@ -3388,7 +3388,7 @@
         "elevenlabs"
       ],
       "excerpt": "ElevenLabs released a synthetic Albert Einstein voice and an accompanying agent that reads his writings aloud, expanding its library of celebrity voices.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2056723617455501312/img/BDJyrUkpnCrnGpzk.jpg",
+      "image": "media/2026-05-21-elevenlabs-adds-an-albert-einstein-voice-agent.jpg",
       "sources": [
         "https://x.com/i/status/2056724239797944618"
       ],
@@ -3409,7 +3409,7 @@
         "web agents"
       ],
       "excerpt": "Browserbase released Browse.sh, a free catalog of hundreds of site\u2011specific navigation skills for agents. It aims to give bots a reliable playbook for common web tasks.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2056401090552410112/img/ArrdUEpSr-F8jB1U.jpg",
+      "image": "media/2026-05-21-browserbase-launches-browsesh-an-opensource-skill.jpg",
       "sources": [
         "https://x.com/i/status/2056404332824944970"
       ],
@@ -3430,7 +3430,7 @@
         "cli"
       ],
       "excerpt": "shadcn/ui now includes a complete design\u2011system package\u2014tokens, component definitions, and Figma import\u2014distributed via its CLI. Engineers can pull a ready\u2011made system into any Tailwind project.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2056372181894926336/img/Sku8MNN6X8Et04te.jpg",
+      "image": "media/2026-05-18-shadcnui-ships-a-full-designsystem-cli.jpg",
       "sources": [
         "https://x.com/i/status/2056372444751909212"
       ],
@@ -3451,7 +3451,7 @@
         "ai tools"
       ],
       "excerpt": "Higgsfield AI released an 18\u2011minute walkthrough that stitches Claude\u2019s LLM with its MCP platform, showing a laptop\u2011based agency pipeline from research to ad spend approval.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2056404580619919361/img/PeGD0qy1MUWs-i8m.jpg",
+      "image": "media/2026-05-18-higgsfield-ai-demos-claudedriven-marketing-workflo.jpg",
       "sources": [
         "https://x.com/i/status/2056411641592287435"
       ],
@@ -3472,7 +3472,7 @@
         "startup engineering"
       ],
       "excerpt": "What if earbuds understood every dialect perfectly? Inside is the Google Cloud AI architecture our Agents of Change, Mivi uses to make it real.",
-      "image": "https://pbs.twimg.com/media/HHxc2F1a8AA04zz.jpg?name=orig",
+      "image": "media/2026-05-18-google-cloud-ai-powers-mivis-dialectaware-earbuds.jpg",
       "sources": [
         "https://x.com/i/status/2053808704772841633"
       ],
@@ -3506,7 +3506,7 @@
         "cli"
       ],
       "excerpt": "GitHub\u2019s Copilot CLI now supports Remote Control, letting developers start a session on one machine and pick it up on another. The feature is generally available and works with both CLI and VS Code sessions.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2056417858440105986/img/1h9mW1uxJ_qB6HOx.jpg",
+      "image": "media/2026-05-18-github-copilot-cli-adds-remotecontrol-for-local-se.jpg",
       "sources": [
         "https://x.com/i/status/2056420570745450864"
       ],
@@ -3527,7 +3527,7 @@
         "prompt engineering"
       ],
       "excerpt": "Chatly\u2019s new Sources library lets teams upload files and references that OmniAgent uses as the primary context for every answer, cutting down on copy\u2011paste. The feature is free to try but may carry hidden costs and privacy considerations.",
-      "image": "https://pbs.twimg.com/ext_tw_video_thumb/2056408379233329152/pu/img/vnqzDQtVaEscS51I.jpg",
+      "image": "media/2026-05-18-chatly-adds-usercontrolled-knowledge-library-to-om.jpg",
       "sources": [
         "https://x.com/i/status/2056408432677142920"
       ],
@@ -3548,7 +3548,7 @@
         "saas"
       ],
       "excerpt": "Chatbase announced it has surpassed $10 M in annual recurring revenue and introduced a new platform that bundles context, tools, and human\u2011in\u2011the\u2011loop guardrails for customer\u2011facing AI agents.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2056390673537089536/img/-7u6_IZJSt6rn6Cp.jpg",
+      "image": "media/2026-05-18-chatbase-hits-10m-arr-and-launches-a-fullstack-ai.jpg",
       "sources": [
         "https://x.com/i/status/2056394356769366166"
       ],
@@ -3569,7 +3569,7 @@
         "resources"
       ],
       "excerpt": "A recent tweet lists ten free or low\u2011cost design sites, from wireframe generators to font libraries, giving engineers a ready\u2011made stash of UI assets for fast prototyping.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2055918886663622656/img/9xiCYOnGxhdeeqhx.jpg",
+      "image": "media/2026-05-17-tweet-curates-10-design-sites-for-quick-weekend-re.jpg",
       "sources": [
         "https://x.com/i/status/2055922458876608947"
       ],
@@ -3590,7 +3590,7 @@
         "product update"
       ],
       "excerpt": "ScreenCharm now lets you dock the recording camera on any screen edge, but the zoom effect is disabled for non\u2011default layouts.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2056030716408766464/img/8MjLVFq74Rj0yCn8.jpg",
+      "image": "media/2026-05-17-screencharm-adds-selectable-camera-layouts-for-rec.jpg",
       "sources": [
         "https://x.com/i/status/2056033761632891361"
       ],
@@ -3611,7 +3611,7 @@
         "github"
       ],
       "excerpt": "A community\u2011built, MIT\u2011licensed video editor called OpenCut matches CapCut\u2019s core features without watermarks or subscriptions, and its code now has over 45 k stars on GitHub.",
-      "image": "https://pbs.twimg.com/ext_tw_video_thumb/2055166433445736448/pu/img/igRSCtE4TX-1oyB-.jpg",
+      "image": "media/2026-05-17-opencut-clones-capcut-hits-458k-github-stars.jpg",
       "sources": [
         "https://x.com/i/status/2055957914561732946"
       ],
@@ -3632,7 +3632,7 @@
         "plugin"
       ],
       "excerpt": "Anthropic\u2019s new official plugin reads an entire codebase and suggests which tools, frameworks, and configs to enable. It promises smoother onboarding but may add noise for larger projects.",
-      "image": "https://pbs.twimg.com/ext_tw_video_thumb/2055830586330357760/pu/img/KaxltSjnODsRprow.jpg",
+      "image": "media/2026-05-17-anthropic-adds-autostack-detection-plugin-for-clau.jpg",
       "sources": [
         "https://x.com/i/status/2055830602683998718"
       ],
@@ -3653,7 +3653,7 @@
         "api"
       ],
       "excerpt": "Notion's new ntn command\u2011line tool puts the full Notion API into your terminal and adds a workflow for building and deploying Workers.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2054571358743564288/img/QzdmRgrrqT0OJuNn.jpg",
+      "image": "media/2026-05-14-notion-releases-ntn-cli-for-terminal-api-access.jpg",
       "sources": [
         "https://x.com/i/status/2054594852818764178"
       ],
@@ -3674,7 +3674,7 @@
         "lovable"
       ],
       "excerpt": "Lovable adds server\u2011side rendering and an on\u2011demand SEO review that can auto\u2011fix suggestions, aiming to make new and existing apps more discoverable.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2054548525330137088/img/CW2xo-XhNULAXdDO.jpg",
+      "image": "media/2026-05-14-lovable-launches-seo-feature-with-auto-prerenderin.jpg",
       "sources": [
         "https://x.com/i/status/2054549753224937956"
       ],
@@ -3695,7 +3695,7 @@
         "opensource"
       ],
       "excerpt": "Cline has released its SDK on npm, letting developers embed the same extension harness used in its coding agent. The package can be added with a single install command.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2054578938681405440/img/FXgnGDc0yIeZrbxm.jpg",
+      "image": "media/2026-05-14-cline-sdk-opensourced-as-npm-package.jpg",
       "sources": [
         "https://x.com/i/status/2054580767779700775"
       ],
@@ -3716,7 +3716,7 @@
         "usage limits"
       ],
       "excerpt": "Claude Code weekly limits are increasing 50%, now through July 13. Live now for all Pro, Max, Team, and seat-based Enterprise users.",
-      "image": "https://pbs.twimg.com/media/HIOLKb7bsAAXtoD.jpg?name=orig",
+      "image": "media/2026-05-14-claude-code-weekly-limits-rise-50-for-pro-and-ente.jpg",
       "sources": [
         "https://x.com/i/status/2054639777685934564"
       ],
@@ -3736,7 +3736,7 @@
         "open source"
       ],
       "excerpt": "AiToEarn is a full\u2011AI content\u2011marketing agent that can publish to 14 platforms with one Docker command, challenging paid SaaS tools at no cost.",
-      "image": "https://pbs.twimg.com/media/HIMp7dObsAAMtw5.jpg?name=orig",
+      "image": "media/2026-05-14-aitoearn-offers-a-free-opensource-hootsuite-altern.jpg",
       "sources": [
         "https://x.com/i/status/2054531959528079430"
       ],
@@ -3756,7 +3756,7 @@
         "screen casting"
       ],
       "excerpt": "scrcpy 4.0 is out \ud83d\ude80 Try the new flex display feature (and more): https://github.com/Genymobile/scrcpy/releases/tag/v4.0",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2054463118177116160/img/8Xiqdw9phqhc-lHC.jpg",
+      "image": "media/2026-05-13-scrcpy-40-adds-flexible-display-mode-for-android-m.jpg",
       "sources": [
         "https://x.com/i/status/2054463213022929032"
       ],
@@ -3777,7 +3777,7 @@
         "developer tools"
       ],
       "excerpt": "How do you keep Claude working until the job is done? Claude Code helps with this in a few ways, including one we shipped recently: /goal.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2054349890713694208/img/m016gisFnU7luF0A.jpg",
+      "image": "media/2026-05-13-claude-code-adds-a-goal-command-for-persistent-tas.jpg",
       "sources": [
         "https://x.com/i/status/2054351031279186040"
       ],
@@ -3798,7 +3798,7 @@
         "preview feature"
       ],
       "excerpt": "New in Claude Code: agent view. One list of all your sessions, available today as a research preview.",
-      "image": "https://pbs.twimg.com/media/HIEVJQ4XoAAXNNi.jpg",
+      "image": "media/2026-05-12-claude-code-introduces-an-agent-view-listing-all-s.jpg",
       "sources": [
         "https://x.com/i/status/2053940934736228454"
       ],
@@ -3819,7 +3819,7 @@
         "deployment"
       ],
       "excerpt": "\"Agents can now create Cloudflare accounts, buy domains, and deploy\" Here's how it works in 4 minutes.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2052028417172779010/img/pYzqMHSTjTGDWXeE.jpg",
+      "image": "media/2026-05-07-cloudflare-agents-can-now-selfprovision-accounts-b.jpg",
       "sources": [
         "https://x.com/i/status/2052029139775787314"
       ],
@@ -3861,7 +3861,7 @@
         "beta"
       ],
       "excerpt": "Live from Code with Claude: we're launching dreaming in Claude Managed Agents as a research preview. Outcomes, multiagent orchestration, and webhooks are now in public beta.",
-      "image": "https://pbs.twimg.com/media/HHpoqNAXcAcHY8h.jpg",
+      "image": "media/2026-05-07-claude-managed-agents-launches-dreaming-mode-and-b.jpg",
       "sources": [
         "https://x.com/i/status/2052067399088664981"
       ],
@@ -3883,7 +3883,7 @@
         "cost"
       ],
       "excerpt": "SubQ\u2019s new model uses a sub\u2011quadratic sparse\u2011attention design to handle 12 million\u2011token contexts, delivering speed and cost advantages over existing attention engines.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2051654813717573632/img/aGtVgqlCkr4yOfHF.jpg",
+      "image": "media/2026-05-05-subq-launches-a-subquadratic-llm-with-12mtoken-con.jpg",
       "sources": [
         "https://x.com/i/status/2051663268704636937"
       ],
@@ -3905,7 +3905,7 @@
         "release"
       ],
       "excerpt": "Promised fulfilled! Codex is now the default provider and GPT 5.5 is the default model of OpenClaude. v0.9.1 released with big updates! \ud83d\udd25 Thank you Sam",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2051616504819683328/img/hXB0aixsgmsKIsXD.jpg",
+      "image": "media/2026-05-05-openclaude-v091-makes-codex-default-and-upgrades-t.jpg",
       "sources": [
         "https://x.com/i/status/2051616716007075887"
       ],
@@ -3926,7 +3926,7 @@
         "frontend"
       ],
       "excerpt": "Nexu has open\u2011sourced its Open Design Skills library, a ready\u2011made system for turning raw HTML into polished, magazine\u2011grade pages. It could speed up landing\u2011page iterations for small teams.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2051202687484530688/img/V6T-iUoD-KFVoKxc.jpg",
+      "image": "media/2026-05-05-open-design-skills-released-as-open-source-design.jpg",
       "sources": [
         "https://x.com/i/status/2051203959142895896"
       ],
@@ -3947,7 +3947,7 @@
         "ai"
       ],
       "excerpt": "Higgsfield AI adds a command\u2011line tool that bundles a marketing skill, aiming to keep LLM token spend low while improving output quality.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2051345934630658048/img/H50XmeFpc8Ib78If.jpg",
+      "image": "media/2026-05-05-higgsfield-releases-cli-with-builtin-marketing-ski.jpg",
       "sources": [
         "https://x.com/i/status/2051346056039039487"
       ],
@@ -3968,7 +3968,7 @@
         "developer tooling"
       ],
       "excerpt": "HeyGen added a Hyperframes skill to Hermes Agent, letting developers turn the agent into a one\u2011command video editor. The integration is a joint effort with Nous Research and is installable via a single CLI line.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2051697749222170631/img/nCPUV9551HFm-a-A.jpg",
+      "image": "media/2026-05-05-hermes-agent-gains-hyperframes-video-editing-skill.jpg",
       "sources": [
         "https://x.com/i/status/2051697813554405384"
       ],
@@ -3989,7 +3989,7 @@
         "google"
       ],
       "excerpt": "Google's new Pomelli Catalog lets you feed product data and instantly receive AI-crafted campaign copy and photos, free of charge.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2051689980515561472/img/ep-587HlAqTTlnKc.jpg",
+      "image": "media/2026-05-05-google-launches-pomelli-catalog-for-ai-generated-b.jpg",
       "sources": [
         "https://x.com/i/status/2051693177053340073"
       ],
@@ -4010,7 +4010,7 @@
         "opensource"
       ],
       "excerpt": "GitHub Projects unveiled an open\u2011source PDF toolkit that runs fully in the browser via WebAssembly, offering more than 90 utilities without any server component.",
-      "image": "https://pbs.twimg.com/media/HHi9ngubkAALhhp.jpg?name=orig",
+      "image": "media/2026-05-05-github-projects-releases-browseronly-pdf-toolkit-w.jpg",
       "sources": [
         "https://x.com/i/status/2051598119478108162"
       ],
@@ -4030,7 +4030,7 @@
         "devops"
       ],
       "excerpt": "Claude Code now includes a built\u2011in skill that can manage model migrations, use prompt caching, and interact with Claude Managed Agents directly from the CLI.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2049574832241864704/img/zb_ZHb-8NXRzl5vp.jpg",
+      "image": "media/2026-05-02-claude-code-adds-builtin-skill-for-claude-platform.jpg",
       "sources": [
         "https://x.com/i/status/2049575802568839648"
       ],
@@ -4051,7 +4051,7 @@
         "startup tools"
       ],
       "excerpt": "Poseidon released an early\u2011access version of Numo, an app that gathers voice recordings in four South Asian languages to feed next\u2011generation AI models. The rollout is limited and invites scrutiny over data quality and privacy.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2049516568267419648/img/P5GWSvbPU96ONyID.jpg",
+      "image": "media/2026-04-30-poseidon-opens-early-access-to-numo-for-multilingu.jpg",
       "sources": [
         "https://x.com/i/status/2049526025751855207"
       ],
@@ -4072,7 +4072,7 @@
         "3d pipeline"
       ],
       "excerpt": "A new Fal\u2011powered WebGL demo shows how to turn AI\u2011generated images into animated GLB assets under 1 MB, using a fully static front\u2011end.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2049776252043800577/img/qiP2OE9xXmEWsuHh.jpg",
+      "image": "media/2026-04-30-fal-webgl-demo-serves-submegabyte-animated-glbs-in.jpg",
       "sources": [
         "https://x.com/i/status/2049836416289407133"
       ],
@@ -4093,7 +4093,7 @@
         "ai tools"
       ],
       "excerpt": "HyperFrames is a free, open\u2011source Agent Skill that turns web code into video, working with any LLM. It\u2019s a quick way to prototype visual output without buying a dedicated service.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2048779038253010944/img/siCpRLTdNT-WIjzH.jpg",
+      "image": "media/2026-04-27-hyperframes-lets-you-generate-videos-from-html-css.jpg",
       "sources": [
         "https://x.com/i/status/2048779120985645145"
       ],
@@ -4114,7 +4114,7 @@
         "elevenlabs"
       ],
       "excerpt": "ElevenLabs added Agent Templates, a library of more than 50 ready\u2011made ElevenAgents for support, sales, and operations. The templates bundle prompts, workflows, and integrations to speed up deployment.",
-      "image": "https://pbs.twimg.com/media/HG7H8lVWQAA1pru.jpg?name=orig",
+      "image": "media/2026-04-27-elevenlabs-launches-50-preconfigured-agent-templat.jpg",
       "sources": [
         "https://x.com/i/status/2048794727881789930"
       ],
@@ -4134,7 +4134,7 @@
         "open-source"
       ],
       "excerpt": "Dot Matrix is a React component library of dot matrix loaders\u2014expressive loading primitives you install via the shadcn registry and own as local code.",
-      "image": "https://dotmatrix.zzzzshawn.cloud/og.png",
+      "image": "media/2026-04-27-dot-matrix-adds-55-free-react-dotmatrix-loaders.png",
       "sources": [
         "https://dotmatrix.zzzzshawn.cloud/"
       ],
@@ -4154,7 +4154,7 @@
         "automation"
       ],
       "excerpt": "BREAKING: the screenshot bottleneck is gone! Anything now generates designer grade App Store screenshots",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2047782324931031040/img/seftU4O4TShx8b9P.jpg",
+      "image": "media/2026-04-26-anything-adds-aigenerated-app-store-screenshots.jpg",
       "sources": [
         "https://x.com/i/status/2047782953959170239"
       ],
@@ -4175,7 +4175,7 @@
         "claude"
       ],
       "excerpt": "Anthropic's new internal experiment lets its AI assistant Claude buy, sell, and negotiate items for employees, revealing both promise and practical concerns for startup teams.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2047716403000606720/img/5rq3VoaCzbgqTM4v.jpg",
+      "image": "media/2026-04-25-anthropic-pilots-clauderun-marketplace-for-office.jpg",
       "sources": [
         "https://x.com/i/status/2047728360818696302"
       ],
@@ -4196,7 +4196,7 @@
         "developer tools"
       ],
       "excerpt": "Add a little fun to your coding sessions \ud83d\udc36\ud83d\udc31 This extension lets you keep a virtual pet right inside VS Code.",
-      "image": "https://pbs.twimg.com/ext_tw_video_thumb/2047314901568229377/pu/img/Td7Mo9Pc_6AlyCfp.jpg",
+      "image": "media/2026-04-24-vs-code-ships-a-virtual-pet-extension.jpg",
       "sources": [
         "https://x.com/i/status/2047314929695310196"
       ],
@@ -4217,7 +4217,7 @@
         "ai coding"
       ],
       "excerpt": "OpenAI\u2019s GPT\u20115.5 is generally available and has been baked into GitHub Copilot, promising better results on complex coding tasks. Engineers can test it via Copilot CLI or the @code UI, but should weigh cost and false\u2011positive risk.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2047735113140559872/img/ay7zAXw59DiLdVKu.jpg",
+      "image": "media/2026-04-24-github-copilot-now-runs-openai-gpt55.jpg",
       "sources": [
         "https://x.com/i/status/2047747243617460482"
       ],
@@ -4238,7 +4238,7 @@
         "local inference"
       ],
       "excerpt": "Google's Gemma 4 model can be executed entirely on a local machine using LM Studio and OpenCode, letting engineers parse PDFs and build sites without network access.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2047398550607364096/img/hi43ppowtntl1TPm.jpg",
+      "image": "media/2026-04-24-gemma-4-runs-offline-with-lm-studio-and-opencode.jpg",
       "sources": [
         "https://x.com/i/status/2047406475631624285"
       ],
@@ -4259,7 +4259,7 @@
         "ai tools"
       ],
       "excerpt": "A new AI\u2011powered, self\u2011hosted clipper can process YouTube and local videos without watermarks, and it\u2019s completely free. It even lets you plug in Claude or any other model.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2047362125404991489/img/zuuGOdnYvpgWoSRW.jpg",
+      "image": "media/2026-04-24-free-open-source-ai-video-clipping-tool-challenges.jpg",
       "sources": [
         "https://x.com/i/status/2047366820026593444"
       ],
@@ -4280,7 +4280,7 @@
         "cloud"
       ],
       "excerpt": "A recent tweet highlights that DeepSeek V4\u2011Pro charges $1.74 per million input tokens, far below the $5\u2011$30 rates announced for GPT\u20115.5, raising questions about cost strategy for startups.",
-      "image": "https://pbs.twimg.com/media/HGqNR-pWcAA6luP.jpg?name=orig",
+      "image": "media/2026-04-24-deepseek-v4pro-pricing-looks-cheap-next-to-gpt55.jpg",
       "sources": [
         "https://x.com/i/status/2047605548346941643"
       ],
@@ -4300,7 +4300,7 @@
         "hosted api"
       ],
       "excerpt": "Nvidia now provides free access to around 80 large language models via hosted APIs, with a simple key\u2011based setup. Engineers can experiment without paying for inference.",
-      "image": "https://pbs.twimg.com/media/HGhtdU7aMAAl5f5.png?name=orig",
+      "image": "media/2026-04-23-nvidia-launches-free-hosted-apis-for-80-ai-models.png",
       "sources": [
         "https://x.com/dhruvtwt_/status/2047006444701274380"
       ],
@@ -4340,7 +4340,7 @@
         "Organic Traffic"
       ],
       "excerpt": "Discover Okara's favorite SEO hack to boost organic traffic by optimizing pages with high impressions and low click-through rates. Learn how to leverage this strategy for your own website",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2046865909852381184/img/8LM14RWth99TnP44.jpg",
+      "image": "media/2026-04-22-unlocking-hidden-traffic-okaras-seo-hack-for-organ.jpg",
       "sources": [
         "https://x.com/i/status/2046866025795461145"
       ],
@@ -4361,7 +4361,7 @@
         "change tracking"
       ],
       "excerpt": "Firecrawl's latest update enables effortless monitoring of entire sites for pricing changes, doc updates, or inventory shifts, making it a game-changer for developers and tech enthusiasts",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2046982489231740928/img/hk7SmfiW-7pnCe-I.jpg",
+      "image": "media/2026-04-22-revolutionizing-web-scraping-firecrawls-game-chang.jpg",
       "sources": [
         "https://x.com/i/status/2046982541245321671"
       ],
@@ -4382,7 +4382,7 @@
         "ChatGPT"
       ],
       "excerpt": "OpenAI's ChatGPT Images 2.0 is a game-changer for visual creation, offering advanced image generation capabilities with sharper editing and richer layouts. This breakthrough technology has the potential to revolutionize various industries, from graphic design to entertainment.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2046668430842146816/img/bF2-O5T-0PUVRVCs.jpg",
+      "image": "media/2026-04-22-revolutionizing-visual-creation-chatgpt-images-20.jpg",
       "sources": [
         "https://x.com/i/status/2046670977145372771"
       ],
@@ -4403,7 +4403,7 @@
         "Productivity"
       ],
       "excerpt": "Zed's Parallel Agents is a game-changer for developers, allowing multiple agents to run simultaneously, streamlining workflows and boosting productivity. This innovation is set to transform the way we work on projects.",
-      "image": "https://pbs.twimg.com/media/HGhrpE0WYAE3Io7.jpg?name=orig",
+      "image": "media/2026-04-22-revolutionizing-productivity-parallel-agents-unlea.jpg",
       "sources": [
         "https://x.com/i/status/2047004387961106435"
       ],
@@ -4423,7 +4423,7 @@
         "Workspace Agents"
       ],
       "excerpt": "Introducing workspace agents in ChatGPT\u2014shared agents that can handle complex tasks and long-running workflows across tools and teams.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2047004707844194304/img/IhMl2PZiOc460lx8.jpg",
+      "image": "media/2026-04-22-revolutionizing-productivity-openai-unveils-shared.jpg",
       "sources": [
         "https://x.com/i/status/2047008987665809771"
       ],
@@ -4444,7 +4444,7 @@
         "Code Review"
       ],
       "excerpt": "Claude Code introduces Ultrareview, a game-changing feature that harnesses the power of cloud-based bug-hunting agents to streamline code review. This innovation promises to simplify the development process and improve code quality.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2046999336412913664/img/Orz36ChX1Wvcp-7s.jpg",
+      "image": "media/2026-04-22-revolutionizing-code-review-claude-code-unveils-ul.jpg",
       "sources": [
         "https://x.com/i/status/2046999435239133246"
       ],
@@ -4465,7 +4465,7 @@
         "AI-powered Coding"
       ],
       "excerpt": "Kraggi's Nyx is a game-changing infinite-canvas IDE that integrates multiple AI models, streamlining coding and development. This innovative platform is set to transform the way developers work.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2046826808746668032/img/NCy_IXIwsTvyZbXf.jpg",
+      "image": "media/2026-04-22-revolutionary-infinite-canvas-ide-nyx-unveiled.jpg",
       "sources": [
         "https://x.com/i/status/2046827332124430774"
       ],
@@ -4486,7 +4486,7 @@
         "Community News"
       ],
       "excerpt": "For the developers building with Claude, a direct line from the team. Follow for changelogs, API releases, community updates, and deep dives.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2044779639445590016/img/u50wlq8vb0ueGG_J.jpg",
+      "image": "media/2026-04-17-claudedevs-unveils-dedicated-channel-for-developer.jpg",
       "sources": [
         "https://x.com/i/status/2044780198722498580"
       ],
@@ -4507,7 +4507,7 @@
         "Claude Code"
       ],
       "excerpt": "A new masterclass reveals how Anthropic uses Claude Code, a revolutionary tool that could make traditional IDEs obsolete by the end of the year, and explores non-coding pipeline opportunities",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2044139244525105152/img/jCff5LdNEPDkStJA.jpg",
+      "image": "media/2026-04-15-the-future-of-coding-is-the-era-of-traditional-ide.jpg",
       "sources": [
         "https://x.com/i/status/2044140545384296913"
       ],
@@ -4528,7 +4528,7 @@
         "Voice AI"
       ],
       "excerpt": "The New ElevenAgents React SDK",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2044516556634263552/img/RSZe0mXPBmWB5WXd.jpg",
+      "image": "media/2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c.jpg",
       "sources": [
         "https://x.com/i/status/2044519924282847381"
       ],
@@ -4549,7 +4549,7 @@
         "GitHub Integration"
       ],
       "excerpt": "Claude Code Routines have arrived, allowing users to trigger templated agents via GitHub events or API, streamlining documentation and backlog maintenance. This innovation has the potential to transform the way developers work.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2044093860918513664/img/iW06fBgxU7Kb3qBE.jpg",
+      "image": "media/2026-04-15-revolutionizing-automation-claude-code-routines-ar.jpg",
       "sources": [
         "https://x.com/i/status/2044093913376706655"
       ],
@@ -4570,7 +4570,7 @@
         "Google AI Studio"
       ],
       "excerpt": "Gemini now generates designs for your apps while they\u2019re building! pick between 5 themes, hit apply, and get beautiful designs out of the box. now live in AI Studio",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2044111151097884672/img/0zJFDJUcEryum-oo.jpg",
+      "image": "media/2026-04-15-revolutionizing-app-design-ai-generated-themes-now.jpg",
       "sources": [
         "https://x.com/i/status/2044111418786754620"
       ],
@@ -4592,7 +4592,7 @@
         "Productivity"
       ],
       "excerpt": "Google introduces Skills in Chrome, a game-changer for building one-click workflows with AI prompts, and we're excited to dive into its implications for developers and tech enthusiasts. This innovation has the potential to streamline tasks and boost productivity like never before.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2044106049536643073/img/_OtHkXtJKFsabJBW.jpg",
+      "image": "media/2026-04-15-revolutionizing-ai-powered-workflows-google-introd.jpg",
       "sources": [
         "https://x.com/i/status/2044106378655215625"
       ],
@@ -4613,7 +4613,7 @@
         "Claude"
       ],
       "excerpt": "We've redesigned Claude Code on desktop. You can now run multiple Claude sessions side by side from one window, with a new sidebar to manage them all.",
-      "image": "https://pbs.twimg.com/media/HF43A0sXYAA494v.jpg",
+      "image": "media/2026-04-15-revolutionizing-ai-powered-coding-claudes-game-cha.jpg",
       "sources": [
         "https://x.com/i/status/2044131493966909862"
       ],
@@ -4634,7 +4634,7 @@
         "interactive transcripts"
       ],
       "excerpt": "I can't go back to the regular YouTube UI after this \ud83d\ude05 Obsidian Reader now makes the transcript interactive so you can scrub, highlight, auto-scroll. It feels so nice.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2042678525627633664/img/r-KNUFvnCDyqk2O3.jpg",
+      "image": "media/2026-04-12-revolutionizing-video-consumption-interactive-tran.jpg",
       "sources": [
         "https://x.com/i/status/2042683393247449148"
       ],
@@ -4655,7 +4655,7 @@
         "MMX-CLI"
       ],
       "excerpt": "MiniMax introduces MMX-CLI, a groundbreaking infrastructure that empowers AI agents with seven new senses, revolutionizing their capabilities and potential applications. This update is a game-changer for developers and the tech community, enabling agents to interact with the world in unprecedented ways.",
-      "image": "https://pbs.twimg.com/media/HFjrmYuakAQVPU2.jpg?name=orig",
+      "image": "media/2026-04-12-revolutionizing-ai-agents-minimax-unveils-mmx-cli.jpg",
       "sources": [
         "https://x.com/i/status/2042641521653256234"
       ],
@@ -4675,7 +4675,7 @@
         "Claude"
       ],
       "excerpt": "Noah Zweben announces the Monitor tool, a game-changer for Claude's background scripts, and we're excited to dive into its potential. This innovation promises to reduce token usage and move away from polling in the agent loop.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2042332212532596736/img/YwBOHFk1xJkZQG0B.jpg",
+      "image": "media/2026-04-10-revolutionizing-agent-interactions-claudes-monitor.jpg",
       "sources": [
         "https://x.com/i/status/2042332268450963774"
       ],
@@ -4696,7 +4696,7 @@
         "Copilot CLI"
       ],
       "excerpt": "GitHub Copilot CLI automates security triage, allowing devs to identify and address vulnerabilities quickly, and we're excited to share the implications of this update with the community. This tool is set to revolutionize the way developers tackle security debt, making it a must-know for anyone in the industry.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2042008590156787712/img/IiivejD1EO03rhg2.jpg",
+      "image": "media/2026-04-09-revolutionizing-security-triage-github-copilot-cli.jpg",
       "sources": [
         "https://x.com/i/status/2042008695035355537"
       ],
@@ -4717,7 +4717,7 @@
         "Managed Agents"
       ],
       "excerpt": "Claude introduces Managed Agents, a game-changing platform for building and deploying AI agents at scale, streamlining the development process from prototype to launch. This innovation has the potential to transform the AI landscape, enabling faster and more efficient development of AI-powered applications.",
-      "image": "https://pbs.twimg.com/media/HFZiwfuWkAEHrrV.jpg",
+      "image": "media/2026-04-09-revolutionizing-ai-development-claude-unveils-mana.jpg",
       "sources": [
         "https://x.com/i/status/2041927687460024721"
       ],
@@ -4738,7 +4738,7 @@
         "Postgres"
       ],
       "excerpt": "ArdentAI introduces instant Postgres database cloning, streamlining testing for developers and coding agents. This innovation reduces cloning time to under 6 seconds, eliminating infrastructure management.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2041637437034926080/img/kInbSydHMhFn0Odu.jpg",
+      "image": "media/2026-04-09-revolutionary-database-cloning-ardentai-changes-th.jpg",
       "sources": [
         "https://x.com/i/status/2041651193362182281"
       ],
@@ -4759,7 +4759,7 @@
         "Task Automation"
       ],
       "excerpt": "Notion introduces Claude AI agents to automate tasks and workflows, revolutionizing team productivity. This integration enables seamless task management and automation, making it a game-changer for developers and teams.",
-      "image": "https://pbs.twimg.com/media/HFaS39ja8AALVUD.jpg",
+      "image": "media/2026-04-09-notion-unleashes-ai-powered-task-automation-with-c.jpg",
       "sources": [
         "https://x.com/i/status/2041982872698155398"
       ],
@@ -4780,7 +4780,7 @@
         "Web Interaction"
       ],
       "excerpt": "Firecrawl has reached the top 100 GitHub repos, offering a game-changing API for AI agents to search, scrape, and interact with the web, trusted by over a million developers and thousands of enterprise teams. This milestone underscores the significance of Firecrawl's innovative approach to web interaction.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2041909020173426688/img/4LWyfiguOdYxiZk8.jpg",
+      "image": "media/2026-04-09-firecrawl-reaches-new-heights-revolutionizing-web.jpg",
       "sources": [
         "https://x.com/i/status/2041909075110510969"
       ],
@@ -4801,7 +4801,7 @@
         "Update"
       ],
       "excerpt": "The latest Supernotes update brings exciting new features, improvements, and bug fixes, taking user experience to the next level. Discover what's new and why it matters for developers and tech enthusiasts.",
-      "image": "https://pbs.twimg.com/media/HFSDiOGagAAtDM3.jpg?name=orig",
+      "image": "media/2026-04-08-supernotes-323-revolution-unlocking-new-features-a.jpg",
       "sources": [
         "https://x.com/i/status/2041401159639007301"
       ],
@@ -4841,7 +4841,7 @@
         "command-line"
       ],
       "excerpt": "The new /autofix-pr command line tool streamlines code fixes and boosts developer productivity. This game-changing feature allows for seamless session sharing and automated PR fixes.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2041654899818328064/img/1vkvIo3nmRfkdutN.jpg",
+      "image": "media/2026-04-08-revolutionizing-code-productivity-autofix-pr-now-a.jpg",
       "sources": [
         "https://x.com/i/status/2041654973491245509"
       ],
@@ -4862,7 +4862,7 @@
         "AI Agents"
       ],
       "excerpt": "Zapier's SDK is now available to everyone, enabling AI agents to access over 8,000 apps and their APIs, and changing the game for automation and development. This launch opens up new possibilities for developers and tech enthusiasts to streamline workflows and unlock new use cases.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2040204642618163200/img/ttyREQ-03VATWcqg.jpg",
+      "image": "media/2026-04-08-revolutionizing-automation-zapier-sdk-now-open-to.jpg",
       "sources": [
         "https://x.com/i/status/2041501747105890393"
       ],
@@ -4883,7 +4883,7 @@
         "Onboarding"
       ],
       "excerpt": "Claude Code introduces a new /powerup command, bringing interactive lessons to the terminal, and marking the beginning of a new era in AI dev tool onboarding. This innovation is set to make AI development more accessible and user-friendly for developers.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2039495080659030016/img/JPrPKLJvq9Gj0OE-.jpg",
+      "image": "media/2026-04-08-revolutionizing-ai-dev-tool-onboarding-interactive.jpg",
       "sources": [
         "https://x.com/i/status/2041542766585610477"
       ],
@@ -4904,7 +4904,7 @@
         "Innovation"
       ],
       "excerpt": "Meet Clicky, an AI-powered teacher that assists learners in real-time, and discover its potential to transform the way we acquire new skills. This cutting-edge tool is set to revolutionize the edtech landscape with its interactive and personalized approach.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2041313187883261952/img/DiF4z36g4_F72A7N.jpg",
+      "image": "media/2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the.jpg",
       "sources": [
         "https://x.com/i/status/2041314633978659092"
       ],
@@ -4945,7 +4945,7 @@
         "diagramming"
       ],
       "excerpt": "In the next version of tldraw,",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2040869375868305408/img/3gmmVwpbff-T60Nw.jpg",
+      "image": "media/2026-04-06-tldraw-revolution-unlocking-next-level-collaborati.jpg",
       "sources": [
         "https://x.com/i/status/2040869600137556247"
       ],
@@ -4966,7 +4966,7 @@
         "design tools"
       ],
       "excerpt": "Typevibe is a game-changing tool that simplifies font pairing, offering unique recommendations and 32 design templates to streamline your design process. This innovative solution is a must-try for developers and designers alike.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2040969469762191362/img/NAPniO8V24THM2yk.jpg",
+      "image": "media/2026-04-06-revolutionizing-font-pairing-introducing-typevibe.jpg",
       "sources": [
         "https://x.com/i/status/2040969883236622484"
       ],
@@ -4988,7 +4988,7 @@
         "tools"
       ],
       "excerpt": "Discover the top tools for picking colors and gradients, as shared by Albia, to take your design to the next level. From Coolors to Colorion, explore the best resources for designers and developers.",
-      "image": "https://pbs.twimg.com/media/HFDpah7bcAEwOgn.jpg?name=orig",
+      "image": "media/2026-04-06-revolutionizing-design-top-tools-for-color-and-gra.jpg",
       "sources": [
         "https://x.com/i/status/2040387276589682858"
       ],
@@ -5008,7 +5008,7 @@
         "Game Development"
       ],
       "excerpt": "Omma's AI-powered tools are changing the game development landscape with its level builder and controllable color theme parameters, allowing for unprecedented creativity and innovation. This technology has the potential to democratize game development and make it more accessible to developers of all levels.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2037933153227276288/img/WYTjR7GBFF-eO0is.jpg",
+      "image": "media/2026-03-30-revolutionizing-game-development-with-ommas-ai-pow.jpg",
       "sources": [
         "https://x.com/i/status/2037935421905412229"
       ],
@@ -5029,7 +5029,7 @@
         "Claude"
       ],
       "excerpt": "Claude's latest update enables the AI to use your computer to complete tasks, opening up new possibilities for automation and efficiency. This breakthrough feature is set to revolutionize the way we work and interact with our devices.",
-      "image": "https://pbs.twimg.com/media/HEIFrMWaIAIHvE0.jpg",
+      "image": "media/2026-03-24-revolutionizing-productivity-claudes-game-changing.jpg",
       "sources": [
         "https://x.com/i/status/2036195789601374705"
       ],
@@ -5050,7 +5050,7 @@
         "Performance Optimization"
       ],
       "excerpt": "The agent-browser is now fully native Rust, boasting a 1.6x faster cold start, 18x less memory, and a 99x smaller install, making it a game-changer for developers. This update brings faster shipping, more control, and unprecedented capabilities to the table.",
-      "image": "https://pbs.twimg.com/media/HDVfGNGXkAA7lOa.jpg?name=orig",
+      "image": "media/2026-03-14-rust-powered-agent-browser-revolution-lightning-fa.jpg",
       "sources": [
         "https://x.com/i/status/2032635370089693456"
       ],
@@ -5070,7 +5070,7 @@
         "Agent Mode"
       ],
       "excerpt": "GLM-5 introduces Agent Mode, a game-changer for AI workflows, allowing for instant insights and automated tasks. This update is a must-know for developers and tech enthusiasts looking to streamline their workflows.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2032555146874597379/img/pPldQrCTZe7D0Xgh.jpg",
+      "image": "media/2026-03-14-revolutionizing-ai-workflows-glm-5-unleashes-agent.jpg",
       "sources": [
         "https://x.com/i/status/2032555220493033960"
       ],
@@ -5091,7 +5091,7 @@
         "Frontend Preview"
       ],
       "excerpt": "Claude Code Desktop has a built-in MCP for frontend preview It activates automatically when you ask Claude to spin up a dev server Save this thread \ud83d\udc47",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2032841499344351232/img/gtXcMEcevG40ZG2k.jpg",
+      "image": "media/2026-03-14-revolutionary-coding-claude-code-desktop-unveils-g.jpg",
       "sources": [
         "https://x.com/i/status/2032856141059747975"
       ],
@@ -5112,7 +5112,7 @@
         "India"
       ],
       "excerpt": "Y Combinator's Startup School is coming to India, featuring talks from successful founders and sessions with YC partners, and this is a huge opportunity for local entrepreneurs to learn and grow. This event is a must-attend for anyone looking to launch or scale a startup in India.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2032249538669658117/img/dobq-IadLifowgfC.jpg",
+      "image": "media/2026-03-13-ycs-startup-school-lands-in-india-a-boost-for-loca.jpg",
       "sources": [
         "https://x.com/i/status/2032291152402255892"
       ],
@@ -5133,7 +5133,7 @@
         "Node-Based Editor"
       ],
       "excerpt": "Pixel Composer : un \u00e9diteur VFX \u00e0 base de nodes pour le pixel art https://github.com/Ttanasart-pt/Pixel-Composer",
-      "image": "https://pbs.twimg.com/tweet_video_thumb/HDSqT1OWQAAldug.jpg",
+      "image": "media/2026-03-13-revolutionizing-pixel-art-a-node-based-vfx-editor.jpg",
       "sources": [
         "https://x.com/i/status/2032436603453395361"
       ],
@@ -5155,7 +5155,7 @@
         "Claude Code"
       ],
       "excerpt": "Mockdown is alive again. AI agents read markdown better than they read your mind. Draw a wireframe in ASCII, paste it into Claude Code, get a working page back. http://www.mockdown.design",
-      "image": "https://pbs.twimg.com/media/HDAaTjpWQAAVd-7.jpg?name=orig",
+      "image": "media/2026-03-11-reviving-mockdown-ai-powered-wireframing-revolutio.jpg",
       "sources": [
         "https://x.com/i/status/2031152691502555592"
       ],
@@ -5175,7 +5175,7 @@
         "Development Environment"
       ],
       "excerpt": "JetBrains introduces Air, an agentic development environment that supports top AI models, and we're excited to explore its potential for developers. This new tool is set to change the way we code and interact with AI assistants.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2031048511664664576/img/hpC5D_EvlOW99QK9.jpg",
+      "image": "media/2026-03-11-jetbrains-unveils-air-a-revolutionary-ai-powered-d.jpg",
       "sources": [
         "https://x.com/i/status/2031049359710650522"
       ],
@@ -5196,7 +5196,7 @@
         "TranslateGemma"
       ],
       "excerpt": "Google AI Developers just revealed a game-changing update that enables running AI models like TranslateGemma 4B entirely in your browser, and we're excited to dive into the implications. This breakthrough uses WebGPU and Transformers.js v4 to support 55 languages offline, with no server required.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2031037104478662656/img/VK1UIKaZifIvOi0R.jpg",
+      "image": "media/2026-03-11-breakthrough-run-ai-models-entirely-in-your-browse.jpg",
       "sources": [
         "https://x.com/i/status/2031037128734376089"
       ],
@@ -5217,7 +5217,7 @@
         "Claude"
       ],
       "excerpt": "Introducing Code Review, a new feature for Claude Code. When a PR opens, Claude dispatches a team of agents to hunt for bugs.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2031087443961851904/img/djTbAdaklBTC4hQE.jpg",
+      "image": "media/2026-03-09-revolutionizing-code-quality-claudes-ai-powered-co.jpg",
       "sources": [
         "https://x.com/i/status/2031088171262554195"
       ],
@@ -5238,7 +5238,7 @@
         "Innovation"
       ],
       "excerpt": "Anything API is live, filling the gap for websites without public APIs, and enabling developers to create callable endpoints for any website. This game-changing technology has the potential to transform the way we interact with the web.",
-      "image": "https://pbs.twimg.com/media/HCjU30nXUAAnzQ3.jpg?name=orig",
+      "image": "media/2026-03-06-revolutionizing-web-apis-anything-api-unleashed.jpg",
       "sources": [
         "https://x.com/i/status/2029106289528185211"
       ],
@@ -5258,7 +5258,7 @@
         "Collaboration Tools"
       ],
       "excerpt": "OpenAI introduces Symphony, a game-changing platform that streamlines team collaboration by turning project work into isolated, autonomous implementation runs. This innovation has the potential to transform the way teams manage work and supervise coding agents.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2029279697796775937/img/dYX7ItiJU1IlfxTh.jpg",
+      "image": "media/2026-03-06-revolutionizing-team-collaboration-openai-unveils.jpg",
       "sources": [
         "https://x.com/i/status/2029296008572576217"
       ],
@@ -5279,7 +5279,7 @@
         "AI-powered development"
       ],
       "excerpt": "Today we're launching Glaze \ud83d\udca0 Create any desktop app in minutes by chatting with AI. Beautiful, powerful, and truly personal. Learn more on https://glazeapp.com Follow @glazeapps for updates.",
-      "image": "https://pbs.twimg.com/media/HCkLlEHWkAAJpny.png",
+      "image": "media/2026-03-06-revolutionizing-app-development-ai-powered-glaze-l.png",
       "sources": [
         "https://x.com/i/status/2029180822838759703"
       ],
@@ -5300,7 +5300,7 @@
         "Agent Development"
       ],
       "excerpt": "LangChain introduces LangSmith Skills and CLI, empowering coding agents to take charge of their own development, and we're excited to dive into the implications and potential use cases. This breakthrough enables agents to debug, create datasets, and run experiments natively through the terminal.",
-      "image": "https://pbs.twimg.com/ext_tw_video_thumb/2029272155498639360/pu/img/Wg__efvP4CyYGA64.jpg",
+      "image": "media/2026-03-06-revolutionizing-agent-development-langsmith-skills.jpg",
       "sources": [
         "https://x.com/i/status/2029272199073354105"
       ],
@@ -5321,7 +5321,7 @@
         "Laptops"
       ],
       "excerpt": "Apple today unveiled MacBook Neo, an all-new laptop that delivers the magic of the Mac at a breakthrough price.",
-      "image": "https://www.apple.com/newsroom/images/2026/03/say-hello-to-macbook-neo/tile/Apple-MacBook-Neo-hero-260304-lp.jpg.og.jpg?202603050319",
+      "image": "media/2026-03-05-revolutionizing-affordable-computing-apple-unveils.jpg",
       "sources": [
         "https://share.google/Aoh06t6BFh9ZjAPJW"
       ],
@@ -5341,7 +5341,7 @@
         "AI Coding"
       ],
       "excerpt": "Claude Code introduces a game-changing voice mode, allowing users to interact with the platform using voice commands, and it's rolling out to 5% of users now. This innovative feature is set to revolutionize the coding experience.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2028628068517183489/img/pqaAS9fN8tZTs8fY.jpg",
+      "image": "media/2026-03-05-revolutionary-voice-mode-rolls-out-in-claude-code.jpg",
       "sources": [
         "https://x.com/trq212/status/2028628570692890800?s=20"
       ],
@@ -5364,7 +5364,7 @@
         "AI"
       ],
       "excerpt": "Apple announced the latest 14- and 16-inch MacBook Pro with the all-new M5 Pro and M5 Max.",
-      "image": "https://www.apple.com/newsroom/images/2026/03/apple-introduces-macbook-pro-with-all-new-m5-pro-and-m5-max/tile/Apple-MacBook-Pro-M5-Pro-and-M5-Max-Capture-One-260303-lp.jpg.og.jpg?202603050320",
+      "image": "media/2026-03-05-apple-unleashes-ai-powered-macbook-pro-with-m5-pro.jpg",
       "sources": [
         "https://share.google/XBSpKN75sGxaqL1Mk"
       ],
@@ -5424,7 +5424,7 @@
         "AI_Powered_Productivity"
       ],
       "excerpt": "MiniMax Agent's latest update combines forces with MaxClaw and 10,000+ experts to transform the way we work, making it possible to complete complex tasks in record time. This innovation has the potential to revolutionize productivity for developers and tech enthusiasts alike.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2027025589111283712/img/SKZEzNrDAsS2yr8u.jpg",
+      "image": "media/2026-02-26-revolutionizing-productivity-minimax-agents-game-c.jpg",
       "sources": [
         "https://x.com/i/status/2027027163078336885"
       ],
@@ -5445,7 +5445,7 @@
         "AI-powered Image Editing"
       ],
       "excerpt": "We\u2019re launching Nano Banana 2, built on the latest Gemini Flash model. \ud83c\udf4c It\u2019s state-of-the-art for creating and editing images, combining Pro-level capabilities with lightning-fast speed. \ud83e\uddf5",
-      "image": "https://pbs.twimg.com/tweet_video_thumb/HCGHbQnaYAEbEM-.jpg",
+      "image": "media/2026-02-26-revolutionizing-image-creation-nano-banana-2-unlea.jpg",
       "sources": [
         "https://x.com/i/status/2027051577899380991"
       ],
@@ -5487,7 +5487,7 @@
         "Cloudflare Workers"
       ],
       "excerpt": "One engineer used AI to rebuild Next.js on Vite in a week. vinext builds up to 4x faster, produces 57% smaller bundles, and deploys to Cloudflare Workers with a single command.",
-      "image": "https://cf-assets.www.cloudflare.com/zkvhlag99gkb/720QQcrdICiSJXrr9VoixA/4934fffd05d1ca10cc661238b381308e/BLOG-3194_OG.png",
+      "image": "media/2026-02-25-revolutionizing-front-end-development-the-ai-power.png",
       "sources": [
         "https://blog.cloudflare.com/vinext/"
       ],
@@ -5507,7 +5507,7 @@
         "Collaboration"
       ],
       "excerpt": "Pencil just crossed 100,000 users! Today we are introducing SWARM mode. A team of AI design agents working with you in parallel. Your autonomous design agency. Download now.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2026309809713381376/img/6X7ZjyF6evwb__ru.jpg",
+      "image": "media/2026-02-25-revolutionizing-design-pencils-swarm-mode-takes-ai.jpg",
       "sources": [
         "https://x.com/i/status/2026329359838318906"
       ],
@@ -5528,7 +5528,7 @@
         "Tech Innovations"
       ],
       "excerpt": "Introducing Perplexity Computer. Computer unifies every current AI capability into one system. It can research, design, code, deploy, and manage any project end-to-end.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2026695448996753409/img/yeKxOwuVQwjvBDYt.jpg",
+      "image": "media/2026-02-25-revolutionizing-ai-capabilities-the-dawn-of-perple.jpg",
       "sources": [
         "https://x.com/i/status/2026695550771540489"
       ],
@@ -5549,7 +5549,7 @@
         "MiniMax_Agent"
       ],
       "excerpt": "MiniMax_Agent has launched MaxClaw, a game-changing AI-powered chatbot that's fully unlocked and ready to transform the way we interact with technology. With its cutting-edge features and seamless integration, MaxClaw is poised to revolutionize the world of chatbots.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2026493185942499328/img/RWaFkIcKLG4ua40j.jpg",
+      "image": "media/2026-02-25-revolutionary-ai-powered-chatbot-unleashed-meet-ma.jpg",
       "sources": [
         "https://x.com/i/status/2026493668417482923"
       ],
@@ -5570,7 +5570,7 @@
         "No-Code AI"
       ],
       "excerpt": "Google Labs has launched a significant upgrade to Opal, its no-code visual builder for AI workflows, introducing a new agent step and enhanced tools for increased capability. This upgrade is set to transform the way developers interact with AI workflows.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2026374886722281472/img/QbPxQ28_KKRXSIEd.jpg",
+      "image": "media/2026-02-25-google-labs-unveils-major-upgrade-to-opal-revoluti.jpg",
       "sources": [
         "https://x.com/i/status/2026374947996840169"
       ],
@@ -5591,7 +5591,7 @@
         "Developer Tools"
       ],
       "excerpt": "Claude Code introduces Remote Control, allowing developers to start tasks on their terminal and control them from their phone, revolutionizing workflow flexibility. This feature is a significant upgrade for developers who need to manage tasks on-the-go.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2026417722394021888/img/7uu-_ciDtZ7v3rYC.jpg",
+      "image": "media/2026-02-25-claude-code-unleashes-remote-control-a-game-change.jpg",
       "sources": [
         "https://x.com/i/status/2026418433911603668"
       ],
@@ -5612,7 +5612,7 @@
         "AI"
       ],
       "excerpt": "Claude Code on desktop can now preview your running apps, review your code, and handle CI failures and PRs in the background. Here\u2019s what's new:",
-      "image": "https://pbs.twimg.com/media/HBoKy76XUAAhXsA.jpg",
+      "image": "media/2026-02-21-revolutionizing-coding-claudes-game-changing-updat.jpg",
       "sources": [
         "https://x.com/i/status/2024937960572104707"
       ],
@@ -5634,7 +5634,7 @@
         "AI Commerce"
       ],
       "excerpt": "Razorpay & NPCI launch Agentic Payments on Claude. Enable automated UPI payments for Zomato, Swiggy & Zepto. Turn AI conversations into completed transactions.",
-      "image": "https://blog.razorpay.in/wp-content/uploads/2026/02/Blog.png",
+      "image": "media/2026-02-21-revolutionizing-ai-powered-commerce-razorpay-and-n.png",
       "sources": [
         "https://share.google/JZHNyoCeRqofk1vze"
       ],
@@ -5674,7 +5674,7 @@
         "Technology"
       ],
       "excerpt": "Today I'm launching Interpreter. It's a desktop agent that can fill PDFs, edit your Excel and Word docs, and learn new skills. Runs offline, works with any model, and it's free.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2024013495285805058/img/7WZN7wcEd-PRLveg.jpg",
+      "image": "media/2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in.jpg",
       "sources": [
         "https://x.com/i/status/2024227639087813035"
       ],
@@ -5696,7 +5696,7 @@
         "UX Design"
       ],
       "excerpt": "Google introduces Glimmer, a new design language for UX on glasses that prioritizes voice, gesture, and eye-tracking, and discover its potential to transform the way we interact with smart glasses. This innovation is set to revolutionize the field of UX design and beyond.",
-      "image": "https://pbs.twimg.com/media/HBYAUP8bcAECeDt.jpg?name=orig",
+      "image": "media/2026-02-19-google-unveils-glimmer-a-revolutionary-design-lang.jpg",
       "sources": [
         "https://x.com/i/status/2023805464577011979"
       ],
@@ -5717,7 +5717,7 @@
         "Tech News"
       ],
       "excerpt": "OpenAI\u2019s Sam Altman and Anthropic\u2019s Dario Amodei had an awkward moment at a major AI summit, with the two CEOs of competing AI giants opting not to link hands.",
-      "image": "https://image.cnbcfm.com/api/v1/image/108267178-1771489879337-gettyimages-2261854815-AFP_984W8YD.jpeg?v=1771490672&w=1920&h=1080",
+      "image": "media/2026-02-19-ai-rivals-clash-openai-and-anthropic-ceos-awkward.jpg",
       "sources": [
         "https://www.cnbc.com/2026/02/19/openai-sam-altman-anthropic-dario-amodei-india-ai-summit.html"
       ],
@@ -5737,7 +5737,7 @@
         "Startup Tools"
       ],
       "excerpt": "Bitroot India introduces PLatter, a game-changing platform that bundles 500+ top-tier tools into one membership, streamlining startup productivity. This innovative solution aims to reduce fragmentation and increase leverage for founders, startups, developers, and growth teams.",
-      "image": "https://pbs.twimg.com/media/HBadt9tbcAAzJrN.jpg?name=orig",
+      "image": "media/2026-02-18-revolutionizing-startup-productivity-the-ultimate.jpg",
       "sources": [
         "https://x.com/i/status/2023978535161925889"
       ],
@@ -5757,7 +5757,7 @@
         "saas"
       ],
       "excerpt": "All your tools. One subscription. 500+ top-tier tools. One membership. Thousands saved. Everything you need - in your pocket. \ud83d\ude80 \ud83d\udd17 Link in bio #buildinpublic #startups #saas",
-      "image": "https://pbs.twimg.com/media/HBaT-NybcAAkE4D.jpg?name=orig",
+      "image": null,
       "sources": [
         "https://x.com/i/status/2023967802823245901"
       ],
@@ -5777,7 +5777,7 @@
         "funding"
       ],
       "excerpt": "India's Leading AI & Data Science Media Platform",
-      "image": "https://storage.googleapis.com/gpt-engineer-file-uploads/XW65pun0vjQL3xcUmVglEg4ZrsL2/social-images/social-1763560217027-Expert-Panel-discussion-768x512.webp",
+      "image": "media/2026-02-18-indias-ai-startup-funding-landscape-sees-regional.webp",
       "sources": [
         "https://analyticsindiamag.com/ai-startups/funding-reset-why-karnataka-faced-a-28-drop-while-maharashtra-held-its-ground"
       ],
@@ -5797,7 +5797,7 @@
         "AI Agents"
       ],
       "excerpt": "Hyperbrowser introduces batch mode for HyperSkill, enabling AI agents to master entire tech stacks, and we're excited to explore the implications for the tech community. This update promises to revolutionize the way developers work with AI agents and tech stacks.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2023480413063417856/img/V8nba7L3Ua6bqszv.jpg",
+      "image": "media/2026-02-17-revolutionizing-tech-stacks-hyperbrowser-unveils-b.jpg",
       "sources": [
         "https://x.com/i/status/2023480469044818208"
       ],
@@ -5818,7 +5818,7 @@
         "Development"
       ],
       "excerpt": "Now you can take workflows that start in Claude Code even further in Figma.",
-      "image": "https://cdn.sanity.io/images/599r6htc/regionalized/1bc14c622ab6b8e2ad11229e6206c07dbad63311-3200x1800.png?w=1200&q=70&fit=max&auto=format",
+      "image": "media/2026-02-17-revolutionizing-design-figma-unveils-code-to-desig.png",
       "sources": [
         "https://www.figma.com/blog/introducing-claude-code-to-figma/"
       ],
@@ -5839,7 +5839,7 @@
         "Web Search"
       ],
       "excerpt": "Ollama now supports subagents and web search in Claude Code.",
-      "image": "https://ollama.com/public/og.png",
+      "image": "media/2026-02-17-revolutionizing-coding-ollama-unveils-subagents-an.png",
       "sources": [
         "https://ollama.com/blog/web-search-subagents-claude-code"
       ],
@@ -5859,7 +5859,7 @@
         "Machine Learning"
       ],
       "excerpt": "The Anthropic Agent SDK is a powerful tool for building custom agents, and its potential is being overlooked by the development community. This framework has the potential to revolutionize AI development and create more sophisticated machine learning models.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2023253339073392640/img/VhovnpWvug7jGnKn.jpg",
+      "image": "media/2026-02-16-unlocking-the-power-of-anthropic-agents-a-game-cha.jpg",
       "sources": [
         "https://x.com/i/status/2023428910042513482"
       ],
@@ -5880,7 +5880,7 @@
         "Multi-Session Support"
       ],
       "excerpt": "Would multi-session support for the Chrome DevTools MCP server be useful for you? \ud83e\udd16\u2716\ufe0f\ud83c\udf0d Chime into the discussion on GitHub: https://github.com/ChromeDevTools/chrome-devtools-mcp/issues/926",
-      "image": "https://pbs.twimg.com/media/HBR0XEtaYAEdKVg.jpg?name=orig",
+      "image": "media/2026-02-16-revolutionizing-debugging-chrome-devtools-gets-mul.jpg",
       "sources": [
         "https://x.com/i/status/2023370190269116568"
       ],
@@ -5900,7 +5900,7 @@
         "Inference Speed"
       ],
       "excerpt": "MiniMax M2.5-HighSpeed is live, delivering 100 TPS and 3x faster inference speeds, designed for the next generation of Agent applications. This update is a game-changer for developers and the tech community, enabling faster and more efficient workflows.",
-      "image": "https://pbs.twimg.com/media/HBNfas7a8AAg78r.jpg?name=orig",
+      "image": "media/2026-02-16-minimax-m25-revolution-unleashing-3x-faster-infere.jpg",
       "sources": [
         "https://x.com/i/status/2023066199995949350"
       ],
@@ -5920,7 +5920,7 @@
         "Partnerships"
       ],
       "excerpt": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-      "image": "https://www.anthropic.com/api/opengraph-illustration?name=Object%20Globe&backgroundColor=fig",
+      "image": "media/2026-02-16-anthropic-expands-indian-presence-with-new-bengalu.png",
       "sources": [
         "https://www.anthropic.com/news/bengaluru-office-partnerships-across-india"
       ],
@@ -5940,7 +5940,7 @@
         "PersonaPlex-7B"
       ],
       "excerpt": "NVIDIA's new PersonaPlex-7B model is a full-duplex voice model that enables real conversations without pauses or turn-taking, and it's completely open source and free. This innovation is set to take voice AI to the next level, and we're excited to explore its potential implications and use cases.",
-      "image": "https://pbs.twimg.com/ext_tw_video_thumb/2022995312135344128/pu/img/n_LMyO2sgo9oiPR7.jpg",
+      "image": "media/2026-02-15-revolutionizing-voice-ai-nvidia-unveils-game-chang.jpg",
       "sources": [
         "https://x.com/i/status/2022995332058251548"
       ],
@@ -5981,7 +5981,7 @@
         "AI Browsing"
       ],
       "excerpt": "Kimi.ai introduces Kimi Claw, a game-changing AI browsing experience with unparalleled features and accessibility. Discover a new era of online exploration with Kimi Claw's cutting-edge capabilities.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2023029535974055936/img/Qf6wkOTM3Z8nwkvI.jpg",
+      "image": null,
       "sources": [
         "https://x.com/i/status/2023029674549596301"
       ],
@@ -6002,7 +6002,7 @@
         "Autonomous Coding"
       ],
       "excerpt": "Raydian 2.0 is live \ud83c\udf89 Vibe-design your app, and we'll convert it into a working product autonomously. Go give it a spin, the design stage is free to use.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2022255471160090624/img/xtY_Qze7Tam97zEx.jpg",
+      "image": "media/2026-02-14-revolutionizing-app-development-raydian-20-unleash.jpg",
       "sources": [
         "https://x.com/i/status/2022256365901607287"
       ],
@@ -6023,7 +6023,7 @@
         "Subframe"
       ],
       "excerpt": "Discover how the new Design Canvas is transforming the way developers interact with AI agents, streamlining the design process and eliminating endless prompting. This innovative tool is set to revolutionize the field of AI-driven design, enabling developers to ship better designs in code with ease.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2022037126469365761/img/xJeAX_YvlqDuHxaA.jpg",
+      "image": "media/2026-02-14-revolutionizing-ai-driven-design-introducing-the-g.jpg",
       "sources": [
         "https://x.com/i/status/2022038492575154555"
       ],
@@ -6045,7 +6045,7 @@
         "BuildSpace"
       ],
       "excerpt": "Conversational Interfaces, Anywhere",
-      "image": "https://framerusercontent.com/images/AwZTXvV6qNfQzOMbhOCGVHEybxo.png?width=2400&height=1260",
+      "image": "media/2026-02-13-revolutionizing-cicd-introducing-buildspace-the-ai.png",
       "sources": [
         "https://photon.codes/blog/ci-cd-in-the-age-of-ai"
       ],
@@ -6085,7 +6085,7 @@
         "CLI Tools"
       ],
       "excerpt": "A new CLI tool scans iOS apps against App Store guidelines, ensuring compliance and streamlining the submission process. This game-changing tool automates checks for payment, privacy, and metadata requirements, making it a must-have for developers.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2021661265601736704/img/unNAGbptn10BXCu3.jpg",
+      "image": "media/2026-02-12-revolutionizing-app-store-submissions-automated-gu.jpg",
       "sources": [
         "https://x.com/i/status/2021661315329405174"
       ],
@@ -6106,7 +6106,7 @@
         "Cloud Sandbox"
       ],
       "excerpt": "Happycapy is now open to everyone, offering a secure cloud sandbox and all-in-one agent-native computing experience, powered by Claude Code and MiniMax. This innovation has the potential to revolutionize the way we approach automation and task management.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2021616989278703616/img/2rup7JZhBcXcrohe.jpg",
+      "image": "media/2026-02-12-revolutionary-agent-native-computing-now-accessibl.jpg",
       "sources": [
         "https://x.com/Jarodxu7/status/2021620710544904355?s=20"
       ],
@@ -6127,7 +6127,7 @@
         "Tech Ethics"
       ],
       "excerpt": "The resignation of Anthropic AI's safety lead has sent shockwaves through the tech community, highlighting the growing concerns over AI's potential risks to humanity. This development has significant implications for developers and the future of AI development.",
-      "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202602/mrinank-sharma-anthropic-104224244-16x9_0.png?VersionId=tsufT07Qx7LE2vr275HSEDe6X7hAnMkN",
+      "image": "media/2026-02-11-ai-safety-leader-sounds-alarm-resignation-sparks-c.jpg",
       "sources": [
         "https://share.google/6gzMAD1U347j7YUXX"
       ],
@@ -6147,7 +6147,7 @@
         "vibe editing"
       ],
       "excerpt": "Vibe Editing, a game-changing AI-powered tool, allows users to create stunning videos with just a text prompt, eliminating the need for coding and tedious editing processes. This innovative technology is set to disrupt the video creation landscape, making it more accessible to developers and non-developers alike.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2020464187043115009/img/-iRMulg3HLXQTEBY.jpg",
+      "image": "media/2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.jpg",
       "sources": [
         "https://x.com/i/status/2020464238880596429"
       ],
@@ -6168,7 +6168,7 @@
         "Web Development"
       ],
       "excerpt": "ReactBits is a game-changing animation library that offers a growing collection of smooth, modern UI animations for React projects, taking web design to the next level",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2020423255082123265/img/YD4KlnqX6y9k3Ro_.jpg",
+      "image": "media/2026-02-10-revolutionizing-ui-animations-introducing-reactbit.jpg",
       "sources": [
         "https://x.com/i/status/2020423330386579646"
       ],
@@ -6191,7 +6191,7 @@
         "PaperBanana"
       ],
       "excerpt": "Google AI Introduces PaperBanana: An Agentic Framework that Automates Publication Ready Methodology Diagrams and Statistical Plots",
-      "image": "https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-18.png",
+      "image": "media/2026-02-10-revolutionizing-research-visuals-google-ais-paperb.png",
       "sources": [
         "https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/"
       ],
@@ -6211,7 +6211,7 @@
         "AI-powered coding"
       ],
       "excerpt": "Get ready to supercharge your coding workflow with GPT-5.3-Codex, the latest AI model now available in GitHub Copilot, bringing improved performance and capabilities to the table. This update is set to revolutionize the way developers work, making coding faster, smarter, and more efficient.",
-      "image": "https://github.blog/wp-content/uploads/2026/02/github-copilot-social-card-2.png",
+      "image": "media/2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git.png",
       "sources": [
         "https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/"
       ],
@@ -6231,7 +6231,7 @@
         "Reinforcement Learning"
       ],
       "excerpt": "Improved reasoning over challenging coding tasks by scaling RL over 20x.",
-      "image": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/blog/composer-1.5-og.png",
+      "image": "media/2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan.png",
       "sources": [
         "https://cursor.com/blog/composer-1-5"
       ],
@@ -6251,7 +6251,7 @@
         "Personal Assistant"
       ],
       "excerpt": "\"\ud83d\udc08 nanobot: The Ultra-Lightweight OpenClaw\". Contribute to HKUDS/nanobot development by creating an account on GitHub.",
-      "image": "https://opengraph.githubassets.com/860a29c3b70dd9f9266b82558c0c427fb47036deb672088e1b5f525631120a27/HKUDS/nanobot",
+      "image": null,
       "sources": [
         "https://github.com/HKUDS/nanobot"
       ],
@@ -6272,7 +6272,7 @@
         "Artificial Intelligence"
       ],
       "excerpt": "India's reliance on IT service exports is no longer viable, and the country must shift its focus to deeptech and hardware to build long-term economic resilience. Zerodha founder Nithin Kamath emphasizes the need for self-sufficiency in technology to stay competitive.",
-      "image": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-18740,resizemode-75,msid-128120292/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath.jpg",
+      "image": "media/2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.jpg",
       "sources": [
         "https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms"
       ],
@@ -6293,7 +6293,7 @@
         "Trademark"
       ],
       "excerpt": "India's Anthropic Software has taken the U.S. AI giant to court over a name dispute.",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/01/anthropic-image-jagmeet-singh-techcrunch.jpg?resize=1200,800",
+      "image": "media/2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.jpg",
       "sources": [
         "https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/"
       ],
@@ -6314,7 +6314,7 @@
         "Data Workflows"
       ],
       "excerpt": "Cortex Code simplifies complex data workflows with natural language, making it a game-changer for developers and non-technical teams alike. This innovative tool is now generally available, offering a new way to interact with Snowflake environments.",
-      "image": "https://dms.licdn.com/playlist/vid/v2/D5605AQGc4ituv4CguA/thumbnail-with-play-button-overlay-high/B56Zwl7Sc1JoDU-/0/1770162826976?e=2147483647&v=beta&t=ZsRcvqdvGVm-MifIJLszrAwR4v1l_fRMpD-J2K92vFI",
+      "image": "media/2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.jpg",
       "sources": [
         "https://www.linkedin.com/posts/chanin-nantasenamat_watch-me-use-coco-to-build-a-streamlit-ugcPost-7424601007264833536-P64R?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&utm_campaign=share_via"
       ],
@@ -6335,7 +6335,7 @@
         "Developer Platform"
       ],
       "excerpt": "Replicate is joining Cloudflare to revolutionize AI development with faster, more integrated, and scalable solutions, enabling developers to build AI apps with ease. This strategic move is set to transform the future of AI development.",
-      "image": "https://replicate.com/blog/replicate-cloudflare.png",
+      "image": "media/2026-02-09-revolutionizing-ai-development-replicate-joins-for.png",
       "sources": [
         "https://replicate.com/blog/replicate-cloudflare"
       ],
@@ -6356,7 +6356,7 @@
         "Anthropic"
       ],
       "excerpt": "WordPress users can now leverage Claude to analyze web traffic or find information about other internal site metrics.",
-      "image": "https://techcrunch.com/wp-content/uploads/2024/10/unnamed-7.png?w=1200",
+      "image": "media/2026-02-08-revolutionizing-wordpress-management-claudes-new-c.png",
       "sources": [
         "https://techcrunch.com/2026/02/06/it-just-got-easier-for-claude-to-check-in-on-your-wordpress-site/"
       ],
@@ -6376,7 +6376,7 @@
         "Web Development"
       ],
       "excerpt": "Shannon, a fully autonomous AI hacker, is changing the game for web app security by scanning for vulnerabilities before attackers can strike. This innovation has the potential to revolutionize the way developers approach security, making it faster and more efficient.",
-      "image": "https://dms.licdn.com/playlist/vid/v2/D4E05AQGDNjzQvsJPoQ/thumbnail-with-play-button-overlay-high/B4EZw4N6kvGkDU-/0/1770469700015?e=2147483647&v=beta&t=5HUitf5IIkdg1pJNfviwpgMVUOmiEvL36VbmBP-VHZ4",
+      "image": "media/2026-02-08-revolutionizing-web-app-security-meet-shannon-the.jpg",
       "sources": [
         "https://www.linkedin.com/posts/walid-boulanouar_claude-code-for-hacking-is-here-shannon-ugcPost-7425888138117566464-rWZQ?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&utm_campaign=share_via"
       ],
@@ -6397,7 +6397,7 @@
         "Open Source"
       ],
       "excerpt": "Craft Agents can now be used with Codex and Claude, offering a free and open-source solution for developers, and we're excited to explore the implications of this update on the coding community. This new compatibility opens up a world of possibilities for developers across various platforms, including Windows, Mac, and Linux.",
-      "image": "https://pbs.twimg.com/media/HApiEWXb0AAN3dO.jpg?name=orig",
+      "image": "media/2026-02-08-revolutionizing-coding-craft-agents-now-compatible.jpg",
       "sources": [
         "https://x.com/i/status/2020535293905101186"
       ],
@@ -6417,7 +6417,7 @@
         "Autonomous Agents"
       ],
       "excerpt": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-      "image": "https://cdn.sanity.io/images/4zrzovbb/website/6cc87859f5453e9481278681aa6409856d61153c-2400x1260.png",
+      "image": "media/2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo.png",
       "sources": [
         "https://share.google/4T0fJDumSQSmG5Cmo"
       ],
@@ -6437,7 +6437,7 @@
         "Collaborative Coding"
       ],
       "excerpt": "Coordinate multiple Claude Code instances working together as a team, with shared tasks, inter-agent messaging, and centralized management.",
-      "image": "https://claude-code.mintlify.app/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DBuild%2Bwith%2BClaude%2BCode%26appearance%3Dsystem%26title%3DOrchestrate%2Bteams%2Bof%2BClaude%2BCode%2Bsessions%26description%3DCoordinate%2Bmultiple%2BClaude%2BCode%2Binstances%2Bworking%2Btogether%2Bas%2Ba%2Bteam%252C%2Bwith%2Bshared%2Btasks%252C%2Binter-agent%2Bmessaging%252C%2Band%2Bcentralized%2Bmanagement.%26logoLight%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaude-code%252Fo69F7a6qoW9vboof%252Flogo%252Flight.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253Do69F7a6qoW9vboof%2526q%253D85%2526s%253D536eade682636e84231afce2577f9509%26logoDark%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaude-code%252Fo69F7a6qoW9vboof%252Flogo%252Fdark.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253Do69F7a6qoW9vboof%2526q%253D85%2526s%253D0766b3221061e80143e9f300733e640b%26primaryColor%3D%25230E0E0E%26lightColor%3D%2523D4A27F%26darkColor%3D%25230E0E0E%26backgroundLight%3D%2523FDFDF7%26backgroundDark%3D%252309090B&w=1200&q=100",
+      "image": null,
       "sources": [
         "https://code.claude.com/docs/en/agent-teams#compare-with-subagents"
       ],
@@ -6477,7 +6477,7 @@
         "Coding"
       ],
       "excerpt": "Twitter's Claude Code now supports agent teams, enabling parallel work and coordination, and we're excited to explore its potential. This update is a game-changer for developers, allowing for faster and more efficient coding.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2019467383505924096/img/y8PJFj92TQdi95xR.jpg",
+      "image": "media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.jpg",
       "sources": [
         "https://x.com/lydiahallie/status/2019469032844587505?s=20"
       ],
@@ -6499,7 +6499,7 @@
         "Software Development"
       ],
       "excerpt": "OpenAI has launched GPT-5.3-Codex, its most advanced agentic coding model to date. Featuring a 25% speed increase over its predecessor, the model can autonomously manage the entire software lifecycle, from research to deployment. It notably assisted in its own development, marking a significant milestone in self-improving artificial intelligence capabilities. \ud83d\udcf2 OpenAI GPT-5.3-Codex Launched: New AI Agentic Model Can Autonomously Build, Debug and Manage Software.",
-      "image": "https://st1.latestly.com/wp-content/uploads/2026/02/GPT-5.3-Codex-784x441.jpg",
+      "image": "media/2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.jpg",
       "sources": [
         "https://share.google/tM36P3WSwQLtg0J7h"
       ],
@@ -6519,7 +6519,7 @@
         "AI Updates"
       ],
       "excerpt": "We\u2019re upgrading our smartest model. Across agentic coding, computer use, tool use, search, and finance, Opus 4.6 is an industry-leading model, often by wide margin.",
-      "image": "https://cdn.sanity.io/images/4zrzovbb/website/01d06528567e4bd22c3ddedc87f609ee5716a009-2400x1260.png",
+      "image": "media/2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.png",
       "sources": [
         "https://share.google/uISHcJ3WNR4H6uMhP"
       ],
@@ -6539,7 +6539,7 @@
         "Coding Insights"
       ],
       "excerpt": "Claude Code introduces /insights, a command that analyzes your past month of usage to summarize projects and suggest workflow improvements.",
-      "image": "https://pbs.twimg.com/amplify_video_thumb/2019173388062007297/img/jHnsIhpNNPkjIRvy.jpg",
+      "image": "media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.jpg",
       "sources": [
         "https://x.com/i/status/2019173731042750509"
       ],
@@ -6560,7 +6560,7 @@
         "AI-powered development"
       ],
       "excerpt": "Vercel's skills.sh is a game-changer for developers, offering a platform to build, train, and deploy AI models with ease. This update is a must-know for tech enthusiasts looking to leverage AI in their projects.",
-      "image": "https://cloud.inference.sh/web/assets/og-image.png",
+      "image": "media/2026-02-05-revolutionizing-ai-powered-development-with-vercel.png",
       "sources": [
         "https://app.inference.sh/blog/skills/agent-skills-overview"
       ],
@@ -6580,7 +6580,7 @@
         "AI"
       ],
       "excerpt": "Precision diarization, real-time transcription, and a new audio playground.",
-      "image": "https://mistral.ai/img/mistral-cover.png",
+      "image": null,
       "sources": [
         "https://mistral.ai/news/voxtral-transcribe-2"
       ],

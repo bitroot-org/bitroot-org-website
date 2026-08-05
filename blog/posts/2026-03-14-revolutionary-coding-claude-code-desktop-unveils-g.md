@@ -2,7 +2,7 @@
 date: '2026-03-14'
 excerpt: "Claude Code Desktop has a built-in MCP for frontend preview\n\nIt activates
   automatically when you ask Claude to spin up a dev server\n\nSave this thread \U0001F447"
-image: https://pbs.twimg.com/amplify_video_thumb/2032841499344351232/img/gtXcMEcevG40ZG2k.jpg
+image: media/2026-03-14-revolutionary-coding-claude-code-desktop-unveils-g.jpg
 published_at: '2026-03-14T19:10:20.589711+00:00'
 sources:
 - https://x.com/i/status/2032856141059747975
@@ -13,7 +13,6 @@ tags:
 title: 'Revolutionary Coding: Claude Code Desktop Unveils Game-Changing Frontend Preview'
 video: media/2026-03-14-revolutionary-coding-claude-code-desktop-unveils-g.mp4
 ---
-
 
 ## Introduction to Claude Code Desktop's Latest Feature
 We just spotted an exciting update from Daniel San on X that's worth sharing with the community: Claude Code Desktop now boasts a built-in MCP for frontend preview. Here's what caught our attention: this feature activates automatically when you ask Claude to spin up a dev server.

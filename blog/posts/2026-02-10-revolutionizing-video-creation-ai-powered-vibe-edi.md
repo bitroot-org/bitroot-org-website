@@ -4,7 +4,7 @@ excerpt: Vibe Editing, a game-changing AI-powered tool, allows users to create s
   videos with just a text prompt, eliminating the need for coding and tedious editing
   processes. This innovative technology is set to disrupt the video creation landscape,
   making it more accessible to developers and non-developers alike.
-image: https://pbs.twimg.com/amplify_video_thumb/2020464187043115009/img/-iRMulg3HLXQTEBY.jpg
+image: media/2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.jpg
 published_at: '2026-02-10T02:11:19.181769+00:00'
 sources:
 - https://x.com/i/status/2020464238880596429
@@ -15,7 +15,6 @@ tags:
 title: 'Revolutionizing Video Creation: AI-Powered Vibe Editing Takes Center Stage'
 video: media/2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.mp4
 ---
-
 
 ## Introduction to Vibe Editing
 We just spotted an exciting update from TopviewAIhq that's worth sharing with the community: the launch of Vibe Editing in beta. This groundbreaking tool enables users to create motion videos using just a text prompt, revolutionizing the way we approach video production.

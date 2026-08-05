@@ -3,7 +3,7 @@ date: '2026-07-21'
 excerpt: Vigolium is an open-source framework that blends deterministic scanning with
   AI‑assisted planning, aiming to streamline web application security testing without
   upfront licensing costs.
-image: https://pbs.twimg.com/media/HNuvrWvb0AAZ0lL.jpg?name=orig
+image: null
 published_at: '2026-07-21T10:59:37.387563+00:00'
 sources:
 - https://x.com/VivekIntel/status/2079448821285929469

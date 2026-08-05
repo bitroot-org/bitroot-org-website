@@ -2,7 +2,7 @@
 date: '2026-02-19'
 excerpt: OpenAI’s Sam Altman and Anthropic’s Dario Amodei had an awkward moment at
   a major AI summit, with the two CEOs of competing AI giants opting not to link hands.
-image: https://image.cnbcfm.com/api/v1/image/108267178-1771489879337-gettyimages-2261854815-AFP_984W8YD.jpeg?v=1771490672&w=1920&h=1080
+image: media/2026-02-19-ai-rivals-clash-openai-and-anthropic-ceos-awkward.jpg
 published_at: '2026-02-19T13:38:41.797475+00:00'
 sources:
 - https://www.cnbc.com/2026/02/19/openai-sam-altman-anthropic-dario-amodei-india-ai-summit.html

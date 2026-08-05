@@ -2,7 +2,7 @@
 date: '2026-06-23'
 excerpt: Palette introduces a free service that pairs startup founders with design
   studios based on a short questionnaire, aiming to cut the cold‑email grind.
-image: https://pbs.twimg.com/amplify_video_thumb/2068995799912960000/img/AKXwopJCJRT8TgRC.jpg
+image: media/2026-06-23-palette-launches-free-matchmaking-platform-for-des.jpg
 published_at: '2026-06-23T01:59:51.557678+00:00'
 sources:
 - https://x.com/i/status/2068995853184840101

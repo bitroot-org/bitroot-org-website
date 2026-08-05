@@ -2,7 +2,7 @@
 date: '2026-05-14'
 excerpt: Notion's new ntn command‑line tool puts the full Notion API into your terminal
   and adds a workflow for building and deploying Workers.
-image: https://pbs.twimg.com/amplify_video_thumb/2054571358743564288/img/QzdmRgrrqT0OJuNn.jpg
+image: media/2026-05-14-notion-releases-ntn-cli-for-terminal-api-access.jpg
 published_at: '2026-05-14T02:17:33.348289+00:00'
 sources:
 - https://x.com/i/status/2054594852818764178

@@ -3,7 +3,7 @@ date: '2026-06-04'
 excerpt: Reve 2.0 introduces a 4K image model that supports precise layout editing,
   promising touch‑ready outputs. Engineers should weigh its compute cost against the
   creative flexibility it adds.
-image: https://pbs.twimg.com/amplify_video_thumb/2062259801481175040/img/_i0p8Vph7ddMmjlD.jpg
+image: media/2026-06-04-reve-launches-4k-image-model-20-with-layoutaware-g.jpg
 published_at: '2026-06-04T14:31:42.288773+00:00'
 sources:
 - https://x.com/i/status/2062260665121919101

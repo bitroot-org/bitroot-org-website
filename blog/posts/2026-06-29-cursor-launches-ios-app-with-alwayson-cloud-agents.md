@@ -2,7 +2,7 @@
 date: '2026-06-29'
 excerpt: Cursor released a native iOS client that can spin up always‑on cloud agents
   and remote‑control local agents, with a limited‑time 75 % discount on Composer 2.5.
-image: https://pbs.twimg.com/amplify_video_thumb/2071638346145923072/img/nqFrOzzGvR8kxbee.jpg
+image: media/2026-06-29-cursor-launches-ios-app-with-alwayson-cloud-agents.jpg
 published_at: '2026-06-29T19:09:34.686583+00:00'
 sources:
 - https://x.com/i/status/2071641103191998810
