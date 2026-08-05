@@ -43,6 +43,361 @@ export type GuideContent = {
 };
 
 export const guidesContent: Record<string, GuideContent> = {
+  "ai-native-qa": {
+    slug: "ai-native-qa",
+    tagline:
+      "Google just published data that changes everything about how you test software. In June 2026, using Gemini, Google fixed 1,072 security bugs across two Chrome releases — more than the previous 23 versions combined, over 2 years of manual testing output in 30 days. Your QA team didn't get worse. The approach did. Here's how to build AI-native testing and actually ship faster.",
+    timeEstimate: "~1 week to stand up the full stack",
+    youWillNeed: [
+      "A GitHub repo with pull requests (for the Claude code-review step)",
+      "A Claude API key",
+      "A fuzzing setup for your language (cargo-fuzz or equivalent), optional but recommended",
+      "A technical founder or engineer to review findings — this replaces manual test-writing, not judgment",
+    ],
+    youWillEndUpWith:
+      "An AI-native QA stack: Claude reviewing every PR before humans see it, fuzzing piped to Claude for root-cause triage, automated threat modeling on your critical endpoints, and a clear read on when this setup needs a human QA lead alongside it.",
+    toc: [
+      { label: "The problem: manual QA has a speed ceiling", id: "the-problem" },
+      { label: "Why AI changes QA forever", id: "why-ai-changes-qa" },
+      { label: "1. Claude code review in GitHub Actions", id: "step-1-code-review" },
+      { label: "2. Continuous fuzzing + LLM analysis", id: "step-2-fuzzing" },
+      { label: "3. Automated security threat modeling", id: "step-3-threat-modeling" },
+      { label: "4. Wire it all together", id: "step-4-integration" },
+      { label: "The architecture", id: "architecture" },
+      { label: "Cost comparison", id: "cost-comparison" },
+      { label: "When not to use AI for QA", id: "when-not-to" },
+      { label: "The decision tree", id: "decision-tree" },
+      { label: "Implementation timeline", id: "timeline" },
+      { label: "FAQ", id: "faq" },
+    ],
+    body: [
+      {
+        type: "p",
+        body: "Google just published data that changes everything about how you test software.",
+      },
+      {
+        type: "p",
+        body: "In June 2026, using Gemini, Google fixed 1,072 security bugs across two Chrome releases. That's more than the previous 23 versions combined — over 2 years of manual testing output in 30 days.",
+      },
+      {
+        type: "p",
+        body: "Your QA team didn't get worse. The approach did. Here's how to build AI-native testing and actually ship faster.",
+      },
+
+      { type: "h2", body: "The problem: manual QA has a speed ceiling", id: "the-problem" },
+      {
+        type: "p",
+        body: "A manual QA team can test maybe 50–100 edge cases per day, per person. They get tired. They miss things. Most critically, they can't think like attackers — they follow predetermined test scripts.",
+      },
+      {
+        type: "p",
+        body: "The economics are brutal:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Hire one QA engineer: $80–120K/year salary + 40% overhead",
+          "What you get: coverage of maybe 60–70% of your codebase",
+          "What you miss: edge cases, security flaws, race conditions that show up in production",
+        ],
+      },
+      {
+        type: "p",
+        body: "Google had the same problem. So they asked: what if Gemini could think like a penetration tester, write test cases, discover vulnerabilities, and generate fixes — all without needing a human to specify what to test?",
+      },
+      {
+        type: "p",
+        body: "The answer: 1,072 bugs in one month.",
+      },
+
+      { type: "h2", body: "Why AI changes QA forever", id: "why-ai-changes-qa" },
+      {
+        type: "p",
+        body: "Manual QA is a linear problem. More testers = more coverage. But you can't hire fast enough.",
+      },
+      {
+        type: "p",
+        body: "AI-native QA is exponential. One LLM applied to your codebase can discover vulnerabilities at industrial scale, outpacing manual testers by 10x–100x depending on domain.",
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "To make this concrete: Google found a 13-year-old sandbox escape bug (CVE-2026-3545) that had survived manual testing for over a decade. A compromised renderer could trick Chrome into reading local files. Manual processes simply can't match LLM velocity.",
+      },
+      {
+        type: "p",
+        body: "The shift: old model — testers write test cases, run tests, file bugs, developers fix. New model — LLM scans code, generates test cases, discovers bugs, generates fixes, tests fixes.",
+      },
+      {
+        type: "p",
+        body: "Google's chart shows this graphically. Chrome 126 (June 2024): ~60 bugs fixed. Chrome 149–150 (June 2026): 1,072 bugs fixed. That's not a line. That's a curve. And the curve is accelerating.",
+      },
+      {
+        type: "p",
+        body: "For most early-stage startups, you don't need a dedicated QA team anymore. You need an LLM, GitHub Actions, and a strategy for handling the flood of bugs.",
+      },
+
+      { type: "h2", body: "Step 1: set up Claude code review in GitHub Actions", id: "step-1-code-review" },
+      {
+        type: "p",
+        body: "Every pull request gets reviewed by Claude before humans see it. Why: catch bugs before merge, not after deploy.",
+      },
+      {
+        type: "p",
+        body: "Implementation (5 minutes). Create `.github/workflows/ai-review.yml`:",
+      },
+      {
+        type: "code",
+        lang: "md",
+        filename: ".github/workflows/ai-review.yml",
+        source: `name: Claude Code Review
+
+on: [pull_request]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Claude PR Review
+        uses: <your-claude-action>
+        with:
+          api_key: \${{ secrets.CLAUDE_API_KEY }}
+          prompt: |
+            Review this code for:
+            1. Security vulnerabilities (SQL injection, XSS, auth bypass)
+            2. Performance issues (N+1 queries, memory leaks)
+            3. Logic bugs (off-by-one, race conditions, null pointer exceptions)
+            4. Testing gaps (untested error paths)
+
+            For each issue found, suggest a fix.`,
+      },
+      {
+        type: "p",
+        body: "Claude will scan your PR diff, find issues humans miss (race conditions, timing bugs), suggest fixes, and post results as a comment on the PR.",
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Cost: ~$0.50 per PR (Claude API) vs. 2 hours of QA engineer time ($40–60/hour).",
+      },
+
+      { type: "h2", body: "Step 2: continuous fuzzing + LLM analysis", id: "step-2-fuzzing" },
+      {
+        type: "p",
+        body: "Fuzzing finds edge cases. LLMs explain why they matter.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Run your test suite with random inputs (fuzzing)",
+          "When fuzzing finds a crash, pipe the input + stack trace to Claude",
+          "Claude generates a root cause explanation, a minimal reproducible example, and a suggested fix",
+        ],
+      },
+      {
+        type: "p",
+        body: "Example workflow:",
+      },
+      {
+        type: "code",
+        lang: "bash",
+        source: `# Run fuzzing for 1 hour
+cargo fuzz run my_fuzzer -- -max_len=1000 -timeout=10 -max_total_time=3600
+
+# When crash found:
+cat fuzzing_crash_input | \\
+  curl -X POST https://api.anthropic.com/v1/messages \\
+  -d @- \\
+  -H "Authorization: Bearer $CLAUDE_API_KEY"`,
+      },
+      {
+        type: "p",
+        body: "Claude returns:",
+      },
+      {
+        type: "code",
+        lang: "md",
+        source: `Root cause: Integer overflow in line 247 when payload size exceeds 2^31
+Risk: Denial of service (remote crash)
+Fix: Use u64 instead of u32 for size calculations`,
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Cost: minimal. One Claude call per crash. You'll find 10–50 crashes in 24 hours across a real codebase.",
+      },
+
+      { type: "h2", body: "Step 3: security threat modeling (automated)", id: "step-3-threat-modeling" },
+      {
+        type: "p",
+        body: "Instead of hiring a security expert, ask Claude to threat-model your API.",
+      },
+      {
+        type: "p",
+        body: "Prompt (copy-paste into Claude):",
+      },
+      {
+        type: "snippet",
+        title: "Threat-modeling prompt",
+        body: "Here's my API endpoint schema:\n\nPOST /api/payments\n{\n  user_id: number,\n  amount: number,\n  card_token: string\n}\n\nThis endpoint:\n1. Validates user_id against JWT token\n2. Creates a Stripe charge\n3. Logs transaction to database\n\nThreat model this endpoint. For each risk:\n1. Describe the attack\n2. Impact (data loss, financial, reputation)\n3. Mitigation I should implement",
+      },
+      {
+        type: "p",
+        body: "Claude generates: missing input validation (rate limiting on user_id), timing attack risk (constant-time comparison), insufficient logging (can't audit charges after 30 days), idempotency missing (duplicate charges possible).",
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Cost: $1–2 per endpoint. Beats hiring a $15K/month security consultant.",
+      },
+
+      { type: "h2", body: "Step 4: wire it all together", id: "step-4-integration" },
+      {
+        type: "p",
+        body: "Your CI/CD now looks like:",
+      },
+      {
+        type: "ol",
+        items: [
+          "PR submitted → Claude code review (find bugs early)",
+          "Tests run → fuzzing happens in parallel (find edge cases)",
+          "Tests pass → crash results piped to Claude (threat assessment)",
+          "Before merge → security threat model auto-generated",
+          "After deploy → monitor for crashes, feed back to Claude",
+        ],
+      },
+      {
+        type: "p",
+        body: "Result: exponential bug discovery before users find them.",
+      },
+
+      { type: "h2", body: "The architecture (why this works)", id: "architecture" },
+      {
+        type: "p",
+        body: "Why Google can fix 1,072 bugs in 1 month:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Humans define the problem (Chrome should be secure)",
+          "LLM explores the solution space (generate test cases for all attack vectors)",
+          "Automated testing validates (run generated tests at scale)",
+          "Humans prioritize fixes (do the risky ones first)",
+          "LLM generates fixes (code patches)",
+          "Automated testing validates again (fixes don't break anything)",
+        ],
+      },
+      {
+        type: "p",
+        body: "Loop back to step 1. The time from \"bug found\" to \"bug fixed\" is now measured in hours, not weeks.",
+      },
+
+      { type: "h2", body: "Cost comparison: QA engineer vs. Claude", id: "cost-comparison" },
+      {
+        type: "ul",
+        items: [
+          "Salary — QA engineer: $80–120K/year (US) or $15–30K/year (India). Claude: $0.",
+          "API cost (1M API calls/month) — QA engineer: n/a. Claude: ~$50–75 (depends on input/output ratio).",
+          "Coverage (% of codebase) — QA engineer: 60–70%. Claude: 85–95%.",
+          "Time to fix bug (avg) — QA engineer: 3–5 days. Claude: 1–2 hours.",
+          "False positives (noise) — QA engineer: low. Claude: medium (30–40%).",
+          "Annual cost — QA engineer: $112K–168K (US) or $15–30K (India) + overhead. Claude: ~$600–900.",
+        ],
+      },
+      {
+        type: "p",
+        body: "The catch: you still need a human to review Claude's bug reports (filter false positives), decide which fixes to deploy, monitor production for regressions, and update threat models quarterly.",
+      },
+      {
+        type: "p",
+        body: "But that's 5–10 hours/week, not full-time. You can do this with a technical founder or junior engineer part-time.",
+      },
+
+      { type: "h2", body: "When not to use AI for QA", id: "when-not-to" },
+      {
+        type: "p",
+        body: "Don't use Claude alone if:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Your app handles healthcare data (compliance requires human sign-off on testing)",
+          "You have paying enterprise customers with SLAs (you need documentation of test coverage)",
+          "Your codebase is legacy or poorly documented (LLMs struggle with undocumented code)",
+          "Your team is non-technical (you need someone to interpret Claude's findings)",
+        ],
+      },
+      {
+        type: "callout",
+        tone: "tip",
+        body: "Instead: use Claude for 80% of testing, hire a QA lead for the remaining 20% (compliance, documentation, complex scenarios).",
+      },
+
+      { type: "h2", body: "The decision tree", id: "decision-tree" },
+      {
+        type: "ul",
+        items: [
+          "Solo founder, bootstrapped — use Claude. No budget for QA. This is your only option.",
+          "Early VC (seed, <$2M raised) — use Claude + one technical co-founder reviewing findings. Efficiency edge = faster shipping = market advantage.",
+          "Late VC (Series A+) — use Claude + dedicated QA engineer. Engineer focuses on automation and threat modeling, Claude handles volume.",
+          "Enterprise SaaS — use Claude + full QA team. Human testing for regulatory compliance, LLM testing for velocity.",
+        ],
+      },
+
+      { type: "h2", body: "Implementation timeline", id: "timeline" },
+      {
+        type: "ul",
+        items: [
+          "Week 1 — set up GitHub Actions + Claude API. Effort: 1 day.",
+          "Week 2 — run first PR reviews, fix bugs found. Effort: 2 days.",
+          "Week 3 — add fuzzing (configure cargo-fuzz or equivalent). Effort: 1 day.",
+          "Week 4 — threat model 3–5 critical endpoints. Effort: 2 days.",
+        ],
+      },
+      {
+        type: "p",
+        body: "Total: AI-native QA ready in ~1 week. After that, it's maintenance. Feed crashes to Claude, prioritize fixes, deploy.",
+      },
+
+      { type: "h2", body: "FAQ", id: "faq" },
+      { type: "h3", body: "Won't Claude find 1000 false positives?" },
+      {
+        type: "p",
+        body: "Based on pilot programs, expect 20–40% false positives depending on codebase maturity and prompt engineering. But false positives are better than false negatives (real bugs you missed). Takes 30 seconds to dismiss a false positive. Takes 2 weeks to fix a real bug in production.",
+      },
+      { type: "h3", body: "Does this replace my QA team?" },
+      {
+        type: "p",
+        body: "If you don't have a QA team, it solves that problem entirely. If you have one, it makes them 10x more productive — they focus on complex scenarios, Claude handles volume.",
+      },
+      { type: "h3", body: "What about compliance (ISO, SOC2, HIPAA)?" },
+      {
+        type: "p",
+        body: "Document that you use Claude + human review. Auditors care about documented testing process, not whether the process is manual or AI. You're fine as long as you can show the findings and fixes.",
+      },
+      { type: "h3", body: "How much will this cost?" },
+      {
+        type: "p",
+        body: "$20–50/month in Claude API calls (depending on codebase size). Compare to $8K–15K/month for a QA engineer.",
+      },
+
+      { type: "h2", body: "The bottom line", id: "bottom-line" },
+      {
+        type: "p",
+        body: "Google proved it: AI-native QA is exponentially faster than manual testing.",
+      },
+      {
+        type: "p",
+        body: "You don't need to be Google to benefit. Start with Claude code review in GitHub Actions. One day of setup. ~$50–75/month in API costs vs. $80–120K/year for a QA engineer (US) or $15–30K/year (India).",
+      },
+      {
+        type: "callout",
+        tone: "tip",
+        body: "The future of QA isn't hiring more testers. It's teaching LLMs to think like attackers. Start this week.",
+      },
+    ],
+  },
   "automate-your-first-100k-zapier-workflows": {
     slug: "automate-your-first-100k-zapier-workflows",
     tagline:
