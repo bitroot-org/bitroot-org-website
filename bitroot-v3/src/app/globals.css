@@ -299,6 +299,33 @@ pre.shiki .line {
   opacity: 0.9;
 }
 
+/* Newslogger bento — title plate cut out of the featured image, with
+   inverted (concave) corner fillets so the plate reads as part of the
+   card frame rather than a box floating on the photo. */
+.notch-plate {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--color-paper);
+  border-top-right-radius: 22px;
+}
+.notch-plate::before,
+.notch-plate::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: radial-gradient(circle at 100% 0, transparent 22px, var(--color-paper) 22.5px);
+}
+.notch-plate::before {
+  top: -22px;
+  left: 0;
+}
+.notch-plate::after {
+  right: -22px;
+  bottom: 0;
+}
+
 /* ── LANES ── */
 .lane-card {
   position: relative;
