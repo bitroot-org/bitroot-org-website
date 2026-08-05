@@ -1,16 +1,13 @@
 ---
 date: '2026-08-05'
-excerpt: 'Bending Spoons just paid $1.285 billion for Airtable on August 4, 2026—same
-  day as Anthropic''s Volta infrastructure deal. Same message: consolidation is accelerating,
-  and enterprise CIOs are actively reducing vendor counts (68% plan consolidation
-  in 2026). If you''re building on acquired platforms, you need a contingency plan.'
-image: media/2026-08-05-bending-spoons-acquires-airtable-for-1-285b-what-f.jpg
+excerpt: 'Bending Spoons just paid $1.285 billion for Airtable on August 4, 2026—same day as Anthropic''s Volta infrastructure deal. Same message: consolidation is accelerating, and enterprise CIOs are actively reducing vendor counts (68% plan consolidation in 2026). If you''re building on acquired platforms, you need a contingency plan.'
+image: https://qz.com/cdn-cgi/image/width=1920,quality=85,format=auto/https://assets.qz.com/media/GettyImages-2283602128-1920x1281.jpg
 published_at: '2026-08-05T06:27:22.952Z'
 sources: []
 tags:
-- M&A
-- Founders
-- MCP
+- 'M&A'
+- 'Founders'
+- 'MCP'
 title: 'Bending Spoons Acquires Airtable for $1.285B: What Founders Need to Know'
 ---
 
