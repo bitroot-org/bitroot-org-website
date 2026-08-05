@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 296,
+  "count": 297,
   "posts": [
+    "2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a.md",
     "2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod.md",
     "2026-08-04-claude-model-selection-for-founders-the-100-to-10k.md",
     "2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe.md",
@@ -300,6 +301,25 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a.md",
+      "slug": "2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a",
+      "url": "/blog/2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a/",
+      "title": "Anthropic's $10B Volta Deal: What It Means for Your API Bill (And When)",
+      "date": "2026-08-05",
+      "published_at": "2026-08-05T05:41:04.303Z",
+      "tags": [
+        "AI",
+        "API",
+        "Anthropic",
+        "Volta"
+      ],
+      "excerpt": "Here's what founders need to know: the deal is real. The infrastructure is coming. But your API bill probably won't drop until Q2 2027 at the earliest, and execution risk is baked into every step. For strategic context on current Claude pricing, see our Claude model selection guide.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/Claude-photo.jpg",
+      "sources": [],
+      "readTime": "8 min",
+      "shortId": 297
+    },
     {
       "filename": "2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod.md",
       "slug": "2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod",
