@@ -178,45 +178,35 @@ def build_short_links(posts):
     print(f"Generated {len(posts)} short link pages in {SHORT_LINKS_DIR}/")
 
 
-def render_featured_card(post):
-    """Mirror of posts-loader.js renderFeaturedPost() so the JS hydration
-    swaps content without layout shift."""
+def render_card(post, featured=False):
+    """Mirror of posts-loader.js renderCard() so the JS hydration swaps
+    content without layout shift, and crawlers see real cards."""
     tag = (post.get("tags") or ["General"])[0]
     image = post.get("image") or "media/placeholder-blog.png"
-    display_date = fmt_display_date(post)
-    return f"""            <article class="featured-post" data-post-slug="{esc(post['slug'])}">
-                <div class="featured-progress"><div class="featured-progress-bar"></div></div>
-                <div class="post-image">
-                    <img src="{esc(image)}" alt="{esc(post['title'])}" width="800" height="450" fetchpriority="high" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('{esc(post['slug'])}'):'media/placeholder-blog.png'">
-                </div>
-                <div class="post-content">
-                    <div class="post-meta">
-                        <span class="post-tag">{esc(tag)}</span>
-                        <span class="post-date">{esc(display_date)}</span>
-                    </div>
-                    <h2 class="post-title">{esc(post['title'])}</h2>
-                    <p class="post-excerpt">{esc(clamp(post.get('excerpt', ''), 220))}</p>
-                    <div class="post-footer">
-                        <span class="read-time">{esc(post.get('readTime', '5 min'))} read</span>
-                        <a href="{esc(post['url'])}" class="read-more">Read more &rarr;</a>
+    date_str = fmt_card_date(post)
+    badge = '<span class="card-badge">Latest</span>\n                    ' if featured else ""
+    loading = "eager" if featured else "lazy"
+    cls = " card-featured" if featured else ""
+    return f"""            <a class="card{cls}" data-post-slug="{esc(post['slug'])}" href="{esc(post['url'])}">
+                <img class="card-bg" src="{esc(image)}" alt="" loading="{loading}" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('{esc(post['slug'])}'):'media/placeholder-blog.png'">
+                <div class="card-plate">
+                    {badge}<h3 class="card-title">{esc(post['title'])}</h3>
+                    <p class="card-excerpt">{esc(clamp(post.get('excerpt', ''), 180))}</p>
+                    <div class="card-meta">
+                        <span class="card-tag">{esc(tag)}</span>
+                        <span class="card-info">{esc(date_str)} &bull; {esc(post.get('readTime', '5 min'))} read</span>
                     </div>
                 </div>
-            </article>"""
+            </a>"""
 
 
-def render_list_item(post, active=False):
-    """Mirror of posts-loader.js renderListItemWithState() — real anchors so
-    every post link is crawlable and tappable."""
-    tag = (post.get("tags") or ["General"])[0]
-    short_date = fmt_short_date(post.get("date", ""))
-    return f"""                <a class="list-item{' active' if active else ''}" data-post-slug="{esc(post['slug'])}" href="{esc(post['url'])}">
-                    <span class="list-date">{esc(short_date)}</span>
-                    <div class="list-content">
-                        <span class="list-tag">{esc(tag)}</span>
-                        <h3 class="list-title">{esc(post['title'])}</h3>
-                        <span class="list-read-time">{esc(post.get('readTime', '5 min'))}</span>
-                    </div>
-                </a>"""
+def fmt_card_date(post):
+    pub = post.get("published_at") or post.get("date")
+    try:
+        dt = datetime.fromisoformat(str(pub))
+        return f"{dt.day} {dt.strftime('%b')} {dt.year}"
+    except (ValueError, TypeError):
+        return str(post.get("date", ""))
 
 
 def fmt_short_date(date_str):
@@ -244,7 +234,7 @@ def fmt_display_date(post):
         return str(post.get("date", ""))
 
 
-def inject_index_posts(posts, per_page=5):
+def inject_index_posts(posts, per_page=9):
     """Write the real first page of posts (plus a crawlable archive of every
     remaining post title) into blog/index.html between the POSTS markers."""
     if not BLOG_INDEX_HTML.exists():
@@ -257,11 +247,10 @@ def inject_index_posts(posts, per_page=5):
         return
 
     page_posts = posts[:per_page]
-    featured = page_posts[0]
     total_pages = max(1, math.ceil(len(posts) / per_page))
 
-    list_items = "\n".join(
-        render_list_item(p, active=(p["slug"] == featured["slug"])) for p in page_posts
+    cards = "\n".join(
+        render_card(p, featured=(i == 0)) for i, p in enumerate(page_posts)
     )
     # Crawlable archive: every post beyond page 1 as a plain link list. The
     # loader's pagination takes over for sighted users; this keeps discovery
@@ -281,12 +270,8 @@ def inject_index_posts(posts, per_page=5):
         </section>"""
 
     generated = f"""{POSTS_BEGIN}
-        <div class="showcase-grid">
-{render_featured_card(featured)}
-            <aside class="post-list">
-                <h2 class="list-header">Recent</h2>
-{list_items}
-            </aside>
+        <div class="cards-grid" id="posts-grid">
+{cards}
         </div>
         <div class="pagination-container">
             <nav class="pagination" aria-label="Newslogger pagination">
