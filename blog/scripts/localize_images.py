@@ -32,6 +32,10 @@ import requests
 REPO_ROOT = Path(__file__).resolve().parents[2]
 POSTS_DIR = REPO_ROOT / "blog" / "posts"
 MEDIA_DIR = REPO_ROOT / "blog" / "media"
+# Store an ABSOLUTE media URL in frontmatter — a relative 'media/…' path only
+# resolves under /blog/ pages, breaking the homepage feed and the TeamLife
+# studio, which read the frontmatter raw.
+MEDIA_BASE_URL = "https://bitroot.org/blog/media"
 
 MAX_IMAGE_SIZE = 8 * 1024 * 1024  # 8MB
 WORKERS = 12
@@ -79,7 +83,7 @@ def fetch_image(url, stem):
     """
     cached = existing_local_file(stem)
     if cached:
-        return "ok", f"media/{cached.name}"
+        return "ok", f"{MEDIA_BASE_URL}/{cached.name}"
 
     try:
         with requests.get(url, headers=HEADERS, stream=True, timeout=30) as resp:
@@ -110,7 +114,7 @@ def fetch_image(url, stem):
             if total == 0:
                 os.remove(filepath)
                 return "dead", "empty response body"
-            return "ok", f"media/{filepath.name}"
+            return "ok", f"{MEDIA_BASE_URL}/{filepath.name}"
 
     except requests.exceptions.RequestException as e:
         return "error", str(e)

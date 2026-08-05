@@ -34,6 +34,10 @@ EVENT_NAME = os.environ.get("EVENT_NAME", "workflow_dispatch")
 
 POSTS_DIR = "blog/posts"
 MEDIA_DIR = "blog/media"
+# Self-hosted media is written into frontmatter as an ABSOLUTE URL. A relative
+# 'media/…' path only resolves under /blog/ pages — it breaks on the homepage
+# feed and in the TeamLife blog studio, which read the frontmatter raw.
+MEDIA_BASE_URL = "https://bitroot.org/blog/media"
 MAX_CONTENT_LENGTH = 15000  # Max chars per URL to avoid token limits
 MAX_VIDEO_SIZE = 50 * 1024 * 1024  # 50MB max video size
 MAX_IMAGE_SIZE = 8 * 1024 * 1024  # 8MB max cover image size
@@ -657,8 +661,8 @@ def download_media(url, slug, media_type="video"):
 
         logger.info(f"Downloaded {media_type} to: {filepath} ({total_size} bytes)")
 
-        # Return path relative to blog root (for use in HTML)
-        return f"media/{filename}"
+        # Absolute URL so it renders everywhere the frontmatter is read raw.
+        return f"{MEDIA_BASE_URL}/{filename}"
 
     except Exception as e:
         logger.error(f"Failed to download {media_type}: {str(e)}")
@@ -730,7 +734,7 @@ def download_image(url, slug):
                 return None
 
         logger.info(f"Downloaded image to: {filepath} ({total_size} bytes)")
-        return f"media/{filename}"
+        return f"{MEDIA_BASE_URL}/{filename}"
 
     except Exception as e:
         logger.error(f"Failed to download image: {str(e)}")
