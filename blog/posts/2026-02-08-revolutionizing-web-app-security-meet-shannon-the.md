@@ -4,7 +4,7 @@ excerpt: Shannon, a fully autonomous AI hacker, is changing the game for web app
   by scanning for vulnerabilities before attackers can strike. This innovation has
   the potential to revolutionize the way developers approach security, making it faster
   and more efficient.
-image: media/2026-02-08-revolutionizing-web-app-security-meet-shannon-the.jpg
+image: https://bitroot.org/blog/media/2026-02-08-revolutionizing-web-app-security-meet-shannon-the.jpg
 published_at: '2026-02-08T18:43:33.084319+00:00'
 sources:
 - https://www.linkedin.com/posts/walid-boulanouar_claude-code-for-hacking-is-here-shannon-ugcPost-7425888138117566464-rWZQ?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&utm_campaign=share_via

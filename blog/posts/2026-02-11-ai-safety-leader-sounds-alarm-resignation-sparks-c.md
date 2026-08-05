@@ -4,7 +4,7 @@ excerpt: The resignation of Anthropic AI's safety lead has sent shockwaves throu
   the tech community, highlighting the growing concerns over AI's potential risks
   to humanity. This development has significant implications for developers and the
   future of AI development.
-image: media/2026-02-11-ai-safety-leader-sounds-alarm-resignation-sparks-c.jpg
+image: https://bitroot.org/blog/media/2026-02-11-ai-safety-leader-sounds-alarm-resignation-sparks-c.jpg
 published_at: '2026-02-11T11:06:32.467400+00:00'
 sources:
 - https://share.google/6gzMAD1U347j7YUXX

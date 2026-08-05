@@ -4,7 +4,7 @@ excerpt: Vibe Editing, a game-changing AI-powered tool, allows users to create s
   videos with just a text prompt, eliminating the need for coding and tedious editing
   processes. This innovative technology is set to disrupt the video creation landscape,
   making it more accessible to developers and non-developers alike.
-image: media/2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.jpg
+image: https://bitroot.org/blog/media/2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.jpg
 published_at: '2026-02-10T02:11:19.181769+00:00'
 sources:
 - https://x.com/i/status/2020464238880596429

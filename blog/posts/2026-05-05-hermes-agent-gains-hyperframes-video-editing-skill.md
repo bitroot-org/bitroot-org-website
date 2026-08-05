@@ -3,7 +3,7 @@ date: '2026-05-05'
 excerpt: HeyGen added a Hyperframes skill to Hermes Agent, letting developers turn
   the agent into a one‑command video editor. The integration is a joint effort with
   Nous Research and is installable via a single CLI line.
-image: media/2026-05-05-hermes-agent-gains-hyperframes-video-editing-skill.jpg
+image: https://bitroot.org/blog/media/2026-05-05-hermes-agent-gains-hyperframes-video-editing-skill.jpg
 published_at: '2026-05-05T18:18:01.194753+00:00'
 sources:
 - https://x.com/i/status/2051697813554405384

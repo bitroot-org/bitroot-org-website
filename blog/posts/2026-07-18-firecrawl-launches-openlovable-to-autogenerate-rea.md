@@ -3,7 +3,7 @@ date: '2026-07-25'
 excerpt: Firecrawl’s new open‑lovable tool can clone any website into a modern React
   app with an AI‑driven chat interface, but it requires an API key and the generated
   code may need cleanup.
-image: media/2026-07-18-firecrawl-launches-openlovable-to-autogenerate-rea.jpg
+image: https://bitroot.org/blog/media/2026-07-18-firecrawl-launches-openlovable-to-autogenerate-rea.jpg
 published_at: '2026-07-18T10:13:22.167538+00:00'
 sources:
 - https://x.com/N0V4Dev/status/2078336551696626102

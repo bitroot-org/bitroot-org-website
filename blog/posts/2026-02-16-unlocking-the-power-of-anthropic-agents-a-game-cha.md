@@ -4,7 +4,7 @@ excerpt: The Anthropic Agent SDK is a powerful tool for building custom agents, 
   its potential is being overlooked by the development community. This framework has
   the potential to revolutionize AI development and create more sophisticated machine
   learning models.
-image: media/2026-02-16-unlocking-the-power-of-anthropic-agents-a-game-cha.jpg
+image: https://bitroot.org/blog/media/2026-02-16-unlocking-the-power-of-anthropic-agents-a-game-cha.jpg
 published_at: '2026-02-16T18:56:29.833462+00:00'
 sources:
 - https://x.com/i/status/2023428910042513482

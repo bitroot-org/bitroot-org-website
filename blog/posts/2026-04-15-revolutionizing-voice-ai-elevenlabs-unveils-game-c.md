@@ -1,7 +1,7 @@
 ---
 date: '2026-04-15'
 excerpt: The New ElevenAgents React SDK
-image: media/2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c.jpg
+image: https://bitroot.org/blog/media/2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c.jpg
 published_at: '2026-04-15T20:59:36.760570+00:00'
 sources:
 - https://x.com/i/status/2044519924282847381

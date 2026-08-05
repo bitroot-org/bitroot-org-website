@@ -2,7 +2,7 @@
 date: '2026-07-25'
 excerpt: The open‑source text‑effects collection now includes 66 CSS snippets, adding
   nine new options and AI‑ready prompts for quick integration.
-image: media/2026-07-13-css-texteffects-library-expands-to-66-readymade-st.jpg
+image: https://bitroot.org/blog/media/2026-07-13-css-texteffects-library-expands-to-66-readymade-st.jpg
 published_at: '2026-07-13T11:53:16.844209+00:00'
 sources:
 - https://x.com/codesharpdev/status/2076542275296108963

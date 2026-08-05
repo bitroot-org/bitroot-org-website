@@ -2,7 +2,7 @@
 date: '2026-02-08'
 excerpt: WordPress users can now leverage Claude to analyze web traffic or find information
   about other internal site metrics.
-image: media/2026-02-08-revolutionizing-wordpress-management-claudes-new-c.png
+image: https://bitroot.org/blog/media/2026-02-08-revolutionizing-wordpress-management-claudes-new-c.png
 published_at: '2026-02-08T04:15:14.443818+00:00'
 sources:
 - https://techcrunch.com/2026/02/06/it-just-got-easier-for-claude-to-check-in-on-your-wordpress-site/

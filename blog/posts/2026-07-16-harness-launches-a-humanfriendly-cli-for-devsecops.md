@@ -3,7 +3,7 @@ date: '2026-07-16'
 excerpt: Harness unveiled a new command‑line interface aimed at developers and AI
   agents, promising tighter security integration and deterministic execution. The
   tool is open‑source and targets terminal‑first workflows.
-image: media/2026-07-16-harness-launches-a-humanfriendly-cli-for-devsecops.jpg
+image: https://bitroot.org/blog/media/2026-07-16-harness-launches-a-humanfriendly-cli-for-devsecops.jpg
 published_at: '2026-07-16T10:51:23.371639+00:00'
 sources:
 - https://x.com/harnessio/status/2077413070616617212

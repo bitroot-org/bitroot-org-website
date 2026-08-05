@@ -2,7 +2,7 @@
 date: '2026-06-03'
 excerpt: Lassie, an AI platform for small medical practices, announced a $47M Series
   A led by a16z and claims to save each clinic about 30 hours of work each month.
-image: media/2026-06-03-lassie-ai-raises-47m-to-automate-doctors-offices.jpg
+image: https://bitroot.org/blog/media/2026-06-03-lassie-ai-raises-47m-to-automate-doctors-offices.jpg
 published_at: '2026-06-03T18:56:49.506527+00:00'
 sources:
 - https://x.com/i/status/2062184922090246332

@@ -2,7 +2,7 @@
 date: '2026-06-29'
 excerpt: Fal’s new Extract Object model returns a clean RGBA PNG cutout from a single
   API call, turning natural‑language prompts into ready‑to‑use assets.
-image: media/2026-06-29-fal-adds-extract-object-api-for-instant-image-cuto.jpg
+image: https://bitroot.org/blog/media/2026-06-29-fal-adds-extract-object-api-for-instant-image-cuto.jpg
 published_at: '2026-06-29T19:20:37.442226+00:00'
 sources:
 - https://x.com/i/status/2071631739705762296

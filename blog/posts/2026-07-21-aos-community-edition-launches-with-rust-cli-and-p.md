@@ -3,7 +3,7 @@ date: '2026-07-21'
 excerpt: Unicity's AOS Community Edition brings an open‑source Rust agent OS with
   a CLI, HTTP API, and built‑in Sigstore provenance, but its Rust‑centric tooling
   may limit quick adoption.
-image: media/2026-07-21-aos-community-edition-launches-with-rust-cli-and-p.jpg
+image: https://bitroot.org/blog/media/2026-07-21-aos-community-edition-launches-with-rust-cli-and-p.jpg
 published_at: '2026-07-21T10:59:00.820992+00:00'
 sources:
 - https://x.com/chenzeling4/status/2079446292456157185

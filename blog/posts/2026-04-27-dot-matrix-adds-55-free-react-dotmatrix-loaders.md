@@ -2,7 +2,7 @@
 date: '2026-04-27'
 excerpt: Dot Matrix is a React component library of dot matrix loaders—expressive
   loading primitives you install via the shadcn registry and own as local code.
-image: media/2026-04-27-dot-matrix-adds-55-free-react-dotmatrix-loaders.png
+image: https://bitroot.org/blog/media/2026-04-27-dot-matrix-adds-55-free-react-dotmatrix-loaders.png
 published_at: '2026-04-27T18:39:25.321356+00:00'
 sources:
 - https://dotmatrix.zzzzshawn.cloud/

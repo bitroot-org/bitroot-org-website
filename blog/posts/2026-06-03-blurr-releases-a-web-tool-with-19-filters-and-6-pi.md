@@ -2,7 +2,7 @@
 date: '2026-06-03'
 excerpt: Blurr’s new pixel‑effects service lets you drop any image into a browser
   and walk away with an art‑style output, all via a free web interface.
-image: media/2026-06-03-blurr-releases-a-web-tool-with-19-filters-and-6-pi.jpg
+image: https://bitroot.org/blog/media/2026-06-03-blurr-releases-a-web-tool-with-19-filters-and-6-pi.jpg
 published_at: '2026-06-03T18:59:45.078081+00:00'
 sources:
 - https://x.com/i/status/2061501427353288954

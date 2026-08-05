@@ -5,7 +5,7 @@ excerpt: 'Claude Code on desktop can now preview your running apps, review your 
 
 
   Here’s what''s new:'
-image: media/2026-02-21-revolutionizing-coding-claudes-game-changing-updat.jpg
+image: https://bitroot.org/blog/media/2026-02-21-revolutionizing-coding-claudes-game-changing-updat.jpg
 published_at: '2026-02-21T15:32:59.972119+00:00'
 sources:
 - https://x.com/i/status/2024937960572104707

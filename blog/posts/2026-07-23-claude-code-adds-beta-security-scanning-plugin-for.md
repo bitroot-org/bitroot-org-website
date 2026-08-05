@@ -3,7 +3,7 @@ date: '2026-07-24'
 excerpt: Claude’s new security plugin lets you scan code for vulnerabilities from
   the terminal, either per‑change or across the whole repo, while you’re already using
   Claude inference.
-image: media/2026-07-23-claude-code-adds-beta-security-scanning-plugin-for.jpg
+image: https://bitroot.org/blog/media/2026-07-23-claude-code-adds-beta-security-scanning-plugin-for.jpg
 published_at: '2026-07-23T02:06:38.520174+00:00'
 sources:
 - https://x.com/i/status/2079990597973057691

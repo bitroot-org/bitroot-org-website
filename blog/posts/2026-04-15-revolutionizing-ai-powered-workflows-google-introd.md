@@ -4,7 +4,7 @@ excerpt: Google introduces Skills in Chrome, a game-changer for building one-cli
   workflows with AI prompts, and we're excited to dive into its implications for developers
   and tech enthusiasts. This innovation has the potential to streamline tasks and
   boost productivity like never before.
-image: media/2026-04-15-revolutionizing-ai-powered-workflows-google-introd.jpg
+image: https://bitroot.org/blog/media/2026-04-15-revolutionizing-ai-powered-workflows-google-introd.jpg
 published_at: '2026-04-15T21:00:08.702443+00:00'
 sources:
 - https://x.com/i/status/2044106378655215625

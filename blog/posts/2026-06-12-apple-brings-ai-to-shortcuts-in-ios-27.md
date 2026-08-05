@@ -3,7 +3,7 @@ date: '2026-06-12'
 excerpt: Apple announced an AI-powered upgrade to its Shortcuts app at WWDC 2026,
   letting users describe automations in plain English instead of manually chaining
   actions.
-image: media/2026-06-12-apple-brings-ai-to-shortcuts-in-ios-27.jpg
+image: https://bitroot.org/blog/media/2026-06-12-apple-brings-ai-to-shortcuts-in-ios-27.jpg
 published_at: '2026-06-12T09:00:00.000000+00:00'
 sources:
 - https://techcrunch.com/2026/06/08/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/

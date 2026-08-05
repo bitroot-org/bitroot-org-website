@@ -2,7 +2,7 @@
 date: '2026-05-02'
 excerpt: Claude Code now includes a built‑in skill that can manage model migrations,
   use prompt caching, and interact with Claude Managed Agents directly from the CLI.
-image: media/2026-05-02-claude-code-adds-builtin-skill-for-claude-platform.jpg
+image: https://bitroot.org/blog/media/2026-05-02-claude-code-adds-builtin-skill-for-claude-platform.jpg
 published_at: '2026-05-02T04:55:33.698583+00:00'
 sources:
 - https://x.com/i/status/2049575802568839648

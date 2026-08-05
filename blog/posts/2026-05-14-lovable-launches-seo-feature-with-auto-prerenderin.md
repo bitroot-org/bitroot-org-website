@@ -2,7 +2,7 @@
 date: '2026-05-14'
 excerpt: Lovable adds server‑side rendering and an on‑demand SEO review that can auto‑fix
   suggestions, aiming to make new and existing apps more discoverable.
-image: media/2026-05-14-lovable-launches-seo-feature-with-auto-prerenderin.jpg
+image: https://bitroot.org/blog/media/2026-05-14-lovable-launches-seo-feature-with-auto-prerenderin.jpg
 published_at: '2026-05-14T02:21:31.639433+00:00'
 sources:
 - https://x.com/i/status/2054549753224937956

@@ -4,7 +4,7 @@ excerpt: 'Anthropic''s Claude Fable introduces a simple but powerful idea: bette
   AI outputs don''t start with better prompts, they start by uncovering your unknowns.
   Here''s how the framework can improve decision-making for founders, marketers, and
   AI users.'
-image: media/2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p.png
+image: https://bitroot.org/blog/media/2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p.png
 published_at: '2026-07-08T10:38:43.387Z'
 sources: []
 tags:

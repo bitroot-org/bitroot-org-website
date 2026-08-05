@@ -2,7 +2,7 @@
 date: '2026-05-05'
 excerpt: SubQ’s new model uses a sub‑quadratic sparse‑attention design to handle 12 million‑token
   contexts, delivering speed and cost advantages over existing attention engines.
-image: media/2026-05-05-subq-launches-a-subquadratic-llm-with-12mtoken-con.jpg
+image: https://bitroot.org/blog/media/2026-05-05-subq-launches-a-subquadratic-llm-with-12mtoken-con.jpg
 published_at: '2026-05-05T18:17:11.580017+00:00'
 sources:
 - https://x.com/i/status/2051663268704636937

@@ -4,7 +4,7 @@ excerpt: Meet Clicky, an AI-powered teacher that assists learners in real-time, 
   discover its potential to transform the way we acquire new skills. This cutting-edge
   tool is set to revolutionize the edtech landscape with its interactive and personalized
   approach.
-image: media/2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the.jpg
+image: https://bitroot.org/blog/media/2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the.jpg
 published_at: '2026-04-08T09:23:37.395297+00:00'
 sources:
 - https://x.com/i/status/2041314633978659092

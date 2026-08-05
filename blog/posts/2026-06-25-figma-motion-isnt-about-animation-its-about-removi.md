@@ -4,7 +4,7 @@ excerpt: At Config 2026, Figma introduced Motion, a new feature that brings anim
   and interactive design directly into Figma. While the update adds motion capabilities,
   the bigger story is Figma's effort to streamline the design-to-development workflow
   by eliminating another tool from the product creation process.
-image: media/2026-06-25-figma-motion-isnt-about-animation-its-about-removi.jpg
+image: https://bitroot.org/blog/media/2026-06-25-figma-motion-isnt-about-animation-its-about-removi.jpg
 published_at: '2026-06-25T06:17:06.752Z'
 sources:
 - https://www.figma.com/blog/introducing-figma-motion/

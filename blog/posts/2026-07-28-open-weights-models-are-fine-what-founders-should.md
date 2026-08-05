@@ -2,7 +2,7 @@
 date: '2026-07-28'
 excerpt: Dario's policy statement doesn't mean what most think. Here's what actually
   matters for your model choice.
-image: media/2026-07-28-open-weights-models-are-fine-what-founders-should.jpg
+image: https://bitroot.org/blog/media/2026-07-28-open-weights-models-are-fine-what-founders-should.jpg
 published_at: '2026-07-28T04:51:55.123Z'
 sources:
 - https://www.anthropic.com/news/position-open-weights-models

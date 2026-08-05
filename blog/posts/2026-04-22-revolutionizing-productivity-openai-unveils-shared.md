@@ -2,7 +2,7 @@
 date: '2026-04-22'
 excerpt: Introducing workspace agents in ChatGPT—shared agents that can handle complex
   tasks and long-running workflows across tools and teams.
-image: media/2026-04-22-revolutionizing-productivity-openai-unveils-shared.jpg
+image: https://bitroot.org/blog/media/2026-04-22-revolutionizing-productivity-openai-unveils-shared.jpg
 published_at: '2026-04-22T18:45:04.822087+00:00'
 sources:
 - https://x.com/i/status/2047008987665809771

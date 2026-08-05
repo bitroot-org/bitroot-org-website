@@ -2,7 +2,7 @@
 date: '2026-08-03'
 excerpt: Everyone said apps were dead. I agents would make traditional apps obsolete.
   Developers would abandon the App Store. ChatGPT would replace everything.
-image: media/2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f.jpg
+image: https://bitroot.org/blog/media/2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f.jpg
 published_at: '2026-08-03T04:48:59.316Z'
 sources: []
 tags:

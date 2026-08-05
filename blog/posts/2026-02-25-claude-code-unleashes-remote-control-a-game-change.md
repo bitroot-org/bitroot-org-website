@@ -3,7 +3,7 @@ date: '2026-02-25'
 excerpt: Claude Code introduces Remote Control, allowing developers to start tasks
   on their terminal and control them from their phone, revolutionizing workflow flexibility.
   This feature is a significant upgrade for developers who need to manage tasks on-the-go.
-image: media/2026-02-25-claude-code-unleashes-remote-control-a-game-change.jpg
+image: https://bitroot.org/blog/media/2026-02-25-claude-code-unleashes-remote-control-a-game-change.jpg
 published_at: '2026-02-25T03:17:24.562902+00:00'
 sources:
 - https://x.com/i/status/2026418433911603668

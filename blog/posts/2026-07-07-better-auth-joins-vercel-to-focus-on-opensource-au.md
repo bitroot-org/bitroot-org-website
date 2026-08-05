@@ -2,7 +2,7 @@
 date: '2026-07-07'
 excerpt: Better Auth announced it is becoming part of Vercel, promising more resources
   for its open‑source authentication framework while staying platform agnostic.
-image: media/2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au.png
+image: https://bitroot.org/blog/media/2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au.png
 published_at: '2026-07-07T18:00:32.934203+00:00'
 sources:
 - https://x.com/i/status/2074523839300513921

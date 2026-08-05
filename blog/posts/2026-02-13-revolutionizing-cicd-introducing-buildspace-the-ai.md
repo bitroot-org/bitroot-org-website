@@ -1,7 +1,7 @@
 ---
 date: '2026-02-13'
 excerpt: Conversational Interfaces, Anywhere
-image: media/2026-02-13-revolutionizing-cicd-introducing-buildspace-the-ai.png
+image: https://bitroot.org/blog/media/2026-02-13-revolutionizing-cicd-introducing-buildspace-the-ai.png
 published_at: '2026-02-13T19:51:57.201126+00:00'
 sources:
 - https://photon.codes/blog/ci-cd-in-the-age-of-ai

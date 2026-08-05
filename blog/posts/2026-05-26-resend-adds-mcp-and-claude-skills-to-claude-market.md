@@ -3,7 +3,7 @@ date: '2026-05-26'
 excerpt: "We added @resend MCP and skills to the @ClaudeDevs Marketplace.\n\n1. Type
   /plugins in Claude Code\n2. Search for resend\n3. Install\n\nAll skills, Resend
   MCP. One command \U0001F447"
-image: media/2026-05-26-resend-adds-mcp-and-claude-skills-to-claude-market.jpg
+image: https://bitroot.org/blog/media/2026-05-26-resend-adds-mcp-and-claude-skills-to-claude-market.jpg
 published_at: '2026-05-26T19:30:23.237027+00:00'
 sources:
 - https://x.com/i/status/2059275268276224331

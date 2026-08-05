@@ -4,7 +4,7 @@ excerpt: Ateno's new AI room designer turns a single photo into realistic redesi
   and an interactive 3‑D model, offering a free tier and a $9.99 / month Pro upgrade.
   Engineers can try it for quick mockups but should watch for stock mismatches and
   browser performance limits.
-image: media/2026-07-22-ateno-releases-ai-room-designer-with-free-trial-an.jpg
+image: https://bitroot.org/blog/media/2026-07-22-ateno-releases-ai-room-designer-with-free-trial-an.jpg
 published_at: '2026-07-22T11:01:07.626477+00:00'
 sources:
 - https://x.com/SviatoslavG/status/2079807586665451758

@@ -3,7 +3,7 @@ date: '2026-04-24'
 excerpt: A new AI‑powered, self‑hosted clipper can process YouTube and local videos
   without watermarks, and it’s completely free. It even lets you plug in Claude or
   any other model.
-image: media/2026-04-24-free-open-source-ai-video-clipping-tool-challenges.jpg
+image: https://bitroot.org/blog/media/2026-04-24-free-open-source-ai-video-clipping-tool-challenges.jpg
 published_at: '2026-04-24T21:22:44.389585+00:00'
 sources:
 - https://x.com/i/status/2047366820026593444

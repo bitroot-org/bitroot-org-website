@@ -4,7 +4,7 @@ excerpt: NVIDIA's new PersonaPlex-7B model is a full-duplex voice model that ena
   real conversations without pauses or turn-taking, and it's completely open source
   and free. This innovation is set to take voice AI to the next level, and we're excited
   to explore its potential implications and use cases.
-image: media/2026-02-15-revolutionizing-voice-ai-nvidia-unveils-game-chang.jpg
+image: https://bitroot.org/blog/media/2026-02-15-revolutionizing-voice-ai-nvidia-unveils-game-chang.jpg
 published_at: '2026-02-15T18:40:17.970696+00:00'
 sources:
 - https://x.com/i/status/2022995332058251548

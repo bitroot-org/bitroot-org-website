@@ -3,7 +3,7 @@ date: '2026-07-25'
 excerpt: Bitchat's gone from GitHub. China removed it from App Store in April. Now
   India. If you're building offline-first or decentralized communication tools, the
   pattern is clear—regulatory friction is a structural cost, not an edge case.-
-image: media/2026-07-25-bitchat-github-takedown-why-developers-in-india-mu.jpg
+image: https://bitroot.org/blog/media/2026-07-25-bitchat-github-takedown-why-developers-in-india-mu.jpg
 published_at: '2026-07-25T05:25:43.919Z'
 sources:
 - https://techcrunch.com/2026/07/24/indias-move-against-jack-dorseys-bitchat-sparks-legal-debate/

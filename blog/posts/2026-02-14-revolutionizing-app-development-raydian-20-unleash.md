@@ -3,7 +3,7 @@ date: '2026-02-14'
 excerpt: "Raydian 2.0 is live \U0001F389\n\nVibe-design your app, and we'll convert
   it into a working product autonomously.\n\nGo give it a spin, the design stage is
   free to use."
-image: media/2026-02-14-revolutionizing-app-development-raydian-20-unleash.jpg
+image: https://bitroot.org/blog/media/2026-02-14-revolutionizing-app-development-raydian-20-unleash.jpg
 published_at: '2026-02-14T04:29:24.699325+00:00'
 sources:
 - https://x.com/i/status/2022256365901607287

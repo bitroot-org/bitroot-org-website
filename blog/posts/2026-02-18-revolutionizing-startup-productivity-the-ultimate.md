@@ -4,7 +4,7 @@ excerpt: Bitroot India introduces PLatter, a game-changing platform that bundles
   top-tier tools into one membership, streamlining startup productivity. This innovative
   solution aims to reduce fragmentation and increase leverage for founders, startups,
   developers, and growth teams.
-image: media/2026-02-18-revolutionizing-startup-productivity-the-ultimate.jpg
+image: https://bitroot.org/blog/media/2026-02-18-revolutionizing-startup-productivity-the-ultimate.jpg
 published_at: '2026-02-18T04:46:34.357712+00:00'
 sources:
 - https://x.com/i/status/2023978535161925889

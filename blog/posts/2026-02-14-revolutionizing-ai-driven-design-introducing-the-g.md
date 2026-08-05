@@ -4,7 +4,7 @@ excerpt: Discover how the new Design Canvas is transforming the way developers i
   with AI agents, streamlining the design process and eliminating endless prompting.
   This innovative tool is set to revolutionize the field of AI-driven design, enabling
   developers to ship better designs in code with ease.
-image: media/2026-02-14-revolutionizing-ai-driven-design-introducing-the-g.jpg
+image: https://bitroot.org/blog/media/2026-02-14-revolutionizing-ai-driven-design-introducing-the-g.jpg
 published_at: '2026-02-14T04:35:10.585317+00:00'
 sources:
 - https://x.com/i/status/2022038492575154555

@@ -3,7 +3,7 @@ date: '2026-07-22'
 excerpt: RuntimeWire has released a public MCP endpoint that streams AI‑economy headlines
   in real time, supports keyword search, and returns full article bodies without any
   authentication or rate limits.
-image: media/2026-07-22-runtimewire-opens-free-live-aieconomy-news-feed.jpg
+image: https://bitroot.org/blog/media/2026-07-22-runtimewire-opens-free-live-aieconomy-news-feed.jpg
 published_at: '2026-07-22T11:00:30.284602+00:00'
 sources:
 - https://x.com/runtimewire/status/2079809429411611008

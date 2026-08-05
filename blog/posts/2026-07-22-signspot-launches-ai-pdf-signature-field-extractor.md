@@ -2,7 +2,7 @@
 date: '2026-07-22'
 excerpt: SignSpot is an open‑source FastAPI service that auto‑detects signature fields
   in PDFs and returns clean background images, now live for quick testing.
-image: media/2026-07-22-signspot-launches-ai-pdf-signature-field-extractor.jpg
+image: https://bitroot.org/blog/media/2026-07-22-signspot-launches-ai-pdf-signature-field-extractor.jpg
 published_at: '2026-07-22T11:00:48.062214+00:00'
 sources:
 - https://x.com/Adedoyinjames_/status/2079803185384825294

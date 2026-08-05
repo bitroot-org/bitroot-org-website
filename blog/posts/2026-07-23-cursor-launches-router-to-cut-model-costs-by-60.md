@@ -5,7 +5,7 @@ excerpt: 'Introducing Cursor Router, our intelligent model router that selects t
 
 
   Router delivers frontier-quality results at 60% lower cost.'
-image: media/2026-07-23-cursor-launches-router-to-cut-model-costs-by-60.jpg
+image: https://bitroot.org/blog/media/2026-07-23-cursor-launches-router-to-cut-model-costs-by-60.jpg
 published_at: '2026-07-23T02:07:16.868472+00:00'
 sources:
 - https://x.com/i/status/2079993729532989500

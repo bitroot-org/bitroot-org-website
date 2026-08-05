@@ -1,7 +1,7 @@
 ---
 date: '2026-06-18'
 excerpt: Announcing a new division of Midjourney called "Midjourney Medical"
-image: media/2026-06-18-midjourney-launches-a-medicalfocused-division.jpg
+image: https://bitroot.org/blog/media/2026-06-18-midjourney-launches-a-medicalfocused-division.jpg
 published_at: '2026-06-18T09:26:31.556421+00:00'
 sources:
 - https://x.com/i/status/2067421950314688759

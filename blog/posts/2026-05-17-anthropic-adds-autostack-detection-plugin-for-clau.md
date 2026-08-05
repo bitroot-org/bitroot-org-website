@@ -3,7 +3,7 @@ date: '2026-05-17'
 excerpt: Anthropic’s new official plugin reads an entire codebase and suggests which
   tools, frameworks, and configs to enable. It promises smoother onboarding but may
   add noise for larger projects.
-image: media/2026-05-17-anthropic-adds-autostack-detection-plugin-for-clau.jpg
+image: https://bitroot.org/blog/media/2026-05-17-anthropic-adds-autostack-detection-plugin-for-clau.jpg
 published_at: '2026-05-17T18:50:12.896988+00:00'
 sources:
 - https://x.com/i/status/2055830602683998718

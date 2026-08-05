@@ -3,7 +3,7 @@ date: '2026-03-11'
 excerpt: JetBrains introduces Air, an agentic development environment that supports
   top AI models, and we're excited to explore its potential for developers. This new
   tool is set to change the way we code and interact with AI assistants.
-image: media/2026-03-11-jetbrains-unveils-air-a-revolutionary-ai-powered-d.jpg
+image: https://bitroot.org/blog/media/2026-03-11-jetbrains-unveils-air-a-revolutionary-ai-powered-d.jpg
 published_at: '2026-03-11T02:27:11.559898+00:00'
 sources:
 - https://x.com/i/status/2031049359710650522

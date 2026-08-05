@@ -3,7 +3,7 @@ date: '2026-04-24'
 excerpt: Google's Gemma 4 model can be executed entirely on a local machine using
   LM Studio and OpenCode, letting engineers parse PDFs and build sites without network
   access.
-image: media/2026-04-24-gemma-4-runs-offline-with-lm-studio-and-opencode.jpg
+image: https://bitroot.org/blog/media/2026-04-24-gemma-4-runs-offline-with-lm-studio-and-opencode.jpg
 published_at: '2026-04-24T21:24:01.909307+00:00'
 sources:
 - https://x.com/i/status/2047406475631624285

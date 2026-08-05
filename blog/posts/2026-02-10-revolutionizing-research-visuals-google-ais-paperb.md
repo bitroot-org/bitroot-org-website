@@ -2,7 +2,7 @@
 date: '2026-02-10'
 excerpt: 'Google AI Introduces PaperBanana: An Agentic Framework that Automates Publication
   Ready Methodology Diagrams and Statistical Plots'
-image: media/2026-02-10-revolutionizing-research-visuals-google-ais-paperb.png
+image: https://bitroot.org/blog/media/2026-02-10-revolutionizing-research-visuals-google-ais-paperb.png
 published_at: '2026-02-10T19:18:56.973545+00:00'
 sources:
 - https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/

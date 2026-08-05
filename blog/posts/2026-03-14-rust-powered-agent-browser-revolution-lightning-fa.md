@@ -4,7 +4,7 @@ excerpt: The agent-browser is now fully native Rust, boasting a 1.6x faster cold
   18x less memory, and a 99x smaller install, making it a game-changer for developers.
   This update brings faster shipping, more control, and unprecedented capabilities
   to the table.
-image: media/2026-03-14-rust-powered-agent-browser-revolution-lightning-fa.jpg
+image: https://bitroot.org/blog/media/2026-03-14-rust-powered-agent-browser-revolution-lightning-fa.jpg
 published_at: '2026-03-14T19:12:03.927591+00:00'
 sources:
 - https://x.com/i/status/2032635370089693456

@@ -3,7 +3,7 @@ date: '2026-03-14'
 excerpt: GLM-5 introduces Agent Mode, a game-changer for AI workflows, allowing for
   instant insights and automated tasks. This update is a must-know for developers
   and tech enthusiasts looking to streamline their workflows.
-image: media/2026-03-14-revolutionizing-ai-workflows-glm-5-unleashes-agent.jpg
+image: https://bitroot.org/blog/media/2026-03-14-revolutionizing-ai-workflows-glm-5-unleashes-agent.jpg
 published_at: '2026-03-14T19:09:37.811538+00:00'
 sources:
 - https://x.com/i/status/2032555220493033960

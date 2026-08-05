@@ -5,7 +5,7 @@ excerpt: 'JSON-based prompting helps Arrow follow instructions more consistently
 
 
   Better control from the first generation.'
-image: media/2026-05-26-quiverai-adds-json-prompting-to-arrow-for-tighter.jpg
+image: https://bitroot.org/blog/media/2026-05-26-quiverai-adds-json-prompting-to-arrow-for-tighter.jpg
 published_at: '2026-05-26T19:33:29.885065+00:00'
 sources:
 - https://x.com/i/status/2059295909809098960

@@ -2,7 +2,7 @@
 date: '2026-08-01'
 excerpt: You shipped in two weeks. Got a ProductHunt vote or two. Downloaded by maybe
   a hundred people. Then... nothing.
-image: media/2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh.jpg
+image: https://bitroot.org/blog/media/2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh.jpg
 published_at: '2026-08-01T05:52:06.544Z'
 sources: []
 tags:

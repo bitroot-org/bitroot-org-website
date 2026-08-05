@@ -5,7 +5,7 @@ excerpt: While everyone focused on Fable 5, leaked prompts, and jailbreak claims
   applications that remember users, maintain state, and continue operating over time,
   bringing us closer to a future where AI doesn't just build software, but helps run
   it.
-image: media/2026-06-19-ai-is-learning-to-run-software-not-just-build-it.jpg
+image: https://bitroot.org/blog/media/2026-06-19-ai-is-learning-to-run-software-not-just-build-it.jpg
 published_at: '2026-06-19T06:12:58.875Z'
 sources:
 - https://claude.com/blog/artifacts-in-claude-code

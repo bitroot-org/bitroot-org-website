@@ -3,7 +3,7 @@ date: '2026-02-25'
 excerpt: One engineer used AI to rebuild Next.js on Vite in a week. vinext builds
   up to 4x faster, produces 57% smaller bundles, and deploys to Cloudflare Workers
   with a single command.
-image: media/2026-02-25-revolutionizing-front-end-development-the-ai-power.png
+image: https://bitroot.org/blog/media/2026-02-25-revolutionizing-front-end-development-the-ai-power.png
 published_at: '2026-02-25T11:00:51.627887+00:00'
 sources:
 - https://blog.cloudflare.com/vinext/

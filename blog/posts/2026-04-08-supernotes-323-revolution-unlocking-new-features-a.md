@@ -3,7 +3,7 @@ date: '2026-04-08'
 excerpt: The latest Supernotes update brings exciting new features, improvements,
   and bug fixes, taking user experience to the next level. Discover what's new and
   why it matters for developers and tech enthusiasts.
-image: media/2026-04-08-supernotes-323-revolution-unlocking-new-features-a.jpg
+image: https://bitroot.org/blog/media/2026-04-08-supernotes-323-revolution-unlocking-new-features-a.jpg
 published_at: '2026-04-08T02:27:50.353731+00:00'
 sources:
 - https://x.com/i/status/2041401159639007301

@@ -7,7 +7,7 @@ excerpt: 'Introducing Perplexity Computer.
 
 
   It can research, design, code, deploy, and manage any project end-to-end.'
-image: media/2026-02-25-revolutionizing-ai-capabilities-the-dawn-of-perple.jpg
+image: https://bitroot.org/blog/media/2026-02-25-revolutionizing-ai-capabilities-the-dawn-of-perple.jpg
 published_at: '2026-02-25T18:04:43.428272+00:00'
 sources:
 - https://x.com/i/status/2026695550771540489

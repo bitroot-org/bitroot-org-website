@@ -4,7 +4,7 @@ excerpt: '"Agents can now create Cloudflare accounts, buy domains, and deploy"
 
 
   Here''s how it works in 4 minutes.'
-image: media/2026-05-07-cloudflare-agents-can-now-selfprovision-accounts-b.jpg
+image: https://bitroot.org/blog/media/2026-05-07-cloudflare-agents-can-now-selfprovision-accounts-b.jpg
 published_at: '2026-05-07T02:15:05.761261+00:00'
 sources:
 - https://x.com/i/status/2052029139775787314

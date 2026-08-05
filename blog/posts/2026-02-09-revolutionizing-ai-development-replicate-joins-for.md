@@ -3,7 +3,7 @@ date: '2026-02-09'
 excerpt: Replicate is joining Cloudflare to revolutionize AI development with faster,
   more integrated, and scalable solutions, enabling developers to build AI apps with
   ease. This strategic move is set to transform the future of AI development.
-image: media/2026-02-09-revolutionizing-ai-development-replicate-joins-for.png
+image: https://bitroot.org/blog/media/2026-02-09-revolutionizing-ai-development-replicate-joins-for.png
 published_at: '2026-02-09T12:30:56.856979+00:00'
 sources:
 - https://replicate.com/blog/replicate-cloudflare

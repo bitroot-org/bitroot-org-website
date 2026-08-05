@@ -2,7 +2,7 @@
 date: '2026-07-01'
 excerpt: Browserbase now offers pre‑packaged browser agents that can be started with
   a single prompt and one API call, aiming to simplify web automation for developers.
-image: media/2026-07-01-browserbase-launches-readytorun-browser-agents.jpg
+image: https://bitroot.org/blog/media/2026-07-01-browserbase-launches-readytorun-browser-agents.jpg
 published_at: '2026-07-01T03:21:48.492895+00:00'
 sources:
 - https://x.com/i/status/2071994225865150708

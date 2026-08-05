@@ -4,7 +4,7 @@ excerpt: MiniMax introduces MMX-CLI, a groundbreaking infrastructure that empowe
   AI agents with seven new senses, revolutionizing their capabilities and potential
   applications. This update is a game-changer for developers and the tech community,
   enabling agents to interact with the world in unprecedented ways.
-image: media/2026-04-12-revolutionizing-ai-agents-minimax-unveils-mmx-cli.jpg
+image: https://bitroot.org/blog/media/2026-04-12-revolutionizing-ai-agents-minimax-unveils-mmx-cli.jpg
 published_at: '2026-04-12T09:16:04.343053+00:00'
 sources:
 - https://x.com/i/status/2042641521653256234

@@ -8,7 +8,7 @@ excerpt: 'Ascii Magic landing page is live✨
   Built end-to-end with Paper + Claude.
 
   Animated completely using AI (more on this soon)'
-image: media/2026-05-26-ascii-magic-launches-ai-animated-landing-page.jpg
+image: https://bitroot.org/blog/media/2026-05-26-ascii-magic-launches-ai-animated-landing-page.jpg
 published_at: '2026-05-26T19:24:27.398745+00:00'
 sources:
 - https://x.com/i/status/2059300319331565930

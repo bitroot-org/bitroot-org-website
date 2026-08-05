@@ -3,7 +3,7 @@ date: '2026-07-24'
 excerpt: Google promised Gemini 3.5 Pro in June, it's still not shipped in July. Why?
   The flagship can't match Claude's coding performance, and that's what enterprises
   actually buy.
-image: media/2026-07-24-why-googles-gemini-3-5-pro-is-months-behind-the-co.jpg
+image: https://bitroot.org/blog/media/2026-07-24-why-googles-gemini-3-5-pro-is-months-behind-the-co.jpg
 published_at: '2026-07-24T04:54:54.106Z'
 sources: []
 tags:

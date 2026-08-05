@@ -3,7 +3,7 @@ date: '2026-07-10'
 excerpt: LangChain’s new OpenWiki agent reads your repository on every commit and
   updates a wiki automatically, aiming to cut the time engineers spend hunting for
   documentation.
-image: media/2026-07-10-langchain-launches-openwiki-to-autogenerate-a-livi.jpg
+image: https://bitroot.org/blog/media/2026-07-10-langchain-launches-openwiki-to-autogenerate-a-livi.jpg
 published_at: '2026-07-10T11:44:09.253881+00:00'
 sources:
 - https://x.com/iblai_/status/2075301557063553329

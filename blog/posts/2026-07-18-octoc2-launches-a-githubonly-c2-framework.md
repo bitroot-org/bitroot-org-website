@@ -3,7 +3,7 @@ date: '2026-07-18'
 excerpt: OctoC2 runs its beacon entirely inside GitHub, talking only to the public
   GitHub API. The design eliminates the need for external servers but brings its own
   trade‑offs.
-image: media/2026-07-18-octoc2-launches-a-githubonly-c2-framework.jpg
+image: https://bitroot.org/blog/media/2026-07-18-octoc2-launches-a-githubonly-c2-framework.jpg
 published_at: '2026-07-18T10:11:44.274013+00:00'
 sources:
 - https://x.com/Yass1nMohamed/status/2078110214142767323

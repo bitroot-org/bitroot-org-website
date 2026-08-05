@@ -4,7 +4,7 @@ excerpt: Zapier's SDK is now available to everyone, enabling AI agents to access
   8,000 apps and their APIs, and changing the game for automation and development.
   This launch opens up new possibilities for developers and tech enthusiasts to streamline
   workflows and unlock new use cases.
-image: media/2026-04-08-revolutionizing-automation-zapier-sdk-now-open-to.jpg
+image: https://bitroot.org/blog/media/2026-04-08-revolutionizing-automation-zapier-sdk-now-open-to.jpg
 published_at: '2026-04-08T02:25:24.072480+00:00'
 sources:
 - https://x.com/i/status/2041501747105890393

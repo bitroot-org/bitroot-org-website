@@ -3,7 +3,7 @@ date: '2026-04-10'
 excerpt: Noah Zweben announces the Monitor tool, a game-changer for Claude's background
   scripts, and we're excited to dive into its potential. This innovation promises
   to reduce token usage and move away from polling in the agent loop.
-image: media/2026-04-10-revolutionizing-agent-interactions-claudes-monitor.jpg
+image: https://bitroot.org/blog/media/2026-04-10-revolutionizing-agent-interactions-claudes-monitor.jpg
 published_at: '2026-04-10T17:37:30.477429+00:00'
 sources:
 - https://x.com/i/status/2042332268450963774

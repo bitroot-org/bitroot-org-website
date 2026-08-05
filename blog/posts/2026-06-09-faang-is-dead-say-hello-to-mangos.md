@@ -2,7 +2,7 @@
 date: '2026-06-15'
 excerpt: Meta, Anthropic, Nvidia, Google, OpenAI, and SpaceX — the new power bloc
   reshaping tech's next decade. MANGOS is the new FAANG.
-image: media/2026-06-09-faang-is-dead-say-hello-to-mangos.png
+image: https://bitroot.org/blog/media/2026-06-09-faang-is-dead-say-hello-to-mangos.png
 published_at: '2026-06-15T09:00:00.000000+00:00'
 sources:
 - https://techcrunch.com/2026/06/09/its-not-faang-anymore-its-mangos/

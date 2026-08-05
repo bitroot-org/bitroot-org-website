@@ -4,7 +4,7 @@ excerpt: AI is making vulnerability discovery faster than ever, but fixing those
   remains a growing challenge. OpenAI's new Patch the Planet initiative aims to help
   secure critical open-source software, signaling a broader shift in cybersecurity
   from finding bugs to remediating them before attackers can exploit them.
-image: media/2026-06-23-openai-doesnt-want-to-find-more-bugs-it-wants-to-p.jpg
+image: https://bitroot.org/blog/media/2026-06-23-openai-doesnt-want-to-find-more-bugs-it-wants-to-p.jpg
 published_at: '2026-06-23T06:03:49.689Z'
 sources:
 - https://openai.com/index/patch-the-planet/

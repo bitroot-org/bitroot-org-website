@@ -3,7 +3,7 @@ date: '2026-06-29'
 excerpt: 'OpenAI''s latest ChatGPT release notes reveal more than new features. From
   Personal Finance to Memory and Connectors, every update points to a bigger shift:
   AI is becoming more valuable by understanding users, not just answering prompts.'
-image: media/2026-06-29-chatgpt-isnt-just-getting-smarter-its-getting-more.webp
+image: https://bitroot.org/blog/media/2026-06-29-chatgpt-isnt-just-getting-smarter-its-getting-more.webp
 published_at: '2026-06-29T10:07:31.055Z'
 sources: []
 tags:

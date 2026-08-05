@@ -4,7 +4,7 @@ excerpt: Google AI Developers just revealed a game-changing update that enables 
   AI models like TranslateGemma 4B entirely in your browser, and we're excited to
   dive into the implications. This breakthrough uses WebGPU and Transformers.js v4
   to support 55 languages offline, with no server required.
-image: media/2026-03-11-breakthrough-run-ai-models-entirely-in-your-browse.jpg
+image: https://bitroot.org/blog/media/2026-03-11-breakthrough-run-ai-models-entirely-in-your-browse.jpg
 published_at: '2026-03-11T02:31:41.963148+00:00'
 sources:
 - https://x.com/i/status/2031037128734376089

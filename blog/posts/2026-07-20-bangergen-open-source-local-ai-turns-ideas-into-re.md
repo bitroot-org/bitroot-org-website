@@ -2,7 +2,7 @@
 date: '2026-07-20'
 excerpt: BangerGen, a tool that refines rough ideas into scored, platform‑ready posts
   using local AI, is now open‑source and runs on Ollama with optional ComfyUI visuals.
-image: media/2026-07-20-bangergen-open-source-local-ai-turns-ideas-into-re.jpg
+image: https://bitroot.org/blog/media/2026-07-20-bangergen-open-source-local-ai-turns-ideas-into-re.jpg
 published_at: '2026-07-20T11:38:42.400572+00:00'
 sources:
 - https://x.com/DegenApeDev/status/2079011617795375453

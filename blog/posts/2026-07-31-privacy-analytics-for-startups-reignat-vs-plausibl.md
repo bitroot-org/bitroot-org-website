@@ -2,7 +2,7 @@
 date: '2026-07-31'
 excerpt: Google Analytics has GDPR fines hitting six figures. Your bootstrap budget
   can't absorb that hit.
-image: media/2026-07-31-privacy-analytics-for-startups-reignat-vs-plausibl.avif
+image: https://bitroot.org/blog/media/2026-07-31-privacy-analytics-for-startups-reignat-vs-plausibl.avif
 published_at: '2026-07-31T11:08:38.763Z'
 sources: []
 tags:

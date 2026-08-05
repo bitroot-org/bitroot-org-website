@@ -3,7 +3,7 @@ date: '2026-04-06'
 excerpt: Discover the top tools for picking colors and gradients, as shared by Albia,
   to take your design to the next level. From Coolors to Colorion, explore the best
   resources for designers and developers.
-image: media/2026-04-06-revolutionizing-design-top-tools-for-color-and-gra.jpg
+image: https://bitroot.org/blog/media/2026-04-06-revolutionizing-design-top-tools-for-color-and-gra.jpg
 published_at: '2026-04-06T19:15:35.540948+00:00'
 sources:
 - https://x.com/i/status/2040387276589682858

@@ -10,7 +10,7 @@ excerpt: 'Mockdown is alive again.
 
 
   http://www.mockdown.design'
-image: media/2026-03-11-reviving-mockdown-ai-powered-wireframing-revolutio.jpg
+image: https://bitroot.org/blog/media/2026-03-11-reviving-mockdown-ai-powered-wireframing-revolutio.jpg
 published_at: '2026-03-11T02:28:08.413578+00:00'
 sources:
 - https://x.com/i/status/2031152691502555592

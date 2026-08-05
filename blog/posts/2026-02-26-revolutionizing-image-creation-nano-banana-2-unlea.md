@@ -3,7 +3,7 @@ date: '2026-02-26'
 excerpt: "We’re launching Nano Banana 2, built on the latest Gemini Flash model.  \U0001F34C\n\nIt’s
   state-of-the-art for creating and editing images, combining Pro-level capabilities
   with lightning-fast speed. \U0001F9F5"
-image: media/2026-02-26-revolutionizing-image-creation-nano-banana-2-unlea.jpg
+image: https://bitroot.org/blog/media/2026-02-26-revolutionizing-image-creation-nano-banana-2-unlea.jpg
 published_at: '2026-02-26T16:40:45.348932+00:00'
 sources:
 - https://x.com/i/status/2027051577899380991

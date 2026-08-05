@@ -2,7 +2,7 @@
 date: '2026-02-05'
 excerpt: Claude Code introduces /insights, a command that analyzes your past month
   of usage to summarize projects and suggest workflow improvements.
-image: media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.jpg
+image: https://bitroot.org/blog/media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.jpg
 published_at: '2026-02-05T15:13:55.694372+00:00'
 sources:
 - https://x.com/i/status/2019173731042750509

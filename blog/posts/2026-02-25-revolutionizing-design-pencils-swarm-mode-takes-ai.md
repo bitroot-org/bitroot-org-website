@@ -10,7 +10,7 @@ excerpt: 'Pencil just crossed 100,000 users!
   Your autonomous design agency.
 
   Download now.'
-image: media/2026-02-25-revolutionizing-design-pencils-swarm-mode-takes-ai.jpg
+image: https://bitroot.org/blog/media/2026-02-25-revolutionizing-design-pencils-swarm-mode-takes-ai.jpg
 published_at: '2026-02-25T03:20:24.624709+00:00'
 sources:
 - https://x.com/i/status/2026329359838318906

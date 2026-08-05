@@ -3,7 +3,7 @@ date: '2026-07-07'
 excerpt: Ramp introduced "Ramp for Agents", letting AI agents set up a company's financial
   account, apply for credit, and start paying bills with a single prompt. The feature
   aims to replace manual paperwork with automated onboarding.
-image: media/2026-07-07-ramp-launches-aiagent-integration-for-company-onbo.jpg
+image: https://bitroot.org/blog/media/2026-07-07-ramp-launches-aiagent-integration-for-company-onbo.jpg
 published_at: '2026-07-07T18:06:33.991120+00:00'
 sources:
 - https://x.com/i/status/2074496959851713018

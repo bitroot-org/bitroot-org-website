@@ -2,7 +2,7 @@
 date: '2026-07-31'
 excerpt: 'Last week, OpenAI shipped something that changes that calculation: GPT-5.6
   Sol, with two improvements that matter.'
-image: media/2026-07-31-how-openais-20-efficiency-gain-extends-your-runway.jpg
+image: https://bitroot.org/blog/media/2026-07-31-how-openais-20-efficiency-gain-extends-your-runway.jpg
 published_at: '2026-07-31T12:40:37.657Z'
 sources: []
 tags:

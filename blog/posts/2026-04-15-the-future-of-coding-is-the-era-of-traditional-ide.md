@@ -3,7 +3,7 @@ date: '2026-04-15'
 excerpt: A new masterclass reveals how Anthropic uses Claude Code, a revolutionary
   tool that could make traditional IDEs obsolete by the end of the year, and explores
   non-coding pipeline opportunities
-image: media/2026-04-15-the-future-of-coding-is-the-era-of-traditional-ide.jpg
+image: https://bitroot.org/blog/media/2026-04-15-the-future-of-coding-is-the-era-of-traditional-ide.jpg
 published_at: '2026-04-15T02:02:07.974224+00:00'
 sources:
 - https://x.com/i/status/2044140545384296913

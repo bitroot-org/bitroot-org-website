@@ -4,7 +4,7 @@ excerpt: 'Here''s what founders need to know: the deal is real. The infrastructu
   is coming. But your API bill probably won''t drop until Q2 2027 at the earliest,
   and execution risk is baked into every step. For strategic context on current Claude
   pricing, see our Claude model selection guide.'
-image: media/2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a.jpg
+image: https://bitroot.org/blog/media/2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a.jpg
 published_at: '2026-08-05T05:41:04.303Z'
 sources: []
 tags:

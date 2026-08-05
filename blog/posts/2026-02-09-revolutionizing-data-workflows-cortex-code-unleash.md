@@ -3,7 +3,7 @@ date: '2026-02-09'
 excerpt: Cortex Code simplifies complex data workflows with natural language, making
   it a game-changer for developers and non-technical teams alike. This innovative
   tool is now generally available, offering a new way to interact with Snowflake environments.
-image: media/2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.jpg
+image: https://bitroot.org/blog/media/2026-02-09-revolutionizing-data-workflows-cortex-code-unleash.jpg
 published_at: '2026-02-09T02:47:28.866300+00:00'
 sources:
 - https://www.linkedin.com/posts/chanin-nantasenamat_watch-me-use-coco-to-build-a-streamlit-ugcPost-7424601007264833536-P64R?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&utm_campaign=share_via

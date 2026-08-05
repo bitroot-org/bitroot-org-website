@@ -2,7 +2,7 @@
 date: '2026-07-02'
 excerpt: Fish Audio has opened its top‑tier S2.1 Pro voice model to developers at
   no cost, offering 83 languages and unlimited usage via the existing API endpoint.
-image: media/2026-07-02-fish-audio-makes-s21-pro-tts-model-free-for-develo.jpg
+image: https://bitroot.org/blog/media/2026-07-02-fish-audio-makes-s21-pro-tts-model-free-for-develo.jpg
 published_at: '2026-07-02T02:59:18.132273+00:00'
 sources:
 - https://x.com/i/status/2072319320386883690

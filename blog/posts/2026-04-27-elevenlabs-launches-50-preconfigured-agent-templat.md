@@ -3,7 +3,7 @@ date: '2026-04-27'
 excerpt: ElevenLabs added Agent Templates, a library of more than 50 ready‑made ElevenAgents
   for support, sales, and operations. The templates bundle prompts, workflows, and
   integrations to speed up deployment.
-image: media/2026-04-27-elevenlabs-launches-50-preconfigured-agent-templat.jpg
+image: https://bitroot.org/blog/media/2026-04-27-elevenlabs-launches-50-preconfigured-agent-templat.jpg
 published_at: '2026-04-27T18:44:38.746367+00:00'
 sources:
 - https://x.com/i/status/2048794727881789930

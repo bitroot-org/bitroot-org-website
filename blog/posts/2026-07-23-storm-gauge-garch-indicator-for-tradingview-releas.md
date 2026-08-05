@@ -3,7 +3,7 @@ date: '2026-07-23'
 excerpt: The Storm Gauge, an open‑source TradingView indicator that applies a GARCH
   volatility model, is now installable via a one‑line Claude Code command and shows
   early backtest gains on Bitcoin.
-image: media/2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas.jpg
+image: https://bitroot.org/blog/media/2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas.jpg
 published_at: '2026-07-23T11:02:28.818932+00:00'
 sources:
 - https://x.com/milesdeutscher/status/2080163535250948523

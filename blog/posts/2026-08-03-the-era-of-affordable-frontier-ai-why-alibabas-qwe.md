@@ -4,7 +4,7 @@ excerpt: On August 3, 2026, Alibaba officially unveiled Qwen3.8-Max, a 2.4-trill
   mixture-of-experts model designed to compete with leading frontier models, now available
   via QwenCloud. But this isn't just another model release. This is the moment proprietary
   AI started becoming a commodity.
-image: media/2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe.jpg
+image: https://bitroot.org/blog/media/2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe.jpg
 published_at: '2026-08-03T12:36:35.803Z'
 sources: []
 tags:

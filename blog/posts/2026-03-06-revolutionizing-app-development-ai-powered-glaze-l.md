@@ -3,7 +3,7 @@ date: '2026-03-06'
 excerpt: "Today we're launching Glaze \U0001F4A0\n\nCreate any desktop app in minutes
   by chatting with AI.\nBeautiful, powerful, and truly personal.\n\nLearn more on
   https://glazeapp.com\nFollow @glazeapps for updates."
-image: media/2026-03-06-revolutionizing-app-development-ai-powered-glaze-l.png
+image: https://bitroot.org/blog/media/2026-03-06-revolutionizing-app-development-ai-powered-glaze-l.png
 published_at: '2026-03-06T02:08:28.808014+00:00'
 sources:
 - https://x.com/i/status/2029180822838759703

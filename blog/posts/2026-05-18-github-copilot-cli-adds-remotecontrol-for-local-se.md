@@ -3,7 +3,7 @@ date: '2026-05-18'
 excerpt: GitHub’s Copilot CLI now supports Remote Control, letting developers start
   a session on one machine and pick it up on another. The feature is generally available
   and works with both CLI and VS Code sessions.
-image: media/2026-05-18-github-copilot-cli-adds-remotecontrol-for-local-se.jpg
+image: https://bitroot.org/blog/media/2026-05-18-github-copilot-cli-adds-remotecontrol-for-local-se.jpg
 published_at: '2026-05-18T18:31:40.213687+00:00'
 sources:
 - https://x.com/i/status/2056420570745450864

@@ -3,7 +3,7 @@ date: '2026-07-13'
 excerpt: HyperTexting is a new iPhone app that transforms the open web into a scrollable
   social feed using RSS. Learn how it works, its key features, benefits, drawbacks,
   and why it could be a compelling alternative to algorithm-driven social media.
-image: media/2026-07-13-hypertexting-app-turns-the-open-web-into-a-scrolla.png
+image: https://bitroot.org/blog/media/2026-07-13-hypertexting-app-turns-the-open-web-into-a-scrolla.png
 published_at: '2026-07-13T13:02:38.054Z'
 sources:
 - https://techcrunch.com/2026/07/10/a-new-app-hypertexting-turns-the-open-web-into-a-scrollable-social-media-like-feed/

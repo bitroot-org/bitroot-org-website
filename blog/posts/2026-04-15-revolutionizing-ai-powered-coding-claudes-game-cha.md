@@ -5,7 +5,7 @@ excerpt: 'We''ve redesigned Claude Code on desktop.
 
   You can now run multiple Claude sessions side by side from one window, with a new
   sidebar to manage them all.'
-image: media/2026-04-15-revolutionizing-ai-powered-coding-claudes-game-cha.jpg
+image: https://bitroot.org/blog/media/2026-04-15-revolutionizing-ai-powered-coding-claudes-game-cha.jpg
 published_at: '2026-04-15T01:54:44.989876+00:00'
 sources:
 - https://x.com/i/status/2044131493966909862

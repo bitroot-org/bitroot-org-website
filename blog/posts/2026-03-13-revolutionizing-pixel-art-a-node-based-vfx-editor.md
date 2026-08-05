@@ -1,7 +1,7 @@
 ---
 date: '2026-03-13'
 excerpt: "Pixel Composer : un éditeur VFX à base de nodes pour le pixel art \nhttps://github.com/Ttanasart-pt/Pixel-Composer"
-image: media/2026-03-13-revolutionizing-pixel-art-a-node-based-vfx-editor.jpg
+image: https://bitroot.org/blog/media/2026-03-13-revolutionizing-pixel-art-a-node-based-vfx-editor.jpg
 published_at: '2026-03-13T15:55:32.077939+00:00'
 sources:
 - https://x.com/i/status/2032436603453395361

@@ -2,7 +2,7 @@
 date: '2026-07-11'
 excerpt: The first AI model an engineering team trusted to work through the night
   — and what it took to get there.
-image: media/2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual.jpg
+image: https://bitroot.org/blog/media/2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual.jpg
 published_at: '2026-07-11T06:29:02.726Z'
 sources:
 - https://claude.com/blog/working-at-the-frontier-how-cognition-trusts-claude-fable-5-to-work-through-the-night

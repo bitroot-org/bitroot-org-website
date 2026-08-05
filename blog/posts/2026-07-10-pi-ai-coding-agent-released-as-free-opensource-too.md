@@ -2,7 +2,7 @@
 date: '2026-07-10'
 excerpt: Pi arrives on GitHub with four built‑in utilities, a 1,000‑token system prompt,
   and full visibility into every model call.
-image: media/2026-07-10-pi-ai-coding-agent-released-as-free-opensource-too.jpg
+image: https://bitroot.org/blog/media/2026-07-10-pi-ai-coding-agent-released-as-free-opensource-too.jpg
 published_at: '2026-07-10T11:44:39.729867+00:00'
 sources:
 - https://x.com/fusionaivisuals/status/2075250024519438457

@@ -3,7 +3,7 @@ date: '2026-04-22'
 excerpt: Zed's Parallel Agents is a game-changer for developers, allowing multiple
   agents to run simultaneously, streamlining workflows and boosting productivity.
   This innovation is set to transform the way we work on projects.
-image: media/2026-04-22-revolutionizing-productivity-parallel-agents-unlea.jpg
+image: https://bitroot.org/blog/media/2026-04-22-revolutionizing-productivity-parallel-agents-unlea.jpg
 published_at: '2026-04-22T17:52:59.314288+00:00'
 sources:
 - https://x.com/i/status/2047004387961106435

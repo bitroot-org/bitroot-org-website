@@ -4,7 +4,7 @@ excerpt: LangChain introduces LangSmith Skills and CLI, empowering coding agents
   take charge of their own development, and we're excited to dive into the implications
   and potential use cases. This breakthrough enables agents to debug, create datasets,
   and run experiments natively through the terminal.
-image: media/2026-03-06-revolutionizing-agent-development-langsmith-skills.jpg
+image: https://bitroot.org/blog/media/2026-03-06-revolutionizing-agent-development-langsmith-skills.jpg
 published_at: '2026-03-06T02:09:59.761447+00:00'
 sources:
 - https://x.com/i/status/2029272199073354105

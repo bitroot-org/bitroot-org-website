@@ -2,7 +2,7 @@
 date: '2026-07-23'
 excerpt: MIT and Toyota released CarCrashNet, a 15k‑plus crash simulation dataset,
   and the open‑source FiftyOne library can ingest it for interactive exploration.
-image: media/2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now.jpg
+image: https://bitroot.org/blog/media/2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now.jpg
 published_at: '2026-07-23T11:01:56.513076+00:00'
 sources:
 - https://x.com/jimmy_voxel51/status/2080171071756464329

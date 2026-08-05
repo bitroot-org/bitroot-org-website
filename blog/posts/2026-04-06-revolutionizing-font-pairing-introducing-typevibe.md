@@ -3,7 +3,7 @@ date: '2026-04-06'
 excerpt: Typevibe is a game-changing tool that simplifies font pairing, offering unique
   recommendations and 32 design templates to streamline your design process. This
   innovative solution is a must-try for developers and designers alike.
-image: media/2026-04-06-revolutionizing-font-pairing-introducing-typevibe.jpg
+image: https://bitroot.org/blog/media/2026-04-06-revolutionizing-font-pairing-introducing-typevibe.jpg
 published_at: '2026-04-06T19:13:43.851217+00:00'
 sources:
 - https://x.com/i/status/2040969883236622484

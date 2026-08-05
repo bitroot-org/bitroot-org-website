@@ -3,7 +3,7 @@ date: '2026-04-22'
 excerpt: Claude Code introduces Ultrareview, a game-changing feature that harnesses
   the power of cloud-based bug-hunting agents to streamline code review. This innovation
   promises to simplify the development process and improve code quality.
-image: media/2026-04-22-revolutionizing-code-review-claude-code-unveils-ul.jpg
+image: https://bitroot.org/blog/media/2026-04-22-revolutionizing-code-review-claude-code-unveils-ul.jpg
 published_at: '2026-04-22T17:52:06.887665+00:00'
 sources:
 - https://x.com/i/status/2046999435239133246

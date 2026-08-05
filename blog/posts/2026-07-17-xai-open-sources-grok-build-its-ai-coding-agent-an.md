@@ -1,7 +1,7 @@
 ---
 date: '2026-07-17'
 excerpt: Explore the harness behind our coding agent and TUI.
-image: media/2026-07-17-xai-open-sources-grok-build-its-ai-coding-agent-an.png
+image: https://bitroot.org/blog/media/2026-07-17-xai-open-sources-grok-build-its-ai-coding-agent-an.png
 published_at: '2026-07-17T02:59:12.919750+00:00'
 sources:
 - https://x.ai/news/grok-build-open-source

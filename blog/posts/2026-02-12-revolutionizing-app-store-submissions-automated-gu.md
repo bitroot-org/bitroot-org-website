@@ -3,7 +3,7 @@ date: '2026-02-12'
 excerpt: A new CLI tool scans iOS apps against App Store guidelines, ensuring compliance
   and streamlining the submission process. This game-changing tool automates checks
   for payment, privacy, and metadata requirements, making it a must-have for developers.
-image: media/2026-02-12-revolutionizing-app-store-submissions-automated-gu.jpg
+image: https://bitroot.org/blog/media/2026-02-12-revolutionizing-app-store-submissions-automated-gu.jpg
 published_at: '2026-02-12T18:55:07.642085+00:00'
 sources:
 - https://x.com/i/status/2021661315329405174

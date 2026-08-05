@@ -2,7 +2,7 @@
 date: '2026-07-21'
 excerpt: Apple raised prices twice in three weeks. Hardware in June, subscriptions
   in July. Different cost drivers, compressed timeline, same strategic direction.
-image: media/2026-07-21-why-apple-raised-prices-across-hardware-subscripti.jpg
+image: https://bitroot.org/blog/media/2026-07-21-why-apple-raised-prices-across-hardware-subscripti.jpg
 published_at: '2026-07-21T05:16:09.877Z'
 sources: []
 tags: []

@@ -3,7 +3,7 @@ date: '2026-04-12'
 excerpt: "I can't go back to the regular YouTube UI after this \U0001F605\n\nObsidian
   Reader now makes the transcript interactive so you can scrub, highlight, auto-scroll.
   It feels so nice."
-image: media/2026-04-12-revolutionizing-video-consumption-interactive-tran.jpg
+image: https://bitroot.org/blog/media/2026-04-12-revolutionizing-video-consumption-interactive-tran.jpg
 published_at: '2026-04-12T05:50:30.271430+00:00'
 sources:
 - https://x.com/i/status/2042683393247449148

@@ -3,7 +3,7 @@ date: '2026-07-16'
 excerpt: Inkling, the first open model from Thinky Machines, ships 975 B parameters,
   1 M token context, and native text, image, and audio reasoning, with a ready‑to‑run
   stack.
-image: media/2026-07-16-inkling-model-released-with-975b-parameters-and-mu.jpg
+image: https://bitroot.org/blog/media/2026-07-16-inkling-model-released-with-975b-parameters-and-mu.jpg
 published_at: '2026-07-16T10:50:43.044395+00:00'
 sources:
 - https://x.com/lmsysorg/status/2077457150046269779

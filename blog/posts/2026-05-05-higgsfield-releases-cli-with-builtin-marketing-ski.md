@@ -2,7 +2,7 @@
 date: '2026-05-05'
 excerpt: Higgsfield AI adds a command‑line tool that bundles a marketing skill, aiming
   to keep LLM token spend low while improving output quality.
-image: media/2026-05-05-higgsfield-releases-cli-with-builtin-marketing-ski.jpg
+image: https://bitroot.org/blog/media/2026-05-05-higgsfield-releases-cli-with-builtin-marketing-ski.jpg
 published_at: '2026-05-05T18:21:46.484066+00:00'
 sources:
 - https://x.com/i/status/2051346056039039487

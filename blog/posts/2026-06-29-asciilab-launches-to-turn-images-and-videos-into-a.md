@@ -2,7 +2,7 @@
 date: '2026-06-29'
 excerpt: "Turn your images and videos into ASCII art \U0001F47E\n\n ❋ http://javii.tools
   · asciilab launched!"
-image: media/2026-06-29-asciilab-launches-to-turn-images-and-videos-into-a.jpg
+image: https://bitroot.org/blog/media/2026-06-29-asciilab-launches-to-turn-images-and-videos-into-a.jpg
 published_at: '2026-06-29T19:10:15.086003+00:00'
 sources:
 - https://x.com/i/status/2071381213634347233

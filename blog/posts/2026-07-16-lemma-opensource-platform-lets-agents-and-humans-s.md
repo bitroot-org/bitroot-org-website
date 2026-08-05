@@ -2,7 +2,7 @@
 date: '2026-07-16'
 excerpt: Lemma is now open source and lets you wire AI agents with human reviewers
   using shared tables, with a quick‑start example that runs in under an hour.
-image: media/2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s.jpg
+image: https://bitroot.org/blog/media/2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s.jpg
 published_at: '2026-07-16T10:50:18.985040+00:00'
 sources:
 - https://x.com/LekhikaVyas/status/2077628443706155049

@@ -3,7 +3,7 @@ date: '2026-03-05'
 excerpt: Claude Code introduces a game-changing voice mode, allowing users to interact
   with the platform using voice commands, and it's rolling out to 5% of users now.
   This innovative feature is set to revolutionize the coding experience.
-image: media/2026-03-05-revolutionary-voice-mode-rolls-out-in-claude-code.jpg
+image: https://bitroot.org/blog/media/2026-03-05-revolutionary-voice-mode-rolls-out-in-claude-code.jpg
 published_at: '2026-03-05T08:15:46.678636+00:00'
 sources:
 - https://x.com/trq212/status/2028628570692890800?s=20

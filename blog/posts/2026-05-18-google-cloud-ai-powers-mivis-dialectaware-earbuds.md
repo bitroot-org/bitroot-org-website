@@ -2,7 +2,7 @@
 date: '2026-05-18'
 excerpt: What if earbuds understood every dialect perfectly? Inside is the Google
   Cloud AI architecture our Agents of Change, Mivi uses to make it real.
-image: media/2026-05-18-google-cloud-ai-powers-mivis-dialectaware-earbuds.jpg
+image: https://bitroot.org/blog/media/2026-05-18-google-cloud-ai-powers-mivis-dialectaware-earbuds.jpg
 media:
 - type: image
   url: https://pbs.twimg.com/media/HHxc2F1a8AA04zz.jpg?name=orig

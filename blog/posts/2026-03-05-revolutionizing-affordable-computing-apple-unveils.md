@@ -2,7 +2,7 @@
 date: '2026-03-05'
 excerpt: Apple today unveiled MacBook Neo, an all-new laptop that delivers the magic
   of the Mac at a breakthrough price.
-image: media/2026-03-05-revolutionizing-affordable-computing-apple-unveils.jpg
+image: https://bitroot.org/blog/media/2026-03-05-revolutionizing-affordable-computing-apple-unveils.jpg
 published_at: '2026-03-05T05:19:27.518087+00:00'
 sources:
 - https://share.google/Aoh06t6BFh9ZjAPJW

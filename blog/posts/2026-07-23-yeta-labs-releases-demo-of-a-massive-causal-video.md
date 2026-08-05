@@ -2,7 +2,7 @@
 date: '2026-07-23'
 excerpt: "We built a massive causal video model, using a mix of Ascend NPUs and NVIDIA
   GPUs on @yetalabs. Demo \U0001F447\n\nWaitlist @  https://world.yeta.ai"
-image: media/2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video.jpg
+image: https://bitroot.org/blog/media/2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video.jpg
 published_at: '2026-07-23T11:02:22.608662+00:00'
 sources:
 - https://x.com/Fried_rice/status/2080172920782066079

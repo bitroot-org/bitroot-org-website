@@ -3,7 +3,7 @@ date: '2026-05-17'
 excerpt: A community‑built, MIT‑licensed video editor called OpenCut matches CapCut’s
   core features without watermarks or subscriptions, and its code now has over 45 k
   stars on GitHub.
-image: media/2026-05-17-opencut-clones-capcut-hits-458k-github-stars.jpg
+image: https://bitroot.org/blog/media/2026-05-17-opencut-clones-capcut-hits-458k-github-stars.jpg
 published_at: '2026-05-17T18:50:42.414167+00:00'
 sources:
 - https://x.com/i/status/2055957914561732946

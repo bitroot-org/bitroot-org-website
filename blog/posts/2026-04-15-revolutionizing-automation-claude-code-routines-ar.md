@@ -3,7 +3,7 @@ date: '2026-04-15'
 excerpt: Claude Code Routines have arrived, allowing users to trigger templated agents
   via GitHub events or API, streamlining documentation and backlog maintenance. This
   innovation has the potential to transform the way developers work.
-image: media/2026-04-15-revolutionizing-automation-claude-code-routines-ar.jpg
+image: https://bitroot.org/blog/media/2026-04-15-revolutionizing-automation-claude-code-routines-ar.jpg
 published_at: '2026-04-15T01:55:39.100373+00:00'
 sources:
 - https://x.com/i/status/2044093913376706655

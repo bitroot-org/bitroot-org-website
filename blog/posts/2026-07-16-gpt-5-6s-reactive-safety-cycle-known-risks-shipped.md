@@ -5,7 +5,7 @@ excerpt: 'Five days after GPT-5.6 launched, it was deleting user files and crash
   Shumer''s Mac got wiped. A developer lost his production database. Then OpenAI announced
   GPT-Red, a "prevention tool," 11 hours after incidents went viral. This is the cycle:
   document risks → ship → users hit risks → announce fixes → next model s'
-image: media/2026-07-16-gpt-5-6s-reactive-safety-cycle-known-risks-shipped.jpg
+image: https://bitroot.org/blog/media/2026-07-16-gpt-5-6s-reactive-safety-cycle-known-risks-shipped.jpg
 published_at: '2026-07-16T05:35:32.741Z'
 sources: []
 tags:

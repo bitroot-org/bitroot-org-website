@@ -4,7 +4,7 @@ excerpt: 'Introducing Code Review, a new feature for Claude Code.
 
 
   When a PR opens, Claude dispatches a team of agents to hunt for bugs.'
-image: media/2026-03-09-revolutionizing-code-quality-claudes-ai-powered-co.jpg
+image: https://bitroot.org/blog/media/2026-03-09-revolutionizing-code-quality-claudes-ai-powered-co.jpg
 published_at: '2026-03-09T19:48:39.517894+00:00'
 sources:
 - https://x.com/i/status/2031088171262554195

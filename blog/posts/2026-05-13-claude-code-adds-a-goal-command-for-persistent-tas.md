@@ -2,7 +2,7 @@
 date: '2026-05-13'
 excerpt: 'How do you keep Claude working until the job is done? Claude Code helps
   with this in a few ways, including one we shipped recently: /goal.'
-image: media/2026-05-13-claude-code-adds-a-goal-command-for-persistent-tas.jpg
+image: https://bitroot.org/blog/media/2026-05-13-claude-code-adds-a-goal-command-for-persistent-tas.jpg
 published_at: '2026-05-13T14:36:50.586735+00:00'
 sources:
 - https://x.com/i/status/2054351031279186040

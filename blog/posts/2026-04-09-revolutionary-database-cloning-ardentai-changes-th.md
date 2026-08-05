@@ -3,7 +3,7 @@ date: '2026-04-09'
 excerpt: ArdentAI introduces instant Postgres database cloning, streamlining testing
   for developers and coding agents. This innovation reduces cloning time to under
   6 seconds, eliminating infrastructure management.
-image: media/2026-04-09-revolutionary-database-cloning-ardentai-changes-th.jpg
+image: https://bitroot.org/blog/media/2026-04-09-revolutionary-database-cloning-ardentai-changes-th.jpg
 published_at: '2026-04-09T02:58:06.763223+00:00'
 sources:
 - https://x.com/i/status/2041651193362182281

@@ -4,7 +4,7 @@ excerpt: MiniMax M2.5-HighSpeed is live, delivering 100 TPS and 3x faster infere
   speeds, designed for the next generation of Agent applications. This update is a
   game-changer for developers and the tech community, enabling faster and more efficient
   workflows.
-image: media/2026-02-16-minimax-m25-revolution-unleashing-3x-faster-infere.jpg
+image: https://bitroot.org/blog/media/2026-02-16-minimax-m25-revolution-unleashing-3x-faster-infere.jpg
 published_at: '2026-02-16T18:57:33.334402+00:00'
 sources:
 - https://x.com/i/status/2023066199995949350

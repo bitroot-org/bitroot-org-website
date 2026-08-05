@@ -1,7 +1,7 @@
 ---
 date: '2026-05-21'
 excerpt: Card hover animation experiment.
-image: media/2026-05-21-zsolt-kacso-shares-a-card-hover-animation-experime.jpg
+image: https://bitroot.org/blog/media/2026-05-21-zsolt-kacso-shares-a-card-hover-animation-experime.jpg
 published_at: '2026-05-21T13:00:48.758638+00:00'
 sources:
 - https://x.com/i/status/2056713047301902478

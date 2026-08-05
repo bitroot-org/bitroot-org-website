@@ -3,7 +3,7 @@ date: '2026-05-05'
 excerpt: Nexu has open‑sourced its Open Design Skills library, a ready‑made system
   for turning raw HTML into polished, magazine‑grade pages. It could speed up landing‑page
   iterations for small teams.
-image: media/2026-05-05-open-design-skills-released-as-open-source-design.jpg
+image: https://bitroot.org/blog/media/2026-05-05-open-design-skills-released-as-open-source-design.jpg
 published_at: '2026-05-05T18:19:27.244311+00:00'
 sources:
 - https://x.com/i/status/2051203959142895896

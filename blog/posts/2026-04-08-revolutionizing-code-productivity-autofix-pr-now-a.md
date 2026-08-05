@@ -3,7 +3,7 @@ date: '2026-04-08'
 excerpt: The new /autofix-pr command line tool streamlines code fixes and boosts developer
   productivity. This game-changing feature allows for seamless session sharing and
   automated PR fixes.
-image: media/2026-04-08-revolutionizing-code-productivity-autofix-pr-now-a.jpg
+image: https://bitroot.org/blog/media/2026-04-08-revolutionizing-code-productivity-autofix-pr-now-a.jpg
 published_at: '2026-04-08T02:23:48.958923+00:00'
 sources:
 - https://x.com/i/status/2041654973491245509

@@ -3,7 +3,7 @@ date: '2026-02-06'
 excerpt: Twitter's Claude Code now supports agent teams, enabling parallel work and
   coordination, and we're excited to explore its potential. This update is a game-changer
   for developers, allowing for faster and more efficient coding.
-image: media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.jpg
+image: https://bitroot.org/blog/media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.jpg
 published_at: '2026-02-06T11:06:27.201899+00:00'
 sources:
 - https://x.com/lydiahallie/status/2019469032844587505?s=20

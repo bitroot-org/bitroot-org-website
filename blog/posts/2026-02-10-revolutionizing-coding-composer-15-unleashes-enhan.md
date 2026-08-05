@@ -1,7 +1,7 @@
 ---
 date: '2026-02-10'
 excerpt: Improved reasoning over challenging coding tasks by scaling RL over 20x.
-image: media/2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan.png
+image: https://bitroot.org/blog/media/2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan.png
 published_at: '2026-02-10T19:19:19.902983+00:00'
 sources:
 - https://cursor.com/blog/composer-1-5

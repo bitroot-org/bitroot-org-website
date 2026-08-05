@@ -2,7 +2,7 @@
 date: '2026-06-16'
 excerpt: Meta is adding an AI assistant and a desktop version to its Edits platform,
   taking aim at CapCut. Here's what it means for startups producing short-form content.
-image: media/2026-06-16-meta-edits-vs-capcut.png
+image: https://bitroot.org/blog/media/2026-06-16-meta-edits-vs-capcut.png
 published_at: '2026-06-16T09:00:00.000000+00:00'
 sources:
 - https://techcrunch.com/2026/06/11/metas-edits-app-is-getting-an-ai-assistant-and-a-desktop-version/

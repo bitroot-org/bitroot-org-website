@@ -4,7 +4,7 @@ excerpt: GitHub Copilot CLI automates security triage, allowing devs to identify
   address vulnerabilities quickly, and we're excited to share the implications of
   this update with the community. This tool is set to revolutionize the way developers
   tackle security debt, making it a must-know for anyone in the industry.
-image: media/2026-04-09-revolutionizing-security-triage-github-copilot-cli.jpg
+image: https://bitroot.org/blog/media/2026-04-09-revolutionizing-security-triage-github-copilot-cli.jpg
 published_at: '2026-04-09T02:57:05.082871+00:00'
 sources:
 - https://x.com/i/status/2042008695035355537

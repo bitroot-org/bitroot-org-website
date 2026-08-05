@@ -2,7 +2,7 @@
 date: '2026-07-29'
 excerpt: 'Cursor Start at ₹649/month vs $20 Pro: what developers actually get. Honest
   comparison of features, pricing tiers, and when each makes sense for your workflow.'
-image: media/2026-07-29-cursor-start-at-649-month-what-developers-in-india.png
+image: https://bitroot.org/blog/media/2026-07-29-cursor-start-at-649-month-what-developers-in-india.png
 published_at: '2026-07-29T03:55:44.130Z'
 sources: []
 tags:

@@ -3,7 +3,7 @@ date: '2026-03-24'
 excerpt: Claude's latest update enables the AI to use your computer to complete tasks,
   opening up new possibilities for automation and efficiency. This breakthrough feature
   is set to revolutionize the way we work and interact with our devices.
-image: media/2026-03-24-revolutionizing-productivity-claudes-game-changing.jpg
+image: https://bitroot.org/blog/media/2026-03-24-revolutionizing-productivity-claudes-game-changing.jpg
 published_at: '2026-03-24T06:02:03.866560+00:00'
 sources:
 - https://x.com/i/status/2036195789601374705

@@ -4,7 +4,7 @@ excerpt: MiniMax_Agent has launched MaxClaw, a game-changing AI-powered chatbot 
   fully unlocked and ready to transform the way we interact with technology. With
   its cutting-edge features and seamless integration, MaxClaw is poised to revolutionize
   the world of chatbots.
-image: media/2026-02-25-revolutionary-ai-powered-chatbot-unleashed-meet-ma.jpg
+image: https://bitroot.org/blog/media/2026-02-25-revolutionary-ai-powered-chatbot-unleashed-meet-ma.jpg
 published_at: '2026-02-25T18:06:06.019549+00:00'
 sources:
 - https://x.com/i/status/2026493668417482923

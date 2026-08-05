@@ -2,7 +2,7 @@
 date: '2026-03-14'
 excerpt: "Claude Code Desktop has a built-in MCP for frontend preview\n\nIt activates
   automatically when you ask Claude to spin up a dev server\n\nSave this thread \U0001F447"
-image: media/2026-03-14-revolutionary-coding-claude-code-desktop-unveils-g.jpg
+image: https://bitroot.org/blog/media/2026-03-14-revolutionary-coding-claude-code-desktop-unveils-g.jpg
 published_at: '2026-03-14T19:10:20.589711+00:00'
 sources:
 - https://x.com/i/status/2032856141059747975

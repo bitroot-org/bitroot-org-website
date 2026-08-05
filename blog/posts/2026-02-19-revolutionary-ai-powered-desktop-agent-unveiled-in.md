@@ -8,7 +8,7 @@ excerpt: 'Today I''m launching Interpreter.
 
 
   Runs offline, works with any model, and it''s free.'
-image: media/2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in.jpg
+image: https://bitroot.org/blog/media/2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in.jpg
 published_at: '2026-02-19T19:04:38.946484+00:00'
 sources:
 - https://x.com/i/status/2024227639087813035

@@ -1,7 +1,7 @@
 ---
 date: '2026-07-24'
 excerpt: '''Claude Code on desktop now works with the iOS simulator.'
-image: media/2026-07-23-claude-code-desktop-adds-ios-simulator-panel-in-pu.jpg
+image: https://bitroot.org/blog/media/2026-07-23-claude-code-desktop-adds-ios-simulator-panel-in-pu.jpg
 published_at: '2026-07-23T02:06:08.989579+00:00'
 sources:
 - https://x.com/i/status/2079674432038248611

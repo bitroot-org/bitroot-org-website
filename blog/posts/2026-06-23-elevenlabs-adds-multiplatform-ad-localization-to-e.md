@@ -3,7 +3,7 @@ date: '2026-06-23'
 excerpt: ElevenLabs' new Ads Engine lets you pull Google, Meta, and LinkedIn campaigns
   into ElevenCreative, translate them into 50+ languages, and push the results back.
   Engineers need to weigh integration effort against potential reach.
-image: media/2026-06-23-elevenlabs-adds-multiplatform-ad-localization-to-e.jpg
+image: https://bitroot.org/blog/media/2026-06-23-elevenlabs-adds-multiplatform-ad-localization-to-e.jpg
 published_at: '2026-06-23T01:54:26.240535+00:00'
 sources:
 - https://x.com/i/status/2069111326987673761

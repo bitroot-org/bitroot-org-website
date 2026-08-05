@@ -2,7 +2,7 @@
 date: '2026-06-25'
 excerpt: "FIGMA MOTION IS HERE \nFIGMA MOTION IS HERE \nFIGMA MOTION IS HERE \n\nLive
   from Config 2026"
-image: media/2026-06-25-figma-launches-motion-feature-at-config-2026.jpg
+image: https://bitroot.org/blog/media/2026-06-25-figma-launches-motion-feature-at-config-2026.jpg
 published_at: '2026-06-25T02:10:16.079057+00:00'
 sources:
 - https://x.com/i/status/2069827742800253230

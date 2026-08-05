@@ -2,7 +2,7 @@
 date: '2026-02-10'
 excerpt: India's Anthropic Software has taken the U.S. AI giant to court over a name
   dispute.
-image: media/2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.jpg
+image: https://bitroot.org/blog/media/2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.jpg
 published_at: '2026-02-10T02:07:30.583768+00:00'
 sources:
 - https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/

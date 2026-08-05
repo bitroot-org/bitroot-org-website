@@ -5,7 +5,7 @@ excerpt: 'Live from Code with Claude: we''re launching dreaming in Claude Manage
 
 
   Outcomes, multiagent orchestration, and webhooks are now in public beta.'
-image: media/2026-05-07-claude-managed-agents-launches-dreaming-mode-and-b.jpg
+image: https://bitroot.org/blog/media/2026-05-07-claude-managed-agents-launches-dreaming-mode-and-b.jpg
 published_at: '2026-05-07T02:15:45.629079+00:00'
 sources:
 - https://x.com/i/status/2052067399088664981

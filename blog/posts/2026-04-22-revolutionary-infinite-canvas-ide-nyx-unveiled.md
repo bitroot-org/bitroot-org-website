@@ -3,7 +3,7 @@ date: '2026-04-22'
 excerpt: Kraggi's Nyx is a game-changing infinite-canvas IDE that integrates multiple
   AI models, streamlining coding and development. This innovative platform is set
   to transform the way developers work.
-image: media/2026-04-22-revolutionary-infinite-canvas-ide-nyx-unveiled.jpg
+image: https://bitroot.org/blog/media/2026-04-22-revolutionary-infinite-canvas-ide-nyx-unveiled.jpg
 published_at: '2026-04-22T18:03:03.557809+00:00'
 sources:
 - https://x.com/i/status/2046827332124430774

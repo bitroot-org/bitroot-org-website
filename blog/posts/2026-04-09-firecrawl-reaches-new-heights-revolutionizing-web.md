@@ -4,7 +4,7 @@ excerpt: Firecrawl has reached the top 100 GitHub repos, offering a game-changin
   API for AI agents to search, scrape, and interact with the web, trusted by over
   a million developers and thousands of enterprise teams. This milestone underscores
   the significance of Firecrawl's innovative approach to web interaction.
-image: media/2026-04-09-firecrawl-reaches-new-heights-revolutionizing-web.jpg
+image: https://bitroot.org/blog/media/2026-04-09-firecrawl-reaches-new-heights-revolutionizing-web.jpg
 published_at: '2026-04-09T03:00:35.483804+00:00'
 sources:
 - https://x.com/i/status/2041909075110510969

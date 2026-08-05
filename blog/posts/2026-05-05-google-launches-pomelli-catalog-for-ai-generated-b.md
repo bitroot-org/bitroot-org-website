@@ -2,7 +2,7 @@
 date: '2026-05-05'
 excerpt: Google's new Pomelli Catalog lets you feed product data and instantly receive
   AI-crafted campaign copy and photos, free of charge.
-image: media/2026-05-05-google-launches-pomelli-catalog-for-ai-generated-b.jpg
+image: https://bitroot.org/blog/media/2026-05-05-google-launches-pomelli-catalog-for-ai-generated-b.jpg
 published_at: '2026-05-05T18:22:02.893739+00:00'
 sources:
 - https://x.com/i/status/2051693177053340073

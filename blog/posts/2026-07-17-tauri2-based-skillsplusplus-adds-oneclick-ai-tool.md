@@ -5,7 +5,7 @@ excerpt: '用 Tauri 2 打造的桌面端 Skills 管理工具，聚合 skills sh�
 
 
   https://github.com/cpcc/SkillsPlusPlus'
-image: media/2026-07-17-tauri2-based-skillsplusplus-adds-oneclick-ai-tool.jpg
+image: https://bitroot.org/blog/media/2026-07-17-tauri2-based-skillsplusplus-adds-oneclick-ai-tool.jpg
 published_at: '2026-07-17T10:40:08.618750+00:00'
 sources:
 - https://x.com/QingQ77/status/2077991939404603697

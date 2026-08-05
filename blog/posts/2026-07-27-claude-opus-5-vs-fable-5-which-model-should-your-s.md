@@ -2,7 +2,7 @@
 date: '2026-07-27'
 excerpt: Opus 5 outperforms Fable 5 on benchmarks, and costs 60% less. Here's why
   Opus 5 is now the default Claude model for SaaS, and when to upgrade from Opus 4.8.
-image: media/2026-07-27-claude-opus-5-vs-fable-5-which-model-should-your-s.webp
+image: https://bitroot.org/blog/media/2026-07-27-claude-opus-5-vs-fable-5-which-model-should-your-s.webp
 published_at: '2026-07-27T01:31:04.114Z'
 sources: []
 tags:

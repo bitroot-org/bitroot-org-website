@@ -4,7 +4,7 @@ excerpt: OpenAI's ChatGPT Images 2.0 is a game-changer for visual creation, offe
   advanced image generation capabilities with sharper editing and richer layouts.
   This breakthrough technology has the potential to revolutionize various industries,
   from graphic design to entertainment.
-image: media/2026-04-22-revolutionizing-visual-creation-chatgpt-images-20.jpg
+image: https://bitroot.org/blog/media/2026-04-22-revolutionizing-visual-creation-chatgpt-images-20.jpg
 published_at: '2026-04-22T17:54:03.692129+00:00'
 sources:
 - https://x.com/i/status/2046670977145372771

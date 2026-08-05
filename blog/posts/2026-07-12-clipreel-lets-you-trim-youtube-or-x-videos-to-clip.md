@@ -2,7 +2,7 @@
 date: '2026-07-12'
 excerpt: ClipReel is a free web app that trims YouTube or X links into short clips,
   adds AI captions, and exports in any aspect ratio without pulling the full video.
-image: media/2026-07-12-clipreel-lets-you-trim-youtube-or-x-videos-to-clip.jpg
+image: https://bitroot.org/blog/media/2026-07-12-clipreel-lets-you-trim-youtube-or-x-videos-to-clip.jpg
 published_at: '2026-07-12T10:20:29.718394+00:00'
 sources:
 - https://x.com/Nirmaldarji16/status/2076172621478314162

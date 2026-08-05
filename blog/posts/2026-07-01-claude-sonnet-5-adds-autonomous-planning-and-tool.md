@@ -2,7 +2,7 @@
 date: '2026-07-01'
 excerpt: Anthropic's Claude Sonnet 5 can plan, browse the web, and run terminal commands
   on its own, narrowing the gap with larger, pricier models.
-image: media/2026-07-01-claude-sonnet-5-adds-autonomous-planning-and-tool.jpg
+image: https://bitroot.org/blog/media/2026-07-01-claude-sonnet-5-adds-autonomous-planning-and-tool.jpg
 published_at: '2026-07-01T03:17:23.180319+00:00'
 sources:
 - https://x.com/i/status/2072017450611142835

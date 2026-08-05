@@ -3,7 +3,7 @@ date: '2026-05-30'
 excerpt: Pika announced a free‑form Founder Starter Kit that bundles four branding
   assets and is accessible through the Claude‑compatible Pika MCP. Engineers can test
   it to give their product a quick marketing lift.
-image: media/2026-05-30-pika-launches-founder-starter-kit-for-claude-users.jpg
+image: https://bitroot.org/blog/media/2026-05-30-pika-launches-founder-starter-kit-for-claude-users.jpg
 published_at: '2026-05-30T09:07:20.913182+00:00'
 sources:
 - https://x.com/i/status/2060053796001399035

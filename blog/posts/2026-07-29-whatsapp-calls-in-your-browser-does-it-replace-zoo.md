@@ -2,7 +2,7 @@
 date: '2026-07-29'
 excerpt: WhatsApp calls just landed in your browser. No app needed. No download. July
   28, 2026 changed how you think about video calling.
-image: media/2026-07-29-whatsapp-calls-in-your-browser-does-it-replace-zoo.jpg
+image: https://bitroot.org/blog/media/2026-07-29-whatsapp-calls-in-your-browser-does-it-replace-zoo.jpg
 published_at: '2026-07-29T07:59:40.213Z'
 sources: []
 tags:

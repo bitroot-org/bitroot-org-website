@@ -2,7 +2,7 @@
 date: '2026-06-23'
 excerpt: Three announcements from our keynote at Compile, including how we're training
   a new model with SpaceX.
-image: media/2026-06-23-cursor-announces-new-model-built-with-spacex-data.jpg
+image: https://bitroot.org/blog/media/2026-06-23-cursor-announces-new-model-built-with-spacex-data.jpg
 published_at: '2026-06-23T01:42:02.901085+00:00'
 sources:
 - https://x.com/i/status/2069149296436330776

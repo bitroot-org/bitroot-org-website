@@ -3,7 +3,7 @@ date: '2026-07-30'
 excerpt: MCP now runs without session state, so you can host it on serverless platforms
   or edge nodes and scale behind any load balancer. The shift removes a long‑standing
   operational constraint but adds new considerations.
-image: media/2026-07-29-mcp-becomes-stateless-enabling-serverless-and-edge.jpg
+image: https://bitroot.org/blog/media/2026-07-29-mcp-becomes-stateless-enabling-serverless-and-edge.jpg
 published_at: '2026-07-29T02:41:43.581641+00:00'
 sources:
 - https://x.com/i/status/2082164250496348268

@@ -2,7 +2,7 @@
 date: '2026-02-16'
 excerpt: "Would multi-session support for the Chrome DevTools MCP server be useful
   for you? \U0001F916✖️\U0001F30D Chime into the discussion on GitHub: https://github.com/ChromeDevTools/chrome-devtools-mcp/issues/926"
-image: media/2026-02-16-revolutionizing-debugging-chrome-devtools-gets-mul.jpg
+image: https://bitroot.org/blog/media/2026-02-16-revolutionizing-debugging-chrome-devtools-gets-mul.jpg
 published_at: '2026-02-16T19:00:38.061586+00:00'
 sources:
 - https://x.com/i/status/2023370190269116568

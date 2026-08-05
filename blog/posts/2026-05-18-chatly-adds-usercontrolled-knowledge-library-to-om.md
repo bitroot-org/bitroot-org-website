@@ -3,7 +3,7 @@ date: '2026-05-18'
 excerpt: Chatly’s new Sources library lets teams upload files and references that
   OmniAgent uses as the primary context for every answer, cutting down on copy‑paste.
   The feature is free to try but may carry hidden costs and privacy considerations.
-image: media/2026-05-18-chatly-adds-usercontrolled-knowledge-library-to-om.jpg
+image: https://bitroot.org/blog/media/2026-05-18-chatly-adds-usercontrolled-knowledge-library-to-om.jpg
 published_at: '2026-05-18T18:36:54.800233+00:00'
 sources:
 - https://x.com/i/status/2056408432677142920

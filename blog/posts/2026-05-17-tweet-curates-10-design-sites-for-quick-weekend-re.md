@@ -2,7 +2,7 @@
 date: '2026-05-17'
 excerpt: A recent tweet lists ten free or low‑cost design sites, from wireframe generators
   to font libraries, giving engineers a ready‑made stash of UI assets for fast prototyping.
-image: media/2026-05-17-tweet-curates-10-design-sites-for-quick-weekend-re.jpg
+image: https://bitroot.org/blog/media/2026-05-17-tweet-curates-10-design-sites-for-quick-weekend-re.jpg
 published_at: '2026-05-17T18:18:31.965191+00:00'
 sources:
 - https://x.com/i/status/2055922458876608947

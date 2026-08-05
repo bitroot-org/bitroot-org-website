@@ -3,7 +3,7 @@ date: '2026-07-23'
 excerpt: A developer has released World Monitor, a free GitHub project that aggregates
   500+ news feeds, AI summaries, and live 3D maps—features once locked behind multi‑million‑dollar
   contracts.
-image: media/2026-07-23-world-monitor-opensources-a-billiondollar-warroom.jpg
+image: https://bitroot.org/blog/media/2026-07-23-world-monitor-opensources-a-billiondollar-warroom.jpg
 published_at: '2026-07-23T11:03:06.323090+00:00'
 sources:
 - https://x.com/Abobsterina/status/2080032942810706375

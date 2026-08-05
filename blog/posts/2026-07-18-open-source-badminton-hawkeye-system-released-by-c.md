@@ -2,7 +2,7 @@
 date: '2026-07-18'
 excerpt: A Chinese developer published a fully local, Apache 2.0‑licensed badminton
   Hawk‑Eye pipeline with code, model weights, and a zero‑cost deployment option.
-image: media/2026-07-18-open-source-badminton-hawkeye-system-released-by-c.jpg
+image: https://bitroot.org/blog/media/2026-07-18-open-source-badminton-hawkeye-system-released-by-c.jpg
 published_at: '2026-07-18T10:13:07.429677+00:00'
 sources:
 - https://x.com/0xTria/status/2078329275065696557

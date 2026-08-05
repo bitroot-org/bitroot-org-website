@@ -2,7 +2,7 @@
 date: '2026-07-22'
 excerpt: Patchy 0.82 brings Affinity Designer (.af) import and a new breakout test
   inside layered images, with builds for Windows, macOS, and Linux.
-image: media/2026-07-22-patchy-082-adds-affinity-import-and-scripting-test.jpg
+image: https://bitroot.org/blog/media/2026-07-22-patchy-082-adds-affinity-import-and-scripting-test.jpg
 published_at: '2026-07-22T10:59:49.283047+00:00'
 sources:
 - https://x.com/rtsoft/status/2079761713381970211

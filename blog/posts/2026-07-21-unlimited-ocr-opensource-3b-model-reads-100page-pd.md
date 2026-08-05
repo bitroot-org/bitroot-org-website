@@ -2,7 +2,7 @@
 date: '2026-07-21'
 excerpt: Baidu’s Unlimited-OCR model can process whole 100‑page PDFs locally with
   a 32K context window, offering a free alternative to cloud OCR services.
-image: media/2026-07-21-unlimited-ocr-opensource-3b-model-reads-100page-pd.jpg
+image: https://bitroot.org/blog/media/2026-07-21-unlimited-ocr-opensource-3b-model-reads-100page-pd.jpg
 published_at: '2026-07-21T10:59:05.160906+00:00'
 sources:
 - https://x.com/AlexMurdock5499/status/2079433722252657068

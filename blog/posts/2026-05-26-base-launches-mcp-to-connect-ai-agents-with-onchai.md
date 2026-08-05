@@ -3,7 +3,7 @@ date: '2026-05-26'
 excerpt: Base introduced MCP, a gateway that lets AI agents link to a Base account,
   trade assets, and call plugins from other apps. Early adopters should weigh the
   convenience against the nascent security model.
-image: media/2026-05-26-base-launches-mcp-to-connect-ai-agents-with-onchai.jpg
+image: https://bitroot.org/blog/media/2026-05-26-base-launches-mcp-to-connect-ai-agents-with-onchai.jpg
 published_at: '2026-05-26T19:31:24.396110+00:00'
 sources:
 - https://x.com/i/status/2059305907385704529

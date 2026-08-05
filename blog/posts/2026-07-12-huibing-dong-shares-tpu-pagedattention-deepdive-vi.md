@@ -2,7 +2,7 @@
 date: '2026-07-12'
 excerpt: A new 30‑minute video and blog explain how paged attention can be implemented
   on Google’s TPUs, highlighting performance gains and engineering trade‑offs.
-image: media/2026-07-12-huibing-dong-shares-tpu-pagedattention-deepdive-vi.jpg
+image: https://bitroot.org/blog/media/2026-07-12-huibing-dong-shares-tpu-pagedattention-deepdive-vi.jpg
 published_at: '2026-07-12T10:19:12.416270+00:00'
 sources:
 - https://x.com/gdymind/status/2076185988288987402

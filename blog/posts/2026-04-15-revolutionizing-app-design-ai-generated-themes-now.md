@@ -7,7 +7,7 @@ excerpt: 'Gemini now generates designs for your apps while they’re building!
 
 
   now live in AI Studio'
-image: media/2026-04-15-revolutionizing-app-design-ai-generated-themes-now.jpg
+image: https://bitroot.org/blog/media/2026-04-15-revolutionizing-app-design-ai-generated-themes-now.jpg
 published_at: '2026-04-15T02:04:27.387749+00:00'
 sources:
 - https://x.com/i/status/2044111418786754620

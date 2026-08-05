@@ -1,7 +1,7 @@
 ---
 date: '2026-04-06'
 excerpt: In the next version of tldraw,
-image: media/2026-04-06-tldraw-revolution-unlocking-next-level-collaborati.jpg
+image: https://bitroot.org/blog/media/2026-04-06-tldraw-revolution-unlocking-next-level-collaborati.jpg
 published_at: '2026-04-06T19:19:28.036255+00:00'
 sources:
 - https://x.com/i/status/2040869600137556247

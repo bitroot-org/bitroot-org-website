@@ -1,7 +1,7 @@
 ---
 date: '2026-08-04'
 excerpt: The era of outsourcing AI to external providers is ending.
-image: media/2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod.jpg
+image: https://bitroot.org/blog/media/2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod.jpg
 published_at: '2026-08-04T04:53:44.560Z'
 sources: []
 tags:

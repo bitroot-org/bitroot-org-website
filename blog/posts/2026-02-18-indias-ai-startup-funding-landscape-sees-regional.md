@@ -1,7 +1,7 @@
 ---
 date: '2026-02-18'
 excerpt: India's Leading AI & Data Science Media Platform
-image: media/2026-02-18-indias-ai-startup-funding-landscape-sees-regional.webp
+image: https://bitroot.org/blog/media/2026-02-18-indias-ai-startup-funding-landscape-sees-regional.webp
 published_at: '2026-02-18T18:13:05.668903+00:00'
 sources:
 - https://analyticsindiamag.com/ai-startups/funding-reset-why-karnataka-faced-a-28-drop-while-maharashtra-held-its-ground

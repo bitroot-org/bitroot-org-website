@@ -3,7 +3,7 @@ date: '2026-04-30'
 excerpt: Poseidon released an early‑access version of Numo, an app that gathers voice
   recordings in four South Asian languages to feed next‑generation AI models. The
   rollout is limited and invites scrutiny over data quality and privacy.
-image: media/2026-04-30-poseidon-opens-early-access-to-numo-for-multilingu.jpg
+image: https://bitroot.org/blog/media/2026-04-30-poseidon-opens-early-access-to-numo-for-multilingu.jpg
 published_at: '2026-04-30T19:39:00.647930+00:00'
 sources:
 - https://x.com/i/status/2049526025751855207

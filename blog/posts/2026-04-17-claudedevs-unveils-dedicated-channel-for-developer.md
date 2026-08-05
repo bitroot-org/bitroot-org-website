@@ -4,7 +4,7 @@ excerpt: 'For the developers building with Claude, a direct line from the team.
 
 
   Follow for changelogs, API releases, community updates, and deep dives.'
-image: media/2026-04-17-claudedevs-unveils-dedicated-channel-for-developer.jpg
+image: https://bitroot.org/blog/media/2026-04-17-claudedevs-unveils-dedicated-channel-for-developer.jpg
 published_at: '2026-04-17T14:55:58.708039+00:00'
 sources:
 - https://x.com/i/status/2044780198722498580

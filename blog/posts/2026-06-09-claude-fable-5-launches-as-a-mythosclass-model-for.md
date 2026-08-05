@@ -5,7 +5,7 @@ excerpt: 'Introducing Claude Fable 5: a Mythos-class model that we’ve made saf
 
 
   Its capabilities exceed those of any model we’ve ever made generally available.'
-image: media/2026-06-09-claude-fable-5-launches-as-a-mythosclass-model-for.jpg
+image: https://bitroot.org/blog/media/2026-06-09-claude-fable-5-launches-as-a-mythosclass-model-for.jpg
 published_at: '2026-06-09T18:45:45.090190+00:00'
 sources:
 - https://x.com/i/status/2064394146916229443

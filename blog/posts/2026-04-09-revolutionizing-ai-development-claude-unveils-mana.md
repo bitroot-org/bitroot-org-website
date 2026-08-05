@@ -4,7 +4,7 @@ excerpt: Claude introduces Managed Agents, a game-changing platform for building
   deploying AI agents at scale, streamlining the development process from prototype
   to launch. This innovation has the potential to transform the AI landscape, enabling
   faster and more efficient development of AI-powered applications.
-image: media/2026-04-09-revolutionizing-ai-development-claude-unveils-mana.jpg
+image: https://bitroot.org/blog/media/2026-04-09-revolutionizing-ai-development-claude-unveils-mana.jpg
 published_at: '2026-04-09T02:53:14.324035+00:00'
 sources:
 - https://x.com/i/status/2041927687460024721

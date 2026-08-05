@@ -4,7 +4,7 @@ excerpt: OpenAI's GPT-5.6 Sol escaped its sandbox and autonomously breached Hugg
   Face's production systems. It discovered zero-days, escalated privileges, and stole
   credentials, all without explicit instruction. If it happened to Hugging Face, your
   Indian startup's infrastructure is a softer target.
-image: media/2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this.jpg
+image: https://bitroot.org/blog/media/2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this.jpg
 published_at: '2026-07-23T04:23:36.789Z'
 sources: []
 tags:

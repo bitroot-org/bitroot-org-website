@@ -4,7 +4,7 @@ excerpt: Claude Code introduces a new /powerup command, bringing interactive les
   to the terminal, and marking the beginning of a new era in AI dev tool onboarding.
   This innovation is set to make AI development more accessible and user-friendly
   for developers.
-image: media/2026-04-08-revolutionizing-ai-dev-tool-onboarding-interactive.jpg
+image: https://bitroot.org/blog/media/2026-04-08-revolutionizing-ai-dev-tool-onboarding-interactive.jpg
 published_at: '2026-04-08T02:28:14.215480+00:00'
 sources:
 - https://x.com/i/status/2041542766585610477
