@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 297,
+  "count": 298,
   "posts": [
+    "2026-08-05-bending-spoons-acquires-airtable-for-1-285b-what-f.md",
     "2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a.md",
     "2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod.md",
     "2026-08-04-claude-model-selection-for-founders-the-100-to-10k.md",
@@ -301,6 +302,24 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-08-05-bending-spoons-acquires-airtable-for-1-285b-what-f.md",
+      "slug": "2026-08-05-bending-spoons-acquires-airtable-for-1-285b-what-f",
+      "url": "/blog/2026-08-05-bending-spoons-acquires-airtable-for-1-285b-what-f/",
+      "title": "Bending Spoons Acquires Airtable for $1.285B: What Founders Need to Know",
+      "date": "2026-08-05",
+      "published_at": "2026-08-05T06:27:22.952Z",
+      "tags": [
+        "M&A",
+        "Founders",
+        "MCP"
+      ],
+      "excerpt": "Bending Spoons just paid $1.285 billion for Airtable on August 4, 2026\u2014same day as Anthropic's Volta infrastructure deal. Same message: consolidation is accelerating, and enterprise CIOs are actively reducing vendor counts (68% plan consolidation in 2026). If you're building on acquired platforms, you need a contingency plan.",
+      "image": "https://pbs.twimg.com/media/HO3FWInXwAEWuKV?format=jpg&name=small",
+      "sources": [],
+      "readTime": "5 min",
+      "shortId": 298
+    },
     {
       "filename": "2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a.md",
       "slug": "2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a",

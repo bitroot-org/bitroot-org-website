@@ -5,8 +5,19 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 05 Aug 2026 05:42:48 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2026 06:28:43 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bending Spoons Acquires Airtable for $1.285B: What Founders Need to Know</title>
+      <link>https://bitroot.org/blog/2026-08-05-bending-spoons-acquires-airtable-for-1-285b-what-f/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-08-05-bending-spoons-acquires-airtable-for-1-285b-what-f/</guid>
+      <description>Bending Spoons just paid $1.285 billion for Airtable on August 4, 2026—same day as Anthropic's Volta infrastructure deal. Same message: consolidation is accelerating, and enterprise CIOs are actively reducing vendor counts (68% plan consolidation in 2026). If you're building on acquired platforms, you need a contingency plan.</description>
+      <pubDate>Wed, 05 Aug 2026 06:27:22 +0000</pubDate>
+      <category>M&amp;A</category>
+      <category>Founders</category>
+      <category>MCP</category>
+      <enclosure url="https://pbs.twimg.com/media/HO3FWInXwAEWuKV?format=jpg&amp;name=small" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Anthropic's $10B Volta Deal: What It Means for Your API Bill (And When)</title>
       <link>https://bitroot.org/blog/2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a/</link>
