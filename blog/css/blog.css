@@ -1254,10 +1254,10 @@ a.list-item {
 .blog-shell {
     max-width: var(--max-width);
     width: calc(100% - 32px);
-    margin: 16px auto 28px;
+    margin: 14px auto 24px;
     background: #17161a;
-    border-radius: 28px;
-    padding: 20px 40px 44px;
+    border-radius: 24px;
+    padding: 14px 32px 26px;
     color: #fff;
     position: relative;
     z-index: 1;
@@ -1267,7 +1267,7 @@ a.list-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0 22px;
+    padding: 6px 0 14px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.09);
 }
 
@@ -1305,14 +1305,23 @@ a.list-item {
     border-color: #fff;
 }
 
+.shell-body {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    padding-top: 16px;
+    flex-wrap: wrap;
+}
+
 .shell-title {
     font-family: var(--font-display);
-    font-size: clamp(64px, 9vw, 118px);
+    font-size: clamp(28px, 2.8vw, 40px);
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.02em;
     line-height: 1;
-    margin: 34px 0 38px;
+    margin: 0;
+    flex-shrink: 0;
 }
 
 .shell-controls {
@@ -1331,25 +1340,37 @@ a.list-item {
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #8b8794;
-    margin-bottom: 14px;
+    margin-bottom: 10px;
 }
 
 .filter-pills {
+    flex: 1 1 0;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    max-width: 720px;
+    flex-wrap: nowrap;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    min-width: 0;
+}
+
+.filter-pills::-webkit-scrollbar {
+    display: none;
+}
+
+.filter-pill {
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .filter-pill {
     font-family: var(--font-sans);
-    font-size: 13.5px;
+    font-size: 13px;
     font-weight: 600;
     background: #26242c;
     color: #e9e3f0;
     border: none;
     border-radius: 999px;
-    padding: 11px 18px;
+    padding: 9px 16px;
     cursor: pointer;
     transition: background 0.15s ease, color 0.15s ease;
 }
@@ -1380,13 +1401,17 @@ a.list-item {
     min-width: 260px;
 }
 
+.shell-body .search-box {
+    flex: 0 0 260px;
+}
+
 .search-box {
     display: flex;
     align-items: center;
     gap: 10px;
     background: #26242c;
     border-radius: 12px;
-    padding: 13px 16px;
+    padding: 11px 16px;
 }
 
 .search-box:focus-within {
@@ -1470,7 +1495,7 @@ a.list-item {
     width: calc(100% - 48px);
     background: var(--bg-secondary);
     border-top-right-radius: 26px;
-    padding: 20px 26px 18px 0;
+    padding: 22px 26px 20px 24px;
 }
 
 .card-plate::before,
@@ -1597,22 +1622,25 @@ a.list-item {
 
 @media (max-width: 640px) {
     .blog-shell {
-        padding: 14px 22px 30px;
-        border-radius: 22px;
+        padding: 12px 20px 22px;
+        border-radius: 20px;
+    }
+
+    .shell-body {
+        gap: 14px;
+        padding-top: 14px;
     }
 
     .shell-title {
-        margin: 26px 0 28px;
-    }
-
-    .shell-controls {
-        flex-direction: column;
-        gap: 24px;
-    }
-
-    .shell-search {
         width: 100%;
-        flex: 1 1 auto;
+    }
+
+    .filter-pills {
+        flex: 1 1 100%;
+    }
+
+    .shell-body .search-box {
+        flex: 1 1 100%;
     }
 
     .cards-grid {
@@ -1631,6 +1659,6 @@ a.list-item {
 
     .card-plate {
         width: calc(100% - 36px);
-        padding-right: 18px;
+        padding: 18px 18px 16px 18px;
     }
 }

@@ -2,9 +2,9 @@
 
 .post-page {
     flex: 1;
-    max-width: 850px;
+    max-width: 960px;
     margin: 0 auto;
-    padding: var(--spacing-3xl) var(--spacing-xl);
+    padding: var(--spacing-2xl) var(--spacing-xl) var(--spacing-3xl);
     width: 100%;
 }
 
@@ -197,45 +197,49 @@ html[data-embed="1"] .post-hero-video {
 }
 
 .post-header .post-tag {
-    font-size: 0.75rem;
-    font-weight: 600;
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     background: var(--tag-bg);
     color: var(--tag-text);
-    padding: var(--spacing-xs) var(--spacing-sm);
-    border-radius: var(--radius-sm);
+    padding: var(--spacing-xs) 0.875rem;
+    border-radius: 999px;
 }
 
 .post-header .post-date,
 .post-header .post-read-time {
-    font-size: 0.9375rem;
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
     color: var(--text-muted);
 }
 
 .post-header .post-title {
-    font-size: 2.25rem;
+    font-family: var(--font-display);
+    font-size: clamp(2.1rem, 4vw, 3rem);
     font-weight: 700;
     letter-spacing: -0.03em;
-    line-height: 1.2;
+    line-height: 1.12;
     margin-bottom: var(--spacing-md);
 }
 
 .post-header .post-excerpt {
-    font-size: 1.125rem;
+    font-size: 1.1875rem;
     color: var(--text-secondary);
-    line-height: 1.6;
+    line-height: 1.65;
 }
 
 /* Post Body - Markdown Content */
 .post-body {
-    font-size: 1.0625rem;
+    font-size: 1.125rem;
     line-height: 1.8;
     color: var(--text-primary);
 }
 
 .post-body h2 {
-    font-size: 1.5rem;
+    font-family: var(--font-display);
+    font-size: 1.65rem;
     font-weight: 700;
     letter-spacing: -0.02em;
     margin-top: var(--spacing-2xl);
@@ -244,7 +248,8 @@ html[data-embed="1"] .post-hero-video {
 }
 
 .post-body h3 {
-    font-size: 1.25rem;
+    font-family: var(--font-display);
+    font-size: 1.35rem;
     font-weight: 600;
     letter-spacing: -0.01em;
     margin-top: var(--spacing-xl);
@@ -273,7 +278,7 @@ html[data-embed="1"] .post-hero-video {
 
 /* First paragraph emphasis */
 .post-body > p:first-of-type {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     color: var(--text-secondary);
     line-height: 1.7;
 }

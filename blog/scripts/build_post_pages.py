@@ -42,7 +42,10 @@ FAVICON_URL = f"{SITE_URL}/blog/media/images/favicon.png"
 # Only the weights the CSS actually uses (was 100-900, mostly dead bytes).
 FONTS_HREF = (
     "https://fonts.googleapis.com/css2"
-    "?family=Geist+Mono:wght@400;500;600;700&display=swap"
+    "?family=Geist:wght@400;500;600;700"
+    "&family=Geist+Mono:wght@400;500;600"
+    "&family=Funnel+Display:wght@600;700;800"
+    "&display=swap"
 )
 
 POSTHOG_SNIPPET = """    <!-- PostHog (shared bitroot.org/.club project) -->
