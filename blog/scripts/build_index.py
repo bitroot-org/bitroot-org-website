@@ -261,13 +261,15 @@ def inject_index_posts(posts, per_page=9):
     )
     archive_html = ""
     if archive_links:
+        # Collapsed <details> keeps every link in the DOM for crawlers and
+        # no-JS visitors without a wall of text for everyone else.
         archive_html = f"""
-        <section class="post-archive" aria-label="All posts">
-            <h2 class="archive-title">All posts</h2>
+        <details class="post-archive" aria-label="All posts">
+            <summary class="archive-title">All {len(posts)} posts</summary>
             <ul class="archive-list">
 {archive_links}
             </ul>
-        </section>"""
+        </details>"""
 
     generated = f"""{POSTS_BEGIN}
         <div class="cards-grid" id="posts-grid">

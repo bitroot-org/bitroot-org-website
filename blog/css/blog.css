@@ -1190,23 +1190,59 @@ a.list-item {
     min-height: 5.1em;
 }
 
-/* Crawlable archive of every post below the showcase */
+/* Crawlable archive of every post — collapsed disclosure so the links
+   exist for crawlers/no-JS without a wall of text for everyone else. */
 .post-archive {
-    max-width: 1200px;
-    margin: var(--spacing-3xl) auto 0;
-    padding: 0 var(--spacing-xl);
+    max-width: var(--max-width);
+    width: calc(100% - 32px);
+    margin: var(--spacing-2xl) auto 0;
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: var(--bg-secondary);
+    overflow: hidden;
 }
 
 .archive-title {
     font-family: var(--font-mono);
     font-size: 0.75rem;
     font-weight: 500;
-    color: var(--accent);
+    color: var(--text-secondary);
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    margin-bottom: var(--spacing-md);
-    padding-bottom: var(--spacing-md);
+    padding: 18px 24px;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: color 0.15s ease;
+}
+
+.archive-title::-webkit-details-marker {
+    display: none;
+}
+
+.archive-title::after {
+    content: "+";
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+
+.post-archive[open] .archive-title::after {
+    content: "−";
+}
+
+.archive-title:hover {
+    color: var(--accent);
+}
+
+.post-archive[open] .archive-title {
     border-bottom: 1px solid var(--border);
+}
+
+.post-archive .archive-list {
+    padding: var(--spacing-md) 24px var(--spacing-lg);
 }
 
 .archive-list {
