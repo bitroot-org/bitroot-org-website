@@ -2,8 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bitroot.org/blog/</loc>
-    <lastmod>2026-08-05</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bitroot.org/blog/2026-08-06-when-serial-entrepreneurs-quit-what-nikita-biers-e/</loc>
+    <lastmod>2026-08-06</lastmod>
   </url>
   <url>
     <loc>https://bitroot.org/blog/2026-08-05-bending-spoons-acquires-airtable-for-1-285b-what-f/</loc>
