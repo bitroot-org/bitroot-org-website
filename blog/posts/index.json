@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 303,
+  "count": 304,
   "posts": [
+    "2026-08-06-why-ai-model-hacks-reveal-your-real-risk.md",
     "2026-08-06-when-serial-entrepreneurs-quit-what-nikita-biers-e.md",
     "2026-07-15-aipoch-open-science-v020-adds-skills-slash-command.md",
     "2026-08-05-bending-spoons-acquires-airtable-for-1-285b-what-f.md",
@@ -307,6 +308,26 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-08-06-why-ai-model-hacks-reveal-your-real-risk.md",
+      "slug": "2026-08-06-why-ai-model-hacks-reveal-your-real-risk",
+      "url": "/blog/2026-08-06-why-ai-model-hacks-reveal-your-real-risk/",
+      "title": "Why AI Model \"Hacks\" Reveal Your Real Risk",
+      "date": "2026-08-06",
+      "published_at": "2026-08-06T09:52:33.290Z",
+      "tags": [
+        "AI",
+        "Hack",
+        "Meta Ai"
+      ],
+      "excerpt": "The headlines are alarming: \"Meta's AI Model Hacked Into Another Company's System.\" \"OpenAI Agents Attacked Multiple Services.\" \"Anthropic's Claude Breached Three Organizations.\"",
+      "image": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/f468/live/5910e320-9131-11f1-b387-374684edd409.jpg.webp",
+      "sources": [
+        "https://www.bbc.com/news/articles/cx2kgdnyk2po"
+      ],
+      "readTime": "4 min",
+      "shortId": 304
+    },
     {
       "filename": "2026-08-06-when-serial-entrepreneurs-quit-what-nikita-biers-e.md",
       "slug": "2026-08-06-when-serial-entrepreneurs-quit-what-nikita-biers-e",
