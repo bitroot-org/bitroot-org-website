@@ -1,17 +1,15 @@
 ---
-date: '2026-07-15'
-excerpt: AIPOCH released Open Science v0.2.0, introducing reusable research Skills,
-  slash‑command shortcuts, and the first life‑sciences MCP integrations, all as a
-  free open‑source update.
+date: '2026-08-06'
+excerpt: 'AIPOCH released Open Science v0.2.0, introducing reusable research Skills, slash‑command shortcuts, and the first life‑sciences MCP integrations, all as a free open‑source update.'
 image: https://pbs.twimg.com/media/HNPxKhXa8AANzdU.jpg?name=orig
 published_at: '2026-07-15T10:43:46.600426+00:00'
 sources:
 - https://x.com/aipoch_ai/status/2077269195646185723
 tags:
-- open science
-- ai tools
-- research infrastructure
-title: AIPOCH Open Science v0.2.0 adds Skills, slash commands, and MCP support
+- 'open science'
+- 'ai tools'
+- 'research infrastructure'
+title: 'AIPOCH Open Science v0.2.0 adds Skills, slash commands, and MCP support'
 ---
 
 AIPOCH released Open Science v0.2.0, adding slash commands for reusable research Skills and the first life‑sciences MCP integrations, plus drag‑and‑drop file uploads. The announcement was posted on X and the code lives in the [Open Science repo](https://github.com/aipoch/open-science).
