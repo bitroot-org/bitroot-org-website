@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 06 Aug 2026 06:29:04 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2026 06:37:14 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>When Serial Entrepreneurs Quit: What Nikita Bier's Exit Signals</title>
@@ -17,6 +17,20 @@
       <category>Entrepreneurs</category>
       <category>Tech</category>
       <enclosure url="https://techcrunch.com/wp-content/uploads/2023/11/X-and-Threads-GettyImages-1763609384.jpeg?resize=1280,888" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>AIPOCH Open Science v0.2.0 adds Skills, slash commands, and MCP support</title>
+      <link>https://bitroot.org/blog/2026-07-15-aipoch-open-science-v020-adds-skills-slash-command/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-15-aipoch-open-science-v020-adds-skills-slash-command/</guid>
+      <description>AIPOCH released Open Science v0.2.0, introducing reusable research Skills, slash‑command shortcuts, and the first life‑sciences MCP integrations, all as a free open‑source update.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/aipoch_ai/status/2077269195646185723"&gt;https://x.com/aipoch_ai/status/2077269195646185723&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 15 Jul 2026 10:43:46 +0000</pubDate>
+      <category>open science</category>
+      <category>ai tools</category>
+      <category>research infrastructure</category>
+      <enclosure url="https://pbs.twimg.com/media/HNPxKhXa8AANzdU.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/aipoch_ai/status/2077269195646185723">Original Source</source>
     </item>
     <item>
       <title>Bending Spoons Acquires Airtable for $1.285B: What Founders Need to Know</title>
@@ -899,6 +913,48 @@
       <category>world model</category>
       <enclosure url="https://bitroot.org/blog/media/2026-07-16-alaya-lab-opens-alaya-world-open-source-interactiv.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/alayastd/status/2077588265067258309">Original Source</source>
+    </item>
+    <item>
+      <title>Simplex File Organizer v1.1 adds bulk nesting and undo</title>
+      <link>https://bitroot.org/blog/2026-07-15-simplex-file-organizer-v11-adds-bulk-nesting-and-u/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-15-simplex-file-organizer-v11-adds-bulk-nesting-and-u/</guid>
+      <description>Version 1.1 of Simplex File Organizer can sort 20 000 files into custom nested folders and roll back with a single undo, fixing a UI lag and adding Boolean rule support.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/Rifle_Blade/status/2077269004201128047"&gt;https://x.com/Rifle_Blade/status/2077269004201128047&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 15 Jul 2026 10:42:40 +0000</pubDate>
+      <category>file organization</category>
+      <category>desktop tool</category>
+      <category>productivity</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2077267297870254081/img/0bcry_KGmoCCzDdy.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/Rifle_Blade/status/2077269004201128047">Original Source</source>
+    </item>
+    <item>
+      <title>PrismML ships Bonsai 27B, a 27‑billion‑parameter model that fits on a phone</title>
+      <link>https://bitroot.org/blog/2026-07-15-prismml-ships-bonsai-27b-a-27billionparameter-mode/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-15-prismml-ships-bonsai-27b-a-27billionparameter-mode/</guid>
+      <description>PrismML released Bonsai 27B, a multimodal model that can run locally on phones at a 3.9 GB footprint. Two size‑optimized variants are open‑sourced under Apache 2.0.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/PrismML/status/2077084891284721827"&gt;https://x.com/PrismML/status/2077084891284721827&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 15 Jul 2026 10:44:28 +0000</pubDate>
+      <category>large language models</category>
+      <category>mobile ai</category>
+      <category>open source</category>
+      <enclosure url="https://pbs.twimg.com/media/HNM70U_bEAQdQFX.png?name=orig" type="image/png" length="0" />
+      <source url="https://x.com/PrismML/status/2077084891284721827">Original Source</source>
+    </item>
+    <item>
+      <title>Open-source coding agent built with React and OpenRouter</title>
+      <link>https://bitroot.org/blog/2026-07-15-open-source-coding-agent-built-with-react-and-open/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-15-open-source-coding-agent-built-with-react-and-open/</guid>
+      <description>A developer released a self‑hosted coding agent that runs in a React + OpenTUI terminal, uses OpenRouter for streaming LLM calls, and includes a token context manager.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/rizwanc_r/status/2077269947861135803"&gt;https://x.com/rizwanc_r/status/2077269947861135803&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 15 Jul 2026 10:43:03 +0000</pubDate>
+      <category>coding agents</category>
+      <category>open-source</category>
+      <category>llm tools</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2077269919486693376/img/ENB_RQbFAAPF5igH.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/rizwanc_r/status/2077269947861135803">Original Source</source>
     </item>
     <item>
       <title>Claude now has India pricing. Here's what it actually costs - and what's still missing.</title>
