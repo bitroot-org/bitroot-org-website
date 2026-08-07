@@ -1,17 +1,15 @@
 ---
 date: '2026-08-06'
-excerpt: OpenAI unveiled an open standard for reusable agent plugins that can run
-  across compatible AI clients, aiming to reduce duplication of skill implementations.
-image: https://bitroot.org/blog/media/2026-08-06-openai-launches-agent-plugins-standard-for-crosscl.jpg
+excerpt: 'OpenAI unveiled an open standard for reusable agent plugins that can run across compatible AI clients, aiming to reduce duplication of skill implementations.'
+image: https://pbs.twimg.com/card_img/2083544456704262144/NwgAFkyu?format=png&name=small
 published_at: '2026-08-06T18:10:08.320352+00:00'
 sources:
 - https://x.com/i/status/2085398373511918022
 tags:
-- agent plugins
-- open standard
-- mcp
-title: OpenAI launches Agent Plugins standard for cross‑client skills
-video: https://video.twimg.com/amplify_video/2085398091726041088/vid/avc1/3840x2160/NuKUPY4GQNRZE2bu.mp4?tag=29
+- 'agent plugins'
+- 'open standard'
+- 'mcp'
+title: 'OpenAI launches Agent Plugins standard for cross‑client skills'
 ---
 
 OpenAI announced Agent Plugins, an open standard that lets a single plugin be used across compatible agent clients, with built‑in support for MCP server configurations. The standard was co‑developed with @awsdevelopers, @cursor_ai, @github, @code, and @vercel, and the announcement was posted on a [tweet](https://x.com/i/status/2085398373511918022).
