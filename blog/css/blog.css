@@ -88,51 +88,26 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Subtle grid background */
+/* Ambient aurora background — soft fixed gradient washes behind everything */
 body::before {
     content: '';
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image:
-        linear-gradient(var(--grid-color) 1px, transparent 1px),
-        linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
-    background-size: var(--grid-size) var(--grid-size);
+    inset: 0;
     pointer-events: none;
     z-index: -1;
+    background:
+        radial-gradient(900px 600px at 12% -8%, rgba(82, 92, 235, 0.11), transparent 62%),
+        radial-gradient(1100px 700px at 92% 4%, rgba(119, 130, 238, 0.10), transparent 60%),
+        radial-gradient(800px 600px at 30% 108%, rgba(251, 207, 217, 0.22), transparent 60%),
+        radial-gradient(700px 500px at 78% 92%, rgba(82, 92, 235, 0.07), transparent 55%);
 }
 
-
-/* Pixelated floating clouds ticker */
-.cloud-ticker {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 45vh;
-    overflow: hidden;
-    pointer-events: none;
-    z-index: -1;
-    opacity: 0.12;
-    mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
-}
-
-.cloud-ticker-track {
-    display: flex;
-    width: max-content;
-    animation: cloud-scroll 60s linear infinite;
-}
-
-.cloud-ticker-track svg {
-    flex-shrink: 0;
-}
-
-@keyframes cloud-scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+[data-theme="dark"] body::before {
+    background:
+        radial-gradient(900px 600px at 12% -8%, rgba(82, 92, 235, 0.20), transparent 62%),
+        radial-gradient(1100px 700px at 92% 4%, rgba(119, 130, 238, 0.13), transparent 60%),
+        radial-gradient(800px 600px at 30% 108%, rgba(160, 90, 200, 0.10), transparent 60%),
+        radial-gradient(700px 500px at 78% 92%, rgba(82, 92, 235, 0.10), transparent 55%);
 }
 
 a {
@@ -146,19 +121,20 @@ img {
     display: block;
 }
 
-/* Header */
+/* Header (post pages) — frosted glass bar */
 .header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: var(--bg);
-    border-bottom: 1px solid var(--border);
-    backdrop-filter: blur(8px);
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.55);
+    -webkit-backdrop-filter: blur(22px) saturate(1.8);
+    backdrop-filter: blur(22px) saturate(1.8);
+    border-bottom: 1px solid rgba(61, 59, 64, 0.08);
 }
 
 [data-theme="dark"] .header {
-    background-color: rgba(18, 17, 20, 0.9);
+    background-color: rgba(18, 17, 20, 0.55);
+    border-bottom-color: rgba(255, 255, 255, 0.08);
 }
 
 .nav {
@@ -1019,28 +995,20 @@ html:not(.intro-active) .sunrise-overlay {
 
 /* While intro is active, page content is invisible */
 html.intro-active .header,
-html.intro-active .hero,
+html.intro-active .glass-nav,
+html.intro-active .blog-shell,
 html.intro-active .showcase,
-html.intro-active .cloud-ticker,
 html.intro-active .footer {
     opacity: 0;
 }
 
 /* Staggered slide-in after overlay fades */
-html.intro-reveal .cloud-ticker {
-    animation: cloudsReveal 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-
-html.intro-reveal .header {
+html.intro-reveal .header,
+html.intro-reveal .glass-nav {
     animation: revealUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
-@keyframes cloudsReveal {
-    from { opacity: 0; }
-    to   { opacity: 0.12; }
-}
-
-html.intro-reveal .hero {
+html.intro-reveal .blog-shell {
     animation: revealUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.06s forwards;
 }
 
@@ -1048,14 +1016,9 @@ html.intro-reveal .showcase {
     opacity: 1 !important;
 }
 
-html.intro-reveal .showcase .featured-post {
+html.intro-reveal .showcase .cards-grid {
     opacity: 0;
     animation: cardSlideIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.12s forwards;
-}
-
-html.intro-reveal .showcase .post-list {
-    opacity: 0;
-    animation: cardSlideIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.22s forwards;
 }
 
 html.intro-reveal .showcase .pagination-container {
@@ -1081,9 +1044,9 @@ html.intro-reveal .footer {
 @media (prefers-reduced-motion: reduce) {
     .sunrise-overlay { display: none !important; }
     html.intro-active .header,
-    html.intro-active .hero,
+    html.intro-active .glass-nav,
+    html.intro-active .blog-shell,
     html.intro-active .showcase,
-    html.intro-active .cloud-ticker,
     html.intro-active .footer { opacity: 1; }
 }
 
@@ -1155,12 +1118,6 @@ html.intro-reveal .footer {
 a.list-item {
     text-decoration: none;
     color: inherit;
-}
-
-.cloud-ticker-track img {
-    flex-shrink: 0;
-    height: 320px;
-    width: 2400px;
 }
 
 .theme-toggle {
@@ -1290,21 +1247,49 @@ a.list-item {
 .blog-shell {
     max-width: var(--max-width);
     width: calc(100% - 32px);
-    margin: 14px auto 24px;
-    background: #17161a;
+    margin: 18px auto 24px;
+    background:
+        radial-gradient(620px 300px at 88% -30%, rgba(82, 92, 235, 0.30), transparent 62%),
+        radial-gradient(500px 260px at 4% 120%, rgba(119, 130, 238, 0.16), transparent 60%),
+        #17161a;
     border-radius: 24px;
-    padding: 14px 32px 26px;
+    padding: 22px 32px 24px;
     color: #fff;
     position: relative;
     z-index: 1;
 }
 
-.shell-nav {
+/* Floating glass navbar */
+.glass-nav {
+    position: sticky;
+    top: 12px;
+    z-index: 100;
+    max-width: var(--max-width);
+    width: calc(100% - 32px);
+    margin: 12px auto 0;
+}
+
+.glass-nav-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 6px 0 14px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+    padding: 10px 22px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.55);
+    -webkit-backdrop-filter: blur(22px) saturate(1.8);
+    backdrop-filter: blur(22px) saturate(1.8);
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    box-shadow:
+        0 8px 30px -14px rgba(61, 59, 64, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+[data-theme="dark"] .glass-nav-inner {
+    background: rgba(24, 23, 28, 0.55);
+    border-color: rgba(255, 255, 255, 0.10);
+    box-shadow:
+        0 8px 30px -14px rgba(0, 0, 0, 0.6),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
 .shell-logo .logo-img {
@@ -1322,30 +1307,33 @@ a.list-item {
     font-family: var(--font-mono);
     font-size: 13px;
     font-weight: 500;
-    color: #a19dab;
+    color: var(--text-secondary);
     transition: color 0.2s ease;
 }
 
 .shell-link:hover,
 .shell-link.active {
-    color: #fff;
+    color: var(--accent);
 }
 
-.blog-shell .theme-toggle {
+[data-theme="dark"] .theme-toggle {
     border-color: rgba(255, 255, 255, 0.18);
     color: #a19dab;
 }
 
-.blog-shell .theme-toggle:hover {
+[data-theme="dark"] .theme-toggle:hover {
     color: #fff;
     border-color: #fff;
+}
+
+.glass-nav .theme-toggle {
+    border-radius: 999px;
 }
 
 .shell-body {
     display: flex;
     align-items: center;
     gap: 28px;
-    padding-top: 16px;
     flex-wrap: wrap;
 }
 
@@ -1664,7 +1652,6 @@ a.list-item {
 
     .shell-body {
         gap: 14px;
-        padding-top: 14px;
     }
 
     .shell-title {

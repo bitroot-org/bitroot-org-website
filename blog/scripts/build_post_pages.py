@@ -368,14 +368,6 @@ def render_page(meta, content, slug, prev_post, next_post):
 {POSTHOG_SNIPPET}
 </head>
 <body>
-    <!-- Pixelated floating clouds -->
-    <div class="cloud-ticker" aria-hidden="true">
-        <div class="cloud-ticker-track">
-            <img src="/blog/media/clouds.svg" width="2400" height="320" alt="" loading="lazy" decoding="async">
-            <img src="/blog/media/clouds.svg" width="2400" height="320" alt="" loading="lazy" decoding="async">
-        </div>
-    </div>
-
     <!-- Minimal Header -->
     <header class="header">
         <nav class="nav">
