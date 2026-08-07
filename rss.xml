@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 07 Aug 2026 11:32:38 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 11:33:14 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Let the Self-Improving AI Do Further Scientific Breakthrough: Mirendil</title>
@@ -16,6 +16,20 @@
       <category>AI</category>
       <category>Google cloud</category>
       <enclosure url="https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2266466589.jpg" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>OpenAI launches Agent Plugins standard for cross‑client skills</title>
+      <link>https://bitroot.org/blog/2026-08-06-openai-launches-agent-plugins-standard-for-crosscl/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-08-06-openai-launches-agent-plugins-standard-for-crosscl/</guid>
+      <description>OpenAI unveiled an open standard for reusable agent plugins that can run across compatible AI clients, aiming to reduce duplication of skill implementations.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2085398373511918022"&gt;https://x.com/i/status/2085398373511918022&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 06 Aug 2026 18:10:08 +0000</pubDate>
+      <category>agent plugins</category>
+      <category>open standard</category>
+      <category>mcp</category>
+      <enclosure url="https://pbs.twimg.com/card_img/2083544456704262144/NwgAFkyu?format=png&amp;name=small" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2085398373511918022">Original Source</source>
     </item>
     <item>
       <title>Why AI Model "Hacks" Reveal Your Real Risk</title>
@@ -41,20 +55,6 @@
       <category>Entrepreneurs</category>
       <category>Tech</category>
       <enclosure url="https://techcrunch.com/wp-content/uploads/2023/11/X-and-Threads-GettyImages-1763609384.jpeg?resize=1280,888" type="image/jpeg" length="0" />
-    </item>
-    <item>
-      <title>OpenAI launches Agent Plugins standard for cross‑client skills</title>
-      <link>https://bitroot.org/blog/2026-08-06-openai-launches-agent-plugins-standard-for-crosscl/</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/2026-08-06-openai-launches-agent-plugins-standard-for-crosscl/</guid>
-      <description>OpenAI unveiled an open standard for reusable agent plugins that can run across compatible AI clients, aiming to reduce duplication of skill implementations.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2085398373511918022"&gt;https://x.com/i/status/2085398373511918022&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Thu, 06 Aug 2026 18:10:08 +0000</pubDate>
-      <category>agent plugins</category>
-      <category>open standard</category>
-      <category>mcp</category>
-      <enclosure url="https://pbs.twimg.com/card_img/2083544456704262144/NwgAFkyu?format=png&amp;name=small" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2085398373511918022">Original Source</source>
     </item>
     <item>
       <title>AIPOCH Open Science v0.2.0 adds Skills, slash commands, and MCP support</title>

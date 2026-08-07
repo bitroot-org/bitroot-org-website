@@ -3,9 +3,9 @@
   "count": 306,
   "posts": [
     "2026-08-07-let-the-self-improving-ai-do-further-scientific-br.md",
+    "2026-08-06-openai-launches-agent-plugins-standard-for-crosscl.md",
     "2026-08-06-why-ai-model-hacks-reveal-your-real-risk.md",
     "2026-08-06-when-serial-entrepreneurs-quit-what-nikita-biers-e.md",
-    "2026-08-06-openai-launches-agent-plugins-standard-for-crosscl.md",
     "2026-07-15-aipoch-open-science-v020-adds-skills-slash-command.md",
     "2026-08-05-bending-spoons-acquires-airtable-for-1-285b-what-f.md",
     "2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a.md",
@@ -328,6 +328,26 @@
       "shortId": 306
     },
     {
+      "filename": "2026-08-06-openai-launches-agent-plugins-standard-for-crosscl.md",
+      "slug": "2026-08-06-openai-launches-agent-plugins-standard-for-crosscl",
+      "url": "/blog/2026-08-06-openai-launches-agent-plugins-standard-for-crosscl/",
+      "title": "OpenAI launches Agent Plugins standard for cross\u2011client skills",
+      "date": "2026-08-07",
+      "published_at": "2026-08-06T18:10:08.320352+00:00",
+      "tags": [
+        "agent plugins",
+        "open standard",
+        "mcp"
+      ],
+      "excerpt": "OpenAI unveiled an open standard for reusable agent plugins that can run across compatible AI clients, aiming to reduce duplication of skill implementations.",
+      "image": "https://pbs.twimg.com/card_img/2083544456704262144/NwgAFkyu?format=png&name=small",
+      "sources": [
+        "https://x.com/i/status/2085398373511918022"
+      ],
+      "readTime": "2 min",
+      "shortId": 305
+    },
+    {
       "filename": "2026-08-06-why-ai-model-hacks-reveal-your-real-risk.md",
       "slug": "2026-08-06-why-ai-model-hacks-reveal-your-real-risk",
       "url": "/blog/2026-08-06-why-ai-model-hacks-reveal-your-real-risk/",
@@ -345,7 +365,7 @@
         "https://www.bbc.com/news/articles/cx2kgdnyk2po"
       ],
       "readTime": "4 min",
-      "shortId": 305
+      "shortId": 304
     },
     {
       "filename": "2026-08-06-when-serial-entrepreneurs-quit-what-nikita-biers-e.md",
@@ -363,26 +383,6 @@
       "image": "https://techcrunch.com/wp-content/uploads/2023/11/X-and-Threads-GettyImages-1763609384.jpeg?resize=1280,888",
       "sources": [],
       "readTime": "7 min",
-      "shortId": 304
-    },
-    {
-      "filename": "2026-08-06-openai-launches-agent-plugins-standard-for-crosscl.md",
-      "slug": "2026-08-06-openai-launches-agent-plugins-standard-for-crosscl",
-      "url": "/blog/2026-08-06-openai-launches-agent-plugins-standard-for-crosscl/",
-      "title": "OpenAI launches Agent Plugins standard for cross\u2011client skills",
-      "date": "2026-08-06",
-      "published_at": "2026-08-06T18:10:08.320352+00:00",
-      "tags": [
-        "agent plugins",
-        "open standard",
-        "mcp"
-      ],
-      "excerpt": "OpenAI unveiled an open standard for reusable agent plugins that can run across compatible AI clients, aiming to reduce duplication of skill implementations.",
-      "image": "https://pbs.twimg.com/card_img/2083544456704262144/NwgAFkyu?format=png&name=small",
-      "sources": [
-        "https://x.com/i/status/2085398373511918022"
-      ],
-      "readTime": "2 min",
       "shortId": 303
     },
     {
