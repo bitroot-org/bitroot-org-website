@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 07 Aug 2026 11:33:14 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 12:01:20 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Let the Self-Improving AI Do Further Scientific Breakthrough: Mirendil</title>
@@ -18,7 +18,7 @@
       <enclosure url="https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2266466589.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
-      <title>OpenAI launches Agent Plugins standard for cross‑client skills</title>
+      <title>Agent Plugins Explained: Build Once, Run Anywhere Across AI Agents</title>
       <link>https://bitroot.org/blog/2026-08-06-openai-launches-agent-plugins-standard-for-crosscl/</link>
       <guid isPermaLink="true">https://bitroot.org/blog/2026-08-06-openai-launches-agent-plugins-standard-for-crosscl/</guid>
       <description>OpenAI unveiled an open standard for reusable agent plugins that can run across compatible AI clients, aiming to reduce duplication of skill implementations.
