@@ -1,5 +1,5 @@
 ---
-date: '2026-08-06'
+date: '2026-08-07'
 excerpt: 'OpenAI unveiled an open standard for reusable agent plugins that can run across compatible AI clients, aiming to reduce duplication of skill implementations.'
 image: https://pbs.twimg.com/card_img/2083544456704262144/NwgAFkyu?format=png&name=small
 published_at: '2026-08-06T18:10:08.320352+00:00'
