@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 304,
+  "count": 305,
   "posts": [
+    "2026-08-07-let-the-self-improving-ai-do-further-scientific-br.md",
     "2026-08-06-why-ai-model-hacks-reveal-your-real-risk.md",
     "2026-08-06-when-serial-entrepreneurs-quit-what-nikita-biers-e.md",
     "2026-07-15-aipoch-open-science-v020-adds-skills-slash-command.md",
@@ -308,6 +309,23 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-08-07-let-the-self-improving-ai-do-further-scientific-br.md",
+      "slug": "2026-08-07-let-the-self-improving-ai-do-further-scientific-br",
+      "url": "/blog/2026-08-07-let-the-self-improving-ai-do-further-scientific-br/",
+      "title": "Let the Self-Improving AI Do Further Scientific Breakthrough: Mirendil",
+      "date": "2026-08-07",
+      "published_at": "2026-08-07T06:14:16.085Z",
+      "tags": [
+        "AI",
+        "Google cloud"
+      ],
+      "excerpt": "Mirendil just raised $200 million to do something humans have never done: let self-improving AI improve itself to solve scientific problems.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2266466589.jpg",
+      "sources": [],
+      "readTime": "5 min",
+      "shortId": 305
+    },
     {
       "filename": "2026-08-06-why-ai-model-hacks-reveal-your-real-risk.md",
       "slug": "2026-08-06-why-ai-model-hacks-reveal-your-real-risk",
