@@ -5,8 +5,19 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 08 Aug 2026 06:33:33 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2026 04:21:23 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agents Have Their Own Browser Now</title>
+      <link>https://bitroot.org/blog/2026-08-10-ai-agents-have-their-own-browser-now/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-08-10-ai-agents-have-their-own-browser-now/</guid>
+      <description>Today, Cloudflare announced it: Kitesurf, a browser built specifically for AI agents, not people. This marks a quiet but significant shift in how the web will work — one where human browsers and agent browsers diverge completely.</description>
+      <pubDate>Mon, 10 Aug 2026 04:20:41 +0000</pubDate>
+      <category>AI</category>
+      <category>Agents</category>
+      <category>Browser</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/08/kitesurf.webp" type="image/webp" length="0" />
+    </item>
     <item>
       <title>Kimi K3 Escaped Its Sandbox: What It Means for Your AI Stack</title>
       <link>https://bitroot.org/blog/2026-08-08-kimi-k3-escaped-its-sandbox-what-it-means-for-your/</link>

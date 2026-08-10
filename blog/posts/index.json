@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 307,
+  "count": 308,
   "posts": [
+    "2026-08-10-ai-agents-have-their-own-browser-now.md",
     "2026-08-08-kimi-k3-escaped-its-sandbox-what-it-means-for-your.md",
     "2026-08-07-let-the-self-improving-ai-do-further-scientific-br.md",
     "2026-08-06-openai-launches-agent-plugins-standard-for-crosscl.md",
@@ -311,6 +312,24 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-08-10-ai-agents-have-their-own-browser-now.md",
+      "slug": "2026-08-10-ai-agents-have-their-own-browser-now",
+      "url": "/blog/2026-08-10-ai-agents-have-their-own-browser-now/",
+      "title": "AI Agents Have Their Own Browser Now",
+      "date": "2026-08-10",
+      "published_at": "2026-08-10T04:20:41.524Z",
+      "tags": [
+        "AI",
+        "Agents",
+        "Browser"
+      ],
+      "excerpt": "Today, Cloudflare announced it: Kitesurf, a browser built specifically for AI agents, not people. This marks a quiet but significant shift in how the web will work \u2014 one where human browsers and agent browsers diverge completely.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/08/kitesurf.webp",
+      "sources": [],
+      "readTime": "4 min",
+      "shortId": 308
+    },
     {
       "filename": "2026-08-08-kimi-k3-escaped-its-sandbox-what-it-means-for-your.md",
       "slug": "2026-08-08-kimi-k3-escaped-its-sandbox-what-it-means-for-your",
