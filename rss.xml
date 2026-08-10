@@ -5,8 +5,17 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 10 Aug 2026 04:31:07 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2026 05:03:22 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Autonomy Paradox: Why Less Oversight Makes Claude Code Safer</title>
+      <link>https://bitroot.org/blog/2026-08-10-the-autonomy-paradox-why-less-oversight-makes-clau/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-08-10-the-autonomy-paradox-why-less-oversight-makes-clau/</guid>
+      <description>Anthropic just proved something counterintuitive about AI safety: give agents more autonomy, and they become less dangerous.</description>
+      <pubDate>Mon, 10 Aug 2026 05:02:33 +0000</pubDate>
+      <category>Claude Code</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2269811684.jpg" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>AI Agents Have Their Own Browser Now</title>
       <link>https://bitroot.org/blog/2026-08-10-ai-agents-have-their-own-browser-now/</link>
