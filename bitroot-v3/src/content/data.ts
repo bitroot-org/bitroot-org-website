@@ -124,6 +124,17 @@ export const kits: Item[] = [
 
 export const guides: Item[] = [
   {
+    slug: "market-your-side-project",
+    category: "guide",
+    title: "How to Market Your Side Project: Keyword Research + Content Strategy for Indie Hackers",
+    summary:
+      "Most indie projects fail because zero people know they exist. A step-by-step playbook for finding low-competition keywords (KD ≤ 10, volume ≥ 1,000), turning them into a content calendar, and converting traffic into subscribers and calls.",
+    tags: ["Marketing", "SEO", "Indie Hacker", "Content"],
+    updatedAt: "2026-08-10",
+    href: "/guides/market-your-side-project",
+    difficulty: "starter",
+  },
+  {
     slug: "ai-native-qa",
     category: "guide",
     title: "AI-Native QA: How to Replace Your QA Team Without Actually Replacing Humans",

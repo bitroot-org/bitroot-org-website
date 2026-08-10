@@ -43,6 +43,321 @@ export type GuideContent = {
 };
 
 export const guidesContent: Record<string, GuideContent> = {
+  "market-your-side-project": {
+    slug: "market-your-side-project",
+    tagline:
+      "Most indie projects fail not because they're low quality, but because zero people know they exist. This guide fixes that — find low-competition keywords (KD ≤ 10, volume ≥ 1,000) that rank in weeks, not months, then turn that traffic into email subscribers and paying customers with a no-code stack.",
+    timeEstimate: "4–6 hours for the keyword research phase, 4–6 weeks to see it compound",
+    youWillNeed: [
+      "Ahrefs account ($29+/month for Starter, or $129+/month for Lite)",
+      "Feather.blog account (free to start, publish blogs fast)",
+      "Email tool: Bento ($29/month) or free alternatives like Brevo or Mailchimp",
+      "Cal.com for booking calls (free tier available)",
+      "Notion or a spreadsheet for tracking keywords",
+      "4–6 hours of your time (keyword research phase)",
+    ],
+    youWillEndUpWith:
+      "20–30 low-competition keywords ready for content, a clear CTA strategy (traffic flows to email, bookings, or product), a publishing pipeline (blog → email list → conversions), and a realistic 4–6 week path to top-10 rankings — long-tail keywords appear in 7–14 days, primary keywords in 2–4 weeks.",
+    toc: [
+      { label: "Workflow 1: keyword research with Ahrefs", id: "workflow-1-keyword-research" },
+      { label: "Workflow 2: plan your CTA", id: "workflow-2-cta" },
+      { label: "Workflow 3: prioritize and build", id: "workflow-3-prioritize" },
+      { label: "The tech stack explained", id: "tech-stack" },
+      { label: "FAQ", id: "faq" },
+      { label: "Resources", id: "resources" },
+      { label: "The bottom line", id: "bottom-line" },
+    ],
+    body: [
+      {
+        type: "p",
+        body: "Most indie projects fail not because they're low quality, but because zero people know they exist. This guide fixes that.",
+      },
+      {
+        type: "p",
+        body: "You'll learn to find low-competition keywords (KD ≤ 10, volume ≥ 1,000) that rank in weeks, not months. Then you'll turn that traffic into email subscribers and paying customers using a no-code tech stack.",
+      },
+
+      { type: "h2", body: "Workflow 1: keyword research with Ahrefs", id: "workflow-1-keyword-research" },
+      {
+        type: "p",
+        body: "This is where most indie hackers get stuck. Keyword research feels impossible without $500 SEO tools. It's not.",
+      },
+      { type: "h3", body: "Step 1: open Ahrefs and hit blank search" },
+      {
+        type: "p",
+        body: "Go to Ahrefs Keywords Explorer. You'll see an empty search box. Don't search yet.",
+      },
+      { type: "h3", body: "Step 2: apply filters" },
+      {
+        type: "p",
+        body: "Click \"Filters\" on the left sidebar. Set these parameters:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Filter 1 — Keyword Difficulty (KD): set to ≤ 10. Why: you have zero domain authority. Chasing KD 30+ keywords wastes months. KD ≤ 10 means you rank in weeks, not years.",
+          "Filter 2 — Search Volume: set to ≥ 1,000 global searches/month. Why: below 1K is too niche. Above 10K is too competitive. 1K–10K is the sweet spot.",
+          "Filter 3 — Search Intent (optional but recommended): set to Informational + Commercial. Why: informational gets you traffic (education). Commercial gets you buyers (conversions). Mix both.",
+        ],
+      },
+      { type: "h3", body: "Step 3: search by topic" },
+      {
+        type: "p",
+        body: "Now search your core topic. For a side project tool, try these:",
+      },
+      {
+        type: "ul",
+        items: [
+          "\"side project marketing\"",
+          "\"indie hacker growth\"",
+          "\"free tool promotion\"",
+          "\"founder marketing\"",
+        ],
+      },
+      {
+        type: "p",
+        body: "Let Ahrefs run. You'll get 100+ results. Most will have KD < 10.",
+      },
+      { type: "h3", body: "Step 4: analyze the results" },
+      {
+        type: "p",
+        body: "You'll see a table with columns: Keyword, Volume, KD, CPC, Search Intent.",
+      },
+      {
+        type: "p",
+        body: "Rank by two things. First, volume ÷ difficulty ratio (higher is better) — \"side project marketing\" (1.2K volume, KD 6) is a 200 ratio, while \"indie hacker growth hacks\" (890 volume, KD 4) is a 223 ratio. Pick the second one (better ratio).",
+      },
+      {
+        type: "p",
+        body: "Second, conversion potential (does it match your goal?) — \"how to market side project\" is high (person wants strategy), \"side project website builder\" is medium (specific tool question), and \"side project tax deduction\" is low (not relevant).",
+      },
+      { type: "h3", body: "Step 5: export and track" },
+      {
+        type: "p",
+        body: "Export your top 20–30 keywords to a spreadsheet or Notion. Create columns for keyword, volume, KD, intent, status, and URL (when published):",
+      },
+      {
+        type: "ul",
+        items: [
+          "\"how to market side project\" — 1.2K volume, KD 6, Informational, To write",
+          "\"indie hacker growth\" — 890 volume, KD 4, Informational, To write",
+          "\"free tool marketing tips\" — 1.1K volume, KD 8, Commercial, To write",
+        ],
+      },
+      {
+        type: "p",
+        body: "You now have your content calendar. Move to Workflow #2.",
+      },
+
+      { type: "h2", body: "Workflow 2: plan your CTA (call to action)", id: "workflow-2-cta" },
+      {
+        type: "p",
+        body: "Most indie hackers write blogs, then wonder why readers don't convert. The problem: no CTA strategy.",
+      },
+      { type: "h3", body: "Decision 1: what's your goal?" },
+      {
+        type: "p",
+        body: "Choose one primary conversion target:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Email newsletter — goal: build an email list for future announcements. CTA: \"Join my email list\" (free, low friction). Tools: Bento ($29/month), Brevo (free tier), or Mailchimp (free tier).",
+          "Booking calls — goal: talk to early adopters directly. CTA: \"Book a 20-minute call\" (qualified conversations). Tools: Cal.com (free), embedded on blog.",
+          "Product sign-up — goal: direct conversion to your tool/product. CTA: \"Try it free\" (conversion). Tools: direct link to your product.",
+          "Waitlist — goal: build buzz pre-launch. CTA: \"Join the waitlist\" (capture intent). Tools: Bento ($29/month), Brevo (free), or Mailchimp (free).",
+        ],
+      },
+      {
+        type: "callout",
+        tone: "tip",
+        body: "Our recommendation: start with Email + Booking (hybrid approach). Blog readers → email list (low friction, scale). Email readers → booking call (high intent, quality).",
+      },
+      { type: "h3", body: "Decision 2: map keywords to funnel" },
+      {
+        type: "p",
+        body: "Not every keyword converts the same way.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Top of funnel (awareness, education) — keywords like \"how to market side project\", \"indie hacker growth\". CTA: email signup (learn more).",
+          "Middle of funnel (consideration) — keywords like \"free tool marketing strategy\", \"side project seo\". CTA: booking call (specific questions).",
+          "Bottom of funnel (decision) — keywords like \"best way to market free tools\", \"side project launch strategy\". CTA: product demo or free trial.",
+        ],
+      },
+      {
+        type: "p",
+        body: "Map your 20 keywords across this funnel. Different keywords need different CTAs.",
+      },
+      { type: "h3", body: "Decision 3: set up your tools" },
+      {
+        type: "p",
+        body: "Email — choose based on budget: Brevo (free tier, 300 contacts), Mailchimp (free tier, 500 contacts), or Bento ($29/month, 5,000 users, more powerful automation). Setup: 10 minutes (embed form on Feather.blog). Workflow: blog reader → email form → welcome email → weekly digest.",
+      },
+      {
+        type: "p",
+        body: "Calls — Cal.com. Free tier: unlimited bookings, unlimited calendar connections. Setup: 10 minutes (connect to your email). Workflow: interested readers → book 20-min call → automated reminder.",
+      },
+      {
+        type: "p",
+        body: "Now you have traffic flowing from blogs → email → conversions. Move to Workflow #3.",
+      },
+
+      { type: "h2", body: "Workflow 3: prioritize and build", id: "workflow-3-prioritize" },
+      {
+        type: "p",
+        body: "You have 20+ keywords. You can't write for all in week one. Prioritize.",
+      },
+      { type: "h3", body: "Ranking matrix: pick your first 5 keywords" },
+      {
+        type: "p",
+        body: "Score each keyword on 3 dimensions, 1–10 scale:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Rankability (KD + your authority) — KD ≤ 5: score 10. KD 5–8: score 7. KD 8–10: score 5.",
+          "Volume (traffic potential) — ≥ 2K searches/month: score 10. 1K–2K: score 7. < 1K: score 5.",
+          "Conversion potential (your goal) — directly mentions your tool/category: score 10. Related to your niche: score 7. Tangential: score 5.",
+        ],
+      },
+      {
+        type: "p",
+        body: "Example scoring: \"how to market free tools\" → rankability 10 + volume 7 + conversion 10 = 27/30 (write first). \"indie hacker growth\" → rankability 10 + volume 7 + conversion 7 = 24/30 (write second). \"side project tax\" → rankability 8 + volume 5 + conversion 2 = 15/30 (skip this).",
+      },
+      { type: "h3", body: "Build your content calendar" },
+      {
+        type: "ul",
+        items: [
+          "Weeks 1–2: write 3 blogs (your top 3 keywords)",
+          "Weeks 3–4: write 2 blogs (keywords #4–5)",
+          "Weeks 5–6: promote on email/social, measure traffic",
+        ],
+      },
+      { type: "h3", body: "Publishing workflow" },
+      {
+        type: "ol",
+        items: [
+          "Write on Feather.blog (takes 20 minutes, auto-formats)",
+          "Embed email form (Brevo/Mailchimp/Bento) + Cal.com booking link",
+          "Publish to web (automatic SEO optimization)",
+          "Share on LinkedIn, Twitter, r/entrepreneurship (day 1)",
+          "Add to email digest (send to existing subscribers)",
+          "Update your Notion tracker with URL",
+        ],
+      },
+      { type: "h3", body: "Real timeline example" },
+      {
+        type: "p",
+        body: "Week 1 — Monday: publish \"How to Market Your Side Project\" (KD 6, 1.2K volume). Wednesday: publish \"Free Tool Marketing Tips\" (KD 8, 1.1K volume). Friday: publish \"Indie Hacker Growth Hacks\" (KD 4, 890 volume).",
+      },
+      {
+        type: "p",
+        body: "Week 2 — first keywords ranking (long-tail, KD ≤ 5). Monitor analytics (SiteGPT or Datafast). Respond to comments. Add 3 new blogs to top funnel.",
+      },
+      {
+        type: "p",
+        body: "Weeks 3–4 — keywords climbing toward top 20 (typically by week 4 for KD ≤ 5). Email list growing (5–20 subscribers). First booking calls (0–2 calls/week).",
+      },
+      {
+        type: "p",
+        body: "Weeks 5–6 — publish 2 more blogs. Analyze what's working (which keywords drive bookings?). Double down on high-performing content themes.",
+      },
+
+      { type: "h2", body: "The tech stack explained", id: "tech-stack" },
+      {
+        type: "p",
+        body: "You don't need 10 tools. But these 10 solve your full funnel:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Keyword research — Ahrefs: find keywords, analyze competitors, track rankings ($29+/month)",
+          "Content creation — Feather.blog: write blogs fast, auto-formats, SEO built-in (free + paid)",
+          "Email marketing — Bento: advanced automation ($29/month); Brevo: free tier up to 300 contacts (upgrade to $20+/month); Mailchimp: free tier up to 500 contacts (upgrade to $15+/month)",
+          "Booking calls — Cal.com: schedule meetings, integrates with email (free tier available)",
+          "User support — SiteGPT: AI chatbot for your site (free tier available)",
+          "Analytics — DataFast or PostHog: track user behavior, funnels ($0–29/month)",
+          "Call recordings — Sybill.ai: record calls, auto-generate notes (free tier, $20+/month paid)",
+          "Feature tracking — Feature Base: public roadmap, user feedback (free)",
+          "Documentation — Mintlify: beautiful docs for your tool (free)",
+          "Code assistant — Claude: AI coding partner for building your tool (free tier, $20/month Pro)",
+        ],
+      },
+      {
+        type: "p",
+        body: "Why this stack: all affordable or free. All no-code friendly. All integrate with each other. All designed for solo founders.",
+      },
+
+      { type: "h2", body: "FAQ", id: "faq" },
+      { type: "h3", body: "How long until I see traffic?" },
+      {
+        type: "p",
+        body: "Long-tail keywords (KD ≤ 5) typically rank in 7–14 days. Primary keywords (KD 6–10) in 2–4 weeks. Top 10 rankings take 4–8+ weeks.",
+      },
+      { type: "h3", body: "Should I prioritize volume or difficulty?" },
+      {
+        type: "p",
+        body: "Difficulty first, then volume. A keyword with 1K volume and KD 3 beats 5K volume and KD 20.",
+      },
+      { type: "h3", body: "How many keywords should I target initially?" },
+      {
+        type: "p",
+        body: "Start with 3–5 keywords in week 1. Expand to 20+ over 6–8 weeks.",
+      },
+      { type: "h3", body: "What if all my keywords have high KD?" },
+      {
+        type: "p",
+        body: "Your niche is competitive. Pivot to longer-tail, more specific keywords (4+ words). Or find an underserved segment.",
+      },
+      { type: "h3", body: "Do I need a big email list to start?" },
+      {
+        type: "p",
+        body: "No. Start with 0 subscribers. Your first 10–50 come from organic search + social sharing.",
+      },
+      { type: "h3", body: "Can I use this for products, not just blogs?" },
+      {
+        type: "p",
+        body: "Yes. Instead of blogs, build landing pages targeting keywords. Use the same Feather.blog + email stack.",
+      },
+
+      { type: "h2", body: "Resources", id: "resources" },
+      {
+        type: "linklist",
+        items: [
+          { title: "Ahrefs Keywords Explorer", url: "https://ahrefs.com/keywords-explorer", meta: "keyword research" },
+          { title: "Feather.blog", url: "https://feather.blog", meta: "blog platform" },
+          { title: "Brevo", url: "https://brevo.com", meta: "email marketing, free tier" },
+          { title: "Mailchimp", url: "https://mailchimp.com", meta: "email marketing, free tier" },
+          { title: "Bento", url: "https://bentoapp.com", meta: "email marketing, paid" },
+          { title: "Cal.com", url: "https://cal.com", meta: "booking calls" },
+          { title: "PostHog", url: "https://posthog.com", meta: "analytics" },
+          { title: "DataFast", url: "https://datafast.io", meta: "analytics" },
+          { title: "SiteGPT", url: "https://sitegpt.ai", meta: "support chat" },
+          { title: "Sybill.ai", url: "https://sybill.ai", meta: "call recordings" },
+          { title: "Feature Base", url: "https://featurebase.com", meta: "feedback" },
+          { title: "Mintlify", url: "https://mintlify.com", meta: "docs" },
+          { title: "Claude", url: "https://claude.ai", meta: "coding" },
+        ],
+      },
+
+      { type: "h2", body: "The bottom line", id: "bottom-line" },
+      {
+        type: "p",
+        body: "Indie hackers build great products but can't market them. This isn't because marketing is hard — it's because most people skip keyword research and jump straight to \"viral content.\"",
+      },
+      {
+        type: "p",
+        body: "That's backwards. Start with keywords (what people search for), then create content (what they need), then capture emails (build audience), then convert (calls, sales, waitlist).",
+      },
+      {
+        type: "callout",
+        tone: "tip",
+        body: "This guide gives you the playbook. Execute it in 4–6 weeks and you'll have organic traffic, engaged subscribers, and booked calls — without paying for ads.",
+      },
+    ],
+  },
   "ai-native-qa": {
     slug: "ai-native-qa",
     tagline:
