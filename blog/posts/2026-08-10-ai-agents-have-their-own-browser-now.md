@@ -23,7 +23,7 @@ Cloudflare decided to build what agents actually need.
  
 Kitesurf is a cloud-hosted browser that runs entirely on Cloudflare Workers. Built in 12 weeks, it strips out everything humans expect from a browser and keeps only what machines need: structured content, low token overhead, scalability, and isolation.
  
-The numbers are striking. [Kitesurf uses 3-7x less CPU and memory than Chromium](https://developers.cloudflare.com/browser-run/kitesurf-browser/) for common agent tasks like screenshots and HTML extraction. At scale, that's massive. If you're running thousands of agents simultaneously, Kitesurf costs a fraction of what Chromium costs.
+The numbers are striking. Kitesurf uses 3-7x less CPU and memory than Chromium for common agent tasks like screenshots and HTML extraction. At scale, that's massive. If you're running thousands of agents simultaneously, Kitesurf costs a fraction of what Chromium costs.
  
 It's built from open-source components: Blitz for rendering, Firefox's Stylo CSS parser, and Boa (a Rust-based JavaScript engine). The browser already passes 215,000+ web platform tests and renders sites like Wikipedia, Hacker News, and TodoMVC correctly.
  
