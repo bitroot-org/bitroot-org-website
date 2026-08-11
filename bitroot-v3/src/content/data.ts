@@ -124,6 +124,17 @@ export const kits: Item[] = [
 
 export const guides: Item[] = [
   {
+    slug: "background-jobs-that-actually-run",
+    category: "guide",
+    title: "Build Background Jobs That Actually Run (Bull/BullMQ in Node.js)",
+    summary:
+      "Don't handle long tasks in your request handler. Use Bull to queue jobs, process them in the background, retry on failure, and monitor everything — one pattern that fixes 80% of \"mysterious\" failures in production.",
+    tags: ["Node.js", "Bull", "Redis", "Backend"],
+    updatedAt: "2026-08-11",
+    href: "/guides/background-jobs-that-actually-run",
+    difficulty: "intermediate",
+  },
+  {
     slug: "market-your-side-project",
     category: "guide",
     title: "How to Market Your Side Project: Keyword Research + Content Strategy for Indie Hackers",

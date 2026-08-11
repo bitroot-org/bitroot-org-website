@@ -43,6 +43,327 @@ export type GuideContent = {
 };
 
 export const guidesContent: Record<string, GuideContent> = {
+  "background-jobs-that-actually-run": {
+    slug: "background-jobs-that-actually-run",
+    tagline:
+      "Don't handle long tasks in your request handler. Use Bull to queue jobs, process them in the background, retry on failure, and monitor everything. This one pattern fixes 80% of \"mysterious\" failures in production.",
+    timeEstimate: "5 minutes to set up, an afternoon to do it properly",
+    youWillNeed: [
+      "A Node.js app with an HTTP route that currently does slow work inline (email, PDF generation, webhooks, etc.)",
+      "Redis (Docker locally, a managed service in production)",
+      "5 minutes for the basic setup",
+    ],
+    youWillEndUpWith:
+      "Background jobs that don't block requests, retry automatically with exponential backoff, survive crashes because they persist in Redis, and give you full visibility through Bull Board — plus the patterns for recurring, delayed, and priority jobs, and a production checklist.",
+    toc: [
+      { label: "The silent failure problem", id: "the-problem" },
+      { label: "What Bull does, in 60 seconds", id: "what-bull-does" },
+      { label: "Setup (5 minutes)", id: "setup" },
+      { label: "Example: an email job that works", id: "example-email-job" },
+      { label: "The real scenario: 10K emails/day", id: "10k-emails" },
+      { label: "Common patterns", id: "common-patterns" },
+      { label: "Monitoring (Bull Board)", id: "monitoring" },
+      { label: "Mistakes to avoid", id: "mistakes" },
+      { label: "Production checklist", id: "checklist" },
+      { label: "Your competitive edge", id: "competitive-edge" },
+    ],
+    body: [
+      { type: "h2", body: "The silent failure problem", id: "the-problem" },
+      {
+        type: "p",
+        body: "Your customer signs up. Your app is supposed to send a welcome email. But the email service is slow (2 seconds). So you do this:",
+      },
+      {
+        type: "code",
+        lang: "js",
+        source: `app.post('/signup', async (req, res) => {
+  const user = await User.create(req.body);
+  await sendEmail(user.email, 'Welcome!'); // Blocks request
+  res.json({ success: true });
+});`,
+      },
+      {
+        type: "p",
+        body: "Problems: the customer waits 2+ seconds for a response (bad UX). If the email service is down, the entire signup fails. If your app crashes mid-send, the request is lost. There's no retry if the email fails the first time, and no visibility into what happened.",
+      },
+      {
+        type: "p",
+        body: "This is why background jobs exist.",
+      },
+
+      { type: "h2", body: "What Bull does, in 60 seconds", id: "what-bull-does" },
+      {
+        type: "p",
+        body: "Bull is a Redis-backed job queue. Think of it like a todo list that runs in the background (doesn't block requests), retries automatically (email fails? try again in 60 seconds), survives crashes (jobs persist in Redis), and shows you everything that happened (built-in monitoring).",
+      },
+      {
+        type: "p",
+        body: "The flow: a request comes in, you enqueue a job, and respond to the user immediately. A Bull worker picks up the job, processes it, and marks it complete or schedules a retry. If it fails, it retries with exponential backoff (10s, 60s, 600s). If it fails 10 times, it moves to a dead-letter queue that you handle manually.",
+      },
+
+      { type: "h2", body: "Setup (5 minutes)", id: "setup" },
+      { type: "h3", body: "Step 1: install & start Redis" },
+      {
+        type: "code",
+        lang: "bash",
+        source: `# Local development (Docker)
+docker run -d -p 6379:6379 redis:latest
+
+# Production: Use managed Redis (AWS ElastiCache, Upstash, Redis Cloud)`,
+      },
+      { type: "h3", body: "Step 2: install Bull" },
+      {
+        type: "code",
+        lang: "bash",
+        source: `npm install bull redis
+# OR for newer projects
+npm install bullmq redis`,
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Bull = older, stable. BullMQ = newer, cleaner API. Both work; this guide uses Bull for compatibility.",
+      },
+      { type: "h3", body: "Step 3: create your first queue" },
+      {
+        type: "code",
+        lang: "js",
+        source: `const Queue = require('bull');
+const redis = require('redis');
+
+// Create queue (connects to Redis automatically)
+const emailQueue = new Queue('emails', {
+  redis: {
+    host: process.env.REDIS_HOST || 'localhost',
+    port: process.env.REDIS_PORT || 6379
+  }
+});
+
+module.exports = emailQueue;`,
+      },
+
+      { type: "h2", body: "Example: an email job that works", id: "example-email-job" },
+      { type: "h3", body: "Enqueue (in your route handler)" },
+      {
+        type: "code",
+        lang: "js",
+        source: `const emailQueue = require('./queues/emailQueue');
+
+app.post('/signup', async (req, res) => {
+  const user = await User.create(req.body);
+
+  // Add job to queue (returns immediately)
+  await emailQueue.add(
+    { email: user.email, name: user.name }, // job data
+    {
+      attempts: 3,                    // retry 3 times
+      backoff: {                      // wait longer each time
+        type: 'exponential',
+        delay: 2000                   // start at 2 seconds
+      },
+      removeOnComplete: true          // clean up after success
+    }
+  );
+
+  res.json({ success: true }); // respond immediately
+});`,
+      },
+      { type: "h3", body: "Process (in a separate worker)" },
+      {
+        type: "code",
+        lang: "js",
+        source: `const emailQueue = require('./queues/emailQueue');
+const { sendEmail } = require('./email');
+
+// Define how to process jobs
+emailQueue.process(async (job) => {
+  const { email, name } = job.data;
+
+  try {
+    console.log(\`Sending email to \${email}...\`);
+    await sendEmail(email, \`Welcome, \${name}!\`);
+    return { success: true }; // marks job complete
+  } catch (error) {
+    console.error(\`Email failed: \${error.message}\`);
+    throw error; // triggers retry (Bull handles it)
+  }
+});
+
+// Optional: Listen to job events
+emailQueue.on('completed', (job) => {
+  console.log(\`Email sent to \${job.data.email}\`);
+});
+
+emailQueue.on('failed', (job, err) => {
+  console.error(\`Email failed after retries: \${job.data.email}\`);
+  // Could send to Slack, log to monitoring tool, etc.
+});`,
+      },
+      { type: "h3", body: "Run the worker" },
+      {
+        type: "code",
+        lang: "bash",
+        source: `# In a separate terminal/process
+node worker.js`,
+      },
+      {
+        type: "p",
+        body: "That's it. Your app now handles emails safely, retries on failure, and has full visibility.",
+      },
+
+      { type: "h2", body: "The real scenario: 10K emails/day", id: "10k-emails" },
+      {
+        type: "p",
+        body: "Let's say you send 10,000 welcome + promotional emails daily.",
+      },
+      {
+        type: "p",
+        body: "Without jobs (the naive approach): requests time out (email service is slow), the email service going down takes your entire app down with it, there's no way to track failures, and you can't retry selectively.",
+      },
+      {
+        type: "p",
+        body: "With Bull:",
+      },
+      {
+        type: "code",
+        lang: "js",
+        source: `// Daily email campaign
+const emailQueue = new Queue('emails', { redis });
+
+// Enqueue 10K jobs at once (returns in milliseconds)
+app.post('/campaign/send', async (req, res) => {
+  const users = await User.findAll();
+
+  // Add all jobs at once
+  const jobs = await emailQueue.addBulk(
+    users.map(user => ({
+      name: \`send-to-\${user.id}\`,
+      data: { email: user.email, campaignId: req.body.campaignId },
+      opts: {
+        attempts: 3,
+        backoff: { type: 'exponential', delay: 2000 }
+      }
+    }))
+  );
+
+  res.json({ queued: jobs.length }); // Done in <1 second
+});
+
+// Process: handle 10 emails concurrently
+emailQueue.process(10, async (job) => {
+  return sendEmail(job.data.email, 'Special offer...');
+});
+
+// Monitoring
+emailQueue.on('failed', (job, err) => {
+  // Log failures for analysis
+  console.log(\`Failed: \${job.data.email} - \${err.message}\`);
+  // Send alert if 10%+ are failing
+});`,
+      },
+      {
+        type: "callout",
+        tone: "tip",
+        body: "Result: 10K emails queued in <1 second. Processed at 10/second = 1000 seconds (17 minutes). If an email fails, retry automatically. If the email service recovers, retried emails eventually send. Zero data loss.",
+      },
+
+      { type: "h2", body: "Common patterns", id: "common-patterns" },
+      { type: "h3", body: "Recurring jobs (every hour)" },
+      {
+        type: "code",
+        lang: "js",
+        source: `emailQueue.add(
+  { task: 'cleanup-old-files' },
+  {
+    repeat: {
+      every: 3600000 // milliseconds (1 hour)
+    }
+  }
+);`,
+      },
+      { type: "h3", body: "Delayed jobs (send tomorrow)" },
+      {
+        type: "code",
+        lang: "js",
+        source: `emailQueue.add(
+  { email: user.email },
+  {
+    delay: 86400000 // milliseconds (1 day)
+  }
+);`,
+      },
+      { type: "h3", body: "Priority jobs (VIP emails first)" },
+      {
+        type: "code",
+        lang: "js",
+        source: `// High priority: 1 (lower number = higher priority)
+emailQueue.add(job, { priority: 1 });
+
+// Low priority: 10
+emailQueue.add(job, { priority: 10 });
+
+// Process respects priority order
+emailQueue.process(async (job) => { /* ... */ });`,
+      },
+
+      { type: "h2", body: "Monitoring (Bull Board)", id: "monitoring" },
+      {
+        type: "p",
+        body: "See what's happening in real time:",
+      },
+      {
+        type: "code",
+        lang: "js",
+        source: `const { createBullBoard } = require('@bull-board/api');
+const { ExpressAdapter } = require('@bull-board/express');
+
+const serverAdapter = new ExpressAdapter();
+createBullBoard({
+  queues: [emailQueue, smsQueue, pdfQueue],
+  serverAdapter
+});
+
+app.use('/admin/queues', serverAdapter.getRouter());`,
+      },
+      {
+        type: "p",
+        body: "Visit `http://localhost:3000/admin/queues` to see pending jobs (waiting to run), active jobs (currently processing), completed jobs, failed jobs, and the retry timeline.",
+      },
+
+      { type: "h2", body: "Mistakes to avoid", id: "mistakes" },
+      {
+        type: "ul",
+        items: [
+          "No retries — job fails once, data loss. Fix: set `attempts: 3+`.",
+          "Unlimited retries — a broken job retries forever. Fix: set a max attempts plus a dead-letter queue.",
+          "Process crashes, no recovery — jobs lost if the app crashes. Fix: use PM2/Docker to restart the worker.",
+          "Single worker thread — can't handle volume. Fix: run `process(10, job)` for concurrency.",
+          "No monitoring — silent failures in production. Fix: use Bull Board or log to a monitoring service.",
+          "Processing the same job twice — double-charges, duplicate data. Fix: use idempotency keys (store processed job IDs).",
+        ],
+      },
+
+      { type: "h2", body: "Production checklist", id: "checklist" },
+      {
+        type: "ul",
+        items: [
+          "Redis: use a managed service (not your app server)",
+          "Worker: run in a separate process/container",
+          "Monitoring: Bull Board or send alerts to Slack",
+          "Logging: log every job completion + failure",
+          "Retries: set sensible backoff (exponential, not instant)",
+          "Dead-letter: handle jobs that fail all retries",
+          "Scaling: run multiple workers on multiple servers if needed",
+        ],
+      },
+
+      { type: "h2", body: "Your competitive edge", id: "competitive-edge" },
+      {
+        type: "p",
+        body: "Founders using job queues don't lose customer data (retries work), scale to 10K events/day without breaking, know exactly what happened (monitoring), and ship faster (background processing means simpler code).",
+      },
+    ],
+  },
   "market-your-side-project": {
     slug: "market-your-side-project",
     tagline:
