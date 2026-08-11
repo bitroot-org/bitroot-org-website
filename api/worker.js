@@ -112,6 +112,7 @@ async function handleNewsletter(body, env, ctx) {
         const sent = await sendBrevo(env, {
           to: [{ email }],
           subject: "Welcome to Bitroot — a letter from Yash",
+          tags: ["newsletter"],
           htmlContent: welcomeHtml({ posts }),
         });
         if (sent) {
@@ -127,6 +128,7 @@ async function handleNewsletter(body, env, ctx) {
           to: notifyRecipients(env),
           replyTo: { email },
           subject: `New sign up: newsletter on ${siteDomain(site)}`,
+          tags: ["newsletter"],
           textContent: internalText("newsletter", siteDomain(site), [
             ["Email", email],
             ["Location", location],
@@ -168,6 +170,7 @@ async function handleEarlyAccess(body, env, ctx) {
         sendBrevo(env, {
           to: [{ email, name: name || undefined }],
           subject: `You're in the queue for ${productName}`,
+          tags: ["early_access"],
           htmlContent: earlyAccessHtml({ firstName, productName, programName }),
         }).then(async (sent) => {
           if (sent) {
@@ -182,6 +185,7 @@ async function handleEarlyAccess(body, env, ctx) {
           to: notifyRecipients(env),
           replyTo: { email, name: name || undefined },
           subject: `New sign up: early access on ${siteDomain("org")}`,
+          tags: ["early_access"],
           textContent: internalText("early access", siteDomain("org"), [
             ["Name", name],
             ["Email", email],
@@ -220,6 +224,7 @@ async function handleContact(body, env, ctx) {
       sendBrevo(env, {
         to: [{ email, name: name || undefined }],
         subject: "Got your message — we'll reply within one business day",
+        tags: ["contact"],
         htmlContent: contactAckHtml({
           firstName: (name || "").split(/\s+/)[0] || "there",
           topic,
@@ -230,6 +235,7 @@ async function handleContact(body, env, ctx) {
         to: notifyRecipients(env),
         replyTo: { email, name: name || undefined },
         subject: `New sign up: contact form on ${siteDomain("org")}`,
+        tags: ["contact"],
         textContent: internalText("contact form", siteDomain("org"), [
           ["Name", name],
           ["Email", email],
@@ -360,7 +366,7 @@ function notifyRecipients(env) {
 // Returns true on success. Never throws — a mail outage must not fail a form.
 // Pass htmlContent for designed subscriber emails, textContent for plain
 // internal notifications.
-async function sendBrevo(env, { to, subject, htmlContent, textContent, replyTo }) {
+async function sendBrevo(env, { to, subject, htmlContent, textContent, replyTo, tags }) {
   if (!env.BREVO_API_KEY) {
     console.warn("BREVO_API_KEY not set — skipping send");
     return false;
@@ -380,6 +386,9 @@ async function sendBrevo(env, { to, subject, htmlContent, textContent, replyTo }
         subject,
         ...(htmlContent ? { htmlContent } : {}),
         ...(textContent ? { textContent } : {}),
+        // Flow tag — lets consumers (e.g. TeamLife's Audience view) categorise
+        // delivery events exactly instead of guessing from the subject.
+        ...(tags && tags.length ? { tags } : {}),
       }),
     });
     if (!res.ok) {
