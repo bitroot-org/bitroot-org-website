@@ -7,6 +7,11 @@
 //   2. MailerLite (newsletter list, campaign sending)
 //   3. Brevo (transactional auto-replies + internal notifications)
 //
+// It is also the *single* Brevo sender for every Bitroot property: other apps
+// (bitroot-club) post to the authenticated `/v1/send` instead of holding their
+// own BREVO_API_KEY, so there is one key, one sender identity, and consistent
+// per-flow tags on every send.
+//
 // Secrets:  DATABASE_URL, BREVO_API_KEY, MAILERLITE_API_KEY (optional — rows
 //           are stamped unsynced and backfilled later), ADMIN_TOKEN
 // Vars:     SENDER_EMAIL, SENDER_NAME, NOTIFY_EMAIL, MAILERLITE_GROUP_ID (opt)
@@ -53,9 +58,14 @@ export default {
           return json(await handleEarlyAccess(body, env, ctx), 200, cors);
         case "/v1/contact":
           return json(await handleContact(body, env, ctx), 200, cors);
+        case "/v1/send": {
+          if (!authorized(request, env)) {
+            return json({ ok: false, error: "unauthorized" }, 401, cors);
+          }
+          return json(await handleSend(body, env), 200, cors);
+        }
         case "/v1/admin/sync-mailerlite": {
-          const auth = request.headers.get("Authorization") || "";
-          if (!env.ADMIN_TOKEN || auth !== `Bearer ${env.ADMIN_TOKEN}`) {
+          if (!authorized(request, env)) {
             return json({ ok: false, error: "unauthorized" }, 401, cors);
           }
           return json(await syncMailerlite(env), 200, cors);
@@ -247,6 +257,57 @@ async function handleContact(body, env, ctx) {
   );
 
   return { ok: true };
+}
+
+// Generic authenticated send. Other Bitroot properties call this instead of
+// talking to Brevo themselves — the sender identity and the API key stay here.
+// Callers own their own HTML; all we add is validation and the shared sender.
+// Guarded by ADMIN_TOKEN (server-to-server only — never call this from a
+// browser, the token would leak).
+async function handleSend(body, env) {
+  const to = normRecipients(body.to);
+  if (!to.length) throw new HttpError(422, "invalid_to");
+  const subject = str(body.subject, 300);
+  if (!subject) throw new HttpError(422, "missing_subject");
+
+  const htmlContent = str(body.htmlContent, 400000);
+  const textContent = str(body.textContent, 400000);
+  if (!htmlContent && !textContent) throw new HttpError(422, "missing_content");
+
+  const sent = await sendBrevo(env, {
+    to,
+    replyTo: normRecipients(body.replyTo)[0],
+    subject,
+    htmlContent,
+    textContent,
+    tags: normTags(body.tags),
+  });
+  // sendBrevo never throws, so surface the failure to the caller instead —
+  // callers decide whether a mail failure matters (bitroot-club logs it).
+  if (!sent) throw new HttpError(502, "send_failed");
+  return { ok: true };
+}
+
+// Accepts "a@b.com", { email, name }, or an array of either. Invalid and
+// duplicate addresses are dropped rather than failing the whole send.
+function normRecipients(v) {
+  if (v == null) return [];
+  const seen = new Set();
+  const out = [];
+  for (const item of Array.isArray(v) ? v : [v]) {
+    const email = normEmail(typeof item === "string" ? item : item && item.email);
+    if (!email || seen.has(email)) continue;
+    seen.add(email);
+    const name = item && typeof item === "object" ? str(item.name, 120) : null;
+    out.push(name ? { email, name } : { email });
+  }
+  return out;
+}
+
+function normTags(v) {
+  if (!Array.isArray(v)) return undefined;
+  const tags = v.map((t) => str(t, 40)).filter(Boolean).slice(0, 10);
+  return tags.length ? tags : undefined;
 }
 
 // Backfill newsletter rows that never made it into MailerLite (e.g. the key
@@ -668,6 +729,13 @@ class HttpError extends Error {
     super(message);
     this.status = status;
   }
+}
+
+// Shared bearer check for every privileged route (/v1/send, /v1/admin/*).
+// A missing ADMIN_TOKEN fails closed.
+function authorized(request, env) {
+  const auth = request.headers.get("Authorization") || "";
+  return Boolean(env.ADMIN_TOKEN) && auth === `Bearer ${env.ADMIN_TOKEN}`;
 }
 
 function normEmail(v) {
