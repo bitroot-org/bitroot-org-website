@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 12 Aug 2026 09:47:48 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 09:48:57 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title># The Multi-Agent Playbook: How Founders Should Solve Hard Problems</title>
@@ -44,20 +44,6 @@
       <category>spotify</category>
       <enclosure url="https://bitroot.org/blog/media/2026-08-11-spotify-releases-xirp-a-vendor-neutral-agentic-dev.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2086795659651191106">Original Source</source>
-    </item>
-    <item>
-      <title>Spotify launches Xirp, a unified AI coding agent environment</title>
-      <link>https://bitroot.org/blog/2026-08-11-spotify-launches-xirp-a-unified-ai-coding-agent-en/</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/2026-08-11-spotify-launches-xirp-a-unified-ai-coding-agent-en/</guid>
-      <description>Spotify’s new Xirp lets teams run Claude Code, Gemini CLI, and OpenAI Codex sessions from one UI, aiming to reduce context‑switching for AI‑assisted development.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2087051402744832239"&gt;https://x.com/i/status/2087051402744832239&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Tue, 11 Aug 2026 17:38:48 +0000</pubDate>
-      <category>ai coding</category>
-      <category>development tools</category>
-      <category>spotify</category>
-      <enclosure url="https://bitroot.org/blog/media/2026-08-11-spotify-launches-xirp-a-unified-ai-coding-agent-en.jpg" type="image/jpeg" length="0" />
-      <source url="https://x.com/i/status/2087051402744832239">Original Source</source>
     </item>
     <item>
       <title>Diffusion Studio launches DAPI, a CLI for AI‑driven video editing</title>
