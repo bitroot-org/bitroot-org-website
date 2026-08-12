@@ -5,8 +5,22 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 12 Aug 2026 03:26:37 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 03:27:37 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude Code switches to auto‑mode by default</title>
+      <link>https://bitroot.org/blog/2026-08-12-claude-code-switches-to-automode-by-default/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-08-12-claude-code-switches-to-automode-by-default/</guid>
+      <description>We recently made auto mode the default in Claude Code, which means you no longer have to approve every action. But what determines if something is safe to run? Watch how it works:
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2086844755770757531"&gt;https://x.com/i/status/2086844755770757531&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 12 Aug 2026 03:07:28 +0000</pubDate>
+      <category>claude code</category>
+      <category>auto mode</category>
+      <category>ai coding</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-08-12-claude-code-switches-to-automode-by-default.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2086844755770757531">Original Source</source>
+    </item>
     <item>
       <title>Spotify releases Xirp, a vendor-neutral agentic dev environment</title>
       <link>https://bitroot.org/blog/2026-08-11-spotify-releases-xirp-a-vendor-neutral-agentic-dev/</link>
@@ -20,6 +34,20 @@
       <category>spotify</category>
       <enclosure url="https://bitroot.org/blog/media/2026-08-11-spotify-releases-xirp-a-vendor-neutral-agentic-dev.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/i/status/2086795659651191106">Original Source</source>
+    </item>
+    <item>
+      <title>Diffusion Studio launches DAPI, a CLI for AI‑driven video editing</title>
+      <link>https://bitroot.org/blog/2026-08-11-diffusion-studio-launches-dapi-a-cli-for-aidriven/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-08-11-diffusion-studio-launches-dapi-a-cli-for-aidriven/</guid>
+      <description>Diffusion Studio’s new DAPI lets developers script motion‑graphics and edit footage by prompting Claude, all from a cross‑platform command line. It’s open source and free, but depends on Claude’s API.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/i/status/2086844224826159372"&gt;https://x.com/i/status/2086844224826159372&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 11 Aug 2026 01:52:31 +0000</pubDate>
+      <category>video editing</category>
+      <category>cli</category>
+      <category>ai</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-08-11-diffusion-studio-launches-dapi-a-cli-for-aidriven.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/i/status/2086844224826159372">Original Source</source>
     </item>
     <item>
       <title>The Autonomy Paradox: Why Less Oversight Makes Claude Code Safer</title>
