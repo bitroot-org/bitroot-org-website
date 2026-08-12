@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "count": 313,
+  "count": 318,
   "posts": [
     "2026-08-12-the-multi-agent-playbook-how-founders-should-solve.md",
     "2026-08-12-claude-code-switches-to-automode-by-default.md",
@@ -93,7 +93,12 @@
     "2026-07-12-lingbot-world-20-opensourced-with-braincerebellum.md",
     "2026-07-12-huibing-dong-shares-tpu-pagedattention-deepdive-vi.md",
     "2026-07-12-clipreel-lets-you-trim-youtube-or-x-videos-to-clip.md",
+    "2026-07-11-toksscale-cli-tracks-ai-coding-token-usage-across.md",
     "2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual.md",
+    "2026-07-11-robbyant-opens-lingbot-video-30b-moe-model-for-ope.md",
+    "2026-07-11-colibri-runs-744b-moe-model-on-cpu-via-expert-stre.md",
+    "2026-07-11-claude-code-tool-cuts-command-output-tokens-by-90.md",
+    "2026-07-11-charles-3ready-releases-grokulator-010-windows-dev.md",
     "2026-07-10-pi-ai-coding-agent-released-as-free-opensource-too.md",
     "2026-07-10-openhands-launches-agent-canvas-for-selfhosted-ai.md",
     "2026-07-10-langchain-launches-openwiki-to-autogenerate-a-livi.md",
@@ -332,7 +337,7 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/06/Claude-photo.jpg",
       "sources": [],
       "readTime": "4 min",
-      "shortId": 313
+      "shortId": 318
     },
     {
       "filename": "2026-08-12-claude-code-switches-to-automode-by-default.md",
@@ -353,7 +358,7 @@
       ],
       "readTime": "2 min",
       "video": "https://video.twimg.com/amplify_video/2086842756346085376/vid/avc1/3840x2160/IENTVebjJJOBNEGv.mp4?tag=29",
-      "shortId": 312
+      "shortId": 317
     },
     {
       "filename": "2026-08-11-spotify-releases-xirp-a-vendor-neutral-agentic-dev.md",
@@ -374,7 +379,7 @@
       ],
       "readTime": "2 min",
       "video": "https://bitroot.org/blog/media/2026-08-11-spotify-releases-xirp-a-vendor-neutral-agentic-dev.mp4",
-      "shortId": 311
+      "shortId": 316
     },
     {
       "filename": "2026-08-11-diffusion-studio-launches-dapi-a-cli-for-aidriven.md",
@@ -395,7 +400,7 @@
       ],
       "readTime": "2 min",
       "video": "https://bitroot.org/blog/media/2026-08-11-diffusion-studio-launches-dapi-a-cli-for-aidriven.mp4",
-      "shortId": 310
+      "shortId": 315
     },
     {
       "filename": "2026-08-10-the-autonomy-paradox-why-less-oversight-makes-clau.md",
@@ -411,7 +416,7 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2269811684.jpg",
       "sources": [],
       "readTime": "4 min",
-      "shortId": 309
+      "shortId": 314
     },
     {
       "filename": "2026-08-10-ai-agents-have-their-own-browser-now.md",
@@ -429,7 +434,7 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/08/kitesurf.webp",
       "sources": [],
       "readTime": "4 min",
-      "shortId": 308
+      "shortId": 313
     },
     {
       "filename": "2026-08-08-kimi-k3-escaped-its-sandbox-what-it-means-for-your.md",
@@ -446,7 +451,7 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/07/GettyImages-2286500505.jpg?resize=1280,853",
       "sources": [],
       "readTime": "4 min",
-      "shortId": 307
+      "shortId": 312
     },
     {
       "filename": "2026-08-07-let-the-self-improving-ai-do-further-scientific-br.md",
@@ -463,7 +468,7 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2266466589.jpg",
       "sources": [],
       "readTime": "5 min",
-      "shortId": 306
+      "shortId": 311
     },
     {
       "filename": "2026-08-06-openai-launches-agent-plugins-standard-for-crosscl.md",
@@ -483,7 +488,7 @@
         "https://x.com/i/status/2085398373511918022"
       ],
       "readTime": "4 min",
-      "shortId": 305
+      "shortId": 310
     },
     {
       "filename": "2026-08-06-why-ai-model-hacks-reveal-your-real-risk.md",
@@ -503,7 +508,7 @@
         "https://www.bbc.com/news/articles/cx2kgdnyk2po"
       ],
       "readTime": "4 min",
-      "shortId": 304
+      "shortId": 309
     },
     {
       "filename": "2026-08-06-when-serial-entrepreneurs-quit-what-nikita-biers-e.md",
@@ -521,7 +526,7 @@
       "image": "https://techcrunch.com/wp-content/uploads/2023/11/X-and-Threads-GettyImages-1763609384.jpeg?resize=1280,888",
       "sources": [],
       "readTime": "7 min",
-      "shortId": 303
+      "shortId": 308
     },
     {
       "filename": "2026-07-15-aipoch-open-science-v020-adds-skills-slash-command.md",
@@ -541,7 +546,7 @@
         "https://x.com/aipoch_ai/status/2077269195646185723"
       ],
       "readTime": "2 min",
-      "shortId": 302
+      "shortId": 307
     },
     {
       "filename": "2026-08-05-bending-spoons-acquires-airtable-for-1-285b-what-f.md",
@@ -559,7 +564,7 @@
       "image": "https://qz.com/cdn-cgi/image/width=1920,quality=85,format=auto/https://assets.qz.com/media/GettyImages-2283602128-1920x1281.jpg",
       "sources": [],
       "readTime": "5 min",
-      "shortId": 301
+      "shortId": 306
     },
     {
       "filename": "2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a.md",
@@ -578,7 +583,7 @@
       "image": "https://bitroot.org/blog/media/2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a.jpg",
       "sources": [],
       "readTime": "8 min",
-      "shortId": 300
+      "shortId": 305
     },
     {
       "filename": "2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod.md",
@@ -597,7 +602,7 @@
       "image": "https://bitroot.org/blog/media/2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod.jpg",
       "sources": [],
       "readTime": "5 min",
-      "shortId": 299
+      "shortId": 304
     },
     {
       "filename": "2026-08-04-claude-model-selection-for-founders-the-100-to-10k.md",
@@ -617,7 +622,7 @@
         "https://claude.com/blog/claude-models-explained-choosing-the-best-model-for-your-use-case"
       ],
       "readTime": "6 min",
-      "shortId": 298
+      "shortId": 303
     },
     {
       "filename": "2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe.md",
@@ -635,7 +640,7 @@
       "image": "https://bitroot.org/blog/media/2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe.jpg",
       "sources": [],
       "readTime": "5 min",
-      "shortId": 297
+      "shortId": 302
     },
     {
       "filename": "2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f.md",
@@ -654,7 +659,7 @@
       "image": "https://bitroot.org/blog/media/2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f.jpg",
       "sources": [],
       "readTime": "5 min",
-      "shortId": 296
+      "shortId": 301
     },
     {
       "filename": "2026-07-12-chromatorium-launches-as-free-opensource-colour-to.md",
@@ -675,7 +680,7 @@
         "https://x.com/Be_Mai_Waifu/status/2076180299420184830"
       ],
       "readTime": "2 min",
-      "shortId": 295
+      "shortId": 300
     },
     {
       "filename": "2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh.md",
@@ -692,7 +697,7 @@
       "image": "https://bitroot.org/blog/media/2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh.jpg",
       "sources": [],
       "readTime": "8 min",
-      "shortId": 294
+      "shortId": 299
     },
     {
       "filename": "2026-07-31-privacy-analytics-for-startups-reignat-vs-plausibl.md",
@@ -709,7 +714,7 @@
       "image": "https://bitroot.org/blog/media/2026-07-31-privacy-analytics-for-startups-reignat-vs-plausibl.avif",
       "sources": [],
       "readTime": "4 min",
-      "shortId": 293
+      "shortId": 298
     },
     {
       "filename": "2026-07-31-how-openais-20-efficiency-gain-extends-your-runway.md",
@@ -727,7 +732,7 @@
       "image": "https://bitroot.org/blog/media/2026-07-31-how-openais-20-efficiency-gain-extends-your-runway.jpg",
       "sources": [],
       "readTime": "7 min",
-      "shortId": 292
+      "shortId": 297
     },
     {
       "filename": "2026-07-29-mcp-becomes-stateless-enabling-serverless-and-edge.md",
@@ -747,7 +752,7 @@
         "https://x.com/i/status/2082164250496348268"
       ],
       "readTime": "2 min",
-      "shortId": 291
+      "shortId": 296
     },
     {
       "filename": "2026-07-29-whatsapp-calls-in-your-browser-does-it-replace-zoo.md",
@@ -763,7 +768,7 @@
       "image": "https://bitroot.org/blog/media/2026-07-29-whatsapp-calls-in-your-browser-does-it-replace-zoo.jpg",
       "sources": [],
       "readTime": "4 min",
-      "shortId": 290
+      "shortId": 295
     },
     {
       "filename": "2026-07-29-cursor-start-at-649-month-what-developers-in-india.md",
@@ -782,7 +787,7 @@
       "image": "https://bitroot.org/blog/media/2026-07-29-cursor-start-at-649-month-what-developers-in-india.png",
       "sources": [],
       "readTime": "9 min",
-      "shortId": 289
+      "shortId": 294
     },
     {
       "filename": "2026-07-28-open-weights-models-are-fine-what-founders-should.md",
@@ -802,7 +807,7 @@
         "https://www.anthropic.com/news/position-open-weights-models"
       ],
       "readTime": "6 min",
-      "shortId": 288
+      "shortId": 293
     },
     {
       "filename": "2026-07-17-baberu-ocr-launches-as-a-multilingual-comic-ocr-on.md",
@@ -822,7 +827,7 @@
         "https://x.com/daichi_genshiai/status/2077989874398032361"
       ],
       "readTime": "3 min",
-      "shortId": 287
+      "shortId": 292
     },
     {
       "filename": "2026-07-27-claude-opus-5-vs-fable-5-which-model-should-your-s.md",
@@ -841,7 +846,7 @@
       "image": "https://bitroot.org/blog/media/2026-07-27-claude-opus-5-vs-fable-5-which-model-should-your-s.webp",
       "sources": [],
       "readTime": "8 min",
-      "shortId": 286
+      "shortId": 291
     },
     {
       "filename": "2026-07-27-agentic-ai-for-founders-when-you-need-agents-and-w.md",
@@ -859,7 +864,7 @@
       "image": "https://bitroot.org/blog/media/2026-07-27-agentic-ai-for-founders-when-you-need-agents-and-w.webp",
       "sources": [],
       "readTime": "5 min",
-      "shortId": 285
+      "shortId": 290
     },
     {
       "filename": "2026-07-25-bitchat-github-takedown-why-developers-in-india-mu.md",
@@ -879,7 +884,7 @@
         "https://techcrunch.com/2026/07/24/indias-move-against-jack-dorseys-bitchat-sparks-legal-debate/"
       ],
       "readTime": "6 min",
-      "shortId": 284
+      "shortId": 289
     },
     {
       "filename": "2026-07-18-firecrawl-launches-openlovable-to-autogenerate-rea.md",
@@ -899,7 +904,7 @@
         "https://x.com/N0V4Dev/status/2078336551696626102"
       ],
       "readTime": "2 min",
-      "shortId": 283
+      "shortId": 288
     },
     {
       "filename": "2026-07-13-css-texteffects-library-expands-to-66-readymade-st.md",
@@ -919,7 +924,7 @@
         "https://x.com/codesharpdev/status/2076542275296108963"
       ],
       "readTime": "2 min",
-      "shortId": 282
+      "shortId": 287
     },
     {
       "filename": "2026-07-24-why-googles-gemini-3-5-pro-is-months-behind-the-co.md",
@@ -939,7 +944,7 @@
       "image": "https://bitroot.org/blog/media/2026-07-24-why-googles-gemini-3-5-pro-is-months-behind-the-co.jpg",
       "sources": [],
       "readTime": "13 min",
-      "shortId": 281
+      "shortId": 286
     },
     {
       "filename": "2026-07-23-claude-code-desktop-adds-ios-simulator-panel-in-pu.md",
@@ -959,7 +964,7 @@
         "https://x.com/i/status/2079674432038248611"
       ],
       "readTime": "2 min",
-      "shortId": 280
+      "shortId": 285
     },
     {
       "filename": "2026-07-23-claude-code-adds-beta-security-scanning-plugin-for.md",
@@ -980,7 +985,7 @@
         "https://x.com/i/status/2079990597973057691"
       ],
       "readTime": "3 min",
-      "shortId": 279
+      "shortId": 284
     },
     {
       "filename": "2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video.md",
@@ -1001,7 +1006,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video.mp4",
-      "shortId": 278
+      "shortId": 283
     },
     {
       "filename": "2026-07-23-world-monitor-opensources-a-billiondollar-warroom.md",
@@ -1022,7 +1027,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-world-monitor-opensources-a-billiondollar-warroom.mp4",
-      "shortId": 277
+      "shortId": 282
     },
     {
       "filename": "2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas.md",
@@ -1044,7 +1049,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas.mp4",
-      "shortId": 276
+      "shortId": 281
     },
     {
       "filename": "2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this.md",
@@ -1064,7 +1069,7 @@
       "image": "https://bitroot.org/blog/media/2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this.jpg",
       "sources": [],
       "readTime": "7 min",
-      "shortId": 275
+      "shortId": 280
     },
     {
       "filename": "2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now.md",
@@ -1086,7 +1091,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now.mp4",
-      "shortId": 274
+      "shortId": 279
     },
     {
       "filename": "2026-07-23-cursor-launches-router-to-cut-model-costs-by-60.md",
@@ -1107,7 +1112,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-cursor-launches-router-to-cut-model-costs-by-60.mp4",
-      "shortId": 273
+      "shortId": 278
     },
     {
       "filename": "2026-07-23-claude-code-eyes-adds-visual-hardware-verification.md",
@@ -1127,7 +1132,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-23-claude-code-eyes-adds-visual-hardware-verification.mp4",
-      "shortId": 272
+      "shortId": 277
     },
     {
       "filename": "2026-07-23-buzz-launches-as-opensource-group-chat-alternative.md",
@@ -1147,7 +1152,7 @@
         "https://x.com/i/status/2079605800998146171"
       ],
       "readTime": "2 min",
-      "shortId": 271
+      "shortId": 276
     },
     {
       "filename": "2026-07-22-signspot-launches-ai-pdf-signature-field-extractor.md",
@@ -1168,7 +1173,7 @@
         "https://x.com/Adedoyinjames_/status/2079803185384825294"
       ],
       "readTime": "2 min",
-      "shortId": 270
+      "shortId": 275
     },
     {
       "filename": "2026-07-22-runtimewire-opens-free-live-aieconomy-news-feed.md",
@@ -1188,7 +1193,7 @@
         "https://x.com/runtimewire/status/2079809429411611008"
       ],
       "readTime": "2 min",
-      "shortId": 269
+      "shortId": 274
     },
     {
       "filename": "2026-07-22-patchy-082-adds-affinity-import-and-scripting-test.md",
@@ -1209,7 +1214,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-22-patchy-082-adds-affinity-import-and-scripting-test.mp4",
-      "shortId": 268
+      "shortId": 273
     },
     {
       "filename": "2026-07-22-opensource-ai-agent-audits-video-frames-automatica.md",
@@ -1230,7 +1235,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-22-opensource-ai-agent-audits-video-frames-automatica.mp4",
-      "shortId": 267
+      "shortId": 272
     },
     {
       "filename": "2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven.md",
@@ -1250,7 +1255,7 @@
       "image": "https://bitroot.org/blog/media/2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven.avif",
       "sources": [],
       "readTime": "6 min",
-      "shortId": 266
+      "shortId": 271
     },
     {
       "filename": "2026-07-22-ateno-releases-ai-room-designer-with-free-trial-an.md",
@@ -1271,7 +1276,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-22-ateno-releases-ai-room-designer-with-free-trial-an.mp4",
-      "shortId": 265
+      "shortId": 270
     },
     {
       "filename": "2026-07-21-why-apple-raised-prices-across-hardware-subscripti.md",
@@ -1285,7 +1290,7 @@
       "image": "https://bitroot.org/blog/media/2026-07-21-why-apple-raised-prices-across-hardware-subscripti.jpg",
       "sources": [],
       "readTime": "11 min",
-      "shortId": 264
+      "shortId": 269
     },
     {
       "filename": "2026-07-21-vigolium-launches-ai-driven-open-source-vulnerabil.md",
@@ -1305,7 +1310,7 @@
         "https://x.com/VivekIntel/status/2079448821285929469"
       ],
       "readTime": "2 min",
-      "shortId": 263
+      "shortId": 268
     },
     {
       "filename": "2026-07-21-unlimited-ocr-opensource-3b-model-reads-100page-pd.md",
@@ -1326,7 +1331,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-21-unlimited-ocr-opensource-3b-model-reads-100page-pd.mp4",
-      "shortId": 262
+      "shortId": 267
     },
     {
       "filename": "2026-07-21-tiny-mac-app-sundial-logs-minutebyminute-activity.md",
@@ -1346,7 +1351,7 @@
         "https://x.com/ayushtweetshere/status/2079445161957085463"
       ],
       "readTime": "2 min",
-      "shortId": 261
+      "shortId": 266
     },
     {
       "filename": "2026-07-21-monid-replaces-apify-with-perrequest-social-media.md",
@@ -1367,7 +1372,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-21-monid-replaces-apify-with-perrequest-social-media.mp4",
-      "shortId": 260
+      "shortId": 265
     },
     {
       "filename": "2026-07-21-last30days-skill-lets-ai-agents-fetch-realengageme.md",
@@ -1387,7 +1392,7 @@
         "https://x.com/heyashishsaini/status/2079426058496119186"
       ],
       "readTime": "2 min",
-      "shortId": 259
+      "shortId": 264
     },
     {
       "filename": "2026-07-21-aos-community-edition-launches-with-rust-cli-and-p.md",
@@ -1407,7 +1412,7 @@
         "https://x.com/chenzeling4/status/2079446292456157185"
       ],
       "readTime": "2 min",
-      "shortId": 258
+      "shortId": 263
     },
     {
       "filename": "2026-07-20-zeroprep-turns-spoken-talks-into-slide-decks-now-o.md",
@@ -1427,7 +1432,7 @@
         "https://x.com/ramsri_goutham/status/2079069398267281715"
       ],
       "readTime": "2 min",
-      "shortId": 257
+      "shortId": 262
     },
     {
       "filename": "2026-07-20-when-agents-go-wrong-a-cisos-guide-to-agentic-ai-r.md",
@@ -1447,7 +1452,7 @@
       "image": null,
       "sources": [],
       "readTime": "19 min",
-      "shortId": 256
+      "shortId": 261
     },
     {
       "filename": "2026-07-20-opensource-agent-security-adds-five-preflight-cont.md",
@@ -1467,7 +1472,7 @@
         "https://x.com/nykdotdev/status/2079068942681993237"
       ],
       "readTime": "2 min",
-      "shortId": 255
+      "shortId": 260
     },
     {
       "filename": "2026-07-20-gochat-ui-chrome-extension-brings-floating-chat-to.md",
@@ -1487,7 +1492,7 @@
         "https://x.com/theadaloguy/status/2079087378522919057"
       ],
       "readTime": "1 min",
-      "shortId": 254
+      "shortId": 259
     },
     {
       "filename": "2026-07-20-go-blog-shows-how-to-do-graceful-tcp-server-shutdo.md",
@@ -1507,7 +1512,7 @@
         "https://x.com/_xonoxc/status/2079084544322572478"
       ],
       "readTime": "2 min",
-      "shortId": 253
+      "shortId": 258
     },
     {
       "filename": "2026-07-20-bangergen-open-source-local-ai-turns-ideas-into-re.md",
@@ -1527,7 +1532,7 @@
         "https://x.com/DegenApeDev/status/2079011617795375453"
       ],
       "readTime": "2 min",
-      "shortId": 252
+      "shortId": 257
     },
     {
       "filename": "2026-07-18-open-source-tool-turns-phone-video-into-a-local-3d.md",
@@ -1548,7 +1553,7 @@
       ],
       "readTime": "2 min",
       "video": "https://video.twimg.com/amplify_video/2078311452012847104/vid/avc1/2940x1846/sANthlRyS6_BusGx.mp4?tag=29",
-      "shortId": 251
+      "shortId": 256
     },
     {
       "filename": "2026-07-18-open-source-badminton-hawkeye-system-released-by-c.md",
@@ -1569,7 +1574,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-18-open-source-badminton-hawkeye-system-released-by-c.mp4",
-      "shortId": 250
+      "shortId": 255
     },
     {
       "filename": "2026-07-18-ods-launches-oneclick-local-ai-inference-stack.md",
@@ -1589,7 +1594,7 @@
         "https://x.com/TheAhmadOsman/status/2078174547745046934"
       ],
       "readTime": "2 min",
-      "shortId": 249
+      "shortId": 254
     },
     {
       "filename": "2026-07-18-octoc2-launches-a-githubonly-c2-framework.md",
@@ -1609,7 +1614,7 @@
         "https://x.com/Yass1nMohamed/status/2078110214142767323"
       ],
       "readTime": "2 min",
-      "shortId": 248
+      "shortId": 253
     },
     {
       "filename": "2026-07-17-youtube-unveils-codex-micro-a-lightweight-ai-code.md",
@@ -1629,7 +1634,7 @@
         "https://share.google/IUreul71KXi6QHD9c"
       ],
       "readTime": "2 min",
-      "shortId": 247
+      "shortId": 252
     },
     {
       "filename": "2026-07-17-xai-open-sources-grok-build-its-ai-coding-agent-an.md",
@@ -1649,7 +1654,7 @@
         "https://x.ai/news/grok-build-open-source"
       ],
       "readTime": "2 min",
-      "shortId": 246
+      "shortId": 251
     },
     {
       "filename": "2026-07-17-tauri2-based-skillsplusplus-adds-oneclick-ai-tool.md",
@@ -1669,7 +1674,7 @@
         "https://x.com/QingQ77/status/2077991939404603697"
       ],
       "readTime": "2 min",
-      "shortId": 245
+      "shortId": 250
     },
     {
       "filename": "2026-07-17-selfhosted-condenser-lets-you-browse-telegram-chan.md",
@@ -1699,7 +1704,7 @@
           "url": "https://pbs.twimg.com/media/HNZm6Jdb0AAXPrV.jpg?name=orig"
         }
       ],
-      "shortId": 244
+      "shortId": 249
     },
     {
       "filename": "2026-07-17-opensource-shep-agent-orchestrator-targets-github.md",
@@ -1720,7 +1725,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-17-opensource-shep-agent-orchestrator-targets-github.mp4",
-      "shortId": 243
+      "shortId": 248
     },
     {
       "filename": "2026-07-17-kooky-036-adds-keepawake-mode-for-laptops.md",
@@ -1741,7 +1746,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-17-kooky-036-adds-keepawake-mode-for-laptops.mp4",
-      "shortId": 242
+      "shortId": 247
     },
     {
       "filename": "2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on.md",
@@ -1762,7 +1767,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on.mp4",
-      "shortId": 241
+      "shortId": 246
     },
     {
       "filename": "2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s.md",
@@ -1783,7 +1788,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s.mp4",
-      "shortId": 240
+      "shortId": 245
     },
     {
       "filename": "2026-07-16-inkling-model-released-with-975b-parameters-and-mu.md",
@@ -1804,7 +1809,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-16-inkling-model-released-with-975b-parameters-and-mu.mp4",
-      "shortId": 239
+      "shortId": 244
     },
     {
       "filename": "2026-07-16-harness-launches-a-humanfriendly-cli-for-devsecops.md",
@@ -1824,7 +1829,7 @@
         "https://x.com/harnessio/status/2077413070616617212"
       ],
       "readTime": "2 min",
-      "shortId": 238
+      "shortId": 243
     },
     {
       "filename": "2026-07-16-gpt-5-6s-reactive-safety-cycle-known-risks-shipped.md",
@@ -1849,7 +1854,7 @@
       "image": "https://bitroot.org/blog/media/2026-07-16-gpt-5-6s-reactive-safety-cycle-known-risks-shipped.jpg",
       "sources": [],
       "readTime": "6 min",
-      "shortId": 237
+      "shortId": 242
     },
     {
       "filename": "2026-07-16-alaya-lab-opens-alaya-world-open-source-interactiv.md",
@@ -1870,7 +1875,7 @@
       ],
       "readTime": "2 min",
       "video": "https://video.twimg.com/amplify_video/2077587439653474304/vid/avc1/1920x1080/rHj0U4GJ1UFLEUmN.mp4?tag=29",
-      "shortId": 236
+      "shortId": 241
     },
     {
       "filename": "2026-07-15-simplex-file-organizer-v11-adds-bulk-nesting-and-u.md",
@@ -1891,7 +1896,7 @@
       ],
       "readTime": "2 min",
       "video": "https://video.twimg.com/amplify_video/2077267297870254081/vid/avc1/2560x1440/0fH1ly3inxt84ogY.mp4?tag=28",
-      "shortId": 235
+      "shortId": 240
     },
     {
       "filename": "2026-07-15-prismml-ships-bonsai-27b-a-27billionparameter-mode.md",
@@ -1911,7 +1916,7 @@
         "https://x.com/PrismML/status/2077084891284721827"
       ],
       "readTime": "2 min",
-      "shortId": 234
+      "shortId": 239
     },
     {
       "filename": "2026-07-15-open-source-coding-agent-built-with-react-and-open.md",
@@ -1932,7 +1937,7 @@
       ],
       "readTime": "2 min",
       "video": "media/2026-07-15-open-source-coding-agent-built-with-react-and-open.mp4",
-      "shortId": 233
+      "shortId": 238
     },
     {
       "filename": "2026-07-14-claude-now-has-india-pricing-heres-what-it-actuall.md",
@@ -1953,7 +1958,7 @@
       "image": "https://bitroot.org/blog/media/2026-07-14-claude-now-has-india-pricing-heres-what-it-actuall.jpg",
       "sources": [],
       "readTime": "8 min",
-      "shortId": 232
+      "shortId": 237
     },
     {
       "filename": "2026-07-13-tencent-cloud-opensources-cubesandbox-for-ai-agent.md",
@@ -1973,7 +1978,7 @@
         "https://x.com/XAMTO_AI/status/2076443738004742262"
       ],
       "readTime": "2 min",
-      "shortId": 231
+      "shortId": 236
     },
     {
       "filename": "2026-07-13-openpencil-launches-7-mb-design-app-with-fig-suppo.md",
@@ -1994,7 +1999,7 @@
         "https://x.com/grafisify/status/2076531540465762429"
       ],
       "readTime": "2 min",
-      "shortId": 230
+      "shortId": 235
     },
     {
       "filename": "2026-07-13-nexterm-opens-source-tool-for-unified-ssh-vnc-and.md",
@@ -2014,7 +2019,7 @@
         "https://x.com/tom_doerr/status/2076543941793534213"
       ],
       "readTime": "2 min",
-      "shortId": 229
+      "shortId": 234
     },
     {
       "filename": "2026-07-13-librecode-launches-as-a-fully-local-ai-code-editor.md",
@@ -2034,7 +2039,7 @@
         "https://x.com/chenzeling4/status/2076274378455883869"
       ],
       "readTime": "2 min",
-      "shortId": 228
+      "shortId": 233
     },
     {
       "filename": "2026-07-13-hypertexting-app-turns-the-open-web-into-a-scrolla.md",
@@ -2064,7 +2069,7 @@
         "https://hypertexting.com/"
       ],
       "readTime": "4 min",
-      "shortId": 227
+      "shortId": 232
     },
     {
       "filename": "2026-07-12-swiftui-tool-automates-sparkle-macos-release-workf.md",
@@ -2102,7 +2107,7 @@
           "url": "https://pbs.twimg.com/media/HM_SC8MaIAAAPYx.jpg?name=orig"
         }
       ],
-      "shortId": 226
+      "shortId": 231
     },
     {
       "filename": "2026-07-12-lingbot-world-20-opensourced-with-braincerebellum.md",
@@ -2145,7 +2150,7 @@
           "url": "https://video.twimg.com/amplify_video/2076188368220893184/vid/avc1/1664x960/wS0-rdcJJW7VYII7.mp4?tag=28"
         }
       ],
-      "shortId": 225
+      "shortId": 230
     },
     {
       "filename": "2026-07-12-huibing-dong-shares-tpu-pagedattention-deepdive-vi.md",
@@ -2167,7 +2172,7 @@
       ],
       "readTime": "2 min",
       "video": "https://video.twimg.com/amplify_video/2076183975761231872/vid/avc1/3326x2160/cZvIMqBj_BP3mExe.mp4?tag=28",
-      "shortId": 224
+      "shortId": 229
     },
     {
       "filename": "2026-07-12-clipreel-lets-you-trim-youtube-or-x-videos-to-clip.md",
@@ -2187,7 +2192,27 @@
         "https://x.com/Nirmaldarji16/status/2076172621478314162"
       ],
       "readTime": "2 min",
-      "shortId": 223
+      "shortId": 228
+    },
+    {
+      "filename": "2026-07-11-toksscale-cli-tracks-ai-coding-token-usage-across.md",
+      "slug": "2026-07-11-toksscale-cli-tracks-ai-coding-token-usage-across",
+      "url": "/blog/2026-07-11-toksscale-cli-tracks-ai-coding-token-usage-across/",
+      "title": "toksScale CLI tracks AI coding token usage across agents",
+      "date": "2026-07-11",
+      "published_at": "2026-07-11T10:09:28.412541+00:00",
+      "tags": [
+        "cli",
+        "token usage",
+        "ai coding"
+      ],
+      "excerpt": "toksScale is a Rust\u2011based command\u2011line tool that visualizes token consumption for multiple AI coding agents, giving developers a quick view of costs and usage patterns.",
+      "image": "https://pbs.twimg.com/media/HM646SnWsAApxqP.png?name=orig",
+      "sources": [
+        "https://x.com/N0V4Dev/status/2075799797051621588"
+      ],
+      "readTime": "2 min",
+      "shortId": 227
     },
     {
       "filename": "2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual.md",
@@ -2210,6 +2235,89 @@
         "https://claude.com/blog/working-at-the-frontier-how-cognition-trusts-claude-fable-5-to-work-through-the-night"
       ],
       "readTime": "10 min",
+      "shortId": 226
+    },
+    {
+      "filename": "2026-07-11-robbyant-opens-lingbot-video-30b-moe-model-for-ope.md",
+      "slug": "2026-07-11-robbyant-opens-lingbot-video-30b-moe-model-for-ope",
+      "url": "/blog/2026-07-11-robbyant-opens-lingbot-video-30b-moe-model-for-ope/",
+      "title": "Robbyant opens LingBot-Video 30B MoE model for open\u2011source video generation",
+      "date": "2026-07-11",
+      "published_at": "2026-07-11T10:09:57.221404+00:00",
+      "tags": [
+        "video generation",
+        "open source",
+        "moe",
+        "ai"
+      ],
+      "excerpt": "Robbyant released a 30\u2011billion\u2011parameter MoE video model that claims 3\u00d7 faster inference and a free demo. It\u2019s the first large\u2011scale open\u2011source video generator built on a mixture\u2011of\u2011experts architecture.",
+      "image": "https://pbs.twimg.com/amplify_video_thumb/2075815432640925696/img/hoiATJL3GOIGk3ye.jpg",
+      "sources": [
+        "https://x.com/zaesarius/status/2075815728494563710"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-11-robbyant-opens-lingbot-video-30b-moe-model-for-ope.mp4",
+      "shortId": 225
+    },
+    {
+      "filename": "2026-07-11-colibri-runs-744b-moe-model-on-cpu-via-expert-stre.md",
+      "slug": "2026-07-11-colibri-runs-744b-moe-model-on-cpu-via-expert-stre",
+      "url": "/blog/2026-07-11-colibri-runs-744b-moe-model-on-cpu-via-expert-stre/",
+      "title": "Colibri runs 744B MoE model on CPU via expert streaming",
+      "date": "2026-07-11",
+      "published_at": "2026-07-11T10:10:16.299387+00:00",
+      "tags": [
+        "llm inference",
+        "mixture-of-experts",
+        "open source"
+      ],
+      "excerpt": "Colibri streams expert weights from NVMe to run the 744\u2011billion\u2011parameter GLM\u20115.2 MoE model on a consumer\u2011grade CPU, offering a free alternative to GPU clusters.",
+      "image": "https://pbs.twimg.com/media/HM6zQ46b0AAx1bG.jpg?name=orig",
+      "sources": [
+        "https://x.com/techwith_ram/status/2075793871834161160"
+      ],
+      "readTime": "2 min",
+      "shortId": 224
+    },
+    {
+      "filename": "2026-07-11-claude-code-tool-cuts-command-output-tokens-by-90.md",
+      "slug": "2026-07-11-claude-code-tool-cuts-command-output-tokens-by-90",
+      "url": "/blog/2026-07-11-claude-code-tool-cuts-command-output-tokens-by-90/",
+      "title": "Claude Code tool cuts command output tokens by 90%",
+      "date": "2026-07-11",
+      "published_at": "2026-07-11T10:10:56.146048+00:00",
+      "tags": [
+        "cli",
+        "token optimization",
+        "ai agents"
+      ],
+      "excerpt": "A new tool compresses command-line output for AI agents, cutting token usage by up to 90% while preserving essential context.",
+      "image": "https://pbs.twimg.com/media/HM65GIxWwAAg-Jo.jpg?name=orig",
+      "sources": [
+        "https://x.com/officer_secret/status/2075799998927622354"
+      ],
+      "readTime": "2 min",
+      "shortId": 223
+    },
+    {
+      "filename": "2026-07-11-charles-3ready-releases-grokulator-010-windows-dev.md",
+      "slug": "2026-07-11-charles-3ready-releases-grokulator-010-windows-dev",
+      "url": "/blog/2026-07-11-charles-3ready-releases-grokulator-010-windows-dev/",
+      "title": "Charles 3Ready releases Grokulator 0.1.0 Windows dev app",
+      "date": "2026-07-11",
+      "published_at": "2026-07-11T10:11:15.525598+00:00",
+      "tags": [
+        "windows",
+        "devtools",
+        "open-source"
+      ],
+      "excerpt": "Grokulator 0.1.0 adds a chat\u2011first interface, slash commands, and an embedded terminal for Windows developers. The MIT\u2011licensed tool is free but still early in its lifecycle.",
+      "image": "https://pbs.twimg.com/tweet_video_thumb/HM6_G3dagAA4qPb.jpg",
+      "sources": [
+        "https://x.com/3ReadyProto/status/2075807162744619312"
+      ],
+      "readTime": "2 min",
+      "video": "media/2026-07-11-charles-3ready-releases-grokulator-010-windows-dev.mp4",
       "shortId": 222
     },
     {

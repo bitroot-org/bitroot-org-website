@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 12 Aug 2026 09:48:57 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 09:49:48 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title># The Multi-Agent Playbook: How Founders Should Solve Hard Problems</title>
@@ -1228,6 +1228,20 @@
       <source url="https://x.com/Nirmaldarji16/status/2076172621478314162">Original Source</source>
     </item>
     <item>
+      <title>toksScale CLI tracks AI coding token usage across agents</title>
+      <link>https://bitroot.org/blog/2026-07-11-toksscale-cli-tracks-ai-coding-token-usage-across/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-11-toksscale-cli-tracks-ai-coding-token-usage-across/</guid>
+      <description>toksScale is a Rust‑based command‑line tool that visualizes token consumption for multiple AI coding agents, giving developers a quick view of costs and usage patterns.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/N0V4Dev/status/2075799797051621588"&gt;https://x.com/N0V4Dev/status/2075799797051621588&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 11 Jul 2026 10:09:28 +0000</pubDate>
+      <category>cli</category>
+      <category>token usage</category>
+      <category>ai coding</category>
+      <enclosure url="https://pbs.twimg.com/media/HM646SnWsAApxqP.png?name=orig" type="image/png" length="0" />
+      <source url="https://x.com/N0V4Dev/status/2075799797051621588">Original Source</source>
+    </item>
+    <item>
       <title>The AI agent that works while you sleep, and actually delivers in the morning</title>
       <link>https://bitroot.org/blog/2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual/</link>
       <guid isPermaLink="true">https://bitroot.org/blog/2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual/</guid>
@@ -1243,6 +1257,63 @@
       <category>AI Productivity</category>
       <enclosure url="https://bitroot.org/blog/media/2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual.jpg" type="image/jpeg" length="0" />
       <source url="https://claude.com/blog/working-at-the-frontier-how-cognition-trusts-claude-fable-5-to-work-through-the-night">Original Source</source>
+    </item>
+    <item>
+      <title>Robbyant opens LingBot-Video 30B MoE model for open‑source video generation</title>
+      <link>https://bitroot.org/blog/2026-07-11-robbyant-opens-lingbot-video-30b-moe-model-for-ope/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-11-robbyant-opens-lingbot-video-30b-moe-model-for-ope/</guid>
+      <description>Robbyant released a 30‑billion‑parameter MoE video model that claims 3× faster inference and a free demo. It’s the first large‑scale open‑source video generator built on a mixture‑of‑experts architecture.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/zaesarius/status/2075815728494563710"&gt;https://x.com/zaesarius/status/2075815728494563710&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 11 Jul 2026 10:09:57 +0000</pubDate>
+      <category>video generation</category>
+      <category>open source</category>
+      <category>moe</category>
+      <category>ai</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2075815432640925696/img/hoiATJL3GOIGk3ye.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/zaesarius/status/2075815728494563710">Original Source</source>
+    </item>
+    <item>
+      <title>Colibri runs 744B MoE model on CPU via expert streaming</title>
+      <link>https://bitroot.org/blog/2026-07-11-colibri-runs-744b-moe-model-on-cpu-via-expert-stre/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-11-colibri-runs-744b-moe-model-on-cpu-via-expert-stre/</guid>
+      <description>Colibri streams expert weights from NVMe to run the 744‑billion‑parameter GLM‑5.2 MoE model on a consumer‑grade CPU, offering a free alternative to GPU clusters.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/techwith_ram/status/2075793871834161160"&gt;https://x.com/techwith_ram/status/2075793871834161160&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 11 Jul 2026 10:10:16 +0000</pubDate>
+      <category>llm inference</category>
+      <category>mixture-of-experts</category>
+      <category>open source</category>
+      <enclosure url="https://pbs.twimg.com/media/HM6zQ46b0AAx1bG.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/techwith_ram/status/2075793871834161160">Original Source</source>
+    </item>
+    <item>
+      <title>Claude Code tool cuts command output tokens by 90%</title>
+      <link>https://bitroot.org/blog/2026-07-11-claude-code-tool-cuts-command-output-tokens-by-90/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-11-claude-code-tool-cuts-command-output-tokens-by-90/</guid>
+      <description>A new tool compresses command-line output for AI agents, cutting token usage by up to 90% while preserving essential context.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/officer_secret/status/2075799998927622354"&gt;https://x.com/officer_secret/status/2075799998927622354&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 11 Jul 2026 10:10:56 +0000</pubDate>
+      <category>cli</category>
+      <category>token optimization</category>
+      <category>ai agents</category>
+      <enclosure url="https://pbs.twimg.com/media/HM65GIxWwAAg-Jo.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/officer_secret/status/2075799998927622354">Original Source</source>
+    </item>
+    <item>
+      <title>Charles 3Ready releases Grokulator 0.1.0 Windows dev app</title>
+      <link>https://bitroot.org/blog/2026-07-11-charles-3ready-releases-grokulator-010-windows-dev/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-11-charles-3ready-releases-grokulator-010-windows-dev/</guid>
+      <description>Grokulator 0.1.0 adds a chat‑first interface, slash commands, and an embedded terminal for Windows developers. The MIT‑licensed tool is free but still early in its lifecycle.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/3ReadyProto/status/2075807162744619312"&gt;https://x.com/3ReadyProto/status/2075807162744619312&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 11 Jul 2026 10:11:15 +0000</pubDate>
+      <category>windows</category>
+      <category>devtools</category>
+      <category>open-source</category>
+      <enclosure url="https://pbs.twimg.com/tweet_video_thumb/HM6_G3dagAA4qPb.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/3ReadyProto/status/2075807162744619312">Original Source</source>
     </item>
     <item>
       <title>Pi AI coding agent released as free open‑source tool</title>
