@@ -5,8 +5,18 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 12 Aug 2026 03:27:37 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 05:25:21 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title># The Multi-Agent Playbook: How Founders Should Solve Hard Problems</title>
+      <link>https://bitroot.org/blog/2026-08-12-the-multi-agent-playbook-how-founders-should-solve/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-08-12-the-multi-agent-playbook-how-founders-should-solve/</guid>
+      <description>Last week, Anthropic announced something quietly revolutionary: an unreleased model made progress on the Riemann hypothesis, one of mathematics' 150-year-old unsolved mysteries with a $1 million bounty on it.</description>
+      <pubDate>Wed, 12 Aug 2026 05:24:37 +0000</pubDate>
+      <category>Anthroopic</category>
+      <category>AI</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/06/Claude-photo.jpg" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Claude Code switches to auto‑mode by default</title>
       <link>https://bitroot.org/blog/2026-08-12-claude-code-switches-to-automode-by-default/</link>

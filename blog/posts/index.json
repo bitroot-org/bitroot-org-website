@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 312,
+  "count": 313,
   "posts": [
+    "2026-08-12-the-multi-agent-playbook-how-founders-should-solve.md",
     "2026-08-12-claude-code-switches-to-automode-by-default.md",
     "2026-08-11-spotify-releases-xirp-a-vendor-neutral-agentic-dev.md",
     "2026-08-11-diffusion-studio-launches-dapi-a-cli-for-aidriven.md",
@@ -316,6 +317,23 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-08-12-the-multi-agent-playbook-how-founders-should-solve.md",
+      "slug": "2026-08-12-the-multi-agent-playbook-how-founders-should-solve",
+      "url": "/blog/2026-08-12-the-multi-agent-playbook-how-founders-should-solve/",
+      "title": "# The Multi-Agent Playbook: How Founders Should Solve Hard Problems",
+      "date": "2026-08-12",
+      "published_at": "2026-08-12T05:24:37.228Z",
+      "tags": [
+        "Anthroopic",
+        "AI"
+      ],
+      "excerpt": "Last week, Anthropic announced something quietly revolutionary: an unreleased model made progress on the Riemann hypothesis, one of mathematics' 150-year-old unsolved mysteries with a $1 million bounty on it.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/Claude-photo.jpg",
+      "sources": [],
+      "readTime": "4 min",
+      "shortId": 313
+    },
     {
       "filename": "2026-08-12-claude-code-switches-to-automode-by-default.md",
       "slug": "2026-08-12-claude-code-switches-to-automode-by-default",
