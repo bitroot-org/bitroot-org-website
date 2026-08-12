@@ -1,17 +1,15 @@
 ---
 date: '2026-08-11'
-excerpt: Spotify’s new Xirp lets teams run Claude Code, Gemini CLI, and OpenAI Codex
-  sessions from one UI, aiming to reduce context‑switching for AI‑assisted development.
+excerpt: 'Spotify’s new Xirp lets teams run Claude Code, Gemini CLI, and OpenAI Codex sessions from one UI, aiming to reduce context‑switching for AI‑assisted development.'
 image: https://bitroot.org/blog/media/2026-08-11-spotify-launches-xirp-a-unified-ai-coding-agent-en.jpg
 published_at: '2026-08-11T17:38:48.289449+00:00'
 sources:
 - https://x.com/i/status/2087051402744832239
 tags:
-- ai coding
-- development tools
-- spotify
-title: Spotify launches Xirp, a unified AI coding agent environment
-video: https://bitroot.org/blog/media/2026-08-11-spotify-launches-xirp-a-unified-ai-coding-agent-en.mp4
+- 'ai coding'
+- 'development tools'
+- 'spotify'
+title: 'Spotify launches Xirp, a unified AI coding agent environment'
 ---
 
 Spotify launched Xirp, a vendor‑neutral agentic development environment that lets you run and manage sessions for Claude Code, Gemini CLI, and OpenAI Codex from a single dashboard. The tool is already used by more than 1,300 Spotify engineers and is now publicly available for anyone to try. [Source](https://x.com/i/status/2087051402744832239)
