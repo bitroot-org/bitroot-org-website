@@ -43,6 +43,385 @@ export type GuideContent = {
 };
 
 export const guidesContent: Record<string, GuideContent> = {
+  "upload-files-directly-to-s3": {
+    slug: "upload-files-directly-to-s3",
+    tagline:
+      "Don't proxy file uploads through your server. Generate pre-signed S3 URLs, let users upload directly to S3. Your server stays fast, bandwidth costs drop, and uploads don't block requests.",
+    timeEstimate: "10 minutes to set up",
+    youWillNeed: [
+      "An AWS account with an S3 bucket",
+      "AWS credentials with permission to sign S3 PUT requests",
+      "A Node.js server (Express or similar) and a browser-side upload form",
+    ],
+    youWillEndUpWith:
+      "File uploads that go straight from the browser to S3 — your server generates a pre-signed URL and never touches the file itself, plus patterns for validation, multipart uploads for large files, client-side image compression, and a production checklist.",
+    toc: [
+      { label: "The bandwidth problem", id: "the-problem" },
+      { label: "How pre-signed URLs work", id: "how-it-works" },
+      { label: "Setup (10 minutes)", id: "setup" },
+      { label: "Real scenario: product photos at scale", id: "real-scenario" },
+      { label: "Security: don't let users upload anything", id: "security" },
+      { label: "Multipart uploads for large files", id: "multipart" },
+      { label: "Image optimization before upload", id: "image-optimization" },
+      { label: "Monitoring & verification", id: "monitoring" },
+      { label: "Production checklist", id: "checklist" },
+      { label: "Your competitive edge", id: "competitive-edge" },
+    ],
+    body: [
+      { type: "h2", body: "The bandwidth problem", id: "the-problem" },
+      {
+        type: "p",
+        body: "You build a SaaS for ecommerce founders. Users upload product images. Your code does this:",
+      },
+      {
+        type: "code",
+        lang: "js",
+        source: `app.post('/upload', async (req, res) => {
+  const file = req.files.image; // Receives file from client
+  await s3.upload({
+    Bucket: 'my-bucket',
+    Key: \`products/\${file.name}\`,
+    Body: file.data // Entire file flows through your server
+  }).promise();
+  res.json({ url: s3Url });
+});`,
+      },
+      {
+        type: "p",
+        body: "Problems: a 100 MB image ties up your server for 10+ seconds. Bandwidth between client → server → S3 is wasteful (double the traffic). If the upload fails mid-transfer, your server crashes. Your server's internet connection becomes the bottleneck. File size is limited by server memory, so you can't handle 1GB videos.",
+      },
+      {
+        type: "callout",
+        tone: "warn",
+        body: "Your AWS bill goes crazy. Your server becomes a pipe. Better way: send the file directly from browser to S3. Your server never touches it.",
+      },
+
+      { type: "h2", body: "How pre-signed URLs work", id: "how-it-works" },
+      {
+        type: "p",
+        body: "Pre-signed URLs are temporary permission tokens. They say: \"Client can upload this file to this S3 bucket, for the next 15 minutes.\"",
+      },
+      {
+        type: "p",
+        body: "The flow: the client calls your API (\"I want to upload product.jpg\"), your server generates a pre-signed URL (no file involved), the client uploads directly to S3 using that URL, S3 confirms the upload and the client gets confirmation. Your server never saw the file.",
+      },
+      {
+        type: "callout",
+        tone: "tip",
+        body: "Result: your server does 1 second of work (generate URL). S3 handles the heavy lifting.",
+      },
+
+      { type: "h2", body: "Setup (10 minutes)", id: "setup" },
+      { type: "h3", body: "Step 1: AWS credentials" },
+      {
+        type: "code",
+        lang: "js",
+        source: `const AWS = require('aws-sdk');
+// OR for newer projects
+const { S3Client, PutObjectCommand } = require('@aws-sdk/client-s3');
+const { getSignedUrl } = require('@aws-sdk/s3-request-presigner');
+
+const s3Client = new S3Client({
+  region: process.env.AWS_REGION,
+  credentials: {
+    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
+  }
+});`,
+      },
+      { type: "h3", body: "Step 2: generate pre-signed URL" },
+      {
+        type: "code",
+        lang: "js",
+        source: `app.post('/api/upload-url', async (req, res) => {
+  const { fileName, fileType } = req.body;
+
+  // Validate file type (security)
+  const allowedTypes = ['image/jpeg', 'image/png', 'image/webp'];
+  if (!allowedTypes.includes(fileType)) {
+    return res.status(400).json({ error: 'Invalid file type' });
+  }
+
+  try {
+    // Generate URL (expires in 15 minutes)
+    const command = new PutObjectCommand({
+      Bucket: process.env.AWS_S3_BUCKET,
+      Key: \`uploads/\${Date.now()}-\${fileName}\`, // unique key
+      ContentType: fileType,
+      Metadata: {
+        userId: req.user.id // track who uploaded
+      }
+    });
+
+    const presignedUrl = await getSignedUrl(s3Client, command, {
+      expiresIn: 900 // 15 minutes
+    });
+
+    res.json({ presignedUrl, key: command.input.Key });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});`,
+      },
+      { type: "h3", body: "Step 3: browser upload (JavaScript)" },
+      {
+        type: "code",
+        lang: "js",
+        source: `// User selects file in form
+const fileInput = document.getElementById('file-input');
+
+fileInput.addEventListener('change', async (e) => {
+  const file = e.target.files[0];
+
+  // Step 1: Get pre-signed URL from your server
+  const urlResponse = await fetch('/api/upload-url', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      fileName: file.name,
+      fileType: file.type
+    })
+  });
+
+  const { presignedUrl, key } = await urlResponse.json();
+
+  // Step 2: Upload directly to S3 (no server proxy)
+  const uploadResponse = await fetch(presignedUrl, {
+    method: 'PUT',
+    headers: { 'Content-Type': file.type },
+    body: file // file goes straight to S3
+  });
+
+  if (uploadResponse.ok) {
+    console.log('File uploaded to S3');
+    // Store key in your database
+    await fetch('/api/confirm-upload', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ fileKey: key })
+    });
+  }
+});`,
+      },
+      {
+        type: "p",
+        body: "That's it. Your server never touches the file.",
+      },
+
+      { type: "h2", body: "Real scenario: product photos at scale", id: "real-scenario" },
+      {
+        type: "p",
+        body: "Ecommerce founder. 1,000 sellers uploading 5 product images each per week = 5,000 images/week.",
+      },
+      {
+        type: "p",
+        body: "Before (server proxy): 5,000 images × 2 MB average = 10 GB of data flowing through your server. Server bandwidth: 10 GB/week. Hosting costs are high (data transfer out of your hosting provider). Uploads are slow — users wait 5–10 seconds per image. And there's real risk: the server can crash mid-upload, causing data loss.",
+      },
+      {
+        type: "p",
+        body: "After (direct S3): direct S3 uploads mean no server bandwidth waste. Hosting costs are just compute for API calls (negligible). Uploads are fast — 1–2 seconds, direct to S3, no proxy. And it's reliable — S3 handles retries, your server stays up.",
+      },
+      {
+        type: "callout",
+        tone: "tip",
+        body: "Savings: roughly $200–500/month in bandwidth costs. Happier users (faster uploads).",
+      },
+
+      { type: "h2", body: "Security: don't let users upload anything", id: "security" },
+      {
+        type: "p",
+        body: "Bad — anyone can upload any file size, any type:",
+      },
+      {
+        type: "code",
+        lang: "js",
+        source: `const presignedUrl = await getSignedUrl(s3Client, command, {
+  expiresIn: 900
+});`,
+      },
+      {
+        type: "p",
+        body: "Good — validate everything:",
+      },
+      {
+        type: "code",
+        lang: "js",
+        source: `const MAX_FILE_SIZE = 50 * 1024 * 1024; // 50 MB
+const ALLOWED_TYPES = ['image/jpeg', 'image/png', 'video/mp4'];
+
+if (req.body.fileSize > MAX_FILE_SIZE) {
+  return res.status(400).json({ error: 'File too large' });
+}
+
+if (!ALLOWED_TYPES.includes(req.body.fileType)) {
+  return res.status(400).json({ error: 'Invalid file type' });
+}
+
+// Add ContentLength policy to prevent overflow
+const command = new PutObjectCommand({
+  Bucket: process.env.AWS_S3_BUCKET,
+  Key: \`uploads/\${Date.now()}-\${sanitizeFileName(fileName)}\`,
+  ContentType: fileType,
+  // Reject if uploaded file size doesn't match expected
+  Metadata: { userId: req.user.id, expectedSize: req.body.fileSize }
+});`,
+      },
+
+      { type: "h2", body: "Multipart uploads for large files", id: "multipart" },
+      {
+        type: "p",
+        body: "For files >100 MB, use multipart uploads (resumable, chunked processing).",
+      },
+      {
+        type: "code",
+        lang: "js",
+        source: `const { CreateMultipartUploadCommand, UploadPartCommand } = require('@aws-sdk/client-s3');
+
+app.post('/api/multipart-upload', async (req, res) => {
+  const { fileName, fileType, fileSize } = req.body;
+
+  try {
+    // Initiate multipart upload
+    const multipartUpload = await s3Client.send(
+      new CreateMultipartUploadCommand({
+        Bucket: process.env.AWS_S3_BUCKET,
+        Key: \`uploads/\${Date.now()}-\${fileName}\`,
+        ContentType: fileType
+      })
+    );
+
+    // Return upload ID + pre-signed URLs for each part
+    const uploadId = multipartUpload.UploadId;
+    const partSize = 5 * 1024 * 1024; // 5 MB chunks
+    const numParts = Math.ceil(fileSize / partSize);
+
+    const presignedUrls = [];
+    for (let i = 0; i < numParts; i++) {
+      const command = new UploadPartCommand({
+        Bucket: process.env.AWS_S3_BUCKET,
+        Key: multipartUpload.Key,
+        UploadId: uploadId,
+        PartNumber: i + 1 // S3 requires 1-based indexing
+      });
+      const url = await getSignedUrl(s3Client, command, { expiresIn: 3600 });
+      presignedUrls.push(url);
+    }
+
+    res.json({ uploadId, presignedUrls });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});`,
+      },
+      {
+        type: "p",
+        body: "Browser uploads each part in parallel. Resume if one fails.",
+      },
+
+      { type: "h2", body: "Image optimization before upload", id: "image-optimization" },
+      {
+        type: "p",
+        body: "Resize/compress images on the client before uploading (save bandwidth even more).",
+      },
+      {
+        type: "code",
+        lang: "js",
+        source: `// Using canvas API
+async function compressImage(file, maxWidth = 1200) {
+  return new Promise((resolve) => {
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const img = new Image();
+      img.onload = () => {
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+
+        // Scale down
+        const scale = Math.min(1, maxWidth / img.width);
+        canvas.width = img.width * scale;
+        canvas.height = img.height * scale;
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+        // Compress (quality 0.8 = good balance)
+        canvas.toBlob(resolve, 'image/jpeg', 0.8);
+      };
+      img.src = e.target.result;
+    };
+    reader.readAsDataURL(file);
+  });
+}`,
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Result: a 2 MB image becomes a 300 KB image before upload. Massive bandwidth savings.",
+      },
+
+      { type: "h2", body: "Monitoring & verification", id: "monitoring" },
+      {
+        type: "p",
+        body: "After the S3 upload, verify it worked:",
+      },
+      {
+        type: "code",
+        lang: "js",
+        source: `app.post('/api/confirm-upload', async (req, res) => {
+  const { fileKey } = req.body;
+
+  try {
+    // Check if file exists in S3
+    const headCommand = new HeadObjectCommand({
+      Bucket: process.env.AWS_S3_BUCKET,
+      Key: fileKey
+    });
+
+    const response = await s3Client.send(headCommand);
+
+    // Store in database
+    await Upload.create({
+      userId: req.user.id,
+      s3Key: fileKey,
+      fileSize: response.ContentLength,
+      uploadedAt: new Date()
+    });
+
+    res.json({
+      success: true,
+      url: \`https://\${process.env.AWS_S3_BUCKET}.s3.amazonaws.com/\${fileKey}\`
+    });
+  } catch (error) {
+    res.status(400).json({ error: 'File not found in S3' });
+  }
+});`,
+      },
+
+      { type: "h2", body: "Production checklist", id: "checklist" },
+      {
+        type: "ul",
+        items: [
+          "Pre-signed URLs expire quickly (15 minutes max)",
+          "Validate file type, size on server before generating URL",
+          "Use unique file names (timestamp + random)",
+          "Store file metadata in database (linking to user)",
+          "Enable S3 versioning (recover from accidental deletes)",
+          "Set bucket policy to private (no public access)",
+          "Monitor S3 costs (can spike if abuse isn't caught)",
+          "Log uploads for an audit trail",
+        ],
+      },
+
+      { type: "h2", body: "Your competitive edge", id: "competitive-edge" },
+      {
+        type: "p",
+        body: "Founders using direct S3 uploads get 10x faster uploads (no server proxy), 10x lower bandwidth costs, and can handle large files (1GB videos, no problem). The server stays responsive (no blocked requests), and it scales to millions of uploads without infrastructure changes.",
+      },
+      {
+        type: "callout",
+        tone: "tip",
+        body: "Start this week. Pick pre-signed URLs. You'll save money immediately.",
+      },
+    ],
+  },
   "background-jobs-that-actually-run": {
     slug: "background-jobs-that-actually-run",
     tagline:

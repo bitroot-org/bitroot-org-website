@@ -124,6 +124,17 @@ export const kits: Item[] = [
 
 export const guides: Item[] = [
   {
+    slug: "upload-files-directly-to-s3",
+    category: "guide",
+    title: "Upload Files Directly to S3 (Without Killing Your Server Bandwidth)",
+    summary:
+      "Don't proxy file uploads through your server. Generate pre-signed S3 URLs, let users upload directly to S3 — your server stays fast, bandwidth costs drop, and uploads don't block requests.",
+    tags: ["AWS", "S3", "Node.js", "Backend"],
+    updatedAt: "2026-08-12",
+    href: "/guides/upload-files-directly-to-s3",
+    difficulty: "intermediate",
+  },
+  {
     slug: "background-jobs-that-actually-run",
     category: "guide",
     title: "Build Background Jobs That Actually Run (Bull/BullMQ in Node.js)",
