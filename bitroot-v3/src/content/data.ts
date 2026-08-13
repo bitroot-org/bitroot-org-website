@@ -124,6 +124,17 @@ export const kits: Item[] = [
 
 export const guides: Item[] = [
   {
+    slug: "secure-auth-jwt-refresh-rbac",
+    category: "guide",
+    title: "Build Secure Auth That Doesn't Break (JWT + Refresh Tokens + RBAC)",
+    summary:
+      "Use JWT for stateless auth, refresh tokens for long-lived sessions, RBAC for permissions, and HttpOnly cookies instead of localStorage — a pattern that scales to millions of users without auth infrastructure complexity.",
+    tags: ["Auth", "JWT", "Security", "Node.js"],
+    updatedAt: "2026-08-13",
+    href: "/guides/secure-auth-jwt-refresh-rbac",
+    difficulty: "intermediate",
+  },
+  {
     slug: "upload-files-directly-to-s3",
     category: "guide",
     title: "Upload Files Directly to S3 (Without Killing Your Server Bandwidth)",
