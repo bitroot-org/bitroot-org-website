@@ -43,6 +43,371 @@ export type GuideContent = {
 };
 
 export const guidesContent: Record<string, GuideContent> = {
+  "secure-auth-jwt-refresh-rbac": {
+    slug: "secure-auth-jwt-refresh-rbac",
+    tagline:
+      "Use JWT for stateless auth. Refresh tokens for long-lived sessions. RBAC for permissions. Store tokens in HttpOnly cookies, not localStorage. This pattern scales to millions of users without auth infrastructure complexity.",
+    timeEstimate: "30–45 minutes to wire up the full flow",
+    youWillNeed: [
+      "A Node.js server (Express or similar) with a database for users and refresh tokens",
+      "The `jsonwebtoken` package",
+      "HTTPS in production (cookies rely on the `secure` flag)",
+    ],
+    youWillEndUpWith:
+      "A complete auth flow: short-lived JWT access tokens, rotating refresh tokens stored server-side so they can be revoked, role-based permission middleware, and logout that actually invalidates sessions — all delivered via HttpOnly cookies instead of localStorage.",
+    toc: [
+      { label: "Why most auth fails", id: "why-auth-fails" },
+      { label: "The architecture (3 pieces)", id: "architecture" },
+      { label: "Setup, step by step", id: "setup" },
+      { label: "Real scenario: 100K users, no auth servers", id: "real-scenario" },
+      { label: "Security checklist", id: "security-checklist" },
+      { label: "Common mistakes", id: "mistakes" },
+      { label: "Production deployment", id: "production" },
+    ],
+    body: [
+      { type: "h2", body: "Why most auth fails", id: "why-auth-fails" },
+      {
+        type: "p",
+        body: "You're a founder. You build an app. You use the first auth library you find. It works in dev. In production, you face these problems: tokens expire mid-request and the user gets logged out; a token stored in localStorage gets stolen by an XSS attack; \"admin\" and \"user\" roles are hardcoded so you can't add new roles; there's no way to log out because tokens live forever; and token revocation should take milliseconds but the setup makes it take seconds, or doesn't work at all.",
+      },
+      {
+        type: "p",
+        body: "This guide fixes all of these.",
+      },
+
+      { type: "h2", body: "The architecture (3 pieces)", id: "architecture" },
+      { type: "h3", body: "1. Access token (JWT, short-lived: 15 minutes)" },
+      {
+        type: "p",
+        body: "Proves the user is who they claim. Includes user ID, role, and permissions. Signed by your server secret.",
+      },
+      {
+        type: "code",
+        lang: "js",
+        source: `{
+  "sub": "user-123",        // subject (user ID)
+  "role": "admin",          // role for RBAC
+  "permissions": ["read", "write", "delete"],
+  "iat": 1693046400,        // issued at
+  "exp": 1693047300         // expires in 15 minutes
+}`,
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Short-lived (15 min) means if it's stolen, the attacker has a limited window.",
+      },
+      { type: "h3", body: "2. Refresh token (opaque string, long-lived: 7 days)" },
+      {
+        type: "p",
+        body: "Stored securely. Used only to get a new access token. Never shared with client-side JS.",
+      },
+      {
+        type: "code",
+        lang: "js",
+        source: `{
+  "sub": "user-123",
+  "type": "refresh",
+  "iat": 1693046400,
+  "exp": 1693651200         // expires in 7 days
+}`,
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Long-lived (7 days) means users stay logged in without logging in again. Opaque means it can't be decoded by the client — that's the security property.",
+      },
+      { type: "h3", body: "3. RBAC (role-based access control)" },
+      {
+        type: "p",
+        body: "Admin role can delete users. User role can't. Guest is read-only.",
+      },
+      {
+        type: "code",
+        lang: "js",
+        source: `const roles = {
+  admin: ['read', 'write', 'delete', 'manage_users'],
+  user: ['read', 'write'],
+  guest: ['read']
+};`,
+      },
+
+      { type: "h2", body: "Setup, step by step", id: "setup" },
+      { type: "h3", body: "Step 1: install dependencies" },
+      {
+        type: "code",
+        lang: "bash",
+        source: `npm install jsonwebtoken express-http-proxy
+# jsonwebtoken for JWT generation/verification
+# express for server`,
+      },
+      { type: "h3", body: "Step 2: generate tokens on login" },
+      {
+        type: "code",
+        lang: "js",
+        source: `const jwt = require('jsonwebtoken');
+
+app.post('/login', async (req, res) => {
+  const { email, password } = req.body;
+
+  // Verify credentials (hash comparison, etc.)
+  const user = await User.findByEmail(email);
+  const passwordMatch = await comparePasswords(password, user.passwordHash);
+
+  if (!passwordMatch) {
+    return res.status(401).json({ error: 'Invalid credentials' });
+  }
+
+  // Generate short-lived access token
+  const accessToken = jwt.sign(
+    {
+      sub: user.id,
+      role: user.role,
+      permissions: roles[user.role]
+    },
+    process.env.JWT_SECRET,
+    { expiresIn: '15m' } // 15 minutes
+  );
+
+  // Generate long-lived refresh token
+  const refreshToken = jwt.sign(
+    {
+      sub: user.id,
+      type: 'refresh'
+    },
+    process.env.REFRESH_TOKEN_SECRET,
+    { expiresIn: '7d' } // 7 days
+  );
+
+  // Store refresh token in database (can revoke later)
+  await RefreshToken.create({
+    userId: user.id,
+    token: refreshToken,
+    expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000)
+  });
+
+  // Send tokens in HttpOnly cookies (not response body)
+  res.cookie('accessToken', accessToken, {
+    httpOnly: true,      // JavaScript can't read it (XSS protection)
+    secure: true,        // HTTPS only (set in production)
+    sameSite: 'strict',  // CSRF protection
+    maxAge: 15 * 60 * 1000 // 15 minutes
+  });
+
+  res.cookie('refreshToken', refreshToken, {
+    httpOnly: true,
+    secure: true,
+    sameSite: 'strict',
+    maxAge: 7 * 24 * 60 * 60 * 1000 // 7 days
+  });
+
+  res.json({ success: true });
+});`,
+      },
+      { type: "h3", body: "Step 3: middleware to verify access token" },
+      {
+        type: "code",
+        lang: "js",
+        source: `const verifyAccessToken = (req, res, next) => {
+  const token = req.cookies.accessToken;
+
+  if (!token) {
+    return res.status(401).json({ error: 'No access token' });
+  }
+
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    req.user = decoded; // Attach user to request
+    next();
+  } catch (error) {
+    if (error.name === 'TokenExpiredError') {
+      return res.status(401).json({ error: 'Token expired' });
+    }
+    return res.status(403).json({ error: 'Invalid token' });
+  }
+};
+
+// Use middleware on protected routes
+app.get('/dashboard', verifyAccessToken, (req, res) => {
+  res.json({ message: \`Welcome, \${req.user.sub}\` });
+});`,
+      },
+      { type: "h3", body: "Step 4: refresh token endpoint" },
+      {
+        type: "p",
+        body: "When the access token expires, the client calls this to get a new one:",
+      },
+      {
+        type: "code",
+        lang: "js",
+        source: `app.post('/refresh', async (req, res) => {
+  const refreshToken = req.cookies.refreshToken;
+
+  if (!refreshToken) {
+    return res.status(401).json({ error: 'No refresh token' });
+  }
+
+  try {
+    // Verify refresh token signature
+    const decoded = jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET);
+
+    // Check if token exists in database (security: can revoke tokens)
+    const storedToken = await RefreshToken.findOne({
+      userId: decoded.sub,
+      token: refreshToken
+    });
+
+    if (!storedToken) {
+      return res.status(403).json({ error: 'Token revoked' });
+    }
+
+    // Generate NEW refresh token + access token (rotation)
+    const user = await User.findById(decoded.sub);
+
+    const newAccessToken = jwt.sign(
+      {
+        sub: user.id,
+        role: user.role,
+        permissions: roles[user.role]
+      },
+      process.env.JWT_SECRET,
+      { expiresIn: '15m' }
+    );
+
+    const newRefreshToken = jwt.sign(
+      {
+        sub: user.id,
+        type: 'refresh'
+      },
+      process.env.REFRESH_TOKEN_SECRET,
+      { expiresIn: '7d' }
+    );
+
+    // Delete old refresh token, store new one (rotation = security)
+    await storedToken.delete();
+    await RefreshToken.create({
+      userId: user.id,
+      token: newRefreshToken,
+      expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000)
+    });
+
+    res.cookie('accessToken', newAccessToken, {
+      httpOnly: true,
+      secure: true,
+      sameSite: 'strict',
+      maxAge: 15 * 60 * 1000
+    });
+
+    res.cookie('refreshToken', newRefreshToken, {
+      httpOnly: true,
+      secure: true,
+      sameSite: 'strict',
+      maxAge: 7 * 24 * 60 * 60 * 1000
+    });
+
+    res.json({ success: true });
+  } catch (error) {
+    res.status(403).json({ error: 'Invalid refresh token' });
+  }
+});`,
+      },
+      { type: "h3", body: "Step 5: RBAC middleware" },
+      {
+        type: "code",
+        lang: "js",
+        source: `const requirePermission = (permission) => {
+  return (req, res, next) => {
+    if (!req.user.permissions.includes(permission)) {
+      return res.status(403).json({ error: 'Permission denied' });
+    }
+    next();
+  };
+};
+
+// Example: Only admins can delete users
+app.delete('/users/:id', verifyAccessToken, requirePermission('delete'), (req, res) => {
+  // Delete user
+  res.json({ message: 'User deleted' });
+});`,
+      },
+      { type: "h3", body: "Step 6: logout (revoke refresh token)" },
+      {
+        type: "code",
+        lang: "js",
+        source: `app.post('/logout', async (req, res) => {
+  const refreshToken = req.cookies.refreshToken;
+
+  // Delete refresh token from database (can't use it anymore)
+  await RefreshToken.deleteOne({ token: refreshToken });
+
+  // Clear cookies
+  res.clearCookie('accessToken');
+  res.clearCookie('refreshToken');
+
+  res.json({ success: true });
+});`,
+      },
+
+      { type: "h2", body: "Real scenario: 100K users, no auth servers", id: "real-scenario" },
+      {
+        type: "p",
+        body: "Your SaaS has 100K users. You use this auth pattern.",
+      },
+      {
+        type: "p",
+        body: "Benefits: no session storage server needed (stateless JWT), no database query on every request (the token is verified locally), no server-side session state to sync across 10 instances, and it scales horizontally — add servers, auth keeps working. Token revocation (logout) works instantly (delete from the database), and the attack surface stays small since tokens are short-lived (15 min max damage if stolen).",
+      },
+      {
+        type: "callout",
+        tone: "tip",
+        body: "Cost: JWT generation + refresh token storage. Nothing else.",
+      },
+
+      { type: "h2", body: "Security checklist", id: "security-checklist" },
+      {
+        type: "ul",
+        items: [
+          "Access tokens short-lived (15 min)",
+          "Refresh tokens stored in database (can revoke)",
+          "Tokens in HttpOnly cookies (XSS protection)",
+          "Tokens signed (can't tamper with)",
+          "HTTPS only (prevent man-in-the-middle)",
+          "SameSite cookie flag (CSRF protection)",
+          "Refresh token rotation (old token deleted, new one issued)",
+          "Logout deletes refresh token (can't reuse)",
+          "RBAC prevents unauthorized actions",
+        ],
+      },
+
+      { type: "h2", body: "Common mistakes", id: "mistakes" },
+      {
+        type: "ul",
+        items: [
+          "Store token in localStorage — an XSS attack becomes a total compromise. Fix: use HttpOnly cookies.",
+          "Access token expires at login — a mid-request logout is bad UX. Fix: use refresh tokens (7 days).",
+          "Refresh token never expires — a stolen token becomes permanent access. Fix: expire the refresh token (7 days).",
+          "Don't rotate refresh tokens — a compromised token is never invalidated. Fix: rotate — issue new, delete old.",
+          "Store password in JWT — an attacker can decode the password. Fix: never store sensitive data in the token.",
+          "No RBAC — everyone is admin. Fix: implement roles + permissions.",
+          "Store secrets in code — secrets leak in GitHub. Fix: use environment variables.",
+        ],
+      },
+
+      { type: "h2", body: "Production deployment", id: "production" },
+      {
+        type: "code",
+        lang: "dotenv",
+        filename: ".env",
+        source: `JWT_SECRET=your-secret-key-here-64-chars-minimum
+REFRESH_TOKEN_SECRET=another-secret-key-here-64-chars-minimum
+NODE_ENV=production`,
+      },
+      {
+        type: "p",
+        body: "On your server: use strong secrets (64+ random characters), rotate secrets quarterly (reissue all tokens), monitor failed login attempts (alert on suspicious activity), track token refresh frequency (a spike can mean a potential breach), and implement rate limiting on `/login` to prevent brute force.",
+      },
+    ],
+  },
   "upload-files-directly-to-s3": {
     slug: "upload-files-directly-to-s3",
     tagline:
