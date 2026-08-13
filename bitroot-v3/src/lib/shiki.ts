@@ -6,7 +6,7 @@ function getHighlighter() {
   if (!highlighterPromise) {
     highlighterPromise = createHighlighter({
       themes: ["github-dark-default"],
-      langs: ["tsx", "ts", "jsx", "js", "bash", "json", "md", "mdx", "css", "html", "sql", "dotenv"],
+      langs: ["tsx", "ts", "jsx", "js", "bash", "json", "md", "mdx", "css", "html", "sql", "dotenv", "python", "go", "yaml", "diff", "rust"],
     });
   }
   return highlighterPromise;

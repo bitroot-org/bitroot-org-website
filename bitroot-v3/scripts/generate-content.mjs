@@ -50,7 +50,7 @@ function itemFrom(row) {
 async function main() {
   // Cast date columns to text so they serialize as 'YYYY-MM-DD', not full timestamps.
   const catalogRows = await sql`
-    select slug, category, title, summary, tags, difficulty, cost,
+    select slug, category, title, summary, body, tags, difficulty, cost,
            content_date::text as content_date, sort_order
     from site_catalog
     where published = true
@@ -58,6 +58,13 @@ async function main() {
 
   const guides = catalogRows.filter((r) => r.category === "guide").map(itemFrom);
   const kits = catalogRows.filter((r) => r.category === "kit").map(itemFrom);
+
+  // Long-form markdown bodies, keyed "category:slug" — only rows that have one.
+  // Kept out of the catalog cards so listing pages stay lean.
+  const bodies = {};
+  for (const r of catalogRows) {
+    if (r.body && r.body.trim()) bodies[`${r.category}:${r.slug}`] = r.body;
+  }
 
   const productRows = await sql`
     select id, slug, name, tagline, description, category, status,
@@ -105,8 +112,10 @@ async function main() {
   mkdirSync(OUT_DIR, { recursive: true });
   writeFileSync(join(OUT_DIR, "catalog.json"), JSON.stringify({ guides, kits }, null, 2) + "\n");
   writeFileSync(join(OUT_DIR, "products.json"), JSON.stringify(products, null, 2) + "\n");
+  writeFileSync(join(OUT_DIR, "bodies.json"), JSON.stringify(bodies, null, 2) + "\n");
   console.log(
-    `[generate-content] wrote ${guides.length} guides, ${kits.length} kits, ${products.length} products.`,
+    `[generate-content] wrote ${guides.length} guides, ${kits.length} kits, ` +
+      `${products.length} products, ${Object.keys(bodies).length} markdown bodies.`,
   );
 }
 

@@ -11,6 +11,10 @@ import {
   type GuideNode,
   type GuideReference,
 } from "@/content/guides-content";
+import MarkdownBody from "@/components/MarkdownBody";
+import generatedBodies from "@/content/generated/bodies.json";
+
+const bodies = generatedBodies as Record<string, string>;
 import JsonLd from "@/components/JsonLd";
 import { buildMetadata, breadcrumbJsonLd } from "@/lib/seo";
 
@@ -328,6 +332,8 @@ export default async function GuideDetailPage({
   if (!guide) notFound();
 
   const content = guidesContent[slug];
+  // A dashboard-authored Markdown body wins over the code-owned GuideNode content.
+  const mdBody = bodies[`guide:${slug}`];
 
   return (
     <>
@@ -395,7 +401,16 @@ export default async function GuideDetailPage({
         </Container>
       </section>
 
-      {content ? (
+      {mdBody ? (
+        <section className="py-14">
+          <Container size="narrow">
+            <article className="min-w-0 max-w-[720px] mx-auto w-full">
+              <MarkdownBody source={mdBody} />
+              <ClubNudge />
+            </article>
+          </Container>
+        </section>
+      ) : content ? (
         <>
           {/* You will need + you will end up with */}
           <section className="py-10 border-b border-line bg-paper">

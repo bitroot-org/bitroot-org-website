@@ -184,6 +184,101 @@ pre.shiki .line {
   word-break: break-word;
 }
 
+/* Markdown guide/kit bodies (authored in the TeamLife dashboard). Mirrors the
+   code-authored GuideNode typography — see src/components/MarkdownBody.tsx. */
+.guide-md {
+  color: var(--color-ink-2);
+  font-size: 15.5px;
+  line-height: 1.75;
+}
+.guide-md > :first-child {
+  margin-top: 0;
+}
+.guide-md h1,
+.guide-md h2,
+.guide-md h3 {
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  color: var(--color-ink);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+.guide-md h1 { font-size: 30px; margin: 2.5rem 0 1rem; }
+.guide-md h2 { font-size: 27px; margin: 2.5rem 0 1rem; }
+.guide-md h3 { font-size: 20px; margin: 2rem 0 0.75rem; }
+.guide-md p { margin: 1rem 0; }
+.guide-md a {
+  color: var(--color-ember);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--color-ember-line);
+  transition: text-decoration-color 180ms ease;
+}
+.guide-md a:hover { text-decoration-color: var(--color-ember); }
+.guide-md ul,
+.guide-md ol { margin: 1.25rem 0; padding-left: 1.5rem; }
+.guide-md ul { list-style: disc; }
+.guide-md ol { list-style: decimal; }
+.guide-md li { margin: 0.4rem 0; }
+.guide-md li::marker { color: var(--color-ember); }
+.guide-md strong { color: var(--color-ink); font-weight: 600; }
+.guide-md em { font-style: italic; }
+.guide-md code {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.88em;
+  color: var(--color-ink);
+  background: var(--color-paper-2);
+  border: 1px solid var(--color-line);
+  border-radius: 5px;
+  padding: 0.1em 0.4em;
+  word-break: break-word;
+}
+.guide-md .guide-md-code { margin: 1.5rem 0; }
+.guide-md pre {
+  border-radius: 12px;
+  border: 1px solid var(--color-line);
+  overflow-x: auto;
+  padding: 1rem 1.25rem;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.guide-md pre code {
+  background: none;
+  border: 0;
+  padding: 0;
+  font-size: inherit;
+  word-break: normal;
+}
+.guide-md blockquote {
+  margin: 1.5rem 0;
+  border-left: 3px solid var(--color-ember-line);
+  background: var(--color-ember-bg);
+  padding: 0.75rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+  color: var(--color-ink-2);
+}
+.guide-md hr { margin: 2rem 0; border: 0; border-top: 1px solid var(--color-line); }
+.guide-md img {
+  border-radius: 12px;
+  border: 1px solid var(--color-line);
+  margin: 1.5rem 0;
+  max-width: 100%;
+}
+.guide-md table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 14px;
+}
+.guide-md th,
+.guide-md td {
+  border: 1px solid var(--color-line);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+.guide-md th { background: var(--color-paper-2); font-weight: 600; }
+
 @keyframes pulse-dot {
   0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.35); }
   50% { opacity: 0.85; box-shadow: 0 0 0 4px rgba(22, 163, 74, 0); }

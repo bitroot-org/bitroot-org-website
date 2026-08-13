@@ -9,6 +9,10 @@ import { kitsContent } from "@/content/kits-content";
 import type { KitFeature } from "@/content/kits-content";
 import JsonLd from "@/components/JsonLd";
 import { buildMetadata, breadcrumbJsonLd } from "@/lib/seo";
+import MarkdownBody from "@/components/MarkdownBody";
+import generatedBodies from "@/content/generated/bodies.json";
+
+const bodies = generatedBodies as Record<string, string>;
 
 export function generateStaticParams() {
   return kits.map((k) => ({ slug: k.slug }));
@@ -49,6 +53,8 @@ export default async function KitDetailPage({
   if (!kit) notFound();
 
   const content = kitsContent[slug];
+  // A dashboard-authored Markdown body wins over the code-owned kit detail.
+  const mdBody = bodies[`kit:${slug}`];
 
   return (
     <>
@@ -136,7 +142,16 @@ export default async function KitDetailPage({
         </Container>
       </section>
 
-      {content ? (
+      {mdBody ? (
+        <section className="py-14">
+          <Container size="narrow">
+            <article className="min-w-0 max-w-[720px] mx-auto w-full">
+              <MarkdownBody source={mdBody} />
+              <ClubNudge />
+            </article>
+          </Container>
+        </section>
+      ) : content ? (
         <>
           {/* One-liner */}
           <section className="py-12">
