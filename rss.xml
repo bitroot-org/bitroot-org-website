@@ -5,10 +5,10 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 13 Aug 2026 05:28:50 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 05:47:44 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>The Watermark Economy: How AI Companies Could Claim Revenue Share</title>
+      <title>The Watermark Economy: Could AI Companies Eventually Claim Revenue Share?</title>
       <link>https://bitroot.org/blog/2026-08-13-the-watermark-economy-how-ai-companies-could-claim/</link>
       <guid isPermaLink="true">https://bitroot.org/blog/2026-08-13-the-watermark-economy-how-ai-companies-could-claim/</guid>
       <description>Anthropic announced last week that it's watermarking all Claude outputs. An invisible statistical watermark embedded in the text to prove it's AI-generated. EU law compliance, they say.</description>
