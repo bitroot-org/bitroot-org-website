@@ -279,6 +279,52 @@ pre.shiki .line {
 }
 .guide-md th { background: var(--color-paper-2); font-weight: 600; }
 
+/* Markdown callouts (:::tip / :::note / :::warn) — mirror the GuideNode tones. */
+.guide-md-callout {
+  margin: 1.5rem 0;
+  border: 1px solid var(--color-line);
+  border-radius: 12px;
+  padding: 0.9rem 1.25rem;
+  background: color-mix(in srgb, var(--color-paper-2) 60%, transparent);
+}
+.guide-md-callout > :first-child { margin-top: 0; }
+.guide-md-callout > :last-child { margin-bottom: 0; }
+.guide-md-callout-label {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  margin-bottom: 0.4rem;
+  color: var(--color-ink-3);
+}
+.guide-md-callout-warn {
+  border-color: var(--color-ember-line);
+  background: var(--color-ember-bg);
+}
+.guide-md-callout-warn .guide-md-callout-label { color: var(--color-ember); }
+.guide-md-callout-tip {
+  border-color: var(--color-ember-line);
+  background: var(--color-live-bg);
+}
+.guide-md-callout-tip .guide-md-callout-label { color: var(--color-live); }
+
+/* Filename chip above a fenced code block (``` ```ts title=worker.ts ```). */
+.guide-md-code-file {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 11px;
+  color: var(--color-ink-3);
+  background: #1a1815;
+  border: 1px solid var(--color-line);
+  border-bottom: 0;
+  border-radius: 12px 12px 0 0;
+  padding: 0.45rem 0.95rem;
+}
+.guide-md-code-file + pre {
+  margin-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
 @keyframes pulse-dot {
   0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.35); }
   50% { opacity: 0.85; box-shadow: 0 0 0 4px rgba(22, 163, 74, 0); }

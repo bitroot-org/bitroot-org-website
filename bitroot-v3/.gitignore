@@ -45,3 +45,4 @@ next-env.d.ts
 
 # framer reference export — visual comparison only, not part of the project
 /bitroot-v3-framer-comparison
+scripts/content-migration.json
