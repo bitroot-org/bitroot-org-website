@@ -3,6 +3,7 @@
  */
 
 import { products as productCatalog } from "./products";
+import catalogJson from "./generated/catalog.json";
 
 export type Category = "kit" | "guide" | "product" | "tool";
 
@@ -20,7 +21,7 @@ export type Item = {
   difficulty?: "starter" | "intermediate" | "advanced";
 };
 
-export const kits: Item[] = [
+const kitsFallback: Item[] = [
   {
     slug: "waitlist-kit",
     category: "kit",
@@ -122,7 +123,7 @@ export const kits: Item[] = [
   },
 ];
 
-export const guides: Item[] = [
+const guidesFallback: Item[] = [
   {
     slug: "secure-auth-jwt-refresh-rbac",
     category: "guide",
@@ -301,6 +302,19 @@ export const guides: Item[] = [
     difficulty: "starter",
   },
 ];
+
+/**
+ * Guides & kits are managed in TeamLife (/tools/content) and written into
+ * `generated/catalog.json` at build time. When that file is populated (a real
+ * site build with CONTENT_DATABASE_URL set) it is the source of truth; when it's
+ * empty (local dev, or a build without the DB) we fall back to the committed
+ * arrays above so the site never renders blank.
+ */
+const generatedCatalog = catalogJson as { guides: Item[]; kits: Item[] };
+export const kits: Item[] = generatedCatalog.kits.length ? generatedCatalog.kits : kitsFallback;
+export const guides: Item[] = generatedCatalog.guides.length
+  ? generatedCatalog.guides
+  : guidesFallback;
 
 /** Items derived from the products catalog so listings/tickers can surface them. */
 export const products: Item[] = productCatalog.map((p) => ({

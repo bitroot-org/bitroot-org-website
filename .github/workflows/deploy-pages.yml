@@ -65,6 +65,11 @@ jobs:
 
       - name: Build v3 (static export)
         working-directory: bitroot-v3
+        # `prebuild` (generate-content.mjs) reads published guides/kits/launches
+        # from TeamLife's DB via this read-only URL; if the secret is unset the
+        # step is a no-op and the committed content stands.
+        env:
+          CONTENT_DATABASE_URL: ${{ secrets.CONTENT_DATABASE_URL }}
         run: npm run build
 
       - name: Assemble deploy directory

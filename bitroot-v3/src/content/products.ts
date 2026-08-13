@@ -7,6 +7,8 @@
  * firms up. Slugs are stable; they're used as anchors on /products.
  */
 
+import generatedProducts from "./generated/products.json";
+
 export type ProductStatus = "live" | "waitlist" | "early-access";
 
 export type ProductGlyph =
@@ -47,7 +49,7 @@ export type Product = {
   releases?: Release[];
 };
 
-export const products: Product[] = [
+const productsFallback: Product[] = [
   {
     slug: "bitstudio",
     name: "BitStudio",
@@ -167,6 +169,15 @@ export const products: Product[] = [
     waitlistHref: "#waitlist",
   },
 ];
+
+/**
+ * Products/launches are managed in TeamLife (/tools/content) and written into
+ * `generated/products.json` at build time. Populated → source of truth; empty
+ * (local dev / no DB) → fall back to the committed list above.
+ */
+export const products: Product[] = generatedProducts.length
+  ? (generatedProducts as Product[])
+  : productsFallback;
 
 export function findProduct(slug: string): Product | undefined {
   return products.find((p) => p.slug === slug);
