@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 319,
+  "count": 320,
   "posts": [
+    "2026-08-14-token-burning-why-proprietary-ai-models-waste-your.md",
     "2026-08-13-the-watermark-economy-how-ai-companies-could-claim.md",
     "2026-08-12-the-multi-agent-playbook-how-founders-should-solve.md",
     "2026-08-12-claude-code-switches-to-automode-by-default.md",
@@ -323,6 +324,23 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-08-14-token-burning-why-proprietary-ai-models-waste-your.md",
+      "slug": "2026-08-14-token-burning-why-proprietary-ai-models-waste-your",
+      "url": "/blog/2026-08-14-token-burning-why-proprietary-ai-models-waste-your/",
+      "title": "Token Burning: Why Proprietary AI Models Waste Your Money (And How Open-Source Escapes It)",
+      "date": "2026-08-14",
+      "published_at": "2026-08-14T07:06:11.996Z",
+      "tags": [
+        "Open-source",
+        "AI"
+      ],
+      "excerpt": "The signs started appearing in enterprise Slack channels around mid-2024: token costs doubling while output stayed flat. Projects running $5K/month on Claude suddenly cost $8K. The same API call that consumed 2,000 tokens last month now consumed 3,500 tokens.",
+      "image": "https://techcrunch.com/wp-content/uploads/2023/09/May-Habib-Disrupt-2023.jpg?resize=1280,853",
+      "sources": [],
+      "readTime": "6 min",
+      "shortId": 320
+    },
     {
       "filename": "2026-08-13-the-watermark-economy-how-ai-companies-could-claim.md",
       "slug": "2026-08-13-the-watermark-economy-how-ai-companies-could-claim",
