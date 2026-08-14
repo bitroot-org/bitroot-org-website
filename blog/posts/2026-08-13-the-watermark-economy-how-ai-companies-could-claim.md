@@ -1,7 +1,7 @@
 ---
 date: '2026-08-13'
 excerpt: 'Anthropic announced last week that it''s watermarking all Claude outputs. An invisible statistical watermark embedded in the text to prove it''s AI-generated. EU law compliance, they say.'
-image: https://techcrunch.com/wp-content/uploads/2026/06/Claude-photo.jpg
+image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjnF9HOh6rde77izNck7PUN4SJghE9jdW0acm382ZUyA&s=10
 published_at: '2026-08-13T05:27:55.251Z'
 sources: []
 tags:
