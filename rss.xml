@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 17 Aug 2026 06:41:35 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 07:33:07 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The AI Backlash Explained: Watermarks, Token Costs, and Misaligned Incentives</title>
@@ -439,6 +439,76 @@
       <category>AI development</category>
       <category>Technology</category>
       <enclosure url="https://bitroot.org/blog/media/2026-07-24-why-googles-gemini-3-5-pro-is-months-behind-the-co.jpg" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>StoreShot launches at $6.99 for automated app‑store screenshots</title>
+      <link>https://bitroot.org/blog/2026-07-24-storeshot-launches-at-699-for-automated-appstore-s/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-24-storeshot-launches-at-699-for-automated-appstore-s/</guid>
+      <description>StoreShot offers a low‑cost, AI‑driven way to generate App Store and Google Play screenshots, undercutting existing services by more than threefold.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/dannykmlam/status/2080535608884330532"&gt;https://x.com/dannykmlam/status/2080535608884330532&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 24 Jul 2026 10:55:32 +0000</pubDate>
+      <category>app screenshots</category>
+      <category>ai automation</category>
+      <category>pricing</category>
+      <enclosure url="https://pbs.twimg.com/media/HN-MEZ-agAAFB2X.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/dannykmlam/status/2080535608884330532">Original Source</source>
+    </item>
+    <item>
+      <title>On‑device AI music studio Atarang launches with no accounts or fees</title>
+      <link>https://bitroot.org/blog/2026-07-24-ondevice-ai-music-studio-atarang-launches-with-no/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-24-ondevice-ai-music-studio-atarang-launches-with-no/</guid>
+      <description>Shantanu Goel released Atarang, an on‑device AI studio that splits vocals and instruments from YouTube links without requiring a subscription. It’s a low‑friction tool for quick practice or prototyping.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/shantanugoel/status/2080527642508644452"&gt;https://x.com/shantanugoel/status/2080527642508644452&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 24 Jul 2026 10:57:20 +0000</pubDate>
+      <category>ai music</category>
+      <category>audio tooling</category>
+      <category>offline processing</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2080527397095641088/img/IWfWQRXh_oYuy_I7.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/shantanugoel/status/2080527642508644452">Original Source</source>
+    </item>
+    <item>
+      <title>NexusRun lets you ship Ollama/HuggingFace models as a single package</title>
+      <link>https://bitroot.org/blog/2026-07-24-nexusrun-lets-you-ship-ollamahuggingface-models-as/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-24-nexusrun-lets-you-ship-ollamahuggingface-models-as/</guid>
+      <description>NexusRun packages an Ollama or HuggingFace model, its prompt, settings, and hardware preferences into a portable bundle that runs without Docker or a Python environment.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/LanceSeidman/status/2080482027594490217"&gt;https://x.com/LanceSeidman/status/2080482027594490217&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 24 Jul 2026 10:55:55 +0000</pubDate>
+      <category>ai</category>
+      <category>model deployment</category>
+      <category>portability</category>
+      <enclosure url="https://pbs.twimg.com/media/HN9bJ2NaoAAX4Lr.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/LanceSeidman/status/2080482027594490217">Original Source</source>
+    </item>
+    <item>
+      <title>Local Mac notch tool bundles multiple AI agents in one UI</title>
+      <link>https://bitroot.org/blog/2026-07-24-local-mac-notch-tool-bundles-multiple-ai-agents-in/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-24-local-mac-notch-tool-bundles-multiple-ai-agents-in/</guid>
+      <description>A new macOS binary lets developers run and control Claude, Codex, Cursor, and other AI agents locally, with live token tracking and notification support.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/mabhi1999/status/2080532002248233208"&gt;https://x.com/mabhi1999/status/2080532002248233208&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 24 Jul 2026 10:56:36 +0000</pubDate>
+      <category>macos</category>
+      <category>agent manager</category>
+      <category>local tools</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2080531902205935616/img/ORWP_SMnnrTqDhA5.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/mabhi1999/status/2080532002248233208">Original Source</source>
+    </item>
+    <item>
+      <title>Daedalus-Lite launches as a lightweight TypeScript AI assistant starter kit</title>
+      <link>https://bitroot.org/blog/2026-07-24-daedalus-lite-launches-as-a-lightweight-typescript/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-24-daedalus-lite-launches-as-a-lightweight-typescript/</guid>
+      <description>Daedalus-Lite is a new TypeScript starter kit that lets you spin up a branded AI coding assistant quickly, supporting OpenAI, Claude, and Ollama models with zero runtime overhead.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/bgill55_art/status/2080292072846917926"&gt;https://x.com/bgill55_art/status/2080292072846917926&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 24 Jul 2026 10:57:16 +0000</pubDate>
+      <category>typescript</category>
+      <category>ai-assistant</category>
+      <category>starter-kit</category>
+      <enclosure url="https://pbs.twimg.com/tweet_video_thumb/HN6uHAmbgAAssXN.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/bgill55_art/status/2080292072846917926">Original Source</source>
     </item>
     <item>
       <title>Claude Code desktop adds iOS simulator panel in public beta</title>
