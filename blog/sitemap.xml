@@ -2,8 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bitroot.org/blog/</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-17</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bitroot.org/blog/2026-08-17-the-ai-backlash-explained-watermarks-token-costs-a/</loc>
+    <lastmod>2026-08-17</lastmod>
   </url>
   <url>
     <loc>https://bitroot.org/blog/2026-08-14-token-burning-why-proprietary-ai-models-waste-your/</loc>

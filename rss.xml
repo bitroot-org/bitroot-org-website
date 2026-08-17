@@ -5,8 +5,17 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 14 Aug 2026 07:07:01 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 06:41:35 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The AI Backlash Explained: Watermarks, Token Costs, and Misaligned Incentives</title>
+      <link>https://bitroot.org/blog/2026-08-17-the-ai-backlash-explained-watermarks-token-costs-a/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-08-17-the-ai-backlash-explained-watermarks-token-costs-a/</guid>
+      <description>Dario Amodei, CEO of Anthropic, recently responded to criticism that his warnings about AI risks have fueled public backlash against the technology. His diagnosis was precise: "I think it is fundamentally a crisis of trust. Ordinary people don't trust companies, governments, or the tech industry and always suspect that we are cooking up some new way to screw them over."</description>
+      <pubDate>Mon, 17 Aug 2026 06:40:47 +0000</pubDate>
+      <category>AI</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2261514463.jpg" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Token Burning: Why Proprietary AI Models Waste Your Money (And How Open-Source Escapes It)</title>
       <link>https://bitroot.org/blog/2026-08-14-token-burning-why-proprietary-ai-models-waste-your/</link>

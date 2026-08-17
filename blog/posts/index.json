@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 320,
+  "count": 321,
   "posts": [
+    "2026-08-17-the-ai-backlash-explained-watermarks-token-costs-a.md",
     "2026-08-14-token-burning-why-proprietary-ai-models-waste-your.md",
     "2026-08-13-the-watermark-economy-how-ai-companies-could-claim.md",
     "2026-08-12-the-multi-agent-playbook-how-founders-should-solve.md",
@@ -324,6 +325,22 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-08-17-the-ai-backlash-explained-watermarks-token-costs-a.md",
+      "slug": "2026-08-17-the-ai-backlash-explained-watermarks-token-costs-a",
+      "url": "/blog/2026-08-17-the-ai-backlash-explained-watermarks-token-costs-a/",
+      "title": "The AI Backlash Explained: Watermarks, Token Costs, and Misaligned Incentives",
+      "date": "2026-08-17",
+      "published_at": "2026-08-17T06:40:47.319Z",
+      "tags": [
+        "AI"
+      ],
+      "excerpt": "Dario Amodei, CEO of Anthropic, recently responded to criticism that his warnings about AI risks have fueled public backlash against the technology. His diagnosis was precise: \"I think it is fundamentally a crisis of trust. Ordinary people don't trust companies, governments, or the tech industry and always suspect that we are cooking up some new way to screw them over.\"",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2261514463.jpg",
+      "sources": [],
+      "readTime": "7 min",
+      "shortId": 321
+    },
     {
       "filename": "2026-08-14-token-burning-why-proprietary-ai-models-waste-your.md",
       "slug": "2026-08-14-token-burning-why-proprietary-ai-models-waste-your",
