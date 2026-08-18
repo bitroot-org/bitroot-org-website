@@ -43,6 +43,428 @@ export type GuideContent = {
 };
 
 export const guidesContent: Record<string, GuideContent> = {
+  "api-versioning-that-doesnt-break-clients": {
+    slug: "api-versioning-that-doesnt-break-clients",
+    tagline:
+      "Version your API in the URL (/v1/, /v2/). Support multiple versions simultaneously for 12 months. Make changes additive, not destructive. When you deprecate, give 12-month notice. This prevents the nightmare of breaking 50 integrations.",
+    timeEstimate: "20–30 minutes to set up versioned routing",
+    youWillNeed: [
+      "An API with at least one existing consumer (internal or external)",
+      "A Node.js server (Express or similar) — the routing pattern applies to any framework",
+      "A plan for where deprecation notices and migration guides will live",
+    ],
+    youWillEndUpWith:
+      "URI-versioned routes (/v1/, /v2/) that can coexist indefinitely, an additive-changes discipline that keeps old clients working, a 12-month deprecation timeline with Deprecation/Sunset headers, usage monitoring by version, and contract tests that catch accidental breakage before it ships.",
+    toc: [
+      { label: "Why API versioning matters", id: "why-it-matters" },
+      { label: "Versioning strategies (and why URI wins)", id: "strategies" },
+      { label: "Setup, step by step", id: "setup" },
+      { label: "Backward compatibility patterns", id: "compatibility" },
+      { label: "Deprecation timeline (12 months standard)", id: "deprecation-timeline" },
+      { label: "Real scenario: 50 integrations, multiple versions", id: "real-scenario" },
+      { label: "Monitoring API usage by version", id: "monitoring" },
+      { label: "Documentation for each version", id: "documentation" },
+      { label: "Testing across versions", id: "testing" },
+      { label: "Common mistakes", id: "mistakes" },
+      { label: "Production checklist", id: "checklist" },
+      { label: "Your competitive edge", id: "competitive-edge" },
+    ],
+    body: [
+      { type: "h2", body: "Why API versioning matters", id: "why-it-matters" },
+      {
+        type: "p",
+        body: "You build an API. 50 developers integrate it. Everything works. Then you need to change a response:",
+      },
+      {
+        type: "code",
+        lang: "js",
+        source: `// Old (v1)
+{ "user": { "name": "John", "email": "john@example.com" } }
+
+// New (v2) - different structure
+{ "data": { "profile": { "name": "John", "email": "john@example.com" } } }`,
+      },
+      {
+        type: "p",
+        body: "All 50 integrations break. Your support inbox explodes. Developers hate you.",
+      },
+      {
+        type: "callout",
+        tone: "tip",
+        body: "API versioning prevents this. Old integrations keep using v1. New integrations use v2. No breakage.",
+      },
+
+      { type: "h2", body: "Versioning strategies (and why URI wins)", id: "strategies" },
+      { type: "h3", body: "Strategy 1: URI versioning (recommended)" },
+      {
+        type: "code",
+        lang: "js",
+        source: `GET /v1/users/123
+GET /v2/users/123`,
+      },
+      {
+        type: "p",
+        body: "Pros: clearest to clients (version is obvious in the URL), easy to route (separate v1 and v2 handlers), backward compatible (old URL keeps working), and standards-compliant (REST best practice). Cons: URLs look a bit verbose.",
+      },
+      { type: "h3", body: "Strategy 2: header versioning" },
+      {
+        type: "code",
+        lang: "js",
+        source: `GET /users/123
+Header: Accept: application/vnd.company.v2+json`,
+      },
+      {
+        type: "p",
+        body: "Pros: cleaner URLs. Cons: clients forget the header, it's harder to test (need to set headers), it's less discoverable, and it's harder to route in code.",
+      },
+      { type: "h3", body: "Strategy 3: query parameter" },
+      {
+        type: "code",
+        lang: "js",
+        source: `GET /users/123?version=2`,
+      },
+      {
+        type: "p",
+        body: "Pros: simple. Cons: easy to forget the parameter, looks hacky, and isn't RESTful.",
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Recommendation: use URI versioning. It's the clearest for clients and easiest to implement.",
+      },
+
+      { type: "h2", body: "Setup, step by step", id: "setup" },
+      { type: "h3", body: "Step 1: organize your routes by version" },
+      {
+        type: "code",
+        lang: "js",
+        source: `const express = require('express');
+const app = express();
+
+// Separate routers for each version
+const v1Routes = require('./routes/v1');
+const v2Routes = require('./routes/v2');
+
+// Mount routes with version prefix
+app.use('/v1', v1Routes);
+app.use('/v2', v2Routes);
+
+// Redirect root to latest version (optional)
+app.get('/api/users/:id', (req, res) => {
+  res.redirect(\`/v2/api/users/\${req.params.id}\`);
+});`,
+      },
+      { type: "h3", body: "Step 2: v1 route (legacy)" },
+      {
+        type: "code",
+        lang: "js",
+        filename: "routes/v1/index.js",
+        source: `const router = require('express').Router();
+const db = require('../../database');
+
+// Old response format
+router.get('/users/:id', async (req, res) => {
+  const user = await db.query('SELECT * FROM users WHERE id = ?', [req.params.id]);
+
+  res.json({
+    user: {
+      id: user.id,
+      name: user.name,
+      email: user.email,
+      createdAt: user.created_at
+    }
+  });
+});
+
+module.exports = router;`,
+      },
+      { type: "h3", body: "Step 3: v2 route (new, breaking changes)" },
+      {
+        type: "code",
+        lang: "js",
+        filename: "routes/v2/index.js",
+        source: `const router = require('express').Router();
+const db = require('../../database');
+
+// New response format (added fields, changed structure)
+router.get('/users/:id', async (req, res) => {
+  const user = await db.query(
+    'SELECT id, name, email, created_at, updated_at, status FROM users WHERE id = ?',
+    [req.params.id]
+  );
+
+  res.json({
+    data: {
+      id: user.id,
+      profile: {
+        name: user.name,
+        email: user.email
+      },
+      timestamps: {
+        createdAt: user.created_at,
+        updatedAt: user.updated_at
+      },
+      status: user.status // new field
+    }
+  });
+});
+
+module.exports = router;`,
+      },
+      {
+        type: "callout",
+        tone: "note",
+        body: "Key: v1 and v2 coexist. Old clients hit /v1. New clients hit /v2. No breakage.",
+      },
+
+      { type: "h2", body: "Backward compatibility patterns", id: "compatibility" },
+      {
+        type: "p",
+        body: "Don't do this — a breaking change that removes the \"email\" field:",
+      },
+      {
+        type: "code",
+        lang: "js",
+        source: `{
+  "data": { "id": 123, "name": "John" }
+}`,
+      },
+      {
+        type: "p",
+        body: "Do this instead — additive only, add a new field, keep the old ones:",
+      },
+      {
+        type: "code",
+        lang: "js",
+        source: `{
+  "data": { "id": 123, "name": "John", "email": "john@example.com", "phone": "+1..." }
+}`,
+      },
+      {
+        type: "p",
+        body: "Why: clients ignore unknown fields. They break if you remove fields they depend on.",
+      },
+      { type: "h3", body: "Pattern 1: add fields (safe)" },
+      {
+        type: "code",
+        lang: "js",
+        source: `// v2.1: Added phone field
+{
+  "data": {
+    "id": 123,
+    "name": "John",
+    "email": "john@example.com",
+    "phone": "+1-555-0123" // new
+  }
+}`,
+      },
+      {
+        type: "p",
+        body: "Clients using v2.0 ignore phone. No breakage.",
+      },
+      { type: "h3", body: "Pattern 2: deprecate, then remove (months later)" },
+      {
+        type: "code",
+        lang: "js",
+        source: `// v2 (month 1): Include deprecated fields
+{
+  "data": {
+    "id": 123,
+    "name": "John",
+    "email": "john@example.com",
+    "deprecated_field": "value" // marked for removal
+  }
+}
+
+// v3 (month 13): Removed deprecated_field
+// Clients got 12 months notice to migrate
+{
+  "data": {
+    "id": 123,
+    "name": "John",
+    "email": "john@example.com"
+  }
+}`,
+      },
+
+      { type: "h2", body: "Deprecation timeline (12 months standard)", id: "deprecation-timeline" },
+      {
+        type: "p",
+        body: "Month 1: release v2. Documentation says \"v1 will be sunset December 31, 2026.\" Add a header to v1 responses: `Deprecation: true`. Add a sunset header: `Sunset: Sun, 31 Dec 2026 23:59:59 GMT`.",
+      },
+      {
+        type: "code",
+        lang: "js",
+        source: `router.get('/v1/users/:id', (req, res) => {
+  const user = /* ... */;
+
+  res.set('Deprecation', 'true');
+  res.set('Sunset', 'Sun, 31 Dec 2026 23:59:59 GMT');
+  res.set('Link', '</v2/users/123>; rel="successor-version"');
+
+  res.json(user);
+});`,
+      },
+      {
+        type: "ul",
+        items: [
+          "Month 6: send email to all v1 users — \"v1 sunset in 6 months,\" link to the migration guide, offer assistance",
+          "Month 11: final warning — \"v1 sunset in 30 days,\" support email for questions",
+          "Month 12: v1 shut down — all v1 requests return 410 Gone (or redirect to v2)",
+        ],
+      },
+
+      { type: "h2", body: "Real scenario: 50 integrations, multiple versions", id: "real-scenario" },
+      {
+        type: "p",
+        body: "You have 50 integrations using your API.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Month 1: release v2 (major changes). 30 integrations stay on v1 (not ready to migrate), 20 adopt v2 immediately. Both versions live side-by-side.",
+          "Month 3: 40 integrations on v2, 10 on v1.",
+          "Month 6: email sent — \"v1 sunset in 6 months.\" The last 10 integrations start migration.",
+          "Month 11: 49 on v2, 1 laggard still on v1 — direct outreach to that company.",
+          "Month 12: sunset v1. That 1 company had to migrate (or their integration broke, but they had notice).",
+        ],
+      },
+      {
+        type: "callout",
+        tone: "tip",
+        body: "Result: no surprise breakage. Everyone had time. No angry support emails.",
+      },
+
+      { type: "h2", body: "Monitoring API usage by version", id: "monitoring" },
+      {
+        type: "p",
+        body: "Track which clients use which version:",
+      },
+      {
+        type: "code",
+        lang: "js",
+        source: `app.use((req, res, next) => {
+  const version = req.path.match(/^\\/v(\\d+)/)?.[1];
+  const endpoint = req.path;
+
+  console.log({
+    timestamp: new Date(),
+    version,
+    endpoint,
+    method: req.method,
+    clientIp: req.ip,
+    userAgent: req.get('user-agent')
+  });
+
+  next();
+});`,
+      },
+      {
+        type: "p",
+        body: "Dashboard queries: how many requests hit v1 vs v2? Are any v1 clients still active? Which endpoints are most used?",
+      },
+      {
+        type: "p",
+        body: "Alerts: if v1 traffic spikes (something broke?), or if new clients start using a deprecated version.",
+      },
+
+      { type: "h2", body: "Documentation for each version", id: "documentation" },
+      {
+        type: "p",
+        body: "Create separate docs:",
+      },
+      {
+        type: "code",
+        lang: "md",
+        source: `/docs/v1/users.md
+/docs/v2/users.md
+/docs/v3/users.md`,
+      },
+      {
+        type: "p",
+        body: "Each shows the endpoint, request format, response format (for that version), a deprecation notice (if any), and a migration guide to the next version.",
+      },
+
+      { type: "h2", body: "Testing across versions", id: "testing" },
+      {
+        type: "p",
+        body: "Use contract tests to prevent surprises:",
+      },
+      {
+        type: "code",
+        lang: "js",
+        filename: "test/contracts.js",
+        source: `describe('API Contracts', () => {
+  it('v1 users endpoint returns expected fields', async () => {
+    const response = await request(app).get('/v1/users/123');
+
+    expect(response.body).toHaveProperty('user.id');
+    expect(response.body).toHaveProperty('user.name');
+    expect(response.body).toHaveProperty('user.email');
+  });
+
+  it('v2 users endpoint returns expected fields', async () => {
+    const response = await request(app).get('/v2/users/123');
+
+    expect(response.body).toHaveProperty('data.id');
+    expect(response.body).toHaveProperty('data.profile.name');
+    expect(response.body).toHaveProperty('data.timestamps.createdAt');
+  });
+
+  it('v2 response includes deprecated_field for compatibility', async () => {
+    const response = await request(app).get('/v2/users/123');
+
+    // Verify new clients get the field
+    expect(response.body.data).toHaveProperty('deprecated_field');
+  });
+});`,
+      },
+      {
+        type: "p",
+        body: "Why: when you write v3, contract tests ensure v2 didn't accidentally break someone.",
+      },
+
+      { type: "h2", body: "Common mistakes", id: "mistakes" },
+      {
+        type: "ul",
+        items: [
+          "No versioning — one breaking change breaks all clients. Fix: version from day 1 (/v1/).",
+          "Break v1 suddenly — angry integrations, lost trust. Fix: 12-month deprecation notice.",
+          "Support too many versions — code becomes unmaintainable (3+ versions = complexity). Fix: sunset old versions after 12 months.",
+          "No deprecation headers — clients don't know it's ending. Fix: add Deprecation + Sunset headers.",
+          "Don't document each version — clients are confused about the differences. Fix: separate docs for each version.",
+          "Ignore usage analytics — you don't know who's still using the old version. Fix: monitor and alert.",
+        ],
+      },
+
+      { type: "h2", body: "Production checklist", id: "checklist" },
+      {
+        type: "ul",
+        items: [
+          "Version in URL (/v1/, /v2/)",
+          "Both versions documented separately",
+          "Backward compatibility: only additive changes",
+          "Deprecation headers on old versions (Deprecation, Sunset, Link)",
+          "Deprecation notice: 12 months minimum",
+          "Monitoring: track usage by version",
+          "Contract tests: verify no accidental breakage",
+          "Migration guide: from old to new version",
+          "Support: respond to migration questions",
+        ],
+      },
+
+      { type: "h2", body: "Your competitive edge", id: "competitive-edge" },
+      {
+        type: "p",
+        body: "Founders using proper API versioning keep client trust (won't suddenly break integrations), can evolve their API confidently, avoid angry support emails about breaking changes, can deprecate old versions cleanly, and have data on which clients use what — a real strategic insight.",
+      },
+      {
+        type: "callout",
+        tone: "tip",
+        body: "Start this week. If you don't have versioning yet, add /v1/ to your current API. When you need changes, create /v2/. 12-month deprecation. Everyone stays happy.",
+      },
+    ],
+  },
   "secure-auth-jwt-refresh-rbac": {
     slug: "secure-auth-jwt-refresh-rbac",
     tagline:
