@@ -125,6 +125,17 @@ const kitsFallback: Item[] = [
 
 const guidesFallback: Item[] = [
   {
+    slug: "api-versioning-that-doesnt-break-clients",
+    category: "guide",
+    title: "API Versioning That Doesn't Break Clients (URI + Backward Compatibility Strategy)",
+    summary:
+      "Version your API in the URL (/v1/, /v2/). Support multiple versions simultaneously for 12 months. Make changes additive, not destructive. When you deprecate, give 12-month notice — and never break 50 integrations overnight.",
+    tags: ["API", "Versioning", "Backend", "Node.js"],
+    updatedAt: "2026-08-18",
+    href: "/guides/api-versioning-that-doesnt-break-clients",
+    difficulty: "intermediate",
+  },
+  {
     slug: "secure-auth-jwt-refresh-rbac",
     category: "guide",
     title: "Build Secure Auth That Doesn't Break (JWT + Refresh Tokens + RBAC)",
