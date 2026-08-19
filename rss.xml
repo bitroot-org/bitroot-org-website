@@ -5,8 +5,19 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 19 Aug 2026 06:53:28 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 Aug 2026 08:53:00 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why GitHub's 180 Million Developers Are Trapped, Not Loyal — Cursor's Opening Is the Evidence</title>
+      <link>https://bitroot.org/blog/2026-08-19-why-githubs-180-million-developers-are-trapped-not/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-08-19-why-githubs-180-million-developers-are-trapped-not/</guid>
+      <description>GitHub dominates code hosting with 180 million developers, the largest source code repository in the world. Developers choose it by default. But a closer look at recent events reveals something uncomfortable: those 180 million developers may not actually prefer GitHub. They may simply be trapped.</description>
+      <pubDate>Wed, 19 Aug 2026 08:52:02 +0000</pubDate>
+      <category>Hosting</category>
+      <category>Coding</category>
+      <category>AI</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/07/cursor.jpg?resize=1280,853" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>ChatGPT Waited Years for Teen Safety. Here's Why.</title>
       <link>https://bitroot.org/blog/2026-08-19-chatgpt-waited-years-for-teen-safety-heres-why/</link>
