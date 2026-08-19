@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 326,
+  "count": 327,
   "posts": [
+    "2026-08-19-chatgpt-waited-years-for-teen-safety-heres-why.md",
     "2026-08-17-the-ai-backlash-explained-watermarks-token-costs-a.md",
     "2026-08-14-token-burning-why-proprietary-ai-models-waste-your.md",
     "2026-08-13-the-watermark-economy-how-ai-companies-could-claim.md",
@@ -330,6 +331,24 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-08-19-chatgpt-waited-years-for-teen-safety-heres-why.md",
+      "slug": "2026-08-19-chatgpt-waited-years-for-teen-safety-heres-why",
+      "url": "/blog/2026-08-19-chatgpt-waited-years-for-teen-safety-heres-why/",
+      "title": "ChatGPT Waited Years for Teen Safety. Here's Why.",
+      "date": "2026-08-19",
+      "published_at": "2026-08-19T06:52:34.562Z",
+      "tags": [
+        "AI",
+        "Teen Safety",
+        "OpenAI"
+      ],
+      "excerpt": "In August 2026, OpenAI launched ChatGPT for Teens with enhanced safety protections and parental controls. The announcement framed these features as a commitment to protecting young users from harmful content and mental health risks.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/08/Still-04-HomeworkReminder__1_.webp?resize=1280,720",
+      "sources": [],
+      "readTime": "5 min",
+      "shortId": 327
+    },
     {
       "filename": "2026-08-17-the-ai-backlash-explained-watermarks-token-costs-a.md",
       "slug": "2026-08-17-the-ai-backlash-explained-watermarks-token-costs-a",
