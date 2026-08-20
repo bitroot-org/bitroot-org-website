@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 329,
+  "count": 330,
   "posts": [
     "2026-08-20-why-google-and-openai-are-suddenly-fighting-over-y.md",
+    "2026-08-20-the-art-of-remembering-indias-nostalgia-internet.md",
     "2026-08-19-why-githubs-180-million-developers-are-trapped-not.md",
     "2026-08-19-chatgpt-waited-years-for-teen-safety-heres-why.md",
     "2026-08-17-the-ai-backlash-explained-watermarks-token-costs-a.md",
@@ -349,6 +350,22 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/02/google-logo.jpg?resize=1280,853",
       "sources": [],
       "readTime": "4 min",
+      "shortId": 330
+    },
+    {
+      "filename": "2026-08-20-the-art-of-remembering-indias-nostalgia-internet.md",
+      "slug": "2026-08-20-the-art-of-remembering-indias-nostalgia-internet",
+      "url": "/blog/2026-08-20-the-art-of-remembering-indias-nostalgia-internet/",
+      "title": "The Art of Remembering: India's Nostalgia Internet",
+      "date": "2026-08-20",
+      "published_at": "2026-08-20T09:04:37.181Z",
+      "tags": [
+        "Art"
+      ],
+      "excerpt": "Someone built a barbershop radio. Not an app. Not a platform. Just a website that plays exactly what would have played in a \u20b920 haircut in 2007.",
+      "image": "https://pbs.twimg.com/media/HPoIC0Fa8AA_Iis?format=jpg&name=900x900",
+      "sources": [],
+      "readTime": "3 min",
       "shortId": 329
     },
     {
