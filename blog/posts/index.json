@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 328,
+  "count": 329,
   "posts": [
+    "2026-08-20-why-google-and-openai-are-suddenly-fighting-over-y.md",
     "2026-08-19-why-githubs-180-million-developers-are-trapped-not.md",
     "2026-08-19-chatgpt-waited-years-for-teen-safety-heres-why.md",
     "2026-08-17-the-ai-backlash-explained-watermarks-token-costs-a.md",
@@ -332,6 +333,24 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-08-20-why-google-and-openai-are-suddenly-fighting-over-y.md",
+      "slug": "2026-08-20-why-google-and-openai-are-suddenly-fighting-over-y",
+      "url": "/blog/2026-08-20-why-google-and-openai-are-suddenly-fighting-over-y/",
+      "title": "Why Google and OpenAI Are Suddenly Fighting Over Your Students \u2014 The Economics Changed",
+      "date": "2026-08-20",
+      "published_at": "2026-08-20T07:35:10.473Z",
+      "tags": [
+        "AI",
+        "Gemini",
+        "OpenAI"
+      ],
+      "excerpt": "Google just launched AI study tools across Search and Gemini. OpenAI is building education features into ChatGPT. Knowt and Gauth are raising millions. Every major tech company suddenly cares about education.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/02/google-logo.jpg?resize=1280,853",
+      "sources": [],
+      "readTime": "4 min",
+      "shortId": 329
+    },
     {
       "filename": "2026-08-19-why-githubs-180-million-developers-are-trapped-not.md",
       "slug": "2026-08-19-why-githubs-180-million-developers-are-trapped-not",
