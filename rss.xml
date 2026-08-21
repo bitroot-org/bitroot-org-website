@@ -5,8 +5,17 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 21 Aug 2026 03:32:56 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Aug 2026 10:40:33 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude Academy vs ChatGPT: Free AI Education Platforms Compared</title>
+      <link>https://bitroot.org/blog/2026-08-21-claude-academy-vs-chatgpt-free-ai-education-platfo/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-08-21-claude-academy-vs-chatgpt-free-ai-education-platfo/</guid>
+      <description>Anthropic and OpenAI both launched free AI education platforms. Claude Academy went live Aug 20, 2026. ChatGPT's education offerings expanded significantly through 2025–2026. For developers, founders, and teams trying to choose which ecosystem to learn, the decision isn't obvious.</description>
+      <pubDate>Fri, 21 Aug 2026 10:39:36 +0000</pubDate>
+      <category>AI</category>
+      <enclosure url="https://academy.claude.com/assets/media/6b130760316f10078d23e877c42fc8a6b619754601264ce0d73ccbd260a1c940.png" type="image/png" length="0" />
+    </item>
     <item>
       <title>ChatGPT Apple Messages Plugin: What Outsourcing Communication Reveals About Trust</title>
       <link>https://bitroot.org/blog/2026-08-21-chatgpt-apple-messages-plugin-what-outsourcing-com/</link>
