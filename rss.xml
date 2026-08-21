@@ -5,8 +5,18 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 20 Aug 2026 09:05:31 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Aug 2026 03:32:56 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ChatGPT Apple Messages Plugin: What Outsourcing Communication Reveals About Trust</title>
+      <link>https://bitroot.org/blog/2026-08-21-chatgpt-apple-messages-plugin-what-outsourcing-com/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-08-21-chatgpt-apple-messages-plugin-what-outsourcing-com/</guid>
+      <description>OpenAI just released an Apple Messages plugin that lets ChatGPT compose your text messages.</description>
+      <pubDate>Fri, 21 Aug 2026 03:31:50 +0000</pubDate>
+      <category>Apple</category>
+      <category>OpenAI</category>
+      <enclosure url="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2022/02/apple_messages_mac_hero_2.jpg" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Why Google and OpenAI Are Suddenly Fighting Over Your Students — The Economics Changed</title>
       <link>https://bitroot.org/blog/2026-08-20-why-google-and-openai-are-suddenly-fighting-over-y/</link>

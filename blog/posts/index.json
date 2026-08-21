@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 330,
+  "count": 331,
   "posts": [
+    "2026-08-21-chatgpt-apple-messages-plugin-what-outsourcing-com.md",
     "2026-08-20-why-google-and-openai-are-suddenly-fighting-over-y.md",
     "2026-08-20-the-art-of-remembering-indias-nostalgia-internet.md",
     "2026-08-19-why-githubs-180-million-developers-are-trapped-not.md",
@@ -334,6 +335,23 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-08-21-chatgpt-apple-messages-plugin-what-outsourcing-com.md",
+      "slug": "2026-08-21-chatgpt-apple-messages-plugin-what-outsourcing-com",
+      "url": "/blog/2026-08-21-chatgpt-apple-messages-plugin-what-outsourcing-com/",
+      "title": "ChatGPT Apple Messages Plugin: What Outsourcing Communication Reveals About Trust",
+      "date": "2026-08-21",
+      "published_at": "2026-08-21T03:31:50.308Z",
+      "tags": [
+        "Apple",
+        "OpenAI"
+      ],
+      "excerpt": "OpenAI just released an Apple Messages plugin that lets ChatGPT compose your text messages.",
+      "image": "https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2022/02/apple_messages_mac_hero_2.jpg",
+      "sources": [],
+      "readTime": "4 min",
+      "shortId": 331
+    },
     {
       "filename": "2026-08-20-why-google-and-openai-are-suddenly-fighting-over-y.md",
       "slug": "2026-08-20-why-google-and-openai-are-suddenly-fighting-over-y",
