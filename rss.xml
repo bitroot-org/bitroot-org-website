@@ -5,8 +5,17 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 21 Aug 2026 10:40:33 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Aug 2026 05:38:53 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MCP Stateless Architecture: How Protocol Redesign Enables Scale-to-Zero</title>
+      <link>https://bitroot.org/blog/2026-08-22-mcp-stateless-architecture-how-protocol-redesign-e/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-08-22-mcp-stateless-architecture-how-protocol-redesign-e/</guid>
+      <description>On July 28, 2026, the Model Context Protocol specification underwent its largest revision since launch. The change: complete removal of session state from the protocol core.</description>
+      <pubDate>Sat, 22 Aug 2026 05:37:52 +0000</pubDate>
+      <category>MCP</category>
+      <enclosure url="https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KZA53A5G2PQVSM15SFEAYVAS.png&amp;w=1080&amp;h=608&amp;f=webp&amp;fit=cover&amp;position=center" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Claude Academy vs ChatGPT: Free AI Education Platforms Compared</title>
       <link>https://bitroot.org/blog/2026-08-21-claude-academy-vs-chatgpt-free-ai-education-platfo/</link>
