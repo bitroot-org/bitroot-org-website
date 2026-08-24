@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 24 Aug 2026 10:22:13 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2026 11:41:17 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GTA Bangalore AI Video: Who Made It and Why It's Going Viral</title>
@@ -1273,6 +1273,79 @@
       <category>llm tools</category>
       <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2077269919486693376/img/ENB_RQbFAAPF5igH.jpg" type="image/jpeg" length="0" />
       <source url="https://x.com/rizwanc_r/status/2077269947861135803">Original Source</source>
+    </item>
+    <item>
+      <title>OpenAaaS demo released using Pi’s open framework</title>
+      <link>https://bitroot.org/blog/2026-07-14-openaaas-demo-released-using-pis-open-framework/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-14-openaaas-demo-released-using-pis-open-framework/</guid>
+      <description>A quick OpenAaaS demo has been published, showing how Pi’s open framework and its harness keep sub‑executors stable.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/Yu60687413/status/2076862500554088510"&gt;https://x.com/Yu60687413/status/2076862500554088510&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 14 Jul 2026 10:30:43 +0000</pubDate>
+      <category>openaas</category>
+      <category>framework</category>
+      <category>demo</category>
+      <enclosure url="https://pbs.twimg.com/amplify_video_thumb/2076862302729715712/img/k2jzQFLwgQqeIdS4.jpg" type="image/jpeg" length="0" />
+      <source url="https://x.com/Yu60687413/status/2076862500554088510">Original Source</source>
+    </item>
+    <item>
+      <title>Nanoserve ships a Triton JIT kernel for fused paged attention</title>
+      <link>https://bitroot.org/blog/2026-07-14-nanoserve-ships-a-triton-jit-kernel-for-fused-page/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-14-nanoserve-ships-a-triton-jit-kernel-for-fused-page/</guid>
+      <description>On day 23 of the nanoserve project, the author replaced a Python‑loop mock‑GPU implementation with a real Triton JIT kernel for fused paged attention, pushing the engine closer to production performance.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/pdurdenj/status/2076892806681944097"&gt;https://x.com/pdurdenj/status/2076892806681944097&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 14 Jul 2026 10:32:10 +0000</pubDate>
+      <category>llm inference</category>
+      <category>triton</category>
+      <category>open-source</category>
+      <enclosure url="https://pbs.twimg.com/media/HNKbADNWsAA322s.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/pdurdenj/status/2076892806681944097">Original Source</source>
+    </item>
+    <item>
+      <title>llm-dequant adds NVFP4-to-BF16 checkpoint conversion</title>
+      <link>https://bitroot.org/blog/2026-07-14-llm-dequant-adds-nvfp4-to-bf16-checkpoint-conversi/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-14-llm-dequant-adds-nvfp4-to-bf16-checkpoint-conversi/</guid>
+      <description>The new llm-dequant tool streams NVFP4 compressed tensors into dense BF16 safetensors, unlocking models for llama.cpp and other pipelines.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/ViC305/status/2076826735421849706"&gt;https://x.com/ViC305/status/2076826735421849706&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 14 Jul 2026 10:32:15 +0000</pubDate>
+      <category>llm</category>
+      <category>dequantization</category>
+      <category>open-source</category>
+      <category>model-conversion</category>
+      <enclosure url="https://pbs.twimg.com/media/HNJdH--asAALUg3.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/ViC305/status/2076826735421849706">Original Source</source>
+    </item>
+    <item>
+      <title>Liquidprism launches open‑source 3‑D spatial mic array library</title>
+      <link>https://bitroot.org/blog/2026-07-14-liquidprism-launches-opensource-3d-spatial-mic-arr/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-14-liquidprism-launches-opensource-3d-spatial-mic-arr/</guid>
+      <description>A new library promises to turn everyday consumer devices into an ad‑hoc 3‑D microphone array, but early adopters should expect hardware quirks and calibration challenges.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/liquidprismata/status/2076892692957507621"&gt;https://x.com/liquidprismata/status/2076892692957507621&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 14 Jul 2026 10:30:19 +0000</pubDate>
+      <category>audio</category>
+      <category>open-source</category>
+      <category>hardware</category>
+      <category>spatial audio</category>
+      <enclosure url="https://pbs.twimg.com/media/HNKaxhBXIAA1Rgc.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/liquidprismata/status/2076892692957507621">Original Source</source>
+    </item>
+    <item>
+      <title>GRACE launches open-source GPU-native numerical relativity framework</title>
+      <link>https://bitroot.org/blog/2026-07-14-grace-launches-open-source-gpu-native-numerical-re/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-07-14-grace-launches-open-source-gpu-native-numerical-re/</guid>
+      <description>GRACE delivers a fresh, GPU‑first implementation of Z4c gravity coupled to ideal GRMHD, scaling across heterogeneous clusters with impressive zone‑cycle rates, but it still demands sizable hardware and expertise.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://x.com/En_formare/status/2076891457999479168"&gt;https://x.com/En_formare/status/2076891457999479168&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 14 Jul 2026 10:31:29 +0000</pubDate>
+      <category>numerical relativity</category>
+      <category>gpu</category>
+      <category>hpc</category>
+      <category>open source</category>
+      <enclosure url="https://pbs.twimg.com/media/HNKZxd8aIAEpk1e.jpg?name=orig" type="image/jpeg" length="0" />
+      <source url="https://x.com/En_formare/status/2076891457999479168">Original Source</source>
     </item>
     <item>
       <title>Claude now has India pricing. Here's what it actually costs - and what's still missing.</title>
