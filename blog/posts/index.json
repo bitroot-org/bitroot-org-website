@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "count": 341,
+  "count": 342,
   "posts": [
     "2026-08-24-gta-bangalore-ai-video-who-made-it-and-why-its-goi.md",
     "2026-08-24-chinese-ai-catching-up-faster-ox-alpha-and-glm-rev.md",
@@ -20,6 +20,7 @@
     "2026-08-11-spotify-releases-xirp-a-vendor-neutral-agentic-dev.md",
     "2026-08-11-diffusion-studio-launches-dapi-a-cli-for-aidriven.md",
     "2026-08-10-the-autonomy-paradox-why-less-oversight-makes-clau.md",
+    "2026-08-10-bytedance-launches-seedrealtime-a-fullduplex-audio.md",
     "2026-08-10-ai-agents-have-their-own-browser-now.md",
     "2026-08-08-kimi-k3-escaped-its-sandbox-what-it-means-for-your.md",
     "2026-08-07-let-the-self-improving-ai-do-further-scientific-br.md",
@@ -360,7 +361,7 @@
       "image": "https://urbanacres.in/wp-content/uploads/2026/08/153306950.jpg.png",
       "sources": [],
       "readTime": "4 min",
-      "shortId": 341
+      "shortId": 342
     },
     {
       "filename": "2026-08-24-chinese-ai-catching-up-faster-ox-alpha-and-glm-rev.md",
@@ -376,7 +377,7 @@
       "image": "https://oxalpha.com/img/hero.webp",
       "sources": [],
       "readTime": "7 min",
-      "shortId": 340
+      "shortId": 341
     },
     {
       "filename": "2026-08-24-ai-copyright-fair-use-2026-what-founders-should-kn.md",
@@ -392,7 +393,7 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZiyWll9kiPV6zs704tdHeyqiESJZbtR6AmWBCmcoOpw&s=10",
       "sources": [],
       "readTime": "4 min",
-      "shortId": 339
+      "shortId": 340
     },
     {
       "filename": "2026-08-22-mcp-stateless-architecture-how-protocol-redesign-e.md",
@@ -408,7 +409,7 @@
       "image": "https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KZA53A5G2PQVSM15SFEAYVAS.png&w=1080&h=608&f=webp&fit=cover&position=center",
       "sources": [],
       "readTime": "6 min",
-      "shortId": 338
+      "shortId": 339
     },
     {
       "filename": "2026-08-21-claude-academy-vs-chatgpt-free-ai-education-platfo.md",
@@ -424,7 +425,7 @@
       "image": "https://academy.claude.com/assets/media/6b130760316f10078d23e877c42fc8a6b619754601264ce0d73ccbd260a1c940.png",
       "sources": [],
       "readTime": "6 min",
-      "shortId": 337
+      "shortId": 338
     },
     {
       "filename": "2026-08-21-chatgpt-apple-messages-plugin-what-outsourcing-com.md",
@@ -441,7 +442,7 @@
       "image": "https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2022/02/apple_messages_mac_hero_2.jpg",
       "sources": [],
       "readTime": "4 min",
-      "shortId": 336
+      "shortId": 337
     },
     {
       "filename": "2026-08-20-why-google-and-openai-are-suddenly-fighting-over-y.md",
@@ -459,7 +460,7 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/02/google-logo.jpg?resize=1280,853",
       "sources": [],
       "readTime": "4 min",
-      "shortId": 335
+      "shortId": 336
     },
     {
       "filename": "2026-08-20-the-art-of-remembering-indias-nostalgia-internet.md",
@@ -475,7 +476,7 @@
       "image": "https://pbs.twimg.com/media/HPoIC0Fa8AA_Iis?format=jpg&name=900x900",
       "sources": [],
       "readTime": "3 min",
-      "shortId": 334
+      "shortId": 335
     },
     {
       "filename": "2026-08-19-why-githubs-180-million-developers-are-trapped-not.md",
@@ -493,7 +494,7 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/07/cursor.jpg?resize=1280,853",
       "sources": [],
       "readTime": "5 min",
-      "shortId": 333
+      "shortId": 334
     },
     {
       "filename": "2026-08-19-chatgpt-waited-years-for-teen-safety-heres-why.md",
@@ -511,7 +512,7 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/08/Still-04-HomeworkReminder__1_.webp?resize=1280,720",
       "sources": [],
       "readTime": "5 min",
-      "shortId": 332
+      "shortId": 333
     },
     {
       "filename": "2026-08-17-the-ai-backlash-explained-watermarks-token-costs-a.md",
@@ -527,7 +528,7 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2261514463.jpg",
       "sources": [],
       "readTime": "7 min",
-      "shortId": 331
+      "shortId": 332
     },
     {
       "filename": "2026-08-14-token-burning-why-proprietary-ai-models-waste-your.md",
@@ -544,7 +545,7 @@
       "image": "https://techcrunch.com/wp-content/uploads/2023/09/May-Habib-Disrupt-2023.jpg?resize=1280,853",
       "sources": [],
       "readTime": "6 min",
-      "shortId": 330
+      "shortId": 331
     },
     {
       "filename": "2026-08-13-the-watermark-economy-how-ai-companies-could-claim.md",
@@ -562,7 +563,7 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjnF9HOh6rde77izNck7PUN4SJghE9jdW0acm382ZUyA&s=10",
       "sources": [],
       "readTime": "4 min",
-      "shortId": 329
+      "shortId": 330
     },
     {
       "filename": "2026-08-12-the-multi-agent-playbook-how-founders-should-solve.md",
@@ -579,7 +580,7 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/06/Claude-photo.jpg",
       "sources": [],
       "readTime": "4 min",
-      "shortId": 328
+      "shortId": 329
     },
     {
       "filename": "2026-08-12-claude-code-switches-to-automode-by-default.md",
@@ -600,7 +601,7 @@
       ],
       "readTime": "2 min",
       "video": "https://video.twimg.com/amplify_video/2086842756346085376/vid/avc1/3840x2160/IENTVebjJJOBNEGv.mp4?tag=29",
-      "shortId": 327
+      "shortId": 328
     },
     {
       "filename": "2026-08-11-spotify-releases-xirp-a-vendor-neutral-agentic-dev.md",
@@ -621,7 +622,7 @@
       ],
       "readTime": "2 min",
       "video": "https://bitroot.org/blog/media/2026-08-11-spotify-releases-xirp-a-vendor-neutral-agentic-dev.mp4",
-      "shortId": 326
+      "shortId": 327
     },
     {
       "filename": "2026-08-11-diffusion-studio-launches-dapi-a-cli-for-aidriven.md",
@@ -642,7 +643,7 @@
       ],
       "readTime": "2 min",
       "video": "https://bitroot.org/blog/media/2026-08-11-diffusion-studio-launches-dapi-a-cli-for-aidriven.mp4",
-      "shortId": 325
+      "shortId": 326
     },
     {
       "filename": "2026-08-10-the-autonomy-paradox-why-less-oversight-makes-clau.md",
@@ -658,6 +659,26 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2269811684.jpg",
       "sources": [],
       "readTime": "4 min",
+      "shortId": 325
+    },
+    {
+      "filename": "2026-08-10-bytedance-launches-seedrealtime-a-fullduplex-audio.md",
+      "slug": "2026-08-10-bytedance-launches-seedrealtime-a-fullduplex-audio",
+      "url": "/blog/2026-08-10-bytedance-launches-seedrealtime-a-fullduplex-audio/",
+      "title": "ByteDance launches SeedRealtime, a full\u2011duplex audio\u2011visual LLM",
+      "date": "2026-08-10",
+      "published_at": "2026-08-10T19:19:32.491982+00:00",
+      "tags": [
+        "audio-visual ai",
+        "llm",
+        "real-time interaction"
+      ],
+      "excerpt": "ByteDance's Seed team released SeedRealtime, an end\u2011to\u2011end model that fuses audio, video and text, but it currently lacks a public API or open weights.",
+      "image": "https://bitroot.org/blog/media/2026-08-10-bytedance-launches-seedrealtime-a-fullduplex-audio.png",
+      "sources": [
+        "https://www.marktechpost.com/2026/08/09/bytedance-seed-introduces-seedrealtime-a-native-audio-visual-full-duplex-llm-that-watches-listens-and-speaks-in-one-model/"
+      ],
+      "readTime": "2 min",
       "shortId": 324
     },
     {
