@@ -1,7 +1,7 @@
 ---
 date: '2026-02-10'
 excerpt: Improved reasoning over challenging coding tasks by scaling RL over 20x.
-image: https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/blog/composer-1.5-og.png
+image: https://bitroot.org/blog/media/2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan.png
 published_at: '2026-02-10T19:19:19.902983+00:00'
 sources:
 - https://cursor.com/blog/composer-1-5
@@ -11,7 +11,6 @@ tags:
 - Reinforcement Learning
 title: 'Revolutionizing Coding: Composer 1.5 Unleashes Enhanced Intelligence'
 ---
-
 
 ## Introduction to Composer 1.5
 We just spotted an exciting update from the team behind Composer, and it's worth sharing with the community - Composer 1.5 is here, and it's a significant leap forward in AI-powered coding. The new release strikes a strong balance between speed and intelligence, making it perfect for daily use. 

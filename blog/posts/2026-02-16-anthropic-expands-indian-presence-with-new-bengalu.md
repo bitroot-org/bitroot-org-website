@@ -2,7 +2,7 @@
 date: '2026-02-16'
 excerpt: Anthropic is an AI safety and research company that's working to build reliable,
   interpretable, and steerable AI systems.
-image: https://www.anthropic.com/api/opengraph-illustration?name=Object%20Globe&backgroundColor=fig
+image: https://bitroot.org/blog/media/2026-02-16-anthropic-expands-indian-presence-with-new-bengalu.png
 published_at: '2026-02-16T12:33:07.117866+00:00'
 sources:
 - https://www.anthropic.com/news/bengaluru-office-partnerships-across-india

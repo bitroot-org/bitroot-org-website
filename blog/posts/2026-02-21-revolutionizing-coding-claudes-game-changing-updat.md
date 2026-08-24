@@ -5,7 +5,7 @@ excerpt: 'Claude Code on desktop can now preview your running apps, review your 
 
 
   Here’s what''s new:'
-image: https://pbs.twimg.com/media/HBoKy76XUAAhXsA.jpg
+image: https://bitroot.org/blog/media/2026-02-21-revolutionizing-coding-claudes-game-changing-updat.jpg
 published_at: '2026-02-21T15:32:59.972119+00:00'
 sources:
 - https://x.com/i/status/2024937960572104707
@@ -16,7 +16,6 @@ tags:
 title: 'Revolutionizing Coding: Claude''s Game-Changing Update'
 video: media/2026-02-21-revolutionizing-coding-claudes-game-changing-updat.mp4
 ---
-
 
 ## Introduction to Claude's Update
 We just spotted an exciting update from Claude that's worth sharing with the community, and it's a total game-changer for developers. Here's what caught our attention: Claude Code on desktop can now preview your running apps, review your code, and handle CI failures and PRs in the background. This update is a significant leap forward in coding technology.

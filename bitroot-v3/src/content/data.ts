@@ -1,0 +1,455 @@
+/**
+ * Central source-of-truth for all content surfaces.
+ */
+
+import { products as productCatalog } from "./products";
+import catalogJson from "./generated/catalog.json";
+
+export type Category = "kit" | "guide" | "product" | "tool";
+
+export type Price = { usd: string; inr: string };
+
+export type Item = {
+  slug: string;
+  category: Category;
+  title: string;
+  summary: string;
+  tags: string[];
+  updatedAt: string; // ISO date
+  href: string;
+  cost?: Price;
+  difficulty?: "starter" | "intermediate" | "advanced";
+};
+
+const kitsFallback: Item[] = [
+  {
+    slug: "waitlist-kit",
+    category: "kit",
+    title: "Waitlist Kit",
+    summary:
+      "Single-page waitlist with email capture, referral counter, and a real admin dashboard. Ship a landing page in an hour.",
+    tags: ["Next.js", "Resend", "Supabase"],
+    updatedAt: "2026-07-13",
+    href: "/kits/waitlist-kit",
+    difficulty: "starter",
+  },
+  {
+    slug: "latex-invoice-kit",
+    category: "kit",
+    title: "Modern LaTeX Invoice Generator Kit",
+    summary:
+      "Generate pixel-perfect invoices with LaTeX templates. Customizable, PDF-ready, and built for freelancers who care about presentation.",
+    tags: ["Next.js", "LaTeX", "Node.js"],
+    updatedAt: "2026-07-08",
+    href: "/kits/latex-invoice-kit",
+    difficulty: "intermediate",
+  },
+  {
+    slug: "captchas-kit",
+    category: "kit",
+    title: "CAPTCHAs Kit",
+    summary:
+      "Generate and validate CAPTCHAs on your own server. Image generation, audio fallback, and rate limiting built in. Privacy-first, no tracking.",
+    tags: ["Next.js", "Node.js", "Redis"],
+    updatedAt: "2026-07-09",
+    href: "/kits/captchas-kit",
+    difficulty: "intermediate",
+  },
+  {
+    slug: "sitewatch-kit",
+    category: "kit",
+    title: "SiteWatch – Website Change Detection Kit",
+    summary:
+      "Self-hosted website change detection — visual selectors, scheduled checks, and alerts over Discord, Slack, Telegram, email, and 100+ other channels via Apprise.",
+    tags: ["Python", "Flask", "Docker"],
+    updatedAt: "2026-07-10",
+    href: "/kits/sitewatch-kit",
+    difficulty: "intermediate",
+  },
+  {
+    slug: "inboxvault-kit",
+    category: "kit",
+    title: "InboxVault – Email Backup & Archive Kit",
+    summary:
+      "Self-hosted email backup and search. IMAP sync, full-text search with Meilisearch, and a clean web UI to browse years of mail. Own your archive.",
+    tags: ["SvelteKit", "PostgreSQL", "Meilisearch"],
+    updatedAt: "2026-07-11",
+    href: "/kits/inboxvault-kit",
+    difficulty: "intermediate",
+  },
+  {
+    slug: "archiveflow-kit",
+    category: "kit",
+    title: "ArchiveFlow – Open Source Data Archiving Kit",
+    summary:
+      "Self-hosted email archiving and search — ingest from Google Workspace, Microsoft 365, or IMAP, then search everything instantly with retention policies and legal holds built in.",
+    tags: ["SvelteKit", "Node.js", "Meilisearch"],
+    updatedAt: "2026-07-12",
+    href: "/kits/archiveflow-kit",
+    difficulty: "intermediate",
+  },
+  {
+    slug: "pulsedash-kit",
+    category: "kit",
+    title: "PulseDash – Analytics Dashboard Kit",
+    summary:
+      "Self-hosted personal and team dashboard for organizing links, resources, bookmarks, and tools in one place — customizable widgets, instant Ctrl+K search, and a built-in RSS reader.",
+    tags: ["Next.js", "PocketBase", "Tailwind CSS"],
+    updatedAt: "2026-07-13",
+    href: "/kits/pulsedash-kit",
+    difficulty: "intermediate",
+  },
+  {
+    slug: "linkforge-kit",
+    category: "kit",
+    title: "LinkForge – Smart Link Management Kit",
+    summary:
+      "Self-hosted link shortener and manager — custom short links, collections, public/team sharing, and click stats in one React + Go app.",
+    tags: ["React", "Go", "TailwindCSS"],
+    updatedAt: "2026-07-13",
+    href: "/kits/linkforge-kit",
+    difficulty: "intermediate",
+  },
+  {
+    slug: "pdfcraft-kit",
+    category: "kit",
+    title: "PDFCraft – PDF Processing & Automation Kit",
+    summary:
+      "Self-hosted PDF vault — collections, annotations, team sharing, and WebAuthn/TOTP security, built on Django and PostgreSQL.",
+    tags: ["Django", "HTMX", "PostgreSQL"],
+    updatedAt: "2026-07-13",
+    href: "/kits/pdfcraft-kit",
+    difficulty: "intermediate",
+  },
+];
+
+const guidesFallback: Item[] = [
+  {
+    slug: "api-versioning-that-doesnt-break-clients",
+    category: "guide",
+    title: "API Versioning That Doesn't Break Clients (URI + Backward Compatibility Strategy)",
+    summary:
+      "Version your API in the URL (/v1/, /v2/). Support multiple versions simultaneously for 12 months. Make changes additive, not destructive. When you deprecate, give 12-month notice — and never break 50 integrations overnight.",
+    tags: ["API", "Versioning", "Backend", "Node.js"],
+    updatedAt: "2026-08-18",
+    href: "/guides/api-versioning-that-doesnt-break-clients",
+    difficulty: "intermediate",
+  },
+  {
+    slug: "secure-auth-jwt-refresh-rbac",
+    category: "guide",
+    title: "Build Secure Auth That Doesn't Break (JWT + Refresh Tokens + RBAC)",
+    summary:
+      "Use JWT for stateless auth, refresh tokens for long-lived sessions, RBAC for permissions, and HttpOnly cookies instead of localStorage — a pattern that scales to millions of users without auth infrastructure complexity.",
+    tags: ["Auth", "JWT", "Security", "Node.js"],
+    updatedAt: "2026-08-13",
+    href: "/guides/secure-auth-jwt-refresh-rbac",
+    difficulty: "intermediate",
+  },
+  {
+    slug: "upload-files-directly-to-s3",
+    category: "guide",
+    title: "Upload Files Directly to S3 (Without Killing Your Server Bandwidth)",
+    summary:
+      "Don't proxy file uploads through your server. Generate pre-signed S3 URLs, let users upload directly to S3 — your server stays fast, bandwidth costs drop, and uploads don't block requests.",
+    tags: ["AWS", "S3", "Node.js", "Backend"],
+    updatedAt: "2026-08-12",
+    href: "/guides/upload-files-directly-to-s3",
+    difficulty: "intermediate",
+  },
+  {
+    slug: "background-jobs-that-actually-run",
+    category: "guide",
+    title: "Build Background Jobs That Actually Run (Bull/BullMQ in Node.js)",
+    summary:
+      "Don't handle long tasks in your request handler. Use Bull to queue jobs, process them in the background, retry on failure, and monitor everything — one pattern that fixes 80% of \"mysterious\" failures in production.",
+    tags: ["Node.js", "Bull", "Redis", "Backend"],
+    updatedAt: "2026-08-11",
+    href: "/guides/background-jobs-that-actually-run",
+    difficulty: "intermediate",
+  },
+  {
+    slug: "market-your-side-project",
+    category: "guide",
+    title: "How to Market Your Side Project: Keyword Research + Content Strategy for Indie Hackers",
+    summary:
+      "Most indie projects fail because zero people know they exist. A step-by-step playbook for finding low-competition keywords (KD ≤ 10, volume ≥ 1,000), turning them into a content calendar, and converting traffic into subscribers and calls.",
+    tags: ["Marketing", "SEO", "Indie Hacker", "Content"],
+    updatedAt: "2026-08-10",
+    href: "/guides/market-your-side-project",
+    difficulty: "starter",
+  },
+  {
+    slug: "ai-native-qa",
+    category: "guide",
+    title: "AI-Native QA: How to Replace Your QA Team Without Actually Replacing Humans",
+    summary:
+      "Google fixed 1,072 Chrome security bugs in a month using Gemini — more than the previous 23 releases combined. A step-by-step stack for AI-native QA: Claude PR review, fuzzing + LLM triage, automated threat modeling, and where humans still belong.",
+    tags: ["AI", "QA", "Security", "CI/CD"],
+    updatedAt: "2026-08-05",
+    href: "/guides/ai-native-qa",
+    difficulty: "intermediate",
+  },
+  {
+    slug: "automate-your-first-100k-zapier-workflows",
+    category: "guide",
+    title: "How to Automate Your First $100K in Revenue: 5 Zapier Workflows Every Founder Needs",
+    summary:
+      "Five copy-paste Zapier workflows for lead capture, invoice follow-up, customer onboarding, feedback logging, and weekly reporting — roughly 13+ hours reclaimed per month, one workflow at a time.",
+    tags: ["Zapier", "Automation", "Founder", "No-code"],
+    updatedAt: "2026-08-03",
+    href: "/guides/automate-your-first-100k-zapier-workflows",
+    difficulty: "starter",
+  },
+  {
+    slug: "launchrock-vs-unbounce",
+    category: "guide",
+    title: "Launchrock vs Unbounce: Which Fits What You're Building",
+    summary:
+      "These two tools aren't really competitors — Launchrock validates an idea before you have a product, Unbounce squeezes more conversions out of paid-ad traffic once you have something to sell. A stage-based comparison, not a feature scoreboard.",
+    tags: ["Landing Pages", "CRO", "Comparison", "Prelaunch"],
+    updatedAt: "2026-07-30",
+    href: "/guides/launchrock-vs-unbounce",
+    difficulty: "starter",
+  },
+  {
+    slug: "launch-a-saas-on-almost-0-per-month",
+    category: "guide",
+    title: "Launching a SaaS on (Almost) $0/Month: A Category-by-Category Toolkit",
+    summary:
+      "A category-by-category toolkit for taking a SaaS from idea to paying customers on near-zero fixed spend — what to prioritize in hosting, database, auth, payments, analytics, email, and more, and the order to add them in.",
+    tags: ["SaaS", "Bootstrapping", "Tools", "Free tier"],
+    updatedAt: "2026-07-27",
+    href: "/guides/launch-a-saas-on-almost-0-per-month",
+    difficulty: "starter",
+  },
+  {
+    slug: "run-claude-code-on-a-vps",
+    category: "guide",
+    title: "Run Claude Code on a VPS: The Locked-Down Setup",
+    summary:
+      "A server that runs itself, mostly. €5–10/month, ~40 minutes to build — Tailscale for admin access, Cloudflare-only inbound traffic, and Claude Code handling routine administration while you approve what matters.",
+    tags: ["Claude Code", "VPS", "Security", "Self-hosting"],
+    updatedAt: "2026-07-21",
+    href: "/guides/run-claude-code-on-a-vps",
+    difficulty: "intermediate",
+  },
+  {
+    slug: "git-github-quick-guide",
+    category: "guide",
+    title: "Git & GitHub Quick Guide",
+    summary:
+      "A minimal, high-velocity reference for daily Git and GitHub operations — branching, committing, merging vs. rebasing, undoing mistakes, stashing, and resolving conflicts.",
+    tags: ["Git", "GitHub", "Workflow", "Reference"],
+    updatedAt: "2026-07-21",
+    href: "/guides/git-github-quick-guide",
+    difficulty: "starter",
+  },
+  {
+    slug: "automate-marketing-ops-with-claude-cowork",
+    category: "guide",
+    title:
+      "How to Automate Marketing Operations with Claude Cowork: A Hands-On Guide for 2026",
+    summary:
+      "A hands-on guide to automating marketing reporting and campaign builds with Claude Cowork — including the exact workflows from Anthropic's own marketing operations team.",
+    tags: ["AI", "Claude", "Marketing", "Automation"],
+    updatedAt: "2026-07-15",
+    href: "/guides/automate-marketing-ops-with-claude-cowork",
+    difficulty: "intermediate",
+  },
+  {
+    slug: "ship-a-waitlist-in-2-hours",
+    category: "guide",
+    title: "Ship a waitlist in 2 hours",
+    summary:
+      "A zero-fluff walkthrough for shipping a waitlist with email capture, double opt-in, and a real admin view. Real code, reproducible.",
+    tags: ["Next.js", "Resend", "Supabase"],
+    updatedAt: "2026-04-09",
+    href: "/guides/ship-a-waitlist-in-2-hours",
+    difficulty: "starter",
+  },
+  {
+    slug: "design-planning-workflow",
+    category: "guide",
+    title: "Set up a production-ready design workflow",
+    summary:
+      "A single operational guide for kicking off design — Antigravity, Figma, MCP/Copilot, AI-ready handoff, and the prompts you'll actually use.",
+    tags: ["Design", "Figma", "AI", "Handoff"],
+    updatedAt: "2026-05-19",
+    href: "/guides/design-planning-workflow",
+    difficulty: "starter",
+  },
+  {
+    slug: "ai-assisted-fullstack-workflow",
+    category: "guide",
+    title: "An AI-assisted full-stack workflow that doesn't get messy",
+    summary:
+      "Plan, prompt, and ship with AI coding tools without ending up with hallucinated code. Stack, rules, PRD, vertical slices, and the exact prompts.",
+    tags: ["AI", "Next.js", "Workflow", "Architecture"],
+    updatedAt: "2026-05-19",
+    href: "/guides/ai-assisted-fullstack-workflow",
+    difficulty: "intermediate",
+  },
+  {
+    slug: "free-analytics-tools",
+    category: "guide",
+    title: "18 free analytics tools, ranked by their real free tiers",
+    summary:
+      "A field-tested list of free analytics platforms — product, web, session replay, telemetry — with the exact 2026 free-tier limits.",
+    tags: ["Analytics", "Tools", "Free tier"],
+    updatedAt: "2026-05-19",
+    href: "/guides/free-analytics-tools",
+    difficulty: "starter",
+  },
+  {
+    slug: "50-places-to-list-your-startup",
+    category: "guide",
+    title: "50 free places to list your startup",
+    summary:
+      "Launch platforms, communities, and directories — annotated with audience size and a one-line note on what each is good for.",
+    tags: ["Launch", "Marketing", "Distribution"],
+    updatedAt: "2026-05-19",
+    href: "/guides/50-places-to-list-your-startup",
+    difficulty: "starter",
+  },
+];
+
+/**
+ * Guides & kits are managed in TeamLife (/tools/content) and written into
+ * `generated/catalog.json` at build time. When that file is populated (a real
+ * site build with CONTENT_DATABASE_URL set) it is the source of truth; when it's
+ * empty (local dev, or a build without the DB) we fall back to the committed
+ * arrays above so the site never renders blank.
+ */
+const generatedCatalog = catalogJson as { guides: Item[]; kits: Item[] };
+export const kits: Item[] = generatedCatalog.kits.length ? generatedCatalog.kits : kitsFallback;
+export const guides: Item[] = generatedCatalog.guides.length
+  ? generatedCatalog.guides
+  : guidesFallback;
+
+/** Items derived from the products catalog so listings/tickers can surface them. */
+export const products: Item[] = productCatalog.map((p) => ({
+  slug: p.slug,
+  category: "product" as const,
+  title: p.name,
+  summary: p.tagline,
+  tags: [p.category],
+  updatedAt: p.releases?.[0]?.date ?? p.launchedAt ?? "2026-05-01",
+  href: `/products#${p.slug}`,
+}));
+
+export const tools: Item[] = [
+  {
+    slug: "og-image-maker",
+    category: "tool",
+    title: "OG Image Maker",
+    summary:
+      "Generate a clean Open Graph image for any page in seconds. No signup. Download as PNG.",
+    tags: ["Open Graph", "Design"],
+    updatedAt: "2026-04-10",
+    href: "/tools/og-image-maker",
+  },
+  {
+    slug: "favicon-generator",
+    category: "tool",
+    title: "Favicon Generator",
+    summary:
+      "Drop an image, get every favicon size, plus the manifest and HTML snippet to paste into your <head>.",
+    tags: ["Favicon", "Design"],
+    updatedAt: "2026-03-28",
+    href: "/tools/favicon-generator",
+  },
+  {
+    slug: "pricing-page-generator",
+    category: "tool",
+    title: "Pricing Page Generator",
+    summary:
+      "Answer 5 questions and we'll draft a 3-tier pricing layout with copy you can paste. No account needed.",
+    tags: ["Pricing", "SaaS"],
+    updatedAt: "2026-03-20",
+    href: "/tools/pricing-page-generator",
+  },
+  {
+    slug: "domain-brainstormer",
+    category: "tool",
+    title: "Domain Brainstormer",
+    summary:
+      "Put in a seed word, get 50 brandable domain ideas with .com/.dev/.io availability. Free forever.",
+    tags: ["Domains", "Naming"],
+    updatedAt: "2026-04-04",
+    href: "/tools/domain-brainstormer",
+  },
+  {
+    slug: "readme-generator",
+    category: "tool",
+    title: "README Generator",
+    summary:
+      "A structured README builder for your open-source kit or side project. Markdown out.",
+    tags: ["README", "Docs"],
+    updatedAt: "2026-03-02",
+    href: "/tools/readme-generator",
+  },
+];
+
+export const allItems: Item[] = [...kits, ...guides, ...products, ...tools];
+
+/** Most recently updated across all categories */
+export function recentlyUpdated(limit = 8): Item[] {
+  return [...allItems]
+    .sort((a, b) => (a.updatedAt < b.updatedAt ? 1 : -1))
+    .slice(0, limit);
+}
+
+export const pillars = [
+  {
+    key: "kits" as const,
+    title: "Kits",
+    subtitle: "Clone-and-ship boilerplates",
+    description:
+      "Production-ready repos you can clone tonight. Auth, billing, emails, dashboards — already wired.",
+    href: "/kits",
+    items: kits,
+  },
+  {
+    key: "guides" as const,
+    title: "Guides",
+    subtitle: "Tactical, reproducible",
+    description:
+      "Step-by-step walkthroughs you can follow at 11pm on a Tuesday. Real code, screenshots, timestamps.",
+    href: "/guides",
+    items: guides,
+  },
+  {
+    key: "products" as const,
+    title: "Products",
+    subtitle: "Tiny apps for builders",
+    description:
+      "Apps from the Bitroot team. Every one ships with a free plan and a community program — waitlist for the first cohort.",
+    href: "/products",
+    items: products,
+  },
+  {
+    key: "tools" as const,
+    title: "Tools",
+    subtitle: "Zero-signup utilities",
+    description:
+      "Tiny in-browser utilities that don't ask for your email. Bookmark one, share the rest.",
+    href: "/tools",
+    items: tools,
+  },
+];
+
+export function findItem(slug: string, category?: Category): Item | undefined {
+  return allItems.find(
+    (item) => item.slug === slug && (!category || item.category === category),
+  );
+}
+
+/**
+ * Featured on the homepage showcase. Hand-curated — order controls preference.
+ */
+export const featuredHome: { slug: string; category: Category; eyebrow: string }[] = [
+  { slug: "waitlist-kit", category: "kit", eyebrow: "this week's kit" },
+  { slug: "ship-a-waitlist-in-2-hours", category: "guide", eyebrow: "from-scratch companion" },
+  { slug: "bitstudio", category: "product", eyebrow: "now launching" },
+];

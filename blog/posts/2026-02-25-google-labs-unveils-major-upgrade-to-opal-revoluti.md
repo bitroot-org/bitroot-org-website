@@ -4,7 +4,7 @@ excerpt: Google Labs has launched a significant upgrade to Opal, its no-code vis
   builder for AI workflows, introducing a new agent step and enhanced tools for increased
   capability. This upgrade is set to transform the way developers interact with AI
   workflows.
-image: https://pbs.twimg.com/amplify_video_thumb/2026374886722281472/img/QbPxQ28_KKRXSIEd.jpg
+image: https://bitroot.org/blog/media/2026-02-25-google-labs-unveils-major-upgrade-to-opal-revoluti.jpg
 published_at: '2026-02-25T03:24:09.507777+00:00'
 sources:
 - https://x.com/i/status/2026374947996840169
@@ -15,7 +15,6 @@ tags:
 title: Google Labs Unveils Major Upgrade to Opal, Revolutionizing No-Code AI Workflows
 video: media/2026-02-25-google-labs-unveils-major-upgrade-to-opal-revoluti.mp4
 ---
-
 
 ## Introduction to Opal's Upgrade
 We just spotted an exciting update from Google Labs that's worth sharing with the community - a major upgrade to Opal, their no-code visual builder for AI workflows. Here's what caught our attention about this: the new agent step that analyzes goals and determines the best approach. 

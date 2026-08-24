@@ -4,7 +4,7 @@ excerpt: India's reliance on IT service exports is no longer viable, and the cou
   must shift its focus to deeptech and hardware to build long-term economic resilience.
   Zerodha founder Nithin Kamath emphasizes the need for self-sufficiency in technology
   to stay competitive.
-image: https://img.etimg.com/thumb/width-1200,height-900,imgsize-18740,resizemode-75,msid-128120292/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath.jpg
+image: https://bitroot.org/blog/media/2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard.jpg
 published_at: '2026-02-10T19:23:50.996880+00:00'
 sources:
 - https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms

@@ -2,7 +2,7 @@
 date: '2026-02-16'
 excerpt: "Would multi-session support for the Chrome DevTools MCP server be useful
   for you? \U0001F916✖️\U0001F30D Chime into the discussion on GitHub: https://github.com/ChromeDevTools/chrome-devtools-mcp/issues/926"
-image: https://pbs.twimg.com/media/HBR0XEtaYAEdKVg.jpg?name=orig
+image: https://bitroot.org/blog/media/2026-02-16-revolutionizing-debugging-chrome-devtools-gets-mul.jpg
 published_at: '2026-02-16T19:00:38.061586+00:00'
 sources:
 - https://x.com/i/status/2023370190269116568
@@ -12,7 +12,6 @@ tags:
 - Multi-Session Support
 title: 'Revolutionizing Debugging: Chrome DevTools Gets Multi-Session Support'
 ---
-
 
 ## Introduction to Multi-Session Support
 We just spotted an exciting update from the Chrome DevTools team that's worth sharing with the community. The team is considering adding multi-session support for the Chrome DevTools MCP server, and this could be a total game-changer for developers. Here's what caught our attention about this update.

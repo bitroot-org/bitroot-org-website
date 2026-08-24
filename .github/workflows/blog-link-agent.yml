@@ -1,0 +1,41 @@
+name: Blog Link Agent
+
+on:
+  schedule:
+    # Runs daily at 03:30 UTC (~09:00 IST). Adjust as you like.
+    - cron: "30 3 * * *"
+  workflow_dispatch: {} # allows manual "Run workflow" button for testing
+
+permissions:
+  issues: write
+  contents: write # needed to commit the dedupe state file
+
+jobs:
+  curate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run blog-link agent
+        env:
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python scripts/blog_link_agent.py
+
+      - name: Commit updated seen-links state
+        run: |
+          git config user.name "blog-link-agent[bot]"
+          git config user.email "actions@github.com"
+          git add scripts/seen_links.json
+          git diff --cached --quiet || git commit -m "chore: update seen blog links [skip ci]"
+          git push

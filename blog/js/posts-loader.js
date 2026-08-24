@@ -1,259 +1,181 @@
 /**
- * Posts Loader - Loads and renders posts from the posts/index.json
+ * Posts Loader — renders the newslogger index as a filterable card grid.
+ *
+ * Loads posts/index.json, builds the tag filter pills + search, and renders
+ * pages of cards into #posts-grid. The build step (build_index.py) injects a
+ * crawlable first page with the same markup; this loader replaces it on init.
  */
 
 const PostsLoader = {
     postsIndexUrl: 'posts/index.json',
-    postsPerPage: 5,
+    postsPerPage: 9,
     currentPage: 1,
     allPosts: [],
-    autoRotateInterval: null,
-    autoRotateDelay: 18000, // 18 seconds per post
-    currentFeaturedIndex: 0,
+    activeTag: 'All',
+    searchQuery: '',
+    maxFilterTags: 8,
+    placeholderImage: 'media/placeholder-blog.png',
 
-    /**
-     * Fetch all posts from index.json
-     */
     async fetchAllPosts() {
         try {
             const response = await fetch(this.postsIndexUrl);
             if (!response.ok) {
-                console.error('Failed to fetch posts index:', response.status);
                 return [];
             }
 
             const index = await response.json();
-            console.log('Loaded posts index:', index.count, 'posts');
 
-            // Use metadata directly, add readTime calculation
             const posts = index.metadata.map(post => ({
                 ...post,
-                readTime: '5 min' // Default read time
+                url: post.url || `/blog/${post.slug}/`,
+                readTime: post.readTime || '5 min'
             }));
 
             // Sort by date descending (newest first)
             return posts.sort((a, b) => new Date(b.date) - new Date(a.date));
         } catch (e) {
-            console.error('Error loading posts:', e);
             return [];
         }
     },
 
-    /**
-     * Format date for display (uses browser locale)
-     */
-    formatDate(dateStr, short = false) {
-        const date = new Date(dateStr);
-        const locale = navigator.language || 'en-US';
+    esc(s) {
+        return String(s ?? '')
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+    },
 
-        if (short) {
-            return date.toLocaleDateString(locale, { month: 'short', day: 'numeric' });
-        }
+    formatDate(dateStr) {
+        const date = new Date(dateStr);
+        if (isNaN(date.getTime())) return '';
+        const locale = navigator.language || 'en-US';
         return date.toLocaleDateString(locale, {
-            month: 'short',
             day: 'numeric',
+            month: 'short',
             year: 'numeric'
         });
     },
 
-    /**
-     * Format date with time for display (uses browser locale)
-     */
-    formatDateTime(dateStr) {
-        if (!dateStr) return '';
-        const date = new Date(dateStr);
-        const locale = navigator.language || 'en-US';
-
-        return date.toLocaleString(locale, {
-            month: 'long',
-            day: 'numeric',
-            year: 'numeric',
-            hour: 'numeric',
-            minute: '2-digit',
-            hour12: true
-        });
-    },
-
-    /**
-     * Get image URL for a post (from metadata or fallback)
-     */
-    placeholderImage: 'https://placehold.net/4-800x600.png',
-
-    getPostImage(post) {
+    postImage(post) {
         if (post.image) {
             return post.image;
+        }
+        // Deterministic on-brand pixel pattern, seeded per post.
+        if (window.bitrootPixelPlaceholder) {
+            return window.bitrootPixelPlaceholder(post.slug || post.title || '');
         }
         return this.placeholderImage;
     },
 
     /**
-     * Check if post has a valid video
+     * Inline onerror attribute so a dead image URL degrades to the
+     * placeholder instead of a broken-image icon.
      */
-    hasVideo(post) {
-        return post.video && !post.video.includes('twimg.com');
+    imageOnError(post) {
+        const slug = (post.slug || '').replace(/[^\w-]/g, '');
+        return `onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('${slug}'):'${this.placeholderImage}'"`;
     },
 
     /**
-     * Render a post as featured (large) card
+     * Canonical tag key — auto-generated posts vary casing/punctuation
+     * ("AI" vs "ai", "open source" vs "open-source"), so group them.
      */
-    renderFeaturedPost(post) {
+    canonTag(tag) {
+        return String(tag).toLowerCase().replace(/[^a-z0-9]/g, '');
+    },
+
+    /**
+     * Canonical tag → {label, count} across every post. The label shown is
+     * the most frequent original spelling of the tag.
+     */
+    tagCounts() {
+        const groups = new Map();
+        for (const post of this.allPosts) {
+            const seen = new Set();
+            for (const tag of post.tags || []) {
+                const key = this.canonTag(tag);
+                if (!key || seen.has(key)) continue;
+                seen.add(key);
+                const group = groups.get(key) || { count: 0, variants: new Map() };
+                group.count += 1;
+                group.variants.set(tag, (group.variants.get(tag) || 0) + 1);
+                groups.set(key, group);
+            }
+        }
+        return [...groups.values()]
+            .map(g => {
+                const label = [...g.variants.entries()].sort((a, b) => b[1] - a[1])[0][0];
+                return [label, g.count];
+            })
+            .sort((a, b) => b[1] - a[1]);
+    },
+
+    filteredPosts() {
+        const q = this.searchQuery.trim().toLowerCase();
+        const activeKey = this.activeTag === 'All' ? null : this.canonTag(this.activeTag);
+        return this.allPosts.filter(post => {
+            if (activeKey && !(post.tags || []).some(t => this.canonTag(t) === activeKey)) {
+                return false;
+            }
+            if (q) {
+                const haystack = [post.title, post.excerpt, ...(post.tags || [])]
+                    .join(' ')
+                    .toLowerCase();
+                if (!haystack.includes(q)) return false;
+            }
+            return true;
+        });
+    },
+
+    renderCard(post, featured = false) {
         const tag = (post.tags && post.tags[0]) || 'General';
-        const image = this.getPostImage(post);
-        const displayDate = post.published_at ? this.formatDateTime(post.published_at) : this.formatDate(post.date);
-        const hasVideo = this.hasVideo(post);
-
+        const meta = `${this.formatDate(post.published_at || post.date)} &bull; ${this.esc(post.readTime)} read`;
         return `
-            <article class="featured-post" data-post-slug="${post.slug}" ${hasVideo ? `data-video="${post.video}"` : ''}>
-                <div class="featured-progress"><div class="featured-progress-bar"></div></div>
-                <div class="post-image">
-                    <img src="${image}" alt="${post.title}">
-                    ${hasVideo ? `
-                        <div class="video-container" style="display: none;">
-                            <video src="${post.video}" playsinline loop></video>
-                        </div>
-                        <button class="video-play-btn" aria-label="Play video">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                            </svg>
-                        </button>
-                        <button class="video-mute-btn" style="display: none;" aria-label="Toggle sound">
-                            <svg class="muted-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                                <line x1="23" y1="9" x2="17" y2="15"></line>
-                                <line x1="17" y1="9" x2="23" y2="15"></line>
-                            </svg>
-                            <svg class="unmuted-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
-                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-                            </svg>
-                        </button>
-                    ` : ''}
-                </div>
-                <div class="post-content">
-                    <div class="post-meta">
-                        <span class="post-tag">${tag}</span>
-                        <span class="post-date">${displayDate}</span>
-                    </div>
-                    <h2 class="post-title">${post.title}</h2>
-                    <p class="post-excerpt">${post.excerpt || ''}</p>
-                    <div class="post-footer">
-                        <span class="read-time">${post.readTime} read</span>
-                        <a href="post.html?slug=${post.slug}" class="read-more">Read more &rarr;</a>
+            <a class="card${featured ? ' card-featured' : ''}" data-post-slug="${this.esc(post.slug)}" href="${this.esc(post.url)}">
+                <img class="card-bg" src="${this.esc(this.postImage(post))}" alt="" loading="${featured ? 'eager' : 'lazy'}" decoding="async" ${this.imageOnError(post)}>
+                <div class="card-plate">
+                    ${featured ? '<span class="card-badge">Latest</span>' : ''}
+                    <h3 class="card-title">${this.esc(post.title)}</h3>
+                    <p class="card-excerpt">${this.esc(post.excerpt || '')}</p>
+                    <div class="card-meta">
+                        <span class="card-tag">${this.esc(tag)}</span>
+                        <span class="card-info">${meta}</span>
                     </div>
                 </div>
-            </article>
-        `;
+            </a>`;
     },
 
-    /**
-     * Render a post as list item (compact)
-     */
-    renderListItem(post) {
-        const tag = (post.tags && post.tags[0]) || 'General';
+    renderFilters() {
+        const container = document.getElementById('blog-filters');
+        if (!container) return;
 
-        return `
-            <article class="list-item" data-post-slug="${post.slug}">
-                <span class="list-date">${this.formatDate(post.date, true)}</span>
-                <div class="list-content">
-                    <span class="list-tag">${tag}</span>
-                    <h4 class="list-title">${post.title}</h4>
-                    <span class="list-read-time">${post.readTime}</span>
-                </div>
-            </article>
-        `;
+        const top = this.tagCounts().slice(0, this.maxFilterTags);
+        const pill = (label, count, active) => `
+            <button class="filter-pill${active ? ' active' : ''}" data-tag="${this.esc(label)}">
+                ${this.esc(label)} <span class="pill-count">&bull; ${count}</span>
+            </button>`;
+
+        container.innerHTML =
+            pill('All', this.allPosts.length, this.activeTag === 'All') +
+            top.map(([tag, count]) => pill(tag, count, this.activeTag === tag)).join('');
+
+        container.querySelectorAll('.filter-pill').forEach(btn => {
+            btn.addEventListener('click', () => {
+                this.activeTag = btn.dataset.tag;
+                this.currentPage = 1;
+                this.renderFilters();
+                this.renderPage();
+            });
+        });
     },
 
-    /**
-     * Render a list item with optional active state
-     */
-    renderListItemWithState(post, isActive) {
-        const tag = (post.tags && post.tags[0]) || 'General';
-
-        return `
-            <article class="list-item${isActive ? ' active' : ''}" data-post-slug="${post.slug}">
-                <span class="list-date">${this.formatDate(post.date, true)}</span>
-                <div class="list-content">
-                    <span class="list-tag">${tag}</span>
-                    <h4 class="list-title">${post.title}</h4>
-                    <span class="list-read-time">${post.readTime}</span>
-                </div>
-            </article>
-        `;
+    getTotalPages(filtered) {
+        return Math.max(1, Math.ceil(filtered.length / this.postsPerPage));
     },
 
-    /**
-     * Render empty state when no posts exist
-     */
-    renderEmptyState() {
-        const ascii = `
-    ┌──────────────────────────────────────┐
-    │                                      │
-    │      ╔══╗ ╔══╗ ╔══╗ ╔══╗ ╔══╗       │
-    │      ║  ║ ║  ║ ║  ║ ║  ║ ║  ║       │
-    │      ║  ║ ║  ║ ║  ║ ║  ║ ║  ║       │
-    │      ╚══╝ ╚══╝ ╚══╝ ╚══╝ ╚══╝       │
-    │       [  LOADING NEWSLOGGER  ]      │
-    │                                      │
-    └──────────────────────────────────────┘`;
-
-        return `
-            <div class="empty-state">
-                <div class="terminal">
-                    <div class="terminal-header">
-                        <span class="terminal-dot red"></span>
-                        <span class="terminal-dot yellow"></span>
-                        <span class="terminal-dot green"></span>
-                        <span class="terminal-title">bitroot@newslogger ~ </span>
-                    </div>
-                    <div class="terminal-body">
-                        <pre class="ascii-art">${ascii}</pre>
-                        <div class="terminal-line">
-                            <span class="prompt">$</span>
-                            <span class="command typing">cat posts.md</span>
-                        </div>
-                        <div class="terminal-line output">
-                            <span class="error">Error: No posts found</span>
-                        </div>
-                        <div class="terminal-line">
-                            <span class="prompt">$</span>
-                            <span class="command typing delay-1">echo "Stay tuned..."</span>
-                        </div>
-                        <div class="terminal-line output delay-2">
-                            Stay tuned...
-                        </div>
-                        <div class="terminal-line">
-                            <span class="prompt">$</span>
-                            <span class="cursor">_</span>
-                        </div>
-                    </div>
-                </div>
-                <p class="empty-message">Our writers are brewing something good.</p>
-                <p class="empty-submessage">First post coming soon!</p>
-            </div>
-        `;
-    },
-
-    /**
-     * Get total pages
-     */
-    getTotalPages() {
-        return Math.ceil(this.allPosts.length / this.postsPerPage);
-    },
-
-    /**
-     * Get posts for current page
-     */
-    getPagePosts() {
-        const start = (this.currentPage - 1) * this.postsPerPage;
-        const end = start + this.postsPerPage;
-        return this.allPosts.slice(start, end);
-    },
-
-    /**
-     * Render pagination controls
-     */
-    renderPagination() {
-        const totalPages = this.getTotalPages();
+    renderPagination(filtered) {
+        const totalPages = this.getTotalPages(filtered);
         if (totalPages <= 1) return '';
 
         return `
@@ -273,307 +195,80 @@ const PostsLoader = {
                         <polyline points="9 18 15 12 9 6"></polyline>
                     </svg>
                 </button>
-            </nav>
-        `;
+            </nav>`;
     },
 
-    /**
-     * Go to a specific page
-     */
-    goToPage(page) {
-        const totalPages = this.getTotalPages();
-        if (page < 1 || page > totalPages) return;
-
-        this.stopAutoRotate();
-        this.currentPage = page;
-        this.currentFeaturedIndex = 0;
-        this.renderPage();
-    },
-
-    /**
-     * Render current page of posts
-     */
     renderPage() {
-        const featuredContainer = document.querySelector('.showcase-grid');
-        if (!featuredContainer) return;
+        const grid = document.getElementById('posts-grid');
+        if (!grid) return;
 
-        const pagePosts = this.getPagePosts();
-        if (pagePosts.length === 0) return;
+        const filtered = this.filteredPosts();
+        const start = (this.currentPage - 1) * this.postsPerPage;
+        const pagePosts = filtered.slice(start, start + this.postsPerPage);
 
-        const featured = pagePosts[0];
+        if (pagePosts.length === 0) {
+            grid.innerHTML = `
+                <div class="grid-empty">
+                    <p>Nothing matches that yet. Try another tag or search.</p>
+                </div>`;
+        } else {
+            // The newest post gets the big "Latest" card on the unfiltered first page.
+            const showFeatured =
+                this.currentPage === 1 && this.activeTag === 'All' && !this.searchQuery.trim();
+            grid.innerHTML = pagePosts
+                .map((post, i) => this.renderCard(post, showFeatured && i === 0))
+                .join('');
+        }
 
-        featuredContainer.innerHTML = `
-            ${this.renderFeaturedPost(featured)}
-            <aside class="post-list">
-                <h3 class="list-header">Recent</h3>
-                ${pagePosts.map(p => this.renderListItemWithState(p, p.slug === featured.slug)).join('')}
-            </aside>
-        `;
-
-        // Render pagination
         const paginationContainer = document.querySelector('.pagination-container');
         if (paginationContainer) {
-            paginationContainer.innerHTML = this.renderPagination();
-            this.initPaginationHandlers();
-        }
-
-        // Add click handlers
-        this.initClickHandlers(this.allPosts);
-
-        // Start auto-rotate
-        this.startAutoRotate();
-    },
-
-    /**
-     * Initialize pagination button handlers
-     */
-    initPaginationHandlers() {
-        const prevBtn = document.querySelector('.pagination-btn.prev');
-        const nextBtn = document.querySelector('.pagination-btn.next');
-
-        if (prevBtn) {
-            prevBtn.addEventListener('click', () => this.goToPage(this.currentPage - 1));
-        }
-        if (nextBtn) {
-            nextBtn.addEventListener('click', () => this.goToPage(this.currentPage + 1));
+            paginationContainer.innerHTML = this.renderPagination(filtered);
+            const prev = paginationContainer.querySelector('.pagination-btn.prev');
+            const next = paginationContainer.querySelector('.pagination-btn.next');
+            if (prev) prev.addEventListener('click', () => this.goToPage(this.currentPage - 1));
+            if (next) next.addEventListener('click', () => this.goToPage(this.currentPage + 1));
         }
     },
 
-    /**
-     * Initialize the posts loader and render posts
-     */
+    goToPage(page) {
+        const totalPages = this.getTotalPages(this.filteredPosts());
+        if (page < 1 || page > totalPages) return;
+        this.currentPage = page;
+        this.renderPage();
+
+        const grid = document.getElementById('posts-grid');
+        if (grid) {
+            grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    },
+
+    initSearch() {
+        const input = document.getElementById('blog-search');
+        if (!input) return;
+
+        let timer = null;
+        input.addEventListener('input', () => {
+            clearTimeout(timer);
+            timer = setTimeout(() => {
+                this.searchQuery = input.value;
+                this.currentPage = 1;
+                this.renderPage();
+            }, 150);
+        });
+    },
+
     async init() {
-        console.log('PostsLoader initializing...');
         const posts = await this.fetchAllPosts();
 
         if (posts.length === 0) {
-            console.log('No posts found, showing empty state');
-            const container = document.querySelector('.showcase-grid');
-            if (container) {
-                container.innerHTML = this.renderEmptyState();
-            }
+            // Keep whatever was statically rendered at build time.
             return;
         }
 
-        console.log('Rendering', posts.length, 'posts');
         this.allPosts = posts;
-
-        // Add pagination container if it doesn't exist
-        const showcase = document.querySelector('.showcase');
-        if (showcase && !document.querySelector('.pagination-container')) {
-            const paginationDiv = document.createElement('div');
-            paginationDiv.className = 'pagination-container';
-            showcase.appendChild(paginationDiv);
-        }
-
-        // Render first page
+        this.renderFilters();
+        this.initSearch();
         this.renderPage();
-    },
-
-    /**
-     * Initialize video player controls
-     */
-    initVideoControls(featured) {
-        const playBtn = featured.querySelector('.video-play-btn');
-        const muteBtn = featured.querySelector('.video-mute-btn');
-        const videoContainer = featured.querySelector('.video-container');
-        const video = featured.querySelector('video');
-        const postImage = featured.querySelector('.post-image img');
-
-        if (!playBtn || !video) return;
-
-        playBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-
-            // Hide image, show video
-            postImage.style.display = 'none';
-            videoContainer.style.display = 'block';
-            playBtn.style.display = 'none';
-            muteBtn.style.display = 'flex';
-
-            // Play muted
-            video.muted = true;
-            video.play();
-        });
-
-        muteBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-
-            video.muted = !video.muted;
-            const mutedIcon = muteBtn.querySelector('.muted-icon');
-            const unmutedIcon = muteBtn.querySelector('.unmuted-icon');
-
-            if (video.muted) {
-                mutedIcon.style.display = 'block';
-                unmutedIcon.style.display = 'none';
-            } else {
-                mutedIcon.style.display = 'none';
-                unmutedIcon.style.display = 'block';
-            }
-        });
-    },
-
-    /**
-     * Initialize click handlers for post selection
-     */
-    initClickHandlers(posts) {
-        const featured = document.querySelector('.featured-post');
-        if (featured) {
-            // Initialize video controls if present
-            this.initVideoControls(featured);
-        }
-
-        document.querySelectorAll('.list-item').forEach(item => {
-            item.addEventListener('click', () => {
-                const slug = item.dataset.postSlug;
-                const post = posts.find(p => p.slug === slug);
-                if (post) {
-                    this.updateFeaturedPost(post, posts);
-                }
-            });
-        });
-
-        // Featured post click navigates to post page
-        if (featured) {
-            featured.addEventListener('click', (e) => {
-                // Don't navigate if clicking video controls
-                if (e.target.closest('.video-play-btn') ||
-                    e.target.closest('.video-mute-btn') ||
-                    e.target.closest('.read-more')) {
-                    return;
-                }
-                const slug = featured.dataset.postSlug;
-                window.location.href = `post.html?slug=${slug}`;
-            });
-        }
-    },
-
-    /**
-     * Start auto-rotating through page posts
-     */
-    startAutoRotate() {
-        this.stopAutoRotate();
-        const pagePosts = this.getPagePosts();
-        if (pagePosts.length <= 1) return;
-
-        this.currentFeaturedIndex = 0;
-        this.restartProgressBar();
-
-        this.autoRotateInterval = setInterval(() => {
-            this.currentFeaturedIndex = (this.currentFeaturedIndex + 1) % pagePosts.length;
-            const nextPost = pagePosts[this.currentFeaturedIndex];
-            this.updateFeaturedPost(nextPost, this.allPosts, true);
-        }, this.autoRotateDelay);
-    },
-
-    /**
-     * Stop auto-rotation
-     */
-    stopAutoRotate() {
-        if (this.autoRotateInterval) {
-            clearInterval(this.autoRotateInterval);
-            this.autoRotateInterval = null;
-        }
-    },
-
-    /**
-     * Restart the progress bar animation
-     */
-    restartProgressBar() {
-        const bar = document.querySelector('.featured-progress-bar');
-        if (!bar) return;
-        bar.style.animation = 'none';
-        bar.offsetHeight; // force reflow
-        bar.style.animation = `progressFill ${this.autoRotateDelay}ms linear forwards`;
-    },
-
-    /**
-     * Update the featured post display (smooth in-place update)
-     */
-    updateFeaturedPost(post, allPosts, fromAutoRotate) {
-        const featured = document.querySelector('.featured-post');
-        if (!featured || featured.dataset.postSlug === post.slug) return;
-
-        // If manually clicked, reset auto-rotate
-        if (!fromAutoRotate) {
-            const pagePosts = this.getPagePosts();
-            this.currentFeaturedIndex = pagePosts.findIndex(p => p.slug === post.slug);
-            if (this.currentFeaturedIndex === -1) this.currentFeaturedIndex = 0;
-            this.stopAutoRotate();
-
-            this.autoRotateInterval = setInterval(() => {
-                const pp = this.getPagePosts();
-                this.currentFeaturedIndex = (this.currentFeaturedIndex + 1) % pp.length;
-                this.updateFeaturedPost(pp[this.currentFeaturedIndex], this.allPosts, true);
-            }, this.autoRotateDelay);
-        }
-
-        // Pause any playing video
-        const oldVideo = featured.querySelector('video');
-        if (oldVideo) oldVideo.pause();
-
-        const tag = (post.tags && post.tags[0]) || 'General';
-        const image = this.getPostImage(post);
-        const displayDate = post.published_at ? this.formatDateTime(post.published_at) : this.formatDate(post.date);
-        const hasVideo = this.hasVideo(post);
-
-        // Preload the new image before swapping
-        const preload = new Image();
-        preload.src = image;
-
-        const doSwap = () => {
-            // Fade out
-            featured.classList.add('fade-out');
-
-            setTimeout(() => {
-                // Update data attribute
-                featured.dataset.postSlug = post.slug;
-                if (hasVideo) {
-                    featured.dataset.video = post.video;
-                } else {
-                    delete featured.dataset.video;
-                }
-
-                // Update image
-                const imgEl = featured.querySelector('.post-image img');
-                if (imgEl) imgEl.src = image;
-
-                // Update text content
-                featured.querySelector('.post-tag').textContent = tag;
-                featured.querySelector('.post-date').textContent = displayDate;
-                featured.querySelector('.post-title').textContent = post.title;
-                featured.querySelector('.post-excerpt').textContent = post.excerpt || '';
-                featured.querySelector('.read-time').textContent = (post.readTime || '5 min') + ' read';
-                featured.querySelector('.read-more').href = 'post.html?slug=' + post.slug;
-
-                // Handle video elements
-                const existingVideoContainer = featured.querySelector('.video-container');
-                const existingPlayBtn = featured.querySelector('.video-play-btn');
-                const existingMuteBtn = featured.querySelector('.video-mute-btn');
-                if (existingVideoContainer) existingVideoContainer.remove();
-                if (existingPlayBtn) existingPlayBtn.remove();
-                if (existingMuteBtn) existingMuteBtn.remove();
-
-                // Restart progress bar
-                this.restartProgressBar();
-
-                // Fade in
-                featured.classList.remove('fade-out');
-
-                // Update list items active state
-                document.querySelectorAll('.list-item').forEach(item => {
-                    item.classList.toggle('active', item.dataset.postSlug === post.slug);
-                });
-            }, 300);
-        };
-
-        // If image is cached, swap immediately; otherwise wait for load
-        if (preload.complete) {
-            doSwap();
-        } else {
-            preload.onload = doSwap;
-            preload.onerror = doSwap; // still swap even if image fails
-        }
     }
 };
 

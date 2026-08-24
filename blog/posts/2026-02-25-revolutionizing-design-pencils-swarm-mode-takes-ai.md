@@ -10,7 +10,7 @@ excerpt: 'Pencil just crossed 100,000 users!
   Your autonomous design agency.
 
   Download now.'
-image: https://pbs.twimg.com/amplify_video_thumb/2026309809713381376/img/6X7ZjyF6evwb__ru.jpg
+image: https://bitroot.org/blog/media/2026-02-25-revolutionizing-design-pencils-swarm-mode-takes-ai.jpg
 published_at: '2026-02-25T03:20:24.624709+00:00'
 sources:
 - https://x.com/i/status/2026329359838318906
@@ -22,7 +22,6 @@ title: 'Revolutionizing Design: Pencil''s SWARM Mode Takes AI-Powered Collaborat
   to the Next Level'
 video: media/2026-02-25-revolutionizing-design-pencils-swarm-mode-takes-ai.mp4
 ---
-
 
 ## Introduction to Pencil's SWARM Mode
 We just spotted an exciting update from Pencil that's worth sharing with the community - they've crossed 100,000 users and introduced SWARM mode, a game-changing feature that's set to revolutionize the design process. Here's what caught our attention about this update: it's all about autonomous collaboration. 

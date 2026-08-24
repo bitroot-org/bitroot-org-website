@@ -2,10 +2,86 @@
 
 .post-page {
     flex: 1;
-    max-width: 850px;
+    max-width: 960px;
     margin: 0 auto;
-    padding: var(--spacing-3xl) var(--spacing-xl);
+    padding: var(--spacing-2xl) var(--spacing-xl) var(--spacing-3xl);
     width: 100%;
+}
+
+/* Sources / references footnote block */
+.post-sources {
+    margin-top: var(--spacing-2xl);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--border);
+}
+
+.post-sources-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    margin: 0 0 var(--spacing-sm) 0;
+}
+
+.post-sources-list {
+    margin: 0;
+    padding-left: 1.25rem;
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+.post-sources-list li {
+    margin-bottom: var(--spacing-xs);
+}
+
+.post-sources-list li::marker {
+    color: var(--text-muted);
+}
+
+.post-sources-list a {
+    color: var(--bitroot-primary-blue);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s ease;
+    word-break: break-word;
+}
+
+.post-sources-list a:hover {
+    border-bottom-color: var(--bitroot-primary-blue);
+}
+
+html[data-embed="1"] .post-sources {
+    margin-top: var(--spacing-xl);
+}
+
+/* Embed / reader mode: strip site chrome for mobile app webview */
+html[data-embed="1"] .header,
+html[data-embed="1"] .footer,
+html[data-embed="1"] .cloud-ticker,
+html[data-embed="1"] .post-nav {
+    display: none !important;
+}
+
+html[data-embed="1"] .post-page {
+    padding: var(--spacing-lg) var(--spacing-md);
+}
+
+html[data-embed="1"] .post-article {
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+html[data-embed="1"] .post-article:not(:has(.post-hero-image))::before {
+    display: none;
+}
+
+html[data-embed="1"] .post-hero-image,
+html[data-embed="1"] .post-hero-video {
+    margin: 0 0 var(--spacing-lg) 0;
+    border-radius: var(--radius-md);
 }
 
 .post-article {
@@ -121,45 +197,49 @@
 }
 
 .post-header .post-tag {
-    font-size: 0.75rem;
-    font-weight: 600;
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     background: var(--tag-bg);
     color: var(--tag-text);
-    padding: var(--spacing-xs) var(--spacing-sm);
-    border-radius: var(--radius-sm);
+    padding: var(--spacing-xs) 0.875rem;
+    border-radius: 999px;
 }
 
 .post-header .post-date,
 .post-header .post-read-time {
-    font-size: 0.9375rem;
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
     color: var(--text-muted);
 }
 
 .post-header .post-title {
-    font-size: 2.25rem;
+    font-family: var(--font-display);
+    font-size: clamp(2.1rem, 4vw, 3rem);
     font-weight: 700;
     letter-spacing: -0.03em;
-    line-height: 1.2;
+    line-height: 1.12;
     margin-bottom: var(--spacing-md);
 }
 
 .post-header .post-excerpt {
-    font-size: 1.125rem;
+    font-size: 1.1875rem;
     color: var(--text-secondary);
-    line-height: 1.6;
+    line-height: 1.65;
 }
 
 /* Post Body - Markdown Content */
 .post-body {
-    font-size: 1.0625rem;
+    font-size: 1.125rem;
     line-height: 1.8;
     color: var(--text-primary);
 }
 
 .post-body h2 {
-    font-size: 1.5rem;
+    font-family: var(--font-display);
+    font-size: 1.65rem;
     font-weight: 700;
     letter-spacing: -0.02em;
     margin-top: var(--spacing-2xl);
@@ -168,7 +248,8 @@
 }
 
 .post-body h3 {
-    font-size: 1.25rem;
+    font-family: var(--font-display);
+    font-size: 1.35rem;
     font-weight: 600;
     letter-spacing: -0.01em;
     margin-top: var(--spacing-xl);
@@ -197,7 +278,7 @@
 
 /* First paragraph emphasis */
 .post-body > p:first-of-type {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     color: var(--text-secondary);
     line-height: 1.7;
 }
@@ -304,7 +385,7 @@
 }
 
 .post-body tr:hover {
-    background: rgba(31, 118, 249, 0.03);
+    background: rgba(82, 92, 235, 0.03);
 }
 
 /* Emphasis styles */
@@ -386,25 +467,6 @@
     color: white;
 }
 
-/* Source link icon */
-.source-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    background: var(--bitroot-light-blue);
-    border-radius: 50%;
-    color: var(--bitroot-primary-blue);
-    transition: all 0.2s ease;
-}
-
-.source-link:hover {
-    background: var(--bitroot-primary-blue);
-    color: white;
-    transform: scale(1.1);
-}
-
 /* Responsive */
 @media (max-width: 600px) {
     .post-page {
@@ -460,4 +522,82 @@
         margin-bottom: calc(-1 * var(--spacing-lg));
         padding: var(--spacing-lg);
     }
+}
+
+/* ---------------------------------------------------------------------------
+   Newer/older post navigation (static post pages)
+   --------------------------------------------------------------------------- */
+
+.post-adjacent {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--border);
+}
+
+.post-adjacent-link {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-width: 48%;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.post-adjacent-link:hover .post-adjacent-title {
+    color: var(--accent);
+}
+
+.post-adjacent-next {
+    text-align: right;
+    margin-left: auto;
+}
+
+.post-adjacent-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: lowercase;
+    letter-spacing: 0.05em;
+}
+
+.post-adjacent-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.4;
+    transition: color 0.2s;
+}
+
+.post-adjacent-spacer {
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    .post-adjacent {
+        flex-direction: column;
+    }
+    .post-adjacent-link {
+        max-width: 100%;
+    }
+    .post-adjacent-next {
+        text-align: left;
+        margin-left: 0;
+    }
+}
+
+/* Reserve hero space before media loads — without a fixed box the whole
+   article shifts down once the image/video arrives (CLS). */
+.post-hero-image,
+.post-hero-video {
+    aspect-ratio: 16 / 9;
+    max-height: 500px;
+}
+
+.post-hero-image img {
+    height: 100%;
+}
+
+.post-hero-video video {
+    height: 100%;
 }

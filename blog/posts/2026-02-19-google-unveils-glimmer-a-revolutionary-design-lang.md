@@ -4,7 +4,7 @@ excerpt: Google introduces Glimmer, a new design language for UX on glasses that
   voice, gesture, and eye-tracking, and discover its potential to transform the way
   we interact with smart glasses. This innovation is set to revolutionize the field
   of UX design and beyond.
-image: https://pbs.twimg.com/media/HBYAUP8bcAECeDt.jpg?name=orig
+image: https://bitroot.org/blog/media/2026-02-19-google-unveils-glimmer-a-revolutionary-design-lang.jpg
 published_at: '2026-02-19T19:01:33.212827+00:00'
 sources:
 - https://x.com/i/status/2023805464577011979
@@ -15,7 +15,6 @@ tags:
 - UX Design
 title: 'Google Unveils Glimmer: A Revolutionary Design Language for UX on Smart Glasses'
 ---
-
 
 ## Introduction to Glimmer
 We just spotted an exciting update from Google Design that's worth sharing with the community - the introduction of Glimmer, a new design language for UX on glasses. Here's what caught our attention about this: Glimmer prioritizes voice, gesture, and eye-tracking, focusing on glanceable, transient elements that appear only when needed.

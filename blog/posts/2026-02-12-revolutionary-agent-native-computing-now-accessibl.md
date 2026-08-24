@@ -3,7 +3,7 @@ date: '2026-02-12'
 excerpt: Happycapy is now open to everyone, offering a secure cloud sandbox and all-in-one
   agent-native computing experience, powered by Claude Code and MiniMax. This innovation
   has the potential to revolutionize the way we approach automation and task management.
-image: https://pbs.twimg.com/amplify_video_thumb/2021616989278703616/img/2rup7JZhBcXcrohe.jpg
+image: https://bitroot.org/blog/media/2026-02-12-revolutionary-agent-native-computing-now-accessibl.jpg
 published_at: '2026-02-12T11:32:18.359299+00:00'
 sources:
 - https://x.com/Jarodxu7/status/2021620710544904355?s=20
@@ -14,7 +14,6 @@ tags:
 title: Revolutionary Agent-Native Computing Now Accessible to All
 video: media/2026-02-12-revolutionary-agent-native-computing-now-accessibl.mp4
 ---
-
 
 ## Introduction to Happycapy
 We just spotted an exciting update from Jarod Xu that's worth sharing with the community - Happycapy is now open to everyone. This means that the agent-native computer, which was previously limited, can now be accessed by anyone, anywhere, through their browser or phone.

@@ -3,7 +3,7 @@ date: '2026-02-15'
 excerpt: Kimi.ai introduces Kimi Claw, a game-changing AI browsing experience with
   unparalleled features and accessibility. Discover a new era of online exploration
   with Kimi Claw's cutting-edge capabilities.
-image: https://pbs.twimg.com/amplify_video_thumb/2023029535974055936/img/Qf6wkOTM3Z8nwkvI.jpg
+image: null
 published_at: '2026-02-15T18:38:49.038418+00:00'
 sources:
 - https://x.com/i/status/2023029674549596301
@@ -14,7 +14,6 @@ tags:
 title: 'Revolutionizing AI-Powered Browsing: Kimi Claw Unleashed'
 video: media/2026-02-15-revolutionizing-ai-powered-browsing-kimi-claw-unle.mp4
 ---
-
 
 ## Introduction to Kimi Claw
 We just spotted an exciting update from Kimi.ai that's worth sharing with the community - the launch of Kimi Claw, a native AI browsing experience on http://kimi.com. This innovation is set to revolutionize the way we interact with the internet. 

@@ -3,35 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newslogger | Bitroot</title>
-    <meta name="description" content="Thoughts, tutorials, and insights from the Bitroot team.">
+    <title>Bitroot Newslogger — Tech & AI News, Insights and Updates</title>
+    <meta name="description" content="Daily signals from the Bitroot team — AI, developer tools, product engineering, and the tech shaping how founders build and ship.">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Newslogger | Bitroot">
-    <meta property="og:description" content="Stay tuned in with latest tech & innovation news.">
-    <meta property="og:url" content="https://bitroot.org/blog">
+    <meta property="og:title" content="Bitroot Newslogger — Tech & AI News, Insights and Updates">
+    <meta property="og:description" content="Daily signals from the Bitroot team — AI, developer tools, product engineering, and the tech shaping how founders build and ship.">
+    <meta property="og:url" content="https://bitroot.org/blog/">
     <meta property="og:image" content="https://bitroot.org/images/newslogger-og.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Bitroot Newslogger">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Newslogger | Bitroot">
-    <meta name="twitter:description" content="Stay tuned in with latest tech & innovation news.">
+    <meta name="twitter:title" content="Bitroot Newslogger — Tech & AI News, Insights and Updates">
+    <meta name="twitter:description" content="Daily signals from the Bitroot team — AI, developer tools, product engineering, and the tech shaping how founders build and ship.">
     <meta name="twitter:image" content="https://bitroot.org/images/newslogger-og.jpg">
 
     <link rel="canonical" href="https://bitroot.org/blog/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&family=Funnel+Display:wght@600;700;800&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
 
     <link rel="icon" type="image/png" href="https://bitroot.org/blog/media/images/favicon.png">
     <link rel="alternate" type="application/rss+xml" title="Newslogger | Bitroot" href="/rss.xml">
     <link rel="stylesheet" href="css/blog.css">
 
-    <!-- Markdown parser for dynamic posts -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","@id":"https://bitroot.org/blog/#blog","url":"https://bitroot.org/blog/","name":"Bitroot Newslogger","description":"Daily signals from the Bitroot team — AI, developer tools, product engineering, and the tech shaping how founders build and ship.","inLanguage":"en","publisher":{"@type":"Organization","name":"Bitroot","url":"https://bitroot.org","logo":{"@type":"ImageObject","url":"https://bitroot.org/blog/media/images/bitroot-dark-text-border.png"}}}</script>
 
     <!-- Theme + intro: set before first paint -->
     <script>
@@ -40,7 +40,11 @@
             var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
             document.documentElement.setAttribute('data-theme', theme);
 
-            var skip = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            // Intro splash plays once per session — repeat visits (and CWV
+            // measurements after the first view) get content immediately.
+            var seen = false;
+            try { seen = sessionStorage.getItem('nl-intro-seen') === '1'; } catch (e) {}
+            var skip = seen || window.matchMedia('(prefers-reduced-motion: reduce)').matches;
             document.documentElement.classList.add(skip ? 'intro-done' : 'intro-active');
         })();
     </script>
@@ -74,6 +78,16 @@
     </script>
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1943888539888959&ev=PageView&noscript=1"></noscript>
     <!-- End Meta Pixel Code -->
+    <!-- PostHog (shared bitroot.org/.club project) -->
+    <script>
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init bs ws ge fs capture De calculateEventProperties $s register register_once register_for_session unregister unregister_for_session Is getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty xs Ss createPersonProfile Es gs opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing ys debug ks getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_HEqGPywWHRyDfasXvZMuRz2Vs8ip24tGXUYNRySQ4sx', {
+            api_host: 'https://us.i.posthog.com',
+            person_profiles: 'identified_only',
+        })
+        // Tag every event with the surface (shared project segmentation).
+        posthog.register({ site: 'blog' })
+    </script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -96,7 +110,7 @@
                     <!-- NW --><rect x="114" y="104" width="12" height="12"/><rect x="96" y="82" width="12" height="12"/><rect x="78" y="60" width="12" height="12"/>
                 </svg>
                 <!-- Pixel sun circle -->
-                <svg class="sunrise-sun-svg" viewBox="0 0 400 400" fill="#1f76f9" shape-rendering="crispEdges">
+                <svg class="sunrise-sun-svg" viewBox="0 0 400 400" fill="#525ceb" shape-rendering="crispEdges">
                     <rect x="168" y="120" width="16" height="16"/><rect x="184" y="120" width="16" height="16"/><rect x="200" y="120" width="16" height="16"/><rect x="216" y="120" width="16" height="16"/>
                     <rect x="152" y="136" width="16" height="16"/><rect x="168" y="136" width="16" height="16"/><rect x="184" y="136" width="16" height="16"/><rect x="200" y="136" width="16" height="16"/><rect x="216" y="136" width="16" height="16"/><rect x="232" y="136" width="16" height="16"/>
                     <rect x="136" y="152" width="16" height="16"/><rect x="152" y="152" width="16" height="16"/><rect x="168" y="152" width="16" height="16"/><rect x="184" y="152" width="16" height="16"/><rect x="200" y="152" width="16" height="16"/><rect x="216" y="152" width="16" height="16"/><rect x="232" y="152" width="16" height="16"/><rect x="248" y="152" width="16" height="16"/>
@@ -116,89 +130,13 @@
         </div>
     </div>
 
-    <!-- Pixelated floating clouds -->
-    <div class="cloud-ticker" aria-hidden="true">
-        <div class="cloud-ticker-track">
-            <!-- Strip 1 -->
-            <svg width="2400" height="320" viewBox="0 0 2400 320" fill="#1f76f9" shape-rendering="crispEdges">
-                <!-- Cloud 1: large -->
-                <rect x="80" y="60" width="16" height="16"/><rect x="96" y="60" width="16" height="16"/><rect x="112" y="60" width="16" height="16"/>
-                <rect x="64" y="76" width="16" height="16"/><rect x="80" y="76" width="16" height="16"/><rect x="96" y="76" width="16" height="16"/><rect x="112" y="76" width="16" height="16"/><rect x="128" y="76" width="16" height="16"/>
-                <rect x="48" y="92" width="16" height="16"/><rect x="64" y="92" width="16" height="16"/><rect x="80" y="92" width="16" height="16"/><rect x="96" y="92" width="16" height="16"/><rect x="112" y="92" width="16" height="16"/><rect x="128" y="92" width="16" height="16"/><rect x="144" y="92" width="16" height="16"/>
-                <!-- Cloud 2: small -->
-                <rect x="320" y="160" width="12" height="12"/><rect x="332" y="160" width="12" height="12"/>
-                <rect x="308" y="172" width="12" height="12"/><rect x="320" y="172" width="12" height="12"/><rect x="332" y="172" width="12" height="12"/><rect x="344" y="172" width="12" height="12"/>
-                <rect x="308" y="184" width="12" height="12"/><rect x="320" y="184" width="12" height="12"/><rect x="332" y="184" width="12" height="12"/><rect x="344" y="184" width="12" height="12"/>
-                <!-- Cloud 3: medium high -->
-                <rect x="560" y="40" width="14" height="14"/><rect x="574" y="40" width="14" height="14"/><rect x="588" y="40" width="14" height="14"/>
-                <rect x="546" y="54" width="14" height="14"/><rect x="560" y="54" width="14" height="14"/><rect x="574" y="54" width="14" height="14"/><rect x="588" y="54" width="14" height="14"/><rect x="602" y="54" width="14" height="14"/>
-                <rect x="532" y="68" width="14" height="14"/><rect x="546" y="68" width="14" height="14"/><rect x="560" y="68" width="14" height="14"/><rect x="574" y="68" width="14" height="14"/><rect x="588" y="68" width="14" height="14"/><rect x="602" y="68" width="14" height="14"/><rect x="616" y="68" width="14" height="14"/>
-                <!-- Cloud 4: tiny -->
-                <rect x="780" y="200" width="10" height="10"/><rect x="790" y="200" width="10" height="10"/>
-                <rect x="770" y="210" width="10" height="10"/><rect x="780" y="210" width="10" height="10"/><rect x="790" y="210" width="10" height="10"/><rect x="800" y="210" width="10" height="10"/>
-                <!-- Cloud 5: large low -->
-                <rect x="980" y="120" width="16" height="16"/><rect x="996" y="120" width="16" height="16"/><rect x="1012" y="120" width="16" height="16"/>
-                <rect x="964" y="136" width="16" height="16"/><rect x="980" y="136" width="16" height="16"/><rect x="996" y="136" width="16" height="16"/><rect x="1012" y="136" width="16" height="16"/><rect x="1028" y="136" width="16" height="16"/><rect x="1044" y="136" width="16" height="16"/>
-                <rect x="948" y="152" width="16" height="16"/><rect x="964" y="152" width="16" height="16"/><rect x="980" y="152" width="16" height="16"/><rect x="996" y="152" width="16" height="16"/><rect x="1012" y="152" width="16" height="16"/><rect x="1028" y="152" width="16" height="16"/><rect x="1044" y="152" width="16" height="16"/><rect x="1060" y="152" width="16" height="16"/>
-                <!-- Cloud 6: small high -->
-                <rect x="1250" y="30" width="12" height="12"/><rect x="1262" y="30" width="12" height="12"/>
-                <rect x="1238" y="42" width="12" height="12"/><rect x="1250" y="42" width="12" height="12"/><rect x="1262" y="42" width="12" height="12"/><rect x="1274" y="42" width="12" height="12"/>
-                <rect x="1238" y="54" width="12" height="12"/><rect x="1250" y="54" width="12" height="12"/><rect x="1262" y="54" width="12" height="12"/><rect x="1274" y="54" width="12" height="12"/>
-                <!-- Cloud 7: medium -->
-                <rect x="1500" y="170" width="14" height="14"/><rect x="1514" y="170" width="14" height="14"/><rect x="1528" y="170" width="14" height="14"/>
-                <rect x="1486" y="184" width="14" height="14"/><rect x="1500" y="184" width="14" height="14"/><rect x="1514" y="184" width="14" height="14"/><rect x="1528" y="184" width="14" height="14"/><rect x="1542" y="184" width="14" height="14"/>
-                <rect x="1486" y="198" width="14" height="14"/><rect x="1500" y="198" width="14" height="14"/><rect x="1514" y="198" width="14" height="14"/><rect x="1528" y="198" width="14" height="14"/><rect x="1542" y="198" width="14" height="14"/>
-                <!-- Cloud 8: tiny high -->
-                <rect x="1780" y="80" width="10" height="10"/><rect x="1790" y="80" width="10" height="10"/>
-                <rect x="1770" y="90" width="10" height="10"/><rect x="1780" y="90" width="10" height="10"/><rect x="1790" y="90" width="10" height="10"/><rect x="1800" y="90" width="10" height="10"/>
-                <!-- Cloud 9: large -->
-                <rect x="2000" y="100" width="16" height="16"/><rect x="2016" y="100" width="16" height="16"/><rect x="2032" y="100" width="16" height="16"/>
-                <rect x="1984" y="116" width="16" height="16"/><rect x="2000" y="116" width="16" height="16"/><rect x="2016" y="116" width="16" height="16"/><rect x="2032" y="116" width="16" height="16"/><rect x="2048" y="116" width="16" height="16"/>
-                <rect x="1968" y="132" width="16" height="16"/><rect x="1984" y="132" width="16" height="16"/><rect x="2000" y="132" width="16" height="16"/><rect x="2016" y="132" width="16" height="16"/><rect x="2032" y="132" width="16" height="16"/><rect x="2048" y="132" width="16" height="16"/><rect x="2064" y="132" width="16" height="16"/>
-                <!-- Cloud 10: small -->
-                <rect x="2250" y="240" width="12" height="12"/><rect x="2262" y="240" width="12" height="12"/>
-                <rect x="2238" y="252" width="12" height="12"/><rect x="2250" y="252" width="12" height="12"/><rect x="2262" y="252" width="12" height="12"/><rect x="2274" y="252" width="12" height="12"/>
-            </svg>
-            <!-- Strip 2: duplicate for seamless loop -->
-            <svg width="2400" height="320" viewBox="0 0 2400 320" fill="#1f76f9" shape-rendering="crispEdges">
-                <rect x="80" y="60" width="16" height="16"/><rect x="96" y="60" width="16" height="16"/><rect x="112" y="60" width="16" height="16"/>
-                <rect x="64" y="76" width="16" height="16"/><rect x="80" y="76" width="16" height="16"/><rect x="96" y="76" width="16" height="16"/><rect x="112" y="76" width="16" height="16"/><rect x="128" y="76" width="16" height="16"/>
-                <rect x="48" y="92" width="16" height="16"/><rect x="64" y="92" width="16" height="16"/><rect x="80" y="92" width="16" height="16"/><rect x="96" y="92" width="16" height="16"/><rect x="112" y="92" width="16" height="16"/><rect x="128" y="92" width="16" height="16"/><rect x="144" y="92" width="16" height="16"/>
-                <rect x="320" y="160" width="12" height="12"/><rect x="332" y="160" width="12" height="12"/>
-                <rect x="308" y="172" width="12" height="12"/><rect x="320" y="172" width="12" height="12"/><rect x="332" y="172" width="12" height="12"/><rect x="344" y="172" width="12" height="12"/>
-                <rect x="308" y="184" width="12" height="12"/><rect x="320" y="184" width="12" height="12"/><rect x="332" y="184" width="12" height="12"/><rect x="344" y="184" width="12" height="12"/>
-                <rect x="560" y="40" width="14" height="14"/><rect x="574" y="40" width="14" height="14"/><rect x="588" y="40" width="14" height="14"/>
-                <rect x="546" y="54" width="14" height="14"/><rect x="560" y="54" width="14" height="14"/><rect x="574" y="54" width="14" height="14"/><rect x="588" y="54" width="14" height="14"/><rect x="602" y="54" width="14" height="14"/>
-                <rect x="532" y="68" width="14" height="14"/><rect x="546" y="68" width="14" height="14"/><rect x="560" y="68" width="14" height="14"/><rect x="574" y="68" width="14" height="14"/><rect x="588" y="68" width="14" height="14"/><rect x="602" y="68" width="14" height="14"/><rect x="616" y="68" width="14" height="14"/>
-                <rect x="780" y="200" width="10" height="10"/><rect x="790" y="200" width="10" height="10"/>
-                <rect x="770" y="210" width="10" height="10"/><rect x="780" y="210" width="10" height="10"/><rect x="790" y="210" width="10" height="10"/><rect x="800" y="210" width="10" height="10"/>
-                <rect x="980" y="120" width="16" height="16"/><rect x="996" y="120" width="16" height="16"/><rect x="1012" y="120" width="16" height="16"/>
-                <rect x="964" y="136" width="16" height="16"/><rect x="980" y="136" width="16" height="16"/><rect x="996" y="136" width="16" height="16"/><rect x="1012" y="136" width="16" height="16"/><rect x="1028" y="136" width="16" height="16"/><rect x="1044" y="136" width="16" height="16"/>
-                <rect x="948" y="152" width="16" height="16"/><rect x="964" y="152" width="16" height="16"/><rect x="980" y="152" width="16" height="16"/><rect x="996" y="152" width="16" height="16"/><rect x="1012" y="152" width="16" height="16"/><rect x="1028" y="152" width="16" height="16"/><rect x="1044" y="152" width="16" height="16"/><rect x="1060" y="152" width="16" height="16"/>
-                <rect x="1250" y="30" width="12" height="12"/><rect x="1262" y="30" width="12" height="12"/>
-                <rect x="1238" y="42" width="12" height="12"/><rect x="1250" y="42" width="12" height="12"/><rect x="1262" y="42" width="12" height="12"/><rect x="1274" y="42" width="12" height="12"/>
-                <rect x="1238" y="54" width="12" height="12"/><rect x="1250" y="54" width="12" height="12"/><rect x="1262" y="54" width="12" height="12"/><rect x="1274" y="54" width="12" height="12"/>
-                <rect x="1500" y="170" width="14" height="14"/><rect x="1514" y="170" width="14" height="14"/><rect x="1528" y="170" width="14" height="14"/>
-                <rect x="1486" y="184" width="14" height="14"/><rect x="1500" y="184" width="14" height="14"/><rect x="1514" y="184" width="14" height="14"/><rect x="1528" y="184" width="14" height="14"/><rect x="1542" y="184" width="14" height="14"/>
-                <rect x="1486" y="198" width="14" height="14"/><rect x="1500" y="198" width="14" height="14"/><rect x="1514" y="198" width="14" height="14"/><rect x="1528" y="198" width="14" height="14"/><rect x="1542" y="198" width="14" height="14"/>
-                <rect x="1780" y="80" width="10" height="10"/><rect x="1790" y="80" width="10" height="10"/>
-                <rect x="1770" y="90" width="10" height="10"/><rect x="1780" y="90" width="10" height="10"/><rect x="1790" y="90" width="10" height="10"/><rect x="1800" y="90" width="10" height="10"/>
-                <rect x="2000" y="100" width="16" height="16"/><rect x="2016" y="100" width="16" height="16"/><rect x="2032" y="100" width="16" height="16"/>
-                <rect x="1984" y="116" width="16" height="16"/><rect x="2000" y="116" width="16" height="16"/><rect x="2016" y="116" width="16" height="16"/><rect x="2032" y="116" width="16" height="16"/><rect x="2048" y="116" width="16" height="16"/>
-                <rect x="1968" y="132" width="16" height="16"/><rect x="1984" y="132" width="16" height="16"/><rect x="2000" y="132" width="16" height="16"/><rect x="2016" y="132" width="16" height="16"/><rect x="2032" y="132" width="16" height="16"/><rect x="2048" y="132" width="16" height="16"/><rect x="2064" y="132" width="16" height="16"/>
-                <rect x="2250" y="240" width="12" height="12"/><rect x="2262" y="240" width="12" height="12"/>
-                <rect x="2238" y="252" width="12" height="12"/><rect x="2250" y="252" width="12" height="12"/><rect x="2262" y="252" width="12" height="12"/><rect x="2274" y="252" width="12" height="12"/>
-            </svg>
-        </div>
-    </div>
-
-    <!-- Minimal Header -->
-    <header class="header">
-        <nav class="nav">
-            <a href="/" class="logo"><img src="https://bitroot.org/blog/media/images/bitroot-dark-text-border.png" alt="Bitroot" class="logo-img"></a>
-            <div class="nav-links">
-                <a href="/blog" class="nav-link active">newslogger</a>
-                <a href="/" class="nav-link">home</a>
+    <!-- Floating glass navbar -->
+    <header class="glass-nav">
+        <nav class="glass-nav-inner">
+            <a href="/" class="shell-logo"><img src="https://bitroot.org/blog/media/images/bitroot-dark-text-border.png" alt="Bitroot" class="logo-img"></a>
+            <div class="shell-links">
+                <a href="/blog" class="shell-link active">newslogger</a>
+                <a href="/" class="shell-link">home</a>
                 <button class="theme-toggle" aria-label="Toggle theme">
                     <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                     <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
@@ -207,95 +145,483 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Newslogger</h1>
-            <p>Thoughts, tutorials, and insights.</p>
+    <!-- Dark capsule: title + filters + search -->
+    <section class="blog-shell" aria-label="Browse the newslogger">
+        <div class="shell-body">
+            <h1 class="shell-title">Newslogger</h1>
+            <div class="filter-pills" id="blog-filters" aria-label="Filter posts by tag">
+                <button class="filter-pill active" data-tag="All">All</button>
+            </div>
+            <div class="search-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="search" id="blog-search" placeholder="I want to read about..." aria-label="Search blog posts">
+            </div>
         </div>
     </section>
 
     <!-- Blog Showcase Section -->
     <main class="showcase">
-        <div class="showcase-grid">
-            <!-- Featured Post (70%) -->
-            <article class="featured-post" data-post-id="1">
-                <div class="post-image">
-                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=500&fit=crop" alt="Code on screen">
-                </div>
-                <div class="post-content">
-                    <div class="post-meta">
-                        <span class="post-tag">Engineering</span>
-                        <span class="post-date">Jan 15, 2026</span>
-                    </div>
-                    <h2 class="post-title">Building Scalable Systems with Modern Architecture</h2>
-                    <p class="post-excerpt">An exploration of how we approach system design at Bitroot, focusing on scalability, maintainability, and developer experience. We dive into the patterns and practices that help us build robust foundations.</p>
-                    <div class="post-footer">
-                        <span class="read-time">8 min read</span>
-                        <a href="#" class="read-more">Read more &rarr;</a>
+        <!-- POSTS:BEGIN — generated by build_index.py, do not edit by hand -->
+        <div class="cards-grid" id="posts-grid">
+            <a class="card card-featured" data-post-slug="2026-08-24-gta-bangalore-ai-video-who-made-it-and-why-its-goi" href="/blog/2026-08-24-gta-bangalore-ai-video-who-made-it-and-why-its-goi/">
+                <img class="card-bg" src="https://urbanacres.in/wp-content/uploads/2026/08/153306950.jpg.png" alt="" loading="eager" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-24-gta-bangalore-ai-video-who-made-it-and-why-its-goi'):'media/placeholder-blog.png'">
+                <div class="card-plate">
+                    <span class="card-badge">Latest</span>
+                    <h3 class="card-title">GTA Bangalore AI Video: Who Made It and Why It&#x27;s Going Viral</h3>
+                    <p class="card-excerpt">A Bengaluru creator&#x27;s AI-generated &#x27;GTA Bangalore&#x27; video is going viral for recreating the city&#x27;s traffic, rain, and nightlife in Grand Theft Auto style.</p>
+                    <div class="card-meta">
+                        <span class="card-tag">GTA</span>
+                        <span class="card-info">24 Aug 2026 &bull; 4 min read</span>
                     </div>
                 </div>
-            </article>
-
-            <!-- Post List (30%) -->
-            <aside class="post-list">
-                <h3 class="list-header">Recent</h3>
-
-                <article class="list-item" data-post-id="2">
-                    <span class="list-date">Jan 10</span>
-                    <div class="list-content">
-                        <span class="list-tag">Design</span>
-                        <h4 class="list-title">The Art of Minimal Interfaces</h4>
-                        <span class="list-read-time">5 min</span>
+            </a>
+            <a class="card" data-post-slug="2026-08-24-chinese-ai-catching-up-faster-ox-alpha-and-glm-rev" href="/blog/2026-08-24-chinese-ai-catching-up-faster-ox-alpha-and-glm-rev/">
+                <img class="card-bg" src="https://oxalpha.com/img/hero.webp" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-24-chinese-ai-catching-up-faster-ox-alpha-and-glm-rev'):'media/placeholder-blog.png'">
+                <div class="card-plate">
+                    <h3 class="card-title">Chinese AI Catching Up Faster: Ox Alpha and GLM Reveal the Shift</h3>
+                    <p class="card-excerpt">For years, the consensus held: China is years behind. The US owns the frontier. American labs lead on benchmarks, talent, compute, and investment.</p>
+                    <div class="card-meta">
+                        <span class="card-tag">AI</span>
+                        <span class="card-info">24 Aug 2026 &bull; 7 min read</span>
                     </div>
-                </article>
-
-                <article class="list-item" data-post-id="3">
-                    <span class="list-date">Jan 05</span>
-                    <div class="list-content">
-                        <span class="list-tag">Tutorial</span>
-                        <h4 class="list-title">Getting Started with Static Site Generators</h4>
-                        <span class="list-read-time">12 min</span>
+                </div>
+            </a>
+            <a class="card" data-post-slug="2026-08-24-ai-copyright-fair-use-2026-what-founders-should-kn" href="/blog/2026-08-24-ai-copyright-fair-use-2026-what-founders-should-kn/">
+                <img class="card-bg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZiyWll9kiPV6zs704tdHeyqiESJZbtR6AmWBCmcoOpw&amp;s=10" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-24-ai-copyright-fair-use-2026-what-founders-should-kn'):'media/placeholder-blog.png'">
+                <div class="card-plate">
+                    <h3 class="card-title">AI Copyright Fair Use 2026: What Founders Should Know</h3>
+                    <p class="card-excerpt">Anthropic won on fair use, Ross Intelligence didn&#x27;t. The difference: whether your AI product competes with the market its training data came from.</p>
+                    <div class="card-meta">
+                        <span class="card-tag">Copyright</span>
+                        <span class="card-info">24 Aug 2026 &bull; 4 min read</span>
                     </div>
-                </article>
-
-                <article class="list-item" data-post-id="4">
-                    <span class="list-date">Dec 28</span>
-                    <div class="list-content">
-                        <span class="list-tag">Engineering</span>
-                        <h4 class="list-title">CI/CD Pipelines That Actually Work</h4>
-                        <span class="list-read-time">7 min</span>
+                </div>
+            </a>
+            <a class="card" data-post-slug="2026-08-22-mcp-stateless-architecture-how-protocol-redesign-e" href="/blog/2026-08-22-mcp-stateless-architecture-how-protocol-redesign-e/">
+                <img class="card-bg" src="https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KZA53A5G2PQVSM15SFEAYVAS.png&amp;w=1080&amp;h=608&amp;f=webp&amp;fit=cover&amp;position=center" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-22-mcp-stateless-architecture-how-protocol-redesign-e'):'media/placeholder-blog.png'">
+                <div class="card-plate">
+                    <h3 class="card-title">MCP Stateless Architecture: How Protocol Redesign Enables Scale-to-Zero</h3>
+                    <p class="card-excerpt">On July 28, 2026, the Model Context Protocol specification underwent its largest revision since launch. The change: complete removal of session state from the protocol core.</p>
+                    <div class="card-meta">
+                        <span class="card-tag">MCP</span>
+                        <span class="card-info">22 Aug 2026 &bull; 6 min read</span>
                     </div>
-                </article>
-
-                <article class="list-item" data-post-id="5">
-                    <span class="list-date">Dec 20</span>
-                    <div class="list-content">
-                        <span class="list-tag">Thoughts</span>
-                        <h4 class="list-title">Why We Open Source Our Tools</h4>
-                        <span class="list-read-time">4 min</span>
+                </div>
+            </a>
+            <a class="card" data-post-slug="2026-08-21-claude-academy-vs-chatgpt-free-ai-education-platfo" href="/blog/2026-08-21-claude-academy-vs-chatgpt-free-ai-education-platfo/">
+                <img class="card-bg" src="https://academy.claude.com/assets/media/6b130760316f10078d23e877c42fc8a6b619754601264ce0d73ccbd260a1c940.png" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-21-claude-academy-vs-chatgpt-free-ai-education-platfo'):'media/placeholder-blog.png'">
+                <div class="card-plate">
+                    <h3 class="card-title">Claude Academy vs ChatGPT: Free AI Education Platforms Compared</h3>
+                    <p class="card-excerpt">Anthropic and OpenAI both launched free AI education platforms. Claude Academy went live Aug 20, 2026. ChatGPT&#x27;s education offerings expanded significantly through 2025–2026. For…</p>
+                    <div class="card-meta">
+                        <span class="card-tag">AI</span>
+                        <span class="card-info">21 Aug 2026 &bull; 6 min read</span>
                     </div>
-                </article>
-
-                <article class="list-item" data-post-id="6">
-                    <span class="list-date">Dec 15</span>
-                    <div class="list-content">
-                        <span class="list-tag">Design</span>
-                        <h4 class="list-title">Typography in Technical Writing</h4>
-                        <span class="list-read-time">6 min</span>
+                </div>
+            </a>
+            <a class="card" data-post-slug="2026-08-21-chatgpt-apple-messages-plugin-what-outsourcing-com" href="/blog/2026-08-21-chatgpt-apple-messages-plugin-what-outsourcing-com/">
+                <img class="card-bg" src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2022/02/apple_messages_mac_hero_2.jpg" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-21-chatgpt-apple-messages-plugin-what-outsourcing-com'):'media/placeholder-blog.png'">
+                <div class="card-plate">
+                    <h3 class="card-title">ChatGPT Apple Messages Plugin: What Outsourcing Communication Reveals About Trust</h3>
+                    <p class="card-excerpt">OpenAI just released an Apple Messages plugin that lets ChatGPT compose your text messages.</p>
+                    <div class="card-meta">
+                        <span class="card-tag">Apple</span>
+                        <span class="card-info">21 Aug 2026 &bull; 4 min read</span>
                     </div>
-                </article>
-
-                <article class="list-item" data-post-id="7">
-                    <span class="list-date">Dec 08</span>
-                    <div class="list-content">
-                        <span class="list-tag">Tutorial</span>
-                        <h4 class="list-title">Deploying to the Edge</h4>
-                        <span class="list-read-time">9 min</span>
+                </div>
+            </a>
+            <a class="card" data-post-slug="2026-08-20-why-google-and-openai-are-suddenly-fighting-over-y" href="/blog/2026-08-20-why-google-and-openai-are-suddenly-fighting-over-y/">
+                <img class="card-bg" src="https://techcrunch.com/wp-content/uploads/2026/02/google-logo.jpg?resize=1280,853" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-20-why-google-and-openai-are-suddenly-fighting-over-y'):'media/placeholder-blog.png'">
+                <div class="card-plate">
+                    <h3 class="card-title">Why Google and OpenAI Are Suddenly Fighting Over Your Students — The Economics Changed</h3>
+                    <p class="card-excerpt">Google just launched AI study tools across Search and Gemini. OpenAI is building education features into ChatGPT. Knowt and Gauth are raising millions. Every major tech company…</p>
+                    <div class="card-meta">
+                        <span class="card-tag">AI</span>
+                        <span class="card-info">20 Aug 2026 &bull; 4 min read</span>
                     </div>
-                </article>
-            </aside>
+                </div>
+            </a>
+            <a class="card" data-post-slug="2026-08-20-the-art-of-remembering-indias-nostalgia-internet" href="/blog/2026-08-20-the-art-of-remembering-indias-nostalgia-internet/">
+                <img class="card-bg" src="https://pbs.twimg.com/media/HPoIC0Fa8AA_Iis?format=jpg&amp;name=900x900" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-20-the-art-of-remembering-indias-nostalgia-internet'):'media/placeholder-blog.png'">
+                <div class="card-plate">
+                    <h3 class="card-title">The Art of Remembering: India&#x27;s Nostalgia Internet</h3>
+                    <p class="card-excerpt">Someone built a barbershop radio. Not an app. Not a platform. Just a website that plays exactly what would have played in a ₹20 haircut in 2007.</p>
+                    <div class="card-meta">
+                        <span class="card-tag">Art</span>
+                        <span class="card-info">20 Aug 2026 &bull; 3 min read</span>
+                    </div>
+                </div>
+            </a>
+            <a class="card" data-post-slug="2026-08-19-why-githubs-180-million-developers-are-trapped-not" href="/blog/2026-08-19-why-githubs-180-million-developers-are-trapped-not/">
+                <img class="card-bg" src="https://techcrunch.com/wp-content/uploads/2026/07/cursor.jpg?resize=1280,853" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-19-why-githubs-180-million-developers-are-trapped-not'):'media/placeholder-blog.png'">
+                <div class="card-plate">
+                    <h3 class="card-title">Why GitHub&#x27;s 180 Million Developers Are Trapped, Not Loyal — Cursor&#x27;s Opening Is the Evidence</h3>
+                    <p class="card-excerpt">GitHub dominates code hosting with 180 million developers, the largest source code repository in the world. Developers choose it by default. But a closer look at recent events…</p>
+                    <div class="card-meta">
+                        <span class="card-tag">Hosting</span>
+                        <span class="card-info">19 Aug 2026 &bull; 5 min read</span>
+                    </div>
+                </div>
+            </a>
         </div>
+        <div class="pagination-container">
+            <nav class="pagination" aria-label="Newslogger pagination">
+                <button class="pagination-btn prev" disabled aria-label="Previous page">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                    <span>Prev</span>
+                </button>
+                <span class="pagination-info">
+                    Page <strong>1</strong> of <strong>38</strong>
+                </span>
+                <button class="pagination-btn next" aria-label="Next page">
+                    <span>Next</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+        <details class="post-archive" aria-label="All posts">
+            <summary class="archive-title">All 342 posts</summary>
+            <ul class="archive-list">
+                <li><a href="/blog/2026-08-19-chatgpt-waited-years-for-teen-safety-heres-why/">ChatGPT Waited Years for Teen Safety. Here&#x27;s Why.</a> <span class="archive-date">Aug 19</span></li>
+                <li><a href="/blog/2026-08-17-the-ai-backlash-explained-watermarks-token-costs-a/">The AI Backlash Explained: Watermarks, Token Costs, and Misaligned Incentives</a> <span class="archive-date">Aug 17</span></li>
+                <li><a href="/blog/2026-08-14-token-burning-why-proprietary-ai-models-waste-your/">Token Burning: Why Proprietary AI Models Waste Your Money (And How Open-Source Escapes It)</a> <span class="archive-date">Aug 14</span></li>
+                <li><a href="/blog/2026-08-13-the-watermark-economy-how-ai-companies-could-claim/">The Watermark Economy: Could AI Companies Eventually Claim Revenue Share?</a> <span class="archive-date">Aug 13</span></li>
+                <li><a href="/blog/2026-08-12-the-multi-agent-playbook-how-founders-should-solve/"># The Multi-Agent Playbook: How Founders Should Solve Hard Problems</a> <span class="archive-date">Aug 12</span></li>
+                <li><a href="/blog/2026-08-12-claude-code-switches-to-automode-by-default/">Claude Code switches to auto‑mode by default</a> <span class="archive-date">Aug 12</span></li>
+                <li><a href="/blog/2026-08-11-spotify-releases-xirp-a-vendor-neutral-agentic-dev/">Spotify releases Xirp, a vendor-neutral agentic dev environment</a> <span class="archive-date">Aug 11</span></li>
+                <li><a href="/blog/2026-08-11-diffusion-studio-launches-dapi-a-cli-for-aidriven/">Diffusion Studio launches DAPI, a CLI for AI‑driven video editing</a> <span class="archive-date">Aug 11</span></li>
+                <li><a href="/blog/2026-08-10-the-autonomy-paradox-why-less-oversight-makes-clau/">The Autonomy Paradox: Why Less Oversight Makes Claude Code Safer</a> <span class="archive-date">Aug 10</span></li>
+                <li><a href="/blog/2026-08-10-bytedance-launches-seedrealtime-a-fullduplex-audio/">ByteDance launches SeedRealtime, a full‑duplex audio‑visual LLM</a> <span class="archive-date">Aug 10</span></li>
+                <li><a href="/blog/2026-08-10-ai-agents-have-their-own-browser-now/">AI Agents Have Their Own Browser Now</a> <span class="archive-date">Aug 10</span></li>
+                <li><a href="/blog/2026-08-08-kimi-k3-escaped-its-sandbox-what-it-means-for-your/">Kimi K3 Escaped Its Sandbox: What It Means for Your AI Stack</a> <span class="archive-date">Aug 8</span></li>
+                <li><a href="/blog/2026-08-07-let-the-self-improving-ai-do-further-scientific-br/">Let the Self-Improving AI Do Further Scientific Breakthrough: Mirendil</a> <span class="archive-date">Aug 7</span></li>
+                <li><a href="/blog/2026-08-06-openai-launches-agent-plugins-standard-for-crosscl/">Agent Plugins Explained: Build Once, Run Anywhere Across AI Agents</a> <span class="archive-date">Aug 7</span></li>
+                <li><a href="/blog/2026-08-06-why-ai-model-hacks-reveal-your-real-risk/">Why AI Model &quot;Hacks&quot; Reveal Your Real Risk</a> <span class="archive-date">Aug 6</span></li>
+                <li><a href="/blog/2026-08-06-when-serial-entrepreneurs-quit-what-nikita-biers-e/">When Serial Entrepreneurs Quit: What Nikita Bier&#x27;s Exit Signals</a> <span class="archive-date">Aug 6</span></li>
+                <li><a href="/blog/2026-07-15-aipoch-open-science-v020-adds-skills-slash-command/">AIPOCH Open Science v0.2.0 adds Skills, slash commands, and MCP support</a> <span class="archive-date">Aug 6</span></li>
+                <li><a href="/blog/2026-08-05-bending-spoons-acquires-airtable-for-1-285b-what-f/">Bending Spoons Acquires Airtable for $1.285B: What Founders Need to Know</a> <span class="archive-date">Aug 5</span></li>
+                <li><a href="/blog/2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a/">Anthropic&#x27;s $10B Volta Deal: What It Means for Your API Bill (And When)</a> <span class="archive-date">Aug 5</span></li>
+                <li><a href="/blog/2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod/">Why Cloud Providers Are Abandoning the SaaS AI Model</a> <span class="archive-date">Aug 4</span></li>
+                <li><a href="/blog/2026-08-04-claude-model-selection-for-founders-the-100-to-10k/">Claude Model Selection for Founders: The $100-to-$10K Runways</a> <span class="archive-date">Aug 4</span></li>
+                <li><a href="/blog/2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe/">The Era of Affordable Frontier AI: Why Alibaba&#x27;s Qwen 3.8-Max Changes Everything</a> <span class="archive-date">Aug 3</span></li>
+                <li><a href="/blog/2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f/">Ship an App in 2026: How AI Coding Unlocked a New Founder Playbook</a> <span class="archive-date">Aug 3</span></li>
+                <li><a href="/blog/2026-07-12-chromatorium-launches-as-free-opensource-colour-to/">Chromatorium launches as free open‑source colour tool</a> <span class="archive-date">Aug 3</span></li>
+                <li><a href="/blog/2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh/">From Prompt Wrapper to Agentic Product: The 2026 Shift OpenAI &amp; Anthropic Are Signaling</a> <span class="archive-date">Aug 1</span></li>
+                <li><a href="/blog/2026-07-31-privacy-analytics-for-startups-reignat-vs-plausibl/">Privacy Analytics for Startups: Reignat vs Plausible vs Fathom</a> <span class="archive-date">Jul 31</span></li>
+                <li><a href="/blog/2026-07-31-how-openais-20-efficiency-gain-extends-your-runway/">How OpenAI&#x27;s 20% Efficiency Gain Extends Your Runway (And Which Model to Pick)</a> <span class="archive-date">Jul 31</span></li>
+                <li><a href="/blog/2026-07-29-mcp-becomes-stateless-enabling-serverless-and-edge/">MCP becomes stateless, enabling serverless and edge deployments</a> <span class="archive-date">Jul 30</span></li>
+                <li><a href="/blog/2026-07-29-whatsapp-calls-in-your-browser-does-it-replace-zoo/">WhatsApp Calls in Your Browser: Does It Replace Zoom?</a> <span class="archive-date">Jul 29</span></li>
+                <li><a href="/blog/2026-07-29-cursor-start-at-649-month-what-developers-in-india/">Cursor Start at ₹649/Month: What Developers in India Actually Get (And What They Don&#x27;t)</a> <span class="archive-date">Jul 29</span></li>
+                <li><a href="/blog/2026-07-28-open-weights-models-are-fine-what-founders-should/">Open-Weights Models Are Fine: What Founders Should Actually Worry About</a> <span class="archive-date">Jul 28</span></li>
+                <li><a href="/blog/2026-07-17-baberu-ocr-launches-as-a-multilingual-comic-ocr-on/">Baberu OCR: Free Multilingual Comic &amp; Manga Text Extraction Now on Huggingface</a> <span class="archive-date">Jul 28</span></li>
+                <li><a href="/blog/2026-07-27-claude-opus-5-vs-fable-5-which-model-should-your-s/">Claude Opus 5 vs. Fable 5: Which Model Should Your SaaS Use?</a> <span class="archive-date">Jul 27</span></li>
+                <li><a href="/blog/2026-07-27-agentic-ai-for-founders-when-you-need-agents-and-w/">Agentic AI for Founders: When You Need Agents (And When You Don&#x27;t)</a> <span class="archive-date">Jul 27</span></li>
+                <li><a href="/blog/2026-07-25-bitchat-github-takedown-why-developers-in-india-mu/">Bitchat GitHub Takedown: Why Developers in India Must Rethink Offline-First Apps</a> <span class="archive-date">Jul 25</span></li>
+                <li><a href="/blog/2026-07-18-firecrawl-launches-openlovable-to-autogenerate-rea/">Firecrawl launches open‑lovable to auto‑generate React sites</a> <span class="archive-date">Jul 25</span></li>
+                <li><a href="/blog/2026-07-13-css-texteffects-library-expands-to-66-readymade-st/">CSS text‑effects library expands to 66 ready‑made styles</a> <span class="archive-date">Jul 25</span></li>
+                <li><a href="/blog/2026-07-24-why-googles-gemini-3-5-pro-is-months-behind-the-co/">Why Google&#x27;s Gemini 3.5 Pro Is Months Behind: The Coding Performance Gap Explained</a> <span class="archive-date">Jul 24</span></li>
+                <li><a href="/blog/2026-07-24-storeshot-launches-at-699-for-automated-appstore-s/">StoreShot launches at $6.99 for automated app‑store screenshots</a> <span class="archive-date">Jul 24</span></li>
+                <li><a href="/blog/2026-07-24-ondevice-ai-music-studio-atarang-launches-with-no/">On‑device AI music studio Atarang launches with no accounts or fees</a> <span class="archive-date">Jul 24</span></li>
+                <li><a href="/blog/2026-07-24-nexusrun-lets-you-ship-ollamahuggingface-models-as/">NexusRun lets you ship Ollama/HuggingFace models as a single package</a> <span class="archive-date">Jul 24</span></li>
+                <li><a href="/blog/2026-07-24-local-mac-notch-tool-bundles-multiple-ai-agents-in/">Local Mac notch tool bundles multiple AI agents in one UI</a> <span class="archive-date">Jul 24</span></li>
+                <li><a href="/blog/2026-07-24-daedalus-lite-launches-as-a-lightweight-typescript/">Daedalus-Lite launches as a lightweight TypeScript AI assistant starter kit</a> <span class="archive-date">Jul 24</span></li>
+                <li><a href="/blog/2026-07-23-claude-code-desktop-adds-ios-simulator-panel-in-pu/">Claude Code desktop adds iOS simulator panel in public beta</a> <span class="archive-date">Jul 24</span></li>
+                <li><a href="/blog/2026-07-23-claude-code-adds-beta-security-scanning-plugin-for/">Claude Code&#x27;s New Security Scanner: Free Vulnerability Detection That Replaces a $500/Month Tool</a> <span class="archive-date">Jul 24</span></li>
+                <li><a href="/blog/2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video/">Yeta Labs releases demo of a massive causal video model</a> <span class="archive-date">Jul 23</span></li>
+                <li><a href="/blog/2026-07-23-world-monitor-opensources-a-billiondollar-warroom/">World Monitor open‑sources a billion‑dollar war‑room for free</a> <span class="archive-date">Jul 23</span></li>
+                <li><a href="/blog/2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas/">Storm Gauge GARCH indicator for TradingView released as open-source</a> <span class="archive-date">Jul 23</span></li>
+                <li><a href="/blog/2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this/">OpenAI&#x27;s GPT-5.6 Sol Hacked Hugging Face: What This Means for Indian Developers</a> <span class="archive-date">Jul 23</span></li>
+                <li><a href="/blog/2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now/">MIT and Toyota open‑source CarCrashNet dataset, now viewable in FiftyOne</a> <span class="archive-date">Jul 23</span></li>
+                <li><a href="/blog/2026-07-23-cursor-launches-router-to-cut-model-costs-by-60/">Cursor launches Router to cut model costs by 60%</a> <span class="archive-date">Jul 23</span></li>
+                <li><a href="/blog/2026-07-23-claude-code-eyes-adds-visual-hardware-verification/">Claude Code Eyes adds visual hardware verification to Claude Code</a> <span class="archive-date">Jul 23</span></li>
+                <li><a href="/blog/2026-07-23-buzz-launches-as-opensource-group-chat-alternative/">Buzz launches as open‑source group chat alternative to Slack</a> <span class="archive-date">Jul 23</span></li>
+                <li><a href="/blog/2026-07-22-signspot-launches-ai-pdf-signature-field-extractor/">SignSpot launches AI PDF signature field extractor</a> <span class="archive-date">Jul 22</span></li>
+                <li><a href="/blog/2026-07-22-runtimewire-opens-free-live-aieconomy-news-feed/">RuntimeWire opens free live AI‑economy news feed</a> <span class="archive-date">Jul 22</span></li>
+                <li><a href="/blog/2026-07-22-patchy-082-adds-affinity-import-and-scripting-test/">Patchy 0.82 adds Affinity import and scripting test</a> <span class="archive-date">Jul 22</span></li>
+                <li><a href="/blog/2026-07-22-opensource-ai-agent-audits-video-frames-automatica/">Open‑source AI agent audits video frames automatically</a> <span class="archive-date">Jul 22</span></li>
+                <li><a href="/blog/2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven/">Kimi K3 vs Claude Fable 5: Benchmark Reality vs. Vendor Claims</a> <span class="archive-date">Jul 22</span></li>
+                <li><a href="/blog/2026-07-22-ateno-releases-ai-room-designer-with-free-trial-an/">Ateno releases AI room designer with free trial and paid Pro tier</a> <span class="archive-date">Jul 22</span></li>
+                <li><a href="/blog/2026-07-21-why-apple-raised-prices-across-hardware-subscripti/">Why Apple Raised Prices Across Hardware &amp; Subscriptions in 2026: A Data-Driven Analysis</a> <span class="archive-date">Jul 21</span></li>
+                <li><a href="/blog/2026-07-21-vigolium-launches-ai-driven-open-source-vulnerabil/">Vigolium launches AI-driven open-source vulnerability assessment framework</a> <span class="archive-date">Jul 21</span></li>
+                <li><a href="/blog/2026-07-21-unlimited-ocr-opensource-3b-model-reads-100page-pd/">Unlimited-OCR open‑source: 3B model reads 100‑page PDFs in one pass</a> <span class="archive-date">Jul 21</span></li>
+                <li><a href="/blog/2026-07-21-tiny-mac-app-sundial-logs-minutebyminute-activity/">Tiny Mac app Sundial logs minute‑by‑minute activity and offers AI work insights</a> <span class="archive-date">Jul 21</span></li>
+                <li><a href="/blog/2026-07-21-monid-replaces-apify-with-perrequest-social-media/">Monid replaces Apify with per‑request social media scraping</a> <span class="archive-date">Jul 21</span></li>
+                <li><a href="/blog/2026-07-21-last30days-skill-lets-ai-agents-fetch-realengageme/">last30days skill lets AI agents fetch real‑engagement data from socials</a> <span class="archive-date">Jul 21</span></li>
+                <li><a href="/blog/2026-07-21-aos-community-edition-launches-with-rust-cli-and-p/">AOS Community Edition launches with Rust CLI and provenance signing</a> <span class="archive-date">Jul 21</span></li>
+                <li><a href="/blog/2026-07-20-zeroprep-turns-spoken-talks-into-slide-decks-now-o/">ZeroPrep turns spoken talks into slide decks, now open source</a> <span class="archive-date">Jul 20</span></li>
+                <li><a href="/blog/2026-07-20-when-agents-go-wrong-a-cisos-guide-to-agentic-ai-r/">When Agents Go Wrong: A CISO&#x27;s Guide to Agentic AI Risk (With Real Incidents)</a> <span class="archive-date">Jul 20</span></li>
+                <li><a href="/blog/2026-07-20-opensource-agent-security-adds-five-preflight-cont/">Open‑source agent-security adds five preflight controls</a> <span class="archive-date">Jul 20</span></li>
+                <li><a href="/blog/2026-07-20-gochat-ui-chrome-extension-brings-floating-chat-to/">GoChat UI Chrome extension brings floating chat to OpenCode Go</a> <span class="archive-date">Jul 20</span></li>
+                <li><a href="/blog/2026-07-20-go-blog-shows-how-to-do-graceful-tcp-server-shutdo/">Go blog shows how to do graceful TCP server shutdown</a> <span class="archive-date">Jul 20</span></li>
+                <li><a href="/blog/2026-07-20-bangergen-open-source-local-ai-turns-ideas-into-re/">BangerGen open-source: local AI turns ideas into ready-to-post content</a> <span class="archive-date">Jul 20</span></li>
+                <li><a href="/blog/2026-07-18-open-source-tool-turns-phone-video-into-a-local-3d/">Open-source tool turns phone video into a local 3D walkable world</a> <span class="archive-date">Jul 18</span></li>
+                <li><a href="/blog/2026-07-18-open-source-badminton-hawkeye-system-released-by-c/">Open-source badminton Hawk‑Eye system released by Chinese developer</a> <span class="archive-date">Jul 18</span></li>
+                <li><a href="/blog/2026-07-18-ods-launches-oneclick-local-ai-inference-stack/">ODS launches one‑click local AI inference stack</a> <span class="archive-date">Jul 18</span></li>
+                <li><a href="/blog/2026-07-18-octoc2-launches-a-githubonly-c2-framework/">OctoC2 launches a GitHub‑only C2 framework</a> <span class="archive-date">Jul 18</span></li>
+                <li><a href="/blog/2026-07-17-youtube-unveils-codex-micro-a-lightweight-ai-code/">YouTube unveils Codex Micro, a lightweight AI code helper</a> <span class="archive-date">Jul 17</span></li>
+                <li><a href="/blog/2026-07-17-xai-open-sources-grok-build-its-ai-coding-agent-an/">X.AI open-sources Grok Build, its AI coding agent and terminal UI</a> <span class="archive-date">Jul 17</span></li>
+                <li><a href="/blog/2026-07-17-tauri2-based-skillsplusplus-adds-oneclick-ai-tool/">Tauri‑2 based SkillsPlusPlus adds one‑click AI tool integration</a> <span class="archive-date">Jul 17</span></li>
+                <li><a href="/blog/2026-07-17-selfhosted-condenser-lets-you-browse-telegram-chan/">Self‑hosted Condenser lets you browse Telegram channels like Twitter</a> <span class="archive-date">Jul 17</span></li>
+                <li><a href="/blog/2026-07-17-opensource-shep-agent-orchestrator-targets-github/">Open‑source “Shep” agent orchestrator targets GitHub issues labeled “shep”</a> <span class="archive-date">Jul 17</span></li>
+                <li><a href="/blog/2026-07-17-kooky-036-adds-keepawake-mode-for-laptops/">kooky 0.36 adds keep‑awake mode for laptops</a> <span class="archive-date">Jul 17</span></li>
+                <li><a href="/blog/2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on/">Nora control plane launches for OpenClaw &amp; Hermes on Kubernetes</a> <span class="archive-date">Jul 16</span></li>
+                <li><a href="/blog/2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s/">Lemma open‑source platform lets agents and humans share tables and approvals</a> <span class="archive-date">Jul 16</span></li>
+                <li><a href="/blog/2026-07-16-inkling-model-released-with-975b-parameters-and-mu/">Inkling model released with 975B parameters and multimodal support</a> <span class="archive-date">Jul 16</span></li>
+                <li><a href="/blog/2026-07-16-harness-launches-a-humanfriendly-cli-for-devsecops/">Harness launches a human‑friendly CLI for DevSecOps workflows</a> <span class="archive-date">Jul 16</span></li>
+                <li><a href="/blog/2026-07-16-gpt-5-6s-reactive-safety-cycle-known-risks-shipped/">GPT-5.6&#x27;s Reactive Safety Cycle: Known Risks, Shipped Anyway, Fix Announced Later</a> <span class="archive-date">Jul 16</span></li>
+                <li><a href="/blog/2026-07-16-alaya-lab-opens-alaya-world-open-source-interactiv/">Alaya Lab opens Alaya World: open-source interactive video model</a> <span class="archive-date">Jul 16</span></li>
+                <li><a href="/blog/2026-07-15-simplex-file-organizer-v11-adds-bulk-nesting-and-u/">Simplex File Organizer v1.1 adds bulk nesting and undo</a> <span class="archive-date">Jul 15</span></li>
+                <li><a href="/blog/2026-07-15-prismml-ships-bonsai-27b-a-27billionparameter-mode/">PrismML ships Bonsai 27B, a 27‑billion‑parameter model that fits on a phone</a> <span class="archive-date">Jul 15</span></li>
+                <li><a href="/blog/2026-07-15-open-source-coding-agent-built-with-react-and-open/">Open-source coding agent built with React and OpenRouter</a> <span class="archive-date">Jul 15</span></li>
+                <li><a href="/blog/2026-07-14-openaaas-demo-released-using-pis-open-framework/">OpenAaaS demo released using Pi’s open framework</a> <span class="archive-date">Jul 14</span></li>
+                <li><a href="/blog/2026-07-14-nanoserve-ships-a-triton-jit-kernel-for-fused-page/">Nanoserve ships a Triton JIT kernel for fused paged attention</a> <span class="archive-date">Jul 14</span></li>
+                <li><a href="/blog/2026-07-14-llm-dequant-adds-nvfp4-to-bf16-checkpoint-conversi/">llm-dequant adds NVFP4-to-BF16 checkpoint conversion</a> <span class="archive-date">Jul 14</span></li>
+                <li><a href="/blog/2026-07-14-liquidprism-launches-opensource-3d-spatial-mic-arr/">Liquidprism launches open‑source 3‑D spatial mic array library</a> <span class="archive-date">Jul 14</span></li>
+                <li><a href="/blog/2026-07-14-grace-launches-open-source-gpu-native-numerical-re/">GRACE launches open-source GPU-native numerical relativity framework</a> <span class="archive-date">Jul 14</span></li>
+                <li><a href="/blog/2026-07-14-claude-now-has-india-pricing-heres-what-it-actuall/">Claude now has India pricing. Here&#x27;s what it actually costs - and what&#x27;s still missing.</a> <span class="archive-date">Jul 14</span></li>
+                <li><a href="/blog/2026-07-13-tencent-cloud-opensources-cubesandbox-for-ai-agent/">Tencent Cloud open‑sources CubeSandbox for AI agent isolation</a> <span class="archive-date">Jul 13</span></li>
+                <li><a href="/blog/2026-07-13-openpencil-launches-7-mb-design-app-with-fig-suppo/">OpenPencil launches 7 MB design app with .fig support, AI and CLI</a> <span class="archive-date">Jul 13</span></li>
+                <li><a href="/blog/2026-07-13-nexterm-opens-source-tool-for-unified-ssh-vnc-and/">Nexterm opens source tool for unified SSH, VNC, and RDP access</a> <span class="archive-date">Jul 13</span></li>
+                <li><a href="/blog/2026-07-13-librecode-launches-as-a-fully-local-ai-code-editor/">LibreCode launches as a fully local AI code editor</a> <span class="archive-date">Jul 13</span></li>
+                <li><a href="/blog/2026-07-13-hypertexting-app-turns-the-open-web-into-a-scrolla/">HyperTexting App Turns the Open Web Into a Scrollable Social Feed</a> <span class="archive-date">Jul 13</span></li>
+                <li><a href="/blog/2026-07-12-swiftui-tool-automates-sparkle-macos-release-workf/">SwiftUI tool automates Sparkle macOS release workflow</a> <span class="archive-date">Jul 12</span></li>
+                <li><a href="/blog/2026-07-12-lingbot-world-20-opensourced-with-braincerebellum/">LingBot-World 2.0 open‑sourced with brain‑cerebellum scaffolding</a> <span class="archive-date">Jul 12</span></li>
+                <li><a href="/blog/2026-07-12-huibing-dong-shares-tpu-pagedattention-deepdive-vi/">Huibing Dong shares TPU paged‑attention deep‑dive video</a> <span class="archive-date">Jul 12</span></li>
+                <li><a href="/blog/2026-07-12-clipreel-lets-you-trim-youtube-or-x-videos-to-clip/">ClipReel lets you trim YouTube or X videos to clips without downloading</a> <span class="archive-date">Jul 12</span></li>
+                <li><a href="/blog/2026-07-11-toksscale-cli-tracks-ai-coding-token-usage-across/">toksScale CLI tracks AI coding token usage across agents</a> <span class="archive-date">Jul 11</span></li>
+                <li><a href="/blog/2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual/">The AI agent that works while you sleep, and actually delivers in the morning</a> <span class="archive-date">Jul 11</span></li>
+                <li><a href="/blog/2026-07-11-robbyant-opens-lingbot-video-30b-moe-model-for-ope/">Robbyant opens LingBot-Video 30B MoE model for open‑source video generation</a> <span class="archive-date">Jul 11</span></li>
+                <li><a href="/blog/2026-07-11-colibri-runs-744b-moe-model-on-cpu-via-expert-stre/">Colibri runs 744B MoE model on CPU via expert streaming</a> <span class="archive-date">Jul 11</span></li>
+                <li><a href="/blog/2026-07-11-claude-code-tool-cuts-command-output-tokens-by-90/">Claude Code tool cuts command output tokens by 90%</a> <span class="archive-date">Jul 11</span></li>
+                <li><a href="/blog/2026-07-11-charles-3ready-releases-grokulator-010-windows-dev/">Charles 3Ready releases Grokulator 0.1.0 Windows dev app</a> <span class="archive-date">Jul 11</span></li>
+                <li><a href="/blog/2026-07-10-pi-ai-coding-agent-released-as-free-opensource-too/">Pi AI coding agent released as free open‑source tool</a> <span class="archive-date">Jul 10</span></li>
+                <li><a href="/blog/2026-07-10-openhands-launches-agent-canvas-for-selfhosted-ai/">OpenHands launches Agent Canvas for self‑hosted AI coding teams</a> <span class="archive-date">Jul 10</span></li>
+                <li><a href="/blog/2026-07-10-langchain-launches-openwiki-to-autogenerate-a-livi/">LangChain launches OpenWiki to auto‑generate a living codebase wiki</a> <span class="archive-date">Jul 10</span></li>
+                <li><a href="/blog/2026-07-10-github-curates-300-ai-security-tools-for-engineers/">GitHub curates 300+ AI security tools for engineers</a> <span class="archive-date">Jul 10</span></li>
+                <li><a href="/blog/2026-07-10-agenc-lets-you-run-a-selfnamed-ai-agent-on-your-ph/">AgenC lets you run a self‑named AI agent on your phone for $2/day</a> <span class="archive-date">Jul 10</span></li>
+                <li><a href="/blog/2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p/">The real skill of working with Claude Fable isn&#x27;t prompting. It&#x27;s knowing what you don&#x27;t know.</a> <span class="archive-date">Jul 8</span></li>
+                <li><a href="/blog/2026-07-08-tavus-adds-a-google-meet-participant-integration/">Tavus adds a Google Meet participant integration</a> <span class="archive-date">Jul 8</span></li>
+                <li><a href="/blog/2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm/">SpaceXAI releases Grok 4.5, a coding-focused LLM</a> <span class="archive-date">Jul 8</span></li>
+                <li><a href="/blog/2026-07-08-openai-launches-gptlive-voice-model-in-chatgpt/">OpenAI launches GPT‑Live voice model in ChatGPT</a> <span class="archive-date">Jul 8</span></li>
+                <li><a href="/blog/2026-07-07-relume-launches-library-mcp-for-aiassisted-compone/">Relume launches Library MCP for AI‑assisted component selection</a> <span class="archive-date">Jul 7</span></li>
+                <li><a href="/blog/2026-07-07-ramp-launches-aiagent-integration-for-company-onbo/">Ramp launches AI‑agent integration for company onboarding</a> <span class="archive-date">Jul 7</span></li>
+                <li><a href="/blog/2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au/">Better Auth joins Vercel to focus on open‑source auth framework</a> <span class="archive-date">Jul 7</span></li>
+                <li><a href="/blog/2026-07-06-the-best-chrome-alternatives-in-2026-ai-privacy-mi/">The Best Chrome Alternatives In 2026: AI, Privacy &amp; Mindful Browsers Explained</a> <span class="archive-date">Jul 6</span></li>
+                <li><a href="/blog/2026-07-02-higgsfield-launches-shorts-studio-powered-by-gemin/">Higgsfield launches Shorts Studio powered by Gemini Omni Flash</a> <span class="archive-date">Jul 2</span></li>
+                <li><a href="/blog/2026-07-02-fish-audio-makes-s21-pro-tts-model-free-for-develo/">Fish Audio makes S2.1 Pro TTS model free for developers</a> <span class="archive-date">Jul 2</span></li>
+                <li><a href="/blog/2026-07-01-motionfly-launches-agent28-ai-video-editor-free-fo/">Motionfly launches Agent28 AI video editor, free for first 1k users</a> <span class="archive-date">Jul 1</span></li>
+                <li><a href="/blog/2026-07-01-claude-sonnet-5-adds-autonomous-planning-and-tool/">Claude Sonnet 5 adds autonomous planning and tool use</a> <span class="archive-date">Jul 1</span></li>
+                <li><a href="/blog/2026-07-01-browserbase-launches-readytorun-browser-agents/">Browserbase launches ready‑to‑run browser agents</a> <span class="archive-date">Jul 1</span></li>
+                <li><a href="/blog/2026-06-29-fal-adds-extract-object-api-for-instant-image-cuto/">Fal adds Extract Object API for instant image cutouts</a> <span class="archive-date">Jun 29</span></li>
+                <li><a href="/blog/2026-06-29-cursor-launches-ios-app-with-alwayson-cloud-agents/">Cursor launches iOS app with always‑on cloud agents</a> <span class="archive-date">Jun 29</span></li>
+                <li><a href="/blog/2026-06-29-chatgpt-isnt-just-getting-smarter-its-getting-more/">ChatGPT Isn&#x27;t Just Getting Smarter. It&#x27;s Getting More Personal.</a> <span class="archive-date">Jun 29</span></li>
+                <li><a href="/blog/2026-06-29-asciilab-launches-to-turn-images-and-videos-into-a/">asciilab launches to turn images and videos into ASCII art</a> <span class="archive-date">Jun 29</span></li>
+                <li><a href="/blog/2026-06-25-meta-didnt-just-invest-in-cred-it-imported-its-pla/">Meta Didn&#x27;t Just Invest In CRED. It Imported Its Playbook.</a> <span class="archive-date">Jun 25</span></li>
+                <li><a href="/blog/2026-06-25-figma-motion-isnt-about-animation-its-about-removi/">Figma Motion Isn&#x27;t About Animation. It&#x27;s About Removing Another Tool From The Workflow.</a> <span class="archive-date">Jun 25</span></li>
+                <li><a href="/blog/2026-06-25-figma-launches-motion-feature-at-config-2026/">Figma launches Motion feature at Config 2026</a> <span class="archive-date">Jun 25</span></li>
+                <li><a href="/blog/2026-06-23-palette-launches-free-matchmaking-platform-for-des/">Palette launches free matchmaking platform for design studios</a> <span class="archive-date">Jun 23</span></li>
+                <li><a href="/blog/2026-06-23-openai-doesnt-want-to-find-more-bugs-it-wants-to-p/">OpenAI Doesn&#x27;t Want To Find More Bugs. It Wants To Patch The Internet.</a> <span class="archive-date">Jun 23</span></li>
+                <li><a href="/blog/2026-06-23-google-makes-interactions-api-generally-available/">Google makes Interactions API generally available for Gemini</a> <span class="archive-date">Jun 23</span></li>
+                <li><a href="/blog/2026-06-23-elevenlabs-adds-multiplatform-ad-localization-to-e/">ElevenLabs adds multi‑platform ad localization to ElevenCreative</a> <span class="archive-date">Jun 23</span></li>
+                <li><a href="/blog/2026-06-23-cursor-announces-new-model-built-with-spacex-data/">Cursor announces new model built with SpaceX data at Compile</a> <span class="archive-date">Jun 23</span></li>
+                <li><a href="/blog/2026-06-23-anthropic-adds-claude-tag-for-slack-task-delegatio/">Anthropic adds Claude Tag for Slack task delegation</a> <span class="archive-date">Jun 23</span></li>
+                <li><a href="/blog/2026-06-19-valessa-launches-free-svgto3dglass-converter-in-th/">Valessa launches free SVG‑to‑3D‑glass converter in the browser</a> <span class="archive-date">Jun 19</span></li>
+                <li><a href="/blog/2026-06-19-ai-is-learning-to-run-software-not-just-build-it/">AI Is Learning To Run Software, Not Just Build It</a> <span class="archive-date">Jun 19</span></li>
+                <li><a href="/blog/2026-06-18-temple-launches-entropy-metric-to-track-realtime-m/">Temple launches Entropy metric to track real‑time metabolic cost</a> <span class="archive-date">Jun 18</span></li>
+                <li><a href="/blog/2026-06-18-slack-shares-slackbot-prompts-to-streamline-produc/">Slack shares Slackbot prompts to streamline product feedback</a> <span class="archive-date">Jun 18</span></li>
+                <li><a href="/blog/2026-06-18-open-design-open-sources-cursor-design-ai-studio/">Open Design open-sources Cursor Design AI studio</a> <span class="archive-date">Jun 18</span></li>
+                <li><a href="/blog/2026-06-18-midjourney-launches-a-medicalfocused-division/">Midjourney launches a medical‑focused division</a> <span class="archive-date">Jun 18</span></li>
+                <li><a href="/blog/2026-06-18-google-vids-adds-ai-avatars-voiceovers-and-slide-t/">Google Vids adds AI avatars, voiceovers, and slide-to-video conversion</a> <span class="archive-date">Jun 18</span></li>
+                <li><a href="/blog/2026-06-18-fastlane-adds-claude-for-social-media-autocreates/">Fastlane adds Claude for Social Media, auto‑creates viral videos</a> <span class="archive-date">Jun 18</span></li>
+                <li><a href="/blog/2026-06-18-cursor-launches-origin-code-storage-and-git-hostin/">Cursor launches Origin: code storage and git hosting service</a> <span class="archive-date">Jun 18</span></li>
+                <li><a href="/blog/2026-06-18-companies-might-control-the-algorithm/">Companies Might Control the Algorithm. But Soon You&#x27;ll Choose the Algorithm.</a> <span class="archive-date">Jun 18</span></li>
+                <li><a href="/blog/2026-06-17-sovereign-ai-infrastructure/">Sovereign AI Isn&#x27;t Bureaucratic Jargon. It&#x27;s the Next Layer of AI Infrastructure.</a> <span class="archive-date">Jun 17</span></li>
+                <li><a href="/blog/2026-06-16-meta-edits-vs-capcut/">Meta Edits vs CapCut: Can Meta&#x27;s New AI Editor Help Startups Create Content Faster?</a> <span class="archive-date">Jun 16</span></li>
+                <li><a href="/blog/2026-06-09-faang-is-dead-say-hello-to-mangos/">FAANG is dead. Say hello to MANGOS</a> <span class="archive-date">Jun 15</span></li>
+                <li><a href="/blog/2026-06-12-apple-brings-ai-to-shortcuts-in-ios-27/">Apple brings AI to Shortcuts in iOS 27, letting anyone automate with plain English</a> <span class="archive-date">Jun 12</span></li>
+                <li><a href="/blog/2026-06-09-claude-fable-5-launches-as-a-mythosclass-model-for/">Claude Fable 5 launches as a Mythos‑class model for public use</a> <span class="archive-date">Jun 9</span></li>
+                <li><a href="/blog/2026-06-04-reve-launches-4k-image-model-20-with-layoutaware-g/">Reve launches 4K image model 2.0 with layout‑aware generation</a> <span class="archive-date">Jun 4</span></li>
+                <li><a href="/blog/2026-06-03-paper-adds-vector-editing-tools-in-latest-update/">Paper adds vector editing tools in latest update</a> <span class="archive-date">Jun 3</span></li>
+                <li><a href="/blog/2026-06-03-mumbai-tech-week-was-a-market-signal/">Mumbai Tech Week Wasn&#x27;t an Event. It Was a Market Signal.</a> <span class="archive-date">Jun 3</span></li>
+                <li><a href="/blog/2026-06-03-lassie-ai-raises-47m-to-automate-doctors-offices/">Lassie AI raises $47M to automate doctors&#x27; offices</a> <span class="archive-date">Jun 3</span></li>
+                <li><a href="/blog/2026-06-03-ideogram-releases-40-open-image-model-with-downloa/">Ideogram releases 4.0 open image model with downloadable weights</a> <span class="archive-date">Jun 3</span></li>
+                <li><a href="/blog/2026-06-03-chatbase-founder-shares-a-10m-bootstrapped-playboo/">Chatbase founder shares a $10M bootstrapped playbook</a> <span class="archive-date">Jun 3</span></li>
+                <li><a href="/blog/2026-06-03-blurr-releases-a-web-tool-with-19-filters-and-6-pi/">Blurr releases a web tool with 19 filters and 6 pixel effects</a> <span class="archive-date">Jun 3</span></li>
+                <li><a href="/blog/2026-06-01-microsoft-announces-the-surface-laptop-ultra-for-f/">Microsoft announces the Surface Laptop Ultra for Fall 2026</a> <span class="archive-date">Jun 1</span></li>
+                <li><a href="/blog/2026-05-30-tweet-lists-22-places-founders-hang-out-online/">22 places founders hang out online</a> <span class="archive-date">May 30</span></li>
+                <li><a href="/blog/2026-05-30-pika-launches-founder-starter-kit-for-claude-users/">Pika launches Founder Starter Kit for Claude users</a> <span class="archive-date">May 30</span></li>
+                <li><a href="/blog/2026-05-26-veed-launches-subtitles-api-with-free-credits-for/">VEED launches Subtitles API with free credits for early users</a> <span class="archive-date">May 26</span></li>
+                <li><a href="/blog/2026-05-26-resend-adds-mcp-and-claude-skills-to-claude-market/">Resend adds MCP and Claude skills to Claude Marketplace</a> <span class="archive-date">May 26</span></li>
+                <li><a href="/blog/2026-05-26-quiverai-adds-json-prompting-to-arrow-for-tighter/">QuiverAI adds JSON prompting to Arrow for tighter output control</a> <span class="archive-date">May 26</span></li>
+                <li><a href="/blog/2026-05-26-jitter-ai-adds-promptdriven-motion-effects/">Jitter AI adds prompt‑driven motion effects</a> <span class="archive-date">May 26</span></li>
+                <li><a href="/blog/2026-05-26-google-launches-aiventure-an-opensource-ai-dungeon/">Google launches AIventure, an open‑source AI dungeon crawler for devs</a> <span class="archive-date">May 26</span></li>
+                <li><a href="/blog/2026-05-26-github-publishes-open-source-accessibility-best-pr/">GitHub publishes open-source accessibility best-practice guide</a> <span class="archive-date">May 26</span></li>
+                <li><a href="/blog/2026-05-26-feather-launches-a-selforganizing-inbox-service/">Feather launches a self‑organizing inbox service</a> <span class="archive-date">May 26</span></li>
+                <li><a href="/blog/2026-05-26-base-launches-mcp-to-connect-ai-agents-with-onchai/">Base launches MCP to connect AI agents with on‑chain trading</a> <span class="archive-date">May 26</span></li>
+                <li><a href="/blog/2026-05-26-ascii-magic-launches-ai-animated-landing-page/">Ascii Magic launches AI-animated landing page</a> <span class="archive-date">May 26</span></li>
+                <li><a href="/blog/2026-05-21-zsolt-kacso-shares-a-card-hover-animation-experime/">Zsolt Kacso shares a card hover animation experiment</a> <span class="archive-date">May 21</span></li>
+                <li><a href="/blog/2026-05-21-open-design-integrates-its-ai-agent-into-codex-for/">Open Design integrates its AI agent into Codex for live canvas editing</a> <span class="archive-date">May 21</span></li>
+                <li><a href="/blog/2026-05-21-elevenlabs-adds-an-albert-einstein-voice-agent/">ElevenLabs adds an Albert Einstein voice agent</a> <span class="archive-date">May 21</span></li>
+                <li><a href="/blog/2026-05-21-browserbase-launches-browsesh-an-opensource-skill/">Browserbase launches Browse.sh, an open‑source skill catalog for web agents</a> <span class="archive-date">May 21</span></li>
+                <li><a href="/blog/2026-05-18-shadcnui-ships-a-full-designsystem-cli/">shadcn/ui ships a full design‑system CLI</a> <span class="archive-date">May 18</span></li>
+                <li><a href="/blog/2026-05-18-higgsfield-ai-demos-claudedriven-marketing-workflo/">Higgsfield AI demos Claude‑driven marketing workflow in 18‑minute video</a> <span class="archive-date">May 18</span></li>
+                <li><a href="/blog/2026-05-18-google-cloud-ai-powers-mivis-dialectaware-earbuds/">Google Cloud AI powers Mivi’s dialect‑aware earbuds</a> <span class="archive-date">May 18</span></li>
+                <li><a href="/blog/2026-05-18-github-copilot-cli-adds-remotecontrol-for-local-se/">GitHub Copilot CLI adds remote‑control for local sessions</a> <span class="archive-date">May 18</span></li>
+                <li><a href="/blog/2026-05-18-chatly-adds-usercontrolled-knowledge-library-to-om/">Chatly adds user‑controlled knowledge library to OmniAgent</a> <span class="archive-date">May 18</span></li>
+                <li><a href="/blog/2026-05-18-chatbase-hits-10m-arr-and-launches-a-fullstack-ai/">Chatbase hits $10M ARR and launches a full‑stack AI agent platform</a> <span class="archive-date">May 18</span></li>
+                <li><a href="/blog/2026-05-17-tweet-curates-10-design-sites-for-quick-weekend-re/">Tweet curates 10 design sites for quick weekend reference</a> <span class="archive-date">May 17</span></li>
+                <li><a href="/blog/2026-05-17-screencharm-adds-selectable-camera-layouts-for-rec/">ScreenCharm adds selectable camera layouts for recordings</a> <span class="archive-date">May 17</span></li>
+                <li><a href="/blog/2026-05-17-opencut-clones-capcut-hits-458k-github-stars/">OpenCut clones CapCut, hits 45.8k GitHub stars</a> <span class="archive-date">May 17</span></li>
+                <li><a href="/blog/2026-05-17-anthropic-adds-autostack-detection-plugin-for-clau/">Anthropic adds auto‑stack detection plugin for Claude Code</a> <span class="archive-date">May 17</span></li>
+                <li><a href="/blog/2026-05-14-notion-releases-ntn-cli-for-terminal-api-access/">Notion releases ntn CLI for terminal API access</a> <span class="archive-date">May 14</span></li>
+                <li><a href="/blog/2026-05-14-lovable-launches-seo-feature-with-auto-prerenderin/">Lovable launches SEO feature with auto pre‑rendering and one‑click fixes</a> <span class="archive-date">May 14</span></li>
+                <li><a href="/blog/2026-05-14-cline-sdk-opensourced-as-npm-package/">Cline SDK open‑sourced as npm package</a> <span class="archive-date">May 14</span></li>
+                <li><a href="/blog/2026-05-14-claude-code-weekly-limits-rise-50-for-pro-and-ente/">Claude Code weekly limits rise 50% for Pro and Enterprise users</a> <span class="archive-date">May 14</span></li>
+                <li><a href="/blog/2026-05-14-aitoearn-offers-a-free-opensource-hootsuite-altern/">AiToEarn offers a free open‑source Hootsuite alternative</a> <span class="archive-date">May 14</span></li>
+                <li><a href="/blog/2026-05-13-scrcpy-40-adds-flexible-display-mode-for-android-m/">scrcpy 4.0 adds flexible display mode for Android mirroring</a> <span class="archive-date">May 13</span></li>
+                <li><a href="/blog/2026-05-13-claude-code-adds-a-goal-command-for-persistent-tas/">Claude Code adds a /goal command for persistent task handling</a> <span class="archive-date">May 13</span></li>
+                <li><a href="/blog/2026-05-12-claude-code-introduces-an-agent-view-listing-all-s/">Claude Code introduces an agent view listing all sessions</a> <span class="archive-date">May 12</span></li>
+                <li><a href="/blog/2026-05-07-cloudflare-agents-can-now-selfprovision-accounts-b/">Cloudflare agents can now self‑provision accounts, buy domains, and deploy</a> <span class="archive-date">May 7</span></li>
+                <li><a href="/blog/2026-05-07-claude-partners-with-spacex-to-raise-api-usage-lim/">Claude partners with SpaceX to raise API usage limits</a> <span class="archive-date">May 7</span></li>
+                <li><a href="/blog/2026-05-07-claude-managed-agents-launches-dreaming-mode-and-b/">Claude Managed Agents launches dreaming mode and beta orchestration</a> <span class="archive-date">May 7</span></li>
+                <li><a href="/blog/2026-05-05-subq-launches-a-subquadratic-llm-with-12mtoken-con/">SubQ launches a sub‑quadratic LLM with 12M‑token context</a> <span class="archive-date">May 5</span></li>
+                <li><a href="/blog/2026-05-05-openclaude-v091-makes-codex-default-and-upgrades-t/">OpenClaude v0.9.1 makes Codex default and upgrades to GPT‑5.5</a> <span class="archive-date">May 5</span></li>
+                <li><a href="/blog/2026-05-05-open-design-skills-released-as-open-source-design/">Open Design Skills released as open-source design system</a> <span class="archive-date">May 5</span></li>
+                <li><a href="/blog/2026-05-05-higgsfield-releases-cli-with-builtin-marketing-ski/">Higgsfield releases CLI with built‑in marketing skill</a> <span class="archive-date">May 5</span></li>
+                <li><a href="/blog/2026-05-05-hermes-agent-gains-hyperframes-video-editing-skill/">Hermes Agent gains Hyperframes video-editing skill</a> <span class="archive-date">May 5</span></li>
+                <li><a href="/blog/2026-05-05-google-launches-pomelli-catalog-for-ai-generated-b/">Google launches Pomelli Catalog for AI-generated brand campaigns</a> <span class="archive-date">May 5</span></li>
+                <li><a href="/blog/2026-05-05-github-projects-releases-browseronly-pdf-toolkit-w/">GitHub Projects releases browser‑only PDF toolkit with 90+ tools</a> <span class="archive-date">May 5</span></li>
+                <li><a href="/blog/2026-05-02-claude-code-adds-builtin-skill-for-claude-platform/">Claude Code adds built‑in skill for Claude Platform tasks</a> <span class="archive-date">May 2</span></li>
+                <li><a href="/blog/2026-04-30-poseidon-opens-early-access-to-numo-for-multilingu/">Poseidon opens early access to Numo for multilingual voice data collection</a> <span class="archive-date">Apr 30</span></li>
+                <li><a href="/blog/2026-04-30-fal-webgl-demo-serves-submegabyte-animated-glbs-in/">Fal WebGL demo serves sub‑megabyte animated GLBs in seconds</a> <span class="archive-date">Apr 30</span></li>
+                <li><a href="/blog/2026-04-27-hyperframes-lets-you-generate-videos-from-html-css/">HyperFrames lets you generate videos from HTML, CSS, and JS</a> <span class="archive-date">Apr 27</span></li>
+                <li><a href="/blog/2026-04-27-elevenlabs-launches-50-preconfigured-agent-templat/">ElevenLabs launches 50+ pre‑configured Agent Templates</a> <span class="archive-date">Apr 27</span></li>
+                <li><a href="/blog/2026-04-27-dot-matrix-adds-55-free-react-dotmatrix-loaders/">Dot Matrix adds 55+ free React dot‑matrix loaders</a> <span class="archive-date">Apr 27</span></li>
+                <li><a href="/blog/2026-04-26-anything-adds-aigenerated-app-store-screenshots/">Anything adds AI‑generated App Store screenshots</a> <span class="archive-date">Apr 26</span></li>
+                <li><a href="/blog/2026-04-25-anthropic-pilots-clauderun-marketplace-for-office/">Anthropic pilots Claude‑run marketplace for office supplies</a> <span class="archive-date">Apr 25</span></li>
+                <li><a href="/blog/2026-04-24-vs-code-ships-a-virtual-pet-extension/">VS Code ships a virtual pet extension</a> <span class="archive-date">Apr 24</span></li>
+                <li><a href="/blog/2026-04-24-github-copilot-now-runs-openai-gpt55/">GitHub Copilot now runs OpenAI GPT‑5.5</a> <span class="archive-date">Apr 24</span></li>
+                <li><a href="/blog/2026-04-24-gemma-4-runs-offline-with-lm-studio-and-opencode/">Gemma 4 runs offline with LM Studio and OpenCode</a> <span class="archive-date">Apr 24</span></li>
+                <li><a href="/blog/2026-04-24-free-open-source-ai-video-clipping-tool-challenges/">Free open-source AI video clipping tool challenges $49/month services</a> <span class="archive-date">Apr 24</span></li>
+                <li><a href="/blog/2026-04-24-deepseek-v4pro-pricing-looks-cheap-next-to-gpt55/">DeepSeek V4‑Pro pricing looks cheap next to GPT‑5.5</a> <span class="archive-date">Apr 24</span></li>
+                <li><a href="/blog/2026-04-23-nvidia-launches-free-hosted-apis-for-80-ai-models/">Nvidia launches free hosted APIs for ~80 AI models</a> <span class="archive-date">Apr 23</span></li>
+                <li><a href="/blog/2026-04-23-claude-blog-outlines-how-agents-should-use-mcp-api/">Claude blog outlines how agents should use MCP, APIs, and CLIs</a> <span class="archive-date">Apr 23</span></li>
+                <li><a href="/blog/2026-04-22-unlocking-hidden-traffic-okaras-seo-hack-for-organ/">Unlocking Hidden Traffic: Okara&#x27;s SEO Hack for Organic Growth</a> <span class="archive-date">Apr 22</span></li>
+                <li><a href="/blog/2026-04-22-revolutionizing-web-scraping-firecrawls-game-chang/">Revolutionizing Web Scraping: Firecrawl&#x27;s Game-Changing Update</a> <span class="archive-date">Apr 22</span></li>
+                <li><a href="/blog/2026-04-22-revolutionizing-visual-creation-chatgpt-images-20/">Revolutionizing Visual Creation: ChatGPT Images 2.0 Unleashed</a> <span class="archive-date">Apr 22</span></li>
+                <li><a href="/blog/2026-04-22-revolutionizing-productivity-parallel-agents-unlea/">Revolutionizing Productivity: Parallel Agents Unleashed</a> <span class="archive-date">Apr 22</span></li>
+                <li><a href="/blog/2026-04-22-revolutionizing-productivity-openai-unveils-shared/">Revolutionizing Productivity: OpenAI Unveils Shared Workspace Agents in ChatGPT</a> <span class="archive-date">Apr 22</span></li>
+                <li><a href="/blog/2026-04-22-revolutionizing-code-review-claude-code-unveils-ul/">Revolutionizing Code Review: Claude Code Unveils Ultrareview</a> <span class="archive-date">Apr 22</span></li>
+                <li><a href="/blog/2026-04-22-revolutionary-infinite-canvas-ide-nyx-unveiled/">Revolutionary Infinite-Canvas IDE Nyx Unveiled</a> <span class="archive-date">Apr 22</span></li>
+                <li><a href="/blog/2026-04-17-claudedevs-unveils-dedicated-channel-for-developer/">ClaudeDevs Unveils Dedicated Channel for Developer Updates</a> <span class="archive-date">Apr 17</span></li>
+                <li><a href="/blog/2026-04-15-the-future-of-coding-is-the-era-of-traditional-ide/">The Future of Coding: Is the Era of Traditional IDEs Coming to an End?</a> <span class="archive-date">Apr 15</span></li>
+                <li><a href="/blog/2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c/">Revolutionizing Voice AI: ElevenLabs Unveils Game-Changing React SDK</a> <span class="archive-date">Apr 15</span></li>
+                <li><a href="/blog/2026-04-15-revolutionizing-automation-claude-code-routines-ar/">Revolutionizing Automation: Claude Code Routines Are Here</a> <span class="archive-date">Apr 15</span></li>
+                <li><a href="/blog/2026-04-15-revolutionizing-app-design-ai-generated-themes-now/">Revolutionizing App Design: AI-Generated Themes Now Available</a> <span class="archive-date">Apr 15</span></li>
+                <li><a href="/blog/2026-04-15-revolutionizing-ai-powered-workflows-google-introd/">Revolutionizing AI-Powered Workflows: Google Introduces Skills in Chrome</a> <span class="archive-date">Apr 15</span></li>
+                <li><a href="/blog/2026-04-15-revolutionizing-ai-powered-coding-claudes-game-cha/">Revolutionizing AI-Powered Coding: Claude&#x27;s Game-Changing Update</a> <span class="archive-date">Apr 15</span></li>
+                <li><a href="/blog/2026-04-12-revolutionizing-video-consumption-interactive-tran/">Revolutionizing Video Consumption: Interactive Transcripts Are Here</a> <span class="archive-date">Apr 12</span></li>
+                <li><a href="/blog/2026-04-12-revolutionizing-ai-agents-minimax-unveils-mmx-cli/">Revolutionizing AI Agents: MiniMax Unveils MMX-CLI for Enhanced Capabilities</a> <span class="archive-date">Apr 12</span></li>
+                <li><a href="/blog/2026-04-10-revolutionizing-agent-interactions-claudes-monitor/">Revolutionizing Agent Interactions: Claude&#x27;s Monitor Tool Unveiled</a> <span class="archive-date">Apr 10</span></li>
+                <li><a href="/blog/2026-04-09-revolutionizing-security-triage-github-copilot-cli/">Revolutionizing Security Triage: GitHub Copilot CLI Is a Game-Changer</a> <span class="archive-date">Apr 9</span></li>
+                <li><a href="/blog/2026-04-09-revolutionizing-ai-development-claude-unveils-mana/">Revolutionizing AI Development: Claude Unveils Managed Agents</a> <span class="archive-date">Apr 9</span></li>
+                <li><a href="/blog/2026-04-09-revolutionary-database-cloning-ardentai-changes-th/">Revolutionary Database Cloning: ArdentAI Changes the Game</a> <span class="archive-date">Apr 9</span></li>
+                <li><a href="/blog/2026-04-09-notion-unleashes-ai-powered-task-automation-with-c/">Notion Unleashes AI-Powered Task Automation with Claude Agents</a> <span class="archive-date">Apr 9</span></li>
+                <li><a href="/blog/2026-04-09-firecrawl-reaches-new-heights-revolutionizing-web/">Firecrawl Reaches New Heights: Revolutionizing Web Interaction for AI Agents</a> <span class="archive-date">Apr 9</span></li>
+                <li><a href="/blog/2026-04-08-supernotes-323-revolution-unlocking-new-features-a/">Supernotes 3.2.3 Revolution: Unlocking New Features and Enhancements</a> <span class="archive-date">Apr 8</span></li>
+                <li><a href="/blog/2026-04-08-revolutionizing-software-security-anthropic-unveil/">Revolutionizing Software Security: Anthropic Unveils Project Glasswing</a> <span class="archive-date">Apr 8</span></li>
+                <li><a href="/blog/2026-04-08-revolutionizing-code-productivity-autofix-pr-now-a/">Revolutionizing Code Productivity: Autofix PR Now Available on Command Line</a> <span class="archive-date">Apr 8</span></li>
+                <li><a href="/blog/2026-04-08-revolutionizing-automation-zapier-sdk-now-open-to/">Revolutionizing Automation: Zapier SDK Now Open to All</a> <span class="archive-date">Apr 8</span></li>
+                <li><a href="/blog/2026-04-08-revolutionizing-ai-dev-tool-onboarding-interactive/">Revolutionizing AI Dev Tool Onboarding: Interactive Learning Comes to Claude Code</a> <span class="archive-date">Apr 8</span></li>
+                <li><a href="/blog/2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the/">Revolutionary AI Teacher: Clicky Buddy Changes the Game for Learning</a> <span class="archive-date">Apr 8</span></li>
+                <li><a href="/blog/2026-04-06-unlocking-githubs-hidden-potential-a-personal-prod/">Unlocking GitHub&#x27;s Hidden Potential: A Personal Productivity Powerhouse</a> <span class="archive-date">Apr 6</span></li>
+                <li><a href="/blog/2026-04-06-tldraw-revolution-unlocking-next-level-collaborati/">tldraw Revolution: Unlocking Next-Level Collaborative Diagramming</a> <span class="archive-date">Apr 6</span></li>
+                <li><a href="/blog/2026-04-06-revolutionizing-font-pairing-introducing-typevibe/">Revolutionizing Font Pairing: Introducing Typevibe</a> <span class="archive-date">Apr 6</span></li>
+                <li><a href="/blog/2026-04-06-revolutionizing-design-top-tools-for-color-and-gra/">Revolutionizing Design: Top Tools for Color and Gradient Selection</a> <span class="archive-date">Apr 6</span></li>
+                <li><a href="/blog/2026-03-30-revolutionizing-game-development-with-ommas-ai-pow/">Revolutionizing Game Development with Omma&#x27;s AI-Powered Tools</a> <span class="archive-date">Mar 30</span></li>
+                <li><a href="/blog/2026-03-24-revolutionizing-productivity-claudes-game-changing/">Revolutionizing Productivity: Claude&#x27;s Game-Changing Update</a> <span class="archive-date">Mar 24</span></li>
+                <li><a href="/blog/2026-03-14-rust-powered-agent-browser-revolution-lightning-fa/">Rust-Powered Agent-Browser Revolution: Lightning-Fast Performance and Tiny Footprint</a> <span class="archive-date">Mar 14</span></li>
+                <li><a href="/blog/2026-03-14-revolutionizing-ai-workflows-glm-5-unleashes-agent/">Revolutionizing AI Workflows: GLM-5 Unleashes Agent Mode</a> <span class="archive-date">Mar 14</span></li>
+                <li><a href="/blog/2026-03-14-revolutionary-coding-claude-code-desktop-unveils-g/">Revolutionary Coding: Claude Code Desktop Unveils Game-Changing Frontend Preview</a> <span class="archive-date">Mar 14</span></li>
+                <li><a href="/blog/2026-03-13-ycs-startup-school-lands-in-india-a-boost-for-loca/">YC&#x27;s Startup School Lands in India: A Boost for Local Entrepreneurs</a> <span class="archive-date">Mar 13</span></li>
+                <li><a href="/blog/2026-03-13-revolutionizing-pixel-art-a-node-based-vfx-editor/">Revolutionizing Pixel Art: A Node-Based VFX Editor Emerges</a> <span class="archive-date">Mar 13</span></li>
+                <li><a href="/blog/2026-03-11-reviving-mockdown-ai-powered-wireframing-revolutio/">Reviving Mockdown: AI-Powered Wireframing Revolution</a> <span class="archive-date">Mar 11</span></li>
+                <li><a href="/blog/2026-03-11-jetbrains-unveils-air-a-revolutionary-ai-powered-d/">JetBrains Unveils Air: A Revolutionary AI-Powered Development Environment</a> <span class="archive-date">Mar 11</span></li>
+                <li><a href="/blog/2026-03-11-breakthrough-run-ai-models-entirely-in-your-browse/">Breakthrough: Run AI Models Entirely in Your Browser with WebGPU</a> <span class="archive-date">Mar 11</span></li>
+                <li><a href="/blog/2026-03-09-revolutionizing-code-quality-claudes-ai-powered-co/">Revolutionizing Code Quality: Claude&#x27;s AI-Powered Code Review Unleashed</a> <span class="archive-date">Mar 9</span></li>
+                <li><a href="/blog/2026-03-06-revolutionizing-web-apis-anything-api-unleashed/">Revolutionizing Web APIs: Anything API Unleashed</a> <span class="archive-date">Mar 6</span></li>
+                <li><a href="/blog/2026-03-06-revolutionizing-team-collaboration-openai-unveils/">Revolutionizing Team Collaboration: OpenAI Unveils Symphony</a> <span class="archive-date">Mar 6</span></li>
+                <li><a href="/blog/2026-03-06-revolutionizing-app-development-ai-powered-glaze-l/">Revolutionizing App Development: AI-Powered Glaze Launches</a> <span class="archive-date">Mar 6</span></li>
+                <li><a href="/blog/2026-03-06-revolutionizing-agent-development-langsmith-skills/">Revolutionizing Agent Development: LangSmith Skills and CLI Unleashed</a> <span class="archive-date">Mar 6</span></li>
+                <li><a href="/blog/2026-03-05-revolutionizing-affordable-computing-apple-unveils/">Revolutionizing Affordable Computing: Apple Unveils the Groundbreaking MacBook Neo</a> <span class="archive-date">Mar 5</span></li>
+                <li><a href="/blog/2026-03-05-revolutionary-voice-mode-rolls-out-in-claude-code/">Revolutionary Voice Mode Rolls Out in Claude Code</a> <span class="archive-date">Mar 5</span></li>
+                <li><a href="/blog/2026-03-05-apple-unleashes-ai-powered-macbook-pro-with-m5-pro/">Apple Unleashes AI-Powered MacBook Pro with M5 Pro and M5 Max Chips</a> <span class="archive-date">Mar 5</span></li>
+                <li><a href="/blog/2026-03-01-electron-apps-just-got-a-whole-lot-smarter-with-ag/">Electron Apps Just Got a Whole Lot Smarter with Agent-Browser Integration</a> <span class="archive-date">Mar 1</span></li>
+                <li><a href="/blog/2026-02-26-revolutionizing-video-editing-adobe-unveils-ai-pow/">Revolutionizing Video Editing: Adobe Unveils AI-Powered Quick Cut Tool</a> <span class="archive-date">Feb 26</span></li>
+                <li><a href="/blog/2026-02-26-revolutionizing-productivity-minimax-agents-game-c/">Revolutionizing Productivity: MiniMax Agent&#x27;s Game-Changing Update</a> <span class="archive-date">Feb 26</span></li>
+                <li><a href="/blog/2026-02-26-revolutionizing-image-creation-nano-banana-2-unlea/">Revolutionizing Image Creation: Nano Banana 2 Unleashed</a> <span class="archive-date">Feb 26</span></li>
+                <li><a href="/blog/2026-02-26-revolutionizing-chatbot-development-vercels-game-c/">Revolutionizing Chatbot Development: Vercel&#x27;s Game-Changing Chat SDK</a> <span class="archive-date">Feb 26</span></li>
+                <li><a href="/blog/2026-02-25-revolutionizing-front-end-development-the-ai-power/">Revolutionizing Front-End Development: The AI-Powered Rebuild of Next.js in Just One Week</a> <span class="archive-date">Feb 25</span></li>
+                <li><a href="/blog/2026-02-25-revolutionizing-design-pencils-swarm-mode-takes-ai/">Revolutionizing Design: Pencil&#x27;s SWARM Mode Takes AI-Powered Collaboration to the Next Level</a> <span class="archive-date">Feb 25</span></li>
+                <li><a href="/blog/2026-02-25-revolutionizing-ai-capabilities-the-dawn-of-perple/">Revolutionizing AI Capabilities: The Dawn of Perplexity Computer</a> <span class="archive-date">Feb 25</span></li>
+                <li><a href="/blog/2026-02-25-revolutionary-ai-powered-chatbot-unleashed-meet-ma/">Revolutionary AI-Powered Chatbot Unleashed: Meet MaxClaw</a> <span class="archive-date">Feb 25</span></li>
+                <li><a href="/blog/2026-02-25-google-labs-unveils-major-upgrade-to-opal-revoluti/">Google Labs Unveils Major Upgrade to Opal, Revolutionizing No-Code AI Workflows</a> <span class="archive-date">Feb 25</span></li>
+                <li><a href="/blog/2026-02-25-claude-code-unleashes-remote-control-a-game-change/">Claude Code Unleashes Remote Control: A Game-Changer for Developers</a> <span class="archive-date">Feb 25</span></li>
+                <li><a href="/blog/2026-02-21-revolutionizing-coding-claudes-game-changing-updat/">Revolutionizing Coding: Claude&#x27;s Game-Changing Update</a> <span class="archive-date">Feb 21</span></li>
+                <li><a href="/blog/2026-02-21-revolutionizing-ai-powered-commerce-razorpay-and-n/">Revolutionizing AI-Powered Commerce: Razorpay and NPCI Unveil Agentic Payments</a> <span class="archive-date">Feb 21</span></li>
+                <li><a href="/blog/2026-02-19-revolutionizing-ai-powered-apps-with-secure-docker/">Revolutionizing AI-Powered Apps with Secure Docker Sandboxes</a> <span class="archive-date">Feb 19</span></li>
+                <li><a href="/blog/2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in/">Revolutionary AI-Powered Desktop Agent Unveiled: Interpreter</a> <span class="archive-date">Feb 19</span></li>
+                <li><a href="/blog/2026-02-19-google-unveils-glimmer-a-revolutionary-design-lang/">Google Unveils Glimmer: A Revolutionary Design Language for UX on Smart Glasses</a> <span class="archive-date">Feb 19</span></li>
+                <li><a href="/blog/2026-02-19-ai-rivals-clash-openai-and-anthropic-ceos-awkward/">AI Rivals Clash: OpenAI and Anthropic CEOs&#x27; Awkward Moment Reveals Heated Competition</a> <span class="archive-date">Feb 19</span></li>
+                <li><a href="/blog/2026-02-18-revolutionizing-startup-productivity-the-ultimate/">Revolutionizing Startup Productivity: The Ultimate Tool Consolidation</a> <span class="archive-date">Feb 18</span></li>
+                <li><a href="/blog/2026-02-18-revolutionizing-productivity-bitroots-game-changin/">Revolutionizing Productivity: Bitroot&#x27;s Game-Changing Toolbox Unveiled</a> <span class="archive-date">Feb 18</span></li>
+                <li><a href="/blog/2026-02-18-indias-ai-startup-funding-landscape-sees-regional/">India&#x27;s AI Startup Funding Landscape Sees Regional Shift</a> <span class="archive-date">Feb 18</span></li>
+                <li><a href="/blog/2026-02-17-revolutionizing-tech-stacks-hyperbrowser-unveils-b/">Revolutionizing Tech Stacks: Hyperbrowser Unveils Batch Mode for HyperSkill</a> <span class="archive-date">Feb 17</span></li>
+                <li><a href="/blog/2026-02-17-revolutionizing-design-figma-unveils-code-to-desig/">Revolutionizing Design: Figma Unveils Code-to-Design Magic</a> <span class="archive-date">Feb 17</span></li>
+                <li><a href="/blog/2026-02-17-revolutionizing-coding-ollama-unveils-subagents-an/">Revolutionizing Coding: Ollama Unveils Subagents and Web Search in Claude Code</a> <span class="archive-date">Feb 17</span></li>
+                <li><a href="/blog/2026-02-16-unlocking-the-power-of-anthropic-agents-a-game-cha/">Unlocking the Power of Anthropic Agents: A Game-Changer for AI Development</a> <span class="archive-date">Feb 16</span></li>
+                <li><a href="/blog/2026-02-16-revolutionizing-debugging-chrome-devtools-gets-mul/">Revolutionizing Debugging: Chrome DevTools Gets Multi-Session Support</a> <span class="archive-date">Feb 16</span></li>
+                <li><a href="/blog/2026-02-16-minimax-m25-revolution-unleashing-3x-faster-infere/">MiniMax M2.5 Revolution: Unleashing 3x Faster Inference Speeds</a> <span class="archive-date">Feb 16</span></li>
+                <li><a href="/blog/2026-02-16-anthropic-expands-indian-presence-with-new-bengalu/">Anthropic Expands Indian Presence with New Bengaluru Office and Strategic Partnerships</a> <span class="archive-date">Feb 16</span></li>
+                <li><a href="/blog/2026-02-15-revolutionizing-voice-ai-nvidia-unveils-game-chang/">Revolutionizing Voice AI: NVIDIA Unveils Game-Changing PersonaPlex-7B Model</a> <span class="archive-date">Feb 15</span></li>
+                <li><a href="/blog/2026-02-15-revolutionizing-online-discussions-the-rise-of-thr/">Revolutionizing Online Discussions: The Rise of Thread Test</a> <span class="archive-date">Feb 15</span></li>
+                <li><a href="/blog/2026-02-15-revolutionizing-ai-powered-browsing-kimi-claw-unle/">Revolutionizing AI-Powered Browsing: Kimi Claw Unleashed</a> <span class="archive-date">Feb 15</span></li>
+                <li><a href="/blog/2026-02-14-revolutionizing-app-development-raydian-20-unleash/">Revolutionizing App Development: Raydian 2.0 Unleashed</a> <span class="archive-date">Feb 14</span></li>
+                <li><a href="/blog/2026-02-14-revolutionizing-ai-driven-design-introducing-the-g/">Revolutionizing AI-Driven Design: Introducing the Game-Changing Design Canvas</a> <span class="archive-date">Feb 14</span></li>
+                <li><a href="/blog/2026-02-13-revolutionizing-cicd-introducing-buildspace-the-ai/">Revolutionizing CI/CD: Introducing BuildSpace, the AI-Powered Game Changer</a> <span class="archive-date">Feb 13</span></li>
+                <li><a href="/blog/2026-02-12-revolutionizing-content-delivery-cloudflares-real/">Revolutionizing Content Delivery: Cloudflare&#x27;s Real-Time Markdown Conversion</a> <span class="archive-date">Feb 12</span></li>
+                <li><a href="/blog/2026-02-12-revolutionizing-app-store-submissions-automated-gu/">Revolutionizing App Store Submissions: Automated Guideline Compliance</a> <span class="archive-date">Feb 12</span></li>
+                <li><a href="/blog/2026-02-12-revolutionary-agent-native-computing-now-accessibl/">Revolutionary Agent-Native Computing Now Accessible to All</a> <span class="archive-date">Feb 12</span></li>
+                <li><a href="/blog/2026-02-11-ai-safety-leader-sounds-alarm-resignation-sparks-c/">AI Safety Leader Sounds Alarm: Resignation Sparks Concerns Over Tech&#x27;s Dark Side</a> <span class="archive-date">Feb 11</span></li>
+                <li><a href="/blog/2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi/">Revolutionizing Video Creation: AI-Powered Vibe Editing Takes Center Stage</a> <span class="archive-date">Feb 10</span></li>
+                <li><a href="/blog/2026-02-10-revolutionizing-ui-animations-introducing-reactbit/">Revolutionizing UI Animations: Introducing ReactBits</a> <span class="archive-date">Feb 10</span></li>
+                <li><a href="/blog/2026-02-10-revolutionizing-research-visuals-google-ais-paperb/">Revolutionizing Research Visuals: Google AI&#x27;s PaperBanana Framework</a> <span class="archive-date">Feb 10</span></li>
+                <li><a href="/blog/2026-02-10-revolutionizing-coding-gpt-53-codex-now-powers-git/">Revolutionizing Coding: GPT-5.3-Codex Now Powers GitHub Copilot</a> <span class="archive-date">Feb 10</span></li>
+                <li><a href="/blog/2026-02-10-revolutionizing-coding-composer-15-unleashes-enhan/">Revolutionizing Coding: Composer 1.5 Unleashes Enhanced Intelligence</a> <span class="archive-date">Feb 10</span></li>
+                <li><a href="/blog/2026-02-10-introducing-nanobot-the-ultra-lightweight-personal/">Introducing Nanobot: The Ultra-Lightweight Personal AI Assistant</a> <span class="archive-date">Feb 10</span></li>
+                <li><a href="/blog/2026-02-10-indias-tech-landscape-shifts-why-deeptech-and-hard/">India&#x27;s Tech Landscape Shifts: Why Deeptech and Hardware Are the Future</a> <span class="archive-date">Feb 10</span></li>
+                <li><a href="/blog/2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits/">AI Expansion Showdown: Anthropic&#x27;s India Foray Hits Local Roadblock</a> <span class="archive-date">Feb 10</span></li>
+                <li><a href="/blog/2026-02-09-revolutionizing-data-workflows-cortex-code-unleash/">Revolutionizing Data Workflows: Cortex Code Unleashes Natural Language Power</a> <span class="archive-date">Feb 9</span></li>
+                <li><a href="/blog/2026-02-09-revolutionizing-ai-development-replicate-joins-for/">Revolutionizing AI Development: Replicate Joins Forces with Cloudflare</a> <span class="archive-date">Feb 9</span></li>
+                <li><a href="/blog/2026-02-08-revolutionizing-wordpress-management-claudes-new-c/">Revolutionizing WordPress Management: Claude&#x27;s New Connector Unleashed</a> <span class="archive-date">Feb 8</span></li>
+                <li><a href="/blog/2026-02-08-revolutionizing-web-app-security-meet-shannon-the/">Revolutionizing Web App Security: Meet Shannon, the AI Hacker</a> <span class="archive-date">Feb 8</span></li>
+                <li><a href="/blog/2026-02-08-revolutionizing-coding-craft-agents-now-compatible/">Revolutionizing Coding: Craft Agents Now Compatible with Codex and Claude</a> <span class="archive-date">Feb 8</span></li>
+                <li><a href="/blog/2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo/">Revolutionary C Compiler Built by Team of Autonomous AI Agents</a> <span class="archive-date">Feb 7</span></li>
+                <li><a href="/blog/2026-02-06-unlocking-collaborative-coding-introducing-claude/">Unlocking Collaborative Coding: Introducing Claude Code&#x27;s Agent Teams</a> <span class="archive-date">Feb 6</span></li>
+                <li><a href="/blog/2026-02-06-revolutionizing-video-creation-the-notch-prompter/">Revolutionizing Video Creation: The Notch Prompter</a> <span class="archive-date">Feb 6</span></li>
+                <li><a href="/blog/2026-02-06-revolutionizing-coding-twitters-claude-code-update/">Revolutionizing Coding: Twitter&#x27;s Claude Code Update</a> <span class="archive-date">Feb 6</span></li>
+                <li><a href="/blog/2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa/">OpenAI Unveils GPT-5.3-Codex: Revolutionizing Software Development with Autonomous AI</a> <span class="archive-date">Feb 6</span></li>
+                <li><a href="/blog/2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in/">Introducing Claude Opus 4.6: A Revolutionary Leap in AI Capabilities</a> <span class="archive-date">Feb 6</span></li>
+                <li><a href="/blog/2026-02-05-revolutionizing-coding-insights-twitters-claude-co/">Revolutionizing Coding Insights: Twitter&#x27;s Claude Code Update</a> <span class="archive-date">Feb 5</span></li>
+                <li><a href="/blog/2026-02-05-revolutionizing-ai-powered-development-with-vercel/">Revolutionizing AI-Powered Development with Vercel&#x27;s Skills.sh</a> <span class="archive-date">Feb 5</span></li>
+                <li><a href="/blog/2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s/">Introducing Voxtral Transcribe 2: Revolutionizing Speech-to-Text Models</a> <span class="archive-date">Feb 5</span></li>
+            </ul>
+        </details>
+        <!-- POSTS:END -->
     </main>
 
     <!-- Footer -->
@@ -310,6 +636,7 @@
         </div>
     </footer>
 
+    <script src="js/pixel-placeholder.js"></script>
     <script src="js/posts-loader.js"></script>
 
     <!-- Theme toggle -->
@@ -337,6 +664,8 @@
         else if (hour >= 12 && hour < 17) greeting = 'The best breakthroughs happen after lunch.';
         else if (hour >= 17 && hour < 21) greeting = 'Great ideas don\u2019t clock out.';
         else greeting = 'Night builds hit different.';
+
+        try { sessionStorage.setItem('nl-intro-seen', '1'); } catch (e) {}
 
         document.addEventListener('DOMContentLoaded', function() {
             var el = document.getElementById('sunrise-greeting-text');
@@ -368,7 +697,7 @@
                         overlay.remove();
                     });
                 }, 500);
-            }, 2000);
+            }, 700);
         });
     })();
     </script>

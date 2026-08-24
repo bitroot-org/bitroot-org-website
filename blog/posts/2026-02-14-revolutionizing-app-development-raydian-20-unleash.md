@@ -3,7 +3,7 @@ date: '2026-02-14'
 excerpt: "Raydian 2.0 is live \U0001F389\n\nVibe-design your app, and we'll convert
   it into a working product autonomously.\n\nGo give it a spin, the design stage is
   free to use."
-image: https://pbs.twimg.com/amplify_video_thumb/2022255471160090624/img/xtY_Qze7Tam97zEx.jpg
+image: https://bitroot.org/blog/media/2026-02-14-revolutionizing-app-development-raydian-20-unleash.jpg
 published_at: '2026-02-14T04:29:24.699325+00:00'
 sources:
 - https://x.com/i/status/2022256365901607287
@@ -14,7 +14,6 @@ tags:
 title: 'Revolutionizing App Development: Raydian 2.0 Unleashed'
 video: media/2026-02-14-revolutionizing-app-development-raydian-20-unleash.mp4
 ---
-
 
 ## Introduction to Raydian 2.0
 We just spotted an exciting update from Raydian that's worth sharing with the community - Raydian 2.0 is live and it's a total game-changer. This innovative platform allows users to vibe-design their app, and then converts it into a working product autonomously. 

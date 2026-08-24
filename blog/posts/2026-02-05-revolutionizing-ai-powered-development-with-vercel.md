@@ -3,7 +3,7 @@ date: '2026-02-05'
 excerpt: Vercel's skills.sh is a game-changer for developers, offering a platform
   to build, train, and deploy AI models with ease. This update is a must-know for
   tech enthusiasts looking to leverage AI in their projects.
-image: https://cloud.inference.sh/web/assets/og-image.png
+image: https://bitroot.org/blog/media/2026-02-05-revolutionizing-ai-powered-development-with-vercel.png
 published_at: '2026-02-05T18:31:47.044082+00:00'
 sources:
 - https://app.inference.sh/blog/skills/agent-skills-overview
@@ -13,7 +13,6 @@ tags:
 - AI-powered development
 title: Revolutionizing AI-Powered Development with Vercel's Skills.sh
 ---
-
 
 ## Introduction to Skills.sh
 We just spotted an exciting update from Vercel that's worth sharing with the community - the launch of skills.sh, a platform designed to make AI-powered development more accessible. Here's what caught our attention about this innovative tool. The community is buzzing about the potential of skills.sh to revolutionize the way we build and deploy AI models.

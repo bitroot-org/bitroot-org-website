@@ -2,7 +2,7 @@
 date: '2026-02-10'
 excerpt: India's Anthropic Software has taken the U.S. AI giant to court over a name
   dispute.
-image: https://techcrunch.com/wp-content/uploads/2026/01/anthropic-image-jagmeet-singh-techcrunch.jpg?resize=1200,800
+image: https://bitroot.org/blog/media/2026-02-10-ai-expansion-showdown-anthropics-india-foray-hits.jpg
 published_at: '2026-02-10T02:07:30.583768+00:00'
 sources:
 - https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/
@@ -13,7 +13,6 @@ tags:
 - Trademark
 title: 'AI Expansion Showdown: Anthropic''s India Foray Hits Local Roadblock'
 ---
-
 
 ## Introduction to the Issue
 We just spotted an exciting update from Anthropic that's worth sharing with the community - the company's expansion into India has collided with a local software company that's already using the name "Anthropic". Here's what caught our attention: the rapid global push of AI firms can sometimes lead to unexpected conflicts with local incumbents.

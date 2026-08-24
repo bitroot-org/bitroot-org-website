@@ -1,7 +1,7 @@
 ---
 date: '2026-02-17'
 excerpt: Now you can take workflows that start in Claude Code even further in Figma.
-image: https://cdn.sanity.io/images/599r6htc/regionalized/1bc14c622ab6b8e2ad11229e6206c07dbad63311-3200x1800.png?w=1200&q=70&fit=max&auto=format
+image: https://bitroot.org/blog/media/2026-02-17-revolutionizing-design-figma-unveils-code-to-desig.png
 published_at: '2026-02-17T19:04:42.217445+00:00'
 sources:
 - https://www.figma.com/blog/introducing-claude-code-to-figma/

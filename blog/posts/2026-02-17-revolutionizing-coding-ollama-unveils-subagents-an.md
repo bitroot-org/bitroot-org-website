@@ -1,7 +1,7 @@
 ---
 date: '2026-02-17'
 excerpt: Ollama now supports subagents and web search in Claude Code.
-image: https://ollama.com/public/og.png
+image: https://bitroot.org/blog/media/2026-02-17-revolutionizing-coding-ollama-unveils-subagents-an.png
 published_at: '2026-02-17T13:10:54.324309+00:00'
 sources:
 - https://ollama.com/blog/web-search-subagents-claude-code
@@ -13,7 +13,6 @@ tags:
 title: 'Revolutionizing Coding: Ollama Unveils Subagents and Web Search in Claude
   Code'
 ---
-
 
 ## Introduction to Subagents and Web Search
 We just spotted an exciting update from Ollama that's worth sharing with the community - the introduction of subagents and web search in Claude Code. This powerful feature allows developers to run tasks in parallel, such as file search, code exploration, and research, each in their own context.

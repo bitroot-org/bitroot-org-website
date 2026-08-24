@@ -34,8 +34,57 @@ EVENT_NAME = os.environ.get("EVENT_NAME", "workflow_dispatch")
 
 POSTS_DIR = "blog/posts"
 MEDIA_DIR = "blog/media"
+# Self-hosted media is written into frontmatter as an ABSOLUTE URL. A relative
+# 'media/…' path only resolves under /blog/ pages — it breaks on the homepage
+# feed and in the TeamLife blog studio, which read the frontmatter raw.
+MEDIA_BASE_URL = "https://bitroot.org/blog/media"
 MAX_CONTENT_LENGTH = 15000  # Max chars per URL to avoid token limits
 MAX_VIDEO_SIZE = 50 * 1024 * 1024  # 50MB max video size
+MAX_IMAGE_SIZE = 8 * 1024 * 1024  # 8MB max cover image size
+
+BROWSER_UA = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+)
+BROWSER_HEADERS = {
+    "User-Agent": BROWSER_UA,
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.5",
+}
+
+URL_PATTERN = re.compile(r"https?://[^\s<>\"'\)\]]+")
+MARKDOWN_LINK_PATTERN = re.compile(r"\[([^\]]+)\]\((https?://[^)\s]+)\)")
+
+
+def extract_urls(text):
+    """Return a set of URLs found in text, with common trailing punctuation stripped."""
+    urls = set()
+    for u in URL_PATTERN.findall(text or ""):
+        urls.add(u.rstrip(".,;:!?"))
+    return urls
+
+
+def sanitize_inline_links(content, allowed_urls):
+    """
+    Strip markdown link wrapping around URLs that aren't in `allowed_urls`, so
+    hallucinated links degrade to plain text instead of shipping as clickable
+    links that go nowhere (or worse, to a typo-squatted domain).
+    """
+    stripped = []
+
+    def _replace(match):
+        text, url = match.group(1), match.group(2).rstrip(".,;:!?")
+        if url in allowed_urls:
+            return match.group(0)
+        stripped.append(url)
+        return text
+
+    cleaned = MARKDOWN_LINK_PATTERN.sub(_replace, content)
+    if stripped:
+        logger.warning(
+            f"Stripped {len(stripped)} hallucinated inline link(s) not in source whitelist: {stripped}"
+        )
+    return cleaned
 
 
 def setup_groq():
@@ -358,6 +407,45 @@ def fetch_social_media_content(url):
         return {"url": url, "content": f"Failed to fetch: {str(e)}", "image": None, "video": None, "media": [], "description": None, "success": False}
 
 
+def fetch_via_jina_reader(url):
+    """Fall back to Jina Reader (r.jina.ai) for paywalled or bot-blocked URLs.
+
+    Returns the same dict shape as fetch_url_content on success, else None.
+    Jina's free tier proxies the page through a reader that bypasses most
+    paywalls and JS rendering, returning clean LLM-ready content.
+    """
+    try:
+        jina_url = f"https://r.jina.ai/{url}"
+        resp = requests.get(jina_url, headers={"Accept": "application/json"}, timeout=60)
+        resp.raise_for_status()
+        payload = resp.json()
+        data = payload.get("data") or {}
+        content = (data.get("content") or "").strip()
+        if not content:
+            return None
+
+        image_url = None
+        images = data.get("images")
+        if isinstance(images, dict) and images:
+            image_url = next(iter(images.values()), None)
+        elif isinstance(images, list) and images:
+            image_url = images[0]
+
+        content = content[:MAX_CONTENT_LENGTH]
+        logger.info(f"Fetched via Jina Reader fallback: {url} ({len(content)} chars)")
+        return {
+            "url": url,
+            "title": data.get("title"),
+            "content": content,
+            "image": image_url,
+            "description": data.get("description"),
+            "success": True,
+        }
+    except Exception as e:
+        logger.error(f"Jina Reader fallback failed for {url}: {str(e)}")
+        return None
+
+
 def fetch_url_content(url):
     """Fetch and extract text content, image, and description from a URL."""
     # Handle Twitter/X URLs specially
@@ -375,10 +463,7 @@ def fetch_url_content(url):
         return fetch_social_media_content(url)
 
     try:
-        headers = {
-            "User-Agent": "Mozilla/5.0 (compatible; BitrootBlogAgent/1.0)"
-        }
-        resp = requests.get(url, headers=headers, timeout=30)
+        resp = requests.get(url, headers=BROWSER_HEADERS, timeout=30)
         resp.raise_for_status()
 
         soup = BeautifulSoup(resp.text, "html.parser")
@@ -495,6 +580,10 @@ def fetch_url_content(url):
         return {"url": url, "title": page_title, "content": text, "image": image_url, "description": description, "success": True}
 
     except Exception as e:
+        logger.warning(f"Direct fetch failed for {url}: {str(e)}; trying Jina Reader fallback")
+        fallback = fetch_via_jina_reader(url)
+        if fallback:
+            return fallback
         logger.error(f"Failed to fetch {url}: {str(e)}")
         return {"url": url, "content": f"Failed to fetch: {str(e)}", "image": None, "description": None, "success": False}
 
@@ -572,11 +661,83 @@ def download_media(url, slug, media_type="video"):
 
         logger.info(f"Downloaded {media_type} to: {filepath} ({total_size} bytes)")
 
-        # Return path relative to blog root (for use in HTML)
-        return f"media/{filename}"
+        # Absolute URL so it renders everywhere the frontmatter is read raw.
+        return f"{MEDIA_BASE_URL}/{filename}"
 
     except Exception as e:
         logger.error(f"Failed to download {media_type}: {str(e)}")
+        return None
+
+
+IMAGE_EXT_BY_MIME = {
+    "image/jpeg": "jpg",
+    "image/png": "png",
+    "image/webp": "webp",
+    "image/gif": "gif",
+    "image/avif": "avif",
+}
+
+
+def download_image(url, slug):
+    """Download a cover image and save it locally.
+
+    Remote og:/CDN images (especially pbs.twimg.com) rot over time — the
+    tweet gets deleted or the CDN blocks hotlinking — leaving broken cards
+    across the site. Self-hosting at generation time fixes that for good.
+
+    Returns a path relative to blog root (media/<file>), or None on failure.
+    """
+    try:
+        logger.info(f"Downloading image from: {url}")
+        headers = {
+            "User-Agent": BROWSER_UA,
+            "Referer": "https://twitter.com/",
+        }
+        with requests.get(url, headers=headers, stream=True, timeout=30) as resp:
+            resp.raise_for_status()
+
+            content_type = resp.headers.get("content-type", "").split(";")[0].strip().lower()
+            ext = IMAGE_EXT_BY_MIME.get(content_type)
+            if not ext:
+                # Fall back to sniffing the URL (pbs.twimg.com uses ?format=jpg)
+                u = url.lower()
+                for candidate in ("jpg", "jpeg", "png", "webp", "gif", "avif"):
+                    if f".{candidate}" in u or f"format={candidate}" in u:
+                        ext = "jpg" if candidate == "jpeg" else candidate
+                        break
+            if not ext:
+                logger.warning(f"Not an image (content-type: {content_type}), skipping download")
+                return None
+
+            content_length = resp.headers.get("content-length")
+            if content_length and int(content_length) > MAX_IMAGE_SIZE:
+                logger.warning(f"Image too large ({content_length} bytes), skipping download")
+                return None
+
+            os.makedirs(MEDIA_DIR, exist_ok=True)
+            filename = f"{slug}.{ext}"
+            filepath = os.path.join(MEDIA_DIR, filename)
+
+            total_size = 0
+            with open(filepath, "wb") as f:
+                for chunk in resp.iter_content(chunk_size=8192):
+                    if chunk:
+                        f.write(chunk)
+                        total_size += len(chunk)
+                        if total_size > MAX_IMAGE_SIZE:
+                            logger.warning("Image exceeded max size during download, aborting")
+                            os.remove(filepath)
+                            return None
+
+            if total_size == 0:
+                os.remove(filepath)
+                return None
+
+        logger.info(f"Downloaded image to: {filepath} ({total_size} bytes)")
+        return f"{MEDIA_BASE_URL}/{filename}"
+
+    except Exception as e:
+        logger.error(f"Failed to download image: {str(e)}")
         return None
 
 
@@ -598,6 +759,14 @@ def generate_post(client, issue_data, fetched_contents):
     # Use source page title if available, otherwise fall back to issue title
     title_hint = source_titles[0] if source_titles else issue_data["title"]
 
+    # Build the URL whitelist the model may cite: every URL found in the scraped
+    # source text plus the original issue URLs. Anything outside this set is a
+    # hallucination and gets stripped post-generation.
+    allowed_urls = extract_urls(sources_text)
+    for u in issue_data.get("urls", []) or []:
+        allowed_urls.add(u.rstrip(".,;:!?"))
+    allowed_urls_list = sorted(allowed_urls)
+
     # Log source content being sent to AI
     logger.info("=" * 60)
     logger.info("SOURCE CONTENT BEING SENT TO AI")
@@ -608,66 +777,93 @@ def generate_post(client, issue_data, fetched_contents):
     logger.info(f"Issue angle: {issue_data.get('angle')}")
     logger.info(f"Total source text length: {len(sources_text)} chars")
     logger.info(f"Source text preview (first 1000 chars):\n{sources_text[:1000]}")
+    logger.info(f"Allowed URLs ({len(allowed_urls_list)}): {allowed_urls_list}")
     logger.info("=" * 60)
 
-    prompt = f"""You are a community news contributor for Bitroot, sharing exciting tech updates and discoveries from around the internet.
+    prompt = f"""Write a short technical post about this news for Bitroot's Newslogger.
+Audience: engineers who ship code at startups. They use tools, they don't buy them.
+They need to know what happened, what it does, what it costs, and whether it's worth trying.
 
-Write a blog post announcing/sharing this news with our community. Your writing style should be:
-- Like a passionate tech enthusiast sharing a cool discovery with friends
-- "We spotted this...", "Here's what caught our attention...", "The community is buzzing about..."
-- Excited but informative - share WHY this matters to developers/tech enthusiasts
-- Feel like a curator bringing interesting finds to the community
+Length: 250–450 words. Short is better than padded.
 
-Your post should:
-- Be 400-800 words (concise and punchy)
-- Have a clear, specific title about the actual news/update
-- IMPORTANT: Create your OWN unique title by reading the source content. Do NOT just copy the source page title below. Paraphrase it into a catchy, newsworthy headline.
-- Explain what the update/news is and why it's interesting
-- Add context about why this matters to developers or the tech community
-- Include your take on the implications or potential use cases
-- NOT copy text directly from sources
-- NOT be dry or corporate - be genuinely enthusiastic
+Title:
+- Plain English, under 70 characters.
+- Describe what happened. State the news.
+- Good: "Copilot CLI adds a security-triage command"
+- Bad:  "Revolutionizing Security Triage: Copilot CLI Is a Game-Changer"
+- Do NOT copy the source page title verbatim; write your own.
 
-CRITICAL FORMATTING REQUIREMENTS:
-- Structure with clear ## headings
-- SHORT paragraphs (2-3 sentences max)
-- Use bullet points for features/benefits
-- Include at least 3 section headings
-- Double newlines between paragraphs
+Lead paragraph (no heading):
+- Open with the news itself and one specific, concrete detail — a command,
+  a number, a version, a behavior, a pricing tier.
+- Do NOT open with meta-commentary about yourself or "the community".
+  Just state the news.
 
-Example tone:
-"We just spotted an exciting update from [Company] that's worth sharing with the community..."
-"Here's why this matters for developers..."
-"What caught our attention about this..."
+Body:
+- 2–4 short sections with ## headings that describe THIS post's specific content.
+- Do NOT reuse a template like "Introduction / What This Means / Key Features / Implications".
+  Vary the structure per post.
+- Short paragraphs, 1–3 sentences each.
+- Include at least one skeptical or cautionary note: a limitation, a noise/false-positive
+  risk, a scope gap, a lock-in concern, a pricing caveat. If the source is a vendor
+  announcement, assume it's optimistic and balance it.
+- Include inline markdown links `[text](url)` whenever you mention a specific tool,
+  repo, doc, blog post, or person. These are auto-collected into a Sources section.
+- STRICT URL RULE: you may ONLY use URLs that appear verbatim in the "Allowed URLs"
+  list below. Do NOT invent URLs. Do NOT guess a project's homepage or repo URL.
+  Do NOT use your training-data knowledge to add links. If you want to name a tool
+  or project and its URL is not in the Allowed URLs list, write just the name in
+  plain text — without brackets, without a link. A missing link is always fine;
+  a wrong link is not.
+- Close with "what to watch" or "when to try this" — one concrete suggestion,
+  not a vague "we're excited to see".
+
+Banned words and phrases (do not use, not even once):
+  revolutionary, revolutionize, revolutionizing, revolution,
+  game-changer, game-changing, game changer,
+  cutting-edge, must-have, must-know,
+  unleash, unleashes, supercharge,
+  "we just spotted", "we spotted",
+  "the community is buzzing", "worth sharing with the community"
+
+Allowed but use sparingly — once or twice max per post:
+  exciting, new release, interesting, notable
+
+Tags: 2–4 short noun phrases describing the topic. Lowercase fine.
+
+Excerpt: 1–2 sentences in the same voice as the body. No first-person "we".
 
 Source page title: {title_hint}
 {f"Angle/Focus: {issue_data['angle']}" if issue_data.get('angle') else ""}
 
+Allowed URLs (the ONLY URLs you may use in inline links; any other URL is forbidden):
+{chr(10).join(f"- {u}" for u in allowed_urls_list) if allowed_urls_list else "- (none — do not include any inline links)"}
+
 Source materials:
 {sources_text}
 
-Output format:
-Return ONLY a JSON object with these fields (no markdown code blocks, no extra text):
+Output:
+Return ONLY this JSON object (no markdown fences, no prose around it):
 {{
-  "title": "Your Own Paraphrased Title (DO NOT copy the source title verbatim)",
-  "tags": ["tag1", "tag2"],
-  "excerpt": "A 1-2 sentence summary for preview cards",
-  "content": "The full markdown content with ## headings and short paragraphs"
+  "title": "Your own plain-English title",
+  "tags": ["tag", "tag"],
+  "excerpt": "One or two sentences for preview cards.",
+  "content": "Full markdown body with ## headings and inline [text](url) links."
 }}"""
 
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=[
             {
                 "role": "system",
-                "content": "You are a community tech news contributor, sharing exciting discoveries with fellow developers. Write with enthusiasm like sharing cool finds with friends. Always respond with valid JSON only, no markdown code blocks."
+                "content": "You are a staff engineer writing for Bitroot's Newslogger. Audience is shipping engineers at startups. Write clearly, state facts, note tradeoffs, cite inline. Respond with valid JSON only, no markdown code blocks."
             },
             {
                 "role": "user",
                 "content": prompt
             }
         ],
-        temperature=0.7,
+        temperature=0.9,
         max_tokens=4096,
     )
 
@@ -742,6 +938,11 @@ Return ONLY a JSON object with these fields (no markdown code blocks, no extra t
         logger.error(f"Response text: {response_text[:1000]}")
         raise ValueError(f"Could not parse JSON from response: {str(e)}")
 
+    # Strip any markdown links the model produced pointing at URLs outside the
+    # whitelist — belt-and-braces against URL hallucination.
+    if parsed.get("content"):
+        parsed["content"] = sanitize_inline_links(parsed["content"], allowed_urls)
+
     # Log parsed/generated post data
     logger.info("=" * 60)
     logger.info("GENERATED POST DATA")
@@ -779,6 +980,15 @@ def create_post_file(post_data, source_urls, image_url=None, source_excerpt=None
 
     # Use source excerpt if available, fallback to AI-generated excerpt
     excerpt = source_excerpt if source_excerpt else post_data.get("excerpt", "")
+
+    # Self-host the cover image so cards don't break when the remote
+    # og:image/CDN URL later dies. Keep the remote URL only as a fallback.
+    if image_url and image_url.startswith("http"):
+        local_image = download_image(image_url, f"{today}-{slug}")
+        if local_image:
+            image_url = local_image
+        else:
+            logger.warning(f"Keeping remote image URL (download failed): {image_url}")
 
     # Download video/GIF if available (to avoid hotlink blocking)
     local_video = None
