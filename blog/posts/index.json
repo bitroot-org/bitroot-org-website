@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 334,
+  "count": 335,
   "posts": [
     "2026-08-24-chinese-ai-catching-up-faster-ox-alpha-and-glm-rev.md",
+    "2026-08-24-ai-copyright-fair-use-2026-what-founders-should-kn.md",
     "2026-08-22-mcp-stateless-architecture-how-protocol-redesign-e.md",
     "2026-08-21-claude-academy-vs-chatgpt-free-ai-education-platfo.md",
     "2026-08-21-chatgpt-apple-messages-plugin-what-outsourcing-com.md",
@@ -352,6 +353,22 @@
       "image": "https://oxalpha.com/img/hero.webp",
       "sources": [],
       "readTime": "7 min",
+      "shortId": 335
+    },
+    {
+      "filename": "2026-08-24-ai-copyright-fair-use-2026-what-founders-should-kn.md",
+      "slug": "2026-08-24-ai-copyright-fair-use-2026-what-founders-should-kn",
+      "url": "/blog/2026-08-24-ai-copyright-fair-use-2026-what-founders-should-kn/",
+      "title": "AI Copyright Fair Use 2026: What Founders Should Know",
+      "date": "2026-08-24",
+      "published_at": "2026-08-24T07:57:25.339Z",
+      "tags": [
+        "Copyright"
+      ],
+      "excerpt": "Anthropic won on fair use, Ross Intelligence didn't. The difference: whether your AI product competes with the market its training data came from.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZiyWll9kiPV6zs704tdHeyqiESJZbtR6AmWBCmcoOpw&s=10",
+      "sources": [],
+      "readTime": "4 min",
       "shortId": 334
     },
     {
