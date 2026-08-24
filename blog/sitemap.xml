@@ -2,8 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bitroot.org/blog/</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bitroot.org/blog/2026-08-24-chinese-ai-catching-up-faster-ox-alpha-and-glm-rev/</loc>
+    <lastmod>2026-08-24</lastmod>
   </url>
   <url>
     <loc>https://bitroot.org/blog/2026-08-22-mcp-stateless-architecture-how-protocol-redesign-e/</loc>

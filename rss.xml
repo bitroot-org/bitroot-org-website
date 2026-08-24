@@ -5,8 +5,17 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 22 Aug 2026 05:38:53 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2026 07:29:34 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chinese AI Catching Up Faster: Ox Alpha and GLM Reveal the Shift</title>
+      <link>https://bitroot.org/blog/2026-08-24-chinese-ai-catching-up-faster-ox-alpha-and-glm-rev/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-08-24-chinese-ai-catching-up-faster-ox-alpha-and-glm-rev/</guid>
+      <description>For years, the consensus held: China is years behind. The US owns the frontier. American labs lead on benchmarks, talent, compute, and investment.</description>
+      <pubDate>Mon, 24 Aug 2026 07:28:46 +0000</pubDate>
+      <category>AI</category>
+      <enclosure url="https://oxalpha.com/img/hero.webp" type="image/webp" length="0" />
+    </item>
     <item>
       <title>MCP Stateless Architecture: How Protocol Redesign Enables Scale-to-Zero</title>
       <link>https://bitroot.org/blog/2026-08-22-mcp-stateless-architecture-how-protocol-redesign-e/</link>
