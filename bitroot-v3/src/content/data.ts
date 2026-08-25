@@ -335,7 +335,7 @@ export const products: Item[] = productCatalog.map((p) => ({
   summary: p.tagline,
   tags: [p.category],
   updatedAt: p.releases?.[0]?.date ?? p.launchedAt ?? "2026-05-01",
-  href: `/products#${p.slug}`,
+  href: `/products/${p.slug}`,
 }));
 
 export const tools: Item[] = [

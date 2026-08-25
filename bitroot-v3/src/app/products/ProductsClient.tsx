@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { identify, today, track } from "@/lib/analytics";
 import { subscribeNewsletter } from "@/lib/forms";
 import Container from "@/components/ui/Container";
@@ -719,8 +720,16 @@ function ProductCard({
         <span className="font-mono text-[10.5px] uppercase tracking-wider text-ink-4">
           {product.category}
         </span>
-        <CardAction product={product} onOpen={onOpen} />
+        <span className="relative z-10">
+          <CardAction product={product} onOpen={onOpen} />
+        </span>
       </div>
+
+      <Link
+        href={`/products/${product.slug}`}
+        aria-label={`View ${product.name}`}
+        className="absolute inset-0 z-[1]"
+      />
     </article>
   );
 }

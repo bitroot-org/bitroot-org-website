@@ -2,8 +2,9 @@ import Link from "next/link";
 import Container from "@/components/ui/Container";
 import Tag from "@/components/ui/Tag";
 import ClubNudge from "@/components/ui/ClubNudge";
+import JsonLd from "@/components/JsonLd";
 import { guides } from "@/content/data";
-import { buildMetadata } from "@/lib/seo";
+import { buildMetadata, breadcrumbJsonLd, siteUrl } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   title: "Guides — tactical walkthroughs for founders",
@@ -11,6 +12,17 @@ export const metadata = buildMetadata({
     "Zero-fluff tactical walkthroughs for founders. Real code, reproducible steps, actual timestamps.",
   path: "/guides/",
 });
+
+const guidesItemListJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  itemListElement: guides.map((guide, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: guide.title,
+    url: `${siteUrl}${guide.href}`,
+  })),
+};
 
 const difficultyStyle = {
   starter: "bg-live-bg border-green-200 text-live",
@@ -21,6 +33,13 @@ const difficultyStyle = {
 export default function GuidesPage() {
   return (
     <>
+      <JsonLd data={guidesItemListJsonLd} />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Guides", path: "/guides/" },
+        ])}
+      />
       <section className="pt-14 pb-10 border-b border-line bg-paper-2/40 relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-[0.035] pointer-events-none"

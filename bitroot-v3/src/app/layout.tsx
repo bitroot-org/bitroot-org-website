@@ -9,6 +9,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import { PageFadeReset } from "@/components/ui/FadeLink";
+import SignupGatePopup from "@/components/gate/SignupGatePopup";
 import { siteName, siteUrl } from "@/lib/seo";
 import "./globals.css";
 
@@ -53,10 +54,12 @@ export const metadata: Metadata = {
     url: "./",
     siteName,
     type: "website",
+    locale: "en_IN",
     images: [{ url: "/og.png", width: 1200, height: 630, alt: "Bitroot" }],
   },
   twitter: {
     card: "summary_large_image",
+    site: "@BitrootIndia",
   },
 };
 
@@ -98,6 +101,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <SignupGatePopup />
       </body>
     </html>
   );
