@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 25 Aug 2026 12:48:50 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Aug 2026 13:07:42 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OpenAI's Safety Theater: Why 'Safe and Aligned' Deflects from the Real Privacy Tradeoff</title>
@@ -25,6 +25,15 @@
       <category>AI</category>
       <category>Privacy</category>
       <enclosure url="https://wicsubhjhensvosjymlj.supabase.co/storage/v1/object/public/wordpress-migration/user-uploads/upload-1787598106065-139e4f67.png" type="image/png" length="0" />
+    </item>
+    <item>
+      <title>How Much Control Are You Willing to Give an LLM Over Your Digital Life?</title>
+      <link>https://bitroot.org/blog/2026-08-25-how-much-control-are-you-willing-to-give-an-llm-ov/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-08-25-how-much-control-are-you-willing-to-give-an-llm-ov/</guid>
+      <description>The pitch for AI agents is simple: Give the model access to your email, calendar, Slack, documents—basically your digital life. In exchange, it handles your work for you. Autonomy in exchange for convenience.</description>
+      <pubDate>Tue, 25 Aug 2026 13:06:55 +0000</pubDate>
+      <category>LLM</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/08/Screenshot-2026-08-23-at-8.41.55-PM.png" type="image/png" length="0" />
     </item>
     <item>
       <title>GTA Bangalore AI Video: Who Made It and Why It's Going Viral</title>
