@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 342,
+  "count": 343,
   "posts": [
+    "2026-08-25-instinct-ai-privacy-why-broad-access-is-non-negoti.md",
     "2026-08-24-gta-bangalore-ai-video-who-made-it-and-why-its-goi.md",
     "2026-08-24-chinese-ai-catching-up-faster-ox-alpha-and-glm-rev.md",
     "2026-08-24-ai-copyright-fair-use-2026-what-founders-should-kn.md",
@@ -346,6 +347,23 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-08-25-instinct-ai-privacy-why-broad-access-is-non-negoti.md",
+      "slug": "2026-08-25-instinct-ai-privacy-why-broad-access-is-non-negoti",
+      "url": "/blog/2026-08-25-instinct-ai-privacy-why-broad-access-is-non-negoti/",
+      "title": "Instinct AI Privacy: Why Broad Access Is Non-Negotiable",
+      "date": "2026-08-25",
+      "published_at": "2026-08-25T05:13:42.657Z",
+      "tags": [
+        "AI",
+        "Privacy"
+      ],
+      "excerpt": "On August 22, Instinct went viral. A personal AI assistant that felt \"like magic\"\u2014you text it, it calls you back, it books appointments, sends emails, manages your inbox. Early testers called it \"the most exciting launch since OpenClaw.\" Investors (Kleiner Perkins, Conviction) were backing it. The demos were genuinely impressive.",
+      "image": "https://wicsubhjhensvosjymlj.supabase.co/storage/v1/object/public/wordpress-migration/user-uploads/upload-1787598106065-139e4f67.png",
+      "sources": [],
+      "readTime": "7 min",
+      "shortId": 343
+    },
     {
       "filename": "2026-08-24-gta-bangalore-ai-video-who-made-it-and-why-its-goi.md",
       "slug": "2026-08-24-gta-bangalore-ai-video-who-made-it-and-why-its-goi",
