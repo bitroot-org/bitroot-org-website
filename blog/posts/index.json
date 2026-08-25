@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 343,
+  "count": 344,
   "posts": [
+    "2026-08-25-openais-safety-theater-why-safe-and-aligned-deflec.md",
     "2026-08-25-instinct-ai-privacy-why-broad-access-is-non-negoti.md",
     "2026-08-24-gta-bangalore-ai-video-who-made-it-and-why-its-goi.md",
     "2026-08-24-chinese-ai-catching-up-faster-ox-alpha-and-glm-rev.md",
@@ -347,6 +348,22 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-08-25-openais-safety-theater-why-safe-and-aligned-deflec.md",
+      "slug": "2026-08-25-openais-safety-theater-why-safe-and-aligned-deflec",
+      "url": "/blog/2026-08-25-openais-safety-theater-why-safe-and-aligned-deflec/",
+      "title": "OpenAI's Safety Theater: Why 'Safe and Aligned' Deflects from the Real Privacy Tradeoff",
+      "date": "2026-08-25",
+      "published_at": "2026-08-25T12:48:01.859Z",
+      "tags": [
+        "OpenAI"
+      ],
+      "excerpt": "On August 25, 2026, TechCrunch published an exclusive interview with Thibault Sottiaux, OpenAI's head of product. The conversation covered agents, user experience, pricing strategy, and market leadership. ChatGPT Work had just hit 20 million users. Everything felt inevitable, triumphant.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/08/Thibault-headshot.jpg?resize=1280,800",
+      "sources": [],
+      "readTime": "6 min",
+      "shortId": 344
+    },
     {
       "filename": "2026-08-25-instinct-ai-privacy-why-broad-access-is-non-negoti.md",
       "slug": "2026-08-25-instinct-ai-privacy-why-broad-access-is-non-negoti",
