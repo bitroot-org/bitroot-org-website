@@ -12,6 +12,7 @@ import {
   type GuideReference,
 } from "@/content/guides-content";
 import MarkdownBody from "@/components/MarkdownBody";
+import GatedContent from "@/components/gate/GatedContent";
 import generatedBodies from "@/content/generated/bodies.json";
 
 const bodies = generatedBodies as Record<string, string>;
@@ -405,7 +406,9 @@ export default async function GuideDetailPage({
         <section className="py-14">
           <Container size="narrow">
             <article className="min-w-0 max-w-[720px] mx-auto w-full">
-              <MarkdownBody source={mdBody} />
+              <GatedContent kind="guide">
+                <MarkdownBody source={mdBody} />
+              </GatedContent>
               <ClubNudge />
             </article>
           </Container>
@@ -486,14 +489,16 @@ export default async function GuideDetailPage({
 
                 {/* Article */}
                 <article className="min-w-0 max-w-[680px] mx-auto w-full">
-                  {content.body.map((node, i) => renderNode(node, i))}
+                  <GatedContent kind="guide">
+                    {content.body.map((node, i) => renderNode(node, i))}
 
-                  {/* Mobile/tablet: referenced tools collapse below the article */}
-                  {content.referenced && content.referenced.length > 0 && (
-                    <div className="lg:hidden mt-12 pt-8 border-t border-line">
-                      <ReferencedList refs={content.referenced} />
-                    </div>
-                  )}
+                    {/* Mobile/tablet: referenced tools collapse below the article */}
+                    {content.referenced && content.referenced.length > 0 && (
+                      <div className="lg:hidden mt-12 pt-8 border-t border-line">
+                        <ReferencedList refs={content.referenced} />
+                      </div>
+                    )}
+                  </GatedContent>
 
                   <ClubNudge>
                     <>

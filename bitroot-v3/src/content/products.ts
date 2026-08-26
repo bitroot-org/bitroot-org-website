@@ -28,6 +28,9 @@ export type Release = {
   highlights?: string[];
 };
 
+export type ProductFeature = { title: string; description: string };
+export type ProductFaq = { q: string; a: string };
+
 export type Product = {
   slug: string;
   name: string;
@@ -47,6 +50,10 @@ export type Product = {
   launchedAt?: string;
   featuredLaunch?: boolean;
   releases?: Release[];
+  /** Detail-page-only content — optional so other catalog products don't need it yet. */
+  detailTagline?: string;
+  features?: ProductFeature[];
+  faq?: ProductFaq[];
 };
 
 const productsFallback: Product[] = [
@@ -55,7 +62,7 @@ const productsFallback: Product[] = [
     name: "BitStudio",
     tagline: "A vibe studio for your content.",
     description:
-      "Pick the visual mood, choose your format and settings, and BitStudio spits out social-media-ready posts that match. Less design grind, more creative direction.",
+      "AI marketing partner. Reels, photoshoots, posts, ads and planning — one app, trained on your brand.",
     category: "Content studio",
     status: "early-access",
     icon: { from: "#7782ee", to: "#3a44c4", glyph: "studio" },
@@ -64,6 +71,58 @@ const productsFallback: Product[] = [
     waitlistHref: "#waitlist",
     launchedAt: "2026-05-17",
     featuredLaunch: true,
+    detailTagline:
+      "The AI image generator, AI logo generator, and AI photo generator for your brand — trained once, applied to every post, ad, and photoshoot.",
+    features: [
+      {
+        title: "AI photo & product shoots",
+        description:
+          "Turn one product shot into a full AI photoshoot. BitStudio's AI photo generator and AI picture generator create studio-quality images without a camera or a studio.",
+      },
+      {
+        title: "AI image generator for every post",
+        description:
+          "Generate AI images and text-to-image AI content matched to your brand's visual mood — from Reels covers to carousel posts, one image generator that understands your identity.",
+      },
+      {
+        title: "AI logo generator & brand assets",
+        description:
+          "Need a fresh mark? BitStudio's AI logo generator and AI logo maker create AI-generated logo options in your brand palette — an AI logo creator built into the same app as your content.",
+      },
+      {
+        title: "Free AI image generator to start",
+        description:
+          "Try it as a free AI image generator — unlimited drafts on your first vibe, forever, before you commit to a paid plan.",
+      },
+      {
+        title: "Ads, Reels & planning in one app",
+        description:
+          "One of the few AI image generators built for teams who need ads, Reels, and a content calendar in one place instead of five separate tools.",
+      },
+      {
+        title: "Trained on your brand, not a generic prompt",
+        description:
+          "Unlike a generic AI logo creator or image generator AI, BitStudio learns your brand's mood once, so every AI-created image and AI-generated image stays consistent — no re-prompting every time.",
+      },
+    ],
+    faq: [
+      {
+        q: "Is BitStudio a free AI image generator?",
+        a: "Yes — BitStudio's free plan includes unlimited drafts on one brand vibe, forever. Paid plans unlock more vibes, custom presets, and cohort templates.",
+      },
+      {
+        q: "Can BitStudio generate AI images from an existing photo?",
+        a: "Yes. Upload a product photo or reference image and BitStudio generates AI images from your image, matched to your chosen visual mood — a faster starting point than prompting from scratch in a tool like Midjourney AI.",
+      },
+      {
+        q: "Does BitStudio include an AI logo generator?",
+        a: "Yes. BitStudio's AI logo generator and logo maker create AI-generated logo concepts in your brand colors, alongside your social content, so your identity and your posts stay consistent.",
+      },
+      {
+        q: "What's the difference between BitStudio and other AI image generators?",
+        a: "Most AI image generators create one-off images from a prompt. BitStudio is trained on your brand's specific visual mood, so every image, logo, post, and ad it generates matches — not just a single AI picture.",
+      },
+    ],
     releases: [
       {
         version: "0.5",
@@ -80,15 +139,77 @@ const productsFallback: Product[] = [
   {
     slug: "tripsky",
     name: "Trips.ky",
-    tagline: "Plan your next trip in five minutes.",
+    tagline: "Plan your perfect trip in minutes.",
     description:
-      "A travel planner that gets you from idea to itinerary fast. Skip the spreadsheets and the open tabs — answer a few questions and walk away with a plan.",
+      "AI trip planner for Indian passport holders — visa-free and visa-on-arrival countries, real day-by-day itineraries, and every cost shown in INR.",
     category: "Travel",
-    status: "waitlist",
+    status: "live",
     icon: { from: "#7ec8ff", to: "#1e6fd9", glyph: "trip" },
     free: "Three trips a month, forever",
     community: "Group trips + private founder retreats",
-    waitlistHref: "#waitlist",
+    url: "https://tripsky.bitroot.in/",
+    detailTagline:
+      "Day-by-day plans with real costs in INR — the AI itinerary planner built around visa-free and visa-on-arrival countries for Indian passport holders.",
+    features: [
+      {
+        title: "Visa-smart destinations",
+        description:
+          "Filter destinations by visa-free travel for Indian passport, visa on arrival, and e-visa countries — so you never shortlist a trip that needs a visa you don't have time to get.",
+      },
+      {
+        title: "AI itineraries, built with Gemini",
+        description:
+          "Answer a few questions and Trips.ky's AI trip planner generates a detailed day-by-day itinerary — flights, hotels, and restaurants, without the open tabs.",
+      },
+      {
+        title: "Every cost shown in INR",
+        description:
+          "Every flight, hotel, meal, and activity is priced in Indian Rupees from the start — no mental currency conversion, no surprises.",
+      },
+      {
+        title: "Smart date planning",
+        description:
+          "Flexible date selection with ideal-timing recommendations, so you know the best window to travel before you book anything.",
+      },
+      {
+        title: "Safety advisories",
+        description:
+          "Real-time travel alerts with India-specific guidance for every destination you're considering.",
+      },
+      {
+        title: "Weather intelligence & packing",
+        description:
+          "Temperature, rainfall, and packing recommendations built into every itinerary, tuned to your travel dates.",
+      },
+      {
+        title: "Veg-friendly restaurant filtering",
+        description:
+          "Filter restaurant picks by Pure Veg, Veg Priority, or Non-Veg — dietary preferences built into the plan, not an afterthought.",
+      },
+      {
+        title: "Multi-country & overseas trip planning",
+        description:
+          "Works as a multi-country trip planner and international trip planner alike — plan a single-country getaway or a multi-stop overseas trip in the same flow.",
+      },
+    ],
+    faq: [
+      {
+        q: "Which countries can Indian passport holders visit without a visa?",
+        a: "Indian passport holders have visa-free or visa-on-arrival access to around 58 countries, including several in Asia, Africa, and the Pacific. Trips.ky filters destinations by visa-free, visa-on-arrival, and e-visa status for Indian passports, so you can shortlist trips that don't need a visa you'd have to apply for in advance.",
+      },
+      {
+        q: "Is there a free AI trip planner for Indian travelers?",
+        a: "Yes — Trips.ky is free to start, no card needed. You get a full account for the complete AI-generated plan, with three trips a month on the free tier.",
+      },
+      {
+        q: "Does Trips.ky show visa-on-arrival countries for Indian passport holders?",
+        a: "Yes. Trips.ky's destination filters are built specifically around visa-on-arrival and visa-free countries for Indian passports, so you can plan around where you can actually go without a pre-approved visa.",
+      },
+      {
+        q: "Can Trips.ky plan a multi-country international trip?",
+        a: "Yes — Trips.ky works as a multi-country trip planner and international trip planner, generating a single day-by-day itinerary across multiple destinations, with flights, hotels, and restaurants priced in INR throughout.",
+      },
+    ],
   },
   {
     slug: "ascii-gen",

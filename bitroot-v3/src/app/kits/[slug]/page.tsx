@@ -10,6 +10,7 @@ import type { KitFeature } from "@/content/kits-content";
 import JsonLd from "@/components/JsonLd";
 import { buildMetadata, breadcrumbJsonLd } from "@/lib/seo";
 import MarkdownBody from "@/components/MarkdownBody";
+import GatedContent from "@/components/gate/GatedContent";
 import generatedBodies from "@/content/generated/bodies.json";
 
 const bodies = generatedBodies as Record<string, string>;
@@ -146,7 +147,9 @@ export default async function KitDetailPage({
         <section className="py-14">
           <Container size="narrow">
             <article className="min-w-0 max-w-[720px] mx-auto w-full">
-              <MarkdownBody source={mdBody} />
+              <GatedContent kind="kit">
+                <MarkdownBody source={mdBody} />
+              </GatedContent>
               <ClubNudge />
             </article>
           </Container>
@@ -159,25 +162,6 @@ export default async function KitDetailPage({
               <p className="text-[17px] text-ink-2 leading-relaxed">
                 {content.oneLiner}
               </p>
-            </Container>
-          </section>
-
-          {/* Install */}
-          <section className="pb-12">
-            <Container size="narrow">
-              <div className="flex items-baseline justify-between mb-3">
-                <h2 className="font-display text-[26px] font-bold text-ink tracking-tight">
-                  Install
-                </h2>
-                <span className="text-[11px] font-mono text-ink-4 uppercase tracking-wider">
-                  ~60 seconds
-                </span>
-              </div>
-              <CodeBlock
-                code={content.installCommand}
-                lang="bash"
-                filename="terminal"
-              />
             </Container>
           </section>
 
@@ -231,6 +215,26 @@ export default async function KitDetailPage({
                   </div>
                 ))}
               </div>
+            </Container>
+          </section>
+
+          <GatedContent kind="kit">
+          {/* Install */}
+          <section className="pb-12">
+            <Container size="narrow">
+              <div className="flex items-baseline justify-between mb-3">
+                <h2 className="font-display text-[26px] font-bold text-ink tracking-tight">
+                  Install
+                </h2>
+                <span className="text-[11px] font-mono text-ink-4 uppercase tracking-wider">
+                  ~60 seconds
+                </span>
+              </div>
+              <CodeBlock
+                code={content.installCommand}
+                lang="bash"
+                filename="terminal"
+              />
             </Container>
           </section>
 
@@ -380,10 +384,13 @@ export default async function KitDetailPage({
                   star on github →
                 </a>
               </div>
-
-              <ClubNudge />
             </Container>
           </section>
+          </GatedContent>
+
+          <Container size="narrow">
+            <ClubNudge />
+          </Container>
         </>
       ) : (
         <section className="py-20">

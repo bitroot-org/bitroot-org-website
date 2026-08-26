@@ -12,10 +12,6 @@ export default function HeroTicker() {
   const items = recentlyUpdated(10);
   if (items.length === 0) return null;
 
-  // Duplicate the list once — the marquee keyframe translates -50%, so the
-  // second copy seamlessly takes over when the first scrolls off.
-  const track = [...items, ...items];
-
   return (
     <section
       aria-label="Recently updated"
@@ -35,8 +31,8 @@ export default function HeroTicker() {
             className="marquee-track flex items-center gap-8 py-3 whitespace-nowrap will-change-transform"
             style={{ animationDuration: "10s" }}
           >
-            {track.map((item, i) => (
-              <li key={`${item.slug}-${i}`} className="flex items-center gap-3">
+            {items.map((item) => (
+              <li key={item.slug} className="flex items-center gap-3">
                 <Link
                   href={item.href}
                   className="group inline-flex items-center gap-2.5"
@@ -50,6 +46,23 @@ export default function HeroTicker() {
                   <span className="text-paper/60 text-[12px]" aria-hidden>↗</span>
                 </Link>
                 <span className="text-paper/35" aria-hidden>·</span>
+              </li>
+            ))}
+            {/* Visually-duplicated for the seamless -50% marquee loop; hidden from crawlers/AX to avoid duplicate-link/content signals. */}
+            {items.map((item) => (
+              <li
+                key={`${item.slug}-dup`}
+                aria-hidden
+                className="flex items-center gap-3"
+              >
+                <span className="group inline-flex items-center gap-2.5">
+                  <span className="text-[10.5px] font-mono font-semibold uppercase tracking-[0.18em] text-paper/70">
+                    {categoryLabel[item.category]}
+                  </span>
+                  <span className="text-[13px] text-paper">{item.title}</span>
+                  <span className="text-paper/60 text-[12px]">↗</span>
+                </span>
+                <span className="text-paper/35">·</span>
               </li>
             ))}
           </ul>

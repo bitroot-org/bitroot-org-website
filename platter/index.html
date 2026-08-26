@@ -3079,6 +3079,103 @@
           <p class="p-persona__desc">Solo builders who want premium resources and a community of like-minded makers.</p>
         </div>
       </div>
+
+    </div>
+  </section>
+
+  <!-- ====== VALUE CALCULATOR ====== -->
+  <section id="calculator" class="p-section p-calc">
+    <div class="p-container">
+
+      <div class="p-section__label p-calc__label reveal">Value Calculator</div>
+      <h2 class="p-calc__title reveal reveal-delay-1">What's Your Startup Stack <em style="font-style:normal;background:var(--yellow);color:var(--black);padding:2px 8px;">Really</em> Costing You?</h2>
+      <p class="p-calc__subtitle reveal reveal-delay-2">Tick the tools you use. See what you're paying at retail — and what Platter members actually pay through our partner deals.</p>
+
+      <!-- Quick presets -->
+      <div class="p-calc__presets reveal reveal-delay-2">
+        <button class="p-calc__preset-btn" data-preset="dev">Dev Stack</button>
+        <button class="p-calc__preset-btn" data-preset="growth">Growth Stack</button>
+        <button class="p-calc__preset-btn" data-preset="founder">Full Founder Pack</button>
+        <button class="p-calc__preset-btn" data-preset="none">Clear All</button>
+      </div>
+
+      <!-- Tool cards — rendered by JS -->
+      <div class="p-calc__grid reveal reveal-delay-3" id="calcGrid"></div>
+
+      <!-- Results panel -->
+      <div class="p-calc__results reveal">
+        <div class="p-calc__results-inner">
+          <div class="p-calc__col">
+            <div class="p-calc__col-label">Without Platter</div>
+            <div class="p-calc__total p-calc__total--without" id="calcWithout">$0</div>
+            <div class="p-calc__col-sub">/mo at retail price</div>
+          </div>
+          <div class="p-calc__divider">→</div>
+          <div class="p-calc__col">
+            <div class="p-calc__col-label">With Platter</div>
+            <div class="p-calc__total p-calc__total--with" id="calcWith">$0</div>
+            <div class="p-calc__col-sub">/mo est. with deals</div>
+          </div>
+          <div class="p-calc__divider">→</div>
+          <div class="p-calc__savings-col">
+            <div class="p-calc__savings-label">You Save</div>
+            <div class="p-calc__savings-amt" id="calcSavings">$0</div>
+            <div class="p-calc__savings-year" id="calcSavingsYear">&nbsp;</div>
+          </div>
+        </div>
+        <div class="p-calc__cta-bar">
+          <div class="p-calc__cta-hint" id="calcHint">← Select the tools you use to calculate your savings</div>
+          <a href="#pricing" class="p-btn p-btn--primary">Unlock These Deals →</a>
+        </div>
+      </div>
+
+      <div class="p-calc__disclaimer">* Estimates based on publicly available startup deal programs from individual tools (Notion for Startups, Figma for Startups, Linear for Startups, etc.). Platter curates and simplifies access to these programs. Actual savings and eligibility may vary per tool and plan.</div>
+
+    </div>
+  </section>
+
+  <!-- ====== PRICING ====== -->
+  <section id="pricing" class="p-section p-pricing">
+    <div class="p-container">
+      <div class="p-pricing__header">
+        <div class="p-section__label p-pricing__label reveal">Pricing</div>
+        <h2 class="p-pricing__title reveal reveal-delay-1">Simple, Transparent Plans</h2>
+        <p class="p-pricing__subtitle reveal reveal-delay-2">One-time payment. No auto-renew. No credit card lock-in.</p>
+      </div>
+      <div class="p-pricing__cards">
+        <!-- Annual -->
+        <div class="p-price-card reveal">
+          <div class="p-price-card__name">Annual</div>
+          <div class="p-price-card__price-original" data-price-original="250"></div>
+          <div class="p-price-card__price" data-price="180" data-suffix="/yr"></div>
+          <div class="p-price-card__period">Newlogger Pro + Product Pass access</div>
+          <ul class="p-price-card__features">
+            <li>Everything in Monthly</li>
+            <li data-price-text="100000">$100,000+ in products</li>
+            <li>Access to the growing Platter library</li>
+          </ul>
+          <form class="p-price-card__razorpay"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_SFHM3mq9j2k3Oy" async></script></form>
+        </div>
+        <!-- Insider -->
+        <div class="p-price-card p-price-card--featured reveal reveal-delay-1">
+          <div class="p-price-card__popular">Best Value + AI Tools</div>
+          <div class="p-price-card__name">Insider</div>
+          <div class="p-price-card__price-original" data-price-original="350"></div>
+          <div class="p-price-card__price" data-price="250" data-suffix="/yr"></div>
+          <div class="p-price-card__period">Priority Support email</div>
+          <ul class="p-price-card__features">
+            <li>Everything in Annual</li>
+            <li>Priority access for all tools</li>
+            <li>Exclusive Insider-only tools</li>
+          </ul>
+          <form class="p-price-card__razorpay p-price-card__razorpay--featured"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_SFHTAEn8dxbYwn" async></script></form>
+        </div>
+      </div>
+      <div class="p-pricing__toggle reveal reveal-delay-2" id="currency-toggle">
+        <span class="p-pricing__toggle-label" id="toggle-local"></span>
+        <button class="p-pricing__toggle-switch" id="toggle-switch" aria-label="Toggle currency"></button>
+        <span class="p-pricing__toggle-label" id="toggle-usd">USD</span>
+      </div>
     </div>
   </section>
 
@@ -3547,14 +3644,15 @@
       }
 
       // Payment button IDs by currency
+      // STAGING: Razorpay test mode button IDs
       var paymentButtons = {
         USD: {
-          annual: 'pl_SGnC8pc0cDDPzV',
-          insider: 'pl_SGnEvihAQQ3J1G'
+          annual: 'pl_SFHM3mq9j2k3Oy',
+          insider: 'pl_SFHTAEn8dxbYwn'
         },
         INR: {
-          annual: 'pl_SFHnw369dlKoRo',
-          insider: 'pl_SFHvTPVWHfOwSR'
+          annual: 'pl_SFHM3mq9j2k3Oy',
+          insider: 'pl_SFHTAEn8dxbYwn'
         }
       };
 

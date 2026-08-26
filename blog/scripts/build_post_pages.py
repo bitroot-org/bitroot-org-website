@@ -325,11 +325,13 @@ def render_page(meta, content, slug, prev_post, next_post):
     <meta property="og:url" content="{canonical}">
     <meta property="og:image" content="{esc(og_image)}">
     <meta property="og:site_name" content="Bitroot Newslogger">
+    <meta property="og:locale" content="en_IN">
     <meta property="article:published_time" content="{esc(published_iso)}">
 {article_tags}
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@BitrootIndia">
     <meta name="twitter:title" content="{esc(title)}">
     <meta name="twitter:description" content="{esc(excerpt)}">
     <meta name="twitter:image" content="{esc(og_image)}">
