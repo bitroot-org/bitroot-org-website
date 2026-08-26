@@ -1,16 +1,14 @@
 ---
 date: '2026-08-04'
-excerpt: 'This guide is for solo founders, pre-seed teams, and anyone building on
-  runway. It answers the question you actually need answered: "Which Claude model
-  can I afford right now, and when do I upgrade?"'
-image: null
+excerpt: 'This guide is for solo founders, pre-seed teams, and anyone building on runway. It answers the question you actually need answered: "Which Claude model can I afford right now, and when do I upgrade?"'
+image: https://static01.nyt.com/images/2026/01/21/multimedia/CLAUDE-CODE-1-pztw/CLAUDE-CODE-1-pztw-articleLarge.jpg?quality=75&auto=webp&disable=upscale
 published_at: '2026-08-04T08:52:55.675Z'
 sources:
 - https://claude.com/blog/claude-models-explained-choosing-the-best-model-for-your-use-case
 tags:
-- AI
-- Claude
-- API
+- 'AI'
+- 'Claude'
+- 'API'
 title: 'Claude Model Selection for Founders: The $100-to-$10K Runways'
 ---
 
