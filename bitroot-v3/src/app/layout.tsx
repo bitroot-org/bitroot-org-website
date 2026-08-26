@@ -39,27 +39,40 @@ const instrumentSerif = Instrument_Serif({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Bitroot — The founder's toolbox: free kits, guides & tools",
+    default: "Free Tools, Kits & Guides for Startup Founders — Bitroot",
     template: "%s · Bitroot",
   },
   description:
-    "Free kits, stacks, guides, and tools for founders shipping their first products. Take what you need.",
+    "Free tools, kits, guides and AI resources for founders shipping their first product. No paywall, no email gate. Built by founders, for founders.",
   alternates: {
     canonical: "./",
   },
   openGraph: {
-    title: "Bitroot — The founder's toolbox: free kits, guides & tools",
+    title: "Free Tools, Kits & Guides for Startup Founders — Bitroot",
     description:
-      "Free kits, stacks, guides, and tools for founders shipping their first products.",
+      "Free tools, kits, guides and AI resources for founders shipping their first product. No paywall, no email gate. Built by founders, for founders.",
     url: "./",
     siteName,
     type: "website",
     locale: "en_IN",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Bitroot" }],
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Free tools kits and guides for startup founders — Bitroot",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     site: "@BitrootIndia",
+    images: [
+      {
+        url: "/og.png",
+        alt: "Free tools kits and guides for startup founders — Bitroot",
+      },
+    ],
   },
 };
 

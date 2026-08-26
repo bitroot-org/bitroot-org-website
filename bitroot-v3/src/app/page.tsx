@@ -9,10 +9,26 @@ import BuiltFor from "@/components/home/BuiltFor";
 import NewsloggerSection from "@/components/home/NewsloggerSection";
 // import QuotesSection from "@/components/home/QuotesSection"; // hidden until we have real quotes
 import ClubBanner from "@/components/home/ClubBanner";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbJsonLd, siteUrl } from "@/lib/seo";
+
+const homeItemListJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Free Tools and Guides for Founders",
+  url: siteUrl,
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Guides", url: `${siteUrl}/guides/` },
+    { "@type": "ListItem", position: 2, name: "Kits", url: `${siteUrl}/kits/` },
+    { "@type": "ListItem", position: 3, name: "Tools", url: `${siteUrl}/tools/` },
+  ],
+};
 
 export default function Home() {
   return (
     <>
+      <JsonLd data={homeItemListJsonLd} />
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }])} />
       <Hero />
       <HeroTicker />
       <LaneSection />

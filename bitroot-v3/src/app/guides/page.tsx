@@ -7,15 +7,21 @@ import { guides } from "@/content/data";
 import { buildMetadata, breadcrumbJsonLd, siteUrl } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Guides — tactical walkthroughs for founders",
+  title: "Free Startup Guides & Tactical Walkthroughs for Founders",
   description:
-    "Zero-fluff tactical walkthroughs for founders. Real code, reproducible steps, actual timestamps.",
+    "Free step-by-step guides for founders — real code, reproducible workflows, and tactics that actually work. No fluff, no paywall.",
   path: "/guides/",
+  image: {
+    url: "/images/guides-og.jpg",
+    alt: "Free startup guides and tactical walkthroughs for founders — Bitroot",
+  },
 });
 
 const guidesItemListJsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
+  name: "Guides – Tactical Walkthroughs for Founders",
+  url: `${siteUrl}/guides/`,
   itemListElement: guides.map((guide, i) => ({
     "@type": "ListItem",
     position: i + 1,

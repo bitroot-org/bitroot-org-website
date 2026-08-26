@@ -2,18 +2,43 @@ import Container from "@/components/ui/Container";
 import { kits } from "@/content/data";
 import KitsGrid from "@/components/kits/KitsGrid";
 import ClubNudge from "@/components/ui/ClubNudge";
-import { buildMetadata } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
+import { buildMetadata, breadcrumbJsonLd, siteUrl } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Starter Kits — clone-and-ship boilerplates",
+  title: "Free Starter Kits for Founders — Next.js, SaaS, AI Wrappers & More",
   description:
-    "Clone-and-ship boilerplates for founders. Next.js SaaS, AI wrappers, waitlists, Chrome extensions, and more. Free, opinionated, maintained.",
+    "Free clone-and-ship boilerplates for founders. Next.js SaaS, AI wrappers, waitlists, Chrome extensions and more. Opinionated, maintained, ready to ship.",
   path: "/kits/",
+  image: {
+    url: "/images/kits-og.jpg",
+    alt: "Free starter kits and boilerplates for founders — Bitroot",
+  },
 });
+
+const kitsItemListJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Starter Kits for Founders",
+  url: `${siteUrl}/kits/`,
+  itemListElement: kits.map((kit, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: kit.title,
+    url: `${siteUrl}${kit.href}`,
+  })),
+};
 
 export default function KitsPage() {
   return (
     <>
+      <JsonLd data={kitsItemListJsonLd} />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Kits", path: "/kits/" },
+        ])}
+      />
       <section className="pt-14 pb-10 border-b border-line bg-paper-2/40 relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-[0.035] pointer-events-none"
