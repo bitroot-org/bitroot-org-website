@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 26 Aug 2026 07:21:23 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Aug 2026 07:28:08 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mac Studio's 512GB Unified Memory: Should Founders Escape Cloud API Lock-In?</title>
@@ -17,16 +17,6 @@
       <category>API</category>
       <category>AI</category>
       <enclosure url="https://www.apple.com/newsroom/images/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/article/Apple-Mac-Studio-hero-260825_big.jpg.large_2x.jpg" type="image/jpeg" length="0" />
-    </item>
-    <item>
-      <title>Free AI Tools to Lock SMBs Into Platforms: Google's Gemini Omni Strategy</title>
-      <link>https://bitroot.org/blog/2026-08-26-free-ai-tools-to-lock-smbs-into-platforms-googles/</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/2026-08-26-free-ai-tools-to-lock-smbs-into-platforms-googles/</guid>
-      <description>Google announced Gemini Omni for Google Ads on August 25, 2026. The pitch: Free AI video generation directly in Asset Studio. Create, edit, and scale on-brand videos with a text prompt. No extra cost.</description>
-      <pubDate>Wed, 26 Aug 2026 07:06:15 +0000</pubDate>
-      <category>Gemini</category>
-      <category>AI</category>
-      <enclosure url="https://x.com/GoogleAds/status/2092265776883331131/video/1" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Apple's September 2026 Launch: Five New Products Coming Soon</title>
