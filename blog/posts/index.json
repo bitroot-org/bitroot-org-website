@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 347,
+  "count": 348,
   "posts": [
+    "2026-08-26-mac-studios-512gb-unified-memory-should-founders-e.md",
     "2026-08-26-free-ai-tools-to-lock-smbs-into-platforms-googles.md",
     "2026-08-26-apples-september-2026-launch-five-new-products-com.md",
     "2026-08-25-openais-safety-theater-why-safe-and-aligned-deflec.md",
@@ -351,6 +352,24 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-08-26-mac-studios-512gb-unified-memory-should-founders-e.md",
+      "slug": "2026-08-26-mac-studios-512gb-unified-memory-should-founders-e",
+      "url": "/blog/2026-08-26-mac-studios-512gb-unified-memory-should-founders-e/",
+      "title": "Mac Studio's 512GB Unified Memory: Should Founders Escape Cloud API Lock-In?",
+      "date": "2026-08-26",
+      "published_at": "2026-08-26T07:20:02.647Z",
+      "tags": [
+        "Cloud",
+        "API",
+        "AI"
+      ],
+      "excerpt": "Apple just announced Mac Studio with up to 512GB unified memory and M5 Ultra chips. The specs are impressive. But for founders, there's a more important implication: You can now run large language models locally. The question is: Should you?",
+      "image": "https://www.apple.com/newsroom/images/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/article/Apple-Mac-Studio-hero-260825_big.jpg.large_2x.jpg",
+      "sources": [],
+      "readTime": "5 min",
+      "shortId": 348
+    },
     {
       "filename": "2026-08-26-free-ai-tools-to-lock-smbs-into-platforms-googles.md",
       "slug": "2026-08-26-free-ai-tools-to-lock-smbs-into-platforms-googles",
