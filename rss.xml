@@ -5,10 +5,10 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 26 Aug 2026 11:57:28 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Aug 2026 05:26:25 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mac Studio's 512GB Unified Memory: Should Founders Escape Cloud API Lock-In?</title>
+      <title>Mac Studio M5 Ultra 512GB: Local AI vs. Cloud APIs</title>
       <link>https://bitroot.org/blog/2026-08-26-mac-studios-512gb-unified-memory-should-founders-e/</link>
       <guid isPermaLink="true">https://bitroot.org/blog/2026-08-26-mac-studios-512gb-unified-memory-should-founders-e/</guid>
       <description>Apple just announced Mac Studio with up to 512GB unified memory and M5 Ultra chips. The specs are impressive. But for founders, there's a more important implication: You can now run large language models locally. The question is: Should you?</description>
