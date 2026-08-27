@@ -8,7 +8,7 @@ tags:
 - 'Cloud'
 - 'API'
 - 'AI'
-title: 'Mac Studio''s 512GB Unified Memory: Should Founders Escape Cloud API Lock-In?'
+title: 'Mac Studio M5 Ultra 512GB: Local AI vs. Cloud APIs'
 ---
 
 Apple announced Mac Studio with up to 512GB unified memory and M5 Ultra chips.* The specs are impressive. But for founders, there's a more important implication: You can now run capable models locally—open-source alternatives like DeepSeek and LLaMA that previously required expensive GPU infrastructure. The question is: Should you?
