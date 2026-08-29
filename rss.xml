@@ -5,8 +5,17 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 29 Aug 2026 10:26:24 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 10:41:04 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenAI Is Cutting Off Cursor: What Developers Need to Know (And Why It Matters)</title>
+      <link>https://bitroot.org/blog/2026-08-29-openai-is-cutting-off-cursor-what-developers-need/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-08-29-openai-is-cutting-off-cursor-what-developers-need/</guid>
+      <description>If you're using Cursor with OpenAI models, you have 75 days to switch. The deadline is November 12. Understanding why this happened requires looking at what triggered it: a $60 billion acquisition and the contract clause built into their agreement.</description>
+      <pubDate>Sat, 29 Aug 2026 10:40:15 +0000</pubDate>
+      <category>M&amp;A</category>
+      <enclosure url="https://pbs.twimg.com/card_img/2093609064005595136/oPCjt-SG?format=jpg&amp;name=small" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Google Gemini 3.5 Flash vs. Cursor: Benchmark Comparison for Developers</title>
       <link>https://bitroot.org/blog/2026-08-29-google-gemini-3-5-flash-vs-cursor-benchmark-compar/</link>

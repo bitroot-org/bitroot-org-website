@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 347,
+  "count": 348,
   "posts": [
+    "2026-08-29-openai-is-cutting-off-cursor-what-developers-need.md",
     "2026-08-29-google-gemini-3-5-flash-vs-cursor-benchmark-compar.md",
     "2026-08-26-mac-studios-512gb-unified-memory-should-founders-e.md",
     "2026-08-25-openais-safety-theater-why-safe-and-aligned-deflec.md",
@@ -351,6 +352,22 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-08-29-openai-is-cutting-off-cursor-what-developers-need.md",
+      "slug": "2026-08-29-openai-is-cutting-off-cursor-what-developers-need",
+      "url": "/blog/2026-08-29-openai-is-cutting-off-cursor-what-developers-need/",
+      "title": "OpenAI Is Cutting Off Cursor: What Developers Need to Know (And Why It Matters)",
+      "date": "2026-08-29",
+      "published_at": "2026-08-29T10:40:15.786Z",
+      "tags": [
+        "M&A"
+      ],
+      "excerpt": "If you're using Cursor with OpenAI models, you have 75 days to switch. The deadline is November 12. Understanding why this happened requires looking at what triggered it: a $60 billion acquisition and the contract clause built into their agreement.",
+      "image": "https://pbs.twimg.com/card_img/2093609064005595136/oPCjt-SG?format=jpg&name=small",
+      "sources": [],
+      "readTime": "5 min",
+      "shortId": 348
+    },
     {
       "filename": "2026-08-29-google-gemini-3-5-flash-vs-cursor-benchmark-compar.md",
       "slug": "2026-08-29-google-gemini-3-5-flash-vs-cursor-benchmark-compar",
