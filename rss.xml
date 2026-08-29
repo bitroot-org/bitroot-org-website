@@ -5,8 +5,17 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 27 Aug 2026 05:26:25 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 10:26:24 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google Gemini 3.5 Flash vs. Cursor: Benchmark Comparison for Developers</title>
+      <link>https://bitroot.org/blog/2026-08-29-google-gemini-3-5-flash-vs-cursor-benchmark-compar/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-08-29-google-gemini-3-5-flash-vs-cursor-benchmark-compar/</guid>
+      <description>Google just launched Gemini 3.5 Flash with Antigravity 2.0. The benchmarks are impressive. Gemini 3.5 tops "most benchmarks," according to Google, including terminal bench and academic reasoning.</description>
+      <pubDate>Sat, 29 Aug 2026 10:25:35 +0000</pubDate>
+      <category>Coding</category>
+      <enclosure url="https://antigravity.google/assets/image/blog/3.5-Flash---Wide.png" type="image/png" length="0" />
+    </item>
     <item>
       <title>Mac Studio M5 Ultra 512GB: Local AI vs. Cloud APIs</title>
       <link>https://bitroot.org/blog/2026-08-26-mac-studios-512gb-unified-memory-should-founders-e/</link>
