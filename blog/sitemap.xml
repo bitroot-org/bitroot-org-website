@@ -2,8 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bitroot.org/blog/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bitroot.org/blog/2026-08-31-caterpillar-ai-deployment-workflow-integration-str/</loc>
+    <lastmod>2026-08-31</lastmod>
   </url>
   <url>
     <loc>https://bitroot.org/blog/2026-08-29-openai-is-cutting-off-cursor-what-developers-need/</loc>

@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 348,
+  "count": 349,
   "posts": [
+    "2026-08-31-caterpillar-ai-deployment-workflow-integration-str.md",
     "2026-08-29-openai-is-cutting-off-cursor-what-developers-need.md",
     "2026-08-29-google-gemini-3-5-flash-vs-cursor-benchmark-compar.md",
     "2026-08-26-mac-studios-512gb-unified-memory-should-founders-e.md",
@@ -352,6 +353,26 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-08-31-caterpillar-ai-deployment-workflow-integration-str.md",
+      "slug": "2026-08-31-caterpillar-ai-deployment-workflow-integration-str",
+      "url": "/blog/2026-08-31-caterpillar-ai-deployment-workflow-integration-str/",
+      "title": "Caterpillar AI Deployment: Workflow Integration Strategy",
+      "date": "2026-08-31",
+      "published_at": "2026-08-31T04:26:29.581Z",
+      "tags": [
+        "Caterpillar",
+        "AI Deployment",
+        "Workforce Training",
+        "Workflow Integration",
+        "Enterprise AI"
+      ],
+      "excerpt": "Caterpillar is spending $100M to retrain 118,000 workers for AI. Here's why workflow integration, not technology, is the real constraint in enterprise AI adoption.",
+      "image": "https://techcrunch.com/wp-content/uploads/2023/01/caterpillar-lidar-booth.jpg?resize=1280,853",
+      "sources": [],
+      "readTime": "7 min",
+      "shortId": 349
+    },
     {
       "filename": "2026-08-29-openai-is-cutting-off-cursor-what-developers-need.md",
       "slug": "2026-08-29-openai-is-cutting-off-cursor-what-developers-need",

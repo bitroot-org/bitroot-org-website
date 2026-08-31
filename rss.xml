@@ -5,8 +5,21 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 29 Aug 2026 10:41:04 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 31 Aug 2026 04:27:22 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Caterpillar AI Deployment: Workflow Integration Strategy</title>
+      <link>https://bitroot.org/blog/2026-08-31-caterpillar-ai-deployment-workflow-integration-str/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-08-31-caterpillar-ai-deployment-workflow-integration-str/</guid>
+      <description>Caterpillar is spending $100M to retrain 118,000 workers for AI. Here's why workflow integration, not technology, is the real constraint in enterprise AI adoption.</description>
+      <pubDate>Mon, 31 Aug 2026 04:26:29 +0000</pubDate>
+      <category>Caterpillar</category>
+      <category>AI Deployment</category>
+      <category>Workforce Training</category>
+      <category>Workflow Integration</category>
+      <category>Enterprise AI</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2023/01/caterpillar-lidar-booth.jpg?resize=1280,853" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>OpenAI Is Cutting Off Cursor: What Developers Need to Know (And Why It Matters)</title>
       <link>https://bitroot.org/blog/2026-08-29-openai-is-cutting-off-cursor-what-developers-need/</link>
