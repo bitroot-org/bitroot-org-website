@@ -5,8 +5,18 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 31 Aug 2026 04:27:22 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 31 Aug 2026 08:13:19 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DeepSeek $15B Funding: State Control, Rapid Scaling</title>
+      <link>https://bitroot.org/blog/2026-08-31-deepseek-15b-funding-state-control-rapid-scaling/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-08-31-deepseek-15b-funding-state-control-rapid-scaling/</guid>
+      <description>Two funding rounds in 90 days. $15 billion raised. $74B valuation. DeepSeek's rapid capital raise signals Chinese AI strategy: state control, rapid scaling, 2027 IPO target.</description>
+      <pubDate>Mon, 31 Aug 2026 08:12:35 +0000</pubDate>
+      <category>DeepSeek</category>
+      <category>Funding</category>
+      <enclosure url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZtFHA3uu1zk6PfEVF6gM7iH86BZzB1_lHPehtvPgYDg&amp;s=10" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Caterpillar AI Deployment: Workflow Integration Strategy</title>
       <link>https://bitroot.org/blog/2026-08-31-caterpillar-ai-deployment-workflow-integration-str/</link>

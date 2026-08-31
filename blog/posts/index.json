@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 349,
+  "count": 350,
   "posts": [
+    "2026-08-31-deepseek-15b-funding-state-control-rapid-scaling.md",
     "2026-08-31-caterpillar-ai-deployment-workflow-integration-str.md",
     "2026-08-29-openai-is-cutting-off-cursor-what-developers-need.md",
     "2026-08-29-google-gemini-3-5-flash-vs-cursor-benchmark-compar.md",
@@ -353,6 +354,23 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-08-31-deepseek-15b-funding-state-control-rapid-scaling.md",
+      "slug": "2026-08-31-deepseek-15b-funding-state-control-rapid-scaling",
+      "url": "/blog/2026-08-31-deepseek-15b-funding-state-control-rapid-scaling/",
+      "title": "DeepSeek $15B Funding: State Control, Rapid Scaling",
+      "date": "2026-08-31",
+      "published_at": "2026-08-31T08:12:35.400Z",
+      "tags": [
+        "DeepSeek",
+        "Funding"
+      ],
+      "excerpt": "Two funding rounds in 90 days. $15 billion raised. $74B valuation. DeepSeek's rapid capital raise signals Chinese AI strategy: state control, rapid scaling, 2027 IPO target.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZtFHA3uu1zk6PfEVF6gM7iH86BZzB1_lHPehtvPgYDg&s=10",
+      "sources": [],
+      "readTime": "4 min",
+      "shortId": 350
+    },
     {
       "filename": "2026-08-31-caterpillar-ai-deployment-workflow-integration-str.md",
       "slug": "2026-08-31-caterpillar-ai-deployment-workflow-integration-str",
