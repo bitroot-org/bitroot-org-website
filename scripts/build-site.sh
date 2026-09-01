@@ -42,6 +42,27 @@ fi
 python3 -c "import frontmatter, markdown" \
   || { echo "FATAL: python 'frontmatter' + 'markdown' unavailable"; exit 1; }
 
+# The Nixpacks base pins an old nodejs_20 (20.6.x); this project needs >= 20.9.
+# Drop in an official static Node if what's on PATH is too old.
+NODE_MIN_MAJOR=20
+NODE_MIN_MINOR=19
+node_ok() {
+  command -v node >/dev/null || return 1
+  local v major minor
+  v="$(node -p 'process.versions.node')"
+  major="${v%%.*}"; minor="${v#*.}"; minor="${minor%%.*}"
+  [ "$major" -gt "$NODE_MIN_MAJOR" ] && return 0
+  [ "$major" -eq "$NODE_MIN_MAJOR" ] && [ "$minor" -ge "$NODE_MIN_MINOR" ]
+}
+if ! node_ok; then
+  NODE_VER="20.18.1"
+  echo "==> Node $(node -v 2>/dev/null || echo none) too old — fetching v${NODE_VER}"
+  curl -fsSL "https://nodejs.org/dist/v${NODE_VER}/node-v${NODE_VER}-linux-x64.tar.xz" \
+    | tar -xJ -C /tmp
+  export PATH="/tmp/node-v${NODE_VER}-linux-x64/bin:$PATH"
+  echo "==> Now using node $(node -v), npm $(npm -v)"
+fi
+
 echo "==> Building bitroot-v3 (Next.js static export)"
 ( cd bitroot-v3 && { npm ci || npm install; } && npm run build )
 

@@ -16,6 +16,9 @@
 [phases.setup]
 nixPkgs = [
   "nodejs_20",
+  "curl",
+  "xz",
+  "gnutar",
   "python311",
   "python311Packages.python-frontmatter",
   "python311Packages.pyyaml",
