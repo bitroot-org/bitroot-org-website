@@ -6,7 +6,7 @@ published_at: '2026-09-01T14:19:14.467Z'
 sources: []
 tags:
 - 'Anthropic'
-title: 'entagon Excluded Anthropic Despite Federal Court Ruling It Was Illegal'
+title: 'Pentagon Excluded Anthropic Despite Federal Court Ruling It Was Illegal'
 ---
 
 Three days after losing in federal court, the Pentagon proceeded with its plan anyway.
