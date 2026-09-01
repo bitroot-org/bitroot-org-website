@@ -18,6 +18,7 @@ nixPkgs = [
   "nodejs_20",
   "python311",
   "python311Packages.python-frontmatter",
+  "python311Packages.pyyaml",
   "python311Packages.markdown",
 ]
 
