@@ -1,0 +1,24 @@
+# Nixpacks build for the FULL bitroot.org site (used by the staging deploy).
+#
+# Without this, a Nixpacks build pointed at bitroot-v3/ only ships the Next.js
+# app and /blog, /legal, /platter 404. This mirrors the assembly that
+# .github/workflows/deploy-pages.yml does for production GitHub Pages.
+#
+# Panel wiring (Dokploy / Coolify, Nixpacks build type):
+#   Build Path:          .            (repo root — NOT bitroot-v3)
+#   Publish Directory:   dist
+#
+# The actual steps live in scripts/build-site.sh so local runs and CI stay
+# in sync; this file just provides node + python and calls it.
+
+[phases.setup]
+nixPkgs = ["nodejs_20", "python311", "python311Packages.pip"]
+
+[phases.build]
+cmds = ["bash scripts/build-site.sh"]
+
+[start]
+cmd = "echo 'static build — nothing to start'"
+
+[staticSite]
+publishDir = "dist"

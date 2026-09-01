@@ -19,6 +19,7 @@ import html as html_mod
 import json
 import math
 import re
+import shutil
 from datetime import datetime, timezone
 from email.utils import format_datetime
 from pathlib import Path
@@ -30,8 +31,11 @@ POSTS_DIR = Path("blog/posts")
 INDEX_FILE = POSTS_DIR / "index.json"
 RSS_FILE = Path("rss.xml")
 SHORT_LINKS_DIR = Path("blog/p")
+BLOG_PAGES_DIR = Path("blog/page")
 BLOG_SITEMAP_FILE = Path("blog/sitemap.xml")
 BLOG_INDEX_HTML = Path("blog/index.html")
+
+PER_PAGE = 9
 
 SITE_URL = "https://bitroot.org"
 BLOG_URL = f"{SITE_URL}/blog"
@@ -178,17 +182,32 @@ def build_short_links(posts):
     print(f"Generated {len(posts)} short link pages in {SHORT_LINKS_DIR}/")
 
 
+def card_image(image):
+    """Absolute, root-relative src for a card image. Self-hosted images are
+    stored relative to /blog/ ('media/foo.jpg'); those must resolve the same
+    from /blog/ and from a deeper /blog/page/<n>/ list page."""
+    image = str(image or "")
+    if not image:
+        return "/blog/media/placeholder-blog.png"
+    if image.startswith(("http://", "https://", "/")):
+        return image
+    return f"/blog/{image}"
+
+
 def render_card(post, featured=False):
     """Mirror of posts-loader.js renderCard() so the JS hydration swaps
     content without layout shift, and crawlers see real cards."""
     tag = (post.get("tags") or ["General"])[0]
-    image = post.get("image") or "media/placeholder-blog.png"
+    image = card_image(post.get("image"))
     date_str = fmt_card_date(post)
     badge = '<span class="card-badge">Latest</span>\n                    ' if featured else ""
     loading = "eager" if featured else "lazy"
     cls = " card-featured" if featured else ""
+    # Alt text = the post title: the card image is the post's cover art, so the
+    # headline is the most accurate description a screen reader / crawler can get.
+    alt = esc(post.get("title") or "")
     return f"""            <a class="card{cls}" data-post-slug="{esc(post['slug'])}" href="{esc(post['url'])}">
-                <img class="card-bg" src="{esc(image)}" alt="" loading="{loading}" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('{esc(post['slug'])}'):'media/placeholder-blog.png'">
+                <img class="card-bg" src="{esc(image)}" alt="{alt}" loading="{loading}" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('{esc(post['slug'])}'):'/blog/media/placeholder-blog.png'">
                 <div class="card-plate">
                     {badge}<h3 class="card-title">{esc(post['title'])}</h3>
                     <p class="card-excerpt">{esc(clamp(post.get('excerpt', ''), 180))}</p>
@@ -234,7 +253,57 @@ def fmt_display_date(post):
         return str(post.get("date", ""))
 
 
-def inject_index_posts(posts, per_page=9):
+def pagination_nav(current, total_pages):
+    """Crawlable prev/next pagination markup. Page 1 lives at /blog/, the rest
+    at /blog/page/<n>/. posts-loader.js swaps this for its SPA controls on
+    load; crawlers and no-JS visitors follow the real <a href> links."""
+
+    def href(n):
+        return f"{BLOG_URL}/" if n <= 1 else f"/blog/page/{n}/"
+
+    prev_svg = (
+        '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" '
+        'stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6">'
+        "</polyline></svg>"
+    )
+    next_svg = (
+        '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" '
+        'stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6">'
+        "</polyline></svg>"
+    )
+
+    if current <= 1:
+        prev_el = (
+            '<span class="pagination-btn prev" aria-disabled="true">'
+            f"{prev_svg}<span>Prev</span></span>"
+        )
+    else:
+        prev_el = (
+            f'<a class="pagination-btn prev" href="{href(current - 1)}" '
+            f'aria-label="Previous page">{prev_svg}<span>Prev</span></a>'
+        )
+
+    if current >= total_pages:
+        next_el = (
+            '<span class="pagination-btn next" aria-disabled="true">'
+            f"<span>Next</span>{next_svg}</span>"
+        )
+    else:
+        next_el = (
+            f'<a class="pagination-btn next" href="{href(current + 1)}" '
+            f'aria-label="Next page"><span>Next</span>{next_svg}</a>'
+        )
+
+    return f"""            <nav class="pagination" aria-label="Newslogger pagination">
+                {prev_el}
+                <span class="pagination-info">
+                    Page <strong>{current}</strong> of <strong>{total_pages}</strong>
+                </span>
+                {next_el}
+            </nav>"""
+
+
+def inject_index_posts(posts, per_page=PER_PAGE):
     """Write the real first page of posts (plus a crawlable archive of every
     remaining post title) into blog/index.html between the POSTS markers."""
     if not BLOG_INDEX_HTML.exists():
@@ -276,23 +345,7 @@ def inject_index_posts(posts, per_page=9):
 {cards}
         </div>
         <div class="pagination-container">
-            <nav class="pagination" aria-label="Newslogger pagination">
-                <button class="pagination-btn prev" disabled aria-label="Previous page">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="15 18 9 12 15 6"></polyline>
-                    </svg>
-                    <span>Prev</span>
-                </button>
-                <span class="pagination-info">
-                    Page <strong>1</strong> of <strong>{total_pages}</strong>
-                </span>
-                <button class="pagination-btn next" {'disabled ' if total_pages == 1 else ''}aria-label="Next page">
-                    <span>Next</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="9 18 15 12 9 6"></polyline>
-                    </svg>
-                </button>
-            </nav>
+{pagination_nav(1, total_pages)}
         </div>{archive_html}
         {POSTS_END}"""
 
@@ -302,8 +355,90 @@ def inject_index_posts(posts, per_page=9):
     print(f"Injected {len(page_posts)} posts + {len(posts) - len(page_posts)} archive links into {BLOG_INDEX_HTML}")
 
 
-def build_blog_sitemap(posts):
-    """Sitemap for the blog: index page + every post's clean URL."""
+def build_pagination_pages(posts, per_page=PER_PAGE):
+    """Generate crawlable /blog/page/<n>/ list pages for n = 2..N.
+
+    Each page is a clone of the just-built blog/index.html shell with that
+    page's nine cards and real prev/next <a href> links swapped in, so every
+    post is reachable by a plain crawlable link even with JS disabled. Page 1
+    stays at /blog/. Pages self-canonicalise and carry rel=prev/next; they are
+    left indexable (per Google's post-rel=prev/next guidance) and listed in the
+    blog sitemap.
+    """
+    if not BLOG_INDEX_HTML.exists():
+        print(f"WARNING: {BLOG_INDEX_HTML} not found — skipping pagination pages")
+        return
+
+    shell = BLOG_INDEX_HTML.read_text(encoding="utf-8")
+    if POSTS_BEGIN not in shell or POSTS_END not in shell:
+        print("WARNING: POSTS markers not found — skipping pagination pages")
+        return
+
+    total_pages = max(1, math.ceil(len(posts) / per_page))
+    BLOG_PAGES_DIR.mkdir(parents=True, exist_ok=True)
+
+    # Drop stale page dirs (post count shrank, or a leftover page/1).
+    keep = {str(n) for n in range(2, total_pages + 1)}
+    for d in BLOG_PAGES_DIR.iterdir():
+        if d.is_dir() and d.name not in keep:
+            shutil.rmtree(d)
+
+    block_re = re.compile(
+        re.escape(POSTS_BEGIN) + r".*?" + re.escape(POSTS_END), re.S
+    )
+
+    for n in range(2, total_pages + 1):
+        start = (n - 1) * per_page
+        cards = "\n".join(render_card(p) for p in posts[start:start + per_page])
+        block = f"""{POSTS_BEGIN}
+        <div class="cards-grid" id="posts-grid">
+{cards}
+        </div>
+        <div class="pagination-container">
+{pagination_nav(n, total_pages)}
+        </div>
+        <p class="pagination-back"><a href="{BLOG_URL}/">&larr; Back to latest posts</a></p>
+        {POSTS_END}"""
+        html = block_re.sub(lambda _: block, shell)
+
+        canonical = f"{BLOG_URL}/page/{n}/"
+        prev_url = f"{BLOG_URL}/" if n == 2 else f"{BLOG_URL}/page/{n - 1}/"
+        head_extra = f'<link rel="canonical" href="{canonical}">\n'
+        head_extra += f'    <link rel="prev" href="{prev_url}">'
+        if n < total_pages:
+            head_extra += f'\n    <link rel="next" href="{BLOG_URL}/page/{n + 1}/">'
+
+        html = html.replace(
+            '<link rel="canonical" href="https://bitroot.org/blog/">', head_extra, 1
+        )
+        html = html.replace(
+            "<title>AI News for Founders & Builders — Bitroot Newslogger</title>",
+            f"<title>Newslogger — Page {n} of {total_pages} | Bitroot</title>",
+            1,
+        )
+        html = html.replace(
+            '<meta property="og:url" content="https://bitroot.org/blog/">',
+            f'<meta property="og:url" content="{canonical}">',
+            1,
+        )
+        # Relative asset refs in the shell break one directory level deeper.
+        html = html.replace('href="css/blog.css"', 'href="/blog/css/blog.css"')
+        html = html.replace(
+            'src="js/pixel-placeholder.js"', 'src="/blog/js/pixel-placeholder.js"'
+        )
+        html = html.replace(
+            'src="js/posts-loader.js"', 'src="/blog/js/posts-loader.js"'
+        )
+
+        out_dir = BLOG_PAGES_DIR / str(n)
+        out_dir.mkdir(parents=True, exist_ok=True)
+        (out_dir / "index.html").write_text(html, encoding="utf-8")
+
+    print(f"Generated {max(0, total_pages - 1)} pagination pages in {BLOG_PAGES_DIR}/")
+
+
+def build_blog_sitemap(posts, per_page=PER_PAGE):
+    """Sitemap for the blog: index page + /blog/page/<n>/ + every post URL."""
     urlset = Element("urlset", xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
 
     newest = posts[0].get("date", "") if posts else ""
@@ -312,6 +447,14 @@ def build_blog_sitemap(posts):
     if newest:
         SubElement(url, "lastmod").text = newest
     SubElement(url, "priority").text = "0.8"
+
+    total_pages = max(1, math.ceil(len(posts) / per_page))
+    for n in range(2, total_pages + 1):
+        url = SubElement(urlset, "url")
+        SubElement(url, "loc").text = f"{BLOG_URL}/page/{n}/"
+        if newest:
+            SubElement(url, "lastmod").text = newest
+        SubElement(url, "priority").text = "0.4"
 
     for post in posts:
         url = SubElement(urlset, "url")
@@ -328,7 +471,7 @@ def build_blog_sitemap(posts):
 
     indent(urlset, space="  ")
     ElementTree(urlset).write(BLOG_SITEMAP_FILE, encoding="unicode", xml_declaration=True)
-    print(f"Generated {BLOG_SITEMAP_FILE} with {len(posts) + 1} URLs")
+    print(f"Generated {BLOG_SITEMAP_FILE} with {len(posts) + total_pages} URLs")
 
 
 def guess_mime(url):
@@ -390,6 +533,8 @@ def build_index():
     build_rss(posts)
     build_blog_sitemap(posts)
     inject_index_posts(posts)
+    # Must run after inject_index_posts — it clones the freshly-injected shell.
+    build_pagination_pages(posts)
 
 
 def build_rss(posts):

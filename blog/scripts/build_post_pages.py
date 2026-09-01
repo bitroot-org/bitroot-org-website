@@ -32,6 +32,9 @@ import markdown
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 POSTS_DIR = REPO_ROOT / "blog" / "posts"
+# Curated index of bitroot.org kits + guides, used to cross-link each post to
+# the two or three most relevant ones. Mirrors bitroot-v3/src/content/data.ts.
+RELATED_CONTENT_FILE = REPO_ROOT / "blog" / "data" / "bitroot-content.json"
 
 SITE_URL = "https://bitroot.org"
 BLOG_URL = f"{SITE_URL}/blog"
@@ -247,6 +250,171 @@ def json_ld(meta, slug, canonical, word_count):
     return json.dumps(data, ensure_ascii=False)
 
 
+def _load_related_pool():
+    try:
+        data = json.loads(RELATED_CONTENT_FILE.read_text(encoding="utf-8"))
+        return [i for i in data.get("items", []) if i.get("url") and i.get("title")]
+    except (OSError, ValueError) as e:  # noqa: BLE001 - missing file must not break the build
+        print(f"  NOTE: no related-content pool ({e}) — skipping cross-links", file=sys.stderr)
+        return []
+
+
+RELATED_POOL = _load_related_pool()
+
+# Blog tags run AI-news heavy; kit/guide tags run dev-stack heavy. Fold the
+# common blog variants down to the vocabulary the kits/guides actually use.
+_TAG_ALIASES = {
+    "aicoding": "ai",
+    "aiagents": "ai",
+    "aiagent": "ai",
+    "aitools": "ai",
+    "aitool": "ai",
+    "llm": "ai",
+    "llms": "ai",
+    "genai": "ai",
+    "artificialintelligence": "ai",
+    "machinelearning": "ai",
+    "developertools": "tools",
+    "devtools": "tools",
+    "startuptools": "tools",
+    "nextjs": "nextjs",
+    "opensource": "opensource",
+}
+
+
+# Too broad to be a contextual signal: ~1 in 4 posts carry "AI", as do four
+# guides, so matching on it would staple the same three guides to everything.
+# Specific tags (security, analytics, api, marketing, nextjs…) still match.
+_STOP_TAGS = {"ai", "tech", "news", "general", "tools"}
+
+
+def _canon(s):
+    return re.sub(r"[^a-z0-9]", "", str(s or "").lower())
+
+
+def _tag_set(tags):
+    out = set()
+    for t in tags or []:
+        c = _canon(t)
+        c = _TAG_ALIASES.get(c, c)
+        if c and c not in _STOP_TAGS:
+            out.add(c)
+    return out
+
+
+def related_items(post_tags, post_title, limit=3):
+    """Top kits/guides for a post, scored by tag overlap (+ a nudge when a
+    kit/guide tag literally appears in the post title). Falls back to the two
+    index pages so every post still gains an internal contextual link."""
+    if not RELATED_POOL:
+        return []
+
+    post_set = _tag_set(post_tags)
+    title_words = {_canon(w) for w in re.findall(r"[A-Za-z0-9]+", post_title or "")}
+    title_words.discard("")
+    scored = []
+    for item in RELATED_POOL:
+        item_tags = _tag_set(item.get("tags"))
+        overlap = len(post_set & item_tags)
+        if not overlap:
+            continue  # a shared tag is required — title words only re-rank
+        # Whole-word title hit (not substring — "design" must not match "redesign").
+        title_hits = sum(1 for t in item_tags if len(t) > 3 and t in title_words)
+        scored.append((overlap * 2 + title_hits, item))
+
+    scored.sort(key=lambda x: x[0], reverse=True)
+    picks = [item for _, item in scored[:limit]]
+
+    if not picks:
+        # No tag match — offer broadly-useful flagships plus the two indexes,
+        # so every post still links to real build resources.
+        return [
+            {
+                "title": "Waitlist Kit",
+                "kind": "kit",
+                "url": "/kits/waitlist-kit/",
+                "blurb": "Ship a landing page with email capture, referral counter and an admin dashboard in an hour.",
+                "_fallback": True,
+            },
+            {
+                "title": "Launching a SaaS on (almost) $0/month",
+                "kind": "guide",
+                "url": "/guides/launch-a-saas-on-almost-0-per-month/",
+                "blurb": "A category-by-category toolkit for getting to production without a budget.",
+                "_fallback": True,
+            },
+            {
+                "title": "All free kits & guides",
+                "kind": "index",
+                "url": "/kits/",
+                "blurb": "Clone-and-ship boilerplates and reproducible walkthroughs — no gates.",
+                "_fallback": True,
+            },
+        ]
+    return picks
+
+
+def related_html(items):
+    if not items:
+        return ""
+    is_fallback = any(i.get("_fallback") for i in items)
+    intro = (
+        "New to Bitroot? Free, no gates:"
+        if is_fallback
+        else "Free kits and guides from Bitroot that go with this:"
+    )
+    rows = "\n".join(
+        f"""                <li>
+                    <a href="{esc(i["url"])}">
+                        <span class="post-related-kind">{esc(i.get("kind", ""))}</span>
+                        <span class="post-related-name">{esc(i["title"])}</span>
+                        <span class="post-related-blurb">{esc(i.get("blurb", ""))}</span>
+                    </a>
+                </li>"""
+        for i in items
+    )
+    return f"""            <aside class="post-related" aria-label="Related kits and guides from Bitroot">
+                <h2 class="post-related-title">Build it with Bitroot</h2>
+                <p class="post-related-intro">{intro}</p>
+                <ul class="post-related-list">
+{rows}
+                </ul>
+            </aside>"""
+
+
+def _nl_form(location, button_label, placeholder="you@company.com"):
+    return f"""<form class="nl-form" data-nl-form data-nl-location="{esc(location)}">
+                    <input type="email" name="email" required autocomplete="email" placeholder="{esc(placeholder)}" aria-label="Email address">
+                    <button type="submit">{esc(button_label)}</button>
+                    <p class="nl-status" data-nl-status role="status" aria-live="polite"></p>
+                </form>"""
+
+
+def newsletter_inline_html():
+    """Always-on capture block at the foot of every post — viral/direct traffic
+    lands on one post and leaves, so this is the one place to ask."""
+    return f"""            <aside class="post-newsletter" aria-label="Subscribe to the Bitroot newsletter">
+                <h2 class="post-newsletter-title">Get the next one in your inbox</h2>
+                <p class="post-newsletter-copy">One email when we publish — AI &amp; founder tactics, no fluff, no spam. Unsubscribe anytime.</p>
+                {_nl_form("blog_post_inline", "Subscribe")}
+            </aside>"""
+
+
+def newsletter_sticky_html():
+    """Hidden by default. newsletter.js reveals it on scroll when the
+    `blog-newsletter-boost` PostHog flag is on (or ?nl=boost) — the lever for
+    pushing signups harder during a traffic spike."""
+    return f"""    <div class="nl-sticky" data-nl-sticky hidden>
+        <div class="nl-sticky-inner">
+            <div class="nl-sticky-text">
+                <strong>Liked this?</strong> Get the next post by email — no spam, unsubscribe anytime.
+            </div>
+            {_nl_form("blog_post_sticky", "Subscribe", placeholder="you@company.com")}
+            <button class="nl-sticky-close" data-nl-close aria-label="Dismiss">&times;</button>
+        </div>
+    </div>"""
+
+
 def adjacent_nav(prev_post, next_post):
     """prev = newer post, next = older post (posts sorted newest-first)."""
     if not prev_post and not next_post:
@@ -291,6 +459,7 @@ def render_page(meta, content, slug, prev_post, next_post):
     read_time = max(1, math.ceil(word_count / 200))
     body_html = render_markdown(content)
     references = build_references(meta, body_html)
+    related_block = related_html(related_items(tags, title))
 
     refs_html = ""
     if references:
@@ -401,6 +570,8 @@ def render_page(meta, content, slug, prev_post, next_post):
 {body_html}
             </div>
 {refs_html}
+{related_block}
+{newsletter_inline_html()}
             <nav class="post-nav">
                 <a href="/blog/" class="back-link">&larr; Back to newslogger</a>
                 <div class="post-nav-actions">
@@ -467,6 +638,8 @@ def render_page(meta, content, slug, prev_post, next_post):
         }}
     }})();
     </script>
+{newsletter_sticky_html()}
+    <script src="/blog/js/newsletter.js" defer></script>
 </body>
 </html>
 """
