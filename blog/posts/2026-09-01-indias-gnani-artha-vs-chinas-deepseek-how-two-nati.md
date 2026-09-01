@@ -1,7 +1,7 @@
 ---
 date: '2026-09-01'
 excerpt: 'Vice President launches Gnani Artha (Evon 3.3 + Plexus) on Aug 28. India''s sovereign AI stack vs. China''s DeepSeek: different strategies, same goal — break US AI dependence.'
-image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_lckt7XVBEuJB_Vj11nXjYLEMkIcqJS037Ipkyam24Q&s
+image: https://i0.wp.com/makhanamornings.in/wp-content/uploads/2025/11/a-split-visual-of-an-india-shaped-outline-filled-with.png?resize=1024%2C768&ssl=1
 published_at: '2026-09-01T05:44:56.211Z'
 sources: []
 tags:
