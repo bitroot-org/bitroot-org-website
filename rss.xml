@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Sep 2026 06:16:49 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 14:20:03 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>India's Gnani Artha vs. China's DeepSeek: How Two Nations Build Sovereign AI</title>
@@ -15,6 +15,15 @@
       <pubDate>Tue, 01 Sep 2026 05:44:56 +0000</pubDate>
       <category>Sovereign AI</category>
       <enclosure url="https://i0.wp.com/makhanamornings.in/wp-content/uploads/2025/11/a-split-visual-of-an-india-shaped-outline-filled-with.png?resize=1024%2C768&amp;ssl=1" type="image/png" length="0" />
+    </item>
+    <item>
+      <title>entagon Excluded Anthropic Despite Federal Court Ruling It Was Illegal</title>
+      <link>https://bitroot.org/blog/2026-09-01-entagon-excluded-anthropic-despite-federal-court-r/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-01-entagon-excluded-anthropic-despite-federal-court-r/</guid>
+      <description>August 28: Federal judge rules Pentagon violated First and Fifth Amendment in designating Anthropic "supply chain risk." August 31: Pentagon launches GenAI.mil without Claude anyway. Court ruling + defiance analysis.</description>
+      <pubDate>Tue, 01 Sep 2026 14:19:14 +0000</pubDate>
+      <category>Anthropic</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2263890424.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>DeepSeek $15B Funding: State Control, Rapid Scaling</title>
