@@ -22,13 +22,25 @@ cd "$ROOT"
 
 DIST="$ROOT/dist"
 
-echo "==> Checking Python deps for the blog build (frontmatter, markdown)"
+echo "==> Blog Python deps (frontmatter, markdown)"
+# On the Nixpacks deploy the libs come from nixpacks.toml, but the bare
+# `python3` there doesn't add the nix profile's site-packages to sys.path —
+# wire any that exist in via PYTHONPATH.
+for d in \
+  "${HOME:-/root}"/.nix-profile/lib/python*/site-packages \
+  /nix/var/nix/profiles/default/lib/python*/site-packages
+do
+  [ -d "$d" ] && export PYTHONPATH="${d}${PYTHONPATH:+:${PYTHONPATH}}"
+done
 if ! python3 -c "import frontmatter, markdown" 2>/dev/null; then
-  # Not present (local dev / CI). On the Nixpacks deploy these come from
-  # nixpacks.toml so this block is skipped.
-  python3 -m pip install --quiet --disable-pip-version-check python-frontmatter markdown \
-    || python3 -m pip install --quiet --disable-pip-version-check --break-system-packages python-frontmatter markdown
+  # Local dev / CI: install via pip (tolerate pip being absent, the check
+  # below is the real gate).
+  python3 -m pip install --quiet --disable-pip-version-check python-frontmatter markdown 2>/dev/null \
+    || python3 -m pip install --quiet --disable-pip-version-check --break-system-packages python-frontmatter markdown 2>/dev/null \
+    || true
 fi
+python3 -c "import frontmatter, markdown" \
+  || { echo "FATAL: python 'frontmatter' + 'markdown' unavailable"; exit 1; }
 
 echo "==> Building bitroot-v3 (Next.js static export)"
 ( cd bitroot-v3 && { npm ci || npm install; } && npm run build )
