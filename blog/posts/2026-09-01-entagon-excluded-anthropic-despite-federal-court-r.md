@@ -122,5 +122,3 @@ This is one data point in a larger question about how commercial AI vendors inte
 The court ruled this exclusion was unconstitutional retaliation. The Pentagon complied with the letter of the ruling while implementing its substance anyway. Whether this pattern repeats with other vendors or other agencies remains to be seen.
  
 What's certain is this: A federal judge found the government violated the Constitution. Three days later, the government implemented the exact outcome the court ruled illegal, and the legal system has no mechanism to stop it.
- 
-For more on vendor lock-in, government power, and the enforcement limits of court orders, visit [Bitroot](https://bitroot.org/).
