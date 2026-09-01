@@ -55,7 +55,7 @@ node_ok() {
   [ "$major" -eq "$NODE_MIN_MAJOR" ] && [ "$minor" -ge "$NODE_MIN_MINOR" ]
 }
 if ! node_ok; then
-  NODE_VER="20.18.1"
+  NODE_VER="20.19.4"
   echo "==> Node $(node -v 2>/dev/null || echo none) too old — fetching v${NODE_VER}"
   curl -fsSL "https://nodejs.org/dist/v${NODE_VER}/node-v${NODE_VER}-linux-x64.tar.xz" \
     | tar -xJ -C /tmp
