@@ -11,8 +11,15 @@
 # The actual steps live in scripts/build-site.sh so local runs and CI stay
 # in sync; this file just provides node + python and calls it.
 
+# The blog scripts import `frontmatter` + `markdown`; provide them from nixpkgs
+# directly — the nixpacks base python has no working `pip`/`ensurepip`.
 [phases.setup]
-nixPkgs = ["nodejs_20", "python311", "python311Packages.pip"]
+nixPkgs = [
+  "nodejs_20",
+  "python311",
+  "python311Packages.python-frontmatter",
+  "python311Packages.markdown",
+]
 
 [phases.build]
 cmds = ["bash scripts/build-site.sh"]

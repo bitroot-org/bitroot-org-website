@@ -22,9 +22,13 @@ cd "$ROOT"
 
 DIST="$ROOT/dist"
 
-echo "==> Python deps for the blog build"
-python3 -m pip install --quiet --disable-pip-version-check python-frontmatter markdown \
-  || python3 -m pip install --quiet --disable-pip-version-check --break-system-packages python-frontmatter markdown
+echo "==> Checking Python deps for the blog build (frontmatter, markdown)"
+if ! python3 -c "import frontmatter, markdown" 2>/dev/null; then
+  # Not present (local dev / CI). On the Nixpacks deploy these come from
+  # nixpacks.toml so this block is skipped.
+  python3 -m pip install --quiet --disable-pip-version-check python-frontmatter markdown \
+    || python3 -m pip install --quiet --disable-pip-version-check --break-system-packages python-frontmatter markdown
+fi
 
 echo "==> Building bitroot-v3 (Next.js static export)"
 ( cd bitroot-v3 && { npm ci || npm install; } && npm run build )
