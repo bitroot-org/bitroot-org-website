@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 350,
+  "count": 351,
   "posts": [
+    "2026-09-01-indias-gnani-artha-vs-chinas-deepseek-how-two-nati.md",
     "2026-08-31-deepseek-15b-funding-state-control-rapid-scaling.md",
     "2026-08-31-caterpillar-ai-deployment-workflow-integration-str.md",
     "2026-08-29-openai-is-cutting-off-cursor-what-developers-need.md",
@@ -354,6 +355,22 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-01-indias-gnani-artha-vs-chinas-deepseek-how-two-nati.md",
+      "slug": "2026-09-01-indias-gnani-artha-vs-chinas-deepseek-how-two-nati",
+      "url": "/blog/2026-09-01-indias-gnani-artha-vs-chinas-deepseek-how-two-nati/",
+      "title": "India's Gnani Artha vs. China's DeepSeek: How Two Nations Build Sovereign AI",
+      "date": "2026-09-01",
+      "published_at": "2026-09-01T05:44:56.211Z",
+      "tags": [
+        "Sovereign AI"
+      ],
+      "excerpt": "Vice President launches Gnani Artha (Evon 3.3 + Plexus) on Aug 28. India's sovereign AI stack vs. China's DeepSeek: different strategies, same goal \u2014 break US AI dependence.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_lckt7XVBEuJB_Vj11nXjYLEMkIcqJS037Ipkyam24Q&s",
+      "sources": [],
+      "readTime": "5 min",
+      "shortId": 351
+    },
     {
       "filename": "2026-08-31-deepseek-15b-funding-state-control-rapid-scaling.md",
       "slug": "2026-08-31-deepseek-15b-funding-state-control-rapid-scaling",

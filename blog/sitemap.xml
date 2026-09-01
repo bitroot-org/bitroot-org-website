@@ -2,8 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bitroot.org/blog/</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bitroot.org/blog/2026-09-01-indias-gnani-artha-vs-chinas-deepseek-how-two-nati/</loc>
+    <lastmod>2026-09-01</lastmod>
   </url>
   <url>
     <loc>https://bitroot.org/blog/2026-08-31-deepseek-15b-funding-state-control-rapid-scaling/</loc>
