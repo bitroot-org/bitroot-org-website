@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 353,
+  "count": 354,
   "posts": [
+    "2026-09-02-openai-astra-cybersecurity-model-finds-zero-day-ex.md",
     "2026-09-02-claude-fable-5-1-45-cheaper-cache-better-performan.md",
     "2026-09-01-indias-gnani-artha-vs-chinas-deepseek-how-two-nati.md",
     "2026-09-01-entagon-excluded-anthropic-despite-federal-court-r.md",
@@ -357,6 +358,22 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-02-openai-astra-cybersecurity-model-finds-zero-day-ex.md",
+      "slug": "2026-09-02-openai-astra-cybersecurity-model-finds-zero-day-ex",
+      "url": "/blog/2026-09-02-openai-astra-cybersecurity-model-finds-zero-day-ex/",
+      "title": "OpenAI Astra: Cybersecurity Model Finds Zero-Day Exploits - Safety Concerns",
+      "date": "2026-09-02",
+      "published_at": "2026-09-02T11:15:56.548Z",
+      "tags": [
+        "OpenAI"
+      ],
+      "excerpt": "OpenAI announced Astra, which discovers and exploits unknown security flaws autonomously. Perfect ExploitBench score, two zero-day exploits found. Here's the pattern and what it means.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/05/openai-logo-code-background.jpg?resize=1280,852",
+      "sources": [],
+      "readTime": "3 min",
+      "shortId": 354
+    },
     {
       "filename": "2026-09-02-claude-fable-5-1-45-cheaper-cache-better-performan.md",
       "slug": "2026-09-02-claude-fable-5-1-45-cheaper-cache-better-performan",
