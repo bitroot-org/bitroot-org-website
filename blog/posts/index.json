@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 352,
+  "count": 353,
   "posts": [
+    "2026-09-02-claude-fable-5-1-45-cheaper-cache-better-performan.md",
     "2026-09-01-indias-gnani-artha-vs-chinas-deepseek-how-two-nati.md",
     "2026-09-01-entagon-excluded-anthropic-despite-federal-court-r.md",
     "2026-08-31-deepseek-15b-funding-state-control-rapid-scaling.md",
@@ -356,6 +357,22 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-02-claude-fable-5-1-45-cheaper-cache-better-performan.md",
+      "slug": "2026-09-02-claude-fable-5-1-45-cheaper-cache-better-performan",
+      "url": "/blog/2026-09-02-claude-fable-5-1-45-cheaper-cache-better-performan/",
+      "title": "Claude Fable 5.1: 45% Cheaper Cache, Better Performance - Founders Guide",
+      "date": "2026-09-02",
+      "published_at": "2026-09-02T11:03:12.006Z",
+      "tags": [
+        "Fable"
+      ],
+      "excerpt": "Anthropic released Fable 5.1 today. Cache costs cut 75%. Typical workloads 25% cheaper, agents up to 45% cheaper. What changed, who should migrate, pricing breakdown.",
+      "image": "https://assets.lovable.dev/content/news/covers/fable-5-1-now-in-lovable-v2.jpg",
+      "sources": [],
+      "readTime": "4 min",
+      "shortId": 353
+    },
     {
       "filename": "2026-09-01-indias-gnani-artha-vs-chinas-deepseek-how-two-nati.md",
       "slug": "2026-09-01-indias-gnani-artha-vs-chinas-deepseek-how-two-nati",

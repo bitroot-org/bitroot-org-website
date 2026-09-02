@@ -5,8 +5,17 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Sep 2026 14:57:16 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Sep 2026 11:04:25 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude Fable 5.1: 45% Cheaper Cache, Better Performance - Founders Guide</title>
+      <link>https://bitroot.org/blog/2026-09-02-claude-fable-5-1-45-cheaper-cache-better-performan/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-02-claude-fable-5-1-45-cheaper-cache-better-performan/</guid>
+      <description>Anthropic released Fable 5.1 today. Cache costs cut 75%. Typical workloads 25% cheaper, agents up to 45% cheaper. What changed, who should migrate, pricing breakdown.</description>
+      <pubDate>Wed, 02 Sep 2026 11:03:12 +0000</pubDate>
+      <category>Fable</category>
+      <enclosure url="https://assets.lovable.dev/content/news/covers/fable-5-1-now-in-lovable-v2.jpg" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>India's Gnani Artha vs. China's DeepSeek: How Two Nations Build Sovereign AI</title>
       <link>https://bitroot.org/blog/2026-09-01-indias-gnani-artha-vs-chinas-deepseek-how-two-nati/</link>
