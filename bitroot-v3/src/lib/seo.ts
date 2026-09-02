@@ -29,7 +29,7 @@ export function buildMetadata({
       url: path,
       siteName,
       type: "website",
-      locale: "en_IN",
+      locale: "en",
       ...(image && {
         images: [{ url: image.url, width: 1200, height: 630, alt: image.alt }],
       }),

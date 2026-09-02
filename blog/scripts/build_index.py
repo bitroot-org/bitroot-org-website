@@ -159,7 +159,7 @@ def build_short_links(posts):
 <meta property="og:description" content="{esc(excerpt)}">
 <meta property="og:image" content="{esc(image)}">
 <meta property="og:url" content="{canonical}">
-<meta property="og:site_name" content="Bitroot Newslogger">
+<meta property="og:site_name" content="Bitroot">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{esc(title)}">
 <meta name="twitter:description" content="{esc(excerpt)}">
