@@ -5,8 +5,18 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 02 Sep 2026 11:16:47 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 07:36:11 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude Fable 5.1 for Indie Game Dev - Build Games in Hours</title>
+      <link>https://bitroot.org/blog/2026-09-03-claude-fable-5-1-for-indie-game-dev-build-games-in/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-03-claude-fable-5-1-for-indie-game-dev-build-games-in/</guid>
+      <description>Developers shipped complete playable games in Fable 5.1 single prompts. Cache costs dropped 75%. Here's how indie devs are prototyping faster and cheaper.</description>
+      <pubDate>Thu, 03 Sep 2026 07:35:20 +0000</pubDate>
+      <category>Dev</category>
+      <category>Fable</category>
+      <enclosure url="https://favtutor.com/fable-5-1-real-user-reviews/images/news-fable-5-1-real-user-reviews-v3-780.webp" type="image/webp" length="0" />
+    </item>
     <item>
       <title>OpenAI Astra: Cybersecurity Model Finds Zero-Day Exploits - Safety Concerns</title>
       <link>https://bitroot.org/blog/2026-09-02-openai-astra-cybersecurity-model-finds-zero-day-ex/</link>

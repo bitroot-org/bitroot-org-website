@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 354,
+  "count": 355,
   "posts": [
+    "2026-09-03-claude-fable-5-1-for-indie-game-dev-build-games-in.md",
     "2026-09-02-openai-astra-cybersecurity-model-finds-zero-day-ex.md",
     "2026-09-02-claude-fable-5-1-45-cheaper-cache-better-performan.md",
     "2026-09-01-indias-gnani-artha-vs-chinas-deepseek-how-two-nati.md",
@@ -358,6 +359,23 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-03-claude-fable-5-1-for-indie-game-dev-build-games-in.md",
+      "slug": "2026-09-03-claude-fable-5-1-for-indie-game-dev-build-games-in",
+      "url": "/blog/2026-09-03-claude-fable-5-1-for-indie-game-dev-build-games-in/",
+      "title": "Claude Fable 5.1 for Indie Game Dev - Build Games in Hours",
+      "date": "2026-09-03",
+      "published_at": "2026-09-03T07:35:20.665Z",
+      "tags": [
+        "Dev",
+        "Fable"
+      ],
+      "excerpt": "Developers shipped complete playable games in Fable 5.1 single prompts. Cache costs dropped 75%. Here's how indie devs are prototyping faster and cheaper.",
+      "image": "https://favtutor.com/fable-5-1-real-user-reviews/images/news-fable-5-1-real-user-reviews-v3-780.webp",
+      "sources": [],
+      "readTime": "5 min",
+      "shortId": 355
+    },
     {
       "filename": "2026-09-02-openai-astra-cybersecurity-model-finds-zero-day-ex.md",
       "slug": "2026-09-02-openai-astra-cybersecurity-model-finds-zero-day-ex",
