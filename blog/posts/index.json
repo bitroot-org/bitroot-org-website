@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 355,
+  "count": 356,
   "posts": [
     "2026-09-03-claude-fable-5-1-for-indie-game-dev-build-games-in.md",
+    "2026-09-03-ai-coding-tools-for-founders-cursor-vs-claude-code.md",
     "2026-09-02-openai-astra-cybersecurity-model-finds-zero-day-ex.md",
     "2026-09-02-claude-fable-5-1-45-cheaper-cache-better-performan.md",
     "2026-09-01-indias-gnani-artha-vs-chinas-deepseek-how-two-nati.md",
@@ -374,6 +375,23 @@
       "image": "https://favtutor.com/fable-5-1-real-user-reviews/images/news-fable-5-1-real-user-reviews-v3-780.webp",
       "sources": [],
       "readTime": "5 min",
+      "shortId": 356
+    },
+    {
+      "filename": "2026-09-03-ai-coding-tools-for-founders-cursor-vs-claude-code.md",
+      "slug": "2026-09-03-ai-coding-tools-for-founders-cursor-vs-claude-code",
+      "url": "/blog/2026-09-03-ai-coding-tools-for-founders-cursor-vs-claude-code/",
+      "title": "AI Coding Tools for Founders - Cursor vs Claude Code vs Copilot",
+      "date": "2026-09-03",
+      "published_at": "2026-09-03T09:22:35.390Z",
+      "tags": [
+        "Coding",
+        "AI"
+      ],
+      "excerpt": "Compare Cursor, Claude Code, and GitHub Copilot for founders. Real cost-to-productivity breakdown. Which saves most time? Decision framework included.",
+      "image": "https://res.cloudinary.com/de4rvmslk/image/upload/f_auto,q_auto/Frame_2087325381_swjj10.png",
+      "sources": [],
+      "readTime": "10 min",
       "shortId": 355
     },
     {

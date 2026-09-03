@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 03 Sep 2026 07:36:11 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 09:23:38 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Claude Fable 5.1 for Indie Game Dev - Build Games in Hours</title>
@@ -16,6 +16,16 @@
       <category>Dev</category>
       <category>Fable</category>
       <enclosure url="https://favtutor.com/fable-5-1-real-user-reviews/images/news-fable-5-1-real-user-reviews-v3-780.webp" type="image/webp" length="0" />
+    </item>
+    <item>
+      <title>AI Coding Tools for Founders - Cursor vs Claude Code vs Copilot</title>
+      <link>https://bitroot.org/blog/2026-09-03-ai-coding-tools-for-founders-cursor-vs-claude-code/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-03-ai-coding-tools-for-founders-cursor-vs-claude-code/</guid>
+      <description>Compare Cursor, Claude Code, and GitHub Copilot for founders. Real cost-to-productivity breakdown. Which saves most time? Decision framework included.</description>
+      <pubDate>Thu, 03 Sep 2026 09:22:35 +0000</pubDate>
+      <category>Coding</category>
+      <category>AI</category>
+      <enclosure url="https://res.cloudinary.com/de4rvmslk/image/upload/f_auto,q_auto/Frame_2087325381_swjj10.png" type="image/png" length="0" />
     </item>
     <item>
       <title>OpenAI Astra: Cybersecurity Model Finds Zero-Day Exploits - Safety Concerns</title>
