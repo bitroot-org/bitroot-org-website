@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 357,
+  "count": 358,
   "posts": [
     "2026-09-04-what-is-abliteration-ai-guardrails-how-theyre-bein.md",
+    "2026-09-04-gmail-live-what-founders-need-to-know-about-google.md",
     "2026-09-03-claude-fable-5-1-for-indie-game-dev-build-games-in.md",
     "2026-09-03-ai-coding-tools-for-founders-cursor-vs-claude-code.md",
     "2026-09-02-openai-astra-cybersecurity-model-finds-zero-day-ex.md",
@@ -375,6 +376,22 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgmtNnJMhCm4tkPn795PZZk7Jr25Jdx7HQyofMnQuLElvd4aFPaw4sFJnw&s=10",
       "sources": [],
       "readTime": "8 min",
+      "shortId": 358
+    },
+    {
+      "filename": "2026-09-04-gmail-live-what-founders-need-to-know-about-google.md",
+      "slug": "2026-09-04-gmail-live-what-founders-need-to-know-about-google",
+      "url": "/blog/2026-09-04-gmail-live-what-founders-need-to-know-about-google/",
+      "title": "Gmail Live: What Founders Need to Know About Google's Features",
+      "date": "2026-09-04",
+      "published_at": "2026-09-04T06:02:33.749Z",
+      "tags": [
+        "Google"
+      ],
+      "excerpt": "Gmail Live, Docs Live, and Keep Live let you voice-search email, draft documents, and organize notes. Here's what founders need to know about pricing and ROI.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6uNlrGl5bjU3exmQvsGy7L9Y5JNWw3d6EkkIcYFbnRttQJ6yepslR2w8&s=10",
+      "sources": [],
+      "readTime": "4 min",
       "shortId": 357
     },
     {
