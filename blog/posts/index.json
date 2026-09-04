@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 358,
+  "count": 359,
   "posts": [
     "2026-09-04-what-is-abliteration-ai-guardrails-how-theyre-bein.md",
+    "2026-09-04-gpt-6-astra-vs-fable-5-1-for-blender-which-ai-mode.md",
     "2026-09-04-gmail-live-what-founders-need-to-know-about-google.md",
     "2026-09-03-claude-fable-5-1-for-indie-game-dev-build-games-in.md",
     "2026-09-03-ai-coding-tools-for-founders-cursor-vs-claude-code.md",
@@ -374,6 +375,22 @@
       ],
       "excerpt": "Abliteration removes AI safety guardrails from models. Learn what abliteration is, how it works, why Abliteration.ai launched, and what it means for founders, security teams, and enterprises.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgmtNnJMhCm4tkPn795PZZk7Jr25Jdx7HQyofMnQuLElvd4aFPaw4sFJnw&s=10",
+      "sources": [],
+      "readTime": "8 min",
+      "shortId": 359
+    },
+    {
+      "filename": "2026-09-04-gpt-6-astra-vs-fable-5-1-for-blender-which-ai-mode.md",
+      "slug": "2026-09-04-gpt-6-astra-vs-fable-5-1-for-blender-which-ai-mode",
+      "url": "/blog/2026-09-04-gpt-6-astra-vs-fable-5-1-for-blender-which-ai-mode/",
+      "title": "GPT-6 Astra vs Fable 5.1 for Blender - Which AI Model Wins for 3D",
+      "date": "2026-09-04",
+      "published_at": "2026-09-04T10:37:23.078Z",
+      "tags": [
+        "Tech & AI"
+      ],
+      "excerpt": "Compare Astra and Fable 5.1 for Blender 3D modeling. Real benchmarks, pricing, speed, and user experiences. Which AI wins for indie devs, architects, and designers?",
+      "image": "https://cdn.mos.cms.futurecdn.net/9brtsKkuUU34fDSebXST73.jpg",
       "sources": [],
       "readTime": "8 min",
       "shortId": 358

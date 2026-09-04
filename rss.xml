@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Sep 2026 06:03:29 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2026 10:38:11 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What Is Abliteration? AI Guardrails &amp; How They're Being Removed</title>
@@ -15,6 +15,15 @@
       <pubDate>Fri, 04 Sep 2026 05:47:30 +0000</pubDate>
       <category>AI</category>
       <enclosure url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgmtNnJMhCm4tkPn795PZZk7Jr25Jdx7HQyofMnQuLElvd4aFPaw4sFJnw&amp;s=10" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>GPT-6 Astra vs Fable 5.1 for Blender - Which AI Model Wins for 3D</title>
+      <link>https://bitroot.org/blog/2026-09-04-gpt-6-astra-vs-fable-5-1-for-blender-which-ai-mode/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-04-gpt-6-astra-vs-fable-5-1-for-blender-which-ai-mode/</guid>
+      <description>Compare Astra and Fable 5.1 for Blender 3D modeling. Real benchmarks, pricing, speed, and user experiences. Which AI wins for indie devs, architects, and designers?</description>
+      <pubDate>Fri, 04 Sep 2026 10:37:23 +0000</pubDate>
+      <category>Tech &amp; AI</category>
+      <enclosure url="https://cdn.mos.cms.futurecdn.net/9brtsKkuUU34fDSebXST73.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Gmail Live: What Founders Need to Know About Google's Features</title>
