@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 356,
+  "count": 357,
   "posts": [
+    "2026-09-04-what-is-abliteration-ai-guardrails-how-theyre-bein.md",
     "2026-09-03-claude-fable-5-1-for-indie-game-dev-build-games-in.md",
     "2026-09-03-ai-coding-tools-for-founders-cursor-vs-claude-code.md",
     "2026-09-02-openai-astra-cybersecurity-model-finds-zero-day-ex.md",
@@ -360,6 +361,22 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-04-what-is-abliteration-ai-guardrails-how-theyre-bein.md",
+      "slug": "2026-09-04-what-is-abliteration-ai-guardrails-how-theyre-bein",
+      "url": "/blog/2026-09-04-what-is-abliteration-ai-guardrails-how-theyre-bein/",
+      "title": "What Is Abliteration? AI Guardrails & How They're Being Removed",
+      "date": "2026-09-04",
+      "published_at": "2026-09-04T05:47:30.961Z",
+      "tags": [
+        "AI"
+      ],
+      "excerpt": "Abliteration removes AI safety guardrails from models. Learn what abliteration is, how it works, why Abliteration.ai launched, and what it means for founders, security teams, and enterprises.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgmtNnJMhCm4tkPn795PZZk7Jr25Jdx7HQyofMnQuLElvd4aFPaw4sFJnw&s=10",
+      "sources": [],
+      "readTime": "8 min",
+      "shortId": 357
+    },
     {
       "filename": "2026-09-03-claude-fable-5-1-for-indie-game-dev-build-games-in.md",
       "slug": "2026-09-03-claude-fable-5-1-for-indie-game-dev-build-games-in",
