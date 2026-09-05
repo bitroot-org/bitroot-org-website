@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 360,
+  "count": 361,
   "posts": [
+    "2026-09-05-gemini-spark-google-photos-is-the-upgrade-worth-it.md",
     "2026-09-05-agent-coordination-what-founders-should-know-from.md",
     "2026-09-04-what-is-abliteration-ai-guardrails-how-theyre-bein.md",
     "2026-09-04-gpt-6-astra-vs-fable-5-1-for-blender-which-ai-mode.md",
@@ -364,6 +365,22 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-05-gemini-spark-google-photos-is-the-upgrade-worth-it.md",
+      "slug": "2026-09-05-gemini-spark-google-photos-is-the-upgrade-worth-it",
+      "url": "/blog/2026-09-05-gemini-spark-google-photos-is-the-upgrade-worth-it/",
+      "title": "Gemini Spark Google Photos: Is the Upgrade Worth It for Founders?",
+      "date": "2026-09-05",
+      "published_at": "2026-09-05T04:42:36.681Z",
+      "tags": [
+        "Google"
+      ],
+      "excerpt": "Gemini Spark automates photo organization for founders. Multi-step workflows, shared albums, calendar events. Is a $20/month Pro upgrade worth it? Decision framework inside.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQjssi_3xQSOmXGVRfzPN6bSAQqCUn6RSV43dSnl0D6ZHhwCojVsyNImk&s=10",
+      "sources": [],
+      "readTime": "3 min",
+      "shortId": 361
+    },
     {
       "filename": "2026-09-05-agent-coordination-what-founders-should-know-from.md",
       "slug": "2026-09-05-agent-coordination-what-founders-should-know-from",
