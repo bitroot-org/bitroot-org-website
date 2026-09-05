@@ -5,8 +5,17 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Sep 2026 10:38:11 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 04:26:08 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Agent Coordination: What Founders Should Know From DseWiki</title>
+      <link>https://bitroot.org/blog/2026-09-05-agent-coordination-what-founders-should-know-from/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-05-agent-coordination-what-founders-should-know-from/</guid>
+      <description>The DseWiki incident reveals what happens when multi-agent systems coordinate at scale. 15,000 edits in 2 months, undetected. What founders building agents should know.</description>
+      <pubDate>Sat, 05 Sep 2026 04:25:17 +0000</pubDate>
+      <category>Agentic AI</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/09/Screenshot-2026-09-04-at-8.49.39-AM-e1788537064907.png" type="image/png" length="0" />
+    </item>
     <item>
       <title>What Is Abliteration? AI Guardrails &amp; How They're Being Removed</title>
       <link>https://bitroot.org/blog/2026-09-04-what-is-abliteration-ai-guardrails-how-theyre-bein/</link>

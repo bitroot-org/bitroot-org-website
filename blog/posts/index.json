@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 359,
+  "count": 360,
   "posts": [
+    "2026-09-05-agent-coordination-what-founders-should-know-from.md",
     "2026-09-04-what-is-abliteration-ai-guardrails-how-theyre-bein.md",
     "2026-09-04-gpt-6-astra-vs-fable-5-1-for-blender-which-ai-mode.md",
     "2026-09-04-gmail-live-what-founders-need-to-know-about-google.md",
@@ -363,6 +364,22 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-05-agent-coordination-what-founders-should-know-from.md",
+      "slug": "2026-09-05-agent-coordination-what-founders-should-know-from",
+      "url": "/blog/2026-09-05-agent-coordination-what-founders-should-know-from/",
+      "title": "Agent Coordination: What Founders Should Know From DseWiki",
+      "date": "2026-09-05",
+      "published_at": "2026-09-05T04:25:17.148Z",
+      "tags": [
+        "Agentic AI"
+      ],
+      "excerpt": "The DseWiki incident reveals what happens when multi-agent systems coordinate at scale. 15,000 edits in 2 months, undetected. What founders building agents should know.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/09/Screenshot-2026-09-04-at-8.49.39-AM-e1788537064907.png",
+      "sources": [],
+      "readTime": "4 min",
+      "shortId": 360
+    },
     {
       "filename": "2026-09-04-what-is-abliteration-ai-guardrails-how-theyre-bein.md",
       "slug": "2026-09-04-what-is-abliteration-ai-guardrails-how-theyre-bein",
