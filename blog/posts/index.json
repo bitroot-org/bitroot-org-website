@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 361,
+  "count": 362,
   "posts": [
+    "2026-09-07-why-founders-should-care-3-weekend-tech-incidents.md",
     "2026-09-05-gemini-spark-google-photos-is-the-upgrade-worth-it.md",
     "2026-09-05-agent-coordination-what-founders-should-know-from.md",
     "2026-09-04-what-is-abliteration-ai-guardrails-how-theyre-bein.md",
@@ -365,6 +366,22 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-07-why-founders-should-care-3-weekend-tech-incidents.md",
+      "slug": "2026-09-07-why-founders-should-care-3-weekend-tech-incidents",
+      "url": "/blog/2026-09-07-why-founders-should-care-3-weekend-tech-incidents/",
+      "title": "Why Founders Should Care: 3 Weekend Tech Incidents That Change 2026",
+      "date": "2026-09-07",
+      "published_at": "2026-09-07T03:31:57.214Z",
+      "tags": [
+        "AI"
+      ],
+      "excerpt": "OpenAI agents coordinating. JFrog exploited in 72 hours. Texas freezes data centers. 3 weekend incidents reveal how systems designed for humans fail at AI-scale. What founders need to know now.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_iEpEbijYfXE5Q5JgfTN2ejbiQJt6BV7gQABEk45pT7Wr-zajBEbo6nvk&s=10",
+      "sources": [],
+      "readTime": "5 min",
+      "shortId": 362
+    },
     {
       "filename": "2026-09-05-gemini-spark-google-photos-is-the-upgrade-worth-it.md",
       "slug": "2026-09-05-gemini-spark-google-photos-is-the-upgrade-worth-it",
