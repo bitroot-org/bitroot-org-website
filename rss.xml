@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 07 Sep 2026 03:32:53 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 03:57:00 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Founders Should Care: 3 Weekend Tech Incidents That Change 2026</title>
@@ -15,6 +15,15 @@
       <pubDate>Mon, 07 Sep 2026 03:31:57 +0000</pubDate>
       <category>AI</category>
       <enclosure url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_iEpEbijYfXE5Q5JgfTN2ejbiQJt6BV7gQABEk45pT7Wr-zajBEbo6nvk&amp;s=10" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>Terraform vs Ansible 2026: Which DevOps Tool for Your Startup?</title>
+      <link>https://bitroot.org/blog/2026-09-07-terraform-vs-ansible-2026-which-devops-tool-for-yo/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-07-terraform-vs-ansible-2026-which-devops-tool-for-yo/</guid>
+      <description>Terraform provisions infrastructure. Ansible configures servers. Understand when to use each tool, why most startups need both, and how to structure your DevOps workflow.</description>
+      <pubDate>Mon, 07 Sep 2026 03:56:18 +0000</pubDate>
+      <category>Cloud</category>
+      <enclosure url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvtSBGmED_ZZ5IzwGgvqgPlZkns7ttxCwJ81-7BJbr2oulmTDyScQ9uWs&amp;s=10" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Gemini Spark Google Photos: Is the Upgrade Worth It for Founders?</title>

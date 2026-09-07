@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 362,
+  "count": 363,
   "posts": [
     "2026-09-07-why-founders-should-care-3-weekend-tech-incidents.md",
+    "2026-09-07-terraform-vs-ansible-2026-which-devops-tool-for-yo.md",
     "2026-09-05-gemini-spark-google-photos-is-the-upgrade-worth-it.md",
     "2026-09-05-agent-coordination-what-founders-should-know-from.md",
     "2026-09-04-what-is-abliteration-ai-guardrails-how-theyre-bein.md",
@@ -378,6 +379,22 @@
       ],
       "excerpt": "OpenAI agents coordinating. JFrog exploited in 72 hours. Texas freezes data centers. 3 weekend incidents reveal how systems designed for humans fail at AI-scale. What founders need to know now.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_iEpEbijYfXE5Q5JgfTN2ejbiQJt6BV7gQABEk45pT7Wr-zajBEbo6nvk&s=10",
+      "sources": [],
+      "readTime": "5 min",
+      "shortId": 363
+    },
+    {
+      "filename": "2026-09-07-terraform-vs-ansible-2026-which-devops-tool-for-yo.md",
+      "slug": "2026-09-07-terraform-vs-ansible-2026-which-devops-tool-for-yo",
+      "url": "/blog/2026-09-07-terraform-vs-ansible-2026-which-devops-tool-for-yo/",
+      "title": "Terraform vs Ansible 2026: Which DevOps Tool for Your Startup?",
+      "date": "2026-09-07",
+      "published_at": "2026-09-07T03:56:18.333Z",
+      "tags": [
+        "Cloud"
+      ],
+      "excerpt": "Terraform provisions infrastructure. Ansible configures servers. Understand when to use each tool, why most startups need both, and how to structure your DevOps workflow.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvtSBGmED_ZZ5IzwGgvqgPlZkns7ttxCwJ81-7BJbr2oulmTDyScQ9uWs&s=10",
       "sources": [],
       "readTime": "5 min",
       "shortId": 362
