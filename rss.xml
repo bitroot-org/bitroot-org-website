@@ -5,8 +5,17 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 07 Sep 2026 03:57:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2026 03:51:37 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NVIDIA Buys Hugging Face $12.93B: What Builders Should Know</title>
+      <link>https://bitroot.org/blog/2026-09-08-nvidia-buys-hugging-face-12-93b-what-builders-shou/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-08-nvidia-buys-hugging-face-12-93b-what-builders-shou/</guid>
+      <description>NVIDIA acquired Hugging Face for $12.93B, consolidating the AI stack. What this means for builders, regulatory risks, and what to watch as it closes in 2027.</description>
+      <pubDate>Tue, 08 Sep 2026 03:50:52 +0000</pubDate>
+      <category>AI</category>
+      <enclosure url="https://blogs.nvidia.com/wp-content/uploads/2026/09/hf-nvidia-partner_hf-nvidia-partner-press-1920x1080-2-1536x864.png" type="image/png" length="0" />
+    </item>
     <item>
       <title>Why Founders Should Care: 3 Weekend Tech Incidents That Change 2026</title>
       <link>https://bitroot.org/blog/2026-09-07-why-founders-should-care-3-weekend-tech-incidents/</link>
