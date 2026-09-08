@@ -29,7 +29,7 @@ export function buildMetadata({
       url: path,
       siteName,
       type: "website",
-      locale: "en_IN",
+      locale: "en",
       ...(image && {
         images: [{ url: image.url, width: 1200, height: 630, alt: image.alt }],
       }),
@@ -53,6 +53,44 @@ export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
       name: item.name,
       item: `${siteUrl}${item.path}`,
     })),
+  };
+}
+
+/**
+ * CollectionPage JSON-LD for a listing route, with the list of entries
+ * embedded as its `mainEntity` ItemList. One node covers both types and
+ * keeps them linked (vs. two loose top-level scripts).
+ */
+export function collectionPageJsonLd({
+  name,
+  description,
+  path,
+  items,
+}: {
+  name: string;
+  description: string;
+  path: string;
+  items: { name: string; path: string }[];
+}) {
+  const url = `${siteUrl}${path}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name,
+    description,
+    url,
+    isPartOf: { "@type": "WebSite", name: siteName, url: `${siteUrl}/` },
+    mainEntity: {
+      "@type": "ItemList",
+      name,
+      numberOfItems: items.length,
+      itemListElement: items.map((item, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: item.name,
+        url: `${siteUrl}${item.path}`,
+      })),
+    },
   };
 }
 

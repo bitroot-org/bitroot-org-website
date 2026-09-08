@@ -10,7 +10,7 @@ import NewsloggerSection from "@/components/home/NewsloggerSection";
 // import QuotesSection from "@/components/home/QuotesSection"; // hidden until we have real quotes
 import ClubBanner from "@/components/home/ClubBanner";
 import JsonLd from "@/components/JsonLd";
-import { breadcrumbJsonLd, siteUrl } from "@/lib/seo";
+import { siteUrl } from "@/lib/seo";
 
 const homeItemListJsonLd = {
   "@context": "https://schema.org",
@@ -28,7 +28,6 @@ export default function Home() {
   return (
     <>
       <JsonLd data={homeItemListJsonLd} />
-      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }])} />
       <Hero />
       <HeroTicker />
       <LaneSection />

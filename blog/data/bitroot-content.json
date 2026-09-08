@@ -1,0 +1,305 @@
+{
+  "_note": "Curated index of bitroot.org kits + guides, used by build_post_pages.py to cross-link blog posts. Mirrors the fallback arrays in bitroot-v3/src/content/data.ts - regenerate if those change.",
+  "items": [
+    {
+      "title": "Waitlist Kit",
+      "kind": "kit",
+      "url": "/kits/waitlist-kit/",
+      "tags": [
+        "Next.js",
+        "Resend",
+        "Supabase"
+      ],
+      "blurb": "Single-page waitlist with email capture, referral counter, and a real admin dashboard. Ship a landing page in an hour."
+    },
+    {
+      "title": "Modern LaTeX Invoice Generator Kit",
+      "kind": "kit",
+      "url": "/kits/latex-invoice-kit/",
+      "tags": [
+        "Next.js",
+        "LaTeX",
+        "Node.js"
+      ],
+      "blurb": "Generate pixel-perfect invoices with LaTeX templates. Customizable, PDF-ready, and built for freelancers who care about presentation."
+    },
+    {
+      "title": "CAPTCHAs Kit",
+      "kind": "kit",
+      "url": "/kits/captchas-kit/",
+      "tags": [
+        "Next.js",
+        "Node.js",
+        "Redis"
+      ],
+      "blurb": "Generate and validate CAPTCHAs on your own server. Image generation, audio fallback, and rate limiting built in. Privacy-first, no tracking."
+    },
+    {
+      "title": "SiteWatch – Website Change Detection Kit",
+      "kind": "kit",
+      "url": "/kits/sitewatch-kit/",
+      "tags": [
+        "Python",
+        "Flask",
+        "Docker"
+      ],
+      "blurb": "Self-hosted website change detection — visual selectors, scheduled checks, and alerts over Discord, Slack, Telegram, email, and 100+ other c"
+    },
+    {
+      "title": "InboxVault – Email Backup & Archive Kit",
+      "kind": "kit",
+      "url": "/kits/inboxvault-kit/",
+      "tags": [
+        "SvelteKit",
+        "PostgreSQL",
+        "Meilisearch"
+      ],
+      "blurb": "Self-hosted email backup and search. IMAP sync, full-text search with Meilisearch, and a clean web UI to browse years of mail. Own your arch"
+    },
+    {
+      "title": "ArchiveFlow – Open Source Data Archiving Kit",
+      "kind": "kit",
+      "url": "/kits/archiveflow-kit/",
+      "tags": [
+        "SvelteKit",
+        "Node.js",
+        "Meilisearch"
+      ],
+      "blurb": "Self-hosted email archiving and search — ingest from Google Workspace, Microsoft 365, or IMAP, then search everything instantly with retenti"
+    },
+    {
+      "title": "PulseDash – Analytics Dashboard Kit",
+      "kind": "kit",
+      "url": "/kits/pulsedash-kit/",
+      "tags": [
+        "Next.js",
+        "PocketBase",
+        "Tailwind CSS"
+      ],
+      "blurb": "Self-hosted personal and team dashboard for organizing links, resources, bookmarks, and tools in one place — customizable widgets, instant C"
+    },
+    {
+      "title": "LinkForge – Smart Link Management Kit",
+      "kind": "kit",
+      "url": "/kits/linkforge-kit/",
+      "tags": [
+        "React",
+        "Go",
+        "TailwindCSS"
+      ],
+      "blurb": "Self-hosted link shortener and manager — custom short links, collections, public/team sharing, and click stats in one React + Go app."
+    },
+    {
+      "title": "PDFCraft – PDF Processing & Automation Kit",
+      "kind": "kit",
+      "url": "/kits/pdfcraft-kit/",
+      "tags": [
+        "Django",
+        "HTMX",
+        "PostgreSQL"
+      ],
+      "blurb": "Self-hosted PDF vault — collections, annotations, team sharing, and WebAuthn/TOTP security, built on Django and PostgreSQL."
+    },
+    {
+      "title": "API Versioning That Doesn't Break Clients (URI + Backward Compatibility Strategy)",
+      "kind": "guide",
+      "url": "/guides/api-versioning-that-doesnt-break-clients/",
+      "tags": [
+        "API",
+        "Versioning",
+        "Backend",
+        "Node.js"
+      ],
+      "blurb": "Version your API in the URL (/v1/, /v2/). Support multiple versions simultaneously for 12 months. Make changes additive, not destructive. Wh"
+    },
+    {
+      "title": "Build Secure Auth That Doesn't Break (JWT + Refresh Tokens + RBAC)",
+      "kind": "guide",
+      "url": "/guides/secure-auth-jwt-refresh-rbac/",
+      "tags": [
+        "Auth",
+        "JWT",
+        "Security",
+        "Node.js"
+      ],
+      "blurb": "Use JWT for stateless auth, refresh tokens for long-lived sessions, RBAC for permissions, and HttpOnly cookies instead of localStorage — a p"
+    },
+    {
+      "title": "Upload Files Directly to S3 (Without Killing Your Server Bandwidth)",
+      "kind": "guide",
+      "url": "/guides/upload-files-directly-to-s3/",
+      "tags": [
+        "AWS",
+        "S3",
+        "Node.js",
+        "Backend"
+      ],
+      "blurb": "Don't proxy file uploads through your server. Generate pre-signed S3 URLs, let users upload directly to S3 — your server stays fast, bandwid"
+    },
+    {
+      "title": "Build Background Jobs That Actually Run (Bull/BullMQ in Node.js)",
+      "kind": "guide",
+      "url": "/guides/background-jobs-that-actually-run/",
+      "tags": [
+        "Node.js",
+        "Bull",
+        "Redis",
+        "Backend"
+      ],
+      "blurb": "Don't handle long tasks in your request handler. Use Bull to queue jobs, process them in the background, retry on failure, and monitor every"
+    },
+    {
+      "title": "How to Market Your Side Project: Keyword Research + Content Strategy for Indie Hackers",
+      "kind": "guide",
+      "url": "/guides/market-your-side-project/",
+      "tags": [
+        "Marketing",
+        "SEO",
+        "Indie Hacker",
+        "Content"
+      ],
+      "blurb": "Most indie projects fail because zero people know they exist. A step-by-step playbook for finding low-competition keywords (KD ≤ 10, volume "
+    },
+    {
+      "title": "AI-Native QA: How to Replace Your QA Team Without Actually Replacing Humans",
+      "kind": "guide",
+      "url": "/guides/ai-native-qa/",
+      "tags": [
+        "AI",
+        "QA",
+        "Security",
+        "CI/CD"
+      ],
+      "blurb": "Google fixed 1,072 Chrome security bugs in a month using Gemini — more than the previous 23 releases combined. A step-by-step stack for AI-n"
+    },
+    {
+      "title": "How to Automate Your First $100K in Revenue: 5 Zapier Workflows Every Founder Needs",
+      "kind": "guide",
+      "url": "/guides/automate-your-first-100k-zapier-workflows/",
+      "tags": [
+        "Zapier",
+        "Automation",
+        "Founder",
+        "No-code"
+      ],
+      "blurb": "Five copy-paste Zapier workflows for lead capture, invoice follow-up, customer onboarding, feedback logging, and weekly reporting — roughly "
+    },
+    {
+      "title": "Launchrock vs Unbounce: Which Fits What You're Building",
+      "kind": "guide",
+      "url": "/guides/launchrock-vs-unbounce/",
+      "tags": [
+        "Landing Pages",
+        "CRO",
+        "Comparison",
+        "Prelaunch"
+      ],
+      "blurb": "These two tools aren't really competitors — Launchrock validates an idea before you have a product, Unbounce squeezes more conversions out o"
+    },
+    {
+      "title": "Launching a SaaS on (Almost) $0/Month: A Category-by-Category Toolkit",
+      "kind": "guide",
+      "url": "/guides/launch-a-saas-on-almost-0-per-month/",
+      "tags": [
+        "SaaS",
+        "Bootstrapping",
+        "Tools",
+        "Free tier"
+      ],
+      "blurb": "A category-by-category toolkit for taking a SaaS from idea to paying customers on near-zero fixed spend — what to prioritize in hosting, dat"
+    },
+    {
+      "title": "Run Claude Code on a VPS: The Locked-Down Setup",
+      "kind": "guide",
+      "url": "/guides/run-claude-code-on-a-vps/",
+      "tags": [
+        "Claude Code",
+        "VPS",
+        "Security",
+        "Self-hosting"
+      ],
+      "blurb": "A server that runs itself, mostly. €5–10/month, ~40 minutes to build — Tailscale for admin access, Cloudflare-only inbound traffic, and Clau"
+    },
+    {
+      "title": "Git & GitHub Quick Guide",
+      "kind": "guide",
+      "url": "/guides/git-github-quick-guide/",
+      "tags": [
+        "Git",
+        "GitHub",
+        "Workflow",
+        "Reference"
+      ],
+      "blurb": "A minimal, high-velocity reference for daily Git and GitHub operations — branching, committing, merging vs. rebasing, undoing mistakes, stas"
+    },
+    {
+      "title": "How to Automate Marketing Operations with Claude Cowork: A Hands-On Guide for 2026",
+      "kind": "guide",
+      "url": "/guides/automate-marketing-ops-with-claude-cowork/",
+      "tags": [
+        "AI",
+        "Claude",
+        "Marketing",
+        "Automation"
+      ],
+      "blurb": "A hands-on guide to automating marketing reporting and campaign builds with Claude Cowork — including the exact workflows from Anthropic's o"
+    },
+    {
+      "title": "Ship a waitlist in 2 hours",
+      "kind": "guide",
+      "url": "/guides/ship-a-waitlist-in-2-hours/",
+      "tags": [
+        "Next.js",
+        "Resend",
+        "Supabase"
+      ],
+      "blurb": "A zero-fluff walkthrough for shipping a waitlist with email capture, double opt-in, and a real admin view. Real code, reproducible."
+    },
+    {
+      "title": "Set up a production-ready design workflow",
+      "kind": "guide",
+      "url": "/guides/design-planning-workflow/",
+      "tags": [
+        "Design",
+        "Figma",
+        "AI",
+        "Handoff"
+      ],
+      "blurb": "A single operational guide for kicking off design — Antigravity, Figma, MCP/Copilot, AI-ready handoff, and the prompts you'll actually use."
+    },
+    {
+      "title": "An AI-assisted full-stack workflow that doesn't get messy",
+      "kind": "guide",
+      "url": "/guides/ai-assisted-fullstack-workflow/",
+      "tags": [
+        "AI",
+        "Next.js",
+        "Workflow",
+        "Architecture"
+      ],
+      "blurb": "Plan, prompt, and ship with AI coding tools without ending up with hallucinated code. Stack, rules, PRD, vertical slices, and the exact prom"
+    },
+    {
+      "title": "18 free analytics tools, ranked by their real free tiers",
+      "kind": "guide",
+      "url": "/guides/free-analytics-tools/",
+      "tags": [
+        "Analytics",
+        "Tools",
+        "Free tier"
+      ],
+      "blurb": "A field-tested list of free analytics platforms — product, web, session replay, telemetry — with the exact 2026 free-tier limits."
+    },
+    {
+      "title": "50 free places to list your startup",
+      "kind": "guide",
+      "url": "/guides/50-places-to-list-your-startup/",
+      "tags": [
+        "Launch",
+        "Marketing",
+        "Distribution"
+      ],
+      "blurb": "Launch platforms, communities, and directories — annotated with audience size and a one-line note on what each is good for."
+    }
+  ]
+}
