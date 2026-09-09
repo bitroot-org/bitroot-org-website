@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 365,
+  "count": 366,
   "posts": [
     "2026-09-09-muse-vs-claude-2026-personal-agent-vs-reasoning-as.md",
+    "2026-09-09-lapis-one-personal-linux-computer-for-ai-agents-20.md",
     "2026-09-08-nvidia-buys-hugging-face-12-93b-what-builders-shou.md",
     "2026-09-07-why-founders-should-care-3-weekend-tech-incidents.md",
     "2026-09-07-terraform-vs-ansible-2026-which-devops-tool-for-yo.md",
@@ -383,6 +384,20 @@
       "image": "https://muse.ai/landing/connectors@2x.webp",
       "sources": [],
       "readTime": "4 min",
+      "shortId": 366
+    },
+    {
+      "filename": "2026-09-09-lapis-one-personal-linux-computer-for-ai-agents-20.md",
+      "slug": "2026-09-09-lapis-one-personal-linux-computer-for-ai-agents-20",
+      "url": "/blog/2026-09-09-lapis-one-personal-linux-computer-for-ai-agents-20/",
+      "title": "Lapis One: Personal Linux Computer for AI Agents 2026",
+      "date": "2026-09-09",
+      "published_at": "2026-09-09T03:55:09.612Z",
+      "tags": [],
+      "excerpt": "Lapis One is a dedicated Linux computer for running AI agents 24/7. Local infrastructure, Agent KVM hardware control, full-disk encryption. What you need to know.",
+      "image": "https://pbs.twimg.com/card_img/2095987579225075715/4woCVQKi?format=jpg&name=small",
+      "sources": [],
+      "readTime": "3 min",
       "shortId": 365
     },
     {

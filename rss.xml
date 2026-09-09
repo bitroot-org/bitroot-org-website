@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 09 Sep 2026 03:50:35 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 03:55:55 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Muse vs Claude 2026: Personal Agent vs Reasoning Assistant</title>
@@ -15,6 +15,14 @@
       <pubDate>Wed, 09 Sep 2026 03:49:51 +0000</pubDate>
       <category>AI Agents</category>
       <enclosure url="https://muse.ai/landing/connectors@2x.webp" type="image/webp" length="0" />
+    </item>
+    <item>
+      <title>Lapis One: Personal Linux Computer for AI Agents 2026</title>
+      <link>https://bitroot.org/blog/2026-09-09-lapis-one-personal-linux-computer-for-ai-agents-20/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-09-lapis-one-personal-linux-computer-for-ai-agents-20/</guid>
+      <description>Lapis One is a dedicated Linux computer for running AI agents 24/7. Local infrastructure, Agent KVM hardware control, full-disk encryption. What you need to know.</description>
+      <pubDate>Wed, 09 Sep 2026 03:55:09 +0000</pubDate>
+      <enclosure url="https://pbs.twimg.com/card_img/2095987579225075715/4woCVQKi?format=jpg&amp;name=small" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>NVIDIA Buys Hugging Face $12.93B: What Builders Should Know</title>
