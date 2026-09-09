@@ -5,8 +5,17 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Sep 2026 03:51:37 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 03:50:35 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Muse vs Claude 2026: Personal Agent vs Reasoning Assistant</title>
+      <link>https://bitroot.org/blog/2026-09-09-muse-vs-claude-2026-personal-agent-vs-reasoning-as/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-09-muse-vs-claude-2026-personal-agent-vs-reasoning-as/</guid>
+      <description>Muse executes tasks. Claude thinks. Compare personal AI agent vs reasoning assistant. Different purposes, different pricing, different security models.</description>
+      <pubDate>Wed, 09 Sep 2026 03:49:51 +0000</pubDate>
+      <category>AI Agents</category>
+      <enclosure url="https://muse.ai/landing/connectors@2x.webp" type="image/webp" length="0" />
+    </item>
     <item>
       <title>NVIDIA Buys Hugging Face $12.93B: What Builders Should Know</title>
       <link>https://bitroot.org/blog/2026-09-08-nvidia-buys-hugging-face-12-93b-what-builders-shou/</link>
