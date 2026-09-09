@@ -1,9 +1,10 @@
 {
   "generated": true,
-  "count": 366,
+  "count": 367,
   "posts": [
     "2026-09-09-muse-vs-claude-2026-personal-agent-vs-reasoning-as.md",
     "2026-09-09-lapis-one-personal-linux-computer-for-ai-agents-20.md",
+    "2026-09-09-gpt-5-4-vs-5-5-vs-5-6-vs-astra-openai-model-compar.md",
     "2026-09-08-nvidia-buys-hugging-face-12-93b-what-builders-shou.md",
     "2026-09-07-why-founders-should-care-3-weekend-tech-incidents.md",
     "2026-09-07-terraform-vs-ansible-2026-which-devops-tool-for-yo.md",
@@ -384,7 +385,7 @@
       "image": "https://muse.ai/landing/connectors@2x.webp",
       "sources": [],
       "readTime": "4 min",
-      "shortId": 366
+      "shortId": 367
     },
     {
       "filename": "2026-09-09-lapis-one-personal-linux-computer-for-ai-agents-20.md",
@@ -398,6 +399,22 @@
       "image": "https://pbs.twimg.com/card_img/2095987579225075715/4woCVQKi?format=jpg&name=small",
       "sources": [],
       "readTime": "3 min",
+      "shortId": 366
+    },
+    {
+      "filename": "2026-09-09-gpt-5-4-vs-5-5-vs-5-6-vs-astra-openai-model-compar.md",
+      "slug": "2026-09-09-gpt-5-4-vs-5-5-vs-5-6-vs-astra-openai-model-compar",
+      "url": "/blog/2026-09-09-gpt-5-4-vs-5-5-vs-5-6-vs-astra-openai-model-compar/",
+      "title": "GPT-5.4 vs 5.5 vs 5.6 vs Astra: OpenAI Model Comparison & Pricing 2026",
+      "date": "2026-09-09",
+      "published_at": "2026-09-09T06:59:54.503Z",
+      "tags": [
+        "OpenAI"
+      ],
+      "excerpt": "Confused by OpenAI's model lineup? Compare GPT-5.4, 5.5, 5.6 (Sol/Terra/Luna), and Astra. Pricing, performance, and which model to pick for your workload.",
+      "image": "https://pbs.twimg.com/card_img/2097397680641118208/Z1nAhNyX?format=jpg&name=900x900",
+      "sources": [],
+      "readTime": "4 min",
       "shortId": 365
     },
     {

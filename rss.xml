@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 09 Sep 2026 03:55:55 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 07:00:39 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Muse vs Claude 2026: Personal Agent vs Reasoning Assistant</title>
@@ -23,6 +23,15 @@
       <description>Lapis One is a dedicated Linux computer for running AI agents 24/7. Local infrastructure, Agent KVM hardware control, full-disk encryption. What you need to know.</description>
       <pubDate>Wed, 09 Sep 2026 03:55:09 +0000</pubDate>
       <enclosure url="https://pbs.twimg.com/card_img/2095987579225075715/4woCVQKi?format=jpg&amp;name=small" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>GPT-5.4 vs 5.5 vs 5.6 vs Astra: OpenAI Model Comparison &amp; Pricing 2026</title>
+      <link>https://bitroot.org/blog/2026-09-09-gpt-5-4-vs-5-5-vs-5-6-vs-astra-openai-model-compar/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-09-gpt-5-4-vs-5-5-vs-5-6-vs-astra-openai-model-compar/</guid>
+      <description>Confused by OpenAI's model lineup? Compare GPT-5.4, 5.5, 5.6 (Sol/Terra/Luna), and Astra. Pricing, performance, and which model to pick for your workload.</description>
+      <pubDate>Wed, 09 Sep 2026 06:59:54 +0000</pubDate>
+      <category>OpenAI</category>
+      <enclosure url="https://pbs.twimg.com/card_img/2097397680641118208/Z1nAhNyX?format=jpg&amp;name=900x900" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>NVIDIA Buys Hugging Face $12.93B: What Builders Should Know</title>
