@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 368,
+  "count": 369,
   "posts": [
     "2026-09-10-cheap-ai-tools-for-startups-2026-12-ranked-by-cost.md",
+    "2026-09-10-chatgpt-plugins-vs-skills-vs-gpts-vs-mcp-which-to.md",
     "2026-09-09-muse-vs-claude-2026-personal-agent-vs-reasoning-as.md",
     "2026-09-09-lapis-one-personal-linux-computer-for-ai-agents-20.md",
     "2026-09-09-gpt-5-4-vs-5-5-vs-5-6-vs-astra-openai-model-compar.md",
@@ -386,6 +387,24 @@
       "image": "https://cdn.prod.website-files.com/631fef7bf9733bf3e5529a4a/67a661bb608cc057b80918f3_Why%20Startups%20Should%20Invest%20in%20AI%20Tools%20for%20Sales.webp",
       "sources": [],
       "readTime": "10 min",
+      "shortId": 369
+    },
+    {
+      "filename": "2026-09-10-chatgpt-plugins-vs-skills-vs-gpts-vs-mcp-which-to.md",
+      "slug": "2026-09-10-chatgpt-plugins-vs-skills-vs-gpts-vs-mcp-which-to",
+      "url": "/blog/2026-09-10-chatgpt-plugins-vs-skills-vs-gpts-vs-mcp-which-to/",
+      "title": "ChatGPT Plugins vs Skills vs GPTs vs MCP: Which to Actually Use 2026",
+      "date": "2026-09-10",
+      "published_at": "2026-09-10T03:48:17.993Z",
+      "tags": [
+        "Plugins",
+        "Skills",
+        "MCP"
+      ],
+      "excerpt": "Confused about ChatGPT plugins, skills, GPTs, and MCP? Here's what each actually is, why plugins died then came back with a new meaning, and which to use.",
+      "image": "https://enchanter.gg/img/blog/blog23.jpg",
+      "sources": [],
+      "readTime": "8 min",
       "shortId": 368
     },
     {
