@@ -8,7 +8,7 @@ tags:
 - 'Muse'
 - 'Meta'
 - 'AI-agents'
-title: 'Meta''s Muse Hits #2 App: Should Founders Actually Use It? 2026'
+title: 'Meta''s Muse Hits #2 App: Should Founders Actually Use It?'
 ---
 
 <a href="https://techcrunch.com/2026/09/10/metas-ai-agent-muse-is-now-the-no-2-app-in-the-us/">Meta's Muse hit the No. 2 spot on the iOS App Store</a> within 48 hours of launch. <a href="https://forkast.news/metas-muse-launches-as-the-biggest-cross-app-ai-agent-yet-with-a-security-disclosure-problem">Muse, which launched September 8, 2026</a>, racked up over 83,000 iOS downloads in the United States. But the headline obscures a more important question for founders: Does the ranking mean Muse is actually useful, and should you be testing it?
