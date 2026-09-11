@@ -5,8 +5,17 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 11 Sep 2026 03:45:44 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 06:40:07 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Phoenix-4.5: Fastest Real-Time AI Avatars for Customer Agents 2026</title>
+      <link>https://bitroot.org/blog/2026-09-11-phoenix-4-5-fastest-real-time-ai-avatars-for-custo/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-11-phoenix-4-5-fastest-real-time-ai-avatars-for-custo/</guid>
+      <description>Tavus released Phoenix-4.5, the fastest real-time human rendering model. What changed: upper body animation, faster inference, richer expressions. Should your AI startup test it?</description>
+      <pubDate>Fri, 11 Sep 2026 06:39:10 +0000</pubDate>
+      <category>AI Tools &amp; Infrastructure</category>
+      <enclosure url="https://cdn.prod.website-files.com/68c8e57d6e512b9573db147f/6aa17dc18f4e41bccaaaa48d_Group%203%20(3).jpg" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Meta's Muse Hits #2 App: Should Founders Actually Use It?</title>
       <link>https://bitroot.org/blog/2026-09-11-metas-muse-hits-2-app-should-founders-actually-use/</link>
