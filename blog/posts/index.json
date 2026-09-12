@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 372,
+  "count": 373,
   "posts": [
+    "2026-09-12-claude-in-chrome-is-ga-browser-automation-without.md",
     "2026-09-11-phoenix-4-5-fastest-real-time-ai-avatars-for-custo.md",
     "2026-09-11-metas-muse-hits-2-app-should-founders-actually-use.md",
     "2026-09-11-chatgpt-ads-manager-india-2026-setup-guide-pricing.md",
@@ -376,6 +377,24 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-12-claude-in-chrome-is-ga-browser-automation-without.md",
+      "slug": "2026-09-12-claude-in-chrome-is-ga-browser-automation-without",
+      "url": "/blog/2026-09-12-claude-in-chrome-is-ga-browser-automation-without/",
+      "title": "Claude in Chrome Is GA: Browser Automation Without Prompt Injection Risk",
+      "date": "2026-09-12",
+      "published_at": "2026-09-12T05:09:09.611Z",
+      "tags": [
+        "Claude",
+        "Chrome",
+        "Google"
+      ],
+      "excerpt": "Claude in Chrome is generally available (GA) on paid plans. Autonomous browser automation with safety checks. What changed, how prompt injection defenses work, and who should test it.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCYXqK0ao0O4UNepNTWePU3e-FIdxI6aJBwFqztwMnaw&s=10",
+      "sources": [],
+      "readTime": "4 min",
+      "shortId": 373
+    },
     {
       "filename": "2026-09-11-phoenix-4-5-fastest-real-time-ai-avatars-for-custo.md",
       "slug": "2026-09-11-phoenix-4-5-fastest-real-time-ai-avatars-for-custo",

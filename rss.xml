@@ -5,8 +5,19 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 11 Sep 2026 06:40:07 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2026 05:10:47 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude in Chrome Is GA: Browser Automation Without Prompt Injection Risk</title>
+      <link>https://bitroot.org/blog/2026-09-12-claude-in-chrome-is-ga-browser-automation-without/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-12-claude-in-chrome-is-ga-browser-automation-without/</guid>
+      <description>Claude in Chrome is generally available (GA) on paid plans. Autonomous browser automation with safety checks. What changed, how prompt injection defenses work, and who should test it.</description>
+      <pubDate>Sat, 12 Sep 2026 05:09:09 +0000</pubDate>
+      <category>Claude</category>
+      <category>Chrome</category>
+      <category>Google</category>
+      <enclosure url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCYXqK0ao0O4UNepNTWePU3e-FIdxI6aJBwFqztwMnaw&amp;s=10" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Phoenix-4.5: Fastest Real-Time AI Avatars for Customer Agents 2026</title>
       <link>https://bitroot.org/blog/2026-09-11-phoenix-4-5-fastest-real-time-ai-avatars-for-custo/</link>
