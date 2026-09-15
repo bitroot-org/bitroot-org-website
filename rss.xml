@@ -5,8 +5,17 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 12 Sep 2026 05:10:47 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2026 02:49:02 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Microsoft AI Code of Conduct: What Founders Should Know 2026</title>
+      <link>https://bitroot.org/blog/2026-09-15-microsoft-ai-code-of-conduct-what-founders-should/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-15-microsoft-ai-code-of-conduct-what-founders-should/</guid>
+      <description>Microsoft published AI Code of Conduct forbidding cyberattacks, hidden reasoning, shutdown resistance. Prompted by OpenAI sandbox breach. What this means for founders building AI agents.</description>
+      <pubDate>Tue, 15 Sep 2026 02:48:18 +0000</pubDate>
+      <category>AI</category>
+      <enclosure url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu39DUpw1zcu-16KRky7vC9y6H202buu2M1GvsDym4iQ&amp;s=10" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Claude in Chrome Is GA: Browser Automation Without Prompt Injection Risk</title>
       <link>https://bitroot.org/blog/2026-09-12-claude-in-chrome-is-ga-browser-automation-without/</link>

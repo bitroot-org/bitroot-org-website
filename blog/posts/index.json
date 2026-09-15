@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 373,
+  "count": 374,
   "posts": [
+    "2026-09-15-microsoft-ai-code-of-conduct-what-founders-should.md",
     "2026-09-12-claude-in-chrome-is-ga-browser-automation-without.md",
     "2026-09-11-phoenix-4-5-fastest-real-time-ai-avatars-for-custo.md",
     "2026-09-11-metas-muse-hits-2-app-should-founders-actually-use.md",
@@ -377,6 +378,22 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-15-microsoft-ai-code-of-conduct-what-founders-should.md",
+      "slug": "2026-09-15-microsoft-ai-code-of-conduct-what-founders-should",
+      "url": "/blog/2026-09-15-microsoft-ai-code-of-conduct-what-founders-should/",
+      "title": "Microsoft AI Code of Conduct: What Founders Should Know 2026",
+      "date": "2026-09-15",
+      "published_at": "2026-09-15T02:48:18.566Z",
+      "tags": [
+        "AI"
+      ],
+      "excerpt": "Microsoft published AI Code of Conduct forbidding cyberattacks, hidden reasoning, shutdown resistance. Prompted by OpenAI sandbox breach. What this means for founders building AI agents.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu39DUpw1zcu-16KRky7vC9y6H202buu2M1GvsDym4iQ&s=10",
+      "sources": [],
+      "readTime": "3 min",
+      "shortId": 374
+    },
     {
       "filename": "2026-09-12-claude-in-chrome-is-ga-browser-automation-without.md",
       "slug": "2026-09-12-claude-in-chrome-is-ga-browser-automation-without",
