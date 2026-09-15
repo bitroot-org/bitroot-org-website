@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 374,
+  "count": 375,
   "posts": [
+    "2026-09-15-roblox-ai-build-goes-multiplatform-what-indie-devs.md",
     "2026-09-15-microsoft-ai-code-of-conduct-what-founders-should.md",
     "2026-09-12-claude-in-chrome-is-ga-browser-automation-without.md",
     "2026-09-11-phoenix-4-5-fastest-real-time-ai-avatars-for-custo.md",
@@ -378,6 +379,22 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-15-roblox-ai-build-goes-multiplatform-what-indie-devs.md",
+      "slug": "2026-09-15-roblox-ai-build-goes-multiplatform-what-indie-devs",
+      "url": "/blog/2026-09-15-roblox-ai-build-goes-multiplatform-what-indie-devs/",
+      "title": "Roblox AI Build Goes Multiplatform: What Indie Devs Should Know 2026",
+      "date": "2026-09-15",
+      "published_at": "2026-09-15T02:51:44.039Z",
+      "tags": [
+        "Game Dev"
+      ],
+      "excerpt": "Roblox expanded AI Build to Serbia, Singapore, desktop. New feature: deploy games as standalone apps on mobile, PC, consoles, web. What this means for indie game developers.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFFmg-ZZIDB6yxubgnuamkqlDEbj3PFDgoKbz6t7Ukhw&s=10",
+      "sources": [],
+      "readTime": "3 min",
+      "shortId": 375
+    },
     {
       "filename": "2026-09-15-microsoft-ai-code-of-conduct-what-founders-should.md",
       "slug": "2026-09-15-microsoft-ai-code-of-conduct-what-founders-should",
