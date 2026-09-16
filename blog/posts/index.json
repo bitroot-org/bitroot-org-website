@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 375,
+  "count": 376,
   "posts": [
+    "2026-09-16-whatsapp-ai-agents-automate-booking-support-leads.md",
     "2026-09-15-roblox-ai-build-goes-multiplatform-what-indie-devs.md",
     "2026-09-15-microsoft-ai-code-of-conduct-what-founders-should.md",
     "2026-09-12-claude-in-chrome-is-ga-browser-automation-without.md",
@@ -379,6 +380,25 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-16-whatsapp-ai-agents-automate-booking-support-leads.md",
+      "slug": "2026-09-16-whatsapp-ai-agents-automate-booking-support-leads",
+      "url": "/blog/2026-09-16-whatsapp-ai-agents-automate-booking-support-leads/",
+      "title": "WhatsApp AI Agents: Automate Booking, Support & Leads (2026)",
+      "date": "2026-09-16",
+      "published_at": "2026-09-16T04:12:21.485Z",
+      "tags": [
+        "WhatsApp",
+        "AI Automation",
+        "Founder Tools",
+        "Customer Experience"
+      ],
+      "excerpt": "Meta's WhatsApp Business MCP lets Claude automate appointments, lead capture, and customer support. Setup in 30 minutes. Cost breakdown inside. For founders.",
+      "image": "https://cdn.prod.website-files.com/673c43870d3cef11719b5930/681d85178ef7abb370577ef1_Meta%20AI%20WhatsApp%20Explained%20%26%20How%20to%20Remove%20It.jpg",
+      "sources": [],
+      "readTime": "10 min",
+      "shortId": 376
+    },
     {
       "filename": "2026-09-15-roblox-ai-build-goes-multiplatform-what-indie-devs.md",
       "slug": "2026-09-15-roblox-ai-build-goes-multiplatform-what-indie-devs",

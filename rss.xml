@@ -5,8 +5,20 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 15 Sep 2026 11:54:48 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 Sep 2026 04:13:13 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WhatsApp AI Agents: Automate Booking, Support &amp; Leads (2026)</title>
+      <link>https://bitroot.org/blog/2026-09-16-whatsapp-ai-agents-automate-booking-support-leads/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-16-whatsapp-ai-agents-automate-booking-support-leads/</guid>
+      <description>Meta's WhatsApp Business MCP lets Claude automate appointments, lead capture, and customer support. Setup in 30 minutes. Cost breakdown inside. For founders.</description>
+      <pubDate>Wed, 16 Sep 2026 04:12:21 +0000</pubDate>
+      <category>WhatsApp</category>
+      <category>AI Automation</category>
+      <category>Founder Tools</category>
+      <category>Customer Experience</category>
+      <enclosure url="https://cdn.prod.website-files.com/673c43870d3cef11719b5930/681d85178ef7abb370577ef1_Meta%20AI%20WhatsApp%20Explained%20%26%20How%20to%20Remove%20It.jpg" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Roblox AI Build Goes Multiplatform: What Indie Devs Should Know 2026</title>
       <link>https://bitroot.org/blog/2026-09-15-roblox-ai-build-goes-multiplatform-what-indie-devs/</link>
