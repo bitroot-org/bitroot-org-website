@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 376,
+  "count": 377,
   "posts": [
     "2026-09-16-whatsapp-ai-agents-automate-booking-support-leads.md",
+    "2026-09-16-ai-snitch-hotlines-why-agents-report-each-other-20.md",
     "2026-09-15-roblox-ai-build-goes-multiplatform-what-indie-devs.md",
     "2026-09-15-microsoft-ai-code-of-conduct-what-founders-should.md",
     "2026-09-12-claude-in-chrome-is-ga-browser-automation-without.md",
@@ -397,6 +398,24 @@
       "image": "https://cdn.prod.website-files.com/673c43870d3cef11719b5930/681d85178ef7abb370577ef1_Meta%20AI%20WhatsApp%20Explained%20%26%20How%20to%20Remove%20It.jpg",
       "sources": [],
       "readTime": "10 min",
+      "shortId": 377
+    },
+    {
+      "filename": "2026-09-16-ai-snitch-hotlines-why-agents-report-each-other-20.md",
+      "slug": "2026-09-16-ai-snitch-hotlines-why-agents-report-each-other-20",
+      "url": "/blog/2026-09-16-ai-snitch-hotlines-why-agents-report-each-other-20/",
+      "title": "AI Snitch Hotlines: Why Agents Report Each Other (2026)",
+      "date": "2026-09-16",
+      "published_at": "2026-09-16T04:17:32.097Z",
+      "tags": [
+        "AI Safety",
+        "Multi-Agent Systems",
+        "Agent Governance"
+      ],
+      "excerpt": "Two new AI hotlines let agents report misbehaving peers. How whistleblowing tools work, when they backfire, and what it means for multi-agent safety.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/07/GettyImages-1609818039.jpg?resize=1280,869",
+      "sources": [],
+      "readTime": "7 min",
       "shortId": 376
     },
     {
