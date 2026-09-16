@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 16 Sep 2026 04:18:32 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 Sep 2026 12:09:46 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>WhatsApp AI Agents: Automate Booking, Support &amp; Leads (2026)</title>
@@ -18,6 +18,17 @@
       <category>Founder Tools</category>
       <category>Customer Experience</category>
       <enclosure url="https://cdn.prod.website-files.com/673c43870d3cef11719b5930/681d85178ef7abb370577ef1_Meta%20AI%20WhatsApp%20Explained%20%26%20How%20to%20Remove%20It.jpg" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>Jev vs Claude: $0.042 Per Million Tokens (Sept 2026)</title>
+      <link>https://bitroot.org/blog/2026-09-16-jev-vs-claude-0-042-per-million-tokens-sept-2026/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-16-jev-vs-claude-0-042-per-million-tokens-sept-2026/</guid>
+      <description>Diogo Almeida's Jev is 40–400x cheaper and 20–200x faster than Claude. For decision models, not chatbots. Cost breakdown and when to use.</description>
+      <pubDate>Wed, 16 Sep 2026 12:09:00 +0000</pubDate>
+      <category>AI Models</category>
+      <category>Founders</category>
+      <category>Cost Optimization</category>
+      <enclosure url="https://pbs.twimg.com/card_img/2099924718921097216/XvBM0XUg?format=jpg&amp;name=small" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>AI Snitch Hotlines: Why Agents Report Each Other (2026)</title>

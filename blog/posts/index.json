@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 377,
+  "count": 378,
   "posts": [
     "2026-09-16-whatsapp-ai-agents-automate-booking-support-leads.md",
+    "2026-09-16-jev-vs-claude-0-042-per-million-tokens-sept-2026.md",
     "2026-09-16-ai-snitch-hotlines-why-agents-report-each-other-20.md",
     "2026-09-15-roblox-ai-build-goes-multiplatform-what-indie-devs.md",
     "2026-09-15-microsoft-ai-code-of-conduct-what-founders-should.md",
@@ -398,6 +399,24 @@
       "image": "https://cdn.prod.website-files.com/673c43870d3cef11719b5930/681d85178ef7abb370577ef1_Meta%20AI%20WhatsApp%20Explained%20%26%20How%20to%20Remove%20It.jpg",
       "sources": [],
       "readTime": "10 min",
+      "shortId": 378
+    },
+    {
+      "filename": "2026-09-16-jev-vs-claude-0-042-per-million-tokens-sept-2026.md",
+      "slug": "2026-09-16-jev-vs-claude-0-042-per-million-tokens-sept-2026",
+      "url": "/blog/2026-09-16-jev-vs-claude-0-042-per-million-tokens-sept-2026/",
+      "title": "Jev vs Claude: $0.042 Per Million Tokens (Sept 2026)",
+      "date": "2026-09-16",
+      "published_at": "2026-09-16T12:09:00.878Z",
+      "tags": [
+        "AI Models",
+        "Founders",
+        "Cost Optimization"
+      ],
+      "excerpt": "Diogo Almeida's Jev is 40\u2013400x cheaper and 20\u2013200x faster than Claude. For decision models, not chatbots. Cost breakdown and when to use.",
+      "image": "https://pbs.twimg.com/card_img/2099924718921097216/XvBM0XUg?format=jpg&name=small",
+      "sources": [],
+      "readTime": "6 min",
       "shortId": 377
     },
     {
