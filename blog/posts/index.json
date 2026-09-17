@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 379,
+  "count": 380,
   "posts": [
+    "2026-09-17-instinct-10b-valuation-on-1-3k-month-user-spend-20.md",
     "2026-09-17-ai-agents-control-google-home-mcp-launch-sept-16-2.md",
     "2026-09-16-whatsapp-ai-agents-automate-booking-support-leads.md",
     "2026-09-16-jev-vs-claude-0-042-per-million-tokens-sept-2026.md",
@@ -383,6 +384,26 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-17-instinct-10b-valuation-on-1-3k-month-user-spend-20.md",
+      "slug": "2026-09-17-instinct-10b-valuation-on-1-3k-month-user-spend-20",
+      "url": "/blog/2026-09-17-instinct-10b-valuation-on-1-3k-month-user-spend-20/",
+      "title": "Instinct $10B Valuation on $1.3K/Month User Spend (2026)",
+      "date": "2026-09-17",
+      "published_at": "2026-09-17T06:33:15.355Z",
+      "tags": [
+        "instinct",
+        "ai-agents",
+        "unit-economics",
+        "agent-monetization",
+        "transaction-revenue"
+      ],
+      "excerpt": "Instinct hit $10B valuation in 5 months. $1,300 monthly spend per user. What this unit economics pattern means for founders building agents.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZOSV3pR5Nlhh1_Turhpd7YbK3FBSoT81JjFp-f_IIg&s=10",
+      "sources": [],
+      "readTime": "7 min",
+      "shortId": 380
+    },
     {
       "filename": "2026-09-17-ai-agents-control-google-home-mcp-launch-sept-16-2.md",
       "slug": "2026-09-17-ai-agents-control-google-home-mcp-launch-sept-16-2",

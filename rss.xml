@@ -5,8 +5,21 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 17 Sep 2026 04:07:45 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2026 06:33:58 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instinct $10B Valuation on $1.3K/Month User Spend (2026)</title>
+      <link>https://bitroot.org/blog/2026-09-17-instinct-10b-valuation-on-1-3k-month-user-spend-20/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-17-instinct-10b-valuation-on-1-3k-month-user-spend-20/</guid>
+      <description>Instinct hit $10B valuation in 5 months. $1,300 monthly spend per user. What this unit economics pattern means for founders building agents.</description>
+      <pubDate>Thu, 17 Sep 2026 06:33:15 +0000</pubDate>
+      <category>instinct</category>
+      <category>ai-agents</category>
+      <category>unit-economics</category>
+      <category>agent-monetization</category>
+      <category>transaction-revenue</category>
+      <enclosure url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZOSV3pR5Nlhh1_Turhpd7YbK3FBSoT81JjFp-f_IIg&amp;s=10" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>AI Agents Control Google Home: MCP Launch Sept 16 2026</title>
       <link>https://bitroot.org/blog/2026-09-17-ai-agents-control-google-home-mcp-launch-sept-16-2/</link>
