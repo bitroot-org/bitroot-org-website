@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 378,
+  "count": 379,
   "posts": [
+    "2026-09-17-ai-agents-control-google-home-mcp-launch-sept-16-2.md",
     "2026-09-16-whatsapp-ai-agents-automate-booking-support-leads.md",
     "2026-09-16-jev-vs-claude-0-042-per-million-tokens-sept-2026.md",
     "2026-09-16-ai-snitch-hotlines-why-agents-report-each-other-20.md",
@@ -382,6 +383,27 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-17-ai-agents-control-google-home-mcp-launch-sept-16-2.md",
+      "slug": "2026-09-17-ai-agents-control-google-home-mcp-launch-sept-16-2",
+      "url": "/blog/2026-09-17-ai-agents-control-google-home-mcp-launch-sept-16-2/",
+      "title": "AI Agents Control Google Home: MCP Launch Sept 16 2026",
+      "date": "2026-09-17",
+      "published_at": "2026-09-17T04:07:03.326Z",
+      "tags": [
+        "mcp",
+        "google-home",
+        "ai-agents",
+        "smart-home-automation",
+        "claude",
+        "chatgpt"
+      ],
+      "excerpt": "Google's new MCP server lets Claude, ChatGPT control smart home devices. $20/month tier. What it means for founders building automation.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/Google-Home-Speaker-Multi.png?resize=1280,806",
+      "sources": [],
+      "readTime": "7 min",
+      "shortId": 379
+    },
     {
       "filename": "2026-09-16-whatsapp-ai-agents-automate-booking-support-leads.md",
       "slug": "2026-09-16-whatsapp-ai-agents-automate-booking-support-leads",

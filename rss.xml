@@ -5,8 +5,22 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 16 Sep 2026 12:09:46 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2026 04:07:45 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agents Control Google Home: MCP Launch Sept 16 2026</title>
+      <link>https://bitroot.org/blog/2026-09-17-ai-agents-control-google-home-mcp-launch-sept-16-2/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-17-ai-agents-control-google-home-mcp-launch-sept-16-2/</guid>
+      <description>Google's new MCP server lets Claude, ChatGPT control smart home devices. $20/month tier. What it means for founders building automation.</description>
+      <pubDate>Thu, 17 Sep 2026 04:07:03 +0000</pubDate>
+      <category>mcp</category>
+      <category>google-home</category>
+      <category>ai-agents</category>
+      <category>smart-home-automation</category>
+      <category>claude</category>
+      <category>chatgpt</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/06/Google-Home-Speaker-Multi.png?resize=1280,806" type="image/png" length="0" />
+    </item>
     <item>
       <title>WhatsApp AI Agents: Automate Booking, Support &amp; Leads (2026)</title>
       <link>https://bitroot.org/blog/2026-09-16-whatsapp-ai-agents-automate-booking-support-leads/</link>
