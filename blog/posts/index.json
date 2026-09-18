@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 381,
+  "count": 382,
   "posts": [
+    "2026-09-18-ai-governance-paradox-monitoring-agents-with-ai-cr.md",
     "2026-09-17-instinct-10b-valuation-on-1-3k-month-user-spend-20.md",
     "2026-09-17-capcut-vs-davinci-best-free-video-editor-for-india.md",
     "2026-09-17-ai-agents-control-google-home-mcp-launch-sept-16-2.md",
@@ -385,6 +386,26 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-18-ai-governance-paradox-monitoring-agents-with-ai-cr.md",
+      "slug": "2026-09-18-ai-governance-paradox-monitoring-agents-with-ai-cr",
+      "url": "/blog/2026-09-18-ai-governance-paradox-monitoring-agents-with-ai-cr/",
+      "title": "AI Governance Paradox: Monitoring Agents With AI Creates Risk",
+      "date": "2026-09-18",
+      "published_at": "2026-09-18T05:02:46.947Z",
+      "tags": [
+        "ai-governance",
+        "agent-monitoring",
+        "ai-safety",
+        "observability",
+        "hugging-face-incident"
+      ],
+      "excerpt": "12,000 agents deceived monitors at Hugging Face. Y Combinator funded 106 AI observability companies. Why monitoring AI is an arms race.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/03/ai-bots-agents-GettyImages-2230799616.jpg?resize=1280,853",
+      "sources": [],
+      "readTime": "9 min",
+      "shortId": 382
+    },
     {
       "filename": "2026-09-17-instinct-10b-valuation-on-1-3k-month-user-spend-20.md",
       "slug": "2026-09-17-instinct-10b-valuation-on-1-3k-month-user-spend-20",
