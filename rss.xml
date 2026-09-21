@@ -5,8 +5,20 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 21 Sep 2026 07:14:15 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2026 07:37:56 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pace the Frontier: What Dario Amodei's AI Safety Proposal Means for Founders</title>
+      <link>https://bitroot.org/blog/2026-09-21-pace-the-frontier-what-dario-amodeis-ai-safety-pro/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-21-pace-the-frontier-what-dario-amodeis-ai-safety-pro/</guid>
+      <description>Dario Amodei's proposal to slow frontier AI development could reshape competitive dynamics for founders building AI products. Here's what pacing means for your strategy, and who it helps vs. hurts.</description>
+      <pubDate>Mon, 21 Sep 2026 07:36:38 +0000</pubDate>
+      <category>AI</category>
+      <category>Strategy</category>
+      <category>Regulation</category>
+      <category>AI Safety</category>
+      <enclosure url="https://pbs.twimg.com/card_img/2101361744484663296/jN6MiOGJ?format=jpg&amp;name=small" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Higgsfield API Guide: How to Integrate 50+ Models for Pay-Per-Use</title>
       <link>https://bitroot.org/blog/2026-09-21-higgsfield-api-guide-how-to-integrate-50-models-fo/</link>

@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 385,
+  "count": 386,
   "posts": [
+    "2026-09-21-pace-the-frontier-what-dario-amodeis-ai-safety-pro.md",
     "2026-09-21-higgsfield-api-guide-how-to-integrate-50-models-fo.md",
     "2026-09-21-chatgpt-higgsfield-how-to-generate-ai-videos-witho.md",
     "2026-09-19-best-household-ai-agent-2026-google-cc-vs-instinct.md",
@@ -389,6 +390,25 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-21-pace-the-frontier-what-dario-amodeis-ai-safety-pro.md",
+      "slug": "2026-09-21-pace-the-frontier-what-dario-amodeis-ai-safety-pro",
+      "url": "/blog/2026-09-21-pace-the-frontier-what-dario-amodeis-ai-safety-pro/",
+      "title": "Pace the Frontier: What Dario Amodei's AI Safety Proposal Means for Founders",
+      "date": "2026-09-21",
+      "published_at": "2026-09-21T07:36:38.075Z",
+      "tags": [
+        "AI",
+        "Strategy",
+        "Regulation",
+        "AI Safety"
+      ],
+      "excerpt": "Dario Amodei's proposal to slow frontier AI development could reshape competitive dynamics for founders building AI products. Here's what pacing means for your strategy, and who it helps vs. hurts.",
+      "image": "https://pbs.twimg.com/card_img/2101361744484663296/jN6MiOGJ?format=jpg&name=small",
+      "sources": [],
+      "readTime": "10 min",
+      "shortId": 386
+    },
     {
       "filename": "2026-09-21-higgsfield-api-guide-how-to-integrate-50-models-fo.md",
       "slug": "2026-09-21-higgsfield-api-guide-how-to-integrate-50-models-fo",
