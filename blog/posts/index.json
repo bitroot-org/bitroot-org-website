@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 383,
+  "count": 384,
   "posts": [
+    "2026-09-21-chatgpt-higgsfield-how-to-generate-ai-videos-witho.md",
     "2026-09-19-best-household-ai-agent-2026-google-cc-vs-instinct.md",
     "2026-09-18-ai-governance-paradox-monitoring-agents-with-ai-cr.md",
     "2026-09-17-instinct-10b-valuation-on-1-3k-month-user-spend-20.md",
@@ -387,6 +388,27 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-21-chatgpt-higgsfield-how-to-generate-ai-videos-witho.md",
+      "slug": "2026-09-21-chatgpt-higgsfield-how-to-generate-ai-videos-witho",
+      "url": "/blog/2026-09-21-chatgpt-higgsfield-how-to-generate-ai-videos-witho/",
+      "title": "ChatGPT + Higgsfield: How to Generate AI Videos Without Switching",
+      "date": "2026-09-21",
+      "published_at": "2026-09-21T06:54:16.270Z",
+      "tags": [
+        "chatgpt-plugins",
+        "higgsfield",
+        "ai-video",
+        "video-generation",
+        "plugin-integration",
+        "workflow-automation"
+      ],
+      "excerpt": "Connect Higgsfield to ChatGPT in 3 steps. Generate videos with Seedance 2.5, Kling 3, Soul 2.0. Cost breakdown + decision framework. No tab-switching.",
+      "image": "https://higgsfield.ai/cdn-cgi/image/fit=scale-down,format=webp,onerror=redirect,width=1280,quality=85/https://cdn.sanity.io/images/s479xw3z/production/9d59c57edd5d720798c6f2d8cb24ee80f5ead4e5-2048x1152.png",
+      "sources": [],
+      "readTime": "8 min",
+      "shortId": 384
+    },
     {
       "filename": "2026-09-19-best-household-ai-agent-2026-google-cc-vs-instinct.md",
       "slug": "2026-09-19-best-household-ai-agent-2026-google-cc-vs-instinct",
