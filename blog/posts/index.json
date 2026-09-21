@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 384,
+  "count": 385,
   "posts": [
+    "2026-09-21-higgsfield-api-guide-how-to-integrate-50-models-fo.md",
     "2026-09-21-chatgpt-higgsfield-how-to-generate-ai-videos-witho.md",
     "2026-09-19-best-household-ai-agent-2026-google-cc-vs-instinct.md",
     "2026-09-18-ai-governance-paradox-monitoring-agents-with-ai-cr.md",
@@ -388,6 +389,26 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-21-higgsfield-api-guide-how-to-integrate-50-models-fo.md",
+      "slug": "2026-09-21-higgsfield-api-guide-how-to-integrate-50-models-fo",
+      "url": "/blog/2026-09-21-higgsfield-api-guide-how-to-integrate-50-models-fo/",
+      "title": "Higgsfield API Guide: How to Integrate 50+ Models for Pay-Per-Use",
+      "date": "2026-09-21",
+      "published_at": "2026-09-21T07:13:33.107Z",
+      "tags": [
+        "AI",
+        "Product",
+        "Developer Tools",
+        "API",
+        "Higgsfield"
+      ],
+      "excerpt": "Higgsfield's API launched Sept 16, 2026, offering pay-per-generation access to 50+ video and image models. This guide covers setup, pricing comparison with subscriptions, and when to choose API vs. MCP vs. web app for your workflow.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLt-3wUW9cFKIPkUDFVlenX6eHxlFqRyBGGAAGbeWn2w&s=10",
+      "sources": [],
+      "readTime": "8 min",
+      "shortId": 385
+    },
     {
       "filename": "2026-09-21-chatgpt-higgsfield-how-to-generate-ai-videos-witho.md",
       "slug": "2026-09-21-chatgpt-higgsfield-how-to-generate-ai-videos-witho",

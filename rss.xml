@@ -5,8 +5,21 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 21 Sep 2026 06:55:01 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2026 07:14:15 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Higgsfield API Guide: How to Integrate 50+ Models for Pay-Per-Use</title>
+      <link>https://bitroot.org/blog/2026-09-21-higgsfield-api-guide-how-to-integrate-50-models-fo/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-21-higgsfield-api-guide-how-to-integrate-50-models-fo/</guid>
+      <description>Higgsfield's API launched Sept 16, 2026, offering pay-per-generation access to 50+ video and image models. This guide covers setup, pricing comparison with subscriptions, and when to choose API vs. MCP vs. web app for your workflow.</description>
+      <pubDate>Mon, 21 Sep 2026 07:13:33 +0000</pubDate>
+      <category>AI</category>
+      <category>Product</category>
+      <category>Developer Tools</category>
+      <category>API</category>
+      <category>Higgsfield</category>
+      <enclosure url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLt-3wUW9cFKIPkUDFVlenX6eHxlFqRyBGGAAGbeWn2w&amp;s=10" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>ChatGPT + Higgsfield: How to Generate AI Videos Without Switching</title>
       <link>https://bitroot.org/blog/2026-09-21-chatgpt-higgsfield-how-to-generate-ai-videos-witho/</link>
