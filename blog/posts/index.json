@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 386,
+  "count": 387,
   "posts": [
+    "2026-09-22-ai-solving-math-problems-what-openais-100-breakthr.md",
     "2026-09-21-pace-the-frontier-what-dario-amodeis-ai-safety-pro.md",
     "2026-09-21-higgsfield-api-guide-how-to-integrate-50-models-fo.md",
     "2026-09-21-chatgpt-higgsfield-how-to-generate-ai-videos-witho.md",
@@ -390,6 +391,26 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-22-ai-solving-math-problems-what-openais-100-breakthr.md",
+      "slug": "2026-09-22-ai-solving-math-problems-what-openais-100-breakthr",
+      "url": "/blog/2026-09-22-ai-solving-math-problems-what-openais-100-breakthr/",
+      "title": "AI Solving Math Problems: What OpenAI's 100+ Breakthroughs Mean for Your Research Product",
+      "date": "2026-09-22",
+      "published_at": "2026-09-22T04:13:22.754Z",
+      "tags": [
+        "AI",
+        "Research",
+        "Strategy",
+        "OpenAI",
+        "ChatGPT"
+      ],
+      "excerpt": "OpenAI claims its AI solved 100+ open math problems and formed an advisory group with zero power to slow research. Here's what changed for research-driven founders and why governance structure matters.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/09/51013975207_8dcac5cf72_k.jpg?resize=1280,960",
+      "sources": [],
+      "readTime": "9 min",
+      "shortId": 387
+    },
     {
       "filename": "2026-09-21-pace-the-frontier-what-dario-amodeis-ai-safety-pro.md",
       "slug": "2026-09-21-pace-the-frontier-what-dario-amodeis-ai-safety-pro",

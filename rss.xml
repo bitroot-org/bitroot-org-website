@@ -5,8 +5,21 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 21 Sep 2026 07:37:56 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 04:14:06 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Solving Math Problems: What OpenAI's 100+ Breakthroughs Mean for Your Research Product</title>
+      <link>https://bitroot.org/blog/2026-09-22-ai-solving-math-problems-what-openais-100-breakthr/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-22-ai-solving-math-problems-what-openais-100-breakthr/</guid>
+      <description>OpenAI claims its AI solved 100+ open math problems and formed an advisory group with zero power to slow research. Here's what changed for research-driven founders and why governance structure matters.</description>
+      <pubDate>Tue, 22 Sep 2026 04:13:22 +0000</pubDate>
+      <category>AI</category>
+      <category>Research</category>
+      <category>Strategy</category>
+      <category>OpenAI</category>
+      <category>ChatGPT</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/09/51013975207_8dcac5cf72_k.jpg?resize=1280,960" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Pace the Frontier: What Dario Amodei's AI Safety Proposal Means for Founders</title>
       <link>https://bitroot.org/blog/2026-09-21-pace-the-frontier-what-dario-amodeis-ai-safety-pro/</link>
