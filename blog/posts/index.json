@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 387,
+  "count": 388,
   "posts": [
+    "2026-09-22-how-to-build-a-personal-stylist-app-with-muse-ai-a.md",
     "2026-09-22-ai-solving-math-problems-what-openais-100-breakthr.md",
     "2026-09-21-pace-the-frontier-what-dario-amodeis-ai-safety-pro.md",
     "2026-09-21-higgsfield-api-guide-how-to-integrate-50-models-fo.md",
@@ -391,6 +392,25 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-22-how-to-build-a-personal-stylist-app-with-muse-ai-a.md",
+      "slug": "2026-09-22-how-to-build-a-personal-stylist-app-with-muse-ai-a",
+      "url": "/blog/2026-09-22-how-to-build-a-personal-stylist-app-with-muse-ai-a/",
+      "title": "How to Build a Personal Stylist App with Muse AI (And What It Means for No-Code)",
+      "date": "2026-09-22",
+      "published_at": "2026-09-22T05:55:21.787Z",
+      "tags": [
+        "AI",
+        "No-Code",
+        "Founder Strategy",
+        "Muse AI"
+      ],
+      "excerpt": "Users are building custom personal stylist apps with Meta's Muse AI, launched Sept 8, 2026. No code required. Here's how to build one yourself\u2014and what this signal means for the no-code and creator economy.",
+      "image": "https://www.figma.com/community/thumbnail?resource_id=1190067223006709410&resource_type=plugin",
+      "sources": [],
+      "readTime": "9 min",
+      "shortId": 388
+    },
     {
       "filename": "2026-09-22-ai-solving-math-problems-what-openais-100-breakthr.md",
       "slug": "2026-09-22-ai-solving-math-problems-what-openais-100-breakthr",

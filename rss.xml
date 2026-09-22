@@ -5,8 +5,20 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 22 Sep 2026 04:14:06 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 05:56:08 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Build a Personal Stylist App with Muse AI (And What It Means for No-Code)</title>
+      <link>https://bitroot.org/blog/2026-09-22-how-to-build-a-personal-stylist-app-with-muse-ai-a/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-22-how-to-build-a-personal-stylist-app-with-muse-ai-a/</guid>
+      <description>Users are building custom personal stylist apps with Meta's Muse AI, launched Sept 8, 2026. No code required. Here's how to build one yourself—and what this signal means for the no-code and creator economy.</description>
+      <pubDate>Tue, 22 Sep 2026 05:55:21 +0000</pubDate>
+      <category>AI</category>
+      <category>No-Code</category>
+      <category>Founder Strategy</category>
+      <category>Muse AI</category>
+      <enclosure url="https://www.figma.com/community/thumbnail?resource_id=1190067223006709410&amp;resource_type=plugin" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>AI Solving Math Problems: What OpenAI's 100+ Breakthroughs Mean for Your Research Product</title>
       <link>https://bitroot.org/blog/2026-09-22-ai-solving-math-problems-what-openais-100-breakthr/</link>
