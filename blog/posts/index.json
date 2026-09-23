@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 388,
+  "count": 389,
   "posts": [
+    "2026-09-23-gpt-6-sol-and-luna-50-price-drop-what-changed-when.md",
     "2026-09-22-how-to-build-a-personal-stylist-app-with-muse-ai-a.md",
     "2026-09-22-ai-solving-math-problems-what-openais-100-breakthr.md",
     "2026-09-21-pace-the-frontier-what-dario-amodeis-ai-safety-pro.md",
@@ -392,6 +393,25 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-23-gpt-6-sol-and-luna-50-price-drop-what-changed-when.md",
+      "slug": "2026-09-23-gpt-6-sol-and-luna-50-price-drop-what-changed-when",
+      "url": "/blog/2026-09-23-gpt-6-sol-and-luna-50-price-drop-what-changed-when/",
+      "title": "GPT-6 Sol and Luna: 50% Price Drop, What Changed, When to Use Each",
+      "date": "2026-09-23",
+      "published_at": "2026-09-23T04:38:14.799Z",
+      "tags": [
+        "OpenAI",
+        "AI",
+        "Pricing",
+        "Founder Strategy"
+      ],
+      "excerpt": "OpenAI's GPT-6 Sol and Luna launched Sept 22 with claimed 50% cost reduction. Here's the pricing breakdown, use-case routing, and why there's no GPT-6 Terra\u2014yet.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/09/openai-getty.jpg?resize=1280,853",
+      "sources": [],
+      "readTime": "9 min",
+      "shortId": 389
+    },
     {
       "filename": "2026-09-22-how-to-build-a-personal-stylist-app-with-muse-ai-a.md",
       "slug": "2026-09-22-how-to-build-a-personal-stylist-app-with-muse-ai-a",
