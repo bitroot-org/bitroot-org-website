@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 389,
+  "count": 390,
   "posts": [
+    "2026-09-23-opus-5-5-breaks-the-upgrade-trap-should-your-start.md",
     "2026-09-23-gpt-6-sol-and-luna-50-price-drop-what-changed-when.md",
     "2026-09-22-how-to-build-a-personal-stylist-app-with-muse-ai-a.md",
     "2026-09-22-ai-solving-math-problems-what-openais-100-breakthr.md",
@@ -393,6 +394,24 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-23-opus-5-5-breaks-the-upgrade-trap-should-your-start.md",
+      "slug": "2026-09-23-opus-5-5-breaks-the-upgrade-trap-should-your-start",
+      "url": "/blog/2026-09-23-opus-5-5-breaks-the-upgrade-trap-should-your-start/",
+      "title": "Opus 5.5 Breaks the Upgrade Trap: Should Your Startup Switch from Opus 5?",
+      "date": "2026-09-23",
+      "published_at": "2026-09-23T07:14:57.869Z",
+      "tags": [
+        "AI",
+        "Pricing",
+        "Founder Strategy"
+      ],
+      "excerpt": "Anthropic cut Opus 5.5 to $4/$20 and claims Fable-level performance on most work. Here's a framework to decide if your startup should upgrade from Opus 5\u2014and when the effort dial is the real savings lever.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDwqKAWbk9EWlX7cXqrJ12bKEpaURi7yigJWXcCRbEng&s=10",
+      "sources": [],
+      "readTime": "8 min",
+      "shortId": 390
+    },
     {
       "filename": "2026-09-23-gpt-6-sol-and-luna-50-price-drop-what-changed-when.md",
       "slug": "2026-09-23-gpt-6-sol-and-luna-50-price-drop-what-changed-when",
