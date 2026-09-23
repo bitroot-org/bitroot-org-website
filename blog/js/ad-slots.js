@@ -18,7 +18,8 @@
 (function () {
     'use strict';
 
-    var API_BASE = 'https://team.bitroot.club';
+    var API_BASE = 'https://team.bitroot.club'; // TeamLife: the ad registry only (GET, public, read-only)
+    var FORMS_API = 'https://api.bitroot.in'; // bitroot-forms Worker: the actual lead write path
     var LEAD_KEY = 'bitroot_ad_lead_given';
     var MARKER_RE = /^\[\[ad:([a-z0-9-]+)\]\]$/;
 
@@ -33,6 +34,30 @@
         var d = document.createElement('div');
         d.textContent = s == null ? '' : String(s);
         return d.innerHTML;
+    }
+
+    /**
+     * Source attribution for the lead, packed into `context` (the one free-text
+     * field `early_access_requests` offers) so it survives into the internal
+     * notify email and the Audience duty without needing a schema change:
+     * which ad/post drove it, the referrer, and any UTM params on the URL —
+     * the signal that actually helps build an ICP picture later.
+     */
+    function attributionContext(ad) {
+        var parts = ['ad:' + ad.kind + '/' + ad.slug];
+        if (postSlug) parts.push('post:' + postSlug);
+        try {
+            var qs = new URLSearchParams(window.location.search);
+            ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach(function (k) {
+                var v = qs.get(k);
+                if (v) parts.push(k + ':' + v);
+            });
+        } catch (e) {
+            /* URLSearchParams unsupported — skip UTM capture */
+        }
+        if (document.referrer) parts.push('ref:' + document.referrer);
+        parts.push('url:' + window.location.href);
+        return parts.join(' · ').slice(0, 2000);
     }
 
     function findMarkers(root) {
@@ -66,10 +91,18 @@
         var btn = document.createElement('button');
         btn.type = 'button';
         btn.className = 'ad-banner ad-banner-' + ad.kind;
+        var mediaHtml = ad.mediaUrl
+            ? ad.mediaKind === 'video'
+                ? '<video class="ad-banner-media" src="' + esc(ad.mediaUrl) + '" muted playsinline loop autoplay></video>'
+                : '<img class="ad-banner-media" src="' + esc(ad.mediaUrl) + '" alt="" loading="lazy">'
+            : '';
         btn.innerHTML =
-            '<span class="ad-banner-badge">' + esc(badge) + '</span>' +
+            mediaHtml +
             '<span class="ad-banner-copy">' +
+            '<span class="ad-banner-name-row">' +
+            '<span class="ad-banner-badge">' + esc(badge) + '</span>' +
             '<strong>' + esc(ad.productName) + '</strong>' +
+            '</span>' +
             (ad.tagline ? '<span class="ad-banner-tagline">' + esc(ad.tagline) + '</span>' : '') +
             '</span>' +
             '<span class="ad-banner-cta">' + esc(ad.bannerCta) + ' &rarr;</span>';
@@ -95,36 +128,60 @@
         if (e.key === 'Escape') closeModal();
     }
 
+    function ctaBlock(ad, lede) {
+        return (
+            '<div class="ad-modal-right ad-modal-cta-only">' +
+            '<p class="ad-modal-lede">' + esc(lede) + '</p>' +
+            '<a class="ad-modal-cta" href="' + esc(ad.ctaUrl) + '" target="_blank" rel="noopener noreferrer">' +
+            esc(ad.ctaLabel) +
+            '</a>' +
+            '</div>'
+        );
+    }
+
+    /**
+     * Four shapes, driven by whether an ad has a safe embeddable demo and
+     * whether it wants a lead first:
+     *  - no demo, no gate      -> straight CTA (a plain showcase ad)
+     *  - no demo, gate         -> gate, then a thank-you + CTA (capture
+     *                             interest for a product with no live embed
+     *                             yet, e.g. still on an internal branch)
+     *  - demo, no gate         -> iframe straight away
+     *  - demo, gate            -> gate, then the iframe
+     */
     function buildRightPane(ad) {
         var unlocked = !ad.requiresLead || leadGiven();
+
         if (!ad.demoUrl) {
-            return (
-                '<div class="ad-modal-right ad-modal-cta-only">' +
-                '<p class="ad-modal-lede">' + esc(ad.tagline || ad.productName) + '</p>' +
-                '<a class="ad-modal-cta" href="' + esc(ad.ctaUrl) + '" target="_blank" rel="noopener noreferrer">' +
-                esc(ad.ctaLabel) +
-                '</a>' +
-                '</div>'
-            );
-        }
-        if (unlocked) {
+            if (!ad.requiresLead) return ctaBlock(ad, ad.tagline || ad.productName);
+            if (unlocked) {
+                return ctaBlock(ad, 'Thanks — we’ll be in touch. In the meantime:');
+            }
+        } else if (unlocked) {
             return (
                 '<div class="ad-modal-right">' +
                 '<iframe class="ad-modal-demo" src="' + esc(ad.demoUrl) + '" title="' + esc(ad.productName) + ' demo" loading="lazy"></iframe>' +
                 '</div>'
             );
         }
+
+        var hasDemo = !!ad.demoUrl;
+        var title = hasDemo ? 'Try the live demo' : 'Get early access';
+        var note = hasDemo
+            ? 'Give us a way to reach you and the demo unlocks — once, for every ad.'
+            : 'Give us a way to reach you and we’ll let you know the moment it’s ready.';
+        var submitLabel = hasDemo ? 'Unlock demo' : 'Get early access';
         return (
             '<div class="ad-modal-right">' +
             '<form class="ad-gate-form" data-ad-slug="' + esc(ad.slug) + '">' +
-            '<p class="ad-gate-title">Try the live demo</p>' +
-            '<p class="ad-gate-note">Give us a way to reach you and the demo unlocks — once, for every ad.</p>' +
+            '<p class="ad-gate-title">' + esc(title) + '</p>' +
+            '<p class="ad-gate-note">' + esc(note) + '</p>' +
             '<label class="ad-gate-label" for="ad-gate-name">Name</label>' +
             '<input id="ad-gate-name" name="name" class="ad-gate-input" type="text" required autocomplete="name">' +
             '<label class="ad-gate-label" for="ad-gate-email">Email</label>' +
             '<input id="ad-gate-email" name="email" class="ad-gate-input" type="email" required autocomplete="email">' +
             '<p class="ad-gate-error" hidden></p>' +
-            '<button type="submit" class="ad-gate-submit">Unlock demo</button>' +
+            '<button type="submit" class="ad-gate-submit">' + esc(submitLabel) + '</button>' +
             '</form>' +
             '</div>'
         );
@@ -143,14 +200,25 @@
             submitBtn.disabled = true;
             submitBtn.textContent = 'Unlocking…';
 
-            fetch(API_BASE + '/api/public/blog-ads/leads', {
+            // Goes through the SAME public endpoint the site's own early-access
+            // forms use (GateEmailForm/EarlyAccessModal) — not a bespoke path:
+            // the lead lands in early_access_requests (already surfaced in the
+            // Audience duty) and the Worker already fires the Brevo confirmation
+            // + internal-notify emails. TeamLife never touches this write at all.
+            fetch(FORMS_API + '/v1/early-access', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ adSlug: ad.slug, name: name, email: email, postSlug: postSlug, site: 'bitroot.org' }),
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    product: ad.slug,
+                    productName: ad.productName,
+                    context: attributionContext(ad),
+                }),
             })
                 .then(function (res) {
                     return res.json().then(function (data) {
-                        return { ok: res.ok, data: data };
+                        return { ok: res.ok && data && data.ok !== false, data: data };
                     });
                 })
                 .then(function (r) {
