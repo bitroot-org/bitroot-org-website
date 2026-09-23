@@ -90,21 +90,21 @@
         var badge = ad.kind === 'client' ? 'Ad · Partner' : 'Ad · Bitroot';
         var btn = document.createElement('button');
         btn.type = 'button';
-        btn.className = 'ad-banner ad-banner-' + ad.kind + (ad.mediaUrl ? ' ad-banner-has-media' : '');
+        btn.className = 'promo-banner promo-banner-' + ad.kind + (ad.mediaUrl ? ' promo-banner-has-media' : '');
         var mediaHtml = ad.mediaUrl
-            ? '<span class="ad-banner-mockup" aria-hidden="true">' +
+            ? '<span class="promo-banner-mockup" aria-hidden="true">' +
               (ad.mediaKind === 'video'
                   ? '<video src="' + esc(ad.mediaUrl) + '" muted playsinline loop autoplay></video>'
                   : '<img src="' + esc(ad.mediaUrl) + '" alt="" loading="lazy">') +
               '</span>'
             : '';
         btn.innerHTML =
-            '<span class="ad-banner-glow" aria-hidden="true"></span>' +
-            '<span class="ad-banner-content">' +
-            '<span class="ad-banner-badge">' + esc(badge) + '</span>' +
-            '<strong class="ad-banner-headline">' + esc(ad.productName) + '</strong>' +
-            (ad.tagline ? '<span class="ad-banner-tagline">' + esc(ad.tagline) + '</span>' : '') +
-            '<span class="ad-banner-cta">' + esc(ad.bannerCta) + ' &rarr;</span>' +
+            '<span class="promo-banner-glow" aria-hidden="true"></span>' +
+            '<span class="promo-banner-content">' +
+            '<span class="promo-banner-badge">' + esc(badge) + '</span>' +
+            '<strong class="promo-banner-headline">' + esc(ad.productName) + '</strong>' +
+            (ad.tagline ? '<span class="promo-banner-tagline">' + esc(ad.tagline) + '</span>' : '') +
+            '<span class="promo-banner-cta">' + esc(ad.bannerCta) + ' &rarr;</span>' +
             '</span>' +
             mediaHtml;
         btn.addEventListener('click', function () {
@@ -119,7 +119,7 @@
 
     function closeModal() {
         if (!activeModal) return;
-        document.body.classList.remove('ad-modal-open');
+        document.body.classList.remove('promo-modal-open');
         document.removeEventListener('keydown', onKeydown);
         activeModal.remove();
         activeModal = null;
@@ -131,9 +131,9 @@
 
     function ctaBlock(ad, lede) {
         return (
-            '<div class="ad-modal-right ad-modal-cta-only">' +
-            '<p class="ad-modal-lede">' + esc(lede) + '</p>' +
-            '<a class="ad-modal-cta" href="' + esc(ad.ctaUrl) + '" target="_blank" rel="noopener noreferrer">' +
+            '<div class="promo-modal-right promo-modal-cta-only">' +
+            '<p class="promo-modal-lede">' + esc(lede) + '</p>' +
+            '<a class="promo-modal-cta" href="' + esc(ad.ctaUrl) + '" target="_blank" rel="noopener noreferrer">' +
             esc(ad.ctaLabel) +
             '</a>' +
             '</div>'
@@ -160,8 +160,8 @@
             }
         } else if (unlocked) {
             return (
-                '<div class="ad-modal-right">' +
-                '<iframe class="ad-modal-demo" src="' + esc(ad.demoUrl) + '" title="' + esc(ad.productName) + ' demo" loading="lazy"></iframe>' +
+                '<div class="promo-modal-right">' +
+                '<iframe class="promo-modal-demo" src="' + esc(ad.demoUrl) + '" title="' + esc(ad.productName) + ' demo" loading="lazy"></iframe>' +
                 '</div>'
             );
         }
@@ -173,30 +173,30 @@
             : 'Give us a way to reach you and we’ll let you know the moment it’s ready.';
         var submitLabel = hasDemo ? 'Unlock demo' : 'Get early access';
         return (
-            '<div class="ad-modal-right">' +
-            '<form class="ad-gate-form" data-ad-slug="' + esc(ad.slug) + '">' +
-            '<p class="ad-gate-title">' + esc(title) + '</p>' +
-            '<p class="ad-gate-note">' + esc(note) + '</p>' +
-            '<label class="ad-gate-label" for="ad-gate-name">Name</label>' +
-            '<input id="ad-gate-name" name="name" class="ad-gate-input" type="text" required autocomplete="name">' +
-            '<label class="ad-gate-label" for="ad-gate-email">Email</label>' +
-            '<input id="ad-gate-email" name="email" class="ad-gate-input" type="email" required autocomplete="email">' +
-            '<p class="ad-gate-error" hidden></p>' +
-            '<button type="submit" class="ad-gate-submit">' + esc(submitLabel) + '</button>' +
+            '<div class="promo-modal-right">' +
+            '<form class="promo-gate-form" data-ad-slug="' + esc(ad.slug) + '">' +
+            '<p class="promo-gate-title">' + esc(title) + '</p>' +
+            '<p class="promo-gate-note">' + esc(note) + '</p>' +
+            '<label class="promo-gate-label" for="promo-gate-name">Name</label>' +
+            '<input id="promo-gate-name" name="name" class="promo-gate-input" type="text" required autocomplete="name">' +
+            '<label class="promo-gate-label" for="promo-gate-email">Email</label>' +
+            '<input id="promo-gate-email" name="email" class="promo-gate-input" type="email" required autocomplete="email">' +
+            '<p class="promo-gate-error" hidden></p>' +
+            '<button type="submit" class="promo-gate-submit">' + esc(submitLabel) + '</button>' +
             '</form>' +
             '</div>'
         );
     }
 
     function wireGateForm(panel, ad) {
-        var form = panel.querySelector('.ad-gate-form');
+        var form = panel.querySelector('.promo-gate-form');
         if (!form) return;
         form.addEventListener('submit', function (e) {
             e.preventDefault();
-            var name = form.querySelector('#ad-gate-name').value.trim();
-            var email = form.querySelector('#ad-gate-email').value.trim();
-            var errEl = form.querySelector('.ad-gate-error');
-            var submitBtn = form.querySelector('.ad-gate-submit');
+            var name = form.querySelector('#promo-gate-name').value.trim();
+            var email = form.querySelector('#promo-gate-email').value.trim();
+            var errEl = form.querySelector('.promo-gate-error');
+            var submitBtn = form.querySelector('.promo-gate-submit');
             errEl.hidden = true;
             submitBtn.disabled = true;
             submitBtn.textContent = 'Unlocking…';
@@ -225,7 +225,7 @@
                 .then(function (r) {
                     if (!r.ok) throw new Error((r.data && r.data.error) || 'Could not unlock the demo.');
                     markLeadGiven();
-                    var right = panel.querySelector('.ad-modal-right');
+                    var right = panel.querySelector('.promo-modal-right');
                     right.outerHTML = buildRightPane(ad); // now unlocked -> renders the iframe
                 })
                 .catch(function (e) {
@@ -241,41 +241,41 @@
         closeModal();
 
         var overlay = document.createElement('div');
-        overlay.className = 'ad-modal-overlay';
+        overlay.className = 'promo-modal-overlay';
         overlay.setAttribute('role', 'dialog');
         overlay.setAttribute('aria-modal', 'true');
         overlay.setAttribute('aria-label', ad.productName + ' — ' + ad.tagline);
 
         var mediaHtml =
             ad.mediaKind === 'video'
-                ? '<video class="ad-modal-media" src="' + esc(ad.mediaUrl) + '" poster="" playsinline loop controls preload="metadata"></video>'
-                : '<img class="ad-modal-media" src="' + esc(ad.mediaUrl) + '" alt="' + esc(ad.productName) + '">';
+                ? '<video class="promo-modal-media" src="' + esc(ad.mediaUrl) + '" poster="" playsinline loop controls preload="metadata"></video>'
+                : '<img class="promo-modal-media" src="' + esc(ad.mediaUrl) + '" alt="' + esc(ad.productName) + '">';
 
         overlay.innerHTML =
-            '<div class="ad-modal-backdrop"></div>' +
-            '<div class="ad-modal-panel">' +
-            '<button type="button" class="ad-modal-close" aria-label="Close">&times;</button>' +
-            '<div class="ad-modal-left">' +
+            '<div class="promo-modal-backdrop"></div>' +
+            '<div class="promo-modal-panel">' +
+            '<button type="button" class="promo-modal-close" aria-label="Close">&times;</button>' +
+            '<div class="promo-modal-left">' +
             mediaHtml +
-            '<div class="ad-modal-left-footer">' +
-            '<span class="ad-modal-badge">' + esc(ad.kind === 'client' ? 'Ad · Partner' : 'Ad · Bitroot') + '</span>' +
+            '<div class="promo-modal-left-footer">' +
+            '<span class="promo-modal-badge">' + esc(ad.kind === 'client' ? 'Ad · Partner' : 'Ad · Bitroot') + '</span>' +
             '<strong>' + esc(ad.productName) + '</strong>' +
-            '<a class="ad-modal-link" href="' + esc(ad.ctaUrl) + '" target="_blank" rel="noopener noreferrer">' + esc(ad.ctaLabel) + '</a>' +
+            '<a class="promo-modal-link" href="' + esc(ad.ctaUrl) + '" target="_blank" rel="noopener noreferrer">' + esc(ad.ctaLabel) + '</a>' +
             '</div>' +
             '</div>' +
             buildRightPane(ad) +
             '</div>';
 
-        overlay.querySelector('.ad-modal-backdrop').addEventListener('click', closeModal);
-        overlay.querySelector('.ad-modal-close').addEventListener('click', closeModal);
+        overlay.querySelector('.promo-modal-backdrop').addEventListener('click', closeModal);
+        overlay.querySelector('.promo-modal-close').addEventListener('click', closeModal);
         wireGateForm(overlay, ad);
 
         document.body.appendChild(overlay);
-        document.body.classList.add('ad-modal-open');
+        document.body.classList.add('promo-modal-open');
         document.addEventListener('keydown', onKeydown);
         activeModal = overlay;
 
-        var firstField = overlay.querySelector('#ad-gate-name') || overlay.querySelector('.ad-modal-close');
+        var firstField = overlay.querySelector('#promo-gate-name') || overlay.querySelector('.promo-modal-close');
         if (firstField) firstField.focus();
     }
 
