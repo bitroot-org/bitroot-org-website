@@ -7,7 +7,7 @@
 
 /* --- Banner ------------------------------------------------------------- */
 
-.ad-banner {
+.promo-banner {
     position: relative;
     display: flex;
     align-items: center;
@@ -33,32 +33,32 @@
     transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.ad-banner-client {
+.promo-banner-client {
     background:
         radial-gradient(130% 150% at 85% 105%, #ff6a8b 0%, transparent 62%),
         linear-gradient(135deg, #33123a 0%, #4a1642 45%, #180a1e 100%);
     box-shadow: 0 22px 48px -26px rgba(255, 90, 130, 0.45);
 }
 
-.ad-banner:hover,
-.ad-banner:focus-visible {
+.promo-banner:hover,
+.promo-banner:focus-visible {
     transform: translateY(-2px);
     box-shadow: 0 30px 60px -24px color-mix(in srgb, var(--accent) 75%, transparent);
 }
 
-.ad-banner-client:hover,
-.ad-banner-client:focus-visible {
+.promo-banner-client:hover,
+.promo-banner-client:focus-visible {
     box-shadow: 0 30px 60px -24px rgba(255, 90, 130, 0.55);
 }
 
-.ad-banner-glow {
+.promo-banner-glow {
     position: absolute;
     inset: 0;
     background: radial-gradient(60% 80% at 12% 15%, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
     pointer-events: none;
 }
 
-.ad-banner-content {
+.promo-banner-content {
     position: relative;
     z-index: 1;
     display: flex;
@@ -68,11 +68,11 @@
     max-width: 60%;
 }
 
-.ad-banner-has-media .ad-banner-content {
+.promo-banner-has-media .promo-banner-content {
     max-width: 56%;
 }
 
-.ad-banner-badge {
+.promo-banner-badge {
     flex-shrink: 0;
     padding: 0.25rem 0.65rem;
     border-radius: 999px;
@@ -84,7 +84,7 @@
     color: rgba(255, 255, 255, 0.85);
 }
 
-.ad-banner-headline {
+.promo-banner-headline {
     font-family: var(--font-display);
     font-size: 1.625rem;
     font-weight: 700;
@@ -93,14 +93,14 @@
     color: #fff;
 }
 
-.ad-banner-tagline {
+.promo-banner-tagline {
     font-size: 0.9375rem;
     font-weight: 400;
     line-height: 1.45;
     color: rgba(255, 255, 255, 0.76);
 }
 
-.ad-banner-cta {
+.promo-banner-cta {
     margin-top: 0.35rem;
     display: inline-flex;
     align-items: center;
@@ -114,7 +114,7 @@
     white-space: nowrap;
 }
 
-.ad-banner-mockup {
+.promo-banner-mockup {
     position: absolute;
     right: -0.5rem;
     bottom: -1.25rem;
@@ -125,8 +125,8 @@
     transform: rotate(2deg);
 }
 
-.ad-banner-mockup img,
-.ad-banner-mockup video {
+.promo-banner-mockup img,
+.promo-banner-mockup video {
     display: block;
     width: 100%;
     height: 168px;
@@ -143,11 +143,11 @@
 
 /* --- Modal ---------------------------------------------------------------- */
 
-body.ad-modal-open {
+body.promo-modal-open {
     overflow: hidden;
 }
 
-.ad-modal-overlay {
+.promo-modal-overlay {
     position: fixed;
     inset: 0;
     z-index: 200;
@@ -157,14 +157,14 @@ body.ad-modal-open {
     padding: var(--spacing-lg);
 }
 
-.ad-modal-backdrop {
+.promo-modal-backdrop {
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(3px);
 }
 
-.ad-modal-panel {
+.promo-modal-panel {
     position: relative;
     display: grid;
     /* Media gets a comfortable fixed lane; the demo/interactive side gets
@@ -179,7 +179,7 @@ body.ad-modal-open {
     overflow: hidden;
 }
 
-.ad-modal-close {
+.promo-modal-close {
     position: absolute;
     top: var(--spacing-sm);
     right: var(--spacing-sm);
@@ -195,14 +195,14 @@ body.ad-modal-open {
     cursor: pointer;
 }
 
-.ad-modal-left {
+.promo-modal-left {
     position: relative;
     display: flex;
     flex-direction: column;
     background: var(--bg-secondary);
 }
 
-.ad-modal-media {
+.promo-modal-media {
     width: 100%;
     flex: 1;
     min-height: 0;
@@ -210,7 +210,7 @@ body.ad-modal-open {
     background: #000;
 }
 
-.ad-modal-left-footer {
+.promo-modal-left-footer {
     display: flex;
     align-items: center;
     gap: var(--spacing-sm);
@@ -220,7 +220,7 @@ body.ad-modal-open {
     color: var(--text-primary);
 }
 
-.ad-modal-badge {
+.promo-modal-badge {
     padding: 0.15rem 0.5rem;
     border-radius: var(--radius-sm);
     font-size: 0.625rem;
@@ -231,7 +231,7 @@ body.ad-modal-open {
     color: var(--tag-text);
 }
 
-.ad-modal-link {
+.promo-modal-link {
     margin-left: auto;
     font-size: 0.8125rem;
     font-weight: 600;
@@ -239,21 +239,21 @@ body.ad-modal-open {
     text-decoration: none;
 }
 
-.ad-modal-right {
+.promo-modal-right {
     display: flex;
     flex-direction: column;
     padding: var(--spacing-xl);
     overflow-y: auto;
 }
 
-.ad-modal-cta-only {
+.promo-modal-cta-only {
     align-items: center;
     justify-content: center;
     text-align: center;
     gap: var(--spacing-lg);
 }
 
-.ad-modal-lede {
+.promo-modal-lede {
     max-width: 30rem;
     font-family: var(--font-display);
     font-size: 1.5rem;
@@ -263,7 +263,7 @@ body.ad-modal-open {
     color: var(--text-primary);
 }
 
-.ad-modal-cta {
+.promo-modal-cta {
     display: inline-block;
     padding: 0.9rem 1.75rem;
     border-radius: var(--radius-sm);
@@ -275,11 +275,11 @@ body.ad-modal-open {
     transition: transform 0.15s ease;
 }
 
-.ad-modal-cta:hover {
+.promo-modal-cta:hover {
     transform: translateY(-1px);
 }
 
-.ad-modal-demo {
+.promo-modal-demo {
     flex: 1;
     width: 100%;
     height: 100%;
@@ -290,14 +290,14 @@ body.ad-modal-open {
 
 /* --- Lead gate form ------------------------------------------------------- */
 
-.ad-gate-form {
+.promo-gate-form {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-xs);
     margin: auto 0;
 }
 
-.ad-gate-title {
+.promo-gate-title {
     font-family: var(--font-display);
     font-size: 1.25rem;
     font-weight: 700;
@@ -305,13 +305,13 @@ body.ad-modal-open {
     margin-bottom: 0.15rem;
 }
 
-.ad-gate-note {
+.promo-gate-note {
     font-size: 0.875rem;
     color: var(--text-muted);
     margin-bottom: var(--spacing-md);
 }
 
-.ad-gate-label {
+.promo-gate-label {
     font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -320,7 +320,7 @@ body.ad-modal-open {
     margin-top: var(--spacing-sm);
 }
 
-.ad-gate-input {
+.promo-gate-input {
     padding: 0.65rem 0.8rem;
     border: 1px solid var(--border);
     border-radius: var(--radius-sm);
@@ -330,18 +330,18 @@ body.ad-modal-open {
     font-family: var(--font-sans);
 }
 
-.ad-gate-input:focus {
+.promo-gate-input:focus {
     outline: none;
     border-color: var(--accent);
 }
 
-.ad-gate-error {
+.promo-gate-error {
     font-size: 0.8125rem;
     color: #d92d20;
     margin-top: var(--spacing-xs);
 }
 
-.ad-gate-submit {
+.promo-gate-submit {
     margin-top: var(--spacing-md);
     padding: 0.75rem;
     border: none;
@@ -353,7 +353,7 @@ body.ad-modal-open {
     cursor: pointer;
 }
 
-.ad-gate-submit:disabled {
+.promo-gate-submit:disabled {
     opacity: 0.6;
     cursor: default;
 }
@@ -361,28 +361,28 @@ body.ad-modal-open {
 /* --- Small screens ---------------------------------------------------------- */
 
 @media (max-width: 720px) {
-    .ad-modal-panel {
+    .promo-modal-panel {
         grid-template-columns: 1fr;
         grid-template-rows: minmax(0, 40%) 1fr;
         max-height: 92vh;
     }
 
-    .ad-banner-content {
+    .promo-banner-content {
         max-width: 100%;
     }
 
-    .ad-banner-has-media .ad-banner-content {
+    .promo-banner-has-media .promo-banner-content {
         max-width: 100%;
         padding-right: 6.5rem;
     }
 
-    .ad-banner-mockup {
+    .promo-banner-mockup {
         width: 34%;
         max-width: 140px;
     }
 
-    .ad-banner-mockup img,
-    .ad-banner-mockup video {
+    .promo-banner-mockup img,
+    .promo-banner-mockup video {
         height: 110px;
     }
 }
