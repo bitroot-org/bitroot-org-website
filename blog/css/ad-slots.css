@@ -1,0 +1,290 @@
+/* Ad slots — inline promo banner + the media|demo modal.
+   Uses the same theme tokens as blog.css/post.css (paper/ink palette,
+   spacing/radius scale, [data-theme="dark"] overrides) so it reads as part
+   of the post, not a bolted-on widget. */
+
+/* --- Banner ------------------------------------------------------------- */
+
+.ad-banner {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    width: 100%;
+    margin: var(--spacing-xl) 0;
+    padding: var(--spacing-md) var(--spacing-lg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--bg-secondary);
+    cursor: pointer;
+    text-align: left;
+    font-family: var(--font-sans);
+    transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.ad-banner:hover,
+.ad-banner:focus-visible {
+    border-color: var(--accent);
+    transform: translateY(-1px);
+}
+
+.ad-banner-badge {
+    flex-shrink: 0;
+    padding: 0.2rem 0.55rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    background: var(--tag-bg);
+    color: var(--tag-text);
+}
+
+.ad-banner-client .ad-banner-badge {
+    background: var(--text-primary);
+    color: var(--bg);
+}
+
+.ad-banner-copy {
+    flex: 1;
+    min-width: 0;
+    font-size: 0.9375rem;
+    color: var(--text-primary);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ad-banner-tagline {
+    color: var(--text-muted);
+    margin-left: 0.4em;
+}
+
+.ad-banner-cta {
+    flex-shrink: 0;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--accent);
+    white-space: nowrap;
+}
+
+/* --- Modal ---------------------------------------------------------------- */
+
+body.ad-modal-open {
+    overflow: hidden;
+}
+
+.ad-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-lg);
+}
+
+.ad-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+}
+
+.ad-modal-panel {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: min(100%, 860px);
+    max-height: min(88vh, 640px);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 30px 80px -30px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+}
+
+.ad-modal-close {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    z-index: 1;
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    border: none;
+    background: rgba(0, 0, 0, 0.35);
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.ad-modal-left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-secondary);
+}
+
+.ad-modal-media {
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    object-fit: cover;
+    background: #000;
+}
+
+.ad-modal-left-footer {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    border-top: 1px solid var(--border);
+    font-size: 0.875rem;
+    color: var(--text-primary);
+}
+
+.ad-modal-badge {
+    padding: 0.15rem 0.5rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.625rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    background: var(--tag-bg);
+    color: var(--tag-text);
+}
+
+.ad-modal-link {
+    margin-left: auto;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.ad-modal-right {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-xl);
+    overflow-y: auto;
+}
+
+.ad-modal-cta-only {
+    align-items: flex-start;
+    justify-content: center;
+    gap: var(--spacing-md);
+}
+
+.ad-modal-lede {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.ad-modal-cta {
+    display: inline-block;
+    padding: 0.7rem 1.25rem;
+    border-radius: var(--radius-sm);
+    background: var(--accent);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    text-decoration: none;
+}
+
+.ad-modal-demo {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    border: none;
+    border-radius: var(--radius-sm);
+}
+
+/* --- Lead gate form ------------------------------------------------------- */
+
+.ad-gate-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    margin: auto 0;
+}
+
+.ad-gate-title {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.15rem;
+}
+
+.ad-gate-note {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin-bottom: var(--spacing-md);
+}
+
+.ad-gate-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin-top: var(--spacing-sm);
+}
+
+.ad-gate-input {
+    padding: 0.65rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg);
+    color: var(--text-primary);
+    font-size: 0.9375rem;
+    font-family: var(--font-sans);
+}
+
+.ad-gate-input:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.ad-gate-error {
+    font-size: 0.8125rem;
+    color: #d92d20;
+    margin-top: var(--spacing-xs);
+}
+
+.ad-gate-submit {
+    margin-top: var(--spacing-md);
+    padding: 0.75rem;
+    border: none;
+    border-radius: var(--radius-sm);
+    background: var(--accent);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    cursor: pointer;
+}
+
+.ad-gate-submit:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+/* --- Small screens ---------------------------------------------------------- */
+
+@media (max-width: 720px) {
+    .ad-modal-panel {
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(0, 40%) 1fr;
+        max-height: 92vh;
+    }
+
+    .ad-banner {
+        flex-wrap: wrap;
+    }
+
+    .ad-banner-copy {
+        white-space: normal;
+    }
+}
