@@ -1,0 +1,386 @@
+/* Ad slots — inline promo banner + the media|demo modal.
+   Uses the same theme tokens as blog.css/post.css (paper/ink palette,
+   spacing/radius scale, [data-theme="dark"] overrides) so the palette
+   matches the post — but the surface, shadow, and "Ad ·" label are
+   deliberately distinct from a regular content card. It should read as
+   inserted advertising at a glance, not as another section of the article. */
+
+/* --- Banner ------------------------------------------------------------- */
+
+.ad-banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 188px;
+    margin: var(--spacing-xl) 0;
+    padding: var(--spacing-xl);
+    border: none;
+    border-radius: var(--radius-lg);
+    /* A full-bleed, self-branded gradient card — not the page's own surface —
+       is what actually reads as "advertising" at a glance, the way a real ad
+       network's creative does. Same idea in both site themes: the ad keeps
+       its own dark, saturated world regardless of the reader's light/dark
+       setting, the way every one of these placements does in the wild. */
+    background:
+        radial-gradient(130% 150% at 85% 105%, color-mix(in srgb, var(--accent) 75%, #000) 0%, transparent 62%),
+        linear-gradient(135deg, #17152c 0%, #1e1b3d 45%, #0d0c1a 100%);
+    box-shadow: 0 22px 48px -26px color-mix(in srgb, var(--accent) 65%, transparent);
+    cursor: pointer;
+    text-align: left;
+    font-family: var(--font-sans);
+    overflow: hidden;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.ad-banner-client {
+    background:
+        radial-gradient(130% 150% at 85% 105%, #ff6a8b 0%, transparent 62%),
+        linear-gradient(135deg, #33123a 0%, #4a1642 45%, #180a1e 100%);
+    box-shadow: 0 22px 48px -26px rgba(255, 90, 130, 0.45);
+}
+
+.ad-banner:hover,
+.ad-banner:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 30px 60px -24px color-mix(in srgb, var(--accent) 75%, transparent);
+}
+
+.ad-banner-client:hover,
+.ad-banner-client:focus-visible {
+    box-shadow: 0 30px 60px -24px rgba(255, 90, 130, 0.55);
+}
+
+.ad-banner-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(60% 80% at 12% 15%, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.ad-banner-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    max-width: 60%;
+}
+
+.ad-banner-has-media .ad-banner-content {
+    max-width: 56%;
+}
+
+.ad-banner-badge {
+    flex-shrink: 0;
+    padding: 0.25rem 0.65rem;
+    border-radius: 999px;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.ad-banner-headline {
+    font-family: var(--font-display);
+    font-size: 1.625rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #fff;
+}
+
+.ad-banner-tagline {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.45;
+    color: rgba(255, 255, 255, 0.68);
+}
+
+.ad-banner-cta {
+    margin-top: 0.35rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.6rem 1.25rem;
+    border-radius: 999px;
+    background: #fff;
+    color: #17152c;
+    font-weight: 700;
+    font-size: 0.875rem;
+    white-space: nowrap;
+}
+
+.ad-banner-mockup {
+    position: absolute;
+    right: -0.5rem;
+    bottom: -1.25rem;
+    z-index: 1;
+    width: 46%;
+    max-width: 260px;
+    display: block;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+    box-shadow: 0 30px 55px -18px rgba(0, 0, 0, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: none;
+    overflow: hidden;
+    transform: rotate(2deg);
+}
+
+.ad-banner-mockup img,
+.ad-banner-mockup video {
+    display: block;
+    width: 100%;
+    height: 168px;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* --- Modal ---------------------------------------------------------------- */
+
+body.ad-modal-open {
+    overflow: hidden;
+}
+
+.ad-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-lg);
+}
+
+.ad-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+}
+
+.ad-modal-panel {
+    position: relative;
+    display: grid;
+    /* Media gets a comfortable fixed lane; the demo/interactive side gets
+       everything else — that's the half people actually need room to use. */
+    grid-template-columns: minmax(280px, 380px) 1fr;
+    width: min(94vw, 1240px);
+    height: min(90vh, 820px);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 30px 80px -30px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+}
+
+.ad-modal-close {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    z-index: 1;
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    border: none;
+    background: rgba(0, 0, 0, 0.35);
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.ad-modal-left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-secondary);
+}
+
+.ad-modal-media {
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    object-fit: cover;
+    background: #000;
+}
+
+.ad-modal-left-footer {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    border-top: 1px solid var(--border);
+    font-size: 0.875rem;
+    color: var(--text-primary);
+}
+
+.ad-modal-badge {
+    padding: 0.15rem 0.5rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.625rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    background: var(--tag-bg);
+    color: var(--tag-text);
+}
+
+.ad-modal-link {
+    margin-left: auto;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.ad-modal-right {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-xl);
+    overflow-y: auto;
+}
+
+.ad-modal-cta-only {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: var(--spacing-lg);
+}
+
+.ad-modal-lede {
+    max-width: 30rem;
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    color: var(--text-primary);
+}
+
+.ad-modal-cta {
+    display: inline-block;
+    padding: 0.9rem 1.75rem;
+    border-radius: var(--radius-sm);
+    background: var(--accent);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: transform 0.15s ease;
+}
+
+.ad-modal-cta:hover {
+    transform: translateY(-1px);
+}
+
+.ad-modal-demo {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    border: none;
+    border-radius: var(--radius-sm);
+}
+
+/* --- Lead gate form ------------------------------------------------------- */
+
+.ad-gate-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    margin: auto 0;
+}
+
+.ad-gate-title {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.15rem;
+}
+
+.ad-gate-note {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin-bottom: var(--spacing-md);
+}
+
+.ad-gate-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin-top: var(--spacing-sm);
+}
+
+.ad-gate-input {
+    padding: 0.65rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg);
+    color: var(--text-primary);
+    font-size: 0.9375rem;
+    font-family: var(--font-sans);
+}
+
+.ad-gate-input:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.ad-gate-error {
+    font-size: 0.8125rem;
+    color: #d92d20;
+    margin-top: var(--spacing-xs);
+}
+
+.ad-gate-submit {
+    margin-top: var(--spacing-md);
+    padding: 0.75rem;
+    border: none;
+    border-radius: var(--radius-sm);
+    background: var(--accent);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    cursor: pointer;
+}
+
+.ad-gate-submit:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+/* --- Small screens ---------------------------------------------------------- */
+
+@media (max-width: 720px) {
+    .ad-modal-panel {
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(0, 40%) 1fr;
+        max-height: 92vh;
+    }
+
+    .ad-banner-content {
+        max-width: 100%;
+    }
+
+    .ad-banner-has-media .ad-banner-content {
+        max-width: 100%;
+        padding-right: 6.5rem;
+    }
+
+    .ad-banner-mockup {
+        width: 34%;
+        max-width: 140px;
+    }
+
+    .ad-banner-mockup img,
+    .ad-banner-mockup video {
+        height: 110px;
+    }
+}

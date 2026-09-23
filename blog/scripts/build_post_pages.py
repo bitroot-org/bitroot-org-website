@@ -514,6 +514,7 @@ def render_page(meta, content, slug, prev_post, next_post):
     <link rel="alternate" type="application/rss+xml" title="Newslogger | Bitroot" href="/rss.xml">
     <link rel="stylesheet" href="/blog/css/blog.css">
     <link rel="stylesheet" href="/blog/css/post.css">
+    <link rel="stylesheet" href="/blog/css/ad-slots.css">
 
     <script type="application/ld+json">{json_ld(meta, slug, canonical, word_count)}</script>
 
@@ -557,7 +558,7 @@ def render_page(meta, content, slug, prev_post, next_post):
 
     <!-- Post Content -->
     <main class="post-page">
-        <article class="post-article" id="post-content">
+        <article class="post-article" id="post-content" data-post-slug="{esc(slug)}">
 {hero_html(meta, slug)}
             <header class="post-header">
                 <div class="post-meta">
@@ -641,6 +642,7 @@ def render_page(meta, content, slug, prev_post, next_post):
     </script>
 {newsletter_sticky_html()}
     <script src="/blog/js/newsletter.js" defer></script>
+    <script src="/blog/js/ad-slots.js" defer></script>
 </body>
 </html>
 """
