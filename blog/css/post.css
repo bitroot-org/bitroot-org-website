@@ -56,11 +56,234 @@ html[data-embed="1"] .post-sources {
     margin-top: var(--spacing-xl);
 }
 
+/* Related kits/guides — internal cross-links to bitroot.org build resources */
+.post-related {
+    margin-top: var(--spacing-2xl);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--border);
+}
+
+.post-related-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    margin: 0 0 var(--spacing-xs) 0;
+}
+
+.post-related-intro {
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    margin: 0 0 var(--spacing-md) 0;
+}
+
+.post-related-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--spacing-sm);
+}
+
+.post-related-list a {
+    display: block;
+    padding: var(--spacing-md);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md, 12px);
+    text-decoration: none;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.post-related-list a:hover {
+    border-color: var(--bitroot-primary-blue);
+    background: var(--bitroot-light-blue);
+}
+
+.post-related-kind {
+    display: inline-block;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--bitroot-primary-blue);
+    margin-bottom: 2px;
+}
+
+.post-related-name {
+    display: block;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.35;
+}
+
+.post-related-blurb {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-top: 3px;
+}
+
+html[data-embed="1"] .post-related {
+    margin-top: var(--spacing-xl);
+}
+
+/* Newsletter capture — inline block + scroll-in sticky bar */
+.post-newsletter {
+    margin-top: var(--spacing-2xl);
+    padding: var(--spacing-lg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md, 12px);
+    background: var(--bitroot-light-blue);
+}
+
+.post-newsletter-title {
+    font-size: 1.0625rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 var(--spacing-xs) 0;
+}
+
+.post-newsletter-copy {
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    margin: 0 0 var(--spacing-md) 0;
+}
+
+.post-newsletter-done {
+    font-weight: 600;
+    color: var(--bitroot-primary-blue);
+    margin: 0;
+}
+
+.nl-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    align-items: center;
+}
+
+.nl-form input[type="email"] {
+    flex: 1 1 220px;
+    min-width: 0;
+    padding: 0.6rem 0.85rem;
+    font: inherit;
+    font-size: 0.9375rem;
+    color: var(--text-primary);
+    background: var(--bg, #fff);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+}
+
+.nl-form input[type="email"]:focus {
+    outline: 2px solid var(--bitroot-primary-blue);
+    outline-offset: 1px;
+}
+
+.nl-form button {
+    padding: 0.6rem 1.15rem;
+    font: inherit;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #fff;
+    background: var(--bitroot-primary-blue);
+    border: 1px solid var(--bitroot-primary-blue);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: opacity 0.15s ease;
+}
+
+.nl-form button:hover:not(:disabled) {
+    opacity: 0.9;
+}
+
+.nl-form button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.nl-status {
+    flex-basis: 100%;
+    margin: 2px 0 0;
+    font-size: 0.8125rem;
+    min-height: 1em;
+    color: var(--text-secondary);
+}
+
+.nl-status[data-nl-kind="error"] {
+    color: #c0392b;
+}
+
+.nl-status[data-nl-kind="done"] {
+    color: var(--bitroot-primary-blue);
+    font-weight: 600;
+}
+
+.nl-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 120;
+    padding: 0.75rem 1rem;
+    background: var(--bg-secondary, #fff);
+    border-top: 1px solid var(--border);
+    box-shadow: 0 -6px 24px rgba(0, 0, 0, 0.09);
+    transform: translateY(100%);
+    transition: transform 0.28s ease;
+}
+
+.nl-sticky.nl-sticky--in {
+    transform: translateY(0);
+}
+
+.nl-sticky-inner {
+    max-width: 780px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.nl-sticky-text {
+    flex: 1 1 240px;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.nl-sticky .nl-form {
+    flex: 1 1 320px;
+}
+
+.nl-sticky .nl-status {
+    flex-basis: 100%;
+}
+
+.nl-sticky-close {
+    flex: 0 0 auto;
+    width: 28px;
+    height: 28px;
+    font-size: 1.1rem;
+    line-height: 1;
+    color: var(--text-muted);
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nl-sticky-close:hover {
+    color: var(--text-primary);
+}
+
 /* Embed / reader mode: strip site chrome for mobile app webview */
 html[data-embed="1"] .header,
 html[data-embed="1"] .footer,
 html[data-embed="1"] .cloud-ticker,
-html[data-embed="1"] .post-nav {
+html[data-embed="1"] .post-nav,
+html[data-embed="1"] .post-newsletter,
+html[data-embed="1"] .nl-sticky {
     display: none !important;
 }
 

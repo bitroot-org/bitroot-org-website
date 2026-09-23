@@ -630,9 +630,25 @@ img {
     color: var(--bitroot-primary-blue);
 }
 
-.pagination-btn:disabled {
+.pagination-btn:disabled,
+.pagination-btn[aria-disabled="true"] {
     opacity: 0.4;
     cursor: not-allowed;
+    pointer-events: none;
+}
+
+.pagination-back {
+    margin-top: var(--spacing-lg);
+    text-align: center;
+    font-size: 0.9375rem;
+}
+
+.pagination-back a {
+    color: var(--text-secondary);
+}
+
+.pagination-back a:hover {
+    color: var(--bitroot-primary-blue);
 }
 
 .pagination-btn svg {

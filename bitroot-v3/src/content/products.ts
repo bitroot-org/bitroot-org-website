@@ -295,9 +295,18 @@ const productsFallback: Product[] = [
  * Products/launches are managed in TeamLife (/tools/content) and written into
  * `generated/products.json` at build time. Populated → source of truth; empty
  * (local dev / no DB) → fall back to the committed list above.
+ *
+ * Exception: slugs in FORCE_FALLBACK_SLUGS always use the committed record
+ * above, even when the DB has a row for them — the TeamLife row for `tripsky`
+ * is stuck at a pre-launch status. Remove the slug here once the DB is fixed.
  */
+const FORCE_FALLBACK_SLUGS = new Set(["tripsky"]);
+const fallbackBySlug = new Map(productsFallback.map((p) => [p.slug, p]));
+
 export const products: Product[] = generatedProducts.length
-  ? (generatedProducts as Product[])
+  ? (generatedProducts as Product[]).map((p) =>
+      FORCE_FALLBACK_SLUGS.has(p.slug) ? (fallbackBySlug.get(p.slug) ?? p) : p,
+    )
   : productsFallback;
 
 export function findProduct(slug: string): Product | undefined {

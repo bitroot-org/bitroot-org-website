@@ -10,7 +10,11 @@ import { connectAnalytics } from "@/lib/analytics";
 function loadPosthog() {
   import("posthog-js").then(({ default: posthog }) => {
     posthog.init("phc_HEqGPywWHRyDfasXvZMuRz2Vs8ip24tGXUYNRySQ4sx", {
-      api_host: "https://us.i.posthog.com",
+      // Managed reverse proxy on our own domain so ad blockers don't drop
+      // events. ui_host keeps in-app links (toolbar, session replay) pointing
+      // at the real PostHog instance.
+      api_host: "https://rp.bitroot.org",
+      ui_host: "https://us.posthog.com",
       // Autocapture pageviews + pageleaves, including App Router client-side
       // navigations (history changes), plus sensible modern defaults.
       defaults: "2025-05-24",

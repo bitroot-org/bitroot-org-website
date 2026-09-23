@@ -1,7 +1,43 @@
 {
   "generated": true,
-  "count": 354,
+  "count": 390,
   "posts": [
+    "2026-09-23-opus-5-5-breaks-the-upgrade-trap-should-your-start.md",
+    "2026-09-23-gpt-6-sol-and-luna-50-price-drop-what-changed-when.md",
+    "2026-09-22-how-to-build-a-personal-stylist-app-with-muse-ai-a.md",
+    "2026-09-22-ai-solving-math-problems-what-openais-100-breakthr.md",
+    "2026-09-21-pace-the-frontier-what-dario-amodeis-ai-safety-pro.md",
+    "2026-09-21-higgsfield-api-guide-how-to-integrate-50-models-fo.md",
+    "2026-09-21-chatgpt-higgsfield-how-to-generate-ai-videos-witho.md",
+    "2026-09-19-best-household-ai-agent-2026-google-cc-vs-instinct.md",
+    "2026-09-18-ai-governance-paradox-monitoring-agents-with-ai-cr.md",
+    "2026-09-17-instinct-10b-valuation-on-1-3k-month-user-spend-20.md",
+    "2026-09-17-capcut-vs-davinci-best-free-video-editor-for-india.md",
+    "2026-09-17-ai-agents-control-google-home-mcp-launch-sept-16-2.md",
+    "2026-09-16-whatsapp-ai-agents-automate-booking-support-leads.md",
+    "2026-09-16-jev-vs-claude-0-042-per-million-tokens-sept-2026.md",
+    "2026-09-16-ai-snitch-hotlines-why-agents-report-each-other-20.md",
+    "2026-09-15-roblox-ai-build-goes-multiplatform-what-indie-devs.md",
+    "2026-09-15-microsoft-ai-code-of-conduct-what-founders-should.md",
+    "2026-09-12-claude-in-chrome-is-ga-browser-automation-without.md",
+    "2026-09-11-phoenix-4-5-fastest-real-time-ai-avatars-for-custo.md",
+    "2026-09-11-metas-muse-hits-2-app-should-founders-actually-use.md",
+    "2026-09-11-chatgpt-ads-manager-india-2026-setup-guide-pricing.md",
+    "2026-09-10-cheap-ai-tools-for-startups-2026-12-ranked-by-cost.md",
+    "2026-09-10-chatgpt-plugins-vs-skills-vs-gpts-vs-mcp-which-to.md",
+    "2026-09-09-muse-vs-claude-2026-personal-agent-vs-reasoning-as.md",
+    "2026-09-09-lapis-one-personal-linux-computer-for-ai-agents-20.md",
+    "2026-09-09-gpt-5-4-vs-5-5-vs-5-6-vs-astra-openai-model-compar.md",
+    "2026-09-08-nvidia-buys-hugging-face-12-93b-what-builders-shou.md",
+    "2026-09-07-why-founders-should-care-3-weekend-tech-incidents.md",
+    "2026-09-07-terraform-vs-ansible-2026-which-devops-tool-for-yo.md",
+    "2026-09-05-gemini-spark-google-photos-is-the-upgrade-worth-it.md",
+    "2026-09-05-agent-coordination-what-founders-should-know-from.md",
+    "2026-09-04-what-is-abliteration-ai-guardrails-how-theyre-bein.md",
+    "2026-09-04-gpt-6-astra-vs-fable-5-1-for-blender-which-ai-mode.md",
+    "2026-09-04-gmail-live-what-founders-need-to-know-about-google.md",
+    "2026-09-03-claude-fable-5-1-for-indie-game-dev-build-games-in.md",
+    "2026-09-03-ai-coding-tools-for-founders-cursor-vs-claude-code.md",
     "2026-09-02-openai-astra-cybersecurity-model-finds-zero-day-ex.md",
     "2026-09-02-claude-fable-5-1-45-cheaper-cache-better-performan.md",
     "2026-09-01-indias-gnani-artha-vs-chinas-deepseek-how-two-nati.md",
@@ -358,6 +394,645 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-23-opus-5-5-breaks-the-upgrade-trap-should-your-start.md",
+      "slug": "2026-09-23-opus-5-5-breaks-the-upgrade-trap-should-your-start",
+      "url": "/blog/2026-09-23-opus-5-5-breaks-the-upgrade-trap-should-your-start/",
+      "title": "Opus 5.5 Breaks the Upgrade Trap: Should Your Startup Switch from Opus 5?",
+      "date": "2026-09-23",
+      "published_at": "2026-09-23T07:14:57.869Z",
+      "tags": [
+        "AI",
+        "Pricing",
+        "Founder Strategy"
+      ],
+      "excerpt": "Anthropic cut Opus 5.5 to $4/$20 and claims Fable-level performance on most work. Here's a framework to decide if your startup should upgrade from Opus 5\u2014and when the effort dial is the real savings lever.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDwqKAWbk9EWlX7cXqrJ12bKEpaURi7yigJWXcCRbEng&s=10",
+      "sources": [],
+      "readTime": "8 min",
+      "shortId": 390
+    },
+    {
+      "filename": "2026-09-23-gpt-6-sol-and-luna-50-price-drop-what-changed-when.md",
+      "slug": "2026-09-23-gpt-6-sol-and-luna-50-price-drop-what-changed-when",
+      "url": "/blog/2026-09-23-gpt-6-sol-and-luna-50-price-drop-what-changed-when/",
+      "title": "GPT-6 Sol and Luna: 50% Price Drop, What Changed, When to Use Each",
+      "date": "2026-09-23",
+      "published_at": "2026-09-23T04:38:14.799Z",
+      "tags": [
+        "OpenAI",
+        "AI",
+        "Pricing",
+        "Founder Strategy"
+      ],
+      "excerpt": "OpenAI's GPT-6 Sol and Luna launched Sept 22 with claimed 50% cost reduction. Here's the pricing breakdown, use-case routing, and why there's no GPT-6 Terra\u2014yet.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/09/openai-getty.jpg?resize=1280,853",
+      "sources": [],
+      "readTime": "9 min",
+      "shortId": 389
+    },
+    {
+      "filename": "2026-09-22-how-to-build-a-personal-stylist-app-with-muse-ai-a.md",
+      "slug": "2026-09-22-how-to-build-a-personal-stylist-app-with-muse-ai-a",
+      "url": "/blog/2026-09-22-how-to-build-a-personal-stylist-app-with-muse-ai-a/",
+      "title": "How to Build a Personal Stylist App with Muse AI (And What It Means for No-Code)",
+      "date": "2026-09-22",
+      "published_at": "2026-09-22T05:55:21.787Z",
+      "tags": [
+        "AI",
+        "No-Code",
+        "Founder Strategy",
+        "Muse AI"
+      ],
+      "excerpt": "Users are building custom personal stylist apps with Meta's Muse AI, launched Sept 8, 2026. No code required. Here's how to build one yourself\u2014and what this signal means for the no-code and creator economy.",
+      "image": "https://www.figma.com/community/thumbnail?resource_id=1190067223006709410&resource_type=plugin",
+      "sources": [],
+      "readTime": "9 min",
+      "shortId": 388
+    },
+    {
+      "filename": "2026-09-22-ai-solving-math-problems-what-openais-100-breakthr.md",
+      "slug": "2026-09-22-ai-solving-math-problems-what-openais-100-breakthr",
+      "url": "/blog/2026-09-22-ai-solving-math-problems-what-openais-100-breakthr/",
+      "title": "AI Solving Math Problems: What OpenAI's 100+ Breakthroughs Mean for Your Research Product",
+      "date": "2026-09-22",
+      "published_at": "2026-09-22T04:13:22.754Z",
+      "tags": [
+        "AI",
+        "Research",
+        "Strategy",
+        "OpenAI",
+        "ChatGPT"
+      ],
+      "excerpt": "OpenAI claims its AI solved 100+ open math problems and formed an advisory group with zero power to slow research. Here's what changed for research-driven founders and why governance structure matters.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/09/51013975207_8dcac5cf72_k.jpg?resize=1280,960",
+      "sources": [],
+      "readTime": "9 min",
+      "shortId": 387
+    },
+    {
+      "filename": "2026-09-21-pace-the-frontier-what-dario-amodeis-ai-safety-pro.md",
+      "slug": "2026-09-21-pace-the-frontier-what-dario-amodeis-ai-safety-pro",
+      "url": "/blog/2026-09-21-pace-the-frontier-what-dario-amodeis-ai-safety-pro/",
+      "title": "Pace the Frontier: What Dario Amodei's AI Safety Proposal Means for Founders",
+      "date": "2026-09-21",
+      "published_at": "2026-09-21T07:36:38.075Z",
+      "tags": [
+        "AI",
+        "Strategy",
+        "Regulation",
+        "AI Safety"
+      ],
+      "excerpt": "Dario Amodei's proposal to slow frontier AI development could reshape competitive dynamics for founders building AI products. Here's what pacing means for your strategy, and who it helps vs. hurts.",
+      "image": "https://pbs.twimg.com/card_img/2101361744484663296/jN6MiOGJ?format=jpg&name=small",
+      "sources": [],
+      "readTime": "10 min",
+      "shortId": 386
+    },
+    {
+      "filename": "2026-09-21-higgsfield-api-guide-how-to-integrate-50-models-fo.md",
+      "slug": "2026-09-21-higgsfield-api-guide-how-to-integrate-50-models-fo",
+      "url": "/blog/2026-09-21-higgsfield-api-guide-how-to-integrate-50-models-fo/",
+      "title": "Higgsfield API Guide: How to Integrate 50+ Models for Pay-Per-Use",
+      "date": "2026-09-21",
+      "published_at": "2026-09-21T07:13:33.107Z",
+      "tags": [
+        "AI",
+        "Product",
+        "Developer Tools",
+        "API",
+        "Higgsfield"
+      ],
+      "excerpt": "Higgsfield's API launched Sept 16, 2026, offering pay-per-generation access to 50+ video and image models. This guide covers setup, pricing comparison with subscriptions, and when to choose API vs. MCP vs. web app for your workflow.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLt-3wUW9cFKIPkUDFVlenX6eHxlFqRyBGGAAGbeWn2w&s=10",
+      "sources": [],
+      "readTime": "8 min",
+      "shortId": 385
+    },
+    {
+      "filename": "2026-09-21-chatgpt-higgsfield-how-to-generate-ai-videos-witho.md",
+      "slug": "2026-09-21-chatgpt-higgsfield-how-to-generate-ai-videos-witho",
+      "url": "/blog/2026-09-21-chatgpt-higgsfield-how-to-generate-ai-videos-witho/",
+      "title": "ChatGPT + Higgsfield: How to Generate AI Videos Without Switching",
+      "date": "2026-09-21",
+      "published_at": "2026-09-21T06:54:16.270Z",
+      "tags": [
+        "chatgpt-plugins",
+        "higgsfield",
+        "ai-video",
+        "video-generation",
+        "plugin-integration",
+        "workflow-automation"
+      ],
+      "excerpt": "Connect Higgsfield to ChatGPT in 3 steps. Generate videos with Seedance 2.5, Kling 3, Soul 2.0. Cost breakdown + decision framework. No tab-switching.",
+      "image": "https://higgsfield.ai/cdn-cgi/image/fit=scale-down,format=webp,onerror=redirect,width=1280,quality=85/https://cdn.sanity.io/images/s479xw3z/production/9d59c57edd5d720798c6f2d8cb24ee80f5ead4e5-2048x1152.png",
+      "sources": [],
+      "readTime": "8 min",
+      "shortId": 384
+    },
+    {
+      "filename": "2026-09-19-best-household-ai-agent-2026-google-cc-vs-instinct.md",
+      "slug": "2026-09-19-best-household-ai-agent-2026-google-cc-vs-instinct",
+      "url": "/blog/2026-09-19-best-household-ai-agent-2026-google-cc-vs-instinct/",
+      "title": "Best Household AI Agent 2026: Google CC vs Instinct vs Ollie",
+      "date": "2026-09-19",
+      "published_at": "2026-09-19T04:56:32.668Z",
+      "tags": [
+        "household-ai",
+        "family-agents",
+        "agent-comparison",
+        "Google-CC",
+        "Instinct",
+        "Ollie",
+        "Fambot"
+      ],
+      "excerpt": "Google CC free vs Instinct $1.3K/mo vs Ollie vs Fambot. Real cost breakdown by household size. Which agent wins for your family structure.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7obb7QPNks1narecFoHlRwS1kVGLMeXq9G6OA2yRwEw&s=10",
+      "sources": [],
+      "readTime": "11 min",
+      "shortId": 383
+    },
+    {
+      "filename": "2026-09-18-ai-governance-paradox-monitoring-agents-with-ai-cr.md",
+      "slug": "2026-09-18-ai-governance-paradox-monitoring-agents-with-ai-cr",
+      "url": "/blog/2026-09-18-ai-governance-paradox-monitoring-agents-with-ai-cr/",
+      "title": "AI Governance Paradox: Monitoring Agents With AI Creates Risk",
+      "date": "2026-09-18",
+      "published_at": "2026-09-18T05:02:46.947Z",
+      "tags": [
+        "ai-governance",
+        "agent-monitoring",
+        "ai-safety",
+        "observability",
+        "hugging-face-incident"
+      ],
+      "excerpt": "12,000 agents deceived monitors at Hugging Face. Y Combinator funded 106 AI observability companies. Why monitoring AI is an arms race.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/03/ai-bots-agents-GettyImages-2230799616.jpg?resize=1280,853",
+      "sources": [],
+      "readTime": "9 min",
+      "shortId": 382
+    },
+    {
+      "filename": "2026-09-17-instinct-10b-valuation-on-1-3k-month-user-spend-20.md",
+      "slug": "2026-09-17-instinct-10b-valuation-on-1-3k-month-user-spend-20",
+      "url": "/blog/2026-09-17-instinct-10b-valuation-on-1-3k-month-user-spend-20/",
+      "title": "Instinct $10B Valuation on $1.3K/Month User Spend (2026)",
+      "date": "2026-09-17",
+      "published_at": "2026-09-17T06:33:15.355Z",
+      "tags": [
+        "instinct",
+        "ai-agents",
+        "unit-economics",
+        "agent-monetization",
+        "transaction-revenue"
+      ],
+      "excerpt": "Instinct hit $10B valuation in 5 months. $1,300 monthly spend per user. What this unit economics pattern means for founders building agents.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZOSV3pR5Nlhh1_Turhpd7YbK3FBSoT81JjFp-f_IIg&s=10",
+      "sources": [],
+      "readTime": "7 min",
+      "shortId": 381
+    },
+    {
+      "filename": "2026-09-17-capcut-vs-davinci-best-free-video-editor-for-india.md",
+      "slug": "2026-09-17-capcut-vs-davinci-best-free-video-editor-for-india",
+      "url": "/blog/2026-09-17-capcut-vs-davinci-best-free-video-editor-for-india/",
+      "title": "CapCut vs DaVinci: Best Free Video Editor for India Creators",
+      "date": "2026-09-17",
+      "published_at": "2026-09-17T07:40:45.074Z",
+      "tags": [
+        "capcut",
+        "davinci-resolve",
+        "filmora",
+        "video-editor",
+        "video-editing-software",
+        "india-pricing",
+        "free-tools"
+      ],
+      "excerpt": "CapCut Pro $19.99/mo vs DaVinci Free (4K) vs Filmora \u20b950/year. Pricing, AI features, and real cost breakdown for YouTube creators.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDv_j9c1ViuT0KCVMM9Eyw5jN51YYUsjjxDCgWD3rrEg&s",
+      "sources": [],
+      "readTime": "8 min",
+      "shortId": 380
+    },
+    {
+      "filename": "2026-09-17-ai-agents-control-google-home-mcp-launch-sept-16-2.md",
+      "slug": "2026-09-17-ai-agents-control-google-home-mcp-launch-sept-16-2",
+      "url": "/blog/2026-09-17-ai-agents-control-google-home-mcp-launch-sept-16-2/",
+      "title": "AI Agents Control Google Home: MCP Launch Sept 16 2026",
+      "date": "2026-09-17",
+      "published_at": "2026-09-17T04:07:03.326Z",
+      "tags": [
+        "mcp",
+        "google-home",
+        "ai-agents",
+        "smart-home-automation",
+        "claude",
+        "chatgpt"
+      ],
+      "excerpt": "Google's new MCP server lets Claude, ChatGPT control smart home devices. $20/month tier. What it means for founders building automation.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/Google-Home-Speaker-Multi.png?resize=1280,806",
+      "sources": [],
+      "readTime": "7 min",
+      "shortId": 379
+    },
+    {
+      "filename": "2026-09-16-whatsapp-ai-agents-automate-booking-support-leads.md",
+      "slug": "2026-09-16-whatsapp-ai-agents-automate-booking-support-leads",
+      "url": "/blog/2026-09-16-whatsapp-ai-agents-automate-booking-support-leads/",
+      "title": "WhatsApp AI Agents: Automate Booking, Support & Leads (2026)",
+      "date": "2026-09-16",
+      "published_at": "2026-09-16T04:12:21.485Z",
+      "tags": [
+        "WhatsApp",
+        "AI Automation",
+        "Founder Tools",
+        "Customer Experience"
+      ],
+      "excerpt": "Meta's WhatsApp Business MCP lets Claude automate appointments, lead capture, and customer support. Setup in 30 minutes. Cost breakdown inside. For founders.",
+      "image": "https://cdn.prod.website-files.com/673c43870d3cef11719b5930/681d85178ef7abb370577ef1_Meta%20AI%20WhatsApp%20Explained%20%26%20How%20to%20Remove%20It.jpg",
+      "sources": [],
+      "readTime": "10 min",
+      "shortId": 378
+    },
+    {
+      "filename": "2026-09-16-jev-vs-claude-0-042-per-million-tokens-sept-2026.md",
+      "slug": "2026-09-16-jev-vs-claude-0-042-per-million-tokens-sept-2026",
+      "url": "/blog/2026-09-16-jev-vs-claude-0-042-per-million-tokens-sept-2026/",
+      "title": "Jev vs Claude: $0.042 Per Million Tokens (Sept 2026)",
+      "date": "2026-09-16",
+      "published_at": "2026-09-16T12:09:00.878Z",
+      "tags": [
+        "AI Models",
+        "Founders",
+        "Cost Optimization"
+      ],
+      "excerpt": "Diogo Almeida's Jev is 40\u2013400x cheaper and 20\u2013200x faster than Claude. For decision models, not chatbots. Cost breakdown and when to use.",
+      "image": "https://pbs.twimg.com/card_img/2099924718921097216/XvBM0XUg?format=jpg&name=small",
+      "sources": [],
+      "readTime": "6 min",
+      "shortId": 377
+    },
+    {
+      "filename": "2026-09-16-ai-snitch-hotlines-why-agents-report-each-other-20.md",
+      "slug": "2026-09-16-ai-snitch-hotlines-why-agents-report-each-other-20",
+      "url": "/blog/2026-09-16-ai-snitch-hotlines-why-agents-report-each-other-20/",
+      "title": "AI Snitch Hotlines: Why Agents Report Each Other (2026)",
+      "date": "2026-09-16",
+      "published_at": "2026-09-16T04:17:32.097Z",
+      "tags": [
+        "AI Safety",
+        "Multi-Agent Systems",
+        "Agent Governance"
+      ],
+      "excerpt": "Two new AI hotlines let agents report misbehaving peers. How whistleblowing tools work, when they backfire, and what it means for multi-agent safety.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/07/GettyImages-1609818039.jpg?resize=1280,869",
+      "sources": [],
+      "readTime": "7 min",
+      "shortId": 376
+    },
+    {
+      "filename": "2026-09-15-roblox-ai-build-goes-multiplatform-what-indie-devs.md",
+      "slug": "2026-09-15-roblox-ai-build-goes-multiplatform-what-indie-devs",
+      "url": "/blog/2026-09-15-roblox-ai-build-goes-multiplatform-what-indie-devs/",
+      "title": "Roblox AI Build Goes Multiplatform: What Indie Devs Should Know 2026",
+      "date": "2026-09-15",
+      "published_at": "2026-09-15T02:51:44.039Z",
+      "tags": [
+        "Game Dev"
+      ],
+      "excerpt": "Roblox expanded AI Build to Serbia, Singapore, desktop. New feature: deploy games as standalone apps on mobile, PC, consoles, web. What this means for indie game developers.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFFmg-ZZIDB6yxubgnuamkqlDEbj3PFDgoKbz6t7Ukhw&s=10",
+      "sources": [],
+      "readTime": "9 min",
+      "shortId": 375
+    },
+    {
+      "filename": "2026-09-15-microsoft-ai-code-of-conduct-what-founders-should.md",
+      "slug": "2026-09-15-microsoft-ai-code-of-conduct-what-founders-should",
+      "url": "/blog/2026-09-15-microsoft-ai-code-of-conduct-what-founders-should/",
+      "title": "Microsoft AI Code of Conduct: What Founders Should Know 2026",
+      "date": "2026-09-15",
+      "published_at": "2026-09-15T02:48:18.566Z",
+      "tags": [
+        "AI"
+      ],
+      "excerpt": "Microsoft published AI Code of Conduct forbidding cyberattacks, hidden reasoning, shutdown resistance. Prompted by OpenAI sandbox breach. What this means for founders building AI agents.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu39DUpw1zcu-16KRky7vC9y6H202buu2M1GvsDym4iQ&s=10",
+      "sources": [],
+      "readTime": "3 min",
+      "shortId": 374
+    },
+    {
+      "filename": "2026-09-12-claude-in-chrome-is-ga-browser-automation-without.md",
+      "slug": "2026-09-12-claude-in-chrome-is-ga-browser-automation-without",
+      "url": "/blog/2026-09-12-claude-in-chrome-is-ga-browser-automation-without/",
+      "title": "Claude in Chrome Is GA: Browser Automation Without Prompt Injection Risk",
+      "date": "2026-09-12",
+      "published_at": "2026-09-12T05:09:09.611Z",
+      "tags": [
+        "Claude",
+        "Chrome",
+        "Google"
+      ],
+      "excerpt": "Claude in Chrome is generally available (GA) on paid plans. Autonomous browser automation with safety checks. What changed, how prompt injection defenses work, and who should test it.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCYXqK0ao0O4UNepNTWePU3e-FIdxI6aJBwFqztwMnaw&s=10",
+      "sources": [],
+      "readTime": "4 min",
+      "shortId": 373
+    },
+    {
+      "filename": "2026-09-11-phoenix-4-5-fastest-real-time-ai-avatars-for-custo.md",
+      "slug": "2026-09-11-phoenix-4-5-fastest-real-time-ai-avatars-for-custo",
+      "url": "/blog/2026-09-11-phoenix-4-5-fastest-real-time-ai-avatars-for-custo/",
+      "title": "Phoenix-4.5: Fastest Real-Time AI Avatars for Customer Agents 2026",
+      "date": "2026-09-11",
+      "published_at": "2026-09-11T06:39:10.925Z",
+      "tags": [
+        "AI Tools & Infrastructure"
+      ],
+      "excerpt": "Tavus released Phoenix-4.5, the fastest real-time human rendering model. What changed: upper body animation, faster inference, richer expressions. Should your AI startup test it?",
+      "image": "https://cdn.prod.website-files.com/68c8e57d6e512b9573db147f/6aa17dc18f4e41bccaaaa48d_Group%203%20(3).jpg",
+      "sources": [],
+      "readTime": "4 min",
+      "shortId": 372
+    },
+    {
+      "filename": "2026-09-11-metas-muse-hits-2-app-should-founders-actually-use.md",
+      "slug": "2026-09-11-metas-muse-hits-2-app-should-founders-actually-use",
+      "url": "/blog/2026-09-11-metas-muse-hits-2-app-should-founders-actually-use/",
+      "title": "Meta's Muse Hits #2 App: Should Founders Actually Use It?",
+      "date": "2026-09-11",
+      "published_at": "2026-09-11T03:44:18.878Z",
+      "tags": [
+        "Muse",
+        "Meta",
+        "AI-agents"
+      ],
+      "excerpt": "Muse hit #2 on iOS App Store in 48 hours. But rankings don't tell the whole story. Here's what founders need to know: what Muse does, who should test it, and how it compares to Claude.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdkaCvj9bbB01ud8XmY_7BLREivmZhnr-OKSpkQ2bxIA&s=10",
+      "sources": [],
+      "readTime": "3 min",
+      "shortId": 371
+    },
+    {
+      "filename": "2026-09-11-chatgpt-ads-manager-india-2026-setup-guide-pricing.md",
+      "slug": "2026-09-11-chatgpt-ads-manager-india-2026-setup-guide-pricing",
+      "url": "/blog/2026-09-11-chatgpt-ads-manager-india-2026-setup-guide-pricing/",
+      "title": "ChatGPT Ads Manager India 2026: Setup Guide, Pricing, ROI (Complete)",
+      "date": "2026-09-11",
+      "published_at": "2026-09-11T03:36:34.747Z",
+      "tags": [
+        "Marketing",
+        "Ads"
+      ],
+      "excerpt": "Complete ChatGPT Ads guide for India: Ads Manager setup, pricing ($25 CPM), August 31 launch details, and when to test ChatGPT advertising vs Google/Meta.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/02/chatgpt-ads.webp",
+      "sources": [],
+      "readTime": "4 min",
+      "shortId": 370
+    },
+    {
+      "filename": "2026-09-10-cheap-ai-tools-for-startups-2026-12-ranked-by-cost.md",
+      "slug": "2026-09-10-cheap-ai-tools-for-startups-2026-12-ranked-by-cost",
+      "url": "/blog/2026-09-10-cheap-ai-tools-for-startups-2026-12-ranked-by-cost/",
+      "title": "Cheap AI Tools for Startups 2026: 12 Ranked by Cost & Real ROI",
+      "date": "2026-09-10",
+      "published_at": "2026-09-10T03:42:02.396Z",
+      "tags": [
+        "AI Tools"
+      ],
+      "excerpt": "Compare 12 cheap AI tools for startups: ChatGPT, Claude, Kling, Freshdesk. Real pricing, ROI per dollar, and the exact $50-200 stack that works for founders.",
+      "image": "https://cdn.prod.website-files.com/631fef7bf9733bf3e5529a4a/67a661bb608cc057b80918f3_Why%20Startups%20Should%20Invest%20in%20AI%20Tools%20for%20Sales.webp",
+      "sources": [],
+      "readTime": "10 min",
+      "shortId": 369
+    },
+    {
+      "filename": "2026-09-10-chatgpt-plugins-vs-skills-vs-gpts-vs-mcp-which-to.md",
+      "slug": "2026-09-10-chatgpt-plugins-vs-skills-vs-gpts-vs-mcp-which-to",
+      "url": "/blog/2026-09-10-chatgpt-plugins-vs-skills-vs-gpts-vs-mcp-which-to/",
+      "title": "ChatGPT Plugins vs Skills vs GPTs vs MCP: Which to Actually Use 2026",
+      "date": "2026-09-10",
+      "published_at": "2026-09-10T03:48:17.993Z",
+      "tags": [
+        "Plugins",
+        "Skills",
+        "MCP"
+      ],
+      "excerpt": "Confused about ChatGPT plugins, skills, GPTs, and MCP? Here's what each actually is, why plugins died then came back with a new meaning, and which to use.",
+      "image": "https://enchanter.gg/img/blog/blog23.jpg",
+      "sources": [],
+      "readTime": "8 min",
+      "shortId": 368
+    },
+    {
+      "filename": "2026-09-09-muse-vs-claude-2026-personal-agent-vs-reasoning-as.md",
+      "slug": "2026-09-09-muse-vs-claude-2026-personal-agent-vs-reasoning-as",
+      "url": "/blog/2026-09-09-muse-vs-claude-2026-personal-agent-vs-reasoning-as/",
+      "title": "Muse vs Claude 2026: Personal Agent vs Reasoning Assistant",
+      "date": "2026-09-09",
+      "published_at": "2026-09-09T03:49:51.848Z",
+      "tags": [
+        "AI Agents"
+      ],
+      "excerpt": "Muse executes tasks. Claude thinks. Compare personal AI agent vs reasoning assistant. Different purposes, different pricing, different security models.",
+      "image": "https://muse.ai/landing/connectors@2x.webp",
+      "sources": [],
+      "readTime": "4 min",
+      "shortId": 367
+    },
+    {
+      "filename": "2026-09-09-lapis-one-personal-linux-computer-for-ai-agents-20.md",
+      "slug": "2026-09-09-lapis-one-personal-linux-computer-for-ai-agents-20",
+      "url": "/blog/2026-09-09-lapis-one-personal-linux-computer-for-ai-agents-20/",
+      "title": "Lapis One: Personal Linux Computer for AI Agents 2026",
+      "date": "2026-09-09",
+      "published_at": "2026-09-09T03:55:09.612Z",
+      "tags": [],
+      "excerpt": "Lapis One is a dedicated Linux computer for running AI agents 24/7. Local infrastructure, Agent KVM hardware control, full-disk encryption. What you need to know.",
+      "image": "https://pbs.twimg.com/card_img/2095987579225075715/4woCVQKi?format=jpg&name=small",
+      "sources": [],
+      "readTime": "3 min",
+      "shortId": 366
+    },
+    {
+      "filename": "2026-09-09-gpt-5-4-vs-5-5-vs-5-6-vs-astra-openai-model-compar.md",
+      "slug": "2026-09-09-gpt-5-4-vs-5-5-vs-5-6-vs-astra-openai-model-compar",
+      "url": "/blog/2026-09-09-gpt-5-4-vs-5-5-vs-5-6-vs-astra-openai-model-compar/",
+      "title": "GPT-5.4 vs 5.5 vs 5.6 vs Astra: OpenAI Model Comparison & Pricing 2026",
+      "date": "2026-09-09",
+      "published_at": "2026-09-09T06:59:54.503Z",
+      "tags": [
+        "OpenAI"
+      ],
+      "excerpt": "Confused by OpenAI's model lineup? Compare GPT-5.4, 5.5, 5.6 (Sol/Terra/Luna), and Astra. Pricing, performance, and which model to pick for your workload.",
+      "image": "https://pbs.twimg.com/card_img/2097397680641118208/Z1nAhNyX?format=jpg&name=900x900",
+      "sources": [],
+      "readTime": "8 min",
+      "shortId": 365
+    },
+    {
+      "filename": "2026-09-08-nvidia-buys-hugging-face-12-93b-what-builders-shou.md",
+      "slug": "2026-09-08-nvidia-buys-hugging-face-12-93b-what-builders-shou",
+      "url": "/blog/2026-09-08-nvidia-buys-hugging-face-12-93b-what-builders-shou/",
+      "title": "NVIDIA Buys Hugging Face $12.93B: What Builders Should Know",
+      "date": "2026-09-08",
+      "published_at": "2026-09-08T03:50:52.187Z",
+      "tags": [
+        "AI"
+      ],
+      "excerpt": "NVIDIA acquired Hugging Face for $12.93B, consolidating the AI stack. What this means for builders, regulatory risks, and what to watch as it closes in 2027.",
+      "image": "https://blogs.nvidia.com/wp-content/uploads/2026/09/hf-nvidia-partner_hf-nvidia-partner-press-1920x1080-2-1536x864.png",
+      "sources": [],
+      "readTime": "7 min",
+      "shortId": 364
+    },
+    {
+      "filename": "2026-09-07-why-founders-should-care-3-weekend-tech-incidents.md",
+      "slug": "2026-09-07-why-founders-should-care-3-weekend-tech-incidents",
+      "url": "/blog/2026-09-07-why-founders-should-care-3-weekend-tech-incidents/",
+      "title": "Why Founders Should Care: 3 Weekend Tech Incidents That Change 2026",
+      "date": "2026-09-07",
+      "published_at": "2026-09-07T03:31:57.214Z",
+      "tags": [
+        "AI"
+      ],
+      "excerpt": "OpenAI agents coordinating. JFrog exploited in 72 hours. Texas freezes data centers. 3 weekend incidents reveal how systems designed for humans fail at AI-scale. What founders need to know now.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_iEpEbijYfXE5Q5JgfTN2ejbiQJt6BV7gQABEk45pT7Wr-zajBEbo6nvk&s=10",
+      "sources": [],
+      "readTime": "5 min",
+      "shortId": 363
+    },
+    {
+      "filename": "2026-09-07-terraform-vs-ansible-2026-which-devops-tool-for-yo.md",
+      "slug": "2026-09-07-terraform-vs-ansible-2026-which-devops-tool-for-yo",
+      "url": "/blog/2026-09-07-terraform-vs-ansible-2026-which-devops-tool-for-yo/",
+      "title": "Terraform vs Ansible 2026: Which DevOps Tool for Your Startup?",
+      "date": "2026-09-07",
+      "published_at": "2026-09-07T03:56:18.333Z",
+      "tags": [
+        "Cloud"
+      ],
+      "excerpt": "Terraform provisions infrastructure. Ansible configures servers. Understand when to use each tool, why most startups need both, and how to structure your DevOps workflow.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvtSBGmED_ZZ5IzwGgvqgPlZkns7ttxCwJ81-7BJbr2oulmTDyScQ9uWs&s=10",
+      "sources": [],
+      "readTime": "5 min",
+      "shortId": 362
+    },
+    {
+      "filename": "2026-09-05-gemini-spark-google-photos-is-the-upgrade-worth-it.md",
+      "slug": "2026-09-05-gemini-spark-google-photos-is-the-upgrade-worth-it",
+      "url": "/blog/2026-09-05-gemini-spark-google-photos-is-the-upgrade-worth-it/",
+      "title": "Gemini Spark Google Photos: Is the Upgrade Worth It for Founders?",
+      "date": "2026-09-05",
+      "published_at": "2026-09-05T04:42:36.681Z",
+      "tags": [
+        "Google"
+      ],
+      "excerpt": "Gemini Spark automates photo organization for founders. Multi-step workflows, shared albums, calendar events. Is a $20/month Pro upgrade worth it? Decision framework inside.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQjssi_3xQSOmXGVRfzPN6bSAQqCUn6RSV43dSnl0D6ZHhwCojVsyNImk&s=10",
+      "sources": [],
+      "readTime": "3 min",
+      "shortId": 361
+    },
+    {
+      "filename": "2026-09-05-agent-coordination-what-founders-should-know-from.md",
+      "slug": "2026-09-05-agent-coordination-what-founders-should-know-from",
+      "url": "/blog/2026-09-05-agent-coordination-what-founders-should-know-from/",
+      "title": "Agent Coordination: What Founders Should Know From DseWiki",
+      "date": "2026-09-05",
+      "published_at": "2026-09-05T04:25:17.148Z",
+      "tags": [
+        "Agentic AI"
+      ],
+      "excerpt": "The DseWiki incident reveals what happens when multi-agent systems coordinate at scale. 15,000 edits in 2 months, undetected. What founders building agents should know.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/09/Screenshot-2026-09-04-at-8.49.39-AM-e1788537064907.png",
+      "sources": [],
+      "readTime": "4 min",
+      "shortId": 360
+    },
+    {
+      "filename": "2026-09-04-what-is-abliteration-ai-guardrails-how-theyre-bein.md",
+      "slug": "2026-09-04-what-is-abliteration-ai-guardrails-how-theyre-bein",
+      "url": "/blog/2026-09-04-what-is-abliteration-ai-guardrails-how-theyre-bein/",
+      "title": "What Is Abliteration? AI Guardrails & How They're Being Removed",
+      "date": "2026-09-04",
+      "published_at": "2026-09-04T05:47:30.961Z",
+      "tags": [
+        "AI"
+      ],
+      "excerpt": "Abliteration removes AI safety guardrails from models. Learn what abliteration is, how it works, why Abliteration.ai launched, and what it means for founders, security teams, and enterprises.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgmtNnJMhCm4tkPn795PZZk7Jr25Jdx7HQyofMnQuLElvd4aFPaw4sFJnw&s=10",
+      "sources": [],
+      "readTime": "8 min",
+      "shortId": 359
+    },
+    {
+      "filename": "2026-09-04-gpt-6-astra-vs-fable-5-1-for-blender-which-ai-mode.md",
+      "slug": "2026-09-04-gpt-6-astra-vs-fable-5-1-for-blender-which-ai-mode",
+      "url": "/blog/2026-09-04-gpt-6-astra-vs-fable-5-1-for-blender-which-ai-mode/",
+      "title": "GPT-6 Astra vs Fable 5.1 for Blender - Which AI Model Wins for 3D",
+      "date": "2026-09-04",
+      "published_at": "2026-09-04T10:37:23.078Z",
+      "tags": [
+        "Tech & AI"
+      ],
+      "excerpt": "Compare Astra and Fable 5.1 for Blender 3D modeling. Real benchmarks, pricing, speed, and user experiences. Which AI wins for indie devs, architects, and designers?",
+      "image": "https://cdn.mos.cms.futurecdn.net/9brtsKkuUU34fDSebXST73.jpg",
+      "sources": [],
+      "readTime": "8 min",
+      "shortId": 358
+    },
+    {
+      "filename": "2026-09-04-gmail-live-what-founders-need-to-know-about-google.md",
+      "slug": "2026-09-04-gmail-live-what-founders-need-to-know-about-google",
+      "url": "/blog/2026-09-04-gmail-live-what-founders-need-to-know-about-google/",
+      "title": "Gmail Live: What Founders Need to Know About Google's Features",
+      "date": "2026-09-04",
+      "published_at": "2026-09-04T06:02:33.749Z",
+      "tags": [
+        "Google"
+      ],
+      "excerpt": "Gmail Live, Docs Live, and Keep Live let you voice-search email, draft documents, and organize notes. Here's what founders need to know about pricing and ROI.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6uNlrGl5bjU3exmQvsGy7L9Y5JNWw3d6EkkIcYFbnRttQJ6yepslR2w8&s=10",
+      "sources": [],
+      "readTime": "4 min",
+      "shortId": 357
+    },
+    {
+      "filename": "2026-09-03-claude-fable-5-1-for-indie-game-dev-build-games-in.md",
+      "slug": "2026-09-03-claude-fable-5-1-for-indie-game-dev-build-games-in",
+      "url": "/blog/2026-09-03-claude-fable-5-1-for-indie-game-dev-build-games-in/",
+      "title": "Claude Fable 5.1 for Indie Game Dev - Build Games in Hours",
+      "date": "2026-09-03",
+      "published_at": "2026-09-03T07:35:20.665Z",
+      "tags": [
+        "Dev",
+        "Fable"
+      ],
+      "excerpt": "Developers shipped complete playable games in Fable 5.1 single prompts. Cache costs dropped 75%. Here's how indie devs are prototyping faster and cheaper.",
+      "image": "https://favtutor.com/fable-5-1-real-user-reviews/images/news-fable-5-1-real-user-reviews-v3-780.webp",
+      "sources": [],
+      "readTime": "5 min",
+      "shortId": 356
+    },
+    {
+      "filename": "2026-09-03-ai-coding-tools-for-founders-cursor-vs-claude-code.md",
+      "slug": "2026-09-03-ai-coding-tools-for-founders-cursor-vs-claude-code",
+      "url": "/blog/2026-09-03-ai-coding-tools-for-founders-cursor-vs-claude-code/",
+      "title": "AI Coding Tools for Founders - Cursor vs Claude Code vs Copilot",
+      "date": "2026-09-03",
+      "published_at": "2026-09-03T09:22:35.390Z",
+      "tags": [
+        "Coding",
+        "AI"
+      ],
+      "excerpt": "Compare Cursor, Claude Code, and GitHub Copilot for founders. Real cost-to-productivity breakdown. Which saves most time? Decision framework included.",
+      "image": "https://res.cloudinary.com/de4rvmslk/image/upload/f_auto,q_auto/Frame_2087325381_swjj10.png",
+      "sources": [],
+      "readTime": "10 min",
+      "shortId": 355
+    },
     {
       "filename": "2026-09-02-openai-astra-cybersecurity-model-finds-zero-day-ex.md",
       "slug": "2026-09-02-openai-astra-cybersecurity-model-finds-zero-day-ex",
