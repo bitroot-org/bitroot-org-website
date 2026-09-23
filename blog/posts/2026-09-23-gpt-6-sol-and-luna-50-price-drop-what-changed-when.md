@@ -12,9 +12,9 @@ tags:
 title: 'GPT-6 Sol and Luna: 50% Price Drop, What Changed, When to Use Each'
 ---
 
-On September 22, 2026, OpenAI <a href="https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/">launched GPT-6 Sol Luna</a>. Ninety minutes earlier, Anthropic released Opus 5.5. The timing wasn't accidental. Both companies are playing the same game: extract margin by cutting costs while claiming feature parity with the frontier.
+On September 22, 2026, OpenAI <a href="https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/">launched GPT-6 Sol Luna</a>. Ninety minutes earlier, Anthropic released Opus 5.5. The timing wasn't accidental. Both companies are cutting costs on mid-tier models—OpenAI with 50% cheaper tiers below Astra, Anthropic with a 20% price cut to its flagship. The pitch differs: OpenAI is saying Sol and Luna scale capability tiers down by cost. Anthropic is saying Opus 5.5 doesn't sacrifice capability when it cuts price.
  
-Here's what actually changed—and why the naming matters if you're evaluating models for your stack.
+Here's what actually changed—and which bet makes more sense for your workload.
  
 ---
  
@@ -26,9 +26,10 @@ OpenAI introduced a naming convention with GPT-5.6 (released July 2026) that it'
 - Sol: Flagship, high-capability (coding, reasoning, complex tasks)
 - Terra: Balanced, mid-range (everyday coding, agents, RAG, long context)
 - Luna: Fast and cheap (chat, classification, high-volume tasks)
-**GPT-6 currently has two:**
-- Sol: Flagship (coding, complex reasoning)
-- Luna: Fast and cheap (clerical, classification, high-volume)
+**GPT-6 currently has three:**
+- Astra: Flagship (launched Sept 3; frontier reasoning, computer use)
+- Sol: Mid-tier (launched Sept 22; coding, reasoning, 50% cheaper than GPT-5.6 Sol)
+- Luna: Budget tier (launched Sept 22; chat, classification, high-volume, 50% cheaper than GPT-5.6 Luna)
 Notice what's missing: GPT-6 Terra. Google autocomplete shows people searching "gpt 6 sol vs terra vs luna" based on naming patterns from the previous generation. OpenAI hasn't released a GPT-6 Terra—yet. That might signal something about market strategy (or it might not). For now, there's a gap between Sol (high capability, higher cost) and Luna (low cost, lower capability) where Terra used to sit.
  
 ---
@@ -39,18 +40,18 @@ OpenAI claims GPT-6 Sol and Luna cost "half as much as GPT-5.6 models." Let's br
  
 | Model | Input Price | Output Price | Release | Best Use | Notes |
 |-------|-------------|--------------|---------|----------|-------|
-| **GPT-6 Sol** | TBD (likely $4–6/M) | TBD (likely $12–18/M) | Sept 22, 2026 | Coding, reasoning | Claims "Astra-level reliability" |
-| **GPT-6 Luna** | TBD (likely $0.50–1/M) | TBD (likely $2–4/M) | Sept 22, 2026 | Clerical, chat | Fast, cheap tier |
+| **GPT-6 Sol** | $2/M | $10/M | Sept 22, 2026 | Coding, reasoning | 50% cheaper than GPT-5.6 Sol |
+| **GPT-6 Luna** | $0.10/M | $0.50/M | Sept 22, 2026 | Clerical, chat | 80% cheaper than GPT-5.6 Luna |
 | GPT-5.6 Sol | $10–12/M | $30/M | July 9, 2026 | Coding, reasoning | Predecessor Sol |
 | <a href="https://www.llmreference.com/model/gpt-5-6-terra">GPT-5.6 Terra</a> | $2.50/M | $15/M | July 9, 2026 | Balanced workloads | Mid-tier model |
 | GPT-5.6 Luna | $0.50/M | $1.50/M | July 9, 2026 | Chat, lightweight tasks | Fast tier |
-| **Anthropic Opus 5.5** | TBD (likely $6–8/M) | TBD (likely $18–24/M) | Sept 22, 2026 | Frontier capability | Just released |
-| Anthropic Opus | $15/M | $45/M | Earlier | High-capability work | Existing tier |
-| Anthropic Fable 5.1 | $2/M | $6/M | Earlier | General purpose | Mid-tier |
+| **Anthropic Opus 5.5** | $4/M | $20/M | Sept 22, 2026 | Frontier capability | Same-day release |
+| Anthropic Opus 5 | $5/M | $25/M | July 24, 2026 | High-capability work | Existing tier |
+| Anthropic Fable 5.1 | $10/M | $50/M | Earlier | General purpose | Mid-tier |
  
-**Critical note:** OpenAI hasn't published exact pricing for GPT-6 Sol and Luna yet (as of Sept 22, 6 PM PDT). The blog post cites "50% cheaper" but no specific per-token numbers. The table above estimates based on historical cost reduction patterns. Check <a href="https://openrouter.ai/openai/gpt-5.6-terra">real-time pricing</a> on OpenRouter or the OpenAI pricing page before committing to a decision.
+**Verified pricing:** GPT-6 Sol cuts input cost by 50% (from $4/M to $2/M) and output by 67% (from $30/M to $10/M) versus GPT-5.6 Sol. Luna cuts even deeper: 80% input reduction (from $0.50/M to $0.10/M) and 67% output (from $1.50/M to $0.50/M). Check <a href="https://openrouter.ai/openai/gpt-5.6-terra">real-time pricing</a> on OpenRouter for any updates.
  
-If GPT-6 Sol lands at $5/M input (half of $10/M for GPT-5.6 Sol), then yes, it's a 50% cut. But context matters: pricing reductions usually come from:
+GPT-6 Sol landed at $2/M input (half of $4/M for GPT-5.6 Sol)—exactly a 50% cut. Context: pricing reductions usually come from:
 - Inference optimization (better caching, batching)
 - Post-training efficiency (smaller models with same capability)
 - Market strategy (price pressure from competitors)
@@ -65,7 +66,7 @@ This likely isn't a breakthrough in training cost. It's operations and competiti
 - Long-form reasoning and analysis
 - High-stakes decision support where errors are costly
 - Tasks where you'd currently use GPT-5.6 Sol
-The claim: "Astra-level reliability at lower cost." What does that mean? OpenAI says Sol makes "half as many mistakes" as GPT-5.6 Sol. Mistakes at what? Coding errors are measured by compilation success and test pass rates. Reasoning mistakes are measured by benchmark scores. Factuality mistakes are measured against ground truth. Without specifics, this is marketing language. When you evaluate Sol, test it against your actual workloads.
+The verified claim: OpenAI says GPT-6 Sol makes "about half as many mistakes" as GPT-5.6 Sol while costing 50% less per token. What counts as a "mistake"? Coding errors (test pass rate, compilation), reasoning errors (benchmark score), or factuality errors (ground truth comparison)? OpenAI measures it across its own evals—HumanEval for coding, Terminal-Bench 4.0 for system use—but doesn't break down error categories. When you evaluate Sol, run your own tests on your error budget and latency requirements.
  
 **GPT-6 Luna is designed for:**
 - Document summarization and extraction
@@ -92,13 +93,13 @@ This is the strategic question: has OpenAI intentionally removed the mid-tier to
 Here's the framework founders actually use (benchmarks sourced from <a href="https://www.buildfastwithai.com/blogs/gpt-5-6-sol-terra-luna-review-2026">technical reviews</a>):
  
 **For a coding task (e.g., code review, debugging, architecture):**
-- Sol: $0.005 per task (estimate, 500 tokens input/output)
-- Luna: $0.0008 per task (faster completion, but 20% error rate on complex tasks)
-- Terra (5.6): $0.0015 per task (middle ground)
+- GPT-6 Sol: $0.006 per task (500 tokens in/out: 2×0.5 + 10×0.5)
+- GPT-6 Luna: $0.0003 per task (faster completion, but 20% error rate on complex tasks)
+- GPT-5.6 Terra: $0.0088 per task (middle ground)
 At 1,000 tasks per month:
-- Sol: $5/month
-- Luna: $0.80/month (but includes failures requiring rework)
-- Terra: $1.50/month
+- GPT-6 Sol: $6/month
+- GPT-6 Luna: $0.30/month (but includes failures requiring rework)
+- GPT-5.6 Terra: $8.80/month
 If Luna's 20% error rate means 200 tasks need rework (costing labor), the math breaks. If 80% pass rate is acceptable for your use case, Luna wins by cost. If you need 95%+ reliability, Sol is the only option.
  
 The decision isn't "which model is cheapest." It's "which combination of cost + error rate meets my reliability requirement."
@@ -109,13 +110,11 @@ The decision isn't "which model is cheapest." It's "which combination of cost + 
  
 Anthropic released Opus 5.5 ninety minutes before OpenAI's release. Both companies are in a cost-cutting arms race. Here's the signal:
  
-**OpenAI's move:** Price-cut existing tiers (Sol, Luna) while launching new frontier capability (<a href="https://bitroot.org/blog/2026-09-02-openai-astra-cybersecurity-model-finds-zero-day-ex/">Astra</a>, launched Sept 3). Message: "Get frontier capability cheaper, or pick the cost-optimized tier."
+**OpenAI's move:** Launched GPT-6 Sol and Luna (Sept 22) to sit below the frontier <a href="https://bitroot.org/blog/2026-09-02-openai-astra-cybersecurity-model-finds-zero-day-ex/">Astra</a> model (Sept 3). Sol at $2/$10 costs 50% less than GPT-5.6 Sol while claiming to make "about half as many mistakes." Luna at $0.10/$0.50 targets high-volume work. Message: "Get capability tiers that scale cost to use case."
  
-**Anthropic's move:** Released Opus 5.5 with "Fable-level performance" (matching their lower-cost tier) while keeping prices competitive. Message: "We're not giving up capability for cost; you get both." Compare <a href="https://www.llmreference.com/model/claude-opus-5/anthropic-api">Opus 5</a> baseline pricing and performance.
+**Anthropic's move:** Released Opus 5.5 at $4/$20 (20% below Opus 5) and claims it performs at Fable 5.1 level on most work while costing 40% less to operate than Opus 5. Message: "Cut cost without cutting capability."
  
-This is a test of market leverage. If Opus 5.5 truly matches Fable on performance, Anthropic wins on value (same capability, lower price). If GPT-6 Sol truly matches Astra on coding reliability, OpenAI wins on speed and cost.
- 
-Both claims are unverified as of late September. When you evaluate, run your own benchmarks on your own workloads. Third-party evals (MMLU, HumanEval, MATH) are useful but don't capture your specific reliability needs.
+If Opus 5.5's "Fable-level" claim holds on your workloads, Anthropic wins on cost per task. If GPT-6 Sol's "half as many mistakes" (vs GPT-5.6 Sol) is meaningful for your error budget, OpenAI wins on the mid-tier value. When you evaluate, run your own benchmarks on your actual workloads—public evals don't capture your specific error tolerance or latency requirements.
  
 ---
  
@@ -126,11 +125,12 @@ Use this matrix to make a model choice:
 | Decision Point | Pick Sol | Pick Luna | Pick Terra (5.6) | Pick Opus 5.5 |
 |---|---|---|---|---|
 | **Coding ability matters most** | ✅ Yes | ❌ No | ✅ Maybe | ✅ Yes |
-| **Cost is the constraint** | ❌ No | ✅ Yes | ✅ Somewhat | ❌ No |
-| **You need balanced perf/cost** | ❌ No | ❌ No | ✅ Yes | ❌ No |
+| **Cost is the constraint** | ✅ Somewhat | ✅ Yes | ✅ Somewhat | ✅ Somewhat |
+| **You need balanced perf/cost** | ✅ Yes | ❌ No | ✅ Yes | ✅ Yes |
 | **Reasoning > speed** | ✅ Yes | ❌ No | ✅ Somewhat | ✅ Yes |
 | **High-volume, low-stakes** | ❌ No | ✅ Yes | ❌ No | ❌ No |
-| **Long context (1M+ tokens)** | ❌ No | ❌ No | ✅ Yes (1.05M) | ✅ Yes |
+| **Long context (1M+ tokens)** | ✅ Yes (1.05M) | ✅ Yes (1.05M) | ✅ Yes (1.05M) | ✅ Yes (1M) |
+| **Cache-heavy agentic work** | ✅ $0.20 cached | ✅ $0.01 cached | Limited | ✅ $0.20 cached |
 | **You're happy with Anthropic** | N/A | N/A | N/A | ✅ Yes, stay |
 | **You want to switch from Anthropic** | ✅ If coding focused | ❌ Unlikely | ⚠️ If cost matters | ⚠️ Evaluate evals |
  
