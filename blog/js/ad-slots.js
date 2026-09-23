@@ -87,25 +87,26 @@
     }
 
     function renderBanner(ad) {
-        var badge = ad.kind === 'client' ? 'Partner' : 'Bitroot';
+        var badge = ad.kind === 'client' ? 'Ad · Partner' : 'Ad · Bitroot';
         var btn = document.createElement('button');
         btn.type = 'button';
-        btn.className = 'ad-banner ad-banner-' + ad.kind;
+        btn.className = 'ad-banner ad-banner-' + ad.kind + (ad.mediaUrl ? ' ad-banner-has-media' : '');
         var mediaHtml = ad.mediaUrl
-            ? ad.mediaKind === 'video'
-                ? '<video class="ad-banner-media" src="' + esc(ad.mediaUrl) + '" muted playsinline loop autoplay></video>'
-                : '<img class="ad-banner-media" src="' + esc(ad.mediaUrl) + '" alt="" loading="lazy">'
+            ? '<span class="ad-banner-mockup" aria-hidden="true">' +
+              (ad.mediaKind === 'video'
+                  ? '<video src="' + esc(ad.mediaUrl) + '" muted playsinline loop autoplay></video>'
+                  : '<img src="' + esc(ad.mediaUrl) + '" alt="" loading="lazy">') +
+              '</span>'
             : '';
         btn.innerHTML =
-            mediaHtml +
-            '<span class="ad-banner-copy">' +
-            '<span class="ad-banner-name-row">' +
+            '<span class="ad-banner-glow" aria-hidden="true"></span>' +
+            '<span class="ad-banner-content">' +
             '<span class="ad-banner-badge">' + esc(badge) + '</span>' +
-            '<strong>' + esc(ad.productName) + '</strong>' +
-            '</span>' +
+            '<strong class="ad-banner-headline">' + esc(ad.productName) + '</strong>' +
             (ad.tagline ? '<span class="ad-banner-tagline">' + esc(ad.tagline) + '</span>' : '') +
+            '<span class="ad-banner-cta">' + esc(ad.bannerCta) + ' &rarr;</span>' +
             '</span>' +
-            '<span class="ad-banner-cta">' + esc(ad.bannerCta) + ' &rarr;</span>';
+            mediaHtml;
         btn.addEventListener('click', function () {
             openModal(ad);
         });
@@ -257,7 +258,7 @@
             '<div class="ad-modal-left">' +
             mediaHtml +
             '<div class="ad-modal-left-footer">' +
-            '<span class="ad-modal-badge">' + esc(ad.kind === 'client' ? 'Partner' : 'Bitroot') + '</span>' +
+            '<span class="ad-modal-badge">' + esc(ad.kind === 'client' ? 'Ad · Partner' : 'Ad · Bitroot') + '</span>' +
             '<strong>' + esc(ad.productName) + '</strong>' +
             '<a class="ad-modal-link" href="' + esc(ad.ctaUrl) + '" target="_blank" rel="noopener noreferrer">' + esc(ad.ctaLabel) + '</a>' +
             '</div>' +

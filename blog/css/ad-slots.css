@@ -1,122 +1,142 @@
 /* Ad slots — inline promo banner + the media|demo modal.
    Uses the same theme tokens as blog.css/post.css (paper/ink palette,
-   spacing/radius scale, [data-theme="dark"] overrides) so it reads as part
-   of the post, not a bolted-on widget. */
+   spacing/radius scale, [data-theme="dark"] overrides) so the palette
+   matches the post — but the surface, shadow, and "Ad ·" label are
+   deliberately distinct from a regular content card. It should read as
+   inserted advertising at a glance, not as another section of the article. */
 
 /* --- Banner ------------------------------------------------------------- */
 
 .ad-banner {
-    display: grid;
-    grid-template-columns: 148px 1fr auto;
+    position: relative;
+    display: flex;
     align-items: center;
-    gap: var(--spacing-lg);
     width: 100%;
-    height: 108px;
+    min-height: 188px;
     margin: var(--spacing-xl) 0;
-    padding: 0;
-    padding-right: var(--spacing-lg);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    background: var(--bg-secondary);
+    padding: var(--spacing-xl);
+    border: none;
+    border-radius: var(--radius-lg);
+    /* A full-bleed, self-branded gradient card — not the page's own surface —
+       is what actually reads as "advertising" at a glance, the way a real ad
+       network's creative does. Same idea in both site themes: the ad keeps
+       its own dark, saturated world regardless of the reader's light/dark
+       setting, the way every one of these placements does in the wild. */
+    background:
+        radial-gradient(130% 150% at 85% 105%, color-mix(in srgb, var(--accent) 75%, #000) 0%, transparent 62%),
+        linear-gradient(135deg, #17152c 0%, #1e1b3d 45%, #0d0c1a 100%);
+    box-shadow: 0 22px 48px -26px color-mix(in srgb, var(--accent) 65%, transparent);
     cursor: pointer;
     text-align: left;
     font-family: var(--font-sans);
     overflow: hidden;
-    transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.ad-banner-client {
+    background:
+        radial-gradient(130% 150% at 85% 105%, #ff6a8b 0%, transparent 62%),
+        linear-gradient(135deg, #33123a 0%, #4a1642 45%, #180a1e 100%);
+    box-shadow: 0 22px 48px -26px rgba(255, 90, 130, 0.45);
 }
 
 .ad-banner:hover,
 .ad-banner:focus-visible {
-    border-color: var(--accent);
-    transform: translateY(-1px);
-    box-shadow: 0 12px 28px -16px rgba(82, 92, 235, 0.35);
+    transform: translateY(-2px);
+    box-shadow: 0 30px 60px -24px color-mix(in srgb, var(--accent) 75%, transparent);
 }
 
-/* Without media the layout collapses to a slim single-row bar: copy | cta. */
-.ad-banner:not(:has(.ad-banner-media)) {
-    grid-template-columns: 1fr auto;
-    height: auto;
-    padding: var(--spacing-md) var(--spacing-lg);
+.ad-banner-client:hover,
+.ad-banner-client:focus-visible {
+    box-shadow: 0 30px 60px -24px rgba(255, 90, 130, 0.55);
 }
 
-.ad-banner-media {
-    width: 148px;
-    height: 108px;
-    object-fit: cover;
-    display: block;
-    background: var(--bg);
+.ad-banner-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(60% 80% at 12% 15%, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+    pointer-events: none;
 }
 
-.ad-banner-copy {
+.ad-banner-content {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
-    min-width: 0;
-    padding-left: var(--spacing-lg);
-    font-size: 0.9375rem;
-    color: var(--text-primary);
+    align-items: flex-start;
+    gap: 0.5rem;
+    max-width: 60%;
 }
 
-/* Without media there's no image column eating the left padding. */
-.ad-banner:not(:has(.ad-banner-media)) .ad-banner-copy {
-    flex-direction: row;
-    align-items: baseline;
-    gap: 0;
-    padding-left: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.ad-banner-name-row {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    min-width: 0;
-}
-
-.ad-banner-name-row strong {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+.ad-banner-has-media .ad-banner-content {
+    max-width: 56%;
 }
 
 .ad-banner-badge {
     flex-shrink: 0;
-    padding: 0.2rem 0.55rem;
-    border-radius: var(--radius-sm);
+    padding: 0.25rem 0.65rem;
+    border-radius: 999px;
     font-size: 0.6875rem;
     font-weight: 700;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    background: var(--tag-bg);
-    color: var(--tag-text);
+    background: rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.85);
 }
 
-.ad-banner-client .ad-banner-badge {
-    background: var(--text-primary);
-    color: var(--bg);
+.ad-banner-headline {
+    font-family: var(--font-display);
+    font-size: 1.625rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #fff;
 }
 
 .ad-banner-tagline {
-    color: var(--text-muted);
+    font-size: 0.9375rem;
     font-weight: 400;
-    font-size: 0.875rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.ad-banner:not(:has(.ad-banner-media)) .ad-banner-tagline {
-    margin-left: 0.5em;
+    line-height: 1.45;
+    color: rgba(255, 255, 255, 0.68);
 }
 
 .ad-banner-cta {
-    flex-shrink: 0;
-    font-size: 0.8125rem;
-    font-weight: 600;
-    color: var(--accent);
+    margin-top: 0.35rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.6rem 1.25rem;
+    border-radius: 999px;
+    background: #fff;
+    color: #17152c;
+    font-weight: 700;
+    font-size: 0.875rem;
     white-space: nowrap;
+}
+
+.ad-banner-mockup {
+    position: absolute;
+    right: -0.5rem;
+    bottom: -1.25rem;
+    z-index: 1;
+    width: 46%;
+    max-width: 260px;
+    display: block;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+    box-shadow: 0 30px 55px -18px rgba(0, 0, 0, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: none;
+    overflow: hidden;
+    transform: rotate(2deg);
+}
+
+.ad-banner-mockup img,
+.ad-banner-mockup video {
+    display: block;
+    width: 100%;
+    height: 168px;
+    object-fit: cover;
+    object-position: top;
 }
 
 /* --- Modal ---------------------------------------------------------------- */
@@ -345,11 +365,22 @@ body.ad-modal-open {
         max-height: 92vh;
     }
 
-    .ad-banner {
-        flex-wrap: wrap;
+    .ad-banner-content {
+        max-width: 100%;
     }
 
-    .ad-banner-copy {
-        white-space: normal;
+    .ad-banner-has-media .ad-banner-content {
+        max-width: 100%;
+        padding-right: 6.5rem;
+    }
+
+    .ad-banner-mockup {
+        width: 34%;
+        max-width: 140px;
+    }
+
+    .ad-banner-mockup img,
+    .ad-banner-mockup video {
+        height: 110px;
     }
 }
