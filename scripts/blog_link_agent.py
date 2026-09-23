@@ -1,16 +1,23 @@
 """
 Blog Link Agent
 ---------------
-1. Asks Grok (xAI Responses API, server-side x_search tool) for niche tech
-   releases / interesting articles posted on X in the last 24h that include
-   an image or video.
-2. Validates candidates against the returned citations (only citation-backed
-   post URLs are trusted).
-3. Dedupes against scripts/seen_links.json.
-4. Opens one GitHub issue per new link with the 'blog-link' label.
+1. Fetches candidate "niche tech" posts from Hacker News (Algolia Search
+   API — free, public, no key) — Show HN launches + regular stories from the
+   last 24h, past a light points floor to cut total noise before it ever
+   reaches the model.
+2. Hands that candidate pool to a curation model on OpenCode Zen (Grok by
+   default — swap MODEL for any Zen-hosted model, this step is a small
+   text-only completion, no special capability required) and asks it to pick
+   the best few, using the same curation bar the old X-search version used.
+3. The model can only pick an `id` from the list we already fetched — it
+   never generates a url itself, so unlike the old xAI x_search version
+   (which had to verify Grok's citations against X's oEmbed endpoint to
+   catch hallucinated post URLs) there's nothing to verify here.
+4. Dedupes against scripts/seen_links.json.
+5. Opens one GitHub issue per new link with the 'blog-link' label.
 
 Required env vars (set automatically in the GitHub Actions workflow):
-  XAI_API_KEY        - xAI API key (repo secret)
+  OPENCODE_API_KEY   - OpenCode Zen API key (repo secret)
   GITHUB_TOKEN       - provided by Actions
   GITHUB_REPOSITORY  - e.g. "bitroot-org/bitroot-org-website"
 """
@@ -24,90 +31,109 @@ from pathlib import Path
 
 import requests
 
-XAI_API_KEY = os.environ["XAI_API_KEY"]
+OPENCODE_API_KEY = os.environ["OPENCODE_API_KEY"]
 GH_TOKEN = os.environ["GITHUB_TOKEN"]
 REPO = os.environ["GITHUB_REPOSITORY"]
 
 STATE_FILE = Path(__file__).parent / "seen_links.json"
 LABEL = "blog-link"
-MODEL = "grok-4.5"  # must be a reasoning model with x_search tool support
+ZEN_RESPONSES_URL = "https://opencode.ai/zen/v1/responses"
+MODEL = "grok-4.5"  # any OpenCode Zen model works here — swap freely
+HN_SEARCH_URL = "https://hn.algolia.com/api/v1/search_by_date"
 MAX_ISSUES_PER_RUN = 5
+MIN_POINTS = 3  # filters total noise before the model ever sees it
+CANDIDATE_POOL_PER_TAG = 60  # how many HN hits per tag we show the model
 
 # Tune this to your taste — it is the heart of the agent.
 CURATION_PROMPT = """\
-You MUST use the x_search tool to find real, current posts on X. Do NOT \
-answer from memory — every result must come from an actual search. Run \
-multiple searches with different queries if the first returns little.
-
-Search X for posts from the last 24 hours about NICHE tech releases and \
-genuinely interesting technical articles. Focus on: new developer tools, \
-open-source project launches, indie hardware/software releases, deep-dive \
-engineering blog posts, new AI/ML models or frameworks from smaller teams.
+You are curating a tech blog's link queue. Below is a JSON array of real \
+posts from Hacker News in the last 24 hours (id, title, url, points, \
+comments). Pick AT MOST {max_n} that are genuinely interesting NICHE tech: \
+new developer tools, open-source project launches, indie hardware/software \
+releases, deep-dive engineering blog posts, new AI/ML models or frameworks \
+from smaller teams.
 
 STRICT RULES:
-- Only include posts that contain an IMAGE or VIDEO attachment. Verify this.
-- Exclude: memes, giveaways, hype threads without substance, job posts, \
-mainstream news everyone already covers (e.g. big-tech keynotes), ads.
-- Prefer original announcements over quote-tweets of them.
-- Return AT MOST {max_n} posts. Quality over quantity; zero is acceptable.
+- Only choose ids that appear in the list below. Never invent an id or url.
+- Exclude: mainstream news everyone already covers (big-tech keynotes, \
+funding rounds, politics/business-only stories), memes, listicles, job \
+posts, low-effort "Ask HN" threads, pure opinion pieces with no technical \
+substance.
+- Prefer original launches/announcements over commentary about them.
+- Quality over quantity — zero is a perfectly fine answer.
 
 Respond with ONLY a JSON array (no markdown fences, no prose). Each element:
-{{"url": "<https://x.com/.../status/...>",
-  "title": "<short title>",
-  "summary": "<1-2 sentence why it's interesting>",
-  "media": "image" or "video"}}
+{{"id": "<id from the list below>", "summary": "<1-2 sentence why it's interesting>"}}
+
+POSTS:
+{posts_json}
 """
 
 
-def tweet_id(url: str) -> str | None:
-    m = re.search(r"(?:x|twitter)\.com/[^/]+/status/(\d+)", url)
-    return m.group(1) if m else None
+def fetch_hn_candidates() -> dict[str, dict]:
+    """Recent Show HN launches + regular stories, keyed by HN objectID."""
+    since = int((datetime.now(timezone.utc) - timedelta(days=1)).timestamp())
+    items: dict[str, dict] = {}
+    for tags in ("show_hn", "story"):
+        resp = requests.get(
+            HN_SEARCH_URL,
+            params={
+                "tags": tags,
+                "numericFilters": f"created_at_i>{since},points>={MIN_POINTS}",
+                "hitsPerPage": CANDIDATE_POOL_PER_TAG,
+            },
+            timeout=30,
+        )
+        resp.raise_for_status()
+        for hit in resp.json().get("hits", []):
+            oid = hit.get("objectID")
+            if not oid or not hit.get("title"):
+                continue
+            url = hit.get("url") or f"https://news.ycombinator.com/item?id={oid}"
+            items[oid] = {
+                "id": oid,
+                "title": hit["title"],
+                "url": url,
+                "points": hit.get("points") or 0,
+                "comments": hit.get("num_comments") or 0,
+            }
+    return items
 
 
-def post_exists(url: str) -> bool:
-    """Fallback verification via X's public oEmbed endpoint (no auth).
-    Returns True only if X confirms the post exists."""
-    try:
-        r = requests.get("https://publish.twitter.com/oembed",
-                         params={"url": url, "omit_script": "true"},
-                         timeout=15)
-        return r.status_code == 200
-    except requests.RequestException:
-        return False
-
-
-def call_grok() -> tuple[list[dict], set[str]]:
-    """Returns (candidates, citation_ids)."""
-    yesterday = (datetime.now(timezone.utc) - timedelta(days=1)).strftime("%Y-%m-%d")
+def call_zen(candidates: dict[str, dict]) -> list[dict]:
+    """Ask a Zen-hosted model to curate. Returns [{"id", "summary"}, ...]."""
+    posts = [
+        {"id": c["id"], "title": c["title"], "url": c["url"],
+         "points": c["points"], "comments": c["comments"]}
+        for c in candidates.values()
+    ]
     resp = requests.post(
-        "https://api.x.ai/v1/responses",
-        headers={"Authorization": f"Bearer {XAI_API_KEY}",
+        ZEN_RESPONSES_URL,
+        headers={"Authorization": f"Bearer {OPENCODE_API_KEY}",
                  "Content-Type": "application/json"},
         json={
             "model": MODEL,
-            "input": [{"role": "user",
-                       "content": CURATION_PROMPT.format(max_n=MAX_ISSUES_PER_RUN)}],
-            "tools": [{
-                "type": "x_search",
-                "from_date": yesterday,
-                "enable_image_understanding": True,
-                "enable_video_understanding": True,
+            "input": [{
+                "type": "message",
+                "role": "user",
+                "content": [{
+                    "type": "input_text",
+                    "text": CURATION_PROMPT.format(
+                        max_n=MAX_ISSUES_PER_RUN,
+                        posts_json=json.dumps(posts),
+                    ),
+                }],
             }],
+            "max_output_tokens": 2000,
         },
-        timeout=300,
+        timeout=120,
     )
     resp.raise_for_status()
     data = resp.json()
 
     if data.get("error"):
-        raise RuntimeError(f"xAI API error: {data['error']}")
+        raise RuntimeError(f"OpenCode Zen API error: {data['error']}")
 
-    # Debug visibility: what did the model actually do?
-    output_types = [item.get("type") for item in data.get("output", [])]
-    print(f"DEBUG output item types: {output_types}")
-    print(f"DEBUG server_side_tool_usage: {data.get('server_side_tool_usage')}")
-
-    # Final assistant text = last output item's text content.
     text = ""
     for item in data.get("output", []):
         for block in item.get("content", []) or []:
@@ -116,31 +142,16 @@ def call_grok() -> tuple[list[dict], set[str]]:
 
     print(f"DEBUG model text (first 500 chars): {text[:500]!r}")
 
-    # Citations: trust only posts Grok actually found on X. They can appear
-    # (a) top-level, or (b) as url_citation annotations on content blocks.
-    citation_urls = []
-    for c in data.get("citations", []) or []:
-        citation_urls.append(c if isinstance(c, str) else c.get("url", ""))
-    for item in data.get("output", []):
-        for block in item.get("content", []) or []:
-            for ann in block.get("annotations", []) or []:
-                citation_urls.append(ann.get("url", ""))
-    citation_ids = {tid for u in citation_urls if (tid := tweet_id(u))}
-    print(f"DEBUG citation URLs found: {len(citation_urls)} "
-          f"({len(citation_ids)} unique post IDs)")
-
-    # Parse the JSON array (strip accidental fences).
     text = re.sub(r"^```(?:json)?|```$", "", text.strip(), flags=re.M).strip()
     start, end = text.find("["), text.rfind("]")
     if start == -1 or end == -1:
-        print("No JSON array in model output; treating as zero results.")
-        return [], citation_ids
+        print("No JSON array in model output; treating as zero picks.")
+        return []
     try:
-        candidates = json.loads(text[start:end + 1])
+        return json.loads(text[start:end + 1])
     except json.JSONDecodeError as e:
         print(f"JSON parse failed: {e}")
-        return [], citation_ids
-    return candidates, citation_ids
+        return []
 
 
 def load_seen() -> set[str]:
@@ -166,47 +177,44 @@ def gh(method: str, path: str, **kwargs):
 def ensure_label():
     r = gh("POST", f"/repos/{REPO}/labels",
            json={"name": LABEL, "color": "0e8a16",
-                 "description": "Curated tech post from X for the blog"})
+                 "description": "Curated tech post from Hacker News for the blog"})
     if r.status_code not in (201, 422):  # 422 = already exists
         r.raise_for_status()
 
 
-def create_issue(post: dict):
+def create_issue(cand: dict, summary: str):
+    body = cand["url"] + (f"\n\n{summary}" if summary else "")
     r = gh("POST", f"/repos/{REPO}/issues",
-           json={"title": post.get("title", post["url"])[:120],
-                 "body": post["url"], "labels": [LABEL]})
+           json={"title": cand["title"][:120], "body": body, "labels": [LABEL]})
     r.raise_for_status()
-    print(f"Created issue #{r.json()['number']}: {post['url']}")
+    print(f"Created issue #{r.json()['number']}: {cand['url']}")
 
 
 def main():
-    candidates, citation_ids = call_grok()
-    print(f"Grok returned {len(candidates)} candidates, "
-          f"{len(citation_ids)} citation-backed posts.")
+    candidates = fetch_hn_candidates()
+    print(f"Fetched {len(candidates)} HN candidate(s) from the last 24h.")
+    if not candidates:
+        print("Nothing to curate. Done.")
+        return
+
+    picks = call_zen(candidates)
+    print(f"Model picked {len(picks)} of {len(candidates)} candidates.")
 
     seen = load_seen()
     ensure_label()
     created = 0
 
-    for post in candidates:
-        url = post.get("url", "")
-        tid = tweet_id(url)
-        if not tid:
-            print(f"Skipping (not a post URL): {url}")
+    for pick in picks:
+        cid = pick.get("id")
+        cand = candidates.get(cid)
+        if not cand:
+            print(f"Skipping (model returned an id not in our candidate list): {cid!r}")
             continue
-        if tid in citation_ids:
-            verified = "citation"
-        elif post_exists(url):
-            verified = "oembed"
-        else:
-            print(f"Skipping (unverifiable, possibly hallucinated): {url}")
+        if cid in seen:
+            print(f"Skipping (already filed): {cand['url']}")
             continue
-        print(f"Verified via {verified}: {url}")
-        if tid in seen:
-            print(f"Skipping (already filed): {url}")
-            continue
-        create_issue(post)
-        seen.add(tid)
+        create_issue(cand, pick.get("summary", ""))
+        seen.add(cid)
         created += 1
         if created >= MAX_ISSUES_PER_RUN:
             break
