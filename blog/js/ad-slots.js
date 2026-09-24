@@ -161,7 +161,10 @@
         } else if (unlocked) {
             return (
                 '<div class="promo-modal-right">' +
+                '<div class="promo-modal-demo-wrap">' +
+                '<div class="promo-modal-demo-skeleton" aria-hidden="true"></div>' +
                 '<iframe class="promo-modal-demo" src="' + esc(ad.demoUrl) + '" title="' + esc(ad.productName) + ' demo" loading="lazy"></iframe>' +
+                '</div>' +
                 '</div>'
             );
         }
@@ -186,6 +189,16 @@
             '</form>' +
             '</div>'
         );
+    }
+
+    /** Drops the shimmer skeleton the instant the demo iframe actually paints. */
+    function wireDemoIframe(container) {
+        var iframe = container.querySelector('.promo-modal-demo');
+        var skeleton = container.querySelector('.promo-modal-demo-skeleton');
+        if (!iframe || !skeleton) return;
+        iframe.addEventListener('load', function () {
+            skeleton.remove();
+        });
     }
 
     function wireGateForm(panel, ad) {
@@ -227,6 +240,7 @@
                     markLeadGiven();
                     var right = panel.querySelector('.promo-modal-right');
                     right.outerHTML = buildRightPane(ad); // now unlocked -> renders the iframe
+                    wireDemoIframe(panel);
                 })
                 .catch(function (e) {
                     errEl.textContent = e.message || 'Something went wrong. Please try again.';
@@ -269,6 +283,7 @@
         overlay.querySelector('.promo-modal-backdrop').addEventListener('click', closeModal);
         overlay.querySelector('.promo-modal-close').addEventListener('click', closeModal);
         wireGateForm(overlay, ad);
+        wireDemoIframe(overlay);
 
         document.body.appendChild(overlay);
         document.body.classList.add('promo-modal-open');
