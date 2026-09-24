@@ -1,4 +1,8 @@
-import { connectAnalytics } from "@/lib/analytics";
+import {
+  beforeSend,
+  connectAnalytics,
+  initScrollTracking,
+} from "@/lib/analytics";
 
 // Client-side analytics for bitroot.org. Shares one PostHog project with the
 // .club site — events are separated downstream by $host / $current_url.
@@ -32,6 +36,8 @@ function loadPosthog() {
       // "identified_only" — converters still keep full first-touch attribution
       // via the persisted $initial_* props applied on identify().
       person_profiles: "always",
+      // Collapse trailing-slash / UTM URL variants into one analytics row.
+      before_send: beforeSend,
     });
 
     // Tag every event with the surface it came from so the shared PostHog
@@ -41,6 +47,7 @@ function loadPosthog() {
     posthog.register({ site: "org" });
 
     connectAnalytics(posthog);
+    initScrollTracking();
   });
 }
 

@@ -85,6 +85,91 @@ export function today() {
   return new Date().toISOString().slice(0, 10);
 }
 
+const TRACKING_PARAMS =
+  /^(utm_[a-z]+|gclid|gbraid|wbraid|fbclid|msclkid|ttclid|twclid|li_fat_id|mc_cid|mc_eid|ref|ref_src)$/i;
+
+/**
+ * Canonical form of a page URL for reporting: tracking params removed and a
+ * trailing slash on extensionless paths (the site is `trailingSlash: true`).
+ * Keeps `/blog/x`, `/blog/x/` and `/blog/x/?utm_source=…` on ONE analytics row.
+ * Non-tracking query params are preserved.
+ */
+export function normalizeUrl(raw: string): string {
+  try {
+    const url = new URL(raw);
+    for (const key of [...url.searchParams.keys()]) {
+      if (TRACKING_PARAMS.test(key)) url.searchParams.delete(key);
+    }
+    if (!/\.[a-z0-9]+$/i.test(url.pathname) && !url.pathname.endsWith("/")) {
+      url.pathname += "/";
+    }
+    return url.toString();
+  } catch {
+    return raw;
+  }
+}
+
+/**
+ * posthog `before_send` hook: normalise $current_url / $pathname so duplicate
+ * URL variants don't split analytics rows. posthog-js reads utm_* / click ids
+ * into their own props (utm_source, $initial_utm_*, …) BEFORE this runs, so
+ * campaign attribution is unaffected.
+ */
+export function beforeSend<T extends { properties?: Record<string, unknown> } | null>(
+  event: T,
+): T {
+  const props = event?.properties;
+  if (!props) return event;
+  if (typeof props.$current_url === "string") {
+    props.$current_url = normalizeUrl(props.$current_url);
+  }
+  if (
+    typeof props.$pathname === "string" &&
+    !/\.[a-z0-9]+$/i.test(props.$pathname) &&
+    !props.$pathname.endsWith("/")
+  ) {
+    props.$pathname = `${props.$pathname}/`;
+  }
+  return event;
+}
+
+// Depth milestones (% of page). 70 stays for parity with bitroot.club; 25/50/75
+// give the drop-off curve. Each fires once per page view.
+const SCROLL_MILESTONES = [25, 50, 70, 75] as const;
+// Skip pages that barely scroll — 70% of a page that fits the viewport would
+// fire instantly and say nothing about reading.
+const MIN_SCROLLABLE_RATIO = 1.2;
+
+/**
+ * Fires `page_scroll_<n>` once per milestone per page view (same names as
+ * bitroot.club, split by the `site` super property). Re-arms on App Router
+ * client navigations by tracking the pathname.
+ */
+export function initScrollTracking() {
+  if (typeof window === "undefined") return;
+  let armedFor = "";
+  let fired = new Set<number>();
+
+  const onScroll = () => {
+    const path = window.location.pathname;
+    if (path !== armedFor) {
+      armedFor = path;
+      fired = new Set();
+    }
+    const doc = document.documentElement;
+    if (doc.scrollHeight < window.innerHeight * MIN_SCROLLABLE_RATIO) return;
+    const depth = ((window.scrollY + window.innerHeight) / doc.scrollHeight) * 100;
+    for (const m of SCROLL_MILESTONES) {
+      if (!fired.has(m) && depth >= m) {
+        fired.add(m);
+        track(`page_scroll_${m}`, { pathname: path });
+      }
+    }
+  };
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+}
+
 /** Called once by instrumentation-client.ts after the lazy posthog init. */
 export function connectAnalytics(posthog: PostHog) {
   client = posthog;

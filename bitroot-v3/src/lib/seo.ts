@@ -57,6 +57,49 @@ export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
 }
 
 /**
+ * TechArticle JSON-LD for a guide detail page. Only fields we actually have:
+ * no author/image/datePublished, which the content model doesn't carry.
+ */
+export function techArticleJsonLd({
+  title,
+  description,
+  path,
+  dateModified,
+  keywords,
+  gatedSelector,
+}: {
+  title: string;
+  description: string;
+  path: string;
+  dateModified: string;
+  keywords?: string[];
+  /** CSS selector of the soft-gated body; declares it so Google doesn't treat gating as cloaking. */
+  gatedSelector?: string;
+}) {
+  const url = `${siteUrl}${path}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    headline: title,
+    description,
+    url,
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    dateModified,
+    ...(keywords && keywords.length > 0 && { keywords: keywords.join(", ") }),
+    ...(gatedSelector && {
+      isAccessibleForFree: false,
+      hasPart: {
+        "@type": "WebPageElement",
+        isAccessibleForFree: false,
+        cssSelector: gatedSelector,
+      },
+    }),
+    inLanguage: "en",
+    publisher: { "@type": "Organization", name: siteName, url: `${siteUrl}/` },
+  };
+}
+
+/**
  * CollectionPage JSON-LD for a listing route, with the list of entries
  * embedded as its `mainEntity` ItemList. One node covers both types and
  * keeps them linked (vs. two loose top-level scripts).

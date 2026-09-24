@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { track } from "@/lib/analytics";
 
 type Fields = {
   name: string;
@@ -123,12 +124,14 @@ export default function ReadmeGenerator() {
   }
 
   async function copy() {
+    track("tool_action", { tool: "readme-generator", action: "copy" });
     await navigator.clipboard.writeText(markdown);
     setCopied(true);
     setTimeout(() => setCopied(false), 1500);
   }
 
   function download() {
+    track("tool_action", { tool: "readme-generator", action: "download" });
     const blob = new Blob([markdown], { type: "text/markdown" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");

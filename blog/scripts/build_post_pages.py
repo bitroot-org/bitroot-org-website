@@ -52,12 +52,15 @@ FONTS_HREF = (
 )
 
 POSTHOG_SNIPPET = """    <!-- PostHog (shared bitroot.org/.club project) -->
+    <script src="/blog/js/posthog-extras.js"></script>
     <script>
         !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init bs ws ge fs capture De calculateEventProperties $s register register_once register_for_session unregister unregister_for_session Is getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty xs Ss createPersonProfile Es gs opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing ys debug ks getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
         posthog.init('phc_HEqGPywWHRyDfasXvZMuRz2Vs8ip24tGXUYNRySQ4sx', {
             api_host: 'https://rp.bitroot.org',
             ui_host: 'https://us.posthog.com',
             person_profiles: 'identified_only',
+            // Collapse trailing-slash / UTM URL variants (see js/posthog-extras.js).
+            before_send: window.bitrootBeforeSend,
         })
         // Tag every event with the surface (shared project segmentation).
         posthog.register({ site: 'blog' })
@@ -391,12 +394,94 @@ def _nl_form(location, button_label, placeholder="you@company.com"):
                 </form>"""
 
 
-def newsletter_inline_html():
+# Topic-specific inline CTA copy. First matching bucket wins, so order matters
+# (a post tagged both "claude" and "open source" gets the Claude copy). Tags are
+# compared via _canon() ("Claude Code" / "claude-code" -> "claudecode").
+DEFAULT_NL_TITLE = "Get the next one in your inbox"
+DEFAULT_NL_COPY = (
+    "One email when we publish — AI &amp; founder tactics, no fluff, no spam. "
+    "Unsubscribe anytime."
+)
+_NL_TAIL = "Unsubscribe anytime."
+NL_TOPIC_COPY = [
+    (
+        {"claude", "anthropic", "claudecode"},
+        "Get the next Claude update by email",
+        f"New Claude features and what they mean for founders. No fluff, no spam. {_NL_TAIL}",
+    ),
+    (
+        {"openai", "chatgpt", "gpt"},
+        "Get the next AI model comparison by email",
+        f"Which model to use, and what it costs. One email when we publish. {_NL_TAIL}",
+    ),
+    (
+        {"aiagents", "aiagent", "agents", "automation", "mcp"},
+        "Get the next agent playbook by email",
+        f"How to put agents to work in your product. One email when we publish. {_NL_TAIL}",
+    ),
+    (
+        {"opensource", "cli", "api", "developertools", "devtools"},
+        "Get the next dev tool worth trying",
+        f"New tools and libraries, tested and explained. One email when we publish. {_NL_TAIL}",
+    ),
+    (
+        {"design", "designtools", "videoediting"},
+        "Get the next design tool roundup",
+        f"New tools for building and shipping. One email when we publish. {_NL_TAIL}",
+    ),
+    (
+        {"saas", "startuptools", "productivity", "startup"},
+        "Get the next founder tactic by email",
+        f"Practical tactics for shipping faster. One email when we publish. {_NL_TAIL}",
+    ),
+    # Catch-all for generic AI posts (bare "ai" tag); must stay LAST.
+    (
+        {"ai", "artificialintelligence", "llm", "llms", "genai", "machinelearning"},
+        "Get the next AI update by email",
+        f"What's new in AI and what it means for founders. One email when we publish. {_NL_TAIL}",
+    ),
+]
+
+# Title words that map onto a bucket's vocabulary, for posts whose tags are too
+# generic ("ai") to say what the post is about.
+_TITLE_KEYWORDS = {
+    "claude": "claude",
+    "anthropic": "anthropic",
+    "openai": "openai",
+    "chatgpt": "chatgpt",
+    "agent": "agents",
+    "agents": "agents",
+    "agentic": "agents",
+    "mcp": "mcp",
+}
+
+
+def newsletter_copy(tags, title=None):
+    """(headline, copy) for the inline CTA, chosen from the post's tags, with
+    the post title as a second signal when the tags are generic."""
+    canon = {_canon(t) for t in (tags or [])}
+    for word in re.findall(r"[a-z0-9]+", str(title or "").lower()):
+        if word in _TITLE_KEYWORDS:
+            canon.add(_TITLE_KEYWORDS[word])
+        elif word.startswith("gpt"):
+            canon.add("gpt")
+    # Versioned model tags ("gpt5", "gpt-6-sol") all count as "gpt".
+    if any(c.startswith("gpt") for c in canon):
+        canon.add("gpt")
+    for keys, headline, copy in NL_TOPIC_COPY:
+        if canon & keys:
+            return headline, copy
+    return DEFAULT_NL_TITLE, DEFAULT_NL_COPY
+
+
+def newsletter_inline_html(tags=None, post_title=None):
     """Always-on capture block at the foot of every post — viral/direct traffic
-    lands on one post and leaves, so this is the one place to ask."""
+    lands on one post and leaves, so this is the one place to ask. Headline and
+    sub-line follow the post's topic; layout and form are unchanged."""
+    headline, copy = newsletter_copy(tags, post_title)
     return f"""            <aside class="post-newsletter" aria-label="Subscribe to the Bitroot newsletter">
-                <h2 class="post-newsletter-title">Get the next one in your inbox</h2>
-                <p class="post-newsletter-copy">One email when we publish — AI &amp; founder tactics, no fluff, no spam. Unsubscribe anytime.</p>
+                <h2 class="post-newsletter-title">{headline}</h2>
+                <p class="post-newsletter-copy">{copy}</p>
                 {_nl_form("blog_post_inline", "Subscribe")}
             </aside>"""
 
@@ -573,7 +658,7 @@ def render_page(meta, content, slug, prev_post, next_post):
             </div>
 {refs_html}
 {related_block}
-{newsletter_inline_html()}
+{newsletter_inline_html(tags, title)}
             <nav class="post-nav">
                 <a href="/blog/" class="back-link">&larr; Back to newslogger</a>
                 <div class="post-nav-actions">

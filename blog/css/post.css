@@ -202,6 +202,14 @@ html[data-embed="1"] .post-related {
     cursor: not-allowed;
 }
 
+/* iOS Safari zooms the page when a focused input is under 16px, which yanks
+   the layout mid-typing. Keep the email field at 16px on touch-size screens. */
+@media (max-width: 600px) {
+    .nl-form input[type="email"] {
+        font-size: 1rem;
+    }
+}
+
 .nl-status {
     flex-basis: 100%;
     margin: 2px 0 0;

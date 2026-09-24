@@ -22,10 +22,18 @@ export default function GatedContent({
 }) {
   const unlocked = useGateUnlocked();
 
-  if (unlocked) return <>{children}</>;
+  // `.gated-content` is the cssSelector referenced by the guide JSON-LD
+  // (isAccessibleForFree: false). display:contents keeps layout unchanged.
+  if (unlocked) {
+    return (
+      <div className="gated-content" style={{ display: "contents" }}>
+        {children}
+      </div>
+    );
+  }
 
   return (
-    <div className="relative">
+    <div className="gated-content relative">
       <div
         aria-hidden
         className="max-h-[480px] overflow-hidden pointer-events-none select-none blur-[3px]"

@@ -17,7 +17,7 @@ import generatedBodies from "@/content/generated/bodies.json";
 
 const bodies = generatedBodies as Record<string, string>;
 import JsonLd from "@/components/JsonLd";
-import { buildMetadata, breadcrumbJsonLd } from "@/lib/seo";
+import { buildMetadata, breadcrumbJsonLd, techArticleJsonLd } from "@/lib/seo";
 
 const referencedCategoryLabel = {
   kit: "kit",
@@ -347,6 +347,16 @@ export default async function GuideDetailPage({
               { name: "Guides", path: "/guides/" },
               { name: guide.title, path: `/guides/${guide.slug}/` },
             ])}
+          />
+          <JsonLd
+            data={techArticleJsonLd({
+              title: guide.title,
+              description: guide.summary,
+              path: `/guides/${guide.slug}/`,
+              dateModified: guide.updatedAt,
+              keywords: guide.tags,
+              gatedSelector: ".gated-content",
+            })}
           />
           <nav className="text-[12px] font-mono text-ink-4 mb-6 flex items-center gap-1.5">
             <Link href="/" className="hover:text-ember transition-colors">

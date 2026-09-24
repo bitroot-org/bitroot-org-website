@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import { useMemo, useState } from "react";
 import type { Item } from "@/content/data";
 import Tag from "@/components/ui/Tag";
+import TrackedNextLink from "@/components/ui/TrackedNextLink";
 
 type Difficulty = "all" | "starter" | "intermediate" | "advanced";
 
@@ -135,7 +135,9 @@ export default function KitsGrid({ kits }: { kits: Item[] }) {
       ) : (
         <div className="columns-1 sm:columns-2 lg:columns-3 gap-5">
           {filtered.map((kit) => (
-            <Link
+            <TrackedNextLink
+              label={kit.title}
+              location="kits_listing"
               key={kit.slug}
               href={kit.href}
               className="repo-card group relative mb-5 flex break-inside-avoid flex-col rounded-2xl border border-line bg-paper p-6"
@@ -205,7 +207,7 @@ export default function KitsGrid({ kits }: { kits: Item[] }) {
                   </svg>
                 </span>
               </div>
-            </Link>
+            </TrackedNextLink>
           ))}
         </div>
       )}

@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Container from "@/components/ui/Container";
 import CodeBlock from "@/components/ui/CodeBlock";
+import TrackedLink from "@/components/ui/TrackedLink";
 import Tag from "@/components/ui/Tag";
 import ClubNudge from "@/components/ui/ClubNudge";
 import { kits, findItem } from "@/content/data";
@@ -116,7 +117,9 @@ export default async function KitDetailPage({
 
             {content && (
               <div className="flex flex-wrap gap-2">
-                <a
+                <TrackedLink
+                  label={`GitHub: ${kit.title}`}
+                  location="kit_header"
                   href={content.github}
                   target="_blank"
                   rel="noreferrer"
@@ -126,16 +129,18 @@ export default async function KitDetailPage({
                     <path d="M8 0a8 8 0 00-2.5 15.6c.4.1.6-.2.6-.4v-1.5c-2.2.5-2.7-1-2.7-1-.3-.9-.9-1.2-.9-1.2-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.3 2 .9 2.5.7.1-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-4 0-.9.3-1.6.8-2.1 0-.2-.4-1 .1-2.2 0 0 .7-.2 2.2.8a7.6 7.6 0 014 0c1.5-1 2.2-.8 2.2-.8.4 1.2.1 2 .1 2.2.5.5.8 1.2.8 2.1 0 3.1-1.9 3.8-3.6 4 .3.3.5.8.5 1.5v2.2c0 .2.2.5.6.4A8 8 0 008 0z" />
                   </svg>
                   View on GitHub
-                </a>
+                </TrackedLink>
                 {content.demo && (
-                  <a
+                  <TrackedLink
+                    label={`Demo: ${kit.title}`}
+                    location="kit_header"
                     href={content.demo}
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center gap-2 bg-paper border border-line text-ink text-[13px] font-medium rounded-lg px-4 py-2.5 hover:border-ink-3 transition-colors"
                   >
                     Live demo →
-                  </a>
+                  </TrackedLink>
                 )}
               </div>
             )}
@@ -377,12 +382,14 @@ export default async function KitDetailPage({
               <div className="mt-6 text-[12px] font-mono text-ink-4 flex items-center gap-3">
                 <span>license: {content.license}</span>
                 <span className="text-ink-4">·</span>
-                <a
+                <TrackedLink
+                  label={`Star on GitHub: ${kit.title}`}
+                  location="kit_footer"
                   href={content.github}
                   className="hover:text-ember transition-colors inline-flex items-center gap-1"
                 >
                   star on github →
-                </a>
+                </TrackedLink>
               </div>
             </Container>
           </section>
@@ -408,12 +415,14 @@ export default async function KitDetailPage({
                 is self-documenting.
               </p>
               <div className="flex items-center justify-center gap-3 flex-wrap">
-                <a
+                <TrackedLink
+                  label={`GitHub repo: ${kit.title}`}
+                  location="kit_draft"
                   href={`https://github.com/bitroot/${kit.slug}`}
                   className="inline-flex items-center gap-2 bg-ink text-paper text-[13px] font-medium rounded-lg px-4 py-2.5"
                 >
                   GitHub repo →
-                </a>
+                </TrackedLink>
                 <Link
                   href="/kits"
                   className="inline-flex items-center gap-2 text-[13px] font-mono text-ink-3 hover:text-ember transition-colors"

@@ -1,12 +1,12 @@
-import Link from "next/link";
 import Container from "@/components/ui/Container";
 import Tag from "@/components/ui/Tag";
+import TrackedNextLink from "@/components/ui/TrackedNextLink";
 import ClubNudge from "@/components/ui/ClubNudge";
 import JsonLd from "@/components/JsonLd";
 import { guides } from "@/content/data";
 import { buildMetadata, breadcrumbJsonLd, siteUrl } from "@/lib/seo";
 
-export const metadata = buildMetadata({
+const baseMetadata = buildMetadata({
   title: "Free Startup Guides & Tactical Walkthroughs for Founders",
   description:
     "Free step-by-step guides for founders — real code, reproducible workflows, and tactics that actually work. No fluff, no paywall.",
@@ -16,6 +16,15 @@ export const metadata = buildMetadata({
     alt: "Free startup guides and tactical walkthroughs for founders — Bitroot",
   },
 });
+
+// Advertise the guides feed for auto-discovery (<link rel="alternate">).
+export const metadata = {
+  ...baseMetadata,
+  alternates: {
+    ...baseMetadata.alternates,
+    types: { "application/rss+xml": "/guides/feed.xml" },
+  },
+};
 
 const guidesItemListJsonLd = {
   "@context": "https://schema.org",
@@ -88,7 +97,9 @@ export default function GuidesPage() {
         <Container>
           <div className="rounded-2xl border border-line bg-paper overflow-hidden">
             {guides.map((guide, i) => (
-              <Link
+              <TrackedNextLink
+                label={guide.title}
+                location="guides_listing"
                 key={guide.slug}
                 href={guide.href}
                 className={`group block px-7 py-6 hover:bg-paper-2/40 transition-colors ${
@@ -140,7 +151,7 @@ export default function GuidesPage() {
                     </svg>
                   </div>
                 </div>
-              </Link>
+              </TrackedNextLink>
             ))}
           </div>
 
