@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 390,
+  "count": 391,
   "posts": [
+    "2026-09-24-muses-september-23-updates-what-actually-changed-f.md",
     "2026-09-23-opus-5-5-breaks-the-upgrade-trap-should-your-start.md",
     "2026-09-23-gpt-6-sol-and-luna-50-price-drop-what-changed-when.md",
     "2026-09-22-how-to-build-a-personal-stylist-app-with-muse-ai-a.md",
@@ -394,6 +395,26 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-24-muses-september-23-updates-what-actually-changed-f.md",
+      "slug": "2026-09-24-muses-september-23-updates-what-actually-changed-f",
+      "url": "/blog/2026-09-24-muses-september-23-updates-what-actually-changed-f/",
+      "title": "Muse's September 23 Updates: What Actually Changed for Founders",
+      "date": "2026-09-24",
+      "published_at": "2026-09-24T06:31:10.093Z",
+      "tags": [
+        "AI",
+        "Agents",
+        "Founder Strategy",
+        "Meta",
+        "MUSE"
+      ],
+      "excerpt": "Meta announced avatar, Mac control, and 1,500 connectors on Sept 23. But do these updates fix Muse's real gaps? An honest assessment for founders evaluating agent platforms.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/09/mark-zuckerberg-meta-connect.jpg?resize=1200,799",
+      "sources": [],
+      "readTime": "8 min",
+      "shortId": 391
+    },
     {
       "filename": "2026-09-23-opus-5-5-breaks-the-upgrade-trap-should-your-start.md",
       "slug": "2026-09-23-opus-5-5-breaks-the-upgrade-trap-should-your-start",

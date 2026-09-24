@@ -5,8 +5,21 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 23 Sep 2026 18:28:22 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2026 06:31:43 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Muse's September 23 Updates: What Actually Changed for Founders</title>
+      <link>https://bitroot.org/blog/2026-09-24-muses-september-23-updates-what-actually-changed-f/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-24-muses-september-23-updates-what-actually-changed-f/</guid>
+      <description>Meta announced avatar, Mac control, and 1,500 connectors on Sept 23. But do these updates fix Muse's real gaps? An honest assessment for founders evaluating agent platforms.</description>
+      <pubDate>Thu, 24 Sep 2026 06:31:10 +0000</pubDate>
+      <category>AI</category>
+      <category>Agents</category>
+      <category>Founder Strategy</category>
+      <category>Meta</category>
+      <category>MUSE</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/09/mark-zuckerberg-meta-connect.jpg?resize=1200,799" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Opus 5.5 Breaks the Upgrade Trap: Should Your Startup Switch from Opus 5?</title>
       <link>https://bitroot.org/blog/2026-09-23-opus-5-5-breaks-the-upgrade-trap-should-your-start/</link>
