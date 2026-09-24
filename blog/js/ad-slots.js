@@ -165,25 +165,50 @@
         );
     }
 
+    // Inline SVG icons (24px grid, 1.75 stroke, round caps) — one visual family.
+    var ICON_LOCK =
+        '<svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+        '<g class="promo-lock-shackle"><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></g>' +
+        '<rect x="5" y="10.5" width="14" height="10" rx="2.6"/>' +
+        '<circle cx="12" cy="15.5" r="1.3" fill="currentColor" stroke="none"/>' +
+        '<path d="M12 16.6v1.6"/></svg>';
+    var TIER_ICONS = [
+        // sparkle
+        '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l1.7 4.8 4.8 1.7-4.8 1.7L12 16.5l-1.7-4.8L5.5 10l4.8-1.7z"/><path d="M18.5 15.5l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7z"/></svg>',
+        // bolt
+        '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 3L5.5 13.2h5.3L10 21l8-10.4h-5.4z"/></svg>',
+        // layers
+        '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l8.5 4.5-8.5 4.5L3.5 8z"/><path d="M3.5 12.2L12 16.7l8.5-4.5"/><path d="M3.5 16.2L12 20.7l8.5-4.5"/></svg>'
+    ];
+    var ICON_ARROW =
+        '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+
     /** Shown once a visitor's browser hits demoFreeViews for this ad — a soft, per-browser cap. */
     function lockBlock(ad) {
-        var tiersHtml = (ad.paywallTiers || [])
-            .map(function (t) {
+        var tiers = ad.paywallTiers || [];
+        var featured = tiers.length === 3 ? 1 : -1; // middle of three reads as "most popular"
+        var tiersHtml = tiers
+            .map(function (t, i) {
                 return (
-                    '<a class="promo-lock-tier" href="' + esc(t.checkoutUrl) + '" target="_blank" rel="noopener noreferrer">' +
+                    '<a class="promo-lock-tier' + (i === featured ? ' promo-lock-tier-featured' : '') + '" href="' + esc(t.checkoutUrl) + '" target="_blank" rel="noopener noreferrer">' +
+                    (i === featured ? '<span class="promo-lock-tier-chip">Most popular</span>' : '') +
+                    '<span class="promo-lock-tier-icon">' + TIER_ICONS[i % TIER_ICONS.length] + '</span>' +
                     '<span class="promo-lock-tier-label">' + esc(t.label) + '</span>' +
                     '<span class="promo-lock-tier-price">' + esc(t.priceLabel) + '</span>' +
+                    (t.detail ? '<span class="promo-lock-tier-detail">' + esc(t.detail) + '</span>' : '') +
                     '</a>'
                 );
             })
             .join('');
+        var n = Number(ad.demoFreeViews);
         return (
-            '<div class="promo-modal-right">' +
+            '<div class="promo-modal-right promo-modal-right-lock">' +
             '<div class="promo-lock">' +
-            '<div class="promo-lock-icon" aria-hidden="true">&#128274;</div>' +
-            '<p class="promo-lock-title">You’ve used your ' + Number(ad.demoFreeViews) + ' free preview' + (Number(ad.demoFreeViews) === 1 ? '' : 's') + '</p>' +
-            '<p class="promo-lock-note">Create an account and unlock full access to ' + esc(ad.productName) + ' — pick a pack to keep going.</p>' +
-            (tiersHtml ? '<div class="promo-lock-tiers">' + tiersHtml + '</div>' : '') +
+            '<div class="promo-lock-icon" style="--i:0" aria-hidden="true">' + ICON_LOCK + '</div>' +
+            '<p class="promo-lock-title" style="--i:1">You\u2019ve used your ' + n + ' free preview' + (n === 1 ? '' : 's') + '</p>' +
+            '<p class="promo-lock-note" style="--i:2">Create an account and unlock full access to ' + esc(ad.productName) + ' \u2014 pick a pack to keep going.</p>' +
+            (tiersHtml ? '<div class="promo-lock-tiers" style="--i:3">' + tiersHtml + '</div>' : '') +
+            '<a class="promo-lock-alt" style="--i:4" href="' + esc(ad.ctaUrl) + '" target="_blank" rel="noopener noreferrer">Open ' + esc(ad.productName) + ' ' + ICON_ARROW + '</a>' +
             '</div>' +
             '</div>'
         );
