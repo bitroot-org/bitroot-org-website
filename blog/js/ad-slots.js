@@ -21,6 +21,7 @@
     var API_BASE = 'https://team.bitroot.club'; // TeamLife: the ad registry only (GET, public, read-only)
     var FORMS_API = 'https://api.bitroot.in'; // bitroot-forms Worker: the actual lead write path
     var LEAD_KEY = 'bitroot_ad_lead_given';
+    var DEMO_VIEWS_KEY = 'bitroot_ad_demo_views'; // { [slug]: count } -- per-browser, not a real account limit
     var MARKER_RE = /^\[\[ad:([a-z0-9-]+)\]\]$/;
 
     var body = document.querySelector('#post-content .post-body');
@@ -86,6 +87,30 @@
         }
     }
 
+    function demoViewsMap() {
+        try {
+            var raw = localStorage.getItem(DEMO_VIEWS_KEY);
+            return raw ? JSON.parse(raw) : {};
+        } catch (e) {
+            return {};
+        }
+    }
+
+    function demoViewCount(slug) {
+        return demoViewsMap()[slug] || 0;
+    }
+
+    /** Counts one real look at the live demo — never called for the gate form itself. */
+    function recordDemoView(slug) {
+        try {
+            var map = demoViewsMap();
+            map[slug] = (map[slug] || 0) + 1;
+            localStorage.setItem(DEMO_VIEWS_KEY, JSON.stringify(map));
+        } catch (e) {
+            /* private mode / storage blocked — the free-view cap just never engages */
+        }
+    }
+
     function renderBanner(ad) {
         var badge = ad.kind === 'client' ? 'Ad · Partner' : 'Ad · Bitroot';
         var btn = document.createElement('button');
@@ -140,18 +165,48 @@
         );
     }
 
+    /** Shown once a visitor's browser hits demoFreeViews for this ad — a soft, per-browser cap. */
+    function lockBlock(ad) {
+        var tiersHtml = (ad.paywallTiers || [])
+            .map(function (t) {
+                return (
+                    '<a class="promo-lock-tier" href="' + esc(t.checkoutUrl) + '" target="_blank" rel="noopener noreferrer">' +
+                    '<span class="promo-lock-tier-label">' + esc(t.label) + '</span>' +
+                    '<span class="promo-lock-tier-price">' + esc(t.priceLabel) + '</span>' +
+                    '</a>'
+                );
+            })
+            .join('');
+        return (
+            '<div class="promo-modal-right">' +
+            '<div class="promo-lock">' +
+            '<div class="promo-lock-icon" aria-hidden="true">&#128274;</div>' +
+            '<p class="promo-lock-title">You’ve used your ' + Number(ad.demoFreeViews) + ' free preview' + (Number(ad.demoFreeViews) === 1 ? '' : 's') + '</p>' +
+            '<p class="promo-lock-note">Create an account and unlock full access to ' + esc(ad.productName) + ' — pick a pack to keep going.</p>' +
+            (tiersHtml ? '<div class="promo-lock-tiers">' + tiersHtml + '</div>' : '') +
+            '</div>' +
+            '</div>'
+        );
+    }
+
     /**
-     * Four shapes, driven by whether an ad has a safe embeddable demo and
-     * whether it wants a lead first:
-     *  - no demo, no gate      -> straight CTA (a plain showcase ad)
-     *  - no demo, gate         -> gate, then a thank-you + CTA (capture
-     *                             interest for a product with no live embed
-     *                             yet, e.g. still on an internal branch)
-     *  - demo, no gate         -> iframe straight away
-     *  - demo, gate            -> gate, then the iframe
+     * Five shapes, driven by whether an ad has a safe embeddable demo, whether
+     * it wants a lead first, and whether this browser has already used up its
+     * free previews:
+     *  - demo, free-view cap hit -> the paywall lock, in place of the iframe
+     *  - no demo, no gate        -> straight CTA (a plain showcase ad)
+     *  - no demo, gate           -> gate, then a thank-you + CTA (capture
+     *                               interest for a product with no live embed
+     *                               yet, e.g. still on an internal branch)
+     *  - demo, no gate           -> iframe straight away
+     *  - demo, gate              -> gate, then the iframe
      */
     function buildRightPane(ad) {
         var unlocked = !ad.requiresLead || leadGiven();
+
+        if (ad.demoUrl && Number(ad.demoFreeViews) > 0 && demoViewCount(ad.slug) >= Number(ad.demoFreeViews)) {
+            return lockBlock(ad);
+        }
 
         if (!ad.demoUrl) {
             if (!ad.requiresLead) return ctaBlock(ad, ad.tagline || ad.productName);
@@ -159,9 +214,13 @@
                 return ctaBlock(ad, 'Thanks — we’ll be in touch. In the meantime:');
             }
         } else if (unlocked) {
+            recordDemoView(ad.slug);
             return (
                 '<div class="promo-modal-right">' +
+                '<div class="promo-modal-demo-wrap">' +
+                '<div class="promo-modal-demo-skeleton" aria-hidden="true"></div>' +
                 '<iframe class="promo-modal-demo" src="' + esc(ad.demoUrl) + '" title="' + esc(ad.productName) + ' demo" loading="lazy"></iframe>' +
+                '</div>' +
                 '</div>'
             );
         }
@@ -186,6 +245,16 @@
             '</form>' +
             '</div>'
         );
+    }
+
+    /** Drops the shimmer skeleton the instant the demo iframe actually paints. */
+    function wireDemoIframe(container) {
+        var iframe = container.querySelector('.promo-modal-demo');
+        var skeleton = container.querySelector('.promo-modal-demo-skeleton');
+        if (!iframe || !skeleton) return;
+        iframe.addEventListener('load', function () {
+            skeleton.remove();
+        });
     }
 
     function wireGateForm(panel, ad) {
@@ -227,6 +296,7 @@
                     markLeadGiven();
                     var right = panel.querySelector('.promo-modal-right');
                     right.outerHTML = buildRightPane(ad); // now unlocked -> renders the iframe
+                    wireDemoIframe(panel);
                 })
                 .catch(function (e) {
                     errEl.textContent = e.message || 'Something went wrong. Please try again.';
@@ -269,6 +339,7 @@
         overlay.querySelector('.promo-modal-backdrop').addEventListener('click', closeModal);
         overlay.querySelector('.promo-modal-close').addEventListener('click', closeModal);
         wireGateForm(overlay, ad);
+        wireDemoIframe(overlay);
 
         document.body.appendChild(overlay);
         document.body.classList.add('promo-modal-open');

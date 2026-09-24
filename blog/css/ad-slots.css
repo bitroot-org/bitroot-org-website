@@ -279,13 +279,130 @@ body.promo-modal-open {
     transform: translateY(-1px);
 }
 
-.promo-modal-demo {
+/* --- Paywall lock (free-view cap hit) -------------------------------------- */
+
+.promo-lock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.85rem;
+    margin: auto;
+    padding: var(--spacing-xl);
+    max-width: 26rem;
+}
+
+.promo-lock-icon {
+    font-size: 2.25rem;
+    opacity: 0.55;
+    filter: saturate(0.6);
+}
+
+.promo-lock-title {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.promo-lock-note {
+    font-size: 0.9375rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.promo-lock-tiers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+}
+
+.promo-lock-tier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    min-width: 88px;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    background: var(--bg-secondary);
+    text-decoration: none;
+    transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.promo-lock-tier:hover,
+.promo-lock-tier:focus-visible {
+    border-color: var(--accent);
+    transform: translateY(-1px);
+}
+
+.promo-lock-tier-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+}
+
+.promo-lock-tier-price {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.promo-modal-demo-wrap {
+    position: relative;
     flex: 1;
     width: 100%;
     height: 100%;
     min-height: 320px;
+}
+
+.promo-modal-demo {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
     border: none;
     border-radius: var(--radius-sm);
+    background: var(--bg);
+}
+
+.promo-modal-demo-skeleton {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    border-radius: var(--radius-sm);
+    background: linear-gradient(
+        100deg,
+        var(--bg-secondary) 30%,
+        color-mix(in srgb, var(--accent) 14%, var(--bg-secondary)) 50%,
+        var(--bg-secondary) 70%
+    );
+    background-size: 200% 100%;
+    animation: promo-shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes promo-shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .promo-modal-demo-skeleton {
+        animation: none;
+        opacity: 0.65;
+    }
 }
 
 /* --- Lead gate form ------------------------------------------------------- */
