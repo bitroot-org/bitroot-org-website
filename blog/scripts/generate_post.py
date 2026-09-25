@@ -898,9 +898,13 @@ Body:
   materials below. If the sources don't say it, don't write it — no guessing what
   a tool "probably" supports, no filling gaps from general knowledge. When the
   sources are thin, write a shorter post that says only what they support.
-- Include at least one skeptical or cautionary note: a limitation, a noise/false-positive
-  risk, a scope gap, a lock-in concern, a pricing caveat. If the source is a vendor
-  announcement, assume it's optimistic and balance it.
+- Include one skeptical or cautionary note, built ONLY from what the sources show:
+  a limitation they state, a beta/private-access status, a missing price, a scope
+  the page admits to. If the sources give nothing to be cautious about, say plainly
+  what they do not cover (for example "the page doesn't list pricing or limits") —
+  never invent a limitation, and never claim a tool "lacks" or "doesn't support"
+  something unless the sources say so. If the source is a vendor announcement,
+  assume it's optimistic and balance it with what it leaves out.
 - Include inline markdown links `[text](url)` whenever you mention a specific tool,
   repo, doc, blog post, or person. These are auto-collected into a Sources section.
 - STRICT URL RULE: you may ONLY use URLs that appear verbatim in the "Allowed URLs"
