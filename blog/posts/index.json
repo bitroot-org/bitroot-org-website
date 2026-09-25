@@ -1,8 +1,13 @@
 {
   "generated": true,
-  "count": 391,
+  "count": 396,
   "posts": [
+    "2026-09-24-simten-releases-in-browser-nand-logic-simulator.md",
+    "2026-09-24-neptune-os-v04-runs-linux-drivers-as-userspace-pro.md",
     "2026-09-24-muses-september-23-updates-what-actually-changed-f.md",
+    "2026-09-24-forensicdbg-launches-private-beta-postmortem-debug.md",
+    "2026-09-24-carbon-launches-selfhosted-opensource-erp-for-cmmc.md",
+    "2026-09-24-buildabrowser-ships-v011-with-linux-windows-and-an.md",
     "2026-09-23-opus-5-5-breaks-the-upgrade-trap-should-your-start.md",
     "2026-09-23-gpt-6-sol-and-luna-50-price-drop-what-changed-when.md",
     "2026-09-22-how-to-build-a-personal-stylist-app-with-muse-ai-a.md",
@@ -396,6 +401,46 @@
   ],
   "metadata": [
     {
+      "filename": "2026-09-24-simten-releases-in-browser-nand-logic-simulator.md",
+      "slug": "2026-09-24-simten-releases-in-browser-nand-logic-simulator",
+      "url": "/blog/2026-09-24-simten-releases-in-browser-nand-logic-simulator/",
+      "title": "Simten releases in-browser NAND logic simulator",
+      "date": "2026-09-24",
+      "published_at": "2026-09-24T13:55:30.221583+00:00",
+      "tags": [
+        "hardware simulation",
+        "education",
+        "typescript"
+      ],
+      "excerpt": "Light the led unless both switches are on.",
+      "image": "https://bitroot.org/blog/media/2026-09-24-simten-releases-in-browser-nand-logic-simulator.png",
+      "sources": [
+        "https://play.simten.dev/nand"
+      ],
+      "readTime": "2 min",
+      "shortId": 396
+    },
+    {
+      "filename": "2026-09-24-neptune-os-v04-runs-linux-drivers-as-userspace-pro.md",
+      "slug": "2026-09-24-neptune-os-v04-runs-linux-drivers-as-userspace-pro",
+      "url": "/blog/2026-09-24-neptune-os-v04-runs-linux-drivers-as-userspace-pro/",
+      "title": "Neptune OS v0.4 runs Linux drivers as userspace processes on seL4",
+      "date": "2026-09-24",
+      "published_at": "2026-09-24T13:55:37.779023+00:00",
+      "tags": [
+        "os",
+        "microkernel",
+        "driver isolation"
+      ],
+      "excerpt": "Neptune OS 0.4 demonstrates that unmodified Linux GPU drivers can run as isolated userspace processes on the formally verified seL4 microkernel, offering a new angle on driver stability and security.",
+      "image": null,
+      "sources": [
+        "https://news.ycombinator.com/item?id=49813759"
+      ],
+      "readTime": "2 min",
+      "shortId": 395
+    },
+    {
       "filename": "2026-09-24-muses-september-23-updates-what-actually-changed-f.md",
       "slug": "2026-09-24-muses-september-23-updates-what-actually-changed-f",
       "url": "/blog/2026-09-24-muses-september-23-updates-what-actually-changed-f/",
@@ -413,6 +458,68 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/09/mark-zuckerberg-meta-connect.jpg?resize=1200,799",
       "sources": [],
       "readTime": "8 min",
+      "shortId": 394
+    },
+    {
+      "filename": "2026-09-24-forensicdbg-launches-private-beta-postmortem-debug.md",
+      "slug": "2026-09-24-forensicdbg-launches-private-beta-postmortem-debug",
+      "url": "/blog/2026-09-24-forensicdbg-launches-private-beta-postmortem-debug/",
+      "title": "ForensicDbg launches private beta post\u2011mortem debugger for Windows",
+      "date": "2026-09-24",
+      "published_at": "2026-09-24T13:56:33.938812+00:00",
+      "tags": [
+        "debugging",
+        "windows",
+        "post-mortem",
+        "ai"
+      ],
+      "excerpt": "The main homepage for ForensicDbg - your new modern crash debugger!",
+      "image": "https://bitroot.org/blog/media/2026-09-24-forensicdbg-launches-private-beta-postmortem-debug.png",
+      "sources": [
+        "https://www.forensicdbg.com"
+      ],
+      "readTime": "2 min",
+      "shortId": 393
+    },
+    {
+      "filename": "2026-09-24-carbon-launches-selfhosted-opensource-erp-for-cmmc.md",
+      "slug": "2026-09-24-carbon-launches-selfhosted-opensource-erp-for-cmmc",
+      "url": "/blog/2026-09-24-carbon-launches-selfhosted-opensource-erp-for-cmmc/",
+      "title": "Carbon launches self\u2011hosted open\u2011source ERP for CMMC\u2011compliant factories",
+      "date": "2026-09-24",
+      "published_at": "2026-09-24T13:56:11.499843+00:00",
+      "tags": [
+        "erp",
+        "manufacturing",
+        "open source",
+        "self-hosted"
+      ],
+      "excerpt": "Own the stack: run Carbon on your own infrastructure \u00e2\u0080\u0094 on-prem, in your VPC, or fully air-gapped. ERP, MRP, MES and QMS on Postgres you own, source available, with an AGPL-3.0 Community edition.",
+      "image": "https://bitroot.org/blog/media/2026-09-24-carbon-launches-selfhosted-opensource-erp-for-cmmc.webp",
+      "sources": [
+        "https://carbon.ms/self-hosted"
+      ],
+      "readTime": "2 min",
+      "shortId": 392
+    },
+    {
+      "filename": "2026-09-24-buildabrowser-ships-v011-with-linux-windows-and-an.md",
+      "slug": "2026-09-24-buildabrowser-ships-v011-with-linux-windows-and-an",
+      "url": "/blog/2026-09-24-buildabrowser-ships-v011-with-linux-windows-and-an/",
+      "title": "BuildABrowser ships v0.1.1 with Linux, Windows, and Android builds",
+      "date": "2026-09-24",
+      "published_at": "2026-09-24T13:55:41.749634+00:00",
+      "tags": [
+        "browser",
+        "java",
+        "rendering engine"
+      ],
+      "excerpt": "BuildABrowser BuildABrowser is a project aiming to build a browser and its rendering engine in Java, and then (eventually) document it such that others can rebuild it for themselves.",
+      "image": "/_astro/acid2_small.BtitYRV7_Z1btHeE.webp",
+      "sources": [
+        "https://buildabrowser.net/"
+      ],
+      "readTime": "2 min",
       "shortId": 391
     },
     {
