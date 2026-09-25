@@ -5,8 +5,21 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 25 Sep 2026 07:21:10 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 07:22:01 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude's Refusal Billing: Cost Impact for Founders (And How to Avoid It)</title>
+      <link>https://bitroot.org/blog/2026-09-25-claudes-refusal-billing-cost-impact-for-founders-a/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-25-claudes-refusal-billing-cost-impact-for-founders-a/</guid>
+      <description>Anthropic charges for some refusals starting Sept 23. But what's the actual cost? A founder's breakdown with budget modeling framework and false positive analysis.</description>
+      <pubDate>Fri, 25 Sep 2026 07:21:10 +0000</pubDate>
+      <category>AI</category>
+      <category>Pricing</category>
+      <category>Technical</category>
+      <category>Anthropic</category>
+      <category>Claude</category>
+      <enclosure url="https://pbs.twimg.com/card_img/2100951169808171009/WH4SuF2U?format=png&amp;name=small" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Simten releases in-browser NAND logic simulator</title>
       <link>https://bitroot.org/blog/2026-09-24-simten-releases-in-browser-nand-logic-simulator/</link>

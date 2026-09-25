@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 396,
+  "count": 397,
   "posts": [
+    "2026-09-25-claudes-refusal-billing-cost-impact-for-founders-a.md",
     "2026-09-24-simten-releases-in-browser-nand-logic-simulator.md",
     "2026-09-24-neptune-os-v04-runs-linux-drivers-as-userspace-pro.md",
     "2026-09-24-muses-september-23-updates-what-actually-changed-f.md",
@@ -400,6 +401,26 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-25-claudes-refusal-billing-cost-impact-for-founders-a.md",
+      "slug": "2026-09-25-claudes-refusal-billing-cost-impact-for-founders-a",
+      "url": "/blog/2026-09-25-claudes-refusal-billing-cost-impact-for-founders-a/",
+      "title": "Claude's Refusal Billing: Cost Impact for Founders (And How to Avoid It)",
+      "date": "2026-09-25",
+      "published_at": "2026-09-25T07:21:10.691Z",
+      "tags": [
+        "AI",
+        "Pricing",
+        "Technical",
+        "Anthropic",
+        "Claude"
+      ],
+      "excerpt": "Anthropic charges for some refusals starting Sept 23. But what's the actual cost? A founder's breakdown with budget modeling framework and false positive analysis.",
+      "image": "https://pbs.twimg.com/card_img/2100951169808171009/WH4SuF2U?format=png&name=small",
+      "sources": [],
+      "readTime": "8 min",
+      "shortId": 397
+    },
     {
       "filename": "2026-09-24-simten-releases-in-browser-nand-logic-simulator.md",
       "slug": "2026-09-24-simten-releases-in-browser-nand-logic-simulator",
