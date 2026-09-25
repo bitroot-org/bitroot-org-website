@@ -8,12 +8,19 @@ and uses Groq to synthesize original blog posts.
 
 import os
 import re
+import glob
 import json
 import logging
 from datetime import datetime
 
 import requests
 from bs4 import BeautifulSoup
+
+try:  # Tiered fetching (fast HTTP -> browser render -> stealth). Optional locally.
+    from scrapling.fetchers import DynamicFetcher, Fetcher, StealthyFetcher
+    SCRAPLING = True
+except ImportError:  # falls back to plain requests
+    SCRAPLING = False
 import frontmatter
 from groq import Groq
 
@@ -39,6 +46,15 @@ MEDIA_DIR = "blog/media"
 # feed and in the TeamLife blog studio, which read the frontmatter raw.
 MEDIA_BASE_URL = "https://bitroot.org/blog/media"
 MAX_CONTENT_LENGTH = 15000  # Max chars per URL to avoid token limits
+# A page yielding less readable text than this is treated as "probably rendered
+# by JavaScript or blocked" and re-fetched with a real browser.
+MIN_TEXT_CHARS = 800
+# Below this much total source text we do not write a post at all: the model
+# pads thin sources with plausible-sounding claims that nothing supports.
+MIN_SOURCE_CHARS = 800
+# Where per-post PR bodies + manifests are written for open_post_prs.sh.
+OUT_DIR = os.environ.get("BLOG_AGENT_OUT", ".blog-agent-out")
+ISSUE_LABEL = os.environ.get("ISSUE_LABEL", "blog-link")
 MAX_VIDEO_SIZE = 50 * 1024 * 1024  # 50MB max video size
 MAX_IMAGE_SIZE = 8 * 1024 * 1024  # 8MB max cover image size
 
@@ -114,7 +130,7 @@ def get_github_issues():
 
     # Otherwise, get all open issues with blog-link label
     url = f"https://api.github.com/repos/{REPO_NAME}/issues"
-    params = {"labels": "blog-link", "state": "open"}
+    params = {"labels": ISSUE_LABEL, "state": "open"}
     resp = requests.get(url, headers=headers, params=params)
     resp.raise_for_status()
     return resp.json()
@@ -462,11 +478,27 @@ def fetch_url_content(url):
         logger.info(f"Detected Instagram URL, extracting og:tags")
         return fetch_social_media_content(url)
 
+    result = _fetch_page_tiered(url)
+    if result is not None:
+        return result
+
     try:
         resp = requests.get(url, headers=BROWSER_HEADERS, timeout=30)
         resp.raise_for_status()
+        return _parse_page(url, resp.text)
+    except Exception as e:
+        logger.warning(f"Direct fetch failed for {url}: {str(e)}; trying Jina Reader fallback")
+        fallback = fetch_via_jina_reader(url)
+        if fallback:
+            return fallback
+        logger.error(f"Failed to fetch {url}: {str(e)}")
+        return {"url": url, "content": f"Failed to fetch: {str(e)}", "image": None, "description": None, "success": False}
 
-        soup = BeautifulSoup(resp.text, "html.parser")
+
+def _parse_page(url, html):
+    """Title, image, description and readable text from page HTML."""
+    try:
+        soup = BeautifulSoup(html, "html.parser")
 
         # Extract page title from og:title or <title> tag
         page_title = None
@@ -533,18 +565,19 @@ def fetch_url_content(url):
         for tag in soup(["script", "style", "nav", "footer", "header", "aside"]):
             tag.decompose()
 
-        # Try to find main content
-        main_content = (
-            soup.find("article")
-            or soup.find("main")
-            or soup.find(class_=re.compile(r"content|article|post", re.I))
-            or soup.find("body")
-        )
-
-        if main_content:
-            text = main_content.get_text(separator="\n", strip=True)
-        else:
-            text = soup.get_text(separator="\n", strip=True)
+        # Pick the content container: the first candidate with enough readable text,
+        # else the fullest one. (A <main> that only holds a page header is common on
+        # app-style pages and would otherwise hide the real content.)
+        candidates = [
+            soup.find("article"),
+            soup.find("main"),
+            soup.find(class_=re.compile(r"content|article|post", re.I)),
+            soup.find("body"),
+        ]
+        texts = [c.get_text(separator="\n", strip=True) for c in candidates if c is not None]
+        text = next((t for t in texts if len(t) >= MIN_TEXT_CHARS), None)
+        if text is None:
+            text = max(texts, key=len) if texts else soup.get_text(separator="\n", strip=True)
 
         # Fallback: extract first 2-3 sentences from content if no description found
         if not description and text:
@@ -580,12 +613,68 @@ def fetch_url_content(url):
         return {"url": url, "title": page_title, "content": text, "image": image_url, "description": description, "success": True}
 
     except Exception as e:
-        logger.warning(f"Direct fetch failed for {url}: {str(e)}; trying Jina Reader fallback")
-        fallback = fetch_via_jina_reader(url)
-        if fallback:
-            return fallback
-        logger.error(f"Failed to fetch {url}: {str(e)}")
-        return {"url": url, "content": f"Failed to fetch: {str(e)}", "image": None, "description": None, "success": False}
+        logger.error(f"Could not parse {url}: {str(e)}")
+        return {"url": url, "content": f"Failed to parse: {str(e)}", "image": None, "description": None, "success": False}
+
+
+_BLOCK_MARKERS = ("just a moment", "attention required", "cf-chl", "enable javascript and cookies", "access denied")
+
+
+def _looks_blocked(status, html):
+    if status in (401, 403, 429, 503):
+        return True
+    head = (html or "")[:4000].lower()
+    return any(m in head for m in _BLOCK_MARKERS) and len(html or "") < 60000
+
+
+def _scrapling_get(url, tier):
+    """One fetch at the given tier -> (status, html). Raises on transport errors."""
+    if tier == "http":
+        page = Fetcher.get(url, impersonate="chrome", stealthy_headers=True, timeout=30)
+    elif tier == "browser":
+        page = DynamicFetcher.fetch(url, headless=True, network_idle=True, timeout=45000)
+    else:
+        page = StealthyFetcher.fetch(url, headless=True, solve_cloudflare=True, network_idle=True, timeout=60000)
+    return int(page.status), page.html_content or ""
+
+
+def _fetch_page_tiered(url):
+    """Fast HTTP first; escalate to a real browser when the page is thin (JS-rendered)
+    or blocked; stealth only when it is still blocked. Returns the best parsed page,
+    or None when Scrapling is unavailable / nothing could be fetched (caller falls back)."""
+    if not SCRAPLING:
+        return None
+
+    best = None
+    tiers = ["http", "browser", "stealth"]
+    blocked = False
+    for i, tier in enumerate(tiers):
+        if tier == "browser" and best and len(best["content"]) >= MIN_TEXT_CHARS and not blocked:
+            break
+        if tier == "stealth" and not blocked:
+            break
+        try:
+            status, html = _scrapling_get(url, tier)
+        except Exception as e:
+            logger.warning(f"{tier} fetch failed for {url}: {type(e).__name__}: {str(e)[:120]}")
+            blocked = blocked or tier != "stealth"
+            continue
+        blocked = _looks_blocked(status, html)
+        if status >= 400 and not blocked:
+            logger.warning(f"{tier} fetch got HTTP {status} for {url}; not retrying")
+            break
+        parsed = _parse_page(url, html) if not blocked else None
+        if parsed and parsed["success"]:
+            logger.info(f"Fetched {url} via {tier}: {len(parsed['content'])} chars")
+            if best is None or len(parsed["content"]) > len(best["content"]):
+                best = parsed
+            if len(best["content"]) >= MIN_TEXT_CHARS:
+                break
+    if best:
+        best["thin"] = len(best["content"]) < MIN_TEXT_CHARS
+        return best
+    logger.warning(f"All Scrapling tiers failed for {url}; falling back to requests/Jina")
+    return None
 
 
 def get_fallback_image(query):
@@ -804,9 +893,18 @@ Body:
 - Do NOT reuse a template like "Introduction / What This Means / Key Features / Implications".
   Vary the structure per post.
 - Short paragraphs, 1–3 sentences each.
-- Include at least one skeptical or cautionary note: a limitation, a noise/false-positive
-  risk, a scope gap, a lock-in concern, a pricing caveat. If the source is a vendor
-  announcement, assume it's optimistic and balance it.
+- GROUNDING RULE: every factual claim (features, numbers, versions, prices,
+  limitations, "it can do X") must be stated or clearly implied in the Source
+  materials below. If the sources don't say it, don't write it — no guessing what
+  a tool "probably" supports, no filling gaps from general knowledge. When the
+  sources are thin, write a shorter post that says only what they support.
+- Include one skeptical or cautionary note, built ONLY from what the sources show:
+  a limitation they state, a beta/private-access status, a missing price, a scope
+  the page admits to. If the sources give nothing to be cautious about, say plainly
+  what they do not cover (for example "the page doesn't list pricing or limits") —
+  never invent a limitation, and never claim a tool "lacks" or "doesn't support"
+  something unless the sources say so. If the source is a vendor announcement,
+  assume it's optimistic and balance it with what it leaves out.
 - Include inline markdown links `[text](url)` whenever you mention a specific tool,
   repo, doc, blog post, or person. These are auto-collected into a Sources section.
 - STRICT URL RULE: you may ONLY use URLs that appear verbatim in the "Allowed URLs"
@@ -1059,9 +1157,14 @@ def close_issue(issue_number):
     requests.patch(url, headers=headers, json=data)
 
 
-def write_pr_summary(post_data, issue_data, filepath, image_url=None):
-    """Write a summary file that the workflow uses for the PR body."""
-    summary_path = os.path.join(POSTS_DIR, ".pr_summary.md")
+def write_pr_summary(post_data, issue_data, filepath, image_url=None, thin=False):
+    """Write this post's PR body + a manifest for open_post_prs.sh.
+
+    One file pair per post (the old single .pr_summary.md was overwritten by each
+    post, so a multi-post run produced one PR that described only the last one).
+    """
+    os.makedirs(OUT_DIR, exist_ok=True)
+    base = os.path.splitext(os.path.basename(filepath))[0]
     title = post_data.get("title", "Untitled")
     excerpt = post_data.get("excerpt", "")
     tags = post_data.get("tags", [])
@@ -1071,11 +1174,16 @@ def write_pr_summary(post_data, issue_data, filepath, image_url=None):
     tags_str = ", ".join(f"`{t}`" for t in tags) if tags else "_none_"
     sources_str = "\n".join(f"- {u}" for u in sources) if sources else "_none_"
     image_line = f"![thumbnail]({image_url})" if image_url else "_no image_"
+    thin_line = (
+        "\n> **Thin source** — very little text could be read from the source page, so treat every "
+        "claim in this draft as unverified and check it against the source before publishing.\n"
+        if thin else ""
+    )
 
     summary = f"""## {title}
 
 > {excerpt}
-
+{thin_line}
 {image_line}
 
 | | |
@@ -1087,9 +1195,30 @@ def write_pr_summary(post_data, issue_data, filepath, image_url=None):
 ### Sources
 {sources_str}
 """
-    with open(summary_path, "w", encoding="utf-8") as f:
+    media = sorted(glob.glob(os.path.join(MEDIA_DIR, base + "*")))
+    with open(os.path.join(OUT_DIR, base + ".md"), "w", encoding="utf-8") as f:
         f.write(summary)
-    logger.info(f"PR summary written to {summary_path}")
+    with open(os.path.join(OUT_DIR, base + ".json"), "w", encoding="utf-8") as f:
+        json.dump(
+            {"title": title, "file": filepath, "media": media, "issue": issue_num, "thin": thin},
+            f,
+            indent=2,
+        )
+    logger.info(f"PR body + manifest written for {base} in {OUT_DIR}/")
+
+
+def relabel_needs_source(issue_num):
+    """Take the issue out of the queue so the next run doesn't retry it forever."""
+    if not GITHUB_TOKEN or not REPO_NAME:
+        return
+    headers = {
+        "Authorization": f"Bearer {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    base = f"https://api.github.com/repos/{REPO_NAME}/issues/{issue_num}"
+    requests.delete(f"{base}/labels/{ISSUE_LABEL}", headers=headers)
+    requests.post(f"{base}/labels", headers=headers, json={"labels": ["needs-source"]})
 
 
 def main():
@@ -1132,8 +1261,22 @@ def main():
             else:
                 print(f"    Failed: {content['content']}")
 
+        # Don't write a post the sources can't support.
+        readable = sum(len(c["content"]) for c in fetched_contents if c.get("success"))
+        if readable < MIN_SOURCE_CHARS:
+            print(f"  Skipping: only {readable} chars of readable source text")
+            comment_on_issue(
+                issue_num,
+                f"Skipped: only {readable} characters of readable text could be fetched from the "
+                f"source (it may need a login, block bots, or be an app rather than an article). "
+                f"Add a link to a write-up, docs or README page and re-apply the `{ISSUE_LABEL}` label.",
+            )
+            relabel_needs_source(issue_num)
+            continue
+        thin = any(c.get("thin") for c in fetched_contents if c.get("success")) and readable < MIN_SOURCE_CHARS * 2
+
         # Generate post
-        print("  Generating post with Groq (Llama 3.3 70B)...")
+        print("  Generating post with Groq...")
         try:
             post_data = generate_post(client, issue_data, fetched_contents)
             if not post_data:
@@ -1176,7 +1319,7 @@ def main():
             print(f"  Created: {filepath}")
 
             # Write PR summary for the workflow to pick up
-            write_pr_summary(post_data, issue_data, filepath, source_image)
+            write_pr_summary(post_data, issue_data, filepath, source_image, thin)
 
             # Comment on issue
             comment_on_issue(
