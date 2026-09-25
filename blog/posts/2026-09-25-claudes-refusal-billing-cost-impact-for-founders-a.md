@@ -13,6 +13,8 @@ tags:
 title: 'Claude''s Refusal Billing: Cost Impact for Founders (And How to Avoid It)'
 ---
 
+[[ad:bitstudio-lite]]
+
 [Anthropic announced something on September 23](https://x.com/claudedevs) that most founders glossed over: Claude now charges for some refusals.
  
 Not all refusals. Three specific categories: biology, frontier LLM development, and reasoning extraction. The others (cybersecurity work, general harms) stay free. And if your safety classifier catches a request before Claude even tries to answer — 99.7% of blocked requests — you don't pay.
