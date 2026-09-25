@@ -6,8 +6,14 @@ on:
   schedule:
     - cron: '0 9 * * *'
 
-  # Manual trigger from Actions tab
+  # Manual trigger from Actions tab. `label` lets a test issue (label it something
+  # other than blog-link so the normal triggers ignore it) go through the pipeline.
   workflow_dispatch:
+    inputs:
+      label:
+        description: 'Issue label to process'
+        default: 'blog-link'
+        required: false
 
   # Trigger when issue is labeled
   issues:
@@ -43,6 +49,17 @@ jobs:
       - name: Install dependencies
         run: pip install -r blog/scripts/requirements.txt
 
+      # Scrapling drives a real browser for pages that render with JavaScript or
+      # block plain HTTP clients. Cached so most runs skip the download.
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('blog/scripts/requirements.txt') }}
+
+      - name: Install browser for Scrapling
+        run: scrapling install
+
       - name: Run blog generator
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -50,62 +67,12 @@ jobs:
           REPO_NAME: ${{ github.repository }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           EVENT_NAME: ${{ github.event_name }}
+          ISSUE_LABEL: ${{ inputs.label || 'blog-link' }}
         run: python blog/scripts/generate_post.py
 
-      - name: Check for new post files
-        id: check_changes
-        run: |
-          git add blog/posts/*.md blog/media/ 2>/dev/null || true
-          if [[ -n $(git diff --cached --name-only) ]]; then
-            echo "has_changes=true" >> $GITHUB_OUTPUT
-            echo "Changed files:"
-            git diff --cached --name-only
-          else
-            echo "has_changes=false" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Read post summary
-        id: summary
-        if: steps.check_changes.outputs.has_changes == 'true'
-        run: |
-          if [ -f blog/posts/.pr_summary.md ]; then
-            # Read summary into output (multiline)
-            {
-              echo "body<<SUMMARY_EOF"
-              cat blog/posts/.pr_summary.md
-              echo "SUMMARY_EOF"
-            } >> $GITHUB_OUTPUT
-
-            # Extract title for the PR title
-            TITLE=$(head -1 blog/posts/.pr_summary.md | sed 's/^## //')
-            echo "title=${TITLE}" >> $GITHUB_OUTPUT
-          else
-            echo "body=_No summary generated._" >> $GITHUB_OUTPUT
-            echo "title=" >> $GITHUB_OUTPUT
-          fi
-          # Clean up summary file (don't commit it)
-          rm -f blog/posts/.pr_summary.md
-
-      - name: Create Pull Request
-        if: steps.check_changes.outputs.has_changes == 'true'
-        uses: peter-evans/create-pull-request@v7
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: 'blog: Add AI-generated post'
-          title: "\U0001F4DD ${{ steps.summary.outputs.title || 'New Blog Post' }}"
-          body: |
-            ${{ steps.summary.outputs.body }}
-
-            ---
-
-            ### Review checklist
-            - [ ] Content is accurate and well-written
-            - [ ] Sources are properly attributed
-            - [ ] Tone matches Bitroot style
-
-            > Index, short links, and RSS are rebuilt automatically after merge.
-
-            _Generated with [Blog Agent](/.github/workflows/blog-agent.yml) ${{ github.event_name == 'issues' && format('from issue #{0}', github.event.issue.number) || '(scheduled/manual)' }}_
-          branch: blog-post-${{ github.run_id }}
-          delete-branch: true
-          labels: blog-post
+      - name: Open one PR per post
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BASE_BRANCH: ${{ github.event.repository.default_branch }}
+          RUN_ID: ${{ github.run_id }}
+        run: bash blog/scripts/open_post_prs.sh

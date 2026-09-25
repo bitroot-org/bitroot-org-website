@@ -75,3 +75,6 @@ yarn.lock
 .dev.vars
 api/.wrangler/
 api/.secrets.bulk.json
+
+# blog agent scratch output (per-post PR bodies/manifests)
+.blog-agent-out/
