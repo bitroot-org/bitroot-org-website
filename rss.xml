@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 26 Sep 2026 03:59:21 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 26 Sep 2026 04:00:39 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Muse Early Access Program: How to Get First Access to Computer Control &amp; Avatar Features</title>
@@ -32,6 +32,20 @@
       <category>Anthropic</category>
       <category>Claude</category>
       <enclosure url="https://pbs.twimg.com/card_img/2100951169808171009/WH4SuF2U?format=png&amp;name=small" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>C3 language gets an in‑browser playground with graphics and audio</title>
+      <link>https://bitroot.org/blog/2026-09-25-c3-language-gets-an-inbrowser-playground-with-grap/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-25-c3-language-gets-an-inbrowser-playground-with-grap/</guid>
+      <description>Interactive C3 compiler and runtime executing 100% client-side via WebAssembly.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://play.c3-lang.org/?example=voxelspace_synthwave"&gt;https://play.c3-lang.org/?example=voxelspace_synthwave&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 25 Sep 2026 14:22:17 +0000</pubDate>
+      <category>c3</category>
+      <category>playground</category>
+      <category>web</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-09-25-c3-language-gets-an-inbrowser-playground-with-grap.png" type="image/png" length="0" />
+      <source url="https://play.c3-lang.org/?example=voxelspace_synthwave">Original Source</source>
     </item>
     <item>
       <title>Simten releases in-browser NAND logic simulator</title>

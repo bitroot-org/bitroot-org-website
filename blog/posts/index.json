@@ -1,9 +1,10 @@
 {
   "generated": true,
-  "count": 398,
+  "count": 399,
   "posts": [
     "2026-09-26-muse-early-access-program-how-to-get-first-access.md",
     "2026-09-25-claudes-refusal-billing-cost-impact-for-founders-a.md",
+    "2026-09-25-c3-language-gets-an-inbrowser-playground-with-grap.md",
     "2026-09-24-simten-releases-in-browser-nand-logic-simulator.md",
     "2026-09-24-neptune-os-v04-runs-linux-drivers-as-userspace-pro.md",
     "2026-09-24-muses-september-23-updates-what-actually-changed-f.md",
@@ -420,7 +421,7 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShvLO0yuSR5_Pofzw8MDRMhFXB0z_4sUW16XhqPxQtrg&s=10",
       "sources": [],
       "readTime": "5 min",
-      "shortId": 398
+      "shortId": 399
     },
     {
       "filename": "2026-09-25-claudes-refusal-billing-cost-impact-for-founders-a.md",
@@ -440,6 +441,26 @@
       "image": "https://pbs.twimg.com/card_img/2100951169808171009/WH4SuF2U?format=png&name=small",
       "sources": [],
       "readTime": "8 min",
+      "shortId": 398
+    },
+    {
+      "filename": "2026-09-25-c3-language-gets-an-inbrowser-playground-with-grap.md",
+      "slug": "2026-09-25-c3-language-gets-an-inbrowser-playground-with-grap",
+      "url": "/blog/2026-09-25-c3-language-gets-an-inbrowser-playground-with-grap/",
+      "title": "C3 language gets an in\u2011browser playground with graphics and audio",
+      "date": "2026-09-25",
+      "published_at": "2026-09-25T14:22:17.085535+00:00",
+      "tags": [
+        "c3",
+        "playground",
+        "web"
+      ],
+      "excerpt": "Interactive C3 compiler and runtime executing 100% client-side via WebAssembly.",
+      "image": "https://bitroot.org/blog/media/2026-09-25-c3-language-gets-an-inbrowser-playground-with-grap.png",
+      "sources": [
+        "https://play.c3-lang.org/?example=voxelspace_synthwave"
+      ],
+      "readTime": "2 min",
       "shortId": 397
     },
     {
