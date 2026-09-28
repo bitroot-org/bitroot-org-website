@@ -5,8 +5,22 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 26 Sep 2026 04:00:39 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 04:52:37 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spivak Calculus fully formalized in Lean 4</title>
+      <link>https://bitroot.org/blog/2026-09-27-spivak-calculus-fully-formalized-in-lean-4/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-27-spivak-calculus-fully-formalized-in-lean-4/</guid>
+      <description>Michael Spivak's Calculus formalized in Lean 4: every theorem and every problem of all 30 chapters and 9 appendices, in both the 3rd and 4th editions - stormj-UH/spivak-lean
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/stormj-UH/spivak-lean"&gt;https://github.com/stormj-UH/spivak-lean&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sun, 27 Sep 2026 14:27:10 +0000</pubDate>
+      <category>formal verification</category>
+      <category>lean</category>
+      <category>calculus</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-09-27-spivak-calculus-fully-formalized-in-lean-4.png" type="image/png" length="0" />
+      <source url="https://github.com/stormj-UH/spivak-lean">Original Source</source>
+    </item>
     <item>
       <title>Muse Early Access Program: How to Get First Access to Computer Control &amp; Avatar Features</title>
       <link>https://bitroot.org/blog/2026-09-26-muse-early-access-program-how-to-get-first-access/</link>

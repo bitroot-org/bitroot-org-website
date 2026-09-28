@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 399,
+  "count": 400,
   "posts": [
+    "2026-09-27-spivak-calculus-fully-formalized-in-lean-4.md",
     "2026-09-26-muse-early-access-program-how-to-get-first-access.md",
     "2026-09-25-claudes-refusal-billing-cost-impact-for-founders-a.md",
     "2026-09-25-c3-language-gets-an-inbrowser-playground-with-grap.md",
@@ -403,6 +404,26 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-27-spivak-calculus-fully-formalized-in-lean-4.md",
+      "slug": "2026-09-27-spivak-calculus-fully-formalized-in-lean-4",
+      "url": "/blog/2026-09-27-spivak-calculus-fully-formalized-in-lean-4/",
+      "title": "Spivak Calculus fully formalized in Lean 4",
+      "date": "2026-09-27",
+      "published_at": "2026-09-27T14:27:10.815692+00:00",
+      "tags": [
+        "formal verification",
+        "lean",
+        "calculus"
+      ],
+      "excerpt": "Michael Spivak's Calculus formalized in Lean 4: every theorem and every problem of all 30 chapters and 9 appendices, in both the 3rd and 4th editions - stormj-UH/spivak-lean",
+      "image": "https://bitroot.org/blog/media/2026-09-27-spivak-calculus-fully-formalized-in-lean-4.png",
+      "sources": [
+        "https://github.com/stormj-UH/spivak-lean"
+      ],
+      "readTime": "2 min",
+      "shortId": 400
+    },
     {
       "filename": "2026-09-26-muse-early-access-program-how-to-get-first-access.md",
       "slug": "2026-09-26-muse-early-access-program-how-to-get-first-access",
