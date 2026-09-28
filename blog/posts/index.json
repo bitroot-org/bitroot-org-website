@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 403,
+  "count": 404,
   "posts": [
     "2026-09-28-sarvam-ai-now-hosts-us-models-why-this-matters-for.md",
+    "2026-09-28-jev-ai-speeds-agent-decisions-193x-the-lightweight.md",
     "2026-09-27-spivak-calculus-fully-formalized-in-lean-4.md",
     "2026-09-27-reladraw-releases-version-080-a-placementfocused-d.md",
     "2026-09-26-qwen306b-inference-runs-inside-linux-ebpf-kernel.md",
@@ -423,6 +424,27 @@
       ],
       "excerpt": "Sarvam AI reached unicorn status and pivoted to hosting US AI models on its infrastructure. Here's what changed, why it matters, and when you should use it.",
       "image": "https://assets.sarvam.ai/tr:q-70,f-auto,dpr-auto/images/03117ysv/production/f8f925a01743da396c60f47819d2db2139e4d4c2-1008x630.png?w=1200",
+      "sources": [],
+      "readTime": "7 min",
+      "shortId": 404
+    },
+    {
+      "filename": "2026-09-28-jev-ai-speeds-agent-decisions-193x-the-lightweight.md",
+      "slug": "2026-09-28-jev-ai-speeds-agent-decisions-193x-the-lightweight",
+      "url": "/blog/2026-09-28-jev-ai-speeds-agent-decisions-193x-the-lightweight/",
+      "title": "Jev AI Speeds Agent Decisions 193x \u2014 The Lightweight Model Pattern Founders Are Using",
+      "date": "2026-09-28",
+      "published_at": "2026-09-28T09:29:56.897Z",
+      "tags": [
+        "Jev AI",
+        "AI agents",
+        "bounded judgments",
+        "cost optimization",
+        "agent architecture",
+        "lightweight models"
+      ],
+      "excerpt": "Developers are using Jev for fast, cheap decision-making in agent workflows. One engineer ran 5,400 executions for $0.042/M tokens. Here's how it changes agent architecture.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdAxrv_NHEdRHh7Dd5acbQt_27RVlmFfa9oDijI740mw&s=10",
       "sources": [],
       "readTime": "7 min",
       "shortId": 403
