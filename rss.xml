@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 28 Sep 2026 04:52:37 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 04:53:53 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Spivak Calculus fully formalized in Lean 4</title>
@@ -20,6 +20,34 @@
       <category>calculus</category>
       <enclosure url="https://bitroot.org/blog/media/2026-09-27-spivak-calculus-fully-formalized-in-lean-4.png" type="image/png" length="0" />
       <source url="https://github.com/stormj-UH/spivak-lean">Original Source</source>
+    </item>
+    <item>
+      <title>reladraw releases version 0.8.0, a placement‑focused diagram language</title>
+      <link>https://bitroot.org/blog/2026-09-27-reladraw-releases-version-080-a-placementfocused-d/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-27-reladraw-releases-version-080-a-placementfocused-d/</guid>
+      <description>Contribute to reladraw/reladraw development by creating an account on GitHub.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/reladraw/reladraw"&gt;https://github.com/reladraw/reladraw&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sun, 27 Sep 2026 14:27:29 +0000</pubDate>
+      <category>diagrams</category>
+      <category>cli</category>
+      <category>typescript</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-09-27-reladraw-releases-version-080-a-placementfocused-d.png" type="image/png" length="0" />
+      <source url="https://github.com/reladraw/reladraw">Original Source</source>
+    </item>
+    <item>
+      <title>Qwen3‑0.6B inference runs inside Linux eBPF kernel</title>
+      <link>https://bitroot.org/blog/2026-09-26-qwen306b-inference-runs-inside-linux-ebpf-kernel/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-26-qwen306b-inference-runs-inside-linux-ebpf-kernel/</guid>
+      <description>Can Linux eBPF execute a real language model? A Qwen3-0.6B experiment shows exactly which work runs in the kernel, how fast it is, and why INT4 and arena memory remain open tradeoffs.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://eunomia.dev/blog/2026/09/24/qwen3-ebpf-in-kernel-inference/"&gt;https://eunomia.dev/blog/2026/09/24/qwen3-ebpf-in-kernel-inference/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 26 Sep 2026 13:32:24 +0000</pubDate>
+      <category>ebpf</category>
+      <category>language-model</category>
+      <category>inference</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-09-26-qwen306b-inference-runs-inside-linux-ebpf-kernel.png" type="image/png" length="0" />
+      <source url="https://eunomia.dev/blog/2026/09/24/qwen3-ebpf-in-kernel-inference/">Original Source</source>
     </item>
     <item>
       <title>Muse Early Access Program: How to Get First Access to Computer Control &amp; Avatar Features</title>
