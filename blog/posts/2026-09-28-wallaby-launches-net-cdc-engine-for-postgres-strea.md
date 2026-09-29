@@ -1,17 +1,15 @@
 ---
-date: '2026-09-28'
-excerpt: 'Postgres change data capture for .NET: stream row changes through typed
-  transforms into Meilisearch, Elasticsearch, OpenSearch, Kafka, pgvector or any HTTP
-  endpoint.'
+date: '2026-09-29'
+excerpt: 'Postgres change data capture for .NET: stream row changes through typed transforms into Meilisearch, Elasticsearch, OpenSearch, Kafka, pgvector or any HTTP endpoint.'
 image: https://bitroot.org/blog/media/2026-09-28-wallaby-launches-net-cdc-engine-for-postgres-strea.png
 published_at: '2026-09-28T17:13:12.628461+00:00'
 sources:
 - https://wallabycdc.net/
 tags:
-- postgres
-- cdc
-- .net
-title: Wallaby launches .NET CDC engine for Postgres streaming
+- 'postgres'
+- 'cdc'
+- '.net'
+title: 'Wallaby launches .NET CDC engine for Postgres streaming'
 ---
 
 Wallaby launches .NET CDC engine for Postgres streaming
