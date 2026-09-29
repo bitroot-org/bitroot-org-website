@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "count": 405,
+  "count": 406,
   "posts": [
     "2026-09-28-wallaby-launches-net-cdc-engine-for-postgres-strea.md",
     "2026-09-28-sarvam-ai-now-hosts-us-models-why-this-matters-for.md",
@@ -9,6 +9,7 @@
     "2026-09-27-reladraw-releases-version-080-a-placementfocused-d.md",
     "2026-09-26-qwen306b-inference-runs-inside-linux-ebpf-kernel.md",
     "2026-09-26-muse-early-access-program-how-to-get-first-access.md",
+    "2026-09-26-agentic-cuda-optimizer-automates-kernel-tuning-via.md",
     "2026-09-25-claudes-refusal-billing-cost-impact-for-founders-a.md",
     "2026-09-25-c3-language-gets-an-inbrowser-playground-with-grap.md",
     "2026-09-24-simten-releases-in-browser-nand-logic-simulator.md",
@@ -427,7 +428,7 @@
         "https://wallabycdc.net/"
       ],
       "readTime": "2 min",
-      "shortId": 405
+      "shortId": 406
     },
     {
       "filename": "2026-09-28-sarvam-ai-now-hosts-us-models-why-this-matters-for.md",
@@ -447,7 +448,7 @@
       "image": "https://assets.sarvam.ai/tr:q-70,f-auto,dpr-auto/images/03117ysv/production/f8f925a01743da396c60f47819d2db2139e4d4c2-1008x630.png?w=1200",
       "sources": [],
       "readTime": "7 min",
-      "shortId": 404
+      "shortId": 405
     },
     {
       "filename": "2026-09-28-jev-ai-speeds-agent-decisions-193x-the-lightweight.md",
@@ -468,7 +469,7 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdAxrv_NHEdRHh7Dd5acbQt_27RVlmFfa9oDijI740mw&s=10",
       "sources": [],
       "readTime": "7 min",
-      "shortId": 403
+      "shortId": 404
     },
     {
       "filename": "2026-09-27-spivak-calculus-fully-formalized-in-lean-4.md",
@@ -488,7 +489,7 @@
         "https://github.com/stormj-UH/spivak-lean"
       ],
       "readTime": "2 min",
-      "shortId": 402
+      "shortId": 403
     },
     {
       "filename": "2026-09-27-reladraw-releases-version-080-a-placementfocused-d.md",
@@ -508,7 +509,7 @@
         "https://github.com/reladraw/reladraw"
       ],
       "readTime": "2 min",
-      "shortId": 401
+      "shortId": 402
     },
     {
       "filename": "2026-09-26-qwen306b-inference-runs-inside-linux-ebpf-kernel.md",
@@ -528,7 +529,7 @@
         "https://eunomia.dev/blog/2026/09/24/qwen3-ebpf-in-kernel-inference/"
       ],
       "readTime": "2 min",
-      "shortId": 400
+      "shortId": 401
     },
     {
       "filename": "2026-09-26-muse-early-access-program-how-to-get-first-access.md",
@@ -548,6 +549,26 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShvLO0yuSR5_Pofzw8MDRMhFXB0z_4sUW16XhqPxQtrg&s=10",
       "sources": [],
       "readTime": "5 min",
+      "shortId": 400
+    },
+    {
+      "filename": "2026-09-26-agentic-cuda-optimizer-automates-kernel-tuning-via.md",
+      "slug": "2026-09-26-agentic-cuda-optimizer-automates-kernel-tuning-via",
+      "url": "/blog/2026-09-26-agentic-cuda-optimizer-automates-kernel-tuning-via/",
+      "title": "Agentic CUDA optimizer automates kernel tuning via LangGraph",
+      "date": "2026-09-26",
+      "published_at": "2026-09-26T13:31:48.857122+00:00",
+      "tags": [
+        "cuda",
+        "optimizer",
+        "langgraph"
+      ],
+      "excerpt": "A langgraph based workflow with a C++ CUDA harness to optimize CUDA kernels - bertaye/agentic-cuda-optimizer",
+      "image": "https://bitroot.org/blog/media/2026-09-26-agentic-cuda-optimizer-automates-kernel-tuning-via.png",
+      "sources": [
+        "https://github.com/bertaye/agentic-cuda-optimizer"
+      ],
+      "readTime": "2 min",
       "shortId": 399
     },
     {
