@@ -30,6 +30,13 @@ from pathlib import Path
 import frontmatter
 import markdown
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from build_index import (  # noqa: E402 - shared with the /blog index
+    CATEGORY_LABELS,
+    categorize,
+    render_card,
+)
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 POSTS_DIR = REPO_ROOT / "blog" / "posts"
 # Curated index of bitroot.org kits + guides, used to cross-link each post to
@@ -212,6 +219,81 @@ def hero_html(meta, slug):
     return f"""            <div class="post-hero-image">
                 <img src="{esc(image)}" alt="{esc(title)}" fetchpriority="high" decoding="async" onerror="this.onerror=null;this.src='{PLACEHOLDER_IMAGE}'">
             </div>"""
+
+
+def title_html(title):
+    """Stocksy-style two-tone headline: the part after a colon/dash (or the
+    last two words of a longer title) is set in the italic serif."""
+    for sep in (": ", " — ", " – ", " - "):
+        if sep in title:
+            head, tail = title.split(sep, 1)
+            if head.strip() and tail.strip():
+                mark = sep.strip()
+                lead = f"{esc(head)}{esc(mark)}" if mark == ":" else f"{esc(head)} {esc(mark)}"
+                return f'{lead} <em>{esc(tail)}</em>'
+    words = title.split()
+    if len(words) >= 5:
+        return f'{esc(" ".join(words[:-2]))} <em>{esc(" ".join(words[-2:]))}</em>'
+    return esc(title)
+
+
+SHARE_ICONS = {
+    "x": '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7l-5.5-7.2L4.5 22H1.4l8.1-9.3L1 2h7.2l5 6.6L18.9 2Zm-1.2 18h1.7L7.4 3.9H5.6L17.7 20Z"/></svg>',
+    "linkedin": '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>',
+    "whatsapp": '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35ZM12.05 21.5h-.01a9.4 9.4 0 0 1-4.79-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.4 9.4 0 0 1-1.44-5.01c0-5.2 4.23-9.43 9.43-9.43 2.52 0 4.89.98 6.67 2.77a9.36 9.36 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.45 9.43Zm8.03-17.46A11.3 11.3 0 0 0 12.05.72C5.8.72.7 5.8.7 12.06c0 2 .52 3.95 1.52 5.67L.6 23.28l5.7-1.5a11.3 11.3 0 0 0 5.74 1.47h.01c6.26 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.32-8.02Z"/></svg>',
+    "copy": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>',
+}
+
+
+def share_rail_html(canonical, title):
+    from urllib.parse import quote
+
+    u, t = quote(canonical, safe=""), quote(title, safe="")
+    links = [
+        ("x", "Share on X", f"https://x.com/intent/tweet?text={t}&amp;url={u}"),
+        ("linkedin", "Share on LinkedIn", f"https://www.linkedin.com/sharing/share-offsite/?url={u}"),
+        ("whatsapp", "Share on WhatsApp", f"https://wa.me/?text={t}%20{u}"),
+    ]
+    items = "\n".join(
+        f'                <a class="ar-share-btn" href="{href}" target="_blank" rel="noopener noreferrer" aria-label="{label}">{SHARE_ICONS[key]}</a>'
+        for key, label, href in links
+    )
+    return f"""            <aside class="ar-share" aria-label="Share this story">
+                <span class="ar-share-label">Share this story</span>
+{items}
+                <button class="ar-share-btn" type="button" id="share-btn" aria-label="Copy link" title="Copy link">{SHARE_ICONS["copy"]}</button>
+            </aside>"""
+
+
+def more_html(current, pool, limit=4):
+    """Staggered 'More from the newslogger' grid: same-category posts closest
+    in time first, topped up with the nearest posts overall."""
+    cats = current.get("categories") or []
+    others = [p for p in pool if p["slug"] != current["slug"]]
+    key = lambda p: abs(p["_ord"] - current["_ord"])  # noqa: E731
+    same = sorted((p for p in others if cats and cats[0] in (p.get("categories") or [])), key=key)
+    picks = same[:limit]
+    if len(picks) < limit:
+        seen = {p["slug"] for p in picks}
+        picks += [p for p in sorted(others, key=key) if p["slug"] not in seen][: limit - len(picks)]
+    if not picks:
+        return ""
+    cards = "\n".join(render_card(p, indent=16) for p in picks)
+    cat = cats[0] if cats else None
+    view_all = (
+        f'<a class="nl-viewall" href="/blog/?c={cat}">More {esc(CATEGORY_LABELS[cat])} '
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a>'
+        if cat else '<a class="nl-viewall" href="/blog/">All posts</a>'
+    )
+    return f"""        <section class="ar-more" aria-labelledby="ar-more-title">
+            <div class="nl-section-head">
+                <h2 class="nl-h2" id="ar-more-title">More from the <em>newslogger</em></h2>
+                {view_all}
+            </div>
+            <div class="ar-more-grid">
+{cards}
+            </div>
+        </section>"""
 
 
 def json_ld(meta, slug, canonical, word_count):
@@ -441,7 +523,7 @@ def adjacent_nav(prev_post, next_post):
     return "\n".join(parts)
 
 
-def render_page(meta, content, slug, prev_post, next_post):
+def render_page(meta, content, slug, prev_post, next_post, card=None, pool=()):
     title = collapse_ws(meta.get("title", "Untitled"))
     page_title = f"{title} | Bitroot Newslogger"
     excerpt = clamp(meta.get("excerpt", "") or f"{title} — on the Bitroot newslogger.")
@@ -461,6 +543,15 @@ def render_page(meta, content, slug, prev_post, next_post):
     body_html = render_markdown(content)
     references = build_references(meta, body_html)
     related_block = related_html(related_items(tags, title))
+    card = card or {"slug": slug, "categories": [], "_ord": 0}
+    cats = card.get("categories") or []
+    if cats:
+        crumb = (f'<a href="/blog/?c={cats[0]}">{esc(CATEGORY_LABELS[cats[0]])}</a>'
+                 f'<span class="ar-crumb-sep">/</span><span>{esc(tag)}</span>')
+    else:
+        crumb = f'<a href="/blog/">Newslogger</a><span class="ar-crumb-sep">/</span><span>{esc(tag)}</span>'
+    lede = collapse_ws(meta.get("excerpt", ""))
+    lede_html = f'                <p class="ar-lede">{esc(lede)}</p>\n' if lede else ""
 
     refs_html = ""
     if references:
@@ -513,6 +604,7 @@ def render_page(meta, content, slug, prev_post, next_post):
     <link rel="icon" type="image/png" href="{FAVICON_URL}">
     <link rel="alternate" type="application/rss+xml" title="Newslogger | Bitroot" href="/rss.xml">
     <link rel="stylesheet" href="/blog/css/blog.css">
+    <link rel="stylesheet" href="/blog/css/newslogger.css">
     <link rel="stylesheet" href="/blog/css/post.css">
     <link rel="stylesheet" href="/blog/css/ad-slots.css">
 
@@ -540,56 +632,51 @@ def render_page(meta, content, slug, prev_post, next_post):
     </script>
 {POSTHOG_SNIPPET}
 </head>
-<body>
-    <!-- Minimal Header -->
-    <header class="header">
-        <nav class="nav">
-            <a href="/" class="logo"><img src="{LOGO_URL}" alt="Bitroot" class="logo-img" width="120" height="32"></a>
-            <div class="nav-links">
-                <a href="/blog/" class="nav-link">newslogger</a>
-                <a href="/" class="nav-link">home</a>
+<body class="nl-index nl-post">
+    <!-- Floating glass navbar (same as the /blog index) -->
+    <header class="glass-nav nl-nav">
+        <nav class="glass-nav-inner" aria-label="Site">
+            <a href="/" class="shell-logo"><img src="{LOGO_URL}" alt="Bitroot" class="logo-img" width="112" height="28"></a>
+            <div class="shell-links">
+                <a href="/blog/" class="shell-link active">newslogger</a>
+                <a href="/" class="shell-link">home</a>
                 <button class="theme-toggle" aria-label="Toggle theme">
                     <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                     <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                 </button>
             </div>
         </nav>
+        <div class="ar-progress" aria-hidden="true"><span id="ar-progress-bar"></span></div>
     </header>
 
-    <!-- Post Content -->
-    <main class="post-page">
-        <article class="post-article" id="post-content" data-post-slug="{esc(slug)}">
-{hero_html(meta, slug)}
-            <header class="post-header">
-                <div class="post-meta">
-                    <span class="post-tag">{esc(tag)}</span>
-                    <span class="post-date"><time datetime="{esc(published_iso)}">{esc(display_date)}</time></span>
-                    <span class="post-read-time">{read_time} min read</span>
-                </div>
-                <h1 class="post-title">{esc(title)}</h1>
-            </header>
-            <div class="post-body">
-{body_html}
+    <main class="ar post-page">
+        <header class="ar-head">
+            <div class="ar-meta">
+                <span class="ar-crumb">{crumb}</span>
+                <time class="ar-date" datetime="{esc(published_iso)}">{esc(display_date)}</time>
+                <span class="ar-by">By: Bitroot Newslogger &middot; {read_time} min read</span>
             </div>
+            <h1 class="ar-title post-title">{title_html(title)}</h1>
+        </header>
+
+        <figure class="ar-hero">
+{hero_html(meta, slug)}
+        </figure>
+
+        <div class="ar-layout">
+{share_rail_html(canonical, title)}
+            <article class="post-article ar-article" id="post-content" data-post-slug="{esc(slug)}">
+{lede_html}                <div class="post-body">
+{body_html}
+                </div>
 {refs_html}
 {related_block}
 {newsletter_inline_html()}
-            <nav class="post-nav">
-                <a href="/blog/" class="back-link">&larr; Back to newslogger</a>
-                <div class="post-nav-actions">
-                    <button class="share-btn" id="share-btn" aria-label="Share this post" title="Share">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="18" cy="5" r="3"></circle>
-                            <circle cx="6" cy="12" r="3"></circle>
-                            <circle cx="18" cy="19" r="3"></circle>
-                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
-                        </svg>
-                    </button>
-                </div>
-            </nav>
 {adjacent_nav(prev_post, next_post)}
-        </article>
+            </article>
+        </div>
+
+{more_html(card, pool)}
     </main>
 
     <!-- Footer -->
@@ -620,23 +707,41 @@ def render_page(meta, content, slug, prev_post, next_post):
         if (shareBtn) {{
             var shareUrl = {json.dumps(canonical)};
             var shareTitle = {json.dumps(title)};
-            var shareText = {json.dumps(excerpt)};
             shareBtn.addEventListener('click', function() {{
-                if (navigator.share) {{
-                    navigator.share({{ title: shareTitle, text: shareText, url: shareUrl }}).catch(function() {{}});
-                }} else if (navigator.clipboard) {{
+                var coarse = window.matchMedia('(pointer: coarse)').matches;
+                if (coarse && navigator.share) {{
+                    navigator.share({{ title: shareTitle, url: shareUrl }}).catch(function() {{}});
+                    return;
+                }}
+                if (navigator.clipboard) {{
                     navigator.clipboard.writeText(shareUrl).then(function() {{
                         shareBtn.classList.add('copied');
-                        shareBtn.title = 'Link copied!';
+                        shareBtn.setAttribute('aria-label', 'Link copied');
                         setTimeout(function() {{
                             shareBtn.classList.remove('copied');
-                            shareBtn.title = 'Share';
-                        }}, 2000);
-                    }}, function() {{
-                        window.open('https://x.com/intent/tweet?text=' + encodeURIComponent(shareTitle) + '&url=' + encodeURIComponent(shareUrl), '_blank');
+                            shareBtn.setAttribute('aria-label', 'Copy link');
+                        }}, 1800);
                     }});
                 }}
             }});
+        }}
+
+        // Reading progress along the bottom edge of the navbar.
+        var bar = document.getElementById('ar-progress-bar');
+        var art = document.getElementById('post-content');
+        if (bar && art) {{
+            var ticking = false;
+            var update = function() {{
+                ticking = false;
+                var r = art.getBoundingClientRect();
+                var total = r.height - window.innerHeight * 0.6;
+                var pct = total > 0 ? Math.min(1, Math.max(0, -r.top / total)) : 0;
+                bar.style.transform = 'scaleX(' + pct + ')';
+            }};
+            window.addEventListener('scroll', function() {{
+                if (!ticking) {{ ticking = true; requestAnimationFrame(update); }}
+            }}, {{ passive: true }});
+            update();
         }}
     }})();
     </script>
@@ -685,11 +790,33 @@ def main():
         print("No posts found — nothing to build.")
         return
 
+    # Card-shaped records (same fields as posts/index.json) for the
+    # "More from the newslogger" grid; _ord = position in newest-first order.
+    pool = []
+    for i, post in enumerate(posts):
+        m = post["meta"]
+        card = {
+            "slug": post["slug"],
+            "url": f"/blog/{post['slug']}/",
+            "title": post["title"],
+            "date": post["date"],
+            "published_at": m.get("published_at", ""),
+            "tags": m.get("tags") or [],
+            "image": post_image(m),
+            "readTime": f"{max(1, math.ceil(len(post['content'].split()) / 200))} min",
+            "_ord": i,
+        }
+        card["categories"] = categorize(card)
+        pool.append(card)
+
     built = 0
     for i, post in enumerate(posts):
         prev_post = posts[i - 1] if i > 0 else None  # newer
         next_post = posts[i + 1] if i < len(posts) - 1 else None  # older
-        page = render_page(post["meta"], post["content"], post["slug"], prev_post, next_post)
+        page = render_page(
+            post["meta"], post["content"], post["slug"], prev_post, next_post,
+            card=pool[i], pool=pool,
+        )
         out_dir = out_root / "blog" / post["slug"]
         out_dir.mkdir(parents=True, exist_ok=True)
         (out_dir / "index.html").write_text(page, encoding="utf-8")

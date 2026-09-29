@@ -893,3 +893,46 @@ body.page-fading {
   opacity: 0;
   pointer-events: none;
 }
+
+/* Newslogger "Latest" rail on the homepage: full-bleed horizontal scroller
+   whose first card lines up with <Container> (max 1240px, px-5/sm:8/lg:10). */
+.newslogger-rail {
+  --rail-pad: 20px;
+  --rail-gap: 24px;
+  --rail-inset: max(var(--rail-pad), calc((100vw - 1240px) / 2 + var(--rail-pad)));
+  --rail-content: calc(min(100vw, 1240px) - 2 * var(--rail-pad));
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((var(--rail-content) - 2 * var(--rail-gap)) / 2.3);
+  gap: var(--rail-gap);
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  padding-inline: var(--rail-inset);
+  scroll-padding-inline: var(--rail-inset);
+  padding-bottom: 6px;
+}
+.newslogger-rail::-webkit-scrollbar {
+  display: none;
+}
+.newslogger-rail > * {
+  scroll-snap-align: start;
+}
+@media (min-width: 640px) {
+  .newslogger-rail { --rail-pad: 32px; }
+}
+@media (min-width: 1024px) {
+  .newslogger-rail { --rail-pad: 40px; }
+}
+@media (max-width: 960px) {
+  .newslogger-rail {
+    grid-auto-columns: calc((var(--rail-content) - var(--rail-gap)) / 1.6);
+  }
+}
+@media (max-width: 640px) {
+  .newslogger-rail {
+    --rail-gap: 16px;
+    grid-auto-columns: 82%;
+  }
+}
