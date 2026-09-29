@@ -36,6 +36,7 @@
     <link rel="icon" type="image/png" href="https://bitroot.org/blog/media/images/favicon.png">
     <link rel="alternate" type="application/rss+xml" title="Newslogger | Bitroot" href="/rss.xml">
     <link rel="stylesheet" href="/blog/css/blog.css">
+    <link rel="stylesheet" href="/blog/css/newslogger.css">
 
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","@id":"https://bitroot.org/blog/#blog","url":"https://bitroot.org/blog/","name":"Bitroot Newslogger","description":"Daily AI and tech news for founders and builders.","inLanguage":"en","publisher":{"@type":"NewsMediaOrganization","name":"Bitroot","url":"https://bitroot.org","logo":{"@type":"ImageObject","url":"https://bitroot.org/blog/media/images/bitroot-dark-text-border.png"}}}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://bitroot.org"},{"@type":"ListItem","position":2,"name":"Newslogger","item":"https://bitroot.org/blog/"}]}</script>
@@ -97,7 +98,7 @@
         posthog.register({ site: 'blog' })
     </script>
 </head>
-<body>
+<body class="nl-index">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-3HDKNMVC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
@@ -138,140 +139,124 @@
         </div>
     </div>
 
-    <!-- Floating glass navbar -->
-    <header class="glass-nav">
-        <nav class="glass-nav-inner">
-            <a href="/" class="shell-logo"><img src="https://bitroot.org/blog/media/images/bitroot-dark-text-border.png" alt="Bitroot" class="logo-img"></a>
+    <!-- Floating glass navbar; category chips dock into it once the hero scrolls away -->
+    <header class="glass-nav nl-nav" id="nl-nav">
+        <nav class="glass-nav-inner" aria-label="Site">
+            <a href="/" class="shell-logo"><img src="https://bitroot.org/blog/media/images/bitroot-dark-text-border.png" alt="Bitroot" class="logo-img" width="112" height="28"></a>
             <div class="shell-links">
-                <a href="/blog" class="shell-link active">newslogger</a>
+                <a href="/blog/" class="shell-link active">newslogger</a>
                 <a href="/" class="shell-link">home</a>
+                <a href="/rss.xml" class="shell-link">rss</a>
                 <button class="theme-toggle" aria-label="Toggle theme">
                     <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                     <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                 </button>
             </div>
         </nav>
+        <div class="nl-nav-chips" id="nl-nav-chips" aria-hidden="true"></div>
     </header>
 
-    <!-- Dark capsule: title + filters + search -->
-    <section class="blog-shell" aria-label="Browse the newslogger">
-        <div class="shell-body">
-            <h1 class="shell-title">Newslogger</h1>
-            <div class="filter-pills" id="blog-filters" aria-label="Filter posts by tag">
-                <button class="filter-pill active" data-tag="All">All</button>
-            </div>
-            <div class="search-box">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                <input type="search" id="blog-search" placeholder="I want to read about..." aria-label="Search blog posts">
-            </div>
+    <!-- Hero: title, search, category chips -->
+    <section class="nl-hero" aria-label="Browse the newslogger">
+        <h1 class="nl-title">Newslogger</h1>
+        <p class="nl-lede">Daily AI and tech news for founders and builders. What shipped, what it costs, and whether it matters <em>to you.</em></p>
+        <label class="nl-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><line x1="21" y1="21" x2="16.4" y2="16.4"/></svg>
+            <input type="search" id="blog-search" placeholder="Search all posts..." aria-label="Search posts" autocomplete="off">
+        </label>
+        <div class="nl-chips" id="blog-filters" role="toolbar" aria-label="Filter by category">
+                <button class="nl-chip is-active" type="button" data-cat="all" aria-pressed="true">All</button>
+                <button class="nl-chip" type="button" data-cat="models" aria-pressed="false">AI Models</button>
+                <button class="nl-chip" type="button" data-cat="agents" aria-pressed="false">Agents &amp; Dev Tools</button>
+                <button class="nl-chip" type="button" data-cat="founders" aria-pressed="false">Founders &amp; Business</button>
+                <button class="nl-chip" type="button" data-cat="opensource" aria-pressed="false">Open Source</button>
+                <button class="nl-chip" type="button" data-cat="design" aria-pressed="false">Design &amp; Media</button>
+                <button class="nl-chip" type="button" data-cat="engineering" aria-pressed="false">Engineering</button>
         </div>
     </section>
 
-    <!-- Blog Showcase Section -->
-    <main class="showcase">
+    <main class="showcase nl-main" id="nl-main">
         <!-- POSTS:BEGIN — generated by build_index.py, do not edit by hand -->
-        <div class="cards-grid" id="posts-grid">
-            <a class="card" data-post-slug="2026-09-23-gpt-6-sol-and-luna-50-price-drop-what-changed-when" href="/blog/2026-09-23-gpt-6-sol-and-luna-50-price-drop-what-changed-when/">
-                <img class="card-bg" src="https://techcrunch.com/wp-content/uploads/2026/09/openai-getty.jpg?resize=1280,853" alt="GPT-6 Sol and Luna: 50% Price Drop, What Changed, When to Use Each" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-23-gpt-6-sol-and-luna-50-price-drop-what-changed-when'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">GPT-6 Sol and Luna: 50% Price Drop, What Changed, When to Use Each</h3>
-                    <p class="card-excerpt">OpenAI&#x27;s GPT-6 Sol and Luna launched Sept 22 with claimed 50% cost reduction. Here&#x27;s the pricing breakdown, use-case routing, and why there&#x27;s no GPT-6 Terra—yet.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">OpenAI</span>
-                        <span class="card-info">23 Sep 2026 &bull; 9 min read</span>
+        <div id="nl-home">
+        <section class="nl-section" aria-labelledby="nl-all-title">
+            <div class="nl-section-head">
+                <h2 class="nl-h2" id="nl-all-title">All posts <span class="nl-h2-sub">Page 3 of 46</span></h2>
+            </div>
+            <div class="nl-grid">
+                <a class="nl-card nl-card--md" data-post-slug="2026-09-23-gpt-6-sol-and-luna-50-price-drop-what-changed-when" href="/blog/2026-09-23-gpt-6-sol-and-luna-50-price-drop-what-changed-when/">
+                    <div class="nl-card-media"><img src="https://techcrunch.com/wp-content/uploads/2026/09/openai-getty.jpg?resize=1280,853" alt="GPT-6 Sol and Luna: 50% Price Drop, What Changed, When to Use Each" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-23-gpt-6-sol-and-luna-50-price-drop-what-changed-when'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">GPT-6 Sol and Luna: 50% Price Drop, What Changed, When to Use Each</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-09-22-how-to-build-a-personal-stylist-app-with-muse-ai-a" href="/blog/2026-09-22-how-to-build-a-personal-stylist-app-with-muse-ai-a/">
-                <img class="card-bg" src="https://www.figma.com/community/thumbnail?resource_id=1190067223006709410&amp;resource_type=plugin" alt="How to Build a Personal Stylist App with Muse AI (And What It Means for No-Code)" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-22-how-to-build-a-personal-stylist-app-with-muse-ai-a'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">How to Build a Personal Stylist App with Muse AI (And What It Means for No-Code)</h3>
-                    <p class="card-excerpt">Users are building custom personal stylist apps with Meta&#x27;s Muse AI, launched Sept 8, 2026. No code required. Here&#x27;s how to build one yourself—and what this signal means for the…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">AI</span>
-                        <span class="card-info">22 Sep 2026 &bull; 9 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>23 Sep 2026 &middot; 9 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-09-22-how-to-build-a-personal-stylist-app-with-muse-ai-a" href="/blog/2026-09-22-how-to-build-a-personal-stylist-app-with-muse-ai-a/">
+                    <div class="nl-card-media"><img src="https://www.figma.com/community/thumbnail?resource_id=1190067223006709410&amp;resource_type=plugin" alt="How to Build a Personal Stylist App with Muse AI (And What It Means for No-Code)" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-22-how-to-build-a-personal-stylist-app-with-muse-ai-a'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">How to Build a Personal Stylist App with Muse AI (And What It Means for No-Code)</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-09-22-ai-solving-math-problems-what-openais-100-breakthr" href="/blog/2026-09-22-ai-solving-math-problems-what-openais-100-breakthr/">
-                <img class="card-bg" src="https://techcrunch.com/wp-content/uploads/2026/09/51013975207_8dcac5cf72_k.jpg?resize=1280,960" alt="AI Solving Math Problems: What OpenAI&#x27;s 100+ Breakthroughs Mean for Your Research Product" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-22-ai-solving-math-problems-what-openais-100-breakthr'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">AI Solving Math Problems: What OpenAI&#x27;s 100+ Breakthroughs Mean for Your Research Product</h3>
-                    <p class="card-excerpt">OpenAI claims its AI solved 100+ open math problems and formed an advisory group with zero power to slow research. Here&#x27;s what changed for research-driven founders and why…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">AI</span>
-                        <span class="card-info">22 Sep 2026 &bull; 9 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Founders &amp; Business</span><span>22 Sep 2026 &middot; 9 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-09-22-ai-solving-math-problems-what-openais-100-breakthr" href="/blog/2026-09-22-ai-solving-math-problems-what-openais-100-breakthr/">
+                    <div class="nl-card-media"><img src="https://techcrunch.com/wp-content/uploads/2026/09/51013975207_8dcac5cf72_k.jpg?resize=1280,960" alt="AI Solving Math Problems: What OpenAI&#x27;s 100+ Breakthroughs Mean for Your Research Product" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-22-ai-solving-math-problems-what-openais-100-breakthr'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">AI Solving Math Problems: What OpenAI&#x27;s 100+ Breakthroughs Mean for Your Research Product</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-09-21-pace-the-frontier-what-dario-amodeis-ai-safety-pro" href="/blog/2026-09-21-pace-the-frontier-what-dario-amodeis-ai-safety-pro/">
-                <img class="card-bg" src="https://pbs.twimg.com/card_img/2101361744484663296/jN6MiOGJ?format=jpg&amp;name=small" alt="Pace the Frontier: What Dario Amodei&#x27;s AI Safety Proposal Means for Founders" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-21-pace-the-frontier-what-dario-amodeis-ai-safety-pro'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Pace the Frontier: What Dario Amodei&#x27;s AI Safety Proposal Means for Founders</h3>
-                    <p class="card-excerpt">Dario Amodei&#x27;s proposal to slow frontier AI development could reshape competitive dynamics for founders building AI products. Here&#x27;s what pacing means for your strategy, and who…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">AI</span>
-                        <span class="card-info">21 Sep 2026 &bull; 10 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>22 Sep 2026 &middot; 9 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-09-21-pace-the-frontier-what-dario-amodeis-ai-safety-pro" href="/blog/2026-09-21-pace-the-frontier-what-dario-amodeis-ai-safety-pro/">
+                    <div class="nl-card-media"><img src="https://pbs.twimg.com/card_img/2101361744484663296/jN6MiOGJ?format=jpg&amp;name=small" alt="Pace the Frontier: What Dario Amodei&#x27;s AI Safety Proposal Means for Founders" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-21-pace-the-frontier-what-dario-amodeis-ai-safety-pro'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Pace the Frontier: What Dario Amodei&#x27;s AI Safety Proposal Means for Founders</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-09-21-higgsfield-api-guide-how-to-integrate-50-models-fo" href="/blog/2026-09-21-higgsfield-api-guide-how-to-integrate-50-models-fo/">
-                <img class="card-bg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLt-3wUW9cFKIPkUDFVlenX6eHxlFqRyBGGAAGbeWn2w&amp;s=10" alt="Higgsfield API Guide: How to Integrate 50+ Models for Pay-Per-Use" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-21-higgsfield-api-guide-how-to-integrate-50-models-fo'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Higgsfield API Guide: How to Integrate 50+ Models for Pay-Per-Use</h3>
-                    <p class="card-excerpt">Higgsfield&#x27;s API launched Sept 16, 2026, offering pay-per-generation access to 50+ video and image models. This guide covers setup, pricing comparison with subscriptions, and…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">AI</span>
-                        <span class="card-info">21 Sep 2026 &bull; 8 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Founders &amp; Business</span><span>21 Sep 2026 &middot; 10 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-09-21-higgsfield-api-guide-how-to-integrate-50-models-fo" href="/blog/2026-09-21-higgsfield-api-guide-how-to-integrate-50-models-fo/">
+                    <div class="nl-card-media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLt-3wUW9cFKIPkUDFVlenX6eHxlFqRyBGGAAGbeWn2w&amp;s=10" alt="Higgsfield API Guide: How to Integrate 50+ Models for Pay-Per-Use" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-21-higgsfield-api-guide-how-to-integrate-50-models-fo'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Higgsfield API Guide: How to Integrate 50+ Models for Pay-Per-Use</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-09-21-chatgpt-higgsfield-how-to-generate-ai-videos-witho" href="/blog/2026-09-21-chatgpt-higgsfield-how-to-generate-ai-videos-witho/">
-                <img class="card-bg" src="https://higgsfield.ai/cdn-cgi/image/fit=scale-down,format=webp,onerror=redirect,width=1280,quality=85/https://cdn.sanity.io/images/s479xw3z/production/9d59c57edd5d720798c6f2d8cb24ee80f5ead4e5-2048x1152.png" alt="ChatGPT + Higgsfield: How to Generate AI Videos Without Switching" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-21-chatgpt-higgsfield-how-to-generate-ai-videos-witho'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">ChatGPT + Higgsfield: How to Generate AI Videos Without Switching</h3>
-                    <p class="card-excerpt">Connect Higgsfield to ChatGPT in 3 steps. Generate videos with Seedance 2.5, Kling 3, Soul 2.0. Cost breakdown + decision framework. No tab-switching.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">chatgpt-plugins</span>
-                        <span class="card-info">21 Sep 2026 &bull; 8 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>21 Sep 2026 &middot; 8 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-09-21-chatgpt-higgsfield-how-to-generate-ai-videos-witho" href="/blog/2026-09-21-chatgpt-higgsfield-how-to-generate-ai-videos-witho/">
+                    <div class="nl-card-media"><img src="https://higgsfield.ai/cdn-cgi/image/fit=scale-down,format=webp,onerror=redirect,width=1280,quality=85/https://cdn.sanity.io/images/s479xw3z/production/9d59c57edd5d720798c6f2d8cb24ee80f5ead4e5-2048x1152.png" alt="ChatGPT + Higgsfield: How to Generate AI Videos Without Switching" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-21-chatgpt-higgsfield-how-to-generate-ai-videos-witho'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">ChatGPT + Higgsfield: How to Generate AI Videos Without Switching</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-09-19-best-household-ai-agent-2026-google-cc-vs-instinct" href="/blog/2026-09-19-best-household-ai-agent-2026-google-cc-vs-instinct/">
-                <img class="card-bg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7obb7QPNks1narecFoHlRwS1kVGLMeXq9G6OA2yRwEw&amp;s=10" alt="Best Household AI Agent 2026: Google CC vs Instinct vs Ollie" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-19-best-household-ai-agent-2026-google-cc-vs-instinct'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Best Household AI Agent 2026: Google CC vs Instinct vs Ollie</h3>
-                    <p class="card-excerpt">Google CC free vs Instinct $1.3K/mo vs Ollie vs Fambot. Real cost breakdown by household size. Which agent wins for your family structure.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">household-ai</span>
-                        <span class="card-info">19 Sep 2026 &bull; 11 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>21 Sep 2026 &middot; 8 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-09-19-best-household-ai-agent-2026-google-cc-vs-instinct" href="/blog/2026-09-19-best-household-ai-agent-2026-google-cc-vs-instinct/">
+                    <div class="nl-card-media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7obb7QPNks1narecFoHlRwS1kVGLMeXq9G6OA2yRwEw&amp;s=10" alt="Best Household AI Agent 2026: Google CC vs Instinct vs Ollie" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-19-best-household-ai-agent-2026-google-cc-vs-instinct'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Best Household AI Agent 2026: Google CC vs Instinct vs Ollie</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-09-18-ai-governance-paradox-monitoring-agents-with-ai-cr" href="/blog/2026-09-18-ai-governance-paradox-monitoring-agents-with-ai-cr/">
-                <img class="card-bg" src="https://techcrunch.com/wp-content/uploads/2026/03/ai-bots-agents-GettyImages-2230799616.jpg?resize=1280,853" alt="AI Governance Paradox: Monitoring Agents With AI Creates Risk" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-18-ai-governance-paradox-monitoring-agents-with-ai-cr'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">AI Governance Paradox: Monitoring Agents With AI Creates Risk</h3>
-                    <p class="card-excerpt">12,000 agents deceived monitors at Hugging Face. Y Combinator funded 106 AI observability companies. Why monitoring AI is an arms race.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">ai-governance</span>
-                        <span class="card-info">18 Sep 2026 &bull; 9 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>19 Sep 2026 &middot; 11 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-09-18-ai-governance-paradox-monitoring-agents-with-ai-cr" href="/blog/2026-09-18-ai-governance-paradox-monitoring-agents-with-ai-cr/">
+                    <div class="nl-card-media"><img src="https://techcrunch.com/wp-content/uploads/2026/03/ai-bots-agents-GettyImages-2230799616.jpg?resize=1280,853" alt="AI Governance Paradox: Monitoring Agents With AI Creates Risk" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-18-ai-governance-paradox-monitoring-agents-with-ai-cr'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">AI Governance Paradox: Monitoring Agents With AI Creates Risk</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-09-17-instinct-10b-valuation-on-1-3k-month-user-spend-20" href="/blog/2026-09-17-instinct-10b-valuation-on-1-3k-month-user-spend-20/">
-                <img class="card-bg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZOSV3pR5Nlhh1_Turhpd7YbK3FBSoT81JjFp-f_IIg&amp;s=10" alt="Instinct $10B Valuation on $1.3K/Month User Spend (2026)" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-17-instinct-10b-valuation-on-1-3k-month-user-spend-20'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Instinct $10B Valuation on $1.3K/Month User Spend (2026)</h3>
-                    <p class="card-excerpt">Instinct hit $10B valuation in 5 months. $1,300 monthly spend per user. What this unit economics pattern means for founders building agents.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">instinct</span>
-                        <span class="card-info">17 Sep 2026 &bull; 7 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>18 Sep 2026 &middot; 9 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-09-17-instinct-10b-valuation-on-1-3k-month-user-spend-20" href="/blog/2026-09-17-instinct-10b-valuation-on-1-3k-month-user-spend-20/">
+                    <div class="nl-card-media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZOSV3pR5Nlhh1_Turhpd7YbK3FBSoT81JjFp-f_IIg&amp;s=10" alt="Instinct $10B Valuation on $1.3K/Month User Spend (2026)" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-17-instinct-10b-valuation-on-1-3k-month-user-spend-20'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Instinct $10B Valuation on $1.3K/Month User Spend (2026)</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="pagination-container">
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>17 Sep 2026 &middot; 7 min read</span></div>
+                </a>
+            </div>
+            <div class="pagination-container">
             <nav class="pagination" aria-label="Newslogger pagination">
                 <a class="pagination-btn prev" href="/blog/page/2/" aria-label="Previous page"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg><span>Prev</span></a>
                 <span class="pagination-info">
@@ -279,9 +264,21 @@
                 </span>
                 <a class="pagination-btn next" href="/blog/page/4/" aria-label="Next page"><span>Next</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
             </nav>
+            </div>
+        </section>
+            <p class="pagination-back"><a href="https://bitroot.org/blog/">&larr; Back to the newslogger</a></p>
         </div>
-        <p class="pagination-back"><a href="https://bitroot.org/blog/">&larr; Back to latest posts</a></p>
         <!-- POSTS:END -->
+
+        <!-- Filter / search results (rendered by posts-loader.js) -->
+        <section class="nl-section nl-results" id="nl-results" hidden aria-live="polite">
+            <div class="nl-section-head">
+                <h2 class="nl-h2" id="nl-results-title">Results</h2>
+                <span class="nl-results-count" id="nl-results-count"></span>
+            </div>
+            <div class="nl-grid" id="posts-grid"></div>
+            <div class="nl-more-wrap"><button class="nl-more" id="nl-more" type="button" hidden>Load more</button></div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -297,7 +294,8 @@
     </footer>
 
     <script src="/blog/js/pixel-placeholder.js"></script>
-    <script src="/blog/js/posts-loader.js"></script>
+    <script src="/blog/js/posts-loader.js" defer></script>
+    <script src="/blog/js/newsletter.js" defer></script>
 
     <!-- Theme toggle -->
     <script>

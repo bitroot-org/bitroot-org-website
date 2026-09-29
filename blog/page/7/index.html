@@ -36,6 +36,7 @@
     <link rel="icon" type="image/png" href="https://bitroot.org/blog/media/images/favicon.png">
     <link rel="alternate" type="application/rss+xml" title="Newslogger | Bitroot" href="/rss.xml">
     <link rel="stylesheet" href="/blog/css/blog.css">
+    <link rel="stylesheet" href="/blog/css/newslogger.css">
 
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","@id":"https://bitroot.org/blog/#blog","url":"https://bitroot.org/blog/","name":"Bitroot Newslogger","description":"Daily AI and tech news for founders and builders.","inLanguage":"en","publisher":{"@type":"NewsMediaOrganization","name":"Bitroot","url":"https://bitroot.org","logo":{"@type":"ImageObject","url":"https://bitroot.org/blog/media/images/bitroot-dark-text-border.png"}}}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://bitroot.org"},{"@type":"ListItem","position":2,"name":"Newslogger","item":"https://bitroot.org/blog/"}]}</script>
@@ -97,7 +98,7 @@
         posthog.register({ site: 'blog' })
     </script>
 </head>
-<body>
+<body class="nl-index">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-3HDKNMVC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
@@ -138,140 +139,124 @@
         </div>
     </div>
 
-    <!-- Floating glass navbar -->
-    <header class="glass-nav">
-        <nav class="glass-nav-inner">
-            <a href="/" class="shell-logo"><img src="https://bitroot.org/blog/media/images/bitroot-dark-text-border.png" alt="Bitroot" class="logo-img"></a>
+    <!-- Floating glass navbar; category chips dock into it once the hero scrolls away -->
+    <header class="glass-nav nl-nav" id="nl-nav">
+        <nav class="glass-nav-inner" aria-label="Site">
+            <a href="/" class="shell-logo"><img src="https://bitroot.org/blog/media/images/bitroot-dark-text-border.png" alt="Bitroot" class="logo-img" width="112" height="28"></a>
             <div class="shell-links">
-                <a href="/blog" class="shell-link active">newslogger</a>
+                <a href="/blog/" class="shell-link active">newslogger</a>
                 <a href="/" class="shell-link">home</a>
+                <a href="/rss.xml" class="shell-link">rss</a>
                 <button class="theme-toggle" aria-label="Toggle theme">
                     <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                     <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                 </button>
             </div>
         </nav>
+        <div class="nl-nav-chips" id="nl-nav-chips" aria-hidden="true"></div>
     </header>
 
-    <!-- Dark capsule: title + filters + search -->
-    <section class="blog-shell" aria-label="Browse the newslogger">
-        <div class="shell-body">
-            <h1 class="shell-title">Newslogger</h1>
-            <div class="filter-pills" id="blog-filters" aria-label="Filter posts by tag">
-                <button class="filter-pill active" data-tag="All">All</button>
-            </div>
-            <div class="search-box">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                <input type="search" id="blog-search" placeholder="I want to read about..." aria-label="Search blog posts">
-            </div>
+    <!-- Hero: title, search, category chips -->
+    <section class="nl-hero" aria-label="Browse the newslogger">
+        <h1 class="nl-title">Newslogger</h1>
+        <p class="nl-lede">Daily AI and tech news for founders and builders. What shipped, what it costs, and whether it matters <em>to you.</em></p>
+        <label class="nl-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><line x1="21" y1="21" x2="16.4" y2="16.4"/></svg>
+            <input type="search" id="blog-search" placeholder="Search all posts..." aria-label="Search posts" autocomplete="off">
+        </label>
+        <div class="nl-chips" id="blog-filters" role="toolbar" aria-label="Filter by category">
+                <button class="nl-chip is-active" type="button" data-cat="all" aria-pressed="true">All</button>
+                <button class="nl-chip" type="button" data-cat="models" aria-pressed="false">AI Models</button>
+                <button class="nl-chip" type="button" data-cat="agents" aria-pressed="false">Agents &amp; Dev Tools</button>
+                <button class="nl-chip" type="button" data-cat="founders" aria-pressed="false">Founders &amp; Business</button>
+                <button class="nl-chip" type="button" data-cat="opensource" aria-pressed="false">Open Source</button>
+                <button class="nl-chip" type="button" data-cat="design" aria-pressed="false">Design &amp; Media</button>
+                <button class="nl-chip" type="button" data-cat="engineering" aria-pressed="false">Engineering</button>
         </div>
     </section>
 
-    <!-- Blog Showcase Section -->
-    <main class="showcase">
+    <main class="showcase nl-main" id="nl-main">
         <!-- POSTS:BEGIN — generated by build_index.py, do not edit by hand -->
-        <div class="cards-grid" id="posts-grid">
-            <a class="card" data-post-slug="2026-09-02-claude-fable-5-1-45-cheaper-cache-better-performan" href="/blog/2026-09-02-claude-fable-5-1-45-cheaper-cache-better-performan/">
-                <img class="card-bg" src="https://assets.lovable.dev/content/news/covers/fable-5-1-now-in-lovable-v2.jpg" alt="Claude Fable 5.1: 45% Cheaper Cache, Better Performance - Founders Guide" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-02-claude-fable-5-1-45-cheaper-cache-better-performan'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Claude Fable 5.1: 45% Cheaper Cache, Better Performance - Founders Guide</h3>
-                    <p class="card-excerpt">Anthropic released Fable 5.1 today. Cache costs cut 75%. Typical workloads 25% cheaper, agents up to 45% cheaper. What changed, who should migrate, pricing breakdown.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">Fable</span>
-                        <span class="card-info">2 Sep 2026 &bull; 4 min read</span>
+        <div id="nl-home">
+        <section class="nl-section" aria-labelledby="nl-all-title">
+            <div class="nl-section-head">
+                <h2 class="nl-h2" id="nl-all-title">All posts <span class="nl-h2-sub">Page 7 of 46</span></h2>
+            </div>
+            <div class="nl-grid">
+                <a class="nl-card nl-card--md" data-post-slug="2026-09-02-claude-fable-5-1-45-cheaper-cache-better-performan" href="/blog/2026-09-02-claude-fable-5-1-45-cheaper-cache-better-performan/">
+                    <div class="nl-card-media"><img src="https://assets.lovable.dev/content/news/covers/fable-5-1-now-in-lovable-v2.jpg" alt="Claude Fable 5.1: 45% Cheaper Cache, Better Performance - Founders Guide" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-02-claude-fable-5-1-45-cheaper-cache-better-performan'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Claude Fable 5.1: 45% Cheaper Cache, Better Performance - Founders Guide</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-09-01-indias-gnani-artha-vs-chinas-deepseek-how-two-nati" href="/blog/2026-09-01-indias-gnani-artha-vs-chinas-deepseek-how-two-nati/">
-                <img class="card-bg" src="https://i0.wp.com/makhanamornings.in/wp-content/uploads/2025/11/a-split-visual-of-an-india-shaped-outline-filled-with.png?resize=1024%2C768&amp;ssl=1" alt="India&#x27;s Gnani Artha vs. China&#x27;s DeepSeek: How Two Nations Build Sovereign AI" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-01-indias-gnani-artha-vs-chinas-deepseek-how-two-nati'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">India&#x27;s Gnani Artha vs. China&#x27;s DeepSeek: How Two Nations Build Sovereign AI</h3>
-                    <p class="card-excerpt">Vice President launches Gnani Artha (Evon 3.3 + Plexus) on Aug 28. India&#x27;s sovereign AI stack vs. China&#x27;s DeepSeek: different strategies, same goal — break US AI dependence.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">Sovereign AI</span>
-                        <span class="card-info">1 Sep 2026 &bull; 5 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>2 Sep 2026 &middot; 4 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-09-01-indias-gnani-artha-vs-chinas-deepseek-how-two-nati" href="/blog/2026-09-01-indias-gnani-artha-vs-chinas-deepseek-how-two-nati/">
+                    <div class="nl-card-media"><img src="https://i0.wp.com/makhanamornings.in/wp-content/uploads/2025/11/a-split-visual-of-an-india-shaped-outline-filled-with.png?resize=1024%2C768&amp;ssl=1" alt="India&#x27;s Gnani Artha vs. China&#x27;s DeepSeek: How Two Nations Build Sovereign AI" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-01-indias-gnani-artha-vs-chinas-deepseek-how-two-nati'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">India&#x27;s Gnani Artha vs. China&#x27;s DeepSeek: How Two Nations Build Sovereign AI</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-09-01-entagon-excluded-anthropic-despite-federal-court-r" href="/blog/2026-09-01-entagon-excluded-anthropic-despite-federal-court-r/">
-                <img class="card-bg" src="https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2263890424.jpg" alt="Pentagon Excluded Anthropic Despite Federal Court Ruling It Was Illegal" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-01-entagon-excluded-anthropic-despite-federal-court-r'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Pentagon Excluded Anthropic Despite Federal Court Ruling It Was Illegal</h3>
-                    <p class="card-excerpt">August 28: Federal judge rules Pentagon violated First and Fifth Amendment in designating Anthropic &quot;supply chain risk.&quot; August 31: Pentagon launches GenAI.mil without Claude…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">Anthropic</span>
-                        <span class="card-info">1 Sep 2026 &bull; 7 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>1 Sep 2026 &middot; 5 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-09-01-entagon-excluded-anthropic-despite-federal-court-r" href="/blog/2026-09-01-entagon-excluded-anthropic-despite-federal-court-r/">
+                    <div class="nl-card-media"><img src="https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2263890424.jpg" alt="Pentagon Excluded Anthropic Despite Federal Court Ruling It Was Illegal" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-01-entagon-excluded-anthropic-despite-federal-court-r'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Pentagon Excluded Anthropic Despite Federal Court Ruling It Was Illegal</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-08-31-deepseek-15b-funding-state-control-rapid-scaling" href="/blog/2026-08-31-deepseek-15b-funding-state-control-rapid-scaling/">
-                <img class="card-bg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZtFHA3uu1zk6PfEVF6gM7iH86BZzB1_lHPehtvPgYDg&amp;s=10" alt="DeepSeek $15B Funding: State Control, Rapid Scaling" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-31-deepseek-15b-funding-state-control-rapid-scaling'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">DeepSeek $15B Funding: State Control, Rapid Scaling</h3>
-                    <p class="card-excerpt">Two funding rounds in 90 days. $15 billion raised. $74B valuation. DeepSeek&#x27;s rapid capital raise signals Chinese AI strategy: state control, rapid scaling, 2027 IPO target.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">DeepSeek</span>
-                        <span class="card-info">31 Aug 2026 &bull; 4 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>1 Sep 2026 &middot; 7 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-08-31-deepseek-15b-funding-state-control-rapid-scaling" href="/blog/2026-08-31-deepseek-15b-funding-state-control-rapid-scaling/">
+                    <div class="nl-card-media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZtFHA3uu1zk6PfEVF6gM7iH86BZzB1_lHPehtvPgYDg&amp;s=10" alt="DeepSeek $15B Funding: State Control, Rapid Scaling" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-31-deepseek-15b-funding-state-control-rapid-scaling'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">DeepSeek $15B Funding: State Control, Rapid Scaling</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-08-31-caterpillar-ai-deployment-workflow-integration-str" href="/blog/2026-08-31-caterpillar-ai-deployment-workflow-integration-str/">
-                <img class="card-bg" src="https://techcrunch.com/wp-content/uploads/2023/01/caterpillar-lidar-booth.jpg?resize=1280,853" alt="Caterpillar AI Deployment: Workflow Integration Strategy" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-31-caterpillar-ai-deployment-workflow-integration-str'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Caterpillar AI Deployment: Workflow Integration Strategy</h3>
-                    <p class="card-excerpt">Caterpillar is spending $100M to retrain 118,000 workers for AI. Here&#x27;s why workflow integration, not technology, is the real constraint in enterprise AI adoption.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">Caterpillar</span>
-                        <span class="card-info">31 Aug 2026 &bull; 7 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>31 Aug 2026 &middot; 4 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-08-31-caterpillar-ai-deployment-workflow-integration-str" href="/blog/2026-08-31-caterpillar-ai-deployment-workflow-integration-str/">
+                    <div class="nl-card-media"><img src="https://techcrunch.com/wp-content/uploads/2023/01/caterpillar-lidar-booth.jpg?resize=1280,853" alt="Caterpillar AI Deployment: Workflow Integration Strategy" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-31-caterpillar-ai-deployment-workflow-integration-str'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Caterpillar AI Deployment: Workflow Integration Strategy</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-08-29-openai-is-cutting-off-cursor-what-developers-need" href="/blog/2026-08-29-openai-is-cutting-off-cursor-what-developers-need/">
-                <img class="card-bg" src="https://pbs.twimg.com/card_img/2093609064005595136/oPCjt-SG?format=jpg&amp;name=small" alt="OpenAI Is Cutting Off Cursor: What Developers Need to Know (And Why It Matters)" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-29-openai-is-cutting-off-cursor-what-developers-need'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">OpenAI Is Cutting Off Cursor: What Developers Need to Know (And Why It Matters)</h3>
-                    <p class="card-excerpt">If you&#x27;re using Cursor with OpenAI models, you have 75 days to switch. The deadline is November 12. Understanding why this happened requires looking at what triggered it: a $60…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">M&amp;A</span>
-                        <span class="card-info">29 Aug 2026 &bull; 5 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Caterpillar</span><span>31 Aug 2026 &middot; 7 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-08-29-openai-is-cutting-off-cursor-what-developers-need" href="/blog/2026-08-29-openai-is-cutting-off-cursor-what-developers-need/">
+                    <div class="nl-card-media"><img src="https://pbs.twimg.com/card_img/2093609064005595136/oPCjt-SG?format=jpg&amp;name=small" alt="OpenAI Is Cutting Off Cursor: What Developers Need to Know (And Why It Matters)" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-29-openai-is-cutting-off-cursor-what-developers-need'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">OpenAI Is Cutting Off Cursor: What Developers Need to Know (And Why It Matters)</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-08-29-google-gemini-3-5-flash-vs-cursor-benchmark-compar" href="/blog/2026-08-29-google-gemini-3-5-flash-vs-cursor-benchmark-compar/">
-                <img class="card-bg" src="https://antigravity.google/assets/image/blog/3.5-Flash---Wide.png" alt="Google Gemini 3.5 Flash vs. Cursor: Benchmark Comparison for Developers" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-29-google-gemini-3-5-flash-vs-cursor-benchmark-compar'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Google Gemini 3.5 Flash vs. Cursor: Benchmark Comparison for Developers</h3>
-                    <p class="card-excerpt">Google just launched Gemini 3.5 Flash with Antigravity 2.0. The benchmarks are impressive. Gemini 3.5 tops &quot;most benchmarks,&quot; according to Google, including terminal bench and…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">Coding</span>
-                        <span class="card-info">29 Aug 2026 &bull; 5 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>29 Aug 2026 &middot; 5 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-08-29-google-gemini-3-5-flash-vs-cursor-benchmark-compar" href="/blog/2026-08-29-google-gemini-3-5-flash-vs-cursor-benchmark-compar/">
+                    <div class="nl-card-media"><img src="https://antigravity.google/assets/image/blog/3.5-Flash---Wide.png" alt="Google Gemini 3.5 Flash vs. Cursor: Benchmark Comparison for Developers" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-29-google-gemini-3-5-flash-vs-cursor-benchmark-compar'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Google Gemini 3.5 Flash vs. Cursor: Benchmark Comparison for Developers</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-08-26-mac-studios-512gb-unified-memory-should-founders-e" href="/blog/2026-08-26-mac-studios-512gb-unified-memory-should-founders-e/">
-                <img class="card-bg" src="https://www.apple.com/newsroom/images/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/article/Apple-Mac-Studio-hero-260825_big.jpg.large_2x.jpg" alt="Mac Studio M5 Ultra 512GB: Local AI vs. Cloud APIs" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-26-mac-studios-512gb-unified-memory-should-founders-e'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Mac Studio M5 Ultra 512GB: Local AI vs. Cloud APIs</h3>
-                    <p class="card-excerpt">Apple just announced Mac Studio with up to 512GB unified memory and M5 Ultra chips. The specs are impressive. But for founders, there&#x27;s a more important implication: You can now…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">Cloud</span>
-                        <span class="card-info">26 Aug 2026 &bull; 6 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>29 Aug 2026 &middot; 5 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-08-26-mac-studios-512gb-unified-memory-should-founders-e" href="/blog/2026-08-26-mac-studios-512gb-unified-memory-should-founders-e/">
+                    <div class="nl-card-media"><img src="https://www.apple.com/newsroom/images/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/article/Apple-Mac-Studio-hero-260825_big.jpg.large_2x.jpg" alt="Mac Studio M5 Ultra 512GB: Local AI vs. Cloud APIs" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-26-mac-studios-512gb-unified-memory-should-founders-e'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Mac Studio M5 Ultra 512GB: Local AI vs. Cloud APIs</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-08-25-openais-safety-theater-why-safe-and-aligned-deflec" href="/blog/2026-08-25-openais-safety-theater-why-safe-and-aligned-deflec/">
-                <img class="card-bg" src="https://techcrunch.com/wp-content/uploads/2026/08/Thibault-headshot.jpg?resize=1280,800" alt="OpenAI&#x27;s Safety Theater: Why &#x27;Safe and Aligned&#x27; Deflects from the Real Privacy Tradeoff" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-25-openais-safety-theater-why-safe-and-aligned-deflec'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">OpenAI&#x27;s Safety Theater: Why &#x27;Safe and Aligned&#x27; Deflects from the Real Privacy Tradeoff</h3>
-                    <p class="card-excerpt">On August 25, 2026, TechCrunch published an exclusive interview with Thibault Sottiaux, OpenAI&#x27;s head of product. The conversation covered agents, user experience, pricing…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">OpenAI</span>
-                        <span class="card-info">25 Aug 2026 &bull; 6 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>26 Aug 2026 &middot; 6 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-08-25-openais-safety-theater-why-safe-and-aligned-deflec" href="/blog/2026-08-25-openais-safety-theater-why-safe-and-aligned-deflec/">
+                    <div class="nl-card-media"><img src="https://techcrunch.com/wp-content/uploads/2026/08/Thibault-headshot.jpg?resize=1280,800" alt="OpenAI&#x27;s Safety Theater: Why &#x27;Safe and Aligned&#x27; Deflects from the Real Privacy Tradeoff" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-25-openais-safety-theater-why-safe-and-aligned-deflec'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">OpenAI&#x27;s Safety Theater: Why &#x27;Safe and Aligned&#x27; Deflects from the Real Privacy Tradeoff</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="pagination-container">
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>25 Aug 2026 &middot; 6 min read</span></div>
+                </a>
+            </div>
+            <div class="pagination-container">
             <nav class="pagination" aria-label="Newslogger pagination">
                 <a class="pagination-btn prev" href="/blog/page/6/" aria-label="Previous page"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg><span>Prev</span></a>
                 <span class="pagination-info">
@@ -279,9 +264,21 @@
                 </span>
                 <a class="pagination-btn next" href="/blog/page/8/" aria-label="Next page"><span>Next</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
             </nav>
+            </div>
+        </section>
+            <p class="pagination-back"><a href="https://bitroot.org/blog/">&larr; Back to the newslogger</a></p>
         </div>
-        <p class="pagination-back"><a href="https://bitroot.org/blog/">&larr; Back to latest posts</a></p>
         <!-- POSTS:END -->
+
+        <!-- Filter / search results (rendered by posts-loader.js) -->
+        <section class="nl-section nl-results" id="nl-results" hidden aria-live="polite">
+            <div class="nl-section-head">
+                <h2 class="nl-h2" id="nl-results-title">Results</h2>
+                <span class="nl-results-count" id="nl-results-count"></span>
+            </div>
+            <div class="nl-grid" id="posts-grid"></div>
+            <div class="nl-more-wrap"><button class="nl-more" id="nl-more" type="button" hidden>Load more</button></div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -297,7 +294,8 @@
     </footer>
 
     <script src="/blog/js/pixel-placeholder.js"></script>
-    <script src="/blog/js/posts-loader.js"></script>
+    <script src="/blog/js/posts-loader.js" defer></script>
+    <script src="/blog/js/newsletter.js" defer></script>
 
     <!-- Theme toggle -->
     <script>

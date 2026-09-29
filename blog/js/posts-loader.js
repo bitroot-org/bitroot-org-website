@@ -1,332 +1,262 @@
 /**
- * Posts Loader — renders the newslogger index as a filterable card grid.
+ * Newslogger index behaviour.
  *
- * Loads posts/index.json, builds the tag filter pills + search, and renders
- * pages of cards into #posts-grid. The build step (build_index.py) injects a
- * crawlable first page with the same markup; this loader replaces it on init.
+ * The home layout (Featured, category rails, All posts + pagination) is
+ * rendered statically by build_index.py, so this script never touches it on
+ * load. It only adds:
+ *   - category chips + search -> a filtered results grid (#nl-results),
+ *     reflected in the URL as /blog/?c=<category>&q=<query>
+ *   - chips docking into the glass navbar once the hero scrolls away
+ *   - prev/next buttons on the horizontal rails
+ *
+ * posts/index.json is fetched lazily, the first time someone filters.
  */
+(function () {
+    'use strict';
 
-const PostsLoader = {
-    // Absolute so it resolves the same from /blog/ and from /blog/page/<n>/.
-    postsIndexUrl: '/blog/posts/index.json',
-    postsPerPage: 9,
-    currentPage: 1,
-    allPosts: [],
-    activeTag: 'All',
-    searchQuery: '',
-    maxFilterTags: 8,
-    placeholderImage: '/blog/media/placeholder-blog.png',
+    var INDEX_URL = '/blog/posts/index.json';
+    var PLACEHOLDER = '/blog/media/placeholder-blog.png';
+    var BATCH = 12;
+    var LABELS = {
+        models: 'AI Models',
+        agents: 'Agents & Dev Tools',
+        founders: 'Founders & Business',
+        opensource: 'Open Source',
+        design: 'Design & Media',
+        engineering: 'Engineering'
+    };
+    var ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>';
 
-    async fetchAllPosts() {
-        try {
-            const response = await fetch(this.postsIndexUrl);
-            if (!response.ok) {
-                return [];
-            }
+    var state = { cat: 'all', q: '', shown: BATCH };
+    var postsPromise = null;
+    var els = {};
 
-            const index = await response.json();
+    function esc(s) {
+        return String(s == null ? '' : s)
+            .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
 
-            const posts = index.metadata.map(post => ({
-                ...post,
-                url: post.url || `/blog/${post.slug}/`,
-                readTime: post.readTime || '5 min'
-            }));
-
-            // Sort by date descending (newest first), slug as the tiebreak so
-            // same-date posts land in the same order the static build used.
-            return posts.sort((a, b) => {
-                const byDate = new Date(b.date) - new Date(a.date);
-                if (byDate !== 0) return byDate;
-                return String(b.slug).localeCompare(String(a.slug));
-            });
-        } catch (e) {
-            return [];
+    function loadPosts() {
+        if (!postsPromise) {
+            postsPromise = fetch(INDEX_URL)
+                .then(function (r) { return r.ok ? r.json() : { metadata: [] }; })
+                .then(function (idx) {
+                    return (idx.metadata || []).slice().sort(function (a, b) {
+                        var d = String(b.date).localeCompare(String(a.date));
+                        return d !== 0 ? d : String(b.slug).localeCompare(String(a.slug));
+                    });
+                })
+                .catch(function () { return []; });
         }
-    },
+        return postsPromise;
+    }
 
-    /** Current page number from a /blog/page/<n>/ URL (1 for /blog/). */
-    pageFromUrl() {
-        const m = window.location.pathname.match(/\/blog\/page\/(\d+)\/?$/);
-        const n = m ? parseInt(m[1], 10) : 1;
-        return Number.isFinite(n) && n > 0 ? n : 1;
-    },
+    function fmtDate(post) {
+        var d = new Date(post.published_at || post.date);
+        if (isNaN(d.getTime())) return '';
+        return d.getDate() + ' ' + d.toLocaleString('en-GB', { month: 'short' }) + ' ' + d.getFullYear();
+    }
 
-    esc(s) {
-        return String(s ?? '')
-            .replace(/&/g, '&amp;')
-            .replace(/</g, '&lt;')
-            .replace(/>/g, '&gt;')
-            .replace(/"/g, '&quot;');
-    },
+    function imageSrc(post) {
+        var img = post.image || '';
+        if (!img) return window.bitrootPixelPlaceholder ? window.bitrootPixelPlaceholder(post.slug || '') : PLACEHOLDER;
+        if (/^(https?:)?\/\//.test(img) || img.charAt(0) === '/') return img;
+        return '/blog/' + img;
+    }
 
-    formatDate(dateStr) {
-        const date = new Date(dateStr);
-        if (isNaN(date.getTime())) return '';
-        const locale = navigator.language || 'en-US';
-        return date.toLocaleDateString(locale, {
-            day: 'numeric',
-            month: 'short',
-            year: 'numeric'
-        });
-    },
+    function label(post) {
+        var c = (post.categories || [])[0];
+        if (c && LABELS[c]) return LABELS[c];
+        return (post.tags || ['General'])[0];
+    }
 
-    postImage(post) {
-        if (post.image) {
-            return /^(https?:)?\/\//.test(post.image) || post.image.startsWith('/')
-                ? post.image
-                : `/blog/${post.image}`;
-        }
-        // Deterministic on-brand pixel pattern, seeded per post.
-        if (window.bitrootPixelPlaceholder) {
-            return window.bitrootPixelPlaceholder(post.slug || post.title || '');
-        }
-        return this.placeholderImage;
-    },
+    /** Mirror of build_index.py render_card(size="md"). */
+    function renderCard(post) {
+        var slug = String(post.slug || '').replace(/[^\w-]/g, '');
+        return '<a class="nl-card nl-card--md" data-post-slug="' + esc(slug) + '" href="' + esc(post.url || '/blog/' + slug + '/') + '">' +
+            '<div class="nl-card-media"><img src="' + esc(imageSrc(post)) + '" alt="' + esc(post.title) + '" loading="lazy" decoding="async" ' +
+            'onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder(\'' + slug + '\'):\'' + PLACEHOLDER + '\'"></div>' +
+            '<div class="nl-card-head"><h3 class="nl-card-title">' + esc(post.title) + '</h3><span class="nl-card-arrow">' + ARROW + '</span></div>' +
+            '<div class="nl-card-meta"><span class="nl-card-cat">' + esc(label(post)) + '</span><span>' + esc(fmtDate(post)) + ' &middot; ' + esc(post.readTime || '5 min') + ' read</span></div>' +
+            '</a>';
+    }
 
-    /**
-     * Inline onerror attribute so a dead image URL degrades to the
-     * placeholder instead of a broken-image icon.
-     */
-    imageOnError(post) {
-        const slug = (post.slug || '').replace(/[^\w-]/g, '');
-        return `onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('${slug}'):'${this.placeholderImage}'"`;
-    },
+    function matches(post) {
+        if (state.cat !== 'all' && (post.categories || []).indexOf(state.cat) === -1) return false;
+        var q = state.q.trim().toLowerCase();
+        if (!q) return true;
+        var hay = [post.title, post.excerpt].concat(post.tags || []).join(' ').toLowerCase();
+        return q.split(/\s+/).every(function (w) { return hay.indexOf(w) !== -1; });
+    }
 
-    /**
-     * Canonical tag key — auto-generated posts vary casing/punctuation
-     * ("AI" vs "ai", "open source" vs "open-source"), so group them.
-     */
-    canonTag(tag) {
-        return String(tag).toLowerCase().replace(/[^a-z0-9]/g, '');
-    },
+    function isFiltering() {
+        return state.cat !== 'all' || state.q.trim() !== '';
+    }
 
-    /**
-     * Canonical tag → {label, count} across every post. The label shown is
-     * the most frequent original spelling of the tag.
-     */
-    tagCounts() {
-        const groups = new Map();
-        for (const post of this.allPosts) {
-            const seen = new Set();
-            for (const tag of post.tags || []) {
-                const key = this.canonTag(tag);
-                if (!key || seen.has(key)) continue;
-                seen.add(key);
-                const group = groups.get(key) || { count: 0, variants: new Map() };
-                group.count += 1;
-                group.variants.set(tag, (group.variants.get(tag) || 0) + 1);
-                groups.set(key, group);
-            }
-        }
-        return [...groups.values()]
-            .map(g => {
-                const label = [...g.variants.entries()].sort((a, b) => b[1] - a[1])[0][0];
-                return [label, g.count];
-            })
-            .sort((a, b) => b[1] - a[1]);
-    },
+    function syncUrl() {
+        var params = new URLSearchParams();
+        if (state.cat !== 'all') params.set('c', state.cat);
+        if (state.q.trim()) params.set('q', state.q.trim());
+        var qs = params.toString();
+        // Filtered views always live on /blog/ (the /page/<n>/ archive is unfiltered).
+        var path = isFiltering() ? '/blog/' : window.location.pathname;
+        try { history.replaceState(null, '', path + (qs ? '?' + qs : '')); } catch (e) { /* no-op */ }
+    }
 
-    filteredPosts() {
-        const q = this.searchQuery.trim().toLowerCase();
-        const activeKey = this.activeTag === 'All' ? null : this.canonTag(this.activeTag);
-        return this.allPosts.filter(post => {
-            if (activeKey && !(post.tags || []).some(t => this.canonTag(t) === activeKey)) {
-                return false;
-            }
-            if (q) {
-                const haystack = [post.title, post.excerpt, ...(post.tags || [])]
-                    .join(' ')
-                    .toLowerCase();
-                if (!haystack.includes(q)) return false;
-            }
-            return true;
-        });
-    },
-
-    renderCard(post, featured = false) {
-        const tag = (post.tags && post.tags[0]) || 'General';
-        const meta = `${this.formatDate(post.published_at || post.date)} &bull; ${this.esc(post.readTime)} read`;
-        return `
-            <a class="card${featured ? ' card-featured' : ''}" data-post-slug="${this.esc(post.slug)}" href="${this.esc(post.url)}">
-                <img class="card-bg" src="${this.esc(this.postImage(post))}" alt="${this.esc(post.title || '')}" loading="${featured ? 'eager' : 'lazy'}" decoding="async" ${this.imageOnError(post)}>
-                <div class="card-plate">
-                    ${featured ? '<span class="card-badge">Latest</span>' : ''}
-                    <h3 class="card-title">${this.esc(post.title)}</h3>
-                    <p class="card-excerpt">${this.esc(post.excerpt || '')}</p>
-                    <div class="card-meta">
-                        <span class="card-tag">${this.esc(tag)}</span>
-                        <span class="card-info">${meta}</span>
-                    </div>
-                </div>
-            </a>`;
-    },
-
-    renderFilters() {
-        const container = document.getElementById('blog-filters');
-        if (!container) return;
-
-        const top = this.tagCounts().slice(0, this.maxFilterTags);
-        const pill = (label, count, active) => `
-            <button class="filter-pill${active ? ' active' : ''}" data-tag="${this.esc(label)}">
-                ${this.esc(label)} <span class="pill-count">&bull; ${count}</span>
-            </button>`;
-
-        container.innerHTML =
-            pill('All', this.allPosts.length, this.activeTag === 'All') +
-            top.map(([tag, count]) => pill(tag, count, this.activeTag === tag)).join('');
-
-        container.querySelectorAll('.filter-pill').forEach(btn => {
-            btn.addEventListener('click', () => {
-                this.activeTag = btn.dataset.tag;
-                this.currentPage = 1;
-                this.dropPageUrl();
-                this.renderFilters();
-                this.renderPage();
-            });
-        });
-    },
-
-    /** Drop a /blog/page/<n>/ path back to /blog/ (filtered views aren't paged). */
-    dropPageUrl() {
-        if (this.pageFromUrl() !== 1) {
-            try { history.replaceState({ page: 1 }, '', '/blog/'); } catch (e) { /* no-op */ }
-        }
-    },
-
-    getTotalPages(filtered) {
-        return Math.max(1, Math.ceil(filtered.length / this.postsPerPage));
-    },
-
-    /** URL for page n: /blog/ for page 1, /blog/page/<n>/ otherwise. */
-    pageUrl(n) {
-        return n <= 1 ? '/blog/' : `/blog/page/${n}/`;
-    },
-
-    renderPagination(filtered) {
-        const totalPages = this.getTotalPages(filtered);
-        if (totalPages <= 1) return '';
-
-        const cur = this.currentPage;
-        const prevSvg = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>';
-        const nextSvg = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>';
-
-        // Real <a href> links so they stay crawlable and middle-click works
-        // after hydration; click is intercepted for in-place navigation.
-        const prev = cur <= 1
-            ? `<span class="pagination-btn prev" aria-disabled="true">${prevSvg}<span>Prev</span></span>`
-            : `<a class="pagination-btn prev" href="${this.pageUrl(cur - 1)}" data-page="${cur - 1}" aria-label="Previous page">${prevSvg}<span>Prev</span></a>`;
-        const next = cur >= totalPages
-            ? `<span class="pagination-btn next" aria-disabled="true"><span>Next</span>${nextSvg}</span>`
-            : `<a class="pagination-btn next" href="${this.pageUrl(cur + 1)}" data-page="${cur + 1}" aria-label="Next page"><span>Next</span>${nextSvg}</a>`;
-
-        return `
-            <nav class="pagination" aria-label="Newslogger pagination">
-                ${prev}
-                <span class="pagination-info">
-                    Page <strong>${cur}</strong> of <strong>${totalPages}</strong>
-                </span>
-                ${next}
-            </nav>`;
-    },
-
-    renderPage() {
-        const grid = document.getElementById('posts-grid');
-        if (!grid) return;
-
-        const filtered = this.filteredPosts();
-        const start = (this.currentPage - 1) * this.postsPerPage;
-        const pagePosts = filtered.slice(start, start + this.postsPerPage);
-
-        if (pagePosts.length === 0) {
-            grid.innerHTML = `
-                <div class="grid-empty">
-                    <p>Nothing matches that yet. Try another tag or search.</p>
-                </div>`;
-        } else {
-            // The newest post gets the big "Latest" card on the unfiltered first page.
-            const showFeatured =
-                this.currentPage === 1 && this.activeTag === 'All' && !this.searchQuery.trim();
-            grid.innerHTML = pagePosts
-                .map((post, i) => this.renderCard(post, showFeatured && i === 0))
-                .join('');
-        }
-
-        const paginationContainer = document.querySelector('.pagination-container');
-        if (paginationContainer) {
-            paginationContainer.innerHTML = this.renderPagination(filtered);
-            paginationContainer.querySelectorAll('a.pagination-btn[data-page]').forEach(a => {
-                a.addEventListener('click', e => {
-                    e.preventDefault();
-                    this.goToPage(parseInt(a.dataset.page, 10));
-                });
-            });
-        }
-    },
-
-    /** True when the visible list is the plain, unfiltered post stream. */
-    isUnfiltered() {
-        return this.activeTag === 'All' && !this.searchQuery.trim();
-    },
-
-    goToPage(page) {
-        const totalPages = this.getTotalPages(this.filteredPosts());
-        if (page < 1 || page > totalPages) return;
-        this.currentPage = page;
-        this.renderPage();
-
-        // Keep the address bar on the matching crawlable URL, but only while
-        // browsing the unfiltered stream — filtered views have no static page.
-        if (this.isUnfiltered()) {
-            try {
-                history.pushState({ page }, '', this.pageUrl(page));
-            } catch (e) { /* no-op */ }
-        }
-
-        const grid = document.getElementById('posts-grid');
-        if (grid) {
-            grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    },
-
-    initSearch() {
-        const input = document.getElementById('blog-search');
-        if (!input) return;
-
-        let timer = null;
-        input.addEventListener('input', () => {
-            clearTimeout(timer);
-            timer = setTimeout(() => {
-                this.searchQuery = input.value;
-                this.currentPage = 1;
-                if (this.searchQuery.trim()) this.dropPageUrl();
-                this.renderPage();
-            }, 150);
-        });
-    },
-
-    async init() {
-        const posts = await this.fetchAllPosts();
-
-        if (posts.length === 0) {
-            // Keep whatever was statically rendered at build time.
-            return;
-        }
-
-        this.allPosts = posts;
-
-        // Honour the /blog/page/<n>/ the visitor actually landed on.
-        this.currentPage = Math.min(this.pageFromUrl(), this.getTotalPages(posts));
-
-        this.renderFilters();
-        this.initSearch();
-        this.renderPage();
-
-        window.addEventListener('popstate', () => {
-            this.currentPage = Math.min(this.pageFromUrl(), this.getTotalPages(this.filteredPosts()));
-            this.renderPage();
+    function syncChips() {
+        document.querySelectorAll('.nl-chip').forEach(function (chip) {
+            var on = chip.getAttribute('data-cat') === state.cat;
+            chip.classList.toggle('is-active', on);
+            chip.setAttribute('aria-pressed', on ? 'true' : 'false');
         });
     }
-};
 
-// Initialize when DOM is ready
-document.addEventListener('DOMContentLoaded', () => PostsLoader.init());
+    function render() {
+        syncChips();
+        syncUrl();
+        if (!isFiltering()) {
+            els.results.hidden = true;
+            els.home.hidden = false;
+            return;
+        }
+        els.home.hidden = true;
+        els.results.hidden = false;
+        var title = state.cat === 'all' ? 'All posts' : LABELS[state.cat] || 'Posts';
+        if (state.q.trim()) title = (state.cat === 'all' ? 'Results' : title) + ' for “' + state.q.trim() + '”';
+        els.resultsTitle.textContent = title;
+        els.grid.setAttribute('aria-busy', 'true');
+
+        loadPosts().then(function (posts) {
+            var list = posts.filter(matches);
+            els.count.textContent = list.length + (list.length === 1 ? ' post' : ' posts');
+            els.grid.innerHTML = list.length
+                ? list.slice(0, state.shown).map(renderCard).join('')
+                : '<p class="nl-empty">Nothing matches that yet. Try another category or search.</p>';
+            els.more.hidden = list.length <= state.shown;
+            els.grid.removeAttribute('aria-busy');
+        });
+    }
+
+    function setCategory(cat, scroll) {
+        state.cat = LABELS[cat] ? cat : 'all';
+        state.shown = BATCH;
+        render();
+        if (scroll) {
+            var target = document.querySelector('.nl-hero');
+            if (target) window.scrollTo({ top: target.offsetTop + target.offsetHeight - 120, behavior: 'smooth' });
+        }
+    }
+
+    function initChips() {
+        // Clone the hero chips into the navbar for the docked state.
+        if (els.navChips && els.filters) {
+            els.navChips.innerHTML = els.filters.innerHTML;
+            els.navChips.querySelectorAll('button').forEach(function (b) { b.tabIndex = -1; });
+        }
+        document.addEventListener('click', function (e) {
+            var chip = e.target.closest('.nl-chip');
+            if (chip) {
+                setCategory(chip.getAttribute('data-cat'), chip.closest('.nl-nav-chips') !== null);
+                return;
+            }
+            var viewAll = e.target.closest('.nl-viewall[data-cat]');
+            if (viewAll && !e.metaKey && !e.ctrlKey && !e.shiftKey) {
+                e.preventDefault();
+                setCategory(viewAll.getAttribute('data-cat'), true);
+            }
+        });
+    }
+
+    function initSearch() {
+        if (!els.search) return;
+        var t = null;
+        els.search.addEventListener('input', function () {
+            clearTimeout(t);
+            t = setTimeout(function () {
+                state.q = els.search.value;
+                // The box promises "Search all posts", so a query spans every category.
+                if (state.q.trim()) state.cat = 'all';
+                state.shown = BATCH;
+                render();
+            }, 140);
+        });
+        // Warm the index as soon as someone shows intent to search.
+        els.search.addEventListener('focus', loadPosts, { once: true });
+    }
+
+    function initDock() {
+        if (!els.nav || !els.filters || !('IntersectionObserver' in window)) return;
+        var io = new IntersectionObserver(function (entries) {
+            var docked = !entries[0].isIntersecting && entries[0].boundingClientRect.top < 0;
+            els.nav.classList.toggle('is-docked', docked);
+            if (els.navChips) {
+                els.navChips.setAttribute('aria-hidden', docked ? 'false' : 'true');
+                els.navChips.querySelectorAll('button').forEach(function (b) { b.tabIndex = docked ? 0 : -1; });
+            }
+        }, { rootMargin: '-72px 0px 0px 0px' });
+        io.observe(els.filters);
+    }
+
+    function initRails() {
+        document.querySelectorAll('.nl-rail-section').forEach(function (section) {
+            var rail = section.querySelector('.nl-rail');
+            var prev = section.querySelector('[data-rail-dir="-1"]');
+            var next = section.querySelector('[data-rail-dir="1"]');
+            if (!rail || !prev || !next) return;
+            function update() {
+                prev.disabled = rail.scrollLeft <= 4;
+                next.disabled = rail.scrollLeft + rail.clientWidth >= rail.scrollWidth - 4;
+            }
+            [prev, next].forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var dir = Number(btn.getAttribute('data-rail-dir'));
+                    rail.scrollBy({ left: dir * rail.clientWidth * 0.85, behavior: 'smooth' });
+                });
+            });
+            rail.addEventListener('scroll', update, { passive: true });
+            window.addEventListener('resize', update, { passive: true });
+            update();
+        });
+    }
+
+    function init() {
+        els.home = document.getElementById('nl-home');
+        els.results = document.getElementById('nl-results');
+        els.resultsTitle = document.getElementById('nl-results-title');
+        els.count = document.getElementById('nl-results-count');
+        els.grid = document.getElementById('posts-grid');
+        els.more = document.getElementById('nl-more');
+        els.search = document.getElementById('blog-search');
+        els.filters = document.getElementById('blog-filters');
+        els.navChips = document.getElementById('nl-nav-chips');
+        els.nav = document.getElementById('nl-nav');
+        if (!els.home || !els.results || !els.grid) return;
+
+        initChips();
+        initSearch();
+        initDock();
+        initRails();
+
+        els.more.addEventListener('click', function () {
+            state.shown += BATCH;
+            render();
+        });
+
+        var params = new URLSearchParams(window.location.search);
+        var c = params.get('c');
+        var q = params.get('q') || '';
+        if ((c && LABELS[c]) || q) {
+            state.cat = c && LABELS[c] ? c : 'all';
+            state.q = q;
+            if (els.search) els.search.value = q;
+            render();
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();

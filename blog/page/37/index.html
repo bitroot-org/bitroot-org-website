@@ -36,6 +36,7 @@
     <link rel="icon" type="image/png" href="https://bitroot.org/blog/media/images/favicon.png">
     <link rel="alternate" type="application/rss+xml" title="Newslogger | Bitroot" href="/rss.xml">
     <link rel="stylesheet" href="/blog/css/blog.css">
+    <link rel="stylesheet" href="/blog/css/newslogger.css">
 
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","@id":"https://bitroot.org/blog/#blog","url":"https://bitroot.org/blog/","name":"Bitroot Newslogger","description":"Daily AI and tech news for founders and builders.","inLanguage":"en","publisher":{"@type":"NewsMediaOrganization","name":"Bitroot","url":"https://bitroot.org","logo":{"@type":"ImageObject","url":"https://bitroot.org/blog/media/images/bitroot-dark-text-border.png"}}}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://bitroot.org"},{"@type":"ListItem","position":2,"name":"Newslogger","item":"https://bitroot.org/blog/"}]}</script>
@@ -97,7 +98,7 @@
         posthog.register({ site: 'blog' })
     </script>
 </head>
-<body>
+<body class="nl-index">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-3HDKNMVC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
@@ -138,140 +139,124 @@
         </div>
     </div>
 
-    <!-- Floating glass navbar -->
-    <header class="glass-nav">
-        <nav class="glass-nav-inner">
-            <a href="/" class="shell-logo"><img src="https://bitroot.org/blog/media/images/bitroot-dark-text-border.png" alt="Bitroot" class="logo-img"></a>
+    <!-- Floating glass navbar; category chips dock into it once the hero scrolls away -->
+    <header class="glass-nav nl-nav" id="nl-nav">
+        <nav class="glass-nav-inner" aria-label="Site">
+            <a href="/" class="shell-logo"><img src="https://bitroot.org/blog/media/images/bitroot-dark-text-border.png" alt="Bitroot" class="logo-img" width="112" height="28"></a>
             <div class="shell-links">
-                <a href="/blog" class="shell-link active">newslogger</a>
+                <a href="/blog/" class="shell-link active">newslogger</a>
                 <a href="/" class="shell-link">home</a>
+                <a href="/rss.xml" class="shell-link">rss</a>
                 <button class="theme-toggle" aria-label="Toggle theme">
                     <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                     <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                 </button>
             </div>
         </nav>
+        <div class="nl-nav-chips" id="nl-nav-chips" aria-hidden="true"></div>
     </header>
 
-    <!-- Dark capsule: title + filters + search -->
-    <section class="blog-shell" aria-label="Browse the newslogger">
-        <div class="shell-body">
-            <h1 class="shell-title">Newslogger</h1>
-            <div class="filter-pills" id="blog-filters" aria-label="Filter posts by tag">
-                <button class="filter-pill active" data-tag="All">All</button>
-            </div>
-            <div class="search-box">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                <input type="search" id="blog-search" placeholder="I want to read about..." aria-label="Search blog posts">
-            </div>
+    <!-- Hero: title, search, category chips -->
+    <section class="nl-hero" aria-label="Browse the newslogger">
+        <h1 class="nl-title">Newslogger</h1>
+        <p class="nl-lede">Daily AI and tech news for founders and builders. What shipped, what it costs, and whether it matters <em>to you.</em></p>
+        <label class="nl-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><line x1="21" y1="21" x2="16.4" y2="16.4"/></svg>
+            <input type="search" id="blog-search" placeholder="Search all posts..." aria-label="Search posts" autocomplete="off">
+        </label>
+        <div class="nl-chips" id="blog-filters" role="toolbar" aria-label="Filter by category">
+                <button class="nl-chip is-active" type="button" data-cat="all" aria-pressed="true">All</button>
+                <button class="nl-chip" type="button" data-cat="models" aria-pressed="false">AI Models</button>
+                <button class="nl-chip" type="button" data-cat="agents" aria-pressed="false">Agents &amp; Dev Tools</button>
+                <button class="nl-chip" type="button" data-cat="founders" aria-pressed="false">Founders &amp; Business</button>
+                <button class="nl-chip" type="button" data-cat="opensource" aria-pressed="false">Open Source</button>
+                <button class="nl-chip" type="button" data-cat="design" aria-pressed="false">Design &amp; Media</button>
+                <button class="nl-chip" type="button" data-cat="engineering" aria-pressed="false">Engineering</button>
         </div>
     </section>
 
-    <!-- Blog Showcase Section -->
-    <main class="showcase">
+    <main class="showcase nl-main" id="nl-main">
         <!-- POSTS:BEGIN — generated by build_index.py, do not edit by hand -->
-        <div class="cards-grid" id="posts-grid">
-            <a class="card" data-post-slug="2026-04-08-revolutionizing-ai-dev-tool-onboarding-interactive" href="/blog/2026-04-08-revolutionizing-ai-dev-tool-onboarding-interactive/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-04-08-revolutionizing-ai-dev-tool-onboarding-interactive.jpg" alt="Revolutionizing AI Dev Tool Onboarding: Interactive Learning Comes to Claude Code" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-04-08-revolutionizing-ai-dev-tool-onboarding-interactive'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Revolutionizing AI Dev Tool Onboarding: Interactive Learning Comes to Claude Code</h3>
-                    <p class="card-excerpt">Claude Code introduces a new /powerup command, bringing interactive lessons to the terminal, and marking the beginning of a new era in AI dev tool onboarding. This innovation is…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">AI</span>
-                        <span class="card-info">8 Apr 2026 &bull; 2 min read</span>
+        <div id="nl-home">
+        <section class="nl-section" aria-labelledby="nl-all-title">
+            <div class="nl-section-head">
+                <h2 class="nl-h2" id="nl-all-title">All posts <span class="nl-h2-sub">Page 37 of 46</span></h2>
+            </div>
+            <div class="nl-grid">
+                <a class="nl-card nl-card--md" data-post-slug="2026-04-08-revolutionizing-ai-dev-tool-onboarding-interactive" href="/blog/2026-04-08-revolutionizing-ai-dev-tool-onboarding-interactive/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-04-08-revolutionizing-ai-dev-tool-onboarding-interactive.jpg" alt="Revolutionizing AI Dev Tool Onboarding: Interactive Learning Comes to Claude Code" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-04-08-revolutionizing-ai-dev-tool-onboarding-interactive'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Revolutionizing AI Dev Tool Onboarding: Interactive Learning Comes to Claude Code</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the" href="/blog/2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the.jpg" alt="Revolutionary AI Teacher: Clicky Buddy Changes the Game for Learning" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Revolutionary AI Teacher: Clicky Buddy Changes the Game for Learning</h3>
-                    <p class="card-excerpt">Meet Clicky, an AI-powered teacher that assists learners in real-time, and discover its potential to transform the way we acquire new skills. This cutting-edge tool is set to…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">AI</span>
-                        <span class="card-info">8 Apr 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>8 Apr 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the" href="/blog/2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the.jpg" alt="Revolutionary AI Teacher: Clicky Buddy Changes the Game for Learning" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Revolutionary AI Teacher: Clicky Buddy Changes the Game for Learning</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-04-06-unlocking-githubs-hidden-potential-a-personal-prod" href="/blog/2026-04-06-unlocking-githubs-hidden-potential-a-personal-prod/">
-                <img class="card-bg" src="/blog/media/placeholder-blog.png" alt="Unlocking GitHub&#x27;s Hidden Potential: A Personal Productivity Powerhouse" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-04-06-unlocking-githubs-hidden-potential-a-personal-prod'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Unlocking GitHub&#x27;s Hidden Potential: A Personal Productivity Powerhouse</h3>
-                    <p class="card-excerpt">GitHub is not just for coding, it can also power your daily life with its built-in task management features, discover how to set up your personal operating system. This…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">GitHub</span>
-                        <span class="card-info">6 Apr 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI</span><span>8 Apr 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-04-06-unlocking-githubs-hidden-potential-a-personal-prod" href="/blog/2026-04-06-unlocking-githubs-hidden-potential-a-personal-prod/">
+                    <div class="nl-card-media"><img src="/blog/media/placeholder-blog.png" alt="Unlocking GitHub&#x27;s Hidden Potential: A Personal Productivity Powerhouse" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-04-06-unlocking-githubs-hidden-potential-a-personal-prod'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Unlocking GitHub&#x27;s Hidden Potential: A Personal Productivity Powerhouse</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-04-06-tldraw-revolution-unlocking-next-level-collaborati" href="/blog/2026-04-06-tldraw-revolution-unlocking-next-level-collaborati/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-04-06-tldraw-revolution-unlocking-next-level-collaborati.jpg" alt="tldraw Revolution: Unlocking Next-Level Collaborative Diagramming" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-04-06-tldraw-revolution-unlocking-next-level-collaborati'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">tldraw Revolution: Unlocking Next-Level Collaborative Diagramming</h3>
-                    <p class="card-excerpt">In the next version of tldraw,</p>
-                    <div class="card-meta">
-                        <span class="card-tag">tldraw</span>
-                        <span class="card-info">6 Apr 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>6 Apr 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-04-06-tldraw-revolution-unlocking-next-level-collaborati" href="/blog/2026-04-06-tldraw-revolution-unlocking-next-level-collaborati/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-04-06-tldraw-revolution-unlocking-next-level-collaborati.jpg" alt="tldraw Revolution: Unlocking Next-Level Collaborative Diagramming" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-04-06-tldraw-revolution-unlocking-next-level-collaborati'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">tldraw Revolution: Unlocking Next-Level Collaborative Diagramming</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-04-06-revolutionizing-font-pairing-introducing-typevibe" href="/blog/2026-04-06-revolutionizing-font-pairing-introducing-typevibe/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-04-06-revolutionizing-font-pairing-introducing-typevibe.jpg" alt="Revolutionizing Font Pairing: Introducing Typevibe" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-04-06-revolutionizing-font-pairing-introducing-typevibe'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Revolutionizing Font Pairing: Introducing Typevibe</h3>
-                    <p class="card-excerpt">Typevibe is a game-changing tool that simplifies font pairing, offering unique recommendations and 32 design templates to streamline your design process. This innovative solution…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">font pairing</span>
-                        <span class="card-info">6 Apr 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">tldraw</span><span>6 Apr 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-04-06-revolutionizing-font-pairing-introducing-typevibe" href="/blog/2026-04-06-revolutionizing-font-pairing-introducing-typevibe/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-04-06-revolutionizing-font-pairing-introducing-typevibe.jpg" alt="Revolutionizing Font Pairing: Introducing Typevibe" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-04-06-revolutionizing-font-pairing-introducing-typevibe'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Revolutionizing Font Pairing: Introducing Typevibe</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-04-06-revolutionizing-design-top-tools-for-color-and-gra" href="/blog/2026-04-06-revolutionizing-design-top-tools-for-color-and-gra/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-04-06-revolutionizing-design-top-tools-for-color-and-gra.jpg" alt="Revolutionizing Design: Top Tools for Color and Gradient Selection" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-04-06-revolutionizing-design-top-tools-for-color-and-gra'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Revolutionizing Design: Top Tools for Color and Gradient Selection</h3>
-                    <p class="card-excerpt">Discover the top tools for picking colors and gradients, as shared by Albia, to take your design to the next level. From Coolors to Colorion, explore the best resources for…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">design</span>
-                        <span class="card-info">6 Apr 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Design &amp; Media</span><span>6 Apr 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-04-06-revolutionizing-design-top-tools-for-color-and-gra" href="/blog/2026-04-06-revolutionizing-design-top-tools-for-color-and-gra/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-04-06-revolutionizing-design-top-tools-for-color-and-gra.jpg" alt="Revolutionizing Design: Top Tools for Color and Gradient Selection" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-04-06-revolutionizing-design-top-tools-for-color-and-gra'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Revolutionizing Design: Top Tools for Color and Gradient Selection</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-03-30-revolutionizing-game-development-with-ommas-ai-pow" href="/blog/2026-03-30-revolutionizing-game-development-with-ommas-ai-pow/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-03-30-revolutionizing-game-development-with-ommas-ai-pow.jpg" alt="Revolutionizing Game Development with Omma&#x27;s AI-Powered Tools" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-03-30-revolutionizing-game-development-with-ommas-ai-pow'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Revolutionizing Game Development with Omma&#x27;s AI-Powered Tools</h3>
-                    <p class="card-excerpt">Omma&#x27;s AI-powered tools are changing the game development landscape with its level builder and controllable color theme parameters, allowing for unprecedented creativity and…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">Omma</span>
-                        <span class="card-info">30 Mar 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Design &amp; Media</span><span>6 Apr 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-03-30-revolutionizing-game-development-with-ommas-ai-pow" href="/blog/2026-03-30-revolutionizing-game-development-with-ommas-ai-pow/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-03-30-revolutionizing-game-development-with-ommas-ai-pow.jpg" alt="Revolutionizing Game Development with Omma&#x27;s AI-Powered Tools" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-03-30-revolutionizing-game-development-with-ommas-ai-pow'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Revolutionizing Game Development with Omma&#x27;s AI-Powered Tools</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-03-24-revolutionizing-productivity-claudes-game-changing" href="/blog/2026-03-24-revolutionizing-productivity-claudes-game-changing/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-03-24-revolutionizing-productivity-claudes-game-changing.jpg" alt="Revolutionizing Productivity: Claude&#x27;s Game-Changing Update" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-03-24-revolutionizing-productivity-claudes-game-changing'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Revolutionizing Productivity: Claude&#x27;s Game-Changing Update</h3>
-                    <p class="card-excerpt">Claude&#x27;s latest update enables the AI to use your computer to complete tasks, opening up new possibilities for automation and efficiency. This breakthrough feature is set to…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">AI</span>
-                        <span class="card-info">24 Mar 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Omma</span><span>30 Mar 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-03-24-revolutionizing-productivity-claudes-game-changing" href="/blog/2026-03-24-revolutionizing-productivity-claudes-game-changing/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-03-24-revolutionizing-productivity-claudes-game-changing.jpg" alt="Revolutionizing Productivity: Claude&#x27;s Game-Changing Update" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-03-24-revolutionizing-productivity-claudes-game-changing'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Revolutionizing Productivity: Claude&#x27;s Game-Changing Update</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-03-14-rust-powered-agent-browser-revolution-lightning-fa" href="/blog/2026-03-14-rust-powered-agent-browser-revolution-lightning-fa/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-03-14-rust-powered-agent-browser-revolution-lightning-fa.jpg" alt="Rust-Powered Agent-Browser Revolution: Lightning-Fast Performance and Tiny Footprint" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-03-14-rust-powered-agent-browser-revolution-lightning-fa'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Rust-Powered Agent-Browser Revolution: Lightning-Fast Performance and Tiny Footprint</h3>
-                    <p class="card-excerpt">The agent-browser is now fully native Rust, boasting a 1.6x faster cold start, 18x less memory, and a 99x smaller install, making it a game-changer for developers. This update…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">Rust</span>
-                        <span class="card-info">14 Mar 2026 &bull; 1 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>24 Mar 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-03-14-rust-powered-agent-browser-revolution-lightning-fa" href="/blog/2026-03-14-rust-powered-agent-browser-revolution-lightning-fa/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-03-14-rust-powered-agent-browser-revolution-lightning-fa.jpg" alt="Rust-Powered Agent-Browser Revolution: Lightning-Fast Performance and Tiny Footprint" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-03-14-rust-powered-agent-browser-revolution-lightning-fa'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Rust-Powered Agent-Browser Revolution: Lightning-Fast Performance and Tiny Footprint</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="pagination-container">
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>14 Mar 2026 &middot; 1 min read</span></div>
+                </a>
+            </div>
+            <div class="pagination-container">
             <nav class="pagination" aria-label="Newslogger pagination">
                 <a class="pagination-btn prev" href="/blog/page/36/" aria-label="Previous page"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg><span>Prev</span></a>
                 <span class="pagination-info">
@@ -279,9 +264,21 @@
                 </span>
                 <a class="pagination-btn next" href="/blog/page/38/" aria-label="Next page"><span>Next</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
             </nav>
+            </div>
+        </section>
+            <p class="pagination-back"><a href="https://bitroot.org/blog/">&larr; Back to the newslogger</a></p>
         </div>
-        <p class="pagination-back"><a href="https://bitroot.org/blog/">&larr; Back to latest posts</a></p>
         <!-- POSTS:END -->
+
+        <!-- Filter / search results (rendered by posts-loader.js) -->
+        <section class="nl-section nl-results" id="nl-results" hidden aria-live="polite">
+            <div class="nl-section-head">
+                <h2 class="nl-h2" id="nl-results-title">Results</h2>
+                <span class="nl-results-count" id="nl-results-count"></span>
+            </div>
+            <div class="nl-grid" id="posts-grid"></div>
+            <div class="nl-more-wrap"><button class="nl-more" id="nl-more" type="button" hidden>Load more</button></div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -297,7 +294,8 @@
     </footer>
 
     <script src="/blog/js/pixel-placeholder.js"></script>
-    <script src="/blog/js/posts-loader.js"></script>
+    <script src="/blog/js/posts-loader.js" defer></script>
+    <script src="/blog/js/newsletter.js" defer></script>
 
     <!-- Theme toggle -->
     <script>

@@ -36,6 +36,7 @@
     <link rel="icon" type="image/png" href="https://bitroot.org/blog/media/images/favicon.png">
     <link rel="alternate" type="application/rss+xml" title="Newslogger | Bitroot" href="/rss.xml">
     <link rel="stylesheet" href="/blog/css/blog.css">
+    <link rel="stylesheet" href="/blog/css/newslogger.css">
 
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","@id":"https://bitroot.org/blog/#blog","url":"https://bitroot.org/blog/","name":"Bitroot Newslogger","description":"Daily AI and tech news for founders and builders.","inLanguage":"en","publisher":{"@type":"NewsMediaOrganization","name":"Bitroot","url":"https://bitroot.org","logo":{"@type":"ImageObject","url":"https://bitroot.org/blog/media/images/bitroot-dark-text-border.png"}}}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://bitroot.org"},{"@type":"ListItem","position":2,"name":"Newslogger","item":"https://bitroot.org/blog/"}]}</script>
@@ -97,7 +98,7 @@
         posthog.register({ site: 'blog' })
     </script>
 </head>
-<body>
+<body class="nl-index">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-3HDKNMVC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
@@ -138,140 +139,124 @@
         </div>
     </div>
 
-    <!-- Floating glass navbar -->
-    <header class="glass-nav">
-        <nav class="glass-nav-inner">
-            <a href="/" class="shell-logo"><img src="https://bitroot.org/blog/media/images/bitroot-dark-text-border.png" alt="Bitroot" class="logo-img"></a>
+    <!-- Floating glass navbar; category chips dock into it once the hero scrolls away -->
+    <header class="glass-nav nl-nav" id="nl-nav">
+        <nav class="glass-nav-inner" aria-label="Site">
+            <a href="/" class="shell-logo"><img src="https://bitroot.org/blog/media/images/bitroot-dark-text-border.png" alt="Bitroot" class="logo-img" width="112" height="28"></a>
             <div class="shell-links">
-                <a href="/blog" class="shell-link active">newslogger</a>
+                <a href="/blog/" class="shell-link active">newslogger</a>
                 <a href="/" class="shell-link">home</a>
+                <a href="/rss.xml" class="shell-link">rss</a>
                 <button class="theme-toggle" aria-label="Toggle theme">
                     <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                     <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                 </button>
             </div>
         </nav>
+        <div class="nl-nav-chips" id="nl-nav-chips" aria-hidden="true"></div>
     </header>
 
-    <!-- Dark capsule: title + filters + search -->
-    <section class="blog-shell" aria-label="Browse the newslogger">
-        <div class="shell-body">
-            <h1 class="shell-title">Newslogger</h1>
-            <div class="filter-pills" id="blog-filters" aria-label="Filter posts by tag">
-                <button class="filter-pill active" data-tag="All">All</button>
-            </div>
-            <div class="search-box">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                <input type="search" id="blog-search" placeholder="I want to read about..." aria-label="Search blog posts">
-            </div>
+    <!-- Hero: title, search, category chips -->
+    <section class="nl-hero" aria-label="Browse the newslogger">
+        <h1 class="nl-title">Newslogger</h1>
+        <p class="nl-lede">Daily AI and tech news for founders and builders. What shipped, what it costs, and whether it matters <em>to you.</em></p>
+        <label class="nl-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><line x1="21" y1="21" x2="16.4" y2="16.4"/></svg>
+            <input type="search" id="blog-search" placeholder="Search all posts..." aria-label="Search posts" autocomplete="off">
+        </label>
+        <div class="nl-chips" id="blog-filters" role="toolbar" aria-label="Filter by category">
+                <button class="nl-chip is-active" type="button" data-cat="all" aria-pressed="true">All</button>
+                <button class="nl-chip" type="button" data-cat="models" aria-pressed="false">AI Models</button>
+                <button class="nl-chip" type="button" data-cat="agents" aria-pressed="false">Agents &amp; Dev Tools</button>
+                <button class="nl-chip" type="button" data-cat="founders" aria-pressed="false">Founders &amp; Business</button>
+                <button class="nl-chip" type="button" data-cat="opensource" aria-pressed="false">Open Source</button>
+                <button class="nl-chip" type="button" data-cat="design" aria-pressed="false">Design &amp; Media</button>
+                <button class="nl-chip" type="button" data-cat="engineering" aria-pressed="false">Engineering</button>
         </div>
     </section>
 
-    <!-- Blog Showcase Section -->
-    <main class="showcase">
+    <main class="showcase nl-main" id="nl-main">
         <!-- POSTS:BEGIN — generated by build_index.py, do not edit by hand -->
-        <div class="cards-grid" id="posts-grid">
-            <a class="card" data-post-slug="2026-09-07-terraform-vs-ansible-2026-which-devops-tool-for-yo" href="/blog/2026-09-07-terraform-vs-ansible-2026-which-devops-tool-for-yo/">
-                <img class="card-bg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvtSBGmED_ZZ5IzwGgvqgPlZkns7ttxCwJ81-7BJbr2oulmTDyScQ9uWs&amp;s=10" alt="Terraform vs Ansible 2026: Which DevOps Tool for Your Startup?" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-07-terraform-vs-ansible-2026-which-devops-tool-for-yo'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Terraform vs Ansible 2026: Which DevOps Tool for Your Startup?</h3>
-                    <p class="card-excerpt">Terraform provisions infrastructure. Ansible configures servers. Understand when to use each tool, why most startups need both, and how to structure your DevOps workflow.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">Cloud</span>
-                        <span class="card-info">7 Sep 2026 &bull; 5 min read</span>
+        <div id="nl-home">
+        <section class="nl-section" aria-labelledby="nl-all-title">
+            <div class="nl-section-head">
+                <h2 class="nl-h2" id="nl-all-title">All posts <span class="nl-h2-sub">Page 6 of 46</span></h2>
+            </div>
+            <div class="nl-grid">
+                <a class="nl-card nl-card--md" data-post-slug="2026-09-07-terraform-vs-ansible-2026-which-devops-tool-for-yo" href="/blog/2026-09-07-terraform-vs-ansible-2026-which-devops-tool-for-yo/">
+                    <div class="nl-card-media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvtSBGmED_ZZ5IzwGgvqgPlZkns7ttxCwJ81-7BJbr2oulmTDyScQ9uWs&amp;s=10" alt="Terraform vs Ansible 2026: Which DevOps Tool for Your Startup?" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-07-terraform-vs-ansible-2026-which-devops-tool-for-yo'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Terraform vs Ansible 2026: Which DevOps Tool for Your Startup?</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-09-05-gemini-spark-google-photos-is-the-upgrade-worth-it" href="/blog/2026-09-05-gemini-spark-google-photos-is-the-upgrade-worth-it/">
-                <img class="card-bg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQjssi_3xQSOmXGVRfzPN6bSAQqCUn6RSV43dSnl0D6ZHhwCojVsyNImk&amp;s=10" alt="Gemini Spark Google Photos: Is the Upgrade Worth It for Founders?" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-05-gemini-spark-google-photos-is-the-upgrade-worth-it'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Gemini Spark Google Photos: Is the Upgrade Worth It for Founders?</h3>
-                    <p class="card-excerpt">Gemini Spark automates photo organization for founders. Multi-step workflows, shared albums, calendar events. Is a $20/month Pro upgrade worth it? Decision framework inside.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">Google</span>
-                        <span class="card-info">5 Sep 2026 &bull; 3 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Founders &amp; Business</span><span>7 Sep 2026 &middot; 5 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-09-05-gemini-spark-google-photos-is-the-upgrade-worth-it" href="/blog/2026-09-05-gemini-spark-google-photos-is-the-upgrade-worth-it/">
+                    <div class="nl-card-media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQjssi_3xQSOmXGVRfzPN6bSAQqCUn6RSV43dSnl0D6ZHhwCojVsyNImk&amp;s=10" alt="Gemini Spark Google Photos: Is the Upgrade Worth It for Founders?" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-05-gemini-spark-google-photos-is-the-upgrade-worth-it'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Gemini Spark Google Photos: Is the Upgrade Worth It for Founders?</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-09-05-agent-coordination-what-founders-should-know-from" href="/blog/2026-09-05-agent-coordination-what-founders-should-know-from/">
-                <img class="card-bg" src="https://techcrunch.com/wp-content/uploads/2026/09/Screenshot-2026-09-04-at-8.49.39-AM-e1788537064907.png" alt="Agent Coordination: What Founders Should Know From DseWiki" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-05-agent-coordination-what-founders-should-know-from'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Agent Coordination: What Founders Should Know From DseWiki</h3>
-                    <p class="card-excerpt">The DseWiki incident reveals what happens when multi-agent systems coordinate at scale. 15,000 edits in 2 months, undetected. What founders building agents should know.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">Agentic AI</span>
-                        <span class="card-info">5 Sep 2026 &bull; 4 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>5 Sep 2026 &middot; 3 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-09-05-agent-coordination-what-founders-should-know-from" href="/blog/2026-09-05-agent-coordination-what-founders-should-know-from/">
+                    <div class="nl-card-media"><img src="https://techcrunch.com/wp-content/uploads/2026/09/Screenshot-2026-09-04-at-8.49.39-AM-e1788537064907.png" alt="Agent Coordination: What Founders Should Know From DseWiki" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-05-agent-coordination-what-founders-should-know-from'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Agent Coordination: What Founders Should Know From DseWiki</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-09-04-what-is-abliteration-ai-guardrails-how-theyre-bein" href="/blog/2026-09-04-what-is-abliteration-ai-guardrails-how-theyre-bein/">
-                <img class="card-bg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgmtNnJMhCm4tkPn795PZZk7Jr25Jdx7HQyofMnQuLElvd4aFPaw4sFJnw&amp;s=10" alt="What Is Abliteration? AI Guardrails &amp; How They&#x27;re Being Removed" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-04-what-is-abliteration-ai-guardrails-how-theyre-bein'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">What Is Abliteration? AI Guardrails &amp; How They&#x27;re Being Removed</h3>
-                    <p class="card-excerpt">Abliteration removes AI safety guardrails from models. Learn what abliteration is, how it works, why Abliteration.ai launched, and what it means for founders, security teams, and…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">AI</span>
-                        <span class="card-info">4 Sep 2026 &bull; 8 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>5 Sep 2026 &middot; 4 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-09-04-what-is-abliteration-ai-guardrails-how-theyre-bein" href="/blog/2026-09-04-what-is-abliteration-ai-guardrails-how-theyre-bein/">
+                    <div class="nl-card-media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgmtNnJMhCm4tkPn795PZZk7Jr25Jdx7HQyofMnQuLElvd4aFPaw4sFJnw&amp;s=10" alt="What Is Abliteration? AI Guardrails &amp; How They&#x27;re Being Removed" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-04-what-is-abliteration-ai-guardrails-how-theyre-bein'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">What Is Abliteration? AI Guardrails &amp; How They&#x27;re Being Removed</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-09-04-gpt-6-astra-vs-fable-5-1-for-blender-which-ai-mode" href="/blog/2026-09-04-gpt-6-astra-vs-fable-5-1-for-blender-which-ai-mode/">
-                <img class="card-bg" src="https://cdn.mos.cms.futurecdn.net/9brtsKkuUU34fDSebXST73.jpg" alt="GPT-6 Astra vs Fable 5.1 for Blender - Which AI Model Wins for 3D" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-04-gpt-6-astra-vs-fable-5-1-for-blender-which-ai-mode'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">GPT-6 Astra vs Fable 5.1 for Blender - Which AI Model Wins for 3D</h3>
-                    <p class="card-excerpt">Compare Astra and Fable 5.1 for Blender 3D modeling. Real benchmarks, pricing, speed, and user experiences. Which AI wins for indie devs, architects, and designers?</p>
-                    <div class="card-meta">
-                        <span class="card-tag">Tech &amp; AI</span>
-                        <span class="card-info">4 Sep 2026 &bull; 8 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI</span><span>4 Sep 2026 &middot; 8 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-09-04-gpt-6-astra-vs-fable-5-1-for-blender-which-ai-mode" href="/blog/2026-09-04-gpt-6-astra-vs-fable-5-1-for-blender-which-ai-mode/">
+                    <div class="nl-card-media"><img src="https://cdn.mos.cms.futurecdn.net/9brtsKkuUU34fDSebXST73.jpg" alt="GPT-6 Astra vs Fable 5.1 for Blender - Which AI Model Wins for 3D" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-04-gpt-6-astra-vs-fable-5-1-for-blender-which-ai-mode'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">GPT-6 Astra vs Fable 5.1 for Blender - Which AI Model Wins for 3D</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-09-04-gmail-live-what-founders-need-to-know-about-google" href="/blog/2026-09-04-gmail-live-what-founders-need-to-know-about-google/">
-                <img class="card-bg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6uNlrGl5bjU3exmQvsGy7L9Y5JNWw3d6EkkIcYFbnRttQJ6yepslR2w8&amp;s=10" alt="Gmail Live: What Founders Need to Know About Google&#x27;s Features" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-04-gmail-live-what-founders-need-to-know-about-google'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Gmail Live: What Founders Need to Know About Google&#x27;s Features</h3>
-                    <p class="card-excerpt">Gmail Live, Docs Live, and Keep Live let you voice-search email, draft documents, and organize notes. Here&#x27;s what founders need to know about pricing and ROI.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">Google</span>
-                        <span class="card-info">4 Sep 2026 &bull; 4 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>4 Sep 2026 &middot; 8 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-09-04-gmail-live-what-founders-need-to-know-about-google" href="/blog/2026-09-04-gmail-live-what-founders-need-to-know-about-google/">
+                    <div class="nl-card-media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6uNlrGl5bjU3exmQvsGy7L9Y5JNWw3d6EkkIcYFbnRttQJ6yepslR2w8&amp;s=10" alt="Gmail Live: What Founders Need to Know About Google&#x27;s Features" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-04-gmail-live-what-founders-need-to-know-about-google'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Gmail Live: What Founders Need to Know About Google&#x27;s Features</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-09-03-claude-fable-5-1-for-indie-game-dev-build-games-in" href="/blog/2026-09-03-claude-fable-5-1-for-indie-game-dev-build-games-in/">
-                <img class="card-bg" src="https://favtutor.com/fable-5-1-real-user-reviews/images/news-fable-5-1-real-user-reviews-v3-780.webp" alt="Claude Fable 5.1 for Indie Game Dev - Build Games in Hours" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-03-claude-fable-5-1-for-indie-game-dev-build-games-in'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Claude Fable 5.1 for Indie Game Dev - Build Games in Hours</h3>
-                    <p class="card-excerpt">Developers shipped complete playable games in Fable 5.1 single prompts. Cache costs dropped 75%. Here&#x27;s how indie devs are prototyping faster and cheaper.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">Dev</span>
-                        <span class="card-info">3 Sep 2026 &bull; 5 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Founders &amp; Business</span><span>4 Sep 2026 &middot; 4 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-09-03-claude-fable-5-1-for-indie-game-dev-build-games-in" href="/blog/2026-09-03-claude-fable-5-1-for-indie-game-dev-build-games-in/">
+                    <div class="nl-card-media"><img src="https://favtutor.com/fable-5-1-real-user-reviews/images/news-fable-5-1-real-user-reviews-v3-780.webp" alt="Claude Fable 5.1 for Indie Game Dev - Build Games in Hours" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-03-claude-fable-5-1-for-indie-game-dev-build-games-in'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Claude Fable 5.1 for Indie Game Dev - Build Games in Hours</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-09-03-ai-coding-tools-for-founders-cursor-vs-claude-code" href="/blog/2026-09-03-ai-coding-tools-for-founders-cursor-vs-claude-code/">
-                <img class="card-bg" src="https://res.cloudinary.com/de4rvmslk/image/upload/f_auto,q_auto/Frame_2087325381_swjj10.png" alt="AI Coding Tools for Founders - Cursor vs Claude Code vs Copilot" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-03-ai-coding-tools-for-founders-cursor-vs-claude-code'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">AI Coding Tools for Founders - Cursor vs Claude Code vs Copilot</h3>
-                    <p class="card-excerpt">Compare Cursor, Claude Code, and GitHub Copilot for founders. Real cost-to-productivity breakdown. Which saves most time? Decision framework included.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">Coding</span>
-                        <span class="card-info">3 Sep 2026 &bull; 10 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>3 Sep 2026 &middot; 5 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-09-03-ai-coding-tools-for-founders-cursor-vs-claude-code" href="/blog/2026-09-03-ai-coding-tools-for-founders-cursor-vs-claude-code/">
+                    <div class="nl-card-media"><img src="https://res.cloudinary.com/de4rvmslk/image/upload/f_auto,q_auto/Frame_2087325381_swjj10.png" alt="AI Coding Tools for Founders - Cursor vs Claude Code vs Copilot" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-03-ai-coding-tools-for-founders-cursor-vs-claude-code'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">AI Coding Tools for Founders - Cursor vs Claude Code vs Copilot</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-09-02-openai-astra-cybersecurity-model-finds-zero-day-ex" href="/blog/2026-09-02-openai-astra-cybersecurity-model-finds-zero-day-ex/">
-                <img class="card-bg" src="https://techcrunch.com/wp-content/uploads/2026/05/openai-logo-code-background.jpg?resize=1280,852" alt="OpenAI Astra: Cybersecurity Model Finds Zero-Day Exploits - Safety Concerns" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-02-openai-astra-cybersecurity-model-finds-zero-day-ex'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">OpenAI Astra: Cybersecurity Model Finds Zero-Day Exploits - Safety Concerns</h3>
-                    <p class="card-excerpt">OpenAI announced Astra, which discovers and exploits unknown security flaws autonomously. Perfect ExploitBench score, two zero-day exploits found. Here&#x27;s the pattern and what it…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">OpenAI</span>
-                        <span class="card-info">2 Sep 2026 &bull; 3 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>3 Sep 2026 &middot; 10 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-09-02-openai-astra-cybersecurity-model-finds-zero-day-ex" href="/blog/2026-09-02-openai-astra-cybersecurity-model-finds-zero-day-ex/">
+                    <div class="nl-card-media"><img src="https://techcrunch.com/wp-content/uploads/2026/05/openai-logo-code-background.jpg?resize=1280,852" alt="OpenAI Astra: Cybersecurity Model Finds Zero-Day Exploits - Safety Concerns" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-09-02-openai-astra-cybersecurity-model-finds-zero-day-ex'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">OpenAI Astra: Cybersecurity Model Finds Zero-Day Exploits - Safety Concerns</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="pagination-container">
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>2 Sep 2026 &middot; 3 min read</span></div>
+                </a>
+            </div>
+            <div class="pagination-container">
             <nav class="pagination" aria-label="Newslogger pagination">
                 <a class="pagination-btn prev" href="/blog/page/5/" aria-label="Previous page"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg><span>Prev</span></a>
                 <span class="pagination-info">
@@ -279,9 +264,21 @@
                 </span>
                 <a class="pagination-btn next" href="/blog/page/7/" aria-label="Next page"><span>Next</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
             </nav>
+            </div>
+        </section>
+            <p class="pagination-back"><a href="https://bitroot.org/blog/">&larr; Back to the newslogger</a></p>
         </div>
-        <p class="pagination-back"><a href="https://bitroot.org/blog/">&larr; Back to latest posts</a></p>
         <!-- POSTS:END -->
+
+        <!-- Filter / search results (rendered by posts-loader.js) -->
+        <section class="nl-section nl-results" id="nl-results" hidden aria-live="polite">
+            <div class="nl-section-head">
+                <h2 class="nl-h2" id="nl-results-title">Results</h2>
+                <span class="nl-results-count" id="nl-results-count"></span>
+            </div>
+            <div class="nl-grid" id="posts-grid"></div>
+            <div class="nl-more-wrap"><button class="nl-more" id="nl-more" type="button" hidden>Load more</button></div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -297,7 +294,8 @@
     </footer>
 
     <script src="/blog/js/pixel-placeholder.js"></script>
-    <script src="/blog/js/posts-loader.js"></script>
+    <script src="/blog/js/posts-loader.js" defer></script>
+    <script src="/blog/js/newsletter.js" defer></script>
 
     <!-- Theme toggle -->
     <script>

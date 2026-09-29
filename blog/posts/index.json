@@ -429,6 +429,11 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3U3LHM7J3CWBXAoxc8uPijkFj7oBWW2mr2GWlZtYT2Q&s=10",
       "sources": [],
       "readTime": "10 min",
+      "categories": [
+        "models",
+        "agents",
+        "founders"
+      ],
       "shortId": 407
     },
     {
@@ -449,6 +454,9 @@
         "https://wallabycdc.net/"
       ],
       "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
       "shortId": 406
     },
     {
@@ -469,6 +477,10 @@
       "image": "https://assets.sarvam.ai/tr:q-70,f-auto,dpr-auto/images/03117ysv/production/f8f925a01743da396c60f47819d2db2139e4d4c2-1008x630.png?w=1200",
       "sources": [],
       "readTime": "7 min",
+      "categories": [
+        "models",
+        "founders"
+      ],
       "shortId": 405
     },
     {
@@ -490,6 +502,11 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdAxrv_NHEdRHh7Dd5acbQt_27RVlmFfa9oDijI740mw&s=10",
       "sources": [],
       "readTime": "7 min",
+      "categories": [
+        "models",
+        "agents",
+        "founders"
+      ],
       "shortId": 404
     },
     {
@@ -510,6 +527,9 @@
         "https://github.com/stormj-UH/spivak-lean"
       ],
       "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
       "shortId": 403
     },
     {
@@ -530,6 +550,10 @@
         "https://github.com/reladraw/reladraw"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "engineering"
+      ],
       "shortId": 402
     },
     {
@@ -550,6 +574,10 @@
         "https://eunomia.dev/blog/2026/09/24/qwen3-ebpf-in-kernel-inference/"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "engineering"
+      ],
       "shortId": 401
     },
     {
@@ -570,6 +598,9 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShvLO0yuSR5_Pofzw8MDRMhFXB0z_4sUW16XhqPxQtrg&s=10",
       "sources": [],
       "readTime": "5 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 400
     },
     {
@@ -590,6 +621,10 @@
         "https://github.com/bertaye/agentic-cuda-optimizer"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "engineering"
+      ],
       "shortId": 399
     },
     {
@@ -610,6 +645,10 @@
       "image": "https://pbs.twimg.com/card_img/2100951169808171009/WH4SuF2U?format=png&name=small",
       "sources": [],
       "readTime": "8 min",
+      "categories": [
+        "models",
+        "founders"
+      ],
       "shortId": 398
     },
     {
@@ -630,6 +669,10 @@
         "https://play.c3-lang.org/?example=voxelspace_synthwave"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design",
+        "engineering"
+      ],
       "shortId": 397
     },
     {
@@ -650,6 +693,9 @@
         "https://play.simten.dev/nand"
       ],
       "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
       "shortId": 396
     },
     {
@@ -670,6 +716,9 @@
         "https://news.ycombinator.com/item?id=49813759"
       ],
       "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
       "shortId": 395
     },
     {
@@ -690,6 +739,10 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/09/mark-zuckerberg-meta-connect.jpg?resize=1200,799",
       "sources": [],
       "readTime": "8 min",
+      "categories": [
+        "agents",
+        "founders"
+      ],
       "shortId": 394
     },
     {
@@ -711,6 +764,9 @@
         "https://www.forensicdbg.com"
       ],
       "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
       "shortId": 393
     },
     {
@@ -732,6 +788,9 @@
         "https://carbon.ms/self-hosted"
       ],
       "readTime": "2 min",
+      "categories": [
+        "opensource"
+      ],
       "shortId": 392
     },
     {
@@ -752,6 +811,9 @@
         "https://buildabrowser.net/"
       ],
       "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
       "shortId": 391
     },
     {
@@ -770,6 +832,9 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDwqKAWbk9EWlX7cXqrJ12bKEpaURi7yigJWXcCRbEng&s=10",
       "sources": [],
       "readTime": "8 min",
+      "categories": [
+        "founders"
+      ],
       "shortId": 390
     },
     {
@@ -789,6 +854,10 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/09/openai-getty.jpg?resize=1280,853",
       "sources": [],
       "readTime": "9 min",
+      "categories": [
+        "models",
+        "founders"
+      ],
       "shortId": 389
     },
     {
@@ -808,6 +877,9 @@
       "image": "https://www.figma.com/community/thumbnail?resource_id=1190067223006709410&resource_type=plugin",
       "sources": [],
       "readTime": "9 min",
+      "categories": [
+        "founders"
+      ],
       "shortId": 388
     },
     {
@@ -828,6 +900,9 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/09/51013975207_8dcac5cf72_k.jpg?resize=1280,960",
       "sources": [],
       "readTime": "9 min",
+      "categories": [
+        "models"
+      ],
       "shortId": 387
     },
     {
@@ -847,6 +922,9 @@
       "image": "https://pbs.twimg.com/card_img/2101361744484663296/jN6MiOGJ?format=jpg&name=small",
       "sources": [],
       "readTime": "10 min",
+      "categories": [
+        "founders"
+      ],
       "shortId": 386
     },
     {
@@ -867,6 +945,10 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLt-3wUW9cFKIPkUDFVlenX6eHxlFqRyBGGAAGbeWn2w&s=10",
       "sources": [],
       "readTime": "8 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "shortId": 385
     },
     {
@@ -888,6 +970,11 @@
       "image": "https://higgsfield.ai/cdn-cgi/image/fit=scale-down,format=webp,onerror=redirect,width=1280,quality=85/https://cdn.sanity.io/images/s479xw3z/production/9d59c57edd5d720798c6f2d8cb24ee80f5ead4e5-2048x1152.png",
       "sources": [],
       "readTime": "8 min",
+      "categories": [
+        "models",
+        "agents",
+        "design"
+      ],
       "shortId": 384
     },
     {
@@ -910,6 +997,9 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7obb7QPNks1narecFoHlRwS1kVGLMeXq9G6OA2yRwEw&s=10",
       "sources": [],
       "readTime": "11 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 383
     },
     {
@@ -930,6 +1020,9 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/03/ai-bots-agents-GettyImages-2230799616.jpg?resize=1280,853",
       "sources": [],
       "readTime": "9 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 382
     },
     {
@@ -950,6 +1043,10 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZOSV3pR5Nlhh1_Turhpd7YbK3FBSoT81JjFp-f_IIg&s=10",
       "sources": [],
       "readTime": "7 min",
+      "categories": [
+        "agents",
+        "founders"
+      ],
       "shortId": 381
     },
     {
@@ -972,6 +1069,10 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDv_j9c1ViuT0KCVMM9Eyw5jN51YYUsjjxDCgWD3rrEg&s",
       "sources": [],
       "readTime": "8 min",
+      "categories": [
+        "founders",
+        "design"
+      ],
       "shortId": 380
     },
     {
@@ -993,6 +1094,10 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/06/Google-Home-Speaker-Multi.png?resize=1280,806",
       "sources": [],
       "readTime": "7 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "shortId": 379
     },
     {
@@ -1012,6 +1117,10 @@
       "image": "https://cdn.prod.website-files.com/673c43870d3cef11719b5930/681d85178ef7abb370577ef1_Meta%20AI%20WhatsApp%20Explained%20%26%20How%20to%20Remove%20It.jpg",
       "sources": [],
       "readTime": "10 min",
+      "categories": [
+        "agents",
+        "founders"
+      ],
       "shortId": 378
     },
     {
@@ -1030,6 +1139,10 @@
       "image": "https://pbs.twimg.com/card_img/2099924718921097216/XvBM0XUg?format=jpg&name=small",
       "sources": [],
       "readTime": "6 min",
+      "categories": [
+        "models",
+        "founders"
+      ],
       "shortId": 377
     },
     {
@@ -1048,6 +1161,9 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/07/GettyImages-1609818039.jpg?resize=1280,869",
       "sources": [],
       "readTime": "7 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 376
     },
     {
@@ -1064,6 +1180,7 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFFmg-ZZIDB6yxubgnuamkqlDEbj3PFDgoKbz6t7Ukhw&s=10",
       "sources": [],
       "readTime": "9 min",
+      "categories": [],
       "shortId": 375
     },
     {
@@ -1080,6 +1197,9 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu39DUpw1zcu-16KRky7vC9y6H202buu2M1GvsDym4iQ&s=10",
       "sources": [],
       "readTime": "3 min",
+      "categories": [
+        "founders"
+      ],
       "shortId": 374
     },
     {
@@ -1098,6 +1218,11 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCYXqK0ao0O4UNepNTWePU3e-FIdxI6aJBwFqztwMnaw&s=10",
       "sources": [],
       "readTime": "4 min",
+      "categories": [
+        "models",
+        "agents",
+        "engineering"
+      ],
       "shortId": 373
     },
     {
@@ -1114,6 +1239,9 @@
       "image": "https://cdn.prod.website-files.com/68c8e57d6e512b9573db147f/6aa17dc18f4e41bccaaaa48d_Group%203%20(3).jpg",
       "sources": [],
       "readTime": "4 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 372
     },
     {
@@ -1132,6 +1260,10 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdkaCvj9bbB01ud8XmY_7BLREivmZhnr-OKSpkQ2bxIA&s=10",
       "sources": [],
       "readTime": "3 min",
+      "categories": [
+        "agents",
+        "founders"
+      ],
       "shortId": 371
     },
     {
@@ -1149,6 +1281,9 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/02/chatgpt-ads.webp",
       "sources": [],
       "readTime": "4 min",
+      "categories": [
+        "founders"
+      ],
       "shortId": 370
     },
     {
@@ -1165,6 +1300,9 @@
       "image": "https://cdn.prod.website-files.com/631fef7bf9733bf3e5529a4a/67a661bb608cc057b80918f3_Why%20Startups%20Should%20Invest%20in%20AI%20Tools%20for%20Sales.webp",
       "sources": [],
       "readTime": "10 min",
+      "categories": [
+        "founders"
+      ],
       "shortId": 369
     },
     {
@@ -1183,6 +1321,9 @@
       "image": "https://enchanter.gg/img/blog/blog23.jpg",
       "sources": [],
       "readTime": "8 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 368
     },
     {
@@ -1199,6 +1340,10 @@
       "image": "https://muse.ai/landing/connectors@2x.webp",
       "sources": [],
       "readTime": "4 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "shortId": 367
     },
     {
@@ -1213,6 +1358,10 @@
       "image": "https://pbs.twimg.com/card_img/2095987579225075715/4woCVQKi?format=jpg&name=small",
       "sources": [],
       "readTime": "3 min",
+      "categories": [
+        "agents",
+        "engineering"
+      ],
       "shortId": 366
     },
     {
@@ -1229,6 +1378,10 @@
       "image": "https://pbs.twimg.com/card_img/2097397680641118208/Z1nAhNyX?format=jpg&name=900x900",
       "sources": [],
       "readTime": "8 min",
+      "categories": [
+        "models",
+        "founders"
+      ],
       "shortId": 365
     },
     {
@@ -1245,6 +1398,7 @@
       "image": "https://blogs.nvidia.com/wp-content/uploads/2026/09/hf-nvidia-partner_hf-nvidia-partner-press-1920x1080-2-1536x864.png",
       "sources": [],
       "readTime": "7 min",
+      "categories": [],
       "shortId": 364
     },
     {
@@ -1261,6 +1415,9 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_iEpEbijYfXE5Q5JgfTN2ejbiQJt6BV7gQABEk45pT7Wr-zajBEbo6nvk&s=10",
       "sources": [],
       "readTime": "5 min",
+      "categories": [
+        "founders"
+      ],
       "shortId": 363
     },
     {
@@ -1277,6 +1434,9 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvtSBGmED_ZZ5IzwGgvqgPlZkns7ttxCwJ81-7BJbr2oulmTDyScQ9uWs&s=10",
       "sources": [],
       "readTime": "5 min",
+      "categories": [
+        "founders"
+      ],
       "shortId": 362
     },
     {
@@ -1293,6 +1453,10 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQjssi_3xQSOmXGVRfzPN6bSAQqCUn6RSV43dSnl0D6ZHhwCojVsyNImk&s=10",
       "sources": [],
       "readTime": "3 min",
+      "categories": [
+        "models",
+        "founders"
+      ],
       "shortId": 361
     },
     {
@@ -1309,6 +1473,10 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/09/Screenshot-2026-09-04-at-8.49.39-AM-e1788537064907.png",
       "sources": [],
       "readTime": "4 min",
+      "categories": [
+        "agents",
+        "founders"
+      ],
       "shortId": 360
     },
     {
@@ -1325,6 +1493,7 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgmtNnJMhCm4tkPn795PZZk7Jr25Jdx7HQyofMnQuLElvd4aFPaw4sFJnw&s=10",
       "sources": [],
       "readTime": "8 min",
+      "categories": [],
       "shortId": 359
     },
     {
@@ -1341,6 +1510,9 @@
       "image": "https://cdn.mos.cms.futurecdn.net/9brtsKkuUU34fDSebXST73.jpg",
       "sources": [],
       "readTime": "8 min",
+      "categories": [
+        "models"
+      ],
       "shortId": 358
     },
     {
@@ -1357,6 +1529,9 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6uNlrGl5bjU3exmQvsGy7L9Y5JNWw3d6EkkIcYFbnRttQJ6yepslR2w8&s=10",
       "sources": [],
       "readTime": "4 min",
+      "categories": [
+        "founders"
+      ],
       "shortId": 357
     },
     {
@@ -1374,6 +1549,9 @@
       "image": "https://favtutor.com/fable-5-1-real-user-reviews/images/news-fable-5-1-real-user-reviews-v3-780.webp",
       "sources": [],
       "readTime": "5 min",
+      "categories": [
+        "models"
+      ],
       "shortId": 356
     },
     {
@@ -1391,6 +1569,11 @@
       "image": "https://res.cloudinary.com/de4rvmslk/image/upload/f_auto,q_auto/Frame_2087325381_swjj10.png",
       "sources": [],
       "readTime": "10 min",
+      "categories": [
+        "models",
+        "agents",
+        "founders"
+      ],
       "shortId": 355
     },
     {
@@ -1407,6 +1590,10 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/05/openai-logo-code-background.jpg?resize=1280,852",
       "sources": [],
       "readTime": "3 min",
+      "categories": [
+        "models",
+        "engineering"
+      ],
       "shortId": 354
     },
     {
@@ -1423,6 +1610,10 @@
       "image": "https://assets.lovable.dev/content/news/covers/fable-5-1-now-in-lovable-v2.jpg",
       "sources": [],
       "readTime": "4 min",
+      "categories": [
+        "models",
+        "founders"
+      ],
       "shortId": 353
     },
     {
@@ -1439,6 +1630,10 @@
       "image": "https://i0.wp.com/makhanamornings.in/wp-content/uploads/2025/11/a-split-visual-of-an-india-shaped-outline-filled-with.png?resize=1024%2C768&ssl=1",
       "sources": [],
       "readTime": "5 min",
+      "categories": [
+        "models",
+        "founders"
+      ],
       "shortId": 352
     },
     {
@@ -1455,6 +1650,9 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2263890424.jpg",
       "sources": [],
       "readTime": "7 min",
+      "categories": [
+        "models"
+      ],
       "shortId": 351
     },
     {
@@ -1472,6 +1670,10 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZtFHA3uu1zk6PfEVF6gM7iH86BZzB1_lHPehtvPgYDg&s=10",
       "sources": [],
       "readTime": "4 min",
+      "categories": [
+        "models",
+        "founders"
+      ],
       "shortId": 350
     },
     {
@@ -1492,6 +1694,7 @@
       "image": "https://techcrunch.com/wp-content/uploads/2023/01/caterpillar-lidar-booth.jpg?resize=1280,853",
       "sources": [],
       "readTime": "7 min",
+      "categories": [],
       "shortId": 349
     },
     {
@@ -1508,6 +1711,10 @@
       "image": "https://pbs.twimg.com/card_img/2093609064005595136/oPCjt-SG?format=jpg&name=small",
       "sources": [],
       "readTime": "5 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "shortId": 348
     },
     {
@@ -1524,6 +1731,10 @@
       "image": "https://antigravity.google/assets/image/blog/3.5-Flash---Wide.png",
       "sources": [],
       "readTime": "5 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "shortId": 347
     },
     {
@@ -1542,6 +1753,9 @@
       "image": "https://www.apple.com/newsroom/images/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/article/Apple-Mac-Studio-hero-260825_big.jpg.large_2x.jpg",
       "sources": [],
       "readTime": "6 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 346
     },
     {
@@ -1558,6 +1772,9 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/08/Thibault-headshot.jpg?resize=1280,800",
       "sources": [],
       "readTime": "6 min",
+      "categories": [
+        "models"
+      ],
       "shortId": 345
     },
     {
@@ -1575,6 +1792,7 @@
       "image": "https://wicsubhjhensvosjymlj.supabase.co/storage/v1/object/public/wordpress-migration/user-uploads/upload-1787598106065-139e4f67.png",
       "sources": [],
       "readTime": "7 min",
+      "categories": [],
       "shortId": 344
     },
     {
@@ -1591,6 +1809,9 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/08/Screenshot-2026-08-23-at-8.41.55-PM.png",
       "sources": [],
       "readTime": "5 min",
+      "categories": [
+        "models"
+      ],
       "shortId": 343
     },
     {
@@ -1608,6 +1829,9 @@
       "image": "https://urbanacres.in/wp-content/uploads/2026/08/153306950.jpg.png",
       "sources": [],
       "readTime": "4 min",
+      "categories": [
+        "design"
+      ],
       "shortId": 342
     },
     {
@@ -1624,6 +1848,7 @@
       "image": "https://oxalpha.com/img/hero.webp",
       "sources": [],
       "readTime": "7 min",
+      "categories": [],
       "shortId": 341
     },
     {
@@ -1640,6 +1865,9 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZiyWll9kiPV6zs704tdHeyqiESJZbtR6AmWBCmcoOpw&s=10",
       "sources": [],
       "readTime": "4 min",
+      "categories": [
+        "founders"
+      ],
       "shortId": 340
     },
     {
@@ -1656,6 +1884,10 @@
       "image": "https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01KZA53A5G2PQVSM15SFEAYVAS.png&w=1080&h=608&f=webp&fit=cover&position=center",
       "sources": [],
       "readTime": "6 min",
+      "categories": [
+        "agents",
+        "design"
+      ],
       "shortId": 339
     },
     {
@@ -1672,6 +1904,9 @@
       "image": "https://academy.claude.com/assets/media/6b130760316f10078d23e877c42fc8a6b619754601264ce0d73ccbd260a1c940.png",
       "sources": [],
       "readTime": "6 min",
+      "categories": [
+        "models"
+      ],
       "shortId": 338
     },
     {
@@ -1689,6 +1924,9 @@
       "image": "https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2022/02/apple_messages_mac_hero_2.jpg",
       "sources": [],
       "readTime": "4 min",
+      "categories": [
+        "models"
+      ],
       "shortId": 337
     },
     {
@@ -1707,6 +1945,10 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/02/google-logo.jpg?resize=1280,853",
       "sources": [],
       "readTime": "4 min",
+      "categories": [
+        "models",
+        "founders"
+      ],
       "shortId": 336
     },
     {
@@ -1723,6 +1965,9 @@
       "image": "https://pbs.twimg.com/media/HPoIC0Fa8AA_Iis?format=jpg&name=900x900",
       "sources": [],
       "readTime": "3 min",
+      "categories": [
+        "founders"
+      ],
       "shortId": 335
     },
     {
@@ -1741,6 +1986,9 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/07/cursor.jpg?resize=1280,853",
       "sources": [],
       "readTime": "5 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 334
     },
     {
@@ -1759,6 +2007,9 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/08/Still-04-HomeworkReminder__1_.webp?resize=1280,720",
       "sources": [],
       "readTime": "5 min",
+      "categories": [
+        "models"
+      ],
       "shortId": 333
     },
     {
@@ -1775,6 +2026,7 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/02/GettyImages-2261514463.jpg",
       "sources": [],
       "readTime": "7 min",
+      "categories": [],
       "shortId": 332
     },
     {
@@ -1792,6 +2044,10 @@
       "image": "https://techcrunch.com/wp-content/uploads/2023/09/May-Habib-Disrupt-2023.jpg?resize=1280,853",
       "sources": [],
       "readTime": "6 min",
+      "categories": [
+        "models",
+        "opensource"
+      ],
       "shortId": 331
     },
     {
@@ -1810,6 +2066,9 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjnF9HOh6rde77izNck7PUN4SJghE9jdW0acm382ZUyA&s=10",
       "sources": [],
       "readTime": "4 min",
+      "categories": [
+        "founders"
+      ],
       "shortId": 330
     },
     {
@@ -1827,6 +2086,10 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/06/Claude-photo.jpg",
       "sources": [],
       "readTime": "4 min",
+      "categories": [
+        "agents",
+        "founders"
+      ],
       "shortId": 329
     },
     {
@@ -1847,6 +2110,10 @@
         "https://x.com/i/status/2086844755770757531"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "https://video.twimg.com/amplify_video/2086842756346085376/vid/avc1/3840x2160/IENTVebjJJOBNEGv.mp4?tag=29",
       "shortId": 328
     },
@@ -1868,6 +2135,9 @@
         "https://x.com/i/status/2086795659651191106"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "video": "https://bitroot.org/blog/media/2026-08-11-spotify-releases-xirp-a-vendor-neutral-agentic-dev.mp4",
       "shortId": 327
     },
@@ -1889,6 +2159,10 @@
         "https://x.com/i/status/2086844224826159372"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "design"
+      ],
       "video": "https://bitroot.org/blog/media/2026-08-11-diffusion-studio-launches-dapi-a-cli-for-aidriven.mp4",
       "shortId": 326
     },
@@ -1906,6 +2180,10 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2269811684.jpg",
       "sources": [],
       "readTime": "4 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "shortId": 325
     },
     {
@@ -1926,6 +2204,10 @@
         "https://www.marktechpost.com/2026/08/09/bytedance-seed-introduces-seedrealtime-a-native-audio-visual-full-duplex-llm-that-watches-listens-and-speaks-in-one-model/"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "design"
+      ],
       "shortId": 324
     },
     {
@@ -1944,6 +2226,10 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/08/kitesurf.webp",
       "sources": [],
       "readTime": "4 min",
+      "categories": [
+        "agents",
+        "engineering"
+      ],
       "shortId": 323
     },
     {
@@ -1961,6 +2247,9 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/07/GettyImages-2286500505.jpg?resize=1280,853",
       "sources": [],
       "readTime": "4 min",
+      "categories": [
+        "models"
+      ],
       "shortId": 322
     },
     {
@@ -1978,6 +2267,7 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2266466589.jpg",
       "sources": [],
       "readTime": "5 min",
+      "categories": [],
       "shortId": 321
     },
     {
@@ -1998,6 +2288,9 @@
         "https://x.com/i/status/2085398373511918022"
       ],
       "readTime": "4 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 320
     },
     {
@@ -2018,6 +2311,9 @@
         "https://www.bbc.com/news/articles/cx2kgdnyk2po"
       ],
       "readTime": "4 min",
+      "categories": [
+        "models"
+      ],
       "shortId": 319
     },
     {
@@ -2036,6 +2332,7 @@
       "image": "https://techcrunch.com/wp-content/uploads/2023/11/X-and-Threads-GettyImages-1763609384.jpeg?resize=1280,888",
       "sources": [],
       "readTime": "7 min",
+      "categories": [],
       "shortId": 318
     },
     {
@@ -2056,6 +2353,7 @@
         "https://x.com/aipoch_ai/status/2077269195646185723"
       ],
       "readTime": "2 min",
+      "categories": [],
       "shortId": 317
     },
     {
@@ -2074,6 +2372,10 @@
       "image": "https://qz.com/cdn-cgi/image/width=1920,quality=85,format=auto/https://assets.qz.com/media/GettyImages-2283602128-1920x1281.jpg",
       "sources": [],
       "readTime": "5 min",
+      "categories": [
+        "agents",
+        "founders"
+      ],
       "shortId": 316
     },
     {
@@ -2093,6 +2395,10 @@
       "image": "https://bitroot.org/blog/media/2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a.jpg",
       "sources": [],
       "readTime": "8 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "shortId": 315
     },
     {
@@ -2112,6 +2418,10 @@
       "image": "https://bitroot.org/blog/media/2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod.jpg",
       "sources": [],
       "readTime": "5 min",
+      "categories": [
+        "models",
+        "founders"
+      ],
       "shortId": 314
     },
     {
@@ -2132,6 +2442,11 @@
         "https://claude.com/blog/claude-models-explained-choosing-the-best-model-for-your-use-case"
       ],
       "readTime": "6 min",
+      "categories": [
+        "models",
+        "agents",
+        "founders"
+      ],
       "shortId": 313
     },
     {
@@ -2150,6 +2465,9 @@
       "image": "https://bitroot.org/blog/media/2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe.jpg",
       "sources": [],
       "readTime": "5 min",
+      "categories": [
+        "models"
+      ],
       "shortId": 312
     },
     {
@@ -2169,6 +2487,10 @@
       "image": "https://bitroot.org/blog/media/2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f.jpg",
       "sources": [],
       "readTime": "5 min",
+      "categories": [
+        "agents",
+        "founders"
+      ],
       "shortId": 311
     },
     {
@@ -2190,6 +2512,10 @@
         "https://x.com/Be_Mai_Waifu/status/2076180299420184830"
       ],
       "readTime": "2 min",
+      "categories": [
+        "opensource",
+        "design"
+      ],
       "shortId": 310
     },
     {
@@ -2207,6 +2533,10 @@
       "image": "https://bitroot.org/blog/media/2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh.jpg",
       "sources": [],
       "readTime": "8 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "shortId": 309
     },
     {
@@ -2224,6 +2554,9 @@
       "image": "https://bitroot.org/blog/media/2026-07-31-privacy-analytics-for-startups-reignat-vs-plausibl.avif",
       "sources": [],
       "readTime": "4 min",
+      "categories": [
+        "founders"
+      ],
       "shortId": 308
     },
     {
@@ -2242,6 +2575,9 @@
       "image": "https://bitroot.org/blog/media/2026-07-31-how-openais-20-efficiency-gain-extends-your-runway.jpg",
       "sources": [],
       "readTime": "7 min",
+      "categories": [
+        "models"
+      ],
       "shortId": 307
     },
     {
@@ -2262,6 +2598,9 @@
         "https://x.com/i/status/2082164250496348268"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 306
     },
     {
@@ -2278,6 +2617,9 @@
       "image": "https://bitroot.org/blog/media/2026-07-29-whatsapp-calls-in-your-browser-does-it-replace-zoo.jpg",
       "sources": [],
       "readTime": "4 min",
+      "categories": [
+        "engineering"
+      ],
       "shortId": 305
     },
     {
@@ -2297,6 +2639,11 @@
       "image": "https://bitroot.org/blog/media/2026-07-29-cursor-start-at-649-month-what-developers-in-india.png",
       "sources": [],
       "readTime": "9 min",
+      "categories": [
+        "models",
+        "agents",
+        "founders"
+      ],
       "shortId": 304
     },
     {
@@ -2317,6 +2664,11 @@
         "https://www.anthropic.com/news/position-open-weights-models"
       ],
       "readTime": "6 min",
+      "categories": [
+        "models",
+        "founders",
+        "opensource"
+      ],
       "shortId": 303
     },
     {
@@ -2337,6 +2689,7 @@
         "https://x.com/daichi_genshiai/status/2077989874398032361"
       ],
       "readTime": "3 min",
+      "categories": [],
       "shortId": 302
     },
     {
@@ -2356,6 +2709,10 @@
       "image": "https://bitroot.org/blog/media/2026-07-27-claude-opus-5-vs-fable-5-which-model-should-your-s.webp",
       "sources": [],
       "readTime": "8 min",
+      "categories": [
+        "models",
+        "founders"
+      ],
       "shortId": 301
     },
     {
@@ -2374,6 +2731,10 @@
       "image": "https://bitroot.org/blog/media/2026-07-27-agentic-ai-for-founders-when-you-need-agents-and-w.webp",
       "sources": [],
       "readTime": "5 min",
+      "categories": [
+        "agents",
+        "founders"
+      ],
       "shortId": 300
     },
     {
@@ -2394,6 +2755,11 @@
         "https://techcrunch.com/2026/07/24/indias-move-against-jack-dorseys-bitchat-sparks-legal-debate/"
       ],
       "readTime": "6 min",
+      "categories": [
+        "agents",
+        "founders",
+        "opensource"
+      ],
       "shortId": 299
     },
     {
@@ -2414,6 +2780,9 @@
         "https://x.com/N0V4Dev/status/2078336551696626102"
       ],
       "readTime": "2 min",
+      "categories": [
+        "opensource"
+      ],
       "shortId": 298
     },
     {
@@ -2434,6 +2803,9 @@
         "https://x.com/codesharpdev/status/2076542275296108963"
       ],
       "readTime": "2 min",
+      "categories": [
+        "opensource"
+      ],
       "shortId": 297
     },
     {
@@ -2454,6 +2826,10 @@
       "image": "https://bitroot.org/blog/media/2026-07-24-why-googles-gemini-3-5-pro-is-months-behind-the-co.jpg",
       "sources": [],
       "readTime": "13 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "shortId": 296
     },
     {
@@ -2474,6 +2850,10 @@
         "https://x.com/dannykmlam/status/2080535608884330532"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "founders"
+      ],
       "media": [
         {
           "type": "image",
@@ -2508,6 +2888,9 @@
         "https://x.com/shantanugoel/status/2080527642508644452"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design"
+      ],
       "video": "media/2026-07-24-ondevice-ai-music-studio-atarang-launches-with-no.mp4",
       "shortId": 294
     },
@@ -2529,6 +2912,9 @@
         "https://x.com/LanceSeidman/status/2080482027594490217"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models"
+      ],
       "media": [
         {
           "type": "image",
@@ -2559,6 +2945,9 @@
         "https://x.com/mabhi1999/status/2080532002248233208"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "video": "media/2026-07-24-local-mac-notch-tool-bundles-multiple-ai-agents-in.mp4",
       "shortId": 292
     },
@@ -2580,6 +2969,9 @@
         "https://x.com/bgill55_art/status/2080292072846917926"
       ],
       "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
       "video": "media/2026-07-24-daedalus-lite-launches-as-a-lightweight-typescript.mp4",
       "shortId": 291
     },
@@ -2601,6 +2993,11 @@
         "https://x.com/i/status/2079674432038248611"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents",
+        "engineering"
+      ],
       "shortId": 290
     },
     {
@@ -2622,6 +3019,11 @@
         "https://x.com/i/status/2079990597973057691"
       ],
       "readTime": "3 min",
+      "categories": [
+        "models",
+        "agents",
+        "engineering"
+      ],
       "shortId": 289
     },
     {
@@ -2642,6 +3044,11 @@
         "https://x.com/Fried_rice/status/2080172920782066079"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "design",
+        "engineering"
+      ],
       "video": "media/2026-07-23-yeta-labs-releases-demo-of-a-massive-causal-video.mp4",
       "shortId": 288
     },
@@ -2663,6 +3070,9 @@
         "https://x.com/Abobsterina/status/2080032942810706375"
       ],
       "readTime": "2 min",
+      "categories": [
+        "opensource"
+      ],
       "video": "media/2026-07-23-world-monitor-opensources-a-billiondollar-warroom.mp4",
       "shortId": 287
     },
@@ -2685,6 +3095,9 @@
         "https://x.com/milesdeutscher/status/2080163535250948523"
       ],
       "readTime": "2 min",
+      "categories": [
+        "opensource"
+      ],
       "video": "media/2026-07-23-storm-gauge-garch-indicator-for-tradingview-releas.mp4",
       "shortId": 286
     },
@@ -2706,6 +3119,12 @@
       "image": "https://bitroot.org/blog/media/2026-07-23-openais-gpt-5-6-sol-hacked-hugging-face-what-this.jpg",
       "sources": [],
       "readTime": "7 min",
+      "categories": [
+        "models",
+        "agents",
+        "founders",
+        "engineering"
+      ],
       "shortId": 285
     },
     {
@@ -2727,6 +3146,10 @@
         "https://x.com/jimmy_voxel51/status/2080171071756464329"
       ],
       "readTime": "2 min",
+      "categories": [
+        "opensource",
+        "engineering"
+      ],
       "video": "media/2026-07-23-mit-and-toyota-opensource-carcrashnet-dataset-now.mp4",
       "shortId": 284
     },
@@ -2748,6 +3171,10 @@
         "https://x.com/i/status/2079993729532989500"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "media/2026-07-23-cursor-launches-router-to-cut-model-costs-by-60.mp4",
       "shortId": 283
     },
@@ -2768,6 +3195,11 @@
         "https://x.com/RoundtableSpace/status/2080084226364366994"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents",
+        "engineering"
+      ],
       "video": "media/2026-07-23-claude-code-eyes-adds-visual-hardware-verification.mp4",
       "shortId": 282
     },
@@ -2789,6 +3221,9 @@
         "https://x.com/i/status/2079605800998146171"
       ],
       "readTime": "2 min",
+      "categories": [
+        "opensource"
+      ],
       "shortId": 281
     },
     {
@@ -2810,6 +3245,9 @@
         "https://x.com/Adedoyinjames_/status/2079803185384825294"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 280
     },
     {
@@ -2830,6 +3268,9 @@
         "https://x.com/runtimewire/status/2079809429411611008"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 279
     },
     {
@@ -2850,6 +3291,10 @@
         "https://x.com/rtsoft/status/2079761713381970211"
       ],
       "readTime": "2 min",
+      "categories": [
+        "opensource",
+        "design"
+      ],
       "video": "media/2026-07-22-patchy-082-adds-affinity-import-and-scripting-test.mp4",
       "shortId": 278
     },
@@ -2871,6 +3316,11 @@
         "https://x.com/buildwith_SUMIT/status/2079810132330807504"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "opensource",
+        "design"
+      ],
       "video": "media/2026-07-22-opensource-ai-agent-audits-video-frames-automatica.mp4",
       "shortId": 277
     },
@@ -2892,6 +3342,10 @@
       "image": "https://bitroot.org/blog/media/2026-07-22-kimi-k3-vs-claude-fable-5-benchmark-reality-vs-ven.avif",
       "sources": [],
       "readTime": "6 min",
+      "categories": [
+        "models",
+        "opensource"
+      ],
       "shortId": 276
     },
     {
@@ -2912,6 +3366,10 @@
         "https://x.com/SviatoslavG/status/2079807586665451758"
       ],
       "readTime": "2 min",
+      "categories": [
+        "founders",
+        "design"
+      ],
       "video": "media/2026-07-22-ateno-releases-ai-room-designer-with-free-trial-an.mp4",
       "shortId": 275
     },
@@ -2927,6 +3385,9 @@
       "image": "https://bitroot.org/blog/media/2026-07-21-why-apple-raised-prices-across-hardware-subscripti.jpg",
       "sources": [],
       "readTime": "11 min",
+      "categories": [
+        "engineering"
+      ],
       "shortId": 274
     },
     {
@@ -2947,6 +3408,9 @@
         "https://x.com/VivekIntel/status/2079448821285929469"
       ],
       "readTime": "2 min",
+      "categories": [
+        "opensource"
+      ],
       "shortId": 273
     },
     {
@@ -2967,6 +3431,10 @@
         "https://x.com/AlexMurdock5499/status/2079433722252657068"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "opensource"
+      ],
       "video": "media/2026-07-21-unlimited-ocr-opensource-3b-model-reads-100page-pd.mp4",
       "shortId": 272
     },
@@ -2988,6 +3456,7 @@
         "https://x.com/ayushtweetshere/status/2079445161957085463"
       ],
       "readTime": "2 min",
+      "categories": [],
       "shortId": 271
     },
     {
@@ -3008,6 +3477,10 @@
         "https://x.com/i/status/2079289736250970258"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "founders"
+      ],
       "video": "media/2026-07-21-monid-replaces-apify-with-perrequest-social-media.mp4",
       "shortId": 270
     },
@@ -3029,6 +3502,10 @@
         "https://x.com/heyashishsaini/status/2079426058496119186"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "opensource"
+      ],
       "shortId": 269
     },
     {
@@ -3049,6 +3526,10 @@
         "https://x.com/chenzeling4/status/2079446292456157185"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "engineering"
+      ],
       "shortId": 268
     },
     {
@@ -3069,6 +3550,10 @@
         "https://x.com/ramsri_goutham/status/2079069398267281715"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "opensource"
+      ],
       "shortId": 267
     },
     {
@@ -3089,6 +3574,10 @@
       "image": null,
       "sources": [],
       "readTime": "19 min",
+      "categories": [
+        "agents",
+        "engineering"
+      ],
       "shortId": 266
     },
     {
@@ -3109,6 +3598,11 @@
         "https://x.com/nykdotdev/status/2079068942681993237"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "opensource",
+        "engineering"
+      ],
       "shortId": 265
     },
     {
@@ -3129,6 +3623,9 @@
         "https://x.com/theadaloguy/status/2079087378522919057"
       ],
       "readTime": "1 min",
+      "categories": [
+        "opensource"
+      ],
       "shortId": 264
     },
     {
@@ -3149,6 +3646,7 @@
         "https://x.com/_xonoxc/status/2079084544322572478"
       ],
       "readTime": "2 min",
+      "categories": [],
       "shortId": 263
     },
     {
@@ -3169,6 +3667,9 @@
         "https://x.com/DegenApeDev/status/2079011617795375453"
       ],
       "readTime": "2 min",
+      "categories": [
+        "opensource"
+      ],
       "shortId": 262
     },
     {
@@ -3189,6 +3690,10 @@
         "https://x.com/0x0SojalSec/status/2078311540282012024"
       ],
       "readTime": "2 min",
+      "categories": [
+        "opensource",
+        "design"
+      ],
       "video": "https://video.twimg.com/amplify_video/2078311452012847104/vid/avc1/2940x1846/sANthlRyS6_BusGx.mp4?tag=29",
       "shortId": 261
     },
@@ -3210,6 +3715,10 @@
         "https://x.com/0xTria/status/2078329275065696557"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "opensource"
+      ],
       "video": "media/2026-07-18-open-source-badminton-hawkeye-system-released-by-c.mp4",
       "shortId": 260
     },
@@ -3231,6 +3740,10 @@
         "https://x.com/TheAhmadOsman/status/2078174547745046934"
       ],
       "readTime": "2 min",
+      "categories": [
+        "opensource",
+        "engineering"
+      ],
       "shortId": 259
     },
     {
@@ -3251,6 +3764,9 @@
         "https://x.com/Yass1nMohamed/status/2078110214142767323"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 258
     },
     {
@@ -3271,6 +3787,9 @@
         "https://share.google/IUreul71KXi6QHD9c"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 257
     },
     {
@@ -3291,6 +3810,10 @@
         "https://x.ai/news/grok-build-open-source"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "opensource"
+      ],
       "shortId": 256
     },
     {
@@ -3311,6 +3834,7 @@
         "https://x.com/QingQ77/status/2077991939404603697"
       ],
       "readTime": "2 min",
+      "categories": [],
       "shortId": 255
     },
     {
@@ -3331,6 +3855,7 @@
         "https://x.com/novoreorx/status/2077963033142530148"
       ],
       "readTime": "2 min",
+      "categories": [],
       "media": [
         {
           "type": "image",
@@ -3361,6 +3886,10 @@
         "https://x.com/craigruks/status/2077957220759978436"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "opensource"
+      ],
       "video": "media/2026-07-17-opensource-shep-agent-orchestrator-targets-github.mp4",
       "shortId": 253
     },
@@ -3382,6 +3911,9 @@
         "https://x.com/realcoreychiu/status/2077978244159000806"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "video": "media/2026-07-17-kooky-036-adds-keepawake-mode-for-laptops.mp4",
       "shortId": 252
     },
@@ -3403,6 +3935,9 @@
         "https://x.com/solomon2773/status/2077629467980161317"
       ],
       "readTime": "2 min",
+      "categories": [
+        "opensource"
+      ],
       "video": "media/2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on.mp4",
       "shortId": 251
     },
@@ -3424,6 +3959,10 @@
         "https://x.com/LekhikaVyas/status/2077628443706155049"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "opensource"
+      ],
       "video": "media/2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s.mp4",
       "shortId": 250
     },
@@ -3445,6 +3984,10 @@
         "https://x.com/lmsysorg/status/2077457150046269779"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "opensource"
+      ],
       "video": "media/2026-07-16-inkling-model-released-with-975b-parameters-and-mu.mp4",
       "shortId": 249
     },
@@ -3466,6 +4009,9 @@
         "https://x.com/harnessio/status/2077413070616617212"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 248
     },
     {
@@ -3491,6 +4037,11 @@
       "image": "https://bitroot.org/blog/media/2026-07-16-gpt-5-6s-reactive-safety-cycle-known-risks-shipped.jpg",
       "sources": [],
       "readTime": "6 min",
+      "categories": [
+        "models",
+        "agents",
+        "founders"
+      ],
       "shortId": 247
     },
     {
@@ -3511,6 +4062,11 @@
         "https://x.com/alayastd/status/2077588265067258309"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "opensource",
+        "design"
+      ],
       "video": "https://video.twimg.com/amplify_video/2077587439653474304/vid/avc1/1920x1080/rHj0U4GJ1UFLEUmN.mp4?tag=29",
       "shortId": 246
     },
@@ -3532,6 +4088,7 @@
         "https://x.com/Rifle_Blade/status/2077269004201128047"
       ],
       "readTime": "2 min",
+      "categories": [],
       "video": "https://video.twimg.com/amplify_video/2077267297870254081/vid/avc1/2560x1440/0fH1ly3inxt84ogY.mp4?tag=28",
       "shortId": 245
     },
@@ -3553,6 +4110,10 @@
         "https://x.com/PrismML/status/2077084891284721827"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "opensource"
+      ],
       "shortId": 244
     },
     {
@@ -3573,6 +4134,11 @@
         "https://x.com/rizwanc_r/status/2077269947861135803"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents",
+        "opensource"
+      ],
       "video": "media/2026-07-15-open-source-coding-agent-built-with-react-and-open.mp4",
       "shortId": 243
     },
@@ -3594,6 +4160,7 @@
         "https://x.com/Yu60687413/status/2076862500554088510"
       ],
       "readTime": "2 min",
+      "categories": [],
       "video": "media/2026-07-14-openaaas-demo-released-using-pis-open-framework.mp4",
       "shortId": 242
     },
@@ -3615,6 +4182,11 @@
         "https://x.com/pdurdenj/status/2076892806681944097"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "opensource",
+        "engineering"
+      ],
       "shortId": 241
     },
     {
@@ -3636,6 +4208,10 @@
         "https://x.com/ViC305/status/2076826735421849706"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "opensource"
+      ],
       "shortId": 240
     },
     {
@@ -3657,6 +4233,11 @@
         "https://x.com/liquidprismata/status/2076892692957507621"
       ],
       "readTime": "2 min",
+      "categories": [
+        "opensource",
+        "design",
+        "engineering"
+      ],
       "media": [
         {
           "type": "image",
@@ -3692,6 +4273,10 @@
         "https://x.com/En_formare/status/2076891457999479168"
       ],
       "readTime": "2 min",
+      "categories": [
+        "opensource",
+        "engineering"
+      ],
       "media": [
         {
           "type": "image",
@@ -3723,6 +4308,10 @@
       "image": "https://bitroot.org/blog/media/2026-07-14-claude-now-has-india-pricing-heres-what-it-actuall.jpg",
       "sources": [],
       "readTime": "8 min",
+      "categories": [
+        "models",
+        "founders"
+      ],
       "shortId": 237
     },
     {
@@ -3743,6 +4332,11 @@
         "https://x.com/XAMTO_AI/status/2076443738004742262"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "opensource",
+        "engineering"
+      ],
       "shortId": 236
     },
     {
@@ -3764,6 +4358,11 @@
         "https://x.com/grafisify/status/2076531540465762429"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "opensource",
+        "design"
+      ],
       "shortId": 235
     },
     {
@@ -3784,6 +4383,9 @@
         "https://x.com/tom_doerr/status/2076543941793534213"
       ],
       "readTime": "2 min",
+      "categories": [
+        "opensource"
+      ],
       "shortId": 234
     },
     {
@@ -3804,6 +4406,9 @@
         "https://x.com/chenzeling4/status/2076274378455883869"
       ],
       "readTime": "2 min",
+      "categories": [
+        "opensource"
+      ],
       "shortId": 233
     },
     {
@@ -3834,6 +4439,7 @@
         "https://hypertexting.com/"
       ],
       "readTime": "4 min",
+      "categories": [],
       "shortId": 232
     },
     {
@@ -3854,6 +4460,9 @@
         "https://x.com/ddflj3310/status/2076108920771481889"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "media": [
         {
           "type": "image",
@@ -3892,6 +4501,12 @@
         "https://x.com/XRoboHub/status/2076189155399434689"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents",
+        "opensource",
+        "design"
+      ],
       "video": "media/2026-07-12-lingbot-world-20-opensourced-with-braincerebellum.mp4",
       "media": [
         {
@@ -3936,6 +4551,10 @@
         "https://x.com/gdymind/status/2076185988288987402"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design",
+        "engineering"
+      ],
       "video": "https://video.twimg.com/amplify_video/2076183975761231872/vid/avc1/3326x2160/cZvIMqBj_BP3mExe.mp4?tag=28",
       "shortId": 229
     },
@@ -3957,6 +4576,10 @@
         "https://x.com/Nirmaldarji16/status/2076172621478314162"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "design"
+      ],
       "shortId": 228
     },
     {
@@ -3977,6 +4600,9 @@
         "https://x.com/N0V4Dev/status/2075799797051621588"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 227
     },
     {
@@ -4000,6 +4626,10 @@
         "https://claude.com/blog/working-at-the-frontier-how-cognition-trusts-claude-fable-5-to-work-through-the-night"
       ],
       "readTime": "10 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "shortId": 226
     },
     {
@@ -4021,6 +4651,11 @@
         "https://x.com/zaesarius/status/2075815728494563710"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "opensource",
+        "design"
+      ],
       "video": "media/2026-07-11-robbyant-opens-lingbot-video-30b-moe-model-for-ope.mp4",
       "shortId": 225
     },
@@ -4042,6 +4677,11 @@
         "https://x.com/techwith_ram/status/2075793871834161160"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "opensource",
+        "engineering"
+      ],
       "shortId": 224
     },
     {
@@ -4062,6 +4702,10 @@
         "https://x.com/officer_secret/status/2075799998927622354"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "shortId": 223
     },
     {
@@ -4082,6 +4726,10 @@
         "https://x.com/3ReadyProto/status/2075807162744619312"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "opensource"
+      ],
       "video": "media/2026-07-11-charles-3ready-releases-grokulator-010-windows-dev.mp4",
       "shortId": 222
     },
@@ -4103,6 +4751,10 @@
         "https://x.com/fusionaivisuals/status/2075250024519438457"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "opensource"
+      ],
       "shortId": 221
     },
     {
@@ -4123,6 +4775,9 @@
         "https://x.com/DivyanshT91162/status/2075145051681009898"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "media": [
         {
           "type": "image",
@@ -4157,6 +4812,9 @@
         "https://x.com/iblai_/status/2075301557063553329"
       ],
       "readTime": "2 min",
+      "categories": [
+        "opensource"
+      ],
       "shortId": 219
     },
     {
@@ -4177,6 +4835,11 @@
         "https://x.com/VivekIntel/status/2075477455322923026"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "opensource",
+        "engineering"
+      ],
       "shortId": 218
     },
     {
@@ -4197,6 +4860,10 @@
         "https://x.com/tetsuoai/status/2075475435698454546"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "opensource"
+      ],
       "video": "media/2026-07-10-agenc-lets-you-run-a-selfnamed-ai-agent-on-your-ph.mp4",
       "shortId": 217
     },
@@ -4221,6 +4888,9 @@
       "image": "https://bitroot.org/blog/media/2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p.png",
       "sources": [],
       "readTime": "9 min",
+      "categories": [
+        "models"
+      ],
       "shortId": 216
     },
     {
@@ -4241,6 +4911,7 @@
         "https://x.com/i/status/2074894605125026072"
       ],
       "readTime": "2 min",
+      "categories": [],
       "video": "media/2026-07-08-tavus-adds-a-google-meet-participant-integration.mp4",
       "shortId": 215
     },
@@ -4262,6 +4933,11 @@
         "https://x.com/i/status/2074915721684086811"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents",
+        "founders"
+      ],
       "video": "media/2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm.mp4",
       "shortId": 214
     },
@@ -4283,6 +4959,10 @@
         "https://x.com/i/status/2074907025537224840"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "design"
+      ],
       "video": "https://video.twimg.com/amplify_video/2074902339463598081/vid/avc1/3840x2160/SlZg3Bq2mrXXDoO4.mp4?tag=28",
       "shortId": 213
     },
@@ -4304,6 +4984,7 @@
         "https://x.com/i/status/2074222854183514438"
       ],
       "readTime": "2 min",
+      "categories": [],
       "video": "media/2026-07-07-relume-launches-library-mcp-for-aiassisted-compone.mp4",
       "shortId": 212
     },
@@ -4325,6 +5006,9 @@
         "https://x.com/i/status/2074496959851713018"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "video": "media/2026-07-07-ramp-launches-aiagent-integration-for-company-onbo.mp4",
       "shortId": 211
     },
@@ -4346,6 +5030,9 @@
         "https://x.com/i/status/2074523839300513921"
       ],
       "readTime": "2 min",
+      "categories": [
+        "opensource"
+      ],
       "shortId": 210
     },
     {
@@ -4369,6 +5056,9 @@
       "image": "https://bitroot.org/blog/media/2026-07-06-the-best-chrome-alternatives-in-2026-ai-privacy-mi.jpg",
       "sources": [],
       "readTime": "7 min",
+      "categories": [
+        "engineering"
+      ],
       "shortId": 209
     },
     {
@@ -4389,6 +5079,10 @@
         "https://x.com/i/status/2072380736120959244"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "design"
+      ],
       "video": "media/2026-07-02-higgsfield-launches-shorts-studio-powered-by-gemin.mp4",
       "shortId": 208
     },
@@ -4410,6 +5104,11 @@
         "https://x.com/i/status/2072319320386883690"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents",
+        "design"
+      ],
       "video": "media/2026-07-02-fish-audio-makes-s21-pro-tts-model-free-for-develo.mp4",
       "shortId": 207
     },
@@ -4431,6 +5130,10 @@
         "https://x.com/i/status/2072002524060496314"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "design"
+      ],
       "video": "media/2026-07-01-motionfly-launches-agent28-ai-video-editor-free-fo.mp4",
       "shortId": 206
     },
@@ -4452,6 +5155,10 @@
         "https://x.com/i/status/2072017450611142835"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "media/2026-07-01-claude-sonnet-5-adds-autonomous-planning-and-tool.mp4",
       "shortId": 205
     },
@@ -4473,6 +5180,10 @@
         "https://x.com/i/status/2071994225865150708"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "engineering"
+      ],
       "video": "media/2026-07-01-browserbase-launches-readytorun-browser-agents.mp4",
       "shortId": 204
     },
@@ -4494,6 +5205,10 @@
         "https://x.com/i/status/2071631739705762296"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "design"
+      ],
       "video": "media/2026-06-29-fal-adds-extract-object-api-for-instant-image-cuto.mp4",
       "shortId": 203
     },
@@ -4515,6 +5230,9 @@
         "https://x.com/i/status/2071641103191998810"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "video": "media/2026-06-29-cursor-launches-ios-app-with-alwayson-cloud-agents.mp4",
       "shortId": 202
     },
@@ -4541,6 +5259,10 @@
       "image": "https://bitroot.org/blog/media/2026-06-29-chatgpt-isnt-just-getting-smarter-its-getting-more.webp",
       "sources": [],
       "readTime": "6 min",
+      "categories": [
+        "models",
+        "engineering"
+      ],
       "shortId": 201
     },
     {
@@ -4561,6 +5283,10 @@
         "https://x.com/i/status/2071381213634347233"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "design"
+      ],
       "video": "media/2026-06-29-asciilab-launches-to-turn-images-and-videos-into-a.mp4",
       "shortId": 200
     },
@@ -4593,6 +5319,9 @@
         "https://techcrunch.com/2026/06/22/whatsapp-gets-new-chief-as-meta-taps-indias-cred-founder-kunal-shah-and-invests-900m-in-startup/"
       ],
       "readTime": "5 min",
+      "categories": [
+        "founders"
+      ],
       "shortId": 199
     },
     {
@@ -4625,6 +5354,9 @@
         "https://bitroot.org/blog/2026-06-25-figma-launches-motion-feature-at-config-2026/"
       ],
       "readTime": "5 min",
+      "categories": [
+        "design"
+      ],
       "shortId": 198
     },
     {
@@ -4645,6 +5377,9 @@
         "https://x.com/i/status/2069827742800253230"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design"
+      ],
       "video": "media/2026-06-25-figma-launches-motion-feature-at-config-2026.mp4",
       "shortId": 197
     },
@@ -4666,6 +5401,10 @@
         "https://x.com/i/status/2068995853184840101"
       ],
       "readTime": "2 min",
+      "categories": [
+        "founders",
+        "design"
+      ],
       "video": "media/2026-06-23-palette-launches-free-matchmaking-platform-for-des.mp4",
       "shortId": 196
     },
@@ -4699,6 +5438,11 @@
         "https://www.cisa.gov/topics/cyber-threats-and-advisories/software-security"
       ],
       "readTime": "5 min",
+      "categories": [
+        "models",
+        "opensource",
+        "engineering"
+      ],
       "shortId": 195
     },
     {
@@ -4719,6 +5463,10 @@
         "https://x.com/i/status/2069108666121503068"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "shortId": 194
     },
     {
@@ -4739,6 +5487,9 @@
         "https://x.com/i/status/2069111326987673761"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design"
+      ],
       "video": "https://video.twimg.com/amplify_video/2069106830585008128/vid/avc1/3840x2160/JNV3XcjuWcKTO7Al.mp4?tag=28",
       "shortId": 193
     },
@@ -4760,6 +5511,11 @@
         "https://x.com/i/status/2069149296436330776"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents",
+        "founders"
+      ],
       "video": "https://video.twimg.com/amplify_video/2069142239335342080/vid/avc1/1920x1080/ttcK9Y3a3odWMA1M.mp4?tag=28",
       "shortId": 192
     },
@@ -4781,6 +5537,9 @@
         "https://x.com/i/status/2069468693017268244"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models"
+      ],
       "video": "media/2026-06-23-anthropic-adds-claude-tag-for-slack-task-delegatio.mp4",
       "shortId": 191
     },
@@ -4802,6 +5561,10 @@
         "https://x.com/i/status/2067916411003924942"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design",
+        "engineering"
+      ],
       "video": "https://video.twimg.com/amplify_video/2067916321841446912/vid/avc1/3664x2160/h_gUIfrG2xdcU5HI.mp4?tag=28",
       "shortId": 190
     },
@@ -4831,6 +5594,10 @@
         "https://x.com/elder_plinius/status/2064776322979676227"
       ],
       "readTime": "5 min",
+      "categories": [
+        "models",
+        "founders"
+      ],
       "shortId": 189
     },
     {
@@ -4851,6 +5618,9 @@
         "https://x.com/i/status/2067578443047596141"
       ],
       "readTime": "2 min",
+      "categories": [
+        "founders"
+      ],
       "shortId": 188
     },
     {
@@ -4871,6 +5641,7 @@
         "https://x.com/i/status/2067314945151144206"
       ],
       "readTime": "2 min",
+      "categories": [],
       "video": "media/2026-06-18-slack-shares-slackbot-prompts-to-streamline-produc.mp4",
       "shortId": 187
     },
@@ -4892,6 +5663,11 @@
         "https://x.com/OpenDesignHQ/status/2067192475853180997?s=20"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "opensource",
+        "design"
+      ],
       "video": "media/2026-06-18-open-design-open-sources-cursor-design-ai-studio.mp4",
       "shortId": 186
     },
@@ -4913,6 +5689,9 @@
         "https://x.com/i/status/2067421950314688759"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design"
+      ],
       "video": "https://video.twimg.com/amplify_video/2067417890098499584/vid/avc1/3840x2160/9isS2qKcym5fQmWa.mp4?tag=28",
       "shortId": 185
     },
@@ -4934,6 +5713,9 @@
         "https://x.com/i/status/2067631530890113477"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design"
+      ],
       "video": "media/2026-06-18-google-vids-adds-ai-avatars-voiceovers-and-slide-t.mp4",
       "shortId": 184
     },
@@ -4955,6 +5737,10 @@
         "https://x.com/i/status/2067501867198996528"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "design"
+      ],
       "video": "media/2026-06-18-fastlane-adds-claude-for-social-media-autocreates.mp4",
       "shortId": 183
     },
@@ -4976,6 +5762,9 @@
         "https://x.com/i/status/2067012220832329782"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 182
     },
     {
@@ -4998,6 +5787,9 @@
         "https://techcrunch.com/2026/06/17/social-medias-next-evolution-user-controlled-algorithms/"
       ],
       "readTime": "5 min",
+      "categories": [
+        "founders"
+      ],
       "shortId": 181
     },
     {
@@ -5021,6 +5813,9 @@
         "https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-sovereign-ai"
       ],
       "readTime": "5 min",
+      "categories": [
+        "founders"
+      ],
       "shortId": 180
     },
     {
@@ -5044,6 +5839,10 @@
         "https://www.indiatoday.in/technology/news/story/meta-edits-app-is-coming-to-your-desktop-it-is-also-getting-its-own-ai-assistant-2925608-2026-06-12"
       ],
       "readTime": "4 min",
+      "categories": [
+        "founders",
+        "design"
+      ],
       "shortId": 179
     },
     {
@@ -5066,6 +5865,10 @@
         "https://techcrunch.com/2026/06/09/its-not-faang-anymore-its-mangos/"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "founders"
+      ],
       "shortId": 178
     },
     {
@@ -5088,6 +5891,9 @@
         "https://techcrunch.com/2026/06/08/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 177
     },
     {
@@ -5108,6 +5914,9 @@
         "https://x.com/i/status/2064394146916229443"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models"
+      ],
       "video": "media/2026-06-09-claude-fable-5-launches-as-a-mythosclass-model-for.mp4",
       "shortId": 176
     },
@@ -5129,6 +5938,11 @@
         "https://x.com/i/status/2062260665121919101"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "founders",
+        "design"
+      ],
       "video": "media/2026-06-04-reve-launches-4k-image-model-20-with-layoutaware-g.mp4",
       "shortId": 175
     },
@@ -5150,6 +5964,9 @@
         "https://x.com/i/status/2062231122184990871"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design"
+      ],
       "video": "media/2026-06-03-paper-adds-vector-editing-tools-in-latest-update.mp4",
       "shortId": 174
     },
@@ -5171,6 +5988,9 @@
       "image": "https://bitroot.org/blog/media/images/mtw-photo.jpg",
       "sources": [],
       "readTime": "4 min",
+      "categories": [
+        "founders"
+      ],
       "shortId": 173
     },
     {
@@ -5191,6 +6011,9 @@
         "https://x.com/i/status/2062184922090246332"
       ],
       "readTime": "2 min",
+      "categories": [
+        "founders"
+      ],
       "video": "https://video.twimg.com/amplify_video/2062169235103907840/vid/avc1/2880x2160/KlWqLwknylYrOOOm.mp4?tag=27",
       "shortId": 172
     },
@@ -5212,6 +6035,10 @@
         "https://x.com/i/status/2062202208700313872"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "design"
+      ],
       "video": "media/2026-06-03-ideogram-releases-40-open-image-model-with-downloa.mp4",
       "shortId": 171
     },
@@ -5233,6 +6060,9 @@
         "https://x.com/i/status/2060868914117214376"
       ],
       "readTime": "2 min",
+      "categories": [
+        "founders"
+      ],
       "video": "https://video.twimg.com/amplify_video/2060862725316886528/vid/avc1/3840x2160/2rW2yzhnce6mtxwt.mp4?tag=27",
       "shortId": 170
     },
@@ -5254,6 +6084,9 @@
         "https://x.com/i/status/2061501427353288954"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design"
+      ],
       "video": "media/2026-06-03-blurr-releases-a-web-tool-with-19-filters-and-6-pi.mp4",
       "shortId": 169
     },
@@ -5275,6 +6108,9 @@
         "https://x.com/i/status/2061329225886453989"
       ],
       "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
       "video": "media/2026-06-01-microsoft-announces-the-surface-laptop-ultra-for-f.mp4",
       "shortId": 168
     },
@@ -5296,6 +6132,9 @@
         "https://x.com/i/status/2059538588300365981"
       ],
       "readTime": "2 min",
+      "categories": [
+        "founders"
+      ],
       "shortId": 167
     },
     {
@@ -5316,6 +6155,10 @@
         "https://x.com/i/status/2060053796001399035"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "founders"
+      ],
       "video": "media/2026-05-30-pika-launches-founder-starter-kit-for-claude-users.mp4",
       "shortId": 166
     },
@@ -5338,6 +6181,10 @@
         "https://x.com/i/status/2059269493382434992"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "design"
+      ],
       "video": "media/2026-05-26-veed-launches-subtitles-api-with-free-credits-for.mp4",
       "shortId": 165
     },
@@ -5359,6 +6206,9 @@
         "https://x.com/i/status/2059275268276224331"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models"
+      ],
       "video": "media/2026-05-26-resend-adds-mcp-and-claude-skills-to-claude-market.mp4",
       "shortId": 164
     },
@@ -5380,6 +6230,7 @@
         "https://x.com/i/status/2059295909809098960"
       ],
       "readTime": "2 min",
+      "categories": [],
       "video": "media/2026-05-26-quiverai-adds-json-prompting-to-arrow-for-tighter.mp4",
       "shortId": 163
     },
@@ -5401,6 +6252,9 @@
         "https://x.com/i/status/2059277428971688065"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design"
+      ],
       "video": "media/2026-05-26-jitter-ai-adds-promptdriven-motion-effects.mp4",
       "shortId": 162
     },
@@ -5422,6 +6276,10 @@
         "https://x.com/i/status/2059343174112522532"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "opensource"
+      ],
       "video": "media/2026-05-26-google-launches-aiventure-an-opensource-ai-dungeon.mp4",
       "shortId": 161
     },
@@ -5443,6 +6301,10 @@
         "https://x.com/i/status/2059080832363425950"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "opensource"
+      ],
       "shortId": 160
     },
     {
@@ -5463,6 +6325,9 @@
         "https://x.com/i/status/2058335516429635732"
       ],
       "readTime": "2 min",
+      "categories": [
+        "founders"
+      ],
       "video": "media/2026-05-26-feather-launches-a-selforganizing-inbox-service.mp4",
       "shortId": 159
     },
@@ -5484,6 +6349,9 @@
         "https://x.com/i/status/2059305907385704529"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "video": "media/2026-05-26-base-launches-mcp-to-connect-ai-agents-with-onchai.mp4",
       "shortId": 158
     },
@@ -5506,6 +6374,9 @@
         "https://x.com/i/status/2059300319331565930"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models"
+      ],
       "video": "media/2026-05-26-ascii-magic-launches-ai-animated-landing-page.mp4",
       "shortId": 157
     },
@@ -5527,6 +6398,9 @@
         "https://x.com/i/status/2056713047301902478"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design"
+      ],
       "video": "media/2026-05-21-zsolt-kacso-shares-a-card-hover-animation-experime.mp4",
       "shortId": 156
     },
@@ -5548,6 +6422,10 @@
         "https://x.com/i/status/2056309544997818507"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "design"
+      ],
       "video": "media/2026-05-21-open-design-integrates-its-ai-agent-into-codex-for.mp4",
       "shortId": 155
     },
@@ -5569,6 +6447,10 @@
         "https://x.com/i/status/2056724239797944618"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "design"
+      ],
       "video": "https://video.twimg.com/amplify_video/2056723617455501312/vid/avc1/3840x2160/fnVQc2cYqUs-qPbZ.mp4?tag=27",
       "shortId": 154
     },
@@ -5590,6 +6472,11 @@
         "https://x.com/i/status/2056404332824944970"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "opensource",
+        "engineering"
+      ],
       "video": "media/2026-05-21-browserbase-launches-browsesh-an-opensource-skill.mp4",
       "shortId": 153
     },
@@ -5611,6 +6498,10 @@
         "https://x.com/i/status/2056372444751909212"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "design"
+      ],
       "video": "media/2026-05-18-shadcnui-ships-a-full-designsystem-cli.mp4",
       "shortId": 152
     },
@@ -5632,6 +6523,12 @@
         "https://x.com/i/status/2056411641592287435"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents",
+        "founders",
+        "design"
+      ],
       "video": "https://video.twimg.com/amplify_video/2056404580619919361/vid/avc1/1920x1080/wT7FGshDUzNLLoiU.mp4?tag=27",
       "shortId": 151
     },
@@ -5653,6 +6550,10 @@
         "https://x.com/i/status/2053808704772841633"
       ],
       "readTime": "2 min",
+      "categories": [
+        "founders",
+        "design"
+      ],
       "media": [
         {
           "type": "image",
@@ -5687,6 +6588,9 @@
         "https://x.com/i/status/2056420570745450864"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "video": "media/2026-05-18-github-copilot-cli-adds-remotecontrol-for-local-se.mp4",
       "shortId": 149
     },
@@ -5708,6 +6612,9 @@
         "https://x.com/i/status/2056408432677142920"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "video": "media/2026-05-18-chatly-adds-usercontrolled-knowledge-library-to-om.mp4",
       "shortId": 148
     },
@@ -5729,6 +6636,10 @@
         "https://x.com/i/status/2056394356769366166"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "founders"
+      ],
       "video": "https://video.twimg.com/amplify_video/2056390673537089536/vid/avc1/3840x2160/4-b9R1SlDDcFveg3.mp4?tag=27",
       "shortId": 147
     },
@@ -5750,6 +6661,9 @@
         "https://x.com/i/status/2055922458876608947"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design"
+      ],
       "video": "media/2026-05-17-tweet-curates-10-design-sites-for-quick-weekend-re.mp4",
       "shortId": 146
     },
@@ -5771,6 +6685,7 @@
         "https://x.com/i/status/2056033761632891361"
       ],
       "readTime": "2 min",
+      "categories": [],
       "video": "media/2026-05-17-screencharm-adds-selectable-camera-layouts-for-rec.mp4",
       "shortId": 145
     },
@@ -5792,6 +6707,11 @@
         "https://x.com/i/status/2055957914561732946"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "opensource",
+        "design"
+      ],
       "video": "media/2026-05-17-opencut-clones-capcut-hits-458k-github-stars.mp4",
       "shortId": 144
     },
@@ -5813,6 +6733,10 @@
         "https://x.com/i/status/2055830602683998718"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "media/2026-05-17-anthropic-adds-autostack-detection-plugin-for-clau.mp4",
       "shortId": 143
     },
@@ -5834,6 +6758,9 @@
         "https://x.com/i/status/2054594852818764178"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "video": "media/2026-05-14-notion-releases-ntn-cli-for-terminal-api-access.mp4",
       "shortId": 142
     },
@@ -5855,6 +6782,7 @@
         "https://x.com/i/status/2054549753224937956"
       ],
       "readTime": "2 min",
+      "categories": [],
       "video": "media/2026-05-14-lovable-launches-seo-feature-with-auto-prerenderin.mp4",
       "shortId": 141
     },
@@ -5876,6 +6804,10 @@
         "https://x.com/i/status/2054580767779700775"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "opensource"
+      ],
       "video": "media/2026-05-14-cline-sdk-opensourced-as-npm-package.mp4",
       "shortId": 140
     },
@@ -5897,6 +6829,10 @@
         "https://x.com/i/status/2054639777685934564"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "shortId": 139
     },
     {
@@ -5917,6 +6853,9 @@
         "https://x.com/i/status/2054531959528079430"
       ],
       "readTime": "2 min",
+      "categories": [
+        "opensource"
+      ],
       "shortId": 138
     },
     {
@@ -5937,6 +6876,9 @@
         "https://x.com/i/status/2054463213022929032"
       ],
       "readTime": "2 min",
+      "categories": [
+        "opensource"
+      ],
       "video": "media/2026-05-13-scrcpy-40-adds-flexible-display-mode-for-android-m.mp4",
       "shortId": 137
     },
@@ -5958,6 +6900,10 @@
         "https://x.com/i/status/2054351031279186040"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "media/2026-05-13-claude-code-adds-a-goal-command-for-persistent-tas.mp4",
       "shortId": 136
     },
@@ -5979,6 +6925,10 @@
         "https://x.com/i/status/2053940934736228454"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "media/2026-05-12-claude-code-introduces-an-agent-view-listing-all-s.mp4",
       "shortId": 135
     },
@@ -6000,6 +6950,9 @@
         "https://x.com/i/status/2052029139775787314"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "video": "https://video.twimg.com/amplify_video/2052028417172779010/vid/avc1/1920x1080/ljwW-gGVn2gF_Qoj.mp4?tag=27",
       "shortId": 134
     },
@@ -6022,6 +6975,10 @@
         "https://x.com/i/status/2052060691893227611"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "shortId": 133
     },
     {
@@ -6042,6 +6999,10 @@
         "https://x.com/i/status/2052067399088664981"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "media/2026-05-07-claude-managed-agents-launches-dreaming-mode-and-b.mp4",
       "shortId": 132
     },
@@ -6064,6 +7025,9 @@
         "https://x.com/i/status/2051663268704636937"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models"
+      ],
       "video": "media/2026-05-05-subq-launches-a-subquadratic-llm-with-12mtoken-con.mp4",
       "shortId": 131
     },
@@ -6086,6 +7050,10 @@
         "https://x.com/i/status/2051616716007075887"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "media/2026-05-05-openclaude-v091-makes-codex-default-and-upgrades-t.mp4",
       "shortId": 130
     },
@@ -6107,6 +7075,10 @@
         "https://x.com/i/status/2051203959142895896"
       ],
       "readTime": "2 min",
+      "categories": [
+        "opensource",
+        "design"
+      ],
       "video": "media/2026-05-05-open-design-skills-released-as-open-source-design.mp4",
       "shortId": 129
     },
@@ -6128,6 +7100,10 @@
         "https://x.com/i/status/2051346056039039487"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "founders"
+      ],
       "video": "media/2026-05-05-higgsfield-releases-cli-with-builtin-marketing-ski.mp4",
       "shortId": 128
     },
@@ -6149,6 +7125,10 @@
         "https://x.com/i/status/2051697813554405384"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "design"
+      ],
       "video": "media/2026-05-05-hermes-agent-gains-hyperframes-video-editing-skill.mp4",
       "shortId": 127
     },
@@ -6170,6 +7150,9 @@
         "https://x.com/i/status/2051693177053340073"
       ],
       "readTime": "2 min",
+      "categories": [
+        "founders"
+      ],
       "video": "media/2026-05-05-google-launches-pomelli-catalog-for-ai-generated-b.mp4",
       "shortId": 126
     },
@@ -6191,6 +7174,11 @@
         "https://x.com/i/status/2051598119478108162"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "opensource",
+        "engineering"
+      ],
       "shortId": 125
     },
     {
@@ -6211,6 +7199,10 @@
         "https://x.com/i/status/2049575802568839648"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "media/2026-05-02-claude-code-adds-builtin-skill-for-claude-platform.mp4",
       "shortId": 124
     },
@@ -6232,6 +7224,10 @@
         "https://x.com/i/status/2049526025751855207"
       ],
       "readTime": "2 min",
+      "categories": [
+        "founders",
+        "design"
+      ],
       "video": "media/2026-04-30-poseidon-opens-early-access-to-numo-for-multilingu.mp4",
       "shortId": 123
     },
@@ -6253,6 +7249,9 @@
         "https://x.com/i/status/2049836416289407133"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design"
+      ],
       "video": "media/2026-04-30-fal-webgl-demo-serves-submegabyte-animated-glbs-in.mp4",
       "shortId": 122
     },
@@ -6274,6 +7273,10 @@
         "https://x.com/i/status/2048779120985645145"
       ],
       "readTime": "2 min",
+      "categories": [
+        "opensource",
+        "design"
+      ],
       "video": "media/2026-04-27-hyperframes-lets-you-generate-videos-from-html-css.mp4",
       "shortId": 121
     },
@@ -6295,6 +7298,9 @@
         "https://x.com/i/status/2048794727881789930"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 120
     },
     {
@@ -6315,6 +7321,9 @@
         "https://dotmatrix.zzzzshawn.cloud/"
       ],
       "readTime": "2 min",
+      "categories": [
+        "opensource"
+      ],
       "shortId": 119
     },
     {
@@ -6335,6 +7344,9 @@
         "https://x.com/i/status/2047782953959170239"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "video": "media/2026-04-26-anything-adds-aigenerated-app-store-screenshots.mp4",
       "shortId": 118
     },
@@ -6356,6 +7368,9 @@
         "https://x.com/i/status/2047728360818696302"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models"
+      ],
       "video": "media/2026-04-25-anthropic-pilots-clauderun-marketplace-for-office.mp4",
       "shortId": 117
     },
@@ -6377,6 +7392,9 @@
         "https://x.com/i/status/2047314929695310196"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "video": "media/2026-04-24-vs-code-ships-a-virtual-pet-extension.mp4",
       "shortId": 116
     },
@@ -6398,6 +7416,10 @@
         "https://x.com/i/status/2047747243617460482"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "media/2026-04-24-github-copilot-now-runs-openai-gpt55.mp4",
       "shortId": 115
     },
@@ -6419,6 +7441,9 @@
         "https://x.com/i/status/2047406475631624285"
       ],
       "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
       "video": "https://video.twimg.com/amplify_video/2047398550607364096/vid/avc1/1920x1080/cOcCQgOfNHSYwsqx.mp4?tag=21",
       "shortId": 114
     },
@@ -6440,6 +7465,11 @@
         "https://x.com/i/status/2047366820026593444"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "opensource",
+        "design"
+      ],
       "video": "media/2026-04-24-free-open-source-ai-video-clipping-tool-challenges.mp4",
       "shortId": 113
     },
@@ -6461,6 +7491,10 @@
         "https://x.com/i/status/2047605548346941643"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "founders"
+      ],
       "shortId": 112
     },
     {
@@ -6481,6 +7515,10 @@
         "https://x.com/dhruvtwt_/status/2047006444701274380"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "shortId": 111
     },
     {
@@ -6501,6 +7539,10 @@
         "https://x.com/ClaudeDevs/status/2047086372666921217?s=20"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "shortId": 110
     },
     {
@@ -6521,6 +7563,7 @@
         "https://x.com/i/status/2046866025795461145"
       ],
       "readTime": "2 min",
+      "categories": [],
       "video": "media/2026-04-22-unlocking-hidden-traffic-okaras-seo-hack-for-organ.mp4",
       "shortId": 109
     },
@@ -6542,6 +7585,9 @@
         "https://x.com/i/status/2046982541245321671"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "video": "media/2026-04-22-revolutionizing-web-scraping-firecrawls-game-chang.mp4",
       "shortId": 108
     },
@@ -6563,6 +7609,10 @@
         "https://x.com/i/status/2046670977145372771"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "design"
+      ],
       "video": "media/2026-04-22-revolutionizing-visual-creation-chatgpt-images-20.mp4",
       "shortId": 107
     },
@@ -6584,6 +7634,9 @@
         "https://x.com/i/status/2047004387961106435"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 106
     },
     {
@@ -6604,6 +7657,10 @@
         "https://x.com/i/status/2047008987665809771"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "media/2026-04-22-revolutionizing-productivity-openai-unveils-shared.mp4",
       "shortId": 105
     },
@@ -6625,6 +7682,10 @@
         "https://x.com/i/status/2046999435239133246"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "media/2026-04-22-revolutionizing-code-review-claude-code-unveils-ul.mp4",
       "shortId": 104
     },
@@ -6646,6 +7707,9 @@
         "https://x.com/i/status/2046827332124430774"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "video": "media/2026-04-22-revolutionary-infinite-canvas-ide-nyx-unveiled.mp4",
       "shortId": 103
     },
@@ -6667,6 +7731,10 @@
         "https://x.com/i/status/2044780198722498580"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "media/2026-04-17-claudedevs-unveils-dedicated-channel-for-developer.mp4",
       "shortId": 102
     },
@@ -6688,6 +7756,10 @@
         "https://x.com/i/status/2044140545384296913"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "https://video.twimg.com/amplify_video/2044139244525105152/vid/avc1/1920x1080/2GHTKwa088d6jyOr.mp4?tag=21",
       "shortId": 101
     },
@@ -6709,6 +7781,10 @@
         "https://x.com/i/status/2044519924282847381"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "design"
+      ],
       "video": "media/2026-04-15-revolutionizing-voice-ai-elevenlabs-unveils-game-c.mp4",
       "shortId": 100
     },
@@ -6730,6 +7806,10 @@
         "https://x.com/i/status/2044093913376706655"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "media/2026-04-15-revolutionizing-automation-claude-code-routines-ar.mp4",
       "shortId": 99
     },
@@ -6751,6 +7831,9 @@
         "https://x.com/i/status/2044111418786754620"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design"
+      ],
       "video": "media/2026-04-15-revolutionizing-app-design-ai-generated-themes-now.mp4",
       "shortId": 98
     },
@@ -6773,6 +7856,7 @@
         "https://x.com/i/status/2044106378655215625"
       ],
       "readTime": "2 min",
+      "categories": [],
       "video": "media/2026-04-15-revolutionizing-ai-powered-workflows-google-introd.mp4",
       "shortId": 97
     },
@@ -6794,6 +7878,10 @@
         "https://x.com/i/status/2044131493966909862"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "media/2026-04-15-revolutionizing-ai-powered-coding-claudes-game-cha.mp4",
       "shortId": 96
     },
@@ -6815,6 +7903,9 @@
         "https://x.com/i/status/2042683393247449148"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design"
+      ],
       "video": "https://video.twimg.com/amplify_video/2042678525627633664/vid/avc1/2756x2160/Pn6Y6f1MjrW6JOIS.mp4?tag=21",
       "shortId": 95
     },
@@ -6836,6 +7927,9 @@
         "https://x.com/i/status/2042641521653256234"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 94
     },
     {
@@ -6856,6 +7950,10 @@
         "https://x.com/i/status/2042332268450963774"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "media/2026-04-10-revolutionizing-agent-interactions-claudes-monitor.mp4",
       "shortId": 93
     },
@@ -6877,6 +7975,10 @@
         "https://x.com/i/status/2042008695035355537"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "engineering"
+      ],
       "video": "media/2026-04-09-revolutionizing-security-triage-github-copilot-cli.mp4",
       "shortId": 92
     },
@@ -6898,6 +8000,10 @@
         "https://x.com/i/status/2041927687460024721"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "media/2026-04-09-revolutionizing-ai-development-claude-unveils-mana.mp4",
       "shortId": 91
     },
@@ -6919,6 +8025,9 @@
         "https://x.com/i/status/2041651193362182281"
       ],
       "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
       "video": "media/2026-04-09-revolutionary-database-cloning-ardentai-changes-th.mp4",
       "shortId": 90
     },
@@ -6940,6 +8049,10 @@
         "https://x.com/i/status/2041982872698155398"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "media/2026-04-09-notion-unleashes-ai-powered-task-automation-with-c.mp4",
       "shortId": 89
     },
@@ -6961,6 +8074,9 @@
         "https://x.com/i/status/2041909075110510969"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "video": "media/2026-04-09-firecrawl-reaches-new-heights-revolutionizing-web.mp4",
       "shortId": 88
     },
@@ -6982,6 +8098,7 @@
         "https://x.com/i/status/2041401159639007301"
       ],
       "readTime": "2 min",
+      "categories": [],
       "shortId": 87
     },
     {
@@ -7002,6 +8119,10 @@
         "https://x.com/i/status/2041578392852517128"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "engineering"
+      ],
       "shortId": 86
     },
     {
@@ -7022,6 +8143,7 @@
         "https://x.com/i/status/2041654973491245509"
       ],
       "readTime": "2 min",
+      "categories": [],
       "video": "media/2026-04-08-revolutionizing-code-productivity-autofix-pr-now-a.mp4",
       "shortId": 85
     },
@@ -7043,6 +8165,9 @@
         "https://x.com/i/status/2041501747105890393"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "video": "media/2026-04-08-revolutionizing-automation-zapier-sdk-now-open-to.mp4",
       "shortId": 84
     },
@@ -7064,6 +8189,10 @@
         "https://x.com/i/status/2041542766585610477"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "media/2026-04-08-revolutionizing-ai-dev-tool-onboarding-interactive.mp4",
       "shortId": 83
     },
@@ -7085,6 +8214,7 @@
         "https://x.com/i/status/2041314633978659092"
       ],
       "readTime": "2 min",
+      "categories": [],
       "video": "media/2026-04-08-revolutionary-ai-teacher-clicky-buddy-changes-the.mp4",
       "shortId": 82
     },
@@ -7106,6 +8236,9 @@
         "https://x.com/i/status/2040490839881720092"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 81
     },
     {
@@ -7126,6 +8259,7 @@
         "https://x.com/i/status/2040869600137556247"
       ],
       "readTime": "2 min",
+      "categories": [],
       "video": "media/2026-04-06-tldraw-revolution-unlocking-next-level-collaborati.mp4",
       "shortId": 80
     },
@@ -7147,6 +8281,9 @@
         "https://x.com/i/status/2040969883236622484"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design"
+      ],
       "video": "media/2026-04-06-revolutionizing-font-pairing-introducing-typevibe.mp4",
       "shortId": 79
     },
@@ -7169,6 +8306,9 @@
         "https://x.com/i/status/2040387276589682858"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design"
+      ],
       "shortId": 78
     },
     {
@@ -7189,6 +8329,7 @@
         "https://x.com/i/status/2037935421905412229"
       ],
       "readTime": "2 min",
+      "categories": [],
       "video": "media/2026-03-30-revolutionizing-game-development-with-ommas-ai-pow.mp4",
       "shortId": 77
     },
@@ -7210,6 +8351,9 @@
         "https://x.com/i/status/2036195789601374705"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models"
+      ],
       "video": "media/2026-03-24-revolutionizing-productivity-claudes-game-changing.mp4",
       "shortId": 76
     },
@@ -7231,6 +8375,10 @@
         "https://x.com/i/status/2032635370089693456"
       ],
       "readTime": "1 min",
+      "categories": [
+        "agents",
+        "engineering"
+      ],
       "shortId": 75
     },
     {
@@ -7251,6 +8399,9 @@
         "https://x.com/i/status/2032555220493033960"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "video": "media/2026-03-14-revolutionizing-ai-workflows-glm-5-unleashes-agent.mp4",
       "shortId": 74
     },
@@ -7272,6 +8423,10 @@
         "https://x.com/i/status/2032856141059747975"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "media/2026-03-14-revolutionary-coding-claude-code-desktop-unveils-g.mp4",
       "shortId": 73
     },
@@ -7293,6 +8448,9 @@
         "https://x.com/i/status/2032291152402255892"
       ],
       "readTime": "2 min",
+      "categories": [
+        "founders"
+      ],
       "video": "media/2026-03-13-ycs-startup-school-lands-in-india-a-boost-for-loca.mp4",
       "shortId": 72
     },
@@ -7314,6 +8472,7 @@
         "https://x.com/i/status/2032436603453395361"
       ],
       "readTime": "2 min",
+      "categories": [],
       "video": "media/2026-03-13-revolutionizing-pixel-art-a-node-based-vfx-editor.mp4",
       "shortId": 71
     },
@@ -7336,6 +8495,10 @@
         "https://x.com/i/status/2031152691502555592"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "shortId": 70
     },
     {
@@ -7356,6 +8519,7 @@
         "https://x.com/i/status/2031049359710650522"
       ],
       "readTime": "2 min",
+      "categories": [],
       "video": "media/2026-03-11-jetbrains-unveils-air-a-revolutionary-ai-powered-d.mp4",
       "shortId": 69
     },
@@ -7377,6 +8541,10 @@
         "https://x.com/i/status/2031037128734376089"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "engineering"
+      ],
       "video": "media/2026-03-11-breakthrough-run-ai-models-entirely-in-your-browse.mp4",
       "shortId": 68
     },
@@ -7398,6 +8566,9 @@
         "https://x.com/i/status/2031088171262554195"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models"
+      ],
       "video": "media/2026-03-09-revolutionizing-code-quality-claudes-ai-powered-co.mp4",
       "shortId": 67
     },
@@ -7419,6 +8590,9 @@
         "https://x.com/i/status/2029106289528185211"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 66
     },
     {
@@ -7439,6 +8613,9 @@
         "https://x.com/i/status/2029296008572576217"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models"
+      ],
       "video": "media/2026-03-06-revolutionizing-team-collaboration-openai-unveils.mp4",
       "shortId": 65
     },
@@ -7460,6 +8637,7 @@
         "https://x.com/i/status/2029180822838759703"
       ],
       "readTime": "2 min",
+      "categories": [],
       "video": "media/2026-03-06-revolutionizing-app-development-ai-powered-glaze-l.mp4",
       "shortId": 64
     },
@@ -7481,6 +8659,9 @@
         "https://x.com/i/status/2029272199073354105"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "video": "media/2026-03-06-revolutionizing-agent-development-langsmith-skills.mp4",
       "shortId": 63
     },
@@ -7502,6 +8683,7 @@
         "https://share.google/Aoh06t6BFh9ZjAPJW"
       ],
       "readTime": "2 min",
+      "categories": [],
       "shortId": 62
     },
     {
@@ -7522,6 +8704,11 @@
         "https://x.com/trq212/status/2028628570692890800?s=20"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents",
+        "design"
+      ],
       "video": "media/2026-03-05-revolutionary-voice-mode-rolls-out-in-claude-code.mp4",
       "shortId": 61
     },
@@ -7545,6 +8732,7 @@
         "https://share.google/XBSpKN75sGxaqL1Mk"
       ],
       "readTime": "2 min",
+      "categories": [],
       "shortId": 60
     },
     {
@@ -7565,6 +8753,10 @@
         "https://x.com/i/status/2028128730132922760"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "engineering"
+      ],
       "shortId": 59
     },
     {
@@ -7585,6 +8777,9 @@
         "https://x.com/i/status/2026659388270981288"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design"
+      ],
       "shortId": 58
     },
     {
@@ -7605,6 +8800,9 @@
         "https://x.com/i/status/2027027163078336885"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "video": "media/2026-02-26-revolutionizing-productivity-minimax-agents-game-c.mp4",
       "shortId": 57
     },
@@ -7626,6 +8824,9 @@
         "https://x.com/i/status/2027051577899380991"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design"
+      ],
       "video": "media/2026-02-26-revolutionizing-image-creation-nano-banana-2-unlea.mp4",
       "shortId": 56
     },
@@ -7647,6 +8848,9 @@
         "https://x.com/i/status/2026359198171402678"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 55
     },
     {
@@ -7668,6 +8872,7 @@
         "https://blog.cloudflare.com/vinext/"
       ],
       "readTime": "2 min",
+      "categories": [],
       "shortId": 54
     },
     {
@@ -7688,6 +8893,9 @@
         "https://x.com/i/status/2026329359838318906"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design"
+      ],
       "video": "media/2026-02-25-revolutionizing-design-pencils-swarm-mode-takes-ai.mp4",
       "shortId": 53
     },
@@ -7709,6 +8917,7 @@
         "https://x.com/i/status/2026695550771540489"
       ],
       "readTime": "2 min",
+      "categories": [],
       "video": "media/2026-02-25-revolutionizing-ai-capabilities-the-dawn-of-perple.mp4",
       "shortId": 52
     },
@@ -7730,6 +8939,9 @@
         "https://x.com/i/status/2026493668417482923"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "video": "media/2026-02-25-revolutionary-ai-powered-chatbot-unleashed-meet-ma.mp4",
       "shortId": 51
     },
@@ -7751,6 +8963,7 @@
         "https://x.com/i/status/2026374947996840169"
       ],
       "readTime": "2 min",
+      "categories": [],
       "video": "media/2026-02-25-google-labs-unveils-major-upgrade-to-opal-revoluti.mp4",
       "shortId": 50
     },
@@ -7772,6 +8985,10 @@
         "https://x.com/i/status/2026418433911603668"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "media/2026-02-25-claude-code-unleashes-remote-control-a-game-change.mp4",
       "shortId": 49
     },
@@ -7793,6 +9010,10 @@
         "https://x.com/i/status/2024937960572104707"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "media/2026-02-21-revolutionizing-coding-claudes-game-changing-updat.mp4",
       "shortId": 48
     },
@@ -7815,6 +9036,9 @@
         "https://share.google/JZHNyoCeRqofk1vze"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 47
     },
     {
@@ -7835,6 +9059,7 @@
         "https://x.com/i/status/2024178381760143381"
       ],
       "readTime": "2 min",
+      "categories": [],
       "shortId": 46
     },
     {
@@ -7855,6 +9080,9 @@
         "https://x.com/i/status/2024227639087813035"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "video": "media/2026-02-19-revolutionary-ai-powered-desktop-agent-unveiled-in.mp4",
       "shortId": 45
     },
@@ -7877,6 +9105,9 @@
         "https://x.com/i/status/2023805464577011979"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design"
+      ],
       "shortId": 44
     },
     {
@@ -7898,6 +9129,9 @@
         "https://www.cnbc.com/2026/02/19/openai-sam-altman-anthropic-dario-amodei-india-ai-summit.html"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models"
+      ],
       "shortId": 43
     },
     {
@@ -7918,6 +9152,9 @@
         "https://x.com/i/status/2023978535161925889"
       ],
       "readTime": "2 min",
+      "categories": [
+        "founders"
+      ],
       "shortId": 42
     },
     {
@@ -7938,6 +9175,9 @@
         "https://x.com/i/status/2023967802823245901"
       ],
       "readTime": "2 min",
+      "categories": [
+        "founders"
+      ],
       "shortId": 41
     },
     {
@@ -7958,6 +9198,9 @@
         "https://analyticsindiamag.com/ai-startups/funding-reset-why-karnataka-faced-a-28-drop-while-maharashtra-held-its-ground"
       ],
       "readTime": "2 min",
+      "categories": [
+        "founders"
+      ],
       "shortId": 40
     },
     {
@@ -7978,6 +9221,10 @@
         "https://x.com/i/status/2023480469044818208"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "engineering"
+      ],
       "video": "media/2026-02-17-revolutionizing-tech-stacks-hyperbrowser-unveils-b.mp4",
       "shortId": 39
     },
@@ -7999,6 +9246,9 @@
         "https://www.figma.com/blog/introducing-claude-code-to-figma/"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design"
+      ],
       "shortId": 38
     },
     {
@@ -8020,6 +9270,10 @@
         "https://ollama.com/blog/web-search-subagents-claude-code"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "shortId": 37
     },
     {
@@ -8040,6 +9294,10 @@
         "https://x.com/i/status/2023428910042513482"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "https://video.twimg.com/amplify_video/2023253339073392640/vid/avc1/3840x2160/7JQ8lRXN0Gf-NYY_.mp4?tag=21",
       "shortId": 36
     },
@@ -8061,6 +9319,10 @@
         "https://x.com/i/status/2023370190269116568"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "engineering"
+      ],
       "shortId": 35
     },
     {
@@ -8081,6 +9343,9 @@
         "https://x.com/i/status/2023066199995949350"
       ],
       "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
       "shortId": 34
     },
     {
@@ -8101,6 +9366,10 @@
         "https://www.anthropic.com/news/bengaluru-office-partnerships-across-india"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "founders"
+      ],
       "shortId": 33
     },
     {
@@ -8121,6 +9390,10 @@
         "https://x.com/i/status/2022995332058251548"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "design"
+      ],
       "video": "media/2026-02-15-revolutionizing-voice-ai-nvidia-unveils-game-chang.mp4",
       "shortId": 32
     },
@@ -8142,6 +9415,7 @@
         "https://www.threads.com/@toolfoliooo/post/DUyJyygk5Ct?xmt=AQF0Sb4soJ59WdTpfk3Z2rOSnVLTlTUaJ1yFPJdnNWJL4kN6Zppry2uQuHct11bO0b8RtAvk&slof=1"
       ],
       "readTime": "2 min",
+      "categories": [],
       "shortId": 31
     },
     {
@@ -8162,6 +9436,9 @@
         "https://x.com/i/status/2023029674549596301"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models"
+      ],
       "video": "media/2026-02-15-revolutionizing-ai-powered-browsing-kimi-claw-unle.mp4",
       "shortId": 30
     },
@@ -8183,6 +9460,9 @@
         "https://x.com/i/status/2022256365901607287"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "video": "media/2026-02-14-revolutionizing-app-development-raydian-20-unleash.mp4",
       "shortId": 29
     },
@@ -8204,6 +9484,9 @@
         "https://x.com/i/status/2022038492575154555"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design"
+      ],
       "video": "media/2026-02-14-revolutionizing-ai-driven-design-introducing-the-g.mp4",
       "shortId": 28
     },
@@ -8226,6 +9509,9 @@
         "https://photon.codes/blog/ci-cd-in-the-age-of-ai"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 27
     },
     {
@@ -8246,6 +9532,7 @@
         "https://x.com/i/status/2021955521213800489"
       ],
       "readTime": "2 min",
+      "categories": [],
       "shortId": 26
     },
     {
@@ -8266,6 +9553,9 @@
         "https://x.com/i/status/2021661315329405174"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "video": "media/2026-02-12-revolutionizing-app-store-submissions-automated-gu.mp4",
       "shortId": 25
     },
@@ -8287,6 +9577,9 @@
         "https://x.com/Jarodxu7/status/2021620710544904355?s=20"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "video": "media/2026-02-12-revolutionary-agent-native-computing-now-accessibl.mp4",
       "shortId": 24
     },
@@ -8308,6 +9601,9 @@
         "https://share.google/6gzMAD1U347j7YUXX"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models"
+      ],
       "shortId": 23
     },
     {
@@ -8328,6 +9624,9 @@
         "https://x.com/i/status/2020464238880596429"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design"
+      ],
       "video": "media/2026-02-10-revolutionizing-video-creation-ai-powered-vibe-edi.mp4",
       "shortId": 22
     },
@@ -8349,6 +9648,9 @@
         "https://x.com/i/status/2020423330386579646"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design"
+      ],
       "video": "media/2026-02-10-revolutionizing-ui-animations-introducing-reactbit.mp4",
       "shortId": 21
     },
@@ -8372,6 +9674,7 @@
         "https://www.marktechpost.com/2026/02/07/google-ai-introduces-paperbanana-an-agentic-framework-that-automates-publication-ready-methodology-diagrams-and-statistical-plots/"
       ],
       "readTime": "2 min",
+      "categories": [],
       "shortId": 20
     },
     {
@@ -8392,6 +9695,10 @@
         "https://github.blog/changelog/2026-02-09-gpt-5-3-codex-is-now-generally-available-for-github-copilot/"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "shortId": 19
     },
     {
@@ -8412,6 +9719,9 @@
         "https://cursor.com/blog/composer-1-5"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 18
     },
     {
@@ -8432,6 +9742,7 @@
         "https://github.com/HKUDS/nanobot"
       ],
       "readTime": "2 min",
+      "categories": [],
       "shortId": 17
     },
     {
@@ -8453,6 +9764,10 @@
         "https://m.economictimes.com/tech/technology/india-can-no-longer-rely-on-it-service-exports-need-to-move-focus-to-deeptech-hardware-nithin-kamath/articleshow/128120292.cms"
       ],
       "readTime": "2 min",
+      "categories": [
+        "founders",
+        "engineering"
+      ],
       "shortId": 16
     },
     {
@@ -8474,6 +9789,10 @@
         "https://techcrunch.com/2026/02/09/anthropics-india-expansion-collides-with-a-local-company-that-already-had-the-name/"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "founders"
+      ],
       "shortId": 15
     },
     {
@@ -8495,6 +9814,7 @@
         "https://www.linkedin.com/posts/chanin-nantasenamat_watch-me-use-coco-to-build-a-streamlit-ugcPost-7424601007264833536-P64R?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&utm_campaign=share_via"
       ],
       "readTime": "2 min",
+      "categories": [],
       "shortId": 14
     },
     {
@@ -8516,6 +9836,9 @@
         "https://replicate.com/blog/replicate-cloudflare"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 13
     },
     {
@@ -8537,6 +9860,9 @@
         "https://techcrunch.com/2026/02/06/it-just-got-easier-for-claude-to-check-in-on-your-wordpress-site/"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models"
+      ],
       "shortId": 12
     },
     {
@@ -8557,6 +9883,9 @@
         "https://www.linkedin.com/posts/walid-boulanouar_claude-code-for-hacking-is-here-shannon-ugcPost-7425888138117566464-rWZQ?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAAsY8mwBu6_ddK5CR-zhjaeqJcgnKnmnb5o&utm_campaign=share_via"
       ],
       "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
       "shortId": 11
     },
     {
@@ -8578,6 +9907,11 @@
         "https://x.com/i/status/2020535293905101186"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents",
+        "opensource"
+      ],
       "shortId": 10
     },
     {
@@ -8598,6 +9932,10 @@
         "https://share.google/4T0fJDumSQSmG5Cmo"
       ],
       "readTime": "2 min",
+      "categories": [
+        "agents",
+        "engineering"
+      ],
       "shortId": 9
     },
     {
@@ -8618,6 +9956,10 @@
         "https://code.claude.com/docs/en/agent-teams#compare-with-subagents"
       ],
       "readTime": "3 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "shortId": 8
     },
     {
@@ -8638,6 +9980,9 @@
         "https://www.instagram.com/reel/DUWc3p2CNkC/?igsh=Z3VnMnFjOG15MXY3"
       ],
       "readTime": "2 min",
+      "categories": [
+        "design"
+      ],
       "shortId": 7
     },
     {
@@ -8658,6 +10003,10 @@
         "https://x.com/lydiahallie/status/2019469032844587505?s=20"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.mp4",
       "shortId": 6
     },
@@ -8680,6 +10029,10 @@
         "https://share.google/tM36P3WSwQLtg0J7h"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "shortId": 5
     },
     {
@@ -8700,6 +10053,9 @@
         "https://share.google/uISHcJ3WNR4H6uMhP"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models"
+      ],
       "shortId": 4
     },
     {
@@ -8720,6 +10076,10 @@
         "https://x.com/i/status/2019173731042750509"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents"
+      ],
       "video": "media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.mp4",
       "shortId": 3
     },
@@ -8741,6 +10101,7 @@
         "https://app.inference.sh/blog/skills/agent-skills-overview"
       ],
       "readTime": "2 min",
+      "categories": [],
       "shortId": 2
     },
     {
@@ -8761,6 +10122,9 @@
         "https://mistral.ai/news/voxtral-transcribe-2"
       ],
       "readTime": "2 min",
+      "categories": [
+        "models"
+      ],
       "shortId": 1
     }
   ]

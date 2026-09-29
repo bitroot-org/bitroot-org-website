@@ -36,6 +36,7 @@
     <link rel="icon" type="image/png" href="https://bitroot.org/blog/media/images/favicon.png">
     <link rel="alternate" type="application/rss+xml" title="Newslogger | Bitroot" href="/rss.xml">
     <link rel="stylesheet" href="/blog/css/blog.css">
+    <link rel="stylesheet" href="/blog/css/newslogger.css">
 
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","@id":"https://bitroot.org/blog/#blog","url":"https://bitroot.org/blog/","name":"Bitroot Newslogger","description":"Daily AI and tech news for founders and builders.","inLanguage":"en","publisher":{"@type":"NewsMediaOrganization","name":"Bitroot","url":"https://bitroot.org","logo":{"@type":"ImageObject","url":"https://bitroot.org/blog/media/images/bitroot-dark-text-border.png"}}}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://bitroot.org"},{"@type":"ListItem","position":2,"name":"Newslogger","item":"https://bitroot.org/blog/"}]}</script>
@@ -97,7 +98,7 @@
         posthog.register({ site: 'blog' })
     </script>
 </head>
-<body>
+<body class="nl-index">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-3HDKNMVC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
@@ -138,140 +139,124 @@
         </div>
     </div>
 
-    <!-- Floating glass navbar -->
-    <header class="glass-nav">
-        <nav class="glass-nav-inner">
-            <a href="/" class="shell-logo"><img src="https://bitroot.org/blog/media/images/bitroot-dark-text-border.png" alt="Bitroot" class="logo-img"></a>
+    <!-- Floating glass navbar; category chips dock into it once the hero scrolls away -->
+    <header class="glass-nav nl-nav" id="nl-nav">
+        <nav class="glass-nav-inner" aria-label="Site">
+            <a href="/" class="shell-logo"><img src="https://bitroot.org/blog/media/images/bitroot-dark-text-border.png" alt="Bitroot" class="logo-img" width="112" height="28"></a>
             <div class="shell-links">
-                <a href="/blog" class="shell-link active">newslogger</a>
+                <a href="/blog/" class="shell-link active">newslogger</a>
                 <a href="/" class="shell-link">home</a>
+                <a href="/rss.xml" class="shell-link">rss</a>
                 <button class="theme-toggle" aria-label="Toggle theme">
                     <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                     <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                 </button>
             </div>
         </nav>
+        <div class="nl-nav-chips" id="nl-nav-chips" aria-hidden="true"></div>
     </header>
 
-    <!-- Dark capsule: title + filters + search -->
-    <section class="blog-shell" aria-label="Browse the newslogger">
-        <div class="shell-body">
-            <h1 class="shell-title">Newslogger</h1>
-            <div class="filter-pills" id="blog-filters" aria-label="Filter posts by tag">
-                <button class="filter-pill active" data-tag="All">All</button>
-            </div>
-            <div class="search-box">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                <input type="search" id="blog-search" placeholder="I want to read about..." aria-label="Search blog posts">
-            </div>
+    <!-- Hero: title, search, category chips -->
+    <section class="nl-hero" aria-label="Browse the newslogger">
+        <h1 class="nl-title">Newslogger</h1>
+        <p class="nl-lede">Daily AI and tech news for founders and builders. What shipped, what it costs, and whether it matters <em>to you.</em></p>
+        <label class="nl-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><line x1="21" y1="21" x2="16.4" y2="16.4"/></svg>
+            <input type="search" id="blog-search" placeholder="Search all posts..." aria-label="Search posts" autocomplete="off">
+        </label>
+        <div class="nl-chips" id="blog-filters" role="toolbar" aria-label="Filter by category">
+                <button class="nl-chip is-active" type="button" data-cat="all" aria-pressed="true">All</button>
+                <button class="nl-chip" type="button" data-cat="models" aria-pressed="false">AI Models</button>
+                <button class="nl-chip" type="button" data-cat="agents" aria-pressed="false">Agents &amp; Dev Tools</button>
+                <button class="nl-chip" type="button" data-cat="founders" aria-pressed="false">Founders &amp; Business</button>
+                <button class="nl-chip" type="button" data-cat="opensource" aria-pressed="false">Open Source</button>
+                <button class="nl-chip" type="button" data-cat="design" aria-pressed="false">Design &amp; Media</button>
+                <button class="nl-chip" type="button" data-cat="engineering" aria-pressed="false">Engineering</button>
         </div>
     </section>
 
-    <!-- Blog Showcase Section -->
-    <main class="showcase">
+    <main class="showcase nl-main" id="nl-main">
         <!-- POSTS:BEGIN — generated by build_index.py, do not edit by hand -->
-        <div class="cards-grid" id="posts-grid">
-            <a class="card" data-post-slug="2026-07-17-selfhosted-condenser-lets-you-browse-telegram-chan" href="/blog/2026-07-17-selfhosted-condenser-lets-you-browse-telegram-chan/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-17-selfhosted-condenser-lets-you-browse-telegram-chan.jpg" alt="Self‑hosted Condenser lets you browse Telegram channels like Twitter" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-17-selfhosted-condenser-lets-you-browse-telegram-chan'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Self‑hosted Condenser lets you browse Telegram channels like Twitter</h3>
-                    <p class="card-excerpt">我做了一个自部署的阅读器，叫 Condenser，可以用 Twitter 的方式刷 Telegram 上关注的频道。刚刚测了下 iOS 版也可以用了。repo 还没有修整，但是非常的 agent native，因此如果你有兴趣的话，直接 clone 下来让你的 agent 来安装部署，应该是完全没问题的…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">telegram</span>
-                        <span class="card-info">17 Jul 2026 &bull; 2 min read</span>
+        <div id="nl-home">
+        <section class="nl-section" aria-labelledby="nl-all-title">
+            <div class="nl-section-head">
+                <h2 class="nl-h2" id="nl-all-title">All posts <span class="nl-h2-sub">Page 18 of 46</span></h2>
+            </div>
+            <div class="nl-grid">
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-17-selfhosted-condenser-lets-you-browse-telegram-chan" href="/blog/2026-07-17-selfhosted-condenser-lets-you-browse-telegram-chan/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-17-selfhosted-condenser-lets-you-browse-telegram-chan.jpg" alt="Self‑hosted Condenser lets you browse Telegram channels like Twitter" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-17-selfhosted-condenser-lets-you-browse-telegram-chan'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Self‑hosted Condenser lets you browse Telegram channels like Twitter</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-17-opensource-shep-agent-orchestrator-targets-github" href="/blog/2026-07-17-opensource-shep-agent-orchestrator-targets-github/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-17-opensource-shep-agent-orchestrator-targets-github.jpg" alt="Open‑source “Shep” agent orchestrator targets GitHub issues labeled “shep”" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-17-opensource-shep-agent-orchestrator-targets-github'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Open‑source “Shep” agent orchestrator targets GitHub issues labeled “shep”</h3>
-                    <p class="card-excerpt">Craig Ruks released Shep, an open‑source orchestrator that watches for GitHub issues tagged “shep” and hands them off to AI agents. It’s a lightweight way to prototype custom…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">agent orchestrator</span>
-                        <span class="card-info">17 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">telegram</span><span>17 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-17-opensource-shep-agent-orchestrator-targets-github" href="/blog/2026-07-17-opensource-shep-agent-orchestrator-targets-github/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-17-opensource-shep-agent-orchestrator-targets-github.jpg" alt="Open‑source “Shep” agent orchestrator targets GitHub issues labeled “shep”" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-17-opensource-shep-agent-orchestrator-targets-github'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Open‑source “Shep” agent orchestrator targets GitHub issues labeled “shep”</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-17-kooky-036-adds-keepawake-mode-for-laptops" href="/blog/2026-07-17-kooky-036-adds-keepawake-mode-for-laptops/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-17-kooky-036-adds-keepawake-mode-for-laptops.jpg" alt="kooky 0.36 adds keep‑awake mode for laptops" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-17-kooky-036-adds-keepawake-mode-for-laptops'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">kooky 0.36 adds keep‑awake mode for laptops</h3>
-                    <p class="card-excerpt">kooky最新版本v0.36.0上线重磅功能keep awake，让你的笔记本电脑在合盖时，agent也能保持工作！ auto档：在agent工作/ssh连接时，保持唤醒状态 always档：电脑始终保持唤醒状态 灵感源自于前几天看到一个推特老哥做的产品，感觉非常适合在终端里内置这个功能，欢迎体验！…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">kooky</span>
-                        <span class="card-info">17 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>17 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-17-kooky-036-adds-keepawake-mode-for-laptops" href="/blog/2026-07-17-kooky-036-adds-keepawake-mode-for-laptops/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-17-kooky-036-adds-keepawake-mode-for-laptops.jpg" alt="kooky 0.36 adds keep‑awake mode for laptops" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-17-kooky-036-adds-keepawake-mode-for-laptops'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">kooky 0.36 adds keep‑awake mode for laptops</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on" href="/blog/2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on.jpg" alt="Nora control plane launches for OpenClaw &amp; Hermes on Kubernetes" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Nora control plane launches for OpenClaw &amp; Hermes on Kubernetes</h3>
-                    <p class="card-excerpt">Nora provides a self‑hosted control plane for managing OpenClaw and Hermes runtimes on Docker/Kubernetes, offering a single view for deployment, inspection, and recovery.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">kubernetes</span>
-                        <span class="card-info">16 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>17 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on" href="/blog/2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on.jpg" alt="Nora control plane launches for OpenClaw &amp; Hermes on Kubernetes" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-16-nora-control-plane-launches-for-openclaw-hermes-on'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Nora control plane launches for OpenClaw &amp; Hermes on Kubernetes</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s" href="/blog/2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s.jpg" alt="Lemma open‑source platform lets agents and humans share tables and approvals" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Lemma open‑source platform lets agents and humans share tables and approvals</h3>
-                    <p class="card-excerpt">Lemma is now open source and lets you wire AI agents with human reviewers using shared tables, with a quick‑start example that runs in under an hour.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">lemma</span>
-                        <span class="card-info">16 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Open Source</span><span>16 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s" href="/blog/2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s.jpg" alt="Lemma open‑source platform lets agents and humans share tables and approvals" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-16-lemma-opensource-platform-lets-agents-and-humans-s'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Lemma open‑source platform lets agents and humans share tables and approvals</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-16-inkling-model-released-with-975b-parameters-and-mu" href="/blog/2026-07-16-inkling-model-released-with-975b-parameters-and-mu/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-16-inkling-model-released-with-975b-parameters-and-mu.jpg" alt="Inkling model released with 975B parameters and multimodal support" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-16-inkling-model-released-with-975b-parameters-and-mu'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Inkling model released with 975B parameters and multimodal support</h3>
-                    <p class="card-excerpt">Inkling, the first open model from Thinky Machines, ships 975 B parameters, 1 M token context, and native text, image, and audio reasoning, with a ready‑to‑run stack.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">large language model</span>
-                        <span class="card-info">16 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>16 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-16-inkling-model-released-with-975b-parameters-and-mu" href="/blog/2026-07-16-inkling-model-released-with-975b-parameters-and-mu/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-16-inkling-model-released-with-975b-parameters-and-mu.jpg" alt="Inkling model released with 975B parameters and multimodal support" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-16-inkling-model-released-with-975b-parameters-and-mu'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Inkling model released with 975B parameters and multimodal support</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-16-harness-launches-a-humanfriendly-cli-for-devsecops" href="/blog/2026-07-16-harness-launches-a-humanfriendly-cli-for-devsecops/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-16-harness-launches-a-humanfriendly-cli-for-devsecops.jpg" alt="Harness launches a human‑friendly CLI for DevSecOps workflows" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-16-harness-launches-a-humanfriendly-cli-for-devsecops'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Harness launches a human‑friendly CLI for DevSecOps workflows</h3>
-                    <p class="card-excerpt">Harness unveiled a new command‑line interface aimed at developers and AI agents, promising tighter security integration and deterministic execution. The tool is open‑source and…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">cli</span>
-                        <span class="card-info">16 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>16 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-16-harness-launches-a-humanfriendly-cli-for-devsecops" href="/blog/2026-07-16-harness-launches-a-humanfriendly-cli-for-devsecops/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-16-harness-launches-a-humanfriendly-cli-for-devsecops.jpg" alt="Harness launches a human‑friendly CLI for DevSecOps workflows" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-16-harness-launches-a-humanfriendly-cli-for-devsecops'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Harness launches a human‑friendly CLI for DevSecOps workflows</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-16-gpt-5-6s-reactive-safety-cycle-known-risks-shipped" href="/blog/2026-07-16-gpt-5-6s-reactive-safety-cycle-known-risks-shipped/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-16-gpt-5-6s-reactive-safety-cycle-known-risks-shipped.jpg" alt="GPT-5.6&#x27;s Reactive Safety Cycle: Known Risks, Shipped Anyway, Fix Announced Later" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-16-gpt-5-6s-reactive-safety-cycle-known-risks-shipped'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">GPT-5.6&#x27;s Reactive Safety Cycle: Known Risks, Shipped Anyway, Fix Announced Later</h3>
-                    <p class="card-excerpt">Five days after GPT-5.6 launched, it was deleting user files and crashing infrastructure, exactly as OpenAI&#x27;s System Card documented before shipping. Matt Shumer&#x27;s Mac got wiped…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">AI Safety</span>
-                        <span class="card-info">16 Jul 2026 &bull; 6 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>16 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-16-gpt-5-6s-reactive-safety-cycle-known-risks-shipped" href="/blog/2026-07-16-gpt-5-6s-reactive-safety-cycle-known-risks-shipped/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-16-gpt-5-6s-reactive-safety-cycle-known-risks-shipped.jpg" alt="GPT-5.6&#x27;s Reactive Safety Cycle: Known Risks, Shipped Anyway, Fix Announced Later" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-16-gpt-5-6s-reactive-safety-cycle-known-risks-shipped'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">GPT-5.6&#x27;s Reactive Safety Cycle: Known Risks, Shipped Anyway, Fix Announced Later</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-16-alaya-lab-opens-alaya-world-open-source-interactiv" href="/blog/2026-07-16-alaya-lab-opens-alaya-world-open-source-interactiv/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-16-alaya-lab-opens-alaya-world-open-source-interactiv.jpg" alt="Alaya Lab opens Alaya World: open-source interactive video model" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-16-alaya-lab-opens-alaya-world-open-source-interactiv'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Alaya Lab opens Alaya World: open-source interactive video model</h3>
-                    <p class="card-excerpt">Alaya Lab released Alaya World, an open‑source video world model that streams 720p at 24 fps and sustains coherent generation for over a minute. The inference code is ready now…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">interactive video</span>
-                        <span class="card-info">16 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>16 Jul 2026 &middot; 6 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-16-alaya-lab-opens-alaya-world-open-source-interactiv" href="/blog/2026-07-16-alaya-lab-opens-alaya-world-open-source-interactiv/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-16-alaya-lab-opens-alaya-world-open-source-interactiv.jpg" alt="Alaya Lab opens Alaya World: open-source interactive video model" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-16-alaya-lab-opens-alaya-world-open-source-interactiv'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Alaya Lab opens Alaya World: open-source interactive video model</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="pagination-container">
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>16 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+            </div>
+            <div class="pagination-container">
             <nav class="pagination" aria-label="Newslogger pagination">
                 <a class="pagination-btn prev" href="/blog/page/17/" aria-label="Previous page"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg><span>Prev</span></a>
                 <span class="pagination-info">
@@ -279,9 +264,21 @@
                 </span>
                 <a class="pagination-btn next" href="/blog/page/19/" aria-label="Next page"><span>Next</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
             </nav>
+            </div>
+        </section>
+            <p class="pagination-back"><a href="https://bitroot.org/blog/">&larr; Back to the newslogger</a></p>
         </div>
-        <p class="pagination-back"><a href="https://bitroot.org/blog/">&larr; Back to latest posts</a></p>
         <!-- POSTS:END -->
+
+        <!-- Filter / search results (rendered by posts-loader.js) -->
+        <section class="nl-section nl-results" id="nl-results" hidden aria-live="polite">
+            <div class="nl-section-head">
+                <h2 class="nl-h2" id="nl-results-title">Results</h2>
+                <span class="nl-results-count" id="nl-results-count"></span>
+            </div>
+            <div class="nl-grid" id="posts-grid"></div>
+            <div class="nl-more-wrap"><button class="nl-more" id="nl-more" type="button" hidden>Load more</button></div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -297,7 +294,8 @@
     </footer>
 
     <script src="/blog/js/pixel-placeholder.js"></script>
-    <script src="/blog/js/posts-loader.js"></script>
+    <script src="/blog/js/posts-loader.js" defer></script>
+    <script src="/blog/js/newsletter.js" defer></script>
 
     <!-- Theme toggle -->
     <script>

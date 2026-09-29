@@ -36,6 +36,7 @@
     <link rel="icon" type="image/png" href="https://bitroot.org/blog/media/images/favicon.png">
     <link rel="alternate" type="application/rss+xml" title="Newslogger | Bitroot" href="/rss.xml">
     <link rel="stylesheet" href="/blog/css/blog.css">
+    <link rel="stylesheet" href="/blog/css/newslogger.css">
 
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","@id":"https://bitroot.org/blog/#blog","url":"https://bitroot.org/blog/","name":"Bitroot Newslogger","description":"Daily AI and tech news for founders and builders.","inLanguage":"en","publisher":{"@type":"NewsMediaOrganization","name":"Bitroot","url":"https://bitroot.org","logo":{"@type":"ImageObject","url":"https://bitroot.org/blog/media/images/bitroot-dark-text-border.png"}}}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://bitroot.org"},{"@type":"ListItem","position":2,"name":"Newslogger","item":"https://bitroot.org/blog/"}]}</script>
@@ -97,7 +98,7 @@
         posthog.register({ site: 'blog' })
     </script>
 </head>
-<body>
+<body class="nl-index">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-3HDKNMVC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
@@ -138,140 +139,124 @@
         </div>
     </div>
 
-    <!-- Floating glass navbar -->
-    <header class="glass-nav">
-        <nav class="glass-nav-inner">
-            <a href="/" class="shell-logo"><img src="https://bitroot.org/blog/media/images/bitroot-dark-text-border.png" alt="Bitroot" class="logo-img"></a>
+    <!-- Floating glass navbar; category chips dock into it once the hero scrolls away -->
+    <header class="glass-nav nl-nav" id="nl-nav">
+        <nav class="glass-nav-inner" aria-label="Site">
+            <a href="/" class="shell-logo"><img src="https://bitroot.org/blog/media/images/bitroot-dark-text-border.png" alt="Bitroot" class="logo-img" width="112" height="28"></a>
             <div class="shell-links">
-                <a href="/blog" class="shell-link active">newslogger</a>
+                <a href="/blog/" class="shell-link active">newslogger</a>
                 <a href="/" class="shell-link">home</a>
+                <a href="/rss.xml" class="shell-link">rss</a>
                 <button class="theme-toggle" aria-label="Toggle theme">
                     <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                     <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                 </button>
             </div>
         </nav>
+        <div class="nl-nav-chips" id="nl-nav-chips" aria-hidden="true"></div>
     </header>
 
-    <!-- Dark capsule: title + filters + search -->
-    <section class="blog-shell" aria-label="Browse the newslogger">
-        <div class="shell-body">
-            <h1 class="shell-title">Newslogger</h1>
-            <div class="filter-pills" id="blog-filters" aria-label="Filter posts by tag">
-                <button class="filter-pill active" data-tag="All">All</button>
-            </div>
-            <div class="search-box">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                <input type="search" id="blog-search" placeholder="I want to read about..." aria-label="Search blog posts">
-            </div>
+    <!-- Hero: title, search, category chips -->
+    <section class="nl-hero" aria-label="Browse the newslogger">
+        <h1 class="nl-title">Newslogger</h1>
+        <p class="nl-lede">Daily AI and tech news for founders and builders. What shipped, what it costs, and whether it matters <em>to you.</em></p>
+        <label class="nl-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><line x1="21" y1="21" x2="16.4" y2="16.4"/></svg>
+            <input type="search" id="blog-search" placeholder="Search all posts..." aria-label="Search posts" autocomplete="off">
+        </label>
+        <div class="nl-chips" id="blog-filters" role="toolbar" aria-label="Filter by category">
+                <button class="nl-chip is-active" type="button" data-cat="all" aria-pressed="true">All</button>
+                <button class="nl-chip" type="button" data-cat="models" aria-pressed="false">AI Models</button>
+                <button class="nl-chip" type="button" data-cat="agents" aria-pressed="false">Agents &amp; Dev Tools</button>
+                <button class="nl-chip" type="button" data-cat="founders" aria-pressed="false">Founders &amp; Business</button>
+                <button class="nl-chip" type="button" data-cat="opensource" aria-pressed="false">Open Source</button>
+                <button class="nl-chip" type="button" data-cat="design" aria-pressed="false">Design &amp; Media</button>
+                <button class="nl-chip" type="button" data-cat="engineering" aria-pressed="false">Engineering</button>
         </div>
     </section>
 
-    <!-- Blog Showcase Section -->
-    <main class="showcase">
+    <main class="showcase nl-main" id="nl-main">
         <!-- POSTS:BEGIN — generated by build_index.py, do not edit by hand -->
-        <div class="cards-grid" id="posts-grid">
-            <a class="card" data-post-slug="2026-02-08-revolutionizing-web-app-security-meet-shannon-the" href="/blog/2026-02-08-revolutionizing-web-app-security-meet-shannon-the/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-02-08-revolutionizing-web-app-security-meet-shannon-the.jpg" alt="Revolutionizing Web App Security: Meet Shannon, the AI Hacker" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-02-08-revolutionizing-web-app-security-meet-shannon-the'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Revolutionizing Web App Security: Meet Shannon, the AI Hacker</h3>
-                    <p class="card-excerpt">Shannon, a fully autonomous AI hacker, is changing the game for web app security by scanning for vulnerabilities before attackers can strike. This innovation has the potential to…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">AI</span>
-                        <span class="card-info">8 Feb 2026 &bull; 2 min read</span>
+        <div id="nl-home">
+        <section class="nl-section" aria-labelledby="nl-all-title">
+            <div class="nl-section-head">
+                <h2 class="nl-h2" id="nl-all-title">All posts <span class="nl-h2-sub">Page 45 of 46</span></h2>
+            </div>
+            <div class="nl-grid">
+                <a class="nl-card nl-card--md" data-post-slug="2026-02-08-revolutionizing-web-app-security-meet-shannon-the" href="/blog/2026-02-08-revolutionizing-web-app-security-meet-shannon-the/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-02-08-revolutionizing-web-app-security-meet-shannon-the.jpg" alt="Revolutionizing Web App Security: Meet Shannon, the AI Hacker" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-02-08-revolutionizing-web-app-security-meet-shannon-the'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Revolutionizing Web App Security: Meet Shannon, the AI Hacker</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-02-08-revolutionizing-coding-craft-agents-now-compatible" href="/blog/2026-02-08-revolutionizing-coding-craft-agents-now-compatible/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-02-08-revolutionizing-coding-craft-agents-now-compatible.jpg" alt="Revolutionizing Coding: Craft Agents Now Compatible with Codex and Claude" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-02-08-revolutionizing-coding-craft-agents-now-compatible'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Revolutionizing Coding: Craft Agents Now Compatible with Codex and Claude</h3>
-                    <p class="card-excerpt">Craft Agents can now be used with Codex and Claude, offering a free and open-source solution for developers, and we&#x27;re excited to explore the implications of this update on the…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">Codex</span>
-                        <span class="card-info">8 Feb 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Engineering</span><span>8 Feb 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-02-08-revolutionizing-coding-craft-agents-now-compatible" href="/blog/2026-02-08-revolutionizing-coding-craft-agents-now-compatible/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-02-08-revolutionizing-coding-craft-agents-now-compatible.jpg" alt="Revolutionizing Coding: Craft Agents Now Compatible with Codex and Claude" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-02-08-revolutionizing-coding-craft-agents-now-compatible'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Revolutionizing Coding: Craft Agents Now Compatible with Codex and Claude</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo" href="/blog/2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo.png" alt="Revolutionary C Compiler Built by Team of Autonomous AI Agents" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Revolutionary C Compiler Built by Team of Autonomous AI Agents</h3>
-                    <p class="card-excerpt">Anthropic is an AI safety and research company that&#x27;s working to build reliable, interpretable, and steerable AI systems.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">AI</span>
-                        <span class="card-info">7 Feb 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>8 Feb 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo" href="/blog/2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo.png" alt="Revolutionary C Compiler Built by Team of Autonomous AI Agents" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-02-07-revolutionary-c-compiler-built-by-team-of-autonomo'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Revolutionary C Compiler Built by Team of Autonomous AI Agents</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-02-06-unlocking-collaborative-coding-introducing-claude" href="/blog/2026-02-06-unlocking-collaborative-coding-introducing-claude/">
-                <img class="card-bg" src="/blog/media/placeholder-blog.png" alt="Unlocking Collaborative Coding: Introducing Claude Code&#x27;s Agent Teams" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-02-06-unlocking-collaborative-coding-introducing-claude'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Unlocking Collaborative Coding: Introducing Claude Code&#x27;s Agent Teams</h3>
-                    <p class="card-excerpt">Coordinate multiple Claude Code instances working together as a team, with shared tasks, inter-agent messaging, and centralized management.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">Claude Code</span>
-                        <span class="card-info">6 Feb 2026 &bull; 3 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>7 Feb 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-02-06-unlocking-collaborative-coding-introducing-claude" href="/blog/2026-02-06-unlocking-collaborative-coding-introducing-claude/">
+                    <div class="nl-card-media"><img src="/blog/media/placeholder-blog.png" alt="Unlocking Collaborative Coding: Introducing Claude Code&#x27;s Agent Teams" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-02-06-unlocking-collaborative-coding-introducing-claude'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Unlocking Collaborative Coding: Introducing Claude Code&#x27;s Agent Teams</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-02-06-revolutionizing-video-creation-the-notch-prompter" href="/blog/2026-02-06-revolutionizing-video-creation-the-notch-prompter/">
-                <img class="card-bg" src="/blog/media/placeholder-blog.png" alt="Revolutionizing Video Creation: The Notch Prompter" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-02-06-revolutionizing-video-creation-the-notch-prompter'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Revolutionizing Video Creation: The Notch Prompter</h3>
-                    <p class="card-excerpt">Moody is an AI-powered notch teleprompter for Mac that keeps your script right next to your camera, maintaining natural eye contact during recordings and presentations.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">video creation</span>
-                        <span class="card-info">6 Feb 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>6 Feb 2026 &middot; 3 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-02-06-revolutionizing-video-creation-the-notch-prompter" href="/blog/2026-02-06-revolutionizing-video-creation-the-notch-prompter/">
+                    <div class="nl-card-media"><img src="/blog/media/placeholder-blog.png" alt="Revolutionizing Video Creation: The Notch Prompter" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-02-06-revolutionizing-video-creation-the-notch-prompter'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Revolutionizing Video Creation: The Notch Prompter</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-02-06-revolutionizing-coding-twitters-claude-code-update" href="/blog/2026-02-06-revolutionizing-coding-twitters-claude-code-update/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.jpg" alt="Revolutionizing Coding: Twitter&#x27;s Claude Code Update" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-02-06-revolutionizing-coding-twitters-claude-code-update'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Revolutionizing Coding: Twitter&#x27;s Claude Code Update</h3>
-                    <p class="card-excerpt">Twitter&#x27;s Claude Code now supports agent teams, enabling parallel work and coordination, and we&#x27;re excited to explore its potential. This update is a game-changer for developers…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">Claude Code</span>
-                        <span class="card-info">6 Feb 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Design &amp; Media</span><span>6 Feb 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-02-06-revolutionizing-coding-twitters-claude-code-update" href="/blog/2026-02-06-revolutionizing-coding-twitters-claude-code-update/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-02-06-revolutionizing-coding-twitters-claude-code-update.jpg" alt="Revolutionizing Coding: Twitter&#x27;s Claude Code Update" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-02-06-revolutionizing-coding-twitters-claude-code-update'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Revolutionizing Coding: Twitter&#x27;s Claude Code Update</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa" href="/blog/2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.jpg" alt="OpenAI Unveils GPT-5.3-Codex: Revolutionizing Software Development with Autonomous AI" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">OpenAI Unveils GPT-5.3-Codex: Revolutionizing Software Development with Autonomous AI</h3>
-                    <p class="card-excerpt">OpenAI has launched GPT-5.3-Codex, its most advanced agentic coding model to date. Featuring a 25% speed increase over its predecessor, the model can autonomously manage the…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">OpenAI</span>
-                        <span class="card-info">6 Feb 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>6 Feb 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa" href="/blog/2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa.jpg" alt="OpenAI Unveils GPT-5.3-Codex: Revolutionizing Software Development with Autonomous AI" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-02-06-openai-unveils-gpt-53-codex-revolutionizing-softwa'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">OpenAI Unveils GPT-5.3-Codex: Revolutionizing Software Development with Autonomous AI</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in" href="/blog/2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.png" alt="Introducing Claude Opus 4.6: A Revolutionary Leap in AI Capabilities" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Introducing Claude Opus 4.6: A Revolutionary Leap in AI Capabilities</h3>
-                    <p class="card-excerpt">We’re upgrading our smartest model. Across agentic coding, computer use, tool use, search, and finance, Opus 4.6 is an industry-leading model, often by wide margin.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">Claude Opus 4.6</span>
-                        <span class="card-info">6 Feb 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>6 Feb 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in" href="/blog/2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in.png" alt="Introducing Claude Opus 4.6: A Revolutionary Leap in AI Capabilities" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-02-06-introducing-claude-opus-46-a-revolutionary-leap-in'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Introducing Claude Opus 4.6: A Revolutionary Leap in AI Capabilities</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-02-05-revolutionizing-coding-insights-twitters-claude-co" href="/blog/2026-02-05-revolutionizing-coding-insights-twitters-claude-co/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.jpg" alt="Revolutionizing Coding Insights: Twitter&#x27;s Claude Code Update" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-02-05-revolutionizing-coding-insights-twitters-claude-co'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Revolutionizing Coding Insights: Twitter&#x27;s Claude Code Update</h3>
-                    <p class="card-excerpt">Claude Code introduces /insights, a command that analyzes your past month of usage to summarize projects and suggest workflow improvements.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">Twitter</span>
-                        <span class="card-info">5 Feb 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>6 Feb 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-02-05-revolutionizing-coding-insights-twitters-claude-co" href="/blog/2026-02-05-revolutionizing-coding-insights-twitters-claude-co/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-02-05-revolutionizing-coding-insights-twitters-claude-co.jpg" alt="Revolutionizing Coding Insights: Twitter&#x27;s Claude Code Update" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-02-05-revolutionizing-coding-insights-twitters-claude-co'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Revolutionizing Coding Insights: Twitter&#x27;s Claude Code Update</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="pagination-container">
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>5 Feb 2026 &middot; 2 min read</span></div>
+                </a>
+            </div>
+            <div class="pagination-container">
             <nav class="pagination" aria-label="Newslogger pagination">
                 <a class="pagination-btn prev" href="/blog/page/44/" aria-label="Previous page"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg><span>Prev</span></a>
                 <span class="pagination-info">
@@ -279,9 +264,21 @@
                 </span>
                 <a class="pagination-btn next" href="/blog/page/46/" aria-label="Next page"><span>Next</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
             </nav>
+            </div>
+        </section>
+            <p class="pagination-back"><a href="https://bitroot.org/blog/">&larr; Back to the newslogger</a></p>
         </div>
-        <p class="pagination-back"><a href="https://bitroot.org/blog/">&larr; Back to latest posts</a></p>
         <!-- POSTS:END -->
+
+        <!-- Filter / search results (rendered by posts-loader.js) -->
+        <section class="nl-section nl-results" id="nl-results" hidden aria-live="polite">
+            <div class="nl-section-head">
+                <h2 class="nl-h2" id="nl-results-title">Results</h2>
+                <span class="nl-results-count" id="nl-results-count"></span>
+            </div>
+            <div class="nl-grid" id="posts-grid"></div>
+            <div class="nl-more-wrap"><button class="nl-more" id="nl-more" type="button" hidden>Load more</button></div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -297,7 +294,8 @@
     </footer>
 
     <script src="/blog/js/pixel-placeholder.js"></script>
-    <script src="/blog/js/posts-loader.js"></script>
+    <script src="/blog/js/posts-loader.js" defer></script>
+    <script src="/blog/js/newsletter.js" defer></script>
 
     <!-- Theme toggle -->
     <script>

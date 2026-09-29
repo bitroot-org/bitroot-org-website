@@ -36,6 +36,7 @@
     <link rel="icon" type="image/png" href="https://bitroot.org/blog/media/images/favicon.png">
     <link rel="alternate" type="application/rss+xml" title="Newslogger | Bitroot" href="/rss.xml">
     <link rel="stylesheet" href="/blog/css/blog.css">
+    <link rel="stylesheet" href="/blog/css/newslogger.css">
 
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","@id":"https://bitroot.org/blog/#blog","url":"https://bitroot.org/blog/","name":"Bitroot Newslogger","description":"Daily AI and tech news for founders and builders.","inLanguage":"en","publisher":{"@type":"NewsMediaOrganization","name":"Bitroot","url":"https://bitroot.org","logo":{"@type":"ImageObject","url":"https://bitroot.org/blog/media/images/bitroot-dark-text-border.png"}}}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://bitroot.org"},{"@type":"ListItem","position":2,"name":"Newslogger","item":"https://bitroot.org/blog/"}]}</script>
@@ -97,7 +98,7 @@
         posthog.register({ site: 'blog' })
     </script>
 </head>
-<body>
+<body class="nl-index">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-3HDKNMVC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
@@ -138,140 +139,124 @@
         </div>
     </div>
 
-    <!-- Floating glass navbar -->
-    <header class="glass-nav">
-        <nav class="glass-nav-inner">
-            <a href="/" class="shell-logo"><img src="https://bitroot.org/blog/media/images/bitroot-dark-text-border.png" alt="Bitroot" class="logo-img"></a>
+    <!-- Floating glass navbar; category chips dock into it once the hero scrolls away -->
+    <header class="glass-nav nl-nav" id="nl-nav">
+        <nav class="glass-nav-inner" aria-label="Site">
+            <a href="/" class="shell-logo"><img src="https://bitroot.org/blog/media/images/bitroot-dark-text-border.png" alt="Bitroot" class="logo-img" width="112" height="28"></a>
             <div class="shell-links">
-                <a href="/blog" class="shell-link active">newslogger</a>
+                <a href="/blog/" class="shell-link active">newslogger</a>
                 <a href="/" class="shell-link">home</a>
+                <a href="/rss.xml" class="shell-link">rss</a>
                 <button class="theme-toggle" aria-label="Toggle theme">
                     <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                     <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                 </button>
             </div>
         </nav>
+        <div class="nl-nav-chips" id="nl-nav-chips" aria-hidden="true"></div>
     </header>
 
-    <!-- Dark capsule: title + filters + search -->
-    <section class="blog-shell" aria-label="Browse the newslogger">
-        <div class="shell-body">
-            <h1 class="shell-title">Newslogger</h1>
-            <div class="filter-pills" id="blog-filters" aria-label="Filter posts by tag">
-                <button class="filter-pill active" data-tag="All">All</button>
-            </div>
-            <div class="search-box">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                <input type="search" id="blog-search" placeholder="I want to read about..." aria-label="Search blog posts">
-            </div>
+    <!-- Hero: title, search, category chips -->
+    <section class="nl-hero" aria-label="Browse the newslogger">
+        <h1 class="nl-title">Newslogger</h1>
+        <p class="nl-lede">Daily AI and tech news for founders and builders. What shipped, what it costs, and whether it matters <em>to you.</em></p>
+        <label class="nl-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><line x1="21" y1="21" x2="16.4" y2="16.4"/></svg>
+            <input type="search" id="blog-search" placeholder="Search all posts..." aria-label="Search posts" autocomplete="off">
+        </label>
+        <div class="nl-chips" id="blog-filters" role="toolbar" aria-label="Filter by category">
+                <button class="nl-chip is-active" type="button" data-cat="all" aria-pressed="true">All</button>
+                <button class="nl-chip" type="button" data-cat="models" aria-pressed="false">AI Models</button>
+                <button class="nl-chip" type="button" data-cat="agents" aria-pressed="false">Agents &amp; Dev Tools</button>
+                <button class="nl-chip" type="button" data-cat="founders" aria-pressed="false">Founders &amp; Business</button>
+                <button class="nl-chip" type="button" data-cat="opensource" aria-pressed="false">Open Source</button>
+                <button class="nl-chip" type="button" data-cat="design" aria-pressed="false">Design &amp; Media</button>
+                <button class="nl-chip" type="button" data-cat="engineering" aria-pressed="false">Engineering</button>
         </div>
     </section>
 
-    <!-- Blog Showcase Section -->
-    <main class="showcase">
+    <main class="showcase nl-main" id="nl-main">
         <!-- POSTS:BEGIN — generated by build_index.py, do not edit by hand -->
-        <div class="cards-grid" id="posts-grid">
-            <a class="card" data-post-slug="2026-07-11-toksscale-cli-tracks-ai-coding-token-usage-across" href="/blog/2026-07-11-toksscale-cli-tracks-ai-coding-token-usage-across/">
-                <img class="card-bg" src="https://pbs.twimg.com/media/HM646SnWsAApxqP.png?name=orig" alt="toksScale CLI tracks AI coding token usage across agents" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-11-toksscale-cli-tracks-ai-coding-token-usage-across'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">toksScale CLI tracks AI coding token usage across agents</h3>
-                    <p class="card-excerpt">toksScale is a Rust‑based command‑line tool that visualizes token consumption for multiple AI coding agents, giving developers a quick view of costs and usage patterns.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">cli</span>
-                        <span class="card-info">11 Jul 2026 &bull; 2 min read</span>
+        <div id="nl-home">
+        <section class="nl-section" aria-labelledby="nl-all-title">
+            <div class="nl-section-head">
+                <h2 class="nl-h2" id="nl-all-title">All posts <span class="nl-h2-sub">Page 21 of 46</span></h2>
+            </div>
+            <div class="nl-grid">
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-11-toksscale-cli-tracks-ai-coding-token-usage-across" href="/blog/2026-07-11-toksscale-cli-tracks-ai-coding-token-usage-across/">
+                    <div class="nl-card-media"><img src="https://pbs.twimg.com/media/HM646SnWsAApxqP.png?name=orig" alt="toksScale CLI tracks AI coding token usage across agents" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-11-toksscale-cli-tracks-ai-coding-token-usage-across'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">toksScale CLI tracks AI coding token usage across agents</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual" href="/blog/2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual.jpg" alt="The AI agent that works while you sleep, and actually delivers in the morning" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">The AI agent that works while you sleep, and actually delivers in the morning</h3>
-                    <p class="card-excerpt">The first AI model an engineering team trusted to work through the night — and what it took to get there.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">Claude Fable 5</span>
-                        <span class="card-info">11 Jul 2026 &bull; 10 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>11 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual" href="/blog/2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual.jpg" alt="The AI agent that works while you sleep, and actually delivers in the morning" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-11-the-ai-agent-that-works-while-you-sleep-and-actual'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">The AI agent that works while you sleep, and actually delivers in the morning</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-11-robbyant-opens-lingbot-video-30b-moe-model-for-ope" href="/blog/2026-07-11-robbyant-opens-lingbot-video-30b-moe-model-for-ope/">
-                <img class="card-bg" src="https://pbs.twimg.com/amplify_video_thumb/2075815432640925696/img/hoiATJL3GOIGk3ye.jpg" alt="Robbyant opens LingBot-Video 30B MoE model for open‑source video generation" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-11-robbyant-opens-lingbot-video-30b-moe-model-for-ope'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Robbyant opens LingBot-Video 30B MoE model for open‑source video generation</h3>
-                    <p class="card-excerpt">Robbyant released a 30‑billion‑parameter MoE video model that claims 3× faster inference and a free demo. It’s the first large‑scale open‑source video generator built on a…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">video generation</span>
-                        <span class="card-info">11 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>11 Jul 2026 &middot; 10 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-11-robbyant-opens-lingbot-video-30b-moe-model-for-ope" href="/blog/2026-07-11-robbyant-opens-lingbot-video-30b-moe-model-for-ope/">
+                    <div class="nl-card-media"><img src="https://pbs.twimg.com/amplify_video_thumb/2075815432640925696/img/hoiATJL3GOIGk3ye.jpg" alt="Robbyant opens LingBot-Video 30B MoE model for open‑source video generation" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-11-robbyant-opens-lingbot-video-30b-moe-model-for-ope'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Robbyant opens LingBot-Video 30B MoE model for open‑source video generation</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-11-colibri-runs-744b-moe-model-on-cpu-via-expert-stre" href="/blog/2026-07-11-colibri-runs-744b-moe-model-on-cpu-via-expert-stre/">
-                <img class="card-bg" src="https://pbs.twimg.com/media/HM6zQ46b0AAx1bG.jpg?name=orig" alt="Colibri runs 744B MoE model on CPU via expert streaming" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-11-colibri-runs-744b-moe-model-on-cpu-via-expert-stre'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Colibri runs 744B MoE model on CPU via expert streaming</h3>
-                    <p class="card-excerpt">Colibri streams expert weights from NVMe to run the 744‑billion‑parameter GLM‑5.2 MoE model on a consumer‑grade CPU, offering a free alternative to GPU clusters.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">llm inference</span>
-                        <span class="card-info">11 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>11 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-11-colibri-runs-744b-moe-model-on-cpu-via-expert-stre" href="/blog/2026-07-11-colibri-runs-744b-moe-model-on-cpu-via-expert-stre/">
+                    <div class="nl-card-media"><img src="https://pbs.twimg.com/media/HM6zQ46b0AAx1bG.jpg?name=orig" alt="Colibri runs 744B MoE model on CPU via expert streaming" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-11-colibri-runs-744b-moe-model-on-cpu-via-expert-stre'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Colibri runs 744B MoE model on CPU via expert streaming</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-11-claude-code-tool-cuts-command-output-tokens-by-90" href="/blog/2026-07-11-claude-code-tool-cuts-command-output-tokens-by-90/">
-                <img class="card-bg" src="https://pbs.twimg.com/media/HM65GIxWwAAg-Jo.jpg?name=orig" alt="Claude Code tool cuts command output tokens by 90%" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-11-claude-code-tool-cuts-command-output-tokens-by-90'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Claude Code tool cuts command output tokens by 90%</h3>
-                    <p class="card-excerpt">A new tool compresses command-line output for AI agents, cutting token usage by up to 90% while preserving essential context.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">cli</span>
-                        <span class="card-info">11 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>11 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-11-claude-code-tool-cuts-command-output-tokens-by-90" href="/blog/2026-07-11-claude-code-tool-cuts-command-output-tokens-by-90/">
+                    <div class="nl-card-media"><img src="https://pbs.twimg.com/media/HM65GIxWwAAg-Jo.jpg?name=orig" alt="Claude Code tool cuts command output tokens by 90%" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-11-claude-code-tool-cuts-command-output-tokens-by-90'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Claude Code tool cuts command output tokens by 90%</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-11-charles-3ready-releases-grokulator-010-windows-dev" href="/blog/2026-07-11-charles-3ready-releases-grokulator-010-windows-dev/">
-                <img class="card-bg" src="https://pbs.twimg.com/tweet_video_thumb/HM6_G3dagAA4qPb.jpg" alt="Charles 3Ready releases Grokulator 0.1.0 Windows dev app" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-11-charles-3ready-releases-grokulator-010-windows-dev'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Charles 3Ready releases Grokulator 0.1.0 Windows dev app</h3>
-                    <p class="card-excerpt">Grokulator 0.1.0 adds a chat‑first interface, slash commands, and an embedded terminal for Windows developers. The MIT‑licensed tool is free but still early in its lifecycle.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">windows</span>
-                        <span class="card-info">11 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>11 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-11-charles-3ready-releases-grokulator-010-windows-dev" href="/blog/2026-07-11-charles-3ready-releases-grokulator-010-windows-dev/">
+                    <div class="nl-card-media"><img src="https://pbs.twimg.com/tweet_video_thumb/HM6_G3dagAA4qPb.jpg" alt="Charles 3Ready releases Grokulator 0.1.0 Windows dev app" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-11-charles-3ready-releases-grokulator-010-windows-dev'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Charles 3Ready releases Grokulator 0.1.0 Windows dev app</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-10-pi-ai-coding-agent-released-as-free-opensource-too" href="/blog/2026-07-10-pi-ai-coding-agent-released-as-free-opensource-too/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-10-pi-ai-coding-agent-released-as-free-opensource-too.jpg" alt="Pi AI coding agent released as free open‑source tool" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-10-pi-ai-coding-agent-released-as-free-opensource-too'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Pi AI coding agent released as free open‑source tool</h3>
-                    <p class="card-excerpt">Pi arrives on GitHub with four built‑in utilities, a 1,000‑token system prompt, and full visibility into every model call.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">ai coding</span>
-                        <span class="card-info">10 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>11 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-10-pi-ai-coding-agent-released-as-free-opensource-too" href="/blog/2026-07-10-pi-ai-coding-agent-released-as-free-opensource-too/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-10-pi-ai-coding-agent-released-as-free-opensource-too.jpg" alt="Pi AI coding agent released as free open‑source tool" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-10-pi-ai-coding-agent-released-as-free-opensource-too'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Pi AI coding agent released as free open‑source tool</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-10-openhands-launches-agent-canvas-for-selfhosted-ai" href="/blog/2026-07-10-openhands-launches-agent-canvas-for-selfhosted-ai/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-10-openhands-launches-agent-canvas-for-selfhosted-ai.jpg" alt="OpenHands launches Agent Canvas for self‑hosted AI coding teams" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-10-openhands-launches-agent-canvas-for-selfhosted-ai'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">OpenHands launches Agent Canvas for self‑hosted AI coding teams</h3>
-                    <p class="card-excerpt">OpenHands adds Agent Canvas, a control center that lets you run multiple LLM coding agents from one UI and hook them into GitHub, Slack, Notion, and more.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">ai coding</span>
-                        <span class="card-info">10 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>10 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-10-openhands-launches-agent-canvas-for-selfhosted-ai" href="/blog/2026-07-10-openhands-launches-agent-canvas-for-selfhosted-ai/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-10-openhands-launches-agent-canvas-for-selfhosted-ai.jpg" alt="OpenHands launches Agent Canvas for self‑hosted AI coding teams" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-10-openhands-launches-agent-canvas-for-selfhosted-ai'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">OpenHands launches Agent Canvas for self‑hosted AI coding teams</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-10-langchain-launches-openwiki-to-autogenerate-a-livi" href="/blog/2026-07-10-langchain-launches-openwiki-to-autogenerate-a-livi/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-10-langchain-launches-openwiki-to-autogenerate-a-livi.jpg" alt="LangChain launches OpenWiki to auto‑generate a living codebase wiki" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-10-langchain-launches-openwiki-to-autogenerate-a-livi'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">LangChain launches OpenWiki to auto‑generate a living codebase wiki</h3>
-                    <p class="card-excerpt">LangChain’s new OpenWiki agent reads your repository on every commit and updates a wiki automatically, aiming to cut the time engineers spend hunting for documentation.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">open-source</span>
-                        <span class="card-info">10 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>10 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-10-langchain-launches-openwiki-to-autogenerate-a-livi" href="/blog/2026-07-10-langchain-launches-openwiki-to-autogenerate-a-livi/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-10-langchain-launches-openwiki-to-autogenerate-a-livi.jpg" alt="LangChain launches OpenWiki to auto‑generate a living codebase wiki" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-10-langchain-launches-openwiki-to-autogenerate-a-livi'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">LangChain launches OpenWiki to auto‑generate a living codebase wiki</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="pagination-container">
+                    <div class="nl-card-meta"><span class="nl-card-cat">Open Source</span><span>10 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+            </div>
+            <div class="pagination-container">
             <nav class="pagination" aria-label="Newslogger pagination">
                 <a class="pagination-btn prev" href="/blog/page/20/" aria-label="Previous page"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg><span>Prev</span></a>
                 <span class="pagination-info">
@@ -279,9 +264,21 @@
                 </span>
                 <a class="pagination-btn next" href="/blog/page/22/" aria-label="Next page"><span>Next</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
             </nav>
+            </div>
+        </section>
+            <p class="pagination-back"><a href="https://bitroot.org/blog/">&larr; Back to the newslogger</a></p>
         </div>
-        <p class="pagination-back"><a href="https://bitroot.org/blog/">&larr; Back to latest posts</a></p>
         <!-- POSTS:END -->
+
+        <!-- Filter / search results (rendered by posts-loader.js) -->
+        <section class="nl-section nl-results" id="nl-results" hidden aria-live="polite">
+            <div class="nl-section-head">
+                <h2 class="nl-h2" id="nl-results-title">Results</h2>
+                <span class="nl-results-count" id="nl-results-count"></span>
+            </div>
+            <div class="nl-grid" id="posts-grid"></div>
+            <div class="nl-more-wrap"><button class="nl-more" id="nl-more" type="button" hidden>Load more</button></div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -297,7 +294,8 @@
     </footer>
 
     <script src="/blog/js/pixel-placeholder.js"></script>
-    <script src="/blog/js/posts-loader.js"></script>
+    <script src="/blog/js/posts-loader.js" defer></script>
+    <script src="/blog/js/newsletter.js" defer></script>
 
     <!-- Theme toggle -->
     <script>

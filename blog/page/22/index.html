@@ -36,6 +36,7 @@
     <link rel="icon" type="image/png" href="https://bitroot.org/blog/media/images/favicon.png">
     <link rel="alternate" type="application/rss+xml" title="Newslogger | Bitroot" href="/rss.xml">
     <link rel="stylesheet" href="/blog/css/blog.css">
+    <link rel="stylesheet" href="/blog/css/newslogger.css">
 
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","@id":"https://bitroot.org/blog/#blog","url":"https://bitroot.org/blog/","name":"Bitroot Newslogger","description":"Daily AI and tech news for founders and builders.","inLanguage":"en","publisher":{"@type":"NewsMediaOrganization","name":"Bitroot","url":"https://bitroot.org","logo":{"@type":"ImageObject","url":"https://bitroot.org/blog/media/images/bitroot-dark-text-border.png"}}}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://bitroot.org"},{"@type":"ListItem","position":2,"name":"Newslogger","item":"https://bitroot.org/blog/"}]}</script>
@@ -97,7 +98,7 @@
         posthog.register({ site: 'blog' })
     </script>
 </head>
-<body>
+<body class="nl-index">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-3HDKNMVC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
@@ -138,140 +139,124 @@
         </div>
     </div>
 
-    <!-- Floating glass navbar -->
-    <header class="glass-nav">
-        <nav class="glass-nav-inner">
-            <a href="/" class="shell-logo"><img src="https://bitroot.org/blog/media/images/bitroot-dark-text-border.png" alt="Bitroot" class="logo-img"></a>
+    <!-- Floating glass navbar; category chips dock into it once the hero scrolls away -->
+    <header class="glass-nav nl-nav" id="nl-nav">
+        <nav class="glass-nav-inner" aria-label="Site">
+            <a href="/" class="shell-logo"><img src="https://bitroot.org/blog/media/images/bitroot-dark-text-border.png" alt="Bitroot" class="logo-img" width="112" height="28"></a>
             <div class="shell-links">
-                <a href="/blog" class="shell-link active">newslogger</a>
+                <a href="/blog/" class="shell-link active">newslogger</a>
                 <a href="/" class="shell-link">home</a>
+                <a href="/rss.xml" class="shell-link">rss</a>
                 <button class="theme-toggle" aria-label="Toggle theme">
                     <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                     <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                 </button>
             </div>
         </nav>
+        <div class="nl-nav-chips" id="nl-nav-chips" aria-hidden="true"></div>
     </header>
 
-    <!-- Dark capsule: title + filters + search -->
-    <section class="blog-shell" aria-label="Browse the newslogger">
-        <div class="shell-body">
-            <h1 class="shell-title">Newslogger</h1>
-            <div class="filter-pills" id="blog-filters" aria-label="Filter posts by tag">
-                <button class="filter-pill active" data-tag="All">All</button>
-            </div>
-            <div class="search-box">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                <input type="search" id="blog-search" placeholder="I want to read about..." aria-label="Search blog posts">
-            </div>
+    <!-- Hero: title, search, category chips -->
+    <section class="nl-hero" aria-label="Browse the newslogger">
+        <h1 class="nl-title">Newslogger</h1>
+        <p class="nl-lede">Daily AI and tech news for founders and builders. What shipped, what it costs, and whether it matters <em>to you.</em></p>
+        <label class="nl-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><line x1="21" y1="21" x2="16.4" y2="16.4"/></svg>
+            <input type="search" id="blog-search" placeholder="Search all posts..." aria-label="Search posts" autocomplete="off">
+        </label>
+        <div class="nl-chips" id="blog-filters" role="toolbar" aria-label="Filter by category">
+                <button class="nl-chip is-active" type="button" data-cat="all" aria-pressed="true">All</button>
+                <button class="nl-chip" type="button" data-cat="models" aria-pressed="false">AI Models</button>
+                <button class="nl-chip" type="button" data-cat="agents" aria-pressed="false">Agents &amp; Dev Tools</button>
+                <button class="nl-chip" type="button" data-cat="founders" aria-pressed="false">Founders &amp; Business</button>
+                <button class="nl-chip" type="button" data-cat="opensource" aria-pressed="false">Open Source</button>
+                <button class="nl-chip" type="button" data-cat="design" aria-pressed="false">Design &amp; Media</button>
+                <button class="nl-chip" type="button" data-cat="engineering" aria-pressed="false">Engineering</button>
         </div>
     </section>
 
-    <!-- Blog Showcase Section -->
-    <main class="showcase">
+    <main class="showcase nl-main" id="nl-main">
         <!-- POSTS:BEGIN — generated by build_index.py, do not edit by hand -->
-        <div class="cards-grid" id="posts-grid">
-            <a class="card" data-post-slug="2026-07-10-github-curates-300-ai-security-tools-for-engineers" href="/blog/2026-07-10-github-curates-300-ai-security-tools-for-engineers/">
-                <img class="card-bg" src="/blog/media/placeholder-blog.png" alt="GitHub curates 300+ AI security tools for engineers" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-10-github-curates-300-ai-security-tools-for-engineers'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">GitHub curates 300+ AI security tools for engineers</h3>
-                    <p class="card-excerpt">A new GitHub list aggregates over 300 AI‑powered security projects, from red‑team agents to LLM fuzzers, giving startup engineers a free catalog to explore.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">ai security</span>
-                        <span class="card-info">10 Jul 2026 &bull; 2 min read</span>
+        <div id="nl-home">
+        <section class="nl-section" aria-labelledby="nl-all-title">
+            <div class="nl-section-head">
+                <h2 class="nl-h2" id="nl-all-title">All posts <span class="nl-h2-sub">Page 22 of 46</span></h2>
+            </div>
+            <div class="nl-grid">
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-10-github-curates-300-ai-security-tools-for-engineers" href="/blog/2026-07-10-github-curates-300-ai-security-tools-for-engineers/">
+                    <div class="nl-card-media"><img src="/blog/media/placeholder-blog.png" alt="GitHub curates 300+ AI security tools for engineers" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-10-github-curates-300-ai-security-tools-for-engineers'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">GitHub curates 300+ AI security tools for engineers</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-10-agenc-lets-you-run-a-selfnamed-ai-agent-on-your-ph" href="/blog/2026-07-10-agenc-lets-you-run-a-selfnamed-ai-agent-on-your-ph/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-10-agenc-lets-you-run-a-selfnamed-ai-agent-on-your-ph.jpg" alt="AgenC lets you run a self‑named AI agent on your phone for $2/day" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-10-agenc-lets-you-run-a-selfnamed-ai-agent-on-your-ph'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">AgenC lets you run a self‑named AI agent on your phone for $2/day</h3>
-                    <p class="card-excerpt">The AI agent named itself during setup. AgenC is an open source agent that runs on your own machine. Works best with Grok. 15 minutes to a named agent on your phone with a $2/day…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">ai agents</span>
-                        <span class="card-info">10 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>10 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-10-agenc-lets-you-run-a-selfnamed-ai-agent-on-your-ph" href="/blog/2026-07-10-agenc-lets-you-run-a-selfnamed-ai-agent-on-your-ph/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-10-agenc-lets-you-run-a-selfnamed-ai-agent-on-your-ph.jpg" alt="AgenC lets you run a self‑named AI agent on your phone for $2/day" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-10-agenc-lets-you-run-a-selfnamed-ai-agent-on-your-ph'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">AgenC lets you run a self‑named AI agent on your phone for $2/day</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p" href="/blog/2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p.png" alt="The real skill of working with Claude Fable isn&#x27;t prompting. It&#x27;s knowing what you don&#x27;t know." loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">The real skill of working with Claude Fable isn&#x27;t prompting. It&#x27;s knowing what you don&#x27;t know.</h3>
-                    <p class="card-excerpt">Anthropic&#x27;s Claude Fable introduces a simple but powerful idea: better AI outputs don&#x27;t start with better prompts, they start by uncovering your unknowns. Here&#x27;s how the…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">Claude Fable</span>
-                        <span class="card-info">8 Jul 2026 &bull; 9 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>10 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p" href="/blog/2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p.png" alt="The real skill of working with Claude Fable isn&#x27;t prompting. It&#x27;s knowing what you don&#x27;t know." loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-08-the-real-skill-of-working-with-claude-fable-isnt-p'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">The real skill of working with Claude Fable isn&#x27;t prompting. It&#x27;s knowing what you don&#x27;t know.</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-08-tavus-adds-a-google-meet-participant-integration" href="/blog/2026-07-08-tavus-adds-a-google-meet-participant-integration/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-08-tavus-adds-a-google-meet-participant-integration.jpg" alt="Tavus adds a Google Meet participant integration" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-08-tavus-adds-a-google-meet-participant-integration'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Tavus adds a Google Meet participant integration</h3>
-                    <p class="card-excerpt">Tavus now lets a PAL join Google Meet calls as a real participant, enabling custom notetakers or meeting hosts with a few clicks.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">google meet</span>
-                        <span class="card-info">8 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>8 Jul 2026 &middot; 9 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-08-tavus-adds-a-google-meet-participant-integration" href="/blog/2026-07-08-tavus-adds-a-google-meet-participant-integration/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-08-tavus-adds-a-google-meet-participant-integration.jpg" alt="Tavus adds a Google Meet participant integration" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-08-tavus-adds-a-google-meet-participant-integration'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Tavus adds a Google Meet participant integration</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm" href="/blog/2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm.jpg" alt="SpaceXAI releases Grok 4.5, a coding-focused LLM" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">SpaceXAI releases Grok 4.5, a coding-focused LLM</h3>
-                    <p class="card-excerpt">SpaceXAI unveiled Grok 4.5, a coding‑focused large language model built with Cursor that claims faster inference and lower cost. Engineers should weigh its speed claims against…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">ai coding model</span>
-                        <span class="card-info">8 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">google meet</span><span>8 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm" href="/blog/2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm.jpg" alt="SpaceXAI releases Grok 4.5, a coding-focused LLM" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-08-spacexai-releases-grok-45-a-coding-focused-llm'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">SpaceXAI releases Grok 4.5, a coding-focused LLM</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-08-openai-launches-gptlive-voice-model-in-chatgpt" href="/blog/2026-07-08-openai-launches-gptlive-voice-model-in-chatgpt/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-08-openai-launches-gptlive-voice-model-in-chatgpt.jpg" alt="OpenAI launches GPT‑Live voice model in ChatGPT" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-08-openai-launches-gptlive-voice-model-in-chatgpt'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">OpenAI launches GPT‑Live voice model in ChatGPT</h3>
-                    <p class="card-excerpt">Introducing GPT-Live, a new generation of voice models for natural human-AI interaction. Rolling out in ChatGPT starting today. You’ll want to turn the sound on for this one.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">gpt-live</span>
-                        <span class="card-info">8 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>8 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-08-openai-launches-gptlive-voice-model-in-chatgpt" href="/blog/2026-07-08-openai-launches-gptlive-voice-model-in-chatgpt/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-08-openai-launches-gptlive-voice-model-in-chatgpt.jpg" alt="OpenAI launches GPT‑Live voice model in ChatGPT" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-08-openai-launches-gptlive-voice-model-in-chatgpt'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">OpenAI launches GPT‑Live voice model in ChatGPT</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-07-relume-launches-library-mcp-for-aiassisted-compone" href="/blog/2026-07-07-relume-launches-library-mcp-for-aiassisted-compone/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-07-relume-launches-library-mcp-for-aiassisted-compone.jpg" alt="Relume launches Library MCP for AI‑assisted component selection" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-07-relume-launches-library-mcp-for-aiassisted-compone'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Relume launches Library MCP for AI‑assisted component selection</h3>
-                    <p class="card-excerpt">Relume’s new Library MCP puts 1,000+ production‑ready UI components inside popular AI assistants, letting engineers pull and restyle elements without leaving the prompt.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">relume</span>
-                        <span class="card-info">7 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>8 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-07-relume-launches-library-mcp-for-aiassisted-compone" href="/blog/2026-07-07-relume-launches-library-mcp-for-aiassisted-compone/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-07-relume-launches-library-mcp-for-aiassisted-compone.jpg" alt="Relume launches Library MCP for AI‑assisted component selection" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-07-relume-launches-library-mcp-for-aiassisted-compone'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Relume launches Library MCP for AI‑assisted component selection</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-07-ramp-launches-aiagent-integration-for-company-onbo" href="/blog/2026-07-07-ramp-launches-aiagent-integration-for-company-onbo/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-07-ramp-launches-aiagent-integration-for-company-onbo.jpg" alt="Ramp launches AI‑agent integration for company onboarding" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-07-ramp-launches-aiagent-integration-for-company-onbo'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Ramp launches AI‑agent integration for company onboarding</h3>
-                    <p class="card-excerpt">Ramp introduced &quot;Ramp for Agents&quot;, letting AI agents set up a company&#x27;s financial account, apply for credit, and start paying bills with a single prompt. The feature aims to…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">ramp</span>
-                        <span class="card-info">7 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">relume</span><span>7 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-07-ramp-launches-aiagent-integration-for-company-onbo" href="/blog/2026-07-07-ramp-launches-aiagent-integration-for-company-onbo/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-07-ramp-launches-aiagent-integration-for-company-onbo.jpg" alt="Ramp launches AI‑agent integration for company onboarding" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-07-ramp-launches-aiagent-integration-for-company-onbo'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Ramp launches AI‑agent integration for company onboarding</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au" href="/blog/2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au.png" alt="Better Auth joins Vercel to focus on open‑source auth framework" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Better Auth joins Vercel to focus on open‑source auth framework</h3>
-                    <p class="card-excerpt">Better Auth announced it is becoming part of Vercel, promising more resources for its open‑source authentication framework while staying platform agnostic.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">authentication</span>
-                        <span class="card-info">7 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>7 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au" href="/blog/2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au.png" alt="Better Auth joins Vercel to focus on open‑source auth framework" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-07-better-auth-joins-vercel-to-focus-on-opensource-au'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Better Auth joins Vercel to focus on open‑source auth framework</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="pagination-container">
+                    <div class="nl-card-meta"><span class="nl-card-cat">Open Source</span><span>7 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+            </div>
+            <div class="pagination-container">
             <nav class="pagination" aria-label="Newslogger pagination">
                 <a class="pagination-btn prev" href="/blog/page/21/" aria-label="Previous page"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg><span>Prev</span></a>
                 <span class="pagination-info">
@@ -279,9 +264,21 @@
                 </span>
                 <a class="pagination-btn next" href="/blog/page/23/" aria-label="Next page"><span>Next</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
             </nav>
+            </div>
+        </section>
+            <p class="pagination-back"><a href="https://bitroot.org/blog/">&larr; Back to the newslogger</a></p>
         </div>
-        <p class="pagination-back"><a href="https://bitroot.org/blog/">&larr; Back to latest posts</a></p>
         <!-- POSTS:END -->
+
+        <!-- Filter / search results (rendered by posts-loader.js) -->
+        <section class="nl-section nl-results" id="nl-results" hidden aria-live="polite">
+            <div class="nl-section-head">
+                <h2 class="nl-h2" id="nl-results-title">Results</h2>
+                <span class="nl-results-count" id="nl-results-count"></span>
+            </div>
+            <div class="nl-grid" id="posts-grid"></div>
+            <div class="nl-more-wrap"><button class="nl-more" id="nl-more" type="button" hidden>Load more</button></div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -297,7 +294,8 @@
     </footer>
 
     <script src="/blog/js/pixel-placeholder.js"></script>
-    <script src="/blog/js/posts-loader.js"></script>
+    <script src="/blog/js/posts-loader.js" defer></script>
+    <script src="/blog/js/newsletter.js" defer></script>
 
     <!-- Theme toggle -->
     <script>

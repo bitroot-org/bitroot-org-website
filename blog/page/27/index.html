@@ -36,6 +36,7 @@
     <link rel="icon" type="image/png" href="https://bitroot.org/blog/media/images/favicon.png">
     <link rel="alternate" type="application/rss+xml" title="Newslogger | Bitroot" href="/rss.xml">
     <link rel="stylesheet" href="/blog/css/blog.css">
+    <link rel="stylesheet" href="/blog/css/newslogger.css">
 
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","@id":"https://bitroot.org/blog/#blog","url":"https://bitroot.org/blog/","name":"Bitroot Newslogger","description":"Daily AI and tech news for founders and builders.","inLanguage":"en","publisher":{"@type":"NewsMediaOrganization","name":"Bitroot","url":"https://bitroot.org","logo":{"@type":"ImageObject","url":"https://bitroot.org/blog/media/images/bitroot-dark-text-border.png"}}}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://bitroot.org"},{"@type":"ListItem","position":2,"name":"Newslogger","item":"https://bitroot.org/blog/"}]}</script>
@@ -97,7 +98,7 @@
         posthog.register({ site: 'blog' })
     </script>
 </head>
-<body>
+<body class="nl-index">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-3HDKNMVC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
@@ -138,140 +139,124 @@
         </div>
     </div>
 
-    <!-- Floating glass navbar -->
-    <header class="glass-nav">
-        <nav class="glass-nav-inner">
-            <a href="/" class="shell-logo"><img src="https://bitroot.org/blog/media/images/bitroot-dark-text-border.png" alt="Bitroot" class="logo-img"></a>
+    <!-- Floating glass navbar; category chips dock into it once the hero scrolls away -->
+    <header class="glass-nav nl-nav" id="nl-nav">
+        <nav class="glass-nav-inner" aria-label="Site">
+            <a href="/" class="shell-logo"><img src="https://bitroot.org/blog/media/images/bitroot-dark-text-border.png" alt="Bitroot" class="logo-img" width="112" height="28"></a>
             <div class="shell-links">
-                <a href="/blog" class="shell-link active">newslogger</a>
+                <a href="/blog/" class="shell-link active">newslogger</a>
                 <a href="/" class="shell-link">home</a>
+                <a href="/rss.xml" class="shell-link">rss</a>
                 <button class="theme-toggle" aria-label="Toggle theme">
                     <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                     <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                 </button>
             </div>
         </nav>
+        <div class="nl-nav-chips" id="nl-nav-chips" aria-hidden="true"></div>
     </header>
 
-    <!-- Dark capsule: title + filters + search -->
-    <section class="blog-shell" aria-label="Browse the newslogger">
-        <div class="shell-body">
-            <h1 class="shell-title">Newslogger</h1>
-            <div class="filter-pills" id="blog-filters" aria-label="Filter posts by tag">
-                <button class="filter-pill active" data-tag="All">All</button>
-            </div>
-            <div class="search-box">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                <input type="search" id="blog-search" placeholder="I want to read about..." aria-label="Search blog posts">
-            </div>
+    <!-- Hero: title, search, category chips -->
+    <section class="nl-hero" aria-label="Browse the newslogger">
+        <h1 class="nl-title">Newslogger</h1>
+        <p class="nl-lede">Daily AI and tech news for founders and builders. What shipped, what it costs, and whether it matters <em>to you.</em></p>
+        <label class="nl-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><line x1="21" y1="21" x2="16.4" y2="16.4"/></svg>
+            <input type="search" id="blog-search" placeholder="Search all posts..." aria-label="Search posts" autocomplete="off">
+        </label>
+        <div class="nl-chips" id="blog-filters" role="toolbar" aria-label="Filter by category">
+                <button class="nl-chip is-active" type="button" data-cat="all" aria-pressed="true">All</button>
+                <button class="nl-chip" type="button" data-cat="models" aria-pressed="false">AI Models</button>
+                <button class="nl-chip" type="button" data-cat="agents" aria-pressed="false">Agents &amp; Dev Tools</button>
+                <button class="nl-chip" type="button" data-cat="founders" aria-pressed="false">Founders &amp; Business</button>
+                <button class="nl-chip" type="button" data-cat="opensource" aria-pressed="false">Open Source</button>
+                <button class="nl-chip" type="button" data-cat="design" aria-pressed="false">Design &amp; Media</button>
+                <button class="nl-chip" type="button" data-cat="engineering" aria-pressed="false">Engineering</button>
         </div>
     </section>
 
-    <!-- Blog Showcase Section -->
-    <main class="showcase">
+    <main class="showcase nl-main" id="nl-main">
         <!-- POSTS:BEGIN — generated by build_index.py, do not edit by hand -->
-        <div class="cards-grid" id="posts-grid">
-            <a class="card" data-post-slug="2026-06-03-mumbai-tech-week-was-a-market-signal" href="/blog/2026-06-03-mumbai-tech-week-was-a-market-signal/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/images/mtw-photo.jpg" alt="Mumbai Tech Week Wasn&#x27;t an Event. It Was a Market Signal." loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-06-03-mumbai-tech-week-was-a-market-signal'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Mumbai Tech Week Wasn&#x27;t an Event. It Was a Market Signal.</h3>
-                    <p class="card-excerpt">We walked into Mumbai Tech Week expecting product launches and walked out thinking about markets. When startups, enterprises, governments, investors, and the world&#x27;s largest AI…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">AI</span>
-                        <span class="card-info">3 Jun 2026 &bull; 4 min read</span>
+        <div id="nl-home">
+        <section class="nl-section" aria-labelledby="nl-all-title">
+            <div class="nl-section-head">
+                <h2 class="nl-h2" id="nl-all-title">All posts <span class="nl-h2-sub">Page 27 of 46</span></h2>
+            </div>
+            <div class="nl-grid">
+                <a class="nl-card nl-card--md" data-post-slug="2026-06-03-mumbai-tech-week-was-a-market-signal" href="/blog/2026-06-03-mumbai-tech-week-was-a-market-signal/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/images/mtw-photo.jpg" alt="Mumbai Tech Week Wasn&#x27;t an Event. It Was a Market Signal." loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-06-03-mumbai-tech-week-was-a-market-signal'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Mumbai Tech Week Wasn&#x27;t an Event. It Was a Market Signal.</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-06-03-lassie-ai-raises-47m-to-automate-doctors-offices" href="/blog/2026-06-03-lassie-ai-raises-47m-to-automate-doctors-offices/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-06-03-lassie-ai-raises-47m-to-automate-doctors-offices.jpg" alt="Lassie AI raises $47M to automate doctors&#x27; offices" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-06-03-lassie-ai-raises-47m-to-automate-doctors-offices'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Lassie AI raises $47M to automate doctors&#x27; offices</h3>
-                    <p class="card-excerpt">Lassie, an AI platform for small medical practices, announced a $47M Series A led by a16z and claims to save each clinic about 30 hours of work each month.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">ai</span>
-                        <span class="card-info">3 Jun 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Founders &amp; Business</span><span>3 Jun 2026 &middot; 4 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-06-03-lassie-ai-raises-47m-to-automate-doctors-offices" href="/blog/2026-06-03-lassie-ai-raises-47m-to-automate-doctors-offices/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-06-03-lassie-ai-raises-47m-to-automate-doctors-offices.jpg" alt="Lassie AI raises $47M to automate doctors&#x27; offices" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-06-03-lassie-ai-raises-47m-to-automate-doctors-offices'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Lassie AI raises $47M to automate doctors&#x27; offices</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-06-03-ideogram-releases-40-open-image-model-with-downloa" href="/blog/2026-06-03-ideogram-releases-40-open-image-model-with-downloa/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-06-03-ideogram-releases-40-open-image-model-with-downloa.jpg" alt="Ideogram releases 4.0 open image model with downloadable weights" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-06-03-ideogram-releases-40-open-image-model-with-downloa'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Ideogram releases 4.0 open image model with downloadable weights</h3>
-                    <p class="card-excerpt">Ideogram 4.0 drops an open‑source image generation model that you can download, fine‑tune, and run locally, while still being accessible via the existing API plans.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">image generation</span>
-                        <span class="card-info">3 Jun 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Founders &amp; Business</span><span>3 Jun 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-06-03-ideogram-releases-40-open-image-model-with-downloa" href="/blog/2026-06-03-ideogram-releases-40-open-image-model-with-downloa/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-06-03-ideogram-releases-40-open-image-model-with-downloa.jpg" alt="Ideogram releases 4.0 open image model with downloadable weights" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-06-03-ideogram-releases-40-open-image-model-with-downloa'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Ideogram releases 4.0 open image model with downloadable weights</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-06-03-chatbase-founder-shares-a-10m-bootstrapped-playboo" href="/blog/2026-06-03-chatbase-founder-shares-a-10m-bootstrapped-playboo/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-06-03-chatbase-founder-shares-a-10m-bootstrapped-playboo.jpg" alt="Chatbase founder shares a $10M bootstrapped playbook" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-06-03-chatbase-founder-shares-a-10m-bootstrapped-playboo'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Chatbase founder shares a $10M bootstrapped playbook</h3>
-                    <p class="card-excerpt">EO posted a 15‑question interview with Chatbase founder Yasser Elsaid, outlining how he grew to $10 M ARR without external capital. The thread highlights concrete tactics for…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">bootstrapping</span>
-                        <span class="card-info">3 Jun 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>3 Jun 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-06-03-chatbase-founder-shares-a-10m-bootstrapped-playboo" href="/blog/2026-06-03-chatbase-founder-shares-a-10m-bootstrapped-playboo/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-06-03-chatbase-founder-shares-a-10m-bootstrapped-playboo.jpg" alt="Chatbase founder shares a $10M bootstrapped playbook" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-06-03-chatbase-founder-shares-a-10m-bootstrapped-playboo'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Chatbase founder shares a $10M bootstrapped playbook</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-06-03-blurr-releases-a-web-tool-with-19-filters-and-6-pi" href="/blog/2026-06-03-blurr-releases-a-web-tool-with-19-filters-and-6-pi/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-06-03-blurr-releases-a-web-tool-with-19-filters-and-6-pi.jpg" alt="Blurr releases a web tool with 19 filters and 6 pixel effects" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-06-03-blurr-releases-a-web-tool-with-19-filters-and-6-pi'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Blurr releases a web tool with 19 filters and 6 pixel effects</h3>
-                    <p class="card-excerpt">Blurr’s new pixel‑effects service lets you drop any image into a browser and walk away with an art‑style output, all via a free web interface.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">image processing</span>
-                        <span class="card-info">3 Jun 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Founders &amp; Business</span><span>3 Jun 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-06-03-blurr-releases-a-web-tool-with-19-filters-and-6-pi" href="/blog/2026-06-03-blurr-releases-a-web-tool-with-19-filters-and-6-pi/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-06-03-blurr-releases-a-web-tool-with-19-filters-and-6-pi.jpg" alt="Blurr releases a web tool with 19 filters and 6 pixel effects" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-06-03-blurr-releases-a-web-tool-with-19-filters-and-6-pi'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Blurr releases a web tool with 19 filters and 6 pixel effects</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-06-01-microsoft-announces-the-surface-laptop-ultra-for-f" href="/blog/2026-06-01-microsoft-announces-the-surface-laptop-ultra-for-f/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-06-01-microsoft-announces-the-surface-laptop-ultra-for-f.png" alt="Microsoft announces the Surface Laptop Ultra for Fall 2026" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-06-01-microsoft-announces-the-surface-laptop-ultra-for-f'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Microsoft announces the Surface Laptop Ultra for Fall 2026</h3>
-                    <p class="card-excerpt">Introducing Surface Laptop Ultra. Built for world makers. Designed for what&#x27;s next. The most powerful Surface laptop ever. Coming Fall 2026. Sign up to learn more…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">hardware</span>
-                        <span class="card-info">1 Jun 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Design &amp; Media</span><span>3 Jun 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-06-01-microsoft-announces-the-surface-laptop-ultra-for-f" href="/blog/2026-06-01-microsoft-announces-the-surface-laptop-ultra-for-f/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-06-01-microsoft-announces-the-surface-laptop-ultra-for-f.png" alt="Microsoft announces the Surface Laptop Ultra for Fall 2026" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-06-01-microsoft-announces-the-surface-laptop-ultra-for-f'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Microsoft announces the Surface Laptop Ultra for Fall 2026</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-05-30-tweet-lists-22-places-founders-hang-out-online" href="/blog/2026-05-30-tweet-lists-22-places-founders-hang-out-online/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/22-founder-links.png" alt="22 places founders hang out online" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-05-30-tweet-lists-22-places-founders-hang-out-online'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">22 places founders hang out online</h3>
-                    <p class="card-excerpt">A recent tweet enumerates 22 forums where startup founders gather, offering engineers concrete channels for feedback, recruiting, and market insight.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">founder communities</span>
-                        <span class="card-info">30 May 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Engineering</span><span>1 Jun 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-05-30-tweet-lists-22-places-founders-hang-out-online" href="/blog/2026-05-30-tweet-lists-22-places-founders-hang-out-online/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/22-founder-links.png" alt="22 places founders hang out online" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-05-30-tweet-lists-22-places-founders-hang-out-online'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">22 places founders hang out online</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-05-30-pika-launches-founder-starter-kit-for-claude-users" href="/blog/2026-05-30-pika-launches-founder-starter-kit-for-claude-users/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-05-30-pika-launches-founder-starter-kit-for-claude-users.jpg" alt="Pika launches Founder Starter Kit for Claude users" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-05-30-pika-launches-founder-starter-kit-for-claude-users'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Pika launches Founder Starter Kit for Claude users</h3>
-                    <p class="card-excerpt">Pika announced a free‑form Founder Starter Kit that bundles four branding assets and is accessible through the Claude‑compatible Pika MCP. Engineers can test it to give their…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">founder tools</span>
-                        <span class="card-info">30 May 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Founders &amp; Business</span><span>30 May 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-05-30-pika-launches-founder-starter-kit-for-claude-users" href="/blog/2026-05-30-pika-launches-founder-starter-kit-for-claude-users/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-05-30-pika-launches-founder-starter-kit-for-claude-users.jpg" alt="Pika launches Founder Starter Kit for Claude users" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-05-30-pika-launches-founder-starter-kit-for-claude-users'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Pika launches Founder Starter Kit for Claude users</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-05-26-veed-launches-subtitles-api-with-free-credits-for" href="/blog/2026-05-26-veed-launches-subtitles-api-with-free-credits-for/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-05-26-veed-launches-subtitles-api-with-free-credits-for.jpg" alt="VEED launches Subtitles API with free credits for early users" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-05-26-veed-launches-subtitles-api-with-free-credits-for'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">VEED launches Subtitles API with free credits for early users</h3>
-                    <p class="card-excerpt">VEED announced a Subtitles API that supports over 100 languages and offers free credits to the first 100 users who retweet the launch tweet.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">api</span>
-                        <span class="card-info">26 May 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>30 May 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-05-26-veed-launches-subtitles-api-with-free-credits-for" href="/blog/2026-05-26-veed-launches-subtitles-api-with-free-credits-for/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-05-26-veed-launches-subtitles-api-with-free-credits-for.jpg" alt="VEED launches Subtitles API with free credits for early users" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-05-26-veed-launches-subtitles-api-with-free-credits-for'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">VEED launches Subtitles API with free credits for early users</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="pagination-container">
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>26 May 2026 &middot; 2 min read</span></div>
+                </a>
+            </div>
+            <div class="pagination-container">
             <nav class="pagination" aria-label="Newslogger pagination">
                 <a class="pagination-btn prev" href="/blog/page/26/" aria-label="Previous page"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg><span>Prev</span></a>
                 <span class="pagination-info">
@@ -279,9 +264,21 @@
                 </span>
                 <a class="pagination-btn next" href="/blog/page/28/" aria-label="Next page"><span>Next</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
             </nav>
+            </div>
+        </section>
+            <p class="pagination-back"><a href="https://bitroot.org/blog/">&larr; Back to the newslogger</a></p>
         </div>
-        <p class="pagination-back"><a href="https://bitroot.org/blog/">&larr; Back to latest posts</a></p>
         <!-- POSTS:END -->
+
+        <!-- Filter / search results (rendered by posts-loader.js) -->
+        <section class="nl-section nl-results" id="nl-results" hidden aria-live="polite">
+            <div class="nl-section-head">
+                <h2 class="nl-h2" id="nl-results-title">Results</h2>
+                <span class="nl-results-count" id="nl-results-count"></span>
+            </div>
+            <div class="nl-grid" id="posts-grid"></div>
+            <div class="nl-more-wrap"><button class="nl-more" id="nl-more" type="button" hidden>Load more</button></div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -297,7 +294,8 @@
     </footer>
 
     <script src="/blog/js/pixel-placeholder.js"></script>
-    <script src="/blog/js/posts-loader.js"></script>
+    <script src="/blog/js/posts-loader.js" defer></script>
+    <script src="/blog/js/newsletter.js" defer></script>
 
     <!-- Theme toggle -->
     <script>

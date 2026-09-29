@@ -36,6 +36,7 @@
     <link rel="icon" type="image/png" href="https://bitroot.org/blog/media/images/favicon.png">
     <link rel="alternate" type="application/rss+xml" title="Newslogger | Bitroot" href="/rss.xml">
     <link rel="stylesheet" href="/blog/css/blog.css">
+    <link rel="stylesheet" href="/blog/css/newslogger.css">
 
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","@id":"https://bitroot.org/blog/#blog","url":"https://bitroot.org/blog/","name":"Bitroot Newslogger","description":"Daily AI and tech news for founders and builders.","inLanguage":"en","publisher":{"@type":"NewsMediaOrganization","name":"Bitroot","url":"https://bitroot.org","logo":{"@type":"ImageObject","url":"https://bitroot.org/blog/media/images/bitroot-dark-text-border.png"}}}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://bitroot.org"},{"@type":"ListItem","position":2,"name":"Newslogger","item":"https://bitroot.org/blog/"}]}</script>
@@ -97,7 +98,7 @@
         posthog.register({ site: 'blog' })
     </script>
 </head>
-<body>
+<body class="nl-index">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-3HDKNMVC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
@@ -138,140 +139,124 @@
         </div>
     </div>
 
-    <!-- Floating glass navbar -->
-    <header class="glass-nav">
-        <nav class="glass-nav-inner">
-            <a href="/" class="shell-logo"><img src="https://bitroot.org/blog/media/images/bitroot-dark-text-border.png" alt="Bitroot" class="logo-img"></a>
+    <!-- Floating glass navbar; category chips dock into it once the hero scrolls away -->
+    <header class="glass-nav nl-nav" id="nl-nav">
+        <nav class="glass-nav-inner" aria-label="Site">
+            <a href="/" class="shell-logo"><img src="https://bitroot.org/blog/media/images/bitroot-dark-text-border.png" alt="Bitroot" class="logo-img" width="112" height="28"></a>
             <div class="shell-links">
-                <a href="/blog" class="shell-link active">newslogger</a>
+                <a href="/blog/" class="shell-link active">newslogger</a>
                 <a href="/" class="shell-link">home</a>
+                <a href="/rss.xml" class="shell-link">rss</a>
                 <button class="theme-toggle" aria-label="Toggle theme">
                     <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                     <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                 </button>
             </div>
         </nav>
+        <div class="nl-nav-chips" id="nl-nav-chips" aria-hidden="true"></div>
     </header>
 
-    <!-- Dark capsule: title + filters + search -->
-    <section class="blog-shell" aria-label="Browse the newslogger">
-        <div class="shell-body">
-            <h1 class="shell-title">Newslogger</h1>
-            <div class="filter-pills" id="blog-filters" aria-label="Filter posts by tag">
-                <button class="filter-pill active" data-tag="All">All</button>
-            </div>
-            <div class="search-box">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                <input type="search" id="blog-search" placeholder="I want to read about..." aria-label="Search blog posts">
-            </div>
+    <!-- Hero: title, search, category chips -->
+    <section class="nl-hero" aria-label="Browse the newslogger">
+        <h1 class="nl-title">Newslogger</h1>
+        <p class="nl-lede">Daily AI and tech news for founders and builders. What shipped, what it costs, and whether it matters <em>to you.</em></p>
+        <label class="nl-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><line x1="21" y1="21" x2="16.4" y2="16.4"/></svg>
+            <input type="search" id="blog-search" placeholder="Search all posts..." aria-label="Search posts" autocomplete="off">
+        </label>
+        <div class="nl-chips" id="blog-filters" role="toolbar" aria-label="Filter by category">
+                <button class="nl-chip is-active" type="button" data-cat="all" aria-pressed="true">All</button>
+                <button class="nl-chip" type="button" data-cat="models" aria-pressed="false">AI Models</button>
+                <button class="nl-chip" type="button" data-cat="agents" aria-pressed="false">Agents &amp; Dev Tools</button>
+                <button class="nl-chip" type="button" data-cat="founders" aria-pressed="false">Founders &amp; Business</button>
+                <button class="nl-chip" type="button" data-cat="opensource" aria-pressed="false">Open Source</button>
+                <button class="nl-chip" type="button" data-cat="design" aria-pressed="false">Design &amp; Media</button>
+                <button class="nl-chip" type="button" data-cat="engineering" aria-pressed="false">Engineering</button>
         </div>
     </section>
 
-    <!-- Blog Showcase Section -->
-    <main class="showcase">
+    <main class="showcase nl-main" id="nl-main">
         <!-- POSTS:BEGIN — generated by build_index.py, do not edit by hand -->
-        <div class="cards-grid" id="posts-grid">
-            <a class="card" data-post-slug="2026-07-15-aipoch-open-science-v020-adds-skills-slash-command" href="/blog/2026-07-15-aipoch-open-science-v020-adds-skills-slash-command/">
-                <img class="card-bg" src="https://pbs.twimg.com/media/HNPxKhXa8AANzdU.jpg?name=orig" alt="AIPOCH Open Science v0.2.0 adds Skills, slash commands, and MCP support" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-15-aipoch-open-science-v020-adds-skills-slash-command'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">AIPOCH Open Science v0.2.0 adds Skills, slash commands, and MCP support</h3>
-                    <p class="card-excerpt">AIPOCH released Open Science v0.2.0, introducing reusable research Skills, slash‑command shortcuts, and the first life‑sciences MCP integrations, all as a free open‑source update.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">open science</span>
-                        <span class="card-info">15 Jul 2026 &bull; 2 min read</span>
+        <div id="nl-home">
+        <section class="nl-section" aria-labelledby="nl-all-title">
+            <div class="nl-section-head">
+                <h2 class="nl-h2" id="nl-all-title">All posts <span class="nl-h2-sub">Page 11 of 46</span></h2>
+            </div>
+            <div class="nl-grid">
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-15-aipoch-open-science-v020-adds-skills-slash-command" href="/blog/2026-07-15-aipoch-open-science-v020-adds-skills-slash-command/">
+                    <div class="nl-card-media"><img src="https://pbs.twimg.com/media/HNPxKhXa8AANzdU.jpg?name=orig" alt="AIPOCH Open Science v0.2.0 adds Skills, slash commands, and MCP support" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-15-aipoch-open-science-v020-adds-skills-slash-command'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">AIPOCH Open Science v0.2.0 adds Skills, slash commands, and MCP support</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-08-05-bending-spoons-acquires-airtable-for-1-285b-what-f" href="/blog/2026-08-05-bending-spoons-acquires-airtable-for-1-285b-what-f/">
-                <img class="card-bg" src="https://qz.com/cdn-cgi/image/width=1920,quality=85,format=auto/https://assets.qz.com/media/GettyImages-2283602128-1920x1281.jpg" alt="Bending Spoons Acquires Airtable for $1.285B: What Founders Need to Know" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-05-bending-spoons-acquires-airtable-for-1-285b-what-f'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Bending Spoons Acquires Airtable for $1.285B: What Founders Need to Know</h3>
-                    <p class="card-excerpt">Bending Spoons just paid $1.285 billion for Airtable on August 4, 2026—same day as Anthropic&#x27;s Volta infrastructure deal. Same message: consolidation is accelerating, and…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">M&amp;A</span>
-                        <span class="card-info">5 Aug 2026 &bull; 5 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">open science</span><span>15 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-08-05-bending-spoons-acquires-airtable-for-1-285b-what-f" href="/blog/2026-08-05-bending-spoons-acquires-airtable-for-1-285b-what-f/">
+                    <div class="nl-card-media"><img src="https://qz.com/cdn-cgi/image/width=1920,quality=85,format=auto/https://assets.qz.com/media/GettyImages-2283602128-1920x1281.jpg" alt="Bending Spoons Acquires Airtable for $1.285B: What Founders Need to Know" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-05-bending-spoons-acquires-airtable-for-1-285b-what-f'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Bending Spoons Acquires Airtable for $1.285B: What Founders Need to Know</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a" href="/blog/2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a.jpg" alt="Anthropic&#x27;s $10B Volta Deal: What It Means for Your API Bill (And When)" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Anthropic&#x27;s $10B Volta Deal: What It Means for Your API Bill (And When)</h3>
-                    <p class="card-excerpt">Here&#x27;s what founders need to know: the deal is real. The infrastructure is coming. But your API bill probably won&#x27;t drop until Q2 2027 at the earliest, and execution risk is…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">AI</span>
-                        <span class="card-info">5 Aug 2026 &bull; 8 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>5 Aug 2026 &middot; 5 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a" href="/blog/2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a.jpg" alt="Anthropic&#x27;s $10B Volta Deal: What It Means for Your API Bill (And When)" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-05-anthropics-10b-volta-deal-what-it-means-for-your-a'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Anthropic&#x27;s $10B Volta Deal: What It Means for Your API Bill (And When)</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod" href="/blog/2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod.jpg" alt="Why Cloud Providers Are Abandoning the SaaS AI Model" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Why Cloud Providers Are Abandoning the SaaS AI Model</h3>
-                    <p class="card-excerpt">The era of outsourcing AI to external providers is ending.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">AWS</span>
-                        <span class="card-info">4 Aug 2026 &bull; 5 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>5 Aug 2026 &middot; 8 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod" href="/blog/2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod.jpg" alt="Why Cloud Providers Are Abandoning the SaaS AI Model" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-04-why-cloud-providers-are-abandoning-the-saas-ai-mod'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Why Cloud Providers Are Abandoning the SaaS AI Model</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-08-04-claude-model-selection-for-founders-the-100-to-10k" href="/blog/2026-08-04-claude-model-selection-for-founders-the-100-to-10k/">
-                <img class="card-bg" src="https://static01.nyt.com/images/2026/01/21/multimedia/CLAUDE-CODE-1-pztw/CLAUDE-CODE-1-pztw-articleLarge.jpg?quality=75&amp;auto=webp&amp;disable=upscale" alt="Claude Model Selection for Founders: The $100-to-$10K Runways" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-04-claude-model-selection-for-founders-the-100-to-10k'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Claude Model Selection for Founders: The $100-to-$10K Runways</h3>
-                    <p class="card-excerpt">This guide is for solo founders, pre-seed teams, and anyone building on runway. It answers the question you actually need answered: &quot;Which Claude model can I afford right now…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">AI</span>
-                        <span class="card-info">4 Aug 2026 &bull; 6 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>4 Aug 2026 &middot; 5 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-08-04-claude-model-selection-for-founders-the-100-to-10k" href="/blog/2026-08-04-claude-model-selection-for-founders-the-100-to-10k/">
+                    <div class="nl-card-media"><img src="https://static01.nyt.com/images/2026/01/21/multimedia/CLAUDE-CODE-1-pztw/CLAUDE-CODE-1-pztw-articleLarge.jpg?quality=75&amp;auto=webp&amp;disable=upscale" alt="Claude Model Selection for Founders: The $100-to-$10K Runways" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-04-claude-model-selection-for-founders-the-100-to-10k'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Claude Model Selection for Founders: The $100-to-$10K Runways</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe" href="/blog/2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe.jpg" alt="The Era of Affordable Frontier AI: Why Alibaba&#x27;s Qwen 3.8-Max Changes Everything" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">The Era of Affordable Frontier AI: Why Alibaba&#x27;s Qwen 3.8-Max Changes Everything</h3>
-                    <p class="card-excerpt">On August 3, 2026, Alibaba officially unveiled Qwen3.8-Max, a 2.4-trillion-parameter mixture-of-experts model designed to compete with leading frontier models, now available via…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">Frontier AI</span>
-                        <span class="card-info">3 Aug 2026 &bull; 5 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>4 Aug 2026 &middot; 6 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe" href="/blog/2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe.jpg" alt="The Era of Affordable Frontier AI: Why Alibaba&#x27;s Qwen 3.8-Max Changes Everything" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-03-the-era-of-affordable-frontier-ai-why-alibabas-qwe'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">The Era of Affordable Frontier AI: Why Alibaba&#x27;s Qwen 3.8-Max Changes Everything</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f" href="/blog/2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f.jpg" alt="Ship an App in 2026: How AI Coding Unlocked a New Founder Playbook" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Ship an App in 2026: How AI Coding Unlocked a New Founder Playbook</h3>
-                    <p class="card-excerpt">Everyone said apps were dead. I agents would make traditional apps obsolete. Developers would abandon the App Store. ChatGPT would replace everything.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">Apps</span>
-                        <span class="card-info">3 Aug 2026 &bull; 5 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>3 Aug 2026 &middot; 5 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f" href="/blog/2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f.jpg" alt="Ship an App in 2026: How AI Coding Unlocked a New Founder Playbook" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-03-ship-an-app-in-2026-how-ai-coding-unlocked-a-new-f'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Ship an App in 2026: How AI Coding Unlocked a New Founder Playbook</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-12-chromatorium-launches-as-free-opensource-colour-to" href="/blog/2026-07-12-chromatorium-launches-as-free-opensource-colour-to/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-12-chromatorium-launches-as-free-opensource-colour-to.jpg" alt="Chromatorium launches as free open‑source colour tool" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-12-chromatorium-launches-as-free-opensource-colour-to'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Chromatorium launches as free open‑source colour tool</h3>
-                    <p class="card-excerpt">Chromatorium is a free, open‑source colour utility aimed at creators, offering a set of practical colour features via a web demo and GitHub repo. It targets illustration and UI…</p>
-                    <div class="card-meta">
-                        <span class="card-tag">color tool</span>
-                        <span class="card-info">12 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>3 Aug 2026 &middot; 5 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-12-chromatorium-launches-as-free-opensource-colour-to" href="/blog/2026-07-12-chromatorium-launches-as-free-opensource-colour-to/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-12-chromatorium-launches-as-free-opensource-colour-to.jpg" alt="Chromatorium launches as free open‑source colour tool" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-12-chromatorium-launches-as-free-opensource-colour-to'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Chromatorium launches as free open‑source colour tool</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh" href="/blog/2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh.jpg" alt="From Prompt Wrapper to Agentic Product: The 2026 Shift OpenAI &amp; Anthropic Are Signaling" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">From Prompt Wrapper to Agentic Product: The 2026 Shift OpenAI &amp; Anthropic Are Signaling</h3>
-                    <p class="card-excerpt">You shipped in two weeks. Got a ProductHunt vote or two. Downloaded by maybe a hundred people. Then... nothing.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">Agent. AI</span>
-                        <span class="card-info">1 Aug 2026 &bull; 8 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Open Source</span><span>12 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh" href="/blog/2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh.jpg" alt="From Prompt Wrapper to Agentic Product: The 2026 Shift OpenAI &amp; Anthropic Are Signaling" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-08-01-from-prompt-wrapper-to-agentic-product-the-2026-sh'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">From Prompt Wrapper to Agentic Product: The 2026 Shift OpenAI &amp; Anthropic Are Signaling</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="pagination-container">
+                    <div class="nl-card-meta"><span class="nl-card-cat">AI Models</span><span>1 Aug 2026 &middot; 8 min read</span></div>
+                </a>
+            </div>
+            <div class="pagination-container">
             <nav class="pagination" aria-label="Newslogger pagination">
                 <a class="pagination-btn prev" href="/blog/page/10/" aria-label="Previous page"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg><span>Prev</span></a>
                 <span class="pagination-info">
@@ -279,9 +264,21 @@
                 </span>
                 <a class="pagination-btn next" href="/blog/page/12/" aria-label="Next page"><span>Next</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
             </nav>
+            </div>
+        </section>
+            <p class="pagination-back"><a href="https://bitroot.org/blog/">&larr; Back to the newslogger</a></p>
         </div>
-        <p class="pagination-back"><a href="https://bitroot.org/blog/">&larr; Back to latest posts</a></p>
         <!-- POSTS:END -->
+
+        <!-- Filter / search results (rendered by posts-loader.js) -->
+        <section class="nl-section nl-results" id="nl-results" hidden aria-live="polite">
+            <div class="nl-section-head">
+                <h2 class="nl-h2" id="nl-results-title">Results</h2>
+                <span class="nl-results-count" id="nl-results-count"></span>
+            </div>
+            <div class="nl-grid" id="posts-grid"></div>
+            <div class="nl-more-wrap"><button class="nl-more" id="nl-more" type="button" hidden>Load more</button></div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -297,7 +294,8 @@
     </footer>
 
     <script src="/blog/js/pixel-placeholder.js"></script>
-    <script src="/blog/js/posts-loader.js"></script>
+    <script src="/blog/js/posts-loader.js" defer></script>
+    <script src="/blog/js/newsletter.js" defer></script>
 
     <!-- Theme toggle -->
     <script>

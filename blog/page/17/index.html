@@ -36,6 +36,7 @@
     <link rel="icon" type="image/png" href="https://bitroot.org/blog/media/images/favicon.png">
     <link rel="alternate" type="application/rss+xml" title="Newslogger | Bitroot" href="/rss.xml">
     <link rel="stylesheet" href="/blog/css/blog.css">
+    <link rel="stylesheet" href="/blog/css/newslogger.css">
 
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","@id":"https://bitroot.org/blog/#blog","url":"https://bitroot.org/blog/","name":"Bitroot Newslogger","description":"Daily AI and tech news for founders and builders.","inLanguage":"en","publisher":{"@type":"NewsMediaOrganization","name":"Bitroot","url":"https://bitroot.org","logo":{"@type":"ImageObject","url":"https://bitroot.org/blog/media/images/bitroot-dark-text-border.png"}}}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://bitroot.org"},{"@type":"ListItem","position":2,"name":"Newslogger","item":"https://bitroot.org/blog/"}]}</script>
@@ -97,7 +98,7 @@
         posthog.register({ site: 'blog' })
     </script>
 </head>
-<body>
+<body class="nl-index">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-3HDKNMVC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
@@ -138,140 +139,124 @@
         </div>
     </div>
 
-    <!-- Floating glass navbar -->
-    <header class="glass-nav">
-        <nav class="glass-nav-inner">
-            <a href="/" class="shell-logo"><img src="https://bitroot.org/blog/media/images/bitroot-dark-text-border.png" alt="Bitroot" class="logo-img"></a>
+    <!-- Floating glass navbar; category chips dock into it once the hero scrolls away -->
+    <header class="glass-nav nl-nav" id="nl-nav">
+        <nav class="glass-nav-inner" aria-label="Site">
+            <a href="/" class="shell-logo"><img src="https://bitroot.org/blog/media/images/bitroot-dark-text-border.png" alt="Bitroot" class="logo-img" width="112" height="28"></a>
             <div class="shell-links">
-                <a href="/blog" class="shell-link active">newslogger</a>
+                <a href="/blog/" class="shell-link active">newslogger</a>
                 <a href="/" class="shell-link">home</a>
+                <a href="/rss.xml" class="shell-link">rss</a>
                 <button class="theme-toggle" aria-label="Toggle theme">
                     <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                     <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                 </button>
             </div>
         </nav>
+        <div class="nl-nav-chips" id="nl-nav-chips" aria-hidden="true"></div>
     </header>
 
-    <!-- Dark capsule: title + filters + search -->
-    <section class="blog-shell" aria-label="Browse the newslogger">
-        <div class="shell-body">
-            <h1 class="shell-title">Newslogger</h1>
-            <div class="filter-pills" id="blog-filters" aria-label="Filter posts by tag">
-                <button class="filter-pill active" data-tag="All">All</button>
-            </div>
-            <div class="search-box">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                <input type="search" id="blog-search" placeholder="I want to read about..." aria-label="Search blog posts">
-            </div>
+    <!-- Hero: title, search, category chips -->
+    <section class="nl-hero" aria-label="Browse the newslogger">
+        <h1 class="nl-title">Newslogger</h1>
+        <p class="nl-lede">Daily AI and tech news for founders and builders. What shipped, what it costs, and whether it matters <em>to you.</em></p>
+        <label class="nl-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><line x1="21" y1="21" x2="16.4" y2="16.4"/></svg>
+            <input type="search" id="blog-search" placeholder="Search all posts..." aria-label="Search posts" autocomplete="off">
+        </label>
+        <div class="nl-chips" id="blog-filters" role="toolbar" aria-label="Filter by category">
+                <button class="nl-chip is-active" type="button" data-cat="all" aria-pressed="true">All</button>
+                <button class="nl-chip" type="button" data-cat="models" aria-pressed="false">AI Models</button>
+                <button class="nl-chip" type="button" data-cat="agents" aria-pressed="false">Agents &amp; Dev Tools</button>
+                <button class="nl-chip" type="button" data-cat="founders" aria-pressed="false">Founders &amp; Business</button>
+                <button class="nl-chip" type="button" data-cat="opensource" aria-pressed="false">Open Source</button>
+                <button class="nl-chip" type="button" data-cat="design" aria-pressed="false">Design &amp; Media</button>
+                <button class="nl-chip" type="button" data-cat="engineering" aria-pressed="false">Engineering</button>
         </div>
     </section>
 
-    <!-- Blog Showcase Section -->
-    <main class="showcase">
+    <main class="showcase nl-main" id="nl-main">
         <!-- POSTS:BEGIN — generated by build_index.py, do not edit by hand -->
-        <div class="cards-grid" id="posts-grid">
-            <a class="card" data-post-slug="2026-07-20-go-blog-shows-how-to-do-graceful-tcp-server-shutdo" href="/blog/2026-07-20-go-blog-shows-how-to-do-graceful-tcp-server-shutdo/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-20-go-blog-shows-how-to-do-graceful-tcp-server-shutdo.jpg" alt="Go blog shows how to do graceful TCP server shutdown" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-20-go-blog-shows-how-to-do-graceful-tcp-server-shutdo'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Go blog shows how to do graceful TCP server shutdown</h3>
-                    <p class="card-excerpt">Arpit’s new blog post explains why merely closing a listener isn’t enough for a clean Go TCP server shutdown and offers a practical pattern for production services.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">go</span>
-                        <span class="card-info">20 Jul 2026 &bull; 2 min read</span>
+        <div id="nl-home">
+        <section class="nl-section" aria-labelledby="nl-all-title">
+            <div class="nl-section-head">
+                <h2 class="nl-h2" id="nl-all-title">All posts <span class="nl-h2-sub">Page 17 of 46</span></h2>
+            </div>
+            <div class="nl-grid">
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-20-go-blog-shows-how-to-do-graceful-tcp-server-shutdo" href="/blog/2026-07-20-go-blog-shows-how-to-do-graceful-tcp-server-shutdo/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-20-go-blog-shows-how-to-do-graceful-tcp-server-shutdo.jpg" alt="Go blog shows how to do graceful TCP server shutdown" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-20-go-blog-shows-how-to-do-graceful-tcp-server-shutdo'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Go blog shows how to do graceful TCP server shutdown</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-20-bangergen-open-source-local-ai-turns-ideas-into-re" href="/blog/2026-07-20-bangergen-open-source-local-ai-turns-ideas-into-re/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-20-bangergen-open-source-local-ai-turns-ideas-into-re.jpg" alt="BangerGen open-source: local AI turns ideas into ready-to-post content" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-20-bangergen-open-source-local-ai-turns-ideas-into-re'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">BangerGen open-source: local AI turns ideas into ready-to-post content</h3>
-                    <p class="card-excerpt">BangerGen, a tool that refines rough ideas into scored, platform‑ready posts using local AI, is now open‑source and runs on Ollama with optional ComfyUI visuals.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">ai</span>
-                        <span class="card-info">20 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">go</span><span>20 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-20-bangergen-open-source-local-ai-turns-ideas-into-re" href="/blog/2026-07-20-bangergen-open-source-local-ai-turns-ideas-into-re/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-20-bangergen-open-source-local-ai-turns-ideas-into-re.jpg" alt="BangerGen open-source: local AI turns ideas into ready-to-post content" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-20-bangergen-open-source-local-ai-turns-ideas-into-re'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">BangerGen open-source: local AI turns ideas into ready-to-post content</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-18-open-source-tool-turns-phone-video-into-a-local-3d" href="/blog/2026-07-18-open-source-tool-turns-phone-video-into-a-local-3d/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-18-open-source-tool-turns-phone-video-into-a-local-3d.jpg" alt="Open-source tool turns phone video into a local 3D walkable world" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-18-open-source-tool-turns-phone-video-into-a-local-3d'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Open-source tool turns phone video into a local 3D walkable world</h3>
-                    <p class="card-excerpt">A new open‑source utility converts any phone‑recorded video into a 996k‑point, 60 fps walkable 3D scene that runs entirely on your GPU, with no cloud dependence.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">3d reconstruction</span>
-                        <span class="card-info">18 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Open Source</span><span>20 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-18-open-source-tool-turns-phone-video-into-a-local-3d" href="/blog/2026-07-18-open-source-tool-turns-phone-video-into-a-local-3d/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-18-open-source-tool-turns-phone-video-into-a-local-3d.jpg" alt="Open-source tool turns phone video into a local 3D walkable world" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-18-open-source-tool-turns-phone-video-into-a-local-3d'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Open-source tool turns phone video into a local 3D walkable world</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-18-open-source-badminton-hawkeye-system-released-by-c" href="/blog/2026-07-18-open-source-badminton-hawkeye-system-released-by-c/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-18-open-source-badminton-hawkeye-system-released-by-c.jpg" alt="Open-source badminton Hawk‑Eye system released by Chinese developer" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-18-open-source-badminton-hawkeye-system-released-by-c'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Open-source badminton Hawk‑Eye system released by Chinese developer</h3>
-                    <p class="card-excerpt">A Chinese developer published a fully local, Apache 2.0‑licensed badminton Hawk‑Eye pipeline with code, model weights, and a zero‑cost deployment option.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">computer vision</span>
-                        <span class="card-info">18 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Open Source</span><span>18 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-18-open-source-badminton-hawkeye-system-released-by-c" href="/blog/2026-07-18-open-source-badminton-hawkeye-system-released-by-c/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-18-open-source-badminton-hawkeye-system-released-by-c.jpg" alt="Open-source badminton Hawk‑Eye system released by Chinese developer" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-18-open-source-badminton-hawkeye-system-released-by-c'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Open-source badminton Hawk‑Eye system released by Chinese developer</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-18-ods-launches-oneclick-local-ai-inference-stack" href="/blog/2026-07-18-ods-launches-oneclick-local-ai-inference-stack/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-18-ods-launches-oneclick-local-ai-inference-stack.jpg" alt="ODS launches one‑click local AI inference stack" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-18-ods-launches-oneclick-local-ai-inference-stack'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">ODS launches one‑click local AI inference stack</h3>
-                    <p class="card-excerpt">ODS detects your hardware, pulls the optimal model, and spins up a private AI server with Open WebUI—all without cloud or subscription.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">local ai</span>
-                        <span class="card-info">18 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>18 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-18-ods-launches-oneclick-local-ai-inference-stack" href="/blog/2026-07-18-ods-launches-oneclick-local-ai-inference-stack/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-18-ods-launches-oneclick-local-ai-inference-stack.jpg" alt="ODS launches one‑click local AI inference stack" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-18-ods-launches-oneclick-local-ai-inference-stack'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">ODS launches one‑click local AI inference stack</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-18-octoc2-launches-a-githubonly-c2-framework" href="/blog/2026-07-18-octoc2-launches-a-githubonly-c2-framework/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-18-octoc2-launches-a-githubonly-c2-framework.jpg" alt="OctoC2 launches a GitHub‑only C2 framework" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-18-octoc2-launches-a-githubonly-c2-framework'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">OctoC2 launches a GitHub‑only C2 framework</h3>
-                    <p class="card-excerpt">OctoC2 runs its beacon entirely inside GitHub, talking only to the public GitHub API. The design eliminates the need for external servers but brings its own trade‑offs.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">c2</span>
-                        <span class="card-info">18 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Open Source</span><span>18 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-18-octoc2-launches-a-githubonly-c2-framework" href="/blog/2026-07-18-octoc2-launches-a-githubonly-c2-framework/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-18-octoc2-launches-a-githubonly-c2-framework.jpg" alt="OctoC2 launches a GitHub‑only C2 framework" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-18-octoc2-launches-a-githubonly-c2-framework'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">OctoC2 launches a GitHub‑only C2 framework</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-17-youtube-unveils-codex-micro-a-lightweight-ai-code" href="/blog/2026-07-17-youtube-unveils-codex-micro-a-lightweight-ai-code/">
-                <img class="card-bg" src="/blog/media/placeholder-blog.png" alt="YouTube unveils Codex Micro, a lightweight AI code helper" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-17-youtube-unveils-codex-micro-a-lightweight-ai-code'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">YouTube unveils Codex Micro, a lightweight AI code helper</h3>
-                    <p class="card-excerpt">Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">youtube</span>
-                        <span class="card-info">17 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>18 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-17-youtube-unveils-codex-micro-a-lightweight-ai-code" href="/blog/2026-07-17-youtube-unveils-codex-micro-a-lightweight-ai-code/">
+                    <div class="nl-card-media"><img src="/blog/media/placeholder-blog.png" alt="YouTube unveils Codex Micro, a lightweight AI code helper" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-17-youtube-unveils-codex-micro-a-lightweight-ai-code'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">YouTube unveils Codex Micro, a lightweight AI code helper</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-17-xai-open-sources-grok-build-its-ai-coding-agent-an" href="/blog/2026-07-17-xai-open-sources-grok-build-its-ai-coding-agent-an/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-17-xai-open-sources-grok-build-its-ai-coding-agent-an.png" alt="X.AI open-sources Grok Build, its AI coding agent and terminal UI" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-17-xai-open-sources-grok-build-its-ai-coding-agent-an'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">X.AI open-sources Grok Build, its AI coding agent and terminal UI</h3>
-                    <p class="card-excerpt">Explore the harness behind our coding agent and TUI.</p>
-                    <div class="card-meta">
-                        <span class="card-tag">ai coding</span>
-                        <span class="card-info">17 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>17 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-17-xai-open-sources-grok-build-its-ai-coding-agent-an" href="/blog/2026-07-17-xai-open-sources-grok-build-its-ai-coding-agent-an/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-17-xai-open-sources-grok-build-its-ai-coding-agent-an.png" alt="X.AI open-sources Grok Build, its AI coding agent and terminal UI" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-17-xai-open-sources-grok-build-its-ai-coding-agent-an'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">X.AI open-sources Grok Build, its AI coding agent and terminal UI</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-            <a class="card" data-post-slug="2026-07-17-tauri2-based-skillsplusplus-adds-oneclick-ai-tool" href="/blog/2026-07-17-tauri2-based-skillsplusplus-adds-oneclick-ai-tool/">
-                <img class="card-bg" src="https://bitroot.org/blog/media/2026-07-17-tauri2-based-skillsplusplus-adds-oneclick-ai-tool.jpg" alt="Tauri‑2 based SkillsPlusPlus adds one‑click AI tool integration" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-17-tauri2-based-skillsplusplus-adds-oneclick-ai-tool'):'/blog/media/placeholder-blog.png'">
-                <div class="card-plate">
-                    <h3 class="card-title">Tauri‑2 based SkillsPlusPlus adds one‑click AI tool integration</h3>
-                    <p class="card-excerpt">用 Tauri 2 打造的桌面端 Skills 管理工具，聚合 skills sh、LobeHub、SkillHub cn 等来源的 AI 技能，并一键安装/卸载/重装到 Codex、Claude、Cursor、Gemini CLI 等十余种 AI 工具的本地目录。 https://github.com/cpcc/SkillsPlusPlus</p>
-                    <div class="card-meta">
-                        <span class="card-tag">ai tools</span>
-                        <span class="card-info">17 Jul 2026 &bull; 2 min read</span>
+                    <div class="nl-card-meta"><span class="nl-card-cat">Agents &amp; Dev Tools</span><span>17 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+                <a class="nl-card nl-card--md" data-post-slug="2026-07-17-tauri2-based-skillsplusplus-adds-oneclick-ai-tool" href="/blog/2026-07-17-tauri2-based-skillsplusplus-adds-oneclick-ai-tool/">
+                    <div class="nl-card-media"><img src="https://bitroot.org/blog/media/2026-07-17-tauri2-based-skillsplusplus-adds-oneclick-ai-tool.jpg" alt="Tauri‑2 based SkillsPlusPlus adds one‑click AI tool integration" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=window.bitrootPixelPlaceholder?window.bitrootPixelPlaceholder('2026-07-17-tauri2-based-skillsplusplus-adds-oneclick-ai-tool'):'/blog/media/placeholder-blog.png'"></div>
+                    <div class="nl-card-head">
+                        <h3 class="nl-card-title">Tauri‑2 based SkillsPlusPlus adds one‑click AI tool integration</h3>
+                        <span class="nl-card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="pagination-container">
+                    <div class="nl-card-meta"><span class="nl-card-cat">ai tools</span><span>17 Jul 2026 &middot; 2 min read</span></div>
+                </a>
+            </div>
+            <div class="pagination-container">
             <nav class="pagination" aria-label="Newslogger pagination">
                 <a class="pagination-btn prev" href="/blog/page/16/" aria-label="Previous page"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg><span>Prev</span></a>
                 <span class="pagination-info">
@@ -279,9 +264,21 @@
                 </span>
                 <a class="pagination-btn next" href="/blog/page/18/" aria-label="Next page"><span>Next</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
             </nav>
+            </div>
+        </section>
+            <p class="pagination-back"><a href="https://bitroot.org/blog/">&larr; Back to the newslogger</a></p>
         </div>
-        <p class="pagination-back"><a href="https://bitroot.org/blog/">&larr; Back to latest posts</a></p>
         <!-- POSTS:END -->
+
+        <!-- Filter / search results (rendered by posts-loader.js) -->
+        <section class="nl-section nl-results" id="nl-results" hidden aria-live="polite">
+            <div class="nl-section-head">
+                <h2 class="nl-h2" id="nl-results-title">Results</h2>
+                <span class="nl-results-count" id="nl-results-count"></span>
+            </div>
+            <div class="nl-grid" id="posts-grid"></div>
+            <div class="nl-more-wrap"><button class="nl-more" id="nl-more" type="button" hidden>Load more</button></div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -297,7 +294,8 @@
     </footer>
 
     <script src="/blog/js/pixel-placeholder.js"></script>
-    <script src="/blog/js/posts-loader.js"></script>
+    <script src="/blog/js/posts-loader.js" defer></script>
+    <script src="/blog/js/newsletter.js" defer></script>
 
     <!-- Theme toggle -->
     <script>
