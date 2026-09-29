@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 406,
+  "count": 407,
   "posts": [
+    "2026-09-29-openai-o3s-hidden-cost-why-your-reasoning-token-bi.md",
     "2026-09-28-wallaby-launches-net-cdc-engine-for-postgres-strea.md",
     "2026-09-28-sarvam-ai-now-hosts-us-models-why-this-matters-for.md",
     "2026-09-28-jev-ai-speeds-agent-decisions-193x-the-lightweight.md",
@@ -410,6 +411,26 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-29-openai-o3s-hidden-cost-why-your-reasoning-token-bi.md",
+      "slug": "2026-09-29-openai-o3s-hidden-cost-why-your-reasoning-token-bi",
+      "url": "/blog/2026-09-29-openai-o3s-hidden-cost-why-your-reasoning-token-bi/",
+      "title": "OpenAI o3's Hidden Cost: Why Your Reasoning Token Bill Is 5x Higher",
+      "date": "2026-09-29",
+      "published_at": "2026-09-29T07:44:59.143Z",
+      "tags": [
+        "OpenAI o3",
+        "reasoning token costs",
+        "API billing",
+        "hidden charges",
+        "founder economics"
+      ],
+      "excerpt": "OpenAI o3 looks cheap at $2/$8 per million tokens. Then your bill arrives. Here's why reasoning tokens are destroying your unit economics and how to fix it.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3U3LHM7J3CWBXAoxc8uPijkFj7oBWW2mr2GWlZtYT2Q&s=10",
+      "sources": [],
+      "readTime": "10 min",
+      "shortId": 407
+    },
     {
       "filename": "2026-09-28-wallaby-launches-net-cdc-engine-for-postgres-strea.md",
       "slug": "2026-09-28-wallaby-launches-net-cdc-engine-for-postgres-strea",
