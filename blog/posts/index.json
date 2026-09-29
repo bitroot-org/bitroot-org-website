@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 404,
+  "count": 405,
   "posts": [
+    "2026-09-28-wallaby-launches-net-cdc-engine-for-postgres-strea.md",
     "2026-09-28-sarvam-ai-now-hosts-us-models-why-this-matters-for.md",
     "2026-09-28-jev-ai-speeds-agent-decisions-193x-the-lightweight.md",
     "2026-09-27-spivak-calculus-fully-formalized-in-lean-4.md",
@@ -408,6 +409,26 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-28-wallaby-launches-net-cdc-engine-for-postgres-strea.md",
+      "slug": "2026-09-28-wallaby-launches-net-cdc-engine-for-postgres-strea",
+      "url": "/blog/2026-09-28-wallaby-launches-net-cdc-engine-for-postgres-strea/",
+      "title": "Wallaby launches .NET CDC engine for Postgres streaming",
+      "date": "2026-09-28",
+      "published_at": "2026-09-28T17:13:12.628461+00:00",
+      "tags": [
+        "postgres",
+        "cdc",
+        ".net"
+      ],
+      "excerpt": "Postgres change data capture for .NET: stream row changes through typed transforms into Meilisearch, Elasticsearch, OpenSearch, Kafka, pgvector or any HTTP endpoint.",
+      "image": "https://bitroot.org/blog/media/2026-09-28-wallaby-launches-net-cdc-engine-for-postgres-strea.png",
+      "sources": [
+        "https://wallabycdc.net/"
+      ],
+      "readTime": "2 min",
+      "shortId": 405
+    },
     {
       "filename": "2026-09-28-sarvam-ai-now-hosts-us-models-why-this-matters-for.md",
       "slug": "2026-09-28-sarvam-ai-now-hosts-us-models-why-this-matters-for",

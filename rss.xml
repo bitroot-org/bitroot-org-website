@@ -5,8 +5,22 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 28 Sep 2026 09:30:45 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 03:32:35 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wallaby launches .NET CDC engine for Postgres streaming</title>
+      <link>https://bitroot.org/blog/2026-09-28-wallaby-launches-net-cdc-engine-for-postgres-strea/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-28-wallaby-launches-net-cdc-engine-for-postgres-strea/</guid>
+      <description>Postgres change data capture for .NET: stream row changes through typed transforms into Meilisearch, Elasticsearch, OpenSearch, Kafka, pgvector or any HTTP endpoint.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://wallabycdc.net/"&gt;https://wallabycdc.net/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 28 Sep 2026 17:13:12 +0000</pubDate>
+      <category>postgres</category>
+      <category>cdc</category>
+      <category>.net</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-09-28-wallaby-launches-net-cdc-engine-for-postgres-strea.png" type="image/png" length="0" />
+      <source url="https://wallabycdc.net/">Original Source</source>
+    </item>
     <item>
       <title>Sarvam AI Now Hosts US Models — Why This Matters for Indian Founders</title>
       <link>https://bitroot.org/blog/2026-09-28-sarvam-ai-now-hosts-us-models-why-this-matters-for/</link>
