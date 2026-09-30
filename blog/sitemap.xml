@@ -231,6 +231,10 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://bitroot.org/blog/2026-09-29-use-any-c-library-in-godot-via-conan-and-cmake/</loc>
+    <lastmod>2026-09-29</lastmod>
+  </url>
+  <url>
     <loc>https://bitroot.org/blog/2026-09-29-openai-o3s-hidden-cost-why-your-reasoning-token-bi/</loc>
     <lastmod>2026-09-29</lastmod>
   </url>

@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 407,
+  "count": 408,
   "posts": [
+    "2026-09-29-use-any-c-library-in-godot-via-conan-and-cmake.md",
     "2026-09-29-openai-o3s-hidden-cost-why-your-reasoning-token-bi.md",
     "2026-09-28-wallaby-launches-net-cdc-engine-for-postgres-strea.md",
     "2026-09-28-sarvam-ai-now-hosts-us-models-why-this-matters-for.md",
@@ -411,6 +412,28 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-29-use-any-c-library-in-godot-via-conan-and-cmake.md",
+      "slug": "2026-09-29-use-any-c-library-in-godot-via-conan-and-cmake",
+      "url": "/blog/2026-09-29-use-any-c-library-in-godot-via-conan-and-cmake/",
+      "title": "Use any C++ library in Godot via Conan and CMake",
+      "date": "2026-09-29",
+      "published_at": "2026-09-29T15:16:07.988770+00:00",
+      "tags": [
+        "godot",
+        "conan",
+        "c++",
+        "gdextension"
+      ],
+      "excerpt": "How Godot's GDExtension system and the godot-cpp bindings work, and how to use Conan to bring C and C++ libraries into a Godot game, with a flecs example that simulates 100,000 particles.",
+      "image": "https://blog.conan.io/assets/img/small-search.svg",
+      "sources": [
+        "https://blog.conan.io/cpp/conan/gamedev/godot/cmake/2026/09/29/Using-Any-Cpp-Library-In-Godot.html"
+      ],
+      "readTime": "2 min",
+      "categories": [],
+      "shortId": 408
+    },
     {
       "filename": "2026-09-29-openai-o3s-hidden-cost-why-your-reasoning-token-bi.md",
       "slug": "2026-09-29-openai-o3s-hidden-cost-why-your-reasoning-token-bi",
