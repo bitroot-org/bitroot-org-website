@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 30 Sep 2026 03:21:43 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 03:22:28 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Use any C++ library in Godot via Conan and CMake</title>
@@ -21,6 +21,20 @@
       <category>gdextension</category>
       <enclosure url="https://blog.conan.io/assets/img/small-search.svg" type="image/jpeg" length="0" />
       <source url="https://blog.conan.io/cpp/conan/gamedev/godot/cmake/2026/09/29/Using-Any-Cpp-Library-In-Godot.html">Original Source</source>
+    </item>
+    <item>
+      <title>PacBench scores Claude Opus 5.5 at 99/100 in one‑shot Pac‑Man test</title>
+      <link>https://bitroot.org/blog/2026-09-29-pacbench-scores-claude-opus-55-at-99100-in-oneshot/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-29-pacbench-scores-claude-opus-55-at-99100-in-oneshot/</guid>
+      <description>PacBench: how well a model and harness can recreate Pac-Man from a single prompt.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://jonclegg.github.io/pacman-bakeoff/"&gt;https://jonclegg.github.io/pacman-bakeoff/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 29 Sep 2026 15:16:58 +0000</pubDate>
+      <category>ai benchmark</category>
+      <category>pac-man</category>
+      <category>large language model</category>
+      <enclosure url="https://bitroot.org/blog/null" type="image/jpeg" length="0" />
+      <source url="https://jonclegg.github.io/pacman-bakeoff/">Original Source</source>
     </item>
     <item>
       <title>OpenAI o3's Hidden Cost: Why Your Reasoning Token Bill Is 5x Higher</title>

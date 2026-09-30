@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 408,
+  "count": 409,
   "posts": [
     "2026-09-29-use-any-c-library-in-godot-via-conan-and-cmake.md",
+    "2026-09-29-pacbench-scores-claude-opus-55-at-99100-in-oneshot.md",
     "2026-09-29-openai-o3s-hidden-cost-why-your-reasoning-token-bi.md",
     "2026-09-28-wallaby-launches-net-cdc-engine-for-postgres-strea.md",
     "2026-09-28-sarvam-ai-now-hosts-us-models-why-this-matters-for.md",
@@ -417,7 +418,7 @@
       "slug": "2026-09-29-use-any-c-library-in-godot-via-conan-and-cmake",
       "url": "/blog/2026-09-29-use-any-c-library-in-godot-via-conan-and-cmake/",
       "title": "Use any C++ library in Godot via Conan and CMake",
-      "date": "2026-09-29",
+      "date": "2026-09-30",
       "published_at": "2026-09-29T15:16:07.988770+00:00",
       "tags": [
         "godot",
@@ -432,6 +433,29 @@
       ],
       "readTime": "2 min",
       "categories": [],
+      "shortId": 409
+    },
+    {
+      "filename": "2026-09-29-pacbench-scores-claude-opus-55-at-99100-in-oneshot.md",
+      "slug": "2026-09-29-pacbench-scores-claude-opus-55-at-99100-in-oneshot",
+      "url": "/blog/2026-09-29-pacbench-scores-claude-opus-55-at-99100-in-oneshot/",
+      "title": "PacBench scores Claude Opus 5.5 at 99/100 in one\u2011shot Pac\u2011Man test",
+      "date": "2026-09-30",
+      "published_at": "2026-09-29T15:16:58.621304+00:00",
+      "tags": [
+        "ai benchmark",
+        "pac-man",
+        "large language model"
+      ],
+      "excerpt": "PacBench: how well a model and harness can recreate Pac-Man from a single prompt.",
+      "image": "null",
+      "sources": [
+        "https://jonclegg.github.io/pacman-bakeoff/"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "models"
+      ],
       "shortId": 408
     },
     {
