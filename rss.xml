@@ -5,8 +5,21 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 30 Sep 2026 03:22:28 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 04:26:19 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenAI Dots Launches Free Autonomous Agents for Pro Users; When It Wins vs Building Your Own</title>
+      <link>https://bitroot.org/blog/2026-09-30-openai-dots-launches-free-autonomous-agents-for-pr/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-30-openai-dots-launches-free-autonomous-agents-for-pr/</guid>
+      <description>OpenAI's Dots are 24/7 autonomous agents bundled free with ChatGPT Pro and Business plans. Here's whether bootstrapped founders should use Dots to automate repetitive work or hire someone instead.</description>
+      <pubDate>Wed, 30 Sep 2026 04:25:32 +0000</pubDate>
+      <category>OpenAI Dots</category>
+      <category>autonomous agents</category>
+      <category>AI automation</category>
+      <category>founder automation</category>
+      <category>agent pricing</category>
+      <enclosure url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqvTd-Kz7jtSahtCydqTw87o-h_PGcw0dZwhZYeyDPtQ&amp;s=10" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Use any C++ library in Godot via Conan and CMake</title>
       <link>https://bitroot.org/blog/2026-09-29-use-any-c-library-in-godot-via-conan-and-cmake/</link>

@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 409,
+  "count": 410,
   "posts": [
+    "2026-09-30-openai-dots-launches-free-autonomous-agents-for-pr.md",
     "2026-09-29-use-any-c-library-in-godot-via-conan-and-cmake.md",
     "2026-09-29-pacbench-scores-claude-opus-55-at-99100-in-oneshot.md",
     "2026-09-29-openai-o3s-hidden-cost-why-your-reasoning-token-bi.md",
@@ -413,6 +414,31 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-30-openai-dots-launches-free-autonomous-agents-for-pr.md",
+      "slug": "2026-09-30-openai-dots-launches-free-autonomous-agents-for-pr",
+      "url": "/blog/2026-09-30-openai-dots-launches-free-autonomous-agents-for-pr/",
+      "title": "OpenAI Dots Launches Free Autonomous Agents for Pro Users; When It Wins vs Building Your Own",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T04:25:32.238Z",
+      "tags": [
+        "OpenAI Dots",
+        "autonomous agents",
+        "AI automation",
+        "founder automation",
+        "agent pricing"
+      ],
+      "excerpt": "OpenAI's Dots are 24/7 autonomous agents bundled free with ChatGPT Pro and Business plans. Here's whether bootstrapped founders should use Dots to automate repetitive work or hire someone instead.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqvTd-Kz7jtSahtCydqTw87o-h_PGcw0dZwhZYeyDPtQ&s=10",
+      "sources": [],
+      "readTime": "10 min",
+      "categories": [
+        "models",
+        "agents",
+        "founders"
+      ],
+      "shortId": 410
+    },
     {
       "filename": "2026-09-29-use-any-c-library-in-godot-via-conan-and-cmake.md",
       "slug": "2026-09-29-use-any-c-library-in-godot-via-conan-and-cmake",
