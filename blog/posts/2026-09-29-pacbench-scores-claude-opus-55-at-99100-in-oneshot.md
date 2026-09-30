@@ -1,16 +1,15 @@
 ---
-date: '2026-09-29'
-excerpt: 'PacBench: how well a model and harness can recreate Pac-Man from a single
-  prompt.'
-image: null
+date: '2026-09-30'
+excerpt: 'PacBench: how well a model and harness can recreate Pac-Man from a single prompt.'
+image: 'null'
 published_at: '2026-09-29T15:16:58.621304+00:00'
 sources:
 - https://jonclegg.github.io/pacman-bakeoff/
 tags:
-- ai benchmark
-- pac-man
-- large language model
-title: PacBench scores Claude Opus 5.5 at 99/100 in one‑shot Pac‑Man test
+- 'ai benchmark'
+- 'pac-man'
+- 'large language model'
+title: 'PacBench scores Claude Opus 5.5 at 99/100 in one‑shot Pac‑Man test'
 ---
 
 The PacBench benchmark released its first public bake‑off, showing Claude Opus 5.5 achieving a 99 / 100 score on a one‑shot Pac‑Man implementation at a cost of $1.99 per run.
