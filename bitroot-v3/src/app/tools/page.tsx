@@ -1,6 +1,6 @@
-import Link from "next/link";
 import Container from "@/components/ui/Container";
 import Tag from "@/components/ui/Tag";
+import TrackedNextLink from "@/components/ui/TrackedNextLink";
 import ClubNudge from "@/components/ui/ClubNudge";
 import { tools } from "@/content/data";
 import { buildMetadata } from "@/lib/seo";
@@ -56,7 +56,9 @@ export default function ToolsPage() {
         <Container>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {tools.map((t) => (
-              <Link
+              <TrackedNextLink
+                label={t.title}
+                location="tools_listing"
                 key={t.slug}
                 href={t.href}
                 className="repo-card group block rounded-2xl border border-line bg-paper p-6"
@@ -111,7 +113,7 @@ export default function ToolsPage() {
                     </svg>
                   </span>
                 </div>
-              </Link>
+              </TrackedNextLink>
             ))}
           </div>
 

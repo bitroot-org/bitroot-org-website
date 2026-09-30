@@ -29,7 +29,7 @@ export function buildMetadata({
       url: path,
       siteName,
       type: "website",
-      locale: "en",
+      locale: "en_US",
       ...(image && {
         images: [{ url: image.url, width: 1200, height: 630, alt: image.alt }],
       }),
@@ -53,6 +53,49 @@ export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
       name: item.name,
       item: `${siteUrl}${item.path}`,
     })),
+  };
+}
+
+/**
+ * TechArticle JSON-LD for a guide detail page. Only fields we actually have:
+ * no author/image/datePublished, which the content model doesn't carry.
+ */
+export function techArticleJsonLd({
+  title,
+  description,
+  path,
+  dateModified,
+  keywords,
+  gatedSelector,
+}: {
+  title: string;
+  description: string;
+  path: string;
+  dateModified: string;
+  keywords?: string[];
+  /** CSS selector of the soft-gated body; declares it so Google doesn't treat gating as cloaking. */
+  gatedSelector?: string;
+}) {
+  const url = `${siteUrl}${path}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    headline: title,
+    description,
+    url,
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    dateModified,
+    ...(keywords && keywords.length > 0 && { keywords: keywords.join(", ") }),
+    ...(gatedSelector && {
+      isAccessibleForFree: false,
+      hasPart: {
+        "@type": "WebPageElement",
+        isAccessibleForFree: false,
+        cssSelector: gatedSelector,
+      },
+    }),
+    inLanguage: "en",
+    publisher: { "@type": "Organization", name: siteName, url: `${siteUrl}/` },
   };
 }
 

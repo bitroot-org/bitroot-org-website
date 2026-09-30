@@ -130,6 +130,22 @@
     return false;
   }
 
+  /* Fire once when the inline CTA is at least half on screen. */
+  function trackInlineVisible() {
+    var inline = document.querySelector('.post-newsletter');
+    if (!inline || typeof IntersectionObserver === 'undefined') return;
+    var observer = new IntersectionObserver(function (entries) {
+      for (var i = 0; i < entries.length; i++) {
+        if (entries[i].isIntersecting) {
+          track('newsletter_cta_visible', { variant: 'inline' });
+          observer.disconnect();
+          return;
+        }
+      }
+    }, { threshold: 0.5 });
+    observer.observe(inline);
+  }
+
   function init() {
     var forms = document.querySelectorAll('[data-nl-form]');
     for (var i = 0; i < forms.length; i++) wireForm(forms[i]);
@@ -142,7 +158,11 @@
           '<p class="post-newsletter-done">You’re on the list. ✦</p>';
       }
     } else {
+      // Fires on page load (kept for existing dashboards) — it does NOT mean
+      // the form was on screen. `newsletter_cta_visible` below is the real
+      // "reader saw it" signal.
       track('newsletter_cta_shown', { variant: 'inline' });
+      trackInlineVisible();
     }
 
     if (boostRequested()) {

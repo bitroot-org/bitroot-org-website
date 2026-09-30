@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { track } from "@/lib/analytics";
 
 type Variant = "dark" | "ember";
 
@@ -26,6 +27,7 @@ export default function CopyButton({
     <button
       onClick={() => {
         navigator.clipboard.writeText(text);
+        track("copy_click", { pathname: window.location.pathname });
         setCopied(true);
         setTimeout(() => setCopied(false), 1600);
       }}
