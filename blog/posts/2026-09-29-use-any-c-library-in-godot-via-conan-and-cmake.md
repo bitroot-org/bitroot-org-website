@@ -1,18 +1,16 @@
 ---
-date: '2026-09-29'
-excerpt: How Godot's GDExtension system and the godot-cpp bindings work, and how to
-  use Conan to bring C and C++ libraries into a Godot game, with a flecs example that
-  simulates 100,000 particles.
+date: '2026-09-30'
+excerpt: 'How Godot''s GDExtension system and the godot-cpp bindings work, and how to use Conan to bring C and C++ libraries into a Godot game, with a flecs example that simulates 100,000 particles.'
 image: https://blog.conan.io/assets/img/small-search.svg
 published_at: '2026-09-29T15:16:07.988770+00:00'
 sources:
 - https://blog.conan.io/cpp/conan/gamedev/godot/cmake/2026/09/29/Using-Any-Cpp-Library-In-Godot.html
 tags:
-- godot
-- conan
-- c++
-- gdextension
-title: Use any C++ library in Godot via Conan and CMake
+- 'godot'
+- 'conan'
+- 'c++'
+- 'gdextension'
+title: 'Use any C++ library in Godot via Conan and CMake'
 ---
 
 Godot developers can now add any C or C++ library to a project by using the **godot-cpp 10.0.0** package that landed in ConanCenter, and building the extension with Conan and CMake. The blog post demonstrates a GDExtension that simulates **100,000 particles** using the ECS library **flecs** 4.1.6.
