@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     url: "./",
     siteName,
     type: "website",
-    locale: "en_IN",
+    locale: "en_US",
     images: [
       {
         url: "/og.png",

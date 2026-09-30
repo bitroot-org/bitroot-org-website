@@ -21,6 +21,7 @@ const homeItemListJsonLd = {
     { "@type": "ListItem", position: 1, name: "Guides", url: `${siteUrl}/guides/` },
     { "@type": "ListItem", position: 2, name: "Kits", url: `${siteUrl}/kits/` },
     { "@type": "ListItem", position: 3, name: "Tools", url: `${siteUrl}/tools/` },
+    { "@type": "ListItem", position: 4, name: "Products", url: `${siteUrl}/products/` },
   ],
 };
 
