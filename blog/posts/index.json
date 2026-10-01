@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 411,
+  "count": 412,
   "posts": [
     "2026-09-30-turbogpt-lets-you-train-a-tiny-gpt-in-under-a-minu.md",
+    "2026-09-25-new-mlir-tutorial-walks-you-through-building-a-kal.md",
     "2026-09-30-openai-dots-launches-free-autonomous-agents-for-pr.md",
     "2026-09-29-use-any-c-library-in-godot-via-conan-and-cmake.md",
     "2026-09-29-pacbench-scores-claude-opus-55-at-99100-in-oneshot.md",
@@ -420,7 +421,7 @@
       "slug": "2026-09-30-turbogpt-lets-you-train-a-tiny-gpt-in-under-a-minu",
       "url": "/blog/2026-09-30-turbogpt-lets-you-train-a-tiny-gpt-in-under-a-minu/",
       "title": "TurboGPT lets you train a tiny GPT in under a minute on CUDA",
-      "date": "2026-09-30",
+      "date": "2026-10-01",
       "published_at": "2026-09-30T15:30:44.633117+00:00",
       "tags": [
         "gpt",
@@ -435,6 +436,29 @@
       "readTime": "2 min",
       "categories": [
         "models",
+        "engineering"
+      ],
+      "shortId": 412
+    },
+    {
+      "filename": "2026-09-25-new-mlir-tutorial-walks-you-through-building-a-kal.md",
+      "slug": "2026-09-25-new-mlir-tutorial-walks-you-through-building-a-kal",
+      "url": "/blog/2026-09-25-new-mlir-tutorial-walks-you-through-building-a-kal/",
+      "title": "New MLIR tutorial walks you through building a Kaleidoscope front\u2011end",
+      "date": "2026-10-01",
+      "published_at": "2026-09-25T14:21:16.902869+00:00",
+      "tags": [
+        "mlir",
+        "compiler",
+        "tutorial"
+      ],
+      "excerpt": "Requirements: This tutorial assumes you know C++, but no previous compiler experience is necessary.",
+      "image": "/images/preview.jpg",
+      "sources": [
+        "https://whereisalan.dev/blog/kaleidoscope-mlir-tutorial/"
+      ],
+      "readTime": "2 min",
+      "categories": [
         "engineering"
       ],
       "shortId": 411

@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 01 Oct 2026 03:34:23 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 03:35:11 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TurboGPT lets you train a tiny GPT in under a minute on CUDA</title>
@@ -20,6 +20,20 @@
       <category>training</category>
       <enclosure url="https://bitroot.org/blog/media/2026-09-30-turbogpt-lets-you-train-a-tiny-gpt-in-under-a-minu.png" type="image/png" length="0" />
       <source url="https://github.com/lostmsu/TurboGPT">Original Source</source>
+    </item>
+    <item>
+      <title>New MLIR tutorial walks you through building a Kaleidoscope front‑end</title>
+      <link>https://bitroot.org/blog/2026-09-25-new-mlir-tutorial-walks-you-through-building-a-kal/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-25-new-mlir-tutorial-walks-you-through-building-a-kal/</guid>
+      <description>Requirements: This tutorial assumes you know C++, but no previous compiler experience is necessary.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://whereisalan.dev/blog/kaleidoscope-mlir-tutorial/"&gt;https://whereisalan.dev/blog/kaleidoscope-mlir-tutorial/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 25 Sep 2026 14:21:16 +0000</pubDate>
+      <category>mlir</category>
+      <category>compiler</category>
+      <category>tutorial</category>
+      <enclosure url="https://bitroot.org/images/preview.jpg" type="image/jpeg" length="0" />
+      <source url="https://whereisalan.dev/blog/kaleidoscope-mlir-tutorial/">Original Source</source>
     </item>
     <item>
       <title>OpenAI Dots Launches Free Autonomous Agents for Pro Users; When It Wins vs Building Your Own</title>
