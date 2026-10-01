@@ -1,16 +1,15 @@
 ---
-date: '2026-09-25'
-excerpt: 'Requirements: This tutorial assumes you know C++, but no previous compiler
-  experience is necessary.'
-image: /images/preview.jpg
+date: '2026-10-01'
+excerpt: 'Requirements: This tutorial assumes you know C++, but no previous compiler experience is necessary.'
+image: '/images/preview.jpg'
 published_at: '2026-09-25T14:21:16.902869+00:00'
 sources:
 - https://whereisalan.dev/blog/kaleidoscope-mlir-tutorial/
 tags:
-- mlir
-- compiler
-- tutorial
-title: New MLIR tutorial walks you through building a Kaleidoscope front‑end
+- 'mlir'
+- 'compiler'
+- 'tutorial'
+title: 'New MLIR tutorial walks you through building a Kaleidoscope front‑end'
 ---
 
 The **My First Language Frontend with MLIR** tutorial was just released, and it ships a ten‑chapter walkthrough that builds a working Kaleidoscope compiler in C++. Chapter 4 demonstrates adding JIT support with only a few lines of code, and Chapter 8 shows how to emit object files.
