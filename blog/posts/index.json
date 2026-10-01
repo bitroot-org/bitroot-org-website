@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 410,
+  "count": 411,
   "posts": [
+    "2026-09-30-turbogpt-lets-you-train-a-tiny-gpt-in-under-a-minu.md",
     "2026-09-30-openai-dots-launches-free-autonomous-agents-for-pr.md",
     "2026-09-29-use-any-c-library-in-godot-via-conan-and-cmake.md",
     "2026-09-29-pacbench-scores-claude-opus-55-at-99100-in-oneshot.md",
@@ -414,6 +415,30 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-09-30-turbogpt-lets-you-train-a-tiny-gpt-in-under-a-minu.md",
+      "slug": "2026-09-30-turbogpt-lets-you-train-a-tiny-gpt-in-under-a-minu",
+      "url": "/blog/2026-09-30-turbogpt-lets-you-train-a-tiny-gpt-in-under-a-minu/",
+      "title": "TurboGPT lets you train a tiny GPT in under a minute on CUDA",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T15:30:44.633117+00:00",
+      "tags": [
+        "gpt",
+        "cuda",
+        "training"
+      ],
+      "excerpt": "Train a tiny GPT in under a minute (CUDA only). Contribute to lostmsu/TurboGPT development by creating an account on GitHub.",
+      "image": "https://bitroot.org/blog/media/2026-09-30-turbogpt-lets-you-train-a-tiny-gpt-in-under-a-minu.png",
+      "sources": [
+        "https://github.com/lostmsu/TurboGPT"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "models",
+        "engineering"
+      ],
+      "shortId": 411
+    },
     {
       "filename": "2026-09-30-openai-dots-launches-free-autonomous-agents-for-pr.md",
       "slug": "2026-09-30-openai-dots-launches-free-autonomous-agents-for-pr",
