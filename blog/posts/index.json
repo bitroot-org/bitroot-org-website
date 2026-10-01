@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 412,
+  "count": 413,
   "posts": [
+    "2026-10-01-argon-vs-astra-vs-claude-which-model-founders-shou.md",
     "2026-09-30-turbogpt-lets-you-train-a-tiny-gpt-in-under-a-minu.md",
     "2026-09-25-new-mlir-tutorial-walks-you-through-building-a-kal.md",
     "2026-09-30-openai-dots-launches-free-autonomous-agents-for-pr.md",
@@ -416,6 +417,31 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-10-01-argon-vs-astra-vs-claude-which-model-founders-shou.md",
+      "slug": "2026-10-01-argon-vs-astra-vs-claude-which-model-founders-shou",
+      "url": "/blog/2026-10-01-argon-vs-astra-vs-claude-which-model-founders-shou/",
+      "title": "Argon vs Astra vs Claude: Which Model Founders Should Actually Use",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T04:43:46.555Z",
+      "tags": [
+        "Gemini 4 Argon",
+        "GPT-6 Astra",
+        "Claude Fable",
+        "automation benchmarks",
+        "founder tools"
+      ],
+      "excerpt": "Google's Argon beats Astra on automation benchmarks and costs 80% less in intro pricing. But it's locked in beta. Here's which model founders should actually pick for agents today.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvQJEyectvraa7p8U36PCvvC1DqRRwiXby2K5In4eSYA&s=10",
+      "sources": [],
+      "readTime": "12 min",
+      "categories": [
+        "models",
+        "agents",
+        "founders"
+      ],
+      "shortId": 413
+    },
     {
       "filename": "2026-09-30-turbogpt-lets-you-train-a-tiny-gpt-in-under-a-minu.md",
       "slug": "2026-09-30-turbogpt-lets-you-train-a-tiny-gpt-in-under-a-minu",
