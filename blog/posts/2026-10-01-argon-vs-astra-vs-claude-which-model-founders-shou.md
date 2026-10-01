@@ -1,7 +1,7 @@
 ---
 date: '2026-10-01'
 excerpt: 'Google''s Argon beats Astra on automation benchmarks and costs 80% less in intro pricing. But it''s locked in beta. Here''s which model founders should actually pick for agents today.'
-image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvQJEyectvraa7p8U36PCvvC1DqRRwiXby2K5In4eSYA&s=10
+image: https://techcrunch.com/wp-content/uploads/2026/06/gemini-app-GettyImages-2276204472-1.jpg
 published_at: '2026-10-01T04:43:46.555Z'
 sources: []
 tags:
