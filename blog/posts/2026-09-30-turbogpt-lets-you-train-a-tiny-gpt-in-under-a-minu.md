@@ -1,16 +1,15 @@
 ---
-date: '2026-09-30'
-excerpt: Train a tiny GPT in under a minute (CUDA only). Contribute to lostmsu/TurboGPT
-  development by creating an account on GitHub.
+date: '2026-10-01'
+excerpt: 'Train a tiny GPT in under a minute (CUDA only). Contribute to lostmsu/TurboGPT development by creating an account on GitHub.'
 image: https://bitroot.org/blog/media/2026-09-30-turbogpt-lets-you-train-a-tiny-gpt-in-under-a-minu.png
 published_at: '2026-09-30T15:30:44.633117+00:00'
 sources:
 - https://github.com/lostmsu/TurboGPT
 tags:
-- gpt
-- cuda
-- training
-title: TurboGPT lets you train a tiny GPT in under a minute on CUDA
+- 'gpt'
+- 'cuda'
+- 'training'
+title: 'TurboGPT lets you train a tiny GPT in under a minute on CUDA'
 ---
 
 TurboGPT, an MIT‑licensed project on [GitHub](https://github.com/lostmsu/TurboGPT), announced that it can train a tiny byte‑level GPT model in under a minute using CUDA‑only code. The repository includes a single‑file C++ implementation that compiles on Linux/NixOS via `nix-build` and on Windows with Visual Studio 2022 and CUDA 13.4.
