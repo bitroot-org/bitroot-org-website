@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 420,
+  "count": 421,
   "posts": [
+    "2026-10-03-macos-full-disk-access-tightening-what-founders-us.md",
     "2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo.md",
     "2026-10-02-openc6-bios-adds-pcstyle-microkernel-to-esp32c6.md",
     "2026-10-02-janus-adds-a-vulkanpowered-local-llm-server-with-o.md",
@@ -424,6 +425,31 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-10-03-macos-full-disk-access-tightening-what-founders-us.md",
+      "slug": "2026-10-03-macos-full-disk-access-tightening-what-founders-us",
+      "url": "/blog/2026-10-03-macos-full-disk-access-tightening-what-founders-us/",
+      "title": "macOS Full Disk Access Tightening: What Founders Using AI Agents Need to Know",
+      "date": "2026-10-03",
+      "published_at": "2026-10-03T05:37:47.962Z",
+      "tags": [
+        "macOS security",
+        "AI agents",
+        "Full Disk Access",
+        "founder workflows",
+        "Mac automation"
+      ],
+      "excerpt": "Apple is restricting Full Disk Access on macOS due to AI agent security risks. Two recent incidents exposed private messages and chat histories. Here's what changes for founders using agents locally.",
+      "image": "https://techcrunch.com/wp-content/uploads/2022/07/CMC_1580.jpg?resize=1280,853",
+      "sources": [],
+      "readTime": "11 min",
+      "categories": [
+        "agents",
+        "founders",
+        "engineering"
+      ],
+      "shortId": 421
+    },
     {
       "filename": "2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo.md",
       "slug": "2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo",
