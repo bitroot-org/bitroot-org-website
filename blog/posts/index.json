@@ -1,10 +1,11 @@
 {
   "generated": true,
-  "count": 416,
+  "count": 417,
   "posts": [
     "2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo.md",
     "2026-10-02-openc6-bios-adds-pcstyle-microkernel-to-esp32c6.md",
     "2026-10-02-janus-adds-a-vulkanpowered-local-llm-server-with-o.md",
+    "2026-10-02-firezone-skips-scim-builds-its-own-pullbased-direc.md",
     "2026-10-01-argon-vs-astra-vs-claude-which-model-founders-shou.md",
     "2026-09-30-turbogpt-lets-you-train-a-tiny-gpt-in-under-a-minu.md",
     "2026-09-25-new-mlir-tutorial-walks-you-through-building-a-kal.md",
@@ -439,7 +440,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 416
+      "shortId": 417
     },
     {
       "filename": "2026-10-02-openc6-bios-adds-pcstyle-microkernel-to-esp32c6.md",
@@ -462,7 +463,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 415
+      "shortId": 416
     },
     {
       "filename": "2026-10-02-janus-adds-a-vulkanpowered-local-llm-server-with-o.md",
@@ -485,6 +486,27 @@
       "categories": [
         "models"
       ],
+      "shortId": 415
+    },
+    {
+      "filename": "2026-10-02-firezone-skips-scim-builds-its-own-pullbased-direc.md",
+      "slug": "2026-10-02-firezone-skips-scim-builds-its-own-pullbased-direc",
+      "url": "/blog/2026-10-02-firezone-skips-scim-builds-its-own-pullbased-direc/",
+      "title": "Firezone skips SCIM, builds its own pull\u2011based directory sync",
+      "date": "2026-10-02",
+      "published_at": "2026-10-02T15:13:28.621263+00:00",
+      "tags": [
+        "directory sync",
+        "scim",
+        "pull based"
+      ],
+      "excerpt": "Why we avoided using SCIM for our directory sync engine.",
+      "image": "https://bitroot.org/blog/media/2026-10-02-firezone-skips-scim-builds-its-own-pullbased-direc.png",
+      "sources": [
+        "https://www.firezone.dev/blog/building-reliable-directory-sync"
+      ],
+      "readTime": "2 min",
+      "categories": [],
       "shortId": 414
     },
     {

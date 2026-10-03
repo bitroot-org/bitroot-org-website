@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 03 Oct 2026 04:19:04 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2026 04:19:45 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>zstd‑framed NDJSON parses at 40 GB/s on a 64‑core Xeon</title>
@@ -48,6 +48,20 @@
       <category>vulkan</category>
       <enclosure url="https://bitroot.org/blog/media/2026-10-02-janus-adds-a-vulkanpowered-local-llm-server-with-o.png" type="image/png" length="0" />
       <source url="https://github.com/Vibra-Ingenn/Janus">Original Source</source>
+    </item>
+    <item>
+      <title>Firezone skips SCIM, builds its own pull‑based directory sync</title>
+      <link>https://bitroot.org/blog/2026-10-02-firezone-skips-scim-builds-its-own-pullbased-direc/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-02-firezone-skips-scim-builds-its-own-pullbased-direc/</guid>
+      <description>Why we avoided using SCIM for our directory sync engine.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.firezone.dev/blog/building-reliable-directory-sync"&gt;https://www.firezone.dev/blog/building-reliable-directory-sync&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 02 Oct 2026 15:13:28 +0000</pubDate>
+      <category>directory sync</category>
+      <category>scim</category>
+      <category>pull based</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-02-firezone-skips-scim-builds-its-own-pullbased-direc.png" type="image/png" length="0" />
+      <source url="https://www.firezone.dev/blog/building-reliable-directory-sync">Original Source</source>
     </item>
     <item>
       <title>Argon vs Astra vs Claude: Which Model Founders Should Actually Use</title>
