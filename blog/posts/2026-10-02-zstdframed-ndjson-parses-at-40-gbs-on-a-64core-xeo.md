@@ -1,17 +1,15 @@
 ---
-date: '2026-10-02'
-excerpt: A demo using simdjson shows that splitting a gzip file into 256 KiB zstd
-  frames lets a 64‑core server read compressed NDJSON at 40 GB/s, with only a 6% size
-  penalty.
+date: '2026-10-03'
+excerpt: 'A demo using simdjson shows that splitting a gzip file into 256 KiB zstd frames lets a 64‑core server read compressed NDJSON at 40 GB/s, with only a 6% size penalty.'
 image: https://bitroot.org/blog/media/2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo.jpg
 published_at: '2026-10-02T15:13:33.223071+00:00'
 sources:
 - https://lemire.me/blog/2026/10/01/parsing-compressed-json-at-40-gb-s/
 tags:
-- json
-- compression
-- performance
-title: zstd‑framed NDJSON parses at 40 GB/s on a 64‑core Xeon
+- 'json'
+- 'compression'
+- 'performance'
+title: 'zstd‑framed NDJSON parses at 40 GB/s on a 64‑core Xeon'
 ---
 
 The new demo reaches **40 GB/s** parsing speed on an Intel Xeon Gold 6548N (64 cores, 128 threads) by reading NDJSON that’s compressed with zstd frames of 256 KiB each. The benchmark uses the [simdjson](https://github.com/simdjson/simdjson_compressed_demo) library and GCC 14, and it counts active records while summing scores for admins.
