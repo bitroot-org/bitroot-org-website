@@ -1,17 +1,15 @@
 ---
-date: '2026-10-02'
-excerpt: An open-source RISC-V firmware platform for ESP32-C6(8MB Flash). Implements
-  a BIOS/Payload architecture with a custom system call interface (ABI), independent
-  LP-Core coprocessor management, and an...
+date: '2026-10-03'
+excerpt: 'An open-source RISC-V firmware platform for ESP32-C6(8MB Flash). Implements a BIOS/Payload architecture with a custom system call interface (ABI), independent LP-Core coprocessor management, and an...'
 image: https://bitroot.org/blog/media/2026-10-02-openc6-bios-adds-pcstyle-microkernel-to-esp32c6.png
 published_at: '2026-10-02T15:14:08.372892+00:00'
 sources:
 - https://github.com/Rompass/openc6-bios
 tags:
-- esp32
-- risc-v
-- firmware
-title: OpenC6 BIOS adds PC‑style microkernel to ESP32‑C6
+- 'esp32'
+- 'risc-v'
+- 'firmware'
+title: 'OpenC6 BIOS adds PC‑style microkernel to ESP32‑C6'
 ---
 
 OpenC6 announced a full‑stack BIOS and microkernel for the ESP32‑C6, exposing a classic‑look configuration page at `http://192.168.4.1` and supporting wireless OTA firmware updates out of the box.
