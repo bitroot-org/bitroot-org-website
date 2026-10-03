@@ -5,8 +5,22 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 01 Oct 2026 05:11:58 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2026 04:18:15 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>zstd‑framed NDJSON parses at 40 GB/s on a 64‑core Xeon</title>
+      <link>https://bitroot.org/blog/2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo/</guid>
+      <description>A demo using simdjson shows that splitting a gzip file into 256 KiB zstd frames lets a 64‑core server read compressed NDJSON at 40 GB/s, with only a 6% size penalty.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://lemire.me/blog/2026/10/01/parsing-compressed-json-at-40-gb-s/"&gt;https://lemire.me/blog/2026/10/01/parsing-compressed-json-at-40-gb-s/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 02 Oct 2026 15:13:33 +0000</pubDate>
+      <category>json</category>
+      <category>compression</category>
+      <category>performance</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo.jpg" type="image/jpeg" length="0" />
+      <source url="https://lemire.me/blog/2026/10/01/parsing-compressed-json-at-40-gb-s/">Original Source</source>
+    </item>
     <item>
       <title>Argon vs Astra vs Claude: Which Model Founders Should Actually Use</title>
       <link>https://bitroot.org/blog/2026-10-01-argon-vs-astra-vs-claude-which-model-founders-shou/</link>

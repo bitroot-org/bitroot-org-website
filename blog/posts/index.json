@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 413,
+  "count": 414,
   "posts": [
+    "2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo.md",
     "2026-10-01-argon-vs-astra-vs-claude-which-model-founders-shou.md",
     "2026-09-30-turbogpt-lets-you-train-a-tiny-gpt-in-under-a-minu.md",
     "2026-09-25-new-mlir-tutorial-walks-you-through-building-a-kal.md",
@@ -417,6 +418,27 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo.md",
+      "slug": "2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo",
+      "url": "/blog/2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo/",
+      "title": "zstd\u2011framed NDJSON parses at 40 GB/s on a 64\u2011core Xeon",
+      "date": "2026-10-02",
+      "published_at": "2026-10-02T15:13:33.223071+00:00",
+      "tags": [
+        "json",
+        "compression",
+        "performance"
+      ],
+      "excerpt": "A demo using simdjson shows that splitting a gzip file into 256 KiB zstd frames lets a 64\u2011core server read compressed NDJSON at 40 GB/s, with only a 6% size penalty.",
+      "image": "https://bitroot.org/blog/media/2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo.jpg",
+      "sources": [
+        "https://lemire.me/blog/2026/10/01/parsing-compressed-json-at-40-gb-s/"
+      ],
+      "readTime": "2 min",
+      "categories": [],
+      "shortId": 414
+    },
     {
       "filename": "2026-10-01-argon-vs-astra-vs-claude-which-model-founders-shou.md",
       "slug": "2026-10-01-argon-vs-astra-vs-claude-which-model-founders-shou",
