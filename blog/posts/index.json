@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "count": 419,
+  "count": 420,
   "posts": [
     "2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo.md",
     "2026-10-02-openc6-bios-adds-pcstyle-microkernel-to-esp32c6.md",
@@ -8,6 +8,7 @@
     "2026-10-02-firezone-skips-scim-builds-its-own-pullbased-direc.md",
     "2026-10-01-yantra-adds-a-native-c-lalr1-parser-generator.md",
     "2026-10-01-strata-launches-aisafe-selfservice-analytics-platf.md",
+    "2026-10-01-parrot-0252-brings-ondevice-ai-assistance-to-mac-m.md",
     "2026-10-01-argon-vs-astra-vs-claude-which-model-founders-shou.md",
     "2026-09-30-turbogpt-lets-you-train-a-tiny-gpt-in-under-a-minu.md",
     "2026-09-25-new-mlir-tutorial-walks-you-through-building-a-kal.md",
@@ -442,7 +443,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 419
+      "shortId": 420
     },
     {
       "filename": "2026-10-02-openc6-bios-adds-pcstyle-microkernel-to-esp32c6.md",
@@ -465,7 +466,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 418
+      "shortId": 419
     },
     {
       "filename": "2026-10-02-janus-adds-a-vulkanpowered-local-llm-server-with-o.md",
@@ -488,7 +489,7 @@
       "categories": [
         "models"
       ],
-      "shortId": 417
+      "shortId": 418
     },
     {
       "filename": "2026-10-02-firezone-skips-scim-builds-its-own-pullbased-direc.md",
@@ -509,7 +510,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 416
+      "shortId": 417
     },
     {
       "filename": "2026-10-01-yantra-adds-a-native-c-lalr1-parser-generator.md",
@@ -532,7 +533,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 415
+      "shortId": 416
     },
     {
       "filename": "2026-10-01-strata-launches-aisafe-selfservice-analytics-platf.md",
@@ -555,6 +556,27 @@
       "categories": [
         "founders"
       ],
+      "shortId": 415
+    },
+    {
+      "filename": "2026-10-01-parrot-0252-brings-ondevice-ai-assistance-to-mac-m.md",
+      "slug": "2026-10-01-parrot-0252-brings-ondevice-ai-assistance-to-mac-m",
+      "url": "/blog/2026-10-01-parrot-0252-brings-ondevice-ai-assistance-to-mac-m/",
+      "title": "Parrot 0.25.2 brings on\u2011device AI assistance to Mac meetings",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T15:52:58.192198+00:00",
+      "tags": [
+        "meeting recorder",
+        "ai assistant",
+        "macos"
+      ],
+      "excerpt": "A meeting recorder for your Mac with a live AI assistant. Answers from your own documents, mid-call. Free and open source.",
+      "image": "https://bitroot.org/blog/media/2026-10-01-parrot-0252-brings-ondevice-ai-assistance-to-mac-m.png",
+      "sources": [
+        "https://openparrot.app"
+      ],
+      "readTime": "2 min",
+      "categories": [],
       "shortId": 414
     },
     {

@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 03 Oct 2026 04:21:22 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2026 04:48:37 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>zstd‑framed NDJSON parses at 40 GB/s on a 64‑core Xeon</title>
@@ -90,6 +90,20 @@
       <category>analytics</category>
       <enclosure url="https://bitroot.org/blog/media/2026-10-01-strata-launches-aisafe-selfservice-analytics-platf.png" type="image/png" length="0" />
       <source url="https://strata.do/">Original Source</source>
+    </item>
+    <item>
+      <title>Parrot 0.25.2 brings on‑device AI assistance to Mac meetings</title>
+      <link>https://bitroot.org/blog/2026-10-01-parrot-0252-brings-ondevice-ai-assistance-to-mac-m/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-01-parrot-0252-brings-ondevice-ai-assistance-to-mac-m/</guid>
+      <description>A meeting recorder for your Mac with a live AI assistant. Answers from your own documents, mid-call. Free and open source.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://openparrot.app"&gt;https://openparrot.app&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 01 Oct 2026 15:52:58 +0000</pubDate>
+      <category>meeting recorder</category>
+      <category>ai assistant</category>
+      <category>macos</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-01-parrot-0252-brings-ondevice-ai-assistance-to-mac-m.png" type="image/png" length="0" />
+      <source url="https://openparrot.app">Original Source</source>
     </item>
     <item>
       <title>Argon vs Astra vs Claude: Which Model Founders Should Actually Use</title>
