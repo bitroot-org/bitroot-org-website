@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 03 Oct 2026 04:18:15 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2026 04:19:04 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>zstd‑framed NDJSON parses at 40 GB/s on a 64‑core Xeon</title>
@@ -20,6 +20,34 @@
       <category>performance</category>
       <enclosure url="https://bitroot.org/blog/media/2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo.jpg" type="image/jpeg" length="0" />
       <source url="https://lemire.me/blog/2026/10/01/parsing-compressed-json-at-40-gb-s/">Original Source</source>
+    </item>
+    <item>
+      <title>OpenC6 BIOS adds PC‑style microkernel to ESP32‑C6</title>
+      <link>https://bitroot.org/blog/2026-10-02-openc6-bios-adds-pcstyle-microkernel-to-esp32c6/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-02-openc6-bios-adds-pcstyle-microkernel-to-esp32c6/</guid>
+      <description>An open-source RISC-V firmware platform for ESP32-C6(8MB Flash). Implements a BIOS/Payload architecture with a custom system call interface (ABI), independent LP-Core coprocessor management, and an...
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/Rompass/openc6-bios"&gt;https://github.com/Rompass/openc6-bios&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 02 Oct 2026 15:14:08 +0000</pubDate>
+      <category>esp32</category>
+      <category>risc-v</category>
+      <category>firmware</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-02-openc6-bios-adds-pcstyle-microkernel-to-esp32c6.png" type="image/png" length="0" />
+      <source url="https://github.com/Rompass/openc6-bios">Original Source</source>
+    </item>
+    <item>
+      <title>Janus adds a Vulkan‑powered local LLM server with OpenAI‑compatible API</title>
+      <link>https://bitroot.org/blog/2026-10-02-janus-adds-a-vulkanpowered-local-llm-server-with-o/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-02-janus-adds-a-vulkanpowered-local-llm-server-with-o/</guid>
+      <description>Janus is a API router for AI models written in Go and has a Vulkan Model runner - Vibra-Ingenn/Janus
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/Vibra-Ingenn/Janus"&gt;https://github.com/Vibra-Ingenn/Janus&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 02 Oct 2026 15:14:32 +0000</pubDate>
+      <category>local llm</category>
+      <category>go</category>
+      <category>vulkan</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-02-janus-adds-a-vulkanpowered-local-llm-server-with-o.png" type="image/png" length="0" />
+      <source url="https://github.com/Vibra-Ingenn/Janus">Original Source</source>
     </item>
     <item>
       <title>Argon vs Astra vs Claude: Which Model Founders Should Actually Use</title>
