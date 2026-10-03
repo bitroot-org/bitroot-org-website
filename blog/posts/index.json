@@ -1,11 +1,13 @@
 {
   "generated": true,
-  "count": 417,
+  "count": 419,
   "posts": [
     "2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo.md",
     "2026-10-02-openc6-bios-adds-pcstyle-microkernel-to-esp32c6.md",
     "2026-10-02-janus-adds-a-vulkanpowered-local-llm-server-with-o.md",
     "2026-10-02-firezone-skips-scim-builds-its-own-pullbased-direc.md",
+    "2026-10-01-yantra-adds-a-native-c-lalr1-parser-generator.md",
+    "2026-10-01-strata-launches-aisafe-selfservice-analytics-platf.md",
     "2026-10-01-argon-vs-astra-vs-claude-which-model-founders-shou.md",
     "2026-09-30-turbogpt-lets-you-train-a-tiny-gpt-in-under-a-minu.md",
     "2026-09-25-new-mlir-tutorial-walks-you-through-building-a-kal.md",
@@ -440,7 +442,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 417
+      "shortId": 419
     },
     {
       "filename": "2026-10-02-openc6-bios-adds-pcstyle-microkernel-to-esp32c6.md",
@@ -463,7 +465,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 416
+      "shortId": 418
     },
     {
       "filename": "2026-10-02-janus-adds-a-vulkanpowered-local-llm-server-with-o.md",
@@ -486,7 +488,7 @@
       "categories": [
         "models"
       ],
-      "shortId": 415
+      "shortId": 417
     },
     {
       "filename": "2026-10-02-firezone-skips-scim-builds-its-own-pullbased-direc.md",
@@ -507,6 +509,52 @@
       ],
       "readTime": "2 min",
       "categories": [],
+      "shortId": 416
+    },
+    {
+      "filename": "2026-10-01-yantra-adds-a-native-c-lalr1-parser-generator.md",
+      "slug": "2026-10-01-yantra-adds-a-native-c-lalr1-parser-generator",
+      "url": "/blog/2026-10-01-yantra-adds-a-native-c-lalr1-parser-generator/",
+      "title": "Yantra adds a native C++ LALR(1) parser generator",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T15:54:27.190652+00:00",
+      "tags": [
+        "c++",
+        "parser generator",
+        "compiler tools"
+      ],
+      "excerpt": "A C++ parser generator: lexer, parser, and AST generation in one tool. - TantrixAuto/yantra",
+      "image": "https://bitroot.org/blog/media/2026-10-01-yantra-adds-a-native-c-lalr1-parser-generator.png",
+      "sources": [
+        "https://github.com/TantrixAuto/yantra"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
+      "shortId": 415
+    },
+    {
+      "filename": "2026-10-01-strata-launches-aisafe-selfservice-analytics-platf.md",
+      "slug": "2026-10-01-strata-launches-aisafe-selfservice-analytics-platf",
+      "url": "/blog/2026-10-01-strata-launches-aisafe-selfservice-analytics-platf/",
+      "title": "Strata launches AI\u2011safe self\u2011service analytics platform",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T15:53:35.546270+00:00",
+      "tags": [
+        "business intelligence",
+        "semantic layer",
+        "analytics"
+      ],
+      "excerpt": "High-performance, AI-safe self-service analytics \u2014 a governed semantic layer fused with beautiful-by-default dashboards, for humans and agents.",
+      "image": "https://bitroot.org/blog/media/2026-10-01-strata-launches-aisafe-selfservice-analytics-platf.png",
+      "sources": [
+        "https://strata.do/"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "founders"
+      ],
       "shortId": 414
     },
     {

@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 03 Oct 2026 04:19:45 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2026 04:21:22 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>zstd‑framed NDJSON parses at 40 GB/s on a 64‑core Xeon</title>
@@ -62,6 +62,34 @@
       <category>pull based</category>
       <enclosure url="https://bitroot.org/blog/media/2026-10-02-firezone-skips-scim-builds-its-own-pullbased-direc.png" type="image/png" length="0" />
       <source url="https://www.firezone.dev/blog/building-reliable-directory-sync">Original Source</source>
+    </item>
+    <item>
+      <title>Yantra adds a native C++ LALR(1) parser generator</title>
+      <link>https://bitroot.org/blog/2026-10-01-yantra-adds-a-native-c-lalr1-parser-generator/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-01-yantra-adds-a-native-c-lalr1-parser-generator/</guid>
+      <description>A C++ parser generator: lexer, parser, and AST generation in one tool. - TantrixAuto/yantra
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/TantrixAuto/yantra"&gt;https://github.com/TantrixAuto/yantra&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 01 Oct 2026 15:54:27 +0000</pubDate>
+      <category>c++</category>
+      <category>parser generator</category>
+      <category>compiler tools</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-01-yantra-adds-a-native-c-lalr1-parser-generator.png" type="image/png" length="0" />
+      <source url="https://github.com/TantrixAuto/yantra">Original Source</source>
+    </item>
+    <item>
+      <title>Strata launches AI‑safe self‑service analytics platform</title>
+      <link>https://bitroot.org/blog/2026-10-01-strata-launches-aisafe-selfservice-analytics-platf/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-01-strata-launches-aisafe-selfservice-analytics-platf/</guid>
+      <description>High-performance, AI-safe self-service analytics — a governed semantic layer fused with beautiful-by-default dashboards, for humans and agents.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://strata.do/"&gt;https://strata.do/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 01 Oct 2026 15:53:35 +0000</pubDate>
+      <category>business intelligence</category>
+      <category>semantic layer</category>
+      <category>analytics</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-01-strata-launches-aisafe-selfservice-analytics-platf.png" type="image/png" length="0" />
+      <source url="https://strata.do/">Original Source</source>
     </item>
     <item>
       <title>Argon vs Astra vs Claude: Which Model Founders Should Actually Use</title>
