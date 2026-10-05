@@ -5,8 +5,21 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 05 Oct 2026 03:44:10 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 10:54:16 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gemini 4 Argon vs GPT-6 Astra vs Claude for Founders</title>
+      <link>https://bitroot.org/blog/2026-10-05-gemini-4-argon-vs-gpt-6-astra-vs-claude-for-founde/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-05-gemini-4-argon-vs-gpt-6-astra-vs-claude-for-founde/</guid>
+      <description>Google's Gemini 4 Argon leads on coding benchmarks but faces limited availability. Here's how it compares to Astra and Claude for real founder workflows.</description>
+      <pubDate>Mon, 05 Oct 2026 10:53:28 +0000</pubDate>
+      <category>frontier AI models</category>
+      <category>software engineering</category>
+      <category>model comparison</category>
+      <category>Gemini benchmarks</category>
+      <category>founder AI stack</category>
+      <enclosure url="https://media.licdn.com/dms/image/v2/D5622AQFgU1Wl6IgWxw/feedshare-shrink_800/B56ZxRFEKhG4Ag-/0/1770886808436?e=2147483647&amp;v=beta&amp;t=maQBy6Ly1sXRj3VtDr2pTVTtfh0O8Ve0e-M1w9f4bpU" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Rely launches browser beta that turns unreliable parts into a reliability puzzle</title>
       <link>https://bitroot.org/blog/2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p/</link>

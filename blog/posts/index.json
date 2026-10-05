@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 425,
+  "count": 426,
   "posts": [
+    "2026-10-05-gemini-4-argon-vs-gpt-6-astra-vs-claude-for-founde.md",
     "2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p.md",
     "2026-10-04-networkx-adds-pyarrow-backend-with-65-memory-savin.md",
     "2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for.md",
@@ -429,6 +430,30 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-10-05-gemini-4-argon-vs-gpt-6-astra-vs-claude-for-founde.md",
+      "slug": "2026-10-05-gemini-4-argon-vs-gpt-6-astra-vs-claude-for-founde",
+      "url": "/blog/2026-10-05-gemini-4-argon-vs-gpt-6-astra-vs-claude-for-founde/",
+      "title": "Gemini 4 Argon vs GPT-6 Astra vs Claude for Founders",
+      "date": "2026-10-05",
+      "published_at": "2026-10-05T10:53:28.088Z",
+      "tags": [
+        "frontier AI models",
+        "software engineering",
+        "model comparison",
+        "Gemini benchmarks",
+        "founder AI stack"
+      ],
+      "excerpt": "Google's Gemini 4 Argon leads on coding benchmarks but faces limited availability. Here's how it compares to Astra and Claude for real founder workflows.",
+      "image": "https://media.licdn.com/dms/image/v2/D5622AQFgU1Wl6IgWxw/feedshare-shrink_800/B56ZxRFEKhG4Ag-/0/1770886808436?e=2147483647&v=beta&t=maQBy6Ly1sXRj3VtDr2pTVTtfh0O8Ve0e-M1w9f4bpU",
+      "sources": [],
+      "readTime": "6 min",
+      "categories": [
+        "models",
+        "founders"
+      ],
+      "shortId": 426
+    },
     {
       "filename": "2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p.md",
       "slug": "2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p",
