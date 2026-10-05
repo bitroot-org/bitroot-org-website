@@ -431,7 +431,7 @@
       "slug": "2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p",
       "url": "/blog/2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p/",
       "title": "Rely launches browser beta that turns unreliable parts into a reliability puzzle",
-      "date": "2026-10-04",
+      "date": "2026-10-05",
       "published_at": "2026-10-04T14:32:57.810621+00:00",
       "tags": [
         "browser game",
@@ -439,7 +439,7 @@
         "puzzle"
       ],
       "excerpt": "Rely is an automation puzzle game about building reliable systems from unreliable components.",
-      "image": null,
+      "image": "null",
       "sources": [
         "https://think-twice.me/public/rely/"
       ],
