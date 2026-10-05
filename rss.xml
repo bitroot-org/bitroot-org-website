@@ -5,8 +5,21 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 03 Oct 2026 05:38:26 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 03:39:03 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rely launches browser beta that turns unreliable parts into a reliability puzzle</title>
+      <link>https://bitroot.org/blog/2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p/</guid>
+      <description>Rely is an automation puzzle game about building reliable systems from unreliable components.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://think-twice.me/public/rely/"&gt;https://think-twice.me/public/rely/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sun, 04 Oct 2026 14:32:57 +0000</pubDate>
+      <category>browser game</category>
+      <category>reliability engineering</category>
+      <category>puzzle</category>
+      <source url="https://think-twice.me/public/rely/">Original Source</source>
+    </item>
     <item>
       <title>macOS Full Disk Access Tightening: What Founders Using AI Agents Need to Know</title>
       <link>https://bitroot.org/blog/2026-10-03-macos-full-disk-access-tightening-what-founders-us/</link>

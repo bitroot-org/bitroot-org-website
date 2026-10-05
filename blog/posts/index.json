@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 421,
+  "count": 422,
   "posts": [
+    "2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p.md",
     "2026-10-03-macos-full-disk-access-tightening-what-founders-us.md",
     "2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo.md",
     "2026-10-02-openc6-bios-adds-pcstyle-microkernel-to-esp32c6.md",
@@ -425,6 +426,29 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p.md",
+      "slug": "2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p",
+      "url": "/blog/2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p/",
+      "title": "Rely launches browser beta that turns unreliable parts into a reliability puzzle",
+      "date": "2026-10-04",
+      "published_at": "2026-10-04T14:32:57.810621+00:00",
+      "tags": [
+        "browser game",
+        "reliability engineering",
+        "puzzle"
+      ],
+      "excerpt": "Rely is an automation puzzle game about building reliable systems from unreliable components.",
+      "image": null,
+      "sources": [
+        "https://think-twice.me/public/rely/"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
+      "shortId": 422
+    },
     {
       "filename": "2026-10-03-macos-full-disk-access-tightening-what-founders-us.md",
       "slug": "2026-10-03-macos-full-disk-access-tightening-what-founders-us",
