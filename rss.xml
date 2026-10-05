@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 05 Oct 2026 03:42:50 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 03:44:10 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rely launches browser beta that turns unreliable parts into a reliability puzzle</title>
@@ -34,6 +34,20 @@
       <category>memory optimization</category>
       <enclosure url="https://bitroot.org/blog/media/2026-10-04-networkx-adds-pyarrow-backend-with-65-memory-savin.png" type="image/png" length="0" />
       <source url="https://github.com/networkx/networkx/discussions/8933">Original Source</source>
+    </item>
+    <item>
+      <title>Jeffy launches CPU‑only pretrained classifiers for local use</title>
+      <link>https://bitroot.org/blog/2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for/</guid>
+      <description>Pretrained text classifiers you can run and retrain on CPU - nicobrenner/jeffy
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/nicobrenner/jeffy"&gt;https://github.com/nicobrenner/jeffy&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sun, 04 Oct 2026 14:31:51 +0000</pubDate>
+      <category>local ml</category>
+      <category>pretrained classifiers</category>
+      <category>cpu inference</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for.png" type="image/png" length="0" />
+      <source url="https://github.com/nicobrenner/jeffy">Original Source</source>
     </item>
     <item>
       <title>macOS Full Disk Access Tightening: What Founders Using AI Agents Need to Know</title>
@@ -351,6 +365,20 @@
       <category>langgraph</category>
       <enclosure url="https://bitroot.org/blog/media/2026-09-26-agentic-cuda-optimizer-automates-kernel-tuning-via.png" type="image/png" length="0" />
       <source url="https://github.com/bertaye/agentic-cuda-optimizer">Original Source</source>
+    </item>
+    <item>
+      <title>Postgres extension Kafgres hits 700 MB/s Kafka‑compatible throughput</title>
+      <link>https://bitroot.org/blog/2026-09-25-postgres-extension-kafgres-hits-700-mbs-kafkacompa/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-25-postgres-extension-kafgres-hits-700-mbs-kafkacompa/</guid>
+      <description>Profiling and optimizing the Kafgres Postgres extension to achieve 700 MB/s write throughput and 600k evt/s on a single machine.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://rynr.dev/blog/700mbskafgres/"&gt;https://rynr.dev/blog/700mbskafgres/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 25 Sep 2026 14:21:24 +0000</pubDate>
+      <category>postgres</category>
+      <category>kafka</category>
+      <category>performance</category>
+      <enclosure url="https://bitroot.org/blog/../kafgres-arch.svg" type="image/jpeg" length="0" />
+      <source url="https://rynr.dev/blog/700mbskafgres/">Original Source</source>
     </item>
     <item>
       <title>Claude's Refusal Billing: Cost Impact for Founders (And How to Avoid It)</title>

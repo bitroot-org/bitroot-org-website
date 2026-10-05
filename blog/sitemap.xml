@@ -236,11 +236,20 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://bitroot.org/blog/page/48/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://bitroot.org/blog/2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p/</loc>
     <lastmod>2026-10-04</lastmod>
   </url>
   <url>
     <loc>https://bitroot.org/blog/2026-10-04-networkx-adds-pyarrow-backend-with-65-memory-savin/</loc>
+    <lastmod>2026-10-04</lastmod>
+  </url>
+  <url>
+    <loc>https://bitroot.org/blog/2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for/</loc>
     <lastmod>2026-10-04</lastmod>
   </url>
   <url>
@@ -334,6 +343,10 @@
   <url>
     <loc>https://bitroot.org/blog/2026-09-26-agentic-cuda-optimizer-automates-kernel-tuning-via/</loc>
     <lastmod>2026-09-26</lastmod>
+  </url>
+  <url>
+    <loc>https://bitroot.org/blog/2026-09-25-postgres-extension-kafgres-hits-700-mbs-kafkacompa/</loc>
+    <lastmod>2026-09-25</lastmod>
   </url>
   <url>
     <loc>https://bitroot.org/blog/2026-09-25-claudes-refusal-billing-cost-impact-for-founders-a/</loc>

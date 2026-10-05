@@ -1,9 +1,10 @@
 {
   "generated": true,
-  "count": 423,
+  "count": 425,
   "posts": [
     "2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p.md",
     "2026-10-04-networkx-adds-pyarrow-backend-with-65-memory-savin.md",
+    "2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for.md",
     "2026-10-03-macos-full-disk-access-tightening-what-founders-us.md",
     "2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo.md",
     "2026-10-02-openc6-bios-adds-pcstyle-microkernel-to-esp32c6.md",
@@ -27,6 +28,7 @@
     "2026-09-26-qwen306b-inference-runs-inside-linux-ebpf-kernel.md",
     "2026-09-26-muse-early-access-program-how-to-get-first-access.md",
     "2026-09-26-agentic-cuda-optimizer-automates-kernel-tuning-via.md",
+    "2026-09-25-postgres-extension-kafgres-hits-700-mbs-kafkacompa.md",
     "2026-09-25-claudes-refusal-billing-cost-impact-for-founders-a.md",
     "2026-09-25-c3-language-gets-an-inbrowser-playground-with-grap.md",
     "2026-09-24-simten-releases-in-browser-nand-logic-simulator.md",
@@ -448,7 +450,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 423
+      "shortId": 425
     },
     {
       "filename": "2026-10-04-networkx-adds-pyarrow-backend-with-65-memory-savin.md",
@@ -469,7 +471,30 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 422
+      "shortId": 424
+    },
+    {
+      "filename": "2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for.md",
+      "slug": "2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for",
+      "url": "/blog/2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for/",
+      "title": "Jeffy launches CPU\u2011only pretrained classifiers for local use",
+      "date": "2026-10-04",
+      "published_at": "2026-10-04T14:31:51.350826+00:00",
+      "tags": [
+        "local ml",
+        "pretrained classifiers",
+        "cpu inference"
+      ],
+      "excerpt": "Pretrained text classifiers you can run and retrain on CPU - nicobrenner/jeffy",
+      "image": "https://bitroot.org/blog/media/2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for.png",
+      "sources": [
+        "https://github.com/nicobrenner/jeffy"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
+      "shortId": 423
     },
     {
       "filename": "2026-10-03-macos-full-disk-access-tightening-what-founders-us.md",
@@ -494,7 +519,7 @@
         "founders",
         "engineering"
       ],
-      "shortId": 421
+      "shortId": 422
     },
     {
       "filename": "2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo.md",
@@ -515,7 +540,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 420
+      "shortId": 421
     },
     {
       "filename": "2026-10-02-openc6-bios-adds-pcstyle-microkernel-to-esp32c6.md",
@@ -538,7 +563,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 419
+      "shortId": 420
     },
     {
       "filename": "2026-10-02-janus-adds-a-vulkanpowered-local-llm-server-with-o.md",
@@ -561,7 +586,7 @@
       "categories": [
         "models"
       ],
-      "shortId": 418
+      "shortId": 419
     },
     {
       "filename": "2026-10-02-firezone-skips-scim-builds-its-own-pullbased-direc.md",
@@ -582,7 +607,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 417
+      "shortId": 418
     },
     {
       "filename": "2026-10-01-yantra-adds-a-native-c-lalr1-parser-generator.md",
@@ -605,7 +630,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 416
+      "shortId": 417
     },
     {
       "filename": "2026-10-01-strata-launches-aisafe-selfservice-analytics-platf.md",
@@ -628,7 +653,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 415
+      "shortId": 416
     },
     {
       "filename": "2026-10-01-parrot-0252-brings-ondevice-ai-assistance-to-mac-m.md",
@@ -649,7 +674,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 414
+      "shortId": 415
     },
     {
       "filename": "2026-10-01-argon-vs-astra-vs-claude-which-model-founders-shou.md",
@@ -674,7 +699,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 413
+      "shortId": 414
     },
     {
       "filename": "2026-09-30-turbogpt-lets-you-train-a-tiny-gpt-in-under-a-minu.md",
@@ -698,7 +723,7 @@
         "models",
         "engineering"
       ],
-      "shortId": 412
+      "shortId": 413
     },
     {
       "filename": "2026-09-25-new-mlir-tutorial-walks-you-through-building-a-kal.md",
@@ -721,7 +746,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 411
+      "shortId": 412
     },
     {
       "filename": "2026-09-30-openai-dots-launches-free-autonomous-agents-for-pr.md",
@@ -746,7 +771,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 410
+      "shortId": 411
     },
     {
       "filename": "2026-09-29-use-any-c-library-in-godot-via-conan-and-cmake.md",
@@ -768,7 +793,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 409
+      "shortId": 410
     },
     {
       "filename": "2026-09-29-pacbench-scores-claude-opus-55-at-99100-in-oneshot.md",
@@ -791,7 +816,7 @@
       "categories": [
         "models"
       ],
-      "shortId": 408
+      "shortId": 409
     },
     {
       "filename": "2026-09-29-openai-o3s-hidden-cost-why-your-reasoning-token-bi.md",
@@ -816,7 +841,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 407
+      "shortId": 408
     },
     {
       "filename": "2026-09-28-wallaby-launches-net-cdc-engine-for-postgres-strea.md",
@@ -839,7 +864,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 406
+      "shortId": 407
     },
     {
       "filename": "2026-09-28-sarvam-ai-now-hosts-us-models-why-this-matters-for.md",
@@ -863,7 +888,7 @@
         "models",
         "founders"
       ],
-      "shortId": 405
+      "shortId": 406
     },
     {
       "filename": "2026-09-28-jev-ai-speeds-agent-decisions-193x-the-lightweight.md",
@@ -889,7 +914,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 404
+      "shortId": 405
     },
     {
       "filename": "2026-09-27-spivak-calculus-fully-formalized-in-lean-4.md",
@@ -912,7 +937,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 403
+      "shortId": 404
     },
     {
       "filename": "2026-09-27-reladraw-releases-version-080-a-placementfocused-d.md",
@@ -936,7 +961,7 @@
         "agents",
         "engineering"
       ],
-      "shortId": 402
+      "shortId": 403
     },
     {
       "filename": "2026-09-26-qwen306b-inference-runs-inside-linux-ebpf-kernel.md",
@@ -960,7 +985,7 @@
         "models",
         "engineering"
       ],
-      "shortId": 401
+      "shortId": 402
     },
     {
       "filename": "2026-09-26-muse-early-access-program-how-to-get-first-access.md",
@@ -983,7 +1008,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 400
+      "shortId": 401
     },
     {
       "filename": "2026-09-26-agentic-cuda-optimizer-automates-kernel-tuning-via.md",
@@ -1005,6 +1030,29 @@
       "readTime": "2 min",
       "categories": [
         "agents",
+        "engineering"
+      ],
+      "shortId": 400
+    },
+    {
+      "filename": "2026-09-25-postgres-extension-kafgres-hits-700-mbs-kafkacompa.md",
+      "slug": "2026-09-25-postgres-extension-kafgres-hits-700-mbs-kafkacompa",
+      "url": "/blog/2026-09-25-postgres-extension-kafgres-hits-700-mbs-kafkacompa/",
+      "title": "Postgres extension Kafgres hits 700 MB/s Kafka\u2011compatible throughput",
+      "date": "2026-09-25",
+      "published_at": "2026-09-25T14:21:24.945977+00:00",
+      "tags": [
+        "postgres",
+        "kafka",
+        "performance"
+      ],
+      "excerpt": "Profiling and optimizing the Kafgres Postgres extension to achieve 700 MB/s write throughput and 600k evt/s on a single machine.",
+      "image": "../kafgres-arch.svg",
+      "sources": [
+        "https://rynr.dev/blog/700mbskafgres/"
+      ],
+      "readTime": "2 min",
+      "categories": [
         "engineering"
       ],
       "shortId": 399
