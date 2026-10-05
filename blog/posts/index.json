@@ -5,8 +5,8 @@
     "2026-10-05-gemini-4-argon-vs-gpt-6-astra-vs-claude-for-founde.md",
     "2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p.md",
     "2026-10-04-networkx-adds-pyarrow-backend-with-65-memory-savin.md",
-    "2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for.md",
     "2026-10-04-headstart-speeds-rust-builds-by-up-to-54-using-ear.md",
+    "2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for.md",
     "2026-10-03-macos-full-disk-access-tightening-what-founders-us.md",
     "2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo.md",
     "2026-10-02-openc6-bios-adds-pcstyle-microkernel-to-esp32c6.md",
@@ -500,6 +500,29 @@
       "shortId": 425
     },
     {
+      "filename": "2026-10-04-headstart-speeds-rust-builds-by-up-to-54-using-ear.md",
+      "slug": "2026-10-04-headstart-speeds-rust-builds-by-up-to-54-using-ear",
+      "url": "/blog/2026-10-04-headstart-speeds-rust-builds-by-up-to-54-using-ear/",
+      "title": "Headstart speeds Rust builds by up to 54% using early metadata",
+      "date": "2026-10-05",
+      "published_at": "2026-10-04T14:32:13.922286+00:00",
+      "tags": [
+        "rust",
+        "build performance",
+        "cargo"
+      ],
+      "excerpt": "Start dependent crates before their dependencies finish type-checking - PowderworksCode/headstart",
+      "image": "https://bitroot.org/blog/media/2026-10-04-headstart-speeds-rust-builds-by-up-to-54-using-ear.png",
+      "sources": [
+        "https://github.com/PowderworksCode/headstart"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
+      "shortId": 424
+    },
+    {
       "filename": "2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for.md",
       "slug": "2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for",
       "url": "/blog/2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for/",
@@ -515,29 +538,6 @@
       "image": "https://bitroot.org/blog/media/2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for.png",
       "sources": [
         "https://github.com/nicobrenner/jeffy"
-      ],
-      "readTime": "2 min",
-      "categories": [
-        "engineering"
-      ],
-      "shortId": 424
-    },
-    {
-      "filename": "2026-10-04-headstart-speeds-rust-builds-by-up-to-54-using-ear.md",
-      "slug": "2026-10-04-headstart-speeds-rust-builds-by-up-to-54-using-ear",
-      "url": "/blog/2026-10-04-headstart-speeds-rust-builds-by-up-to-54-using-ear/",
-      "title": "Headstart speeds Rust builds by up to 54% using early metadata",
-      "date": "2026-10-04",
-      "published_at": "2026-10-04T14:32:13.922286+00:00",
-      "tags": [
-        "rust",
-        "build performance",
-        "cargo"
-      ],
-      "excerpt": "Start dependent crates before their dependencies finish type-checking - PowderworksCode/headstart",
-      "image": "https://bitroot.org/blog/media/2026-10-04-headstart-speeds-rust-builds-by-up-to-54-using-ear.png",
-      "sources": [
-        "https://github.com/PowderworksCode/headstart"
       ],
       "readTime": "2 min",
       "categories": [

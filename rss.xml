@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 05 Oct 2026 11:21:54 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 11:23:12 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gemini 4 Argon vs GPT-6 Astra vs Claude for Founders</title>
@@ -49,20 +49,6 @@
       <source url="https://github.com/networkx/networkx/discussions/8933">Original Source</source>
     </item>
     <item>
-      <title>Jeffy launches CPU‑only pretrained classifiers for local use</title>
-      <link>https://bitroot.org/blog/2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for/</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for/</guid>
-      <description>Pretrained text classifiers you can run and retrain on CPU - nicobrenner/jeffy
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/nicobrenner/jeffy"&gt;https://github.com/nicobrenner/jeffy&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Sun, 04 Oct 2026 14:31:51 +0000</pubDate>
-      <category>local ml</category>
-      <category>pretrained classifiers</category>
-      <category>cpu inference</category>
-      <enclosure url="https://bitroot.org/blog/media/2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for.png" type="image/png" length="0" />
-      <source url="https://github.com/nicobrenner/jeffy">Original Source</source>
-    </item>
-    <item>
       <title>Headstart speeds Rust builds by up to 54% using early metadata</title>
       <link>https://bitroot.org/blog/2026-10-04-headstart-speeds-rust-builds-by-up-to-54-using-ear/</link>
       <guid isPermaLink="true">https://bitroot.org/blog/2026-10-04-headstart-speeds-rust-builds-by-up-to-54-using-ear/</guid>
@@ -75,6 +61,20 @@
       <category>cargo</category>
       <enclosure url="https://bitroot.org/blog/media/2026-10-04-headstart-speeds-rust-builds-by-up-to-54-using-ear.png" type="image/png" length="0" />
       <source url="https://github.com/PowderworksCode/headstart">Original Source</source>
+    </item>
+    <item>
+      <title>Jeffy launches CPU‑only pretrained classifiers for local use</title>
+      <link>https://bitroot.org/blog/2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for/</guid>
+      <description>Pretrained text classifiers you can run and retrain on CPU - nicobrenner/jeffy
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/nicobrenner/jeffy"&gt;https://github.com/nicobrenner/jeffy&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sun, 04 Oct 2026 14:31:51 +0000</pubDate>
+      <category>local ml</category>
+      <category>pretrained classifiers</category>
+      <category>cpu inference</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for.png" type="image/png" length="0" />
+      <source url="https://github.com/nicobrenner/jeffy">Original Source</source>
     </item>
     <item>
       <title>macOS Full Disk Access Tightening: What Founders Using AI Agents Need to Know</title>
