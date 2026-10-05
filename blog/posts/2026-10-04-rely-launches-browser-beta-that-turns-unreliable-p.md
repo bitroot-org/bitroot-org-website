@@ -1,7 +1,7 @@
 ---
 date: '2026-10-05'
 excerpt: 'Rely is an automation puzzle game about building reliable systems from unreliable components.'
-image: 'null'
+image: https://i.redd.it/made-a-cozy-factory-automation-game-about-letters-v0-6zfyfmuppxeh1.png?width=2880&format=png&auto=webp&s=243168a828879dd5b84b1ffd23247059104631a0
 published_at: '2026-10-04T14:32:57.810621+00:00'
 sources:
 - https://think-twice.me/public/rely/
