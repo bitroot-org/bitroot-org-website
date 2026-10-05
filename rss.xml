@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 05 Oct 2026 03:41:02 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 03:41:54 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rely launches browser beta that turns unreliable parts into a reliability puzzle</title>
@@ -20,6 +20,20 @@
       <category>puzzle</category>
       <enclosure url="https://bitroot.org/blog/null" type="image/jpeg" length="0" />
       <source url="https://think-twice.me/public/rely/">Original Source</source>
+    </item>
+    <item>
+      <title>NetworkX adds pyarrow backend with 6.5× memory savings</title>
+      <link>https://bitroot.org/blog/2026-10-04-networkx-adds-pyarrow-backend-with-65-memory-savin/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-04-networkx-adds-pyarrow-backend-with-65-memory-savin/</guid>
+      <description>https://github.com/Ladybug-Memory/networkx/tree/pyarrow This branch contains a new backend that consumes 6.5x less memory vs the default backend. Trade off: faster for immutable graphs, but slower ...
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/networkx/networkx/discussions/8933"&gt;https://github.com/networkx/networkx/discussions/8933&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sun, 04 Oct 2026 14:31:46 +0000</pubDate>
+      <category>networkx</category>
+      <category>pyarrow</category>
+      <category>memory optimization</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-04-networkx-adds-pyarrow-backend-with-65-memory-savin.png" type="image/png" length="0" />
+      <source url="https://github.com/networkx/networkx/discussions/8933">Original Source</source>
     </item>
     <item>
       <title>macOS Full Disk Access Tightening: What Founders Using AI Agents Need to Know</title>

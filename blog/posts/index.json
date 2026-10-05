@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 422,
+  "count": 423,
   "posts": [
     "2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p.md",
+    "2026-10-04-networkx-adds-pyarrow-backend-with-65-memory-savin.md",
     "2026-10-03-macos-full-disk-access-tightening-what-founders-us.md",
     "2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo.md",
     "2026-10-02-openc6-bios-adds-pcstyle-microkernel-to-esp32c6.md",
@@ -447,6 +448,27 @@
       "categories": [
         "engineering"
       ],
+      "shortId": 423
+    },
+    {
+      "filename": "2026-10-04-networkx-adds-pyarrow-backend-with-65-memory-savin.md",
+      "slug": "2026-10-04-networkx-adds-pyarrow-backend-with-65-memory-savin",
+      "url": "/blog/2026-10-04-networkx-adds-pyarrow-backend-with-65-memory-savin/",
+      "title": "NetworkX adds pyarrow backend with 6.5\u00d7 memory savings",
+      "date": "2026-10-05",
+      "published_at": "2026-10-04T14:31:46.636791+00:00",
+      "tags": [
+        "networkx",
+        "pyarrow",
+        "memory optimization"
+      ],
+      "excerpt": "https://github.com/Ladybug-Memory/networkx/tree/pyarrow This branch contains a new backend that consumes 6.5x less memory vs the default backend. Trade off: faster for immutable graphs, but slower ...",
+      "image": "https://bitroot.org/blog/media/2026-10-04-networkx-adds-pyarrow-backend-with-65-memory-savin.png",
+      "sources": [
+        "https://github.com/networkx/networkx/discussions/8933"
+      ],
+      "readTime": "2 min",
+      "categories": [],
       "shortId": 422
     },
     {
