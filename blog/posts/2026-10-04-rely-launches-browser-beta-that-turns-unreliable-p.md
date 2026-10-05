@@ -1,16 +1,15 @@
 ---
-date: '2026-10-04'
-excerpt: Rely is an automation puzzle game about building reliable systems from unreliable
-  components.
-image: null
+date: '2026-10-05'
+excerpt: 'Rely is an automation puzzle game about building reliable systems from unreliable components.'
+image: 'null'
 published_at: '2026-10-04T14:32:57.810621+00:00'
 sources:
 - https://think-twice.me/public/rely/
 tags:
-- browser game
-- reliability engineering
-- puzzle
-title: Rely launches browser beta that turns unreliable parts into a reliability puzzle
+- 'browser game'
+- 'reliability engineering'
+- 'puzzle'
+title: 'Rely launches browser beta that turns unreliable parts into a reliability puzzle'
 ---
 
 Rely, an indie automation puzzle, opened its browser beta this week. The web version runs in any modern browser, supports keyboard & mouse, and includes a guided tutorial plus three beta scenarios that progressively introduce unreliable components like Sorters and Marker‑Gates.
