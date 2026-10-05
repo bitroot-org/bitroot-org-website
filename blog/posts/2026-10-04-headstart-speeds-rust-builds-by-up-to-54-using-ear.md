@@ -1,15 +1,15 @@
 ---
-date: '2026-10-04'
-excerpt: Start dependent crates before their dependencies finish type-checking - PowderworksCode/headstart
+date: '2026-10-05'
+excerpt: 'Start dependent crates before their dependencies finish type-checking - PowderworksCode/headstart'
 image: https://bitroot.org/blog/media/2026-10-04-headstart-speeds-rust-builds-by-up-to-54-using-ear.png
 published_at: '2026-10-04T14:32:13.922286+00:00'
 sources:
 - https://github.com/PowderworksCode/headstart
 tags:
-- rust
-- build performance
-- cargo
-title: Headstart speeds Rust builds by up to 54% using early metadata
+- 'rust'
+- 'build performance'
+- 'cargo'
+title: 'Headstart speeds Rust builds by up to 54% using early metadata'
 ---
 
 The **headstart** patch set lets Cargo start compiling dependent crates as soon as their interfaces are type‑checked, cutting `cargo check` times by up to **54%** and `cargo build` times by up to **42%** on a 16‑core machine — all while preserving the same error messages and exit codes as the standard toolchain.
