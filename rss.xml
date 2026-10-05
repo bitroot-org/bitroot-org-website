@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 05 Oct 2026 10:54:16 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 11:21:54 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gemini 4 Argon vs GPT-6 Astra vs Claude for Founders</title>
@@ -61,6 +61,20 @@
       <category>cpu inference</category>
       <enclosure url="https://bitroot.org/blog/media/2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for.png" type="image/png" length="0" />
       <source url="https://github.com/nicobrenner/jeffy">Original Source</source>
+    </item>
+    <item>
+      <title>Headstart speeds Rust builds by up to 54% using early metadata</title>
+      <link>https://bitroot.org/blog/2026-10-04-headstart-speeds-rust-builds-by-up-to-54-using-ear/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-04-headstart-speeds-rust-builds-by-up-to-54-using-ear/</guid>
+      <description>Start dependent crates before their dependencies finish type-checking - PowderworksCode/headstart
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/PowderworksCode/headstart"&gt;https://github.com/PowderworksCode/headstart&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sun, 04 Oct 2026 14:32:13 +0000</pubDate>
+      <category>rust</category>
+      <category>build performance</category>
+      <category>cargo</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-04-headstart-speeds-rust-builds-by-up-to-54-using-ear.png" type="image/png" length="0" />
+      <source url="https://github.com/PowderworksCode/headstart">Original Source</source>
     </item>
     <item>
       <title>macOS Full Disk Access Tightening: What Founders Using AI Agents Need to Know</title>
