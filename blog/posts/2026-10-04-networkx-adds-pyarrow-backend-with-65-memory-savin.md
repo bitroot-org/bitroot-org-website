@@ -1,17 +1,15 @@
 ---
-date: '2026-10-04'
-excerpt: 'https://github.com/Ladybug-Memory/networkx/tree/pyarrow This branch contains
-  a new backend that consumes 6.5x less memory vs the default backend. Trade off:
-  faster for immutable graphs, but slower ...'
+date: '2026-10-05'
+excerpt: 'https://github.com/Ladybug-Memory/networkx/tree/pyarrow This branch contains a new backend that consumes 6.5x less memory vs the default backend. Trade off: faster for immutable graphs, but slower ...'
 image: https://bitroot.org/blog/media/2026-10-04-networkx-adds-pyarrow-backend-with-65-memory-savin.png
 published_at: '2026-10-04T14:31:46.636791+00:00'
 sources:
 - https://github.com/networkx/networkx/discussions/8933
 tags:
-- networkx
-- pyarrow
-- memory optimization
-title: NetworkX adds pyarrow backend with 6.5× memory savings
+- 'networkx'
+- 'pyarrow'
+- 'memory optimization'
+title: 'NetworkX adds pyarrow backend with 6.5× memory savings'
 ---
 
 NetworkX now has an experimental pyarrow backend that claims to use **6.5× less memory** than the default representation. The branch is available at the [pyarrow backend branch](https://github.com/Ladybug-Memory/networkx/tree/pyarrow) and was announced in a recent [discussion thread](https://github.com/networkx/networkx/discussions/8933).
