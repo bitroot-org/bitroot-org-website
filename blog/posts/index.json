@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 428,
+  "count": 429,
   "posts": [
+    "2026-10-05-tpmlsm-adds-ebpf-guard-to-restrict-tpm-access-on-l.md",
     "2026-10-05-gemini-4-argon-vs-gpt-6-astra-vs-claude-for-founde.md",
     "2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p.md",
     "2026-10-04-networkx-adds-pyarrow-backend-with-65-memory-savin.md",
@@ -432,6 +433,29 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-10-05-tpmlsm-adds-ebpf-guard-to-restrict-tpm-access-on-l.md",
+      "slug": "2026-10-05-tpmlsm-adds-ebpf-guard-to-restrict-tpm-access-on-l",
+      "url": "/blog/2026-10-05-tpmlsm-adds-ebpf-guard-to-restrict-tpm-access-on-l/",
+      "title": "tpmlsm adds eBPF guard to restrict TPM access on Linux",
+      "date": "2026-10-05",
+      "published_at": "2026-10-05T17:39:08.941673+00:00",
+      "tags": [
+        "eBPF",
+        "TPM",
+        "Linux security"
+      ],
+      "excerpt": "eBPF-based Linux kernel guard that lets only allowlisted binaries use the TPM. - bschaatsbergen/tpmlsm",
+      "image": "https://bitroot.org/blog/media/2026-10-05-tpmlsm-adds-ebpf-guard-to-restrict-tpm-access-on-l.png",
+      "sources": [
+        "https://github.com/bschaatsbergen/tpmlsm"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
+      "shortId": 429
+    },
     {
       "filename": "2026-10-05-gemini-4-argon-vs-gpt-6-astra-vs-claude-for-founde.md",
       "slug": "2026-10-05-gemini-4-argon-vs-gpt-6-astra-vs-claude-for-founde",

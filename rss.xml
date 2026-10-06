@@ -5,8 +5,22 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Oct 2026 04:03:24 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 04:04:06 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tpmlsm adds eBPF guard to restrict TPM access on Linux</title>
+      <link>https://bitroot.org/blog/2026-10-05-tpmlsm-adds-ebpf-guard-to-restrict-tpm-access-on-l/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-05-tpmlsm-adds-ebpf-guard-to-restrict-tpm-access-on-l/</guid>
+      <description>eBPF-based Linux kernel guard that lets only allowlisted binaries use the TPM. - bschaatsbergen/tpmlsm
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/bschaatsbergen/tpmlsm"&gt;https://github.com/bschaatsbergen/tpmlsm&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 05 Oct 2026 17:39:08 +0000</pubDate>
+      <category>eBPF</category>
+      <category>TPM</category>
+      <category>Linux security</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-05-tpmlsm-adds-ebpf-guard-to-restrict-tpm-access-on-l.png" type="image/png" length="0" />
+      <source url="https://github.com/bschaatsbergen/tpmlsm">Original Source</source>
+    </item>
     <item>
       <title>Gemini 4 Argon vs GPT-6 Astra vs Claude for Founders</title>
       <link>https://bitroot.org/blog/2026-10-05-gemini-4-argon-vs-gpt-6-astra-vs-claude-for-founde/</link>
