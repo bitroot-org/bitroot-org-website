@@ -26,12 +26,16 @@ export const metadata = {
   },
 };
 
+// Newest first. Data order is not chronological, so sort by updatedAt here
+// (ISO dates sort correctly as strings).
+const sortedGuides = [...guides].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
+
 const guidesItemListJsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   name: "Guides – Tactical Walkthroughs for Founders",
   url: `${siteUrl}/guides/`,
-  itemListElement: guides.map((guide, i) => ({
+  itemListElement: sortedGuides.map((guide, i) => ({
     "@type": "ListItem",
     position: i + 1,
     name: guide.title,
@@ -96,7 +100,7 @@ export default function GuidesPage() {
       <section className="py-14 md:py-16">
         <Container>
           <div className="rounded-2xl border border-line bg-paper overflow-hidden">
-            {guides.map((guide, i) => (
+            {sortedGuides.map((guide, i) => (
               <TrackedNextLink
                 label={guide.title}
                 location="guides_listing"
