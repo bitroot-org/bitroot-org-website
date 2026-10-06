@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 05 Oct 2026 11:23:12 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 04:03:24 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gemini 4 Argon vs GPT-6 Astra vs Claude for Founders</title>
@@ -282,6 +282,20 @@
       <category>hidden charges</category>
       <category>founder economics</category>
       <enclosure url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3U3LHM7J3CWBXAoxc8uPijkFj7oBWW2mr2GWlZtYT2Q&amp;s=10" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>Geneva CLI adds JSON‑driven video editing with HTML/CSS rendering</title>
+      <link>https://bitroot.org/blog/2026-09-29-geneva-cli-adds-jsondriven-video-editing-with-html/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-29-geneva-cli-adds-jsondriven-video-editing-with-html/</guid>
+      <description>Video edits as JSON, overlays as HTML+CSS, rendered without a browser. - geneva-render/geneva
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/geneva-render/geneva"&gt;https://github.com/geneva-render/geneva&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 29 Sep 2026 15:16:40 +0000</pubDate>
+      <category>video editing</category>
+      <category>cli</category>
+      <category>open source</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-09-29-geneva-cli-adds-jsondriven-video-editing-with-html.png" type="image/png" length="0" />
+      <source url="https://github.com/geneva-render/geneva">Original Source</source>
     </item>
     <item>
       <title>Wallaby launches .NET CDC engine for Postgres streaming</title>

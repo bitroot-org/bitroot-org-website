@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "count": 427,
+  "count": 428,
   "posts": [
     "2026-10-05-gemini-4-argon-vs-gpt-6-astra-vs-claude-for-founde.md",
     "2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p.md",
@@ -22,6 +22,7 @@
     "2026-09-29-use-any-c-library-in-godot-via-conan-and-cmake.md",
     "2026-09-29-pacbench-scores-claude-opus-55-at-99100-in-oneshot.md",
     "2026-09-29-openai-o3s-hidden-cost-why-your-reasoning-token-bi.md",
+    "2026-09-29-geneva-cli-adds-jsondriven-video-editing-with-html.md",
     "2026-09-28-wallaby-launches-net-cdc-engine-for-postgres-strea.md",
     "2026-09-28-sarvam-ai-now-hosts-us-models-why-this-matters-for.md",
     "2026-09-28-jev-ai-speeds-agent-decisions-193x-the-lightweight.md",
@@ -453,7 +454,7 @@
         "models",
         "founders"
       ],
-      "shortId": 427
+      "shortId": 428
     },
     {
       "filename": "2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p.md",
@@ -476,7 +477,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 426
+      "shortId": 427
     },
     {
       "filename": "2026-10-04-networkx-adds-pyarrow-backend-with-65-memory-savin.md",
@@ -497,7 +498,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 425
+      "shortId": 426
     },
     {
       "filename": "2026-10-04-headstart-speeds-rust-builds-by-up-to-54-using-ear.md",
@@ -520,7 +521,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 424
+      "shortId": 425
     },
     {
       "filename": "2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for.md",
@@ -543,7 +544,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 423
+      "shortId": 424
     },
     {
       "filename": "2026-10-03-macos-full-disk-access-tightening-what-founders-us.md",
@@ -568,7 +569,7 @@
         "founders",
         "engineering"
       ],
-      "shortId": 422
+      "shortId": 423
     },
     {
       "filename": "2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo.md",
@@ -589,7 +590,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 421
+      "shortId": 422
     },
     {
       "filename": "2026-10-02-openc6-bios-adds-pcstyle-microkernel-to-esp32c6.md",
@@ -612,7 +613,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 420
+      "shortId": 421
     },
     {
       "filename": "2026-10-02-janus-adds-a-vulkanpowered-local-llm-server-with-o.md",
@@ -635,7 +636,7 @@
       "categories": [
         "models"
       ],
-      "shortId": 419
+      "shortId": 420
     },
     {
       "filename": "2026-10-02-firezone-skips-scim-builds-its-own-pullbased-direc.md",
@@ -656,7 +657,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 418
+      "shortId": 419
     },
     {
       "filename": "2026-10-01-yantra-adds-a-native-c-lalr1-parser-generator.md",
@@ -679,7 +680,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 417
+      "shortId": 418
     },
     {
       "filename": "2026-10-01-strata-launches-aisafe-selfservice-analytics-platf.md",
@@ -702,7 +703,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 416
+      "shortId": 417
     },
     {
       "filename": "2026-10-01-parrot-0252-brings-ondevice-ai-assistance-to-mac-m.md",
@@ -723,7 +724,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 415
+      "shortId": 416
     },
     {
       "filename": "2026-10-01-argon-vs-astra-vs-claude-which-model-founders-shou.md",
@@ -748,7 +749,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 414
+      "shortId": 415
     },
     {
       "filename": "2026-09-30-turbogpt-lets-you-train-a-tiny-gpt-in-under-a-minu.md",
@@ -772,7 +773,7 @@
         "models",
         "engineering"
       ],
-      "shortId": 413
+      "shortId": 414
     },
     {
       "filename": "2026-09-25-new-mlir-tutorial-walks-you-through-building-a-kal.md",
@@ -795,7 +796,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 412
+      "shortId": 413
     },
     {
       "filename": "2026-09-30-openai-dots-launches-free-autonomous-agents-for-pr.md",
@@ -820,7 +821,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 411
+      "shortId": 412
     },
     {
       "filename": "2026-09-29-use-any-c-library-in-godot-via-conan-and-cmake.md",
@@ -842,7 +843,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 410
+      "shortId": 411
     },
     {
       "filename": "2026-09-29-pacbench-scores-claude-opus-55-at-99100-in-oneshot.md",
@@ -865,7 +866,7 @@
       "categories": [
         "models"
       ],
-      "shortId": 409
+      "shortId": 410
     },
     {
       "filename": "2026-09-29-openai-o3s-hidden-cost-why-your-reasoning-token-bi.md",
@@ -889,6 +890,31 @@
         "models",
         "agents",
         "founders"
+      ],
+      "shortId": 409
+    },
+    {
+      "filename": "2026-09-29-geneva-cli-adds-jsondriven-video-editing-with-html.md",
+      "slug": "2026-09-29-geneva-cli-adds-jsondriven-video-editing-with-html",
+      "url": "/blog/2026-09-29-geneva-cli-adds-jsondriven-video-editing-with-html/",
+      "title": "Geneva CLI adds JSON\u2011driven video editing with HTML/CSS rendering",
+      "date": "2026-09-29",
+      "published_at": "2026-09-29T15:16:40.507159+00:00",
+      "tags": [
+        "video editing",
+        "cli",
+        "open source"
+      ],
+      "excerpt": "Video edits as JSON, overlays as HTML+CSS, rendered without a browser. - geneva-render/geneva",
+      "image": "https://bitroot.org/blog/media/2026-09-29-geneva-cli-adds-jsondriven-video-editing-with-html.png",
+      "sources": [
+        "https://github.com/geneva-render/geneva"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "agents",
+        "opensource",
+        "design"
       ],
       "shortId": 408
     },
