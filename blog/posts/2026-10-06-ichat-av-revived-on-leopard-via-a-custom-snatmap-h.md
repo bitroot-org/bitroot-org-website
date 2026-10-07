@@ -1,15 +1,15 @@
 ---
-date: '2026-10-06'
-excerpt: Bringing back mid-2000s Video conferencing in Apple iChat
-image: /images/ichatav_screen_marketing.png
+date: '2026-10-07'
+excerpt: 'Bringing back mid-2000s Video conferencing in Apple iChat'
+image: '/images/ichatav_screen_marketing.png'
 published_at: '2026-10-06T15:36:40.991289+00:00'
 sources:
 - https://blog.pipetogrep.org/2026/09/11/resurrecting-ichat-audio-and-video-conferencing/
 tags:
-- retro
-- networking
-- audio‑video
-title: iChat AV revived on Leopard via a custom SNATMAP host
+- 'retro'
+- 'networking'
+- 'audio‑video'
+title: 'iChat AV revived on Leopard via a custom SNATMAP host'
 ---
 
 Add a single line to **/etc/hosts** on an OS X Leopard or Snow Leopard machine – `157.230.2.213 configuration.apple.com` – and iChat AV can place audio and video calls again. The fix works because iChat expects to fetch a *snatmap* address from `http://configuration.apple.com/configurations/macosx/ichat/1/snatmap.txt` and then contacts a UDP server on port 5678 to discover its public IP for NAT traversal.
