@@ -5,8 +5,21 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 07 Oct 2026 06:25:02 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 12:46:03 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mistral Large 4 (Le Chonk): Europe's Open-Weight Alternative for Founders</title>
+      <link>https://bitroot.org/blog/2026-10-07-mistral-large-4-le-chonk-europes-open-weight-alter/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-07-mistral-large-4-le-chonk-europes-open-weight-alter/</guid>
+      <description>Mistral AI released Le Chonk (Mistral Large 4), a 1.05T parameter open-weight model trained in Europe. It excels at cybersecurity and legal tasks but trails closed models on reasoning and coding. Here's whether it's worth the integration.</description>
+      <pubDate>Wed, 07 Oct 2026 12:45:02 +0000</pubDate>
+      <category>open-weight models</category>
+      <category>Mistral AI</category>
+      <category>frontier models</category>
+      <category>agentic AI</category>
+      <category>founder decision guide</category>
+      <enclosure url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAaXoqHotSdwkE0a2gLzbI4KhPzR5cf_WzJ8U_uDBcJg&amp;s=10" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>AI Agents Getting Blocked: UCP vs Personal Agent Protocol for Founders</title>
       <link>https://bitroot.org/blog/2026-10-07-ai-agents-getting-blocked-ucp-vs-personal-agent-pr/</link>
