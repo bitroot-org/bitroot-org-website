@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 431,
+  "count": 432,
   "posts": [
+    "2026-10-07-ai-agents-getting-blocked-ucp-vs-personal-agent-pr.md",
     "2026-10-06-minigraf-203-adds-bi-temporal-graph-storage-for-ru.md",
     "2026-10-06-ichat-av-revived-on-leopard-via-a-custom-snatmap-h.md",
     "2026-10-05-tpmlsm-adds-ebpf-guard-to-restrict-tpm-access-on-l.md",
@@ -435,6 +436,43 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-10-07-ai-agents-getting-blocked-ucp-vs-personal-agent-pr.md",
+      "slug": "2026-10-07-ai-agents-getting-blocked-ucp-vs-personal-agent-pr",
+      "url": "/blog/2026-10-07-ai-agents-getting-blocked-ucp-vs-personal-agent-pr/",
+      "title": "AI Agents Getting Blocked: UCP vs Personal Agent Protocol for Founders",
+      "date": "2026-10-07",
+      "published_at": "2026-10-07T06:24:15.517Z",
+      "tags": [
+        "AI agents",
+        "agentic commerce",
+        "e-commerce",
+        "protocol standards",
+        "founder growth"
+      ],
+      "excerpt": "Amazon blocks Meta's Muse, airlines refuse agent bookings, and websites use anti-bot measures that accidentally lock out legitimate AI assistants. Here's why\u2014and which protocol founders should integrate with.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/ai-agent-bots-GettyImages-2243729307.jpg?resize=1200,800",
+      "sources": [
+        "- [TechCrunch: The next hurdle for AI agents: getting websites to let them in](https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in/)",
+        "- [PYMNTS: Meta and Sierra Build Standard for How Personal Agents Interact with Businesses](https://www.pymnts.com/news/artificial-intelligence/2026/meta-and-sierra-build-standard-for-how-personal-agents-interact-with-businesses/)",
+        "- [Universal Commerce Protocol (UCP): Complete 2026 Guide](https://almcorp.com/blog/universal-commerce-protocol-agentic-commerce-guide-2026/)",
+        "- [AI Agents Face Website Blockades as Retailers and Airlines Restrict Access](https://www.kucoin.com/news/flash/ai-agents-face-website-blockades-as-retailers-and-airlines-halt-access)",
+        "- [Meta Muse blocked by Amazon: the AI shopping agent fight",
+        "explained](https://dev.to/axrisi/meta-muse-blocked-by-amazon-the-ai-shopping-agent-fight-explained-3agp)",
+        "- [Amazon",
+        "Meta",
+        "Microsoft",
+        "Salesforce and Stripe join UCP Tech Council](https://ppc.land/amazon-meta-microsoft-salesforce-and-stripe-join-ucp-tech-council/)",
+        "- [Developer Guide to Agentic Commerce](https://www.descope.com/blog/post/developer-guide-agentic-commerce)",
+        "- [Meta Muse AI Agent: Inside Permissions"
+      ],
+      "readTime": "9 min",
+      "categories": [
+        "agents",
+        "founders"
+      ],
+      "shortId": 432
+    },
     {
       "filename": "2026-10-06-minigraf-203-adds-bi-temporal-graph-storage-for-ru.md",
       "slug": "2026-10-06-minigraf-203-adds-bi-temporal-graph-storage-for-ru",

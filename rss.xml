@@ -5,8 +5,24 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 07 Oct 2026 03:35:11 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 06:25:02 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agents Getting Blocked: UCP vs Personal Agent Protocol for Founders</title>
+      <link>https://bitroot.org/blog/2026-10-07-ai-agents-getting-blocked-ucp-vs-personal-agent-pr/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-07-ai-agents-getting-blocked-ucp-vs-personal-agent-pr/</guid>
+      <description>Amazon blocks Meta's Muse, airlines refuse agent bookings, and websites use anti-bot measures that accidentally lock out legitimate AI assistants. Here's why—and which protocol founders should integrate with.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="- [TechCrunch: The next hurdle for AI agents: getting websites to let them in](https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in/)"&gt;- [TechCrunch: The next hurdle for AI agents: getting websites to let them in](https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in/)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="- [PYMNTS: Meta and Sierra Build Standard for How Personal Agents Interact with Businesses](https://www.pymnts.com/news/artificial-intelligence/2026/meta-and-sierra-build-standard-for-how-personal-agents-interact-with-businesses/)"&gt;- [PYMNTS: Meta and Sierra Build Standard for How Personal Agents Interact with Businesses](https://www.pymnts.com/news/artificial-intelligence/2026/meta-and-sierra-build-standard-for-how-personal-agents-interact-with-businesses/)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="- [Universal Commerce Protocol (UCP): Complete 2026 Guide](https://almcorp.com/blog/universal-commerce-protocol-agentic-commerce-guide-2026/)"&gt;- [Universal Commerce Protocol (UCP): Complete 2026 Guide](https://almcorp.com/blog/universal-commerce-protocol-agentic-commerce-guide-2026/)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="- [AI Agents Face Website Blockades as Retailers and Airlines Restrict Access](https://www.kucoin.com/news/flash/ai-agents-face-website-blockades-as-retailers-and-airlines-halt-access)"&gt;- [AI Agents Face Website Blockades as Retailers and Airlines Restrict Access](https://www.kucoin.com/news/flash/ai-agents-face-website-blockades-as-retailers-and-airlines-halt-access)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="- [Meta Muse blocked by Amazon: the AI shopping agent fight"&gt;- [Meta Muse blocked by Amazon: the AI shopping agent fight&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="explained](https://dev.to/axrisi/meta-muse-blocked-by-amazon-the-ai-shopping-agent-fight-explained-3agp)"&gt;explained](https://dev.to/axrisi/meta-muse-blocked-by-amazon-the-ai-shopping-agent-fight-explained-3agp)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="- [Amazon"&gt;- [Amazon&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="Meta"&gt;Meta&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="Microsoft"&gt;Microsoft&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="Salesforce and Stripe join UCP Tech Council](https://ppc.land/amazon-meta-microsoft-salesforce-and-stripe-join-ucp-tech-council/)"&gt;Salesforce and Stripe join UCP Tech Council](https://ppc.land/amazon-meta-microsoft-salesforce-and-stripe-join-ucp-tech-council/)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="- [Developer Guide to Agentic Commerce](https://www.descope.com/blog/post/developer-guide-agentic-commerce)"&gt;- [Developer Guide to Agentic Commerce](https://www.descope.com/blog/post/developer-guide-agentic-commerce)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="- [Meta Muse AI Agent: Inside Permissions"&gt;- [Meta Muse AI Agent: Inside Permissions&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 07 Oct 2026 06:24:15 +0000</pubDate>
+      <category>AI agents</category>
+      <category>agentic commerce</category>
+      <category>e-commerce</category>
+      <category>protocol standards</category>
+      <category>founder growth</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/10/ai-agent-bots-GettyImages-2243729307.jpg?resize=1200,800" type="image/jpeg" length="0" />
+      <source url="- [TechCrunch: The next hurdle for AI agents: getting websites to let them in](https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in/)">Original Source</source>
+    </item>
     <item>
       <title>Minigraf 2.0.3 adds bi-temporal graph storage for Rust and WASM</title>
       <link>https://bitroot.org/blog/2026-10-06-minigraf-203-adds-bi-temporal-graph-storage-for-ru/</link>
