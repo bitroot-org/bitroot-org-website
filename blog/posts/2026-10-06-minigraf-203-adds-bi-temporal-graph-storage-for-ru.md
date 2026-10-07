@@ -1,15 +1,15 @@
 ---
-date: '2026-10-06'
-excerpt: Embedded graph memory for AI agents, mobile apps, and the browser. - project-minigraf/minigraf
+date: '2026-10-07'
+excerpt: 'Embedded graph memory for AI agents, mobile apps, and the browser. - project-minigraf/minigraf'
 image: https://bitroot.org/blog/media/2026-10-06-minigraf-203-adds-bi-temporal-graph-storage-for-ru.png
 published_at: '2026-10-06T15:37:27.799199+00:00'
 sources:
 - https://github.com/project-minigraf/minigraf
 tags:
-- embedded database
-- graph
-- rust
-title: Minigraf 2.0.3 adds bi-temporal graph storage for Rust and WASM
+- 'embedded database'
+- 'graph'
+- 'rust'
+title: 'Minigraf 2.0.3 adds bi-temporal graph storage for Rust and WASM'
 ---
 
 Minigraf 2.0.3 was released on crates.io, bringing a tiny, self‑contained graph database that supports Datalog queries and bi‑temporal time travel. The core library can be added with `cargo add minigraf` and opens a file via `Minigraf::open("data.graph")` with zero configuration.
