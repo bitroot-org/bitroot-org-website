@@ -244,6 +244,13 @@ pre.shiki .line {
   line-height: 1.6;
 }
 .guide-md pre code {
+  /* .guide-md code (inline-code chip) sets a dark color meant for a light
+     background; that also matches <code> inside a Shiki <pre>, which is dark.
+     Un-tokenized lines (no per-span color, e.g. an unlabeled fence) then fall
+     back to that dark color on a near-black background — unreadable. Inherit
+     the pre's own (light) color instead; colored tokens are unaffected since
+     they carry their own inline color. */
+  color: inherit;
   background: none;
   border: 0;
   padding: 0;
