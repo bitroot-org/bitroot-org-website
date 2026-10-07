@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 430,
+  "count": 431,
   "posts": [
     "2026-10-06-minigraf-203-adds-bi-temporal-graph-storage-for-ru.md",
+    "2026-10-06-ichat-av-revived-on-leopard-via-a-custom-snatmap-h.md",
     "2026-10-05-tpmlsm-adds-ebpf-guard-to-restrict-tpm-access-on-l.md",
     "2026-10-05-gemini-4-argon-vs-gpt-6-astra-vs-claude-for-founde.md",
     "2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p.md",
@@ -439,7 +440,7 @@
       "slug": "2026-10-06-minigraf-203-adds-bi-temporal-graph-storage-for-ru",
       "url": "/blog/2026-10-06-minigraf-203-adds-bi-temporal-graph-storage-for-ru/",
       "title": "Minigraf 2.0.3 adds bi-temporal graph storage for Rust and WASM",
-      "date": "2026-10-06",
+      "date": "2026-10-07",
       "published_at": "2026-10-06T15:37:27.799199+00:00",
       "tags": [
         "embedded database",
@@ -454,6 +455,29 @@
       "readTime": "2 min",
       "categories": [
         "engineering"
+      ],
+      "shortId": 431
+    },
+    {
+      "filename": "2026-10-06-ichat-av-revived-on-leopard-via-a-custom-snatmap-h.md",
+      "slug": "2026-10-06-ichat-av-revived-on-leopard-via-a-custom-snatmap-h",
+      "url": "/blog/2026-10-06-ichat-av-revived-on-leopard-via-a-custom-snatmap-h/",
+      "title": "iChat AV revived on Leopard via a custom SNATMAP host",
+      "date": "2026-10-07",
+      "published_at": "2026-10-06T15:36:40.991289+00:00",
+      "tags": [
+        "retro",
+        "networking",
+        "audio\u2011video"
+      ],
+      "excerpt": "Bringing back mid-2000s Video conferencing in Apple iChat",
+      "image": "/images/ichatav_screen_marketing.png",
+      "sources": [
+        "https://blog.pipetogrep.org/2026/09/11/resurrecting-ichat-audio-and-video-conferencing/"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "design"
       ],
       "shortId": 430
     },
