@@ -5,8 +5,22 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Oct 2026 04:04:06 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 03:34:18 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Minigraf 2.0.3 adds bi-temporal graph storage for Rust and WASM</title>
+      <link>https://bitroot.org/blog/2026-10-06-minigraf-203-adds-bi-temporal-graph-storage-for-ru/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-06-minigraf-203-adds-bi-temporal-graph-storage-for-ru/</guid>
+      <description>Embedded graph memory for AI agents, mobile apps, and the browser. - project-minigraf/minigraf
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/project-minigraf/minigraf"&gt;https://github.com/project-minigraf/minigraf&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 06 Oct 2026 15:37:27 +0000</pubDate>
+      <category>embedded database</category>
+      <category>graph</category>
+      <category>rust</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-06-minigraf-203-adds-bi-temporal-graph-storage-for-ru.png" type="image/png" length="0" />
+      <source url="https://github.com/project-minigraf/minigraf">Original Source</source>
+    </item>
     <item>
       <title>tpmlsm adds eBPF guard to restrict TPM access on Linux</title>
       <link>https://bitroot.org/blog/2026-10-05-tpmlsm-adds-ebpf-guard-to-restrict-tpm-access-on-l/</link>

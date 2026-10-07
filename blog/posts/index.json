@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 429,
+  "count": 430,
   "posts": [
+    "2026-10-06-minigraf-203-adds-bi-temporal-graph-storage-for-ru.md",
     "2026-10-05-tpmlsm-adds-ebpf-guard-to-restrict-tpm-access-on-l.md",
     "2026-10-05-gemini-4-argon-vs-gpt-6-astra-vs-claude-for-founde.md",
     "2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p.md",
@@ -433,6 +434,29 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-10-06-minigraf-203-adds-bi-temporal-graph-storage-for-ru.md",
+      "slug": "2026-10-06-minigraf-203-adds-bi-temporal-graph-storage-for-ru",
+      "url": "/blog/2026-10-06-minigraf-203-adds-bi-temporal-graph-storage-for-ru/",
+      "title": "Minigraf 2.0.3 adds bi-temporal graph storage for Rust and WASM",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T15:37:27.799199+00:00",
+      "tags": [
+        "embedded database",
+        "graph",
+        "rust"
+      ],
+      "excerpt": "Embedded graph memory for AI agents, mobile apps, and the browser. - project-minigraf/minigraf",
+      "image": "https://bitroot.org/blog/media/2026-10-06-minigraf-203-adds-bi-temporal-graph-storage-for-ru.png",
+      "sources": [
+        "https://github.com/project-minigraf/minigraf"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
+      "shortId": 430
+    },
     {
       "filename": "2026-10-05-tpmlsm-adds-ebpf-guard-to-restrict-tpm-access-on-l.md",
       "slug": "2026-10-05-tpmlsm-adds-ebpf-guard-to-restrict-tpm-access-on-l",
