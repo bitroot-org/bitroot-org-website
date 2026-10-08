@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 434,
+  "count": 435,
   "posts": [
+    "2026-10-08-google-playground-ai-generated-games-from-text-pro.md",
     "2026-10-07-terrainsr-upscales-100-m-heightmaps-to-10-m-detail.md",
     "2026-10-07-mistral-large-4-le-chonk-europes-open-weight-alter.md",
     "2026-10-07-ai-agents-getting-blocked-ucp-vs-personal-agent-pr.md",
@@ -438,6 +439,30 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-10-08-google-playground-ai-generated-games-from-text-pro.md",
+      "slug": "2026-10-08-google-playground-ai-generated-games-from-text-pro",
+      "url": "/blog/2026-10-08-google-playground-ai-generated-games-from-text-pro/",
+      "title": "Google Playground: AI-Generated Games From Text Prompts\u2014When Founders Should Prototype With It",
+      "date": "2026-10-08",
+      "published_at": "2026-10-08T12:37:08.340Z",
+      "tags": [
+        "Google Playground",
+        "game creation",
+        "rapid prototyping",
+        "AI game builders",
+        "founder tools"
+      ],
+      "excerpt": "Google Labs launched Playground on October 7, 2026\u2014an AI platform that turns text prompts into playable browser games without code. For founders, it's a 100x speed boost for prototyping game mechanics. Here's when to use it and when to skip it for a proper game engine.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwTBQaJpTf3DuFlKWbB3E4QjvJPjsG0whNKIV89GqVGw&s=10",
+      "sources": [],
+      "readTime": "9 min",
+      "categories": [
+        "agents",
+        "founders"
+      ],
+      "shortId": 435
+    },
     {
       "filename": "2026-10-07-terrainsr-upscales-100-m-heightmaps-to-10-m-detail.md",
       "slug": "2026-10-07-terrainsr-upscales-100-m-heightmaps-to-10-m-detail",
