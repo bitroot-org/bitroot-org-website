@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 08 Oct 2026 05:23:04 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 06:56:10 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TerrainSR upscales 100 m heightmaps to 10 m detail in under a second</title>
