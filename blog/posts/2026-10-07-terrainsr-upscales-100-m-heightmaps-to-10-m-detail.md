@@ -1,17 +1,16 @@
 ---
-date: '2026-10-07'
-excerpt: We’re on a journey to advance and democratize artificial intelligence through
-  open source and open science.
+date: '2026-10-08'
+excerpt: 'We’re on a journey to advance and democratize artificial intelligence through open source and open science.'
 image: https://bitroot.org/blog/media/2026-10-07-terrainsr-upscales-100-m-heightmaps-to-10-m-detail.png
 published_at: '2026-10-07T15:56:19.942602+00:00'
 sources:
 - https://huggingface.co/joe-gibbs/terrainsr
 tags:
-- terrain
-- ml
-- upscaling
-- graphics
-title: TerrainSR upscales 100 m heightmaps to 10 m detail in under a second
+- 'terrain'
+- 'ml'
+- 'upscaling'
+- 'graphics'
+title: 'TerrainSR upscales 100 m heightmaps to 10 m detail in under a second'
 ---
 
 TerrainSR, a model hosted on [Hugging Face](https://huggingface.co/joe-gibbs/terrainsr), generates realistic 10 m terrain heightmaps from 100 m inputs. It was trained on paired 100 m → 10 m data and deliberately excludes built‑up areas to avoid city or mine artifacts.
