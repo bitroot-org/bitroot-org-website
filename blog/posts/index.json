@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 433,
+  "count": 434,
   "posts": [
+    "2026-10-07-terrainsr-upscales-100-m-heightmaps-to-10-m-detail.md",
     "2026-10-07-mistral-large-4-le-chonk-europes-open-weight-alter.md",
     "2026-10-07-ai-agents-getting-blocked-ucp-vs-personal-agent-pr.md",
     "2026-10-06-minigraf-203-adds-bi-temporal-graph-storage-for-ru.md",
@@ -437,6 +438,28 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-10-07-terrainsr-upscales-100-m-heightmaps-to-10-m-detail.md",
+      "slug": "2026-10-07-terrainsr-upscales-100-m-heightmaps-to-10-m-detail",
+      "url": "/blog/2026-10-07-terrainsr-upscales-100-m-heightmaps-to-10-m-detail/",
+      "title": "TerrainSR upscales 100 m heightmaps to 10 m detail in under a second",
+      "date": "2026-10-07",
+      "published_at": "2026-10-07T15:56:19.942602+00:00",
+      "tags": [
+        "terrain",
+        "ml",
+        "upscaling",
+        "graphics"
+      ],
+      "excerpt": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "image": "https://bitroot.org/blog/media/2026-10-07-terrainsr-upscales-100-m-heightmaps-to-10-m-detail.png",
+      "sources": [
+        "https://huggingface.co/joe-gibbs/terrainsr"
+      ],
+      "readTime": "2 min",
+      "categories": [],
+      "shortId": 434
+    },
     {
       "filename": "2026-10-07-mistral-large-4-le-chonk-europes-open-weight-alter.md",
       "slug": "2026-10-07-mistral-large-4-le-chonk-europes-open-weight-alter",
