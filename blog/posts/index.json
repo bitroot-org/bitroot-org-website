@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 435,
+  "count": 436,
   "posts": [
+    "2026-10-09-synthid-goes-mainstream-why-founders-should-build.md",
     "2026-10-08-google-playground-ai-generated-games-from-text-pro.md",
     "2026-10-07-terrainsr-upscales-100-m-heightmaps-to-10-m-detail.md",
     "2026-10-07-mistral-large-4-le-chonk-europes-open-weight-alter.md",
@@ -439,6 +440,29 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-10-09-synthid-goes-mainstream-why-founders-should-build.md",
+      "slug": "2026-10-09-synthid-goes-mainstream-why-founders-should-build",
+      "url": "/blog/2026-10-09-synthid-goes-mainstream-why-founders-should-build/",
+      "title": "SynthID Goes Mainstream: Why Founders Should Build With Google's AI Watermarking Standard",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T04:06:13.463Z",
+      "tags": [
+        "SynthID standard",
+        "AI watermarking",
+        "content provenance",
+        "industry adoption",
+        "regulatory compliance"
+      ],
+      "excerpt": "Google opened SynthID to the public on October 7, 2026, and the adoption numbers are staggering\u20141 million verification requests daily, 100+ billion watermarked pieces, OpenAI to Apple on board.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/SynthID_Detector_Homepage_Web.jpeg?resize=1280,720",
+      "sources": [],
+      "readTime": "10 min",
+      "categories": [
+        "founders"
+      ],
+      "shortId": 436
+    },
     {
       "filename": "2026-10-08-google-playground-ai-generated-games-from-text-pro.md",
       "slug": "2026-10-08-google-playground-ai-generated-games-from-text-pro",

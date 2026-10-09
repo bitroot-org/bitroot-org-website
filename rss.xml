@@ -5,8 +5,21 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 08 Oct 2026 12:37:52 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 04:06:54 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SynthID Goes Mainstream: Why Founders Should Build With Google's AI Watermarking Standard</title>
+      <link>https://bitroot.org/blog/2026-10-09-synthid-goes-mainstream-why-founders-should-build/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-09-synthid-goes-mainstream-why-founders-should-build/</guid>
+      <description>Google opened SynthID to the public on October 7, 2026, and the adoption numbers are staggering—1 million verification requests daily, 100+ billion watermarked pieces, OpenAI to Apple on board.</description>
+      <pubDate>Fri, 09 Oct 2026 04:06:13 +0000</pubDate>
+      <category>SynthID standard</category>
+      <category>AI watermarking</category>
+      <category>content provenance</category>
+      <category>industry adoption</category>
+      <category>regulatory compliance</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/10/SynthID_Detector_Homepage_Web.jpeg?resize=1280,720" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Google Playground: AI-Generated Games From Text Prompts—When Founders Should Prototype With It</title>
       <link>https://bitroot.org/blog/2026-10-08-google-playground-ai-generated-games-from-text-pro/</link>
