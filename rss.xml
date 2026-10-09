@@ -5,8 +5,21 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 09 Oct 2026 04:06:54 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 07:17:55 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using OpenAI for Math Products: Verify &amp; Decide</title>
+      <link>https://bitroot.org/blog/2026-10-09-using-openai-for-math-products-verify-decide/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-09-using-openai-for-math-products-verify-decide/</guid>
+      <description>OpenAI's 722 math solutions tackle expert problems—only 42% formally verified. Discover what works for founders and when human verification is critical before building.</description>
+      <pubDate>Fri, 09 Oct 2026 07:17:08 +0000</pubDate>
+      <category>OpenAI math capabilities</category>
+      <category>GPT-5.2</category>
+      <category>mathematical reasoning</category>
+      <category>product verification</category>
+      <category>founder decision framework</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/09/Screenshot-2026-09-11-at-1.39.30-PM.png" type="image/png" length="0" />
+    </item>
     <item>
       <title>SynthID Goes Mainstream: Why Founders Should Build With Google's AI Watermarking Standard</title>
       <link>https://bitroot.org/blog/2026-10-09-synthid-goes-mainstream-why-founders-should-build/</link>

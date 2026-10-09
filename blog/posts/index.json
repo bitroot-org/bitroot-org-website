@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 436,
+  "count": 437,
   "posts": [
+    "2026-10-09-using-openai-for-math-products-verify-decide.md",
     "2026-10-09-synthid-goes-mainstream-why-founders-should-build.md",
     "2026-10-08-google-playground-ai-generated-games-from-text-pro.md",
     "2026-10-07-terrainsr-upscales-100-m-heightmaps-to-10-m-detail.md",
@@ -440,6 +441,30 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-10-09-using-openai-for-math-products-verify-decide.md",
+      "slug": "2026-10-09-using-openai-for-math-products-verify-decide",
+      "url": "/blog/2026-10-09-using-openai-for-math-products-verify-decide/",
+      "title": "Using OpenAI for Math Products: Verify & Decide",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T07:17:08.698Z",
+      "tags": [
+        "OpenAI math capabilities",
+        "GPT-5.2",
+        "mathematical reasoning",
+        "product verification",
+        "founder decision framework"
+      ],
+      "excerpt": "OpenAI's 722 math solutions tackle expert problems\u2014only 42% formally verified. Discover what works for founders and when human verification is critical before building.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/09/Screenshot-2026-09-11-at-1.39.30-PM.png",
+      "sources": [],
+      "readTime": "11 min",
+      "categories": [
+        "models",
+        "founders"
+      ],
+      "shortId": 437
+    },
     {
       "filename": "2026-10-09-synthid-goes-mainstream-why-founders-should-build.md",
       "slug": "2026-10-09-synthid-goes-mainstream-why-founders-should-build",
