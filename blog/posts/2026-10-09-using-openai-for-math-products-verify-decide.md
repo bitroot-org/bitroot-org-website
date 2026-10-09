@@ -13,9 +13,9 @@ tags:
 title: 'Using OpenAI for Math Products: Verify & Decide'
 ---
 
-OpenAI announced 722 math manuscripts in October 2026—claiming solutions to Fields Medal-level problems and Millennium Prize conjectures. According to **[OpenAI's announcement](https://openai.com/research/mathematical-problem-solving-with-gpt-5-2/)**, here's the catch: **only 42% are formally verified**. For founders deciding whether to build math-heavy products on OpenAI capabilities, that gap between announcement and verification is the central question.
+OpenAI announced 722 math manuscripts in October 2026—**[claiming solutions](https://xenospectrum.com/en/openai-math-manuscripts-verification/)** to Fields Medal-level problems and Millennium Prize conjectures. Here's the catch: **only 42% are formally verified**. For founders deciding whether to build math-heavy products on OpenAI capabilities, that gap between announcement and verification is the central question.
  
-The model: **GPT-5.2 and GPT-5.2 Thinking**—a specialized variant trained explicitly for proof generation across algebraic geometry, number theory, combinatorics, topology, and applied math. On expert-level problems (**[FrontierMath benchmark](https://openai.com/research/frontiermath-benchmark/)**), the model solves 40.3% correctly. On graduate-level questions (GPQA Diamond), it hits 93.2%. But "correct solution" in OpenAI's testing means peer-reviewed, not formally verified.
+The model: **GPT-5.2 and GPT-5.2 Thinking**—a specialized variant trained explicitly for proof generation across algebraic geometry, number theory, combinatorics, topology, and applied math. On expert-level problems (**[FrontierMath benchmark](https://epoch.ai/frontiermath/tiers-1-4/about)**), the model solves 40.3% correctly. On graduate-level questions (GPQA Diamond), it hits 93.2%. But "correct solution" in OpenAI's testing means peer-reviewed, not formally verified.
  
 Here's what OpenAI's math actually enables, what remains unverified, and when to use this for production.
  
@@ -23,9 +23,9 @@ Here's what OpenAI's math actually enables, what remains unverified, and when to
  
 **FrontierMath is a 222-problem benchmark of unsolved or extremely difficult research problems.** OpenAI's 40.3% success rate means GPT-5.2 solves 90 of those problems—a significant jump from earlier models. GPQA Diamond, a public multiple-choice benchmark of grad-level questions, shows 93.2% accuracy (up from GPT-4's 88%).
  
-But here's where the story changes. **Of the 722 manuscripts submitted for formalization in Lean** (a formal proof language), only 42% (roughly 303) have been formally verified. The remaining 58% remain as natural language proofs awaiting formalization or showing issues during the process.
+But here's where the story changes. **Of the 722 manuscripts submitted for formalization in Lean** (a formal proof language), **[only 42% verified](https://tech-insider.org/openai-math-papers-lean-verification-42-percent-2026/)** (roughly 303) have been formally verified. The remaining 58% remain as natural language proofs awaiting formalization or showing issues during the process.
  
-**Translation errors exist between reasoning and formalization.** The most cited example: a claimed partial solution to Navier-Stokes stability (one of the Millennium Prize problems). The model's natural language proof appears sound to mathematicians, but **[Lean formalization](https://openai.com/research/formal-verification-lean-proofs/)** revealed missing lemmas and unstated assumptions about boundary conditions. When formalized, it covers only a special case, not the general problem.
+**Translation errors exist between reasoning and formalization.** The most cited example: a claimed partial solution to Navier-Stokes stability (one of the Millennium Prize problems). The model's natural language proof appears sound to mathematicians, but **[Lean formalization](https://github.com/openai/math)** revealed missing lemmas and unstated assumptions about boundary conditions. When formalized, it covers only a special case, not the general problem.
  
 This doesn't invalidate the work—special cases are valuable to research. **But it proves the gap is real and consequential.**
  
@@ -35,9 +35,9 @@ Before October 2026, OpenAI's math was strong on computation but limited on proo
  
 The cost: **3-5 minutes of inference per problem** at ChatGPT Pro compute levels. This extended reasoning produces more rigorous proofs than base GPT-5.2, but it's expensive at scale.
  
-**Why the 722 manuscripts matter:** They represent outputs tested against curated open problems—some published competition problems, others from active research. The model generates natural language proofs, which are then independently formalized in Lean by humans or automated tools.
+**Why the 722 manuscripts matter:** They represent outputs **[tested against curated](https://www.datacamp.com/blog/openai-math-breakthroughs-what-the-latest-results-mean)** open problems—some published competition problems, others from active research. The model generates natural language proofs, which are then independently formalized in Lean by humans or automated tools.
  
-**Only 10 of 722 reasoning chains were published.** Despite **[AGMAI standards](https://www.ias.edu/news/agmai-standards-ai-mathematics/)** from Princeton's Institute for Advanced Study calling for transparency on all reasoning, OpenAI shared internal reasoning for fewer than 2% of manuscripts. Researchers using GPT-5.2 see a proof but not how the model arrived at it.
+**Only 10 of 722 reasoning chains were published.** Despite **[advisory standards](https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence/)** from Princeton's Institute for Advanced Study calling for transparency on all reasoning, OpenAI shared internal reasoning for fewer than 2% of manuscripts. Researchers using GPT-5.2 see a proof but not how the model arrived at it.
  
 ## Real-World Performance: Where It Works, Where It Fails
  
@@ -90,7 +90,7 @@ The cost: **3-5 minutes of inference per problem** at ChatGPT Pro compute levels
 - Educational products. Users see multiple proof strategies; correctness is automatically verified against known answers.
 - Internal workflows. Teams that need candidate proofs explored quickly, with expert review downstream.
 **Fails:**
-- **High-stakes systems where rigor is mandatory.** Financial products, safety systems, publishable research. Unverified proofs can hide subtle errors. 58% of manuscripts remain unformalized—production systems can't tolerate that.
+- **High-stakes systems where rigor is mandatory.** Financial products, safety systems, publishable research. Unverified proofs can hide subtle errors. **[58% of manuscripts remain unformalized](https://www.lesswrong.com/posts/8ZgLYwBmB3vLavjKE/some-lessons-from-the-openai-frontiermath-debacle)**—production systems can't tolerate that.
 - **Products serving non-experts.** If users trust the proof as-is, OpenAI Math is risky. If users understand proofs are candidates requiring verification, you're fine.
 - **Adversarial environments.** The model can be manipulated. Motivated adversaries can strip watermarks or spoof solutions. For systems defending against attackers, this is disqualifying.
 - **Latency-critical applications.** Extended reasoning takes 3-5 minutes per proof. Sub-second latency is impossible.
@@ -111,11 +111,11 @@ The cost: **3-5 minutes of inference per problem** at ChatGPT Pro compute levels
 - You need sub-second latency or must serve thousands of concurrent users.
 ## Bottom Line
  
-OpenAI's 722 manuscripts prove the model can reason through expert-level math—a genuine breakthrough. But **verification is the bottleneck.** Only 42% are formally verified. Translation errors exist between natural language and formalization. Compute costs are high. Unverified proofs can hide subtle errors.
+OpenAI's 722 manuscripts prove the model can reason through expert-level math—a genuine breakthrough. But **verification is the bottleneck.** **[Only 42% formally verified](https://tech-insider.org/openai-math-papers-lean-verification-42-percent-2026/)**. Translation errors exist between natural language and formalization. Compute costs are high. Unverified proofs can hide subtle errors.
  
 For founders, the decision is simple: **Build with OpenAI Math if verification is downstream from generation.** Pair it with Lean formalization if publication or regulatory compliance matters. Skip it if users must trust outputs as-is.
  
-**Start by testing GPT-5.2 on your core problem.** Map where you'll need formal verification. Build verification into your workflow from day one—don't assume unverified proofs are production-ready. As a team launching in regulated verticals or publishing research, review **[what AGMAI standards require](https://www.ias.edu/news/agmai-standards-ai-mathematics/)** for AI-assisted math work.
+**Start by testing GPT-5.2 on your core problem.** Map where you'll need formal verification. Build verification into your workflow from day one—don't assume unverified proofs are production-ready. **[As advisory groups note](https://techcrunch.com/2026/10/08/openais-math-solutions-arent-meeting-the-fields-standards-yet/)**, standards for AI-assisted math work are still emerging; align with field expectations early.
  
 ---
 
