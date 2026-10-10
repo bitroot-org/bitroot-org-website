@@ -1,10 +1,13 @@
 {
   "generated": true,
-  "count": 438,
+  "count": 441,
   "posts": [
     "2026-10-10-why-your-ai-agent-might-do-things-you-didnt-intend.md",
+    "2026-10-10-why-arenas-3-1b-valuation-matters-for-model-select.md",
     "2026-10-09-using-openai-for-math-products-verify-decide.md",
     "2026-10-09-synthid-goes-mainstream-why-founders-should-build.md",
+    "2026-10-09-rembrandt-launches-free-selfhosted-photo-editor-wi.md",
+    "2026-10-09-quake-runs-in-browser-via-saferust-port.md",
     "2026-10-08-google-playground-ai-generated-games-from-text-pro.md",
     "2026-10-07-terrainsr-upscales-100-m-heightmaps-to-10-m-detail.md",
     "2026-10-07-mistral-large-4-le-chonk-europes-open-weight-alter.md",
@@ -465,7 +468,31 @@
         "agents",
         "founders"
       ],
-      "shortId": 438
+      "shortId": 441
+    },
+    {
+      "filename": "2026-10-10-why-arenas-3-1b-valuation-matters-for-model-select.md",
+      "slug": "2026-10-10-why-arenas-3-1b-valuation-matters-for-model-select",
+      "url": "/blog/2026-10-10-why-arenas-3-1b-valuation-matters-for-model-select/",
+      "title": "Why Arena's $3.1B Valuation Matters for Model Selection",
+      "date": "2026-10-10",
+      "published_at": "2026-10-10T04:11:19.945Z",
+      "tags": [
+        "AI model evaluation",
+        "benchmark gaming",
+        "Arena leaderboard",
+        "founder tools",
+        "model comparison"
+      ],
+      "excerpt": "Arena just raised $200M at $3.1B valuation\u2014nearly doubling in 10 months. The reason: AI labs game traditional benchmarks. For founders choosing between Claude, GPT, and Fable, neutral evaluation is becoming more valuable than vendor claims.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/ARENA_3Founders.jpg?resize=1200,801",
+      "sources": [],
+      "readTime": "3 min",
+      "categories": [
+        "models",
+        "founders"
+      ],
+      "shortId": 440
     },
     {
       "filename": "2026-10-09-using-openai-for-math-products-verify-decide.md",
@@ -489,7 +516,7 @@
         "models",
         "founders"
       ],
-      "shortId": 437
+      "shortId": 439
     },
     {
       "filename": "2026-10-09-synthid-goes-mainstream-why-founders-should-build.md",
@@ -511,6 +538,52 @@
       "readTime": "10 min",
       "categories": [
         "founders"
+      ],
+      "shortId": 438
+    },
+    {
+      "filename": "2026-10-09-rembrandt-launches-free-selfhosted-photo-editor-wi.md",
+      "slug": "2026-10-09-rembrandt-launches-free-selfhosted-photo-editor-wi",
+      "url": "/blog/2026-10-09-rembrandt-launches-free-selfhosted-photo-editor-wi/",
+      "title": "Rembrandt launches free self\u2011hosted photo editor with on\u2011device AI",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T15:41:26.213637+00:00",
+      "tags": [
+        "photo editing",
+        "open source",
+        "self-hosted"
+      ],
+      "excerpt": "A free photo editor. No account, no subscription, no tracking. RAW, masks and on-device AI for macOS, Windows and Linux. Self-hostable. - thesnarkitecht/rembrandt",
+      "image": "https://bitroot.org/blog/media/2026-10-09-rembrandt-launches-free-selfhosted-photo-editor-wi.png",
+      "sources": [
+        "https://github.com/thesnarkitecht/rembrandt"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "opensource"
+      ],
+      "shortId": 437
+    },
+    {
+      "filename": "2026-10-09-quake-runs-in-browser-via-saferust-port.md",
+      "slug": "2026-10-09-quake-runs-in-browser-via-saferust-port",
+      "url": "/blog/2026-10-09-quake-runs-in-browser-via-saferust-port/",
+      "title": "Quake runs in browser via safe\u2011Rust port",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T15:42:52.666007+00:00",
+      "tags": [
+        "quake",
+        "rust",
+        "webassembly"
+      ],
+      "excerpt": "Quake (1996), faithfully ported to dependency-free safe Rust and compiled to WebAssembly \u2014 play the shareware episode in your browser.",
+      "image": null,
+      "sources": [
+        "https://quake-srp.pages.dev/"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "engineering"
       ],
       "shortId": 436
     },

@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 10 Oct 2026 04:06:30 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 04:13:09 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Your AI Agent Might Do Things You Didn't Intend</title>
@@ -19,6 +19,19 @@
       <category>Claude</category>
       <category>founder risk</category>
       <enclosure url="https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ff11d2325e688229de8a887ef7ece34f520ab7134-2000x1125.jpg&amp;w=2048&amp;q=75" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>Why Arena's $3.1B Valuation Matters for Model Selection</title>
+      <link>https://bitroot.org/blog/2026-10-10-why-arenas-3-1b-valuation-matters-for-model-select/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-10-why-arenas-3-1b-valuation-matters-for-model-select/</guid>
+      <description>Arena just raised $200M at $3.1B valuation—nearly doubling in 10 months. The reason: AI labs game traditional benchmarks. For founders choosing between Claude, GPT, and Fable, neutral evaluation is becoming more valuable than vendor claims.</description>
+      <pubDate>Sat, 10 Oct 2026 04:11:19 +0000</pubDate>
+      <category>AI model evaluation</category>
+      <category>benchmark gaming</category>
+      <category>Arena leaderboard</category>
+      <category>founder tools</category>
+      <category>model comparison</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/06/ARENA_3Founders.jpg?resize=1200,801" type="image/jpeg" length="0" />
     </item>
     <item>
       <title>Using OpenAI for Math Products: Verify &amp; Decide</title>
@@ -45,6 +58,33 @@
       <category>industry adoption</category>
       <category>regulatory compliance</category>
       <enclosure url="https://techcrunch.com/wp-content/uploads/2026/10/SynthID_Detector_Homepage_Web.jpeg?resize=1280,720" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>Rembrandt launches free self‑hosted photo editor with on‑device AI</title>
+      <link>https://bitroot.org/blog/2026-10-09-rembrandt-launches-free-selfhosted-photo-editor-wi/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-09-rembrandt-launches-free-selfhosted-photo-editor-wi/</guid>
+      <description>A free photo editor. No account, no subscription, no tracking. RAW, masks and on-device AI for macOS, Windows and Linux. Self-hostable. - thesnarkitecht/rembrandt
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/thesnarkitecht/rembrandt"&gt;https://github.com/thesnarkitecht/rembrandt&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 09 Oct 2026 15:41:26 +0000</pubDate>
+      <category>photo editing</category>
+      <category>open source</category>
+      <category>self-hosted</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-09-rembrandt-launches-free-selfhosted-photo-editor-wi.png" type="image/png" length="0" />
+      <source url="https://github.com/thesnarkitecht/rembrandt">Original Source</source>
+    </item>
+    <item>
+      <title>Quake runs in browser via safe‑Rust port</title>
+      <link>https://bitroot.org/blog/2026-10-09-quake-runs-in-browser-via-saferust-port/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-09-quake-runs-in-browser-via-saferust-port/</guid>
+      <description>Quake (1996), faithfully ported to dependency-free safe Rust and compiled to WebAssembly — play the shareware episode in your browser.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://quake-srp.pages.dev/"&gt;https://quake-srp.pages.dev/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 09 Oct 2026 15:42:52 +0000</pubDate>
+      <category>quake</category>
+      <category>rust</category>
+      <category>webassembly</category>
+      <source url="https://quake-srp.pages.dev/">Original Source</source>
     </item>
     <item>
       <title>Google Playground: AI-Generated Games From Text Prompts—When Founders Should Prototype With It</title>
