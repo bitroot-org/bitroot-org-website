@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 10 Oct 2026 04:13:58 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 04:14:47 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Your AI Agent Might Do Things You Didn't Intend</title>
@@ -85,6 +85,49 @@
       <category>rust</category>
       <category>webassembly</category>
       <source url="https://quake-srp.pages.dev/">Original Source</source>
+    </item>
+    <item>
+      <title>k10s adds mouse‑driven UI and built‑in AI to Kubernetes terminal</title>
+      <link>https://bitroot.org/blog/2026-10-09-k10s-adds-mousedriven-ui-and-builtin-ai-to-kuberne/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-09-k10s-adds-mousedriven-ui-and-builtin-ai-to-kuberne/</guid>
+      <description>Kubernetes TUI you can click. Instant search, logs/exec/port-forward, 7 themes, context-aware AI. Single Go binary. - p10node/k10s
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/p10node/k10s"&gt;https://github.com/p10node/k10s&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 09 Oct 2026 15:41:55 +0000</pubDate>
+      <category>kubernetes</category>
+      <category>tui</category>
+      <category>ai</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-09-k10s-adds-mousedriven-ui-and-builtin-ai-to-kuberne.png" type="image/png" length="0" />
+      <source url="https://github.com/p10node/k10s">Original Source</source>
+    </item>
+    <item>
+      <title>DIY flexible neon t-shirt using LED filaments</title>
+      <link>https://bitroot.org/blog/2026-10-09-diy-flexible-neon-t-shirt-using-led-filaments/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-09-diy-flexible-neon-t-shirt-using-led-filaments/</guid>
+      <description>Earlier this year I had the perfect excuse to experiment with some flexible LED filaments that had been sitting in my “interesting parts” bi...
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="http://scottbezek.blogspot.com/2026/10/making-flexible-neon-t-shirt-with-leds.html"&gt;http://scottbezek.blogspot.com/2026/10/making-flexible-neon-t-shirt-with-leds.html&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 09 Oct 2026 15:42:25 +0000</pubDate>
+      <category>wearable</category>
+      <category>hardware</category>
+      <category>led</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-09-diy-flexible-neon-t-shirt-using-led-filaments.jpg" type="image/jpeg" length="0" />
+      <source url="http://scottbezek.blogspot.com/2026/10/making-flexible-neon-t-shirt-with-leds.html">Original Source</source>
+    </item>
+    <item>
+      <title>AI chat agent runs on a Nokia 110 4G via a hacked calculator app</title>
+      <link>https://bitroot.org/blog/2026-10-09-ai-chat-agent-runs-on-a-nokia-110-4g-via-a-hacked/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-09-ai-chat-agent-runs-on-a-nokia-110-4g-via-a-hacked/</guid>
+      <description>Reverse-engineered an old Nokia's firmware and added a custom AI Agent. Native functions like calls, alarms, or alarms can now be easily handled just by chatting. - anupray95/AI-Agent-on-a-NOKIA
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/anupray95/AI-Agent-on-a-NOKIA"&gt;https://github.com/anupray95/AI-Agent-on-a-NOKIA&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 09 Oct 2026 15:41:20 +0000</pubDate>
+      <category>ai</category>
+      <category>embedded</category>
+      <category>nokia</category>
+      <category>prototype</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-09-ai-chat-agent-runs-on-a-nokia-110-4g-via-a-hacked.png" type="image/png" length="0" />
+      <source url="https://github.com/anupray95/AI-Agent-on-a-NOKIA">Original Source</source>
     </item>
     <item>
       <title>Google Playground: AI-Generated Games From Text Prompts—When Founders Should Prototype With It</title>

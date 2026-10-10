@@ -246,6 +246,11 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://bitroot.org/blog/page/50/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://bitroot.org/blog/2026-10-10-why-your-ai-agent-might-do-things-you-didnt-intend/</loc>
     <lastmod>2026-10-10</lastmod>
   </url>
@@ -267,6 +272,18 @@
   </url>
   <url>
     <loc>https://bitroot.org/blog/2026-10-09-quake-runs-in-browser-via-saferust-port/</loc>
+    <lastmod>2026-10-09</lastmod>
+  </url>
+  <url>
+    <loc>https://bitroot.org/blog/2026-10-09-k10s-adds-mousedriven-ui-and-builtin-ai-to-kuberne/</loc>
+    <lastmod>2026-10-09</lastmod>
+  </url>
+  <url>
+    <loc>https://bitroot.org/blog/2026-10-09-diy-flexible-neon-t-shirt-using-led-filaments/</loc>
+    <lastmod>2026-10-09</lastmod>
+  </url>
+  <url>
+    <loc>https://bitroot.org/blog/2026-10-09-ai-chat-agent-runs-on-a-nokia-110-4g-via-a-hacked/</loc>
     <lastmod>2026-10-09</lastmod>
   </url>
   <url>

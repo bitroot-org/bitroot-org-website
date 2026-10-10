@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "count": 441,
+  "count": 444,
   "posts": [
     "2026-10-10-why-your-ai-agent-might-do-things-you-didnt-intend.md",
     "2026-10-10-why-arenas-3-1b-valuation-matters-for-model-select.md",
@@ -8,6 +8,9 @@
     "2026-10-09-synthid-goes-mainstream-why-founders-should-build.md",
     "2026-10-09-rembrandt-launches-free-selfhosted-photo-editor-wi.md",
     "2026-10-09-quake-runs-in-browser-via-saferust-port.md",
+    "2026-10-09-k10s-adds-mousedriven-ui-and-builtin-ai-to-kuberne.md",
+    "2026-10-09-diy-flexible-neon-t-shirt-using-led-filaments.md",
+    "2026-10-09-ai-chat-agent-runs-on-a-nokia-110-4g-via-a-hacked.md",
     "2026-10-08-google-playground-ai-generated-games-from-text-pro.md",
     "2026-10-07-terrainsr-upscales-100-m-heightmaps-to-10-m-detail.md",
     "2026-10-07-mistral-large-4-le-chonk-europes-open-weight-alter.md",
@@ -468,7 +471,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 441
+      "shortId": 444
     },
     {
       "filename": "2026-10-10-why-arenas-3-1b-valuation-matters-for-model-select.md",
@@ -492,7 +495,7 @@
         "models",
         "founders"
       ],
-      "shortId": 440
+      "shortId": 443
     },
     {
       "filename": "2026-10-09-using-openai-for-math-products-verify-decide.md",
@@ -516,7 +519,7 @@
         "models",
         "founders"
       ],
-      "shortId": 439
+      "shortId": 442
     },
     {
       "filename": "2026-10-09-synthid-goes-mainstream-why-founders-should-build.md",
@@ -539,7 +542,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 438
+      "shortId": 441
     },
     {
       "filename": "2026-10-09-rembrandt-launches-free-selfhosted-photo-editor-wi.md",
@@ -562,7 +565,7 @@
       "categories": [
         "opensource"
       ],
-      "shortId": 437
+      "shortId": 440
     },
     {
       "filename": "2026-10-09-quake-runs-in-browser-via-saferust-port.md",
@@ -584,6 +587,76 @@
       "readTime": "2 min",
       "categories": [
         "engineering"
+      ],
+      "shortId": 439
+    },
+    {
+      "filename": "2026-10-09-k10s-adds-mousedriven-ui-and-builtin-ai-to-kuberne.md",
+      "slug": "2026-10-09-k10s-adds-mousedriven-ui-and-builtin-ai-to-kuberne",
+      "url": "/blog/2026-10-09-k10s-adds-mousedriven-ui-and-builtin-ai-to-kuberne/",
+      "title": "k10s adds mouse\u2011driven UI and built\u2011in AI to Kubernetes terminal",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T15:41:55.451357+00:00",
+      "tags": [
+        "kubernetes",
+        "tui",
+        "ai"
+      ],
+      "excerpt": "Kubernetes TUI you can click. Instant search, logs/exec/port-forward, 7 themes, context-aware AI. Single Go binary. - p10node/k10s",
+      "image": "https://bitroot.org/blog/media/2026-10-09-k10s-adds-mousedriven-ui-and-builtin-ai-to-kuberne.png",
+      "sources": [
+        "https://github.com/p10node/k10s"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
+      "shortId": 438
+    },
+    {
+      "filename": "2026-10-09-diy-flexible-neon-t-shirt-using-led-filaments.md",
+      "slug": "2026-10-09-diy-flexible-neon-t-shirt-using-led-filaments",
+      "url": "/blog/2026-10-09-diy-flexible-neon-t-shirt-using-led-filaments/",
+      "title": "DIY flexible neon t-shirt using LED filaments",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T15:42:25.905552+00:00",
+      "tags": [
+        "wearable",
+        "hardware",
+        "led"
+      ],
+      "excerpt": "Earlier this year I had the perfect excuse to experiment with some flexible LED filaments that had been sitting in my \u201cinteresting parts\u201d bi...",
+      "image": "https://bitroot.org/blog/media/2026-10-09-diy-flexible-neon-t-shirt-using-led-filaments.jpg",
+      "sources": [
+        "http://scottbezek.blogspot.com/2026/10/making-flexible-neon-t-shirt-with-leds.html"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
+      "shortId": 437
+    },
+    {
+      "filename": "2026-10-09-ai-chat-agent-runs-on-a-nokia-110-4g-via-a-hacked.md",
+      "slug": "2026-10-09-ai-chat-agent-runs-on-a-nokia-110-4g-via-a-hacked",
+      "url": "/blog/2026-10-09-ai-chat-agent-runs-on-a-nokia-110-4g-via-a-hacked/",
+      "title": "AI chat agent runs on a Nokia 110 4G via a hacked calculator app",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T15:41:20.732313+00:00",
+      "tags": [
+        "ai",
+        "embedded",
+        "nokia",
+        "prototype"
+      ],
+      "excerpt": "Reverse-engineered an old Nokia's firmware and added a custom AI Agent. Native functions like calls, alarms, or alarms can now be easily handled just by chatting. - anupray95/AI-Agent-on-a-NOKIA",
+      "image": "https://bitroot.org/blog/media/2026-10-09-ai-chat-agent-runs-on-a-nokia-110-4g-via-a-hacked.png",
+      "sources": [
+        "https://github.com/anupray95/AI-Agent-on-a-NOKIA"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "agents"
       ],
       "shortId": 436
     },
