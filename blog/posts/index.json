@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "count": 448,
+  "count": 451,
   "posts": [
     "2026-10-10-why-your-ai-agent-might-do-things-you-didnt-intend.md",
     "2026-10-10-why-arenas-3-1b-valuation-matters-for-model-select.md",
@@ -45,7 +45,10 @@
     "2026-09-28-jev-ai-speeds-agent-decisions-193x-the-lightweight.md",
     "2026-09-27-spivak-calculus-fully-formalized-in-lean-4.md",
     "2026-09-27-reladraw-releases-version-080-a-placementfocused-d.md",
+    "2026-09-27-aurionmail-suite-releases-open-source-e2ee-mail-an.md",
+    "2026-09-26-tui2web-streams-any-terminal-app-to-your-phone-via.md",
     "2026-09-26-qwen306b-inference-runs-inside-linux-ebpf-kernel.md",
+    "2026-09-26-paper-docx-provides-a-safe-fork-of-python-docx-for.md",
     "2026-09-26-muse-early-access-program-how-to-get-first-access.md",
     "2026-09-26-logolabs-releases-agate-260mparameter-texttoimage.md",
     "2026-09-26-agentic-cuda-optimizer-automates-kernel-tuning-via.md",
@@ -475,7 +478,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 448
+      "shortId": 451
     },
     {
       "filename": "2026-10-10-why-arenas-3-1b-valuation-matters-for-model-select.md",
@@ -499,7 +502,7 @@
         "models",
         "founders"
       ],
-      "shortId": 447
+      "shortId": 450
     },
     {
       "filename": "2026-10-09-using-openai-for-math-products-verify-decide.md",
@@ -523,7 +526,7 @@
         "models",
         "founders"
       ],
-      "shortId": 446
+      "shortId": 449
     },
     {
       "filename": "2026-10-09-synthid-goes-mainstream-why-founders-should-build.md",
@@ -546,7 +549,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 445
+      "shortId": 448
     },
     {
       "filename": "2026-10-09-rembrandt-launches-free-selfhosted-photo-editor-wi.md",
@@ -569,7 +572,7 @@
       "categories": [
         "opensource"
       ],
-      "shortId": 444
+      "shortId": 447
     },
     {
       "filename": "2026-10-09-quake-runs-in-browser-via-saferust-port.md",
@@ -592,7 +595,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 443
+      "shortId": 446
     },
     {
       "filename": "2026-10-09-k10s-adds-mousedriven-ui-and-builtin-ai-to-kuberne.md",
@@ -615,7 +618,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 442
+      "shortId": 445
     },
     {
       "filename": "2026-10-09-diy-flexible-neon-t-shirt-using-led-filaments.md",
@@ -638,7 +641,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 441
+      "shortId": 444
     },
     {
       "filename": "2026-10-09-ai-chat-agent-runs-on-a-nokia-110-4g-via-a-hacked.md",
@@ -662,7 +665,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 440
+      "shortId": 443
     },
     {
       "filename": "2026-10-08-google-playground-ai-generated-games-from-text-pro.md",
@@ -686,7 +689,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 439
+      "shortId": 442
     },
     {
       "filename": "2026-10-07-terrainsr-upscales-100-m-heightmaps-to-10-m-detail.md",
@@ -708,7 +711,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 438
+      "shortId": 441
     },
     {
       "filename": "2026-10-07-sprout-adds-bluetooth-wifi-and-streaming-to-classi.md",
@@ -732,7 +735,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 437
+      "shortId": 440
     },
     {
       "filename": "2026-10-07-mistral-large-4-le-chonk-europes-open-weight-alter.md",
@@ -757,7 +760,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 436
+      "shortId": 439
     },
     {
       "filename": "2026-10-07-ai-agents-getting-blocked-ucp-vs-personal-agent-pr.md",
@@ -794,7 +797,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 435
+      "shortId": 438
     },
     {
       "filename": "2026-10-06-minigraf-203-adds-bi-temporal-graph-storage-for-ru.md",
@@ -817,7 +820,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 434
+      "shortId": 437
     },
     {
       "filename": "2026-10-06-ichat-av-revived-on-leopard-via-a-custom-snatmap-h.md",
@@ -840,7 +843,7 @@
       "categories": [
         "design"
       ],
-      "shortId": 433
+      "shortId": 436
     },
     {
       "filename": "2026-10-05-tpmlsm-adds-ebpf-guard-to-restrict-tpm-access-on-l.md",
@@ -863,7 +866,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 432
+      "shortId": 435
     },
     {
       "filename": "2026-10-05-gemini-4-argon-vs-gpt-6-astra-vs-claude-for-founde.md",
@@ -887,7 +890,7 @@
         "models",
         "founders"
       ],
-      "shortId": 431
+      "shortId": 434
     },
     {
       "filename": "2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p.md",
@@ -910,7 +913,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 430
+      "shortId": 433
     },
     {
       "filename": "2026-10-04-networkx-adds-pyarrow-backend-with-65-memory-savin.md",
@@ -931,7 +934,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 429
+      "shortId": 432
     },
     {
       "filename": "2026-10-04-headstart-speeds-rust-builds-by-up-to-54-using-ear.md",
@@ -954,7 +957,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 428
+      "shortId": 431
     },
     {
       "filename": "2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for.md",
@@ -977,7 +980,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 427
+      "shortId": 430
     },
     {
       "filename": "2026-10-03-macos-full-disk-access-tightening-what-founders-us.md",
@@ -1002,7 +1005,7 @@
         "founders",
         "engineering"
       ],
-      "shortId": 426
+      "shortId": 429
     },
     {
       "filename": "2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo.md",
@@ -1023,7 +1026,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 425
+      "shortId": 428
     },
     {
       "filename": "2026-10-02-openc6-bios-adds-pcstyle-microkernel-to-esp32c6.md",
@@ -1046,7 +1049,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 424
+      "shortId": 427
     },
     {
       "filename": "2026-10-02-janus-adds-a-vulkanpowered-local-llm-server-with-o.md",
@@ -1069,7 +1072,7 @@
       "categories": [
         "models"
       ],
-      "shortId": 423
+      "shortId": 426
     },
     {
       "filename": "2026-10-02-firezone-skips-scim-builds-its-own-pullbased-direc.md",
@@ -1090,7 +1093,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 422
+      "shortId": 425
     },
     {
       "filename": "2026-10-01-yantra-adds-a-native-c-lalr1-parser-generator.md",
@@ -1113,7 +1116,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 421
+      "shortId": 424
     },
     {
       "filename": "2026-10-01-strata-launches-aisafe-selfservice-analytics-platf.md",
@@ -1136,7 +1139,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 420
+      "shortId": 423
     },
     {
       "filename": "2026-10-01-parrot-0252-brings-ondevice-ai-assistance-to-mac-m.md",
@@ -1157,7 +1160,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 419
+      "shortId": 422
     },
     {
       "filename": "2026-10-01-argon-vs-astra-vs-claude-which-model-founders-shou.md",
@@ -1182,7 +1185,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 418
+      "shortId": 421
     },
     {
       "filename": "2026-09-30-turbogpt-lets-you-train-a-tiny-gpt-in-under-a-minu.md",
@@ -1206,7 +1209,7 @@
         "models",
         "engineering"
       ],
-      "shortId": 417
+      "shortId": 420
     },
     {
       "filename": "2026-09-25-new-mlir-tutorial-walks-you-through-building-a-kal.md",
@@ -1229,7 +1232,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 416
+      "shortId": 419
     },
     {
       "filename": "2026-09-30-openai-dots-launches-free-autonomous-agents-for-pr.md",
@@ -1254,7 +1257,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 415
+      "shortId": 418
     },
     {
       "filename": "2026-09-29-use-any-c-library-in-godot-via-conan-and-cmake.md",
@@ -1276,7 +1279,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 414
+      "shortId": 417
     },
     {
       "filename": "2026-09-29-pacbench-scores-claude-opus-55-at-99100-in-oneshot.md",
@@ -1299,7 +1302,7 @@
       "categories": [
         "models"
       ],
-      "shortId": 413
+      "shortId": 416
     },
     {
       "filename": "2026-09-29-openai-o3s-hidden-cost-why-your-reasoning-token-bi.md",
@@ -1324,7 +1327,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 412
+      "shortId": 415
     },
     {
       "filename": "2026-09-29-geneva-cli-adds-jsondriven-video-editing-with-html.md",
@@ -1349,7 +1352,7 @@
         "opensource",
         "design"
       ],
-      "shortId": 411
+      "shortId": 414
     },
     {
       "filename": "2026-09-28-wallaby-launches-net-cdc-engine-for-postgres-strea.md",
@@ -1372,7 +1375,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 410
+      "shortId": 413
     },
     {
       "filename": "2026-09-28-sarvam-ai-now-hosts-us-models-why-this-matters-for.md",
@@ -1396,7 +1399,7 @@
         "models",
         "founders"
       ],
-      "shortId": 409
+      "shortId": 412
     },
     {
       "filename": "2026-09-28-jev-ai-speeds-agent-decisions-193x-the-lightweight.md",
@@ -1422,7 +1425,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 408
+      "shortId": 411
     },
     {
       "filename": "2026-09-27-spivak-calculus-fully-formalized-in-lean-4.md",
@@ -1445,7 +1448,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 407
+      "shortId": 410
     },
     {
       "filename": "2026-09-27-reladraw-releases-version-080-a-placementfocused-d.md",
@@ -1469,7 +1472,54 @@
         "agents",
         "engineering"
       ],
-      "shortId": 406
+      "shortId": 409
+    },
+    {
+      "filename": "2026-09-27-aurionmail-suite-releases-open-source-e2ee-mail-an.md",
+      "slug": "2026-09-27-aurionmail-suite-releases-open-source-e2ee-mail-an",
+      "url": "/blog/2026-09-27-aurionmail-suite-releases-open-source-e2ee-mail-an/",
+      "title": "AurionMail Suite releases open-source E2EE mail and docs platform",
+      "date": "2026-09-27",
+      "published_at": "2026-09-27T14:26:41.261250+00:00",
+      "tags": [
+        "e2ee",
+        "self-hosted",
+        "mail",
+        "collaboration"
+      ],
+      "excerpt": "All you need to know about AurionMail",
+      "image": "assets/images/demo.gif",
+      "sources": [
+        "https://aurionmail.github.io/docs/"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "opensource"
+      ],
+      "shortId": 408
+    },
+    {
+      "filename": "2026-09-26-tui2web-streams-any-terminal-app-to-your-phone-via.md",
+      "slug": "2026-09-26-tui2web-streams-any-terminal-app-to-your-phone-via",
+      "url": "/blog/2026-09-26-tui2web-streams-any-terminal-app-to-your-phone-via/",
+      "title": "tui2web streams any terminal app to your phone via a private link",
+      "date": "2026-09-26",
+      "published_at": "2026-09-26T13:30:46.443728+00:00",
+      "tags": [
+        "terminal",
+        "remote-access",
+        "cli"
+      ],
+      "excerpt": "Start your coding agent, then go for a walk. Check in, answer its questions and approve changes from your phone.",
+      "image": "https://bitroot.org/blog/media/2026-09-26-tui2web-streams-any-terminal-app-to-your-phone-via.png",
+      "sources": [
+        "https://tui2web.com/"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
+      "shortId": 407
     },
     {
       "filename": "2026-09-26-qwen306b-inference-runs-inside-linux-ebpf-kernel.md",
@@ -1492,6 +1542,29 @@
       "categories": [
         "models",
         "engineering"
+      ],
+      "shortId": 406
+    },
+    {
+      "filename": "2026-09-26-paper-docx-provides-a-safe-fork-of-python-docx-for.md",
+      "slug": "2026-09-26-paper-docx-provides-a-safe-fork-of-python-docx-for",
+      "url": "/blog/2026-09-26-paper-docx-provides-a-safe-fork-of-python-docx-for/",
+      "title": "paper-docx provides a safe fork of python-docx for Word editing",
+      "date": "2026-09-26",
+      "published_at": "2026-09-26T13:30:50.213161+00:00",
+      "tags": [
+        "python",
+        "docx",
+        "open-source"
+      ],
+      "excerpt": "Contribute to paper-instruments/paper-docx development by creating an account on GitHub.",
+      "image": "https://bitroot.org/blog/media/2026-09-26-paper-docx-provides-a-safe-fork-of-python-docx-for.png",
+      "sources": [
+        "https://github.com/paper-instruments/paper-docx"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "opensource"
       ],
       "shortId": 405
     },

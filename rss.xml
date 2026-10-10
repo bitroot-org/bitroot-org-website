@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 10 Oct 2026 04:15:35 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 04:16:21 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Your AI Agent Might Do Things You Didn't Intend</title>
@@ -603,6 +603,35 @@
       <source url="https://github.com/reladraw/reladraw">Original Source</source>
     </item>
     <item>
+      <title>AurionMail Suite releases open-source E2EE mail and docs platform</title>
+      <link>https://bitroot.org/blog/2026-09-27-aurionmail-suite-releases-open-source-e2ee-mail-an/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-27-aurionmail-suite-releases-open-source-e2ee-mail-an/</guid>
+      <description>All you need to know about AurionMail
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://aurionmail.github.io/docs/"&gt;https://aurionmail.github.io/docs/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sun, 27 Sep 2026 14:26:41 +0000</pubDate>
+      <category>e2ee</category>
+      <category>self-hosted</category>
+      <category>mail</category>
+      <category>collaboration</category>
+      <enclosure url="https://bitroot.org/blog/assets/images/demo.gif" type="image/gif" length="0" />
+      <source url="https://aurionmail.github.io/docs/">Original Source</source>
+    </item>
+    <item>
+      <title>tui2web streams any terminal app to your phone via a private link</title>
+      <link>https://bitroot.org/blog/2026-09-26-tui2web-streams-any-terminal-app-to-your-phone-via/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-26-tui2web-streams-any-terminal-app-to-your-phone-via/</guid>
+      <description>Start your coding agent, then go for a walk. Check in, answer its questions and approve changes from your phone.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://tui2web.com/"&gt;https://tui2web.com/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 26 Sep 2026 13:30:46 +0000</pubDate>
+      <category>terminal</category>
+      <category>remote-access</category>
+      <category>cli</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-09-26-tui2web-streams-any-terminal-app-to-your-phone-via.png" type="image/png" length="0" />
+      <source url="https://tui2web.com/">Original Source</source>
+    </item>
+    <item>
       <title>Qwen3‑0.6B inference runs inside Linux eBPF kernel</title>
       <link>https://bitroot.org/blog/2026-09-26-qwen306b-inference-runs-inside-linux-ebpf-kernel/</link>
       <guid isPermaLink="true">https://bitroot.org/blog/2026-09-26-qwen306b-inference-runs-inside-linux-ebpf-kernel/</guid>
@@ -615,6 +644,20 @@
       <category>inference</category>
       <enclosure url="https://bitroot.org/blog/media/2026-09-26-qwen306b-inference-runs-inside-linux-ebpf-kernel.png" type="image/png" length="0" />
       <source url="https://eunomia.dev/blog/2026/09/24/qwen3-ebpf-in-kernel-inference/">Original Source</source>
+    </item>
+    <item>
+      <title>paper-docx provides a safe fork of python-docx for Word editing</title>
+      <link>https://bitroot.org/blog/2026-09-26-paper-docx-provides-a-safe-fork-of-python-docx-for/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-26-paper-docx-provides-a-safe-fork-of-python-docx-for/</guid>
+      <description>Contribute to paper-instruments/paper-docx development by creating an account on GitHub.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/paper-instruments/paper-docx"&gt;https://github.com/paper-instruments/paper-docx&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 26 Sep 2026 13:30:50 +0000</pubDate>
+      <category>python</category>
+      <category>docx</category>
+      <category>open-source</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-09-26-paper-docx-provides-a-safe-fork-of-python-docx-for.png" type="image/png" length="0" />
+      <source url="https://github.com/paper-instruments/paper-docx">Original Source</source>
     </item>
     <item>
       <title>Muse Early Access Program: How to Get First Access to Computer Control &amp; Avatar Features</title>
