@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "count": 444,
+  "count": 448,
   "posts": [
     "2026-10-10-why-your-ai-agent-might-do-things-you-didnt-intend.md",
     "2026-10-10-why-arenas-3-1b-valuation-matters-for-model-select.md",
@@ -13,6 +13,7 @@
     "2026-10-09-ai-chat-agent-runs-on-a-nokia-110-4g-via-a-hacked.md",
     "2026-10-08-google-playground-ai-generated-games-from-text-pro.md",
     "2026-10-07-terrainsr-upscales-100-m-heightmaps-to-10-m-detail.md",
+    "2026-10-07-sprout-adds-bluetooth-wifi-and-streaming-to-classi.md",
     "2026-10-07-mistral-large-4-le-chonk-europes-open-weight-alter.md",
     "2026-10-07-ai-agents-getting-blocked-ucp-vs-personal-agent-pr.md",
     "2026-10-06-minigraf-203-adds-bi-temporal-graph-storage-for-ru.md",
@@ -46,7 +47,10 @@
     "2026-09-27-reladraw-releases-version-080-a-placementfocused-d.md",
     "2026-09-26-qwen306b-inference-runs-inside-linux-ebpf-kernel.md",
     "2026-09-26-muse-early-access-program-how-to-get-first-access.md",
+    "2026-09-26-logolabs-releases-agate-260mparameter-texttoimage.md",
     "2026-09-26-agentic-cuda-optimizer-automates-kernel-tuning-via.md",
+    "2026-09-25-zeph-ships-25-diy-voicefirst-ai-desk-companion.md",
+    "2026-09-25-whiteboard-launches-as-an-opensource-canvas-for-de.md",
     "2026-09-25-postgres-extension-kafgres-hits-700-mbs-kafkacompa.md",
     "2026-09-25-claudes-refusal-billing-cost-impact-for-founders-a.md",
     "2026-09-25-c3-language-gets-an-inbrowser-playground-with-grap.md",
@@ -471,7 +475,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 444
+      "shortId": 448
     },
     {
       "filename": "2026-10-10-why-arenas-3-1b-valuation-matters-for-model-select.md",
@@ -495,7 +499,7 @@
         "models",
         "founders"
       ],
-      "shortId": 443
+      "shortId": 447
     },
     {
       "filename": "2026-10-09-using-openai-for-math-products-verify-decide.md",
@@ -519,7 +523,7 @@
         "models",
         "founders"
       ],
-      "shortId": 442
+      "shortId": 446
     },
     {
       "filename": "2026-10-09-synthid-goes-mainstream-why-founders-should-build.md",
@@ -542,7 +546,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 441
+      "shortId": 445
     },
     {
       "filename": "2026-10-09-rembrandt-launches-free-selfhosted-photo-editor-wi.md",
@@ -565,7 +569,7 @@
       "categories": [
         "opensource"
       ],
-      "shortId": 440
+      "shortId": 444
     },
     {
       "filename": "2026-10-09-quake-runs-in-browser-via-saferust-port.md",
@@ -588,7 +592,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 439
+      "shortId": 443
     },
     {
       "filename": "2026-10-09-k10s-adds-mousedriven-ui-and-builtin-ai-to-kuberne.md",
@@ -611,7 +615,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 438
+      "shortId": 442
     },
     {
       "filename": "2026-10-09-diy-flexible-neon-t-shirt-using-led-filaments.md",
@@ -634,7 +638,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 437
+      "shortId": 441
     },
     {
       "filename": "2026-10-09-ai-chat-agent-runs-on-a-nokia-110-4g-via-a-hacked.md",
@@ -658,7 +662,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 436
+      "shortId": 440
     },
     {
       "filename": "2026-10-08-google-playground-ai-generated-games-from-text-pro.md",
@@ -682,7 +686,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 435
+      "shortId": 439
     },
     {
       "filename": "2026-10-07-terrainsr-upscales-100-m-heightmaps-to-10-m-detail.md",
@@ -704,7 +708,31 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 434
+      "shortId": 438
+    },
+    {
+      "filename": "2026-10-07-sprout-adds-bluetooth-wifi-and-streaming-to-classi.md",
+      "slug": "2026-10-07-sprout-adds-bluetooth-wifi-and-streaming-to-classi",
+      "url": "/blog/2026-10-07-sprout-adds-bluetooth-wifi-and-streaming-to-classi/",
+      "title": "Sprout adds Bluetooth, Wi\u2011Fi and streaming to classic iPods",
+      "date": "2026-10-07",
+      "published_at": "2026-10-07T15:56:25.450725+00:00",
+      "tags": [
+        "iPod",
+        "hardware",
+        "retro",
+        "mod"
+      ],
+      "excerpt": "Sprout \u2013 a modern motherboard for old iPods.",
+      "image": "assets/ipod-labels.svg?v=20260720-red",
+      "sources": [
+        "https://certainthings.studio/sprout/"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
+      "shortId": 437
     },
     {
       "filename": "2026-10-07-mistral-large-4-le-chonk-europes-open-weight-alter.md",
@@ -729,7 +757,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 433
+      "shortId": 436
     },
     {
       "filename": "2026-10-07-ai-agents-getting-blocked-ucp-vs-personal-agent-pr.md",
@@ -766,7 +794,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 432
+      "shortId": 435
     },
     {
       "filename": "2026-10-06-minigraf-203-adds-bi-temporal-graph-storage-for-ru.md",
@@ -789,7 +817,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 431
+      "shortId": 434
     },
     {
       "filename": "2026-10-06-ichat-av-revived-on-leopard-via-a-custom-snatmap-h.md",
@@ -812,7 +840,7 @@
       "categories": [
         "design"
       ],
-      "shortId": 430
+      "shortId": 433
     },
     {
       "filename": "2026-10-05-tpmlsm-adds-ebpf-guard-to-restrict-tpm-access-on-l.md",
@@ -835,7 +863,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 429
+      "shortId": 432
     },
     {
       "filename": "2026-10-05-gemini-4-argon-vs-gpt-6-astra-vs-claude-for-founde.md",
@@ -859,7 +887,7 @@
         "models",
         "founders"
       ],
-      "shortId": 428
+      "shortId": 431
     },
     {
       "filename": "2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p.md",
@@ -882,7 +910,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 427
+      "shortId": 430
     },
     {
       "filename": "2026-10-04-networkx-adds-pyarrow-backend-with-65-memory-savin.md",
@@ -903,7 +931,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 426
+      "shortId": 429
     },
     {
       "filename": "2026-10-04-headstart-speeds-rust-builds-by-up-to-54-using-ear.md",
@@ -926,7 +954,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 425
+      "shortId": 428
     },
     {
       "filename": "2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for.md",
@@ -949,7 +977,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 424
+      "shortId": 427
     },
     {
       "filename": "2026-10-03-macos-full-disk-access-tightening-what-founders-us.md",
@@ -974,7 +1002,7 @@
         "founders",
         "engineering"
       ],
-      "shortId": 423
+      "shortId": 426
     },
     {
       "filename": "2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo.md",
@@ -995,7 +1023,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 422
+      "shortId": 425
     },
     {
       "filename": "2026-10-02-openc6-bios-adds-pcstyle-microkernel-to-esp32c6.md",
@@ -1018,7 +1046,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 421
+      "shortId": 424
     },
     {
       "filename": "2026-10-02-janus-adds-a-vulkanpowered-local-llm-server-with-o.md",
@@ -1041,7 +1069,7 @@
       "categories": [
         "models"
       ],
-      "shortId": 420
+      "shortId": 423
     },
     {
       "filename": "2026-10-02-firezone-skips-scim-builds-its-own-pullbased-direc.md",
@@ -1062,7 +1090,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 419
+      "shortId": 422
     },
     {
       "filename": "2026-10-01-yantra-adds-a-native-c-lalr1-parser-generator.md",
@@ -1085,7 +1113,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 418
+      "shortId": 421
     },
     {
       "filename": "2026-10-01-strata-launches-aisafe-selfservice-analytics-platf.md",
@@ -1108,7 +1136,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 417
+      "shortId": 420
     },
     {
       "filename": "2026-10-01-parrot-0252-brings-ondevice-ai-assistance-to-mac-m.md",
@@ -1129,7 +1157,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 416
+      "shortId": 419
     },
     {
       "filename": "2026-10-01-argon-vs-astra-vs-claude-which-model-founders-shou.md",
@@ -1154,7 +1182,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 415
+      "shortId": 418
     },
     {
       "filename": "2026-09-30-turbogpt-lets-you-train-a-tiny-gpt-in-under-a-minu.md",
@@ -1178,7 +1206,7 @@
         "models",
         "engineering"
       ],
-      "shortId": 414
+      "shortId": 417
     },
     {
       "filename": "2026-09-25-new-mlir-tutorial-walks-you-through-building-a-kal.md",
@@ -1201,7 +1229,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 413
+      "shortId": 416
     },
     {
       "filename": "2026-09-30-openai-dots-launches-free-autonomous-agents-for-pr.md",
@@ -1226,7 +1254,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 412
+      "shortId": 415
     },
     {
       "filename": "2026-09-29-use-any-c-library-in-godot-via-conan-and-cmake.md",
@@ -1248,7 +1276,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 411
+      "shortId": 414
     },
     {
       "filename": "2026-09-29-pacbench-scores-claude-opus-55-at-99100-in-oneshot.md",
@@ -1271,7 +1299,7 @@
       "categories": [
         "models"
       ],
-      "shortId": 410
+      "shortId": 413
     },
     {
       "filename": "2026-09-29-openai-o3s-hidden-cost-why-your-reasoning-token-bi.md",
@@ -1296,7 +1324,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 409
+      "shortId": 412
     },
     {
       "filename": "2026-09-29-geneva-cli-adds-jsondriven-video-editing-with-html.md",
@@ -1321,7 +1349,7 @@
         "opensource",
         "design"
       ],
-      "shortId": 408
+      "shortId": 411
     },
     {
       "filename": "2026-09-28-wallaby-launches-net-cdc-engine-for-postgres-strea.md",
@@ -1344,7 +1372,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 407
+      "shortId": 410
     },
     {
       "filename": "2026-09-28-sarvam-ai-now-hosts-us-models-why-this-matters-for.md",
@@ -1368,7 +1396,7 @@
         "models",
         "founders"
       ],
-      "shortId": 406
+      "shortId": 409
     },
     {
       "filename": "2026-09-28-jev-ai-speeds-agent-decisions-193x-the-lightweight.md",
@@ -1394,7 +1422,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 405
+      "shortId": 408
     },
     {
       "filename": "2026-09-27-spivak-calculus-fully-formalized-in-lean-4.md",
@@ -1417,7 +1445,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 404
+      "shortId": 407
     },
     {
       "filename": "2026-09-27-reladraw-releases-version-080-a-placementfocused-d.md",
@@ -1441,7 +1469,7 @@
         "agents",
         "engineering"
       ],
-      "shortId": 403
+      "shortId": 406
     },
     {
       "filename": "2026-09-26-qwen306b-inference-runs-inside-linux-ebpf-kernel.md",
@@ -1465,7 +1493,7 @@
         "models",
         "engineering"
       ],
-      "shortId": 402
+      "shortId": 405
     },
     {
       "filename": "2026-09-26-muse-early-access-program-how-to-get-first-access.md",
@@ -1488,7 +1516,33 @@
       "categories": [
         "agents"
       ],
-      "shortId": 401
+      "shortId": 404
+    },
+    {
+      "filename": "2026-09-26-logolabs-releases-agate-260mparameter-texttoimage.md",
+      "slug": "2026-09-26-logolabs-releases-agate-260mparameter-texttoimage",
+      "url": "/blog/2026-09-26-logolabs-releases-agate-260mparameter-texttoimage/",
+      "title": "Logolabs releases Agate 260M\u2011parameter text\u2011to\u2011image model on Hugging Face",
+      "date": "2026-09-26",
+      "published_at": "2026-09-26T13:31:28.626925+00:00",
+      "tags": [
+        "text-to-image",
+        "small model",
+        "huggingface",
+        "opensource"
+      ],
+      "excerpt": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "image": "https://bitroot.org/blog/media/2026-09-26-logolabs-releases-agate-260mparameter-texttoimage.png",
+      "sources": [
+        "https://huggingface.co/Logolabs/agate-preview-001"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "models",
+        "opensource",
+        "design"
+      ],
+      "shortId": 403
     },
     {
       "filename": "2026-09-26-agentic-cuda-optimizer-automates-kernel-tuning-via.md",
@@ -1511,6 +1565,56 @@
       "categories": [
         "agents",
         "engineering"
+      ],
+      "shortId": 402
+    },
+    {
+      "filename": "2026-09-25-zeph-ships-25-diy-voicefirst-ai-desk-companion.md",
+      "slug": "2026-09-25-zeph-ships-25-diy-voicefirst-ai-desk-companion",
+      "url": "/blog/2026-09-25-zeph-ships-25-diy-voicefirst-ai-desk-companion/",
+      "title": "Zeph ships $25 DIY voice\u2011first AI desk companion",
+      "date": "2026-09-25",
+      "published_at": "2026-09-25T14:21:11.171169+00:00",
+      "tags": [
+        "voice interface",
+        "hardware",
+        "ai assistants",
+        "productivity"
+      ],
+      "excerpt": "The voice-first physical AI interface for modern productivity \u2014 push-to-talk dictation into any app, replies from your agents, and rate limits right on the glass.",
+      "image": "https://bitroot.org/blog/media/2026-09-25-zeph-ships-25-diy-voicefirst-ai-desk-companion.png",
+      "sources": [
+        "https://zephclick.com"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "design",
+        "engineering"
+      ],
+      "shortId": 401
+    },
+    {
+      "filename": "2026-09-25-whiteboard-launches-as-an-opensource-canvas-for-de.md",
+      "slug": "2026-09-25-whiteboard-launches-as-an-opensource-canvas-for-de",
+      "url": "/blog/2026-09-25-whiteboard-launches-as-an-opensource-canvas-for-de/",
+      "title": "Whiteboard launches as an open\u2011source canvas for deliberate software design",
+      "date": "2026-09-25",
+      "published_at": "2026-09-25T14:22:22.155042+00:00",
+      "tags": [
+        "developer tools",
+        "software design",
+        "open source"
+      ],
+      "excerpt": "open-source canvas for thoughtful software design. Contribute to devdotfast/whiteboard development by creating an account on GitHub.",
+      "image": "https://bitroot.org/blog/media/2026-09-25-whiteboard-launches-as-an-opensource-canvas-for-de.png",
+      "sources": [
+        "https://github.com/devdotfast/whiteboard"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "agents",
+        "opensource",
+        "design"
       ],
       "shortId": 400
     },

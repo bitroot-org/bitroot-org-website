@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 10 Oct 2026 04:14:47 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 04:15:35 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Your AI Agent Might Do Things You Didn't Intend</title>
@@ -156,6 +156,21 @@
       <category>graphics</category>
       <enclosure url="https://bitroot.org/blog/media/2026-10-07-terrainsr-upscales-100-m-heightmaps-to-10-m-detail.png" type="image/png" length="0" />
       <source url="https://huggingface.co/joe-gibbs/terrainsr">Original Source</source>
+    </item>
+    <item>
+      <title>Sprout adds Bluetooth, Wi‑Fi and streaming to classic iPods</title>
+      <link>https://bitroot.org/blog/2026-10-07-sprout-adds-bluetooth-wifi-and-streaming-to-classi/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-07-sprout-adds-bluetooth-wifi-and-streaming-to-classi/</guid>
+      <description>Sprout – a modern motherboard for old iPods.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://certainthings.studio/sprout/"&gt;https://certainthings.studio/sprout/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 07 Oct 2026 15:56:25 +0000</pubDate>
+      <category>iPod</category>
+      <category>hardware</category>
+      <category>retro</category>
+      <category>mod</category>
+      <enclosure url="https://bitroot.org/blog/assets/ipod-labels.svg?v=20260720-red" type="image/jpeg" length="0" />
+      <source url="https://certainthings.studio/sprout/">Original Source</source>
     </item>
     <item>
       <title>Mistral Large 4 (Le Chonk): Europe's Open-Weight Alternative for Founders</title>
@@ -615,6 +630,21 @@
       <enclosure url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShvLO0yuSR5_Pofzw8MDRMhFXB0z_4sUW16XhqPxQtrg&amp;s=10" type="image/jpeg" length="0" />
     </item>
     <item>
+      <title>Logolabs releases Agate 260M‑parameter text‑to‑image model on Hugging Face</title>
+      <link>https://bitroot.org/blog/2026-09-26-logolabs-releases-agate-260mparameter-texttoimage/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-26-logolabs-releases-agate-260mparameter-texttoimage/</guid>
+      <description>We’re on a journey to advance and democratize artificial intelligence through open source and open science.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://huggingface.co/Logolabs/agate-preview-001"&gt;https://huggingface.co/Logolabs/agate-preview-001&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 26 Sep 2026 13:31:28 +0000</pubDate>
+      <category>text-to-image</category>
+      <category>small model</category>
+      <category>huggingface</category>
+      <category>opensource</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-09-26-logolabs-releases-agate-260mparameter-texttoimage.png" type="image/png" length="0" />
+      <source url="https://huggingface.co/Logolabs/agate-preview-001">Original Source</source>
+    </item>
+    <item>
       <title>Agentic CUDA optimizer automates kernel tuning via LangGraph</title>
       <link>https://bitroot.org/blog/2026-09-26-agentic-cuda-optimizer-automates-kernel-tuning-via/</link>
       <guid isPermaLink="true">https://bitroot.org/blog/2026-09-26-agentic-cuda-optimizer-automates-kernel-tuning-via/</guid>
@@ -627,6 +657,35 @@
       <category>langgraph</category>
       <enclosure url="https://bitroot.org/blog/media/2026-09-26-agentic-cuda-optimizer-automates-kernel-tuning-via.png" type="image/png" length="0" />
       <source url="https://github.com/bertaye/agentic-cuda-optimizer">Original Source</source>
+    </item>
+    <item>
+      <title>Zeph ships $25 DIY voice‑first AI desk companion</title>
+      <link>https://bitroot.org/blog/2026-09-25-zeph-ships-25-diy-voicefirst-ai-desk-companion/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-25-zeph-ships-25-diy-voicefirst-ai-desk-companion/</guid>
+      <description>The voice-first physical AI interface for modern productivity — push-to-talk dictation into any app, replies from your agents, and rate limits right on the glass.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://zephclick.com"&gt;https://zephclick.com&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 25 Sep 2026 14:21:11 +0000</pubDate>
+      <category>voice interface</category>
+      <category>hardware</category>
+      <category>ai assistants</category>
+      <category>productivity</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-09-25-zeph-ships-25-diy-voicefirst-ai-desk-companion.png" type="image/png" length="0" />
+      <source url="https://zephclick.com">Original Source</source>
+    </item>
+    <item>
+      <title>Whiteboard launches as an open‑source canvas for deliberate software design</title>
+      <link>https://bitroot.org/blog/2026-09-25-whiteboard-launches-as-an-opensource-canvas-for-de/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-25-whiteboard-launches-as-an-opensource-canvas-for-de/</guid>
+      <description>open-source canvas for thoughtful software design. Contribute to devdotfast/whiteboard development by creating an account on GitHub.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/devdotfast/whiteboard"&gt;https://github.com/devdotfast/whiteboard&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 25 Sep 2026 14:22:22 +0000</pubDate>
+      <category>developer tools</category>
+      <category>software design</category>
+      <category>open source</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-09-25-whiteboard-launches-as-an-opensource-canvas-for-de.png" type="image/png" length="0" />
+      <source url="https://github.com/devdotfast/whiteboard">Original Source</source>
     </item>
     <item>
       <title>Postgres extension Kafgres hits 700 MB/s Kafka‑compatible throughput</title>
