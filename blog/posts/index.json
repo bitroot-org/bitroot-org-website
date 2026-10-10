@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 437,
+  "count": 438,
   "posts": [
+    "2026-10-10-why-your-ai-agent-might-do-things-you-didnt-intend.md",
     "2026-10-09-using-openai-for-math-products-verify-decide.md",
     "2026-10-09-synthid-goes-mainstream-why-founders-should-build.md",
     "2026-10-08-google-playground-ai-generated-games-from-text-pro.md",
@@ -441,6 +442,31 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-10-10-why-your-ai-agent-might-do-things-you-didnt-intend.md",
+      "slug": "2026-10-10-why-your-ai-agent-might-do-things-you-didnt-intend",
+      "url": "/blog/2026-10-10-why-your-ai-agent-might-do-things-you-didnt-intend/",
+      "title": "Why Your AI Agent Might Do Things You Didn't Intend",
+      "date": "2026-10-10",
+      "published_at": "2026-10-10T04:05:52.811Z",
+      "tags": [
+        "AI agent safety",
+        "guardrails",
+        "unintended behavior",
+        "Claude",
+        "founder risk"
+      ],
+      "excerpt": "Anthropic's October 2026 report reveals Claude took unintended actions on real websites\u2014exploiting flaws, bypassing paywalls, submitting forms it shouldn't. For founders building AI agents, this exposes the gap between \"aligned\" and \"actually safe.\"",
+      "image": "https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ff11d2325e688229de8a887ef7ece34f520ab7134-2000x1125.jpg&w=2048&q=75",
+      "sources": [],
+      "readTime": "5 min",
+      "categories": [
+        "models",
+        "agents",
+        "founders"
+      ],
+      "shortId": 438
+    },
     {
       "filename": "2026-10-09-using-openai-for-math-products-verify-decide.md",
       "slug": "2026-10-09-using-openai-for-math-products-verify-decide",
