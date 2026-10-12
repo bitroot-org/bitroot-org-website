@@ -1,15 +1,15 @@
 ---
-date: '2026-10-11'
-excerpt: A little guy for every AI agent. Free and open source, for macOS.
+date: '2026-10-12'
+excerpt: 'A little guy for every AI agent. Free and open source, for macOS.'
 image: https://bitroot.org/blog/media/2026-10-11-littleguys-adds-a-menubar-ui-for-local-claude-code.jpg
 published_at: '2026-10-11T15:12:51.747481+00:00'
 sources:
 - https://littleguys.hervalicio.us
 tags:
-- macos
-- agent tooling
-- open source
-title: littleguys adds a menu‑bar UI for local Claude, Codex, and OpenClaw agents
+- 'macos'
+- 'agent tooling'
+- 'open source'
+title: 'littleguys adds a menu‑bar UI for local Claude, Codex, and OpenClaw agents'
 ---
 
 littleguys is now available as a free, open‑source macOS menu‑bar app that surfaces the status of your AI agents directly from the menu bar. Install it by running a one‑liner that pulls and builds the app from source – no pre‑built binary is shipped yet. The script fetches any missing dependencies (Xcode Command Line Tools, Rust, Node, pnpm) and places the built `littleguys.app` in `/Applications`.
