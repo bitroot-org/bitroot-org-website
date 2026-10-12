@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 451,
+  "count": 452,
   "posts": [
+    "2026-10-11-zrax-workbench-lets-you-classify-binaries-inbrowse.md",
     "2026-10-10-why-your-ai-agent-might-do-things-you-didnt-intend.md",
     "2026-10-10-why-arenas-3-1b-valuation-matters-for-model-select.md",
     "2026-10-09-using-openai-for-math-products-verify-decide.md",
@@ -455,6 +456,29 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-10-11-zrax-workbench-lets-you-classify-binaries-inbrowse.md",
+      "slug": "2026-10-11-zrax-workbench-lets-you-classify-binaries-inbrowse",
+      "url": "/blog/2026-10-11-zrax-workbench-lets-you-classify-binaries-inbrowse/",
+      "title": "Zrax Workbench lets you classify binaries in\u2011browser without uploading",
+      "date": "2026-10-11",
+      "published_at": "2026-10-11T15:12:56.567689+00:00",
+      "tags": [
+        "binary analysis",
+        "reverse engineering",
+        "web tool"
+      ],
+      "excerpt": "[ no files ] drop binaries anywhere one file opens in the workbench; several open the batch table. press o to browse.",
+      "image": null,
+      "sources": [
+        "https://zr.ax/"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
+      "shortId": 452
+    },
     {
       "filename": "2026-10-10-why-your-ai-agent-might-do-things-you-didnt-intend.md",
       "slug": "2026-10-10-why-your-ai-agent-might-do-things-you-didnt-intend",

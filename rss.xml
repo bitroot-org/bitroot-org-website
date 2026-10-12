@@ -5,8 +5,21 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 10 Oct 2026 04:16:21 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 03:29:12 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zrax Workbench lets you classify binaries in‑browser without uploading</title>
+      <link>https://bitroot.org/blog/2026-10-11-zrax-workbench-lets-you-classify-binaries-inbrowse/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-11-zrax-workbench-lets-you-classify-binaries-inbrowse/</guid>
+      <description>[ no files ] drop binaries anywhere one file opens in the workbench; several open the batch table. press o to browse.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://zr.ax/"&gt;https://zr.ax/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sun, 11 Oct 2026 15:12:56 +0000</pubDate>
+      <category>binary analysis</category>
+      <category>reverse engineering</category>
+      <category>web tool</category>
+      <source url="https://zr.ax/">Original Source</source>
+    </item>
     <item>
       <title>Why Your AI Agent Might Do Things You Didn't Intend</title>
       <link>https://bitroot.org/blog/2026-10-10-why-your-ai-agent-might-do-things-you-didnt-intend/</link>
