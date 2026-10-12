@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 453,
+  "count": 454,
   "posts": [
+    "2026-10-12-nvidia-personaplex-7b-for-voice-agents.md",
     "2026-10-11-littleguys-adds-a-menubar-ui-for-local-claude-code.md",
     "2026-10-11-manimgx-launches-as-a-rustbacked-3d-animation-engi.md",
     "2026-10-10-why-your-ai-agent-might-do-things-you-didnt-intend.md",
@@ -457,6 +458,33 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-10-12-nvidia-personaplex-7b-for-voice-agents.md",
+      "slug": "2026-10-12-nvidia-personaplex-7b-for-voice-agents",
+      "url": "/blog/2026-10-12-nvidia-personaplex-7b-for-voice-agents/",
+      "title": "NVIDIA PersonaPlex-7B for Voice Agents",
+      "date": "2026-10-12",
+      "published_at": "2026-10-12T06:20:10.433Z",
+      "tags": [
+        "NVIDIA voice AI",
+        "full-duplex voice model",
+        "open-source voice agents",
+        "voice API costs",
+        "founder automation"
+      ],
+      "excerpt": "NVIDIA's PersonaPlex-7B removes the biggest friction in voice AI: proprietary API costs and latency. At 18x lower latency than Gemini Live and fully self-hosted, it's the moment voice agents became affordable for bootstrapped founders.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEk2tbyslJpSttz_kKk1a1l09oi0BBzLQ_i-MGaevF-w&s=10",
+      "sources": [],
+      "readTime": "7 min",
+      "categories": [
+        "models",
+        "agents",
+        "founders",
+        "opensource",
+        "design"
+      ],
+      "shortId": 454
+    },
     {
       "filename": "2026-10-11-littleguys-adds-a-menubar-ui-for-local-claude-code.md",
       "slug": "2026-10-11-littleguys-adds-a-menubar-ui-for-local-claude-code",
