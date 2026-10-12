@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 452,
+  "count": 453,
   "posts": [
     "2026-10-11-manimgx-launches-as-a-rustbacked-3d-animation-engi.md",
+    "2026-10-11-littleguys-adds-a-menubar-ui-for-local-claude-code.md",
     "2026-10-10-why-your-ai-agent-might-do-things-you-didnt-intend.md",
     "2026-10-10-why-arenas-3-1b-valuation-matters-for-model-select.md",
     "2026-10-09-using-openai-for-math-products-verify-decide.md",
@@ -477,6 +478,31 @@
       "categories": [
         "design",
         "engineering"
+      ],
+      "shortId": 453
+    },
+    {
+      "filename": "2026-10-11-littleguys-adds-a-menubar-ui-for-local-claude-code.md",
+      "slug": "2026-10-11-littleguys-adds-a-menubar-ui-for-local-claude-code",
+      "url": "/blog/2026-10-11-littleguys-adds-a-menubar-ui-for-local-claude-code/",
+      "title": "littleguys adds a menu\u2011bar UI for local Claude, Codex, and OpenClaw agents",
+      "date": "2026-10-11",
+      "published_at": "2026-10-11T15:12:51.747481+00:00",
+      "tags": [
+        "macos",
+        "agent tooling",
+        "open source"
+      ],
+      "excerpt": "A little guy for every AI agent. Free and open source, for macOS.",
+      "image": "https://bitroot.org/blog/media/2026-10-11-littleguys-adds-a-menubar-ui-for-local-claude-code.jpg",
+      "sources": [
+        "https://littleguys.hervalicio.us"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "models",
+        "agents",
+        "opensource"
       ],
       "shortId": 452
     },
