@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 13 Oct 2026 04:46:53 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 04:47:36 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Meta's Muse Wonder Proves Frontier Models Are Commoditizing</title>
@@ -143,6 +143,33 @@
       <category>rust</category>
       <enclosure url="https://bitroot.org/blog/media/2026-10-11-manimgx-launches-as-a-rustbacked-3d-animation-engi.png" type="image/png" length="0" />
       <source url="https://github.com/academa-labs/manimgx">Original Source</source>
+    </item>
+    <item>
+      <title>ESP32‑S3 e‑paper board runs Game Boy at ~30 FPS</title>
+      <link>https://bitroot.org/blog/2026-10-11-esp32s3-epaper-board-runs-game-boy-at-30-fps/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-11-esp32s3-epaper-board-runs-game-boy-at-30-fps/</guid>
+      <description>Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=XiZmM6hwwAU"&gt;https://www.youtube.com/watch?v=XiZmM6hwwAU&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sun, 11 Oct 2026 15:13:29 +0000</pubDate>
+      <category>esp32</category>
+      <category>e-paper</category>
+      <category>gameboy-emulator</category>
+      <source url="https://www.youtube.com/watch?v=XiZmM6hwwAU">Original Source</source>
+    </item>
+    <item>
+      <title>BabyTalk brings offline speech AI to ESP32‑S3 and P4</title>
+      <link>https://bitroot.org/blog/2026-10-11-babytalk-brings-offline-speech-ai-to-esp32s3-and-p/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-11-babytalk-brings-offline-speech-ai-to-esp32s3-and-p/</guid>
+      <description>Optimized ESP32-S3/P4 fully offline speech to text and text to speech system for Micropython and AtomVM, featuring a finetuned STT model for noisy environments, plus a data generation/field capture...
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/tlack/babytalk"&gt;https://github.com/tlack/babytalk&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sun, 11 Oct 2026 15:14:59 +0000</pubDate>
+      <category>esp32</category>
+      <category>offline-ml</category>
+      <category>speech</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-11-babytalk-brings-offline-speech-ai-to-esp32s3-and-p.png" type="image/png" length="0" />
+      <source url="https://github.com/tlack/babytalk">Original Source</source>
     </item>
     <item>
       <title>Why Your AI Agent Might Do Things You Didn't Intend</title>
