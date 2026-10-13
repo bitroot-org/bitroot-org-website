@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 463,
+  "count": 464,
   "posts": [
     "2026-10-13-metas-muse-wonder-proves-frontier-models-are-commo.md",
+    "2026-10-13-genjutsu-motion-transfer-api-compress-video-produc.md",
     "2026-10-13-ai-blueprints-solve-permit-timelines-but-not-liabi.md",
     "2026-10-12-zig-gains-a-compiletime-typesafe-html-templating-l.md",
     "2026-10-12-static-recompilation-runs-ps2-games-in-the-browser.md",
@@ -489,6 +490,31 @@
         "models",
         "agents",
         "founders"
+      ],
+      "shortId": 464
+    },
+    {
+      "filename": "2026-10-13-genjutsu-motion-transfer-api-compress-video-produc.md",
+      "slug": "2026-10-13-genjutsu-motion-transfer-api-compress-video-produc",
+      "url": "/blog/2026-10-13-genjutsu-motion-transfer-api-compress-video-produc/",
+      "title": "Genjutsu Motion Transfer API\u2014Compress Video Production to Minutes",
+      "date": "2026-10-13",
+      "published_at": "2026-10-13T10:31:38.258Z",
+      "tags": [
+        "Genjutsu API",
+        "motion transfer",
+        "video automation",
+        "AI video pricing",
+        "content creation"
+      ],
+      "excerpt": "Higgsfield's Genjutsu API applies motion from one video to new characters or scenes. Pricing starts at $0.318 per second, or $0.159 at the 50% discount. Here's what it does, what it costs, and where it fits.",
+      "image": "https://x.com/higgsfield_ai/status/2109681164806177267/video/1",
+      "sources": [],
+      "readTime": "5 min",
+      "categories": [
+        "agents",
+        "founders",
+        "design"
       ],
       "shortId": 463
     },
