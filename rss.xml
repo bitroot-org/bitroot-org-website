@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 13 Oct 2026 04:46:05 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 04:46:53 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Meta's Muse Wonder Proves Frontier Models Are Commoditizing</title>
@@ -47,6 +47,35 @@
       <source url="https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html">Original Source</source>
     </item>
     <item>
+      <title>Static recompilation runs PS2 games in the browser via WebAssembly</title>
+      <link>https://bitroot.org/blog/2026-10-12-static-recompilation-runs-ps2-games-in-the-browser/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-12-static-recompilation-runs-ps2-games-in-the-browser/</guid>
+      <description>PS2 games in the browser: static recompilation to WebAssembly with a native runtime - snuri00/ps2-web-recomp
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/snuri00/ps2-web-recomp"&gt;https://github.com/snuri00/ps2-web-recomp&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 12 Oct 2026 18:26:13 +0000</pubDate>
+      <category>ps2</category>
+      <category>webassembly</category>
+      <category>emulation</category>
+      <category>static-recompilation</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-12-static-recompilation-runs-ps2-games-in-the-browser.png" type="image/png" length="0" />
+      <source url="https://github.com/snuri00/ps2-web-recomp">Original Source</source>
+    </item>
+    <item>
+      <title>plimsoll adds tiered sandbox for AI‑generated code</title>
+      <link>https://bitroot.org/blog/2026-10-12-plimsoll-adds-tiered-sandbox-for-aigenerated-code/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-12-plimsoll-adds-tiered-sandbox-for-aigenerated-code/</guid>
+      <description>A sandbox service for running untrusted, agent-authored code that reports the isolation boundary each run executed behind. Lessons, no clone needed: https://plimsollmark.github.io/plimsoll/trainers...
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/plimsollmark/plimsoll"&gt;https://github.com/plimsollmark/plimsoll&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 12 Oct 2026 18:23:59 +0000</pubDate>
+      <category>sandbox</category>
+      <category>agent code</category>
+      <category>isolation</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-12-plimsoll-adds-tiered-sandbox-for-aigenerated-code.png" type="image/png" length="0" />
+      <source url="https://github.com/plimsollmark/plimsoll">Original Source</source>
+    </item>
+    <item>
       <title>NVIDIA PersonaPlex-7B for Voice Agents</title>
       <link>https://bitroot.org/blog/2026-10-12-nvidia-personaplex-7b-for-voice-agents/</link>
       <guid isPermaLink="true">https://bitroot.org/blog/2026-10-12-nvidia-personaplex-7b-for-voice-agents/</guid>
@@ -58,6 +87,34 @@
       <category>voice API costs</category>
       <category>founder automation</category>
       <enclosure url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEk2tbyslJpSttz_kKk1a1l09oi0BBzLQ_i-MGaevF-w&amp;s=10" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>Eufy HomeBase 2 firmware cracked: Wi‑Fi keys, UART shell, and a damaged flash</title>
+      <link>https://bitroot.org/blog/2026-10-12-eufy-homebase-2-firmware-cracked-wifi-keys-uart-sh/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-12-eufy-homebase-2-firmware-cracked-wifi-keys-uart-sh/</guid>
+      <description>Analyzing Eufy Security Ecosystem and reverse engineering of its Homebase2 component
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://adepts.of0x.cc/eufy-homestation2-firmware/"&gt;https://adepts.of0x.cc/eufy-homestation2-firmware/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 12 Oct 2026 18:24:58 +0000</pubDate>
+      <category>eufy</category>
+      <category>firmware</category>
+      <category>hardware-reverse-engineering</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-12-eufy-homebase-2-firmware-cracked-wifi-keys-uart-sh.png" type="image/png" length="0" />
+      <source url="https://adepts.of0x.cc/eufy-homestation2-firmware/">Original Source</source>
+    </item>
+    <item>
+      <title>Doiter launches a Docker‑backed language that treats containers as memory</title>
+      <link>https://bitroot.org/blog/2026-10-12-doiter-launches-a-dockerbacked-language-that-treat/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-12-doiter-launches-a-dockerbacked-language-that-treat/</guid>
+      <description>A cloud-native programming language which uses docker as virtual memory by representing pointers as docker containers, and fields as files. - simvux/doiter
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/simvux/doiter"&gt;https://github.com/simvux/doiter&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 12 Oct 2026 18:24:05 +0000</pubDate>
+      <category>programming language</category>
+      <category>docker</category>
+      <category>systems</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-12-doiter-launches-a-dockerbacked-language-that-treat.png" type="image/png" length="0" />
+      <source url="https://github.com/simvux/doiter">Original Source</source>
     </item>
     <item>
       <title>littleguys adds a menu‑bar UI for local Claude, Codex, and OpenClaw agents</title>

@@ -1,11 +1,15 @@
 {
   "generated": true,
-  "count": 457,
+  "count": 461,
   "posts": [
     "2026-10-13-metas-muse-wonder-proves-frontier-models-are-commo.md",
     "2026-10-13-ai-blueprints-solve-permit-timelines-but-not-liabi.md",
     "2026-10-12-zig-gains-a-compiletime-typesafe-html-templating-l.md",
+    "2026-10-12-static-recompilation-runs-ps2-games-in-the-browser.md",
+    "2026-10-12-plimsoll-adds-tiered-sandbox-for-aigenerated-code.md",
     "2026-10-12-nvidia-personaplex-7b-for-voice-agents.md",
+    "2026-10-12-eufy-homebase-2-firmware-cracked-wifi-keys-uart-sh.md",
+    "2026-10-12-doiter-launches-a-dockerbacked-language-that-treat.md",
     "2026-10-11-littleguys-adds-a-menubar-ui-for-local-claude-code.md",
     "2026-10-11-manimgx-launches-as-a-rustbacked-3d-animation-engi.md",
     "2026-10-10-why-your-ai-agent-might-do-things-you-didnt-intend.md",
@@ -484,7 +488,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 457
+      "shortId": 461
     },
     {
       "filename": "2026-10-13-ai-blueprints-solve-permit-timelines-but-not-liabi.md",
@@ -507,7 +511,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 456
+      "shortId": 460
     },
     {
       "filename": "2026-10-12-zig-gains-a-compiletime-typesafe-html-templating-l.md",
@@ -528,7 +532,54 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 455
+      "shortId": 459
+    },
+    {
+      "filename": "2026-10-12-static-recompilation-runs-ps2-games-in-the-browser.md",
+      "slug": "2026-10-12-static-recompilation-runs-ps2-games-in-the-browser",
+      "url": "/blog/2026-10-12-static-recompilation-runs-ps2-games-in-the-browser/",
+      "title": "Static recompilation runs PS2 games in the browser via WebAssembly",
+      "date": "2026-10-12",
+      "published_at": "2026-10-12T18:26:13.039227+00:00",
+      "tags": [
+        "ps2",
+        "webassembly",
+        "emulation",
+        "static-recompilation"
+      ],
+      "excerpt": "PS2 games in the browser: static recompilation to WebAssembly with a native runtime - snuri00/ps2-web-recomp",
+      "image": "https://bitroot.org/blog/media/2026-10-12-static-recompilation-runs-ps2-games-in-the-browser.png",
+      "sources": [
+        "https://github.com/snuri00/ps2-web-recomp"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
+      "shortId": 458
+    },
+    {
+      "filename": "2026-10-12-plimsoll-adds-tiered-sandbox-for-aigenerated-code.md",
+      "slug": "2026-10-12-plimsoll-adds-tiered-sandbox-for-aigenerated-code",
+      "url": "/blog/2026-10-12-plimsoll-adds-tiered-sandbox-for-aigenerated-code/",
+      "title": "plimsoll adds tiered sandbox for AI\u2011generated code",
+      "date": "2026-10-12",
+      "published_at": "2026-10-12T18:23:59.920268+00:00",
+      "tags": [
+        "sandbox",
+        "agent code",
+        "isolation"
+      ],
+      "excerpt": "A sandbox service for running untrusted, agent-authored code that reports the isolation boundary each run executed behind. Lessons, no clone needed: https://plimsollmark.github.io/plimsoll/trainers...",
+      "image": "https://bitroot.org/blog/media/2026-10-12-plimsoll-adds-tiered-sandbox-for-aigenerated-code.png",
+      "sources": [
+        "https://github.com/plimsollmark/plimsoll"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
+      "shortId": 457
     },
     {
       "filename": "2026-10-12-nvidia-personaplex-7b-for-voice-agents.md",
@@ -555,6 +606,50 @@
         "opensource",
         "design"
       ],
+      "shortId": 456
+    },
+    {
+      "filename": "2026-10-12-eufy-homebase-2-firmware-cracked-wifi-keys-uart-sh.md",
+      "slug": "2026-10-12-eufy-homebase-2-firmware-cracked-wifi-keys-uart-sh",
+      "url": "/blog/2026-10-12-eufy-homebase-2-firmware-cracked-wifi-keys-uart-sh/",
+      "title": "Eufy HomeBase 2 firmware cracked: Wi\u2011Fi keys, UART shell, and a damaged flash",
+      "date": "2026-10-12",
+      "published_at": "2026-10-12T18:24:58.640572+00:00",
+      "tags": [
+        "eufy",
+        "firmware",
+        "hardware-reverse-engineering"
+      ],
+      "excerpt": "Analyzing Eufy Security Ecosystem and reverse engineering of its Homebase2 component",
+      "image": "https://bitroot.org/blog/media/2026-10-12-eufy-homebase-2-firmware-cracked-wifi-keys-uart-sh.png",
+      "sources": [
+        "https://adepts.of0x.cc/eufy-homestation2-firmware/"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
+      "shortId": 455
+    },
+    {
+      "filename": "2026-10-12-doiter-launches-a-dockerbacked-language-that-treat.md",
+      "slug": "2026-10-12-doiter-launches-a-dockerbacked-language-that-treat",
+      "url": "/blog/2026-10-12-doiter-launches-a-dockerbacked-language-that-treat/",
+      "title": "Doiter launches a Docker\u2011backed language that treats containers as memory",
+      "date": "2026-10-12",
+      "published_at": "2026-10-12T18:24:05.588489+00:00",
+      "tags": [
+        "programming language",
+        "docker",
+        "systems"
+      ],
+      "excerpt": "A cloud-native programming language which uses docker as virtual memory by representing pointers as docker containers, and fields as files. - simvux/doiter",
+      "image": "https://bitroot.org/blog/media/2026-10-12-doiter-launches-a-dockerbacked-language-that-treat.png",
+      "sources": [
+        "https://github.com/simvux/doiter"
+      ],
+      "readTime": "2 min",
+      "categories": [],
       "shortId": 454
     },
     {
