@@ -1,8 +1,10 @@
 {
   "generated": true,
-  "count": 455,
+  "count": 457,
   "posts": [
     "2026-10-13-metas-muse-wonder-proves-frontier-models-are-commo.md",
+    "2026-10-13-ai-blueprints-solve-permit-timelines-but-not-liabi.md",
+    "2026-10-12-zig-gains-a-compiletime-typesafe-html-templating-l.md",
     "2026-10-12-nvidia-personaplex-7b-for-voice-agents.md",
     "2026-10-11-littleguys-adds-a-menubar-ui-for-local-claude-code.md",
     "2026-10-11-manimgx-launches-as-a-rustbacked-3d-animation-engi.md",
@@ -482,6 +484,50 @@
         "agents",
         "founders"
       ],
+      "shortId": 457
+    },
+    {
+      "filename": "2026-10-13-ai-blueprints-solve-permit-timelines-but-not-liabi.md",
+      "slug": "2026-10-13-ai-blueprints-solve-permit-timelines-but-not-liabi",
+      "url": "/blog/2026-10-13-ai-blueprints-solve-permit-timelines-but-not-liabi/",
+      "title": "AI Blueprints Solve Permit Timelines\u2014But Not Liability (Yet)",
+      "date": "2026-10-13",
+      "published_at": "2026-10-13T04:44:29.385Z",
+      "tags": [
+        "AI architecture",
+        "permit automation",
+        "construction tech",
+        "regulatory compliance",
+        "liability frameworks"
+      ],
+      "excerpt": "Blueprints AI generates permit-ready designs in minutes. The problem it solves: 4\u20138 week architect timelines. The problem it doesn't solve yet: architect liability still legally required. For founders automating real estate, this is the regulatory unlock\u2014with a catch.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/Blueprints-AI-Founder1.jpg?resize=1200,799",
+      "sources": [],
+      "readTime": "7 min",
+      "categories": [
+        "agents"
+      ],
+      "shortId": 456
+    },
+    {
+      "filename": "2026-10-12-zig-gains-a-compiletime-typesafe-html-templating-l.md",
+      "slug": "2026-10-12-zig-gains-a-compiletime-typesafe-html-templating-l",
+      "url": "/blog/2026-10-12-zig-gains-a-compiletime-typesafe-html-templating-l/",
+      "title": "Zig gains a compile\u2011time type\u2011safe HTML templating library",
+      "date": "2026-10-12",
+      "published_at": "2026-10-12T18:25:33.512347+00:00",
+      "tags": [
+        "zig",
+        "templating",
+        "type-safe"
+      ],
+      "excerpt": "Luk\u00e1\u0161 Lalinsk\u00fd introduced zt, a Zig library that transpiles HTML templates to Zig code at build time, giving compile\u2011time safety and zero\u2011allocation rendering.",
+      "image": null,
+      "sources": [
+        "https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html"
+      ],
+      "readTime": "2 min",
+      "categories": [],
       "shortId": 455
     },
     {

@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 13 Oct 2026 04:31:27 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 04:46:05 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Meta's Muse Wonder Proves Frontier Models Are Commoditizing</title>
@@ -19,6 +19,32 @@
       <category>model selection</category>
       <category>founder strategy</category>
       <enclosure url="https://techcrunch.com/wp-content/uploads/2026/10/Screenshot-2026-10-12-at-1.09.43-PM.jpg?resize=1096,617" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>AI Blueprints Solve Permit Timelines—But Not Liability (Yet)</title>
+      <link>https://bitroot.org/blog/2026-10-13-ai-blueprints-solve-permit-timelines-but-not-liabi/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-13-ai-blueprints-solve-permit-timelines-but-not-liabi/</guid>
+      <description>Blueprints AI generates permit-ready designs in minutes. The problem it solves: 4–8 week architect timelines. The problem it doesn't solve yet: architect liability still legally required. For founders automating real estate, this is the regulatory unlock—with a catch.</description>
+      <pubDate>Tue, 13 Oct 2026 04:44:29 +0000</pubDate>
+      <category>AI architecture</category>
+      <category>permit automation</category>
+      <category>construction tech</category>
+      <category>regulatory compliance</category>
+      <category>liability frameworks</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/10/Blueprints-AI-Founder1.jpg?resize=1200,799" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>Zig gains a compile‑time type‑safe HTML templating library</title>
+      <link>https://bitroot.org/blog/2026-10-12-zig-gains-a-compiletime-typesafe-html-templating-l/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-12-zig-gains-a-compiletime-typesafe-html-templating-l/</guid>
+      <description>Lukáš Lalinský introduced zt, a Zig library that transpiles HTML templates to Zig code at build time, giving compile‑time safety and zero‑allocation rendering.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html"&gt;https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 12 Oct 2026 18:25:33 +0000</pubDate>
+      <category>zig</category>
+      <category>templating</category>
+      <category>type-safe</category>
+      <source url="https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html">Original Source</source>
     </item>
     <item>
       <title>NVIDIA PersonaPlex-7B for Voice Agents</title>
