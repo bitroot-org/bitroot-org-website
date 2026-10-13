@@ -5,8 +5,21 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 12 Oct 2026 06:21:27 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 04:31:27 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Meta's Muse Wonder Proves Frontier Models Are Commoditizing</title>
+      <link>https://bitroot.org/blog/2026-10-13-metas-muse-wonder-proves-frontier-models-are-commo/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-13-metas-muse-wonder-proves-frontier-models-are-commo/</guid>
+      <description>Meta's October 2026 Muse Wonder release signals the end of frontier model scarcity. Pricing parity with Claude Opus. Similar benchmarks. The real competition? Agentic capability—not raw model performance. For founders building AI agents, this changes everything.</description>
+      <pubDate>Tue, 13 Oct 2026 04:30:43 +0000</pubDate>
+      <category>Meta Muse Wonder</category>
+      <category>frontier models</category>
+      <category>AI agent capability</category>
+      <category>model selection</category>
+      <category>founder strategy</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/10/Screenshot-2026-10-12-at-1.09.43-PM.jpg?resize=1096,617" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>NVIDIA PersonaPlex-7B for Voice Agents</title>
       <link>https://bitroot.org/blog/2026-10-12-nvidia-personaplex-7b-for-voice-agents/</link>

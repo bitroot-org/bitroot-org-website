@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 454,
+  "count": 455,
   "posts": [
+    "2026-10-13-metas-muse-wonder-proves-frontier-models-are-commo.md",
     "2026-10-12-nvidia-personaplex-7b-for-voice-agents.md",
     "2026-10-11-littleguys-adds-a-menubar-ui-for-local-claude-code.md",
     "2026-10-11-manimgx-launches-as-a-rustbacked-3d-animation-engi.md",
@@ -458,6 +459,31 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-10-13-metas-muse-wonder-proves-frontier-models-are-commo.md",
+      "slug": "2026-10-13-metas-muse-wonder-proves-frontier-models-are-commo",
+      "url": "/blog/2026-10-13-metas-muse-wonder-proves-frontier-models-are-commo/",
+      "title": "Meta's Muse Wonder Proves Frontier Models Are Commoditizing",
+      "date": "2026-10-13",
+      "published_at": "2026-10-13T04:30:43.657Z",
+      "tags": [
+        "Meta Muse Wonder",
+        "frontier models",
+        "AI agent capability",
+        "model selection",
+        "founder strategy"
+      ],
+      "excerpt": "Meta's October 2026 Muse Wonder release signals the end of frontier model scarcity. Pricing parity with Claude Opus. Similar benchmarks. The real competition? Agentic capability\u2014not raw model performance. For founders building AI agents, this changes everything.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/Screenshot-2026-10-12-at-1.09.43-PM.jpg?resize=1096,617",
+      "sources": [],
+      "readTime": "6 min",
+      "categories": [
+        "models",
+        "agents",
+        "founders"
+      ],
+      "shortId": 455
+    },
     {
       "filename": "2026-10-12-nvidia-personaplex-7b-for-voice-agents.md",
       "slug": "2026-10-12-nvidia-personaplex-7b-for-voice-agents",
