@@ -1,7 +1,7 @@
 ---
 date: '2026-10-13'
 excerpt: 'Higgsfield''s Genjutsu API applies motion from one video to new characters or scenes. Pricing starts at $0.318 per second, or $0.159 at the 50% discount. Here''s what it does, what it costs, and where it fits.'
-image: https://x.com/higgsfield_ai/status/2109681164806177267/video/1
+image: https://static.higgsfield.ai/reality-manipulation/og.webp
 published_at: '2026-10-13T10:31:38.258Z'
 sources: []
 tags:
