@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 14 Oct 2026 08:37:54 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 08:42:13 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vertical AI for Niche Markets: Why Domain Experts Win</title>
@@ -82,6 +82,7 @@
       <category>zig</category>
       <category>templating</category>
       <category>type-safe</category>
+      <enclosure url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGCiIOvA3_lwHEh0I7S6MXo2OYtSDnnrAh05ZN9Op0Vw&amp;s=10" type="image/jpeg" length="0" />
       <source url="https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html">Original Source</source>
     </item>
     <item>

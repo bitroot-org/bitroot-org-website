@@ -604,7 +604,7 @@
         "type-safe"
       ],
       "excerpt": "Luk\u00e1\u0161 Lalinsk\u00fd introduced zt, a Zig library that transpiles HTML templates to Zig code at build time, giving compile\u2011time safety and zero\u2011allocation rendering.",
-      "image": null,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGCiIOvA3_lwHEh0I7S6MXo2OYtSDnnrAh05ZN9Op0Vw&s=10",
       "sources": [
         "https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html"
       ],
