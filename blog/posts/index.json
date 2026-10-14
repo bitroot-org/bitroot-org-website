@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 465,
+  "count": 466,
   "posts": [
     "2026-10-14-vertical-ai-for-niche-markets-why-domain-experts-w.md",
+    "2026-10-14-facebook-your-algorithm-what-founders-should-do-no.md",
     "2026-10-13-metas-muse-wonder-proves-frontier-models-are-commo.md",
     "2026-10-13-genjutsu-motion-transfer-api-compress-video-produc.md",
     "2026-10-13-ai-blueprints-solve-permit-timelines-but-not-liabi.md",
@@ -491,6 +492,29 @@
         "models",
         "founders",
         "opensource"
+      ],
+      "shortId": 466
+    },
+    {
+      "filename": "2026-10-14-facebook-your-algorithm-what-founders-should-do-no.md",
+      "slug": "2026-10-14-facebook-your-algorithm-what-founders-should-do-no",
+      "url": "/blog/2026-10-14-facebook-your-algorithm-what-founders-should-do-no/",
+      "title": "Facebook Your Algorithm: What Founders Should Do Now",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T08:37:08.630Z",
+      "tags": [
+        "Facebook Your Algorithm",
+        "organic reach",
+        "platform dependence",
+        "owned channels",
+        "founder marketing"
+      ],
+      "excerpt": "Meta's Your Algorithm lets Facebook users tell the feed what to show less of. For founders who depend on organic reach, here's what changed and how to plan for it.",
+      "image": "",
+      "sources": [],
+      "readTime": "6 min",
+      "categories": [
+        "founders"
       ],
       "shortId": 465
     },

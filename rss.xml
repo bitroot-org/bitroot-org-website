@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 14 Oct 2026 08:33:36 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 08:37:54 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vertical AI for Niche Markets: Why Domain Experts Win</title>
@@ -19,6 +19,18 @@
       <category>open-source models</category>
       <category>founder strategy</category>
       <enclosure url="https://techcrunch.com/wp-content/uploads/2023/07/GettyImages-1425330574.jpg?resize=1280,853" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>Facebook Your Algorithm: What Founders Should Do Now</title>
+      <link>https://bitroot.org/blog/2026-10-14-facebook-your-algorithm-what-founders-should-do-no/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-14-facebook-your-algorithm-what-founders-should-do-no/</guid>
+      <description>Meta's Your Algorithm lets Facebook users tell the feed what to show less of. For founders who depend on organic reach, here's what changed and how to plan for it.</description>
+      <pubDate>Wed, 14 Oct 2026 08:37:08 +0000</pubDate>
+      <category>Facebook Your Algorithm</category>
+      <category>organic reach</category>
+      <category>platform dependence</category>
+      <category>owned channels</category>
+      <category>founder marketing</category>
     </item>
     <item>
       <title>Meta's Muse Wonder Proves Frontier Models Are Commoditizing</title>
