@@ -1,16 +1,15 @@
 ---
 date: '2026-10-12'
-excerpt: Lukáš Lalinský introduced zt, a Zig library that transpiles HTML templates
-  to Zig code at build time, giving compile‑time safety and zero‑allocation rendering.
-image: null
+excerpt: 'Lukáš Lalinský introduced zt, a Zig library that transpiles HTML templates to Zig code at build time, giving compile‑time safety and zero‑allocation rendering.'
+image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGCiIOvA3_lwHEh0I7S6MXo2OYtSDnnrAh05ZN9Op0Vw&s=10
 published_at: '2026-10-12T18:25:33.512347+00:00'
 sources:
 - https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html
 tags:
-- zig
-- templating
-- type-safe
-title: Zig gains a compile‑time type‑safe HTML templating library
+- 'zig'
+- 'templating'
+- 'type-safe'
+title: 'Zig gains a compile‑time type‑safe HTML templating library'
 ---
 
 Lukáš Lalinský released **zt**, a Zig library that parses HTML templates and transpiles them to Zig source during `zig build`, so the generated code writes directly to a `std.Io.Writer` with no intermediate allocations. The announcement is detailed in his blog post [Type‑safe HTML templating in Zig](https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html).
