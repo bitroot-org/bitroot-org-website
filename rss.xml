@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Oct 2026 04:30:49 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 04:31:35 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Workplace Messaging Apps: What Zenzap's $44M Shows Founders</title>
@@ -401,6 +401,33 @@
       <category>founder tools</category>
       <category>model comparison</category>
       <enclosure url="https://techcrunch.com/wp-content/uploads/2026/06/ARENA_3Founders.jpg?resize=1200,801" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>Tiny home console fits in an RCA plug, runs Doom on ESP32‑S3</title>
+      <link>https://bitroot.org/blog/2026-10-10-tiny-home-console-fits-in-an-rca-plug-runs-doom-on/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-10-tiny-home-console-fits-in-an-rca-plug-runs-doom-on/</guid>
+      <description>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/hHtnizAW8Lk?si=M3TCVjggmuCNT3AN" title="YouTube video player" frameborder="0" allow="acce...
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://raytriangle.com/making-the-worlds-smallest-game-console/"&gt;https://raytriangle.com/making-the-worlds-smallest-game-console/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 10 Oct 2026 14:56:51 +0000</pubDate>
+      <category>esp32</category>
+      <category>retro console</category>
+      <category>hardware hack</category>
+      <enclosure url="https://bitroot.org/static/og-image.png" type="image/png" length="0" />
+      <source url="https://raytriangle.com/making-the-worlds-smallest-game-console/">Original Source</source>
+    </item>
+    <item>
+      <title>SQLite gets native ANN vector search with Vec1 extension</title>
+      <link>https://bitroot.org/blog/2026-10-10-sqlite-gets-native-ann-vector-search-with-vec1-ext/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-10-sqlite-gets-native-ann-vector-search-with-vec1-ext/</guid>
+      <description>Contents: 1. Overview 2. Building The Extension 3.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://sqlite.org/vec1/doc/trunk/doc/vec1.md"&gt;https://sqlite.org/vec1/doc/trunk/doc/vec1.md&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 10 Oct 2026 14:56:20 +0000</pubDate>
+      <category>sqlite</category>
+      <category>vector search</category>
+      <category>ann</category>
+      <source url="https://sqlite.org/vec1/doc/trunk/doc/vec1.md">Original Source</source>
     </item>
     <item>
       <title>Using OpenAI for Math Products: Verify &amp; Decide</title>

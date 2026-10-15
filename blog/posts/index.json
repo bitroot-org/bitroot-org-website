@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "count": 478,
+  "count": 480,
   "posts": [
     "2026-10-15-workplace-messaging-apps-what-zenzaps-44m-shows-fo.md",
     "2026-10-15-ai-customer-data-platforms-floqers-lessons-for-fou.md",
@@ -31,6 +31,8 @@
     "2026-10-11-ai-agents-decompile-a-classic-fps-using-600-b-toke.md",
     "2026-10-10-why-your-ai-agent-might-do-things-you-didnt-intend.md",
     "2026-10-10-why-arenas-3-1b-valuation-matters-for-model-select.md",
+    "2026-10-10-tiny-home-console-fits-in-an-rca-plug-runs-doom-on.md",
+    "2026-10-10-sqlite-gets-native-ann-vector-search-with-vec1-ext.md",
     "2026-10-09-using-openai-for-math-products-verify-decide.md",
     "2026-10-09-synthid-goes-mainstream-why-founders-should-build.md",
     "2026-10-09-rembrandt-launches-free-selfhosted-photo-editor-wi.md",
@@ -503,7 +505,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 478
+      "shortId": 480
     },
     {
       "filename": "2026-10-15-ai-customer-data-platforms-floqers-lessons-for-fou.md",
@@ -528,7 +530,7 @@
         "founders",
         "opensource"
       ],
-      "shortId": 477
+      "shortId": 479
     },
     {
       "filename": "2026-10-14-vertical-ai-for-niche-markets-why-domain-experts-w.md",
@@ -553,7 +555,7 @@
         "founders",
         "opensource"
       ],
-      "shortId": 476
+      "shortId": 478
     },
     {
       "filename": "2026-10-14-sprout-pi-mainboard-revives-classic-ipods-with-rp2.md",
@@ -576,7 +578,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 475
+      "shortId": 477
     },
     {
       "filename": "2026-10-14-simless-lets-swiftui-agents-test-without-the-ios-s.md",
@@ -600,7 +602,7 @@
         "agents",
         "engineering"
       ],
-      "shortId": 474
+      "shortId": 476
     },
     {
       "filename": "2026-10-14-moshrs-012-adds-a-native-windows-client-and-option.md",
@@ -623,7 +625,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 473
+      "shortId": 475
     },
     {
       "filename": "2026-10-14-knitting-adds-sharedmemory-threads-to-node-bun-and.md",
@@ -644,7 +646,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 472
+      "shortId": 474
     },
     {
       "filename": "2026-10-14-facebook-your-algorithm-what-founders-should-do-no.md",
@@ -667,7 +669,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 471
+      "shortId": 473
     },
     {
       "filename": "2026-10-14-deslop-releases-oxlint-plugin-to-catch-aislop-in-t.md",
@@ -690,7 +692,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 470
+      "shortId": 472
     },
     {
       "filename": "2026-10-13-solidcraft-launches-as-an-opensource-rust-cad-with.md",
@@ -714,7 +716,7 @@
         "opensource",
         "engineering"
       ],
-      "shortId": 469
+      "shortId": 471
     },
     {
       "filename": "2026-10-13-metas-muse-wonder-proves-frontier-models-are-commo.md",
@@ -739,7 +741,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 468
+      "shortId": 470
     },
     {
       "filename": "2026-10-13-genjutsu-motion-transfer-api-compress-video-produc.md",
@@ -764,7 +766,7 @@
         "founders",
         "design"
       ],
-      "shortId": 467
+      "shortId": 469
     },
     {
       "filename": "2026-10-13-dithering-and-retro-shading-techniques-for-webgl-s.md",
@@ -785,7 +787,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 466
+      "shortId": 468
     },
     {
       "filename": "2026-10-13-chkit-adds-typescriptdriven-clickhouse-schema-and.md",
@@ -809,7 +811,7 @@
         "agents",
         "engineering"
       ],
-      "shortId": 465
+      "shortId": 467
     },
     {
       "filename": "2026-10-13-blokkily-launches-experimental-patternfirst-daw-wi.md",
@@ -833,7 +835,7 @@
         "opensource",
         "design"
       ],
-      "shortId": 464
+      "shortId": 466
     },
     {
       "filename": "2026-10-13-ai-blueprints-solve-permit-timelines-but-not-liabi.md",
@@ -856,7 +858,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 463
+      "shortId": 465
     },
     {
       "filename": "2026-10-12-zig-gains-a-compiletime-typesafe-html-templating-l.md",
@@ -877,7 +879,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 462
+      "shortId": 464
     },
     {
       "filename": "2026-10-12-static-recompilation-runs-ps2-games-in-the-browser.md",
@@ -901,7 +903,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 461
+      "shortId": 463
     },
     {
       "filename": "2026-10-12-plimsoll-adds-tiered-sandbox-for-aigenerated-code.md",
@@ -924,7 +926,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 460
+      "shortId": 462
     },
     {
       "filename": "2026-10-12-nvidia-personaplex-7b-for-voice-agents.md",
@@ -951,7 +953,7 @@
         "opensource",
         "design"
       ],
-      "shortId": 459
+      "shortId": 461
     },
     {
       "filename": "2026-10-12-eufy-homebase-2-firmware-cracked-wifi-keys-uart-sh.md",
@@ -974,7 +976,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 458
+      "shortId": 460
     },
     {
       "filename": "2026-10-12-doiter-launches-a-dockerbacked-language-that-treat.md",
@@ -995,7 +997,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 457
+      "shortId": 459
     },
     {
       "filename": "2026-10-11-littleguys-adds-a-menubar-ui-for-local-claude-code.md",
@@ -1020,7 +1022,7 @@
         "agents",
         "opensource"
       ],
-      "shortId": 456
+      "shortId": 458
     },
     {
       "filename": "2026-10-11-manimgx-launches-as-a-rustbacked-3d-animation-engi.md",
@@ -1044,7 +1046,7 @@
         "design",
         "engineering"
       ],
-      "shortId": 455
+      "shortId": 457
     },
     {
       "filename": "2026-10-11-esp32s3-epaper-board-runs-game-boy-at-30-fps.md",
@@ -1065,7 +1067,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 454
+      "shortId": 456
     },
     {
       "filename": "2026-10-11-babytalk-brings-offline-speech-ai-to-esp32s3-and-p.md",
@@ -1086,7 +1088,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 453
+      "shortId": 455
     },
     {
       "filename": "2026-10-11-ai-agents-decompile-a-classic-fps-using-600-b-toke.md",
@@ -1109,7 +1111,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 452
+      "shortId": 454
     },
     {
       "filename": "2026-10-10-why-your-ai-agent-might-do-things-you-didnt-intend.md",
@@ -1134,7 +1136,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 451
+      "shortId": 453
     },
     {
       "filename": "2026-10-10-why-arenas-3-1b-valuation-matters-for-model-select.md",
@@ -1158,6 +1160,50 @@
         "models",
         "founders"
       ],
+      "shortId": 452
+    },
+    {
+      "filename": "2026-10-10-tiny-home-console-fits-in-an-rca-plug-runs-doom-on.md",
+      "slug": "2026-10-10-tiny-home-console-fits-in-an-rca-plug-runs-doom-on",
+      "url": "/blog/2026-10-10-tiny-home-console-fits-in-an-rca-plug-runs-doom-on/",
+      "title": "Tiny home console fits in an RCA plug, runs Doom on ESP32\u2011S3",
+      "date": "2026-10-10",
+      "published_at": "2026-10-10T14:56:51.309407+00:00",
+      "tags": [
+        "esp32",
+        "retro console",
+        "hardware hack"
+      ],
+      "excerpt": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/hHtnizAW8Lk?si=M3TCVjggmuCNT3AN\" title=\"YouTube video player\" frameborder=\"0\" allow=\"acce...",
+      "image": "/static/og-image.png",
+      "sources": [
+        "https://raytriangle.com/making-the-worlds-smallest-game-console/"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
+      "shortId": 451
+    },
+    {
+      "filename": "2026-10-10-sqlite-gets-native-ann-vector-search-with-vec1-ext.md",
+      "slug": "2026-10-10-sqlite-gets-native-ann-vector-search-with-vec1-ext",
+      "url": "/blog/2026-10-10-sqlite-gets-native-ann-vector-search-with-vec1-ext/",
+      "title": "SQLite gets native ANN vector search with Vec1 extension",
+      "date": "2026-10-10",
+      "published_at": "2026-10-10T14:56:20.409432+00:00",
+      "tags": [
+        "sqlite",
+        "vector search",
+        "ann"
+      ],
+      "excerpt": "Contents: 1. Overview 2. Building The Extension 3.",
+      "image": null,
+      "sources": [
+        "https://sqlite.org/vec1/doc/trunk/doc/vec1.md"
+      ],
+      "readTime": "2 min",
+      "categories": [],
       "shortId": 450
     },
     {
