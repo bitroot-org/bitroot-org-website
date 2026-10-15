@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Oct 2026 04:35:27 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 04:36:08 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Workplace Messaging Apps: What Zenzap's $44M Shows Founders</title>
@@ -667,6 +667,34 @@
       <category>audio‑video</category>
       <enclosure url="https://bitroot.org/images/ichatav_screen_marketing.png" type="image/png" length="0" />
       <source url="https://blog.pipetogrep.org/2026/09/11/resurrecting-ichat-audio-and-video-conferencing/">Original Source</source>
+    </item>
+    <item>
+      <title>Gleam 1.19 switches from Erlang source to abstract forms</title>
+      <link>https://bitroot.org/blog/2026-10-06-gleam-119-switches-from-erlang-source-to-abstract/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-06-gleam-119-switches-from-erlang-source-to-abstract/</guid>
+      <description>News post: Gleam v1.19.0 released!
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://gleam.run/news/gleam-doesnt-compile-to-erlang-source-anymore/"&gt;https://gleam.run/news/gleam-doesnt-compile-to-erlang-source-anymore/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 06 Oct 2026 15:35:29 +0000</pubDate>
+      <category>gleam</category>
+      <category>compiler</category>
+      <category>erlang</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-06-gleam-119-switches-from-erlang-source-to-abstract.png" type="image/png" length="0" />
+      <source url="https://gleam.run/news/gleam-doesnt-compile-to-erlang-source-anymore/">Original Source</source>
+    </item>
+    <item>
+      <title>Era launches synthetic company environments for AI agent testing</title>
+      <link>https://bitroot.org/blog/2026-10-06-era-launches-synthetic-company-environments-for-ai/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-06-era-launches-synthetic-company-environments-for-ai/</guid>
+      <description>Era spins up a full company to your spec - emulated systems, simulated data, real behavior - on our cloud, keys in your hand.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://console.era.eon.io/"&gt;https://console.era.eon.io/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 06 Oct 2026 15:35:43 +0000</pubDate>
+      <category>simulated data</category>
+      <category>ai testing</category>
+      <category>devops</category>
+      <enclosure url="https://bitroot.org/eon-logo.png" type="image/png" length="0" />
+      <source url="https://console.era.eon.io/">Original Source</source>
     </item>
     <item>
       <title>tpmlsm adds eBPF guard to restrict TPM access on Linux</title>
