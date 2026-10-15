@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Oct 2026 04:31:35 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 04:32:41 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Workplace Messaging Apps: What Zenzap's $44M Shows Founders</title>
@@ -430,6 +430,20 @@
       <source url="https://sqlite.org/vec1/doc/trunk/doc/vec1.md">Original Source</source>
     </item>
     <item>
+      <title>carrier-explode 2.0 adds API and daily CC0 carrier‑settings dataset</title>
+      <link>https://bitroot.org/blog/2026-10-10-carrier-explode-20-adds-api-and-daily-cc0-carriers/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-10-carrier-explode-20-adds-api-and-daily-cc0-carriers/</guid>
+      <description>Carrier settings from iPhone, Pixel and Galaxy firmware, decoded and compared: APNs, VoLTE, 5G and Wi-Fi Calling per carrier, and what each build changed.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://carrierexplode.com/"&gt;https://carrierexplode.com/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 10 Oct 2026 14:56:15 +0000</pubDate>
+      <category>carrier settings</category>
+      <category>api</category>
+      <category>mobile</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-10-carrier-explode-20-adds-api-and-daily-cc0-carriers.png" type="image/png" length="0" />
+      <source url="https://carrierexplode.com/">Original Source</source>
+    </item>
+    <item>
       <title>Using OpenAI for Math Products: Verify &amp; Decide</title>
       <link>https://bitroot.org/blog/2026-10-09-using-openai-for-math-products-verify-decide/</link>
       <guid isPermaLink="true">https://bitroot.org/blog/2026-10-09-using-openai-for-math-products-verify-decide/</guid>
@@ -567,6 +581,20 @@
       <category>mod</category>
       <enclosure url="https://bitroot.org/blog/assets/ipod-labels.svg?v=20260720-red" type="image/jpeg" length="0" />
       <source url="https://certainthings.studio/sprout/">Original Source</source>
+    </item>
+    <item>
+      <title>rGPU lets PyTorch code offload tensors to a remote GPU via pip</title>
+      <link>https://bitroot.org/blog/2026-10-07-rgpu-lets-pytorch-code-offload-tensors-to-a-remote/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-07-rgpu-lets-pytorch-code-offload-tensors-to-a-remote/</guid>
+      <description>Keep Python on your laptop. Run PyTorch operations and hold tensors on a remote GPU, including from a Mac with no CUDA installation. - ymcrcat/rgpu
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/ymcrcat/rgpu"&gt;https://github.com/ymcrcat/rgpu&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 07 Oct 2026 15:56:42 +0000</pubDate>
+      <category>remote gpu</category>
+      <category>pytorch</category>
+      <category>devops</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-07-rgpu-lets-pytorch-code-offload-tensors-to-a-remote.png" type="image/png" length="0" />
+      <source url="https://github.com/ymcrcat/rgpu">Original Source</source>
     </item>
     <item>
       <title>Mistral Large 4 (Le Chonk): Europe's Open-Weight Alternative for Founders</title>
