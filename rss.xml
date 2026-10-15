@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Oct 2026 04:29:15 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 04:30:04 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Workplace Messaging Apps: What Zenzap's $44M Shows Founders</title>
@@ -115,6 +115,34 @@
       <category>founder marketing</category>
     </item>
     <item>
+      <title>Deslop releases Oxlint plugin to catch AI‑slop in TypeScript</title>
+      <link>https://bitroot.org/blog/2026-10-14-deslop-releases-oxlint-plugin-to-catch-aislop-in-t/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-14-deslop-releases-oxlint-plugin-to-catch-aislop-in-t/</guid>
+      <description>Contribute to maharshi365/deslop development by creating an account on GitHub.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/maharshi365/deslop"&gt;https://github.com/maharshi365/deslop&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 14 Oct 2026 14:14:45 +0000</pubDate>
+      <category>linting</category>
+      <category>typescript</category>
+      <category>oxlint</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-14-deslop-releases-oxlint-plugin-to-catch-aislop-in-t.png" type="image/png" length="0" />
+      <source url="https://github.com/maharshi365/deslop">Original Source</source>
+    </item>
+    <item>
+      <title>SolidCraft launches as an open‑source Rust CAD with scriptable server</title>
+      <link>https://bitroot.org/blog/2026-10-13-solidcraft-launches-as-an-opensource-rust-cad-with/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-13-solidcraft-launches-as-an-opensource-rust-cad-with/</guid>
+      <description>SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP. - bherbruck/solidcraft
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/bherbruck/solidcraft"&gt;https://github.com/bherbruck/solidcraft&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 13 Oct 2026 16:38:19 +0000</pubDate>
+      <category>cad</category>
+      <category>rust</category>
+      <category>open-source</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-13-solidcraft-launches-as-an-opensource-rust-cad-with.png" type="image/png" length="0" />
+      <source url="https://github.com/bherbruck/solidcraft">Original Source</source>
+    </item>
+    <item>
       <title>Meta's Muse Wonder Proves Frontier Models Are Commoditizing</title>
       <link>https://bitroot.org/blog/2026-10-13-metas-muse-wonder-proves-frontier-models-are-commo/</link>
       <guid isPermaLink="true">https://bitroot.org/blog/2026-10-13-metas-muse-wonder-proves-frontier-models-are-commo/</guid>
@@ -139,6 +167,20 @@
       <category>AI video pricing</category>
       <category>content creation</category>
       <enclosure url="https://static.higgsfield.ai/reality-manipulation/og.webp" type="image/webp" length="0" />
+    </item>
+    <item>
+      <title>Dithering and retro shading techniques for WebGL sites</title>
+      <link>https://bitroot.org/blog/2026-10-13-dithering-and-retro-shading-techniques-for-webgl-s/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-13-dithering-and-retro-shading-techniques-for-webgl-s/</guid>
+      <description>A detailed walkthrough of the inner workings of dithering and other shading techniques to give a retro look and feel to your WebGL and React Three Fiber work.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://blog.maximeheckel.com/posts/the-art-of-dithering-and-retro-shading-web/"&gt;https://blog.maximeheckel.com/posts/the-art-of-dithering-and-retro-shading-web/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 13 Oct 2026 16:36:59 +0000</pubDate>
+      <category>webgl</category>
+      <category>shader</category>
+      <category>dithering</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-13-dithering-and-retro-shading-techniques-for-webgl-s.png" type="image/png" length="0" />
+      <source url="https://blog.maximeheckel.com/posts/the-art-of-dithering-and-retro-shading-web/">Original Source</source>
     </item>
     <item>
       <title>AI Blueprints Solve Permit Timelines—But Not Liability (Yet)</title>

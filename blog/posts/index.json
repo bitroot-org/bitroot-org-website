@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "count": 472,
+  "count": 475,
   "posts": [
     "2026-10-15-workplace-messaging-apps-what-zenzaps-44m-shows-fo.md",
     "2026-10-15-ai-customer-data-platforms-floqers-lessons-for-fou.md",
@@ -10,8 +10,11 @@
     "2026-10-14-moshrs-012-adds-a-native-windows-client-and-option.md",
     "2026-10-14-knitting-adds-sharedmemory-threads-to-node-bun-and.md",
     "2026-10-14-facebook-your-algorithm-what-founders-should-do-no.md",
+    "2026-10-14-deslop-releases-oxlint-plugin-to-catch-aislop-in-t.md",
+    "2026-10-13-solidcraft-launches-as-an-opensource-rust-cad-with.md",
     "2026-10-13-metas-muse-wonder-proves-frontier-models-are-commo.md",
     "2026-10-13-genjutsu-motion-transfer-api-compress-video-produc.md",
+    "2026-10-13-dithering-and-retro-shading-techniques-for-webgl-s.md",
     "2026-10-13-ai-blueprints-solve-permit-timelines-but-not-liabi.md",
     "2026-10-12-zig-gains-a-compiletime-typesafe-html-templating-l.md",
     "2026-10-12-static-recompilation-runs-ps2-games-in-the-browser.md",
@@ -497,7 +500,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 472
+      "shortId": 475
     },
     {
       "filename": "2026-10-15-ai-customer-data-platforms-floqers-lessons-for-fou.md",
@@ -522,7 +525,7 @@
         "founders",
         "opensource"
       ],
-      "shortId": 471
+      "shortId": 474
     },
     {
       "filename": "2026-10-14-vertical-ai-for-niche-markets-why-domain-experts-w.md",
@@ -547,7 +550,7 @@
         "founders",
         "opensource"
       ],
-      "shortId": 470
+      "shortId": 473
     },
     {
       "filename": "2026-10-14-sprout-pi-mainboard-revives-classic-ipods-with-rp2.md",
@@ -570,7 +573,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 469
+      "shortId": 472
     },
     {
       "filename": "2026-10-14-simless-lets-swiftui-agents-test-without-the-ios-s.md",
@@ -594,7 +597,7 @@
         "agents",
         "engineering"
       ],
-      "shortId": 468
+      "shortId": 471
     },
     {
       "filename": "2026-10-14-moshrs-012-adds-a-native-windows-client-and-option.md",
@@ -617,7 +620,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 467
+      "shortId": 470
     },
     {
       "filename": "2026-10-14-knitting-adds-sharedmemory-threads-to-node-bun-and.md",
@@ -638,7 +641,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 466
+      "shortId": 469
     },
     {
       "filename": "2026-10-14-facebook-your-algorithm-what-founders-should-do-no.md",
@@ -661,7 +664,54 @@
       "categories": [
         "founders"
       ],
-      "shortId": 465
+      "shortId": 468
+    },
+    {
+      "filename": "2026-10-14-deslop-releases-oxlint-plugin-to-catch-aislop-in-t.md",
+      "slug": "2026-10-14-deslop-releases-oxlint-plugin-to-catch-aislop-in-t",
+      "url": "/blog/2026-10-14-deslop-releases-oxlint-plugin-to-catch-aislop-in-t/",
+      "title": "Deslop releases Oxlint plugin to catch AI\u2011slop in TypeScript",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T14:14:45.137156+00:00",
+      "tags": [
+        "linting",
+        "typescript",
+        "oxlint"
+      ],
+      "excerpt": "Contribute to maharshi365/deslop development by creating an account on GitHub.",
+      "image": "https://bitroot.org/blog/media/2026-10-14-deslop-releases-oxlint-plugin-to-catch-aislop-in-t.png",
+      "sources": [
+        "https://github.com/maharshi365/deslop"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
+      "shortId": 467
+    },
+    {
+      "filename": "2026-10-13-solidcraft-launches-as-an-opensource-rust-cad-with.md",
+      "slug": "2026-10-13-solidcraft-launches-as-an-opensource-rust-cad-with",
+      "url": "/blog/2026-10-13-solidcraft-launches-as-an-opensource-rust-cad-with/",
+      "title": "SolidCraft launches as an open\u2011source Rust CAD with scriptable server",
+      "date": "2026-10-13",
+      "published_at": "2026-10-13T16:38:19.374645+00:00",
+      "tags": [
+        "cad",
+        "rust",
+        "open-source"
+      ],
+      "excerpt": "SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP. - bherbruck/solidcraft",
+      "image": "https://bitroot.org/blog/media/2026-10-13-solidcraft-launches-as-an-opensource-rust-cad-with.png",
+      "sources": [
+        "https://github.com/bherbruck/solidcraft"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "opensource",
+        "engineering"
+      ],
+      "shortId": 466
     },
     {
       "filename": "2026-10-13-metas-muse-wonder-proves-frontier-models-are-commo.md",
@@ -686,7 +736,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 464
+      "shortId": 465
     },
     {
       "filename": "2026-10-13-genjutsu-motion-transfer-api-compress-video-produc.md",
@@ -711,6 +761,27 @@
         "founders",
         "design"
       ],
+      "shortId": 464
+    },
+    {
+      "filename": "2026-10-13-dithering-and-retro-shading-techniques-for-webgl-s.md",
+      "slug": "2026-10-13-dithering-and-retro-shading-techniques-for-webgl-s",
+      "url": "/blog/2026-10-13-dithering-and-retro-shading-techniques-for-webgl-s/",
+      "title": "Dithering and retro shading techniques for WebGL sites",
+      "date": "2026-10-13",
+      "published_at": "2026-10-13T16:36:59.983167+00:00",
+      "tags": [
+        "webgl",
+        "shader",
+        "dithering"
+      ],
+      "excerpt": "A detailed walkthrough of the inner workings of dithering and other shading techniques to give a retro look and feel to your WebGL and React Three Fiber work.",
+      "image": "https://bitroot.org/blog/media/2026-10-13-dithering-and-retro-shading-techniques-for-webgl-s.png",
+      "sources": [
+        "https://blog.maximeheckel.com/posts/the-art-of-dithering-and-retro-shading-web/"
+      ],
+      "readTime": "2 min",
+      "categories": [],
       "shortId": 463
     },
     {
