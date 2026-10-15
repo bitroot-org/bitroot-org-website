@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 467,
+  "count": 468,
   "posts": [
     "2026-10-15-workplace-messaging-apps-what-zenzaps-44m-shows-fo.md",
+    "2026-10-15-ai-customer-data-platforms-floqers-lessons-for-fou.md",
     "2026-10-14-vertical-ai-for-niche-markets-why-domain-experts-w.md",
     "2026-10-14-facebook-your-algorithm-what-founders-should-do-no.md",
     "2026-10-13-metas-muse-wonder-proves-frontier-models-are-commo.md",
@@ -491,6 +492,31 @@
       "readTime": "6 min",
       "categories": [
         "founders"
+      ],
+      "shortId": 468
+    },
+    {
+      "filename": "2026-10-15-ai-customer-data-platforms-floqers-lessons-for-fou.md",
+      "slug": "2026-10-15-ai-customer-data-platforms-floqers-lessons-for-fou",
+      "url": "/blog/2026-10-15-ai-customer-data-platforms-floqers-lessons-for-fou/",
+      "title": "AI Customer Data Platforms: Floqer's Lessons for Founders",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T04:25:10.194Z",
+      "tags": [
+        "AI customer data",
+        "B2B prospecting",
+        "data enrichment",
+        "open source strategy",
+        "scraping legal risk"
+      ],
+      "excerpt": "Floqer grew from a Chrome extension to $1.2M ARR with eight employees. Here's what founders can copy, and the data-scraping and pricing risks to check first.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/floqer-founders.png",
+      "sources": [],
+      "readTime": "7 min",
+      "categories": [
+        "agents",
+        "founders",
+        "opensource"
       ],
       "shortId": 467
     },
