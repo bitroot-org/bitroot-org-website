@@ -1,10 +1,11 @@
 {
   "generated": true,
-  "count": 468,
+  "count": 469,
   "posts": [
     "2026-10-15-workplace-messaging-apps-what-zenzaps-44m-shows-fo.md",
     "2026-10-15-ai-customer-data-platforms-floqers-lessons-for-fou.md",
     "2026-10-14-vertical-ai-for-niche-markets-why-domain-experts-w.md",
+    "2026-10-14-sprout-pi-mainboard-revives-classic-ipods-with-rp2.md",
     "2026-10-14-facebook-your-algorithm-what-founders-should-do-no.md",
     "2026-10-13-metas-muse-wonder-proves-frontier-models-are-commo.md",
     "2026-10-13-genjutsu-motion-transfer-api-compress-video-produc.md",
@@ -493,7 +494,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 468
+      "shortId": 469
     },
     {
       "filename": "2026-10-15-ai-customer-data-platforms-floqers-lessons-for-fou.md",
@@ -518,7 +519,7 @@
         "founders",
         "opensource"
       ],
-      "shortId": 467
+      "shortId": 468
     },
     {
       "filename": "2026-10-14-vertical-ai-for-niche-markets-why-domain-experts-w.md",
@@ -542,6 +543,29 @@
         "models",
         "founders",
         "opensource"
+      ],
+      "shortId": 467
+    },
+    {
+      "filename": "2026-10-14-sprout-pi-mainboard-revives-classic-ipods-with-rp2.md",
+      "slug": "2026-10-14-sprout-pi-mainboard-revives-classic-ipods-with-rp2",
+      "url": "/blog/2026-10-14-sprout-pi-mainboard-revives-classic-ipods-with-rp2/",
+      "title": "Sprout Pi Mainboard revives classic iPods with RP2350 and modern I/O",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T14:15:40.215838+00:00",
+      "tags": [
+        "iPod mod",
+        "open hardware",
+        "RP2350"
+      ],
+      "excerpt": "A modern, RP2350-powered motherboard for iPods",
+      "image": "https://bitroot.org/blog/media/2026-10-14-sprout-pi-mainboard-revives-classic-ipods-with-rp2.jpg",
+      "sources": [
+        "https://www.crowdsupply.com/certain-things/sprout-pi-mainboard"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "engineering"
       ],
       "shortId": 466
     },
