@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "count": 482,
+  "count": 483,
   "posts": [
     "2026-10-15-workplace-messaging-apps-what-zenzaps-44m-shows-fo.md",
     "2026-10-15-ai-customer-data-platforms-floqers-lessons-for-fou.md",
@@ -45,6 +45,7 @@
     "2026-10-07-terrainsr-upscales-100-m-heightmaps-to-10-m-detail.md",
     "2026-10-07-sprout-adds-bluetooth-wifi-and-streaming-to-classi.md",
     "2026-10-07-rgpu-lets-pytorch-code-offload-tensors-to-a-remote.md",
+    "2026-10-07-musql-releases-a-jitcompiled-sqlitecompatible-engi.md",
     "2026-10-07-mistral-large-4-le-chonk-europes-open-weight-alter.md",
     "2026-10-07-ai-agents-getting-blocked-ucp-vs-personal-agent-pr.md",
     "2026-10-06-minigraf-203-adds-bi-temporal-graph-storage-for-ru.md",
@@ -507,7 +508,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 482
+      "shortId": 483
     },
     {
       "filename": "2026-10-15-ai-customer-data-platforms-floqers-lessons-for-fou.md",
@@ -532,7 +533,7 @@
         "founders",
         "opensource"
       ],
-      "shortId": 481
+      "shortId": 482
     },
     {
       "filename": "2026-10-14-vertical-ai-for-niche-markets-why-domain-experts-w.md",
@@ -557,7 +558,7 @@
         "founders",
         "opensource"
       ],
-      "shortId": 480
+      "shortId": 481
     },
     {
       "filename": "2026-10-14-sprout-pi-mainboard-revives-classic-ipods-with-rp2.md",
@@ -580,7 +581,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 479
+      "shortId": 480
     },
     {
       "filename": "2026-10-14-simless-lets-swiftui-agents-test-without-the-ios-s.md",
@@ -604,7 +605,7 @@
         "agents",
         "engineering"
       ],
-      "shortId": 478
+      "shortId": 479
     },
     {
       "filename": "2026-10-14-moshrs-012-adds-a-native-windows-client-and-option.md",
@@ -627,7 +628,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 477
+      "shortId": 478
     },
     {
       "filename": "2026-10-14-knitting-adds-sharedmemory-threads-to-node-bun-and.md",
@@ -648,7 +649,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 476
+      "shortId": 477
     },
     {
       "filename": "2026-10-14-facebook-your-algorithm-what-founders-should-do-no.md",
@@ -671,7 +672,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 475
+      "shortId": 476
     },
     {
       "filename": "2026-10-14-deslop-releases-oxlint-plugin-to-catch-aislop-in-t.md",
@@ -694,7 +695,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 474
+      "shortId": 475
     },
     {
       "filename": "2026-10-13-solidcraft-launches-as-an-opensource-rust-cad-with.md",
@@ -718,7 +719,7 @@
         "opensource",
         "engineering"
       ],
-      "shortId": 473
+      "shortId": 474
     },
     {
       "filename": "2026-10-13-metas-muse-wonder-proves-frontier-models-are-commo.md",
@@ -743,7 +744,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 472
+      "shortId": 473
     },
     {
       "filename": "2026-10-13-genjutsu-motion-transfer-api-compress-video-produc.md",
@@ -768,7 +769,7 @@
         "founders",
         "design"
       ],
-      "shortId": 471
+      "shortId": 472
     },
     {
       "filename": "2026-10-13-dithering-and-retro-shading-techniques-for-webgl-s.md",
@@ -789,7 +790,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 470
+      "shortId": 471
     },
     {
       "filename": "2026-10-13-chkit-adds-typescriptdriven-clickhouse-schema-and.md",
@@ -813,7 +814,7 @@
         "agents",
         "engineering"
       ],
-      "shortId": 469
+      "shortId": 470
     },
     {
       "filename": "2026-10-13-blokkily-launches-experimental-patternfirst-daw-wi.md",
@@ -837,7 +838,7 @@
         "opensource",
         "design"
       ],
-      "shortId": 468
+      "shortId": 469
     },
     {
       "filename": "2026-10-13-ai-blueprints-solve-permit-timelines-but-not-liabi.md",
@@ -860,7 +861,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 467
+      "shortId": 468
     },
     {
       "filename": "2026-10-12-zig-gains-a-compiletime-typesafe-html-templating-l.md",
@@ -881,7 +882,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 466
+      "shortId": 467
     },
     {
       "filename": "2026-10-12-static-recompilation-runs-ps2-games-in-the-browser.md",
@@ -905,7 +906,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 465
+      "shortId": 466
     },
     {
       "filename": "2026-10-12-plimsoll-adds-tiered-sandbox-for-aigenerated-code.md",
@@ -928,7 +929,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 464
+      "shortId": 465
     },
     {
       "filename": "2026-10-12-nvidia-personaplex-7b-for-voice-agents.md",
@@ -955,7 +956,7 @@
         "opensource",
         "design"
       ],
-      "shortId": 463
+      "shortId": 464
     },
     {
       "filename": "2026-10-12-eufy-homebase-2-firmware-cracked-wifi-keys-uart-sh.md",
@@ -978,7 +979,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 462
+      "shortId": 463
     },
     {
       "filename": "2026-10-12-doiter-launches-a-dockerbacked-language-that-treat.md",
@@ -999,7 +1000,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 461
+      "shortId": 462
     },
     {
       "filename": "2026-10-11-littleguys-adds-a-menubar-ui-for-local-claude-code.md",
@@ -1024,7 +1025,7 @@
         "agents",
         "opensource"
       ],
-      "shortId": 460
+      "shortId": 461
     },
     {
       "filename": "2026-10-11-manimgx-launches-as-a-rustbacked-3d-animation-engi.md",
@@ -1048,7 +1049,7 @@
         "design",
         "engineering"
       ],
-      "shortId": 459
+      "shortId": 460
     },
     {
       "filename": "2026-10-11-esp32s3-epaper-board-runs-game-boy-at-30-fps.md",
@@ -1069,7 +1070,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 458
+      "shortId": 459
     },
     {
       "filename": "2026-10-11-babytalk-brings-offline-speech-ai-to-esp32s3-and-p.md",
@@ -1090,7 +1091,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 457
+      "shortId": 458
     },
     {
       "filename": "2026-10-11-ai-agents-decompile-a-classic-fps-using-600-b-toke.md",
@@ -1113,7 +1114,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 456
+      "shortId": 457
     },
     {
       "filename": "2026-10-10-why-your-ai-agent-might-do-things-you-didnt-intend.md",
@@ -1138,7 +1139,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 455
+      "shortId": 456
     },
     {
       "filename": "2026-10-10-why-arenas-3-1b-valuation-matters-for-model-select.md",
@@ -1162,7 +1163,7 @@
         "models",
         "founders"
       ],
-      "shortId": 454
+      "shortId": 455
     },
     {
       "filename": "2026-10-10-tiny-home-console-fits-in-an-rca-plug-runs-doom-on.md",
@@ -1185,7 +1186,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 453
+      "shortId": 454
     },
     {
       "filename": "2026-10-10-sqlite-gets-native-ann-vector-search-with-vec1-ext.md",
@@ -1206,7 +1207,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 452
+      "shortId": 453
     },
     {
       "filename": "2026-10-10-carrier-explode-20-adds-api-and-daily-cc0-carriers.md",
@@ -1229,7 +1230,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 451
+      "shortId": 452
     },
     {
       "filename": "2026-10-09-using-openai-for-math-products-verify-decide.md",
@@ -1253,7 +1254,7 @@
         "models",
         "founders"
       ],
-      "shortId": 450
+      "shortId": 451
     },
     {
       "filename": "2026-10-09-synthid-goes-mainstream-why-founders-should-build.md",
@@ -1276,7 +1277,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 449
+      "shortId": 450
     },
     {
       "filename": "2026-10-09-rembrandt-launches-free-selfhosted-photo-editor-wi.md",
@@ -1299,7 +1300,7 @@
       "categories": [
         "opensource"
       ],
-      "shortId": 448
+      "shortId": 449
     },
     {
       "filename": "2026-10-09-quake-runs-in-browser-via-saferust-port.md",
@@ -1322,7 +1323,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 447
+      "shortId": 448
     },
     {
       "filename": "2026-10-09-k10s-adds-mousedriven-ui-and-builtin-ai-to-kuberne.md",
@@ -1345,7 +1346,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 446
+      "shortId": 447
     },
     {
       "filename": "2026-10-09-diy-flexible-neon-t-shirt-using-led-filaments.md",
@@ -1368,7 +1369,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 445
+      "shortId": 446
     },
     {
       "filename": "2026-10-09-ai-chat-agent-runs-on-a-nokia-110-4g-via-a-hacked.md",
@@ -1392,7 +1393,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 444
+      "shortId": 445
     },
     {
       "filename": "2026-10-08-google-playground-ai-generated-games-from-text-pro.md",
@@ -1416,7 +1417,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 443
+      "shortId": 444
     },
     {
       "filename": "2026-10-07-terrainsr-upscales-100-m-heightmaps-to-10-m-detail.md",
@@ -1438,7 +1439,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 442
+      "shortId": 443
     },
     {
       "filename": "2026-10-07-sprout-adds-bluetooth-wifi-and-streaming-to-classi.md",
@@ -1462,7 +1463,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 441
+      "shortId": 442
     },
     {
       "filename": "2026-10-07-rgpu-lets-pytorch-code-offload-tensors-to-a-remote.md",
@@ -1482,6 +1483,30 @@
         "https://github.com/ymcrcat/rgpu"
       ],
       "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
+      "shortId": 441
+    },
+    {
+      "filename": "2026-10-07-musql-releases-a-jitcompiled-sqlitecompatible-engi.md",
+      "slug": "2026-10-07-musql-releases-a-jitcompiled-sqlitecompatible-engi",
+      "url": "/blog/2026-10-07-musql-releases-a-jitcompiled-sqlitecompatible-engi/",
+      "title": "musql releases a JIT\u2011compiled SQLite\u2011compatible engine with 300\u00d7 speed gains",
+      "date": "2026-10-07",
+      "published_at": "2026-10-07T15:57:28.934861+00:00",
+      "tags": [
+        "sql",
+        "jit",
+        "database",
+        "go"
+      ],
+      "excerpt": "SQLite-compatible database with a JIT; 300\u00d7 C SQLite, 1000\u00d7 Turso. - samyfodil/musql",
+      "image": "https://bitroot.org/blog/media/2026-10-07-musql-releases-a-jitcompiled-sqlitecompatible-engi.png",
+      "sources": [
+        "https://github.com/samyfodil/musql"
+      ],
+      "readTime": "3 min",
       "categories": [
         "engineering"
       ],

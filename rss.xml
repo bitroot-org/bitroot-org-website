@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Oct 2026 04:32:41 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 04:35:27 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Workplace Messaging Apps: What Zenzap's $44M Shows Founders</title>
@@ -595,6 +595,21 @@
       <category>devops</category>
       <enclosure url="https://bitroot.org/blog/media/2026-10-07-rgpu-lets-pytorch-code-offload-tensors-to-a-remote.png" type="image/png" length="0" />
       <source url="https://github.com/ymcrcat/rgpu">Original Source</source>
+    </item>
+    <item>
+      <title>musql releases a JIT‑compiled SQLite‑compatible engine with 300× speed gains</title>
+      <link>https://bitroot.org/blog/2026-10-07-musql-releases-a-jitcompiled-sqlitecompatible-engi/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-07-musql-releases-a-jitcompiled-sqlitecompatible-engi/</guid>
+      <description>SQLite-compatible database with a JIT; 300× C SQLite, 1000× Turso. - samyfodil/musql
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/samyfodil/musql"&gt;https://github.com/samyfodil/musql&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 07 Oct 2026 15:57:28 +0000</pubDate>
+      <category>sql</category>
+      <category>jit</category>
+      <category>database</category>
+      <category>go</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-07-musql-releases-a-jitcompiled-sqlitecompatible-engi.png" type="image/png" length="0" />
+      <source url="https://github.com/samyfodil/musql">Original Source</source>
     </item>
     <item>
       <title>Mistral Large 4 (Le Chonk): Europe's Open-Weight Alternative for Founders</title>
