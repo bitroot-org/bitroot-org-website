@@ -1,11 +1,14 @@
 {
   "generated": true,
-  "count": 469,
+  "count": 472,
   "posts": [
     "2026-10-15-workplace-messaging-apps-what-zenzaps-44m-shows-fo.md",
     "2026-10-15-ai-customer-data-platforms-floqers-lessons-for-fou.md",
     "2026-10-14-vertical-ai-for-niche-markets-why-domain-experts-w.md",
     "2026-10-14-sprout-pi-mainboard-revives-classic-ipods-with-rp2.md",
+    "2026-10-14-simless-lets-swiftui-agents-test-without-the-ios-s.md",
+    "2026-10-14-moshrs-012-adds-a-native-windows-client-and-option.md",
+    "2026-10-14-knitting-adds-sharedmemory-threads-to-node-bun-and.md",
     "2026-10-14-facebook-your-algorithm-what-founders-should-do-no.md",
     "2026-10-13-metas-muse-wonder-proves-frontier-models-are-commo.md",
     "2026-10-13-genjutsu-motion-transfer-api-compress-video-produc.md",
@@ -494,7 +497,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 469
+      "shortId": 472
     },
     {
       "filename": "2026-10-15-ai-customer-data-platforms-floqers-lessons-for-fou.md",
@@ -519,7 +522,7 @@
         "founders",
         "opensource"
       ],
-      "shortId": 468
+      "shortId": 471
     },
     {
       "filename": "2026-10-14-vertical-ai-for-niche-markets-why-domain-experts-w.md",
@@ -544,7 +547,7 @@
         "founders",
         "opensource"
       ],
-      "shortId": 467
+      "shortId": 470
     },
     {
       "filename": "2026-10-14-sprout-pi-mainboard-revives-classic-ipods-with-rp2.md",
@@ -567,6 +570,74 @@
       "categories": [
         "engineering"
       ],
+      "shortId": 469
+    },
+    {
+      "filename": "2026-10-14-simless-lets-swiftui-agents-test-without-the-ios-s.md",
+      "slug": "2026-10-14-simless-lets-swiftui-agents-test-without-the-ios-s",
+      "url": "/blog/2026-10-14-simless-lets-swiftui-agents-test-without-the-ios-s/",
+      "title": "simless lets SwiftUI agents test without the iOS Simulator",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T14:13:48.356623+00:00",
+      "tags": [
+        "swiftui",
+        "testing",
+        "ci"
+      ],
+      "excerpt": "Simulator-free, headless SwiftUI checks for AI coding agents: render screens as accessibility trees and hot-reload views in ~2 s, without the iOS Simulator. - abacusai/simless",
+      "image": "https://bitroot.org/blog/media/2026-10-14-simless-lets-swiftui-agents-test-without-the-ios-s.png",
+      "sources": [
+        "https://github.com/abacusai/simless"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "agents",
+        "engineering"
+      ],
+      "shortId": 468
+    },
+    {
+      "filename": "2026-10-14-moshrs-012-adds-a-native-windows-client-and-option.md",
+      "slug": "2026-10-14-moshrs-012-adds-a-native-windows-client-and-option",
+      "url": "/blog/2026-10-14-moshrs-012-adds-a-native-windows-client-and-option/",
+      "title": "Mosh\u2011rs 0.1.2 adds a native Windows client and optional scrollback",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T14:14:17.118911+00:00",
+      "tags": [
+        "mosh",
+        "rust",
+        "remote shell"
+      ],
+      "excerpt": "Rust reimplementation of mosh (the mobile shell): wire-compatible with mosh-server 1.4, native Windows client, scrollback - Arunjay4213/mosh-rs",
+      "image": "https://bitroot.org/blog/media/2026-10-14-moshrs-012-adds-a-native-windows-client-and-option.png",
+      "sources": [
+        "https://github.com/Arunjay4213/mosh-rs"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
+      "shortId": 467
+    },
+    {
+      "filename": "2026-10-14-knitting-adds-sharedmemory-threads-to-node-bun-and.md",
+      "slug": "2026-10-14-knitting-adds-sharedmemory-threads-to-node-bun-and",
+      "url": "/blog/2026-10-14-knitting-adds-sharedmemory-threads-to-node-bun-and/",
+      "title": "Knitting adds shared\u2011memory threads to Node, Bun, and Deno",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T14:15:10.246729+00:00",
+      "tags": [
+        "javascript",
+        "concurrency",
+        "runtime"
+      ],
+      "excerpt": "Run typed JavaScript tasks on worker threads or isolated processes in Node.js, Deno, and Bun.",
+      "image": "https://bitroot.org/blog/media/2026-10-14-knitting-adds-sharedmemory-threads-to-node-bun-and.png",
+      "sources": [
+        "https://js.knitting.run/"
+      ],
+      "readTime": "2 min",
+      "categories": [],
       "shortId": 466
     },
     {

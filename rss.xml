@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Oct 2026 04:28:27 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 04:29:15 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Workplace Messaging Apps: What Zenzap's $44M Shows Founders</title>
@@ -59,6 +59,48 @@
       <category>RP2350</category>
       <enclosure url="https://bitroot.org/blog/media/2026-10-14-sprout-pi-mainboard-revives-classic-ipods-with-rp2.jpg" type="image/jpeg" length="0" />
       <source url="https://www.crowdsupply.com/certain-things/sprout-pi-mainboard">Original Source</source>
+    </item>
+    <item>
+      <title>simless lets SwiftUI agents test without the iOS Simulator</title>
+      <link>https://bitroot.org/blog/2026-10-14-simless-lets-swiftui-agents-test-without-the-ios-s/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-14-simless-lets-swiftui-agents-test-without-the-ios-s/</guid>
+      <description>Simulator-free, headless SwiftUI checks for AI coding agents: render screens as accessibility trees and hot-reload views in ~2 s, without the iOS Simulator. - abacusai/simless
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/abacusai/simless"&gt;https://github.com/abacusai/simless&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 14 Oct 2026 14:13:48 +0000</pubDate>
+      <category>swiftui</category>
+      <category>testing</category>
+      <category>ci</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-14-simless-lets-swiftui-agents-test-without-the-ios-s.png" type="image/png" length="0" />
+      <source url="https://github.com/abacusai/simless">Original Source</source>
+    </item>
+    <item>
+      <title>Mosh‑rs 0.1.2 adds a native Windows client and optional scrollback</title>
+      <link>https://bitroot.org/blog/2026-10-14-moshrs-012-adds-a-native-windows-client-and-option/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-14-moshrs-012-adds-a-native-windows-client-and-option/</guid>
+      <description>Rust reimplementation of mosh (the mobile shell): wire-compatible with mosh-server 1.4, native Windows client, scrollback - Arunjay4213/mosh-rs
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/Arunjay4213/mosh-rs"&gt;https://github.com/Arunjay4213/mosh-rs&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 14 Oct 2026 14:14:17 +0000</pubDate>
+      <category>mosh</category>
+      <category>rust</category>
+      <category>remote shell</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-14-moshrs-012-adds-a-native-windows-client-and-option.png" type="image/png" length="0" />
+      <source url="https://github.com/Arunjay4213/mosh-rs">Original Source</source>
+    </item>
+    <item>
+      <title>Knitting adds shared‑memory threads to Node, Bun, and Deno</title>
+      <link>https://bitroot.org/blog/2026-10-14-knitting-adds-sharedmemory-threads-to-node-bun-and/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-14-knitting-adds-sharedmemory-threads-to-node-bun-and/</guid>
+      <description>Run typed JavaScript tasks on worker threads or isolated processes in Node.js, Deno, and Bun.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://js.knitting.run/"&gt;https://js.knitting.run/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 14 Oct 2026 14:15:10 +0000</pubDate>
+      <category>javascript</category>
+      <category>concurrency</category>
+      <category>runtime</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-14-knitting-adds-sharedmemory-threads-to-node-bun-and.png" type="image/png" length="0" />
+      <source url="https://js.knitting.run/">Original Source</source>
     </item>
     <item>
       <title>Facebook Your Algorithm: What Founders Should Do Now</title>
