@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "count": 475,
+  "count": 478,
   "posts": [
     "2026-10-15-workplace-messaging-apps-what-zenzaps-44m-shows-fo.md",
     "2026-10-15-ai-customer-data-platforms-floqers-lessons-for-fou.md",
@@ -15,6 +15,8 @@
     "2026-10-13-metas-muse-wonder-proves-frontier-models-are-commo.md",
     "2026-10-13-genjutsu-motion-transfer-api-compress-video-produc.md",
     "2026-10-13-dithering-and-retro-shading-techniques-for-webgl-s.md",
+    "2026-10-13-chkit-adds-typescriptdriven-clickhouse-schema-and.md",
+    "2026-10-13-blokkily-launches-experimental-patternfirst-daw-wi.md",
     "2026-10-13-ai-blueprints-solve-permit-timelines-but-not-liabi.md",
     "2026-10-12-zig-gains-a-compiletime-typesafe-html-templating-l.md",
     "2026-10-12-static-recompilation-runs-ps2-games-in-the-browser.md",
@@ -26,6 +28,7 @@
     "2026-10-11-manimgx-launches-as-a-rustbacked-3d-animation-engi.md",
     "2026-10-11-esp32s3-epaper-board-runs-game-boy-at-30-fps.md",
     "2026-10-11-babytalk-brings-offline-speech-ai-to-esp32s3-and-p.md",
+    "2026-10-11-ai-agents-decompile-a-classic-fps-using-600-b-toke.md",
     "2026-10-10-why-your-ai-agent-might-do-things-you-didnt-intend.md",
     "2026-10-10-why-arenas-3-1b-valuation-matters-for-model-select.md",
     "2026-10-09-using-openai-for-math-products-verify-decide.md",
@@ -500,7 +503,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 475
+      "shortId": 478
     },
     {
       "filename": "2026-10-15-ai-customer-data-platforms-floqers-lessons-for-fou.md",
@@ -525,7 +528,7 @@
         "founders",
         "opensource"
       ],
-      "shortId": 474
+      "shortId": 477
     },
     {
       "filename": "2026-10-14-vertical-ai-for-niche-markets-why-domain-experts-w.md",
@@ -550,7 +553,7 @@
         "founders",
         "opensource"
       ],
-      "shortId": 473
+      "shortId": 476
     },
     {
       "filename": "2026-10-14-sprout-pi-mainboard-revives-classic-ipods-with-rp2.md",
@@ -573,7 +576,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 472
+      "shortId": 475
     },
     {
       "filename": "2026-10-14-simless-lets-swiftui-agents-test-without-the-ios-s.md",
@@ -597,7 +600,7 @@
         "agents",
         "engineering"
       ],
-      "shortId": 471
+      "shortId": 474
     },
     {
       "filename": "2026-10-14-moshrs-012-adds-a-native-windows-client-and-option.md",
@@ -620,7 +623,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 470
+      "shortId": 473
     },
     {
       "filename": "2026-10-14-knitting-adds-sharedmemory-threads-to-node-bun-and.md",
@@ -641,7 +644,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 469
+      "shortId": 472
     },
     {
       "filename": "2026-10-14-facebook-your-algorithm-what-founders-should-do-no.md",
@@ -664,7 +667,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 468
+      "shortId": 471
     },
     {
       "filename": "2026-10-14-deslop-releases-oxlint-plugin-to-catch-aislop-in-t.md",
@@ -687,7 +690,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 467
+      "shortId": 470
     },
     {
       "filename": "2026-10-13-solidcraft-launches-as-an-opensource-rust-cad-with.md",
@@ -711,7 +714,7 @@
         "opensource",
         "engineering"
       ],
-      "shortId": 466
+      "shortId": 469
     },
     {
       "filename": "2026-10-13-metas-muse-wonder-proves-frontier-models-are-commo.md",
@@ -736,7 +739,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 465
+      "shortId": 468
     },
     {
       "filename": "2026-10-13-genjutsu-motion-transfer-api-compress-video-produc.md",
@@ -761,7 +764,7 @@
         "founders",
         "design"
       ],
-      "shortId": 464
+      "shortId": 467
     },
     {
       "filename": "2026-10-13-dithering-and-retro-shading-techniques-for-webgl-s.md",
@@ -782,7 +785,55 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 463
+      "shortId": 466
+    },
+    {
+      "filename": "2026-10-13-chkit-adds-typescriptdriven-clickhouse-schema-and.md",
+      "slug": "2026-10-13-chkit-adds-typescriptdriven-clickhouse-schema-and",
+      "url": "/blog/2026-10-13-chkit-adds-typescriptdriven-clickhouse-schema-and/",
+      "title": "chkit adds TypeScript\u2011driven ClickHouse schema and migration CLI",
+      "date": "2026-10-13",
+      "published_at": "2026-10-13T16:37:10.123373+00:00",
+      "tags": [
+        "clickhouse",
+        "schema-management",
+        "typescript"
+      ],
+      "excerpt": "ClickHouse schema and migration CLI for TypeScript projects - obsessiondb/chkit",
+      "image": "https://bitroot.org/blog/media/2026-10-13-chkit-adds-typescriptdriven-clickhouse-schema-and.png",
+      "sources": [
+        "https://github.com/obsessiondb/chkit"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "agents",
+        "engineering"
+      ],
+      "shortId": 465
+    },
+    {
+      "filename": "2026-10-13-blokkily-launches-experimental-patternfirst-daw-wi.md",
+      "slug": "2026-10-13-blokkily-launches-experimental-patternfirst-daw-wi",
+      "url": "/blog/2026-10-13-blokkily-launches-experimental-patternfirst-daw-wi/",
+      "title": "Blokkily launches experimental pattern\u2011first DAW with CLAP support",
+      "date": "2026-10-13",
+      "published_at": "2026-10-13T16:37:42.153223+00:00",
+      "tags": [
+        "daW",
+        "audio",
+        "open-source"
+      ],
+      "excerpt": "An experimental pattern-first DAW. Contribute to andrewfader/blokkily development by creating an account on GitHub.",
+      "image": "https://bitroot.org/blog/media/2026-10-13-blokkily-launches-experimental-patternfirst-daw-wi.png",
+      "sources": [
+        "https://github.com/andrewfader/blokkily"
+      ],
+      "readTime": "3 min",
+      "categories": [
+        "opensource",
+        "design"
+      ],
+      "shortId": 464
     },
     {
       "filename": "2026-10-13-ai-blueprints-solve-permit-timelines-but-not-liabi.md",
@@ -805,7 +856,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 462
+      "shortId": 463
     },
     {
       "filename": "2026-10-12-zig-gains-a-compiletime-typesafe-html-templating-l.md",
@@ -826,7 +877,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 461
+      "shortId": 462
     },
     {
       "filename": "2026-10-12-static-recompilation-runs-ps2-games-in-the-browser.md",
@@ -850,7 +901,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 460
+      "shortId": 461
     },
     {
       "filename": "2026-10-12-plimsoll-adds-tiered-sandbox-for-aigenerated-code.md",
@@ -873,7 +924,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 459
+      "shortId": 460
     },
     {
       "filename": "2026-10-12-nvidia-personaplex-7b-for-voice-agents.md",
@@ -900,7 +951,7 @@
         "opensource",
         "design"
       ],
-      "shortId": 458
+      "shortId": 459
     },
     {
       "filename": "2026-10-12-eufy-homebase-2-firmware-cracked-wifi-keys-uart-sh.md",
@@ -923,7 +974,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 457
+      "shortId": 458
     },
     {
       "filename": "2026-10-12-doiter-launches-a-dockerbacked-language-that-treat.md",
@@ -944,7 +995,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 456
+      "shortId": 457
     },
     {
       "filename": "2026-10-11-littleguys-adds-a-menubar-ui-for-local-claude-code.md",
@@ -969,7 +1020,7 @@
         "agents",
         "opensource"
       ],
-      "shortId": 455
+      "shortId": 456
     },
     {
       "filename": "2026-10-11-manimgx-launches-as-a-rustbacked-3d-animation-engi.md",
@@ -993,7 +1044,7 @@
         "design",
         "engineering"
       ],
-      "shortId": 454
+      "shortId": 455
     },
     {
       "filename": "2026-10-11-esp32s3-epaper-board-runs-game-boy-at-30-fps.md",
@@ -1014,7 +1065,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 453
+      "shortId": 454
     },
     {
       "filename": "2026-10-11-babytalk-brings-offline-speech-ai-to-esp32s3-and-p.md",
@@ -1035,6 +1086,29 @@
       ],
       "readTime": "2 min",
       "categories": [],
+      "shortId": 453
+    },
+    {
+      "filename": "2026-10-11-ai-agents-decompile-a-classic-fps-using-600-b-toke.md",
+      "slug": "2026-10-11-ai-agents-decompile-a-classic-fps-using-600-b-toke",
+      "url": "/blog/2026-10-11-ai-agents-decompile-a-classic-fps-using-600-b-toke/",
+      "title": "AI agents decompile a classic FPS using 600 B tokens",
+      "date": "2026-10-11",
+      "published_at": "2026-10-11T15:14:07.166819+00:00",
+      "tags": [
+        "ai agents",
+        "decompilation",
+        "software engineering"
+      ],
+      "excerpt": "A team orchestrated dozens of autonomous models for over half a trillion tokens to reconstruct a first\u2011person shooter in C++, revealing both scalability tricks and hard limits.",
+      "image": "https://bitroot.org/blog/media/2026-10-11-ai-agents-decompile-a-classic-fps-using-600-b-toke.png",
+      "sources": [
+        "https://momo5502.com/posts/2026-10-09-game-decompilation/"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
       "shortId": 452
     },
     {

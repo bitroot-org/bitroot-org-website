@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Oct 2026 04:30:04 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 04:30:49 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Workplace Messaging Apps: What Zenzap's $44M Shows Founders</title>
@@ -183,6 +183,34 @@
       <source url="https://blog.maximeheckel.com/posts/the-art-of-dithering-and-retro-shading-web/">Original Source</source>
     </item>
     <item>
+      <title>chkit adds TypeScript‑driven ClickHouse schema and migration CLI</title>
+      <link>https://bitroot.org/blog/2026-10-13-chkit-adds-typescriptdriven-clickhouse-schema-and/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-13-chkit-adds-typescriptdriven-clickhouse-schema-and/</guid>
+      <description>ClickHouse schema and migration CLI for TypeScript projects - obsessiondb/chkit
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/obsessiondb/chkit"&gt;https://github.com/obsessiondb/chkit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 13 Oct 2026 16:37:10 +0000</pubDate>
+      <category>clickhouse</category>
+      <category>schema-management</category>
+      <category>typescript</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-13-chkit-adds-typescriptdriven-clickhouse-schema-and.png" type="image/png" length="0" />
+      <source url="https://github.com/obsessiondb/chkit">Original Source</source>
+    </item>
+    <item>
+      <title>Blokkily launches experimental pattern‑first DAW with CLAP support</title>
+      <link>https://bitroot.org/blog/2026-10-13-blokkily-launches-experimental-patternfirst-daw-wi/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-13-blokkily-launches-experimental-patternfirst-daw-wi/</guid>
+      <description>An experimental pattern-first DAW. Contribute to andrewfader/blokkily development by creating an account on GitHub.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/andrewfader/blokkily"&gt;https://github.com/andrewfader/blokkily&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 13 Oct 2026 16:37:42 +0000</pubDate>
+      <category>daW</category>
+      <category>audio</category>
+      <category>open-source</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-13-blokkily-launches-experimental-patternfirst-daw-wi.png" type="image/png" length="0" />
+      <source url="https://github.com/andrewfader/blokkily">Original Source</source>
+    </item>
+    <item>
       <title>AI Blueprints Solve Permit Timelines—But Not Liability (Yet)</title>
       <link>https://bitroot.org/blog/2026-10-13-ai-blueprints-solve-permit-timelines-but-not-liabi/</link>
       <guid isPermaLink="true">https://bitroot.org/blog/2026-10-13-ai-blueprints-solve-permit-timelines-but-not-liabi/</guid>
@@ -333,6 +361,20 @@
       <category>speech</category>
       <enclosure url="https://bitroot.org/blog/media/2026-10-11-babytalk-brings-offline-speech-ai-to-esp32s3-and-p.png" type="image/png" length="0" />
       <source url="https://github.com/tlack/babytalk">Original Source</source>
+    </item>
+    <item>
+      <title>AI agents decompile a classic FPS using 600 B tokens</title>
+      <link>https://bitroot.org/blog/2026-10-11-ai-agents-decompile-a-classic-fps-using-600-b-toke/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-11-ai-agents-decompile-a-classic-fps-using-600-b-toke/</guid>
+      <description>A team orchestrated dozens of autonomous models for over half a trillion tokens to reconstruct a first‑person shooter in C++, revealing both scalability tricks and hard limits.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://momo5502.com/posts/2026-10-09-game-decompilation/"&gt;https://momo5502.com/posts/2026-10-09-game-decompilation/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sun, 11 Oct 2026 15:14:07 +0000</pubDate>
+      <category>ai agents</category>
+      <category>decompilation</category>
+      <category>software engineering</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-11-ai-agents-decompile-a-classic-fps-using-600-b-toke.png" type="image/png" length="0" />
+      <source url="https://momo5502.com/posts/2026-10-09-game-decompilation/">Original Source</source>
     </item>
     <item>
       <title>Why Your AI Agent Might Do Things You Didn't Intend</title>

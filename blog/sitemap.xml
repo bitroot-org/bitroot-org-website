@@ -266,6 +266,11 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://bitroot.org/blog/page/54/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://bitroot.org/blog/2026-10-15-workplace-messaging-apps-what-zenzaps-44m-shows-fo/</loc>
     <lastmod>2026-10-15</lastmod>
   </url>
@@ -318,6 +323,14 @@
     <lastmod>2026-10-13</lastmod>
   </url>
   <url>
+    <loc>https://bitroot.org/blog/2026-10-13-chkit-adds-typescriptdriven-clickhouse-schema-and/</loc>
+    <lastmod>2026-10-13</lastmod>
+  </url>
+  <url>
+    <loc>https://bitroot.org/blog/2026-10-13-blokkily-launches-experimental-patternfirst-daw-wi/</loc>
+    <lastmod>2026-10-13</lastmod>
+  </url>
+  <url>
     <loc>https://bitroot.org/blog/2026-10-13-ai-blueprints-solve-permit-timelines-but-not-liabi/</loc>
     <lastmod>2026-10-13</lastmod>
   </url>
@@ -359,6 +372,10 @@
   </url>
   <url>
     <loc>https://bitroot.org/blog/2026-10-11-babytalk-brings-offline-speech-ai-to-esp32s3-and-p/</loc>
+    <lastmod>2026-10-11</lastmod>
+  </url>
+  <url>
+    <loc>https://bitroot.org/blog/2026-10-11-ai-agents-decompile-a-classic-fps-using-600-b-toke/</loc>
     <lastmod>2026-10-11</lastmod>
   </url>
   <url>
