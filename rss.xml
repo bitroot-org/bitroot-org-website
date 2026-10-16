@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 16 Oct 2026 07:02:32 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 07:03:23 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Workplace Messaging Apps: What Zenzap's $44M Shows Founders</title>
@@ -975,6 +975,20 @@
       <category>ai</category>
       <enclosure url="https://bitroot.org/blog/media/2026-10-03-rowan-adds-opensource-static-scanning-for-aiml-cod.png" type="image/png" length="0" />
       <source url="https://github.com/hedgerow-dev/rowan">Original Source</source>
+    </item>
+    <item>
+      <title>rhun launches a tiny assembly‑written code editor</title>
+      <link>https://bitroot.org/blog/2026-10-03-rhun-launches-a-tiny-assemblywritten-code-editor/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-03-rhun-launches-a-tiny-assemblywritten-code-editor/</guid>
+      <description>A small, fast code editor for Windows, Linux and macOS. Written in assembly.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://rhun.app/"&gt;https://rhun.app/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 03 Oct 2026 14:07:15 +0000</pubDate>
+      <category>code editor</category>
+      <category>assembly</category>
+      <category>open source</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-03-rhun-launches-a-tiny-assemblywritten-code-editor.png" type="image/png" length="0" />
+      <source url="https://rhun.app/">Original Source</source>
     </item>
     <item>
       <title>macOS Full Disk Access Tightening: What Founders Using AI Agents Need to Know</title>
