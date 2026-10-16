@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Oct 2026 04:36:08 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 07:00:14 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Workplace Messaging Apps: What Zenzap's $44M Shows Founders</title>
@@ -19,6 +19,75 @@
       <category>SaaS pricing</category>
       <category>bootstrapped founders</category>
       <enclosure url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcwjcE1_vrEU_GJbBlEq1XHw1Msdi3wn0WlGtDDWquVA&amp;s=10" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>The Forecasting Company releases open‑weights T0‑gamma time‑series model</title>
+      <link>https://bitroot.org/blog/2026-10-15-the-forecasting-company-releases-openweights-t0gam/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-15-the-forecasting-company-releases-openweights-t0gam/</guid>
+      <description>An open-weights time-series forecasting foundation model from The Forecasting Company. - theforecastingcompany/tfc-t0
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/theforecastingcompany/tfc-t0"&gt;https://github.com/theforecastingcompany/tfc-t0&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 15 Oct 2026 13:49:58 +0000</pubDate>
+      <category>time series</category>
+      <category>forecasting</category>
+      <category>open source</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-15-the-forecasting-company-releases-openweights-t0gam.png" type="image/png" length="0" />
+      <source url="https://github.com/theforecastingcompany/tfc-t0">Original Source</source>
+    </item>
+    <item>
+      <title>Petal launches open-source collaborative screen‑sharing tool</title>
+      <link>https://bitroot.org/blog/2026-10-15-petal-launches-open-source-collaborative-screensha/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-15-petal-launches-open-source-collaborative-screensha/</guid>
+      <description>Low latency, high resolution screensharing and remote control.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://petal.live/"&gt;https://petal.live/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 15 Oct 2026 13:50:56 +0000</pubDate>
+      <category>screen sharing</category>
+      <category>open source</category>
+      <category>remote collaboration</category>
+      <source url="https://petal.live/">Original Source</source>
+    </item>
+    <item>
+      <title>Graphicle adds a local code‑graph and memory layer for coding agents</title>
+      <link>https://bitroot.org/blog/2026-10-15-graphicle-adds-a-local-codegraph-and-memory-layer/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-15-graphicle-adds-a-local-codegraph-and-memory-layer/</guid>
+      <description>Code graph and memory for your coding agents, in one Rust program. For Claude Code, Codex, Cursor and any MCP client. - Graphicle-AI/graphicle
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/graphicle-ai/graphicle"&gt;https://github.com/graphicle-ai/graphicle&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 15 Oct 2026 13:50:35 +0000</pubDate>
+      <category>code graph</category>
+      <category>agent tooling</category>
+      <category>rust</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-15-graphicle-adds-a-local-codegraph-and-memory-layer.png" type="image/png" length="0" />
+      <source url="https://github.com/graphicle-ai/graphicle">Original Source</source>
+    </item>
+    <item>
+      <title>Flipflop launches Iroh‑powered persistent file‑sharing tunnels</title>
+      <link>https://bitroot.org/blog/2026-10-15-flipflop-launches-irohpowered-persistent-fileshari/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-15-flipflop-launches-irohpowered-persistent-fileshari/</guid>
+      <description>filesharing for the meatspace era. Contribute to andunieee/flipflop development by creating an account on GitHub.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/andunieee/flipflop"&gt;https://github.com/andunieee/flipflop&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 15 Oct 2026 13:49:30 +0000</pubDate>
+      <category>file sharing</category>
+      <category>tunneling</category>
+      <category>open source</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-15-flipflop-launches-irohpowered-persistent-fileshari.png" type="image/png" length="0" />
+      <source url="https://github.com/andunieee/flipflop">Original Source</source>
+    </item>
+    <item>
+      <title>Double‑headed stack allocator cuts fragmentation in games</title>
+      <link>https://bitroot.org/blog/2026-10-15-doubleheaded-stack-allocator-cuts-fragmentation-in/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-15-doubleheaded-stack-allocator-cuts-fragmentation-in/</guid>
+      <description>When programming high performance applications, such as video games, you learn neat tricks for writing fast code that makes the most of limited resources. Memory allocation is a huge topic for perf…
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://blog.demofox.org/2026/10/03/the-double-headed-stack-allocator/"&gt;https://blog.demofox.org/2026/10/03/the-double-headed-stack-allocator/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Thu, 15 Oct 2026 13:49:35 +0000</pubDate>
+      <category>memory allocation</category>
+      <category>stack allocator</category>
+      <category>game development</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-15-doubleheaded-stack-allocator-cuts-fragmentation-in.png" type="image/png" length="0" />
+      <source url="https://blog.demofox.org/2026/10/03/the-double-headed-stack-allocator/">Original Source</source>
     </item>
     <item>
       <title>AI Customer Data Platforms: Floqer's Lessons for Founders</title>

@@ -1,8 +1,13 @@
 {
   "generated": true,
-  "count": 485,
+  "count": 490,
   "posts": [
     "2026-10-15-workplace-messaging-apps-what-zenzaps-44m-shows-fo.md",
+    "2026-10-15-the-forecasting-company-releases-openweights-t0gam.md",
+    "2026-10-15-petal-launches-open-source-collaborative-screensha.md",
+    "2026-10-15-graphicle-adds-a-local-codegraph-and-memory-layer.md",
+    "2026-10-15-flipflop-launches-irohpowered-persistent-fileshari.md",
+    "2026-10-15-doubleheaded-stack-allocator-cuts-fragmentation-in.md",
     "2026-10-15-ai-customer-data-platforms-floqers-lessons-for-fou.md",
     "2026-10-14-vertical-ai-for-niche-markets-why-domain-experts-w.md",
     "2026-10-14-sprout-pi-mainboard-revives-classic-ipods-with-rp2.md",
@@ -510,6 +515,121 @@
       "categories": [
         "founders"
       ],
+      "shortId": 490
+    },
+    {
+      "filename": "2026-10-15-the-forecasting-company-releases-openweights-t0gam.md",
+      "slug": "2026-10-15-the-forecasting-company-releases-openweights-t0gam",
+      "url": "/blog/2026-10-15-the-forecasting-company-releases-openweights-t0gam/",
+      "title": "The Forecasting Company releases open\u2011weights T0\u2011gamma time\u2011series model",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T13:49:58.249804+00:00",
+      "tags": [
+        "time series",
+        "forecasting",
+        "open source"
+      ],
+      "excerpt": "An open-weights time-series forecasting foundation model from The Forecasting Company. - theforecastingcompany/tfc-t0",
+      "image": "https://bitroot.org/blog/media/2026-10-15-the-forecasting-company-releases-openweights-t0gam.png",
+      "sources": [
+        "https://github.com/theforecastingcompany/tfc-t0"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "models",
+        "opensource"
+      ],
+      "shortId": 489
+    },
+    {
+      "filename": "2026-10-15-petal-launches-open-source-collaborative-screensha.md",
+      "slug": "2026-10-15-petal-launches-open-source-collaborative-screensha",
+      "url": "/blog/2026-10-15-petal-launches-open-source-collaborative-screensha/",
+      "title": "Petal launches open-source collaborative screen\u2011sharing tool",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T13:50:56.796874+00:00",
+      "tags": [
+        "screen sharing",
+        "open source",
+        "remote collaboration"
+      ],
+      "excerpt": "Low latency, high resolution screensharing and remote control.",
+      "image": null,
+      "sources": [
+        "https://petal.live/"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "opensource"
+      ],
+      "shortId": 488
+    },
+    {
+      "filename": "2026-10-15-graphicle-adds-a-local-codegraph-and-memory-layer.md",
+      "slug": "2026-10-15-graphicle-adds-a-local-codegraph-and-memory-layer",
+      "url": "/blog/2026-10-15-graphicle-adds-a-local-codegraph-and-memory-layer/",
+      "title": "Graphicle adds a local code\u2011graph and memory layer for coding agents",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T13:50:35.003480+00:00",
+      "tags": [
+        "code graph",
+        "agent tooling",
+        "rust"
+      ],
+      "excerpt": "Code graph and memory for your coding agents, in one Rust program. For Claude Code, Codex, Cursor and any MCP client. - Graphicle-AI/graphicle",
+      "image": "https://bitroot.org/blog/media/2026-10-15-graphicle-adds-a-local-codegraph-and-memory-layer.png",
+      "sources": [
+        "https://github.com/graphicle-ai/graphicle"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "agents",
+        "engineering"
+      ],
+      "shortId": 487
+    },
+    {
+      "filename": "2026-10-15-flipflop-launches-irohpowered-persistent-fileshari.md",
+      "slug": "2026-10-15-flipflop-launches-irohpowered-persistent-fileshari",
+      "url": "/blog/2026-10-15-flipflop-launches-irohpowered-persistent-fileshari/",
+      "title": "Flipflop launches Iroh\u2011powered persistent file\u2011sharing tunnels",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T13:49:30.952857+00:00",
+      "tags": [
+        "file sharing",
+        "tunneling",
+        "open source"
+      ],
+      "excerpt": "filesharing for the meatspace era. Contribute to andunieee/flipflop development by creating an account on GitHub.",
+      "image": "https://bitroot.org/blog/media/2026-10-15-flipflop-launches-irohpowered-persistent-fileshari.png",
+      "sources": [
+        "https://github.com/andunieee/flipflop"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "opensource"
+      ],
+      "shortId": 486
+    },
+    {
+      "filename": "2026-10-15-doubleheaded-stack-allocator-cuts-fragmentation-in.md",
+      "slug": "2026-10-15-doubleheaded-stack-allocator-cuts-fragmentation-in",
+      "url": "/blog/2026-10-15-doubleheaded-stack-allocator-cuts-fragmentation-in/",
+      "title": "Double\u2011headed stack allocator cuts fragmentation in games",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T13:49:35.484576+00:00",
+      "tags": [
+        "memory allocation",
+        "stack allocator",
+        "game development"
+      ],
+      "excerpt": "When programming high performance applications, such as video games, you learn neat tricks for writing fast code that makes the most of limited resources. Memory allocation is a huge topic for perf\u2026",
+      "image": "https://bitroot.org/blog/media/2026-10-15-doubleheaded-stack-allocator-cuts-fragmentation-in.png",
+      "sources": [
+        "https://blog.demofox.org/2026/10/03/the-double-headed-stack-allocator/"
+      ],
+      "readTime": "2 min",
+      "categories": [],
       "shortId": 485
     },
     {
