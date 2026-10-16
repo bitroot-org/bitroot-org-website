@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 16 Oct 2026 07:00:14 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 07:01:05 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Workplace Messaging Apps: What Zenzap's $44M Shows Founders</title>
@@ -666,6 +666,20 @@
       <source url="https://github.com/ymcrcat/rgpu">Original Source</source>
     </item>
     <item>
+      <title>OpenChart releases free open‑source TradingView clone with AI agents</title>
+      <link>https://bitroot.org/blog/2026-10-07-openchart-releases-free-opensource-tradingview-clo/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-07-openchart-releases-free-opensource-tradingview-clo/</guid>
+      <description>OSS Tradingview with your own AI, free and unlimited. - longsurf-ai/openchart
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/longsurf-ai/openchart"&gt;https://github.com/longsurf-ai/openchart&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 07 Oct 2026 15:56:14 +0000</pubDate>
+      <category>open-source</category>
+      <category>charting</category>
+      <category>ai agents</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-07-openchart-releases-free-opensource-tradingview-clo.png" type="image/png" length="0" />
+      <source url="https://github.com/longsurf-ai/openchart">Original Source</source>
+    </item>
+    <item>
       <title>musql releases a JIT‑compiled SQLite‑compatible engine with 300× speed gains</title>
       <link>https://bitroot.org/blog/2026-10-07-musql-releases-a-jitcompiled-sqlitecompatible-engi/</link>
       <guid isPermaLink="true">https://bitroot.org/blog/2026-10-07-musql-releases-a-jitcompiled-sqlitecompatible-engi/</guid>
@@ -766,6 +780,20 @@
       <source url="https://console.era.eon.io/">Original Source</source>
     </item>
     <item>
+      <title>Autolith launches self-modifying Lisp AI agent for the terminal</title>
+      <link>https://bitroot.org/blog/2026-10-06-autolith-launches-self-modifying-lisp-ai-agent-for/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-06-autolith-launches-self-modifying-lisp-ai-agent-for/</guid>
+      <description>Autolith is a self-modifiable general purpose Lisp AI agent - lambda-symbolics/autolith
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/lambda-symbolics/autolith"&gt;https://github.com/lambda-symbolics/autolith&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 06 Oct 2026 15:36:12 +0000</pubDate>
+      <category>lisp</category>
+      <category>ai agent</category>
+      <category>terminal</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-06-autolith-launches-self-modifying-lisp-ai-agent-for.png" type="image/png" length="0" />
+      <source url="https://github.com/lambda-symbolics/autolith">Original Source</source>
+    </item>
+    <item>
       <title>tpmlsm adds eBPF guard to restrict TPM access on Linux</title>
       <link>https://bitroot.org/blog/2026-10-05-tpmlsm-adds-ebpf-guard-to-restrict-tpm-access-on-l/</link>
       <guid isPermaLink="true">https://bitroot.org/blog/2026-10-05-tpmlsm-adds-ebpf-guard-to-restrict-tpm-access-on-l/</guid>
@@ -778,6 +806,21 @@
       <category>Linux security</category>
       <enclosure url="https://bitroot.org/blog/media/2026-10-05-tpmlsm-adds-ebpf-guard-to-restrict-tpm-access-on-l.png" type="image/png" length="0" />
       <source url="https://github.com/bschaatsbergen/tpmlsm">Original Source</source>
+    </item>
+    <item>
+      <title>Swap can cause 40 ms stop‑the‑world pauses in Go GC</title>
+      <link>https://bitroot.org/blog/2026-10-05-swap-can-cause-40-ms-stoptheworld-pauses-in-go-gc/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-05-swap-can-cause-40-ms-stoptheworld-pauses-in-go-gc/</guid>
+      <description>I’m writing this so you don’t slap your forehead like I almost did when I decided to run swap in production to absorb memory spikes.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://frn.sh/go-gc/"&gt;https://frn.sh/go-gc/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Mon, 05 Oct 2026 17:37:46 +0000</pubDate>
+      <category>go</category>
+      <category>garbage-collector</category>
+      <category>swap</category>
+      <category>performance</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-05-swap-can-cause-40-ms-stoptheworld-pauses-in-go-gc.png" type="image/png" length="0" />
+      <source url="https://frn.sh/go-gc/">Original Source</source>
     </item>
     <item>
       <title>Gemini 4 Argon vs GPT-6 Astra vs Claude for Founders</title>
