@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 501,
+  "count": 502,
   "posts": [
+    "2026-10-16-muse-spark-open-on-mac-hardware-license-and-break.md",
     "2026-10-16-influencer-marketing-for-apps-cal-ais-playbook-and.md",
     "2026-10-15-workplace-messaging-apps-what-zenzaps-44m-shows-fo.md",
     "2026-10-15-the-forecasting-company-releases-openweights-t0gam.md",
@@ -505,6 +506,30 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-10-16-muse-spark-open-on-mac-hardware-license-and-break.md",
+      "slug": "2026-10-16-muse-spark-open-on-mac-hardware-license-and-break",
+      "url": "/blog/2026-10-16-muse-spark-open-on-mac-hardware-license-and-break/",
+      "title": "Muse Spark Open on Mac: Hardware, License, and Break-Even",
+      "date": "2026-10-16",
+      "published_at": "2026-10-16T07:20:00.270Z",
+      "tags": [
+        "open-weight models",
+        "Muse Spark Open",
+        "local AI",
+        "Mac Studio",
+        "AI model licensing"
+      ],
+      "excerpt": "Meta's Muse Spark Open needs about 300GB to 1TB of memory to run on a Mac. Here's the real hardware cost, the license terms, and when running it locally beats API pricing.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/09/GettyImages-2296215726.jpg?resize=1280,852",
+      "sources": [],
+      "readTime": "6 min",
+      "categories": [
+        "models",
+        "engineering"
+      ],
+      "shortId": 502
+    },
     {
       "filename": "2026-10-16-influencer-marketing-for-apps-cal-ais-playbook-and.md",
       "slug": "2026-10-16-influencer-marketing-for-apps-cal-ais-playbook-and",

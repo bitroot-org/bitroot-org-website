@@ -5,8 +5,21 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 16 Oct 2026 07:09:30 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 07:20:42 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Muse Spark Open on Mac: Hardware, License, and Break-Even</title>
+      <link>https://bitroot.org/blog/2026-10-16-muse-spark-open-on-mac-hardware-license-and-break/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-16-muse-spark-open-on-mac-hardware-license-and-break/</guid>
+      <description>Meta's Muse Spark Open needs about 300GB to 1TB of memory to run on a Mac. Here's the real hardware cost, the license terms, and when running it locally beats API pricing.</description>
+      <pubDate>Fri, 16 Oct 2026 07:20:00 +0000</pubDate>
+      <category>open-weight models</category>
+      <category>Muse Spark Open</category>
+      <category>local AI</category>
+      <category>Mac Studio</category>
+      <category>AI model licensing</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/09/GettyImages-2296215726.jpg?resize=1280,852" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Influencer Marketing for Apps: Cal AI's Playbook and Limits</title>
       <link>https://bitroot.org/blog/2026-10-16-influencer-marketing-for-apps-cal-ais-playbook-and/</link>
