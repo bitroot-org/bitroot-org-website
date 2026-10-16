@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 16 Oct 2026 07:01:48 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 07:02:32 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Workplace Messaging Apps: What Zenzap's $44M Shows Founders</title>
@@ -947,6 +947,34 @@
       <category>firmware</category>
       <enclosure url="https://bitroot.org/blog/media/2026-10-04-esp32-firmware-adds-native-245-ghz-sdr-capability.jpg" type="image/jpeg" length="0" />
       <source url="https://www.cnx-software.com/2026/10/04/esp-sdr-firmware-turns-esp32-into-a-2-4-5-ghz-software-defined-radio-sdr/">Original Source</source>
+    </item>
+    <item>
+      <title>Enki 0.1 Alpha lets you write GPU kernels in pure Rust</title>
+      <link>https://bitroot.org/blog/2026-10-04-enki-01-alpha-lets-you-write-gpu-kernels-in-pure-r/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-04-enki-01-alpha-lets-you-write-gpu-kernels-in-pure-r/</guid>
+      <description>Single-source pure-Rust heterogeneous GPU compute platform - enkiruntime/enki
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/enkiruntime/enki"&gt;https://github.com/enkiruntime/enki&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sun, 04 Oct 2026 14:33:23 +0000</pubDate>
+      <category>rust</category>
+      <category>gpu</category>
+      <category>compute</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-04-enki-01-alpha-lets-you-write-gpu-kernels-in-pure-r.png" type="image/png" length="0" />
+      <source url="https://github.com/enkiruntime/enki">Original Source</source>
+    </item>
+    <item>
+      <title>Rowan adds open‑source static scanning for AI/ML code</title>
+      <link>https://bitroot.org/blog/2026-10-03-rowan-adds-opensource-static-scanning-for-aiml-cod/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-03-rowan-adds-opensource-static-scanning-for-aiml-cod/</guid>
+      <description>Static security scanner for AI applications: source code, model files, dependencies and agent/MCP config, with evidence for every finding. - hedgerow-dev/rowan
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/hedgerow-dev/rowan"&gt;https://github.com/hedgerow-dev/rowan&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 03 Oct 2026 14:06:02 +0000</pubDate>
+      <category>security</category>
+      <category>sast</category>
+      <category>ai</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-03-rowan-adds-opensource-static-scanning-for-aiml-cod.png" type="image/png" length="0" />
+      <source url="https://github.com/hedgerow-dev/rowan">Original Source</source>
     </item>
     <item>
       <title>macOS Full Disk Access Tightening: What Founders Using AI Agents Need to Know</title>
