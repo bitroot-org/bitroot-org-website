@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "count": 493,
+  "count": 497,
   "posts": [
     "2026-10-15-workplace-messaging-apps-what-zenzaps-44m-shows-fo.md",
     "2026-10-15-the-forecasting-company-releases-openweights-t0gam.md",
@@ -61,11 +61,15 @@
     "2026-10-06-autolith-launches-self-modifying-lisp-ai-agent-for.md",
     "2026-10-05-tpmlsm-adds-ebpf-guard-to-restrict-tpm-access-on-l.md",
     "2026-10-05-swap-can-cause-40-ms-stoptheworld-pauses-in-go-gc.md",
+    "2026-10-05-maplibre-compose-adds-interactive-vector-maps-to-k.md",
+    "2026-10-05-go-compiler-hack-adds-subnanosecond-ipv4toipv6-map.md",
     "2026-10-05-gemini-4-argon-vs-gpt-6-astra-vs-claude-for-founde.md",
+    "2026-10-05-efildr-launches-as-opensource-reflective-efi-loade.md",
     "2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p.md",
     "2026-10-04-networkx-adds-pyarrow-backend-with-65-memory-savin.md",
     "2026-10-04-headstart-speeds-rust-builds-by-up-to-54-using-ear.md",
     "2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for.md",
+    "2026-10-04-esp32-firmware-adds-native-245-ghz-sdr-capability.md",
     "2026-10-03-macos-full-disk-access-tightening-what-founders-us.md",
     "2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo.md",
     "2026-10-02-openc6-bios-adds-pcstyle-microkernel-to-esp32c6.md",
@@ -518,7 +522,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 493
+      "shortId": 497
     },
     {
       "filename": "2026-10-15-the-forecasting-company-releases-openweights-t0gam.md",
@@ -542,7 +546,7 @@
         "models",
         "opensource"
       ],
-      "shortId": 492
+      "shortId": 496
     },
     {
       "filename": "2026-10-15-petal-launches-open-source-collaborative-screensha.md",
@@ -565,7 +569,7 @@
       "categories": [
         "opensource"
       ],
-      "shortId": 491
+      "shortId": 495
     },
     {
       "filename": "2026-10-15-graphicle-adds-a-local-codegraph-and-memory-layer.md",
@@ -589,7 +593,7 @@
         "agents",
         "engineering"
       ],
-      "shortId": 490
+      "shortId": 494
     },
     {
       "filename": "2026-10-15-flipflop-launches-irohpowered-persistent-fileshari.md",
@@ -612,7 +616,7 @@
       "categories": [
         "opensource"
       ],
-      "shortId": 489
+      "shortId": 493
     },
     {
       "filename": "2026-10-15-doubleheaded-stack-allocator-cuts-fragmentation-in.md",
@@ -633,7 +637,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 488
+      "shortId": 492
     },
     {
       "filename": "2026-10-15-ai-customer-data-platforms-floqers-lessons-for-fou.md",
@@ -658,7 +662,7 @@
         "founders",
         "opensource"
       ],
-      "shortId": 487
+      "shortId": 491
     },
     {
       "filename": "2026-10-14-vertical-ai-for-niche-markets-why-domain-experts-w.md",
@@ -683,7 +687,7 @@
         "founders",
         "opensource"
       ],
-      "shortId": 486
+      "shortId": 490
     },
     {
       "filename": "2026-10-14-sprout-pi-mainboard-revives-classic-ipods-with-rp2.md",
@@ -706,7 +710,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 485
+      "shortId": 489
     },
     {
       "filename": "2026-10-14-simless-lets-swiftui-agents-test-without-the-ios-s.md",
@@ -730,7 +734,7 @@
         "agents",
         "engineering"
       ],
-      "shortId": 484
+      "shortId": 488
     },
     {
       "filename": "2026-10-14-moshrs-012-adds-a-native-windows-client-and-option.md",
@@ -753,7 +757,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 483
+      "shortId": 487
     },
     {
       "filename": "2026-10-14-knitting-adds-sharedmemory-threads-to-node-bun-and.md",
@@ -774,7 +778,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 482
+      "shortId": 486
     },
     {
       "filename": "2026-10-14-facebook-your-algorithm-what-founders-should-do-no.md",
@@ -797,7 +801,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 481
+      "shortId": 485
     },
     {
       "filename": "2026-10-14-deslop-releases-oxlint-plugin-to-catch-aislop-in-t.md",
@@ -820,7 +824,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 480
+      "shortId": 484
     },
     {
       "filename": "2026-10-13-solidcraft-launches-as-an-opensource-rust-cad-with.md",
@@ -844,7 +848,7 @@
         "opensource",
         "engineering"
       ],
-      "shortId": 479
+      "shortId": 483
     },
     {
       "filename": "2026-10-13-metas-muse-wonder-proves-frontier-models-are-commo.md",
@@ -869,7 +873,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 478
+      "shortId": 482
     },
     {
       "filename": "2026-10-13-genjutsu-motion-transfer-api-compress-video-produc.md",
@@ -894,7 +898,7 @@
         "founders",
         "design"
       ],
-      "shortId": 477
+      "shortId": 481
     },
     {
       "filename": "2026-10-13-dithering-and-retro-shading-techniques-for-webgl-s.md",
@@ -915,7 +919,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 476
+      "shortId": 480
     },
     {
       "filename": "2026-10-13-chkit-adds-typescriptdriven-clickhouse-schema-and.md",
@@ -939,7 +943,7 @@
         "agents",
         "engineering"
       ],
-      "shortId": 475
+      "shortId": 479
     },
     {
       "filename": "2026-10-13-blokkily-launches-experimental-patternfirst-daw-wi.md",
@@ -963,7 +967,7 @@
         "opensource",
         "design"
       ],
-      "shortId": 474
+      "shortId": 478
     },
     {
       "filename": "2026-10-13-ai-blueprints-solve-permit-timelines-but-not-liabi.md",
@@ -986,7 +990,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 473
+      "shortId": 477
     },
     {
       "filename": "2026-10-12-zig-gains-a-compiletime-typesafe-html-templating-l.md",
@@ -1007,7 +1011,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 472
+      "shortId": 476
     },
     {
       "filename": "2026-10-12-static-recompilation-runs-ps2-games-in-the-browser.md",
@@ -1031,7 +1035,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 471
+      "shortId": 475
     },
     {
       "filename": "2026-10-12-plimsoll-adds-tiered-sandbox-for-aigenerated-code.md",
@@ -1054,7 +1058,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 470
+      "shortId": 474
     },
     {
       "filename": "2026-10-12-nvidia-personaplex-7b-for-voice-agents.md",
@@ -1081,7 +1085,7 @@
         "opensource",
         "design"
       ],
-      "shortId": 469
+      "shortId": 473
     },
     {
       "filename": "2026-10-12-eufy-homebase-2-firmware-cracked-wifi-keys-uart-sh.md",
@@ -1104,7 +1108,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 468
+      "shortId": 472
     },
     {
       "filename": "2026-10-12-doiter-launches-a-dockerbacked-language-that-treat.md",
@@ -1125,7 +1129,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 467
+      "shortId": 471
     },
     {
       "filename": "2026-10-11-littleguys-adds-a-menubar-ui-for-local-claude-code.md",
@@ -1150,7 +1154,7 @@
         "agents",
         "opensource"
       ],
-      "shortId": 466
+      "shortId": 470
     },
     {
       "filename": "2026-10-11-manimgx-launches-as-a-rustbacked-3d-animation-engi.md",
@@ -1174,7 +1178,7 @@
         "design",
         "engineering"
       ],
-      "shortId": 465
+      "shortId": 469
     },
     {
       "filename": "2026-10-11-esp32s3-epaper-board-runs-game-boy-at-30-fps.md",
@@ -1195,7 +1199,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 464
+      "shortId": 468
     },
     {
       "filename": "2026-10-11-babytalk-brings-offline-speech-ai-to-esp32s3-and-p.md",
@@ -1216,7 +1220,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 463
+      "shortId": 467
     },
     {
       "filename": "2026-10-11-ai-agents-decompile-a-classic-fps-using-600-b-toke.md",
@@ -1239,7 +1243,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 462
+      "shortId": 466
     },
     {
       "filename": "2026-10-10-why-your-ai-agent-might-do-things-you-didnt-intend.md",
@@ -1264,7 +1268,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 461
+      "shortId": 465
     },
     {
       "filename": "2026-10-10-why-arenas-3-1b-valuation-matters-for-model-select.md",
@@ -1288,7 +1292,7 @@
         "models",
         "founders"
       ],
-      "shortId": 460
+      "shortId": 464
     },
     {
       "filename": "2026-10-10-tiny-home-console-fits-in-an-rca-plug-runs-doom-on.md",
@@ -1311,7 +1315,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 459
+      "shortId": 463
     },
     {
       "filename": "2026-10-10-sqlite-gets-native-ann-vector-search-with-vec1-ext.md",
@@ -1332,7 +1336,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 458
+      "shortId": 462
     },
     {
       "filename": "2026-10-10-carrier-explode-20-adds-api-and-daily-cc0-carriers.md",
@@ -1355,7 +1359,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 457
+      "shortId": 461
     },
     {
       "filename": "2026-10-09-using-openai-for-math-products-verify-decide.md",
@@ -1379,7 +1383,7 @@
         "models",
         "founders"
       ],
-      "shortId": 456
+      "shortId": 460
     },
     {
       "filename": "2026-10-09-synthid-goes-mainstream-why-founders-should-build.md",
@@ -1402,7 +1406,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 455
+      "shortId": 459
     },
     {
       "filename": "2026-10-09-rembrandt-launches-free-selfhosted-photo-editor-wi.md",
@@ -1425,7 +1429,7 @@
       "categories": [
         "opensource"
       ],
-      "shortId": 454
+      "shortId": 458
     },
     {
       "filename": "2026-10-09-quake-runs-in-browser-via-saferust-port.md",
@@ -1448,7 +1452,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 453
+      "shortId": 457
     },
     {
       "filename": "2026-10-09-k10s-adds-mousedriven-ui-and-builtin-ai-to-kuberne.md",
@@ -1471,7 +1475,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 452
+      "shortId": 456
     },
     {
       "filename": "2026-10-09-diy-flexible-neon-t-shirt-using-led-filaments.md",
@@ -1494,7 +1498,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 451
+      "shortId": 455
     },
     {
       "filename": "2026-10-09-ai-chat-agent-runs-on-a-nokia-110-4g-via-a-hacked.md",
@@ -1518,7 +1522,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 450
+      "shortId": 454
     },
     {
       "filename": "2026-10-08-google-playground-ai-generated-games-from-text-pro.md",
@@ -1542,7 +1546,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 449
+      "shortId": 453
     },
     {
       "filename": "2026-10-07-terrainsr-upscales-100-m-heightmaps-to-10-m-detail.md",
@@ -1564,7 +1568,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 448
+      "shortId": 452
     },
     {
       "filename": "2026-10-07-sprout-adds-bluetooth-wifi-and-streaming-to-classi.md",
@@ -1588,7 +1592,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 447
+      "shortId": 451
     },
     {
       "filename": "2026-10-07-rgpu-lets-pytorch-code-offload-tensors-to-a-remote.md",
@@ -1611,7 +1615,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 446
+      "shortId": 450
     },
     {
       "filename": "2026-10-07-openchart-releases-free-opensource-tradingview-clo.md",
@@ -1635,7 +1639,7 @@
         "agents",
         "opensource"
       ],
-      "shortId": 445
+      "shortId": 449
     },
     {
       "filename": "2026-10-07-musql-releases-a-jitcompiled-sqlitecompatible-engi.md",
@@ -1659,7 +1663,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 444
+      "shortId": 448
     },
     {
       "filename": "2026-10-07-mistral-large-4-le-chonk-europes-open-weight-alter.md",
@@ -1684,7 +1688,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 443
+      "shortId": 447
     },
     {
       "filename": "2026-10-07-ai-agents-getting-blocked-ucp-vs-personal-agent-pr.md",
@@ -1721,7 +1725,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 442
+      "shortId": 446
     },
     {
       "filename": "2026-10-06-minigraf-203-adds-bi-temporal-graph-storage-for-ru.md",
@@ -1744,7 +1748,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 441
+      "shortId": 445
     },
     {
       "filename": "2026-10-06-ichat-av-revived-on-leopard-via-a-custom-snatmap-h.md",
@@ -1767,7 +1771,7 @@
       "categories": [
         "design"
       ],
-      "shortId": 440
+      "shortId": 444
     },
     {
       "filename": "2026-10-06-gleam-119-switches-from-erlang-source-to-abstract.md",
@@ -1790,7 +1794,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 439
+      "shortId": 443
     },
     {
       "filename": "2026-10-06-era-launches-synthetic-company-environments-for-ai.md",
@@ -1814,7 +1818,7 @@
         "agents",
         "engineering"
       ],
-      "shortId": 438
+      "shortId": 442
     },
     {
       "filename": "2026-10-06-autolith-launches-self-modifying-lisp-ai-agent-for.md",
@@ -1837,7 +1841,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 437
+      "shortId": 441
     },
     {
       "filename": "2026-10-05-tpmlsm-adds-ebpf-guard-to-restrict-tpm-access-on-l.md",
@@ -1860,7 +1864,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 436
+      "shortId": 440
     },
     {
       "filename": "2026-10-05-swap-can-cause-40-ms-stoptheworld-pauses-in-go-gc.md",
@@ -1882,7 +1886,54 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 435
+      "shortId": 439
+    },
+    {
+      "filename": "2026-10-05-maplibre-compose-adds-interactive-vector-maps-to-k.md",
+      "slug": "2026-10-05-maplibre-compose-adds-interactive-vector-maps-to-k",
+      "url": "/blog/2026-10-05-maplibre-compose-adds-interactive-vector-maps-to-k/",
+      "title": "MapLibre Compose adds interactive vector maps to Kotlin Multiplatform apps",
+      "date": "2026-10-05",
+      "published_at": "2026-10-05T17:37:19.458871+00:00",
+      "tags": [
+        "kotlin",
+        "compose",
+        "maps",
+        "open-source"
+      ],
+      "excerpt": "Add interactive vector tile maps to your Compose app - maplibre/maplibre-compose",
+      "image": "https://bitroot.org/blog/media/2026-10-05-maplibre-compose-adds-interactive-vector-maps-to-k.png",
+      "sources": [
+        "https://github.com/maplibre/maplibre-compose"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "opensource"
+      ],
+      "shortId": 438
+    },
+    {
+      "filename": "2026-10-05-go-compiler-hack-adds-subnanosecond-ipv4toipv6-map.md",
+      "slug": "2026-10-05-go-compiler-hack-adds-subnanosecond-ipv4toipv6-map",
+      "url": "/blog/2026-10-05-go-compiler-hack-adds-subnanosecond-ipv4toipv6-map/",
+      "title": "Go compiler hack adds sub\u2011nanosecond IPv4\u2011to\u2011IPv6 mapping",
+      "date": "2026-10-05",
+      "published_at": "2026-10-05T17:38:36.482387+00:00",
+      "tags": [
+        "go",
+        "networking",
+        "compiler"
+      ],
+      "excerpt": "Go maintainers declined netip.Addr.Map() saying the compiler should optimize netip.AddrFrom16(ip.As16()) instead. How difficult is it to implement?",
+      "image": "https://bitroot.org/blog/media/2026-10-05-go-compiler-hack-adds-subnanosecond-ipv4toipv6-map.jpg",
+      "sources": [
+        "https://vincent.bernat.ch/en/blog/2026-go-netip-addrto6"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
+      "shortId": 437
     },
     {
       "filename": "2026-10-05-gemini-4-argon-vs-gpt-6-astra-vs-claude-for-founde.md",
@@ -1906,7 +1957,30 @@
         "models",
         "founders"
       ],
-      "shortId": 434
+      "shortId": 436
+    },
+    {
+      "filename": "2026-10-05-efildr-launches-as-opensource-reflective-efi-loade.md",
+      "slug": "2026-10-05-efildr-launches-as-opensource-reflective-efi-loade",
+      "url": "/blog/2026-10-05-efildr-launches-as-opensource-reflective-efi-loade/",
+      "title": "Efildr launches as open\u2011source reflective EFI loader and packer",
+      "date": "2026-10-05",
+      "published_at": "2026-10-05T17:37:25.115108+00:00",
+      "tags": [
+        "efi",
+        "loader",
+        "packer"
+      ],
+      "excerpt": "A high-performance stealth Reflective EFI-Loader for UEFI binaries. Protections, Encrypts, Compresses, and executes EFI payloads directly from RAM with zero disk footprint. - vk-candpython/efildr",
+      "image": "https://bitroot.org/blog/media/2026-10-05-efildr-launches-as-opensource-reflective-efi-loade.png",
+      "sources": [
+        "https://github.com/vk-candpython/efildr"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "opensource"
+      ],
+      "shortId": 435
     },
     {
       "filename": "2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p.md",
@@ -1929,7 +2003,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 433
+      "shortId": 434
     },
     {
       "filename": "2026-10-04-networkx-adds-pyarrow-backend-with-65-memory-savin.md",
@@ -1950,7 +2024,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 432
+      "shortId": 433
     },
     {
       "filename": "2026-10-04-headstart-speeds-rust-builds-by-up-to-54-using-ear.md",
@@ -1973,7 +2047,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 431
+      "shortId": 432
     },
     {
       "filename": "2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for.md",
@@ -1996,6 +2070,27 @@
       "categories": [
         "engineering"
       ],
+      "shortId": 431
+    },
+    {
+      "filename": "2026-10-04-esp32-firmware-adds-native-245-ghz-sdr-capability.md",
+      "slug": "2026-10-04-esp32-firmware-adds-native-245-ghz-sdr-capability",
+      "url": "/blog/2026-10-04-esp32-firmware-adds-native-245-ghz-sdr-capability/",
+      "title": "ESP32 firmware adds native 2.4/5 GHz SDR capability",
+      "date": "2026-10-04",
+      "published_at": "2026-10-04T14:32:34.266012+00:00",
+      "tags": [
+        "esp32",
+        "sdr",
+        "firmware"
+      ],
+      "excerpt": "The ESP-SDR firmware turns the ESP32 into a native Software-Defined Radio (SDR) using the chip's built-in radio without additional hardware.",
+      "image": "https://bitroot.org/blog/media/2026-10-04-esp32-firmware-adds-native-245-ghz-sdr-capability.jpg",
+      "sources": [
+        "https://www.cnx-software.com/2026/10/04/esp-sdr-firmware-turns-esp32-into-a-2-4-5-ghz-software-defined-radio-sdr/"
+      ],
+      "readTime": "2 min",
+      "categories": [],
       "shortId": 430
     },
     {
