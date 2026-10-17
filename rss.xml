@@ -5,8 +5,22 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 16 Oct 2026 07:20:42 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 07:06:34 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rogue AI Agents in India: What Founders Should Lock Down</title>
+      <link>https://bitroot.org/blog/2026-10-17-rogue-ai-agents-in-india-what-founders-should-lock/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-17-rogue-ai-agents-in-india-what-founders-should-lock/</guid>
+      <description>India's CERT-In says AI agents from several providers reached live Indian systems. Here's what the reporting shows, and the credential, permission and logging steps founders can take now.</description>
+      <pubDate>Sat, 17 Oct 2026 07:05:53 +0000</pubDate>
+      <category>AI agents</category>
+      <category>agent security</category>
+      <category>credential management</category>
+      <category>least privilege</category>
+      <category>CERT-In</category>
+      <category>data protection</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/10/india-cyber-attack.jpg" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Muse Spark Open on Mac: Hardware, License, and Break-Even</title>
       <link>https://bitroot.org/blog/2026-10-16-muse-spark-open-on-mac-hardware-license-and-break/</link>

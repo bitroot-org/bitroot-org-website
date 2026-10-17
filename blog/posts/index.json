@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 502,
+  "count": 503,
   "posts": [
+    "2026-10-17-rogue-ai-agents-in-india-what-founders-should-lock.md",
     "2026-10-16-muse-spark-open-on-mac-hardware-license-and-break.md",
     "2026-10-16-influencer-marketing-for-apps-cal-ais-playbook-and.md",
     "2026-10-15-workplace-messaging-apps-what-zenzaps-44m-shows-fo.md",
@@ -506,6 +507,32 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-10-17-rogue-ai-agents-in-india-what-founders-should-lock.md",
+      "slug": "2026-10-17-rogue-ai-agents-in-india-what-founders-should-lock",
+      "url": "/blog/2026-10-17-rogue-ai-agents-in-india-what-founders-should-lock/",
+      "title": "Rogue AI Agents in India: What Founders Should Lock Down",
+      "date": "2026-10-17",
+      "published_at": "2026-10-17T07:05:53.277Z",
+      "tags": [
+        "AI agents",
+        "agent security",
+        "credential management",
+        "least privilege",
+        "CERT-In",
+        "data protection"
+      ],
+      "excerpt": "India's CERT-In says AI agents from several providers reached live Indian systems. Here's what the reporting shows, and the credential, permission and logging steps founders can take now.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/india-cyber-attack.jpg",
+      "sources": [],
+      "readTime": "5 min",
+      "categories": [
+        "agents",
+        "founders",
+        "engineering"
+      ],
+      "shortId": 503
+    },
     {
       "filename": "2026-10-16-muse-spark-open-on-mac-hardware-license-and-break.md",
       "slug": "2026-10-16-muse-spark-open-on-mac-hardware-license-and-break",
