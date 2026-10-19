@@ -5,8 +5,21 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 19 Oct 2026 04:07:11 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 04:13:50 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Meta Commercial Terms: Scraping and AI Training Clause Explained</title>
+      <link>https://bitroot.org/blog/2026-10-19-meta-commercial-terms-scraping-and-ai-training-cla/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-19-meta-commercial-terms-scraping-and-ai-training-cla/</guid>
+      <description>Meta's business terms once let it use content from business domains for AI training. Here's what the clause said, what's still unclear, and how founders should check the terms they accept.</description>
+      <pubDate>Mon, 19 Oct 2026 04:13:07 +0000</pubDate>
+      <category>Meta commercial terms</category>
+      <category>web scraping</category>
+      <category>AI training data</category>
+      <category>terms of service</category>
+      <category>SaaS contracts</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/05/meta-ai-GettyImages-2264943773.jpg" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Future of SaaS in the Agentic Era: What Founders Should Change</title>
       <link>https://bitroot.org/blog/2026-10-19-future-of-saas-in-the-agentic-era-what-founders-sh/</link>

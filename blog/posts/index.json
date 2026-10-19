@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 504,
+  "count": 505,
   "posts": [
+    "2026-10-19-meta-commercial-terms-scraping-and-ai-training-cla.md",
     "2026-10-19-future-of-saas-in-the-agentic-era-what-founders-sh.md",
     "2026-10-17-rogue-ai-agents-in-india-what-founders-should-lock.md",
     "2026-10-16-muse-spark-open-on-mac-hardware-license-and-break.md",
@@ -508,6 +509,30 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-10-19-meta-commercial-terms-scraping-and-ai-training-cla.md",
+      "slug": "2026-10-19-meta-commercial-terms-scraping-and-ai-training-cla",
+      "url": "/blog/2026-10-19-meta-commercial-terms-scraping-and-ai-training-cla/",
+      "title": "Meta Commercial Terms: Scraping and AI Training Clause Explained",
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T04:13:07.201Z",
+      "tags": [
+        "Meta commercial terms",
+        "web scraping",
+        "AI training data",
+        "terms of service",
+        "SaaS contracts"
+      ],
+      "excerpt": "Meta's business terms once let it use content from business domains for AI training. Here's what the clause said, what's still unclear, and how founders should check the terms they accept.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/05/meta-ai-GettyImages-2264943773.jpg",
+      "sources": [],
+      "readTime": "6 min",
+      "categories": [
+        "agents",
+        "founders"
+      ],
+      "shortId": 505
+    },
     {
       "filename": "2026-10-19-future-of-saas-in-the-agentic-era-what-founders-sh.md",
       "slug": "2026-10-19-future-of-saas-in-the-agentic-era-what-founders-sh",
