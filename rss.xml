@@ -5,8 +5,21 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 17 Oct 2026 07:06:34 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 04:07:11 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Future of SaaS in the Agentic Era: What Founders Should Change</title>
+      <link>https://bitroot.org/blog/2026-10-19-future-of-saas-in-the-agentic-era-what-founders-sh/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-19-future-of-saas-in-the-agentic-era-what-founders-sh/</guid>
+      <description>AI agents are reshaping SaaS, not ending it. Here's what a 300-vendor 2026 survey shows about pricing and ROI proof, and what founders should change.</description>
+      <pubDate>Mon, 19 Oct 2026 04:06:20 +0000</pubDate>
+      <category>SaaS pricing</category>
+      <category>AI agents</category>
+      <category>SaaS strategy</category>
+      <category>systems of record</category>
+      <category>B2B software</category>
+      <enclosure url="https://storage.ghost.io/c/81/47/8147eb50-617d-4929-b563-3922b88421fd/content/images/2024/04/Blog-hero-banner_Option-2.jpg" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Rogue AI Agents in India: What Founders Should Lock Down</title>
       <link>https://bitroot.org/blog/2026-10-17-rogue-ai-agents-in-india-what-founders-should-lock/</link>
