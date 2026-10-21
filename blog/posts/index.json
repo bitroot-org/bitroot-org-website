@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 505,
+  "count": 506,
   "posts": [
+    "2026-10-21-anthropic-ai-safety-bill-how-model-release-blocks.md",
     "2026-10-19-meta-commercial-terms-scraping-and-ai-training-cla.md",
     "2026-10-19-future-of-saas-in-the-agentic-era-what-founders-sh.md",
     "2026-10-17-rogue-ai-agents-in-india-what-founders-should-lock.md",
@@ -509,6 +510,29 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-10-21-anthropic-ai-safety-bill-how-model-release-blocks.md",
+      "slug": "2026-10-21-anthropic-ai-safety-bill-how-model-release-blocks",
+      "url": "/blog/2026-10-21-anthropic-ai-safety-bill-how-model-release-blocks/",
+      "title": "Anthropic AI Safety Bill: How Model Release Blocks Would Work",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T10:50:50.417Z",
+      "tags": [
+        "AI safety regulation",
+        "Anthropic",
+        "frontier AI",
+        "AI policy",
+        "SB 53"
+      ],
+      "excerpt": "Anthropic's confidential draft bill would let a judge block a model's release if it could cause 50 deaths or $1 billion in damage. Here's how the proposal works, where it's disputed, and what it means for founders.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2282033342.jpg",
+      "sources": [],
+      "readTime": "6 min",
+      "categories": [
+        "models"
+      ],
+      "shortId": 506
+    },
     {
       "filename": "2026-10-19-meta-commercial-terms-scraping-and-ai-training-cla.md",
       "slug": "2026-10-19-meta-commercial-terms-scraping-and-ai-training-cla",
