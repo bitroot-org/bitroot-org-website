@@ -5,8 +5,22 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 21 Oct 2026 10:52:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 11:20:30 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anthropic Cloud Capacity: What It Means for Founders</title>
+      <link>https://bitroot.org/blog/2026-10-21-anthropic-cloud-capacity-what-it-means-for-founder/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-21-anthropic-cloud-capacity-what-it-means-for-founder/</guid>
+      <description>Anthropic reportedly struggles to get enough cloud capacity, and its cloud providers increasingly see it as a rival. Here's how compute limits reach your API bill, and how to reduce your exposure.</description>
+      <pubDate>Wed, 21 Oct 2026 11:19:46 +0000</pubDate>
+      <category>Anthropic</category>
+      <category>Claude API</category>
+      <category>cloud infrastructure</category>
+      <category>rate limits</category>
+      <category>vendor risk</category>
+      <category>AI startups</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-2295579000.jpg?resize=1280,853" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Anthropic AI Safety Bill: How Model Release Blocks Would Work</title>
       <link>https://bitroot.org/blog/2026-10-21-anthropic-ai-safety-bill-how-model-release-blocks/</link>
