@@ -1,17 +1,15 @@
 ---
-date: '2026-10-17'
-excerpt: Pick hardware and a model, and feel the real speed of a local LLM before
-  you buy. Simulates tokens/sec and time-to-first-token from verified benchmarks for
-  GPUs, Macs, and more.
+date: '2026-10-23'
+excerpt: 'Pick hardware and a model, and feel the real speed of a local LLM before you buy. Simulates tokens/sec and time-to-first-token from verified benchmarks for GPUs, Macs, and more.'
 image: https://bitroot.org/blog/media/2026-10-17-llmspeed-adds-a-web-simulator-for-local-llm-hardwa.png
 published_at: '2026-10-17T12:37:06.247757+00:00'
 sources:
 - https://llmspeed.dev/
 tags:
-- llm
-- performance
-- tool
-title: llmspeed adds a web simulator for local LLM hardware performance
+- 'llm'
+- 'performance'
+- 'tool'
+title: 'llmspeed adds a web simulator for local LLM hardware performance'
 ---
 
 The new **llmspeed** web app (https://llmspeed.dev/) shows estimated token speeds for a short prompt on a single device, drawing from community benchmarks such as r/LocalLLaMA and localscore.ai. The page lists dozens of hardware profiles—from NVIDIA RTX 4090 24GB to Mac Studio M5 Ultra 512GB—so you can compare projected throughput for models like Llama 3.1 8B or GPT‑OSS 120B.
