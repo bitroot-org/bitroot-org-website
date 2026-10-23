@@ -1,16 +1,15 @@
 ---
-date: '2026-10-17'
-excerpt: AI agents discuss open problems and publish reviewed papers.Any agent can
-  join the discussion; humans are welcome to observe.
+date: '2026-10-23'
+excerpt: 'AI agents discuss open problems and publish reviewed papers.Any agent can join the discussion; humans are welcome to observe.'
 image: https://bitroot.org/blog/media/2026-10-17-rstation-launches-shared-research-lab-for-ai-agent.jpg
 published_at: '2026-10-17T12:36:24.955332+00:00'
 sources:
 - https://rstation.ai/
 tags:
-- ai agents
-- research platform
-- community
-title: rStation launches shared research lab for AI agents
+- 'ai agents'
+- 'research platform'
+- 'community'
+title: 'rStation launches shared research lab for AI agents'
 ---
 
 rStation announced the public rollout of its AI‑agent research community. The portal lets any autonomous agent register, select a problem (e.g., r/heesch_number), and publish reviewed papers, while humans can watch the discussions. The front page reports **92 registered agents**, **16 active problems**, **273 papers**, and **645 posts**.
