@@ -4,12 +4,12 @@
   "posts": [
     "2026-10-17-tinywm-brings-scrolling-window-manager-to-macos-so.md",
     "2026-10-17-rstation-launches-shared-research-lab-for-ai-agent.md",
+    "2026-10-17-llmspeed-adds-a-web-simulator-for-local-llm-hardwa.md",
     "2026-10-21-anthropic-cloud-capacity-what-it-means-for-founder.md",
     "2026-10-21-anthropic-ai-safety-bill-how-model-release-blocks.md",
     "2026-10-19-meta-commercial-terms-scraping-and-ai-training-cla.md",
     "2026-10-19-future-of-saas-in-the-agentic-era-what-founders-sh.md",
     "2026-10-17-rogue-ai-agents-in-india-what-founders-should-lock.md",
-    "2026-10-17-llmspeed-adds-a-web-simulator-for-local-llm-hardwa.md",
     "2026-10-16-muse-spark-open-on-mac-hardware-license-and-break.md",
     "2026-10-16-influencer-marketing-for-apps-cal-ais-playbook-and.md",
     "2026-10-15-workplace-messaging-apps-what-zenzaps-44m-shows-fo.md",
@@ -561,6 +561,30 @@
       "shortId": 509
     },
     {
+      "filename": "2026-10-17-llmspeed-adds-a-web-simulator-for-local-llm-hardwa.md",
+      "slug": "2026-10-17-llmspeed-adds-a-web-simulator-for-local-llm-hardwa",
+      "url": "/blog/2026-10-17-llmspeed-adds-a-web-simulator-for-local-llm-hardwa/",
+      "title": "llmspeed adds a web simulator for local LLM hardware performance",
+      "date": "2026-10-23",
+      "published_at": "2026-10-17T12:37:06.247757+00:00",
+      "tags": [
+        "llm",
+        "performance",
+        "tool"
+      ],
+      "excerpt": "Pick hardware and a model, and feel the real speed of a local LLM before you buy. Simulates tokens/sec and time-to-first-token from verified benchmarks for GPUs, Macs, and more.",
+      "image": "https://bitroot.org/blog/media/2026-10-17-llmspeed-adds-a-web-simulator-for-local-llm-hardwa.png",
+      "sources": [
+        "https://llmspeed.dev/"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "models",
+        "engineering"
+      ],
+      "shortId": 508
+    },
+    {
       "filename": "2026-10-21-anthropic-cloud-capacity-what-it-means-for-founder.md",
       "slug": "2026-10-21-anthropic-cloud-capacity-what-it-means-for-founder",
       "url": "/blog/2026-10-21-anthropic-cloud-capacity-what-it-means-for-founder/",
@@ -584,7 +608,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 508
+      "shortId": 507
     },
     {
       "filename": "2026-10-21-anthropic-ai-safety-bill-how-model-release-blocks.md",
@@ -607,7 +631,7 @@
       "categories": [
         "models"
       ],
-      "shortId": 507
+      "shortId": 506
     },
     {
       "filename": "2026-10-19-meta-commercial-terms-scraping-and-ai-training-cla.md",
@@ -631,7 +655,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 506
+      "shortId": 505
     },
     {
       "filename": "2026-10-19-future-of-saas-in-the-agentic-era-what-founders-sh.md",
@@ -655,7 +679,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 505
+      "shortId": 504
     },
     {
       "filename": "2026-10-17-rogue-ai-agents-in-india-what-founders-should-lock.md",
@@ -679,30 +703,6 @@
       "categories": [
         "agents",
         "founders",
-        "engineering"
-      ],
-      "shortId": 504
-    },
-    {
-      "filename": "2026-10-17-llmspeed-adds-a-web-simulator-for-local-llm-hardwa.md",
-      "slug": "2026-10-17-llmspeed-adds-a-web-simulator-for-local-llm-hardwa",
-      "url": "/blog/2026-10-17-llmspeed-adds-a-web-simulator-for-local-llm-hardwa/",
-      "title": "llmspeed adds a web simulator for local LLM hardware performance",
-      "date": "2026-10-17",
-      "published_at": "2026-10-17T12:37:06.247757+00:00",
-      "tags": [
-        "llm",
-        "performance",
-        "tool"
-      ],
-      "excerpt": "Pick hardware and a model, and feel the real speed of a local LLM before you buy. Simulates tokens/sec and time-to-first-token from verified benchmarks for GPUs, Macs, and more.",
-      "image": "https://bitroot.org/blog/media/2026-10-17-llmspeed-adds-a-web-simulator-for-local-llm-hardwa.png",
-      "sources": [
-        "https://llmspeed.dev/"
-      ],
-      "readTime": "2 min",
-      "categories": [
-        "models",
         "engineering"
       ],
       "shortId": 503
