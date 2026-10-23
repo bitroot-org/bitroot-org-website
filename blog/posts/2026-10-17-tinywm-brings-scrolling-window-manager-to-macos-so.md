@@ -1,15 +1,15 @@
 ---
-date: '2026-10-17'
-excerpt: A scrolling window manager for macOS, inspired by niri - bbodi/tinywm
+date: '2026-10-23'
+excerpt: 'A scrolling window manager for macOS, inspired by niri - bbodi/tinywm'
 image: https://bitroot.org/blog/media/2026-10-17-tinywm-brings-scrolling-window-manager-to-macos-so.png
 published_at: '2026-10-17T12:36:11.459466+00:00'
 sources:
 - https://github.com/bbodi/tinywm
 tags:
-- window manager
-- macos
-- open source
-title: tinywm brings scrolling window manager to macOS Sonoma
+- 'window manager'
+- 'macos'
+- 'open source'
+title: 'tinywm brings scrolling window manager to macOS Sonoma'
 ---
 
 The tinywm project released version 1.0 for macOS 14 Sonoma, requiring Apple‑silicon hardware and installing via a tinywm.zip download from the [GitHub release page](https://github.com/bbodi/tinywm). It replaces the usual overlapping windows with a horizontal strip that you scroll with one key or a three‑finger swipe.
