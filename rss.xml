@@ -5,8 +5,36 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 23 Oct 2026 01:45:59 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 01:46:49 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tinywm brings scrolling window manager to macOS Sonoma</title>
+      <link>https://bitroot.org/blog/2026-10-17-tinywm-brings-scrolling-window-manager-to-macos-so/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-17-tinywm-brings-scrolling-window-manager-to-macos-so/</guid>
+      <description>A scrolling window manager for macOS, inspired by niri - bbodi/tinywm
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/bbodi/tinywm"&gt;https://github.com/bbodi/tinywm&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 17 Oct 2026 12:36:11 +0000</pubDate>
+      <category>window manager</category>
+      <category>macos</category>
+      <category>open source</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-17-tinywm-brings-scrolling-window-manager-to-macos-so.png" type="image/png" length="0" />
+      <source url="https://github.com/bbodi/tinywm">Original Source</source>
+    </item>
+    <item>
+      <title>rStation launches shared research lab for AI agents</title>
+      <link>https://bitroot.org/blog/2026-10-17-rstation-launches-shared-research-lab-for-ai-agent/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-17-rstation-launches-shared-research-lab-for-ai-agent/</guid>
+      <description>AI agents discuss open problems and publish reviewed papers.Any agent can join the discussion; humans are welcome to observe.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://rstation.ai/"&gt;https://rstation.ai/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 17 Oct 2026 12:36:24 +0000</pubDate>
+      <category>ai agents</category>
+      <category>research platform</category>
+      <category>community</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-17-rstation-launches-shared-research-lab-for-ai-agent.jpg" type="image/jpeg" length="0" />
+      <source url="https://rstation.ai/">Original Source</source>
+    </item>
     <item>
       <title>Anthropic Cloud Capacity: What It Means for Founders</title>
       <link>https://bitroot.org/blog/2026-10-21-anthropic-cloud-capacity-what-it-means-for-founder/</link>
@@ -61,20 +89,6 @@
       <enclosure url="https://storage.ghost.io/c/81/47/8147eb50-617d-4929-b563-3922b88421fd/content/images/2024/04/Blog-hero-banner_Option-2.jpg" type="image/jpeg" length="0" />
     </item>
     <item>
-      <title>tinywm brings scrolling window manager to macOS Sonoma</title>
-      <link>https://bitroot.org/blog/2026-10-17-tinywm-brings-scrolling-window-manager-to-macos-so/</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-17-tinywm-brings-scrolling-window-manager-to-macos-so/</guid>
-      <description>A scrolling window manager for macOS, inspired by niri - bbodi/tinywm
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/bbodi/tinywm"&gt;https://github.com/bbodi/tinywm&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Sat, 17 Oct 2026 12:36:11 +0000</pubDate>
-      <category>window manager</category>
-      <category>macos</category>
-      <category>open source</category>
-      <enclosure url="https://bitroot.org/blog/media/2026-10-17-tinywm-brings-scrolling-window-manager-to-macos-so.png" type="image/png" length="0" />
-      <source url="https://github.com/bbodi/tinywm">Original Source</source>
-    </item>
-    <item>
       <title>Rogue AI Agents in India: What Founders Should Lock Down</title>
       <link>https://bitroot.org/blog/2026-10-17-rogue-ai-agents-in-india-what-founders-should-lock/</link>
       <guid isPermaLink="true">https://bitroot.org/blog/2026-10-17-rogue-ai-agents-in-india-what-founders-should-lock/</guid>
@@ -87,6 +101,20 @@
       <category>CERT-In</category>
       <category>data protection</category>
       <enclosure url="https://techcrunch.com/wp-content/uploads/2026/10/india-cyber-attack.jpg" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>llmspeed adds a web simulator for local LLM hardware performance</title>
+      <link>https://bitroot.org/blog/2026-10-17-llmspeed-adds-a-web-simulator-for-local-llm-hardwa/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-17-llmspeed-adds-a-web-simulator-for-local-llm-hardwa/</guid>
+      <description>Pick hardware and a model, and feel the real speed of a local LLM before you buy. Simulates tokens/sec and time-to-first-token from verified benchmarks for GPUs, Macs, and more.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://llmspeed.dev/"&gt;https://llmspeed.dev/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 17 Oct 2026 12:37:06 +0000</pubDate>
+      <category>llm</category>
+      <category>performance</category>
+      <category>tool</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-17-llmspeed-adds-a-web-simulator-for-local-llm-hardwa.png" type="image/png" length="0" />
+      <source url="https://llmspeed.dev/">Original Source</source>
     </item>
     <item>
       <title>Muse Spark Open on Mac: Hardware, License, and Break-Even</title>
