@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 510,
+  "count": 511,
   "posts": [
+    "2026-10-26-grok-odyssey-ai-film-ai-video-generators-compared.md",
     "2026-10-17-tinywm-brings-scrolling-window-manager-to-macos-so.md",
     "2026-10-17-rstation-launches-shared-research-lab-for-ai-agent.md",
     "2026-10-17-llmspeed-adds-a-web-simulator-for-local-llm-hardwa.md",
@@ -514,6 +515,31 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-10-26-grok-odyssey-ai-film-ai-video-generators-compared.md",
+      "slug": "2026-10-26-grok-odyssey-ai-film-ai-video-generators-compared",
+      "url": "/blog/2026-10-26-grok-odyssey-ai-film-ai-video-generators-compared/",
+      "title": "Grok Odyssey AI Film: AI Video Generators Compared for Founders",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T07:05:41.711Z",
+      "tags": [
+        "AI video generators",
+        "Grok Imagine",
+        "AI filmmaking",
+        "AI video tools",
+        "marketing content"
+      ],
+      "excerpt": "Grok released a seven-minute AI-generated Odyssey episode. Here's what it shows, how it compares with other AI video tools, and what founders should test before they buy.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/03/grok-getty.jpg?resize=1280,853",
+      "sources": [],
+      "readTime": "6 min",
+      "categories": [
+        "models",
+        "founders",
+        "design"
+      ],
+      "shortId": 511
+    },
     {
       "filename": "2026-10-17-tinywm-brings-scrolling-window-manager-to-macos-so.md",
       "slug": "2026-10-17-tinywm-brings-scrolling-window-manager-to-macos-so",
