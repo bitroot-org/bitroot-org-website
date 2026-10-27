@@ -1,8 +1,9 @@
 {
   "generated": true,
-  "count": 512,
+  "count": 513,
   "posts": [
     "2026-10-27-openai-dots-what-the-always-on-ai-assistant-means.md",
+    "2026-10-27-gpu-financing-deals-what-spacex-and-apollo-mean-fo.md",
     "2026-10-26-grok-odyssey-ai-film-ai-video-generators-compared.md",
     "2026-10-17-tinywm-brings-scrolling-window-manager-to-macos-so.md",
     "2026-10-17-rstation-launches-shared-research-lab-for-ai-agent.md",
@@ -538,6 +539,30 @@
       "categories": [
         "models",
         "agents",
+        "founders",
+        "engineering"
+      ],
+      "shortId": 513
+    },
+    {
+      "filename": "2026-10-27-gpu-financing-deals-what-spacex-and-apollo-mean-fo.md",
+      "slug": "2026-10-27-gpu-financing-deals-what-spacex-and-apollo-mean-fo",
+      "url": "/blog/2026-10-27-gpu-financing-deals-what-spacex-and-apollo-mean-fo/",
+      "title": "GPU Financing Deals: What SpaceX and Apollo Mean for Founders",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T04:59:02.815Z",
+      "tags": [
+        "GPU financing",
+        "neocloud",
+        "AI infrastructure",
+        "cloud vendor risk",
+        "AI compute costs"
+      ],
+      "excerpt": "SpaceX reached a binding commitment for about $40 billion in GPU financing with Apollo. Here's how leased AI chips work, why neocloud providers face consolidation risk, and what founders renting compute should check.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/Screenshot-2026-10-20-at-2.40.46-PM-e1793033116950.png?resize=1280,972",
+      "sources": [],
+      "readTime": "6 min",
+      "categories": [
         "founders",
         "engineering"
       ],

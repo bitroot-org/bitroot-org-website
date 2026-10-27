@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 27 Oct 2026 04:54:14 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 04:59:50 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OpenAI Dots: What the Always-On AI Assistant Means for Founders</title>
@@ -20,6 +20,19 @@
       <category>agent security</category>
       <category>founder productivity</category>
       <enclosure url="https://techcrunch.com/wp-content/uploads/2026/10/55593495974_7bfdac6a15_k.jpg?resize=1280,854" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>GPU Financing Deals: What SpaceX and Apollo Mean for Founders</title>
+      <link>https://bitroot.org/blog/2026-10-27-gpu-financing-deals-what-spacex-and-apollo-mean-fo/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-27-gpu-financing-deals-what-spacex-and-apollo-mean-fo/</guid>
+      <description>SpaceX reached a binding commitment for about $40 billion in GPU financing with Apollo. Here's how leased AI chips work, why neocloud providers face consolidation risk, and what founders renting compute should check.</description>
+      <pubDate>Tue, 27 Oct 2026 04:59:02 +0000</pubDate>
+      <category>GPU financing</category>
+      <category>neocloud</category>
+      <category>AI infrastructure</category>
+      <category>cloud vendor risk</category>
+      <category>AI compute costs</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/10/Screenshot-2026-10-20-at-2.40.46-PM-e1793033116950.png?resize=1280,972" type="image/png" length="0" />
     </item>
     <item>
       <title>Grok Odyssey AI Film: AI Video Generators Compared for Founders</title>
