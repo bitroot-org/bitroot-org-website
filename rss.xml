@@ -5,8 +5,22 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 26 Oct 2026 07:06:22 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 04:54:14 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenAI Dots: What the Always-On AI Assistant Means for Founders</title>
+      <link>https://bitroot.org/blog/2026-10-27-openai-dots-what-the-always-on-ai-assistant-means/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-27-openai-dots-what-the-always-on-ai-assistant-means/</guid>
+      <description>OpenAI's Dots runs in the background, watches your calendar and email, and proposes actions. Here's what it does, what access it needs, what it costs, and how to test it before you trust it.</description>
+      <pubDate>Tue, 27 Oct 2026 04:53:31 +0000</pubDate>
+      <category>OpenAI Dots</category>
+      <category>AI assistants</category>
+      <category>AI agents</category>
+      <category>ChatGPT Pro</category>
+      <category>agent security</category>
+      <category>founder productivity</category>
+      <enclosure url="https://techcrunch.com/wp-content/uploads/2026/10/55593495974_7bfdac6a15_k.jpg?resize=1280,854" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Grok Odyssey AI Film: AI Video Generators Compared for Founders</title>
       <link>https://bitroot.org/blog/2026-10-26-grok-odyssey-ai-film-ai-video-generators-compared/</link>
