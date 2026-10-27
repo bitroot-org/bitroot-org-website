@@ -1,9 +1,10 @@
 {
   "generated": true,
-  "count": 513,
+  "count": 514,
   "posts": [
     "2026-10-27-openai-dots-what-the-always-on-ai-assistant-means.md",
     "2026-10-27-gpu-financing-deals-what-spacex-and-apollo-mean-fo.md",
+    "2026-10-27-ai-wearables-for-founders-recording-consent-costs.md",
     "2026-10-26-grok-odyssey-ai-film-ai-video-generators-compared.md",
     "2026-10-17-tinywm-brings-scrolling-window-manager-to-macos-so.md",
     "2026-10-17-rstation-launches-shared-research-lab-for-ai-agent.md",
@@ -542,7 +543,7 @@
         "founders",
         "engineering"
       ],
-      "shortId": 513
+      "shortId": 514
     },
     {
       "filename": "2026-10-27-gpu-financing-deals-what-spacex-and-apollo-mean-fo.md",
@@ -565,6 +566,30 @@
       "categories": [
         "founders",
         "engineering"
+      ],
+      "shortId": 513
+    },
+    {
+      "filename": "2026-10-27-ai-wearables-for-founders-recording-consent-costs.md",
+      "slug": "2026-10-27-ai-wearables-for-founders-recording-consent-costs",
+      "url": "/blog/2026-10-27-ai-wearables-for-founders-recording-consent-costs/",
+      "title": "AI Wearables for Founders: Recording Consent, Costs and Limits",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T05:05:36.959Z",
+      "tags": [
+        "AI wearables",
+        "meeting recording",
+        "recording consent",
+        "AI note-taker",
+        "SaaS tools",
+        "founder productivity"
+      ],
+      "excerpt": "AI wearables promise to capture every meeting. Here's what the recording laws require, what the devices really cost over a year, and which products to check before you buy.",
+      "image": "https://techcrunch.com/wp-content/uploads/2016/09/robocash.jpg?resize=1280,905",
+      "sources": [],
+      "readTime": "6 min",
+      "categories": [
+        "founders"
       ],
       "shortId": 512
     },
