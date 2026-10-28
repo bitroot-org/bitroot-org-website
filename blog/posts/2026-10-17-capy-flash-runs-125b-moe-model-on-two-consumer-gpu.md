@@ -1,16 +1,15 @@
 ---
-date: '2026-10-17'
-excerpt: 'Qwen3.8-Flash-Next (MoE, NVFP4) and Qwen3.8-27B on two 16 GB consumer GPUs:
-  two-GPU tensor parallel, experts offloaded to CPU. Formerly ninfer-tp2. - ValerioDolci/capy-flash'
+date: '2026-10-28'
+excerpt: 'Qwen3.8-Flash-Next (MoE, NVFP4) and Qwen3.8-27B on two 16 GB consumer GPUs: two-GPU tensor parallel, experts offloaded to CPU. Formerly ninfer-tp2. - ValerioDolci/capy-flash'
 image: https://bitroot.org/blog/media/2026-10-17-capy-flash-runs-125b-moe-model-on-two-consumer-gpu.jpg
 published_at: '2026-10-17T12:37:52.377013+00:00'
 sources:
 - https://github.com/ValerioDolci/capy-flash
 tags:
-- ml inference
-- moe
-- local deployment
-title: Capy-Flash runs 125B MoE model on two consumer GPUs
+- 'ml inference'
+- 'moe'
+- 'local deployment'
+title: 'Capy-Flash runs 125B MoE model on two consumer GPUs'
 ---
 
 The **capy‑flash** project announced version v0.5.4, which can serve the 125 B Mixture‑of‑Experts (MoE) Qwen‑3.8‑Flash‑Next model on a single workstation equipped with two RTX 5070 Ti 16 GB cards, a Ryzen 9 9900X and about 70 GiB of free RAM. The installer script checks GPU, driver, AVX‑512 CPU and RAM requirements before downloading the 126.6 GB model artifact.
