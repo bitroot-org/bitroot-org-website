@@ -1,7 +1,10 @@
 {
   "generated": true,
-  "count": 514,
+  "count": 517,
   "posts": [
+    "2026-10-17-fastpybase64-delivers-10-gbs-base64-decoding-in-py.md",
+    "2026-10-17-capy-flash-runs-125b-moe-model-on-two-consumer-gpu.md",
+    "2026-10-16-sygal-launches-localfirst-documenttomarkdown-conve.md",
     "2026-10-27-openai-dots-what-the-always-on-ai-assistant-means.md",
     "2026-10-27-gpu-financing-deals-what-spacex-and-apollo-mean-fo.md",
     "2026-10-27-ai-wearables-for-founders-recording-consent-costs.md",
@@ -518,6 +521,75 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-10-17-fastpybase64-delivers-10-gbs-base64-decoding-in-py.md",
+      "slug": "2026-10-17-fastpybase64-delivers-10-gbs-base64-decoding-in-py",
+      "url": "/blog/2026-10-17-fastpybase64-delivers-10-gbs-base64-decoding-in-py/",
+      "title": "fastpybase64 delivers 10 GB/s base64 decoding in Python",
+      "date": "2026-10-28",
+      "published_at": "2026-10-17T12:36:44.375855+00:00",
+      "tags": [
+        "base64",
+        "python",
+        "performance"
+      ],
+      "excerpt": "A new Python package, fastpybase64, claims 10 GB/s decode speed on a single core, beating the stdlib and pybase64 by large margins. It works as a drop\u2011in replacement but has a narrow Python version range.",
+      "image": "https://bitroot.org/blog/media/2026-10-17-fastpybase64-delivers-10-gbs-base64-decoding-in-py.jpg",
+      "sources": [
+        "https://lemire.me/blog/2026/10/17/decoding-base64-in-python-at-10-gigabytes-per-second/"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "agents"
+      ],
+      "shortId": 517
+    },
+    {
+      "filename": "2026-10-17-capy-flash-runs-125b-moe-model-on-two-consumer-gpu.md",
+      "slug": "2026-10-17-capy-flash-runs-125b-moe-model-on-two-consumer-gpu",
+      "url": "/blog/2026-10-17-capy-flash-runs-125b-moe-model-on-two-consumer-gpu/",
+      "title": "Capy-Flash runs 125B MoE model on two consumer GPUs",
+      "date": "2026-10-28",
+      "published_at": "2026-10-17T12:37:52.377013+00:00",
+      "tags": [
+        "ml inference",
+        "moe",
+        "local deployment"
+      ],
+      "excerpt": "Qwen3.8-Flash-Next (MoE, NVFP4) and Qwen3.8-27B on two 16 GB consumer GPUs: two-GPU tensor parallel, experts offloaded to CPU. Formerly ninfer-tp2. - ValerioDolci/capy-flash",
+      "image": "https://bitroot.org/blog/media/2026-10-17-capy-flash-runs-125b-moe-model-on-two-consumer-gpu.jpg",
+      "sources": [
+        "https://github.com/ValerioDolci/capy-flash"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "models",
+        "engineering"
+      ],
+      "shortId": 516
+    },
+    {
+      "filename": "2026-10-16-sygal-launches-localfirst-documenttomarkdown-conve.md",
+      "slug": "2026-10-16-sygal-launches-localfirst-documenttomarkdown-conve",
+      "url": "/blog/2026-10-16-sygal-launches-localfirst-documenttomarkdown-conve/",
+      "title": "Sygal launches local\u2011first document\u2011to\u2011Markdown converter",
+      "date": "2026-10-28",
+      "published_at": "2026-10-16T13:40:24.135228+00:00",
+      "tags": [
+        "document conversion",
+        "markdown",
+        "local-first",
+        "ai tools"
+      ],
+      "excerpt": "Sygal converts PDF, Word, Excel, images and web pages into clean Markdown and JSON, locally on your Mac or PC. One-time purchase, no subscription.",
+      "image": "https://bitroot.org/blog/media/2026-10-16-sygal-launches-localfirst-documenttomarkdown-conve.png",
+      "sources": [
+        "https://sygal.app"
+      ],
+      "readTime": "2 min",
+      "categories": [],
+      "shortId": 515
+    },
     {
       "filename": "2026-10-27-openai-dots-what-the-always-on-ai-assistant-means.md",
       "slug": "2026-10-27-openai-dots-what-the-always-on-ai-assistant-means",

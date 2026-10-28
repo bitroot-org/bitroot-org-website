@@ -5,8 +5,51 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 27 Oct 2026 05:06:20 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 05:56:06 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>fastpybase64 delivers 10 GB/s base64 decoding in Python</title>
+      <link>https://bitroot.org/blog/2026-10-17-fastpybase64-delivers-10-gbs-base64-decoding-in-py/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-17-fastpybase64-delivers-10-gbs-base64-decoding-in-py/</guid>
+      <description>A new Python package, fastpybase64, claims 10 GB/s decode speed on a single core, beating the stdlib and pybase64 by large margins. It works as a drop‑in replacement but has a narrow Python version range.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://lemire.me/blog/2026/10/17/decoding-base64-in-python-at-10-gigabytes-per-second/"&gt;https://lemire.me/blog/2026/10/17/decoding-base64-in-python-at-10-gigabytes-per-second/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 17 Oct 2026 12:36:44 +0000</pubDate>
+      <category>base64</category>
+      <category>python</category>
+      <category>performance</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-17-fastpybase64-delivers-10-gbs-base64-decoding-in-py.jpg" type="image/jpeg" length="0" />
+      <source url="https://lemire.me/blog/2026/10/17/decoding-base64-in-python-at-10-gigabytes-per-second/">Original Source</source>
+    </item>
+    <item>
+      <title>Capy-Flash runs 125B MoE model on two consumer GPUs</title>
+      <link>https://bitroot.org/blog/2026-10-17-capy-flash-runs-125b-moe-model-on-two-consumer-gpu/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-17-capy-flash-runs-125b-moe-model-on-two-consumer-gpu/</guid>
+      <description>Qwen3.8-Flash-Next (MoE, NVFP4) and Qwen3.8-27B on two 16 GB consumer GPUs: two-GPU tensor parallel, experts offloaded to CPU. Formerly ninfer-tp2. - ValerioDolci/capy-flash
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/ValerioDolci/capy-flash"&gt;https://github.com/ValerioDolci/capy-flash&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Sat, 17 Oct 2026 12:37:52 +0000</pubDate>
+      <category>ml inference</category>
+      <category>moe</category>
+      <category>local deployment</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-17-capy-flash-runs-125b-moe-model-on-two-consumer-gpu.jpg" type="image/jpeg" length="0" />
+      <source url="https://github.com/ValerioDolci/capy-flash">Original Source</source>
+    </item>
+    <item>
+      <title>Sygal launches local‑first document‑to‑Markdown converter</title>
+      <link>https://bitroot.org/blog/2026-10-16-sygal-launches-localfirst-documenttomarkdown-conve/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-16-sygal-launches-localfirst-documenttomarkdown-conve/</guid>
+      <description>Sygal converts PDF, Word, Excel, images and web pages into clean Markdown and JSON, locally on your Mac or PC. One-time purchase, no subscription.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://sygal.app"&gt;https://sygal.app&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 16 Oct 2026 13:40:24 +0000</pubDate>
+      <category>document conversion</category>
+      <category>markdown</category>
+      <category>local-first</category>
+      <category>ai tools</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-16-sygal-launches-localfirst-documenttomarkdown-conve.png" type="image/png" length="0" />
+      <source url="https://sygal.app">Original Source</source>
+    </item>
     <item>
       <title>OpenAI Dots: What the Always-On AI Assistant Means for Founders</title>
       <link>https://bitroot.org/blog/2026-10-27-openai-dots-what-the-always-on-ai-assistant-means/</link>
