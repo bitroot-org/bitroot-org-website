@@ -1,17 +1,16 @@
 ---
-date: '2026-10-16'
-excerpt: Sygal converts PDF, Word, Excel, images and web pages into clean Markdown
-  and JSON, locally on your Mac or PC. One-time purchase, no subscription.
+date: '2026-10-28'
+excerpt: 'Sygal converts PDF, Word, Excel, images and web pages into clean Markdown and JSON, locally on your Mac or PC. One-time purchase, no subscription.'
 image: https://bitroot.org/blog/media/2026-10-16-sygal-launches-localfirst-documenttomarkdown-conve.png
 published_at: '2026-10-16T13:40:24.135228+00:00'
 sources:
 - https://sygal.app
 tags:
-- document conversion
-- markdown
-- local-first
-- ai tools
-title: Sygal launches local‑first document‑to‑Markdown converter
+- 'document conversion'
+- 'markdown'
+- 'local-first'
+- 'ai tools'
+title: 'Sygal launches local‑first document‑to‑Markdown converter'
 ---
 
 Sygal announced a local‑first converter that transforms PDFs, Word files, spreadsheets, screenshots, web pages and even YouTube links into clean Markdown and structured JSON on‑device, priced at a €25 one‑time purchase with a 14‑day free trial.
