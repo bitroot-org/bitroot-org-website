@@ -1,17 +1,15 @@
 ---
-date: '2026-10-17'
-excerpt: A new Python package, fastpybase64, claims 10 GB/s decode speed on a single
-  core, beating the stdlib and pybase64 by large margins. It works as a drop‑in replacement
-  but has a narrow Python version range.
+date: '2026-10-28'
+excerpt: 'A new Python package, fastpybase64, claims 10 GB/s decode speed on a single core, beating the stdlib and pybase64 by large margins. It works as a drop‑in replacement but has a narrow Python version range.'
 image: https://bitroot.org/blog/media/2026-10-17-fastpybase64-delivers-10-gbs-base64-decoding-in-py.jpg
 published_at: '2026-10-17T12:36:44.375855+00:00'
 sources:
 - https://lemire.me/blog/2026/10/17/decoding-base64-in-python-at-10-gigabytes-per-second/
 tags:
-- base64
-- python
-- performance
-title: fastpybase64 delivers 10 GB/s base64 decoding in Python
+- 'base64'
+- 'python'
+- 'performance'
+title: 'fastpybase64 delivers 10 GB/s base64 decoding in Python'
 ---
 
 The `fastpybase64` package hit PyPI with a benchmark that decodes base64 at **10 GB/s** on an Intel Xeon Gold 6548N core using Python 3.14.6, four times faster than `pybase64` and 27× faster than the built‑in `base64` module.
