@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 28 Oct 2026 05:56:06 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 05:29:11 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>fastpybase64 delivers 10 GB/s base64 decoding in Python</title>
@@ -212,6 +212,20 @@
       <category>CERT-In</category>
       <category>data protection</category>
       <enclosure url="https://techcrunch.com/wp-content/uploads/2026/10/india-cyber-attack.jpg" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>ReadySet RDST adds a one‑line install CLI for live query fixes</title>
+      <link>https://bitroot.org/blog/2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live/</guid>
+      <description>Contribute to readysettech/rdst development by creating an account on GitHub.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/readysettech/rdst"&gt;https://github.com/readysettech/rdst&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 16 Oct 2026 13:39:24 +0000</pubDate>
+      <category>devops</category>
+      <category>database</category>
+      <category>cli</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live.png" type="image/png" length="0" />
+      <source url="https://github.com/readysettech/rdst">Original Source</source>
     </item>
     <item>
       <title>Muse Spark Open on Mac: Hardware, License, and Break-Even</title>
