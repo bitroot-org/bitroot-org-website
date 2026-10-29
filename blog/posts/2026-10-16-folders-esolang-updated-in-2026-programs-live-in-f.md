@@ -1,17 +1,15 @@
 ---
-date: '2026-10-16'
-excerpt: The Folders language, which treats nested directories as code, received its
-  first update since 2015. It remains free, open‑source, and deliberately impractical
-  for production use.
+date: '2026-10-29'
+excerpt: 'The Folders language, which treats nested directories as code, received its first update since 2015. It remains free, open‑source, and deliberately impractical for production use.'
 image: https://bitroot.org/blog/media/2026-10-16-folders-esolang-updated-in-2026-programs-live-in-f.png
 published_at: '2026-10-16T13:39:17.377906+00:00'
 sources:
 - https://danieltemkin.com/esolangs/folders
 tags:
-- esolang
-- filesystem
-- language-design
-title: Folders esolang updated in 2026, programs live in folder trees
+- 'esolang'
+- 'filesystem'
+- 'language-design'
+title: 'Folders esolang updated in 2026, programs live in folder trees'
 ---
 
 The **Folders** esoteric language, which represents programs as ordered folder hierarchies, announced a 2026 update – the first change since its 2015 launch. The update preserves the claim that a program can create *"infinite"* storage by nesting folders, and the reference implementation lives on GitHub.
