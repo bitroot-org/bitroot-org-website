@@ -5,8 +5,22 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Oct 2026 05:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 06:27:59 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gemini 4 Carbon: Benchmarks, Pricing and How to Read Them</title>
+      <link>https://bitroot.org/blog/2026-10-29-gemini-4-carbon-benchmarks-pricing-and-how-to-read/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-29-gemini-4-carbon-benchmarks-pricing-and-how-to-read/</guid>
+      <description>Google's Gemini 4 Carbon claims top scores on several tests. Here's how it compares with Argon, what the pricing really costs, and how to read self-reported benchmarks before you switch models.</description>
+      <pubDate>Thu, 29 Oct 2026 06:27:11 +0000</pubDate>
+      <category>Gemini 4 Carbon</category>
+      <category>Gemini 4 Argon</category>
+      <category>LLM benchmarks</category>
+      <category>AI API pricing</category>
+      <category>model evaluation</category>
+      <category>AI cost planning</category>
+      <enclosure url="https://pbs.twimg.com/card_img/2115508936493408256/hMcvop7k?format=jpg&amp;name=small" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>ReadySet RDST adds a one‑line install CLI for live query fixes</title>
       <link>https://bitroot.org/blog/2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live/</link>

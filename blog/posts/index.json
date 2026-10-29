@@ -1,7 +1,8 @@
 {
   "generated": true,
-  "count": 520,
+  "count": 521,
   "posts": [
+    "2026-10-29-gemini-4-carbon-benchmarks-pricing-and-how-to-read.md",
     "2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live.md",
     "2026-10-16-proa-launches-a-rustbased-ssr-framework-with-multi.md",
     "2026-10-16-folders-esolang-updated-in-2026-programs-live-in-f.md",
@@ -524,6 +525,32 @@
     "2026-02-05-introducing-voxtral-transcribe-2-revolutionizing-s.md"
   ],
   "metadata": [
+    {
+      "filename": "2026-10-29-gemini-4-carbon-benchmarks-pricing-and-how-to-read.md",
+      "slug": "2026-10-29-gemini-4-carbon-benchmarks-pricing-and-how-to-read",
+      "url": "/blog/2026-10-29-gemini-4-carbon-benchmarks-pricing-and-how-to-read/",
+      "title": "Gemini 4 Carbon: Benchmarks, Pricing and How to Read Them",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T06:27:11.646Z",
+      "tags": [
+        "Gemini 4 Carbon",
+        "Gemini 4 Argon",
+        "LLM benchmarks",
+        "AI API pricing",
+        "model evaluation",
+        "AI cost planning"
+      ],
+      "excerpt": "Google's Gemini 4 Carbon claims top scores on several tests. Here's how it compares with Argon, what the pricing really costs, and how to read self-reported benchmarks before you switch models.",
+      "image": "https://pbs.twimg.com/card_img/2115508936493408256/hMcvop7k?format=jpg&name=small",
+      "sources": [],
+      "readTime": "6 min",
+      "categories": [
+        "models",
+        "agents",
+        "founders"
+      ],
+      "shortId": 521
+    },
     {
       "filename": "2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live.md",
       "slug": "2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live",
