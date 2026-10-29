@@ -1,16 +1,15 @@
 ---
-date: '2026-10-16'
-excerpt: A batteries-included Rust web framework built around a new programming model
-  for composable, multi-target rendering.
+date: '2026-10-29'
+excerpt: 'A batteries-included Rust web framework built around a new programming model for composable, multi-target rendering.'
 image: https://bitroot.org/blog/media/2026-10-16-proa-launches-a-rustbased-ssr-framework-with-multi.jpg
 published_at: '2026-10-16T13:40:58.895895+00:00'
 sources:
 - https://proa.so/
 tags:
-- rust
-- web framework
-- ssr
-title: Proa launches a Rust‑based SSR framework with multi‑target rendering
+- 'rust'
+- 'web framework'
+- 'ssr'
+title: 'Proa launches a Rust‑based SSR framework with multi‑target rendering'
 ---
 
 Proa, a new Rust web framework, announced its public launch with a headline benchmark: a warm production render of 5.56 ms, which the site says is **237× faster** than React’s `renderToString` on an 8‑vCPU AMD EPYC‑Milan VPS. The framework touts composable components that can emit HTML, Markdown, or other targets from a single typed definition.
