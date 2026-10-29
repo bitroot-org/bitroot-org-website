@@ -1,7 +1,10 @@
 {
   "generated": true,
-  "count": 518,
+  "count": 520,
   "posts": [
+    "2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live.md",
+    "2026-10-16-proa-launches-a-rustbased-ssr-framework-with-multi.md",
+    "2026-10-16-folders-esolang-updated-in-2026-programs-live-in-f.md",
     "2026-10-17-fastpybase64-delivers-10-gbs-base64-decoding-in-py.md",
     "2026-10-17-capy-flash-runs-125b-moe-model-on-two-consumer-gpu.md",
     "2026-10-16-sygal-launches-localfirst-documenttomarkdown-conve.md",
@@ -17,7 +20,6 @@
     "2026-10-19-meta-commercial-terms-scraping-and-ai-training-cla.md",
     "2026-10-19-future-of-saas-in-the-agentic-era-what-founders-sh.md",
     "2026-10-17-rogue-ai-agents-in-india-what-founders-should-lock.md",
-    "2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live.md",
     "2026-10-16-muse-spark-open-on-mac-hardware-license-and-break.md",
     "2026-10-16-influencer-marketing-for-apps-cal-ais-playbook-and.md",
     "2026-10-15-workplace-messaging-apps-what-zenzaps-44m-shows-fo.md",
@@ -523,6 +525,76 @@
   ],
   "metadata": [
     {
+      "filename": "2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live.md",
+      "slug": "2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live",
+      "url": "/blog/2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live/",
+      "title": "ReadySet RDST adds a one\u2011line install CLI for live query fixes",
+      "date": "2026-10-29",
+      "published_at": "2026-10-16T13:39:24.040007+00:00",
+      "tags": [
+        "devops",
+        "database",
+        "cli"
+      ],
+      "excerpt": "Contribute to readysettech/rdst development by creating an account on GitHub.",
+      "image": "https://bitroot.org/blog/media/2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live.png",
+      "sources": [
+        "https://github.com/readysettech/rdst"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "agents",
+        "engineering"
+      ],
+      "shortId": 520
+    },
+    {
+      "filename": "2026-10-16-proa-launches-a-rustbased-ssr-framework-with-multi.md",
+      "slug": "2026-10-16-proa-launches-a-rustbased-ssr-framework-with-multi",
+      "url": "/blog/2026-10-16-proa-launches-a-rustbased-ssr-framework-with-multi/",
+      "title": "Proa launches a Rust\u2011based SSR framework with multi\u2011target rendering",
+      "date": "2026-10-29",
+      "published_at": "2026-10-16T13:40:58.895895+00:00",
+      "tags": [
+        "rust",
+        "web framework",
+        "ssr"
+      ],
+      "excerpt": "A batteries-included Rust web framework built around a new programming model for composable, multi-target rendering.",
+      "image": "https://bitroot.org/blog/media/2026-10-16-proa-launches-a-rustbased-ssr-framework-with-multi.jpg",
+      "sources": [
+        "https://proa.so/"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "engineering"
+      ],
+      "shortId": 519
+    },
+    {
+      "filename": "2026-10-16-folders-esolang-updated-in-2026-programs-live-in-f.md",
+      "slug": "2026-10-16-folders-esolang-updated-in-2026-programs-live-in-f",
+      "url": "/blog/2026-10-16-folders-esolang-updated-in-2026-programs-live-in-f/",
+      "title": "Folders esolang updated in 2026, programs live in folder trees",
+      "date": "2026-10-29",
+      "published_at": "2026-10-16T13:39:17.377906+00:00",
+      "tags": [
+        "esolang",
+        "filesystem",
+        "language-design"
+      ],
+      "excerpt": "The Folders language, which treats nested directories as code, received its first update since 2015. It remains free, open\u2011source, and deliberately impractical for production use.",
+      "image": "https://bitroot.org/blog/media/2026-10-16-folders-esolang-updated-in-2026-programs-live-in-f.png",
+      "sources": [
+        "https://danieltemkin.com/esolangs/folders"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "design"
+      ],
+      "shortId": 518
+    },
+    {
       "filename": "2026-10-17-fastpybase64-delivers-10-gbs-base64-decoding-in-py.md",
       "slug": "2026-10-17-fastpybase64-delivers-10-gbs-base64-decoding-in-py",
       "url": "/blog/2026-10-17-fastpybase64-delivers-10-gbs-base64-decoding-in-py/",
@@ -543,7 +615,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 518
+      "shortId": 517
     },
     {
       "filename": "2026-10-17-capy-flash-runs-125b-moe-model-on-two-consumer-gpu.md",
@@ -567,7 +639,7 @@
         "models",
         "engineering"
       ],
-      "shortId": 517
+      "shortId": 516
     },
     {
       "filename": "2026-10-16-sygal-launches-localfirst-documenttomarkdown-conve.md",
@@ -589,7 +661,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 516
+      "shortId": 515
     },
     {
       "filename": "2026-10-27-openai-dots-what-the-always-on-ai-assistant-means.md",
@@ -616,7 +688,7 @@
         "founders",
         "engineering"
       ],
-      "shortId": 515
+      "shortId": 514
     },
     {
       "filename": "2026-10-27-gpu-financing-deals-what-spacex-and-apollo-mean-fo.md",
@@ -640,7 +712,7 @@
         "founders",
         "engineering"
       ],
-      "shortId": 514
+      "shortId": 513
     },
     {
       "filename": "2026-10-27-ai-wearables-for-founders-recording-consent-costs.md",
@@ -664,7 +736,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 513
+      "shortId": 512
     },
     {
       "filename": "2026-10-26-grok-odyssey-ai-film-ai-video-generators-compared.md",
@@ -689,7 +761,7 @@
         "founders",
         "design"
       ],
-      "shortId": 512
+      "shortId": 511
     },
     {
       "filename": "2026-10-17-tinywm-brings-scrolling-window-manager-to-macos-so.md",
@@ -712,7 +784,7 @@
       "categories": [
         "opensource"
       ],
-      "shortId": 511
+      "shortId": 510
     },
     {
       "filename": "2026-10-17-rstation-launches-shared-research-lab-for-ai-agent.md",
@@ -735,7 +807,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 510
+      "shortId": 509
     },
     {
       "filename": "2026-10-17-llmspeed-adds-a-web-simulator-for-local-llm-hardwa.md",
@@ -759,7 +831,7 @@
         "models",
         "engineering"
       ],
-      "shortId": 509
+      "shortId": 508
     },
     {
       "filename": "2026-10-21-anthropic-cloud-capacity-what-it-means-for-founder.md",
@@ -785,7 +857,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 508
+      "shortId": 507
     },
     {
       "filename": "2026-10-21-anthropic-ai-safety-bill-how-model-release-blocks.md",
@@ -808,7 +880,7 @@
       "categories": [
         "models"
       ],
-      "shortId": 507
+      "shortId": 506
     },
     {
       "filename": "2026-10-19-meta-commercial-terms-scraping-and-ai-training-cla.md",
@@ -832,7 +904,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 506
+      "shortId": 505
     },
     {
       "filename": "2026-10-19-future-of-saas-in-the-agentic-era-what-founders-sh.md",
@@ -856,7 +928,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 505
+      "shortId": 504
     },
     {
       "filename": "2026-10-17-rogue-ai-agents-in-india-what-founders-should-lock.md",
@@ -880,30 +952,6 @@
       "categories": [
         "agents",
         "founders",
-        "engineering"
-      ],
-      "shortId": 504
-    },
-    {
-      "filename": "2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live.md",
-      "slug": "2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live",
-      "url": "/blog/2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live/",
-      "title": "ReadySet RDST adds a one\u2011line install CLI for live query fixes",
-      "date": "2026-10-16",
-      "published_at": "2026-10-16T13:39:24.040007+00:00",
-      "tags": [
-        "devops",
-        "database",
-        "cli"
-      ],
-      "excerpt": "Contribute to readysettech/rdst development by creating an account on GitHub.",
-      "image": "https://bitroot.org/blog/media/2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live.png",
-      "sources": [
-        "https://github.com/readysettech/rdst"
-      ],
-      "readTime": "2 min",
-      "categories": [
-        "agents",
         "engineering"
       ],
       "shortId": 503

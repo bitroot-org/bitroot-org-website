@@ -5,8 +5,50 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Oct 2026 05:29:11 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 05:30:00 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ReadySet RDST adds a one‑line install CLI for live query fixes</title>
+      <link>https://bitroot.org/blog/2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live/</guid>
+      <description>Contribute to readysettech/rdst development by creating an account on GitHub.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/readysettech/rdst"&gt;https://github.com/readysettech/rdst&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 16 Oct 2026 13:39:24 +0000</pubDate>
+      <category>devops</category>
+      <category>database</category>
+      <category>cli</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live.png" type="image/png" length="0" />
+      <source url="https://github.com/readysettech/rdst">Original Source</source>
+    </item>
+    <item>
+      <title>Proa launches a Rust‑based SSR framework with multi‑target rendering</title>
+      <link>https://bitroot.org/blog/2026-10-16-proa-launches-a-rustbased-ssr-framework-with-multi/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-16-proa-launches-a-rustbased-ssr-framework-with-multi/</guid>
+      <description>A batteries-included Rust web framework built around a new programming model for composable, multi-target rendering.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://proa.so/"&gt;https://proa.so/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 16 Oct 2026 13:40:58 +0000</pubDate>
+      <category>rust</category>
+      <category>web framework</category>
+      <category>ssr</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-16-proa-launches-a-rustbased-ssr-framework-with-multi.jpg" type="image/jpeg" length="0" />
+      <source url="https://proa.so/">Original Source</source>
+    </item>
+    <item>
+      <title>Folders esolang updated in 2026, programs live in folder trees</title>
+      <link>https://bitroot.org/blog/2026-10-16-folders-esolang-updated-in-2026-programs-live-in-f/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-16-folders-esolang-updated-in-2026-programs-live-in-f/</guid>
+      <description>The Folders language, which treats nested directories as code, received its first update since 2015. It remains free, open‑source, and deliberately impractical for production use.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://danieltemkin.com/esolangs/folders"&gt;https://danieltemkin.com/esolangs/folders&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Fri, 16 Oct 2026 13:39:17 +0000</pubDate>
+      <category>esolang</category>
+      <category>filesystem</category>
+      <category>language-design</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-10-16-folders-esolang-updated-in-2026-programs-live-in-f.png" type="image/png" length="0" />
+      <source url="https://danieltemkin.com/esolangs/folders">Original Source</source>
+    </item>
     <item>
       <title>fastpybase64 delivers 10 GB/s base64 decoding in Python</title>
       <link>https://bitroot.org/blog/2026-10-17-fastpybase64-delivers-10-gbs-base64-decoding-in-py/</link>
@@ -212,20 +254,6 @@
       <category>CERT-In</category>
       <category>data protection</category>
       <enclosure url="https://techcrunch.com/wp-content/uploads/2026/10/india-cyber-attack.jpg" type="image/jpeg" length="0" />
-    </item>
-    <item>
-      <title>ReadySet RDST adds a one‑line install CLI for live query fixes</title>
-      <link>https://bitroot.org/blog/2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live/</link>
-      <guid isPermaLink="true">https://bitroot.org/blog/2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live/</guid>
-      <description>Contribute to readysettech/rdst development by creating an account on GitHub.
-
-&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/readysettech/rdst"&gt;https://github.com/readysettech/rdst&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-      <pubDate>Fri, 16 Oct 2026 13:39:24 +0000</pubDate>
-      <category>devops</category>
-      <category>database</category>
-      <category>cli</category>
-      <enclosure url="https://bitroot.org/blog/media/2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live.png" type="image/png" length="0" />
-      <source url="https://github.com/readysettech/rdst">Original Source</source>
     </item>
     <item>
       <title>Muse Spark Open on Mac: Hardware, License, and Break-Even</title>
