@@ -1,15 +1,15 @@
 ---
-date: '2026-10-16'
-excerpt: Contribute to readysettech/rdst development by creating an account on GitHub.
+date: '2026-10-29'
+excerpt: 'Contribute to readysettech/rdst development by creating an account on GitHub.'
 image: https://bitroot.org/blog/media/2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live.png
 published_at: '2026-10-16T13:39:24.040007+00:00'
 sources:
 - https://github.com/readysettech/rdst
 tags:
-- devops
-- database
-- cli
-title: ReadySet RDST adds a one‑line install CLI for live query fixes
+- 'devops'
+- 'database'
+- 'cli'
+title: 'ReadySet RDST adds a one‑line install CLI for live query fixes'
 ---
 
 ReadySet announced the RDST CLI, a tool you can install on macOS or Linux with a single curl command:
