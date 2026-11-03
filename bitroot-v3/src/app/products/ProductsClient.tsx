@@ -72,7 +72,7 @@ export default function ProductsClient() {
               ~/ products · {earlyAccessCount} in early access · {comingSoonCount} coming soon
             </div>
             <h1 className="font-display text-[42px] sm:text-6xl lg:text-[78px] font-extrabold text-ink leading-[1.02] tracking-tight">
-              Tiny apps <em className="serif-em">for</em> builders
+              Tiny apps <em className="serif-em">for</em> creators
               <span className="text-ember">.</span>
             </h1>
             <p className="mt-5 sm:mt-6 text-[15.5px] sm:text-[17px] text-ink-2 leading-relaxed max-w-[640px] mx-auto">

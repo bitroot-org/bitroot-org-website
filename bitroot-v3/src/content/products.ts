@@ -268,7 +268,7 @@ const productsFallback: Product[] = [
     name: "career-ops",
     tagline: "Run your career like a startup.",
     description:
-      "Track opportunities, conversations, and offers as a single pipeline. Designed for builders who switch roles deliberately — not when desperate.",
+      "Track opportunities, conversations, and offers as a single pipeline. Designed for creators who switch roles deliberately — not when desperate.",
     category: "Career",
     status: "waitlist",
     icon: { from: "#ffd27d", to: "#e07a1f", glyph: "career" },
@@ -279,7 +279,7 @@ const productsFallback: Product[] = [
   {
     slug: "bitspace",
     name: "bitspace",
-    tagline: "A quiet co-working space for builders.",
+    tagline: "A quiet co-working space for creators.",
     description:
       "Drop into a room with other founders, set a two-hour goal, ship together. No webcams. No standups. Just heads-down work alongside other people doing the same.",
     category: "Co-working",

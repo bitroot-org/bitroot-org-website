@@ -1,7 +1,23 @@
 import Link from "next/link";
+import Logo from "./ui/Logo";
 import Container from "./ui/Container";
+import PixelSteps from "./ui/PixelSteps";
+import VibeText from "./vibe/VibeText";
+import VibeToggle from "./vibe/VibeToggle";
+import FooterSignup from "./home/genz/FooterSignup";
 
 const sections = [
+  {
+    title: "Shelves",
+    links: [
+      { label: "Creators", href: "/creators/" },
+      { label: "Vibe Coders", href: "/vibe-coders/" },
+      { label: "Founders", href: "/founders/" },
+      { label: "Skills", href: "/skills/" },
+      { label: "MCP servers", href: "/mcp/" },
+      { label: "Packs", href: "/packs/" },
+    ],
+  },
   {
     title: "Resources",
     links: [
@@ -44,84 +60,82 @@ const sections = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-line mt-24 bg-paper-2/40">
-      <Container>
-        <div className="pt-14 pb-10 grid gap-10 md:grid-cols-[1.2fr_1fr_1fr_1fr_1fr]">
-          <div>
-            <div className="font-display text-[17px] font-bold text-ink tracking-tight">
-              bitroot<span className="text-ember">.org</span>
-            </div>
-            <p className="text-[13.5px] text-ink-3 leading-relaxed mt-3 max-w-xs">
-              A free toolbox for founders shipping their first products.
-              Opinionated, tactical, maintained. Everything here is free.
-            </p>
-            <div className="mt-5 flex items-center gap-2 text-[11px] font-mono text-ink-4">
-              <span className="w-1.5 h-1.5 rounded-full bg-live pulse-live" />
-              Maintained weekly
-            </div>
+    <footer className="mt-24 px-2 pb-2 sm:px-3 sm:pb-3">
+      <div className="relative overflow-hidden bg-pop text-pop-ink r-vibe-lg">
+        <PixelSteps
+          cells={[[0, 0], [1, 1], [2, 2, 2], [4, 3, 2], [6, 2], [7, 1, 2], [9, 0]]}
+          tone="paper"
+          className="absolute right-[6%] top-0 hidden sm:block"
+          unit="clamp(18px, 3vw, 46px)"
+        />
+        <Container>
+          <h2 className="m-0 pt-[clamp(72px,10vw,140px)] font-alt text-[clamp(64px,12vw,170px)] leading-[0.92]">
+            <VibeText
+              bruh={
+                <>
+                  Get the
+                  <br />
+                  drops <span aria-hidden className="emoji text-[0.6em]">📬</span>
+                </>
+              }
+              baddie={
+                <>
+                  Stay in
+                  <br />
+                  the loop <span aria-hidden className="emoji text-[0.6em]">💌</span>
+                </>
+              }
+            />
+          </h2>
+
+          <div className="mt-12">
+            <FooterSignup />
           </div>
 
-          {sections.map((s) => (
-            <div key={s.title}>
-              <h4 className="font-display text-[13px] font-semibold text-ink mb-3">
-                {s.title}
-              </h4>
-              <ul className="space-y-2">
-                {s.links.map((l) => (
-                  <li key={l.label}>
-                    <Link
-                      href={l.href}
-                      className="text-[13px] text-ink-3 hover:text-ember transition-colors"
-                    >
-                      {l.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+          <div className="mt-20 grid gap-10 sm:grid-cols-3 lg:grid-cols-5">
+            {sections.map((s) => (
+              <div key={s.title}>
+                <h3 className="m-0 mb-3 font-mono text-[12px] font-medium uppercase tracking-[0.12em]">
+                  {s.title}
+                </h3>
+                <ul className="m-0 list-none space-y-2 p-0">
+                  {s.links.map((l) => (
+                    <li key={l.label}>
+                      <Link
+                        href={l.href}
+                        className="text-[15px] text-pop-ink no-underline decoration-2 underline-offset-4 hover:underline"
+                      >
+                        {l.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-16 flex flex-col gap-6 border-t-[1.5px] border-pop-ink/25 py-8 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <span className="inline-flex bg-paper px-3.5 py-2.5 r-vibe">
+                <Logo height={28} />
+              </span>
+              <div className="mt-3 text-[12px]">
+                © <span suppressHydrationWarning>{new Date().getFullYear()}</span> Bitroot · MIT for content
+                where noted ·{" "}
+                <Link href="/legal/privacy/" className="text-pop-ink underline underline-offset-2">Privacy</Link>{" "}
+                · <Link href="/legal/terms/" className="text-pop-ink underline underline-offset-2">Terms</Link>{" "}
+                · <Link href="/legal/refund/" className="text-pop-ink underline underline-offset-2">Refund</Link>
+              </div>
             </div>
-          ))}
-        </div>
-
-        <div className="dotted-line" />
-
-        <div className="py-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <div className="text-[11px] font-mono text-ink-4">
-            © <span suppressHydrationWarning>{new Date().getFullYear()}</span> Bitroot · MIT for content where
-            noted · No cookie walls, no popups, promise.
+            <div className="flex flex-wrap items-center gap-4">
+              <a href="https://bitroot.club" className="text-[14px] font-semibold text-pop-ink underline underline-offset-4">
+                Need this built for you? bitroot.club →
+              </a>
+              <VibeToggle location="footer" />
+            </div>
           </div>
-          <div className="text-[11px] font-mono text-ink-4 flex items-center gap-2">
-            <Link
-              href="/legal/privacy/"
-              className="hover:text-ember transition-colors"
-            >
-              Privacy
-            </Link>
-            <span aria-hidden>·</span>
-            <Link
-              href="/legal/terms/"
-              className="hover:text-ember transition-colors"
-            >
-              Terms
-            </Link>
-            <span aria-hidden>·</span>
-            <Link
-              href="/legal/refund/"
-              className="hover:text-ember transition-colors"
-            >
-              Refund
-            </Link>
-          </div>
-          <div className="text-[11px] font-mono text-ink-4">
-            Need this built for you?{" "}
-            <a
-              href="https://bitroot.club"
-              className="text-ink-2 hover:text-ember underline decoration-line-2 hover:decoration-ember underline-offset-2 transition-colors"
-            >
-              bitroot.club →
-            </a>
-          </div>
-        </div>
-      </Container>
+        </Container>
+      </div>
     </footer>
   );
 }

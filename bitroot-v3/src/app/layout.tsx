@@ -5,12 +5,15 @@ import {
   Geist_Mono,
   Instrument_Serif,
 } from "next/font/google";
+import { GeistPixelSquare } from "geist/font/pixel/square";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import { PageFadeReset } from "@/components/ui/FadeLink";
 import SignupGatePopup from "@/components/gate/SignupGatePopup";
 import { siteName, siteUrl } from "@/lib/seo";
+import { VIBE_INIT_SCRIPT } from "@/lib/vibe";
+import VibeReady from "@/components/vibe/VibeReady";
 import "./globals.css";
 
 const funnelDisplay = Funnel_Display({
@@ -104,8 +107,15 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${funnelDisplay.variable} ${geist.variable} ${geistMono.variable} ${instrumentSerif.variable}`}
+      data-vibe="bruh"
+      // The init script rewrites data-vibe before hydration.
+      suppressHydrationWarning
+      className={`${funnelDisplay.variable} ${geist.variable} ${geistMono.variable} ${instrumentSerif.variable} ${GeistPixelSquare.variable}`}
     >
+      <head>
+        {/* Applies the saved Bruh / Baddie vibe before first paint (no flash). */}
+        <script dangerouslySetInnerHTML={{ __html: VIBE_INIT_SCRIPT }} />
+      </head>
       <body className="min-h-screen text-ink antialiased font-sans flex flex-col">
         <JsonLd data={organizationJsonLd} />
         <JsonLd data={webSiteJsonLd} />
@@ -115,6 +125,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <SignupGatePopup />
+        <VibeReady />
       </body>
     </html>
   );

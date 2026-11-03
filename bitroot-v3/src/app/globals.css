@@ -5,27 +5,100 @@
   --font-display: var(--font-display);
   --font-mono: var(--font-mono);
   --font-serif: var(--font-serif);
+  --font-pixel: var(--font-geist-pixel-square);
+  /* The "alt" display face flips with the vibe: pixel (Bruh) / serif italic (Baddie). */
+  --font-alt: var(--vibe-alt-font);
 
-  /* Base — white surfaces, cool dark from the bitroot palette */
-  --color-paper: #ffffff;
-  --color-paper-2: #f6f7fb;
-  --color-paper-3: #eaedf6;
-  --color-ink: #3d3b40;
-  --color-ink-2: #5a585e;
-  --color-ink-3: #807d86;
-  --color-ink-4: #a09ea8;
-  --color-line: #e8eaf3;
-  --color-line-2: #bfcfe7;
+  /* Every colour reads a --vibe-* variable so the Bruh / Baddie toggle can
+     re-skin the whole site by swapping one attribute on <html>. */
+  --color-paper: var(--vibe-paper);
+  --color-paper-2: var(--vibe-paper-2);
+  --color-paper-3: var(--vibe-paper-3);
+  --color-ink: var(--vibe-ink);
+  --color-ink-2: var(--vibe-ink-2);
+  --color-ink-3: var(--vibe-ink-3);
+  --color-ink-4: var(--vibe-ink-4);
+  --color-line: var(--vibe-line);
+  --color-line-2: var(--vibe-line-2);
 
-  /* Indigo accent — replaces the warm amber */
-  --color-ember: #525ceb;
-  --color-ember-2: #7782ee;
-  --color-ember-bg: #ebedfc;
-  --color-ember-line: #c9cef5;
+  /* Accent. `ember` kept as the token name so existing pages re-skin for free:
+     ember = small accent text/links (AA on paper), pop = big fills & pixel
+     decor, display = large headline colour (AA-large on paper). */
+  --color-ember: var(--vibe-accent);
+  --color-ember-2: var(--vibe-accent-2);
+  --color-ember-bg: var(--vibe-tint);
+  --color-ember-line: var(--vibe-accent-line);
+  --color-pop: var(--vibe-pop);
+  --color-pop-ink: var(--vibe-pop-ink);
+  --color-display: var(--vibe-display);
+  --color-tab: var(--vibe-tab);
+  --color-tint: var(--vibe-tint);
 
   /* Terminal green — "live / updated / active" signals */
   --color-live: #16a34a;
   --color-live-bg: #f0fdf4;
+}
+
+/* ─── Vibes ─────────────────────────────────────────────────────────────
+   Bruh (default): cool paper, pixel type, square corners, Bitroot blue
+   (logo #1F76F9 / ink #1A1714 / light #E9F2FF).
+   Baddie: blush paper, serif italics, pills and bubbles, hot pink.
+   The inline script in layout.tsx sets data-vibe before first paint. */
+:root,
+html[data-vibe="bruh"] {
+  --vibe-paper: #f5f8fe;
+  --vibe-paper-2: #ebf2fd;
+  --vibe-paper-3: #dce7f8;
+  --vibe-ink: #1a1714;
+  --vibe-ink-2: #3a3833;
+  --vibe-ink-3: #5d5b55;
+  --vibe-ink-4: #807d76;
+  --vibe-line: #d9e2f0;
+  --vibe-line-2: #b3c4de;
+  /* #1560d4 keeps small text at 5.3:1 on paper; the logo blue is 3.9:1 (large text only). */
+  --vibe-accent: #1560d4;
+  --vibe-accent-2: #1f76f9;
+  --vibe-accent-line: #a9c8f8;
+  --vibe-pop: #1f76f9;
+  /* Near-black that clears 4.5:1 on the logo blue (brand ink #1a1714 is 4.3:1). */
+  --vibe-pop-ink: #0e0c0a;
+  --vibe-display: #1f76f9;
+  --vibe-tab: #bcd6ff;
+  --vibe-tint: #e9f2ff;
+  --vibe-alt-font: var(--font-geist-pixel-square), var(--font-mono), monospace;
+  --vibe-alt-style: normal;
+  --vibe-radius: 0px;
+  --vibe-radius-lg: 0px;
+  --vibe-pill: 0px;
+  --vibe-decor-radius: 0px;
+  --vibe-selection: #bcd6ff;
+}
+
+html[data-vibe="baddie"] {
+  --vibe-paper: #fff5f9;
+  --vibe-paper-2: #ffe9f2;
+  --vibe-paper-3: #ffd9e9;
+  --vibe-ink: #2b0d1e;
+  --vibe-ink-2: #4f2a3e;
+  --vibe-ink-3: #7a5368;
+  --vibe-ink-4: #a07d90;
+  --vibe-line: #f7d6e5;
+  --vibe-line-2: #ecb3cd;
+  --vibe-accent: #c2126a;
+  --vibe-accent-2: #e0197d;
+  --vibe-accent-line: #f6a9cc;
+  --vibe-pop: #ff5aa8;
+  --vibe-pop-ink: #2b0d1e;
+  --vibe-display: #e0197d;
+  --vibe-tab: #dcc6ff;
+  --vibe-tint: #ffe1ee;
+  --vibe-alt-font: var(--font-serif), "Times New Roman", serif;
+  --vibe-alt-style: italic;
+  --vibe-radius: 18px;
+  --vibe-radius-lg: 28px;
+  --vibe-pill: 999px;
+  --vibe-decor-radius: 999px;
+  --vibe-selection: #ffc2df;
 }
 
 html {
@@ -49,8 +122,8 @@ h1, h2, h3, h4, h5, h6, .font-display {
 }
 
 ::selection {
-  background: var(--color-ember-bg);
-  color: var(--color-ember);
+  background: var(--vibe-selection);
+  color: var(--color-ink);
 }
 
 ::-webkit-scrollbar {
@@ -135,7 +208,7 @@ pre.shiki .line {
 
 /* Ember accent ring on hover — used by CTA buttons and featured cards */
 .card-glow:hover {
-  box-shadow: 0 0 0 1px var(--color-ember-line), 0 16px 40px -20px rgba(82, 92, 235, 0.28);
+  box-shadow: 0 0 0 1px var(--color-ember-line), 0 16px 40px -20px color-mix(in srgb, var(--vibe-accent) 28%, transparent);
 }
 
 .prose-link {
@@ -381,7 +454,7 @@ pre.shiki .line {
 .persona-word {
   text-decoration: underline;
   text-decoration-style: wavy;
-  text-decoration-color: rgba(82, 92, 235, 0.42);
+  text-decoration-color: color-mix(in srgb, var(--vibe-accent) 42%, transparent);
   text-decoration-thickness: 2px;
   text-underline-offset: 12px;
   transition: text-decoration-color 220ms ease;
@@ -406,10 +479,10 @@ pre.shiki .line {
   z-index: -1;
   pointer-events: none;
   background:
-    radial-gradient(900px 700px at 8% 6%, rgba(82, 92, 235, 0.08), transparent 60%),
-    radial-gradient(820px 700px at 92% 18%, rgba(191, 207, 231, 0.40), transparent 60%),
-    radial-gradient(900px 700px at 12% 96%, rgba(191, 207, 231, 0.30), transparent 60%),
-    radial-gradient(700px 700px at 96% 86%, rgba(82, 92, 235, 0.06), transparent 60%);
+    radial-gradient(900px 700px at 8% 6%, color-mix(in srgb, var(--vibe-pop) 10%, transparent), transparent 60%),
+    radial-gradient(820px 700px at 92% 18%, color-mix(in srgb, var(--vibe-tint) 70%, transparent), transparent 60%),
+    radial-gradient(900px 700px at 12% 96%, color-mix(in srgb, var(--vibe-tint) 55%, transparent), transparent 60%),
+    radial-gradient(700px 700px at 96% 86%, color-mix(in srgb, var(--vibe-pop) 7%, transparent), transparent 60%);
   background-color: var(--color-paper);
 }
 .page-bg::after {
@@ -943,3 +1016,208 @@ body.page-fading {
     grid-auto-columns: 82%;
   }
 }
+
+/* ─── GenZ revamp: shared vibe-aware pieces ────────────────────────────── */
+
+/* The vibe's alt display face: pixel in Bruh, serif italic in Baddie. */
+.font-alt {
+  font-family: var(--vibe-alt-font);
+  font-style: var(--vibe-alt-style);
+  font-weight: 500;
+  letter-spacing: 0;
+}
+html[data-vibe="baddie"] .font-alt {
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+/* Pixel decor block: a square in Bruh, a bubble in Baddie. */
+.px-block {
+  display: block;
+  background: var(--color-pop);
+  border-radius: var(--vibe-decor-radius);
+  transition: border-radius 400ms cubic-bezier(0.22, 1, 0.36, 1), background-color 400ms ease;
+}
+.px-block--paper { background: var(--color-paper); }
+.px-block--tab { background: var(--color-tab); }
+
+/* Square bullet used by ruled lists and labels. */
+.sq-bullet {
+  display: inline-block;
+  width: 0.62em;
+  height: 0.62em;
+  flex: none;
+  background: currentColor;
+  border-radius: var(--vibe-decor-radius);
+}
+
+/* Ruled link list (hero nav, filters): label row with a hard underline. */
+.rule-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 0 14px;
+  border-bottom: 1.5px solid var(--color-ink);
+  color: var(--color-ink);
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 160ms ease, border-color 160ms ease;
+}
+.rule-row:hover,
+.rule-row[aria-current="true"],
+.rule-row[aria-pressed="true"] {
+  color: var(--color-ember);
+  border-color: var(--color-ember);
+}
+.rule-row .rule-arrow {
+  margin-left: auto;
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+.rule-row:hover .rule-arrow,
+.rule-row[aria-current="true"] .rule-arrow,
+.rule-row[aria-pressed="true"] .rule-arrow {
+  opacity: 1;
+  transform: none;
+}
+
+/* Vibe-aware radii for new components. */
+.r-vibe { border-radius: var(--vibe-radius); }
+.r-vibe-lg { border-radius: var(--vibe-radius-lg); }
+.r-pill { border-radius: var(--vibe-pill); }
+
+/* Catalog card "tab" label + notch square, as in the reference cards. */
+.card-tab {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 18px 10px 16px;
+  background: var(--color-tab);
+  color: var(--vibe-ink);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: -0.02em;
+  border-bottom-right-radius: var(--vibe-radius);
+}
+.card-tab::after {
+  content: "";
+  position: absolute;
+  right: -22px;
+  bottom: -22px;
+  width: 22px;
+  height: 22px;
+  background: var(--color-tab);
+  border-radius: var(--vibe-decor-radius);
+}
+
+/* Green manifesto band text: ink words with paper-coloured highlights. */
+.band-hl {
+  color: var(--color-paper);
+}
+.band-caret {
+  border-inline: 2.5px solid currentColor;
+  padding-inline: 4px;
+}
+
+/* Baddie gets bounce; Bruh stays still. Both respect reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+  html[data-vibe="baddie"] .vibe-wobble:hover {
+    animation: vibe-wobble 520ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  html[data-vibe="baddie"] .px-block {
+    animation: vibe-float 5s ease-in-out infinite;
+  }
+}
+@keyframes vibe-wobble {
+  0% { transform: rotate(0); }
+  30% { transform: rotate(-2deg) scale(1.02); }
+  60% { transform: rotate(1.5deg); }
+  100% { transform: rotate(0); }
+}
+@keyframes vibe-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* Vibe copy: SSR ships Bruh copy. Until the client swaps it, hide vibe text
+   when the stored vibe is Baddie so there's no flash of the wrong words. */
+html[data-vibe="baddie"]:not([data-vibe-ready]) .vibe-text {
+  visibility: hidden;
+}
+
+/* Hero headline rotation: the outgoing line slides up and fades while the
+   next rises in. Transform + opacity only, so it stays on the compositor. */
+.hero-cycler__top,
+.hero-cycler__bottom {
+  opacity: 0;
+  transform: translate3d(0, 0.32em, 0);
+  transition:
+    opacity 420ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    transform 520ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.hero-cycler__item[data-state="in"] .hero-cycler__top,
+.hero-cycler__item[data-state="in"] .hero-cycler__bottom {
+  opacity: 1;
+  transform: none;
+  transition-delay: 160ms;
+}
+.hero-cycler__item[data-state="in"] .hero-cycler__bottom { transition-delay: 220ms; }
+.hero-cycler__item[data-state="out"] .hero-cycler__top,
+.hero-cycler__item[data-state="out"] .hero-cycler__bottom {
+  opacity: 0;
+  transform: translate3d(0, -0.32em, 0);
+  transition-duration: 220ms, 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+.hero-cycler__item[data-state="out"] .hero-cycler__bottom { transition-delay: 40ms; }
+@media (prefers-reduced-motion: reduce) {
+  .hero-cycler__top,
+  .hero-cycler__bottom { transition: none; }
+}
+
+/* Emoji: always the colour emoji face, never the pixel/serif/italic vibe fonts. */
+.emoji {
+  display: inline-block;
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+/* Film grain over a surface (cards, bands). */
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  opacity: 0.16;
+  mix-blend-mode: overlay;
+}
+
+/* Tilted label slapped on a photo. */
+.sticker {
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.55em 0.95em;
+  background: var(--color-paper);
+  color: var(--vibe-ink);
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: var(--vibe-pill);
+  box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.6);
+}
+
+/* AI photos ship two grades (blue + pink); show the one for the current vibe. */
+html[data-vibe="baddie"] .vibe-only-bruh,
+html:not([data-vibe="baddie"]) .vibe-only-baddie { display: none; }

@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { kits, guides, tools } from "@/content/data";
 import { siteUrl } from "@/lib/seo";
+import { catalog, itemPath } from "@/content/catalog";
 
 export const dynamic = "force-static";
 
@@ -26,6 +27,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/legal/terms/", priority: 0.3 },
     { path: "/legal/refund/", priority: 0.3 },
     { path: "/froots/privacy/", priority: 0.3 },
+    // GenZ revamp: persona hubs + add-on shelves (additive).
+    { path: "/creators/", priority: 0.9 },
+    { path: "/vibe-coders/", priority: 0.9 },
+    { path: "/founders/", priority: 0.9 },
+    { path: "/skills/", priority: 0.9 },
+    { path: "/plugins/", priority: 0.8 },
+    { path: "/mcp/", priority: 0.9 },
+    { path: "/cli/", priority: 0.8 },
+    { path: "/packs/", priority: 0.8 },
   ];
 
   const itemRoutes = [...kits, ...guides, ...tools].map((item) => ({
@@ -34,11 +44,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  // Live picks only; coming-soon pages stay out until they have real content.
+  const catalogRoutes = catalog
+    .filter((item) => item.status === "live")
+    .map((item) => ({ url: `${siteUrl}${itemPath(item)}`, priority: 0.7 }));
+
   return [
     ...staticRoutes.map(({ path, priority }) => ({
       url: `${siteUrl}${path}`,
       priority,
     })),
     ...itemRoutes,
+    ...catalogRoutes,
   ];
 }

@@ -42,6 +42,11 @@ export function track(event: string, props?: Record<string, unknown>) {
   run((posthog) => posthog.capture(event, props));
 }
 
+/** Set super properties sent with every later event (e.g. the site vibe). */
+export function registerProps(props: Record<string, unknown>) {
+  run((posthog) => posthog.register(props));
+}
+
 /**
  * Associate the current (anonymous) session with a person keyed by email, and
  * set person properties. Use the email as the distinct id so a returning

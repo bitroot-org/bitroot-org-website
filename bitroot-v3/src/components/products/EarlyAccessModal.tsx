@@ -129,7 +129,7 @@ export default function EarlyAccessModal({ open, product, onClose }: Props) {
                 active={program === "core"}
                 onClick={() => setProgram("core")}
                 title="Core Community"
-                description="For builders and indie founders. Access to the app + monthly office hours."
+                description="For creators and indie founders. Access to the app + monthly office hours."
               />
               <ProgramCard
                 active={program === "creators"}
