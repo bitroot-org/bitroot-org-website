@@ -69,7 +69,7 @@ const lanes: Lane[] = [
       count: "5 guides",
       headline: (
         <>
-          Field notes from <span className="serif-em">builders.</span>
+          Field notes from <span className="serif-em">creators.</span>
         </>
       ),
       desc: "Tactical write-ups: shipping, AI-assisted dev, design workflows, distribution. Each one is reproducible from a blank repo or a blank doc.",

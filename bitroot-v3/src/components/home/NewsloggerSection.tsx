@@ -184,7 +184,7 @@ export default async function NewsloggerSection() {
               News<span className="serif-em">logger.</span>
             </h2>
             <p className="text-[16px] text-ink-3 mt-4 max-w-[560px] leading-[1.55]">
-              Daily AI and tech news for founders and builders. What shipped,
+              Daily AI and tech news for founders and creators. What shipped,
               what it costs, and whether it matters to you.
             </p>
           </div>

@@ -45,6 +45,11 @@ function loadPosthog() {
     // `site`. Set per surface — break down or filter insights by this
     // property instead of prefixing event names.
     posthog.register({ site: "org" });
+    // Bruh / Baddie site vibe (see src/lib/vibe.ts) — lets funnels be split
+    // by vibe. Updated by setVibe() when a visitor flips the switch.
+    posthog.register({
+      vibe: document.documentElement.dataset.vibe === "baddie" ? "baddie" : "bruh",
+    });
 
     connectAnalytics(posthog);
     initScrollTracking();

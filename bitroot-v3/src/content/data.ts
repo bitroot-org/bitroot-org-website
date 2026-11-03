@@ -422,7 +422,7 @@ export const pillars = [
   {
     key: "products" as const,
     title: "Products",
-    subtitle: "Tiny apps for builders",
+    subtitle: "Tiny apps for creators",
     description:
       "Apps from the Bitroot team. Every one ships with a free plan and a community program — waitlist for the first cohort.",
     href: "/products",
