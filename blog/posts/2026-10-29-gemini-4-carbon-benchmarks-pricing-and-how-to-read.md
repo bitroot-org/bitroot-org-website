@@ -1,7 +1,7 @@
 ---
 date: '2026-10-29'
 excerpt: 'Google''s Gemini 4 Carbon claims top scores on several tests. Here''s how it compares with Argon, what the pricing really costs, and how to read self-reported benchmarks before you switch models.'
-image: https://pbs.twimg.com/card_img/2115508936493408256/hMcvop7k?format=jpg&name=small
+image: https://storage.googleapis.com/gweb-uniblog-publish-prod/images/g4_30-09-26_key-art_blog.width-2200.format-webp.webp
 published_at: '2026-10-29T06:27:11.646Z'
 sources: []
 tags:
