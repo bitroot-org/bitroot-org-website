@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 08 Nov 2026 09:45:37 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 09:46:33 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gemini 4 Carbon: Benchmarks, Pricing and How to Read Them</title>
@@ -1429,6 +1429,20 @@
       <category>tutorial</category>
       <enclosure url="https://bitroot.org/images/preview.jpg" type="image/jpeg" length="0" />
       <source url="https://whereisalan.dev/blog/kaleidoscope-mlir-tutorial/">Original Source</source>
+    </item>
+    <item>
+      <title>Rust‑written PSSA shows faster CPU inference than transformers</title>
+      <link>https://bitroot.org/blog/2026-09-30-rustwritten-pssa-shows-faster-cpu-inference-than-t/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-30-rustwritten-pssa-shows-faster-cpu-inference-than-t/</guid>
+      <description>A custom AI architecture being developed in rust . Contribute to Sparticle62ops/pssa development by creating an account on GitHub.
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/Sparticle62ops/pssa"&gt;https://github.com/Sparticle62ops/pssa&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Wed, 30 Sep 2026 15:31:30 +0000</pubDate>
+      <category>language model</category>
+      <category>rust</category>
+      <category>non‑transformer</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-09-30-rustwritten-pssa-shows-faster-cpu-inference-than-t.png" type="image/png" length="0" />
+      <source url="https://github.com/Sparticle62ops/pssa">Original Source</source>
     </item>
     <item>
       <title>OpenAI Dots Launches Free Autonomous Agents for Pro Users; When It Wins vs Building Your Own</title>

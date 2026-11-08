@@ -1,6 +1,6 @@
 {
   "generated": true,
-  "count": 521,
+  "count": 522,
   "posts": [
     "2026-10-29-gemini-4-carbon-benchmarks-pricing-and-how-to-read.md",
     "2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live.md",
@@ -105,6 +105,7 @@
     "2026-10-01-argon-vs-astra-vs-claude-which-model-founders-shou.md",
     "2026-09-30-turbogpt-lets-you-train-a-tiny-gpt-in-under-a-minu.md",
     "2026-09-25-new-mlir-tutorial-walks-you-through-building-a-kal.md",
+    "2026-09-30-rustwritten-pssa-shows-faster-cpu-inference-than-t.md",
     "2026-09-30-openai-dots-launches-free-autonomous-agents-for-pr.md",
     "2026-09-29-use-any-c-library-in-godot-via-conan-and-cmake.md",
     "2026-09-29-pacbench-scores-claude-opus-55-at-99100-in-oneshot.md",
@@ -549,7 +550,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 521
+      "shortId": 522
     },
     {
       "filename": "2026-10-16-readyset-rdst-adds-a-oneline-install-cli-for-live.md",
@@ -573,7 +574,7 @@
         "agents",
         "engineering"
       ],
-      "shortId": 520
+      "shortId": 521
     },
     {
       "filename": "2026-10-16-proa-launches-a-rustbased-ssr-framework-with-multi.md",
@@ -596,7 +597,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 519
+      "shortId": 520
     },
     {
       "filename": "2026-10-16-folders-esolang-updated-in-2026-programs-live-in-f.md",
@@ -619,7 +620,7 @@
       "categories": [
         "design"
       ],
-      "shortId": 518
+      "shortId": 519
     },
     {
       "filename": "2026-10-17-fastpybase64-delivers-10-gbs-base64-decoding-in-py.md",
@@ -642,7 +643,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 517
+      "shortId": 518
     },
     {
       "filename": "2026-10-17-capy-flash-runs-125b-moe-model-on-two-consumer-gpu.md",
@@ -666,7 +667,7 @@
         "models",
         "engineering"
       ],
-      "shortId": 516
+      "shortId": 517
     },
     {
       "filename": "2026-10-16-sygal-launches-localfirst-documenttomarkdown-conve.md",
@@ -688,7 +689,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 515
+      "shortId": 516
     },
     {
       "filename": "2026-10-27-openai-dots-what-the-always-on-ai-assistant-means.md",
@@ -715,7 +716,7 @@
         "founders",
         "engineering"
       ],
-      "shortId": 514
+      "shortId": 515
     },
     {
       "filename": "2026-10-27-gpu-financing-deals-what-spacex-and-apollo-mean-fo.md",
@@ -739,7 +740,7 @@
         "founders",
         "engineering"
       ],
-      "shortId": 513
+      "shortId": 514
     },
     {
       "filename": "2026-10-27-ai-wearables-for-founders-recording-consent-costs.md",
@@ -763,7 +764,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 512
+      "shortId": 513
     },
     {
       "filename": "2026-10-26-grok-odyssey-ai-film-ai-video-generators-compared.md",
@@ -788,7 +789,7 @@
         "founders",
         "design"
       ],
-      "shortId": 511
+      "shortId": 512
     },
     {
       "filename": "2026-10-17-tinywm-brings-scrolling-window-manager-to-macos-so.md",
@@ -811,7 +812,7 @@
       "categories": [
         "opensource"
       ],
-      "shortId": 510
+      "shortId": 511
     },
     {
       "filename": "2026-10-17-rstation-launches-shared-research-lab-for-ai-agent.md",
@@ -834,7 +835,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 509
+      "shortId": 510
     },
     {
       "filename": "2026-10-17-llmspeed-adds-a-web-simulator-for-local-llm-hardwa.md",
@@ -858,7 +859,7 @@
         "models",
         "engineering"
       ],
-      "shortId": 508
+      "shortId": 509
     },
     {
       "filename": "2026-10-21-anthropic-cloud-capacity-what-it-means-for-founder.md",
@@ -884,7 +885,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 507
+      "shortId": 508
     },
     {
       "filename": "2026-10-21-anthropic-ai-safety-bill-how-model-release-blocks.md",
@@ -907,7 +908,7 @@
       "categories": [
         "models"
       ],
-      "shortId": 506
+      "shortId": 507
     },
     {
       "filename": "2026-10-19-meta-commercial-terms-scraping-and-ai-training-cla.md",
@@ -931,7 +932,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 505
+      "shortId": 506
     },
     {
       "filename": "2026-10-19-future-of-saas-in-the-agentic-era-what-founders-sh.md",
@@ -955,7 +956,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 504
+      "shortId": 505
     },
     {
       "filename": "2026-10-17-rogue-ai-agents-in-india-what-founders-should-lock.md",
@@ -981,7 +982,7 @@
         "founders",
         "engineering"
       ],
-      "shortId": 503
+      "shortId": 504
     },
     {
       "filename": "2026-10-16-muse-spark-open-on-mac-hardware-license-and-break.md",
@@ -1005,7 +1006,7 @@
         "models",
         "engineering"
       ],
-      "shortId": 502
+      "shortId": 503
     },
     {
       "filename": "2026-10-16-influencer-marketing-for-apps-cal-ais-playbook-and.md",
@@ -1028,7 +1029,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 501
+      "shortId": 502
     },
     {
       "filename": "2026-10-15-workplace-messaging-apps-what-zenzaps-44m-shows-fo.md",
@@ -1051,7 +1052,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 500
+      "shortId": 501
     },
     {
       "filename": "2026-10-15-the-forecasting-company-releases-openweights-t0gam.md",
@@ -1075,7 +1076,7 @@
         "models",
         "opensource"
       ],
-      "shortId": 499
+      "shortId": 500
     },
     {
       "filename": "2026-10-15-petal-launches-open-source-collaborative-screensha.md",
@@ -1098,7 +1099,7 @@
       "categories": [
         "opensource"
       ],
-      "shortId": 498
+      "shortId": 499
     },
     {
       "filename": "2026-10-15-graphicle-adds-a-local-codegraph-and-memory-layer.md",
@@ -1122,7 +1123,7 @@
         "agents",
         "engineering"
       ],
-      "shortId": 497
+      "shortId": 498
     },
     {
       "filename": "2026-10-15-flipflop-launches-irohpowered-persistent-fileshari.md",
@@ -1145,7 +1146,7 @@
       "categories": [
         "opensource"
       ],
-      "shortId": 496
+      "shortId": 497
     },
     {
       "filename": "2026-10-15-doubleheaded-stack-allocator-cuts-fragmentation-in.md",
@@ -1166,7 +1167,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 495
+      "shortId": 496
     },
     {
       "filename": "2026-10-15-ai-customer-data-platforms-floqers-lessons-for-fou.md",
@@ -1191,7 +1192,7 @@
         "founders",
         "opensource"
       ],
-      "shortId": 494
+      "shortId": 495
     },
     {
       "filename": "2026-10-14-vertical-ai-for-niche-markets-why-domain-experts-w.md",
@@ -1216,7 +1217,7 @@
         "founders",
         "opensource"
       ],
-      "shortId": 493
+      "shortId": 494
     },
     {
       "filename": "2026-10-14-sprout-pi-mainboard-revives-classic-ipods-with-rp2.md",
@@ -1239,7 +1240,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 492
+      "shortId": 493
     },
     {
       "filename": "2026-10-14-simless-lets-swiftui-agents-test-without-the-ios-s.md",
@@ -1263,7 +1264,7 @@
         "agents",
         "engineering"
       ],
-      "shortId": 491
+      "shortId": 492
     },
     {
       "filename": "2026-10-14-moshrs-012-adds-a-native-windows-client-and-option.md",
@@ -1286,7 +1287,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 490
+      "shortId": 491
     },
     {
       "filename": "2026-10-14-knitting-adds-sharedmemory-threads-to-node-bun-and.md",
@@ -1307,7 +1308,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 489
+      "shortId": 490
     },
     {
       "filename": "2026-10-14-facebook-your-algorithm-what-founders-should-do-no.md",
@@ -1330,7 +1331,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 488
+      "shortId": 489
     },
     {
       "filename": "2026-10-14-deslop-releases-oxlint-plugin-to-catch-aislop-in-t.md",
@@ -1353,7 +1354,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 487
+      "shortId": 488
     },
     {
       "filename": "2026-10-13-solidcraft-launches-as-an-opensource-rust-cad-with.md",
@@ -1377,7 +1378,7 @@
         "opensource",
         "engineering"
       ],
-      "shortId": 486
+      "shortId": 487
     },
     {
       "filename": "2026-10-13-metas-muse-wonder-proves-frontier-models-are-commo.md",
@@ -1402,7 +1403,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 485
+      "shortId": 486
     },
     {
       "filename": "2026-10-13-genjutsu-motion-transfer-api-compress-video-produc.md",
@@ -1427,7 +1428,7 @@
         "founders",
         "design"
       ],
-      "shortId": 484
+      "shortId": 485
     },
     {
       "filename": "2026-10-13-dithering-and-retro-shading-techniques-for-webgl-s.md",
@@ -1448,7 +1449,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 483
+      "shortId": 484
     },
     {
       "filename": "2026-10-13-chkit-adds-typescriptdriven-clickhouse-schema-and.md",
@@ -1472,7 +1473,7 @@
         "agents",
         "engineering"
       ],
-      "shortId": 482
+      "shortId": 483
     },
     {
       "filename": "2026-10-13-blokkily-launches-experimental-patternfirst-daw-wi.md",
@@ -1496,7 +1497,7 @@
         "opensource",
         "design"
       ],
-      "shortId": 481
+      "shortId": 482
     },
     {
       "filename": "2026-10-13-ai-blueprints-solve-permit-timelines-but-not-liabi.md",
@@ -1519,7 +1520,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 480
+      "shortId": 481
     },
     {
       "filename": "2026-10-12-zig-gains-a-compiletime-typesafe-html-templating-l.md",
@@ -1540,7 +1541,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 479
+      "shortId": 480
     },
     {
       "filename": "2026-10-12-static-recompilation-runs-ps2-games-in-the-browser.md",
@@ -1564,7 +1565,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 478
+      "shortId": 479
     },
     {
       "filename": "2026-10-12-plimsoll-adds-tiered-sandbox-for-aigenerated-code.md",
@@ -1587,7 +1588,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 477
+      "shortId": 478
     },
     {
       "filename": "2026-10-12-nvidia-personaplex-7b-for-voice-agents.md",
@@ -1614,7 +1615,7 @@
         "opensource",
         "design"
       ],
-      "shortId": 476
+      "shortId": 477
     },
     {
       "filename": "2026-10-12-eufy-homebase-2-firmware-cracked-wifi-keys-uart-sh.md",
@@ -1637,7 +1638,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 475
+      "shortId": 476
     },
     {
       "filename": "2026-10-12-doiter-launches-a-dockerbacked-language-that-treat.md",
@@ -1658,7 +1659,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 474
+      "shortId": 475
     },
     {
       "filename": "2026-10-11-littleguys-adds-a-menubar-ui-for-local-claude-code.md",
@@ -1683,7 +1684,7 @@
         "agents",
         "opensource"
       ],
-      "shortId": 473
+      "shortId": 474
     },
     {
       "filename": "2026-10-11-manimgx-launches-as-a-rustbacked-3d-animation-engi.md",
@@ -1707,7 +1708,7 @@
         "design",
         "engineering"
       ],
-      "shortId": 472
+      "shortId": 473
     },
     {
       "filename": "2026-10-11-esp32s3-epaper-board-runs-game-boy-at-30-fps.md",
@@ -1728,7 +1729,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 471
+      "shortId": 472
     },
     {
       "filename": "2026-10-11-babytalk-brings-offline-speech-ai-to-esp32s3-and-p.md",
@@ -1749,7 +1750,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 470
+      "shortId": 471
     },
     {
       "filename": "2026-10-11-ai-agents-decompile-a-classic-fps-using-600-b-toke.md",
@@ -1772,7 +1773,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 469
+      "shortId": 470
     },
     {
       "filename": "2026-10-10-why-your-ai-agent-might-do-things-you-didnt-intend.md",
@@ -1797,7 +1798,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 468
+      "shortId": 469
     },
     {
       "filename": "2026-10-10-why-arenas-3-1b-valuation-matters-for-model-select.md",
@@ -1821,7 +1822,7 @@
         "models",
         "founders"
       ],
-      "shortId": 467
+      "shortId": 468
     },
     {
       "filename": "2026-10-10-tiny-home-console-fits-in-an-rca-plug-runs-doom-on.md",
@@ -1844,7 +1845,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 466
+      "shortId": 467
     },
     {
       "filename": "2026-10-10-sqlite-gets-native-ann-vector-search-with-vec1-ext.md",
@@ -1865,7 +1866,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 465
+      "shortId": 466
     },
     {
       "filename": "2026-10-10-carrier-explode-20-adds-api-and-daily-cc0-carriers.md",
@@ -1888,7 +1889,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 464
+      "shortId": 465
     },
     {
       "filename": "2026-10-09-using-openai-for-math-products-verify-decide.md",
@@ -1912,7 +1913,7 @@
         "models",
         "founders"
       ],
-      "shortId": 463
+      "shortId": 464
     },
     {
       "filename": "2026-10-09-synthid-goes-mainstream-why-founders-should-build.md",
@@ -1935,7 +1936,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 462
+      "shortId": 463
     },
     {
       "filename": "2026-10-09-rembrandt-launches-free-selfhosted-photo-editor-wi.md",
@@ -1958,7 +1959,7 @@
       "categories": [
         "opensource"
       ],
-      "shortId": 461
+      "shortId": 462
     },
     {
       "filename": "2026-10-09-quake-runs-in-browser-via-saferust-port.md",
@@ -1981,7 +1982,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 460
+      "shortId": 461
     },
     {
       "filename": "2026-10-09-k10s-adds-mousedriven-ui-and-builtin-ai-to-kuberne.md",
@@ -2004,7 +2005,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 459
+      "shortId": 460
     },
     {
       "filename": "2026-10-09-diy-flexible-neon-t-shirt-using-led-filaments.md",
@@ -2027,7 +2028,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 458
+      "shortId": 459
     },
     {
       "filename": "2026-10-09-ai-chat-agent-runs-on-a-nokia-110-4g-via-a-hacked.md",
@@ -2051,7 +2052,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 457
+      "shortId": 458
     },
     {
       "filename": "2026-10-08-google-playground-ai-generated-games-from-text-pro.md",
@@ -2075,7 +2076,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 456
+      "shortId": 457
     },
     {
       "filename": "2026-10-07-terrainsr-upscales-100-m-heightmaps-to-10-m-detail.md",
@@ -2097,7 +2098,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 455
+      "shortId": 456
     },
     {
       "filename": "2026-10-07-sprout-adds-bluetooth-wifi-and-streaming-to-classi.md",
@@ -2121,7 +2122,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 454
+      "shortId": 455
     },
     {
       "filename": "2026-10-07-rgpu-lets-pytorch-code-offload-tensors-to-a-remote.md",
@@ -2144,7 +2145,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 453
+      "shortId": 454
     },
     {
       "filename": "2026-10-07-openchart-releases-free-opensource-tradingview-clo.md",
@@ -2168,7 +2169,7 @@
         "agents",
         "opensource"
       ],
-      "shortId": 452
+      "shortId": 453
     },
     {
       "filename": "2026-10-07-musql-releases-a-jitcompiled-sqlitecompatible-engi.md",
@@ -2192,7 +2193,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 451
+      "shortId": 452
     },
     {
       "filename": "2026-10-07-mistral-large-4-le-chonk-europes-open-weight-alter.md",
@@ -2217,7 +2218,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 450
+      "shortId": 451
     },
     {
       "filename": "2026-10-07-ai-agents-getting-blocked-ucp-vs-personal-agent-pr.md",
@@ -2254,7 +2255,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 449
+      "shortId": 450
     },
     {
       "filename": "2026-10-06-minigraf-203-adds-bi-temporal-graph-storage-for-ru.md",
@@ -2277,7 +2278,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 448
+      "shortId": 449
     },
     {
       "filename": "2026-10-06-ichat-av-revived-on-leopard-via-a-custom-snatmap-h.md",
@@ -2300,7 +2301,7 @@
       "categories": [
         "design"
       ],
-      "shortId": 447
+      "shortId": 448
     },
     {
       "filename": "2026-10-06-gleam-119-switches-from-erlang-source-to-abstract.md",
@@ -2323,7 +2324,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 446
+      "shortId": 447
     },
     {
       "filename": "2026-10-06-era-launches-synthetic-company-environments-for-ai.md",
@@ -2347,7 +2348,7 @@
         "agents",
         "engineering"
       ],
-      "shortId": 445
+      "shortId": 446
     },
     {
       "filename": "2026-10-06-autolith-launches-self-modifying-lisp-ai-agent-for.md",
@@ -2370,7 +2371,7 @@
       "categories": [
         "agents"
       ],
-      "shortId": 444
+      "shortId": 445
     },
     {
       "filename": "2026-10-05-tpmlsm-adds-ebpf-guard-to-restrict-tpm-access-on-l.md",
@@ -2393,7 +2394,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 443
+      "shortId": 444
     },
     {
       "filename": "2026-10-05-swap-can-cause-40-ms-stoptheworld-pauses-in-go-gc.md",
@@ -2415,7 +2416,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 442
+      "shortId": 443
     },
     {
       "filename": "2026-10-05-maplibre-compose-adds-interactive-vector-maps-to-k.md",
@@ -2439,7 +2440,7 @@
       "categories": [
         "opensource"
       ],
-      "shortId": 441
+      "shortId": 442
     },
     {
       "filename": "2026-10-05-go-compiler-hack-adds-subnanosecond-ipv4toipv6-map.md",
@@ -2462,7 +2463,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 440
+      "shortId": 441
     },
     {
       "filename": "2026-10-05-gemini-4-argon-vs-gpt-6-astra-vs-claude-for-founde.md",
@@ -2486,7 +2487,7 @@
         "models",
         "founders"
       ],
-      "shortId": 439
+      "shortId": 440
     },
     {
       "filename": "2026-10-05-efildr-launches-as-opensource-reflective-efi-loade.md",
@@ -2509,7 +2510,7 @@
       "categories": [
         "opensource"
       ],
-      "shortId": 438
+      "shortId": 439
     },
     {
       "filename": "2026-10-04-rely-launches-browser-beta-that-turns-unreliable-p.md",
@@ -2532,7 +2533,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 437
+      "shortId": 438
     },
     {
       "filename": "2026-10-04-networkx-adds-pyarrow-backend-with-65-memory-savin.md",
@@ -2553,7 +2554,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 436
+      "shortId": 437
     },
     {
       "filename": "2026-10-04-headstart-speeds-rust-builds-by-up-to-54-using-ear.md",
@@ -2576,7 +2577,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 435
+      "shortId": 436
     },
     {
       "filename": "2026-10-04-jeffy-launches-cpuonly-pretrained-classifiers-for.md",
@@ -2599,7 +2600,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 434
+      "shortId": 435
     },
     {
       "filename": "2026-10-04-esp32-firmware-adds-native-245-ghz-sdr-capability.md",
@@ -2620,7 +2621,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 433
+      "shortId": 434
     },
     {
       "filename": "2026-10-04-enki-01-alpha-lets-you-write-gpu-kernels-in-pure-r.md",
@@ -2643,7 +2644,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 432
+      "shortId": 433
     },
     {
       "filename": "2026-10-03-rowan-adds-opensource-static-scanning-for-aiml-cod.md",
@@ -2667,7 +2668,7 @@
         "opensource",
         "engineering"
       ],
-      "shortId": 431
+      "shortId": 432
     },
     {
       "filename": "2026-10-03-rhun-launches-a-tiny-assemblywritten-code-editor.md",
@@ -2690,7 +2691,7 @@
       "categories": [
         "opensource"
       ],
-      "shortId": 430
+      "shortId": 431
     },
     {
       "filename": "2026-10-03-macos-full-disk-access-tightening-what-founders-us.md",
@@ -2715,7 +2716,7 @@
         "founders",
         "engineering"
       ],
-      "shortId": 429
+      "shortId": 430
     },
     {
       "filename": "2026-10-02-zstdframed-ndjson-parses-at-40-gbs-on-a-64core-xeo.md",
@@ -2736,7 +2737,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 428
+      "shortId": 429
     },
     {
       "filename": "2026-10-02-openc6-bios-adds-pcstyle-microkernel-to-esp32c6.md",
@@ -2759,7 +2760,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 427
+      "shortId": 428
     },
     {
       "filename": "2026-10-02-janus-adds-a-vulkanpowered-local-llm-server-with-o.md",
@@ -2782,7 +2783,7 @@
       "categories": [
         "models"
       ],
-      "shortId": 426
+      "shortId": 427
     },
     {
       "filename": "2026-10-02-firezone-skips-scim-builds-its-own-pullbased-direc.md",
@@ -2803,7 +2804,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 425
+      "shortId": 426
     },
     {
       "filename": "2026-10-01-yantra-adds-a-native-c-lalr1-parser-generator.md",
@@ -2826,7 +2827,7 @@
       "categories": [
         "engineering"
       ],
-      "shortId": 424
+      "shortId": 425
     },
     {
       "filename": "2026-10-01-strata-launches-aisafe-selfservice-analytics-platf.md",
@@ -2849,7 +2850,7 @@
       "categories": [
         "founders"
       ],
-      "shortId": 423
+      "shortId": 424
     },
     {
       "filename": "2026-10-01-parrot-0252-brings-ondevice-ai-assistance-to-mac-m.md",
@@ -2870,7 +2871,7 @@
       ],
       "readTime": "2 min",
       "categories": [],
-      "shortId": 422
+      "shortId": 423
     },
     {
       "filename": "2026-10-01-argon-vs-astra-vs-claude-which-model-founders-shou.md",
@@ -2895,7 +2896,7 @@
         "agents",
         "founders"
       ],
-      "shortId": 421
+      "shortId": 422
     },
     {
       "filename": "2026-09-30-turbogpt-lets-you-train-a-tiny-gpt-in-under-a-minu.md",
@@ -2919,7 +2920,7 @@
         "models",
         "engineering"
       ],
-      "shortId": 420
+      "shortId": 421
     },
     {
       "filename": "2026-09-25-new-mlir-tutorial-walks-you-through-building-a-kal.md",
@@ -2940,6 +2941,30 @@
       ],
       "readTime": "2 min",
       "categories": [
+        "engineering"
+      ],
+      "shortId": 420
+    },
+    {
+      "filename": "2026-09-30-rustwritten-pssa-shows-faster-cpu-inference-than-t.md",
+      "slug": "2026-09-30-rustwritten-pssa-shows-faster-cpu-inference-than-t",
+      "url": "/blog/2026-09-30-rustwritten-pssa-shows-faster-cpu-inference-than-t/",
+      "title": "Rust\u2011written PSSA shows faster CPU inference than transformers",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T15:31:30.254243+00:00",
+      "tags": [
+        "language model",
+        "rust",
+        "non\u2011transformer"
+      ],
+      "excerpt": "A custom AI architecture being developed in rust . Contribute to Sparticle62ops/pssa development by creating an account on GitHub.",
+      "image": "https://bitroot.org/blog/media/2026-09-30-rustwritten-pssa-shows-faster-cpu-inference-than-t.png",
+      "sources": [
+        "https://github.com/Sparticle62ops/pssa"
+      ],
+      "readTime": "2 min",
+      "categories": [
+        "models",
         "engineering"
       ],
       "shortId": 419
