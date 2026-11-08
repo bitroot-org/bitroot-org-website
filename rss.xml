@@ -5,7 +5,7 @@
     <link>https://bitroot.org/blog/</link>
     <description>Thoughts, tutorials, and insights from the Bitroot team.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 08 Nov 2026 09:46:33 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 09:47:46 +0000</lastBuildDate>
     <atom:link href="https://bitroot.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gemini 4 Carbon: Benchmarks, Pricing and How to Read Them</title>
@@ -1485,6 +1485,20 @@
       <category>large language model</category>
       <enclosure url="https://bitroot.org/blog/null" type="image/jpeg" length="0" />
       <source url="https://jonclegg.github.io/pacman-bakeoff/">Original Source</source>
+    </item>
+    <item>
+      <title>PaperMono turns an e‑ink fridge magnet into a synced shopping list</title>
+      <link>https://bitroot.org/blog/2026-09-29-papermono-turns-an-eink-fridge-magnet-into-a-synce/</link>
+      <guid isPermaLink="true">https://bitroot.org/blog/2026-09-29-papermono-turns-an-eink-fridge-magnet-into-a-synce/</guid>
+      <description>E-paper shopping list for the M5Stack PaperMono, with a FastAPI server and phone web UI - seamusc/papermono-shopping-list
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://github.com/seamusc/papermono-shopping-list"&gt;https://github.com/seamusc/papermono-shopping-list&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <pubDate>Tue, 29 Sep 2026 15:17:19 +0000</pubDate>
+      <category>e-ink</category>
+      <category>iot</category>
+      <category>fastapi</category>
+      <enclosure url="https://bitroot.org/blog/media/2026-09-29-papermono-turns-an-eink-fridge-magnet-into-a-synce.png" type="image/png" length="0" />
+      <source url="https://github.com/seamusc/papermono-shopping-list">Original Source</source>
     </item>
     <item>
       <title>OpenAI o3's Hidden Cost: Why Your Reasoning Token Bill Is 5x Higher</title>

@@ -291,6 +291,11 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://bitroot.org/blog/page/59/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://bitroot.org/blog/2026-10-29-gemini-4-carbon-benchmarks-pricing-and-how-to-read/</loc>
     <lastmod>2026-10-29</lastmod>
   </url>
@@ -716,6 +721,10 @@
   </url>
   <url>
     <loc>https://bitroot.org/blog/2026-09-29-pacbench-scores-claude-opus-55-at-99100-in-oneshot/</loc>
+    <lastmod>2026-09-29</lastmod>
+  </url>
+  <url>
+    <loc>https://bitroot.org/blog/2026-09-29-papermono-turns-an-eink-fridge-magnet-into-a-synce/</loc>
     <lastmod>2026-09-29</lastmod>
   </url>
   <url>
